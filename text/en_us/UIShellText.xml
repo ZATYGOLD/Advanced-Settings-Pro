@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+	<!-- Group Ids -->
+		<Row Tag="LOC_GROUPID_MOVEMENT_SETTINGS">
+			<Text>Unit Movement Settings</Text>
+		</Row>
+
+	<!-- Universal Labels -->
+		<Row Tag="LOC_ZG_DEFAULT_NAME">
+			<Text>Default</Text>
+		</Row>
+		<Row Tag="LOC_ZG_QUICK_NAME">
+			<Text>Quick</Text>
+		</Row>
+		<Row Tag="LOC_ZG_FAST_NAME">
+			<Text>Fast</Text>
+		</Row>
+		<Row Tag="LOC_ZG_SLOW_NAME">
+			<Text>Slow</Text>
+		</Row>
+
+		<!-- Settler Labels-->
+		<Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME">
+			<Text>Settler Speed</Text>
+		</Row>
+        <Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION">
+			<Text> Sets the settler base movement and embarked speed.
+				[n] [BLIST][LI]Slow: 2[icon:Action_Move]Base and 1[icon:Action_Move]Embarked Movement.
+				[LI]Default: 3[icon:Action_Move]Base and 2[icon:Action_Move]Embarked Movement.
+				[LI]Fast: 4[icon:Action_Move]Base and 3[icon:Action_Move]Embarked Movement.[/LIST]
+			</Text>
+		</Row>
+
+		<!-- Treasure Convoy Labels -->
+		<Row Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_NAME">
+			<Text>Treasure Convoy Speed</Text>
+		</Row>
+        <Row Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION">
+			<Text> Sets the treasure convoy base movement and embarked speed.
+				[n] [BLIST][LI]Slow: 1[icon:Action_Move]Base and Embarked Movement.
+				[LI]Default: 2[icon:Action_Move]Base and Embarked Movement.
+				[LI]Fast: 3[icon:Action_Move]Base and Embarked Movement.[/LIST]
+			</Text>
+		</Row>
+	</EnglishText>
+</Database>

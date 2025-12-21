@@ -1,0 +1,18 @@
+<!-- data/unit_movement/settler/zg-settler-modifiers.xml -->
+<!-- Author: Zatygold -->
+
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <Types>
+        <Row Type="TRAIT_SETTLER_EMBARK_MOVE" Kind="KIND_TRAIT"/>
+    </Types>
+
+    <Traits>
+        <Row TraitType="TRAIT_SETTLER_EMBARK_MOVE" Name="LOC_TRAIT_SETTLER_EMBARK_MOVE_NAME" Description="LOC_TRAIT_SETTLER_EMBARK_MOVE_DESCRIPTION"/>
+    </Traits>
+
+    <TraitModifiers>
+        <Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="TRAIT_MOD_SETTLER_WHILE_EMBARKED"/>
+	</TraitModifiers>
+</Database>
+

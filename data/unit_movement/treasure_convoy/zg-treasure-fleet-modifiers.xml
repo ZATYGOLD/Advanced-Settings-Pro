@@ -1,0 +1,18 @@
+<!-- data/unit_movement/treasure_convoy/zg-treasure-fleet-modifiers.xml -->
+<!-- Author: Zatygold -->
+
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <Types>
+        <Row Type="TRAIT_TREASURE_FLEET_EMBARK_MOVE" Kind="KIND_TRAIT"/>
+    </Types>
+
+    <Traits>
+        <Row TraitType="TRAIT_TREASURE_FLEET_EMBARK_MOVE" Name="LOC_TRAIT_TREASURE_FLEET_EMBARK_MOVE_NAME" Description="LOC_TRAIT_TREASURE_FLEET_EMBARK_MOVE_DESCRIPTION"/>
+    </Traits>
+
+    <TraitModifiers>
+		<Row TraitType="TRAIT_EXPLORATION_CIV" ModifierId="TRAIT_MOD_TREASURE_WHILE_EMBARKED"/>
+	</TraitModifiers>
+</Database>
+

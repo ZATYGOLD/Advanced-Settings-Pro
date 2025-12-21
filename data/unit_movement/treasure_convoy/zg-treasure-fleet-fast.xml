@@ -1,0 +1,15 @@
+<!-- data/unit_movement/treasure_convoy/zg-treasure-fleet-fast.xml -->
+<!-- Author: Zatygold -->
+
+<!-- This GameEffect increases the Treasure Fleet while embarked by 1. The base movement is 2 and this increases it to 3.-->
+<?xml version="1.0" encoding="utf-8"?>
+<GameEffects xmlns="GameEffects">
+  <Modifier id="TRAIT_MOD_TREASURE_WHILE_EMBARKED" collection="COLLECTION_PLAYER_UNITS" effect="EFFECT_ADJUST_UNIT_EMBARKED_MOVEMENT">
+        <SubjectRequirements>
+            <Requirement type="REQUIREMENT_UNIT_TYPE_MATCHES">
+                <Argument name="UnitType">UNIT_TREASURE_FLEET</Argument>
+            </Requirement>
+        </SubjectRequirements>
+    <Argument name="Amount">1</Argument>
+  </Modifier>
+</GameEffects>

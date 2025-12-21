@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		<Row Tag="LOC_MODULE_ZGOPTIION_SETTINGS">
+			<Text>Zatygold's Option Settings</Text>
+		</Row>
+		<Row Tag="LOC_MODULE_ZGOPTION_SETTINGS_DESC">
+			<Text>Its just my options, bro!</Text>
+		</Row>
+	</EnglishText>
+</Database>

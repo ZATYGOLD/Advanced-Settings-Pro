@@ -1,0 +1,15 @@
+<!-- data/unit_movement/settler/zg-settler-embarked-slow.xml -->
+<!-- Author: Zatygold -->
+
+<!-- This GameEffect decreases the Settler while embarked by 1. The base embark speed is 2 and this decreases it to 1.-->
+<?xml version="1.0" encoding="utf-8"?>
+<GameEffects xmlns="GameEffects">
+  <Modifier id="TRAIT_MOD_SETTLER_WHILE_EMBARKED" collection="COLLECTION_PLAYER_UNITS" effect="EFFECT_ADJUST_UNIT_EMBARKED_MOVEMENT">
+        <SubjectRequirements>
+            <Requirement type="REQUIREMENT_UNIT_TYPE_MATCHES">
+                <Argument name="UnitType">UNIT_SETTLER</Argument>
+            </Requirement>
+        </SubjectRequirements>
+    <Argument name="Amount">-1</Argument>
+  </Modifier>
+</GameEffects>
