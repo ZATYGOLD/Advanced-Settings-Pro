@@ -60,6 +60,7 @@
 			    <UpdateDatabase>
                 	<Item>config/unit_movement/SettlerParameters.sql</Item>
 					<Item>config/unit_movement/TreasureConvoyParameters.sql</Item>
+					<Item>config/independents/NumberOfIndependentsParameters.sql</Item>
             	</UpdateDatabase>
 				<UpdateText>
                 	<Item>text/en_us/UIShellText.xml</Item>

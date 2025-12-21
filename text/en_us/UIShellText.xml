@@ -19,6 +19,12 @@
 		<Row Tag="LOC_ZG_SLOW_NAME">
 			<Text>Slow</Text>
 		</Row>
+		<Row Tag="LOC_ZG_MORE_NAME">
+			<Text>More</Text>
+		</Row>
+		<Row Tag="LOC_ZG_LESS_NAME">
+			<Text>Less</Text>
+		</Row>
 
 		<!-- Settler Labels-->
 		<Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME">
@@ -41,6 +47,15 @@
 				[n] [BLIST][LI]Slow: 1[icon:Action_Move]Base and Embarked Movement.
 				[LI]Default: 2[icon:Action_Move]Base and Embarked Movement.
 				[LI]Fast: 3[icon:Action_Move]Base and Embarked Movement.[/LIST]
+			</Text>
+		</Row>
+
+		<!-- Independent Count Labels -->
+		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_NAME">
+			<Text>Initial Independent Amount</Text>
+		</Row>
+        <Row Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION">
+			<Text> Sets the total number of independents that spawn.
 			</Text>
 		</Row>
 	</EnglishText>
