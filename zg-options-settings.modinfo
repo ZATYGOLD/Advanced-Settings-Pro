@@ -51,6 +51,28 @@
       				<Value>ZG_TREASURE_MOVES_FAST</Value>
     			</ConfigurationValueMatches>
   		</Criteria>
+
+		<Criteria id="more-independents"> <!-- Independent Count MORE Criteria Settings -->
+    			<ConfigurationValueMatches>
+      				<Group>Game</Group>
+      				<ConfigurationId>IndependentCountKey</ConfigurationId>
+      				<Value>ZG_MORE_INDEPENDENTS</Value>
+    			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="less-independents"> <!-- Independent Count LESS Criteria Settings -->
+    			<ConfigurationValueMatches>
+      				<Group>Game</Group>
+      				<ConfigurationId>IndependentCountKey</ConfigurationId>
+      				<Value>ZG_LESS_INDEPENDENTS</Value>
+    			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="independents-none"> <!-- Independent Count NONE Criteria Settings -->
+    			<ConfigurationValueMatches>
+      				<Group>Game</Group>
+      				<ConfigurationId>IndependentCountKey</ConfigurationId>
+      				<Value>ZG_NONE_INDEPENDENTS</Value>
+    			</ConfigurationValueMatches>
+		</Criteria>
 	</ActionCriteria>
 
 	<ActionGroups>
@@ -112,6 +134,34 @@
 					<Item>data/unit_movement/treasure_convoy/zg-treasure-fleet-modifiers.xml</Item>
 					<Item>data/unit_movement/treasure_convoy/TreasureConvoyFast.sql</Item>
 					<Item>data/unit_movement/treasure_convoy/zg-treasure-fleet-fast.xml</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
+		<!--*******************************************************************************************
+		******************************* INDEPENDENT COUNT SETTINGS ************************************
+		********************************************************************************************-->
+		<ActionGroup id="zg-more-independents" scope="game" criteria="more-independents"> <!-- MORE Independents Game Settings -->
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/IndependentCountMore.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-less-independents" scope="game" criteria="less-independents"> <!-- LESS Independents Game Settings -->
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/IndependentCountLess.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-independents-none" scope="game" criteria="independents-none"> <!-- Independents NONE Game Settings -->
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/IndependentCountNone.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

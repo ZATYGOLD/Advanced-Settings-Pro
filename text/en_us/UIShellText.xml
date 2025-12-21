@@ -25,6 +25,9 @@
 		<Row Tag="LOC_ZG_LESS_NAME">
 			<Text>Less</Text>
 		</Row>
+		<Row Tag="LOC_ZG_NONE_NAME">
+			<Text>None</Text>
+		</Row>
 
 		<!-- Settler Labels-->
 		<Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME">
@@ -55,7 +58,17 @@
 			<Text>Initial Independent Amount</Text>
 		</Row>
         <Row Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION">
-			<Text> Sets the total number of independents that spawn.
+			<Text> Sets the initial number of independents that spawn.
+				[n] [BLIST][LI]None: 0 Independent Powers.
+				[LI]Less: 2 Independent Powers per Civilization.
+				[LI]Default: 3 Independent Powers per Civilization.
+				[LI]More: 4 Independent Powers per Civilization.[/LIST]
+			</Text>
+		</Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_ADDITIONAL_DESCRIPTION">
+			<Text> 
+				This will attempt to spawn the desired amount, but may not get the exact expected number.
+				However, this will get as close as possible to the expected number.
 			</Text>
 		</Row>
 	</EnglishText>

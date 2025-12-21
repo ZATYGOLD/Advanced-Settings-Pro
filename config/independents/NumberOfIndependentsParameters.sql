@@ -9,10 +9,13 @@ INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, Defaul
 
 -- Right Side | Setting Options, Description, and Additional Information
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
-    VALUES ("ZG_IndependentCountDomain", "ZG_DEFAULT_INDEPENDENTS", "LOC_ZG_DEFAULT_NAME", "", 10);
+    VALUES ("ZG_IndependentCountDomain", "ZG_DEFAULT_INDEPENDENTS", "LOC_ZG_DEFAULT_NAME", "LOC_ZG_INDEPENDENT_COUNT_ADDITIONAL_DESCRIPTION", 10);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
-    VALUES ("ZG_IndependentCountDomain", "ZG_MORE_INDEPENDENTS", "LOC_ZG_MORE_NAME", "", 20);
+    VALUES ("ZG_IndependentCountDomain", "ZG_MORE_INDEPENDENTS", "LOC_ZG_MORE_NAME", "LOC_ZG_INDEPENDENT_COUNT_ADDITIONAL_DESCRIPTION", 20);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
-    VALUES ("ZG_IndependentCountDomain", "ZG_LESS_INDEPENDENTS", "LOC_ZG_LESS_NAME", "", 30);
+    VALUES ("ZG_IndependentCountDomain", "ZG_LESS_INDEPENDENTS", "LOC_ZG_LESS_NAME", "LOC_ZG_INDEPENDENT_COUNT_ADDITIONAL_DESCRIPTION", 40);
+
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES ("ZG_IndependentCountDomain", "ZG_NONE_INDEPENDENTS", "LOC_ZG_NONE_NAME", "LOC_ZG_INDEPENDENT_COUNT_ADDITIONAL_DESCRIPTION", 30);
