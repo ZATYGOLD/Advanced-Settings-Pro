@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="Zatygold's Option Settings" version="00010" xmlns="ModInfo">
+<Mod id="Zatygold's Option Settings" version="00015" xmlns="ModInfo">
 	<Properties>
 		<Name>LOC_MODULE_ZGOPTIION_SETTINGS</Name>
 		<Description>LOC_MODULE_ZGOPTION_SETTINGS_DESC</Description>
 		<Authors>Zatygold</Authors>
-        <Version>0.0.10</Version>
+        <Version>0.0.15</Version>
         <Package>Mod</Package>
 		<ShowInBrowser>1</ShowInBrowser>
         <AffectsSavedGames>1</AffectsSavedGames>
@@ -80,13 +80,11 @@
 			<Properties><LoadOrder>10</LoadOrder></Properties>
 			<Actions>
 			    <UpdateDatabase>
-					<Item>data/game/GameOptions.sql</Item>
-                	<Item>config/unit_movement/SettlerParameters.sql</Item>
-					<Item>config/unit_movement/TreasureConvoyParameters.sql</Item>
-					<Item>config/independents/NumberOfIndependentsParameters.sql</Item>
+					<Item>config/SetupGameOptions.sql</Item>
+					<Item>config/SetupParameters.sql</Item>
             	</UpdateDatabase>
 				<UpdateText>
-                	<Item>text/en_us/UIShellText.xml</Item>
+                	<Item>text/en_us/ui-shell-text.xml</Item>
             	</UpdateText>
 			</Actions>
 		</ActionGroup>
@@ -169,6 +167,6 @@
 	</ActionGroups>
 
 	<LocalizedText>
-		<File>text/en_us/ModInfoText.xml</File>
+		<File>text/en_us/mod-info-text.xml</File>
 	</LocalizedText>
 </Mod>
