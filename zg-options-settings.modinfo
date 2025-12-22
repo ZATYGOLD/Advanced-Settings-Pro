@@ -88,6 +88,21 @@
       			<Value>ZG_LESS_INDEPENDENTS_SPACING</Value>
     		</ConfigurationValueMatches>
 		</Criteria>
+
+		<Criteria id="more-independents-units"> <!-- Independent Units MORE Criteria Settings -->
+    		<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentUnitsCountKey</ConfigurationId>
+      			<Value>ZG_MORE_INDEPENDENTS_UNIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="less-independents-units"> <!-- Independent Units LESS Criteria Settings -->
+    		<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentUnitsCountKey</ConfigurationId>
+      			<Value>ZG_LESS_INDEPENDENTS_UNIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
 	</ActionCriteria>
 
 	<ActionGroups>
@@ -196,6 +211,26 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/independents/IndependentsSpacingLess.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
+		<!--*******************************************************************************************
+		***************************** INDEPENDENT UNITS COUNT SETTINGS ********************************
+		********************************************************************************************-->
+		<ActionGroup id="zg-more-independents-units" scope="game" criteria="more-independents-units"> <!-- MORE Independents Units Game Settings -->
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<!-- <Item>data/independents/IndependentsUnitsMore.sql</Item> -->
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-less-independents-units" scope="game" criteria="less-independents-units"> <!-- LESS Independents Units Game Settings -->
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<!-- <Item>data/independents/IndependentsUnitsLess.sql</Item> -->
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

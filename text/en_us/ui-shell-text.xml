@@ -37,10 +37,11 @@
 		<!-- Independent Power Names -->
 		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_NAME"><Text>Initial Independent Amount</Text></Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_NAME"><Text>Independent Spacing</Text></Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME"><Text>Initial Independent Units Amount</Text></Row>
 
 		<!-- Independent Power Descriptions -->
         <Row Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION">
-			<Text> Sets the initial number of independents that spawn.
+			<Text> Sets the initial number of Independent Powers.
 				[n] [BLIST][LI]None: 0[icon:INDEPENDENT_POWER]Independent Powers.
 				[LI]Less: 2[icon:INDEPENDENT_POWER]Independent Powers per Civilization.
 				[LI]Default: 3[icon:INDEPENDENT_POWER]Independent Powers per Civilization.
@@ -58,6 +59,13 @@
 				[n] [BLIST][LI]Less: 3 Tiles.
 				[LI]Default: 4 Tiles.
 				[LI]More: 5 Tiles.[/LIST]
+			</Text>
+		</Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION">
+			<Text> Sets the initial number of an Independent Power's units.
+				[n] [BLIST][LI]Less: 2 Units.
+				[LI]Default: 4 Units.
+				[LI]More: 6 Units.[/LIST]
 			</Text>
 		</Row>
 	</EnglishText>
