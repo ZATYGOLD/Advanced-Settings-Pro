@@ -179,6 +179,26 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
+
+		<!--*******************************************************************************************
+		***************************** INDEPENDENT SPACING SETTINGS ************************************
+		********************************************************************************************-->
+		<ActionGroup id="zg-more-independents-spacing" scope="game" criteria="more-independents-spacing"> <!-- MORE Independents Spacing Game Settings -->
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/IndependentsSpacingMore.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-less-independents-spacing" scope="game" criteria="less-independents-spacing"> <!-- LESS Independents Spacing Game Settings -->
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/IndependentsSpacingLess.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
 	</ActionGroups>
 
 	<LocalizedText>
