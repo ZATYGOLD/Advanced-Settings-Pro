@@ -80,6 +80,7 @@
 			<Properties><LoadOrder>10</LoadOrder></Properties>
 			<Actions>
 			    <UpdateDatabase>
+					<Item>data/game/GameOptions.sql</Item>
                 	<Item>config/unit_movement/SettlerParameters.sql</Item>
 					<Item>config/unit_movement/TreasureConvoyParameters.sql</Item>
 					<Item>config/independents/NumberOfIndependentsParameters.sql</Item>
