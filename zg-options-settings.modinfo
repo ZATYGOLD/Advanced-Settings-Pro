@@ -105,7 +105,7 @@
 		</ActionGroup>
 
 		<!--*******************************************************************************************
-		*********************************** SETTLER SETTINGS ******************************************
+		******************************** SETTLER MOVEMENT SETTINGS ************************************
 		********************************************************************************************-->
 		<ActionGroup id="zg-slow-settlers" scope="game" criteria="slow-settlers"> <!-- Settler SLOW Movement Game Settings -->
 			<Properties><LoadOrder>50</LoadOrder></Properties>
