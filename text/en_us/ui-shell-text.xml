@@ -1,38 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Database>
 	<EnglishText>
-	<!-- Group Ids -->
-		<Row Tag="LOC_GROUPID_MOVEMENT_SETTINGS">
-			<Text>Unit Movement Settings</Text>
-		</Row>
+	<!-- Unique Group Ids -->
+		<Row Tag="LOC_GROUPID_UNITMOVEMENTOPTIONS"><Text>Unit Movement Settings</Text></Row>
+		<Row Tag="LOC_GROUPID_INDEPENDENTPOWEROPTIONS"><Text>Independent Power Settings</Text></Row>
 
-	<!-- Universal Labels -->
-		<Row Tag="LOC_ZG_DEFAULT_NAME">
-			<Text>Default</Text>
-		</Row>
-		<Row Tag="LOC_ZG_QUICK_NAME">
-			<Text>Quick</Text>
-		</Row>
-		<Row Tag="LOC_ZG_FAST_NAME">
-			<Text>Fast</Text>
-		</Row>
-		<Row Tag="LOC_ZG_SLOW_NAME">
-			<Text>Slow</Text>
-		</Row>
-		<Row Tag="LOC_ZG_MORE_NAME">
-			<Text>More</Text>
-		</Row>
-		<Row Tag="LOC_ZG_LESS_NAME">
-			<Text>Less</Text>
-		</Row>
-		<Row Tag="LOC_ZG_NONE_NAME">
-			<Text>None</Text>
-		</Row>
+	<!-- Universal Names -->
+		<Row Tag="LOC_ZG_DEFAULT_NAME"><Text>Default</Text></Row>
+		<Row Tag="LOC_ZG_QUICK_NAME"><Text>Quick</Text></Row>
+		<Row Tag="LOC_ZG_FAST_NAME"><Text>Fast</Text></Row>
+		<Row Tag="LOC_ZG_SLOW_NAME"><Text>Slow</Text></Row>
+		<Row Tag="LOC_ZG_MORE_NAME"><Text>More</Text></Row>
+		<Row Tag="LOC_ZG_LESS_NAME"><Text>Less</Text></Row>
+		<Row Tag="LOC_ZG_NONE_NAME"><Text>None</Text></Row>
 
-		<!-- Settler Labels-->
-		<Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME">
-			<Text>Settler Speed</Text>
-		</Row>
+		<!-- Settler Labels -->
+		<Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME"><Text>Settler Speed</Text></Row>
         <Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION">
 			<Text> Sets the settler base movement and embarked speed.
 				[n] [BLIST][LI]Slow: 2[icon:Action_Move]Base and 1[icon:Action_Move]Embarked Movement.
@@ -42,9 +25,7 @@
 		</Row>
 
 		<!-- Treasure Convoy Labels -->
-		<Row Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_NAME">
-			<Text>Treasure Convoy Speed</Text>
-		</Row>
+		<Row Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_NAME"><Text>Treasure Convoy Speed</Text></Row>
         <Row Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION">
 			<Text> Sets the treasure convoy base movement and embarked speed.
 				[n] [BLIST][LI]Slow: 1[icon:Action_Move]Base and Embarked Movement.
@@ -53,10 +34,11 @@
 			</Text>
 		</Row>
 
-		<!-- Independent Count Labels -->
-		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_NAME">
-			<Text>Initial Independent Amount</Text>
-		</Row>
+		<!-- Independent Power Names -->
+		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_NAME"><Text>Initial Independent Amount</Text></Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_NAME"><Text>Independent Spacing</Text></Row>
+
+		<!-- Independent Power Descriptions -->
         <Row Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION">
 			<Text> Sets the initial number of independents that spawn.
 				[n] [BLIST][LI]None: 0[icon:INDEPENDENT_POWER]Independent Powers.
@@ -69,6 +51,13 @@
 			<Text> 
 				This will attempt to spawn the desired amount, but may not get the exact expected number.
 				However, this will get as close as possible to the expected number.
+			</Text>
+		</Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION">
+			<Text> Sets the minimum spacing for Independent Powers.
+				[n] [BLIST][LI]Less: 3 Tiles.
+				[LI]Default: 4 Tiles.
+				[LI]More: 5 Tiles.[/LIST]
 			</Text>
 		</Row>
 	</EnglishText>
