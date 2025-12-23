@@ -327,7 +327,7 @@
 			<Properties><LoadOrder>50</LoadOrder></Properties>
 			<Actions>
 				<UpdateDatabase>
-					<!-- <Item>data/independents/IndependentsUnitsMore.sql</Item> -->
+					<Item>data/independents/antiquity/IndependentsUnitsMore.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -335,7 +335,7 @@
 			<Properties><LoadOrder>50</LoadOrder></Properties>
 			<Actions>
 				<UpdateDatabase>
-					<!-- <Item>data/independents/IndependentsUnitsMore.sql</Item> -->
+					<Item>data/independents/antiquity/IndependentsUnitsLess.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -343,7 +343,7 @@
 			<Properties><LoadOrder>50</LoadOrder></Properties>
 			<Actions>
 				<UpdateDatabase>
-					<!-- <Item>data/independents/IndependentsUnitsMore.sql</Item> -->
+					<Item>data/independents/exploration/IndependentsUnitsMore.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -351,7 +351,7 @@
 			<Properties><LoadOrder>50</LoadOrder></Properties>
 			<Actions>
 				<UpdateDatabase>
-					<!-- <Item>data/independents/IndependentsUnitsMore.sql</Item> -->
+					<Item>data/independents/exploration/IndependentsUnitsLess.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -359,7 +359,7 @@
 			<Properties><LoadOrder>50</LoadOrder></Properties>
 			<Actions>
 				<UpdateDatabase>
-					<!-- <Item>data/independents/IndependentsUnitsMore.sql</Item> -->
+					<Item>data/independents/modern/IndependentsUnitsMore.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -367,7 +367,7 @@
 			<Properties><LoadOrder>50</LoadOrder></Properties>
 			<Actions>
 				<UpdateDatabase>
-					<!-- <Item>data/independents/IndependentsUnitsLess.sql</Item> -->
+					<Item>data/independents/modern/IndependentsUnitsLess.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

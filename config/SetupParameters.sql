@@ -52,7 +52,7 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES ("ZG_IndependentCountDomain", "ZG_LESS_INDEPENDENTS", "LOC_ZG_LESS_NAME", "LOC_ZG_INDEPENDENT_COUNT_ADDITIONAL_DESCRIPTION", 40);
 
--- Independent Power Spacing Options (Need to look into this more because different ages have different default values)
+-- Independent Power Spacing Options
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey,	GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex) 
     VALUES ("ZG_IndependentSpace", "LOC_ZG_INDEPENDENT_SPACE_NAME", "LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION","ZG_IndependentSpaceDomain", "ZG_DEFAULT", 1, "Game", "IndependentSpaceKey", "IndependentPowerOptions", "MPAdvancedIndependentPowerOptions", 0, 71);
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
@@ -66,8 +66,8 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey,	GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex) 
     VALUES ("ZG_IndependentUnitsCount", "LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME", "LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION","ZG_IndependentUnitsCountDomain", "ZG_DEFAULT", 1, "Game", "IndependentUnitsCountKey", "IndependentPowerOptions", "MPAdvancedIndependentPowerOptions", 0, 72);
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
-    VALUES ("ZG_IndependentUnitsCountDomain", "ZG_DEFAULT_INDEPENDENTS_UNIT_COUNT", "LOC_ZG_DEFAULT_NAME", "", 10);
+    VALUES ("ZG_IndependentUnitsCountDomain", "ZG_DEFAULT_INDEPENDENTS_UNIT_COUNT", "LOC_ZG_DEFAULT_NAME", "LOC_ZG_INDEPENDENT_INITIAL_UNITS_ADDITIONAL_DESCRIPTION_DEFAULT", 10);
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
-    VALUES ("ZG_IndependentUnitsCountDomain", "ZG_MORE_INDEPENDENTS_UNIT_COUNT", "LOC_ZG_MORE_NAME", "", 20);
+    VALUES ("ZG_IndependentUnitsCountDomain", "ZG_MORE_INDEPENDENTS_UNIT_COUNT", "LOC_ZG_MORE_NAME", "LOC_ZG_INDEPENDENT_INITIAL_UNITS_ADDITIONAL_DESCRIPTION_MORE", 20);
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
-    VALUES ("ZG_IndependentUnitsCountDomain", "ZG_LESS_INDEPENDENTS_UNIT_COUNT", "LOC_ZG_LESS_NAME", "", 30);
+    VALUES ("ZG_IndependentUnitsCountDomain", "ZG_LESS_INDEPENDENTS_UNIT_COUNT", "LOC_ZG_LESS_NAME", "LOC_ZG_INDEPENDENT_INITIAL_UNITS_ADDITIONAL_DESCRIPTION_LESS", 30);

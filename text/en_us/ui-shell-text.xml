@@ -55,7 +55,7 @@
 			</Text>
 		</Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION">
-			<Text> Sets the minimum distance for Independent Powers.[n]This may impact the total number of Independent Powers.</Text>
+			<Text>Sets the minimum distance for Independent Powers.[n]This may impact the total number of Independent Powers.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_ADDITIONAL_DESCRIPTION_LESS">
 			<Text>[BLIST][LI]Antiquity: 4 Tiles.[LI]Exploration: 3 Tiles.[LI]Modern: 2 Tiles.[/BLIST]</Text>
@@ -66,9 +66,26 @@
 		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_ADDITIONAL_DESCRIPTION_MORE">
 			<Text>[BLIST][LI]Antiquity: 7 Tiles.[LI]Exploration: 7 Tiles.[LI]Modern: 5 Tiles.[/BLIST]</Text>
 		</Row>
+
 		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION">
-			<Text> Sets the initial number of an Independent Power's units.
-				[n] [BLIST][LI]Less: 2 Units.[LI]Default: 4 Units.[LI]More: 6 Units.[/BLIST]
+			<Text>Sets the initial number of an Independent Power's units. [n]Independent Powers always start with 1[icon:UNIT_SCOUT]Scout.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_ADDITIONAL_DESCRIPTION_LESS">
+			<Text>
+				[BLIST][LI]Antiquity: 0[icon:UNIT_WARRIOR]Warriors.[LI]Exploration: 2[icon:UNIT_SWORDSMAN]Swordsmen.[LI]Modern: 3 [icon:UNIT_LINE_INFANTRY]Line Infantry.[/BLIST]
+				[n] [n]The number of units will depend upon the number of land tiles available within the first ring including the village center.
+			</Text>
+		</Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_ADDITIONAL_DESCRIPTION_DEFAULT">
+			<Text>
+				[BLIST][LI]Antiquity: 1[icon:UNIT_WARRIOR]Warrior.[LI]Exploration: 3[icon:UNIT_SWORDSMAN]Swordsmen.[LI]Modern: 4 [icon:UNIT_LINE_INFANTRY]Line Infantry.[/BLIST]
+				[n] [n]The number of units will depend upon the number of land tiles available within the first ring including the village center.
+			</Text>
+		</Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_ADDITIONAL_DESCRIPTION_MORE">
+			<Text>
+				[BLIST][LI]Antiquity: 2[icon:UNIT_WARRIOR]Warriors.[LI]Exploration: 4[icon:UNIT_SWORDSMAN]Swordsmen.[LI]Modern: 5 [icon:UNIT_LINE_INFANTRY]Line Infantry.[/BLIST]
+				[n] [n]The number of units will depend upon the number of land tiles available within the first ring including the village center.
 			</Text>
 		</Row>
 	</EnglishText>
