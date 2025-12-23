@@ -20,6 +20,8 @@
 	<ActionCriteria>
   		<Criteria id="always"><AlwaysMet/></Criteria>
 
+<!--************************* CRITERIA: SETTLER MOVEMENT ************************************-->
+
   		<Criteria id="slow-settlers"> <!-- Settler SLOW Movement Criteria Settings -->
     		<ConfigurationValueMatches>
       			<Group>Game</Group>
@@ -34,6 +36,7 @@
       			<Value>ZG_SETTLER_MOVES_FAST</Value>
     		</ConfigurationValueMatches>
   		</Criteria>
+<!--************************* CRITERIA: TREASURE CONVOY *************************************-->
 
   		<Criteria id="slow-treasure"> <!-- Treasure SLOW Movement Criteria Settings -->
 			<AgeInUse>AGE_EXPLORATION</AgeInUse>
@@ -51,6 +54,8 @@
       			<Value>ZG_TREASURE_MOVES_FAST</Value>
     		</ConfigurationValueMatches>
   		</Criteria>
+
+<!--************************* CRITERIA: INDEPENDENT COUNT ***********************************-->
 
 		<Criteria id="more-independents"> <!-- Independent Count MORE Criteria Settings -->
     		<ConfigurationValueMatches>
@@ -73,6 +78,8 @@
       			<Value>ZG_NONE_INDEPENDENTS</Value>
     		</ConfigurationValueMatches>
 		</Criteria>
+
+<!--************************* CRITERIA: INDEPENDENT SPACING *********************************-->
 
 		<Criteria id="more-independents-spacing-antiquity"> <!-- ANTIQUITY Independent Spacing MORE Criteria Settings -->
     		<AgeInUse>AGE_ANTIQUITY</AgeInUse>
@@ -123,21 +130,59 @@
     		</ConfigurationValueMatches>
 		</Criteria>
 
-		<Criteria id="more-independents-units"> <!-- Independent Units MORE Criteria Settings -->
-    		<ConfigurationValueMatches>
+<!--************************* CRITERIA: INDEPENDENT UNITS COUNT *****************************-->
+
+		<Criteria id="more-independents-units-antiquity"> <!-- ANTIQUITY Independent Units MORE Criteria Settings -->
+    		<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
       			<Group>Game</Group>
       			<ConfigurationId>IndependentUnitsCountKey</ConfigurationId>
       			<Value>ZG_MORE_INDEPENDENTS_UNIT_COUNT</Value>
     		</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="less-independents-units"> <!-- Independent Units LESS Criteria Settings -->
-    		<ConfigurationValueMatches>
+		<Criteria id="less-independents-units-antiquity"> <!-- ANTIQUITY Independent Units LESS Criteria Settings -->
+    		<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentUnitsCountKey</ConfigurationId>
+      			<Value>ZG_LESS_INDEPENDENTS_UNIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="more-independents-units-exploration"> <!-- EXPLORATION Independent Units MORE Criteria Settings -->
+    		<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentUnitsCountKey</ConfigurationId>
+      			<Value>ZG_MORE_INDEPENDENTS_UNIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="less-independents-units-exploration"> <!-- EXPLORATION Independent Units LESS Criteria Settings -->
+    		<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentUnitsCountKey</ConfigurationId>
+      			<Value>ZG_LESS_INDEPENDENTS_UNIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="more-independents-units-modern"> <!-- MODERN Independent Units MORE Criteria Settings -->
+    		<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentUnitsCountKey</ConfigurationId>
+      			<Value>ZG_MORE_INDEPENDENTS_UNIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="less-independents-units-modern"> <!-- MODERN Independent Units LESS Criteria Settings -->
+    		<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
       			<Group>Game</Group>
       			<ConfigurationId>IndependentUnitsCountKey</ConfigurationId>
       			<Value>ZG_LESS_INDEPENDENTS_UNIT_COUNT</Value>
     		</ConfigurationValueMatches>
 		</Criteria>
 	</ActionCriteria>
+
+<!--************************* SETTINGS: SHELL ***********************************************-->
 
 	<ActionGroups>
 		<ActionGroup id="zg-options-settings-shell" scope="shell" criteria="always">
@@ -153,9 +198,8 @@
 			</Actions>
 		</ActionGroup>
 
-		<!--*******************************************************************************************
-		******************************** SETTLER MOVEMENT SETTINGS ************************************
-		********************************************************************************************-->
+<!--************************* SETTINGS: SETTLER MOVEMENT ************************************-->
+
 		<ActionGroup id="zg-slow-settlers" scope="game" criteria="slow-settlers"> <!-- Settler SLOW Movement Game Settings -->
 			<Properties><LoadOrder>50</LoadOrder></Properties>
 			<Actions>
@@ -177,9 +221,8 @@
 			</Actions>
 		</ActionGroup>
 
-		<!--*******************************************************************************************
-		******************************** TREASURE CONVOY SETTINGS *************************************
-		********************************************************************************************-->
+<!--************************* SETTINGS: TREASURE CONVOY *************************************-->
+
 		<ActionGroup id="zg-slow-treasure" scope="game" criteria="slow-treasure"> <!-- Treasure SLOW Movement Game Settings -->
 			<Properties><LoadOrder>50</LoadOrder></Properties>
 			<Actions>
@@ -201,9 +244,8 @@
 			</Actions>
 		</ActionGroup>
 
-		<!--*******************************************************************************************
-		******************************* INDEPENDENT COUNT SETTINGS ************************************
-		********************************************************************************************-->
+<!--************************* SETTINGS: INDEPENDENT COUNT ***********************************-->
+
 		<ActionGroup id="zg-more-independents" scope="game" criteria="more-independents"> <!-- MORE Independents Game Settings -->
 			<Properties><LoadOrder>50</LoadOrder></Properties>
 			<Actions>
@@ -229,9 +271,8 @@
 			</Actions>
 		</ActionGroup>
 
-		<!--*******************************************************************************************
-		***************************** INDEPENDENT SPACING SETTINGS ************************************
-		********************************************************************************************-->
+<!--************************* SETTINGS: INDEPENDENT SPACING *********************************-->
+
 		<ActionGroup id="zg-more-independents-spacing-antiquity" scope="game" criteria="more-independents-spacing-antiquity">
 			<Properties><LoadOrder>50</LoadOrder></Properties>
 			<Actions>
@@ -281,10 +322,8 @@
 			</Actions>
 		</ActionGroup>
 
-		<!--*******************************************************************************************
-		***************************** INDEPENDENT UNITS COUNT SETTINGS ********************************
-		********************************************************************************************-->
-		<ActionGroup id="zg-more-independents-units" scope="game" criteria="more-independents-units"> <!-- MORE Independents Units Game Settings -->
+<!--************************* SETTINGS: INDEPENDENT UNITS COUNT *****************************-->
+		<ActionGroup id="zg-more-independents-units-antiquity" scope="game" criteria="more-independents-units-antiquity">
 			<Properties><LoadOrder>50</LoadOrder></Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -292,7 +331,39 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-less-independents-units" scope="game" criteria="less-independents-units"> <!-- LESS Independents Units Game Settings -->
+		<ActionGroup id="zg-less-independents-units-antiquity" scope="game" criteria="less-independents-units-antiquity">
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<!-- <Item>data/independents/IndependentsUnitsMore.sql</Item> -->
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-more-independents-units-exploration" scope="game" criteria="more-independents-units-exploration">
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<!-- <Item>data/independents/IndependentsUnitsMore.sql</Item> -->
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-less-independents-units-exploration" scope="game" criteria="less-independents-units-exploration">
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<!-- <Item>data/independents/IndependentsUnitsMore.sql</Item> -->
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-more-independents-units-modern" scope="game" criteria="more-independents-units-modern">
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<!-- <Item>data/independents/IndependentsUnitsMore.sql</Item> -->
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-less-independents-units-modern" scope="game" criteria="less-independents-units-modern">
 			<Properties><LoadOrder>50</LoadOrder></Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -301,6 +372,8 @@
 			</Actions>
 		</ActionGroup>
 	</ActionGroups>
+
+<!--************************* LOCALIZED TEXT ************************************************-->
 
 	<LocalizedText>
 		<File>text/en_us/mod-info-text.xml</File>
