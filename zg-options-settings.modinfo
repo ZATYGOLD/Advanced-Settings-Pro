@@ -36,6 +36,7 @@
       			<Value>ZG_SETTLER_MOVES_FAST</Value>
     		</ConfigurationValueMatches>
   		</Criteria>
+
 <!--************************* CRITERIA: TREASURE CONVOY *************************************-->
 
   		<Criteria id="slow-treasure"> <!-- Treasure SLOW Movement Criteria Settings -->
@@ -323,6 +324,7 @@
 		</ActionGroup>
 
 <!--************************* SETTINGS: INDEPENDENT UNITS COUNT *****************************-->
+
 		<ActionGroup id="zg-more-independents-units-antiquity" scope="game" criteria="more-independents-units-antiquity">
 			<Properties><LoadOrder>50</LoadOrder></Properties>
 			<Actions>
