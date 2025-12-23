@@ -71,3 +71,9 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES ("ZG_IndependentUnitsCountDomain", "ZG_MORE_INDEPENDENTS_UNIT_COUNT", "LOC_ZG_MORE_NAME", "LOC_ZG_INDEPENDENT_INITIAL_UNITS_ADDITIONAL_DESCRIPTION_MORE", 20);
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES ("ZG_IndependentUnitsCountDomain", "ZG_LESS_INDEPENDENTS_UNIT_COUNT", "LOC_ZG_LESS_NAME", "LOC_ZG_INDEPENDENT_INITIAL_UNITS_ADDITIONAL_DESCRIPTION_LESS", 30);
+
+-- Independent Power Hostility Chance Options
+INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey,	GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex) 
+    VALUES ("ZG_IndependentHostilityChance", "LOC_ZG_INDEPENDENT_HOSTILITY_CHANCE_NAME", "LOC_ZG_INDEPENDENT_HOSTILITY_CHANCE_DESCRIPTION","ZG_IndependentHostilityChanceDomain", "ZG_DEFAULT", 1, "Game", "IndependentHostilityChanceKey", "IndependentPowerOptions", "MPAdvancedIndependentPowerOptions", 0, 73);
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES ("ZG_IndependentHostilityChanceDomain", "ZG_DEFAULT_HOSTILITY_CHANCE", "LOC_ZG_DEFAULT_NAME", "", 10);
