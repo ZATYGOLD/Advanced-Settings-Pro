@@ -1,6 +1,6 @@
--- data/independents/IndependentsSpacingMore.sql
+-- data/independents/antiquity/IndependentsSpacingMore.sql
 -- Author: Zatygold
 
 UPDATE GlobalParameters
-SET Value = 5
+SET Value = 7
 WHERE Name = 'INDEPENDENT_SPACING';
