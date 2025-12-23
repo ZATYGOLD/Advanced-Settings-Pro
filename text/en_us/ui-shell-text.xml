@@ -20,7 +20,7 @@
 			<Text> Sets the settler base movement and embarked speed.
 				[n] [BLIST][LI]Slow: 2[icon:Action_Move]Base and 1[icon:Action_Move]Embarked Movement.
 				[LI]Default: 3[icon:Action_Move]Base and 2[icon:Action_Move]Embarked Movement.
-				[LI]Fast: 4[icon:Action_Move]Base and 3[icon:Action_Move]Embarked Movement.[/LIST]
+				[LI]Fast: 4[icon:Action_Move]Base and 3[icon:Action_Move]Embarked Movement.[/BLIST]
 			</Text>
 		</Row>
 
@@ -30,7 +30,7 @@
 			<Text> Sets the treasure convoy base movement and embarked speed.
 				[n] [BLIST][LI]Slow: 1[icon:Action_Move]Base and Embarked Movement.
 				[LI]Default: 2[icon:Action_Move]Base and Embarked Movement.
-				[LI]Fast: 3[icon:Action_Move]Base and Embarked Movement.[/LIST]
+				[LI]Fast: 3[icon:Action_Move]Base and Embarked Movement.[/BLIST]
 			</Text>
 		</Row>
 
@@ -45,27 +45,30 @@
 				[n] [BLIST][LI]None: 0[icon:INDEPENDENT_POWER]Independent Powers.
 				[LI]Less: 2[icon:INDEPENDENT_POWER]Independent Powers per Civilization.
 				[LI]Default: 3[icon:INDEPENDENT_POWER]Independent Powers per Civilization.
-				[LI]More: 4[icon:INDEPENDENT_POWER]Independent Powers per Civilization.[/LIST]
+				[LI]More: 4[icon:INDEPENDENT_POWER]Independent Powers per Civilization.[/BLIST]
 			</Text>
 		</Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_ADDITIONAL_DESCRIPTION">
 			<Text> 
 				This will attempt to spawn the desired amount, but may not get the exact expected number.
-				However, this will get as close as possible to the expected number.
+				[n]However, this will get as close as possible to the expected number.
 			</Text>
 		</Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION">
-			<Text> Sets the minimum spacing for Independent Powers.
-				[n] [BLIST][LI]Less: 3 Tiles.
-				[LI]Default: 4 Tiles.
-				[LI]More: 5 Tiles.[/LIST]
-			</Text>
+			<Text> Sets the minimum distance for Independent Powers.[n]This may impact the total number of Independent Powers.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_ADDITIONAL_DESCRIPTION_LESS">
+			<Text>[BLIST][LI]Antiquity: 4 Tiles.[LI]Exploration: 3 Tiles.[LI]Modern: 2 Tiles.[/BLIST]</Text>
+		</Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_ADDITIONAL_DESCRIPTION_DEFAULT">
+			<Text>[BLIST][LI]Antiquity: 6 Tiles.[LI]Exploration: 6 Tiles.[LI]Modern: 4 Tiles.[/BLIST]</Text>
+		</Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_ADDITIONAL_DESCRIPTION_MORE">
+			<Text>[BLIST][LI]Antiquity: 7 Tiles.[LI]Exploration: 7 Tiles.[LI]Modern: 5 Tiles.[/BLIST]</Text>
 		</Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION">
 			<Text> Sets the initial number of an Independent Power's units.
-				[n] [BLIST][LI]Less: 2 Units.
-				[LI]Default: 4 Units.
-				[LI]More: 6 Units.[/LIST]
+				[n] [BLIST][LI]Less: 2 Units.[LI]Default: 4 Units.[LI]More: 6 Units.[/BLIST]
 			</Text>
 		</Row>
 	</EnglishText>

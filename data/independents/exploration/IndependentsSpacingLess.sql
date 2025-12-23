@@ -1,4 +1,4 @@
--- data/independents/IndependentsSpacingLess.sql
+-- data/independents/exploration/IndependentsSpacingLess.sql
 -- Author: Zatygold
 
 UPDATE GlobalParameters

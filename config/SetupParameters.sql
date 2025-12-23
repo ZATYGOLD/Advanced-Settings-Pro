@@ -56,11 +56,11 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey,	GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex) 
     VALUES ("ZG_IndependentSpace", "LOC_ZG_INDEPENDENT_SPACE_NAME", "LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION","ZG_IndependentSpaceDomain", "ZG_DEFAULT", 1, "Game", "IndependentSpaceKey", "IndependentPowerOptions", "MPAdvancedIndependentPowerOptions", 0, 71);
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
-    VALUES ("ZG_IndependentSpaceDomain", "ZG_DEFAULT_INDEPENDENTS_SPACING", "LOC_ZG_DEFAULT_NAME", "", 10);
+    VALUES ("ZG_IndependentSpaceDomain", "ZG_DEFAULT_INDEPENDENTS_SPACING", "LOC_ZG_DEFAULT_NAME", "LOC_ZG_INDEPENDENT_SPACE_ADDITIONAL_DESCRIPTION_DEFAULT", 10);
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
-    VALUES ("ZG_IndependentSpaceDomain", "ZG_MORE_INDEPENDENTS_SPACING", "LOC_ZG_MORE_NAME", "", 20);
+    VALUES ("ZG_IndependentSpaceDomain", "ZG_MORE_INDEPENDENTS_SPACING", "LOC_ZG_MORE_NAME", "LOC_ZG_INDEPENDENT_SPACE_ADDITIONAL_DESCRIPTION_MORE", 20);
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
-    VALUES ("ZG_IndependentSpaceDomain", "ZG_LESS_INDEPENDENTS_SPACING", "LOC_ZG_LESS_NAME", "", 30);
+    VALUES ("ZG_IndependentSpaceDomain", "ZG_LESS_INDEPENDENTS_SPACING", "LOC_ZG_LESS_NAME", "LOC_ZG_INDEPENDENT_SPACE_ADDITIONAL_DESCRIPTION_LESS", 30);
 
 -- Independent Power Initial Units Count Options
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey,	GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex) 

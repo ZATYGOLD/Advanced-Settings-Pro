@@ -74,15 +74,49 @@
     		</ConfigurationValueMatches>
 		</Criteria>
 
-		<Criteria id="more-independents-spacing"> <!-- Independent Spacing MORE Criteria Settings -->
-    		<ConfigurationValueMatches>
+		<Criteria id="more-independents-spacing-antiquity"> <!-- ANTIQUITY Independent Spacing MORE Criteria Settings -->
+    		<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
       			<Group>Game</Group>
       			<ConfigurationId>IndependentSpaceKey</ConfigurationId>
       			<Value>ZG_MORE_INDEPENDENTS_SPACING</Value>
     		</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="less-independents-spacing"> <!-- Independent Spacing LESS Criteria Settings -->
-    		<ConfigurationValueMatches>
+		<Criteria id="less-independents-spacing-antiquity"> <!-- ANTIQUITY Independent Spacing LESS Criteria Settings -->
+    		<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentSpaceKey</ConfigurationId>
+      			<Value>ZG_LESS_INDEPENDENTS_SPACING</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="more-independents-spacing-exploration"> <!-- EXPLORATION Independent Spacing MORE Criteria Settings -->
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentSpaceKey</ConfigurationId>
+      			<Value>ZG_MORE_INDEPENDENTS_SPACING</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="less-independents-spacing-exploration"> <!-- EXPLORATION Independent Spacing LESS Criteria Settings -->
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentSpaceKey</ConfigurationId>
+      			<Value>ZG_LESS_INDEPENDENTS_SPACING</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="more-independents-spacing-modern"> <!-- MODERN Independent Spacing MORE Criteria Settings -->
+    		<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentSpaceKey</ConfigurationId>
+      			<Value>ZG_MORE_INDEPENDENTS_SPACING</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="less-independents-spacing-modern"> <!-- MODERN Independent Spacing LESS Criteria Settings -->
+    		<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
       			<Group>Game</Group>
       			<ConfigurationId>IndependentSpaceKey</ConfigurationId>
       			<Value>ZG_LESS_INDEPENDENTS_SPACING</Value>
@@ -198,19 +232,51 @@
 		<!--*******************************************************************************************
 		***************************** INDEPENDENT SPACING SETTINGS ************************************
 		********************************************************************************************-->
-		<ActionGroup id="zg-more-independents-spacing" scope="game" criteria="more-independents-spacing"> <!-- MORE Independents Spacing Game Settings -->
+		<ActionGroup id="zg-more-independents-spacing-antiquity" scope="game" criteria="more-independents-spacing-antiquity">
 			<Properties><LoadOrder>50</LoadOrder></Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/independents/IndependentsSpacingMore.sql</Item>
+					<Item>data/independents/antiquity/IndependentsSpacingMore.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-less-independents-spacing" scope="game" criteria="less-independents-spacing"> <!-- LESS Independents Spacing Game Settings -->
+		<ActionGroup id="zg-less-independents-spacing-antiquity" scope="game" criteria="less-independents-spacing-antiquity">
 			<Properties><LoadOrder>50</LoadOrder></Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/independents/IndependentsSpacingLess.sql</Item>
+					<Item>data/independents/antiquity/IndependentsSpacingLess.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-more-independents-spacing-exploration" scope="game" criteria="more-independents-spacing-exploration">
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/exploration/IndependentsSpacingMore.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-less-independents-spacing-exploration" scope="game" criteria="less-independents-spacing-exploration">
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/exploration/IndependentsSpacingLess.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-more-independents-spacing-modern" scope="game" criteria="more-independents-spacing-modern">
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/modern/IndependentsSpacingMore.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-less-independents-spacing-modern" scope="game" criteria="less-independents-spacing-modern">
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/modern/IndependentsSpacingLess.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
