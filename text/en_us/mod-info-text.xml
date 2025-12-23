@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Database>
 	<EnglishText>
-		<Row Tag="LOC_MODULE_ZGOPTIION_SETTINGS">
-			<Text>Zatygold's Option Settings</Text>
+		<Row Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME">
+			<Text>Zatygold's Advanced Settings Pro</Text>
 		</Row>
-		<Row Tag="LOC_MODULE_ZGOPTION_SETTINGS_DESC">
+		<Row Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION">
 			<Text>Its just my options, bro!</Text>
 		</Row>
 	</EnglishText>

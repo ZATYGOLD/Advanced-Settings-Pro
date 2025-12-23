@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="Zatygold's Option Settings" version="00030" xmlns="ModInfo">
+<Mod id="Zatygold's Advanced Settings Pro" version="00030" xmlns="ModInfo">
 	<Properties>
-		<Name>LOC_MODULE_ZGOPTIION_SETTINGS</Name>
-		<Description>LOC_MODULE_ZGOPTION_SETTINGS_DESC</Description>
+		<Name>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME</Name>
+		<Description>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION</Description>
 		<Authors>Zatygold</Authors>
         <Version>0.0.30</Version>
         <Package>Mod</Package>
