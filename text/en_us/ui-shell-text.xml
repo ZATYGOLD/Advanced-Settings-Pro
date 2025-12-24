@@ -7,6 +7,8 @@
 
 	<!-- Universal Names -->
 		<Row Tag="LOC_ZG_DEFAULT_NAME"><Text>Default</Text></Row>
+		<Row Tag="LOC_ZG_BALANCED_NAME"><Text>Balanced</Text></Row>
+		<Row Tag="LOC_ZG_NEUTRAL_NAME"><Text>Neutral</Text></Row>
 		<Row Tag="LOC_ZG_QUICK_NAME"><Text>Quick</Text></Row>
 		<Row Tag="LOC_ZG_FAST_NAME"><Text>Fast</Text></Row>
 		<Row Tag="LOC_ZG_SLOW_NAME"><Text>Slow</Text></Row>
