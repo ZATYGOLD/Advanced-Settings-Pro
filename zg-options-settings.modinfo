@@ -397,7 +397,7 @@
 			<Properties><LoadOrder>50</LoadOrder></Properties>
 			<Actions>
 				<UpdateDatabase>
-					<!-- <Item>data/independents/IndependentHostilityNeutral.sql</Item> -->
+					<Item>data/independents/IndependentHostilityNeutral.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
