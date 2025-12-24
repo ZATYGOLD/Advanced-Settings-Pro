@@ -98,30 +98,22 @@
 				[n]3 types of Independent Powers (Friendly, Neutral, and Hostile) randomly spawn.
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_INDEPENDENT_HOSTILITY_CHANCE_ADDITIONAL_DESCRIPTION_LESS">
+		<Row Tag="LOC_ZG_INDEPENDENT_HOSTILITY_BALANCED_DESCRIPTION">
 			<Text>
 				[BLIST]
 				[LI]Friendly: 0% Hostility Chance and 0% Neutral Chance. 
 				[LI]Neutral: 40% Hostility Chance and 100% Neutral Chance.  
 				[LI]Hostile: 60% Hostility Chance and 100% Neutral Chance.[/BLIST]
-			</Text>
-		</Row>
-		<Row Tag="LOC_ZG_INDEPENDENT_HOSTILITY_CHANCE_ADDITIONAL_DESCRIPTION_DEFAULT">
-			<Text>
-				[BLIST]
-				[LI]Friendly: 0% Hostility Chance and 0% Neutral Chance. 
-				[LI]Neutral: 80% Hostility Chance and 100% Neutral Chance.  
-				[LI]Hostile: 80% Hostility Chance and 100% Neutral Chance.[/BLIST]
-
 				[n] [n]Friendly will always be friendly. Neutral and Hostile has 80% hostile, 20% neutral, and 0% friendly.
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_INDEPENDENT_HOSTILITY_CHANCE_ADDITIONAL_DESCRIPTION_MORE">
+		<Row Tag="LOC_ZG_INDEPENDENT_HOSTILITY_NEUTRAL_DESCRIPTION">
 			<Text>
 				[BLIST]
 				[LI]Friendly: 20% Hostility Chance and 20% Neutral Chance. 
 				[LI]Neutral: 80% Hostility Chance and 100% Neutral Chance.  
 				[LI]Hostile: 100% Hostility Chance and 80% Neutral Chance.[/BLIST]
+				[n] [n]Friendly will always be friendly. Neutral and Hostile has 80% hostile, 20% neutral, and 0% friendly.
 			</Text>
 		</Row>
 	</EnglishText>
