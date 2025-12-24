@@ -390,6 +390,25 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
+
+<!--************************* SETTINGS: INDEPENDENT HOSTILITY *******************************-->
+
+		<ActionGroup id="zg-neutral-independents-hostility" scope="game" criteria="neutral-independents-hostility">
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<!-- <Item>data/independents/IndependentHostilityNeutral.sql</Item> -->
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-balanced-independents-hostility" scope="game" criteria="balanced-independents-hostility">
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<!-- <Item>data/independents/IndependentHostilityBalanced.sql</Item> -->
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
 	</ActionGroups>
 
 <!--************************* LOCALIZED TEXT ************************************************-->

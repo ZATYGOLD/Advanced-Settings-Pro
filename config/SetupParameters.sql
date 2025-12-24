@@ -16,7 +16,7 @@ INSERT OR IGNORE INTO ParameterGroups (GroupId, Name)
 --*******************************************************
 -- Settler Movement Options
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey,	GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex) 
-    VALUES ("ZG_SettlerMovementSpeed", "LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME", "LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION", "ZG_SettlerMovementDomain","ZG_DEFAULT", 1, "Game","SettlerMovementKey", "UnitMovementOptions", "MPAdvancedUnitMovementOptions", 0, 1050);
+    VALUES ("ZG_SettlerMovementSpeed", "LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME", "LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION", "ZG_SettlerMovementDomain","ZG_DEFAULT", 1, "Game", "SettlerMovementKey", "UnitMovementOptions", "MPAdvancedUnitMovementOptions", 0, 1050);
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES ("ZG_SettlerMovementDomain", "ZG_SETTLER_MOVES_DEFAULT", "LOC_ZG_DEFAULT_NAME", "", 10);
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
