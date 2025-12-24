@@ -181,6 +181,23 @@
       			<Value>ZG_LESS_INDEPENDENTS_UNIT_COUNT</Value>
     		</ConfigurationValueMatches>
 		</Criteria>
+
+<!--************************* CRITERIA: INDEPENDENT HOSTILITY *******************************-->
+
+		<Criteria id="neutral-independents-hostility">
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentHostility</ConfigurationId>
+      			<Value>ZG_INDEPENDENT_HOSTILITY_NEUTRAL</Value>
+    		</ConfigurationValueMatches>
+		<Criteria id="balanced-independents-hostility">
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentHostility</ConfigurationId>
+      			<Value>ZG_INDEPENDENT_HOSTILITY_BALANCED</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		</Criteria>
 	</ActionCriteria>
 
 <!--************************* SETTINGS: SHELL ***********************************************-->
