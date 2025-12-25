@@ -181,23 +181,6 @@
       			<Value>ZG_LESS_INDEPENDENTS_UNIT_COUNT</Value>
     		</ConfigurationValueMatches>
 		</Criteria>
-
-<!--************************* CRITERIA: INDEPENDENT HOSTILITY *******************************-->
-
-		<Criteria id="tense-independents-hostility">
-			<ConfigurationValueMatches>
-      			<Group>Game</Group>
-      			<ConfigurationId>IndependentHostility</ConfigurationId>
-      			<Value>ZG_INDEPENDENT_HOSTILITY_TENSE</Value>
-    		</ConfigurationValueMatches>
-		<Criteria id="calm-independents-hostility">
-			<ConfigurationValueMatches>
-      			<Group>Game</Group>
-      			<ConfigurationId>IndependentHostility</ConfigurationId>
-      			<Value>ZG_INDEPENDENT_HOSTILITY_CALM</Value>
-    		</ConfigurationValueMatches>
-		</Criteria>
-		</Criteria>
 	</ActionCriteria>
 
 <!--************************* SETTINGS: SHELL ***********************************************-->
@@ -387,25 +370,6 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/independents/modern/IndependentsUnitsLess.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-
-<!--************************* SETTINGS: INDEPENDENT HOSTILITY *******************************-->
-
-		<ActionGroup id="zg-tense-independents-hostility" scope="game" criteria="tense-independents-hostility">
-			<Properties><LoadOrder>50</LoadOrder></Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/independents/IndependentHostilityTense.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-calm-independents-hostility" scope="game" criteria="calm-independents-hostility">
-			<Properties><LoadOrder>50</LoadOrder></Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/independents/IndependentHostilityCalm.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

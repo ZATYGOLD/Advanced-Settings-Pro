@@ -71,9 +71,3 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES ("ZG_IndependentUnitsCountDomain", "ZG_MORE_INDEPENDENTS_UNIT_COUNT", "LOC_ZG_MORE_NAME", "LOC_ZG_INDEPENDENT_INITIAL_UNITS_ADDITIONAL_DESCRIPTION_MORE", 20);
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES ("ZG_IndependentUnitsCountDomain", "ZG_LESS_INDEPENDENTS_UNIT_COUNT", "LOC_ZG_LESS_NAME", "LOC_ZG_INDEPENDENT_INITIAL_UNITS_ADDITIONAL_DESCRIPTION_LESS", 30);
-
--- Independent Power Hostility Chance Options
-INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
-    VALUES ("StandardIndependentHostilities", "ZG_INDEPENDENT_HOSTILITY_CALM", "LOC_ZG_CALM_NAME", "LOC_ZG_INDEPENDENT_HOSTILITY_CALM_DESCRIPTION", 15);
-INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
-    VALUES ("StandardIndependentHostilities", "ZG_INDEPENDENT_HOSTILITY_TENSE", "LOC_ZG_TENSE_NAME", "LOC_ZG_INDEPENDENT_HOSTILITY_TENSE_DESCRIPTION", 25);
