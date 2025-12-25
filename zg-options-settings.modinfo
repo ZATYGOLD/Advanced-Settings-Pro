@@ -189,16 +189,16 @@
 		<ActionGroup id="zg-advanced-options-shell" scope="shell" criteria="always">
 			<Properties><LoadOrder>1000</LoadOrder></Properties>
 			<Actions>
-				<UIScripts>
-					<Item>ui/mp-change-mementos.js</Item>
-				</UIScripts>
+				<UpdateText>
+                	<Item>text/en_us/ui-shell-text.xml</Item>
+            	</UpdateText>
 			    <UpdateDatabase>
 					<Item>config/SetupGameOptions.sql</Item>
 					<Item>config/SetupParameters.sql</Item>
             	</UpdateDatabase>
-				<UpdateText>
-                	<Item>text/en_us/ui-shell-text.xml</Item>
-            	</UpdateText>
+				<UIScripts>
+					<Item>ui/mp-change-mementos.js</Item>
+				</UIScripts>
 			</Actions>
 		</ActionGroup>
 
