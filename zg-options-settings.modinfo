@@ -186,9 +186,12 @@
 <!--************************* SETTINGS: SHELL ***********************************************-->
 
 	<ActionGroups>
-		<ActionGroup id="zg-options-settings-shell" scope="shell" criteria="always">
-			<Properties><LoadOrder>10</LoadOrder></Properties>
+		<ActionGroup id="zg-advanced-options-shell" scope="shell" criteria="always">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
 			<Actions>
+				<UIScripts>
+					<Item>ui/mp-change-mementos.js</Item>
+				</UIScripts>
 			    <UpdateDatabase>
 					<Item>config/SetupGameOptions.sql</Item>
 					<Item>config/SetupParameters.sql</Item>

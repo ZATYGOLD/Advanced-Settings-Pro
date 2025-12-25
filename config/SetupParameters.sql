@@ -10,6 +10,10 @@ INSERT OR IGNORE INTO ParameterGroups (GroupId, Name)
     VALUES ("IndependentPowerOptions", "LOC_GROUPID_INDEPENDENTPOWEROPTIONS");
 INSERT OR IGNORE INTO ParameterGroups (GroupId, Name) 
     VALUES ("MPAdvancedIndependentPowerOptions", "LOC_GROUPID_INDEPENDENTPOWEROPTIONS");
+INSERT OR IGNORE INTO ParameterGroups (GroupId, Name) 
+    VALUES ("MementoOptions", "LOC_GROUPID_MEMENTOOPTIONS");
+INSERT OR IGNORE INTO ParameterGroups (GroupId, Name) 
+    VALUES ("MPAdvancedMementoOptions", "LOC_GROUPID_MEMENTOOPTIONS");
 
 --*******************************************************
 --***************** SETTLER SETTINGS ********************
@@ -71,3 +75,13 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES ("ZG_IndependentUnitsCountDomain", "ZG_MORE_INDEPENDENTS_UNIT_COUNT", "LOC_ZG_MORE_NAME", "LOC_ZG_INDEPENDENT_INITIAL_UNITS_ADDITIONAL_DESCRIPTION_MORE", 20);
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES ("ZG_IndependentUnitsCountDomain", "ZG_LESS_INDEPENDENTS_UNIT_COUNT", "LOC_ZG_LESS_NAME", "LOC_ZG_INDEPENDENT_INITIAL_UNITS_ADDITIONAL_DESCRIPTION_LESS", 30);
+
+--*******************************************************
+--****************** MEMENTO SETTINGS *******************
+--*******************************************************
+INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey,	GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex) 
+    VALUES ("ZG_ChangeMementos", "LOC_ZG_CHANGE_MEMENTOS_NAME", "LOC_ZG_CHANGE_MEMENTOS_DESCRIPTION","bool", 0, 1, "Game", "ChangeMementosKey", "MementoOptions", "MPAdvancedMementoOptions", 0, 5000);
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES ("bool", "ZG_DISABLE_CHANGE_MEMENTOS", "LOC_ZG_DISABLE_NAME", "", 10);
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES ("bool", "ZG_ENABLE_CHANGE_MEMENTOS", "LOC_ZG_ENABLE_NAME", "", 20);

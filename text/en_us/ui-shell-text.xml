@@ -4,9 +4,12 @@
 	<!-- Unique Group Ids -->
 		<Row Tag="LOC_GROUPID_UNITMOVEMENTOPTIONS"><Text>Unit Movement Settings</Text></Row>
 		<Row Tag="LOC_GROUPID_INDEPENDENTPOWEROPTIONS"><Text>Independent Power Settings</Text></Row>
+		<Row Tag="LOC_GROUPID_MEMENTOOPTIONS"><Text>Memento Settings</Text></Row>
 
 	<!-- Universal Names -->
 		<Row Tag="LOC_ZG_DEFAULT_NAME"><Text>Default</Text></Row>
+		<Row Tag="LOC_ZG_ENABLE_NAME"><Text>Enable</Text></Row>
+		<Row Tag="LOC_ZG_DISABLE_NAME"><Text>Disable</Text></Row>
 		<Row Tag="LOC_ZG_QUICK_NAME"><Text>Quick</Text></Row>
 		<Row Tag="LOC_ZG_FAST_NAME"><Text>Fast</Text></Row>
 		<Row Tag="LOC_ZG_SLOW_NAME"><Text>Slow</Text></Row>
@@ -34,12 +37,11 @@
 			</Text>
 		</Row>
 
-		<!-- Independent Power Names -->
+		<!-- Independent Power Labels -->
 		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_NAME"><Text>Initial Independent Amount</Text></Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_NAME"><Text>Independent Spacing</Text></Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME"><Text>Initial Independent Units Amount</Text></Row>
 
-		<!-- Independent Power Descriptions -->
         <Row Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION">
 			<Text> Sets the initial number of Independent Powers.
 				[n] [BLIST][LI]None: 0[icon:INDEPENDENT_POWER]Independent Powers.
@@ -88,5 +90,13 @@
 				[n] [n]The number of units will depend upon the number of land tiles available within the first ring including the village center.
 			</Text>
 		</Row>
+
+		<!-- Memento Labels -->
+		<Row Tag="LOC_ZG_CHANGE_MEMENTOS_NAME"><Text>Change Mementos</Text></Row>
+
+		<Row Tag="LOC_ZG_CHANGE_MEMENTOS_DESCRIPTION">
+			<Text> Sets whether mementos can be changed during an age transition.</Text>
+		</Row>
+
 	</EnglishText>
 </Database>
