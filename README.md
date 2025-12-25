@@ -1,0 +1,71 @@
+__TO DO:__
+- Review Single-player only settings and add them to multiplayer settings. :white_check_mark: 
+- My created settings need to be moved to the correct area for multiplayer lobbies (Advanced) :white_check_mark: 
+- Single Player Single Age Game :white_check_mark: 
+  - Enabled, Disabled
+- End of Age Countdown
+  - No Countdown, 5 Turns, 10 Turns, 20 Turns, 25 Turns
+- Camera Settings
+  - Zoom In and Out further
+  - Persistent angle change
+- Expand on the "No Age Transition"
+  - Look into setting which age to no transition after
+- Legacy Points needed for each Victory
+  - None, Less, Default, More
+- Natural Wonders
+  - None: 0 Wonders
+  - Less: Default -2 on each map size
+  - Default: Map Size Dependent
+  - More: Default +2 on each map size
+- Crisis Speed
+  - Slow: 60%, 75%, 90%
+  - Default: 70%, 80%, 90%
+  - Fast: 80%, 85%, 90%
+- Settlement Limit
+  - None or Custom
+  - Less: 2, 6, 13
+  - Default: 3, 8, 16
+  - More: 4, 10, 19
+- Settlement Placement Distance
+  - Less: 2 Tiles
+  - Default: 3 Tiles
+  - More: 4 Tiles
+- Mementos
+  - Unlocked: All Unlocked for everyone
+  - Default: Each player's current locked and unlocked mementos
+  - Locked: All Locked for everyone
+- Memento Slots
+  - None: 0 Slots
+  - Less: 1 Slot
+  - Default: 2 Slots
+  - More: 3 Slots
+- Change Mementos on Age Transition
+  - Enabled, Disabled
+- Memento Banning System
+  - Enable/Disable
+  - Game Setting for number of bans each player gets
+
+**__Independent Power Settings__**
+- Independent Spacing :white_check_mark: 
+  - Less: Antiquity (4), Exploration (3), Modern (2)
+  - Default: Antiquity (**6**), Exploration (6), Modern (4)
+  - More: Antiquity (7), Exploration (7), Modern (5)
+- Independent Gold Dispersal Amount
+  - Less: Antiquity (??), Exploration (200), Modern (400)
+  - Default: Antiquity (**0?**), Exploration (400), Modern (600) *Antiquity gave 15 Influence on Online Speed for the 1st Dispersal; Also gave 50 Science for Dispersing Science IP; Seems to give 50 Yield Type for the IP Type*
+  - More: Antiquity (??), Exploration (600), Modern (800)
+- Independent Initial Unit Amount :white_check_mark: 
+  - Less: Antiquity (0), Exploration (2), Modern (3)
+  - Default: Antiquity (**1**), Exploration (3), Modern (4)
+  - More: Antiquity (2), Exploration (4), Modern (5)
+- Initial Independent Hostility (Hostility, Neutrality) :no_entry_sign: 
+  - **Hostile: 100% Hostile and 0% Non-Hostile (0% Neutral + 0% Friendly)**
+    - Friendly (100%, 0%), Neutral (100%, 0%), Hostile (100%, 0%)
+  - Tense: ~70% Hostile (33.33% Hostile + 33.33% Neutral + 3.33% Friendly) and ~30% Non-Hostile (29.99% Friendly + 0% Neutral)
+    - Friendly (10%, 0%), Neutral (100%, 0%), Hostile (100%, 0%)
+  - **Default: ~53% Hostile (26.66% Hostile + 26.66% Neutral) and ~47% Non-Hostile (6.66% Hostile + 6.66% Neutral + 33.33% Friendly)**
+    - Friendly (0%, 0%), Neutral (80%, 100%), Hostile (80%, 100%)
+  - Calm: ~30% Hostile (33.33% Hostile + 33.33% Neutral) and ~70% Non-Hostile (3.33% Hostile + 33.33% Neutral + 33.33% Friendly)
+    - Friendly (0%, 0%), Neutral (0%, 100%), Hostile (90%, 100%)
+  - **Friendly: 0% Hostile and 100% Non-Hostile (50% Neutral + 50% Friendly)**
+    - Friendly (0%, 0%), Neutral (0%, 100%), Hostile (0%, 0%)
