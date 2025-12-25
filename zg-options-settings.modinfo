@@ -184,17 +184,17 @@
 
 <!--************************* CRITERIA: INDEPENDENT HOSTILITY *******************************-->
 
-		<Criteria id="neutral-independents-hostility">
+		<Criteria id="tense-independents-hostility">
 			<ConfigurationValueMatches>
       			<Group>Game</Group>
       			<ConfigurationId>IndependentHostility</ConfigurationId>
-      			<Value>ZG_INDEPENDENT_HOSTILITY_NEUTRAL</Value>
+      			<Value>ZG_INDEPENDENT_HOSTILITY_TENSE</Value>
     		</ConfigurationValueMatches>
-		<Criteria id="balanced-independents-hostility">
+		<Criteria id="calm-independents-hostility">
 			<ConfigurationValueMatches>
       			<Group>Game</Group>
       			<ConfigurationId>IndependentHostility</ConfigurationId>
-      			<Value>ZG_INDEPENDENT_HOSTILITY_BALANCED</Value>
+      			<Value>ZG_INDEPENDENT_HOSTILITY_CALM</Value>
     		</ConfigurationValueMatches>
 		</Criteria>
 		</Criteria>
@@ -393,19 +393,19 @@
 
 <!--************************* SETTINGS: INDEPENDENT HOSTILITY *******************************-->
 
-		<ActionGroup id="zg-neutral-independents-hostility" scope="game" criteria="neutral-independents-hostility">
+		<ActionGroup id="zg-tense-independents-hostility" scope="game" criteria="tense-independents-hostility">
 			<Properties><LoadOrder>50</LoadOrder></Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/independents/IndependentHostilityNeutral.sql</Item>
+					<Item>data/independents/IndependentHostilityTense.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-balanced-independents-hostility" scope="game" criteria="balanced-independents-hostility">
+		<ActionGroup id="zg-calm-independents-hostility" scope="game" criteria="calm-independents-hostility">
 			<Properties><LoadOrder>50</LoadOrder></Properties>
 			<Actions>
 				<UpdateDatabase>
-					<!-- <Item>data/independents/IndependentHostilityBalanced.sql</Item> -->
+					<Item>data/independents/IndependentHostilityCalm.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

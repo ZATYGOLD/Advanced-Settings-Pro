@@ -7,8 +7,8 @@
 
 	<!-- Universal Names -->
 		<Row Tag="LOC_ZG_DEFAULT_NAME"><Text>Default</Text></Row>
-		<Row Tag="LOC_ZG_BALANCED_NAME"><Text>Balanced</Text></Row>
-		<Row Tag="LOC_ZG_NEUTRAL_NAME"><Text>Neutral</Text></Row>
+		<Row Tag="LOC_ZG_CALM_NAME"><Text>Calm</Text></Row>
+		<Row Tag="LOC_ZG_TENSE_NAME"><Text>Tense</Text></Row>
 		<Row Tag="LOC_ZG_QUICK_NAME"><Text>Quick</Text></Row>
 		<Row Tag="LOC_ZG_FAST_NAME"><Text>Fast</Text></Row>
 		<Row Tag="LOC_ZG_SLOW_NAME"><Text>Slow</Text></Row>
@@ -98,7 +98,7 @@
 				[n]3 types of Independent Powers (Friendly, Neutral, and Hostile) randomly spawn.
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_INDEPENDENT_HOSTILITY_BALANCED_DESCRIPTION">
+		<Row Tag="LOC_ZG_INDEPENDENT_HOSTILITY_CALM_DESCRIPTION">
 			<Text>
 				[BLIST]
 				[LI]Friendly: 0% Hostility Chance and 0% Neutral Chance. 
@@ -107,7 +107,7 @@
 				[n] [n]Friendly will always be friendly. Neutral and Hostile has 80% hostile, 20% neutral, and 0% friendly.
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_INDEPENDENT_HOSTILITY_NEUTRAL_DESCRIPTION">
+		<Row Tag="LOC_ZG_INDEPENDENT_HOSTILITY_TENSE_DESCRIPTION">
 			<Text>
 				[BLIST]
 				[LI]Friendly: 20% Hostility Chance and 20% Neutral Chance. 
