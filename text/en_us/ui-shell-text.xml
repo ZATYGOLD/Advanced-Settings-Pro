@@ -8,8 +8,8 @@
 
 	<!-- Universal Names -->
 		<Row Tag="LOC_ZG_DEFAULT_NAME"><Text>Default</Text></Row>
-		<Row Tag="LOC_ZG_ENABLE_NAME"><Text>Enable</Text></Row>
-		<Row Tag="LOC_ZG_DISABLE_NAME"><Text>Disable</Text></Row>
+		<Row Tag="LOC_ZG_ENABLED_NAME"><Text>Enabled</Text></Row>
+		<Row Tag="LOC_ZG_DISABLED_NAME"><Text>Disabled</Text></Row>
 		<Row Tag="LOC_ZG_QUICK_NAME"><Text>Quick</Text></Row>
 		<Row Tag="LOC_ZG_FAST_NAME"><Text>Fast</Text></Row>
 		<Row Tag="LOC_ZG_SLOW_NAME"><Text>Slow</Text></Row>
