@@ -181,7 +181,18 @@
       			<Value>ZG_LESS_INDEPENDENTS_UNIT_COUNT</Value>
     		</ConfigurationValueMatches>
 		</Criteria>
+
+<!--************************* CRITERIA: DISASTERS TOGGLE ************************************-->
+
+		<Criteria id="disabled-disasters">
+    		<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>DisasterSettingsKey</ConfigurationId>
+      			<Value>ZG_DISABLED_DISASTERS</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
 	</ActionCriteria>
+
 
 <!--************************* SETTINGS: SHELL ***********************************************-->
 
@@ -370,6 +381,17 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/independents/modern/IndependentsUnitsLess.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
+<!--************************* SETTINGS: INDEPENDENT UNITS COUNT *****************************-->
+
+		<ActionGroup id="zg-disabled-disasters" scope="game" criteria="disabled-disasters">
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/disasters/DisastersDisabled.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

@@ -7,6 +7,8 @@
 
 	<!-- Universal Names -->
 		<Row Tag="LOC_ZG_DEFAULT_NAME"><Text>Default</Text></Row>
+		<Row Tag="LOC_ZG_ENABLED_NAME"><Text>Enabled</Text></Row>
+		<Row Tag="LOC_ZG_DISABLED_NAME"><Text>Disabled</Text></Row>
 		<Row Tag="LOC_ZG_QUICK_NAME"><Text>Quick</Text></Row>
 		<Row Tag="LOC_ZG_FAST_NAME"><Text>Fast</Text></Row>
 		<Row Tag="LOC_ZG_SLOW_NAME"><Text>Slow</Text></Row>
@@ -87,6 +89,13 @@
 				[BLIST][LI]Antiquity: 2[icon:UNIT_WARRIOR]Warriors.[LI]Exploration: 4[icon:UNIT_SWORDSMAN]Swordsmen.[LI]Modern: 5 [icon:UNIT_LINE_INFANTRY]Line Infantry.[/BLIST]
 				[n] [n]The number of units will depend upon the number of land tiles available within the first ring including the village center.
 			</Text>
+		</Row>
+
+		<!-- Disaster Setting -->
+		<Row Tag="LOC_ZG_DISASTER_SETTINGS_NAME"><Text>Disasters</Text></Row>
+
+		<Row Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION">
+			<Text> Enables or disables disasters.</Text>
 		</Row>
 	</EnglishText>
 </Database>

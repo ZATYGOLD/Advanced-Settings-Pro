@@ -71,3 +71,16 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES ("ZG_IndependentUnitsCountDomain", "ZG_MORE_INDEPENDENTS_UNIT_COUNT", "LOC_ZG_MORE_NAME", "LOC_ZG_INDEPENDENT_INITIAL_UNITS_ADDITIONAL_DESCRIPTION_MORE", 20);
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES ("ZG_IndependentUnitsCountDomain", "ZG_LESS_INDEPENDENTS_UNIT_COUNT", "LOC_ZG_LESS_NAME", "LOC_ZG_INDEPENDENT_INITIAL_UNITS_ADDITIONAL_DESCRIPTION_LESS", 30);
+
+--*******************************************************
+--************* DISASTER INTENSITY SETTINGS *************
+--*******************************************************
+-- Disasters Toggle
+INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey,	GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex) 
+    VALUES ("DisasterOptions", "LOC_ZG_DISASTER_SETTINGS_NAME", "LOC_ZG_DISASTER_SETTINGS_DESCRIPTION","ZG_DisasterSettingsDomain", "ZG_DEFAULT", 1, "Game", "DisasterSettingsKey", "DisasterOptions", "MPAdvancedDisasterOptions", 0, 3009);
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES ("ZG_DisasterSettingsDomain", "ZG_ENABLED_DISASTERS", "LOC_ZG_ENABLED_NAME", "", 10);
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES ("ZG_DisasterSettingsDomain", "ZG_DISABLED_DISASTERS", "LOC_ZG_DISABLED_NAME", "", 20);
+INSERT OR IGNORE INTO ParameterDependencies (ParameterID, ConfigurationGroup, ConfigurationKey, Operator, ConfigurationValue)
+    VALUES ("DisasterIntensity", "Game", "DisasterSettingsKey", "Equals", "ZG_ENABLED_DISASTERS");
