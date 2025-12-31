@@ -2,13 +2,15 @@
 <Database>
 	<EnglishText>
 	<!-- Unique Group Ids -->
-		<Row Tag="LOC_GROUPID_UNITMOVEMENTOPTIONS"><Text>Unit Movement Settings</Text></Row>
-		<Row Tag="LOC_GROUPID_INDEPENDENTPOWEROPTIONS"><Text>Independent Power Settings</Text></Row>
+		<Row Tag="LOC_GROUPID_ZG_UNITMOVEMENTOPTIONS"><Text>Unit Movement Settings</Text></Row>
+		<Row Tag="LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS"><Text>Independent Power Settings</Text></Row>
+		<Row Tag="LOC_GROUPID_ZG_SETTLEMENTLIMITOPTIONS"><Text>Settlement Limit Settings</Text></Row>
 
 	<!-- Universal Names -->
 		<Row Tag="LOC_ZG_DEFAULT_NAME"><Text>Default</Text></Row>
 		<Row Tag="LOC_ZG_ENABLED_NAME"><Text>Enabled</Text></Row>
 		<Row Tag="LOC_ZG_DISABLED_NAME"><Text>Disabled</Text></Row>
+		<Row Tag="LOC_ZG_CUSTOM_NAME"><Text>Custom</Text></Row>
 		<Row Tag="LOC_ZG_QUICK_NAME"><Text>Quick</Text></Row>
 		<Row Tag="LOC_ZG_FAST_NAME"><Text>Fast</Text></Row>
 		<Row Tag="LOC_ZG_SLOW_NAME"><Text>Slow</Text></Row>
@@ -96,6 +98,16 @@
 
 		<Row Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION">
 			<Text> Enables or disables disasters.</Text>
+		</Row>
+
+		<!-- Settlement Limit Setting -->
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_NAME"><Text>Settlement Limit</Text></Row>
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME"><Text>Antiquity</Text></Row>
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME"><Text>Exploration</Text></Row>
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME"><Text>Modern</Text></Row>
+
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION">
+			<Text>Sets the Settlement Limit for each age.</Text>
 		</Row>
 	</EnglishText>
 </Database>

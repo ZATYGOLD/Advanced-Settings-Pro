@@ -191,6 +191,37 @@
       			<Value>ZG_DISABLED_DISASTERS</Value>
     		</ConfigurationValueMatches>
 		</Criteria>
+
+<!--************************* CRITERIA: SETTLEMENT LIMIT COUNT ******************************-->
+
+		<Criteria id="settlement-limit-default">
+    		<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>SettlementLimitKey</ConfigurationId>
+      			<Value>ZG_DEFAULT_SETTLEMENT_LIMIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="settlement-limit-more">
+    		<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>SettlementLimitKey</ConfigurationId>
+      			<Value>ZG_MORE_SETTLEMENT_LIMIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="settlement-limit-less">
+    		<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>SettlementLimitKey</ConfigurationId>
+      			<Value>ZG_LESS_SETTLEMENT_LIMIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="settlement-limit-custom">
+    		<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>SettlementLimitKey</ConfigurationId>
+      			<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
 	</ActionCriteria>
 
 

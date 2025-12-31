@@ -3,13 +3,17 @@
 
 -- New Parameter Groups
 INSERT OR IGNORE INTO ParameterGroups (GroupId, Name) 
-    VALUES ("UnitMovementOptions", "LOC_GROUPID_UNITMOVEMENTOPTIONS");
+    VALUES ("UnitMovementOptions", "LOC_GROUPID_ZG_UNITMOVEMENTOPTIONS");
 INSERT OR IGNORE INTO ParameterGroups (GroupId, Name) 
-    VALUES ("MPAdvancedUnitMovementOptions", "LOC_GROUPID_UNITMOVEMENTOPTIONS");
+    VALUES ("MPAdvancedUnitMovementOptions", "LOC_GROUPID_ZG_UNITMOVEMENTOPTIONS");
 INSERT OR IGNORE INTO ParameterGroups (GroupId, Name) 
-    VALUES ("IndependentPowerOptions", "LOC_GROUPID_INDEPENDENTPOWEROPTIONS");
+    VALUES ("IndependentPowerOptions", "LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS");
 INSERT OR IGNORE INTO ParameterGroups (GroupId, Name) 
-    VALUES ("MPAdvancedIndependentPowerOptions", "LOC_GROUPID_INDEPENDENTPOWEROPTIONS");
+    VALUES ("MPAdvancedIndependentPowerOptions", "LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS");
+INSERT OR IGNORE INTO ParameterGroups (GroupId, Name) 
+    VALUES ("SettlementLimitOptions", "LOC_GROUPID_ZG_SETTLEMENTLIMITOPTIONS");
+INSERT OR IGNORE INTO ParameterGroups (GroupId, Name) 
+    VALUES ("MPAdvancedSettlementLimitOptions", "LOC_GROUPID_ZG_SETTLEMENTLIMITOPTIONS");
 
 --*******************************************************
 --***************** SETTLER SETTINGS ********************
@@ -82,5 +86,32 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES ("ZG_DisasterSettingsDomain", "ZG_ENABLED_DISASTERS", "LOC_ZG_ENABLED_NAME", "", 10);
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES ("ZG_DisasterSettingsDomain", "ZG_DISABLED_DISASTERS", "LOC_ZG_DISABLED_NAME", "", 20);
+-- Disasters Dependencies
 INSERT OR IGNORE INTO ParameterDependencies (ParameterID, ConfigurationGroup, ConfigurationKey, Operator, ConfigurationValue)
     VALUES ("DisasterIntensity", "Game", "DisasterSettingsKey", "Equals", "ZG_ENABLED_DISASTERS");
+
+--*******************************************************
+--************* SETTLEMENT LIMIT SETTINGS ***************
+--*******************************************************
+-- Settlement Limit Parameters
+INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey,	GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex) 
+VALUES 
+    ("ZG_SettlementLimit", "LOC_ZG_SETTLEMENT_LIMIT_NAME", "LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION","ZG_SettlementLimitDomain", "ZG_DEFAULT", 1, "Game", "SettlementLimitKey", "SettlementLimitOptions", "MPAdvancedSettlementLimitOptions", 0, 65),
+    ("ZG_SettlementLimitAntiquity", "LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME", "LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION","ZG_SettlementLimitDomain", "ZG_DEFAULT", 1, "Game", "SettlementLimitKey", "SettlementLimitOptions", "MPAdvancedSettlementLimitOptions", 0, 66),
+    ("ZG_SettlementLimitExploration", "LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME", "LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION","ZG_SettlementLimitDomain", "ZG_DEFAULT", 1, "Game", "SettlementLimitKey", "SettlementLimitOptions", "MPAdvancedSettlementLimitOptions", 0, 67),
+    ("ZG_SettlementLimitModern", "LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME", "LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION","ZG_SettlementLimitDomain", "ZG_DEFAULT", 1, "Game", "SettlementLimitKey", "SettlementLimitOptions", "MPAdvancedSettlementLimitOptions", 0, 68);
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES ("ZG_SettlementLimitDomain", "ZG_DEFAULT_SETTLEMENT_LIMIT_COUNT", "LOC_ZG_DEFAULT_NAME", "", 10);
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES ("ZG_SettlementLimitDomain", "ZG_MORE_SETTLEMENT_LIMIT_COUNT", "LOC_ZG_MORE_NAME", "", 20);
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES ("ZG_SettlementLimitDomain", "ZG_LESS_SETTLEMENT_LIMIT_COUNT", "LOC_ZG_LESS_NAME", "", 40);
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES ("ZG_SettlementLimitDomain", "ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT", "LOC_ZG_CUSTOM_NAME", "", 30);
+-- Settlement Limit Dependencies
+INSERT OR IGNORE INTO ParameterDependencies (ParameterID, ConfigurationGroup, ConfigurationKey, Operator, ConfigurationValue)
+    VALUES ("ZG_SettlementLimitAntiquity", "Game", "SettlementLimitKey", "Equals", "ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT");
+INSERT OR IGNORE INTO ParameterDependencies (ParameterID, ConfigurationGroup, ConfigurationKey, Operator, ConfigurationValue)
+    VALUES ("ZG_SettlementLimitExploration", "Game", "SettlementLimitKey", "Equals", "ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT");
+INSERT OR IGNORE INTO ParameterDependencies (ParameterID, ConfigurationGroup, ConfigurationKey, Operator, ConfigurationValue)
+    VALUES ("ZG_SettlementLimitModern", "Game", "SettlementLimitKey", "Equals", "ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT");
