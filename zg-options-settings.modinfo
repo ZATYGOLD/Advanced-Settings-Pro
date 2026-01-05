@@ -187,7 +187,7 @@
 		<Criteria id="disabled-disasters">
     		<ConfigurationValueMatches>
       			<Group>Game</Group>
-      			<ConfigurationId>DisasterSettingsKey</ConfigurationId>
+      			<ConfigurationId>RealismSettingType</ConfigurationId>
       			<Value>ZG_DISABLED_DISASTERS</Value>
     		</ConfigurationValueMatches>
 		</Criteria>
