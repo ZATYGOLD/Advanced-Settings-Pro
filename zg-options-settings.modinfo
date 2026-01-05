@@ -191,6 +191,57 @@
       			<Value>ZG_DISABLED_DISASTERS</Value>
     		</ConfigurationValueMatches>
 		</Criteria>
+
+<!--************************* CRITERIA: SETTLEMENT LIMIT COUNT ******************************-->
+
+		<Criteria id="more-settlement-limit-antiquity">
+    		<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>SettlementLimitKey</ConfigurationId>
+      			<Value>ZG_MORE_SETTLEMENT_LIMIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="less-settlement-limit-antiquity">
+    		<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>SettlementLimitKey</ConfigurationId>
+      			<Value>ZG_LESS_SETTLEMENT_LIMIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="more-settlement-limit-exploration">
+    		<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>SettlementLimitKey</ConfigurationId>
+      			<Value>ZG_MORE_SETTLEMENT_LIMIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="less-settlement-limit-exploration">
+    		<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>SettlementLimitKey</ConfigurationId>
+      			<Value>ZG_LESS_SETTLEMENT_LIMIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="more-settlement-limit-modern">
+    		<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>SettlementLimitKey</ConfigurationId>
+      			<Value>ZG_MORE_SETTLEMENT_LIMIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="less-settlement-limit-modern">
+    		<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>SettlementLimitKey</ConfigurationId>
+      			<Value>ZG_LESS_SETTLEMENT_LIMIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
 	</ActionCriteria>
 
 
@@ -200,13 +251,13 @@
 		<ActionGroup id="zg-options-settings-shell" scope="shell" criteria="always">
 			<Properties><LoadOrder>10</LoadOrder></Properties>
 			<Actions>
+				<UpdateText>
+                	<Item>text/en_us/ui-shell-text.xml</Item>
+            	</UpdateText>
 			    <UpdateDatabase>
 					<Item>config/SetupGameOptions.sql</Item>
 					<Item>config/SetupParameters.sql</Item>
             	</UpdateDatabase>
-				<UpdateText>
-                	<Item>text/en_us/ui-shell-text.xml</Item>
-            	</UpdateText>
 			</Actions>
 		</ActionGroup>
 
@@ -392,6 +443,57 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/disasters/DisastersDisabled.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
+<!--************************* SETTINGS: SETTLEMENT LIMIT *****************************-->
+
+		<ActionGroup id="zg-more-settlement-limit-antiquity" scope="game" criteria="more-settlement-limit-antiquity">
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlement_limit/antiquity/SettlementLimitMore.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-less-settlement-limit-antiquity" scope="game" criteria="less-settlement-limit-antiquity">
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlement_limit/antiquity/SettlementLimitLess.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-more-settlement-limit-exploration" scope="game" criteria="more-settlement-limit-exploration">
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlement_limit/exploration/SettlementLimitMore.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-less-settlement-limit-exploration" scope="game" criteria="less-settlement-limit-exploration">
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlement_limit/exploration/SettlementLimitLess.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-more-settlement-limit-modern" scope="game" criteria="more-settlement-limit-modern">
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlement_limit/modern/SettlementLimitMore.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-less-settlement-limit-modern" scope="game" criteria="less-settlement-limit-modern">
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlement_limit/modern/SettlementLimitLess.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
