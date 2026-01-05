@@ -1,0 +1,15 @@
+<!-- config/options-config.xml -->
+<!-- Author: Zatygold -->
+
+<SettlementLimits>
+		<Row Type="ZG_LIMIT_DEFAULT" Name="LOC_ZG_DEFAULT_NAME" Description="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" SortIndex="10"/>
+		<Row Type="ZG_LIMIT_MORE" Name="LOC_ZG_MORE_NAME" Description="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" SortIndex="20"/>
+		<Row Type="ZG_LIMIT_LESS" Name="LOC_ZG_LESS_NAME" Description="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" SortIndex="30"/>
+		<Row Type="ZG_LIMIT_CUSTOM" Name="LOC_ZG_CUSTOM_NAME" Description="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" SortIndex="100"/>
+</SettlementLimits>
+
+<!-- <SettlementLimitsDefault>
+		<Row Type="ZG_LIMIT_ANTIQUITY" Name="3" Description="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" SortIndex="66"/>
+		<Row Type="ZG_LIMIT_EXPLORATION" Name="8" Description="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" SortIndex="67"/>
+		<Row Type="ZG_LIMIT_MODERN" Name="16" Description="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" SortIndex="68"/>
+</SettlementLimitsDefault> -->

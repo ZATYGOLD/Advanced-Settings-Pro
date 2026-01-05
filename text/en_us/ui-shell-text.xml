@@ -105,9 +105,21 @@
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME"><Text>Antiquity</Text></Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME"><Text>Exploration</Text></Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME"><Text>Modern</Text></Row>
+		<!-- Settlement Limit Custom Setting -->
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_DEFAULT"><Text>3</Text></Row>
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_MORE"><Text>4</Text></Row>
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_LESS"><Text>2</Text></Row>
+
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_DEFAULT"><Text>8</Text></Row>
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_MORE"><Text>10</Text></Row>
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_LESS"><Text>6</Text></Row>
+
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_DEFAULT"><Text>16</Text></Row>
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_MORE"><Text>19</Text></Row>
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_LESS"><Text>13</Text></Row>
 
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION">
-			<Text>Sets the Settlement Limit for each age.</Text>
+			<Text>Sets the initial settlement limit for each age.</Text>
 		</Row>
 	</EnglishText>
 </Database>
