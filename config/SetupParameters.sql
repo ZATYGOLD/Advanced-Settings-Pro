@@ -83,19 +83,6 @@ INSERT OR IGNORE INTO ParameterDependencies (ParameterID, ConfigurationGroup, Co
 ------------------------------
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey,	GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex) 
     VALUES ('ZG_SettlementLimit', 'LOC_ZG_SETTLEMENT_LIMIT_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION','ZG_SettlementLimitDomain', 'ZG_DEFAULT_SETTLEMENT_LIMIT_COUNT', 1, 'Game', 'SettlementLimitKey', 'SettlementLimitOptions', 'MPAdvancedSettlementLimitOptions', 0, 65);
--- -- Settlement Limit Options
--- INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey,	GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex) 
---     VALUES 
---     ('ZG_SettlementLimitAntiquity', 'LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION','ZG_AntiquitySettlementLimitDomain', 'ZG_DEFAULT_SETTLEMENT_LIMIT_COUNT', 1, 'Game', 'SettlementLimitAntiquityKey', 'SettlementLimitOptions', 'MPAdvancedSettlementLimitOptions', 0, 4200),
---     ('ZG_SettlementLimitExploration', 'LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION','ZG_ExplorationSettlementLimitDomain', 'ZG_DEFAULT_SETTLEMENT_LIMIT_COUNT', 1, 'Game', 'SettlementLimitExplorationKey', 'SettlementLimitOptions', 'MPAdvancedSettlementLimitOptions', 0, 4210),
---     ('ZG_SettlementLimitModern', 'LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION','ZG_ModernSettlementLimitDomain', 'ZG_DEFAULT_SETTLEMENT_LIMIT_COUNT', 1, 'Game', 'SettlementLimitModernKey', 'SettlementLimitOptions', 'MPAdvancedSettlementLimitOptions', 0, 4220);
-
------------------------
--- ParameterDependencies
------------------------
--- INSERT OR IGNORE INTO ParameterDependencies (ParameterID, ConfigurationGroup, ConfigurationKey, Operator, ConfigurationValue)
--- VALUES
---     ('ZG_SettlementLimitAntiquityCustom', 'Game', 'ZG_SettlementLimitDomain', 'Equals', 'ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT');
 
 -----------------
 -- DomainValues
@@ -106,52 +93,3 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_SettlementLimitDomain', 'ZG_DEFAULT_SETTLEMENT_LIMIT_COUNT', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_ADDITIONAL_DESCRIPTION_DEFAULT', 10),
         ('ZG_SettlementLimitDomain', 'ZG_MORE_SETTLEMENT_LIMIT_COUNT', 'LOC_ZG_MORE_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_ADDITIONAL_DESCRIPTION_MORE', 20),
         ('ZG_SettlementLimitDomain', 'ZG_LESS_SETTLEMENT_LIMIT_COUNT', 'LOC_ZG_LESS_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_ADDITIONAL_DESCRIPTION_LESS', 30);
---      ('ZG_SettlementLimitDomain', 'ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT', 'LOC_ZG_CUSTOM_NAME', '', 100);
-
--- -- Custom Antiquity Options
--- INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
---     VALUES ('ZG_AntiquitySettlementLimitDomain', 'ZG_CUSTOM_ANTIQUITY_SETTLEMENT_LIMIT_DEFAULT', 'LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_DEFAULT', '', 10);
--- INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
---     VALUES ('ZG_AntiquitySettlementLimitDomain', 'ZG_CUSTOM_ANTIQUITY_SETTLEMENT_LIMIT_MORE', 'LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_MORE', '', 20);
--- INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
---     VALUES ('ZG_AntiquitySettlementLimitDomain', 'ZG_CUSTOM_ANTIQUITY_SETTLEMENT_LIMIT_LESS', 'LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_LESS', '', 30);
-
--- -- Custom Exploration Options
--- INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
---     VALUES ('ZG_ExplorationSettlementLimitDomain', 'ZG_CUSTOM_EXPLORATION_SETTLEMENT_LIMIT_DEFAULT', 'LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_DEFAULT', '', 10);
--- INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
---     VALUES ('ZG_ExplorationSettlementLimitDomain', 'ZG_CUSTOM_EXPLORATION_SETTLEMENT_LIMIT_MORE', 'LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_MORE', '', 20);
--- INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
---     VALUES ('ZG_ExplorationSettlementLimitDomain', 'ZG_CUSTOM_EXPLORATION_SETTLEMENT_LIMIT_LESS', 'LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_LESS', '', 30);
-
--- -- Custom Modern Options
--- INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
---     VALUES ('ZG_ModernSettlementLimitDomain', 'ZG_CUSTOM_MODERN_SETTLEMENT_LIMIT_DEFAULT', 'LOC_ZG_SETTLEMENT_LIMIT_MODERN_DEFAULT', '', 10);
--- INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
---     VALUES ('ZG_ModernSettlementLimitDomain', 'ZG_CUSTOM_MODERN_SETTLEMENT_LIMIT_MORE', 'LOC_ZG_SETTLEMENT_LIMIT_MODERN_MORE', '', 20);
--- INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
---     VALUES ('ZG_ModernSettlementLimitDomain', 'ZG_CUSTOM_MODERN_SETTLEMENT_LIMIT_LESS', 'LOC_ZG_SETTLEMENT_LIMIT_MODERN_LESS', '', 30);
-
------------------------
--- ConfigurationUpdates
------------------------
--- -- When primary = DEFAULT, set all ages = DEFAULT
--- INSERT OR IGNORE INTO ConfigurationUpdates (SourceGroup, SourceKey, SourceValue, TargetGroup, TargetKey, TargetValue, Hash)
--- VALUES
---   ('Game','SettlementLimitKey','ZG_DEFAULT_SETTLEMENT_LIMIT_COUNT','Game','SettlementLimitAntiquityKey', 'ZG_CUSTOM_ANTIQUITY_SETTLEMENT_LIMIT_DEFAULT', 1),
---   ('Game','SettlementLimitKey','ZG_DEFAULT_SETTLEMENT_LIMIT_COUNT','Game','SettlementLimitExplorationKey', 'ZG_CUSTOM_EXPLORATION_SETTLEMENT_LIMIT_DEFAULT', 1),
---   ('Game','SettlementLimitKey','ZG_DEFAULT_SETTLEMENT_LIMIT_COUNT','Game','SettlementLimitModernKey', 'ZG_CUSTOM_MODERN_SETTLEMENT_LIMIT_DEFAULT', 1);
-
--- -- When primary = MORE, set all ages = MORE
--- INSERT OR IGNORE INTO ConfigurationUpdates (SourceGroup, SourceKey, SourceValue, TargetGroup, TargetKey, TargetValue, Hash)
--- VALUES
---   ('Game','SettlementLimitKey','ZG_MORE_SETTLEMENT_LIMIT_COUNT','Game','SettlementLimitAntiquityKey','ZG_CUSTOM_ANTIQUITY_SETTLEMENT_LIMIT_MORE', 1),
---   ('Game','SettlementLimitKey','ZG_MORE_SETTLEMENT_LIMIT_COUNT','Game','SettlementLimitExplorationKey','ZG_CUSTOM_EXPLORATION_SETTLEMENT_LIMIT_MORE', 1),
---   ('Game','SettlementLimitKey','ZG_MORE_SETTLEMENT_LIMIT_COUNT','Game','SettlementLimitModernKey','ZG_CUSTOM_MODERN_SETTLEMENT_LIMIT_MORE', 1);
-
--- -- When primary = LESS, set all ages = LESS
--- INSERT OR IGNORE INTO ConfigurationUpdates (SourceGroup, SourceKey, SourceValue, TargetGroup, TargetKey, TargetValue, Hash)
--- VALUES
---   ('Game','SettlementLimitKey','ZG_LESS_SETTLEMENT_LIMIT_COUNT','Game','SettlementLimitAntiquityKey','ZG_CUSTOM_ANTIQUITY_SETTLEMENT_LIMIT_LESS', 1),
---   ('Game','SettlementLimitKey','ZG_LESS_SETTLEMENT_LIMIT_COUNT','Game','SettlementLimitExplorationKey','ZG_CUSTOM_EXPLORATION_SETTLEMENT_LIMIT_LESS', 1),
---   ('Game','SettlementLimitKey','ZG_LESS_SETTLEMENT_LIMIT_COUNT','Game','SettlementLimitModernKey','ZG_CUSTOM_MODERN_SETTLEMENT_LIMIT_LESS', 1);
