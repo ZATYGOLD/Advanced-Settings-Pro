@@ -121,5 +121,21 @@
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION">
 			<Text>Sets the initial settlement limit for each age.</Text>
 		</Row>
+
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ADDITIONAL_DESCRIPTION_DEFAULT">
+			<Text>
+				[BLIST][LI]Antiquity: 3[icon:SETTLEMENT_LIMIT]settlement limit.[LI]Exploration: 8[icon:SETTLEMENT_LIMIT]settlement limit.[LI]Modern: 16[icon:SETTLEMENT_LIMIT]settlement limit.[/BLIST]
+			</Text>
+		</Row>
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ADDITIONAL_DESCRIPTION_MORE">
+			<Text>
+				[BLIST][LI]Antiquity: 5[icon:SETTLEMENT_LIMIT]settlement limit.[LI]Exploration: 12[icon:SETTLEMENT_LIMIT]settlement limit.[LI]Modern: 20[icon:SETTLEMENT_LIMIT]settlement limit.[/BLIST]
+			</Text>
+		</Row>
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ADDITIONAL_DESCRIPTION_LESS">
+			<Text>
+				[BLIST][LI]Antiquity: 1[icon:SETTLEMENT_LIMIT]settlement limit.[LI]Exploration: 4[icon:SETTLEMENT_LIMIT]settlement limit.[LI]Modern: 10[icon:SETTLEMENT_LIMIT]settlement limit.[/BLIST]
+			</Text>
+		</Row>
 	</EnglishText>
 </Database>
