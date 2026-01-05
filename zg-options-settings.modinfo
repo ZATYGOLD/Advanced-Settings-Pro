@@ -235,7 +235,6 @@
                 	<Item>text/en_us/ui-shell-text.xml</Item>
             	</UpdateText>
 			    <UpdateDatabase>
-					<!-- <Item>config/options-config.xml</Item> -->
 					<Item>config/SetupGameOptions.sql</Item>
 					<Item>config/SetupParameters.sql</Item>
             	</UpdateDatabase>
