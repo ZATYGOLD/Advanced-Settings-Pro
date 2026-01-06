@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="Zatygold's Advanced Settings Pro" version="00030" xmlns="ModInfo">
+<Mod id="Zatygold's Advanced Settings Pro" version="00050" xmlns="ModInfo">
 	<Properties>
 		<Name>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME</Name>
 		<Description>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION</Description>
 		<Authors>Zatygold</Authors>
-        <Version>0.0.30</Version>
+        <Version>0.0.50</Version>
         <Package>Mod</Package>
 		<ShowInBrowser>1</ShowInBrowser>
         <AffectsSavedGames>1</AffectsSavedGames>
@@ -259,6 +259,23 @@
       			<Value>ZG_LESS_SETTLEMENT_DISTANCE_COUNT</Value>
     		</ConfigurationValueMatches>
 		</Criteria>
+
+<!--************************* CRITERIA: UNIT COST *******************************************-->
+		
+		<Criteria id="expensive-military-units">
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>CombatUnitCostKey</ConfigurationId>
+      			<Value>ZG_COMBAT_UNIT_COST_MORE</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="cheaper-military-units">
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>CombatUnitCostKey</ConfigurationId>
+      			<Value>ZG_COMBAT_UNIT_COST_LESS</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
 	</ActionCriteria>
 
 
@@ -463,7 +480,7 @@
 			</Actions>
 		</ActionGroup>
 
-<!--************************* SETTINGS: SETTLEMENT LIMIT *****************************-->
+<!--************************* SETTINGS: SETTLEMENT LIMIT ************************************-->
 
 		<ActionGroup id="zg-more-settlement-limit-antiquity" scope="game" criteria="more-settlement-limit-antiquity">
 			<Properties><LoadOrder>1000</LoadOrder></Properties>
@@ -514,7 +531,7 @@
 			</Actions>
 		</ActionGroup>
 
-<!--************************* SETTINGS: SETTLEMENT DISTANCE *****************************-->
+<!--************************* SETTINGS: SETTLEMENT DISTANCE *********************************-->
 
 		<ActionGroup id="zg-more-settlement-distance" scope="game" criteria="more-settlement-distance">
 			<Properties><LoadOrder>1000</LoadOrder></Properties>
@@ -529,6 +546,25 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/settlements/SettlementDistanceLess.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
+<!--************************* SETTINGS: UNIT COST *******************************************-->
+
+		<ActionGroup id="zg-expensive-military-units" scope="game" criteria="expensive-military-units">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/unit_cost/MilitaryUnitCostMore.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-cheaper-military-units" scope="game" criteria="cheaper-military-units">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/unit_cost/MilitaryUnitCostLess.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
