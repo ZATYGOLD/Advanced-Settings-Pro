@@ -140,7 +140,9 @@
 		<Row Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME"><Text>Settlement Distance</Text></Row>
 
 		<Row Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION">
-			<Text>Sets the distance allowed between settlements.</Text>
+			<Text>Sets the minimum distance between settlements.
+				[n] [BLIST][LI]Less: 2 Tiles.[LI]Default: 3 Tiles.[LI]More: 4 Tiles.[/BLIST]
+			</Text>
 		</Row>
 	</EnglishText>
 </Database>
