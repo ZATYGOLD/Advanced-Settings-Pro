@@ -11,6 +11,13 @@ INSERT OR IGNORE INTO ParameterGroups (GroupId, Name)
         ('SettlementOptions', 'LOC_GROUPID_ZG_SETTLEMENTOPTIONS'),
         ('MPAdvancedSettlementOptions', 'LOC_GROUPID_ZG_SETTLEMENTOPTIONS');
 
+
+--*******************************************************
+--***************** SINGLE AGE SETTINGS *****************
+--*******************************************************
+-- Single Player Single Age Option
+UPDATE Parameters SET SupportsSinglePlayer = 1 WHERE ParameterID = 'SingleAgeGame';
+
 --*******************************************************
 --***************** SETTLER SETTINGS ********************
 --*******************************************************
