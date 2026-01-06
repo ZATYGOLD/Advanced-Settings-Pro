@@ -4,7 +4,7 @@
 	<!-- Unique Group Ids -->
 		<Row Tag="LOC_GROUPID_ZG_UNITMOVEMENTOPTIONS"><Text>Unit Movement Settings</Text></Row>
 		<Row Tag="LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS"><Text>Independent Power Settings</Text></Row>
-		<Row Tag="LOC_GROUPID_ZG_SETTLEMENTLIMITOPTIONS"><Text>Settlement Limit Settings</Text></Row>
+		<Row Tag="LOC_GROUPID_ZG_SETTLEMENTOPTIONS"><Text>Settlement Settings</Text></Row>
 
 	<!-- Universal Names -->
 		<Row Tag="LOC_ZG_DEFAULT_NAME"><Text>Default</Text></Row>
@@ -121,7 +121,6 @@
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION">
 			<Text>Sets the initial settlement limit for each age.</Text>
 		</Row>
-
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ADDITIONAL_DESCRIPTION_DEFAULT">
 			<Text>
 				[BLIST][LI]Antiquity: 3[icon:SETTLEMENT_LIMIT]settlement limit.[LI]Exploration: 8[icon:SETTLEMENT_LIMIT]settlement limit.[LI]Modern: 16[icon:SETTLEMENT_LIMIT]settlement limit.[/BLIST]
@@ -135,6 +134,14 @@
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ADDITIONAL_DESCRIPTION_LESS">
 			<Text>
 				[BLIST][LI]Antiquity: 1[icon:SETTLEMENT_LIMIT]settlement limit.[LI]Exploration: 4[icon:SETTLEMENT_LIMIT]settlement limit.[LI]Modern: 10[icon:SETTLEMENT_LIMIT]settlement limit.[/BLIST]
+			</Text>
+		</Row>
+
+		<Row Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME"><Text>Settlement Distance</Text></Row>
+
+		<Row Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION">
+			<Text>Sets the minimum distance between settlements.
+				[n] [BLIST][LI]Less: 2 Tiles.[LI]Default: 3 Tiles.[LI]More: 4 Tiles.[/BLIST]
 			</Text>
 		</Row>
 	</EnglishText>

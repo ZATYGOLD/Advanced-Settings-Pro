@@ -1,6 +1,6 @@
--- data/settlement_limit/modern/SettlementLimitLess.sql
+-- data/settlements/exploration/SettlementLimitLess.sql
 -- Author: Zatygold
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 4
 WHERE ModifierId = 'TRAIT_INITIAL_SETTLEMENT_CAP' AND Name = 'Amount';
