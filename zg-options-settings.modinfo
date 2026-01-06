@@ -242,6 +242,16 @@
       			<Value>ZG_LESS_SETTLEMENT_LIMIT_COUNT</Value>
     		</ConfigurationValueMatches>
 		</Criteria>
+
+<!--************************* CRITERIA: MEMENTO SLOTS ***************************************-->
+
+		<Criteria id="less-memento-slots">
+			<ConfigurationValueMatches>
+      			<Group>Player</Group>
+      			<ConfigurationId>MementoSlotsKey</ConfigurationId>
+      			<Value>ZG_LESS_MEMENTO_SLOTS</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
 	</ActionCriteria>
 
 
@@ -257,6 +267,7 @@
 			    <UpdateDatabase>
 					<Item>config/SetupGameOptions.sql</Item>
 					<Item>config/SetupParameters.sql</Item>
+					<!-- <Item>data/mementos/MementoSlotsLess.sql</Item> -->
             	</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -447,7 +458,7 @@
 			</Actions>
 		</ActionGroup>
 
-<!--************************* SETTINGS: SETTLEMENT LIMIT *****************************-->
+<!--************************* SETTINGS: SETTLEMENT LIMIT ************************************-->
 
 		<ActionGroup id="zg-more-settlement-limit-antiquity" scope="game" criteria="more-settlement-limit-antiquity">
 			<Properties><LoadOrder>50</LoadOrder></Properties>
@@ -494,6 +505,17 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/settlement_limit/modern/SettlementLimitLess.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
+<!--************************* SETTINGS: MEMENTO SLOTS ***************************************-->
+
+		<ActionGroup id="zg-less-memento-slots" scope="shell" criteria="less-memento-slots">
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/mementos/MementoSlotsLess.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

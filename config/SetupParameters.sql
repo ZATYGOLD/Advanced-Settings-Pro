@@ -9,7 +9,9 @@ INSERT OR IGNORE INTO ParameterGroups (GroupId, Name)
         ('IndependentPowerOptions', 'LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS'),
         ('MPAdvancedIndependentPowerOptions', 'LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS'),
         ('SettlementLimitOptions', 'LOC_GROUPID_ZG_SETTLEMENTLIMITOPTIONS'),
-        ('MPAdvancedSettlementLimitOptions', 'LOC_GROUPID_ZG_SETTLEMENTLIMITOPTIONS');
+        ('MPAdvancedSettlementLimitOptions', 'LOC_GROUPID_ZG_SETTLEMENTLIMITOPTIONS'),
+        ('MementoOptions', 'LOC_GROUPID_ZG_MEMENTOOPTIONS'),
+        ('MPAdvancedMementoOptions', 'LOC_GROUPID_ZG_MEMENTOOPTIONS');
 
 --*******************************************************
 --***************** SETTLER SETTINGS ********************
@@ -43,9 +45,9 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 -- Independent Power Count Options
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey,	GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex) 
     VALUES 
-        ('ZG_IndependentCount', 'LOC_ZG_INDEPENDENT_COUNT_NAME', 'LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION','ZG_IndependentCountDomain', 'ZG_DEFAULT', 1, 'Game', 'IndependentCountKey', 'IndependentPowerOptions', 'MPAdvancedIndependentPowerOptions', 0, 70),
-        ('ZG_IndependentSpace', 'LOC_ZG_INDEPENDENT_SPACE_NAME', 'LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION','ZG_IndependentSpaceDomain', 'ZG_DEFAULT', 1, 'Game', 'IndependentSpaceKey', 'IndependentPowerOptions', 'MPAdvancedIndependentPowerOptions', 0, 71),
-        ('ZG_IndependentUnitsCount', 'LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME', 'LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION','ZG_IndependentUnitsCountDomain', 'ZG_DEFAULT', 1, 'Game', 'IndependentUnitsCountKey', 'IndependentPowerOptions', 'MPAdvancedIndependentPowerOptions', 0, 72);
+        ('ZG_IndependentCount', 'LOC_ZG_INDEPENDENT_COUNT_NAME', 'LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION','ZG_IndependentCountDomain', 'ZG_DEFAULT', 1, 'Game', 'IndependentCountKey', 'IndependentPowerOptions', 'MPAdvancedIndependentPowerOptions', 0, 700),
+        ('ZG_IndependentSpace', 'LOC_ZG_INDEPENDENT_SPACE_NAME', 'LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION','ZG_IndependentSpaceDomain', 'ZG_DEFAULT', 1, 'Game', 'IndependentSpaceKey', 'IndependentPowerOptions', 'MPAdvancedIndependentPowerOptions', 0, 7010),
+        ('ZG_IndependentUnitsCount', 'LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME', 'LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION','ZG_IndependentUnitsCountDomain', 'ZG_DEFAULT', 1, 'Game', 'IndependentUnitsCountKey', 'IndependentPowerOptions', 'MPAdvancedIndependentPowerOptions', 0, 7020);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES 
@@ -74,7 +76,7 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 -- Settlement Limit Parameters
 ------------------------------
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey,	GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex) 
-    VALUES ('ZG_SettlementLimit', 'LOC_ZG_SETTLEMENT_LIMIT_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION','ZG_SettlementLimitDomain', 'ZG_DEFAULT_SETTLEMENT_LIMIT_COUNT', 1, 'Game', 'SettlementLimitKey', 'SettlementLimitOptions', 'MPAdvancedSettlementLimitOptions', 0, 65);
+    VALUES ('ZG_SettlementLimit', 'LOC_ZG_SETTLEMENT_LIMIT_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION','ZG_SettlementLimitDomain', 'ZG_DEFAULT_SETTLEMENT_LIMIT_COUNT', 1, 'Game', 'SettlementLimitKey', 'SettlementLimitOptions', 'MPAdvancedSettlementLimitOptions', 0, 600);
 
 -----------------
 -- DomainValues
@@ -85,3 +87,28 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_SettlementLimitDomain', 'ZG_DEFAULT_SETTLEMENT_LIMIT_COUNT', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_ADDITIONAL_DESCRIPTION_DEFAULT', 10),
         ('ZG_SettlementLimitDomain', 'ZG_MORE_SETTLEMENT_LIMIT_COUNT', 'LOC_ZG_MORE_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_ADDITIONAL_DESCRIPTION_MORE', 20),
         ('ZG_SettlementLimitDomain', 'ZG_LESS_SETTLEMENT_LIMIT_COUNT', 'LOC_ZG_LESS_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_ADDITIONAL_DESCRIPTION_LESS', 30);
+
+--*******************************************************
+--***************** MEMENTO SETTINGS ********************
+--*******************************************************
+--------------
+-- Parameters
+--------------
+UPDATE Parameters SET GroupId = 'MementoOptions', GroupIDMultiplayerOverride = 'MPAdvancedMementoOptions', SupportsSinglePlayer = 1, SortIndex = '500' Where ParameterID = 'MementosEnabled';
+INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey,	GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex) 
+    VALUES ('ZG_MementoSlots', 'LOC_ZG_MEMENTO_SLOTS_NAME', 'LOC_ZG_MEMENTO_SLOTS_DESCRIPTION','ZG_MementoSlotsDomain', 'ZG_DEFAULT', 0, 'Player', 'MementoSlotsKey', 'MementoOptions', 'MPAdvancedMementoOptions', 0, 5010);
+
+-------------------------
+-- ParametersDependencies
+-------------------------
+INSERT OR IGNORE INTO ParameterDependencies (ParameterID, ConfigurationGroup, ConfigurationKey, Operator, ConfigurationValue)
+    VALUES ('ZG_MementoSlots', 'Game', 'MementosEnabled', 'Equals', '1');
+
+-----------------
+-- DomainValues
+-----------------
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES 
+        ('ZG_MementoSlotsDomain', 'ZG_DEFAULT_MEMENTO_SLOTS', 'LOC_ZG_DEFAULT_NAME', '', 10),
+        ('ZG_MementoSlotsDomain', 'ZG_MORE_MEMENTO_SLOTS', 'LOC_ZG_MORE_NAME', '', 20),
+        ('ZG_MementoSlotsDomain', 'ZG_LESS_MEMENTO_SLOTS', 'LOC_ZG_LESS_NAME', '', 30);

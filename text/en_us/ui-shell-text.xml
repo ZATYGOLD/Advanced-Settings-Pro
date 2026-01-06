@@ -4,7 +4,8 @@
 	<!-- Unique Group Ids -->
 		<Row Tag="LOC_GROUPID_ZG_UNITMOVEMENTOPTIONS"><Text>Unit Movement Settings</Text></Row>
 		<Row Tag="LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS"><Text>Independent Power Settings</Text></Row>
-		<Row Tag="LOC_GROUPID_ZG_SETTLEMENTLIMITOPTIONS"><Text>Settlement Limit Settings</Text></Row>
+		<Row Tag="LOC_GROUPID_ZG_SETTLEMENTLIMITOPTIONS"><Text>Settlement Settings</Text></Row>
+		<Row Tag="LOC_GROUPID_ZG_MEMENTOOPTIONS"><Text>Memento Settings</Text></Row>
 
 	<!-- Universal Names -->
 		<Row Tag="LOC_ZG_DEFAULT_NAME"><Text>Default</Text></Row>
@@ -135,6 +136,18 @@
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ADDITIONAL_DESCRIPTION_LESS">
 			<Text>
 				[BLIST][LI]Antiquity: 1[icon:SETTLEMENT_LIMIT]settlement limit.[LI]Exploration: 4[icon:SETTLEMENT_LIMIT]settlement limit.[LI]Modern: 10[icon:SETTLEMENT_LIMIT]settlement limit.[/BLIST]
+			</Text>
+		</Row>
+
+		<!-- Memento Slots -->
+		<Row Tag="LOC_ZG_MEMENTO_SLOTS_NAME"><Text>Memento Slots</Text></Row>
+
+		<Row Tag="LOC_ZG_MEMENTO_SLOTS_DESCRIPTION">
+			<Text> Sets the maximum number of memento slots allowed per player.
+				[n] [BLIST][LI]None: 0[icon:INDEPENDENT_POWER]Independent Powers.
+				[LI]Less: 2[icon:INDEPENDENT_POWER]Independent Powers per Civilization.
+				[LI]Default: 3[icon:INDEPENDENT_POWER]Independent Powers per Civilization.
+				[LI]More: 4[icon:INDEPENDENT_POWER]Independent Powers per Civilization.[/BLIST]
 			</Text>
 		</Row>
 	</EnglishText>
