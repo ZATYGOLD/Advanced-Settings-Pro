@@ -2,7 +2,7 @@
 <Database>
 	<EnglishText>
 	<!-- Unique Group Ids -->
-		<Row Tag="LOC_GROUPID_ZG_UNITMOVEMENTOPTIONS"><Text>Unit Movement Settings</Text></Row>
+		<Row Tag="LOC_GROUPID_ZG_UNITOPTIONS"><Text>Unit Settings</Text></Row>
 		<Row Tag="LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS"><Text>Independent Power Settings</Text></Row>
 		<Row Tag="LOC_GROUPID_ZG_SETTLEMENTOPTIONS"><Text>Settlement Settings</Text></Row>
 
@@ -142,6 +142,14 @@
 		<Row Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION">
 			<Text>Sets the minimum distance between settlements.
 				[n] [BLIST][LI]Less: 2 Tiles.[LI]Default: 3 Tiles.[LI]More: 4 Tiles.[/BLIST]
+			</Text>
+		</Row>
+
+		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_NAME"><Text>Military Unit Cost</Text></Row>
+
+		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION">
+			<Text>Sets production cost of combat units.
+				[n] [BLIST][LI]Less: 15% Cheaper.[LI]Default: No Discount.[LI]More: 15% More Expensive.[/BLIST]
 			</Text>
 		</Row>
 	</EnglishText>

@@ -4,8 +4,8 @@
 -- New Parameter Groups
 INSERT OR IGNORE INTO ParameterGroups (GroupId, Name) 
     VALUES 
-        ('UnitMovementOptions', 'LOC_GROUPID_ZG_UNITMOVEMENTOPTIONS'),
-        ('MPAdvancedUnitMovementOptions', 'LOC_GROUPID_ZG_UNITMOVEMENTOPTIONS'),
+        ('UnitOptions', 'LOC_GROUPID_ZG_UNITOPTIONS'),
+        ('MPAdvancedUnitOptions', 'LOC_GROUPID_ZG_UNITOPTIONS'),
         ('IndependentPowerOptions', 'LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS'),
         ('MPAdvancedIndependentPowerOptions', 'LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS'),
         ('SettlementOptions', 'LOC_GROUPID_ZG_SETTLEMENTOPTIONS'),
@@ -15,39 +15,32 @@ INSERT OR IGNORE INTO ParameterGroups (GroupId, Name)
 --*******************************************************
 --***************** SINGLE AGE SETTINGS *****************
 --*******************************************************
--- Single Player Single Age Option
 UPDATE Parameters SET SupportsSinglePlayer = 1 WHERE ParameterID = 'SingleAgeGame';
 
 --*******************************************************
---***************** SETTLER SETTINGS ********************
+--***************** UNIT SETTINGS ********************
 --*******************************************************
--- Settler Movement Options
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey,	GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex) 
-    VALUES ('ZG_SettlerMovementSpeed', 'LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME', 'LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION', 'ZG_SettlerMovementDomain','ZG_DEFAULT', 1, 'Game', 'SettlerMovementKey', 'UnitMovementOptions', 'MPAdvancedUnitMovementOptions', 0, 1050);
+    VALUES 
+        ('ZG_SettlerMovementSpeed', 'LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME', 'LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION', 'ZG_SettlerMovementDomain','ZG_DEFAULT', 1, 'Game', 'SettlerMovementKey', 'UnitOptions', 'MPAdvancedUnitOptions', 0, 1050),
+        ('ZG_TreasureMovementSpeed', 'LOC_ZG_TREASURE_MOVEMENT_SPEED_NAME', 'LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION', 'ZG_TreasureMovementDomain', 'ZG_DEFAULT', 1, 'Game','TreasureMovementKey', 'UnitOptions', 'MPAdvancedUnitOptions', 0, 1051),
+        ('ZG_CombatUnitCost', 'LOC_ZG_COMBAT_UNIT_COST_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION', 'ZG_CombatUnitCostDomain', 'ZG_DEFAULT', 1, 'Game','CombatUnitCostKey', 'UnitOptions', 'MPAdvancedUnitOptions', 0, 1052);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES 
         ('ZG_SettlerMovementDomain', 'ZG_SETTLER_MOVES_DEFAULT', 'LOC_ZG_DEFAULT_NAME', '', 10),
         ('ZG_SettlerMovementDomain', 'ZG_SETTLER_MOVES_FAST', 'LOC_ZG_FAST_NAME', '', 20),
-        ('ZG_SettlerMovementDomain', 'ZG_SETTLER_MOVES_SLOW', 'LOC_ZG_SLOW_NAME', '', 30);
-
---*******************************************************
---************** TREASURE CONVOY SETTINGS ***************
---*******************************************************
--- Treasure Convoy Movement Options
-INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey,	GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex) 
-    VALUES ('ZG_TreasureMovementSpeed', 'LOC_ZG_TREASURE_MOVEMENT_SPEED_NAME', 'LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION', 'ZG_TreasureMovementDomain', 'ZG_DEFAULT', 1, 'Game','TreasureMovementKey', 'UnitMovementOptions', 'MPAdvancedUnitMovementOptions', 0, 1051);
-
-INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
-    VALUES 
+        ('ZG_SettlerMovementDomain', 'ZG_SETTLER_MOVES_SLOW', 'LOC_ZG_SLOW_NAME', '', 30),
         ('ZG_TreasureMovementDomain', 'ZG_TREASURE_MOVES_DEFAULT', 'LOC_ZG_DEFAULT_NAME', '', 10),
         ('ZG_TreasureMovementDomain', 'ZG_TREASURE_MOVES_FAST', 'LOC_ZG_FAST_NAME', '', 20),
-        ('ZG_TreasureMovementDomain', 'ZG_TREASURE_MOVES_SLOW', 'LOC_ZG_SLOW_NAME', '', 30);
+        ('ZG_TreasureMovementDomain', 'ZG_TREASURE_MOVES_SLOW', 'LOC_ZG_SLOW_NAME', '', 30),
+        ('ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_DEFAULT', 'LOC_ZG_DEFAULT_NAME', '', 10),
+        ('ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_MORE', 'LOC_ZG_MORE_NAME', '', 20),
+        ('ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_LESS', 'LOC_ZG_LESS_NAME', '', 30);
 
 --*******************************************************
 --************* INDEPENDENT POWER SETTINGS **************
 --*******************************************************
--- Independent Power Count Options
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey,	GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex) 
     VALUES 
         ('ZG_IndependentCount', 'LOC_ZG_INDEPENDENT_COUNT_NAME', 'LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION','ZG_IndependentCountDomain', 'ZG_DEFAULT', 1, 'Game', 'IndependentCountKey', 'IndependentPowerOptions', 'MPAdvancedIndependentPowerOptions', 0, 700),
@@ -70,44 +63,23 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 --*******************************************************
 --************* DISASTER INTENSITY SETTINGS *************
 --*******************************************************
--- Disasters Disabled
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
-    VALUES ('StandardDisasterIntensities', 'ZG_DISABLED_DISASTERS', 'LOC_ZG_DISABLED_NAME', '', 40);
+    VALUES 
+        ('StandardDisasterIntensities', 'ZG_DISABLED_DISASTERS', 'LOC_ZG_DISABLED_NAME', '', 40);
 
 --*******************************************************
---************* SETTLEMENT LIMIT SETTINGS ***************
+--************* SETTLEMENT SETTINGS *********************
 --*******************************************************
----------------
--- Parameters
----------------
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey,	GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex) 
-    VALUES ('ZG_SettlementLimit', 'LOC_ZG_SETTLEMENT_LIMIT_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION','ZG_SettlementLimitDomain', 'ZG_DEFAULT_SETTLEMENT_LIMIT_COUNT', 1, 'Game', 'SettlementLimitKey', 'SettlementOptions', 'MPAdvancedSettlementOptions', 0, 600);
+    VALUES 
+        ('ZG_SettlementLimit', 'LOC_ZG_SETTLEMENT_LIMIT_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION','ZG_SettlementLimitDomain', 'ZG_DEFAULT_SETTLEMENT_LIMIT_COUNT', 1, 'Game', 'SettlementLimitKey', 'SettlementOptions', 'MPAdvancedSettlementOptions', 0, 600),
+        ('ZG_SettlementDistance', 'LOC_ZG_SETTLEMENT_DISTANCE_NAME', 'LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION','ZG_SettlementDistanceDomain', 'ZG_DEFAULT_SETTLEMENT_DISTANCE_COUNT', 1, 'Game', 'SettlementDistanceKey', 'SettlementOptions', 'MPAdvancedSettlementOptions', 0, 6010);
 
------------------
--- DomainValues
------------------
--- Standard Options
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES 
         ('ZG_SettlementLimitDomain', 'ZG_DEFAULT_SETTLEMENT_LIMIT_COUNT', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_ADDITIONAL_DESCRIPTION_DEFAULT', 10),
         ('ZG_SettlementLimitDomain', 'ZG_MORE_SETTLEMENT_LIMIT_COUNT', 'LOC_ZG_MORE_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_ADDITIONAL_DESCRIPTION_MORE', 20),
-        ('ZG_SettlementLimitDomain', 'ZG_LESS_SETTLEMENT_LIMIT_COUNT', 'LOC_ZG_LESS_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_ADDITIONAL_DESCRIPTION_LESS', 30);
-
---*******************************************************
---************* SETTLEMENT DISTANCE SETTINGS ************
---*******************************************************
----------------
--- Parameters
----------------
-INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey,	GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex) 
-    VALUES ('ZG_SettlementDistance', 'LOC_ZG_SETTLEMENT_DISTANCE_NAME', 'LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION','ZG_SettlementDistanceDomain', 'ZG_DEFAULT_SETTLEMENT_DISTANCE_COUNT', 1, 'Game', 'SettlementDistanceKey', 'SettlementOptions', 'MPAdvancedSettlementOptions', 0, 6010);
-
------------------
--- DomainValues
------------------
--- Standard Options
-INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
-    VALUES 
+        ('ZG_SettlementLimitDomain', 'ZG_LESS_SETTLEMENT_LIMIT_COUNT', 'LOC_ZG_LESS_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_ADDITIONAL_DESCRIPTION_LESS', 30),
         ('ZG_SettlementDistanceDomain', 'ZG_DEFAULT_SETTLEMENT_DISTANCE_COUNT', 'LOC_ZG_DEFAULT_NAME', '', 10),
         ('ZG_SettlementDistanceDomain', 'ZG_MORE_SETTLEMENT_DISTANCE_COUNT', 'LOC_ZG_MORE_NAME', '', 20),
         ('ZG_SettlementDistanceDomain', 'ZG_LESS_SETTLEMENT_DISTANCE_COUNT', 'LOC_ZG_LESS_NAME', '', 30);
