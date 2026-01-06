@@ -1,4 +1,4 @@
--- data/settlement_limit/antiquity/SettlementLimitLess.sql
+-- data/settlements/antiquity/SettlementLimitLess.sql
 -- Author: Zatygold
 
 UPDATE ModifierArguments
