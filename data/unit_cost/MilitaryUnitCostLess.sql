@@ -2,7 +2,7 @@
 -- Author: Zatygold
 
 UPDATE Unit_Costs
-SET Cost = CAST(ROUND(Cost * 0.85) AS INTEGER)
+SET Cost = CAST(ROUND(Cost * 0.75) AS INTEGER)
 WHERE YieldType = 'YIELD_PRODUCTION'
 AND UnitType IN (
     SELECT UnitType
