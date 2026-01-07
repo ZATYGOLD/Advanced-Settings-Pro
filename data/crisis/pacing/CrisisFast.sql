@@ -1,4 +1,4 @@
--- data/crisis/pacing/CrisisQuicker.sql
+-- data/crisis/pacing/CrisisFast.sql
 -- Author: Zatygold
 
 -- Fast: 85%, 90%, 95%
@@ -17,5 +17,6 @@ SET
     WHEN 3 THEN 100
     WHEN 4 THEN 100
     ELSE AgeProgressEndPercent
-  END
+  END,
+  MinDuration = 2
 WHERE Stage IN (1,2,3,4);

@@ -170,9 +170,9 @@
 		</Row>
 		<Row Tag="LOC_ZG_CRISIS_SPEED_ADDITIONAL_DESCRIPTION_QUICK">
 			<Text>
-				[BLIST][LI]Stage 1: Begins at 80%.
+				[BLIST][LI]Stage 1: Begins at 75%.
 				[LI]Stage 2: Begins at 85%.
-				[LI]Stage 3: Begins at 90%.[/BLIST]
+				[LI]Stage 3: Begins at 95%.[/BLIST]
 			</Text>
 		</Row>
 		<Row Tag="LOC_ZG_CRISIS_SPEED_ADDITIONAL_DESCRIPTION_CRAWL">
