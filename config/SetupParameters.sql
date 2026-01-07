@@ -120,6 +120,4 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_OceanWidthDomain', 'ZG_LESS_OCEAN_WIDTH', 'LOC_ZG_LESS_NAME', '', 30),
         ('ZG_LakeGenerationDomain', 'ZG_DEFAULT_LAKE_GENERATION', 'LOC_ZG_DEFAULT_NAME', '', 10),
         ('ZG_LakeGenerationDomain', 'ZG_MORE_LAKE_GENERATION', 'LOC_ZG_MORE_NAME', '', 20),
-        ('ZG_LakeGenerationDomain', 'ZG_DOUBLE_LAKE_GENERATION', 'LOC_ZG_DOUBLE_NAME', '', 30),
-        ('ZG_LakeGenerationDomain', 'ZG_NONE_LAKE_GENERATION', 'LOC_ZG_NONE_NAME', '', 40),
-        ('ZG_LakeGenerationDomain', 'ZG_HALF_LAKE_GENERATION', 'LOC_ZG_HALF_NAME', '', 50);
+        ('ZG_LakeGenerationDomain', 'ZG_LESS_LAKE_GENERATION', 'LOC_ZG_LESS_NAME', '', 30);
