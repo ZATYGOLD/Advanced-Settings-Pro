@@ -2,5 +2,4 @@
 -- Author: Zatygold
 
 UPDATE Maps
-SET
-    LakeGenerationFrequency = 75;
+SET LakeGenerationFrequency = 75;
