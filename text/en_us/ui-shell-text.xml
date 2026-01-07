@@ -7,20 +7,40 @@
 		<Row Tag="LOC_GROUPID_ZG_SETTLEMENTOPTIONS"><Text>Settlement Settings</Text></Row>
 
 	<!-- Universal Names -->
-		<Row Tag="LOC_ZG_DEFAULT_NAME"><Text>Default</Text></Row>
 		<Row Tag="LOC_ZG_ENABLED_NAME"><Text>Enabled</Text></Row>
 		<Row Tag="LOC_ZG_DISABLED_NAME"><Text>Disabled</Text></Row>
+		<Row Tag="LOC_ZG_DEFAULT_NAME"><Text>Default</Text></Row>
+		<Row Tag="LOC_ZG_NONE_NAME"><Text>None</Text></Row>
 		<Row Tag="LOC_ZG_CUSTOM_NAME"><Text>Custom</Text></Row>
+		<Row Tag="LOC_ZG_DOUBLE_NAME"><Text>Double</Text></Row>
+		<Row Tag="LOC_ZG_HALF_NAME"><Text>Half</Text></Row>
 		<Row Tag="LOC_ZG_FAST_NAME"><Text>Fast</Text></Row>
 		<Row Tag="LOC_ZG_QUICK_NAME"><Text>Quick</Text></Row>
 		<Row Tag="LOC_ZG_SLOW_NAME"><Text>Slow</Text></Row>
 		<Row Tag="LOC_ZG_CRAWL_NAME"><Text>Crawl</Text></Row>
 		<Row Tag="LOC_ZG_MORE_NAME"><Text>More</Text></Row>
 		<Row Tag="LOC_ZG_LESS_NAME"><Text>Less</Text></Row>
-		<Row Tag="LOC_ZG_NONE_NAME"><Text>None</Text></Row>
 
-		<!-- Settler Labels -->
-		<Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME"><Text>Settler Speed</Text></Row>
+	<!-- Setting Names -->
+	<Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME"><Text>Settler Speed</Text></Row>
+	<Row Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_NAME"><Text>Treasure Convoy Speed</Text></Row>
+	<Row Tag="LOC_ZG_INDEPENDENT_COUNT_NAME"><Text>Initial Independent Amount</Text></Row>
+	<Row Tag="LOC_ZG_INDEPENDENT_SPACE_NAME"><Text>Independent Spacing</Text></Row>
+	<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME"><Text>Initial Independent Units Amount</Text></Row>
+	<Row Tag="LOC_ZG_DISASTER_SETTINGS_NAME"><Text>Disasters</Text></Row>
+	<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_NAME"><Text>Settlement Limit</Text></Row>
+	<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME"><Text>Antiquity</Text></Row>
+	<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME"><Text>Exploration</Text></Row>
+	<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME"><Text>Modern</Text></Row>
+	<Row Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME"><Text>Settlement Distance</Text></Row>
+	<Row Tag="LOC_ZG_COMBAT_UNIT_COST_NAME"><Text>Military Unit Cost</Text></Row>
+	<Row Tag="LOC_ZG_CRISIS_SPEED_NAME"><Text>Crisis Speed</Text></Row>
+	<Row Tag="LOC_ZG_NATURAL_WONDER_COUNT_NAME"><Text>Natural Wonders</Text></Row>
+	<Row Tag="LOC_ZG_OCEAN_WIDTH_NAME"><Text>Ocean Distance</Text></Row>
+	<Row Tag="LOC_ZG_LAKE_GENERATION_NAME"><Text>Lakes</Text></Row>
+
+
+	<!-- Unit Movement Descriptions -->
         <Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION">
 			<Text> Sets the settler base movement and embarked speed.
 				[n] [BLIST][LI]Slow: 2[icon:Action_Move]Base and 1[icon:Action_Move]Embarked Movement.
@@ -28,9 +48,6 @@
 				[LI]Fast: 4[icon:Action_Move]Base and 3[icon:Action_Move]Embarked Movement.[/BLIST]
 			</Text>
 		</Row>
-
-		<!-- Treasure Convoy Labels -->
-		<Row Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_NAME"><Text>Treasure Convoy Speed</Text></Row>
         <Row Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION">
 			<Text> Sets the treasure convoy base movement and embarked speed.
 				[n] [BLIST][LI]Slow: 1[icon:Action_Move]Base and Embarked Movement.
@@ -39,12 +56,7 @@
 			</Text>
 		</Row>
 
-		<!-- Independent Power Names -->
-		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_NAME"><Text>Initial Independent Amount</Text></Row>
-		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_NAME"><Text>Independent Spacing</Text></Row>
-		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME"><Text>Initial Independent Units Amount</Text></Row>
-
-		<!-- Independent Power Descriptions -->
+	<!-- Independent Power Descriptions -->
         <Row Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION">
 			<Text> Sets the initial number of Independent Powers.
 				[n] [BLIST][LI]None: 0[icon:INDEPENDENT_POWER]Independent Powers.
@@ -71,7 +83,6 @@
 		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_ADDITIONAL_DESCRIPTION_MORE">
 			<Text>[BLIST][LI]Antiquity: 7 Tiles.[LI]Exploration: 7 Tiles.[LI]Modern: 5 Tiles.[/BLIST]</Text>
 		</Row>
-
 		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION">
 			<Text>Sets the initial number of an Independent Power's units. [n]Independent Powers always start with 1[icon:UNIT_SCOUT]Scout.</Text>
 		</Row>
@@ -94,19 +105,12 @@
 			</Text>
 		</Row>
 
-		<!-- Disaster Setting -->
-		<Row Tag="LOC_ZG_DISASTER_SETTINGS_NAME"><Text>Disasters</Text></Row>
-
+	<!-- Disaster Descriptions -->
 		<Row Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION">
 			<Text> Enables or disables disasters.</Text>
 		</Row>
 
-		<!-- Settlement Limit Setting -->
-		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_NAME"><Text>Settlement Limit</Text></Row>
-		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME"><Text>Antiquity</Text></Row>
-		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME"><Text>Exploration</Text></Row>
-		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME"><Text>Modern</Text></Row>
-		<!-- Settlement Limit Custom Setting -->
+	<!-- Settlement Limit Custom Setting -->
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_DEFAULT"><Text>3</Text></Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_MORE"><Text>4</Text></Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_LESS"><Text>2</Text></Row>
@@ -119,6 +123,7 @@
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_MORE"><Text>19</Text></Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_LESS"><Text>13</Text></Row>
 
+	<!-- Settlement Limit Descriptions -->
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION">
 			<Text>Sets the initial settlement limit for each age.</Text>
 		</Row>
@@ -138,29 +143,24 @@
 			</Text>
 		</Row>
 
-		<Row Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME"><Text>Settlement Distance</Text></Row>
-
+	<!-- Settlement Distance Descriptions -->
 		<Row Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION">
 			<Text>Sets the minimum distance between settlements.
 				[n] [BLIST][LI]Less: 2 Tiles.[LI]Default: 3 Tiles.[LI]More: 4 Tiles.[/BLIST]
 			</Text>
 		</Row>
 
-		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_NAME"><Text>Military Unit Cost</Text></Row>
-
+	<!-- Unit Cost Descriptions -->
 		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION">
 			<Text>Sets production cost of combat units.
 				[n] [BLIST][LI]Less: 25% Cheaper.[LI]Default: No Discount.[LI]More: 25% More Expensive.[/BLIST]
 			</Text>
 		</Row>
 
-		<Row Tag="LOC_ZG_CRISIS_SPEED_NAME"><Text>Crisis Speed</Text></Row>
-
+	<!-- Crisis Descriptions -->
 		<Row Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION">
 			<Text>Sets the pacing of the crises.</Text>
 		</Row>
-
-
 		<Row Tag="LOC_ZG_CRISIS_SPEED_ADDITIONAL_DESCRIPTION_DEFAULT">
 			<Text>
 				[BLIST][LI]Stage 1: Begins at 70%.
@@ -195,6 +195,21 @@
 				[LI]Stage 2: Begins at 90%.
 				[LI]Stage 3: Begins at 95%.[/BLIST]
 			</Text>
+		</Row>
+
+	<!-- Natural Wonder Descriptions -->
+		<Row Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION">
+			<Text>Sets the amount of natural wonders on the map.</Text>
+		</Row>
+
+	<!-- Lake Generation Descriptions -->
+		<Row Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION">
+			<Text>Sets the frequency of lakes on the map.</Text>
+		</Row>
+
+	<!-- Ocean Width Descriptions -->
+		<Row Tag="LOC_ZG_OCEAN_WIDTH_DESCRIPTION">
+			<Text>Sets the distance of the ocean between continents.</Text>
 		</Row>
 	</EnglishText>
 </Database>
