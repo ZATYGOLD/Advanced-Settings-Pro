@@ -150,7 +150,7 @@
 
 		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION">
 			<Text>Sets production cost of combat units.
-				[n] [BLIST][LI]Less: 15% Cheaper.[LI]Default: No Discount.[LI]More: 15% More Expensive.[/BLIST]
+				[n] [BLIST][LI]Less: 25% Cheaper.[LI]Default: No Discount.[LI]More: 25% More Expensive.[/BLIST]
 			</Text>
 		</Row>
 
