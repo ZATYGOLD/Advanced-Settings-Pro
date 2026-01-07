@@ -83,3 +83,18 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_SettlementDistanceDomain', 'ZG_DEFAULT_SETTLEMENT_DISTANCE_COUNT', 'LOC_ZG_DEFAULT_NAME', '', 10),
         ('ZG_SettlementDistanceDomain', 'ZG_MORE_SETTLEMENT_DISTANCE_COUNT', 'LOC_ZG_MORE_NAME', '', 20),
         ('ZG_SettlementDistanceDomain', 'ZG_LESS_SETTLEMENT_DISTANCE_COUNT', 'LOC_ZG_LESS_NAME', '', 30);
+
+--*******************************************************
+--************* CRISIS SETTINGS *************************
+--*******************************************************
+INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey,	GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex) 
+    VALUES 
+         ('ZG_CrisisSpeed', 'LOC_ZG_CRISIS_SPEED_NAME', 'LOC_ZG_CRISIS_SPEED_DESCRIPTION','ZG_CrisisSpeedDomain', 'ZG_DEFAULT_CRISIS_SPEED_COUNT', 0, 'Game', 'CrisisSpeedKey', 'DisasterOptions', 'MPAdvancedDisasterOptions', 0, 3029);
+
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES 
+        ('ZG_CrisisSpeedDomain', 'ZG_DEFAULT_CRISIS_SPEED', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_CRISIS_SPEED_ADDITIONAL_DESCRIPTION_DEFAULT', 10),
+        ('ZG_CrisisSpeedDomain', 'ZG_QUICK_CRISIS_SPEED', 'LOC_ZG_QUICK_NAME', 'LOC_ZG_CRISIS_SPEED_ADDITIONAL_DESCRIPTION_QUICK', 20),
+        ('ZG_CrisisSpeedDomain', 'ZG_SLOW_CRISIS_SPEED', 'LOC_ZG_SLOW_NAME', 'LOC_ZG_CRISIS_SPEED_ADDITIONAL_DESCRIPTION_SLOW', 50),
+        ('ZG_CrisisSpeedDomain', 'ZG_FAST_CRISIS_SPEED', 'LOC_ZG_FAST_NAME', 'LOC_ZG_CRISIS_SPEED_ADDITIONAL_DESCRIPTION_FAST', 30),
+        ('ZG_CrisisSpeedDomain', 'ZG_CRAWL_CRISIS_SPEED', 'LOC_ZG_CRAWL_NAME', 'LOC_ZG_CRISIS_SPEED_ADDITIONAL_DESCRIPTION_CRAWL', 40);

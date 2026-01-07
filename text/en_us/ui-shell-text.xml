@@ -11,9 +11,10 @@
 		<Row Tag="LOC_ZG_ENABLED_NAME"><Text>Enabled</Text></Row>
 		<Row Tag="LOC_ZG_DISABLED_NAME"><Text>Disabled</Text></Row>
 		<Row Tag="LOC_ZG_CUSTOM_NAME"><Text>Custom</Text></Row>
-		<Row Tag="LOC_ZG_QUICK_NAME"><Text>Quick</Text></Row>
 		<Row Tag="LOC_ZG_FAST_NAME"><Text>Fast</Text></Row>
+		<Row Tag="LOC_ZG_QUICK_NAME"><Text>Quick</Text></Row>
 		<Row Tag="LOC_ZG_SLOW_NAME"><Text>Slow</Text></Row>
+		<Row Tag="LOC_ZG_CRAWL_NAME"><Text>Crawl</Text></Row>
 		<Row Tag="LOC_ZG_MORE_NAME"><Text>More</Text></Row>
 		<Row Tag="LOC_ZG_LESS_NAME"><Text>Less</Text></Row>
 		<Row Tag="LOC_ZG_NONE_NAME"><Text>None</Text></Row>
@@ -150,6 +151,49 @@
 		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION">
 			<Text>Sets production cost of combat units.
 				[n] [BLIST][LI]Less: 15% Cheaper.[LI]Default: No Discount.[LI]More: 15% More Expensive.[/BLIST]
+			</Text>
+		</Row>
+
+		<Row Tag="LOC_ZG_CRISIS_SPEED_NAME"><Text>Crisis Speed</Text></Row>
+
+		<Row Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION">
+			<Text>Sets the pacing of the crises.</Text>
+		</Row>
+
+
+		<Row Tag="LOC_ZG_CRISIS_SPEED_ADDITIONAL_DESCRIPTION_DEFAULT">
+			<Text>
+				[BLIST][LI]Stage 1: Begins at 70%.
+				[LI]Stage 2: Begins at 80%.
+				[LI]Stage 3: Begins at 90%.[/BLIST]
+			</Text>
+		</Row>
+		<Row Tag="LOC_ZG_CRISIS_SPEED_ADDITIONAL_DESCRIPTION_QUICK">
+			<Text>
+				[BLIST][LI]Stage 1: Begins at 80%.
+				[LI]Stage 2: Begins at 85%.
+				[LI]Stage 3: Begins at 90%.[/BLIST]
+			</Text>
+		</Row>
+		<Row Tag="LOC_ZG_CRISIS_SPEED_ADDITIONAL_DESCRIPTION_CRAWL">
+			<Text>
+				[BLIST][LI]Stage 1: Begins at 50%.
+				[LI]Stage 2: Begins at 65%.
+				[LI]Stage 3: Begins at 85%.[/BLIST]
+			</Text>
+		</Row>
+		<Row Tag="LOC_ZG_CRISIS_SPEED_ADDITIONAL_DESCRIPTION_SLOW">
+			<Text>
+				[BLIST][LI]Stage 1: Begins at 60%.
+				[LI]Stage 2: Begins at 75%.
+				[LI]Stage 3: Begins at 90%.[/BLIST]
+			</Text>
+		</Row>
+		<Row Tag="LOC_ZG_CRISIS_SPEED_ADDITIONAL_DESCRIPTION_FAST">
+			<Text>
+				[BLIST][LI]Stage 1: Begins at 85%.
+				[LI]Stage 2: Begins at 90%.
+				[LI]Stage 3: Begins at 95%.[/BLIST]
 			</Text>
 		</Row>
 	</EnglishText>

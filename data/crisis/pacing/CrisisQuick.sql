@@ -1,7 +1,7 @@
--- data/crisis/pacing/CrisisFaster.sql
+-- data/crisis/pacing/CrisisQuicker.sql
 -- Author: Zatygold
 
--- Fast: 80%, 85%, 90%
+-- Quick: 80%, 85%, 90%
 UPDATE AgeCrisisStages
 SET
   AgeProgressTriggerPercent = CASE Stage
