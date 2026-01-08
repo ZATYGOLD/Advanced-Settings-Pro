@@ -58,11 +58,11 @@
 
 	<!-- Independent Power Descriptions -->
         <Row Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION">
-			<Text> Sets the initial number of Independent Powers.
-				[n] [BLIST][LI]None: 0[icon:INDEPENDENT_POWER]Independent Powers.
-				[LI]Less: 2[icon:INDEPENDENT_POWER]Independent Powers per Civilization.
-				[LI]Default: 3[icon:INDEPENDENT_POWER]Independent Powers per Civilization.
-				[LI]More: 4[icon:INDEPENDENT_POWER]Independent Powers per Civilization.[/BLIST]
+			<Text> Sets the initial number of [icon:INDEPENDENT_POWER]Independent Powers.
+				[n] [BLIST][LI]None: 0 Independent Powers.
+				[LI]Less: 2 Independent Powers per Civilization.
+				[LI]Default: 3 Independent Powers per Civilization.
+				[LI]More: 4 Independent Powers per Civilization.[/BLIST]
 			</Text>
 		</Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_ADDITIONAL_DESCRIPTION">
@@ -125,21 +125,27 @@
 
 	<!-- Settlement Limit Descriptions -->
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION">
-			<Text>Sets the initial settlement limit for each age.</Text>
+			<Text>Sets the initial [icon:SETTLEMENT_LIMIT]settlement limit for each age.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ADDITIONAL_DESCRIPTION_DEFAULT">
 			<Text>
-				[BLIST][LI]Antiquity: 3[icon:SETTLEMENT_LIMIT]settlement limit.[LI]Exploration: 8[icon:SETTLEMENT_LIMIT]settlement limit.[LI]Modern: 16[icon:SETTLEMENT_LIMIT]settlement limit.[/BLIST]
+				[BLIST][LI]Antiquity: 3 settlement limit.
+				[LI]Exploration: 8 settlement limit.
+				[LI]Modern: 16 settlement limit.[/BLIST]
 			</Text>
 		</Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ADDITIONAL_DESCRIPTION_MORE">
 			<Text>
-				[BLIST][LI]Antiquity: 5[icon:SETTLEMENT_LIMIT]settlement limit.[LI]Exploration: 12[icon:SETTLEMENT_LIMIT]settlement limit.[LI]Modern: 20[icon:SETTLEMENT_LIMIT]settlement limit.[/BLIST]
+				[BLIST][LI]Antiquity: 5 settlement limit.
+				[LI]Exploration: 12 settlement limit.
+				[LI]Modern: 20 settlement limit.[/BLIST]
 			</Text>
 		</Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ADDITIONAL_DESCRIPTION_LESS">
 			<Text>
-				[BLIST][LI]Antiquity: 1[icon:SETTLEMENT_LIMIT]settlement limit.[LI]Exploration: 4[icon:SETTLEMENT_LIMIT]settlement limit.[LI]Modern: 10[icon:SETTLEMENT_LIMIT]settlement limit.[/BLIST]
+				[BLIST][LI]Antiquity: 1 settlement limit.
+				[LI]Exploration: 4 settlement limit.
+				[LI]Modern: 10 settlement limit.[/BLIST]
 			</Text>
 		</Row>
 
@@ -199,7 +205,63 @@
 
 	<!-- Natural Wonder Descriptions -->
 		<Row Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION">
-			<Text>Sets the amount of natural wonders on the map.</Text>
+			<Text>Sets the amount of [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] Natural Wonders on the map.
+				[n] [BLIST][LI]None: 0 Natural Wonders.
+				[LI]Half: 50% Less Natural Wonders.
+				[LI]Default: No change to the Natural Wonders.
+				[LI]More: 50% More Natural Wonders.
+				[LI]Double: 100% More Natural Wonders.[/BLIST]
+			</Text>
+		</Row>
+		<Row Tag="LOC_ZG_NATURAL_WONDER_ADDITIONAL_DESCRIPTION_NONE">
+			<Text> Map Size
+				[BLIST]
+				[LI]Tiny: 0 Natural Wonders.
+				[LI]Small: 0 Natural Wonders.
+				[LI]Standard: 0 Natural Wonders.
+				[LI]Large: 0 Natural Wonders.
+				[LI]Huge: 0 Natural Wonders.[/BLIST]
+			</Text>
+		</Row>
+		<Row Tag="LOC_ZG_NATURAL_WONDER_ADDITIONAL_DESCRIPTION_HALF">
+			<Text> Map Size
+				[BLIST]
+				[LI]Tiny: 1 Natural Wonder.
+				[LI]Small: 2 Natural Wonders.
+				[LI]Standard: 2 Natural Wonders.
+				[LI]Large: 3 Natural Wonders.
+				[LI]Huge: 3 Natural Wonders.[/BLIST]
+			</Text>
+		</Row>
+		<Row Tag="LOC_ZG_NATURAL_WONDER_ADDITIONAL_DESCRIPTION_DEFAULT">
+			<Text> Map Size
+				[BLIST]
+				[LI]Tiny: 3 Natural Wonders.
+				[LI]Small: 4 Natural Wonders.
+				[LI]Standard: 5 Natural Wonders.
+				[LI]Large: 6 Natural Wonders.
+				[LI]Huge: 7 Natural Wonders.[/BLIST]
+			</Text>
+		</Row>
+		<Row Tag="LOC_ZG_NATURAL_WONDER_ADDITIONAL_DESCRIPTION_MORE">
+			<Text> Map Size
+				[BLIST]
+				[LI]Tiny: 5 Natural Wonders.
+				[LI]Small: 6 Natural Wonders.
+				[LI]Standard: 8 Natural Wonders.
+				[LI]Large: 9 Natural Wonders.
+				[LI]Huge: 11 Natural Wonders.[/BLIST]
+			</Text>
+		</Row>
+		<Row Tag="LOC_ZG_NATURAL_WONDER_ADDITIONAL_DESCRIPTION_DOUBLE">
+			<Text> Map Size
+				[BLIST]
+				[LI]Tiny: 6 Natural Wonders.
+				[LI]Small: 8 Natural Wonders.
+				[LI]Standard: 10 Natural Wonders.
+				[LI]Large: 12 Natural Wonders.
+				[LI]Huge: 14 Natural Wonders.[/BLIST]
+			</Text>
 		</Row>
 
 	<!-- Lake Generation Descriptions -->

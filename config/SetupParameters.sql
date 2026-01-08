@@ -110,11 +110,11 @@ INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, Defaul
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES 
-        ('ZG_NaturalWonderCountDomain', 'ZG_DEFAULT_NATURAL_WONDER_COUNT', 'LOC_ZG_DEFAULT_NAME', '', 10),
-        ('ZG_NaturalWonderCountDomain', 'ZG_MORE_NATURAL_WONDER_COUNT', 'LOC_ZG_MORE_NAME', '', 20),
-        ('ZG_NaturalWonderCountDomain', 'ZG_DOUBLE_NATURAL_WONDER_COUNT', 'LOC_ZG_DOUBLE_NAME', '', 30),
-        ('ZG_NaturalWonderCountDomain', 'ZG_NONE_NATURAL_WONDER_COUNT', 'LOC_ZG_NONE_NAME', '', 40),
-        ('ZG_NaturalWonderCountDomain', 'ZG_HALF_NATURAL_WONDER_COUNT', 'LOC_ZG_HALF_NAME', '', 50),
+        ('ZG_NaturalWonderCountDomain', 'ZG_DEFAULT_NATURAL_WONDER_COUNT', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_NATURAL_WONDER_ADDITIONAL_DESCRIPTION_DEFAULT', 10),
+        ('ZG_NaturalWonderCountDomain', 'ZG_MORE_NATURAL_WONDER_COUNT', 'LOC_ZG_MORE_NAME', 'LOC_ZG_NATURAL_WONDER_ADDITIONAL_DESCRIPTION_MORE', 20),
+        ('ZG_NaturalWonderCountDomain', 'ZG_DOUBLE_NATURAL_WONDER_COUNT', 'LOC_ZG_DOUBLE_NAME', 'LOC_ZG_NATURAL_WONDER_ADDITIONAL_DESCRIPTION_DOUBLE', 30),
+        ('ZG_NaturalWonderCountDomain', 'ZG_NONE_NATURAL_WONDER_COUNT', 'LOC_ZG_NONE_NAME', 'LOC_ZG_NATURAL_WONDER_ADDITIONAL_DESCRIPTION_NONE', 40),
+        ('ZG_NaturalWonderCountDomain', 'ZG_HALF_NATURAL_WONDER_COUNT', 'LOC_ZG_HALF_NAME', 'LOC_ZG_NATURAL_WONDER_ADDITIONAL_DESCRIPTION_HALF', 50),
         ('ZG_OceanWidthDomain', 'ZG_DEFAULT_OCEAN_WIDTH', 'LOC_ZG_DEFAULT_NAME', '', 10),
         ('ZG_OceanWidthDomain', 'ZG_MORE_OCEAN_WIDTH', 'LOC_ZG_MORE_NAME', '', 20),
         ('ZG_OceanWidthDomain', 'ZG_LESS_OCEAN_WIDTH', 'LOC_ZG_LESS_NAME', '', 30),
