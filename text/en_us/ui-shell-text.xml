@@ -67,7 +67,8 @@
 		</Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_ADDITIONAL_DESCRIPTION">
 			<Text> 
-				This will attempt to spawn the desired amount, but may not get the exact expected number.
+				Results may vary.
+				[n]This will attempt to spawn the desired amount, but may not get the exact expected number.
 				[n]However, this will get as close as possible to the expected number.
 			</Text>
 		</Row>
@@ -271,7 +272,14 @@
 
 	<!-- Ocean Width Descriptions -->
 		<Row Tag="LOC_ZG_OCEAN_WIDTH_DESCRIPTION">
-			<Text>Sets the distance of the ocean between continents.</Text>
+			<Text>Sets the amount of ocean between Homeland and Distant Lands.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_OCEAN_WIDTH_ADDITIONAL_DESCRIPTION">
+			<Text> 
+				Results may vary.
+				[n]This will attempt to adjust the distance between Homeland and Distance Lands.
+				[n]However, map generation may override the settings back to default.
+			</Text>
 		</Row>
 	</EnglishText>
 </Database>
