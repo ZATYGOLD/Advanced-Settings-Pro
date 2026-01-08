@@ -98,3 +98,26 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_CrisisSpeedDomain', 'ZG_SLOW_CRISIS_SPEED', 'LOC_ZG_SLOW_NAME', 'LOC_ZG_CRISIS_SPEED_ADDITIONAL_DESCRIPTION_SLOW', 50),
         ('ZG_CrisisSpeedDomain', 'ZG_FAST_CRISIS_SPEED', 'LOC_ZG_FAST_NAME', 'LOC_ZG_CRISIS_SPEED_ADDITIONAL_DESCRIPTION_FAST', 30),
         ('ZG_CrisisSpeedDomain', 'ZG_CRAWL_CRISIS_SPEED', 'LOC_ZG_CRAWL_NAME', 'LOC_ZG_CRISIS_SPEED_ADDITIONAL_DESCRIPTION_CRAWL', 40);
+
+--*******************************************************
+--************* MAP SETTINGS ****************************
+--*******************************************************
+INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey,	GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex) 
+    VALUES 
+        ('ZG_NaturalWondersCount', 'LOC_ZG_NATURAL_WONDER_COUNT_NAME', 'LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION','ZG_NaturalWonderCountDomain', 'ZG_DEFAULT_NATURAL_WONDER_COUNT', 1, 'Game', 'NaturalWonderCountKey', 'MapOptions', 'MPAdvancedMapOptions', 0, 1031),
+        ('ZG_OceanWidth', 'LOC_ZG_OCEAN_WIDTH_NAME', 'LOC_ZG_OCEAN_WIDTH_DESCRIPTION','ZG_OceanWidthDomain', 'ZG_DEFAULT_OCEAN_WIDTH', 1, 'Game', 'OceanWidthKey', 'MapOptions', 'MPAdvancedMapOptions', 0, 1032),
+        ('ZG_LakeGeneration', 'LOC_ZG_LAKE_GENERATION_NAME', 'LOC_ZG_LAKE_GENERATION_DESCRIPTION','ZG_LakeGenerationDomain', 'ZG_DEFAULT_LAKE_GENERATION', 1, 'Game', 'LakeGenerationKey', 'MapOptions', 'MPAdvancedMapOptions', 0, 1033);
+
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES 
+        ('ZG_NaturalWonderCountDomain', 'ZG_DEFAULT_NATURAL_WONDER_COUNT', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_NATURAL_WONDER_ADDITIONAL_DESCRIPTION_DEFAULT', 10),
+        ('ZG_NaturalWonderCountDomain', 'ZG_MORE_NATURAL_WONDER_COUNT', 'LOC_ZG_MORE_NAME', 'LOC_ZG_NATURAL_WONDER_ADDITIONAL_DESCRIPTION_MORE', 20),
+        ('ZG_NaturalWonderCountDomain', 'ZG_DOUBLE_NATURAL_WONDER_COUNT', 'LOC_ZG_DOUBLE_NAME', 'LOC_ZG_NATURAL_WONDER_ADDITIONAL_DESCRIPTION_DOUBLE', 30),
+        ('ZG_NaturalWonderCountDomain', 'ZG_NONE_NATURAL_WONDER_COUNT', 'LOC_ZG_NONE_NAME', 'LOC_ZG_NATURAL_WONDER_ADDITIONAL_DESCRIPTION_NONE', 40),
+        ('ZG_NaturalWonderCountDomain', 'ZG_HALF_NATURAL_WONDER_COUNT', 'LOC_ZG_HALF_NAME', 'LOC_ZG_NATURAL_WONDER_ADDITIONAL_DESCRIPTION_HALF', 50),
+        ('ZG_OceanWidthDomain', 'ZG_DEFAULT_OCEAN_WIDTH', 'LOC_ZG_DEFAULT_NAME', '', 10),
+        ('ZG_OceanWidthDomain', 'ZG_MORE_OCEAN_WIDTH', 'LOC_ZG_MORE_NAME', 'LOC_ZG_OCEAN_WIDTH_ADDITIONAL_DESCRIPTION', 20),
+        ('ZG_OceanWidthDomain', 'ZG_LESS_OCEAN_WIDTH', 'LOC_ZG_LESS_NAME', 'LOC_ZG_OCEAN_WIDTH_ADDITIONAL_DESCRIPTION', 30),
+        ('ZG_LakeGenerationDomain', 'ZG_DEFAULT_LAKE_GENERATION', 'LOC_ZG_DEFAULT_NAME', '', 10),
+        ('ZG_LakeGenerationDomain', 'ZG_MORE_LAKE_GENERATION', 'LOC_ZG_MORE_NAME', 'LOC_ZG_LAKE_GENERATION_ADDITIONAL_DESCRIPTION', 20),
+        ('ZG_LakeGenerationDomain', 'ZG_LESS_LAKE_GENERATION', 'LOC_ZG_LESS_NAME', 'LOC_ZG_LAKE_GENERATION_ADDITIONAL_DESCRIPTION', 30);
