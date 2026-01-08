@@ -22,22 +22,22 @@
 		<Row Tag="LOC_ZG_LESS_NAME"><Text>Less</Text></Row>
 
 	<!-- Setting Names -->
-	<Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME"><Text>Settler Speed</Text></Row>
-	<Row Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_NAME"><Text>Treasure Convoy Speed</Text></Row>
-	<Row Tag="LOC_ZG_INDEPENDENT_COUNT_NAME"><Text>Initial Independent Amount</Text></Row>
-	<Row Tag="LOC_ZG_INDEPENDENT_SPACE_NAME"><Text>Independent Spacing</Text></Row>
-	<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME"><Text>Initial Independent Units Amount</Text></Row>
-	<Row Tag="LOC_ZG_DISASTER_SETTINGS_NAME"><Text>Disasters</Text></Row>
-	<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_NAME"><Text>Settlement Limit</Text></Row>
-	<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME"><Text>Antiquity</Text></Row>
-	<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME"><Text>Exploration</Text></Row>
-	<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME"><Text>Modern</Text></Row>
-	<Row Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME"><Text>Settlement Distance</Text></Row>
-	<Row Tag="LOC_ZG_COMBAT_UNIT_COST_NAME"><Text>Military Unit Cost</Text></Row>
-	<Row Tag="LOC_ZG_CRISIS_SPEED_NAME"><Text>Crisis Speed</Text></Row>
-	<Row Tag="LOC_ZG_NATURAL_WONDER_COUNT_NAME"><Text>Natural Wonders</Text></Row>
-	<Row Tag="LOC_ZG_OCEAN_WIDTH_NAME"><Text>Ocean Distance</Text></Row>
-	<Row Tag="LOC_ZG_LAKE_GENERATION_NAME"><Text>Lakes</Text></Row>
+		<Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME"><Text>Settler Speed</Text></Row>
+		<Row Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_NAME"><Text>Treasure Convoy Speed</Text></Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_NAME"><Text>Initial Independent Amount</Text></Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_NAME"><Text>Independent Spacing</Text></Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME"><Text>Initial Independent Units Amount</Text></Row>
+		<Row Tag="LOC_ZG_DISASTER_SETTINGS_NAME"><Text>Disasters</Text></Row>
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_NAME"><Text>Settlement Limit</Text></Row>
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME"><Text>Antiquity</Text></Row>
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME"><Text>Exploration</Text></Row>
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME"><Text>Modern</Text></Row>
+		<Row Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME"><Text>Settlement Distance</Text></Row>
+		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_NAME"><Text>Military Unit Cost</Text></Row>
+		<Row Tag="LOC_ZG_CRISIS_SPEED_NAME"><Text>Crisis Speed</Text></Row>
+		<Row Tag="LOC_ZG_NATURAL_WONDER_COUNT_NAME"><Text>Natural Wonders</Text></Row>
+		<Row Tag="LOC_ZG_OCEAN_WIDTH_NAME"><Text>Ocean Distance</Text></Row>
+		<Row Tag="LOC_ZG_LAKE_GENERATION_NAME"><Text>Lakes</Text></Row>
 
 
 	<!-- Unit Movement Descriptions -->
