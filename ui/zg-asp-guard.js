@@ -15,8 +15,28 @@ const CONFLICTING_MODS = [
 
 const CONFLICTING_MOD_IDS = CONFLICTING_MODS.map((entry) => entry.modId);
 
+// Main menu buttons that auto-disable active conflicts when clicked,
+// identified by their stable audio attribute.
+const GUARDED_BUTTON_AUDIO_REFS = [
+	"data-audio-clicked-continue",     // Continue
+	"data-audio-clicked-create-game",  // New Game
+	"data-audio-clicked-load-game",    // Load Game
+	"data-audio-clicked-multiplayer",  // Multiplayer
+];
+
 // Set true to log every installed mod id to UI.log when hunting for new ids.
 const LOG_INSTALLED_MODS = false;
+
+function getActiveConflicts() {
+	return Modding.getInstalledMods().filter(
+		(mod) => mod.enabled && CONFLICTING_MOD_IDS.includes(mod.id)
+	);
+}
+
+function disableConflicts(conflicts) {
+	console.warn(`ZG-ASP disabling conflicting mods: ${conflicts.map((mod) => mod.id).join(", ")}`);
+	Modding.disableMods(conflicts.map((mod) => mod.handle));
+}
 
 function showConflictDialog(conflicts) {
 	const items = conflicts.map((mod) => `[LI]${Locale.compose(mod.name)}`).join("");
@@ -34,23 +54,40 @@ function showConflictDialog(conflicts) {
 			{
 				actions: ["accept"],
 				label: "LOC_ZG_MOD_CONFLICT_DISABLE",
-				callback: () => Modding.disableMods(conflicts.map((mod) => mod.handle))
+				callback: () => disableConflicts(conflicts)
 			}
 		]
 	});
 }
 
+// Safety net: when Continue, New Game, Load Game or Multiplayer is activated,
+// silently disable any conflicting mods that are still enabled. The capture
+// phase runs before the button's own handler starts the chosen flow.
+function guardMainMenuButtons() {
+	document.addEventListener("action-activate", (event) => {
+		const target = event.target;
+		if (!target || !target.getAttribute) {
+			return;
+		}
+		const audioRef = target.getAttribute("data-audio-activate-ref");
+		if (!audioRef || !GUARDED_BUTTON_AUDIO_REFS.includes(audioRef)) {
+			return;
+		}
+		const conflicts = getActiveConflicts();
+		if (conflicts.length > 0) {
+			disableConflicts(conflicts);
+		}
+	}, true);
+}
+
 function checkForModConflicts() {
-	const installed = Modding.getInstalledMods();
 	if (LOG_INSTALLED_MODS) {
 		console.warn("ZG-ASP conflict check running. Installed mods:");
-		for (const mod of installed) {
+		for (const mod of Modding.getInstalledMods()) {
 			console.warn(`ZG-ASP   id='${mod.id}' enabled=${mod.enabled} name='${Locale.compose(mod.name)}'`);
 		}
 	}
-	const conflicts = installed.filter(
-		(mod) => mod.enabled && CONFLICTING_MOD_IDS.includes(mod.id)
-	);
+	const conflicts = getActiveConflicts();
 	if (conflicts.length == 0) {
 		return;
 	}
@@ -71,4 +108,5 @@ function checkForModConflicts() {
 	waitForMainMenu();
 }
 
+guardMainMenuButtons();
 checkForModConflicts();
