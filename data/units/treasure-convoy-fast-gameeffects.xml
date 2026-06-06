@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameEffects xmlns="GameEffects">
+	<!-- Treasure convoy movement: 2 base + 1, on land and at sea. -->
+	<Modifier id="ZG_TREASURE_FLEET_MOD_MOVEMENT" collection="COLLECTION_OWNER" effect="EFFECT_UNIT_ADJUST_MOVEMENT">
+		<Argument name="Amount">1</Argument>
+	</Modifier>
+</GameEffects>

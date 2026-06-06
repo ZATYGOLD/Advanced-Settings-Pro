@@ -410,9 +410,8 @@
 			<Properties><LoadOrder>1000</LoadOrder></Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/units/treasure-convoy-embark-modifiers.xml</Item>
-					<Item>data/units/treasure-convoy-slow.sql</Item>
-					<Item>data/units/treasure-convoy-embark-slow-gameeffects.xml</Item>
+					<Item>data/units/treasure-convoy-modifiers.xml</Item>
+					<Item>data/units/treasure-convoy-slow-gameeffects.xml</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -420,9 +419,8 @@
 			<Properties><LoadOrder>1000</LoadOrder></Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/units/treasure-convoy-embark-modifiers.xml</Item>
-					<Item>data/units/treasure-convoy-fast.sql</Item>
-					<Item>data/units/treasure-convoy-embark-fast-gameeffects.xml</Item>
+					<Item>data/units/treasure-convoy-modifiers.xml</Item>
+					<Item>data/units/treasure-convoy-fast-gameeffects.xml</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -746,7 +744,7 @@
 		</ActionGroup>
 	</ActionGroups>
 
-<!--************************* LOCALIZED TEXT ************************************************-->
+<!--************************* LOCALIZED TEXT *****************************************-->
 
 	<LocalizedText>
 		<File>text/en_us/mod-info-text.xml</File>
