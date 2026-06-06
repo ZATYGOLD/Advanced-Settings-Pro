@@ -202,5 +202,20 @@
 		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="zh_Hant_HK">
 			<Text>自然奇觀選擇</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="zh_Hant_HK">
+			<Text>偵測到模組衝突</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_BODY_HEADER" Language="zh_Hant_HK">
+			<Text>以下已啟用的模組與Zatygold的Advanced Settings Pro修改相同的設定，可能導致問題：</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_BODY_FOOTER" Language="zh_Hant_HK">
+			<Text>若要永久移除模組，請在模組瀏覽器中取消訂閱。你也可以立即停用它們。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="zh_Hant_HK">
+			<Text>停用衝突模組</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="zh_Hant_HK">
+			<Text>保留兩者</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

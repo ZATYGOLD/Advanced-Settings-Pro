@@ -202,5 +202,20 @@
 		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="ja_JP">
 			<Text>自然遺産の選択</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="ja_JP">
+			<Text>Modの競合を検出</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_BODY_HEADER" Language="ja_JP">
+			<Text>以下の有効なModはZatygoldのAdvanced Settings Proと同じ設定を変更するため、問題が発生する可能性があります：</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_BODY_FOOTER" Language="ja_JP">
+			<Text>Modを完全に削除するには、Modブラウザで購読を解除してください。今すぐ無効化することもできます。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="ja_JP">
+			<Text>競合Modを無効化</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="ja_JP">
+			<Text>両方とも使う</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

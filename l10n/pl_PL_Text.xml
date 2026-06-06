@@ -202,5 +202,20 @@
 		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="pl_PL">
 			<Text>Wybór cudów natury</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="pl_PL">
+			<Text>Wykryto konflikt modów</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_BODY_HEADER" Language="pl_PL">
+			<Text>Następujące włączone mody zmieniają te same ustawienia co Advanced Settings Pro Zatygolda i mogą powodować problemy:</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_BODY_FOOTER" Language="pl_PL">
+			<Text>Aby trwale usunąć mod, anuluj jego subskrypcję w przeglądarce modów. Możesz też wyłączyć je teraz.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="pl_PL">
+			<Text>Wyłącz konfliktujące mody</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="pl_PL">
+			<Text>Zachowaj oba</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

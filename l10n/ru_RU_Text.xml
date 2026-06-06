@@ -202,5 +202,20 @@
 		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="ru_RU">
 			<Text>Выбор чудес природы</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="ru_RU">
+			<Text>Обнаружен конфликт модов</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_BODY_HEADER" Language="ru_RU">
+			<Text>Следующие включённые моды изменяют те же настройки, что и Advanced Settings Pro от Zatygold, и могут вызывать проблемы:</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_BODY_FOOTER" Language="ru_RU">
+			<Text>Чтобы удалить мод навсегда, отпишитесь от него в браузере модов. Также можно отключить их сейчас.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="ru_RU">
+			<Text>Отключить конфликтующие моды</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="ru_RU">
+			<Text>Оставить оба</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

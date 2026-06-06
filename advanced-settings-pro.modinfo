@@ -509,6 +509,9 @@
 				<LoadOrder>500</LoadOrder>
 			</Properties>
 			<Actions>
+				<UIScripts>
+					<Item>ui/zg-mod-guard.js</Item>
+				</UIScripts>
 				<UpdateText>
 					<Item>text/en_us/ui-shell-text.xml</Item>
 					<Item>text/natural-wonder-names.xml</Item>

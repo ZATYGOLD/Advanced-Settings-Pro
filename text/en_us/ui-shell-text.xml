@@ -322,5 +322,10 @@
 			<Text>Controls whether this Natural Wonder can appear on the map.</Text>
 		</Row>
 
+		<Row Tag="LOC_ZG_MOD_CONFLICT_TITLE"><Text>Mod Conflict Detected</Text></Row>
+		<Row Tag="LOC_ZG_MOD_CONFLICT_BODY_HEADER"><Text>The following mods are causing conflicts: [n] [n]</Text></Row>
+		<Row Tag="LOC_ZG_MOD_CONFLICT_BODY_FOOTER"><Text>[n] [n]Please unsubscribe from the mods now. [n] [n]</Text></Row>
+		<Row Tag="LOC_ZG_MOD_CONFLICT_DISABLE"><Text>Ok</Text></Row>
+		<Row Tag="LOC_ZG_MOD_CONFLICT_IGNORE"><Text>Cancel</Text></Row>
 	</EnglishText>
 </Database>

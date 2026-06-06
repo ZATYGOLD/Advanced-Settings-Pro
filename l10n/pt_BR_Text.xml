@@ -202,5 +202,20 @@
 		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="pt_BR">
 			<Text>Seleção de maravilhas naturais</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="pt_BR">
+			<Text>Conflito de mods detectado</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_BODY_HEADER" Language="pt_BR">
+			<Text>Os seguintes mods ativados alteram as mesmas configurações do Advanced Settings Pro do Zatygold e podem causar problemas:</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_BODY_FOOTER" Language="pt_BR">
+			<Text>Para remover um mod permanentemente, cancele a inscrição no navegador de mods. Você também pode desativá-los agora.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="pt_BR">
+			<Text>Desativar mods conflitantes</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="pt_BR">
+			<Text>Manter ambos</Text>
+		</Replace>
 	</LocalizedText>
 </Database>
