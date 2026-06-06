@@ -339,23 +339,6 @@
     		</ConfigurationValueMatches>
 		</Criteria>
 
-<!--************************* CRITERIA: OCEAN WIDTH *****************************************-->
-		
-		<Criteria id="ocean-width-more">
-			<ConfigurationValueMatches>
-      			<Group>Game</Group>
-      			<ConfigurationId>OceanWidthKey</ConfigurationId>
-      			<Value>ZG_MORE_OCEAN_WIDTH</Value>
-    		</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="ocean-width-less">
-			<ConfigurationValueMatches>
-      			<Group>Game</Group>
-      			<ConfigurationId>OceanWidthKey</ConfigurationId>
-      			<Value>ZG_LESS_OCEAN_WIDTH</Value>
-    		</ConfigurationValueMatches>
-		</Criteria>
-
 <!--************************* CRITERIA: LAKE GENERATION *************************************-->
 		
 		<Criteria id="lake-generation-more">
@@ -731,25 +714,6 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/map/natural_wonders/NoNaturalWonders.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-
-<!--************************* SETTINGS: OCEAN WIDTH *****************************************-->
-
-		<ActionGroup id="zg-ocean-width-more" scope="game" criteria="ocean-width-more">
-			<Properties><LoadOrder>10000</LoadOrder></Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/map/ocean_width/MoreOceanWidth.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-ocean-width-less" scope="game" criteria="ocean-width-less">
-			<Properties><LoadOrder>10000</LoadOrder></Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/map/ocean_width/LessOceanWidth.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

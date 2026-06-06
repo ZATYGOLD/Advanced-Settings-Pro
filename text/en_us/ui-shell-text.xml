@@ -36,7 +36,6 @@
 		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_NAME"><Text>Military Unit Cost</Text></Row>
 		<Row Tag="LOC_ZG_CRISIS_SPEED_NAME"><Text>Crisis Speed</Text></Row>
 		<Row Tag="LOC_ZG_NATURAL_WONDER_COUNT_NAME"><Text>Natural Wonders</Text></Row>
-		<Row Tag="LOC_ZG_OCEAN_WIDTH_NAME"><Text>Ocean Distance</Text></Row>
 		<Row Tag="LOC_ZG_LAKE_GENERATION_NAME"><Text>Lakes</Text></Row>
 
 
@@ -275,15 +274,5 @@
 			</Text>
 		</Row>
 
-	<!-- Ocean Width Descriptions -->
-		<Row Tag="LOC_ZG_OCEAN_WIDTH_DESCRIPTION">
-			<Text>Sets the amount of ocean between Homeland and Distant Lands. Results may vary.</Text>
-		</Row>
-		<Row Tag="LOC_ZG_OCEAN_WIDTH_ADDITIONAL_DESCRIPTION">
-			<Text> 
-				This will attempt to adjust the distance between Homeland and Distance Lands.
-				[n]However, map generation may override the settings back to default.
-			</Text>
-		</Row>
 	</EnglishText>
 </Database>

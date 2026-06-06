@@ -12,7 +12,6 @@ This mod expands the game setup for Single player and Multiplayer by adding a bu
 - Treasure Convoy Movement: Slow, Default, or Fast
 - Military Unit Cost: Cheaper, Default, or Expensive
 - Natural Wonders: None, Half, Default, More, or Double
-- Ocean Width (Homeland to Distant Lands): Less, Default, or More
 - Lake Generation: Less, Default, or More
 - Crisis Speed (Pacing): Crawl, Slow, Default, Quick, or Fast
 - Settlement Limit: Less, Default, or More
