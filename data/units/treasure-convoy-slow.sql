@@ -1,0 +1,3 @@
+UPDATE Units
+SET BaseMoves = 1
+WHERE UnitType = 'UNIT_TREASURE_FLEET';

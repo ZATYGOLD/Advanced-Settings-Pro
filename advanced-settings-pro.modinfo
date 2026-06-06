@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="Zatygold's Advanced Settings Pro" version="0500" xmlns="ModInfo">
+	<Properties>
+		<Name>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME</Name>
+		<Description>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION</Description>
+		<Authors>Zatygold</Authors>
+        <Version>0.5.0</Version>
+        <Package>Mod</Package>
+		<ShowInBrowser>1</ShowInBrowser>
+        <AffectsSavedGames>1</AffectsSavedGames>
+        <EnabledByDefault>1</EnabledByDefault>
+	</Properties>
+	<Dependencies>
+		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>
+		<Mod id="age-antiquity" title="LOC_MODULE_AGE_ANTIQUITY_NAME"/>
+		<Mod id="age-exploration" title="LOC_MODULE_AGE_EXPLORATION_NAME"/>
+		<Mod id="age-modern" title="LOC_MODULE_AGE_MODERN_NAME"/>
+	</Dependencies>
+
+	<ActionCriteria>
+  		<Criteria id="always"><AlwaysMet/></Criteria>
+
+<!--************************* CRITERIA: SETTLER MOVEMENT ************************************-->
+
+  		<Criteria id="slow-settlers">
+    		<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>SettlerMovementKey</ConfigurationId>
+      			<Value>ZG_SETTLER_MOVES_SLOW</Value>
+    		</ConfigurationValueMatches>
+  		</Criteria>
+  		<Criteria id="fast-settlers">
+    		<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>SettlerMovementKey</ConfigurationId>
+      			<Value>ZG_SETTLER_MOVES_FAST</Value>
+    		</ConfigurationValueMatches>
+  		</Criteria>
+
+<!--************************* CRITERIA: TREASURE CONVOY *************************************-->
+
+  		<Criteria id="slow-treasure">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+    		<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>TreasureMovementKey</ConfigurationId>
+      			<Value>ZG_TREASURE_MOVES_SLOW</Value>
+    		</ConfigurationValueMatches>
+  		</Criteria>
+  		<Criteria id="fast-treasure">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+    		<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>TreasureMovementKey</ConfigurationId>
+      			<Value>ZG_TREASURE_MOVES_FAST</Value>
+    		</ConfigurationValueMatches>
+  		</Criteria>
+
+<!--************************* CRITERIA: INDEPENDENT COUNT ***********************************-->
+
+		<Criteria id="more-independents">
+    		<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentCountKey</ConfigurationId>
+      			<Value>ZG_MORE_INDEPENDENTS</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="less-independents">
+    		<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentCountKey</ConfigurationId>
+      			<Value>ZG_LESS_INDEPENDENTS</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="independents-none">
+    		<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentCountKey</ConfigurationId>
+      			<Value>ZG_NONE_INDEPENDENTS</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+
+<!--************************* CRITERIA: INDEPENDENT SPACING *********************************-->
+
+		<Criteria id="more-independents-spacing-antiquity">
+    		<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentSpaceKey</ConfigurationId>
+      			<Value>ZG_MORE_INDEPENDENTS_SPACING</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="less-independents-spacing-antiquity">
+    		<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentSpaceKey</ConfigurationId>
+      			<Value>ZG_LESS_INDEPENDENTS_SPACING</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="more-independents-spacing-exploration">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentSpaceKey</ConfigurationId>
+      			<Value>ZG_MORE_INDEPENDENTS_SPACING</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="less-independents-spacing-exploration">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentSpaceKey</ConfigurationId>
+      			<Value>ZG_LESS_INDEPENDENTS_SPACING</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="more-independents-spacing-modern">
+    		<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentSpaceKey</ConfigurationId>
+      			<Value>ZG_MORE_INDEPENDENTS_SPACING</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="less-independents-spacing-modern">
+    		<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentSpaceKey</ConfigurationId>
+      			<Value>ZG_LESS_INDEPENDENTS_SPACING</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+
+<!--************************* CRITERIA: INDEPENDENT UNITS COUNT *****************************-->
+
+		<Criteria id="more-independents-units-antiquity">
+    		<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentUnitsCountKey</ConfigurationId>
+      			<Value>ZG_MORE_INDEPENDENTS_UNIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="less-independents-units-antiquity">
+    		<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentUnitsCountKey</ConfigurationId>
+      			<Value>ZG_LESS_INDEPENDENTS_UNIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="more-independents-units-exploration">
+    		<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentUnitsCountKey</ConfigurationId>
+      			<Value>ZG_MORE_INDEPENDENTS_UNIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="less-independents-units-exploration">
+    		<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentUnitsCountKey</ConfigurationId>
+      			<Value>ZG_LESS_INDEPENDENTS_UNIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="more-independents-units-modern">
+    		<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentUnitsCountKey</ConfigurationId>
+      			<Value>ZG_MORE_INDEPENDENTS_UNIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="less-independents-units-modern">
+    		<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>IndependentUnitsCountKey</ConfigurationId>
+      			<Value>ZG_LESS_INDEPENDENTS_UNIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+
+<!--************************* CRITERIA: DISASTERS TOGGLE ************************************-->
+
+		<Criteria id="disabled-disasters">
+    		<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>RealismSettingType</ConfigurationId>
+      			<Value>ZG_DISABLED_DISASTERS</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+
+<!--************************* CRITERIA: SETTLEMENT LIMIT COUNT ******************************-->
+
+		<Criteria id="more-settlement-limit-antiquity">
+    		<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>SettlementLimitKey</ConfigurationId>
+      			<Value>ZG_MORE_SETTLEMENT_LIMIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="less-settlement-limit-antiquity">
+    		<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>SettlementLimitKey</ConfigurationId>
+      			<Value>ZG_LESS_SETTLEMENT_LIMIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="more-settlement-limit-exploration">
+    		<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>SettlementLimitKey</ConfigurationId>
+      			<Value>ZG_MORE_SETTLEMENT_LIMIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="less-settlement-limit-exploration">
+    		<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>SettlementLimitKey</ConfigurationId>
+      			<Value>ZG_LESS_SETTLEMENT_LIMIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="more-settlement-limit-modern">
+    		<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>SettlementLimitKey</ConfigurationId>
+      			<Value>ZG_MORE_SETTLEMENT_LIMIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="less-settlement-limit-modern">
+    		<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>SettlementLimitKey</ConfigurationId>
+      			<Value>ZG_LESS_SETTLEMENT_LIMIT_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+
+<!--************************* CRITERIA: SETTLEMENT DISTANCE *********************************-->
+
+		<Criteria id="more-settlement-distance">
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>SettlementDistanceKey</ConfigurationId>
+      			<Value>ZG_MORE_SETTLEMENT_DISTANCE_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="less-settlement-distance">
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>SettlementDistanceKey</ConfigurationId>
+      			<Value>ZG_LESS_SETTLEMENT_DISTANCE_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+
+<!--************************* CRITERIA: UNIT COST *******************************************-->
+		
+		<Criteria id="expensive-military-units">
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>CombatUnitCostKey</ConfigurationId>
+      			<Value>ZG_COMBAT_UNIT_COST_MORE</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="cheaper-military-units">
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>CombatUnitCostKey</ConfigurationId>
+      			<Value>ZG_COMBAT_UNIT_COST_LESS</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+
+<!--************************* CRITERIA: CRISIS PACING ***************************************-->
+		
+		<Criteria id="crisis-speed-fast">
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>CrisisSpeedKey</ConfigurationId>
+      			<Value>ZG_FAST_CRISIS_SPEED</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+			<Criteria id="crisis-speed-quick">
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>CrisisSpeedKey</ConfigurationId>
+      			<Value>ZG_QUICK_CRISIS_SPEED</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+			<Criteria id="crisis-speed-slow">
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>CrisisSpeedKey</ConfigurationId>
+      			<Value>ZG_SLOW_CRISIS_SPEED</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+			<Criteria id="crisis-speed-crawl">
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>CrisisSpeedKey</ConfigurationId>
+      			<Value>ZG_CRAWL_CRISIS_SPEED</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+
+<!--************************* CRITERIA: NATURAL WONDER COUNT ********************************-->
+		
+		<Criteria id="natural-wonder-count-double">
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>NaturalWonderCountKey</ConfigurationId>
+      			<Value>ZG_DOUBLE_NATURAL_WONDER_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="natural-wonder-count-more">
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>NaturalWonderCountKey</ConfigurationId>
+      			<Value>ZG_MORE_NATURAL_WONDER_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="natural-wonder-count-half">
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>NaturalWonderCountKey</ConfigurationId>
+      			<Value>ZG_HALF_NATURAL_WONDER_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="natural-wonder-count-none">
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>NaturalWonderCountKey</ConfigurationId>
+      			<Value>ZG_NONE_NATURAL_WONDER_COUNT</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+
+<!--************************* CRITERIA: LAKE GENERATION *************************************-->
+		
+		<Criteria id="lake-generation-more">
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>LakeGenerationKey</ConfigurationId>
+      			<Value>ZG_MORE_LAKE_GENERATION</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="lake-generation-less">
+			<ConfigurationValueMatches>
+      			<Group>Game</Group>
+      			<ConfigurationId>LakeGenerationKey</ConfigurationId>
+      			<Value>ZG_LESS_LAKE_GENERATION</Value>
+    		</ConfigurationValueMatches>
+		</Criteria>
+	</ActionCriteria>
+
+
+<!--************************* SETTINGS: SHELL ***********************************************-->
+
+	<ActionGroups>
+		<ActionGroup id="zg-options-settings-shell" scope="shell" criteria="always">
+			<Properties><LoadOrder>500</LoadOrder></Properties>
+			<Actions>
+				<UpdateText>
+                	<Item>text/en_us/ui-shell-text.xml</Item>
+            	</UpdateText>
+			    <UpdateDatabase>
+					<Item>config/setup-parameters.sql</Item>
+            	</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
+<!--************************* SETTINGS: SETTLER MOVEMENT ************************************-->
+
+		<ActionGroup id="zg-slow-settlers" scope="game" criteria="slow-settlers">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/units/settler-embark-modifiers.xml</Item>
+					<Item>data/units/settler-speed-slow.sql</Item>
+					<Item>data/units/settler-embark-slow-gameeffects.xml</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-fast-settlers" scope="game" criteria="fast-settlers">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/units/settler-embark-modifiers.xml</Item>
+					<Item>data/units/settler-speed-fast.sql</Item>
+					<Item>data/units/settler-embark-fast-gameeffects.xml</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
+<!--************************* SETTINGS: TREASURE CONVOY *************************************-->
+
+		<ActionGroup id="zg-slow-treasure" scope="game" criteria="slow-treasure">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/units/treasure-convoy-embark-modifiers.xml</Item>
+					<Item>data/units/treasure-convoy-slow.sql</Item>
+					<Item>data/units/treasure-convoy-embark-slow-gameeffects.xml</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-fast-treasure" scope="game" criteria="fast-treasure">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/units/treasure-convoy-embark-modifiers.xml</Item>
+					<Item>data/units/treasure-convoy-fast.sql</Item>
+					<Item>data/units/treasure-convoy-embark-fast-gameeffects.xml</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
+<!--************************* SETTINGS: INDEPENDENT COUNT ***********************************-->
+
+		<ActionGroup id="zg-more-independents" scope="game" criteria="more-independents">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/independent-count-more.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-less-independents" scope="game" criteria="less-independents">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/independent-count-less.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-independents-none" scope="game" criteria="independents-none">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/independent-count-none.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
+<!--************************* SETTINGS: INDEPENDENT SPACING *********************************-->
+
+		<ActionGroup id="zg-more-independents-spacing-antiquity" scope="game" criteria="more-independents-spacing-antiquity">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/independent-spacing-antiquity-more.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-less-independents-spacing-antiquity" scope="game" criteria="less-independents-spacing-antiquity">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/independent-spacing-antiquity-less.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-more-independents-spacing-exploration" scope="game" criteria="more-independents-spacing-exploration">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/independent-spacing-exploration-more.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-less-independents-spacing-exploration" scope="game" criteria="less-independents-spacing-exploration">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/independent-spacing-exploration-less.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-more-independents-spacing-modern" scope="game" criteria="more-independents-spacing-modern">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/independent-spacing-modern-more.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-less-independents-spacing-modern" scope="game" criteria="less-independents-spacing-modern">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/independent-spacing-modern-less.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
+<!--************************* SETTINGS: INDEPENDENT UNITS COUNT *****************************-->
+
+		<ActionGroup id="zg-more-independents-units-antiquity" scope="game" criteria="more-independents-units-antiquity">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/independent-units-antiquity-more.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-less-independents-units-antiquity" scope="game" criteria="less-independents-units-antiquity">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/independent-units-antiquity-less.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-more-independents-units-exploration" scope="game" criteria="more-independents-units-exploration">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/independent-units-exploration-more.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-less-independents-units-exploration" scope="game" criteria="less-independents-units-exploration">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/independent-units-exploration-less.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-more-independents-units-modern" scope="game" criteria="more-independents-units-modern">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/independent-units-modern-more.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-less-independents-units-modern" scope="game" criteria="less-independents-units-modern">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/independent-units-modern-less.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
+<!--************************* SETTINGS: DISASTERS DISABLED **********************************-->
+
+		<ActionGroup id="zg-disabled-disasters" scope="game" criteria="disabled-disasters">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/disasters/disasters-disabled.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
+<!--************************* SETTINGS: SETTLEMENT LIMIT ************************************-->
+
+		<ActionGroup id="zg-more-settlement-limit-antiquity" scope="game" criteria="more-settlement-limit-antiquity">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/settlement-limit-antiquity-more.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-less-settlement-limit-antiquity" scope="game" criteria="less-settlement-limit-antiquity">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/settlement-limit-antiquity-less.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-more-settlement-limit-exploration" scope="game" criteria="more-settlement-limit-exploration">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/settlement-limit-exploration-more.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-less-settlement-limit-exploration" scope="game" criteria="less-settlement-limit-exploration">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/settlement-limit-exploration-less.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-more-settlement-limit-modern" scope="game" criteria="more-settlement-limit-modern">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/settlement-limit-modern-more.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-less-settlement-limit-modern" scope="game" criteria="less-settlement-limit-modern">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/settlement-limit-modern-less.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
+<!--************************* SETTINGS: SETTLEMENT DISTANCE *********************************-->
+
+		<ActionGroup id="zg-more-settlement-distance" scope="game" criteria="more-settlement-distance">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/settlement-distance-more.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-less-settlement-distance" scope="game" criteria="less-settlement-distance">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/settlement-distance-less.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
+<!--************************* SETTINGS: UNIT COST *******************************************-->
+
+		<ActionGroup id="zg-expensive-military-units" scope="game" criteria="expensive-military-units">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/units/military-unit-cost-more.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-cheaper-military-units" scope="game" criteria="cheaper-military-units">
+			<Properties><LoadOrder>1000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/units/military-unit-cost-less.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
+<!--************************* SETTINGS: CRISIS SPEED ****************************************-->
+
+		<ActionGroup id="zg-crisis-speed-fast" scope="game" criteria="crisis-speed-fast">
+			<Properties><LoadOrder>10000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/crisis/crisis-speed-fast.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-crisis-speed-quick" scope="game" criteria="crisis-speed-quick">
+			<Properties><LoadOrder>10000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/crisis/crisis-speed-quick.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-crisis-speed-slow" scope="game" criteria="crisis-speed-slow">
+			<Properties><LoadOrder>10000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/crisis/crisis-speed-slow.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-crisis-speed-crawl" scope="game" criteria="crisis-speed-crawl">
+			<Properties><LoadOrder>10000</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/crisis/crisis-speed-crawl.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
+<!--************************* SETTINGS: NATURAL WONDER COUNT ********************************-->
+
+		<ActionGroup id="zg-natural-wonder-count-double" scope="game" criteria="natural-wonder-count-double">
+			<Properties><LoadOrder>9999</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/map/natural-wonders-double.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-natural-wonder-count-more" scope="game" criteria="natural-wonder-count-more">
+			<Properties><LoadOrder>9999</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/map/natural-wonders-more.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-natural-wonder-count-half" scope="game" criteria="natural-wonder-count-half">
+			<Properties><LoadOrder>9999</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/map/natural-wonders-half.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-natural-wonder-count-none" scope="game" criteria="natural-wonder-count-none">
+			<Properties><LoadOrder>9999</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/map/natural-wonders-none.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
+<!--************************* SETTINGS: LAKE GENERATION *************************************-->
+
+		<ActionGroup id="zg-lake-generation-more" scope="game" criteria="lake-generation-more">
+			<Properties><LoadOrder>9999</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/map/lake-generation-more.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-lake-generation-less" scope="game" criteria="lake-generation-less">
+			<Properties><LoadOrder>9999</LoadOrder></Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/map/lake-generation-less.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+	</ActionGroups>
+
+<!--************************* LOCALIZED TEXT ************************************************-->
+
+	<LocalizedText>
+		<File>text/en_us/mod-info-text.xml</File>
+	</LocalizedText>
+</Mod>
