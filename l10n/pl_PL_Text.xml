@@ -193,5 +193,14 @@
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="pl_PL">
 			<Text>Advanced Settings Pro autorstwa Zatygolda[n] [n]Ten mod rozszerza konfigurację rozgrywki dla jednego gracza i trybu wieloosobowego o dodatkowe opcje w menu ustawień zaawansowanych. Pozwala precyzyjnie dostroić systemy, których normalnie nie można zmieniać.</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDEROPTIONS" Language="pl_PL">
+			<Text>Ustawienia cudów natury</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="pl_PL">
+			<Text>Określa, czy ten cud natury może pojawić się na mapie.</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="pl_PL">
+			<Text>Wybór cudów natury</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

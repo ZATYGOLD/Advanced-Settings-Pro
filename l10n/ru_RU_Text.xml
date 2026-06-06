@@ -193,5 +193,14 @@
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="ru_RU">
 			<Text>Advanced Settings Pro от Zatygold[n] [n]Этот мод расширяет настройку игры для одиночного и сетевого режимов, добавляя дополнительные параметры в меню расширенных настроек. Он позволяет тонко настраивать системы, которые обычно недоступны для изменения.</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDEROPTIONS" Language="ru_RU">
+			<Text>Настройки чудес природы</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="ru_RU">
+			<Text>Определяет, может ли это чудо природы появиться на карте.</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="ru_RU">
+			<Text>Выбор чудес природы</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

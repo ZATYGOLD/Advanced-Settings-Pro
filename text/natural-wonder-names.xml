@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<LocalizedText>
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_NAME" Language="en_US">
+			<Text>Great Barrier Reef</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_NAME" Language="de_DE">
+			<Text>Great Barrier Reef|Great Barrier Reef|Great Barrier Reef|Great Barrier Reefs|Great Barrier Reef</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_NAME" Language="es_ES">
+			<Text>Gran Barrera de Coral|Grandes Barreras de Coral</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_NAME" Language="fr_FR">
+			<Text>Grande barrière de corail</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_NAME" Language="it_IT">
+			<Text>Grande barriera corallina</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_NAME" Language="ja_JP">
+			<Text>グレートバリアリーフ</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_NAME" Language="ko_KR">
+			<Text>대보초</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_NAME" Language="pl_PL">
+			<Text>Wielka Rafa Koralowa|Wielkiej Rafy Koralowej|Wielkiej Rafie Koralowej|Wielką Rafę Koralową|Wielką Rafą Koralową|Wielkiej Rafie Koralowej|Wielka Rafa Koralowa|Wielkiej Rafy Koralowej|Wielkiej Rafie Koralowej|Wielką Rafę Koralową|Wielką Rafą Koralową|Wielkiej Rafie Koralowej</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_NAME" Language="pt_BR">
+			<Text>Grande Barreira de Coral</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_NAME" Language="ru_RU">
+			<Text>Большой Барьерный риф|Большого Барьерного рифа|Большому Барьерному рифу|Большой Барьерный риф|Большим Барьерным рифом|Большом Барьерном рифе</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_NAME" Language="zh_Hans_CN">
+			<Text>大堡礁</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_NAME" Language="zh_Hant_HK">
+			<Text>大堡礁</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_NAME" Language="en_US">
+			<Text>Bermuda Triangle</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_NAME" Language="de_DE">
+			<Text>Bermudadreieck|Bermudadreieck|Bermudadreieck|Bermudadreiecks|Bermudadreieck</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_NAME" Language="es_ES">
+			<Text>Triángulo de las Bermudas</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_NAME" Language="fr_FR">
+			<Text>Triangle des Bermudes</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_NAME" Language="it_IT">
+			<Text>Triangolo delle Bermude|il Triangolo delle Bermude|il Triangolo delle Bermude</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_NAME" Language="ja_JP">
+			<Text>バミューダトライアングル</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_NAME" Language="ko_KR">
+			<Text>버뮤다 삼각지대</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_NAME" Language="pl_PL">
+			<Text>Trójkąt Bermudzki|Trójkąta Bermudzkiego|Trójkątowi Bermudzkiemu|Trójkąt Bermudzki|Trójkątem Bermudzkim|Trójkącie Bermudzkim|Trójkąt Bermudzki|Trójkąta Bermudzkiego|Trójkątowi Bermudzkiemu|Trójkąt Bermudzki|Trójkątem Bermudzkim|Trójkącie Bermudzkim</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_NAME" Language="pt_BR">
+			<Text>Triângulo das Bermudas</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_NAME" Language="ru_RU">
+			<Text>Бермудский треугольник|Бермудского треугольника|Бермудскому треугольнику|Бермудский треугольник|Бермудским треугольником|Бермудском треугольнике</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_NAME" Language="zh_Hans_CN">
+			<Text>百慕大三角</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_NAME" Language="zh_Hant_HK">
+			<Text>百慕達三角</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_CANYON_NAME" Language="en_US">
+			<Text>Grand Canyon</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_CANYON_NAME" Language="de_DE">
+			<Text>Grand Canyon|Grand Canyon|Grand Canyon|Grand Canyons|Grand Canyon</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_CANYON_NAME" Language="es_ES">
+			<Text>Gran Cañón</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_CANYON_NAME" Language="fr_FR">
+			<Text>Grand Canyon</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_CANYON_NAME" Language="it_IT">
+			<Text>Grand Canyon</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_CANYON_NAME" Language="ja_JP">
+			<Text>グランドキャニオン</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_CANYON_NAME" Language="ko_KR">
+			<Text>그랜드 캐니언</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_CANYON_NAME" Language="pl_PL">
+			<Text>Wielki Kanion|Wielkiego Kanionu|Wielkiemu Kanionowi|Wielki Kanion|Wielkim Kanionem|Wielkim Kanionie|Wielki Kanion|Wielkiego Kanionu|Wielkiemu Kanionowi|Wielki Kanion|Wielkim Kanionem|Wielkim Kanionie</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_CANYON_NAME" Language="pt_BR">
+			<Text>Grand Canyon</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_CANYON_NAME" Language="ru_RU">
+			<Text>Большой каньон|Большого каньона|Большому каньону|Большой каньон|Большым каньоном|Большом каньоне</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_CANYON_NAME" Language="zh_Hans_CN">
+			<Text>大峡谷</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_CANYON_NAME" Language="zh_Hant_HK">
+			<Text>大峽谷</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GREAT_BLUE_HOLE_NAME" Language="en_US">
+			<Text>Great Blue Hole</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GREAT_BLUE_HOLE_NAME" Language="de_DE">
+			<Text>Great Blue Hole|Great Blue Hole|Great Blue Hole|Great Blue Hole|Great Blue Hole</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GREAT_BLUE_HOLE_NAME" Language="es_ES">
+			<Text>Gran Agujero Azul|Grandes Agujeros Azules</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GREAT_BLUE_HOLE_NAME" Language="fr_FR">
+			<Text>Grand Trou Bleu</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GREAT_BLUE_HOLE_NAME" Language="it_IT">
+			<Text>Great Blue Hole|il Great Blue Hole|il Great Blue Hole</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GREAT_BLUE_HOLE_NAME" Language="ja_JP">
+			<Text>グレート・ブルーホール</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GREAT_BLUE_HOLE_NAME" Language="ko_KR">
+			<Text>그레이트 블루홀</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GREAT_BLUE_HOLE_NAME" Language="pl_PL">
+			<Text>Great Blue Hole</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GREAT_BLUE_HOLE_NAME" Language="pt_BR">
+			<Text>Grande Buraco Azul|Grandes Buracos Azuis</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GREAT_BLUE_HOLE_NAME" Language="ru_RU">
+			<Text>Большая голубая дыра|Большой голубой дыры|Большой голубой дыре|Большую голубую дыру|Большой голубой дырой|Большой голубой дыре</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GREAT_BLUE_HOLE_NAME" Language="zh_Hans_CN">
+			<Text>大蓝洞</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GREAT_BLUE_HOLE_NAME" Language="zh_Hant_HK">
+			<Text>大藍洞</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GULLFOSS_NAME" Language="en_US">
+			<Text>Gullfoss</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GULLFOSS_NAME" Language="de_DE">
+			<Text>Gullfoss|Gullfoss|Gullfoss|Gullfoss|Gullfoss</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GULLFOSS_NAME" Language="es_ES">
+			<Text>Gullfoss</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GULLFOSS_NAME" Language="fr_FR">
+			<Text>Gullfoss</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GULLFOSS_NAME" Language="it_IT">
+			<Text>Gullfoss</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GULLFOSS_NAME" Language="ja_JP">
+			<Text>グトルフォス</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GULLFOSS_NAME" Language="ko_KR">
+			<Text>굴포스</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GULLFOSS_NAME" Language="pl_PL">
+			<Text>Gullfoss</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GULLFOSS_NAME" Language="pt_BR">
+			<Text>Gullfoss</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GULLFOSS_NAME" Language="ru_RU">
+			<Text>Гулльфосс|Гулльфосса|Гулльфоссу|Гулльфосс|Гулльфоссом|Гулльфоссе</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GULLFOSS_NAME" Language="zh_Hans_CN">
+			<Text>古佛斯瀑布</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GULLFOSS_NAME" Language="zh_Hant_HK">
+			<Text>古佛斯瀑布</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_HOERIKWAGGO_NAME" Language="en_US">
+			<Text>Hoerikwaggo</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_HOERIKWAGGO_NAME" Language="de_DE">
+			<Text>Hoerikwaggo|Hoerikwaggo|Hoerikwaggo|Hoerikwaggos|Hoerikwaggo</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_HOERIKWAGGO_NAME" Language="es_ES">
+			<Text>Hoerikwaggo</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_HOERIKWAGGO_NAME" Language="fr_FR">
+			<Text>Hoerikwaggo</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_HOERIKWAGGO_NAME" Language="it_IT">
+			<Text>Hoerikwaggo</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_HOERIKWAGGO_NAME" Language="ja_JP">
+			<Text>ホエリクワッゴ</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_HOERIKWAGGO_NAME" Language="ko_KR">
+			<Text>호에리콰고</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_HOERIKWAGGO_NAME" Language="pl_PL">
+			<Text>Hoerikwaggo</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_HOERIKWAGGO_NAME" Language="pt_BR">
+			<Text>Hoerikwaggo</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_HOERIKWAGGO_NAME" Language="ru_RU">
+			<Text>Хоериквагго</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_HOERIKWAGGO_NAME" Language="zh_Hans_CN">
+			<Text>桌山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_HOERIKWAGGO_NAME" Language="zh_Hant_HK">
+			<Text>海中之山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_IGUAZU_FALLS_NAME" Language="en_US">
+			<Text>Iguazú Falls</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_IGUAZU_FALLS_NAME" Language="de_DE">
+			<Text>Wasserfälle von Iguaçu|Wasserfälle von Iguaçu|Wasserfällen von Iguaçu|Wasserfälle von Iguaçu|Wasserfälle von Iguaçu</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_IGUAZU_FALLS_NAME" Language="es_ES">
+			<Text>Cataratas de Iguazú</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_IGUAZU_FALLS_NAME" Language="fr_FR">
+			<Text>Chutes d'Iguazú</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_IGUAZU_FALLS_NAME" Language="it_IT">
+			<Text>Cascate dell'Iguazú|le Cascate dell'Iguazú|le Cascate dell'Iguazú</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_IGUAZU_FALLS_NAME" Language="ja_JP">
+			<Text>イグアスの滝</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_IGUAZU_FALLS_NAME" Language="ko_KR">
+			<Text>이구아수 폭포</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_IGUAZU_FALLS_NAME" Language="pl_PL">
+			<Text>Wodospad Iguazú|Wodospadu Iguazú|Wodospadowi Iguazú|Wodospad Iguazú|Wodospadem Iguazú|Wodospadzie Iguazú|wodospad Iguazú|wodospadu Iguazú|wodospadowi Iguazú|wodospad Iguazú|wodospadem Iguazú|wodospadzie Iguazú</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_IGUAZU_FALLS_NAME" Language="pt_BR">
+			<Text>Cataratas do Iguaçu</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_IGUAZU_FALLS_NAME" Language="ru_RU">
+			<Text>Игуасу|Игуасу|Игуасу|Игуасу|Игуасу|Игуасу</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_IGUAZU_FALLS_NAME" Language="zh_Hans_CN">
+			<Text>伊瓜苏瀑布</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_IGUAZU_FALLS_NAME" Language="zh_Hant_HK">
+			<Text>伊瓜蘇瀑布</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KILIMANJARO_NAME" Language="en_US">
+			<Text>Mount Kilimanjaro</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KILIMANJARO_NAME" Language="de_DE">
+			<Text>Kilimandscharo|Kilimandscharo|Kilimandscharo|Kilimandscharos|Kilimandscharo</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KILIMANJARO_NAME" Language="es_ES">
+			<Text>Monte Kilimanjaro</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KILIMANJARO_NAME" Language="fr_FR">
+			<Text>Kilimandjaro</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KILIMANJARO_NAME" Language="it_IT">
+			<Text>Monte Kilimanjaro</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KILIMANJARO_NAME" Language="ja_JP">
+			<Text>キリマンジャロ山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KILIMANJARO_NAME" Language="ko_KR">
+			<Text>킬리만자로산</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KILIMANJARO_NAME" Language="pl_PL">
+			<Text>Kilimandżaro</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KILIMANJARO_NAME" Language="pt_BR">
+			<Text>Monte Kilimanjaro</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KILIMANJARO_NAME" Language="ru_RU">
+			<Text>Гора Килиманджаро|горы Килиманджаро|горе Килиманджаро|гору Килиманджаро|горой Килиманджаро|горе Килиманджаро</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KILIMANJARO_NAME" Language="zh_Hans_CN">
+			<Text>乞力马扎罗山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KILIMANJARO_NAME" Language="zh_Hant_HK">
+			<Text>吉力馬札羅山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MACHAPUCHARE_NAME" Language="en_US">
+			<Text>Machapuchare</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MACHAPUCHARE_NAME" Language="de_DE">
+			<Text>Machapucharé|Machapucharé|Machapucharé|Machapucharé|Machapucharé</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MACHAPUCHARE_NAME" Language="es_ES">
+			<Text>Machapuchare</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MACHAPUCHARE_NAME" Language="fr_FR">
+			<Text>Machapuchare</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MACHAPUCHARE_NAME" Language="it_IT">
+			<Text>Machapuchare|Machapuchare|Machapuchare</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MACHAPUCHARE_NAME" Language="ja_JP">
+			<Text>マチャプチャレ</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MACHAPUCHARE_NAME" Language="ko_KR">
+			<Text>마차푸차레</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MACHAPUCHARE_NAME" Language="pl_PL">
+			<Text>Machapuchare</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MACHAPUCHARE_NAME" Language="pt_BR">
+			<Text>Machapuchare</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MACHAPUCHARE_NAME" Language="ru_RU">
+			<Text>Мачапучаре|Мачапучаре|Мачапучаре|Мачапучаре|Мачапучаре|Мачапучаре</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MACHAPUCHARE_NAME" Language="zh_Hans_CN">
+			<Text>鱼尾峰</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MACHAPUCHARE_NAME" Language="zh_Hant_HK">
+			<Text>魚尾峰</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME" Language="en_US">
+			<Text>Mapu 'a Vaea Blowholes</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME" Language="de_DE">
+			<Text>Mapu'a 'a Vaea Blowholes|Mapu'a 'a Vaea Blowholes|Mapu'a 'a Vaea Blowholes|Mapu'a 'a Vaea Blowholes|Mapu'a 'a Vaea Blowholes</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME" Language="es_ES">
+			<Text>Bufadera Mapu 'a Vaea|Bufaderas Mapu 'a Vaea</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME" Language="fr_FR">
+			<Text>Geyser maritime de Mapu a Vaea</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME" Language="it_IT">
+			<Text>Mapu 'a Vaea|Mapu 'a Vaea|Mapu 'a Vaea</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME" Language="ja_JP">
+			<Text>マプア・バイア・ブロウホール</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME" Language="ko_KR">
+			<Text>마푸 아 바에아 블로우홀</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME" Language="pl_PL">
+			<Text>Mapu a Vaea</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME" Language="pt_BR">
+			<Text>Mapu 'a Vaea|Mapu 'a Vaea</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME" Language="ru_RU">
+			<Text>Гейзер Мапу а Ваэа|гейзера Мапу а Ваэа|гейзеру Мапу а Ваэа|гейзер Мапу а Ваэа|гейзером Мапу а Ваэа|гейзере Мапу а Ваэа</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME" Language="zh_Hans_CN">
+			<Text>瓦埃亚海蚀喷洞</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME" Language="zh_Hant_HK">
+			<Text>貴族口哨吹蝕穴</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_EVEREST_NAME" Language="en_US">
+			<Text>Mount Everest</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_EVEREST_NAME" Language="de_DE">
+			<Text>Mount Everest|Mount Everest|Mount Everest|Mount Everest|Mount Everest</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_EVEREST_NAME" Language="es_ES">
+			<Text>Monte Everest|Montes Everest</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_EVEREST_NAME" Language="fr_FR">
+			<Text>Mont Everest</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_EVEREST_NAME" Language="it_IT">
+			<Text>Monte Everest</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_EVEREST_NAME" Language="ja_JP">
+			<Text>エベレスト山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_EVEREST_NAME" Language="ko_KR">
+			<Text>에베레스트산</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_EVEREST_NAME" Language="pl_PL">
+			<Text>Mount Everest|Mount Everestu|Mount Everestowi|Mount Everest|Mount Everestem|Mount Evereście|Mount Everest|Mount Everestu|Mount Everestowi|Mount Everest|Mount Everestem|Mount Evereście</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_EVEREST_NAME" Language="pt_BR">
+			<Text>Monte Everest</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_EVEREST_NAME" Language="ru_RU">
+			<Text>Гора Эверест|горы Эверест|горе Эверест|гору Эверест|горой Эверест|горе Эверест</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_EVEREST_NAME" Language="zh_Hans_CN">
+			<Text>珠穆朗玛峰</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_EVEREST_NAME" Language="zh_Hant_HK">
+			<Text>聖母峰</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="en_US">
+			<Text>Mount Fuji</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="de_DE">
+			<Text>Fuji|Fuji|Fuji|Fuji|Fuji</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="es_ES">
+			<Text>Monte Fuji</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="fr_FR">
+			<Text>Mont Fuji</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="it_IT">
+			<Text>Monte Fuji|il Monte Fuji|il Monte Fuji</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="ja_JP">
+			<Text>富士山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="ko_KR">
+			<Text>후지산</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="pl_PL">
+			<Text>Fudżi</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="pt_BR">
+			<Text>Monte Fuji</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="ru_RU">
+			<Text>Фудзи|Фудзи|Фудзи|Фудзи|Фудзи|Фудзи</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="zh_Hans_CN">
+			<Text>富士山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="zh_Hant_HK">
+			<Text>富士山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="en_US">
+			<Text>Redwood Forest</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="de_DE">
+			<Text>Rotholzwald (bewachsen)|Rotholzwald (bewachsen)|Rotholzwald (bewachsen)|Rotholzwalds (bewachsen)|Rotholzwald (bewachsen)</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="es_ES">
+			<Text>Bosque de Redwood</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="fr_FR">
+			<Text>Forêt de séquoia|Forêts de séquoia</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="it_IT">
+			<Text>Foresta di sequoie</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="ja_JP">
+			<Text>レッドウッドの森</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="ko_KR">
+			<Text>레드우드 숲</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="pl_PL">
+			<Text>Las sekwojowy|Lasu sekwojowego|Lasowi sekwojowemu|Las sekwojowy|Lasem sekwojowym|Lesie sekwojowym|las sekwojowy|lasu sekwojowego|lasowi sekwojowemu|las sekwojowy|lasem sekwojowym|lesie sekwojowym</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="pt_BR">
+			<Text>Floresta de Redwood</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="ru_RU">
+			<Text>Леса секвойи|лесов секвойи|лесам секвойи|леса секвойи|лесами секвойи|лесах секвойи</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="zh_Hans_CN">
+			<Text>红木森林</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="zh_Hant_HK">
+			<Text>紅木森林</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="en_US">
+			<Text>Thera</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="de_DE">
+			<Text>Thera|Thera|Thera|Theras|Thera</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="es_ES">
+			<Text>Tera</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="fr_FR">
+			<Text>Théra</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="it_IT">
+			<Text>Santorini</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="ja_JP">
+			<Text>テーラ</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="ko_KR">
+			<Text>테라</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="pl_PL">
+			<Text>Thera|Thery|Therze|Therę|Therą|Therze|Thera|Thery|Therze|Therę|Therą|Therze</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="pt_BR">
+			<Text>Vulcão Tera</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="ru_RU">
+			<Text>Санторини|Санторини|Санторини|Санторини|Санторини|Санторини</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="zh_Hans_CN">
+			<Text>锡拉岛</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="zh_Hant_HK">
+			<Text>錫拉島火山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_NAME" Language="en_US">
+			<Text>Torres del Paine</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_NAME" Language="de_DE">
+			<Text>Torres del Paine|Torres del Paine|Torres del Paine|Torres del Paine|Torres del Paine</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_NAME" Language="es_ES">
+			<Text>Torres del Paine</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_NAME" Language="fr_FR">
+			<Text>Torres del Paine</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_NAME" Language="it_IT">
+			<Text>Torres del Paine</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_NAME" Language="ja_JP">
+			<Text>トーレス・デル・パイネ</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_NAME" Language="ko_KR">
+			<Text>토레스델파이네</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_NAME" Language="pl_PL">
+			<Text>Torres del Paine</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_NAME" Language="pt_BR">
+			<Text>Torres del Paine</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_NAME" Language="ru_RU">
+			<Text>Торрес-дель-Пайне|Торрес-дель-Пайне|Торрес-дель-Пайне|Торрес-дель-Пайне|Торрес-дель-Пайне|Торрес-дель-Пайне</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_NAME" Language="zh_Hans_CN">
+			<Text>百内国家公园</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_NAME" Language="zh_Hant_HK">
+			<Text>百內國家公園</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ULURU_NAME" Language="en_US">
+			<Text>Uluru</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ULURU_NAME" Language="de_DE">
+			<Text>Uluru|Uluru|Uluru|Ulurus|Uluru</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ULURU_NAME" Language="es_ES">
+			<Text>Uluru</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ULURU_NAME" Language="fr_FR">
+			<Text>Uluru</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ULURU_NAME" Language="it_IT">
+			<Text>Uluru</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ULURU_NAME" Language="ja_JP">
+			<Text>ウルル</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ULURU_NAME" Language="ko_KR">
+			<Text>울루루</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ULURU_NAME" Language="pl_PL">
+			<Text>Uluru</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ULURU_NAME" Language="pt_BR">
+			<Text>Uluru</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ULURU_NAME" Language="ru_RU">
+			<Text>Улуру|Улуру|Улуру|Улуру|Улуру|Улуру</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ULURU_NAME" Language="zh_Hans_CN">
+			<Text>乌鲁鲁</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ULURU_NAME" Language="zh_Hant_HK">
+			<Text>烏盧魯</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VALLEY_OF_FLOWERS_NAME" Language="en_US">
+			<Text>Valley of Flowers</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VALLEY_OF_FLOWERS_NAME" Language="de_DE">
+			<Text>Valley of Flowers|Valley of Flowers|Valley of Flowers|Valley of Flowers|Valley of Flowers</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VALLEY_OF_FLOWERS_NAME" Language="es_ES">
+			<Text>Valle de las Flores</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VALLEY_OF_FLOWERS_NAME" Language="fr_FR">
+			<Text>Vallée fleurie|Vallées fleuries</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VALLEY_OF_FLOWERS_NAME" Language="it_IT">
+			<Text>Valle dei fiori</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VALLEY_OF_FLOWERS_NAME" Language="ja_JP">
+			<Text>花の谷</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VALLEY_OF_FLOWERS_NAME" Language="ko_KR">
+			<Text>꽃의 계곡</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VALLEY_OF_FLOWERS_NAME" Language="pl_PL">
+			<Text>Dolina Kwiatów|Doliny Kwiatów|Dolinie Kwiatów|Dolinę Kwiatów|Doliną Kwiatów|Dolinie Kwiatów|Dolina Kwiatów|Doliny Kwiatów|Dolinie Kwiatów|Dolinę Kwiatów|Doliną Kwiatów|Dolinie Kwiatów</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VALLEY_OF_FLOWERS_NAME" Language="pt_BR">
+			<Text>Vale das Flores</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VALLEY_OF_FLOWERS_NAME" Language="ru_RU">
+			<Text>Долина цветов|долины цветов|долине цветов|долину цветов|долиной цветов|долине цветов</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VALLEY_OF_FLOWERS_NAME" Language="zh_Hans_CN">
+			<Text>百花谷</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VALLEY_OF_FLOWERS_NAME" Language="zh_Hant_HK">
+			<Text>花谷</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VIHREN_NAME" Language="en_US">
+			<Text>Vihren</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VIHREN_NAME" Language="de_DE">
+			<Text>Wichren|Wichren|Wichren|Wichren|Wichren</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VIHREN_NAME" Language="es_ES">
+			<Text>Vihren</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VIHREN_NAME" Language="fr_FR">
+			<Text>Vikhren</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VIHREN_NAME" Language="it_IT">
+			<Text>Vihren|Vihren|Vihren</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VIHREN_NAME" Language="ja_JP">
+			<Text>ヴィフレン</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VIHREN_NAME" Language="ko_KR">
+			<Text>비흐렌</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VIHREN_NAME" Language="pl_PL">
+			<Text>Wichren|Wichrenu|Wichrenowi|Wichren|Wichrenem|Wichrenie|Wichren|Wichrenu|Wichrenowi|Wichren|Wichrenem|Wichrenie</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VIHREN_NAME" Language="pt_BR">
+			<Text>Vihren</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VIHREN_NAME" Language="ru_RU">
+			<Text>Вихрен|Вихрена|Вихрену|Вихрен|Вихреном|Вихрене</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VIHREN_NAME" Language="zh_Hans_CN">
+			<Text>维赫伦峰</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VIHREN_NAME" Language="zh_Hant_HK">
+			<Text>維赫倫峰</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VINICUNCA_NAME" Language="en_US">
+			<Text>Vinicunca</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VINICUNCA_NAME" Language="de_DE">
+			<Text>Vinicunca|Vinicunca|Vinicunca|Vinicunca|Vinicunca</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VINICUNCA_NAME" Language="es_ES">
+			<Text>Vinicunca</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VINICUNCA_NAME" Language="fr_FR">
+			<Text>Vinicunca</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VINICUNCA_NAME" Language="it_IT">
+			<Text>Vinicunca|Vinicunca|Vinicunca</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VINICUNCA_NAME" Language="ja_JP">
+			<Text>ヴィニクンカ</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VINICUNCA_NAME" Language="ko_KR">
+			<Text>비니쿤카</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VINICUNCA_NAME" Language="pl_PL">
+			<Text>Vinicunca|Vinicunki|Vinicunce|Vinicuncę|Vinicuncą|Vinicunce|Vinicunca|Vinicunki|Vinicunce|Vinicuncę|Vinicuncą|Vinicunce</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VINICUNCA_NAME" Language="pt_BR">
+			<Text>Vinicunca</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VINICUNCA_NAME" Language="ru_RU">
+			<Text>Виникунка|Виникунки|Виникунке|Виникунку|Виникункой|Виникунке</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VINICUNCA_NAME" Language="zh_Hans_CN">
+			<Text>彩虹山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VINICUNCA_NAME" Language="zh_Hant_HK">
+			<Text>彩虹山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ZHANGJIAJIE_NAME" Language="en_US">
+			<Text>Zhangjiajie</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ZHANGJIAJIE_NAME" Language="de_DE">
+			<Text>Zhangjiajie|Zhangjiajie|Zhangjiajie|Zhangjiajie|Zhangjiajie</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ZHANGJIAJIE_NAME" Language="es_ES">
+			<Text>Zhangjiajie</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ZHANGJIAJIE_NAME" Language="fr_FR">
+			<Text>Zhangjiajie</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ZHANGJIAJIE_NAME" Language="it_IT">
+			<Text>Zhangjiajie</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ZHANGJIAJIE_NAME" Language="ja_JP">
+			<Text>張家界</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ZHANGJIAJIE_NAME" Language="ko_KR">
+			<Text>장자제</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ZHANGJIAJIE_NAME" Language="pl_PL">
+			<Text>Zhangjiajie</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ZHANGJIAJIE_NAME" Language="pt_BR">
+			<Text>Zhangjiajie</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ZHANGJIAJIE_NAME" Language="ru_RU">
+			<Text>Чжанцзяцзе</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ZHANGJIAJIE_NAME" Language="zh_Hans_CN">
+			<Text>张家界</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ZHANGJIAJIE_NAME" Language="zh_Hant_HK">
+			<Text>張家界</Text>
+		</Replace>
+	</LocalizedText>
+</Database>

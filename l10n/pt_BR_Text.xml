@@ -193,5 +193,14 @@
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="pt_BR">
 			<Text>Advanced Settings Pro do Zatygold[n] [n]Este mod expande a configuração de partidas para um jogador e multijogador com opções extras no menu de configurações avançadas. Ele permite ajustar sistemas que normalmente não são configuráveis.</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDEROPTIONS" Language="pt_BR">
+			<Text>Configurações de maravilhas naturais</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="pt_BR">
+			<Text>Determina se esta maravilha natural pode aparecer no mapa.</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="pt_BR">
+			<Text>Seleção de maravilhas naturais</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

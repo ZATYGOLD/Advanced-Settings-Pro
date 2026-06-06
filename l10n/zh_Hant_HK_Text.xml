@@ -193,5 +193,14 @@
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>Zatygold的Advanced Settings Pro[n] [n]本模組透過在進階設定選單中加入更多選項，擴充單人與多人遊戲的對局設定，讓你能夠微調通常無法調整的系統。</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDEROPTIONS" Language="zh_Hant_HK">
+			<Text>自然奇觀設定</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>決定該自然奇觀能否出現在地圖上。</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="zh_Hant_HK">
+			<Text>自然奇觀選擇</Text>
+		</Replace>
 	</LocalizedText>
 </Database>
