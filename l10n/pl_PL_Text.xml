@@ -199,5 +199,8 @@
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="pl_PL">
 			<Text>Określa, czy ten cud natury może pojawić się na mapie.</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="pl_PL">
+			<Text>Wybór cudów natury</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

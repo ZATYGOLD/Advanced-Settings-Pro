@@ -199,5 +199,8 @@
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>决定该自然奇观能否出现在地图上。</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="zh_Hans_CN">
+			<Text>自然奇观选择</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

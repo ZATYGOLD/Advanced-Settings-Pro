@@ -199,5 +199,8 @@
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="it_IT">
 			<Text>Determina se questa meraviglia naturale può comparire sulla mappa.</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="it_IT">
+			<Text>Selezione delle meraviglie naturali</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

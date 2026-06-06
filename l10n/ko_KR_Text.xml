@@ -199,5 +199,8 @@
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="ko_KR">
 			<Text>이 자연경관이 지도에 등장할 수 있는지 설정합니다.</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="ko_KR">
+			<Text>자연경관 선택</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

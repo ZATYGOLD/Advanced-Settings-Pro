@@ -199,5 +199,8 @@
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="ru_RU">
 			<Text>Определяет, может ли это чудо природы появиться на карте.</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="ru_RU">
+			<Text>Выбор чудес природы</Text>
+		</Replace>
 	</LocalizedText>
 </Database>
