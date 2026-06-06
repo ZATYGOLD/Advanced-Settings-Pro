@@ -6,6 +6,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ### 0.6.0
 
+- Added a Natural Wonder Settings category: the wonder count setting plus per-wonder Enabled/Disabled toggles giving full control over which natural wonders can appear
 - Added localized text for all 12 languages supported by the game
 - Fixed Treasure Convoy Speed not applying at sea; movement is now adjusted on land and at sea through the fleet's unit ability
 - Fixed Settler Speed embarked bonus and extended it to unique settler replacements
@@ -28,6 +29,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Treasure Convoy Speed: Slow, Default, or Fast
 - Military Unit Cost: Cheaper, Default, or Expensive
 - Natural Wonders: None, Half, Default, More, or Double
+- Individual Natural Wonder toggles: enable or disable each of the 20 natural wonders, including DLC wonders
 - Lakes: Less, Default, or More
 - Crisis Speed: Crawl, Slow, Default, Quick, or Fast
 - Settlement Limit: Less, Default, or More

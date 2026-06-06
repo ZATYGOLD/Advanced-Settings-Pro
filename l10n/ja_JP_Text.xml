@@ -193,5 +193,11 @@
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="ja_JP">
 			<Text>ZatygoldのAdvanced Settings Pro[n] [n]このModは、詳細設定メニューに追加オプションを加えることで、シングルプレイヤーとマルチプレイヤーのゲーム設定を拡張します。通常は調整できないシステムを細かく設定できます。</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDEROPTIONS" Language="ja_JP">
+			<Text>自然遺産設定</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="ja_JP">
+			<Text>この自然遺産がマップに出現できるかどうかを設定します。</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

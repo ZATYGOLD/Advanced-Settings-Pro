@@ -5,6 +5,7 @@
 		<Row Tag="LOC_GROUPID_ZG_UNITOPTIONS"><Text>Unit Settings</Text></Row>
 		<Row Tag="LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS"><Text>Independent Power Settings</Text></Row>
 		<Row Tag="LOC_GROUPID_ZG_SETTLEMENTOPTIONS"><Text>Settlement Settings</Text></Row>
+		<Row Tag="LOC_GROUPID_ZG_NATURALWONDEROPTIONS"><Text>Natural Wonder Settings</Text></Row>
 
 	<!-- Universal Names -->
 		<Row Tag="LOC_ZG_ENABLED_NAME"><Text>Enabled</Text></Row>
@@ -314,6 +315,10 @@
 				[n] This will attempt to adjust the number of lakes on the map.
 				[n] However, map generation may override the settings back to default.
 			</Text>
+		</Row>
+
+		<Row Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION">
+			<Text>Controls whether this Natural Wonder can appear on the map.</Text>
 		</Row>
 
 	</EnglishText>

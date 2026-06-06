@@ -1,2 +1,2 @@
-UPDATE Maps 
+UPDATE Maps
 SET NumNaturalWonders = 0;
