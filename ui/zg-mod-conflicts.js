@@ -1,13 +1,19 @@
 import { DialogBoxManager } from 'fs://game/core/ui/dialog-box/manager-dialog-box.js';
 
-// Mod ids that conflict with Zatygold's Advanced Settings Pro.
-// Use the conflicting mod's id exactly as declared in its .modinfo <Mod id="...">.
-const CONFLICTING_MOD_IDS = [
-	"mws-settlement-limit-settings",       // Settlement Limit Settings
-	"Mattifus's Natural Wonder Setting",   // Natural Wonders Setting
-	"more-natural-wonders",                // More Natural Wonders
-	"NaturalWonderManager",                // Natural Wonder Manager
+// Conflicting mods, keyed by their immutable Steam Workshop id.
+// The game only exposes a mod's .modinfo <Mod id> at runtime (the modding
+// database and install paths are not accessible from scripts), so modId is the
+// value the check matches against. It is a cached lookup result: if a mod
+// changes its modId in an update, set LOG_INSTALLED_MODS to true, launch to
+// the main menu once, and refresh the value from UI.log.
+const CONFLICTING_MODS = [
+	{ workshopId: "3542861519", modId: "mws-settlement-limit-settings" },     // Settlement Limit Settings
+	{ workshopId: "3601908082", modId: "Mattifus's Natural Wonder Setting" }, // Natural Wonders Setting
+	{ workshopId: "3542338658", modId: "more-natural-wonders" },              // More Natural Wonders
+	{ workshopId: "3684060469", modId: "NaturalWonderManager" },              // Natural Wonder Manager
 ];
+
+const CONFLICTING_MOD_IDS = CONFLICTING_MODS.map((entry) => entry.modId);
 
 // Set true to log every installed mod id to UI.log when hunting for new ids.
 const LOG_INSTALLED_MODS = false;
@@ -28,11 +34,6 @@ function showConflictDialog(conflicts) {
 			{
 				actions: ["accept"],
 				label: "LOC_ZG_MOD_CONFLICT_DISABLE",
-				callback: () => Modding.disableMods(conflicts.map((mod) => mod.handle))
-			},
-			{
-				actions: ["cancel", "keyboard-escape"],
-				label: "LOC_ZG_MOD_CONFLICT_IGNORE",
 				callback: () => Modding.disableMods(conflicts.map((mod) => mod.handle))
 			}
 		]

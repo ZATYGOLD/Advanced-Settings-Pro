@@ -510,7 +510,7 @@
 			</Properties>
 			<Actions>
 				<UIScripts>
-					<Item>ui/zg-mod-guard.js</Item>
+					<Item>ui/zg-mod-conflicts.js</Item>
 				</UIScripts>
 				<UpdateText>
 					<Item>text/en_us/ui-shell-text.xml</Item>
