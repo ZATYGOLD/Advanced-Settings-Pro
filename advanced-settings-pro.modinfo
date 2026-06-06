@@ -372,6 +372,14 @@
             	</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
+		<ActionGroup id="zg-options-settings-shell" scope="game" criteria="always">
+			<Properties><LoadOrder>500</LoadOrder></Properties>
+			<Actions>
+				<UpdateText>
+                	<Item>text/en_us/ui-shell-text.xml</Item>
+            	</UpdateText>
+			</Actions>
+		</ActionGroup>
 
 <!--************************* SETTINGS: SETTLER MOVEMENT ************************************-->
 
