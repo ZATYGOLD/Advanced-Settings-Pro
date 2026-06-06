@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<LocalizedText>
+		<Replace Tag="LOC_GROUPID_ZG_UNITOPTIONS" Language="fr_FR">
+			<Text>Paramètres des unités</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS" Language="fr_FR">
+			<Text>Paramètres des puissances indépendantes</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_SETTLEMENTOPTIONS" Language="fr_FR">
+			<Text>Paramètres des colonies</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="fr_FR">
+			<Text>Activé</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DISABLED_NAME" Language="fr_FR">
+			<Text>Désactivé</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DEFAULT_NAME" Language="fr_FR">
+			<Text>Par défaut</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NONE_NAME" Language="fr_FR">
+			<Text>Aucune</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CUSTOM_NAME" Language="fr_FR">
+			<Text>Personnalisé</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DOUBLE_NAME" Language="fr_FR">
+			<Text>Double</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HALF_NAME" Language="fr_FR">
+			<Text>Moitié</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FAST_NAME" Language="fr_FR">
+			<Text>Rapide</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_QUICK_NAME" Language="fr_FR">
+			<Text>Soutenu</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SLOW_NAME" Language="fr_FR">
+			<Text>Lent</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRAWL_NAME" Language="fr_FR">
+			<Text>Très lent</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MORE_NAME" Language="fr_FR">
+			<Text>Plus</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LESS_NAME" Language="fr_FR">
+			<Text>Moins</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME" Language="fr_FR">
+			<Text>Vitesse des colons</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_NAME" Language="fr_FR">
+			<Text>Vitesse des convois de trésors</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_NAME" Language="fr_FR">
+			<Text>Nombre initial de puissances indépendantes</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="fr_FR">
+			<Text>Espacement des puissances indépendantes</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME" Language="fr_FR">
+			<Text>Unités initiales des puissances indépendantes</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_NAME" Language="fr_FR">
+			<Text>Catastrophes</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_NAME" Language="fr_FR">
+			<Text>Limite de colonies</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME" Language="fr_FR">
+			<Text>Distance entre colonies</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="fr_FR">
+			<Text>Coût des unités militaires</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_NAME" Language="fr_FR">
+			<Text>Rythme des crises</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_NAME" Language="fr_FR">
+			<Text>Merveilles naturelles</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_NAME" Language="fr_FR">
+			<Text>Lacs</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME" Language="fr_FR">
+			<Text>Antiquité</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME" Language="fr_FR">
+			<Text>Âge de l'exploration</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME" Language="fr_FR">
+			<Text>Âge moderne</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="fr_FR">
+			<Text>Définit le mouvement de base et embarqué du colon.[n] [BLIST][LI] Lent : 2[icon:Action_Move]de base et 1[icon:Action_Move]embarqué.[LI] Par défaut : 3[icon:Action_Move]de base et 2[icon:Action_Move]embarqué.[LI] Rapide : 4[icon:Action_Move]de base et 3[icon:Action_Move]embarqué.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION" Language="fr_FR">
+			<Text>Définit le mouvement de base et embarqué du convoi de trésors.[n] [BLIST][LI] Lent : 1[icon:Action_Move]de mouvement de base et embarqué.[LI] Par défaut : 2[icon:Action_Move]de mouvement de base et embarqué.[LI] Rapide : 3[icon:Action_Move]de mouvement de base et embarqué.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION" Language="fr_FR">
+			<Text>Définit le nombre initial de [icon:INDEPENDENT_POWER]puissances indépendantes. Les résultats peuvent varier.[n] [BLIST][LI] Aucune : 0 puissance indépendante.[LI] Moins : 2 puissances indépendantes par civilisation.[LI] Par défaut : 3 puissances indépendantes par civilisation.[LI] Plus : 4 puissances indépendantes par civilisation.[/BLIST][n] [n]Le jeu tentera de générer le nombre souhaité, sans garantie du nombre exact.[n]Le résultat sera aussi proche que possible de la valeur attendue.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION" Language="fr_FR">
+			<Text>Définit la distance minimale entre puissances indépendantes.[n] Cela peut influer sur leur nombre total.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_LESS" Language="fr_FR">
+			<Text>Définit la distance minimale entre puissances indépendantes.[n] Cela peut influer sur leur nombre total.[n] [BLIST][LI] Antiquité : 4 cases.[LI] Âge de l'exploration : 3 cases.[LI] Âge moderne : 2 cases.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_DEFAULT" Language="fr_FR">
+			<Text>Définit la distance minimale entre puissances indépendantes.[n] Cela peut influer sur leur nombre total.[n] [BLIST][LI] Antiquité : 6 cases.[LI] Âge de l'exploration : 6 cases.[LI] Âge moderne : 4 cases.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="fr_FR">
+			<Text>Définit la distance minimale entre puissances indépendantes.[n] Cela peut influer sur leur nombre total.[n] [BLIST][LI] Antiquité : 7 cases.[LI] Âge de l'exploration : 7 cases.[LI] Âge moderne : 5 cases.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION" Language="fr_FR">
+			<Text>Définit le nombre initial d'unités d'une puissance indépendante. [n] Les puissances indépendantes commencent toujours avec 1[icon:UNIT_SCOUT]Éclaireur.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_LESS" Language="fr_FR">
+			<Text>Définit le nombre initial d'unités d'une puissance indépendante. [n] Les puissances indépendantes commencent toujours avec 1[icon:UNIT_SCOUT]Éclaireur.[n] [BLIST][LI] Antiquité : 0[icon:UNIT_WARRIOR]Guerriers.[LI] Âge de l'exploration : 2[icon:UNIT_SWORDSMAN]Spadassins.[LI] Âge moderne : 3[icon:UNIT_LINE_INFANTRY]Infanterie de ligne.[/BLIST][n] [n]Le nombre d'unités dépend des cases terrestres disponibles dans le premier anneau, centre du village compris.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_DEFAULT" Language="fr_FR">
+			<Text>Définit le nombre initial d'unités d'une puissance indépendante. [n] Les puissances indépendantes commencent toujours avec 1[icon:UNIT_SCOUT]Éclaireur.[n] [BLIST][LI] Antiquité : 1[icon:UNIT_WARRIOR]Guerriers.[LI] Âge de l'exploration : 3[icon:UNIT_SWORDSMAN]Spadassins.[LI] Âge moderne : 4[icon:UNIT_LINE_INFANTRY]Infanterie de ligne.[/BLIST][n] [n]Le nombre d'unités dépend des cases terrestres disponibles dans le premier anneau, centre du village compris.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_MORE" Language="fr_FR">
+			<Text>Définit le nombre initial d'unités d'une puissance indépendante. [n] Les puissances indépendantes commencent toujours avec 1[icon:UNIT_SCOUT]Éclaireur.[n] [BLIST][LI] Antiquité : 2[icon:UNIT_WARRIOR]Guerriers.[LI] Âge de l'exploration : 4[icon:UNIT_SWORDSMAN]Spadassins.[LI] Âge moderne : 5[icon:UNIT_LINE_INFANTRY]Infanterie de ligne.[/BLIST][n] [n]Le nombre d'unités dépend des cases terrestres disponibles dans le premier anneau, centre du village compris.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="fr_FR">
+			<Text>Désactive toutes les catastrophes naturelles.[n]Les événements de crise ne sont pas affectés par ce paramètre.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" Language="fr_FR">
+			<Text>Définit la [icon:SETTLEMENT_LIMIT]limite de colonies initiale de chaque âge.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_DEFAULT" Language="fr_FR">
+			<Text>Définit la [icon:SETTLEMENT_LIMIT]limite de colonies initiale de chaque âge.[n] [BLIST][LI] Antiquité : limite de colonies de 3.[LI] Âge de l'exploration : limite de colonies de 8.[LI] Âge moderne : limite de colonies de 16.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_MORE" Language="fr_FR">
+			<Text>Définit la [icon:SETTLEMENT_LIMIT]limite de colonies initiale de chaque âge.[n] [BLIST][LI] Antiquité : limite de colonies de 5.[LI] Âge de l'exploration : limite de colonies de 12.[LI] Âge moderne : limite de colonies de 20.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_LESS" Language="fr_FR">
+			<Text>Définit la [icon:SETTLEMENT_LIMIT]limite de colonies initiale de chaque âge.[n] [BLIST][LI] Antiquité : limite de colonies de 1.[LI] Âge de l'exploration : limite de colonies de 4.[LI] Âge moderne : limite de colonies de 10.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION" Language="fr_FR">
+			<Text>Définit la distance minimale entre les colonies.[n] [BLIST][LI] Moins : 2 cases.[LI] Par défaut : 3 cases.[LI] Plus : 4 cases.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="fr_FR">
+			<Text>Définit le coût de production des unités de combat.[n] [BLIST][LI] Moins : 25% moins chères.[LI] Par défaut : aucune réduction.[LI] Plus : 25% plus chères.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="fr_FR">
+			<Text>Définit le rythme des crises.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_DEFAULT" Language="fr_FR">
+			<Text>Définit le rythme des crises.[n] [BLIST][LI] Phase 1 : commence à 70%.[LI] Phase 2 : commence à 80%.[LI] Phase 3 : commence à 90%.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_QUICK" Language="fr_FR">
+			<Text>Définit le rythme des crises.[n] [BLIST][LI] Phase 1 : commence à 75%.[LI] Phase 2 : commence à 85%.[LI] Phase 3 : commence à 95%.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_CRAWL" Language="fr_FR">
+			<Text>Définit le rythme des crises.[n] [BLIST][LI] Phase 1 : commence à 50%.[LI] Phase 2 : commence à 65%.[LI] Phase 3 : commence à 85%.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_SLOW" Language="fr_FR">
+			<Text>Définit le rythme des crises.[n] [BLIST][LI] Phase 1 : commence à 60%.[LI] Phase 2 : commence à 75%.[LI] Phase 3 : commence à 90%.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_FAST" Language="fr_FR">
+			<Text>Définit le rythme des crises.[n] [BLIST][LI] Phase 1 : commence à 85%.[LI] Phase 2 : commence à 90%.[LI] Phase 3 : commence à 95%.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="fr_FR">
+			<Text>Définit le nombre de [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] merveilles naturelles sur la carte.[n] [BLIST][LI] Aucune : 0 merveille naturelle.[LI] Moitié : 50% de merveilles naturelles en moins.[LI] Par défaut : aucun changement.[LI] Plus : 50% de merveilles naturelles en plus.[LI] Double : 100% de merveilles naturelles en plus.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE" Language="fr_FR">
+			<Text>Définit le nombre de [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] merveilles naturelles sur la carte.[n] Taille de la carte[n] [BLIST][LI] Minuscule : 0 merveilles naturelles.[LI] Petite : 0 merveilles naturelles.[LI] Standard : 0 merveilles naturelles.[LI] Grande : 0 merveilles naturelles.[LI] Immense : 0 merveilles naturelles.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF" Language="fr_FR">
+			<Text>Définit le nombre de [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] merveilles naturelles sur la carte.[n] Taille de la carte[n] [BLIST][LI] Minuscule : 1 merveilles naturelles.[LI] Petite : 2 merveilles naturelles.[LI] Standard : 2 merveilles naturelles.[LI] Grande : 3 merveilles naturelles.[LI] Immense : 3 merveilles naturelles.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DEFAULT" Language="fr_FR">
+			<Text>Définit le nombre de [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] merveilles naturelles sur la carte.[n] Taille de la carte[n] [BLIST][LI] Minuscule : 3 merveilles naturelles.[LI] Petite : 4 merveilles naturelles.[LI] Standard : 5 merveilles naturelles.[LI] Grande : 6 merveilles naturelles.[LI] Immense : 7 merveilles naturelles.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE" Language="fr_FR">
+			<Text>Définit le nombre de [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] merveilles naturelles sur la carte.[n] Taille de la carte[n] [BLIST][LI] Minuscule : 5 merveilles naturelles.[LI] Petite : 6 merveilles naturelles.[LI] Standard : 8 merveilles naturelles.[LI] Grande : 9 merveilles naturelles.[LI] Immense : 11 merveilles naturelles.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE" Language="fr_FR">
+			<Text>Définit le nombre de [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] merveilles naturelles sur la carte.[n] Taille de la carte[n] [BLIST][LI] Minuscule : 6 merveilles naturelles.[LI] Petite : 8 merveilles naturelles.[LI] Standard : 10 merveilles naturelles.[LI] Grande : 12 merveilles naturelles.[LI] Immense : 14 merveilles naturelles.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION" Language="fr_FR">
+			<Text>Définit la fréquence des lacs sur la carte. Les résultats peuvent varier.[n] Le jeu tentera d'ajuster le nombre de lacs.[n] La génération de la carte peut toutefois rétablir la valeur par défaut.</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="fr_FR">
+			<Text>Advanced Settings Pro</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="fr_FR">
+			<Text>Advanced Settings Pro de Zatygold[n] [n]Ce mod enrichit la configuration de partie en solo et en multijoueur grâce à des options supplémentaires dans le menu des paramètres avancés. Il permet d'affiner des systèmes normalement non réglables.</Text>
+		</Replace>
+	</LocalizedText>
+</Database>

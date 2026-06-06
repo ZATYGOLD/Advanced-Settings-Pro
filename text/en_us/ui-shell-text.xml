@@ -36,78 +36,107 @@
 		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_NAME"><Text>Military Unit Cost</Text></Row>
 		<Row Tag="LOC_ZG_CRISIS_SPEED_NAME"><Text>Crisis Speed</Text></Row>
 		<Row Tag="LOC_ZG_NATURAL_WONDER_COUNT_NAME"><Text>Natural Wonders</Text></Row>
-		<Row Tag="LOC_ZG_OCEAN_WIDTH_NAME"><Text>Ocean Distance</Text></Row>
 		<Row Tag="LOC_ZG_LAKE_GENERATION_NAME"><Text>Lakes</Text></Row>
 
-
 	<!-- Unit Movement Descriptions -->
-        <Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION">
+		<Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION">
 			<Text> Sets the settler base movement and embarked speed.
-				[n] [BLIST][LI]Slow: 2[icon:Action_Move]Base and 1[icon:Action_Move]Embarked Movement.
-				[LI]Default: 3[icon:Action_Move]Base and 2[icon:Action_Move]Embarked Movement.
-				[LI]Fast: 4[icon:Action_Move]Base and 3[icon:Action_Move]Embarked Movement.[/BLIST]
+				[n] [BLIST]
+				[LI] Slow: 2[icon:Action_Move]Base and 1[icon:Action_Move]Embarked Movement.
+				[LI] Default: 3[icon:Action_Move]Base and 2[icon:Action_Move]Embarked Movement.
+				[LI] Fast: 4[icon:Action_Move]Base and 3[icon:Action_Move]Embarked Movement.[/BLIST]
 			</Text>
 		</Row>
-        <Row Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION">
+		<Row Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION">
 			<Text> Sets the treasure convoy base movement and embarked speed.
-				[n] [BLIST][LI]Slow: 1[icon:Action_Move]Base and Embarked Movement.
-				[LI]Default: 2[icon:Action_Move]Base and Embarked Movement.
-				[LI]Fast: 3[icon:Action_Move]Base and Embarked Movement.[/BLIST]
+				[n] [BLIST][LI] Slow: 1[icon:Action_Move]Base and Embarked Movement.
+				[LI] Default: 2[icon:Action_Move]Base and Embarked Movement.
+				[LI] Fast: 3[icon:Action_Move]Base and Embarked Movement.[/BLIST]
 			</Text>
 		</Row>
 
 	<!-- Independent Power Descriptions -->
-        <Row Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION">
-			<Text> Sets the initial number of [icon:INDEPENDENT_POWER]Independent Powers. Results may vary.
-				[n] [BLIST][LI]None: 0 Independent Powers.
-				[LI]Less: 2 Independent Powers per Civilization.
-				[LI]Default: 3 Independent Powers per Civilization.
-				[LI]More: 4 Independent Powers per Civilization.[/BLIST]
-			</Text>
-		</Row>
-		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_ADDITIONAL_DESCRIPTION">
-			<Text> 
-				This will attempt to spawn the desired amount, but may not get the exact expected number.
-				[n]However, this will get as close as possible to the expected number.
+		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION">
+			<Text>Sets the initial number of [icon:INDEPENDENT_POWER]Independent Powers. Results may vary.
+				[n] [BLIST]
+				[LI] None: 0 Independent Powers.
+				[LI] Less: 2 Independent Powers per Civilization.
+				[LI] Default: 3 Independent Powers per Civilization.
+				[LI] More: 4 Independent Powers per Civilization.[/BLIST]
+				[n] [n]This will attempt to spawn the desired amount, but may not get the exact expected number. However, this will get as close as possible to the expected number.
 			</Text>
 		</Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION">
-			<Text>Sets the minimum distance for Independent Powers.[n]This may impact the total number of Independent Powers.</Text>
+			<Text>Sets the minimum distance for Independent Powers.
+				[n] This may impact the total number of Independent Powers.
+			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_ADDITIONAL_DESCRIPTION_LESS">
-			<Text>[BLIST][LI]Antiquity: 4 Tiles.[LI]Exploration: 3 Tiles.[LI]Modern: 2 Tiles.[/BLIST]</Text>
+		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_LESS">
+			<Text>Sets the minimum distance for Independent Powers.
+				[n] This may impact the total number of Independent Powers.
+				[n] [BLIST]
+				[LI] Antiquity: 4 Tiles.
+				[LI] Exploration: 3 Tiles.
+				[LI] Modern: 2 Tiles.[/BLIST]
+			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_ADDITIONAL_DESCRIPTION_DEFAULT">
-			<Text>[BLIST][LI]Antiquity: 6 Tiles.[LI]Exploration: 6 Tiles.[LI]Modern: 4 Tiles.[/BLIST]</Text>
+		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_DEFAULT">
+			<Text>Sets the minimum distance for Independent Powers.
+				[n] This may impact the total number of Independent Powers.
+				[n] [BLIST]
+				[LI] Antiquity: 6 Tiles.
+				[LI] Exploration: 6 Tiles.
+				[LI] Modern: 4 Tiles.[/BLIST]
+			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_ADDITIONAL_DESCRIPTION_MORE">
-			<Text>[BLIST][LI]Antiquity: 7 Tiles.[LI]Exploration: 7 Tiles.[LI]Modern: 5 Tiles.[/BLIST]</Text>
+		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE">
+			<Text>Sets the minimum distance for Independent Powers.
+				[n] This may impact the total number of Independent Powers.
+				[n] [BLIST]
+				[LI] Antiquity: 7 Tiles.
+				[LI] Exploration: 7 Tiles.
+				[LI] Modern: 5 Tiles.[/BLIST]
+			</Text>
 		</Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION">
-			<Text>Sets the initial number of an Independent Power's units. [n]Independent Powers always start with 1[icon:UNIT_SCOUT]Scout.</Text>
+			<Text>Sets the initial number of an Independent Power's units. 
+				[n] Independent Powers always start with 1[icon:UNIT_SCOUT]Scout.
+			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_ADDITIONAL_DESCRIPTION_LESS">
-			<Text>
-				[BLIST][LI]Antiquity: 0[icon:UNIT_WARRIOR]Warriors.[LI]Exploration: 2[icon:UNIT_SWORDSMAN]Swordsmen.[LI]Modern: 3 [icon:UNIT_LINE_INFANTRY]Line Infantry.[/BLIST]
+		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_LESS">
+			<Text>Sets the initial number of an Independent Power's units. 
+				[n] Independent Powers always start with 1[icon:UNIT_SCOUT]Scout.
+				[n] [BLIST]
+				[LI] Antiquity: 0[icon:UNIT_WARRIOR]Warriors.
+				[LI] Exploration: 2[icon:UNIT_SWORDSMAN]Swordsmen.
+				[LI] Modern: 3 [icon:UNIT_LINE_INFANTRY]Line Infantry.[/BLIST]
 				[n] [n]The number of units will depend upon the number of land tiles available within the first ring including the village center.
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_ADDITIONAL_DESCRIPTION_DEFAULT">
-			<Text>
-				[BLIST][LI]Antiquity: 1[icon:UNIT_WARRIOR]Warrior.[LI]Exploration: 3[icon:UNIT_SWORDSMAN]Swordsmen.[LI]Modern: 4 [icon:UNIT_LINE_INFANTRY]Line Infantry.[/BLIST]
+		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_DEFAULT">
+			<Text>Sets the initial number of an Independent Power's units.
+				[n] Independent Powers always start with 1[icon:UNIT_SCOUT]Scout.
+				[n] [BLIST]
+				[LI] Antiquity: 1[icon:UNIT_WARRIOR]Warrior.
+				[LI] Exploration: 3[icon:UNIT_SWORDSMAN]Swordsmen.
+				[LI] Modern: 4 [icon:UNIT_LINE_INFANTRY]Line Infantry.[/BLIST]
 				[n] [n]The number of units will depend upon the number of land tiles available within the first ring including the village center.
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_ADDITIONAL_DESCRIPTION_MORE">
-			<Text>
-				[BLIST][LI]Antiquity: 2[icon:UNIT_WARRIOR]Warriors.[LI]Exploration: 4[icon:UNIT_SWORDSMAN]Swordsmen.[LI]Modern: 5 [icon:UNIT_LINE_INFANTRY]Line Infantry.[/BLIST]
+		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_MORE">
+			<Text>Sets the initial number of an Independent Power's units.
+				[n]Independent Powers always start with 1[icon:UNIT_SCOUT]Scout.
+				[n] [BLIST]
+				[LI] Antiquity: 2[icon:UNIT_WARRIOR]Warriors.
+				[LI] Exploration: 4[icon:UNIT_SWORDSMAN]Swordsmen.
+				[LI] Modern: 5 [icon:UNIT_LINE_INFANTRY]Line Infantry.[/BLIST]
 				[n] [n]The number of units will depend upon the number of land tiles available within the first ring including the village center.
 			</Text>
 		</Row>
 
 	<!-- Disaster Descriptions -->
 		<Row Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION">
-			<Text> Enables or disables disasters.</Text>
+			<Text> Disables all natural disasters.[n]Crisis events are not affected by this setting.</Text>
 		</Row>
 
 	<!-- Settlement Limit Custom Setting -->
@@ -127,39 +156,48 @@
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION">
 			<Text>Sets the initial [icon:SETTLEMENT_LIMIT]settlement limit for each age.</Text>
 		</Row>
-		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ADDITIONAL_DESCRIPTION_DEFAULT">
-			<Text>
-				[BLIST][LI]Antiquity: 3 settlement limit.
-				[LI]Exploration: 8 settlement limit.
-				[LI]Modern: 16 settlement limit.[/BLIST]
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_DEFAULT">
+			<Text>Sets the initial [icon:SETTLEMENT_LIMIT]settlement limit for each age.
+				[n] [BLIST]
+				[LI] Antiquity: 3 settlement limit.
+				[LI] Exploration: 8 settlement limit.
+				[LI] Modern: 16 settlement limit.[/BLIST]
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ADDITIONAL_DESCRIPTION_MORE">
-			<Text>
-				[BLIST][LI]Antiquity: 5 settlement limit.
-				[LI]Exploration: 12 settlement limit.
-				[LI]Modern: 20 settlement limit.[/BLIST]
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_MORE">
+			<Text>Sets the initial [icon:SETTLEMENT_LIMIT]settlement limit for each age.
+				[n] [BLIST]
+				[LI] Antiquity: 5 settlement limit.
+				[LI] Exploration: 12 settlement limit.
+				[LI] Modern: 20 settlement limit.[/BLIST]
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ADDITIONAL_DESCRIPTION_LESS">
-			<Text>
-				[BLIST][LI]Antiquity: 1 settlement limit.
-				[LI]Exploration: 4 settlement limit.
-				[LI]Modern: 10 settlement limit.[/BLIST]
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_LESS">
+			<Text>Sets the initial [icon:SETTLEMENT_LIMIT]settlement limit for each age.
+				[n] [BLIST]
+				[LI] Antiquity: 1 settlement limit.
+				[LI] Exploration: 4 settlement limit.
+				[LI] Modern: 10 settlement limit.[/BLIST]
 			</Text>
 		</Row>
 
 	<!-- Settlement Distance Descriptions -->
 		<Row Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION">
 			<Text>Sets the minimum distance between settlements.
-				[n] [BLIST][LI]Less: 2 Tiles.[LI]Default: 3 Tiles.[LI]More: 4 Tiles.[/BLIST]
+				[n] [BLIST]
+				[LI] Less: 2 Tiles.
+				[LI] Default: 3 Tiles.
+				[LI] More: 4 Tiles.[/BLIST]
 			</Text>
 		</Row>
 
 	<!-- Unit Cost Descriptions -->
 		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION">
 			<Text>Sets production cost of combat units.
-				[n] [BLIST][LI]Less: 25% Cheaper.[LI]Default: No Discount.[LI]More: 25% More Expensive.[/BLIST]
+				[n] [BLIST]
+				[LI] Less: 25% Cheaper.
+				[LI] Default: No Discount.
+				[LI] More: 25% More Expensive.[/BLIST]
 			</Text>
 		</Row>
 
@@ -167,123 +205,116 @@
 		<Row Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION">
 			<Text>Sets the pacing of the crises.</Text>
 		</Row>
-		<Row Tag="LOC_ZG_CRISIS_SPEED_ADDITIONAL_DESCRIPTION_DEFAULT">
-			<Text>
-				[BLIST][LI]Stage 1: Begins at 70%.
-				[LI]Stage 2: Begins at 80%.
-				[LI]Stage 3: Begins at 90%.[/BLIST]
+		<Row Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_DEFAULT">
+			<Text>Sets the pacing of the crises.
+				[n] [BLIST]
+				[LI] Stage 1: Begins at 70%.
+				[LI] Stage 2: Begins at 80%.
+				[LI] Stage 3: Begins at 90%.[/BLIST]
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_CRISIS_SPEED_ADDITIONAL_DESCRIPTION_QUICK">
-			<Text>
-				[BLIST][LI]Stage 1: Begins at 75%.
-				[LI]Stage 2: Begins at 85%.
-				[LI]Stage 3: Begins at 95%.[/BLIST]
+		<Row Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_QUICK">
+			<Text>Sets the pacing of the crises.
+				[n] [BLIST]
+				[LI] Stage 1: Begins at 75%.
+				[LI] Stage 2: Begins at 85%.
+				[LI] Stage 3: Begins at 95%.[/BLIST]
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_CRISIS_SPEED_ADDITIONAL_DESCRIPTION_CRAWL">
-			<Text>
-				[BLIST][LI]Stage 1: Begins at 50%.
-				[LI]Stage 2: Begins at 65%.
-				[LI]Stage 3: Begins at 85%.[/BLIST]
+		<Row Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_CRAWL">
+			<Text>Sets the pacing of the crises.
+				[n] [BLIST]
+				[LI] Stage 1: Begins at 50%.
+				[LI] Stage 2: Begins at 65%.
+				[LI] Stage 3: Begins at 85%.[/BLIST]
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_CRISIS_SPEED_ADDITIONAL_DESCRIPTION_SLOW">
-			<Text>
-				[BLIST][LI]Stage 1: Begins at 60%.
-				[LI]Stage 2: Begins at 75%.
-				[LI]Stage 3: Begins at 90%.[/BLIST]
+		<Row Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_SLOW">
+			<Text>Sets the pacing of the crises.
+				[n] [BLIST]
+				[LI] Stage 1: Begins at 60%.
+				[LI] Stage 2: Begins at 75%.
+				[LI] Stage 3: Begins at 90%.[/BLIST]
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_CRISIS_SPEED_ADDITIONAL_DESCRIPTION_FAST">
-			<Text>
-				[BLIST][LI]Stage 1: Begins at 85%.
-				[LI]Stage 2: Begins at 90%.
-				[LI]Stage 3: Begins at 95%.[/BLIST]
+		<Row Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_FAST">
+			<Text>Sets the pacing of the crises.
+				[n] [BLIST]
+				[LI] Stage 1: Begins at 85%.
+				[LI] Stage 2: Begins at 90%.
+				[LI] Stage 3: Begins at 95%.[/BLIST]
 			</Text>
 		</Row>
 
 	<!-- Natural Wonder Descriptions -->
 		<Row Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION">
 			<Text>Sets the amount of [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] Natural Wonders on the map.
-				[n] [BLIST][LI]None: 0 Natural Wonders.
-				[LI]Half: 50% Less Natural Wonders.
-				[LI]Default: No change to the Natural Wonders.
-				[LI]More: 50% More Natural Wonders.
-				[LI]Double: 100% More Natural Wonders.[/BLIST]
+				[n] [BLIST]
+				[LI] None: 0 Natural Wonders.
+				[LI] Half: 50% Less Natural Wonders.
+				[LI] Default: No change to the Natural Wonders.
+				[LI] More: 50% More Natural Wonders.
+				[LI] Double: 100% More Natural Wonders.[/BLIST]
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_NATURAL_WONDER_ADDITIONAL_DESCRIPTION_NONE">
-			<Text> Map Size
-				[BLIST]
-				[LI]Tiny: 0 Natural Wonders.
-				[LI]Small: 0 Natural Wonders.
-				[LI]Standard: 0 Natural Wonders.
-				[LI]Large: 0 Natural Wonders.
-				[LI]Huge: 0 Natural Wonders.[/BLIST]
+		<Row Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE">
+			<Text>Sets the amount of [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] Natural Wonders on the map.
+				[n] [BLIST]
+				[LI] Tiny: 0 Natural Wonders.
+				[LI] Small: 0 Natural Wonders.
+				[LI] Standard: 0 Natural Wonders.
+				[LI] Large: 0 Natural Wonders.
+				[LI] Huge: 0 Natural Wonders.[/BLIST]
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_NATURAL_WONDER_ADDITIONAL_DESCRIPTION_HALF">
-			<Text> Map Size
-				[BLIST]
-				[LI]Tiny: 1 Natural Wonder.
-				[LI]Small: 2 Natural Wonders.
-				[LI]Standard: 2 Natural Wonders.
-				[LI]Large: 3 Natural Wonders.
-				[LI]Huge: 3 Natural Wonders.[/BLIST]
+		<Row Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF">
+			<Text>Sets the amount of [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] Natural Wonders on the map.
+				[n] [BLIST]
+				[LI] Tiny: 1 Natural Wonder.
+				[LI] Small: 2 Natural Wonders.
+				[LI] Standard: 2 Natural Wonders.
+				[LI] Large: 3 Natural Wonders.
+				[LI] Huge: 3 Natural Wonders.[/BLIST]
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_NATURAL_WONDER_ADDITIONAL_DESCRIPTION_DEFAULT">
-			<Text> Map Size
-				[BLIST]
-				[LI]Tiny: 3 Natural Wonders.
-				[LI]Small: 4 Natural Wonders.
-				[LI]Standard: 5 Natural Wonders.
-				[LI]Large: 6 Natural Wonders.
-				[LI]Huge: 7 Natural Wonders.[/BLIST]
+		<Row Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DEFAULT">
+			<Text>Sets the amount of [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] Natural Wonders on the map.
+				[n] [BLIST]
+				[LI] Tiny: 3 Natural Wonders.
+				[LI] Small: 4 Natural Wonders.
+				[LI] Standard: 5 Natural Wonders.
+				[LI] Large: 6 Natural Wonders.
+				[LI] Huge: 7 Natural Wonders.[/BLIST]
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_NATURAL_WONDER_ADDITIONAL_DESCRIPTION_MORE">
-			<Text> Map Size
-				[BLIST]
-				[LI]Tiny: 5 Natural Wonders.
-				[LI]Small: 6 Natural Wonders.
-				[LI]Standard: 8 Natural Wonders.
-				[LI]Large: 9 Natural Wonders.
-				[LI]Huge: 11 Natural Wonders.[/BLIST]
+		<Row Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE">
+			<Text>Sets the amount of [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] Natural Wonders on the map.
+				[n] [BLIST]
+				[LI] Tiny: 5 Natural Wonders.
+				[LI] Small: 6 Natural Wonders.
+				[LI] Standard: 8 Natural Wonders.
+				[LI] Large: 9 Natural Wonders.
+				[LI] Huge: 11 Natural Wonders.[/BLIST]
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_NATURAL_WONDER_ADDITIONAL_DESCRIPTION_DOUBLE">
-			<Text> Map Size
-				[BLIST]
-				[LI]Tiny: 6 Natural Wonders.
-				[LI]Small: 8 Natural Wonders.
-				[LI]Standard: 10 Natural Wonders.
-				[LI]Large: 12 Natural Wonders.
-				[LI]Huge: 14 Natural Wonders.[/BLIST]
+		<Row Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE">
+			<Text>Sets the amount of [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] Natural Wonders on the map.
+				[n] [BLIST]
+				[LI] Tiny: 6 Natural Wonders.
+				[LI] Small: 8 Natural Wonders.
+				[LI] Standard: 10 Natural Wonders.
+				[LI] Large: 12 Natural Wonders.
+				[LI] Huge: 14 Natural Wonders.[/BLIST]
 			</Text>
 		</Row>
 
 	<!-- Lake Generation Descriptions -->
 		<Row Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION">
-			<Text>Sets the frequency of lakes on the map. Results may vary.</Text>
-		</Row>
-		<Row Tag="LOC_ZG_LAKE_GENERATION_ADDITIONAL_DESCRIPTION">
-			<Text> 
-				This will attempt to adjust the number of lakes on the map.
-				[n]However, map generation may override the settings back to default.
+			<Text>Sets the frequency of lakes on the map. Results may vary.
+				[n] This will attempt to adjust the number of lakes on the map.
+				[n] However, map generation may override the settings back to default.
 			</Text>
 		</Row>
 
-	<!-- Ocean Width Descriptions -->
-		<Row Tag="LOC_ZG_OCEAN_WIDTH_DESCRIPTION">
-			<Text>Sets the amount of ocean between Homeland and Distant Lands. Results may vary.</Text>
-		</Row>
-		<Row Tag="LOC_ZG_OCEAN_WIDTH_ADDITIONAL_DESCRIPTION">
-			<Text> 
-				This will attempt to adjust the distance between Homeland and Distance Lands.
-				[n]However, map generation may override the settings back to default.
-			</Text>
-		</Row>
 	</EnglishText>
 </Database>

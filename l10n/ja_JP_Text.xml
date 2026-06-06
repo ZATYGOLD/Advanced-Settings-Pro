@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<LocalizedText>
+		<Replace Tag="LOC_GROUPID_ZG_UNITOPTIONS" Language="ja_JP">
+			<Text>ユニット設定</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS" Language="ja_JP">
+			<Text>独立勢力設定</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_SETTLEMENTOPTIONS" Language="ja_JP">
+			<Text>入植地設定</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="ja_JP">
+			<Text>有効</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DISABLED_NAME" Language="ja_JP">
+			<Text>無効</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DEFAULT_NAME" Language="ja_JP">
+			<Text>デフォルト</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NONE_NAME" Language="ja_JP">
+			<Text>なし</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CUSTOM_NAME" Language="ja_JP">
+			<Text>カスタム</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DOUBLE_NAME" Language="ja_JP">
+			<Text>2倍</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HALF_NAME" Language="ja_JP">
+			<Text>半分</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FAST_NAME" Language="ja_JP">
+			<Text>速い</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_QUICK_NAME" Language="ja_JP">
+			<Text>やや速い</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SLOW_NAME" Language="ja_JP">
+			<Text>遅い</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRAWL_NAME" Language="ja_JP">
+			<Text>非常に遅い</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MORE_NAME" Language="ja_JP">
+			<Text>多い</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LESS_NAME" Language="ja_JP">
+			<Text>少ない</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME" Language="ja_JP">
+			<Text>開拓者の速度</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_NAME" Language="ja_JP">
+			<Text>財宝輸送隊の速度</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_NAME" Language="ja_JP">
+			<Text>独立勢力の初期数</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="ja_JP">
+			<Text>独立勢力の間隔</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME" Language="ja_JP">
+			<Text>独立勢力の初期ユニット数</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_NAME" Language="ja_JP">
+			<Text>災害</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_NAME" Language="ja_JP">
+			<Text>入植地の上限</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME" Language="ja_JP">
+			<Text>入植地間の距離</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="ja_JP">
+			<Text>軍事ユニットのコスト</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_NAME" Language="ja_JP">
+			<Text>危機の速度</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_NAME" Language="ja_JP">
+			<Text>自然遺産</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_NAME" Language="ja_JP">
+			<Text>湖</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME" Language="ja_JP">
+			<Text>古代</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME" Language="ja_JP">
+			<Text>探検の時代</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME" Language="ja_JP">
+			<Text>近代</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="ja_JP">
+			<Text>開拓者の基本移動力と乗船時の移動力を設定します。[n] [BLIST][LI] 遅い：基本2[icon:Action_Move]、乗船時1[icon:Action_Move]。[LI] デフォルト：基本3[icon:Action_Move]、乗船時2[icon:Action_Move]。[LI] 速い：基本4[icon:Action_Move]、乗船時3[icon:Action_Move]。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION" Language="ja_JP">
+			<Text>財宝輸送隊の基本移動力と乗船時の移動力を設定します。[n] [BLIST][LI] 遅い：基本・乗船時ともに1[icon:Action_Move]。[LI] デフォルト：基本・乗船時ともに2[icon:Action_Move]。[LI] 速い：基本・乗船時ともに3[icon:Action_Move]。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION" Language="ja_JP">
+			<Text>[icon:INDEPENDENT_POWER]独立勢力の初期数を設定します。結果は変動する場合があります。[n] [BLIST][LI] なし：独立勢力0。[LI] 少ない：文明ごとに独立勢力2。[LI] デフォルト：文明ごとに独立勢力3。[LI] 多い：文明ごとに独立勢力4。[/BLIST][n] [n]指定した数の生成を試みますが、正確な数にならない場合があります。[n]可能な限り期待値に近づけます。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION" Language="ja_JP">
+			<Text>独立勢力同士の最小距離を設定します。[n] 独立勢力の総数に影響する場合があります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_LESS" Language="ja_JP">
+			<Text>独立勢力同士の最小距離を設定します。[n] 独立勢力の総数に影響する場合があります。[n] [BLIST][LI] 古代：4タイル。[LI] 探検の時代：3タイル。[LI] 近代：2タイル。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_DEFAULT" Language="ja_JP">
+			<Text>独立勢力同士の最小距離を設定します。[n] 独立勢力の総数に影響する場合があります。[n] [BLIST][LI] 古代：6タイル。[LI] 探検の時代：6タイル。[LI] 近代：4タイル。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="ja_JP">
+			<Text>独立勢力同士の最小距離を設定します。[n] 独立勢力の総数に影響する場合があります。[n] [BLIST][LI] 古代：7タイル。[LI] 探検の時代：7タイル。[LI] 近代：5タイル。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION" Language="ja_JP">
+			<Text>独立勢力の初期ユニット数を設定します。 [n] 独立勢力は常に1体の[icon:UNIT_SCOUT]斥候を持って開始します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_LESS" Language="ja_JP">
+			<Text>独立勢力の初期ユニット数を設定します。 [n] 独立勢力は常に1体の[icon:UNIT_SCOUT]斥候を持って開始します。[n] [BLIST][LI] 古代：0[icon:UNIT_WARRIOR]戦士。[LI] 探検の時代：2[icon:UNIT_SWORDSMAN]剣士。[LI] 近代：3[icon:UNIT_LINE_INFANTRY]戦列歩兵。[/BLIST][n] [n]ユニット数は、集落の中心を含む第1リング内の利用可能な陸地タイル数によって決まります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_DEFAULT" Language="ja_JP">
+			<Text>独立勢力の初期ユニット数を設定します。 [n] 独立勢力は常に1体の[icon:UNIT_SCOUT]斥候を持って開始します。[n] [BLIST][LI] 古代：1[icon:UNIT_WARRIOR]戦士。[LI] 探検の時代：3[icon:UNIT_SWORDSMAN]剣士。[LI] 近代：4[icon:UNIT_LINE_INFANTRY]戦列歩兵。[/BLIST][n] [n]ユニット数は、集落の中心を含む第1リング内の利用可能な陸地タイル数によって決まります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_MORE" Language="ja_JP">
+			<Text>独立勢力の初期ユニット数を設定します。 [n] 独立勢力は常に1体の[icon:UNIT_SCOUT]斥候を持って開始します。[n] [BLIST][LI] 古代：2[icon:UNIT_WARRIOR]戦士。[LI] 探検の時代：4[icon:UNIT_SWORDSMAN]剣士。[LI] 近代：5[icon:UNIT_LINE_INFANTRY]戦列歩兵。[/BLIST][n] [n]ユニット数は、集落の中心を含む第1リング内の利用可能な陸地タイル数によって決まります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="ja_JP">
+			<Text>すべての自然災害を無効にします。[n]危機イベントはこの設定の影響を受けません。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" Language="ja_JP">
+			<Text>各時代の初期[icon:SETTLEMENT_LIMIT]入植地上限を設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_DEFAULT" Language="ja_JP">
+			<Text>各時代の初期[icon:SETTLEMENT_LIMIT]入植地上限を設定します。[n] [BLIST][LI] 古代：入植地上限3。[LI] 探検の時代：入植地上限8。[LI] 近代：入植地上限16。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_MORE" Language="ja_JP">
+			<Text>各時代の初期[icon:SETTLEMENT_LIMIT]入植地上限を設定します。[n] [BLIST][LI] 古代：入植地上限5。[LI] 探検の時代：入植地上限12。[LI] 近代：入植地上限20。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_LESS" Language="ja_JP">
+			<Text>各時代の初期[icon:SETTLEMENT_LIMIT]入植地上限を設定します。[n] [BLIST][LI] 古代：入植地上限1。[LI] 探検の時代：入植地上限4。[LI] 近代：入植地上限10。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION" Language="ja_JP">
+			<Text>入植地間の最小距離を設定します。[n] [BLIST][LI] 少ない：2タイル。[LI] デフォルト：3タイル。[LI] 多い：4タイル。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="ja_JP">
+			<Text>戦闘ユニットの生産コストを設定します。[n] [BLIST][LI] 少ない：25%割安。[LI] デフォルト：割引なし。[LI] 多い：25%割高。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="ja_JP">
+			<Text>危機の進行速度を設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_DEFAULT" Language="ja_JP">
+			<Text>危機の進行速度を設定します。[n] [BLIST][LI] 第1段階：70%で開始。[LI] 第2段階：80%で開始。[LI] 第3段階：90%で開始。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_QUICK" Language="ja_JP">
+			<Text>危機の進行速度を設定します。[n] [BLIST][LI] 第1段階：75%で開始。[LI] 第2段階：85%で開始。[LI] 第3段階：95%で開始。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_CRAWL" Language="ja_JP">
+			<Text>危機の進行速度を設定します。[n] [BLIST][LI] 第1段階：50%で開始。[LI] 第2段階：65%で開始。[LI] 第3段階：85%で開始。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_SLOW" Language="ja_JP">
+			<Text>危機の進行速度を設定します。[n] [BLIST][LI] 第1段階：60%で開始。[LI] 第2段階：75%で開始。[LI] 第3段階：90%で開始。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_FAST" Language="ja_JP">
+			<Text>危機の進行速度を設定します。[n] [BLIST][LI] 第1段階：85%で開始。[LI] 第2段階：90%で開始。[LI] 第3段階：95%で開始。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="ja_JP">
+			<Text>マップ上の[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然遺産の数を設定します。[n] [BLIST][LI] なし：自然遺産0。[LI] 半分：自然遺産50%減。[LI] デフォルト：変更なし。[LI] 多い：自然遺産50%増。[LI] 2倍：自然遺産100%増。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE" Language="ja_JP">
+			<Text>マップ上の[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然遺産の数を設定します。[n] マップサイズ[n] [BLIST][LI] 極小：自然遺産0。[LI] 小：自然遺産0。[LI] 標準：自然遺産0。[LI] 大：自然遺産0。[LI] 特大：自然遺産0。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF" Language="ja_JP">
+			<Text>マップ上の[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然遺産の数を設定します。[n] マップサイズ[n] [BLIST][LI] 極小：自然遺産1。[LI] 小：自然遺産2。[LI] 標準：自然遺産2。[LI] 大：自然遺産3。[LI] 特大：自然遺産3。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DEFAULT" Language="ja_JP">
+			<Text>マップ上の[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然遺産の数を設定します。[n] マップサイズ[n] [BLIST][LI] 極小：自然遺産3。[LI] 小：自然遺産4。[LI] 標準：自然遺産5。[LI] 大：自然遺産6。[LI] 特大：自然遺産7。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE" Language="ja_JP">
+			<Text>マップ上の[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然遺産の数を設定します。[n] マップサイズ[n] [BLIST][LI] 極小：自然遺産5。[LI] 小：自然遺産6。[LI] 標準：自然遺産8。[LI] 大：自然遺産9。[LI] 特大：自然遺産11。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE" Language="ja_JP">
+			<Text>マップ上の[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然遺産の数を設定します。[n] マップサイズ[n] [BLIST][LI] 極小：自然遺産6。[LI] 小：自然遺産8。[LI] 標準：自然遺産10。[LI] 大：自然遺産12。[LI] 特大：自然遺産14。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION" Language="ja_JP">
+			<Text>マップ上の湖の頻度を設定します。結果は変動する場合があります。[n] 湖の数の調整を試みます。[n] ただし、マップ生成により既定値に戻される場合があります。</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="ja_JP">
+			<Text>Advanced Settings Pro</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="ja_JP">
+			<Text>ZatygoldのAdvanced Settings Pro[n] [n]このModは、詳細設定メニューに追加オプションを加えることで、シングルプレイヤーとマルチプレイヤーのゲーム設定を拡張します。通常は調整できないシステムを細かく設定できます。</Text>
+		</Replace>
+	</LocalizedText>
+</Database>

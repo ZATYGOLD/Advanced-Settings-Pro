@@ -1,0 +1,8 @@
+* text=auto
+*.sql text
+*.xml text
+*.modinfo text
+*.md text
+*.jpeg binary
+*.jpg binary
+*.png binary
