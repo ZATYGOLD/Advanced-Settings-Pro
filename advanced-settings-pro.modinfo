@@ -358,7 +358,7 @@
 	</ActionCriteria>
 
 
-<!--************************* SETTINGS: SHELL ***********************************************-->
+<!--************************* CONFIG: TEXT / PARAMETERS *************************************-->
 
 	<ActionGroups>
 		<ActionGroup id="zg-options-settings-shell" scope="shell" criteria="always">
@@ -366,18 +366,41 @@
 			<Actions>
 				<UpdateText>
                 	<Item>text/en_us/ui-shell-text.xml</Item>
+					<Item>l10n/de_DE_Text.xml</Item>
+					<Item>l10n/es_ES_Text.xml</Item>
+					<Item>l10n/fr_FR_Text.xml</Item>
+					<Item>l10n/it_IT_Text.xml</Item>
+					<Item>l10n/ja_JP_Text.xml</Item>
+					<Item>l10n/ko_KR_Text.xml</Item>
+					<Item>l10n/pl_PL_Text.xml</Item>
+					<Item>l10n/pt_BR_Text.xml</Item>
+					<Item>l10n/ru_RU_Text.xml</Item>
+					<Item>l10n/zh_Hans_CN_Text.xml</Item>
+					<Item>l10n/zh_Hant_HK_Text.xml</Item>
             	</UpdateText>
 			    <UpdateDatabase>
 					<Item>config/setup-parameters.sql</Item>
             	</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-options-settings-shell" scope="game" criteria="always">
+
+		<ActionGroup id="zg-options-settings-game" scope="game" criteria="always">
 			<Properties><LoadOrder>500</LoadOrder></Properties>
 			<Actions>
 				<UpdateText>
-                	<Item>text/en_us/ui-shell-text.xml</Item>
-            	</UpdateText>
+					<Item>text/en_us/ui-shell-text.xml</Item>
+					<Item>l10n/de_DE_Text.xml</Item>
+					<Item>l10n/es_ES_Text.xml</Item>
+					<Item>l10n/fr_FR_Text.xml</Item>
+					<Item>l10n/it_IT_Text.xml</Item>
+					<Item>l10n/ja_JP_Text.xml</Item>
+					<Item>l10n/ko_KR_Text.xml</Item>
+					<Item>l10n/pl_PL_Text.xml</Item>
+					<Item>l10n/pt_BR_Text.xml</Item>
+					<Item>l10n/ru_RU_Text.xml</Item>
+					<Item>l10n/zh_Hans_CN_Text.xml</Item>
+					<Item>l10n/zh_Hant_HK_Text.xml</Item>
+				</UpdateText>
 			</Actions>
 		</ActionGroup>
 
@@ -748,5 +771,16 @@
 
 	<LocalizedText>
 		<File>text/en_us/mod-info-text.xml</File>
+		<File>l10n/de_DE_Text.xml</File>
+		<File>l10n/es_ES_Text.xml</File>
+		<File>l10n/fr_FR_Text.xml</File>
+		<File>l10n/it_IT_Text.xml</File>
+		<File>l10n/ja_JP_Text.xml</File>
+		<File>l10n/ko_KR_Text.xml</File>
+		<File>l10n/pl_PL_Text.xml</File>
+		<File>l10n/pt_BR_Text.xml</File>
+		<File>l10n/ru_RU_Text.xml</File>
+		<File>l10n/zh_Hans_CN_Text.xml</File>
+		<File>l10n/zh_Hant_HK_Text.xml</File>
 	</LocalizedText>
 </Mod>

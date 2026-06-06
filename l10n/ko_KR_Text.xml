@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<LocalizedText>
+		<Replace Tag="LOC_GROUPID_ZG_UNITOPTIONS" Language="ko_KR">
+			<Text>유닛 설정</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS" Language="ko_KR">
+			<Text>독립 세력 설정</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_SETTLEMENTOPTIONS" Language="ko_KR">
+			<Text>정착지 설정</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="ko_KR">
+			<Text>활성화</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DISABLED_NAME" Language="ko_KR">
+			<Text>비활성화</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DEFAULT_NAME" Language="ko_KR">
+			<Text>기본</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NONE_NAME" Language="ko_KR">
+			<Text>없음</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CUSTOM_NAME" Language="ko_KR">
+			<Text>사용자 지정</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DOUBLE_NAME" Language="ko_KR">
+			<Text>2배</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HALF_NAME" Language="ko_KR">
+			<Text>절반</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FAST_NAME" Language="ko_KR">
+			<Text>빠름</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_QUICK_NAME" Language="ko_KR">
+			<Text>약간 빠름</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SLOW_NAME" Language="ko_KR">
+			<Text>느림</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRAWL_NAME" Language="ko_KR">
+			<Text>매우 느림</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MORE_NAME" Language="ko_KR">
+			<Text>많음</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LESS_NAME" Language="ko_KR">
+			<Text>적음</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME" Language="ko_KR">
+			<Text>개척자 속도</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_NAME" Language="ko_KR">
+			<Text>보물 호송대 속도</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_NAME" Language="ko_KR">
+			<Text>독립 세력 초기 수</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="ko_KR">
+			<Text>독립 세력 간격</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME" Language="ko_KR">
+			<Text>독립 세력 초기 유닛 수</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_NAME" Language="ko_KR">
+			<Text>재해</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_NAME" Language="ko_KR">
+			<Text>정착지 제한</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME" Language="ko_KR">
+			<Text>정착지 간 거리</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="ko_KR">
+			<Text>군사 유닛 비용</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_NAME" Language="ko_KR">
+			<Text>위기 속도</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_NAME" Language="ko_KR">
+			<Text>자연경관</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_NAME" Language="ko_KR">
+			<Text>호수</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME" Language="ko_KR">
+			<Text>고대</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME" Language="ko_KR">
+			<Text>대항해</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME" Language="ko_KR">
+			<Text>근대</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="ko_KR">
+			<Text>개척자의 기본 이동력과 승선 이동력을 설정합니다.[n] [BLIST][LI] 느림: 기본 2[icon:Action_Move], 승선 1[icon:Action_Move].[LI] 기본: 기본 3[icon:Action_Move], 승선 2[icon:Action_Move].[LI] 빠름: 기본 4[icon:Action_Move], 승선 3[icon:Action_Move].[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION" Language="ko_KR">
+			<Text>보물 호송대의 기본 이동력과 승선 이동력을 설정합니다.[n] [BLIST][LI] 느림: 기본 및 승선 이동력 1[icon:Action_Move].[LI] 기본: 기본 및 승선 이동력 2[icon:Action_Move].[LI] 빠름: 기본 및 승선 이동력 3[icon:Action_Move].[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION" Language="ko_KR">
+			<Text>[icon:INDEPENDENT_POWER]독립 세력의 초기 수를 설정합니다. 결과는 달라질 수 있습니다.[n] [BLIST][LI] 없음: 독립 세력 0.[LI] 적음: 문명당 독립 세력 2.[LI] 기본: 문명당 독립 세력 3.[LI] 많음: 문명당 독립 세력 4.[/BLIST][n] [n]원하는 수만큼 생성을 시도하지만 정확한 수는 달라질 수 있습니다.[n]가능한 한 기대치에 가깝게 생성됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION" Language="ko_KR">
+			<Text>독립 세력 간 최소 거리를 설정합니다.[n] 독립 세력의 총수에 영향을 줄 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_LESS" Language="ko_KR">
+			<Text>독립 세력 간 최소 거리를 설정합니다.[n] 독립 세력의 총수에 영향을 줄 수 있습니다.[n] [BLIST][LI] 고대: 4타일.[LI] 대항해: 3타일.[LI] 근대: 2타일.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_DEFAULT" Language="ko_KR">
+			<Text>독립 세력 간 최소 거리를 설정합니다.[n] 독립 세력의 총수에 영향을 줄 수 있습니다.[n] [BLIST][LI] 고대: 6타일.[LI] 대항해: 6타일.[LI] 근대: 4타일.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="ko_KR">
+			<Text>독립 세력 간 최소 거리를 설정합니다.[n] 독립 세력의 총수에 영향을 줄 수 있습니다.[n] [BLIST][LI] 고대: 7타일.[LI] 대항해: 7타일.[LI] 근대: 5타일.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION" Language="ko_KR">
+			<Text>독립 세력의 초기 유닛 수를 설정합니다. [n] 독립 세력은 항상 [icon:UNIT_SCOUT]정찰병 1기로 시작합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_LESS" Language="ko_KR">
+			<Text>독립 세력의 초기 유닛 수를 설정합니다. [n] 독립 세력은 항상 [icon:UNIT_SCOUT]정찰병 1기로 시작합니다.[n] [BLIST][LI] 고대: 0[icon:UNIT_WARRIOR]전사.[LI] 대항해: 2[icon:UNIT_SWORDSMAN]검사.[LI] 근대: 3[icon:UNIT_LINE_INFANTRY]전열보병.[/BLIST][n] [n]유닛 수는 마을 중심을 포함한 첫 번째 링의 사용 가능한 육지 타일 수에 따라 달라집니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_DEFAULT" Language="ko_KR">
+			<Text>독립 세력의 초기 유닛 수를 설정합니다. [n] 독립 세력은 항상 [icon:UNIT_SCOUT]정찰병 1기로 시작합니다.[n] [BLIST][LI] 고대: 1[icon:UNIT_WARRIOR]전사.[LI] 대항해: 3[icon:UNIT_SWORDSMAN]검사.[LI] 근대: 4[icon:UNIT_LINE_INFANTRY]전열보병.[/BLIST][n] [n]유닛 수는 마을 중심을 포함한 첫 번째 링의 사용 가능한 육지 타일 수에 따라 달라집니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_MORE" Language="ko_KR">
+			<Text>독립 세력의 초기 유닛 수를 설정합니다. [n] 독립 세력은 항상 [icon:UNIT_SCOUT]정찰병 1기로 시작합니다.[n] [BLIST][LI] 고대: 2[icon:UNIT_WARRIOR]전사.[LI] 대항해: 4[icon:UNIT_SWORDSMAN]검사.[LI] 근대: 5[icon:UNIT_LINE_INFANTRY]전열보병.[/BLIST][n] [n]유닛 수는 마을 중심을 포함한 첫 번째 링의 사용 가능한 육지 타일 수에 따라 달라집니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="ko_KR">
+			<Text>모든 자연재해를 비활성화합니다.[n]위기 이벤트는 이 설정의 영향을 받지 않습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" Language="ko_KR">
+			<Text>각 시대의 초기 [icon:SETTLEMENT_LIMIT]정착지 제한을 설정합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_DEFAULT" Language="ko_KR">
+			<Text>각 시대의 초기 [icon:SETTLEMENT_LIMIT]정착지 제한을 설정합니다.[n] [BLIST][LI] 고대: 정착지 제한 3.[LI] 대항해: 정착지 제한 8.[LI] 근대: 정착지 제한 16.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_MORE" Language="ko_KR">
+			<Text>각 시대의 초기 [icon:SETTLEMENT_LIMIT]정착지 제한을 설정합니다.[n] [BLIST][LI] 고대: 정착지 제한 5.[LI] 대항해: 정착지 제한 12.[LI] 근대: 정착지 제한 20.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_LESS" Language="ko_KR">
+			<Text>각 시대의 초기 [icon:SETTLEMENT_LIMIT]정착지 제한을 설정합니다.[n] [BLIST][LI] 고대: 정착지 제한 1.[LI] 대항해: 정착지 제한 4.[LI] 근대: 정착지 제한 10.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION" Language="ko_KR">
+			<Text>정착지 간 최소 거리를 설정합니다.[n] [BLIST][LI] 적음: 2타일.[LI] 기본: 3타일.[LI] 많음: 4타일.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="ko_KR">
+			<Text>전투 유닛의 생산 비용을 설정합니다.[n] [BLIST][LI] 적음: 25% 저렴.[LI] 기본: 할인 없음.[LI] 많음: 25% 비쌈.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="ko_KR">
+			<Text>위기의 진행 속도를 설정합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_DEFAULT" Language="ko_KR">
+			<Text>위기의 진행 속도를 설정합니다.[n] [BLIST][LI] 1단계: 70%에서 시작.[LI] 2단계: 80%에서 시작.[LI] 3단계: 90%에서 시작.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_QUICK" Language="ko_KR">
+			<Text>위기의 진행 속도를 설정합니다.[n] [BLIST][LI] 1단계: 75%에서 시작.[LI] 2단계: 85%에서 시작.[LI] 3단계: 95%에서 시작.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_CRAWL" Language="ko_KR">
+			<Text>위기의 진행 속도를 설정합니다.[n] [BLIST][LI] 1단계: 50%에서 시작.[LI] 2단계: 65%에서 시작.[LI] 3단계: 85%에서 시작.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_SLOW" Language="ko_KR">
+			<Text>위기의 진행 속도를 설정합니다.[n] [BLIST][LI] 1단계: 60%에서 시작.[LI] 2단계: 75%에서 시작.[LI] 3단계: 90%에서 시작.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_FAST" Language="ko_KR">
+			<Text>위기의 진행 속도를 설정합니다.[n] [BLIST][LI] 1단계: 85%에서 시작.[LI] 2단계: 90%에서 시작.[LI] 3단계: 95%에서 시작.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="ko_KR">
+			<Text>지도의 [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]자연경관 수를 설정합니다.[n] [BLIST][LI] 없음: 자연경관 0.[LI] 절반: 자연경관 50% 감소.[LI] 기본: 변경 없음.[LI] 많음: 자연경관 50% 증가.[LI] 2배: 자연경관 100% 증가.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE" Language="ko_KR">
+			<Text>지도의 [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]자연경관 수를 설정합니다.[n] 지도 크기[n] [BLIST][LI] 아주 작음: 자연경관 0.[LI] 작음: 자연경관 0.[LI] 표준: 자연경관 0.[LI] 큼: 자연경관 0.[LI] 아주 큼: 자연경관 0.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF" Language="ko_KR">
+			<Text>지도의 [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]자연경관 수를 설정합니다.[n] 지도 크기[n] [BLIST][LI] 아주 작음: 자연경관 1.[LI] 작음: 자연경관 2.[LI] 표준: 자연경관 2.[LI] 큼: 자연경관 3.[LI] 아주 큼: 자연경관 3.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DEFAULT" Language="ko_KR">
+			<Text>지도의 [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]자연경관 수를 설정합니다.[n] 지도 크기[n] [BLIST][LI] 아주 작음: 자연경관 3.[LI] 작음: 자연경관 4.[LI] 표준: 자연경관 5.[LI] 큼: 자연경관 6.[LI] 아주 큼: 자연경관 7.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE" Language="ko_KR">
+			<Text>지도의 [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]자연경관 수를 설정합니다.[n] 지도 크기[n] [BLIST][LI] 아주 작음: 자연경관 5.[LI] 작음: 자연경관 6.[LI] 표준: 자연경관 8.[LI] 큼: 자연경관 9.[LI] 아주 큼: 자연경관 11.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE" Language="ko_KR">
+			<Text>지도의 [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]자연경관 수를 설정합니다.[n] 지도 크기[n] [BLIST][LI] 아주 작음: 자연경관 6.[LI] 작음: 자연경관 8.[LI] 표준: 자연경관 10.[LI] 큼: 자연경관 12.[LI] 아주 큼: 자연경관 14.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION" Language="ko_KR">
+			<Text>지도의 호수 빈도를 설정합니다. 결과는 달라질 수 있습니다.[n] 호수 수 조정을 시도합니다.[n] 다만 지도 생성 과정에서 기본값으로 되돌아갈 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="ko_KR">
+			<Text>Advanced Settings Pro</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="ko_KR">
+			<Text>Zatygold의 Advanced Settings Pro[n] [n]이 모드는 고급 설정 메뉴에 추가 옵션을 더해 싱글플레이어와 멀티플레이어의 게임 설정을 확장합니다. 일반적으로 조정할 수 없는 시스템을 세밀하게 설정할 수 있습니다.</Text>
+		</Replace>
+	</LocalizedText>
+</Database>

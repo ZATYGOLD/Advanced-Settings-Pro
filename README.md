@@ -6,6 +6,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ### 0.6.0
 
+- Added localized text for all 12 languages supported by the game
 - Fixed Treasure Convoy Speed not applying at sea; movement is now adjusted on land and at sea through the fleet's unit ability
 - Fixed Settler Speed embarked bonus and extended it to unique settler replacements
 - Fixed default values for seven settings in the setup screen
@@ -52,9 +53,9 @@ Base game with the Antiquity, Exploration, and Modern age modules.
 
 ## Languages
 
-- English
+English, German, Spanish, French, Italian, Japanese, Korean, Polish, Brazilian Portuguese, Russian, Simplified Chinese, and Traditional Chinese.
 
-All text strings are stored in localization files under the text directory; the structure supports additional languages.
+English source strings live in the text directory; all other languages are provided as localization files under the l10n directory, matching the game's own convention.
 
 ## License
 

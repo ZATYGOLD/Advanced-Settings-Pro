@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<LocalizedText>
+		<Replace Tag="LOC_GROUPID_ZG_UNITOPTIONS" Language="pl_PL">
+			<Text>Ustawienia jednostek</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS" Language="pl_PL">
+			<Text>Ustawienia niezależnych mocarstw</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_SETTLEMENTOPTIONS" Language="pl_PL">
+			<Text>Ustawienia osad</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="pl_PL">
+			<Text>Włączone</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DISABLED_NAME" Language="pl_PL">
+			<Text>Wyłączone</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DEFAULT_NAME" Language="pl_PL">
+			<Text>Domyślne</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NONE_NAME" Language="pl_PL">
+			<Text>Brak</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CUSTOM_NAME" Language="pl_PL">
+			<Text>Niestandardowe</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DOUBLE_NAME" Language="pl_PL">
+			<Text>Podwójnie</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HALF_NAME" Language="pl_PL">
+			<Text>Połowa</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FAST_NAME" Language="pl_PL">
+			<Text>Szybko</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_QUICK_NAME" Language="pl_PL">
+			<Text>Dość szybko</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SLOW_NAME" Language="pl_PL">
+			<Text>Wolno</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRAWL_NAME" Language="pl_PL">
+			<Text>Bardzo wolno</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MORE_NAME" Language="pl_PL">
+			<Text>Więcej</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LESS_NAME" Language="pl_PL">
+			<Text>Mniej</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME" Language="pl_PL">
+			<Text>Tempo osadników</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_NAME" Language="pl_PL">
+			<Text>Tempo konwoju skarbów</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_NAME" Language="pl_PL">
+			<Text>Początkowa liczba niezależnych mocarstw</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="pl_PL">
+			<Text>Odstęp między niezależnymi mocarstwami</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME" Language="pl_PL">
+			<Text>Początkowe jednostki niezależnych mocarstw</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_NAME" Language="pl_PL">
+			<Text>Katastrofy</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_NAME" Language="pl_PL">
+			<Text>Limit osad</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME" Language="pl_PL">
+			<Text>Odległość między osadami</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="pl_PL">
+			<Text>Koszt jednostek wojskowych</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_NAME" Language="pl_PL">
+			<Text>Tempo kryzysów</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_NAME" Language="pl_PL">
+			<Text>Cuda natury</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_NAME" Language="pl_PL">
+			<Text>Jeziora</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME" Language="pl_PL">
+			<Text>Epoka antyku</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME" Language="pl_PL">
+			<Text>Epoka odkryć</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME" Language="pl_PL">
+			<Text>Epoka nowożytna</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="pl_PL">
+			<Text>Określa ruch bazowy i ruch na wodzie osadnika.[n] [BLIST][LI] Wolno: 2[icon:Action_Move]bazowego i 1[icon:Action_Move]ruchu na wodzie.[LI] Domyślne: 3[icon:Action_Move]bazowego i 2[icon:Action_Move]ruchu na wodzie.[LI] Szybko: 4[icon:Action_Move]bazowego i 3[icon:Action_Move]ruchu na wodzie.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION" Language="pl_PL">
+			<Text>Określa ruch bazowy i ruch na wodzie konwoju skarbów.[n] [BLIST][LI] Wolno: 1[icon:Action_Move]ruchu bazowego i na wodzie.[LI] Domyślne: 2[icon:Action_Move]ruchu bazowego i na wodzie.[LI] Szybko: 3[icon:Action_Move]ruchu bazowego i na wodzie.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION" Language="pl_PL">
+			<Text>Określa początkową liczbę [icon:INDEPENDENT_POWER]niezależnych mocarstw. Wyniki mogą się różnić.[n] [BLIST][LI] Brak: 0 niezależnych mocarstw.[LI] Mniej: 2 niezależnych mocarstw na cywilizację.[LI] Domyślne: 3 niezależnych mocarstw na cywilizację.[LI] Więcej: 4 niezależnych mocarstw na cywilizację.[/BLIST][n] [n]Gra spróbuje utworzyć żądaną liczbę, ale dokładna wartość może się różnić.[n]Wynik będzie możliwie najbliższy oczekiwanemu.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION" Language="pl_PL">
+			<Text>Określa minimalną odległość między niezależnymi mocarstwami.[n] Może to wpłynąć na ich łączną liczbę.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_LESS" Language="pl_PL">
+			<Text>Określa minimalną odległość między niezależnymi mocarstwami.[n] Może to wpłynąć na ich łączną liczbę.[n] [BLIST][LI] Epoka antyku: 4 pól.[LI] Epoka odkryć: 3 pól.[LI] Epoka nowożytna: 2 pól.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_DEFAULT" Language="pl_PL">
+			<Text>Określa minimalną odległość między niezależnymi mocarstwami.[n] Może to wpłynąć na ich łączną liczbę.[n] [BLIST][LI] Epoka antyku: 6 pól.[LI] Epoka odkryć: 6 pól.[LI] Epoka nowożytna: 4 pól.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="pl_PL">
+			<Text>Określa minimalną odległość między niezależnymi mocarstwami.[n] Może to wpłynąć na ich łączną liczbę.[n] [BLIST][LI] Epoka antyku: 7 pól.[LI] Epoka odkryć: 7 pól.[LI] Epoka nowożytna: 5 pól.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION" Language="pl_PL">
+			<Text>Określa początkową liczbę jednostek niezależnego mocarstwa. [n] Niezależne mocarstwa zawsze zaczynają z 1[icon:UNIT_SCOUT]Zwiadowcą.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_LESS" Language="pl_PL">
+			<Text>Określa początkową liczbę jednostek niezależnego mocarstwa. [n] Niezależne mocarstwa zawsze zaczynają z 1[icon:UNIT_SCOUT]Zwiadowcą.[n] [BLIST][LI] Epoka antyku: 0[icon:UNIT_WARRIOR]Wojownicy.[LI] Epoka odkryć: 2[icon:UNIT_SWORDSMAN]Zbrojni.[LI] Epoka nowożytna: 3[icon:UNIT_LINE_INFANTRY]Piechota liniowa.[/BLIST][n] [n]Liczba jednostek zależy od dostępnych pól lądowych w pierwszym pierścieniu, łącznie z centrum wioski.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_DEFAULT" Language="pl_PL">
+			<Text>Określa początkową liczbę jednostek niezależnego mocarstwa. [n] Niezależne mocarstwa zawsze zaczynają z 1[icon:UNIT_SCOUT]Zwiadowcą.[n] [BLIST][LI] Epoka antyku: 1[icon:UNIT_WARRIOR]Wojownicy.[LI] Epoka odkryć: 3[icon:UNIT_SWORDSMAN]Zbrojni.[LI] Epoka nowożytna: 4[icon:UNIT_LINE_INFANTRY]Piechota liniowa.[/BLIST][n] [n]Liczba jednostek zależy od dostępnych pól lądowych w pierwszym pierścieniu, łącznie z centrum wioski.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_MORE" Language="pl_PL">
+			<Text>Określa początkową liczbę jednostek niezależnego mocarstwa. [n] Niezależne mocarstwa zawsze zaczynają z 1[icon:UNIT_SCOUT]Zwiadowcą.[n] [BLIST][LI] Epoka antyku: 2[icon:UNIT_WARRIOR]Wojownicy.[LI] Epoka odkryć: 4[icon:UNIT_SWORDSMAN]Zbrojni.[LI] Epoka nowożytna: 5[icon:UNIT_LINE_INFANTRY]Piechota liniowa.[/BLIST][n] [n]Liczba jednostek zależy od dostępnych pól lądowych w pierwszym pierścieniu, łącznie z centrum wioski.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="pl_PL">
+			<Text>Wyłącza wszystkie katastrofy naturalne.[n]Wydarzenia kryzysowe nie podlegają temu ustawieniu.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" Language="pl_PL">
+			<Text>Określa początkowy [icon:SETTLEMENT_LIMIT]limit osad w każdej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_DEFAULT" Language="pl_PL">
+			<Text>Określa początkowy [icon:SETTLEMENT_LIMIT]limit osad w każdej epoce.[n] [BLIST][LI] Epoka antyku: limit osad 3.[LI] Epoka odkryć: limit osad 8.[LI] Epoka nowożytna: limit osad 16.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_MORE" Language="pl_PL">
+			<Text>Określa początkowy [icon:SETTLEMENT_LIMIT]limit osad w każdej epoce.[n] [BLIST][LI] Epoka antyku: limit osad 5.[LI] Epoka odkryć: limit osad 12.[LI] Epoka nowożytna: limit osad 20.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_LESS" Language="pl_PL">
+			<Text>Określa początkowy [icon:SETTLEMENT_LIMIT]limit osad w każdej epoce.[n] [BLIST][LI] Epoka antyku: limit osad 1.[LI] Epoka odkryć: limit osad 4.[LI] Epoka nowożytna: limit osad 10.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION" Language="pl_PL">
+			<Text>Określa minimalną odległość między osadami.[n] [BLIST][LI] Mniej: 2 pól.[LI] Domyślne: 3 pól.[LI] Więcej: 4 pól.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="pl_PL">
+			<Text>Określa koszt produkcji jednostek bojowych.[n] [BLIST][LI] Mniej: 25% taniej.[LI] Domyślne: bez rabatu.[LI] Więcej: 25% drożej.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="pl_PL">
+			<Text>Określa tempo kryzysów.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_DEFAULT" Language="pl_PL">
+			<Text>Określa tempo kryzysów.[n] [BLIST][LI] Etap 1: zaczyna się przy 70%.[LI] Etap 2: zaczyna się przy 80%.[LI] Etap 3: zaczyna się przy 90%.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_QUICK" Language="pl_PL">
+			<Text>Określa tempo kryzysów.[n] [BLIST][LI] Etap 1: zaczyna się przy 75%.[LI] Etap 2: zaczyna się przy 85%.[LI] Etap 3: zaczyna się przy 95%.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_CRAWL" Language="pl_PL">
+			<Text>Określa tempo kryzysów.[n] [BLIST][LI] Etap 1: zaczyna się przy 50%.[LI] Etap 2: zaczyna się przy 65%.[LI] Etap 3: zaczyna się przy 85%.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_SLOW" Language="pl_PL">
+			<Text>Określa tempo kryzysów.[n] [BLIST][LI] Etap 1: zaczyna się przy 60%.[LI] Etap 2: zaczyna się przy 75%.[LI] Etap 3: zaczyna się przy 90%.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_FAST" Language="pl_PL">
+			<Text>Określa tempo kryzysów.[n] [BLIST][LI] Etap 1: zaczyna się przy 85%.[LI] Etap 2: zaczyna się przy 90%.[LI] Etap 3: zaczyna się przy 95%.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="pl_PL">
+			<Text>Określa liczbę [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] cudów natury na mapie.[n] [BLIST][LI] Brak: 0 cudów natury.[LI] Połowa: o 50% mniej cudów natury.[LI] Domyślne: bez zmian.[LI] Więcej: o 50% więcej cudów natury.[LI] Podwójnie: o 100% więcej cudów natury.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE" Language="pl_PL">
+			<Text>Określa liczbę [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] cudów natury na mapie.[n] Rozmiar mapy[n] [BLIST][LI] Malutka: 0 cudów natury.[LI] Mała: 0 cudów natury.[LI] Standardowa: 0 cudów natury.[LI] Duża: 0 cudów natury.[LI] Ogromna: 0 cudów natury.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF" Language="pl_PL">
+			<Text>Określa liczbę [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] cudów natury na mapie.[n] Rozmiar mapy[n] [BLIST][LI] Malutka: 1 cudów natury.[LI] Mała: 2 cudów natury.[LI] Standardowa: 2 cudów natury.[LI] Duża: 3 cudów natury.[LI] Ogromna: 3 cudów natury.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DEFAULT" Language="pl_PL">
+			<Text>Określa liczbę [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] cudów natury na mapie.[n] Rozmiar mapy[n] [BLIST][LI] Malutka: 3 cudów natury.[LI] Mała: 4 cudów natury.[LI] Standardowa: 5 cudów natury.[LI] Duża: 6 cudów natury.[LI] Ogromna: 7 cudów natury.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE" Language="pl_PL">
+			<Text>Określa liczbę [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] cudów natury na mapie.[n] Rozmiar mapy[n] [BLIST][LI] Malutka: 5 cudów natury.[LI] Mała: 6 cudów natury.[LI] Standardowa: 8 cudów natury.[LI] Duża: 9 cudów natury.[LI] Ogromna: 11 cudów natury.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE" Language="pl_PL">
+			<Text>Określa liczbę [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] cudów natury na mapie.[n] Rozmiar mapy[n] [BLIST][LI] Malutka: 6 cudów natury.[LI] Mała: 8 cudów natury.[LI] Standardowa: 10 cudów natury.[LI] Duża: 12 cudów natury.[LI] Ogromna: 14 cudów natury.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION" Language="pl_PL">
+			<Text>Określa częstotliwość jezior na mapie. Wyniki mogą się różnić.[n] Gra spróbuje dostosować liczbę jezior.[n] Generowanie mapy może jednak przywrócić wartość domyślną.</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="pl_PL">
+			<Text>Advanced Settings Pro</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="pl_PL">
+			<Text>Advanced Settings Pro autorstwa Zatygolda[n] [n]Ten mod rozszerza konfigurację rozgrywki dla jednego gracza i trybu wieloosobowego o dodatkowe opcje w menu ustawień zaawansowanych. Pozwala precyzyjnie dostroić systemy, których normalnie nie można zmieniać.</Text>
+		</Replace>
+	</LocalizedText>
+</Database>
