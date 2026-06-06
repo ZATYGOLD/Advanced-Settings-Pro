@@ -387,9 +387,9 @@
 			<Properties><LoadOrder>1000</LoadOrder></Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/units/settler-embark-modifiers.xml</Item>
+					<Item>data/units/settler-embark-modifiers.sql</Item>
 					<Item>data/units/settler-speed-slow.sql</Item>
-					<Item>data/units/settler-embark-slow-gameeffects.xml</Item>
+					<Item>data/units/settler-embark-slow.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -397,9 +397,9 @@
 			<Properties><LoadOrder>1000</LoadOrder></Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/units/settler-embark-modifiers.xml</Item>
+					<Item>data/units/settler-embark-modifiers.sql</Item>
 					<Item>data/units/settler-speed-fast.sql</Item>
-					<Item>data/units/settler-embark-fast-gameeffects.xml</Item>
+					<Item>data/units/settler-embark-fast.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -410,8 +410,8 @@
 			<Properties><LoadOrder>1000</LoadOrder></Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/units/treasure-convoy-modifiers.xml</Item>
-					<Item>data/units/treasure-convoy-slow-gameeffects.xml</Item>
+					<Item>data/units/treasure-convoy-modifiers.sql</Item>
+					<Item>data/units/treasure-convoy-slow.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -419,8 +419,8 @@
 			<Properties><LoadOrder>1000</LoadOrder></Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/units/treasure-convoy-modifiers.xml</Item>
-					<Item>data/units/treasure-convoy-fast-gameeffects.xml</Item>
+					<Item>data/units/treasure-convoy-modifiers.sql</Item>
+					<Item>data/units/treasure-convoy-fast.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

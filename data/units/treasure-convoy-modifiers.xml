@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Database>
-	<UnitAbilityModifiers>
-		<Row UnitAbilityType="ABILITY_TREASURE_FLEET" ModifierId="ZG_TREASURE_FLEET_MOD_MOVEMENT"/>
-	</UnitAbilityModifiers>
-</Database>
