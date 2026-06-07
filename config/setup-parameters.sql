@@ -18,13 +18,28 @@ INSERT OR IGNORE INTO ParameterGroups (GroupId, Name)
 UPDATE Parameters SET SupportsSinglePlayer = 1 WHERE ParameterID = 'SingleAgeGame';
 
 --*******************************************************
+--***************** AGE PROGRESSION *********************
+--*******************************************************
+INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
+    VALUES
+        ('ZG_AgeProgression', 'LOC_ZG_AGE_PROGRESSION_NAME', 'LOC_ZG_AGE_PROGRESSION_DESCRIPTION', 'ZG_AgeProgressionDomain', 'ZG_STANDARD_AGE_PROGRESSION', 1, 'Game', 'AgeProgressionKey', 'GameOptions', 'MPAdvancedGameOptions', 0, 101);
+
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES
+        ('ZG_AgeProgressionDomain', 'ZG_ONLINE_AGE_PROGRESSION', 'LOC_GAMESPEED_ONLINE_NAME', 'LOC_ZG_AGE_PROGRESSION_DESCRIPTION_ONLINE', 10),
+        ('ZG_AgeProgressionDomain', 'ZG_STANDARD_AGE_PROGRESSION', 'LOC_GAMESPEED_STANDARD_NAME', 'LOC_ZG_AGE_PROGRESSION_DESCRIPTION_STANDARD', 20),
+        ('ZG_AgeProgressionDomain', 'ZG_EPIC_AGE_PROGRESSION', 'LOC_GAMESPEED_EPIC_NAME', 'LOC_ZG_AGE_PROGRESSION_DESCRIPTION_EPIC', 30),
+        ('ZG_AgeProgressionDomain', 'ZG_MARATHON_AGE_PROGRESSION', 'LOC_GAMESPEED_MARATHON_NAME', 'LOC_ZG_AGE_PROGRESSION_DESCRIPTION_MARATHON', 40);
+
+--*******************************************************
 --***************** UNIT SETTINGS ********************
 --*******************************************************
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
         ('ZG_SettlerMovementSpeed', 'LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME', 'LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION', 'ZG_SettlerMovementDomain','ZG_SETTLER_MOVES_DEFAULT', 1, 'Game', 'SettlerMovementKey', 'UnitOptions', 'MPAdvancedUnitOptions', 0, 1050),
         ('ZG_TreasureMovementSpeed', 'LOC_ZG_TREASURE_MOVEMENT_SPEED_NAME', 'LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION', 'ZG_TreasureMovementDomain', 'ZG_TREASURE_MOVES_DEFAULT', 1, 'Game','TreasureMovementKey', 'UnitOptions', 'MPAdvancedUnitOptions', 0, 1051),
-        ('ZG_CombatUnitCost', 'LOC_ZG_COMBAT_UNIT_COST_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION', 'ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_DEFAULT', 1, 'Game','CombatUnitCostKey', 'UnitOptions', 'MPAdvancedUnitOptions', 0, 1052);
+        ('ZG_CombatUnitCost', 'LOC_ZG_COMBAT_UNIT_COST_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION', 'ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_DEFAULT', 1, 'Game','CombatUnitCostKey', 'UnitOptions', 'MPAdvancedUnitOptions', 0, 1052),
+        ('ZG_CivilianUnitCost', 'LOC_ZG_CIVILIAN_UNIT_COST_NAME', 'LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION', 'ZG_CivilianUnitCostDomain', 'ZG_CIVILIAN_UNIT_COST_DEFAULT', 1, 'Game','CivilianUnitCostKey', 'UnitOptions', 'MPAdvancedUnitOptions', 0, 1053);
 
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
@@ -37,7 +52,12 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_TreasureMovementDomain', 'ZG_TREASURE_MOVES_SLOW', 'LOC_ZG_SLOW_NAME', 'LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION', 30),
         ('ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_DEFAULT', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION', 10),
         ('ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_MORE', 'LOC_ZG_MORE_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION', 20),
-        ('ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_LESS', 'LOC_ZG_LESS_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION', 30);
+        ('ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_LESS', 'LOC_ZG_LESS_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION', 40),
+        ('ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_EXPENSIVE', 'LOC_ZG_EXPENSIVE_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION', 30),
+        ('ZG_CivilianUnitCostDomain', 'ZG_CIVILIAN_UNIT_COST_DEFAULT', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION', 10),
+        ('ZG_CivilianUnitCostDomain', 'ZG_CIVILIAN_UNIT_COST_MORE', 'LOC_ZG_MORE_NAME', 'LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION', 20),
+        ('ZG_CivilianUnitCostDomain', 'ZG_CIVILIAN_UNIT_COST_LESS', 'LOC_ZG_LESS_NAME', 'LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION', 40),
+        ('ZG_CivilianUnitCostDomain', 'ZG_CIVILIAN_UNIT_COST_EXPENSIVE', 'LOC_ZG_EXPENSIVE_NAME', 'LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION', 30);
 
 
 --*******************************************************

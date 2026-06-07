@@ -146,7 +146,7 @@
 			<Text>设置定居点之间的最小距离。[n] [BLIST][LI] 更少：2格。[LI] 默认：3格。[LI] 更多：4格。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>设置战斗单位的生产花费。[n] [BLIST][LI] 更少：便宜25%。[LI] 默认：无折扣。[LI] 更多：昂贵25%。[/BLIST]</Text>
+			<Text>设置战斗单位的生产花费。[n] [BLIST][LI] 更少：便宜25%。[LI] 默认：无折扣。[LI] 更多：昂贵25%。[LI] 昂贵：昂贵50%。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>设置危机的推进速度。</Text>
@@ -240,6 +240,45 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="zh_Hans_CN">
 			<Text>不生成湖泊。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="zh_Hans_CN">
+			<Text>昂贵</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME" Language="zh_Hans_CN">
+			<Text>平民单位花费</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置平民单位的生产花费。[n] [BLIST][LI] 更少：便宜25%。[LI] 默认：无折扣。[LI] 更多：昂贵25%。[LI] 昂贵：昂贵50%。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="zh_Hans_CN">
+			<Text>线上2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>极快的节奏。比标准快150%。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="zh_Hans_CN">
+			<Text>马拉松2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>极慢的节奏。比标准慢400%。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_NAME" Language="zh_Hans_CN">
+			<Text>时代进程</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置结束时代所需的时代进度点数。[n]与时代长度设置叠加。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_ONLINE" Language="zh_Hans_CN">
+			<Text>点数减少25%：时代更早结束。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
+			<Text>标准点数：无变化。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_EPIC" Language="zh_Hans_CN">
+			<Text>点数增加50%：时代持续更久。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_MARATHON" Language="zh_Hans_CN">
+			<Text>点数增加100%：时代持续久得多。</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

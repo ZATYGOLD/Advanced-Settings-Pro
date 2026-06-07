@@ -146,7 +146,7 @@
 			<Text>Imposta la distanza minima tra gli insediamenti.[n] [BLIST][LI] Meno: 2 caselle.[LI] Predefinito: 3 caselle.[LI] Più: 4 caselle.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="it_IT">
-			<Text>Imposta il costo di produzione delle unità da combattimento.[n] [BLIST][LI] Meno: 25% più economiche.[LI] Predefinito: nessuno sconto.[LI] Più: 25% più costose.[/BLIST]</Text>
+			<Text>Imposta il costo di produzione delle unità da combattimento.[n] [BLIST][LI] Meno: 25% più economiche.[LI] Predefinito: nessuno sconto.[LI] Più: 25% più costose.[LI] Costoso: 50% più costose.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="it_IT">
 			<Text>Imposta il ritmo delle crisi.</Text>
@@ -240,6 +240,45 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="it_IT">
 			<Text>Non vengono generati laghi.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="it_IT">
+			<Text>Costoso</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME" Language="it_IT">
+			<Text>Costo delle unità civili</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="it_IT">
+			<Text>Imposta il costo di produzione delle unità civili.[n] [BLIST][LI] Meno: 25% più economiche.[LI] Predefinito: nessuno sconto.[LI] Più: 25% più costose.[LI] Costoso: 50% più costose.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="it_IT">
+			<Text>Online 2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="it_IT">
+			<Text>Un ritmo estremamente veloce. 150% più veloce della velocità Standard.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="it_IT">
+			<Text>Maratona 2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="it_IT">
+			<Text>Un ritmo estremamente lento. 400% più lento della velocità Standard.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_NAME" Language="it_IT">
+			<Text>Progressione delle epoche</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION" Language="it_IT">
+			<Text>Determina quanti punti di progressione dell'epoca servono per concluderla.[n]Si somma all'impostazione della durata delle epoche.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_ONLINE" Language="it_IT">
+			<Text>25% di punti in meno: le epoche finiscono prima.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_STANDARD" Language="it_IT">
+			<Text>Punti standard: nessuna modifica.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_EPIC" Language="it_IT">
+			<Text>50% di punti in più: le epoche durano di più.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_MARATHON" Language="it_IT">
+			<Text>100% di punti in più: le epoche durano molto di più.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

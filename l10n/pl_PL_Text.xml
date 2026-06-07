@@ -146,7 +146,7 @@
 			<Text>Określa minimalną odległość między osadami.[n] [BLIST][LI] Mniej: 2 pól.[LI] Domyślne: 3 pól.[LI] Więcej: 4 pól.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="pl_PL">
-			<Text>Określa koszt produkcji jednostek bojowych.[n] [BLIST][LI] Mniej: 25% taniej.[LI] Domyślne: bez rabatu.[LI] Więcej: 25% drożej.[/BLIST]</Text>
+			<Text>Określa koszt produkcji jednostek bojowych.[n] [BLIST][LI] Mniej: 25% taniej.[LI] Domyślne: bez rabatu.[LI] Więcej: 25% drożej.[LI] Drogie: 50% drożej.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="pl_PL">
 			<Text>Określa tempo kryzysów.</Text>
@@ -240,6 +240,45 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="pl_PL">
 			<Text>Jeziora nie są generowane.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="pl_PL">
+			<Text>Drogie</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME" Language="pl_PL">
+			<Text>Koszt jednostek cywilnych</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="pl_PL">
+			<Text>Określa koszt produkcji jednostek cywilnych.[n] [BLIST][LI] Mniej: 25% taniej.[LI] Domyślne: bez rabatu.[LI] Więcej: 25% drożej.[LI] Drogie: 50% drożej.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="pl_PL">
+			<Text>Online 2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="pl_PL">
+			<Text>Ekstremalnie szybkie tempo. 150% szybciej niż standardowe.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="pl_PL">
+			<Text>Maraton 2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="pl_PL">
+			<Text>Ekstremalnie wolne tempo. 400% wolniej niż standardowe.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_NAME" Language="pl_PL">
+			<Text>Postęp epoki</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION" Language="pl_PL">
+			<Text>Określa, ile punktów postępu epoki potrzeba, aby ją zakończyć.[n]Łączy się z ustawieniem długości epok.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_ONLINE" Language="pl_PL">
+			<Text>25% mniej punktów: epoki kończą się wcześniej.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_STANDARD" Language="pl_PL">
+			<Text>Standardowe punkty: bez zmian.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_EPIC" Language="pl_PL">
+			<Text>50% więcej punktów: epoki trwają dłużej.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_MARATHON" Language="pl_PL">
+			<Text>100% więcej punktów: epoki trwają znacznie dłużej.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

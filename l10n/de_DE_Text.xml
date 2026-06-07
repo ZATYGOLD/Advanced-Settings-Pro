@@ -146,7 +146,7 @@
 			<Text>Legt den Mindestabstand zwischen Siedlungen fest.[n] [BLIST][LI] Weniger: 2 Felder.[LI] Standard: 3 Felder.[LI] Mehr: 4 Felder.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="de_DE">
-			<Text>Legt die Produktionskosten von Kampfeinheiten fest.[n] [BLIST][LI] Weniger: 25% günstiger.[LI] Standard: kein Rabatt.[LI] Mehr: 25% teurer.[/BLIST]</Text>
+			<Text>Legt die Produktionskosten von Kampfeinheiten fest.[n] [BLIST][LI] Weniger: 25% günstiger.[LI] Standard: kein Rabatt.[LI] Mehr: 25% teurer.[LI] Teuer: 50% teurer.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="de_DE">
 			<Text>Legt das Tempo der Krisen fest.</Text>
@@ -240,6 +240,45 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="de_DE">
 			<Text>Es werden keine Seen generiert.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="de_DE">
+			<Text>Teuer</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME" Language="de_DE">
+			<Text>Kosten von Zivileinheiten</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="de_DE">
+			<Text>Legt die Produktionskosten von Zivileinheiten fest.[n] [BLIST][LI] Weniger: 25% günstiger.[LI] Standard: kein Rabatt.[LI] Mehr: 25% teurer.[LI] Teuer: 50% teurer.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="de_DE">
+			<Text>Online 2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="de_DE">
+			<Text>Ein extrem schnelles Tempo. 150% schneller als Standard.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="de_DE">
+			<Text>Marathon 2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="de_DE">
+			<Text>Ein extrem langsames Tempo. 400% langsamer als Standard.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_NAME" Language="de_DE">
+			<Text>Zeitalterfortschritt</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION" Language="de_DE">
+			<Text>Legt fest, wie viele Zeitalter-Fortschrittspunkte nötig sind, um das Zeitalter zu beenden.[n]Wirkt zusätzlich zur Einstellung Zeitalterlänge.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_ONLINE" Language="de_DE">
+			<Text>25% weniger Punkte: Zeitalter enden früher.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_STANDARD" Language="de_DE">
+			<Text>Standardpunkte: keine Änderung.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_EPIC" Language="de_DE">
+			<Text>50% mehr Punkte: Zeitalter dauern länger.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_MARATHON" Language="de_DE">
+			<Text>100% mehr Punkte: Zeitalter dauern deutlich länger.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

@@ -277,6 +277,55 @@
 				<Value>ZG_COMBAT_UNIT_COST_LESS</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
+		<Criteria id="premium-military-units">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>CombatUnitCostKey</ConfigurationId>
+				<Value>ZG_COMBAT_UNIT_COST_EXPENSIVE</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="expensive-civilian-units">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>CivilianUnitCostKey</ConfigurationId>
+				<Value>ZG_CIVILIAN_UNIT_COST_MORE</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="cheaper-civilian-units">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>CivilianUnitCostKey</ConfigurationId>
+				<Value>ZG_CIVILIAN_UNIT_COST_LESS</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="premium-civilian-units">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>CivilianUnitCostKey</ConfigurationId>
+				<Value>ZG_CIVILIAN_UNIT_COST_EXPENSIVE</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="age-progression-online">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>AgeProgressionKey</ConfigurationId>
+				<Value>ZG_ONLINE_AGE_PROGRESSION</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="age-progression-epic">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>AgeProgressionKey</ConfigurationId>
+				<Value>ZG_EPIC_AGE_PROGRESSION</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="age-progression-marathon">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>AgeProgressionKey</ConfigurationId>
+				<Value>ZG_MARATHON_AGE_PROGRESSION</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
 
 <!--************************* CRITERIA: CRISIS PACING ***************************-->
 
@@ -2484,6 +2533,7 @@
 				<UpdateDatabase>
 					<Item>config/setup-parameters.sql</Item>
 					<Item>config/map-scripts.sql</Item>
+					<Item>config/game-speeds.sql</Item>
 				</UpdateDatabase>
 				<ImportFiles>
 					<Item>maps/zg-map-rivers.js</Item>
@@ -2537,6 +2587,42 @@
 					<Item>maps/zg-terra-incognita.js</Item>
 					<Item>maps/zg-pangaea-plus.js</Item>
 				</ImportFiles>
+				<UpdateDatabase>
+					<Item>data/game-speeds/new-game-speeds.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
+<!--************************* SETTINGS: AGE PROGRESSION *************************-->
+
+		<ActionGroup id="zg-age-progression-online" scope="game" criteria="age-progression-online">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/ages/age-progression-online.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-age-progression-epic" scope="game" criteria="age-progression-epic">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/ages/age-progression-epic.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-age-progression-marathon" scope="game" criteria="age-progression-marathon">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/ages/age-progression-marathon.sql</Item>
+				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
 
@@ -2869,6 +2955,46 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/units/military-unit-cost-less.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-premium-military-units" scope="game" criteria="premium-military-units">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/units/military-unit-cost-expensive.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-expensive-civilian-units" scope="game" criteria="expensive-civilian-units">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/units/civilian-unit-cost-more.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-cheaper-civilian-units" scope="game" criteria="cheaper-civilian-units">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/units/civilian-unit-cost-less.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-premium-civilian-units" scope="game" criteria="premium-civilian-units">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/units/civilian-unit-cost-expensive.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

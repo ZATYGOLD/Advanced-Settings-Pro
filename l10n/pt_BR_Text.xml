@@ -146,7 +146,7 @@
 			<Text>Define a distância mínima entre assentamentos.[n] [BLIST][LI] Menos: 2 células.[LI] Padrão: 3 células.[LI] Mais: 4 células.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="pt_BR">
-			<Text>Define o custo de produção das unidades de combate.[n] [BLIST][LI] Menos: 25% mais baratas.[LI] Padrão: sem desconto.[LI] Mais: 25% mais caras.[/BLIST]</Text>
+			<Text>Define o custo de produção das unidades de combate.[n] [BLIST][LI] Menos: 25% mais baratas.[LI] Padrão: sem desconto.[LI] Mais: 25% mais caras.[LI] Caro: 50% mais caras.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="pt_BR">
 			<Text>Define o ritmo das crises.</Text>
@@ -240,6 +240,45 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="pt_BR">
 			<Text>Nenhum lago é gerado.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="pt_BR">
+			<Text>Caro</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME" Language="pt_BR">
+			<Text>Custo de unidades civis</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="pt_BR">
+			<Text>Define o custo de produção das unidades civis.[n] [BLIST][LI] Menos: 25% mais baratas.[LI] Padrão: sem desconto.[LI] Mais: 25% mais caras.[LI] Caro: 50% mais caras.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="pt_BR">
+			<Text>Online 2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="pt_BR">
+			<Text>Um ritmo extremamente rápido. 150% mais rápido que o Padrão.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="pt_BR">
+			<Text>Maratona 2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="pt_BR">
+			<Text>Um ritmo extremamente lento. 400% mais lento que o Padrão.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_NAME" Language="pt_BR">
+			<Text>Progresso da era</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION" Language="pt_BR">
+			<Text>Define quantos pontos de progresso de era são necessários para encerrar a era.[n]Acumula com a configuração de duração das eras.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_ONLINE" Language="pt_BR">
+			<Text>25% menos pontos: as eras terminam mais cedo.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_STANDARD" Language="pt_BR">
+			<Text>Pontos padrão: sem alteração.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_EPIC" Language="pt_BR">
+			<Text>50% mais pontos: as eras duram mais.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_MARATHON" Language="pt_BR">
+			<Text>100% mais pontos: as eras duram muito mais.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

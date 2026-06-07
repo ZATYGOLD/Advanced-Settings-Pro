@@ -146,7 +146,7 @@
 			<Text>Définit la distance minimale entre les colonies.[n] [BLIST][LI] Moins : 2 cases.[LI] Par défaut : 3 cases.[LI] Plus : 4 cases.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="fr_FR">
-			<Text>Définit le coût de production des unités de combat.[n] [BLIST][LI] Moins : 25% moins chères.[LI] Par défaut : aucune réduction.[LI] Plus : 25% plus chères.[/BLIST]</Text>
+			<Text>Définit le coût de production des unités de combat.[n] [BLIST][LI] Moins : 25% moins chères.[LI] Par défaut : aucune réduction.[LI] Plus : 25% plus chères.[LI] Cher : 50% plus chères.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="fr_FR">
 			<Text>Définit le rythme des crises.</Text>
@@ -240,6 +240,45 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="fr_FR">
 			<Text>Aucun lac n'est généré.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="fr_FR">
+			<Text>Cher</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME" Language="fr_FR">
+			<Text>Coût des unités civiles</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="fr_FR">
+			<Text>Définit le coût de production des unités civiles.[n] [BLIST][LI] Moins : 25% moins chères.[LI] Par défaut : aucune réduction.[LI] Plus : 25% plus chères.[LI] Cher : 50% plus chères.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="fr_FR">
+			<Text>En ligne 2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="fr_FR">
+			<Text>Un rythme extrêmement rapide. 150% plus rapide que Standard.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="fr_FR">
+			<Text>Marathon 2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="fr_FR">
+			<Text>Un rythme extrêmement lent. 400% plus lent que Standard.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_NAME" Language="fr_FR">
+			<Text>Progression des âges</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION" Language="fr_FR">
+			<Text>Définit le nombre de points de progression d'âge nécessaires pour terminer l'âge.[n]Se cumule avec le paramètre de durée des âges.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_ONLINE" Language="fr_FR">
+			<Text>25% de points en moins : les âges se terminent plus tôt.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_STANDARD" Language="fr_FR">
+			<Text>Points standard : aucun changement.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_EPIC" Language="fr_FR">
+			<Text>50% de points en plus : les âges durent plus longtemps.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_MARATHON" Language="fr_FR">
+			<Text>100% de points en plus : les âges durent bien plus longtemps.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

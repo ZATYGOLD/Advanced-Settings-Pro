@@ -146,7 +146,7 @@
 			<Text>Задаёт минимальное расстояние между поселениями.[n] [BLIST][LI] Меньше: 2 клеток.[LI] По умолчанию: 3 клеток.[LI] Больше: 4 клеток.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт стоимость производства боевых юнитов.[n] [BLIST][LI] Меньше: на 25% дешевле.[LI] По умолчанию: без скидки.[LI] Больше: на 25% дороже.[/BLIST]</Text>
+			<Text>Задаёт стоимость производства боевых юнитов.[n] [BLIST][LI] Меньше: на 25% дешевле.[LI] По умолчанию: без скидки.[LI] Больше: на 25% дороже.[LI] Дорого: на 50% дороже.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="ru_RU">
 			<Text>Задаёт темп кризисов.</Text>
@@ -240,6 +240,45 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="ru_RU">
 			<Text>Озёра не создаются.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="ru_RU">
+			<Text>Дорого</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME" Language="ru_RU">
+			<Text>Стоимость гражданских юнитов</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="ru_RU">
+			<Text>Задаёт стоимость производства гражданских юнитов.[n] [BLIST][LI] Меньше: на 25% дешевле.[LI] По умолчанию: без скидки.[LI] Больше: на 25% дороже.[LI] Дорого: на 50% дороже.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="ru_RU">
+			<Text>Онлайн 2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="ru_RU">
+			<Text>Чрезвычайно быстрый темп. На 150% быстрее стандартного.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="ru_RU">
+			<Text>Марафон 2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="ru_RU">
+			<Text>Чрезвычайно медленный темп. На 400% медленнее стандартного.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_NAME" Language="ru_RU">
+			<Text>Прогресс эпохи</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION" Language="ru_RU">
+			<Text>Определяет, сколько очков прогресса эпохи нужно для её завершения.[n]Действует вместе с настройкой длительности эпох.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_ONLINE" Language="ru_RU">
+			<Text>На 25% меньше очков: эпохи заканчиваются раньше.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>Стандартные очки: без изменений.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_EPIC" Language="ru_RU">
+			<Text>На 50% больше очков: эпохи длятся дольше.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_MARATHON" Language="ru_RU">
+			<Text>На 100% больше очков: эпохи длятся значительно дольше.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>
