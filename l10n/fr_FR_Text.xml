@@ -220,5 +220,23 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="fr_FR">
 			<Text>Définit la limite de colonies de cet âge.[n]Ne s'applique que si la limite de colonies est sur Personnalisé.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="fr_FR">
+			<Text>Rivières</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION" Language="fr_FR">
+			<Text>Définit le nombre de rivières générées à la création de la carte.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="fr_FR">
+			<Text>Génération de rivières standard pour le type de carte choisi.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_LESS" Language="fr_FR">
+			<Text>Génère moins de rivières.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="fr_FR">
+			<Text>Génère plus de rivières, dont davantage de fleuves navigables.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED" Language="fr_FR">
+			<Text>Aucune rivière n'est générée.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

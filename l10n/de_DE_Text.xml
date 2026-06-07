@@ -220,5 +220,23 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="de_DE">
 			<Text>Legt das Siedlungslimit dieses Zeitalters fest.[n]Gilt nur, wenn das Siedlungslimit auf Benutzerdefiniert steht.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="de_DE">
+			<Text>Flüsse</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION" Language="de_DE">
+			<Text>Legt fest, wie viele Flüsse bei der Kartenerstellung generiert werden.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="de_DE">
+			<Text>Standard-Flussgenerierung für den gewählten Kartentyp.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_LESS" Language="de_DE">
+			<Text>Generiert weniger Flüsse.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="de_DE">
+			<Text>Generiert mehr Flüsse, von denen mehr schiffbar sind.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED" Language="de_DE">
+			<Text>Es werden keine Flüsse generiert.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

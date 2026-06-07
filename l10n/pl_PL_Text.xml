@@ -220,5 +220,23 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="pl_PL">
 			<Text>Ustawia limit osad tej epoki.[n]Działa tylko, gdy limit osad ustawiono na Niestandardowe.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="pl_PL">
+			<Text>Rzeki</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION" Language="pl_PL">
+			<Text>Określa, ile rzek jest generowanych podczas tworzenia mapy.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="pl_PL">
+			<Text>Standardowe generowanie rzek dla wybranego typu mapy.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_LESS" Language="pl_PL">
+			<Text>Generuje mniej rzek.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="pl_PL">
+			<Text>Generuje więcej rzek, z których więcej jest żeglownych.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED" Language="pl_PL">
+			<Text>Rzeki nie są generowane.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

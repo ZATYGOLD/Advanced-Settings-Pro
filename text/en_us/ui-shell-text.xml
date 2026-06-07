@@ -373,5 +373,13 @@
 		<Row Tag="LOC_ZG_NUM_48"><Text>48</Text></Row>
 		<Row Tag="LOC_ZG_NUM_49"><Text>49</Text></Row>
 		<Row Tag="LOC_ZG_NUM_50"><Text>50</Text></Row>
+
+	<!-- River Settings -->
+		<Row Tag="LOC_ZG_RIVERS_NAME"><Text>Rivers</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION"><Text>Sets how many rivers are generated when the map is created.</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT"><Text>Standard river generation for the chosen map type.</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_LESS"><Text>Generates fewer rivers.</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE"><Text>Generates more rivers, and more of them are navigable.</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED"><Text>No rivers are generated.</Text></Row>
 	</EnglishText>
 </Database>

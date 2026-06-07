@@ -11,7 +11,8 @@ const CONFLICTING_MODS = [
 	{ workshopId: "3601908082", modId: "Mattifus's Natural Wonder Setting" },
 	{ workshopId: "3542338658", modId: "more-natural-wonders" },            
 	{ workshopId: "3684060469", modId: "NaturalWonderManager" },  
-	{ workshopId: "3737965906", modId: "phaetom-Settlement" },        
+	{ workshopId: "3737965906", modId: "phaetom-Settlement" },
+	{ workshopId: "3736792223", modId: "eras-plus" },  
 ];
 
 const CONFLICTING_MOD_IDS = CONFLICTING_MODS.map((entry) => entry.modId);
@@ -43,7 +44,7 @@ function showConflictDialog(conflicts) {
 	const items = conflicts.map((mod) => `[LI]${Locale.compose(mod.name)}`).join("");
 	const body =
 		Locale.compose("LOC_ZG_MOD_CONFLICT_BODY_HEADER") +
-		`[N][BLIST]${items}[/BLIST][N]` +
+		`[N][BLIST]  ${items}[/BLIST][N]` +
 		Locale.compose("LOC_ZG_MOD_CONFLICT_BODY_FOOTER");
 	DialogBoxManager.createDialog_MultiOption({
 		title: "LOC_ZG_MOD_CONFLICT_TITLE",

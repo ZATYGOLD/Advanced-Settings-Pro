@@ -220,5 +220,23 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="ja_JP">
 			<Text>この時代の入植地上限を設定します。[n]入植地の上限がカスタムの場合のみ適用されます。</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="ja_JP">
+			<Text>川</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION" Language="ja_JP">
+			<Text>マップ作成時に生成される川の数を設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="ja_JP">
+			<Text>選択したマップタイプの標準的な川の生成。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_LESS" Language="ja_JP">
+			<Text>生成される川が少なくなります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="ja_JP">
+			<Text>生成される川が多くなり、航行可能な川も増えます。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED" Language="ja_JP">
+			<Text>川は生成されません。</Text>
+		</Replace>
 	</LocalizedText>
 </Database>
