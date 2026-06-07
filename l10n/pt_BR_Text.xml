@@ -262,5 +262,23 @@
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="pt_BR">
 			<Text>Um ritmo extremamente lento. 400% mais lento que o Padrão.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_NAME" Language="pt_BR">
+			<Text>Progresso da era</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION" Language="pt_BR">
+			<Text>Define quantos pontos de progresso de era são necessários para encerrar a era.[n]Acumula com a configuração de duração das eras.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_ONLINE" Language="pt_BR">
+			<Text>25% menos pontos: as eras terminam mais cedo.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_STANDARD" Language="pt_BR">
+			<Text>Pontos padrão: sem alteração.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_EPIC" Language="pt_BR">
+			<Text>50% mais pontos: as eras duram mais.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_MARATHON" Language="pt_BR">
+			<Text>100% mais pontos: as eras duram muito mais.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

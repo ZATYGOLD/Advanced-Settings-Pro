@@ -262,5 +262,23 @@
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="pl_PL">
 			<Text>Ekstremalnie wolne tempo. 400% wolniej niż standardowe.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_NAME" Language="pl_PL">
+			<Text>Postęp epoki</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION" Language="pl_PL">
+			<Text>Określa, ile punktów postępu epoki potrzeba, aby ją zakończyć.[n]Łączy się z ustawieniem długości epok.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_ONLINE" Language="pl_PL">
+			<Text>25% mniej punktów: epoki kończą się wcześniej.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_STANDARD" Language="pl_PL">
+			<Text>Standardowe punkty: bez zmian.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_EPIC" Language="pl_PL">
+			<Text>50% więcej punktów: epoki trwają dłużej.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_MARATHON" Language="pl_PL">
+			<Text>100% więcej punktów: epoki trwają znacznie dłużej.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

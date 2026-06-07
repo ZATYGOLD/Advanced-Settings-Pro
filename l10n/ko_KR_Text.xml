@@ -262,5 +262,23 @@
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="ko_KR">
 			<Text>매우 느린 속도입니다. 표준보다 400% 느립니다.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_NAME" Language="ko_KR">
+			<Text>시대 진행</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION" Language="ko_KR">
+			<Text>시대를 끝내는 데 필요한 시대 진행 점수를 설정합니다.[n]시대 길이 설정과 중첩됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_ONLINE" Language="ko_KR">
+			<Text>점수 25% 감소: 시대가 더 빨리 끝납니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_STANDARD" Language="ko_KR">
+			<Text>기본 점수: 변경 없음.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_EPIC" Language="ko_KR">
+			<Text>점수 50% 증가: 시대가 더 오래 지속됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_MARATHON" Language="ko_KR">
+			<Text>점수 100% 증가: 시대가 훨씬 더 오래 지속됩니다.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

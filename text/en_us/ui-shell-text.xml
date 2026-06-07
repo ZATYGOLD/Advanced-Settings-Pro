@@ -400,5 +400,13 @@
 		<Row Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION"><Text>An extremely fast pace. 150% faster than Standard speed.</Text></Row>
 		<Row Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME"><Text>Marathon 2.0</Text></Row>
 		<Row Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION"><Text>An extremely slow pace. 400% slower than Standard speed.</Text></Row>
+
+	<!-- Age Progression -->
+		<Row Tag="LOC_ZG_AGE_PROGRESSION_NAME"><Text>Age Progression</Text></Row>
+		<Row Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION"><Text>Sets how many age progress points are needed to end the age.[n]Stacks with the Age Length setting.</Text></Row>
+		<Row Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_ONLINE"><Text>25% fewer points: ages end sooner.</Text></Row>
+		<Row Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_STANDARD"><Text>Standard points: no change.</Text></Row>
+		<Row Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_EPIC"><Text>50% more points: ages last longer.</Text></Row>
+		<Row Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_MARATHON"><Text>100% more points: ages last much longer.</Text></Row>
 	</EnglishText>
 </Database>

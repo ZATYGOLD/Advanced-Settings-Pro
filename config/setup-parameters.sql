@@ -18,6 +18,20 @@ INSERT OR IGNORE INTO ParameterGroups (GroupId, Name)
 UPDATE Parameters SET SupportsSinglePlayer = 1 WHERE ParameterID = 'SingleAgeGame';
 
 --*******************************************************
+--***************** AGE PROGRESSION *********************
+--*******************************************************
+INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
+    VALUES
+        ('ZG_AgeProgression', 'LOC_ZG_AGE_PROGRESSION_NAME', 'LOC_ZG_AGE_PROGRESSION_DESCRIPTION', 'ZG_AgeProgressionDomain', 'ZG_STANDARD_AGE_PROGRESSION', 1, 'Game', 'AgeProgressionKey', 'GameOptions', 'MPAdvancedGameOptions', 0, 101);
+
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES
+        ('ZG_AgeProgressionDomain', 'ZG_ONLINE_AGE_PROGRESSION', 'LOC_GAMESPEED_ONLINE_NAME', 'LOC_ZG_AGE_PROGRESSION_DESCRIPTION_ONLINE', 10),
+        ('ZG_AgeProgressionDomain', 'ZG_STANDARD_AGE_PROGRESSION', 'LOC_GAMESPEED_STANDARD_NAME', 'LOC_ZG_AGE_PROGRESSION_DESCRIPTION_STANDARD', 20),
+        ('ZG_AgeProgressionDomain', 'ZG_EPIC_AGE_PROGRESSION', 'LOC_GAMESPEED_EPIC_NAME', 'LOC_ZG_AGE_PROGRESSION_DESCRIPTION_EPIC', 30),
+        ('ZG_AgeProgressionDomain', 'ZG_MARATHON_AGE_PROGRESSION', 'LOC_GAMESPEED_MARATHON_NAME', 'LOC_ZG_AGE_PROGRESSION_DESCRIPTION_MARATHON', 40);
+
+--*******************************************************
 --***************** UNIT SETTINGS ********************
 --*******************************************************
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)

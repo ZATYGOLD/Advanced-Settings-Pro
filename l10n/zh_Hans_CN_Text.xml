@@ -262,5 +262,23 @@
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>极慢的节奏。比标准慢400%。</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_NAME" Language="zh_Hans_CN">
+			<Text>时代进程</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置结束时代所需的时代进度点数。[n]与时代长度设置叠加。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_ONLINE" Language="zh_Hans_CN">
+			<Text>点数减少25%：时代更早结束。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
+			<Text>标准点数：无变化。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_EPIC" Language="zh_Hans_CN">
+			<Text>点数增加50%：时代持续更久。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_MARATHON" Language="zh_Hans_CN">
+			<Text>点数增加100%：时代持续久得多。</Text>
+		</Replace>
 	</LocalizedText>
 </Database>
