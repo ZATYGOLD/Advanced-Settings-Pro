@@ -12,6 +12,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - The Natural Wonders count and the per-wonder Selection toggles now stay in sync: Disabled turns every wonder off, leaving Disabled turns them back on, disabling every wonder sets the count to Disabled, and a selection too small for the chosen count is reset
 - Added a mod conflict guard: a main menu panel lists enabled conflicting mods with a one-click disable, and conflicts are also disabled automatically when starting, loading, or joining a game
 - Added a Rivers setting (Disabled, Less, Default, or More) controlling how many rivers are generated, supported on all eleven standard map types
+- Added a Disabled option to the Lakes setting that skips lake generation entirely
 
 ### 0.6.1
 
@@ -42,7 +43,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Military Unit Cost: Cheaper, Default, or Expensive
 - Natural Wonders: Disabled, Half, Default, More, or Double
 - Natural Wonder Selection: Enabled or Disabled for each of the 20 natural wonders, including DLC wonders
-- Lakes: Less, Default, or More
+- Lakes: Disabled, Less, Default, or More
 - Rivers: Disabled, Less, Default, or More
 - Crisis Speed: Crawl, Slow, Default, Quick, or Fast
 - Settlement Limit: Less, Default, More, or Custom

@@ -238,5 +238,8 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED" Language="ja_JP">
 			<Text>川は生成されません。</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="ja_JP">
+			<Text>湖は生成されません。</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

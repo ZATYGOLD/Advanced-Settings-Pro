@@ -238,5 +238,8 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED" Language="pt_BR">
 			<Text>Nenhum rio é gerado.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="pt_BR">
+			<Text>Nenhum lago é gerado.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

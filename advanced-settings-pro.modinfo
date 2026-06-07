@@ -2487,6 +2487,7 @@
 				</UpdateDatabase>
 				<ImportFiles>
 					<Item>maps/zg-map-rivers.js</Item>
+					<Item>maps/zg-map-lakes.js</Item>
 					<Item>maps/zg-continents-voronoi.js</Item>
 					<Item>maps/zg-pangaea-voronoi.js</Item>
 					<Item>maps/zg-fractal-voronoi.js</Item>
@@ -2523,6 +2524,7 @@
 				</UpdateText>
 				<ImportFiles>
 					<Item>maps/zg-map-rivers.js</Item>
+					<Item>maps/zg-map-lakes.js</Item>
 					<Item>maps/zg-continents-voronoi.js</Item>
 					<Item>maps/zg-pangaea-voronoi.js</Item>
 					<Item>maps/zg-fractal-voronoi.js</Item>

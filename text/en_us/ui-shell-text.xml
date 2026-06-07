@@ -381,5 +381,6 @@
 		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_LESS"><Text>Generates fewer rivers.</Text></Row>
 		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE"><Text>Generates more rivers, and more of them are navigable.</Text></Row>
 		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED"><Text>No rivers are generated.</Text></Row>
+		<Row Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED"><Text>No lakes are generated.</Text></Row>
 	</EnglishText>
 </Database>

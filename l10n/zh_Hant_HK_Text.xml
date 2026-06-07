@@ -238,5 +238,8 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED" Language="zh_Hant_HK">
 			<Text>不生成河流。</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="zh_Hant_HK">
+			<Text>不生成湖泊。</Text>
+		</Replace>
 	</LocalizedText>
 </Database>
