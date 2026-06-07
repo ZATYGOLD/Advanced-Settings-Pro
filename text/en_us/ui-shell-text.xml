@@ -5,8 +5,7 @@
 		<Row Tag="LOC_GROUPID_ZG_UNITOPTIONS"><Text>Unit Settings</Text></Row>
 		<Row Tag="LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS"><Text>Independent Power Settings</Text></Row>
 		<Row Tag="LOC_GROUPID_ZG_SETTLEMENTOPTIONS"><Text>Settlement Settings</Text></Row>
-		<Row Tag="LOC_GROUPID_ZG_NATURALWONDEROPTIONS"><Text>Natural Wonder Settings</Text></Row>
-		<Row Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS"><Text>Natural Wonder Selection</Text></Row>
+		<Row Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS"><Text>Natural Wonder Settings</Text></Row>
 
 	<!-- Universal Names -->
 		<Row Tag="LOC_ZG_ENABLED_NAME"><Text>Enabled</Text></Row>
@@ -142,17 +141,8 @@
 		</Row>
 
 	<!-- Settlement Limit Custom Setting -->
-		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_DEFAULT"><Text>3</Text></Row>
-		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_MORE"><Text>4</Text></Row>
-		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_LESS"><Text>2</Text></Row>
 
-		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_DEFAULT"><Text>8</Text></Row>
-		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_MORE"><Text>10</Text></Row>
-		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_LESS"><Text>6</Text></Row>
 
-		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_DEFAULT"><Text>16</Text></Row>
-		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_MORE"><Text>19</Text></Row>
-		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_LESS"><Text>13</Text></Row>
 
 	<!-- Settlement Limit Descriptions -->
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION">
@@ -252,7 +242,7 @@
 		<Row Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION">
 			<Text>Sets the amount of [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] Natural Wonders on the map.
 				[n] [BLIST]
-				[LI] None: 0 Natural Wonders.
+				[LI] Disabled: 0 Natural Wonders.
 				[LI] Half: 50% Less Natural Wonders.
 				[LI] Default: No change to the Natural Wonders.
 				[LI] More: 50% More Natural Wonders.
@@ -322,5 +312,66 @@
 			<Text>Controls whether this Natural Wonder can appear on the map.</Text>
 		</Row>
 
+		<Row Tag="LOC_ZG_MOD_CONFLICT_TITLE"><Text>Mod Conflict Detected</Text></Row>
+		<Row Tag="LOC_ZG_MOD_CONFLICT_BODY_HEADER"><Text>The following mods are causing conflicts: [n] [n]</Text></Row>
+		<Row Tag="LOC_ZG_MOD_CONFLICT_BODY_FOOTER"><Text>[n] [n]Please unsubscribe from the mods now. [n] [n]</Text></Row>
+		<Row Tag="LOC_ZG_MOD_CONFLICT_DISABLE"><Text>Ok</Text></Row>
+		<Row Tag="LOC_ZG_MOD_CONFLICT_IGNORE"><Text>Cancel</Text></Row>
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM">
+			<Text>Custom: set the settlement limit for each age individually.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION">
+			<Text>Sets this age's settlement limit.[n]Applies only when Settlement Limit is set to Custom.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_NUM_1"><Text>1</Text></Row>
+		<Row Tag="LOC_ZG_NUM_2"><Text>2</Text></Row>
+		<Row Tag="LOC_ZG_NUM_3"><Text>3</Text></Row>
+		<Row Tag="LOC_ZG_NUM_4"><Text>4</Text></Row>
+		<Row Tag="LOC_ZG_NUM_5"><Text>5</Text></Row>
+		<Row Tag="LOC_ZG_NUM_6"><Text>6</Text></Row>
+		<Row Tag="LOC_ZG_NUM_7"><Text>7</Text></Row>
+		<Row Tag="LOC_ZG_NUM_8"><Text>8</Text></Row>
+		<Row Tag="LOC_ZG_NUM_9"><Text>9</Text></Row>
+		<Row Tag="LOC_ZG_NUM_10"><Text>10</Text></Row>
+		<Row Tag="LOC_ZG_NUM_11"><Text>11</Text></Row>
+		<Row Tag="LOC_ZG_NUM_12"><Text>12</Text></Row>
+		<Row Tag="LOC_ZG_NUM_13"><Text>13</Text></Row>
+		<Row Tag="LOC_ZG_NUM_14"><Text>14</Text></Row>
+		<Row Tag="LOC_ZG_NUM_15"><Text>15</Text></Row>
+		<Row Tag="LOC_ZG_NUM_16"><Text>16</Text></Row>
+		<Row Tag="LOC_ZG_NUM_17"><Text>17</Text></Row>
+		<Row Tag="LOC_ZG_NUM_18"><Text>18</Text></Row>
+		<Row Tag="LOC_ZG_NUM_19"><Text>19</Text></Row>
+		<Row Tag="LOC_ZG_NUM_20"><Text>20</Text></Row>
+		<Row Tag="LOC_ZG_NUM_21"><Text>21</Text></Row>
+		<Row Tag="LOC_ZG_NUM_22"><Text>22</Text></Row>
+		<Row Tag="LOC_ZG_NUM_23"><Text>23</Text></Row>
+		<Row Tag="LOC_ZG_NUM_24"><Text>24</Text></Row>
+		<Row Tag="LOC_ZG_NUM_25"><Text>25</Text></Row>
+		<Row Tag="LOC_ZG_NUM_26"><Text>26</Text></Row>
+		<Row Tag="LOC_ZG_NUM_27"><Text>27</Text></Row>
+		<Row Tag="LOC_ZG_NUM_28"><Text>28</Text></Row>
+		<Row Tag="LOC_ZG_NUM_29"><Text>29</Text></Row>
+		<Row Tag="LOC_ZG_NUM_30"><Text>30</Text></Row>
+		<Row Tag="LOC_ZG_NUM_31"><Text>31</Text></Row>
+		<Row Tag="LOC_ZG_NUM_32"><Text>32</Text></Row>
+		<Row Tag="LOC_ZG_NUM_33"><Text>33</Text></Row>
+		<Row Tag="LOC_ZG_NUM_34"><Text>34</Text></Row>
+		<Row Tag="LOC_ZG_NUM_35"><Text>35</Text></Row>
+		<Row Tag="LOC_ZG_NUM_36"><Text>36</Text></Row>
+		<Row Tag="LOC_ZG_NUM_37"><Text>37</Text></Row>
+		<Row Tag="LOC_ZG_NUM_38"><Text>38</Text></Row>
+		<Row Tag="LOC_ZG_NUM_39"><Text>39</Text></Row>
+		<Row Tag="LOC_ZG_NUM_40"><Text>40</Text></Row>
+		<Row Tag="LOC_ZG_NUM_41"><Text>41</Text></Row>
+		<Row Tag="LOC_ZG_NUM_42"><Text>42</Text></Row>
+		<Row Tag="LOC_ZG_NUM_43"><Text>43</Text></Row>
+		<Row Tag="LOC_ZG_NUM_44"><Text>44</Text></Row>
+		<Row Tag="LOC_ZG_NUM_45"><Text>45</Text></Row>
+		<Row Tag="LOC_ZG_NUM_46"><Text>46</Text></Row>
+		<Row Tag="LOC_ZG_NUM_47"><Text>47</Text></Row>
+		<Row Tag="LOC_ZG_NUM_48"><Text>48</Text></Row>
+		<Row Tag="LOC_ZG_NUM_49"><Text>49</Text></Row>
+		<Row Tag="LOC_ZG_NUM_50"><Text>50</Text></Row>
 	</EnglishText>
 </Database>

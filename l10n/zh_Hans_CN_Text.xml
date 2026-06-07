@@ -167,7 +167,7 @@
 			<Text>设置危机的推进速度。[n] [BLIST][LI] 第1阶段：于85%开始。[LI] 第2阶段：于90%开始。[LI] 第3阶段：于95%开始。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>设置地图上[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然奇观的数量。[n] [BLIST][LI] 无：0个自然奇观。[LI] 减半：自然奇观减少50%。[LI] 默认：自然奇观不变。[LI] 更多：自然奇观增加50%。[LI] 双倍：自然奇观增加100%。[/BLIST]</Text>
+			<Text>设置地图上[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然奇观的数量。[n] [BLIST][LI] 禁用：0个自然奇观。[LI] 减半：自然奇观减少50%。[LI] 默认：自然奇观不变。[LI] 更多：自然奇观增加50%。[LI] 双倍：自然奇观增加100%。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE" Language="zh_Hans_CN">
 			<Text>设置地图上[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然奇观的数量。[n] 地图大小[n] [BLIST][LI] 极小：0个自然奇观。[LI] 小：0个自然奇观。[LI] 标准：0个自然奇观。[LI] 大：0个自然奇观。[LI] 巨大：0个自然奇观。[/BLIST]</Text>
@@ -193,14 +193,32 @@
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>Zatygold的Advanced Settings Pro[n] [n]本模组通过在高级设置菜单中添加更多选项，扩展单人和多人游戏的对局设置，让你能够微调通常无法调整的系统。</Text>
 		</Replace>
-		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDEROPTIONS" Language="zh_Hans_CN">
-			<Text>自然奇观设置</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>决定该自然奇观能否出现在地图上。</Text>
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="zh_Hans_CN">
 			<Text>自然奇观选择</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="zh_Hans_CN">
+			<Text>检测到模组冲突</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_BODY_HEADER" Language="zh_Hans_CN">
+			<Text>以下已启用的模组与Zatygold的Advanced Settings Pro修改相同的设置，可能导致问题：</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_BODY_FOOTER" Language="zh_Hans_CN">
+			<Text>若要永久移除模组，请在模组浏览器中取消订阅。你也可以立即禁用它们。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="zh_Hans_CN">
+			<Text>禁用冲突模组</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="zh_Hans_CN">
+			<Text>保留两者</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM" Language="zh_Hans_CN">
+			<Text>自定义：为每个时代单独设置定居点上限。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置该时代的定居点上限。[n]仅当定居点上限设为自定义时生效。</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

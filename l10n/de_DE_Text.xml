@@ -167,7 +167,7 @@
 			<Text>Legt das Tempo der Krisen fest.[n] [BLIST][LI] Phase 1: Beginnt bei 85%.[LI] Phase 2: Beginnt bei 90%.[LI] Phase 3: Beginnt bei 95%.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="de_DE">
-			<Text>Legt die Anzahl der [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] Naturwunder auf der Karte fest.[n] [BLIST][LI] Keine: 0 Naturwunder.[LI] Halb: 50% weniger Naturwunder.[LI] Standard: keine Änderung der Naturwunder.[LI] Mehr: 50% mehr Naturwunder.[LI] Doppelt: 100% mehr Naturwunder.[/BLIST]</Text>
+			<Text>Legt die Anzahl der [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] Naturwunder auf der Karte fest.[n] [BLIST][LI] Deaktiviert: 0 Naturwunder.[LI] Halb: 50% weniger Naturwunder.[LI] Standard: keine Änderung der Naturwunder.[LI] Mehr: 50% mehr Naturwunder.[LI] Doppelt: 100% mehr Naturwunder.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE" Language="de_DE">
 			<Text>Legt die Anzahl der [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] Naturwunder auf der Karte fest.[n] Kartengröße[n] [BLIST][LI] Winzig: 0 Naturwunder.[LI] Klein: 0 Naturwunder.[LI] Standard: 0 Naturwunder.[LI] Groß: 0 Naturwunder.[LI] Riesig: 0 Naturwunder.[/BLIST]</Text>
@@ -193,14 +193,32 @@
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="de_DE">
 			<Text>Zatygolds Advanced Settings Pro[n] [n]Diese Mod erweitert die Spielerstellung für Einzel- und Mehrspieler um zusätzliche Optionen im Menü für erweiterte Einstellungen. Sie ermöglicht die Feinabstimmung von Systemen, die normalerweise nicht anpassbar sind.</Text>
 		</Replace>
-		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDEROPTIONS" Language="de_DE">
-			<Text>Naturwunder-Einstellungen</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="de_DE">
 			<Text>Legt fest, ob dieses Naturwunder auf der Karte erscheinen kann.</Text>
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="de_DE">
 			<Text>Naturwunder-Auswahl</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="de_DE">
+			<Text>Mod-Konflikt erkannt</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_BODY_HEADER" Language="de_DE">
+			<Text>Die folgenden aktivierten Mods ändern dieselben Einstellungen wie Zatygolds Advanced Settings Pro und können Probleme verursachen:</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_BODY_FOOTER" Language="de_DE">
+			<Text>Um eine Mod dauerhaft zu entfernen, deabonniere sie im Mod-Browser. Du kannst die Mods auch jetzt deaktivieren.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="de_DE">
+			<Text>Konfliktmods deaktivieren</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="de_DE">
+			<Text>Beide behalten</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM" Language="de_DE">
+			<Text>Benutzerdefiniert: Lege das Siedlungslimit für jedes Zeitalter einzeln fest.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="de_DE">
+			<Text>Legt das Siedlungslimit dieses Zeitalters fest.[n]Gilt nur, wenn das Siedlungslimit auf Benutzerdefiniert steht.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

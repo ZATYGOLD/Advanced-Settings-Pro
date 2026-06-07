@@ -167,7 +167,7 @@
 			<Text>Imposta il ritmo delle crisi.[n] [BLIST][LI] Fase 1: inizia al 85%.[LI] Fase 2: inizia al 90%.[LI] Fase 3: inizia al 95%.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="it_IT">
-			<Text>Imposta la quantità di [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] meraviglie naturali sulla mappa.[n] [BLIST][LI] Nessuna: 0 meraviglie naturali.[LI] Metà: 50% di meraviglie naturali in meno.[LI] Predefinito: nessuna modifica.[LI] Più: 50% di meraviglie naturali in più.[LI] Doppio: 100% di meraviglie naturali in più.[/BLIST]</Text>
+			<Text>Imposta la quantità di [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] meraviglie naturali sulla mappa.[n] [BLIST][LI] Disattivato: 0 meraviglie naturali.[LI] Metà: 50% di meraviglie naturali in meno.[LI] Predefinito: nessuna modifica.[LI] Più: 50% di meraviglie naturali in più.[LI] Doppio: 100% di meraviglie naturali in più.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE" Language="it_IT">
 			<Text>Imposta la quantità di [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] meraviglie naturali sulla mappa.[n] Dimensione della mappa[n] [BLIST][LI] Minuscola: 0 meraviglie naturali.[LI] Piccola: 0 meraviglie naturali.[LI] Standard: 0 meraviglie naturali.[LI] Grande: 0 meraviglie naturali.[LI] Enorme: 0 meraviglie naturali.[/BLIST]</Text>
@@ -193,14 +193,32 @@
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="it_IT">
 			<Text>Advanced Settings Pro di Zatygold[n] [n]Questa mod amplia la configurazione della partita per giocatore singolo e multiplayer con opzioni aggiuntive nel menu delle impostazioni avanzate. Consente di regolare con precisione sistemi normalmente non modificabili.</Text>
 		</Replace>
-		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDEROPTIONS" Language="it_IT">
-			<Text>Impostazioni delle meraviglie naturali</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="it_IT">
 			<Text>Determina se questa meraviglia naturale può comparire sulla mappa.</Text>
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="it_IT">
 			<Text>Selezione delle meraviglie naturali</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="it_IT">
+			<Text>Conflitto tra mod rilevato</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_BODY_HEADER" Language="it_IT">
+			<Text>Le seguenti mod attive modificano le stesse impostazioni di Advanced Settings Pro di Zatygold e possono causare problemi:</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_BODY_FOOTER" Language="it_IT">
+			<Text>Per rimuovere una mod in modo permanente, annulla l'iscrizione nel browser delle mod. Puoi anche disattivarle ora.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="it_IT">
+			<Text>Disattiva mod in conflitto</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="it_IT">
+			<Text>Mantieni entrambe</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM" Language="it_IT">
+			<Text>Personalizzato: imposta il limite di insediamenti per ogni epoca singolarmente.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="it_IT">
+			<Text>Imposta il limite di insediamenti di questa epoca.[n]Si applica solo quando il limite di insediamenti è su Personalizzato.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>
