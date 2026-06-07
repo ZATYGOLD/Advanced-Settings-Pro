@@ -214,5 +214,11 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="es_ES">
 			<Text>Mantener ambos</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM" Language="es_ES">
+			<Text>Personalizado: establece el límite de asentamientos de cada era individualmente.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="es_ES">
+			<Text>Establece el límite de asentamientos de esta era.[n]Solo se aplica cuando el límite de asentamientos está en Personalizado.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

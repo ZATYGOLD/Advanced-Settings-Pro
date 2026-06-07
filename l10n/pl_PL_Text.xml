@@ -214,5 +214,11 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="pl_PL">
 			<Text>Zachowaj oba</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM" Language="pl_PL">
+			<Text>Niestandardowe: ustaw limit osad dla każdej epoki osobno.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="pl_PL">
+			<Text>Ustawia limit osad tej epoki.[n]Działa tylko, gdy limit osad ustawiono na Niestandardowe.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

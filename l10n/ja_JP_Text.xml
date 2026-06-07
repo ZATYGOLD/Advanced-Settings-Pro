@@ -214,5 +214,11 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="ja_JP">
 			<Text>両方とも使う</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM" Language="ja_JP">
+			<Text>カスタム：時代ごとに入植地の上限を個別に設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="ja_JP">
+			<Text>この時代の入植地上限を設定します。[n]入植地の上限がカスタムの場合のみ適用されます。</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

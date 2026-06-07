@@ -214,5 +214,11 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="ko_KR">
 			<Text>둘 다 유지</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM" Language="ko_KR">
+			<Text>사용자 지정: 시대별로 정착지 제한을 개별 설정합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="ko_KR">
+			<Text>이 시대의 정착지 제한을 설정합니다.[n]정착지 제한이 사용자 지정일 때만 적용됩니다.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

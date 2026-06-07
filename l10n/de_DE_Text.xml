@@ -214,5 +214,11 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="de_DE">
 			<Text>Beide behalten</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM" Language="de_DE">
+			<Text>Benutzerdefiniert: Lege das Siedlungslimit für jedes Zeitalter einzeln fest.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="de_DE">
+			<Text>Legt das Siedlungslimit dieses Zeitalters fest.[n]Gilt nur, wenn das Siedlungslimit auf Benutzerdefiniert steht.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

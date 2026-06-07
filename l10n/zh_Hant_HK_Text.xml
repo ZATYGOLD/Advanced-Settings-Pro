@@ -214,5 +214,11 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="zh_Hant_HK">
 			<Text>保留兩者</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM" Language="zh_Hant_HK">
+			<Text>自訂：為每個時代單獨設定聚居地上限。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>設定該時代的聚居地上限。[n]僅當聚居地上限設為自訂時生效。</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

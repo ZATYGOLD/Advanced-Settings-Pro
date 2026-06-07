@@ -214,5 +214,11 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="ru_RU">
 			<Text>Оставить оба</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM" Language="ru_RU">
+			<Text>Особый: задайте лимит поселений для каждой эпохи отдельно.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="ru_RU">
+			<Text>Задаёт лимит поселений этой эпохи.[n]Действует только если лимит поселений установлен на Особый.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>
