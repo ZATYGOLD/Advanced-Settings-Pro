@@ -13,6 +13,8 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Added a mod conflict guard: a main menu panel lists enabled conflicting mods with a one-click disable, and conflicts are also disabled automatically when starting, loading, or joining a game
 - Added a Rivers setting (Disabled, Less, Default, or More) controlling how many rivers are generated, supported on all eleven standard map types
 - Added a Disabled option to the Lakes setting that skips lake generation entirely
+- Added a Civilian Unit Cost setting mirroring Military Unit Cost
+- Added an Expensive option (50% more expensive) to both unit cost settings
 
 ### 0.6.1
 
@@ -40,7 +42,8 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Disaster Frequency: Disabled, Light, Moderate, or Catastrophic
 - Settler Speed: Slow, Default, or Fast
 - Treasure Convoy Speed: Slow, Default, or Fast
-- Military Unit Cost: Cheaper, Default, or Expensive
+- Military Unit Cost: Less, Default, More, or Expensive
+- Civilian Unit Cost: Less, Default, More, or Expensive
 - Natural Wonders: Disabled, Half, Default, More, or Double
 - Natural Wonder Selection: Enabled or Disabled for each of the 20 natural wonders, including DLC wonders
 - Lakes: Disabled, Less, Default, or More

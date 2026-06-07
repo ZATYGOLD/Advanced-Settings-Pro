@@ -146,7 +146,7 @@
 			<Text>入植地間の最小距離を設定します。[n] [BLIST][LI] 少ない：2タイル。[LI] デフォルト：3タイル。[LI] 多い：4タイル。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="ja_JP">
-			<Text>戦闘ユニットの生産コストを設定します。[n] [BLIST][LI] 少ない：25%割安。[LI] デフォルト：割引なし。[LI] 多い：25%割高。[/BLIST]</Text>
+			<Text>戦闘ユニットの生産コストを設定します。[n] [BLIST][LI] 少ない：25%割安。[LI] デフォルト：割引なし。[LI] 多い：25%割高。[LI] 高価：50%割高。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="ja_JP">
 			<Text>危機の進行速度を設定します。</Text>
@@ -240,6 +240,15 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="ja_JP">
 			<Text>湖は生成されません。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="ja_JP">
+			<Text>高価</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME" Language="ja_JP">
+			<Text>民間ユニットのコスト</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="ja_JP">
+			<Text>民間ユニットの生産コストを設定します。[n] [BLIST][LI] 少ない：25%割安。[LI] デフォルト：割引なし。[LI] 多い：25%割高。[LI] 高価：50%割高。[/BLIST]</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

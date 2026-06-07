@@ -146,7 +146,7 @@
 			<Text>Задаёт минимальное расстояние между поселениями.[n] [BLIST][LI] Меньше: 2 клеток.[LI] По умолчанию: 3 клеток.[LI] Больше: 4 клеток.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт стоимость производства боевых юнитов.[n] [BLIST][LI] Меньше: на 25% дешевле.[LI] По умолчанию: без скидки.[LI] Больше: на 25% дороже.[/BLIST]</Text>
+			<Text>Задаёт стоимость производства боевых юнитов.[n] [BLIST][LI] Меньше: на 25% дешевле.[LI] По умолчанию: без скидки.[LI] Больше: на 25% дороже.[LI] Дорого: на 50% дороже.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="ru_RU">
 			<Text>Задаёт темп кризисов.</Text>
@@ -240,6 +240,15 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="ru_RU">
 			<Text>Озёра не создаются.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="ru_RU">
+			<Text>Дорого</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME" Language="ru_RU">
+			<Text>Стоимость гражданских юнитов</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="ru_RU">
+			<Text>Задаёт стоимость производства гражданских юнитов.[n] [BLIST][LI] Меньше: на 25% дешевле.[LI] По умолчанию: без скидки.[LI] Больше: на 25% дороже.[LI] Дорого: на 50% дороже.[/BLIST]</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

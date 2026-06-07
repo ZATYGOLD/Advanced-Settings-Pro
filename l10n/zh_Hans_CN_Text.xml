@@ -146,7 +146,7 @@
 			<Text>设置定居点之间的最小距离。[n] [BLIST][LI] 更少：2格。[LI] 默认：3格。[LI] 更多：4格。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>设置战斗单位的生产花费。[n] [BLIST][LI] 更少：便宜25%。[LI] 默认：无折扣。[LI] 更多：昂贵25%。[/BLIST]</Text>
+			<Text>设置战斗单位的生产花费。[n] [BLIST][LI] 更少：便宜25%。[LI] 默认：无折扣。[LI] 更多：昂贵25%。[LI] 昂贵：昂贵50%。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>设置危机的推进速度。</Text>
@@ -240,6 +240,15 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="zh_Hans_CN">
 			<Text>不生成湖泊。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="zh_Hans_CN">
+			<Text>昂贵</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME" Language="zh_Hans_CN">
+			<Text>平民单位花费</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置平民单位的生产花费。[n] [BLIST][LI] 更少：便宜25%。[LI] 默认：无折扣。[LI] 更多：昂贵25%。[LI] 昂贵：昂贵50%。[/BLIST]</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

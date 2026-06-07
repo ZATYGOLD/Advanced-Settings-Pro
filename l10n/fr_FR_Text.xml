@@ -146,7 +146,7 @@
 			<Text>Définit la distance minimale entre les colonies.[n] [BLIST][LI] Moins : 2 cases.[LI] Par défaut : 3 cases.[LI] Plus : 4 cases.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="fr_FR">
-			<Text>Définit le coût de production des unités de combat.[n] [BLIST][LI] Moins : 25% moins chères.[LI] Par défaut : aucune réduction.[LI] Plus : 25% plus chères.[/BLIST]</Text>
+			<Text>Définit le coût de production des unités de combat.[n] [BLIST][LI] Moins : 25% moins chères.[LI] Par défaut : aucune réduction.[LI] Plus : 25% plus chères.[LI] Cher : 50% plus chères.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="fr_FR">
 			<Text>Définit le rythme des crises.</Text>
@@ -240,6 +240,15 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="fr_FR">
 			<Text>Aucun lac n'est généré.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="fr_FR">
+			<Text>Cher</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME" Language="fr_FR">
+			<Text>Coût des unités civiles</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="fr_FR">
+			<Text>Définit le coût de production des unités civiles.[n] [BLIST][LI] Moins : 25% moins chères.[LI] Par défaut : aucune réduction.[LI] Plus : 25% plus chères.[LI] Cher : 50% plus chères.[/BLIST]</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

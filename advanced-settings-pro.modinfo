@@ -277,6 +277,34 @@
 				<Value>ZG_COMBAT_UNIT_COST_LESS</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
+		<Criteria id="premium-military-units">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>CombatUnitCostKey</ConfigurationId>
+				<Value>ZG_COMBAT_UNIT_COST_EXPENSIVE</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="expensive-civilian-units">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>CivilianUnitCostKey</ConfigurationId>
+				<Value>ZG_CIVILIAN_UNIT_COST_MORE</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="cheaper-civilian-units">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>CivilianUnitCostKey</ConfigurationId>
+				<Value>ZG_CIVILIAN_UNIT_COST_LESS</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="premium-civilian-units">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>CivilianUnitCostKey</ConfigurationId>
+				<Value>ZG_CIVILIAN_UNIT_COST_EXPENSIVE</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
 
 <!--************************* CRITERIA: CRISIS PACING ***************************-->
 
@@ -2869,6 +2897,46 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/units/military-unit-cost-less.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-premium-military-units" scope="game" criteria="premium-military-units">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/units/military-unit-cost-expensive.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-expensive-civilian-units" scope="game" criteria="expensive-civilian-units">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/units/civilian-unit-cost-more.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-cheaper-civilian-units" scope="game" criteria="cheaper-civilian-units">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/units/civilian-unit-cost-less.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-premium-civilian-units" scope="game" criteria="premium-civilian-units">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/units/civilian-unit-cost-expensive.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

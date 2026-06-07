@@ -21,6 +21,7 @@
 		<Row Tag="LOC_ZG_CRAWL_NAME"><Text>Crawl</Text></Row>
 		<Row Tag="LOC_ZG_MORE_NAME"><Text>More</Text></Row>
 		<Row Tag="LOC_ZG_LESS_NAME"><Text>Less</Text></Row>
+		<Row Tag="LOC_ZG_EXPENSIVE_NAME"><Text>Expensive</Text></Row>
 
 	<!-- Setting Names -->
 		<Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME"><Text>Settler Speed</Text></Row>
@@ -35,6 +36,7 @@
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME"><Text>Modern</Text></Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME"><Text>Settlement Distance</Text></Row>
 		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_NAME"><Text>Military Unit Cost</Text></Row>
+		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME"><Text>Civilian Unit Cost</Text></Row>
 		<Row Tag="LOC_ZG_CRISIS_SPEED_NAME"><Text>Crisis Speed</Text></Row>
 		<Row Tag="LOC_ZG_NATURAL_WONDER_COUNT_NAME"><Text>Natural Wonders</Text></Row>
 		<Row Tag="LOC_ZG_LAKE_GENERATION_NAME"><Text>Lakes</Text></Row>
@@ -189,7 +191,17 @@
 				[n] [BLIST]
 				[LI] Less: 25% Cheaper.
 				[LI] Default: No Discount.
-				[LI] More: 25% More Expensive.[/BLIST]
+				[LI] More: 25% More Expensive.
+				[LI] Expensive: 50% More Expensive.[/BLIST]
+			</Text>
+		</Row>
+		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION">
+			<Text>Sets production cost of civilian units.
+				[n] [BLIST]
+				[LI] Less: 25% Cheaper.
+				[LI] Default: No Discount.
+				[LI] More: 25% More Expensive.
+				[LI] Expensive: 50% More Expensive.[/BLIST]
 			</Text>
 		</Row>
 

@@ -146,7 +146,7 @@
 			<Text>Establece la distancia mínima entre asentamientos.[n] [BLIST][LI] Menos: 2 casillas.[LI] Predeterminado: 3 casillas.[LI] Más: 4 casillas.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="es_ES">
-			<Text>Establece el coste de producción de las unidades de combate.[n] [BLIST][LI] Menos: 25% más baratas.[LI] Predeterminado: sin descuento.[LI] Más: 25% más caras.[/BLIST]</Text>
+			<Text>Establece el coste de producción de las unidades de combate.[n] [BLIST][LI] Menos: 25% más baratas.[LI] Predeterminado: sin descuento.[LI] Más: 25% más caras.[LI] Caro: 50% más caras.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="es_ES">
 			<Text>Establece el ritmo de las crisis.</Text>
@@ -240,6 +240,15 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="es_ES">
 			<Text>No se generan lagos.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="es_ES">
+			<Text>Caro</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME" Language="es_ES">
+			<Text>Coste de unidades civiles</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="es_ES">
+			<Text>Establece el coste de producción de las unidades civiles.[n] [BLIST][LI] Menos: 25% más baratas.[LI] Predeterminado: sin descuento.[LI] Más: 25% más caras.[LI] Caro: 50% más caras.[/BLIST]</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

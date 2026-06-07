@@ -146,7 +146,7 @@
 			<Text>정착지 간 최소 거리를 설정합니다.[n] [BLIST][LI] 적음: 2타일.[LI] 기본: 3타일.[LI] 많음: 4타일.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="ko_KR">
-			<Text>전투 유닛의 생산 비용을 설정합니다.[n] [BLIST][LI] 적음: 25% 저렴.[LI] 기본: 할인 없음.[LI] 많음: 25% 비쌈.[/BLIST]</Text>
+			<Text>전투 유닛의 생산 비용을 설정합니다.[n] [BLIST][LI] 적음: 25% 저렴.[LI] 기본: 할인 없음.[LI] 많음: 25% 비쌈.[LI] 비쌈: 50% 비쌈.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="ko_KR">
 			<Text>위기의 진행 속도를 설정합니다.</Text>
@@ -240,6 +240,15 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="ko_KR">
 			<Text>호수가 생성되지 않습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="ko_KR">
+			<Text>비쌈</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME" Language="ko_KR">
+			<Text>민간 유닛 비용</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="ko_KR">
+			<Text>민간 유닛의 생산 비용을 설정합니다.[n] [BLIST][LI] 적음: 25% 저렴.[LI] 기본: 할인 없음.[LI] 많음: 25% 비쌈.[LI] 비쌈: 50% 비쌈.[/BLIST]</Text>
 		</Replace>
 	</LocalizedText>
 </Database>
