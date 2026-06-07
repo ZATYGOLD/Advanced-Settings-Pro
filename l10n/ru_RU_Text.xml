@@ -238,5 +238,8 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED" Language="ru_RU">
 			<Text>Реки не создаются.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="ru_RU">
+			<Text>Озёра не создаются.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

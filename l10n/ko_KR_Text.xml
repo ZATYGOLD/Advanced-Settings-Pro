@@ -238,5 +238,8 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED" Language="ko_KR">
 			<Text>강이 생성되지 않습니다.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="ko_KR">
+			<Text>호수가 생성되지 않습니다.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

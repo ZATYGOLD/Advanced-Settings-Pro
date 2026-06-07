@@ -1,6 +1,7 @@
 // Copy of {base-standard}maps/shattered-seas-voronoi.js with a tier-aware river model;
 // imports are repointed at the base module so everything else stays stock.
 import { zgModelRivers } from './zg-map-rivers.js';
+import { zgGenerateLakes } from './zg-map-lakes.js';
 import { assignAdvancedStartRegions } from 'fs://game/base-standard/maps/assign-advanced-start-region.js';
 import { PlayerRegion, assignStartPositionsFromTiles } from 'fs://game/base-standard/maps/assign-starting-plots.js';
 import { generateDiscoveries } from 'fs://game/base-standard/maps/discovery-generator.js';
@@ -92,7 +93,7 @@ async function generateMap() {
   TerrainBuilder.validateAndFixTerrain();
   AreaBuilder.recalculateAreas();
   TerrainBuilder.stampContinents();
-  generateLakes(iWidth, iHeight, iTilesPerLake);
+  zgGenerateLakes(iWidth, iHeight, iTilesPerLake);
   AreaBuilder.recalculateAreas();
   TerrainBuilder.buildElevation();
   addHills(iWidth, iHeight);

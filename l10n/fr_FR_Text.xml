@@ -238,5 +238,8 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED" Language="fr_FR">
 			<Text>Aucune rivière n'est générée.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="fr_FR">
+			<Text>Aucun lac n'est généré.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>
