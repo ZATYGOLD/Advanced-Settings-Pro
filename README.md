@@ -4,6 +4,14 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ## Version History
 
+### 0.7.0
+
+- Added a Custom option to Settlement Limit with individual Antiquity, Exploration, and Modern limits, each adjustable from 1 to 50
+- The per-age settlement limits follow the curated Less, Default, and More values, and editing one switches the Settlement Limit to Custom automatically
+- Renamed the Natural Wonders count option None to Disabled and moved the setting to Map Settings
+- The Natural Wonders count and the per-wonder Selection toggles now stay in sync: Disabled turns every wonder off, leaving Disabled turns them back on, disabling every wonder sets the count to Disabled, and a selection too small for the chosen count is reset
+- Added a mod conflict guard: a main menu panel lists enabled conflicting mods with a one-click disable, and conflicts are also disabled automatically when starting, loading, or joining a game
+
 ### 0.6.1
 
 - Added Natural Wonder Settings and Natural Wonder Selection categories: a wonder count setting plus per-wonder Enabled/Disabled toggles for full control over which natural wonders can appear
@@ -31,11 +39,12 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Settler Speed: Slow, Default, or Fast
 - Treasure Convoy Speed: Slow, Default, or Fast
 - Military Unit Cost: Cheaper, Default, or Expensive
-- Natural Wonders: None, Half, Default, More, or Double
+- Natural Wonders: Disabled, Half, Default, More, or Double
 - Natural Wonder Selection: Enabled or Disabled for each of the 20 natural wonders, including DLC wonders
 - Lakes: Less, Default, or More
 - Crisis Speed: Crawl, Slow, Default, Quick, or Fast
-- Settlement Limit: Less, Default, or More
+- Settlement Limit: Less, Default, More, or Custom
+- Antiquity, Exploration, and Modern settlement limits: 1 to 50 each, applied when Settlement Limit is set to Custom
 - Settlement Distance: Less, Default, or More
 - Initial Independent Amount: None, Less, Default, or More
 - Independent Spacing: Less, Default, or More
@@ -51,6 +60,7 @@ config/                         Setup screen parameters (shell scope)
 data/                           Gameplay adjustments (game scope), grouped by system
 l10n/                           Localized text for the 11 non-English languages
 text/                           English source strings and shared localization data
+ui/                             Shell scripts: mod conflict guard and setup rule sync
 ```
 
 ## Requirements
