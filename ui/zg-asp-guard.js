@@ -7,10 +7,11 @@ import { DialogBoxManager } from 'fs://game/core/ui/dialog-box/manager-dialog-bo
 // changes its modId in an update, set LOG_INSTALLED_MODS to true, launch to
 // the main menu once, and refresh the value from UI.log.
 const CONFLICTING_MODS = [
-	{ workshopId: "3542861519", modId: "mws-settlement-limit-settings" },     // Settlement Limit Settings
-	{ workshopId: "3601908082", modId: "Mattifus's Natural Wonder Setting" }, // Natural Wonders Setting
-	{ workshopId: "3542338658", modId: "more-natural-wonders" },              // More Natural Wonders
-	{ workshopId: "3684060469", modId: "NaturalWonderManager" },              // Natural Wonder Manager
+	{ workshopId: "3542861519", modId: "mws-settlement-limit-settings" },
+	{ workshopId: "3601908082", modId: "Mattifus's Natural Wonder Setting" },
+	{ workshopId: "3542338658", modId: "more-natural-wonders" },            
+	{ workshopId: "3684060469", modId: "NaturalWonderManager" },  
+	{ workshopId: "3737965906", modId: "phaetom-Settlement" },        
 ];
 
 const CONFLICTING_MOD_IDS = CONFLICTING_MODS.map((entry) => entry.modId);
