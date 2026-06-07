@@ -167,7 +167,7 @@
 			<Text>設定危機的推進速度。[n] [BLIST][LI] 第1階段：於85%開始。[LI] 第2階段：於90%開始。[LI] 第3階段：於95%開始。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>設定地圖上[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然奇觀的數量。[n] [BLIST][LI] 無：0個自然奇觀。[LI] 減半：自然奇觀減少50%。[LI] 預設：自然奇觀不變。[LI] 更多：自然奇觀增加50%。[LI] 雙倍：自然奇觀增加100%。[/BLIST]</Text>
+			<Text>設定地圖上[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然奇觀的數量。[n] [BLIST][LI] 停用：0個自然奇觀。[LI] 減半：自然奇觀減少50%。[LI] 預設：自然奇觀不變。[LI] 更多：自然奇觀增加50%。[LI] 雙倍：自然奇觀增加100%。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE" Language="zh_Hant_HK">
 			<Text>設定地圖上[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然奇觀的數量。[n] 地圖大小[n] [BLIST][LI] 極小：0個自然奇觀。[LI] 小：0個自然奇觀。[LI] 標準：0個自然奇觀。[LI] 大：0個自然奇觀。[LI] 巨大：0個自然奇觀。[/BLIST]</Text>
@@ -192,9 +192,6 @@
 		</Replace>
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>Zatygold的Advanced Settings Pro[n] [n]本模組透過在進階設定選單中加入更多選項，擴充單人與多人遊戲的對局設定，讓你能夠微調通常無法調整的系統。</Text>
-		</Replace>
-		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDEROPTIONS" Language="zh_Hant_HK">
-			<Text>自然奇觀設定</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>決定該自然奇觀能否出現在地圖上。</Text>

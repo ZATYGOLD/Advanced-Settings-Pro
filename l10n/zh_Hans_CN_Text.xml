@@ -167,7 +167,7 @@
 			<Text>设置危机的推进速度。[n] [BLIST][LI] 第1阶段：于85%开始。[LI] 第2阶段：于90%开始。[LI] 第3阶段：于95%开始。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>设置地图上[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然奇观的数量。[n] [BLIST][LI] 无：0个自然奇观。[LI] 减半：自然奇观减少50%。[LI] 默认：自然奇观不变。[LI] 更多：自然奇观增加50%。[LI] 双倍：自然奇观增加100%。[/BLIST]</Text>
+			<Text>设置地图上[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然奇观的数量。[n] [BLIST][LI] 禁用：0个自然奇观。[LI] 减半：自然奇观减少50%。[LI] 默认：自然奇观不变。[LI] 更多：自然奇观增加50%。[LI] 双倍：自然奇观增加100%。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE" Language="zh_Hans_CN">
 			<Text>设置地图上[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然奇观的数量。[n] 地图大小[n] [BLIST][LI] 极小：0个自然奇观。[LI] 小：0个自然奇观。[LI] 标准：0个自然奇观。[LI] 大：0个自然奇观。[LI] 巨大：0个自然奇观。[/BLIST]</Text>
@@ -192,9 +192,6 @@
 		</Replace>
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>Zatygold的Advanced Settings Pro[n] [n]本模组通过在高级设置菜单中添加更多选项，扩展单人和多人游戏的对局设置，让你能够微调通常无法调整的系统。</Text>
-		</Replace>
-		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDEROPTIONS" Language="zh_Hans_CN">
-			<Text>自然奇观设置</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>决定该自然奇观能否出现在地图上。</Text>

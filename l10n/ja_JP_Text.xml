@@ -167,7 +167,7 @@
 			<Text>危機の進行速度を設定します。[n] [BLIST][LI] 第1段階：85%で開始。[LI] 第2段階：90%で開始。[LI] 第3段階：95%で開始。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="ja_JP">
-			<Text>マップ上の[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然遺産の数を設定します。[n] [BLIST][LI] なし：自然遺産0。[LI] 半分：自然遺産50%減。[LI] デフォルト：変更なし。[LI] 多い：自然遺産50%増。[LI] 2倍：自然遺産100%増。[/BLIST]</Text>
+			<Text>マップ上の[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然遺産の数を設定します。[n] [BLIST][LI] 無効：自然遺産0。[LI] 半分：自然遺産50%減。[LI] デフォルト：変更なし。[LI] 多い：自然遺産50%増。[LI] 2倍：自然遺産100%増。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE" Language="ja_JP">
 			<Text>マップ上の[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然遺産の数を設定します。[n] マップサイズ[n] [BLIST][LI] 極小：自然遺産0。[LI] 小：自然遺産0。[LI] 標準：自然遺産0。[LI] 大：自然遺産0。[LI] 特大：自然遺産0。[/BLIST]</Text>
@@ -192,9 +192,6 @@
 		</Replace>
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="ja_JP">
 			<Text>ZatygoldのAdvanced Settings Pro[n] [n]このModは、詳細設定メニューに追加オプションを加えることで、シングルプレイヤーとマルチプレイヤーのゲーム設定を拡張します。通常は調整できないシステムを細かく設定できます。</Text>
-		</Replace>
-		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDEROPTIONS" Language="ja_JP">
-			<Text>自然遺産設定</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="ja_JP">
 			<Text>この自然遺産がマップに出現できるかどうかを設定します。</Text>

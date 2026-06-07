@@ -167,7 +167,7 @@
 			<Text>Legt das Tempo der Krisen fest.[n] [BLIST][LI] Phase 1: Beginnt bei 85%.[LI] Phase 2: Beginnt bei 90%.[LI] Phase 3: Beginnt bei 95%.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="de_DE">
-			<Text>Legt die Anzahl der [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] Naturwunder auf der Karte fest.[n] [BLIST][LI] Keine: 0 Naturwunder.[LI] Halb: 50% weniger Naturwunder.[LI] Standard: keine Änderung der Naturwunder.[LI] Mehr: 50% mehr Naturwunder.[LI] Doppelt: 100% mehr Naturwunder.[/BLIST]</Text>
+			<Text>Legt die Anzahl der [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] Naturwunder auf der Karte fest.[n] [BLIST][LI] Deaktiviert: 0 Naturwunder.[LI] Halb: 50% weniger Naturwunder.[LI] Standard: keine Änderung der Naturwunder.[LI] Mehr: 50% mehr Naturwunder.[LI] Doppelt: 100% mehr Naturwunder.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE" Language="de_DE">
 			<Text>Legt die Anzahl der [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] Naturwunder auf der Karte fest.[n] Kartengröße[n] [BLIST][LI] Winzig: 0 Naturwunder.[LI] Klein: 0 Naturwunder.[LI] Standard: 0 Naturwunder.[LI] Groß: 0 Naturwunder.[LI] Riesig: 0 Naturwunder.[/BLIST]</Text>
@@ -192,9 +192,6 @@
 		</Replace>
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="de_DE">
 			<Text>Zatygolds Advanced Settings Pro[n] [n]Diese Mod erweitert die Spielerstellung für Einzel- und Mehrspieler um zusätzliche Optionen im Menü für erweiterte Einstellungen. Sie ermöglicht die Feinabstimmung von Systemen, die normalerweise nicht anpassbar sind.</Text>
-		</Replace>
-		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDEROPTIONS" Language="de_DE">
-			<Text>Naturwunder-Einstellungen</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="de_DE">
 			<Text>Legt fest, ob dieses Naturwunder auf der Karte erscheinen kann.</Text>

@@ -511,6 +511,7 @@
 			<Actions>
 				<UIScripts>
 					<Item>ui/zg-asp-guard.js</Item>
+					<Item>ui/zg-setup-sync.js</Item>
 				</UIScripts>
 				<UpdateText>
 					<Item>text/en_us/ui-shell-text.xml</Item>

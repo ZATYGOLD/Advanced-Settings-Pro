@@ -167,7 +167,7 @@
 			<Text>Określa tempo kryzysów.[n] [BLIST][LI] Etap 1: zaczyna się przy 85%.[LI] Etap 2: zaczyna się przy 90%.[LI] Etap 3: zaczyna się przy 95%.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="pl_PL">
-			<Text>Określa liczbę [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] cudów natury na mapie.[n] [BLIST][LI] Brak: 0 cudów natury.[LI] Połowa: o 50% mniej cudów natury.[LI] Domyślne: bez zmian.[LI] Więcej: o 50% więcej cudów natury.[LI] Podwójnie: o 100% więcej cudów natury.[/BLIST]</Text>
+			<Text>Określa liczbę [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] cudów natury na mapie.[n] [BLIST][LI] Wyłączone: 0 cudów natury.[LI] Połowa: o 50% mniej cudów natury.[LI] Domyślne: bez zmian.[LI] Więcej: o 50% więcej cudów natury.[LI] Podwójnie: o 100% więcej cudów natury.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE" Language="pl_PL">
 			<Text>Określa liczbę [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] cudów natury na mapie.[n] Rozmiar mapy[n] [BLIST][LI] Malutka: 0 cudów natury.[LI] Mała: 0 cudów natury.[LI] Standardowa: 0 cudów natury.[LI] Duża: 0 cudów natury.[LI] Ogromna: 0 cudów natury.[/BLIST]</Text>
@@ -192,9 +192,6 @@
 		</Replace>
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="pl_PL">
 			<Text>Advanced Settings Pro autorstwa Zatygolda[n] [n]Ten mod rozszerza konfigurację rozgrywki dla jednego gracza i trybu wieloosobowego o dodatkowe opcje w menu ustawień zaawansowanych. Pozwala precyzyjnie dostroić systemy, których normalnie nie można zmieniać.</Text>
-		</Replace>
-		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDEROPTIONS" Language="pl_PL">
-			<Text>Ustawienia cudów natury</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="pl_PL">
 			<Text>Określa, czy ten cud natury może pojawić się na mapie.</Text>

@@ -5,8 +5,7 @@
 		<Row Tag="LOC_GROUPID_ZG_UNITOPTIONS"><Text>Unit Settings</Text></Row>
 		<Row Tag="LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS"><Text>Independent Power Settings</Text></Row>
 		<Row Tag="LOC_GROUPID_ZG_SETTLEMENTOPTIONS"><Text>Settlement Settings</Text></Row>
-		<Row Tag="LOC_GROUPID_ZG_NATURALWONDEROPTIONS"><Text>Natural Wonder Settings</Text></Row>
-		<Row Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS"><Text>Natural Wonder Selection</Text></Row>
+		<Row Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS"><Text>Natural Wonder Settings</Text></Row>
 
 	<!-- Universal Names -->
 		<Row Tag="LOC_ZG_ENABLED_NAME"><Text>Enabled</Text></Row>
@@ -252,7 +251,7 @@
 		<Row Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION">
 			<Text>Sets the amount of [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] Natural Wonders on the map.
 				[n] [BLIST]
-				[LI] None: 0 Natural Wonders.
+				[LI] Disabled: 0 Natural Wonders.
 				[LI] Half: 50% Less Natural Wonders.
 				[LI] Default: No change to the Natural Wonders.
 				[LI] More: 50% More Natural Wonders.

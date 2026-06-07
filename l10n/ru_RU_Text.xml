@@ -167,7 +167,7 @@
 			<Text>Задаёт темп кризисов.[n] [BLIST][LI] Этап 1: начинается при 85%.[LI] Этап 2: начинается при 90%.[LI] Этап 3: начинается при 95%.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт число [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] чудес природы на карте.[n] [BLIST][LI] Нет: 0 чудес природы.[LI] Половина: на 50% меньше чудес природы.[LI] По умолчанию: без изменений.[LI] Больше: на 50% больше чудес природы.[LI] Вдвое больше: на 100% больше чудес природы.[/BLIST]</Text>
+			<Text>Задаёт число [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] чудес природы на карте.[n] [BLIST][LI] Отключено: 0 чудес природы.[LI] Половина: на 50% меньше чудес природы.[LI] По умолчанию: без изменений.[LI] Больше: на 50% больше чудес природы.[LI] Вдвое больше: на 100% больше чудес природы.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE" Language="ru_RU">
 			<Text>Задаёт число [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] чудес природы на карте.[n] Размер карты[n] [BLIST][LI] Крошечная: 0 чудес природы.[LI] Малая: 0 чудес природы.[LI] Стандартная: 0 чудес природы.[LI] Большая: 0 чудес природы.[LI] Огромная: 0 чудес природы.[/BLIST]</Text>
@@ -192,9 +192,6 @@
 		</Replace>
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="ru_RU">
 			<Text>Advanced Settings Pro от Zatygold[n] [n]Этот мод расширяет настройку игры для одиночного и сетевого режимов, добавляя дополнительные параметры в меню расширенных настроек. Он позволяет тонко настраивать системы, которые обычно недоступны для изменения.</Text>
-		</Replace>
-		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDEROPTIONS" Language="ru_RU">
-			<Text>Настройки чудес природы</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="ru_RU">
 			<Text>Определяет, может ли это чудо природы появиться на карте.</Text>
