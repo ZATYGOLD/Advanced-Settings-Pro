@@ -3,7 +3,7 @@
 --*******************************************************
 -- Points every standard map entry at this mod's copy of the script,
 -- which applies the Rivers setting. Names, descriptions, start position
--- support and the Sea Level criteria follow the new file path.
+-- support and the Sea Level dependencies follow the new file path.
 
 UPDATE Maps
 SET File = '{Zatygold''s Advanced Settings Pro}maps/zg-continents-voronoi.js'
@@ -13,7 +13,7 @@ UPDATE SupportedValuesByMap
 SET Map = '{Zatygold''s Advanced Settings Pro}maps/zg-continents-voronoi.js'
 WHERE Map = '{base-standard}maps/continents-voronoi.js';
 
-UPDATE ParameterCriteria
+UPDATE ParameterDependencies
 SET ConfigurationValue = '{Zatygold''s Advanced Settings Pro}maps/zg-continents-voronoi.js'
 WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/continents-voronoi.js';
 
@@ -25,7 +25,7 @@ UPDATE SupportedValuesByMap
 SET Map = '{Zatygold''s Advanced Settings Pro}maps/zg-pangaea-voronoi.js'
 WHERE Map = '{base-standard}maps/pangaea-voronoi.js';
 
-UPDATE ParameterCriteria
+UPDATE ParameterDependencies
 SET ConfigurationValue = '{Zatygold''s Advanced Settings Pro}maps/zg-pangaea-voronoi.js'
 WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/pangaea-voronoi.js';
 
@@ -37,7 +37,7 @@ UPDATE SupportedValuesByMap
 SET Map = '{Zatygold''s Advanced Settings Pro}maps/zg-fractal-voronoi.js'
 WHERE Map = '{base-standard}maps/fractal-voronoi.js';
 
-UPDATE ParameterCriteria
+UPDATE ParameterDependencies
 SET ConfigurationValue = '{Zatygold''s Advanced Settings Pro}maps/zg-fractal-voronoi.js'
 WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/fractal-voronoi.js';
 
@@ -49,7 +49,7 @@ UPDATE SupportedValuesByMap
 SET Map = '{Zatygold''s Advanced Settings Pro}maps/zg-shattered-seas-voronoi.js'
 WHERE Map = '{base-standard}maps/shattered-seas-voronoi.js';
 
-UPDATE ParameterCriteria
+UPDATE ParameterDependencies
 SET ConfigurationValue = '{Zatygold''s Advanced Settings Pro}maps/zg-shattered-seas-voronoi.js'
 WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/shattered-seas-voronoi.js';
 
@@ -61,7 +61,7 @@ UPDATE SupportedValuesByMap
 SET Map = '{Zatygold''s Advanced Settings Pro}maps/zg-continents-plus.js'
 WHERE Map = '{base-standard}maps/continents-plus.js';
 
-UPDATE ParameterCriteria
+UPDATE ParameterDependencies
 SET ConfigurationValue = '{Zatygold''s Advanced Settings Pro}maps/zg-continents-plus.js'
 WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/continents-plus.js';
 
@@ -73,7 +73,7 @@ UPDATE SupportedValuesByMap
 SET Map = '{Zatygold''s Advanced Settings Pro}maps/zg-continents.js'
 WHERE Map = '{base-standard}maps/continents.js';
 
-UPDATE ParameterCriteria
+UPDATE ParameterDependencies
 SET ConfigurationValue = '{Zatygold''s Advanced Settings Pro}maps/zg-continents.js'
 WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/continents.js';
 
@@ -85,7 +85,7 @@ UPDATE SupportedValuesByMap
 SET Map = '{Zatygold''s Advanced Settings Pro}maps/zg-archipelago.js'
 WHERE Map = '{base-standard}maps/archipelago.js';
 
-UPDATE ParameterCriteria
+UPDATE ParameterDependencies
 SET ConfigurationValue = '{Zatygold''s Advanced Settings Pro}maps/zg-archipelago.js'
 WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/archipelago.js';
 
@@ -97,7 +97,7 @@ UPDATE SupportedValuesByMap
 SET Map = '{Zatygold''s Advanced Settings Pro}maps/zg-fractal.js'
 WHERE Map = '{base-standard}maps/fractal.js';
 
-UPDATE ParameterCriteria
+UPDATE ParameterDependencies
 SET ConfigurationValue = '{Zatygold''s Advanced Settings Pro}maps/zg-fractal.js'
 WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/fractal.js';
 
@@ -109,7 +109,7 @@ UPDATE SupportedValuesByMap
 SET Map = '{Zatygold''s Advanced Settings Pro}maps/zg-shuffle.js'
 WHERE Map = '{base-standard}maps/shuffle.js';
 
-UPDATE ParameterCriteria
+UPDATE ParameterDependencies
 SET ConfigurationValue = '{Zatygold''s Advanced Settings Pro}maps/zg-shuffle.js'
 WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/shuffle.js';
 
@@ -121,7 +121,7 @@ UPDATE SupportedValuesByMap
 SET Map = '{Zatygold''s Advanced Settings Pro}maps/zg-terra-incognita.js'
 WHERE Map = '{base-standard}maps/terra-incognita.js';
 
-UPDATE ParameterCriteria
+UPDATE ParameterDependencies
 SET ConfigurationValue = '{Zatygold''s Advanced Settings Pro}maps/zg-terra-incognita.js'
 WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/terra-incognita.js';
 
@@ -133,6 +133,25 @@ UPDATE SupportedValuesByMap
 SET Map = '{Zatygold''s Advanced Settings Pro}maps/zg-pangaea-plus.js'
 WHERE Map = '{base-standard}maps/pangaea-plus.js';
 
-UPDATE ParameterCriteria
+UPDATE ParameterDependencies
 SET ConfigurationValue = '{Zatygold''s Advanced Settings Pro}maps/zg-pangaea-plus.js'
 WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/pangaea-plus.js';
+
+-- The Sea Level parameter is defined per map through Key1/Key2 scoping, so the
+-- map-keyed parameter rows must follow the redirected file paths as well.
+
+UPDATE Parameters
+SET Key2 = '{Zatygold''s Advanced Settings Pro}maps/zg-continents-voronoi.js'
+WHERE Key1 = 'Map' AND Key2 = '{base-standard}maps/continents-voronoi.js';
+
+UPDATE Parameters
+SET Key2 = '{Zatygold''s Advanced Settings Pro}maps/zg-pangaea-voronoi.js'
+WHERE Key1 = 'Map' AND Key2 = '{base-standard}maps/pangaea-voronoi.js';
+
+UPDATE Parameters
+SET Key2 = '{Zatygold''s Advanced Settings Pro}maps/zg-fractal-voronoi.js'
+WHERE Key1 = 'Map' AND Key2 = '{base-standard}maps/fractal-voronoi.js';
+
+UPDATE Parameters
+SET Key2 = '{Zatygold''s Advanced Settings Pro}maps/zg-shattered-seas-voronoi.js'
+WHERE Key1 = 'Map' AND Key2 = '{base-standard}maps/shattered-seas-voronoi.js';
