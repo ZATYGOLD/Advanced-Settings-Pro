@@ -15,6 +15,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Added a Disabled option to the Lakes setting that skips lake generation entirely
 - Added a Civilian Unit Cost setting mirroring Military Unit Cost
 - Added an Expensive option (50% more expensive) to both unit cost settings
+- Added two new game speeds: Online 2.0 (150% faster than Standard) and Marathon 2.0 (400% slower than Standard)
 
 ### 0.6.1
 
@@ -39,6 +40,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 ## Settings
 
 - Single Player No Age Transitions: Enabled or Disabled
+- Game Speed: adds Online 2.0 (150% faster than Standard) and Marathon 2.0 (400% slower than Standard)
 - Disaster Frequency: Disabled, Light, Moderate, or Catastrophic
 - Settler Speed: Slow, Default, or Fast
 - Treasure Convoy Speed: Slow, Default, or Fast

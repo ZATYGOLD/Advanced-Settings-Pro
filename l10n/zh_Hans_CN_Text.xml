@@ -250,5 +250,17 @@
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>设置平民单位的生产花费。[n] [BLIST][LI] 更少：便宜25%。[LI] 默认：无折扣。[LI] 更多：昂贵25%。[LI] 昂贵：昂贵50%。[/BLIST]</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="zh_Hans_CN">
+			<Text>线上2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>极快的节奏。比标准快150%。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="zh_Hans_CN">
+			<Text>马拉松2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>极慢的节奏。比标准慢400%。</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

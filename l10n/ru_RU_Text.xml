@@ -250,5 +250,17 @@
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="ru_RU">
 			<Text>Задаёт стоимость производства гражданских юнитов.[n] [BLIST][LI] Меньше: на 25% дешевле.[LI] По умолчанию: без скидки.[LI] Больше: на 25% дороже.[LI] Дорого: на 50% дороже.[/BLIST]</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="ru_RU">
+			<Text>Онлайн 2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="ru_RU">
+			<Text>Чрезвычайно быстрый темп. На 150% быстрее стандартного.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="ru_RU">
+			<Text>Марафон 2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="ru_RU">
+			<Text>Чрезвычайно медленный темп. На 400% медленнее стандартного.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

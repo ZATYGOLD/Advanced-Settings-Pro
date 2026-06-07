@@ -2512,6 +2512,7 @@
 				<UpdateDatabase>
 					<Item>config/setup-parameters.sql</Item>
 					<Item>config/map-scripts.sql</Item>
+					<Item>config/game-speeds.sql</Item>
 				</UpdateDatabase>
 				<ImportFiles>
 					<Item>maps/zg-map-rivers.js</Item>
@@ -2565,6 +2566,9 @@
 					<Item>maps/zg-terra-incognita.js</Item>
 					<Item>maps/zg-pangaea-plus.js</Item>
 				</ImportFiles>
+				<UpdateDatabase>
+					<Item>data/game-speeds/new-game-speeds.sql</Item>
+				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
 

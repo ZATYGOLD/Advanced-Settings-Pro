@@ -250,5 +250,17 @@
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>設定平民單位的生產花費。[n] [BLIST][LI] 更少：便宜25%。[LI] 預設：無折扣。[LI] 更多：昂貴25%。[LI] 昂貴：昂貴50%。[/BLIST]</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="zh_Hant_HK">
+			<Text>線上2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>極快的節奏。比標準快150%。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="zh_Hant_HK">
+			<Text>馬拉松2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>極慢的節奏。比標準慢400%。</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

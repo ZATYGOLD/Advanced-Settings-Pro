@@ -394,5 +394,11 @@
 		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE"><Text>Generates more rivers, and more of them are navigable.</Text></Row>
 		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED"><Text>No rivers are generated.</Text></Row>
 		<Row Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED"><Text>No lakes are generated.</Text></Row>
+
+	<!-- Game Speeds -->
+		<Row Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME"><Text>Online 2.0</Text></Row>
+		<Row Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION"><Text>An extremely fast pace. 150% faster than Standard speed.</Text></Row>
+		<Row Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME"><Text>Marathon 2.0</Text></Row>
+		<Row Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION"><Text>An extremely slow pace. 400% slower than Standard speed.</Text></Row>
 	</EnglishText>
 </Database>

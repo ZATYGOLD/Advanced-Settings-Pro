@@ -250,5 +250,17 @@
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="ja_JP">
 			<Text>民間ユニットの生産コストを設定します。[n] [BLIST][LI] 少ない：25%割安。[LI] デフォルト：割引なし。[LI] 多い：25%割高。[LI] 高価：50%割高。[/BLIST]</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="ja_JP">
+			<Text>オンライン2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="ja_JP">
+			<Text>非常に速いペース。標準より150%速い。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="ja_JP">
+			<Text>マラソン2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="ja_JP">
+			<Text>非常に遅いペース。標準より400%遅い。</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

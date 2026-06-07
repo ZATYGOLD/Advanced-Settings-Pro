@@ -250,5 +250,17 @@
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="fr_FR">
 			<Text>Définit le coût de production des unités civiles.[n] [BLIST][LI] Moins : 25% moins chères.[LI] Par défaut : aucune réduction.[LI] Plus : 25% plus chères.[LI] Cher : 50% plus chères.[/BLIST]</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="fr_FR">
+			<Text>En ligne 2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="fr_FR">
+			<Text>Un rythme extrêmement rapide. 150% plus rapide que Standard.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="fr_FR">
+			<Text>Marathon 2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="fr_FR">
+			<Text>Un rythme extrêmement lent. 400% plus lent que Standard.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

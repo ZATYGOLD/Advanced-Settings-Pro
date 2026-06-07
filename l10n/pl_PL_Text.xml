@@ -250,5 +250,17 @@
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="pl_PL">
 			<Text>Określa koszt produkcji jednostek cywilnych.[n] [BLIST][LI] Mniej: 25% taniej.[LI] Domyślne: bez rabatu.[LI] Więcej: 25% drożej.[LI] Drogie: 50% drożej.[/BLIST]</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="pl_PL">
+			<Text>Online 2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="pl_PL">
+			<Text>Ekstremalnie szybkie tempo. 150% szybciej niż standardowe.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="pl_PL">
+			<Text>Maraton 2.0</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="pl_PL">
+			<Text>Ekstremalnie wolne tempo. 400% wolniej niż standardowe.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>
