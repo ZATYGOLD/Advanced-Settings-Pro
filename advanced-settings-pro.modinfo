@@ -2483,7 +2483,22 @@
 				</UpdateText>
 				<UpdateDatabase>
 					<Item>config/setup-parameters.sql</Item>
+					<Item>config/map-scripts.sql</Item>
 				</UpdateDatabase>
+				<ImportFiles>
+					<Item>maps/zg-map-rivers.js</Item>
+					<Item>maps/zg-continents-voronoi.js</Item>
+					<Item>maps/zg-pangaea-voronoi.js</Item>
+					<Item>maps/zg-fractal-voronoi.js</Item>
+					<Item>maps/zg-shattered-seas-voronoi.js</Item>
+					<Item>maps/zg-continents-plus.js</Item>
+					<Item>maps/zg-continents.js</Item>
+					<Item>maps/zg-archipelago.js</Item>
+					<Item>maps/zg-fractal.js</Item>
+					<Item>maps/zg-shuffle.js</Item>
+					<Item>maps/zg-terra-incognita.js</Item>
+					<Item>maps/zg-pangaea-plus.js</Item>
+				</ImportFiles>
 			</Actions>
 		</ActionGroup>
 		<ActionGroup id="zg-options-settings-game" scope="game" criteria="always">
@@ -2506,6 +2521,20 @@
 					<Item>l10n/zh_Hans_CN_Text.xml</Item>
 					<Item>l10n/zh_Hant_HK_Text.xml</Item>
 				</UpdateText>
+				<ImportFiles>
+					<Item>maps/zg-map-rivers.js</Item>
+					<Item>maps/zg-continents-voronoi.js</Item>
+					<Item>maps/zg-pangaea-voronoi.js</Item>
+					<Item>maps/zg-fractal-voronoi.js</Item>
+					<Item>maps/zg-shattered-seas-voronoi.js</Item>
+					<Item>maps/zg-continents-plus.js</Item>
+					<Item>maps/zg-continents.js</Item>
+					<Item>maps/zg-archipelago.js</Item>
+					<Item>maps/zg-fractal.js</Item>
+					<Item>maps/zg-shuffle.js</Item>
+					<Item>maps/zg-terra-incognita.js</Item>
+					<Item>maps/zg-pangaea-plus.js</Item>
+				</ImportFiles>
 			</Actions>
 		</ActionGroup>
 

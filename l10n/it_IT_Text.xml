@@ -220,5 +220,23 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="it_IT">
 			<Text>Imposta il limite di insediamenti di questa epoca.[n]Si applica solo quando il limite di insediamenti è su Personalizzato.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="it_IT">
+			<Text>Fiumi</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION" Language="it_IT">
+			<Text>Determina quanti fiumi vengono generati alla creazione della mappa.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="it_IT">
+			<Text>Generazione standard dei fiumi per il tipo di mappa scelto.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_LESS" Language="it_IT">
+			<Text>Genera meno fiumi.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="it_IT">
+			<Text>Genera più fiumi, e un numero maggiore è navigabile.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED" Language="it_IT">
+			<Text>Non vengono generati fiumi.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

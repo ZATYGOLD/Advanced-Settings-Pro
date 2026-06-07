@@ -220,5 +220,23 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="pt_BR">
 			<Text>Define o limite de assentamentos desta era.[n]Aplica-se apenas quando o limite de assentamentos está em Personalizado.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="pt_BR">
+			<Text>Rios</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION" Language="pt_BR">
+			<Text>Define quantos rios são gerados na criação do mapa.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="pt_BR">
+			<Text>Geração padrão de rios para o tipo de mapa escolhido.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_LESS" Language="pt_BR">
+			<Text>Gera menos rios.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="pt_BR">
+			<Text>Gera mais rios, e mais deles são navegáveis.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED" Language="pt_BR">
+			<Text>Nenhum rio é gerado.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

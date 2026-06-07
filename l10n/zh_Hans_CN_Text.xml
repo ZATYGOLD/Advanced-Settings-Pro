@@ -220,5 +220,23 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>设置该时代的定居点上限。[n]仅当定居点上限设为自定义时生效。</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="zh_Hans_CN">
+			<Text>河流</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置创建地图时生成的河流数量。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="zh_Hans_CN">
+			<Text>所选地图类型的标准河流生成。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_LESS" Language="zh_Hans_CN">
+			<Text>生成更少的河流。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="zh_Hans_CN">
+			<Text>生成更多的河流，其中更多可通航。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED" Language="zh_Hans_CN">
+			<Text>不生成河流。</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

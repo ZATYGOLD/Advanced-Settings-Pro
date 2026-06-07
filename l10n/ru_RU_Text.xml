@@ -220,5 +220,23 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="ru_RU">
 			<Text>Задаёт лимит поселений этой эпохи.[n]Действует только если лимит поселений установлен на Особый.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="ru_RU">
+			<Text>Реки</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION" Language="ru_RU">
+			<Text>Определяет, сколько рек создаётся при генерации карты.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="ru_RU">
+			<Text>Стандартная генерация рек для выбранного типа карты.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_LESS" Language="ru_RU">
+			<Text>Создаёт меньше рек.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="ru_RU">
+			<Text>Создаёт больше рек, и больше из них судоходны.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED" Language="ru_RU">
+			<Text>Реки не создаются.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

@@ -220,5 +220,23 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="ko_KR">
 			<Text>이 시대의 정착지 제한을 설정합니다.[n]정착지 제한이 사용자 지정일 때만 적용됩니다.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="ko_KR">
+			<Text>강</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION" Language="ko_KR">
+			<Text>맵 생성 시 만들어지는 강의 수를 설정합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="ko_KR">
+			<Text>선택한 맵 유형의 기본 강 생성입니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_LESS" Language="ko_KR">
+			<Text>강이 더 적게 생성됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="ko_KR">
+			<Text>강이 더 많이 생성되며, 항행 가능한 강도 늘어납니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED" Language="ko_KR">
+			<Text>강이 생성되지 않습니다.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

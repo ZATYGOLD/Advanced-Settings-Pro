@@ -216,3 +216,14 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
         ('ZG_WonderToggleDomain', 'ZG_ENABLED', 'LOC_ZG_ENABLED_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 10),
         ('ZG_WonderToggleDomain', 'ZG_DISABLED', 'LOC_ZG_DISABLED_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 20);
+
+INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
+    VALUES
+        ('ZG_Rivers', 'LOC_ZG_RIVERS_NAME', 'LOC_ZG_RIVERS_DESCRIPTION','ZG_RiversDomain', 'ZG_DEFAULT_RIVERS', 0, 'Game', 'RiversKey', 'MapOptions', 'MPAdvancedMapOptions', 0, 1034);
+
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES
+        ('ZG_RiversDomain', 'ZG_DEFAULT_RIVERS', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_RIVERS_DESCRIPTION_DEFAULT', 10),
+        ('ZG_RiversDomain', 'ZG_MORE_RIVERS', 'LOC_ZG_MORE_NAME', 'LOC_ZG_RIVERS_DESCRIPTION_MORE', 20),
+        ('ZG_RiversDomain', 'ZG_LESS_RIVERS', 'LOC_ZG_LESS_NAME', 'LOC_ZG_RIVERS_DESCRIPTION_LESS', 40),
+        ('ZG_RiversDomain', 'ZG_DISABLED_RIVERS', 'LOC_ZG_DISABLED_NAME', 'LOC_ZG_RIVERS_DESCRIPTION_DISABLED', 30);
