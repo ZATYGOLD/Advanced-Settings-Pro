@@ -4,7 +4,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ## Version History
 
-### 0.7.0
+### 0.7.1
 
 - Added a Custom option to Settlement Limit with individual Antiquity, Exploration, and Modern limits, each adjustable from 1 to 50
 - The per-age settlement limits follow the curated Less, Default, and More values, and editing one switches the Settlement Limit to Custom automatically
