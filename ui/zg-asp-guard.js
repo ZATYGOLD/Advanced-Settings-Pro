@@ -44,7 +44,7 @@ function showConflictDialog(conflicts) {
 	const items = conflicts.map((mod) => `[LI]${Locale.compose(mod.name)}`).join("");
 	const body =
 		Locale.compose("LOC_ZG_MOD_CONFLICT_BODY_HEADER") +
-		`[N][BLIST]${items}[/BLIST][N]` +
+		`[N][BLIST]  ${items}[/BLIST][N]` +
 		Locale.compose("LOC_ZG_MOD_CONFLICT_BODY_FOOTER");
 	DialogBoxManager.createDialog_MultiOption({
 		title: "LOC_ZG_MOD_CONFLICT_TITLE",
