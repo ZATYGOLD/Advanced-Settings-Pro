@@ -2895,7 +2895,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/settlement-limit-antiquity-more.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-antiquity-5.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -2905,7 +2905,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/settlement-limit-antiquity-less.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-antiquity-1.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -2915,7 +2915,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/settlement-limit-exploration-more.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-exploration-12.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -2925,7 +2925,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/settlement-limit-exploration-less.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-exploration-4.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -2935,7 +2935,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/settlement-limit-modern-more.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-modern-20.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -2945,7 +2945,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/settlement-limit-modern-less.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-modern-10.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
