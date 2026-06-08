@@ -2525,7 +2525,7 @@
 
 		<ActionGroup id="zg-options-settings-shell" scope="shell" criteria="always">
 			<Properties>
-				<LoadOrder>555555</LoadOrder>
+				<LoadOrder>500</LoadOrder>
 			</Properties>
 			<Actions>
 				<UIScripts>
@@ -2571,7 +2571,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-options-settings-game" scope="game" criteria="always">
 			<Properties>
-				<LoadOrder>555555</LoadOrder>
+				<LoadOrder>500</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateText>
