@@ -2606,6 +2606,7 @@
 				</ImportFiles>
 				<UpdateDatabase>
 					<Item>data/game-speeds/new-game-speeds.sql</Item>
+					<Item>data/natural-wonders/natural-wonder-spawn-fixes.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

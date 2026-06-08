@@ -21,6 +21,8 @@ const CONFLICTING_MODS = [
 	{ workshopId: "3538838949", modId: "leugi_shorter_crisis" },
 	{ workshopId: "3578252971", modId: "e1c2d3f4-a5b6-4c7d-8e9f-0a1b2c3d4e5f" }, // 4_Tile_Cities
 	{ workshopId: "3509594994", modId: "5 TILES MIN CITY RANGE VERSION 2 BY ENIO" },
+	{ workshopId: "3735004833", modId: "phaetom-Longer-Age-Crisis" },
+	{ workshopId: "3558906672", modId: "natural-wonder-spawn-fixes" },
 ];
 
 const CONFLICTING_MOD_IDS = CONFLICTING_MODS.map((entry) => entry.modId);

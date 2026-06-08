@@ -4,6 +4,11 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ## Version History
 
+### 0.7.2
+
+- Extended the Age Length setting with Brief (90) and Doubled (280) options alongside the existing three
+- Fixed Gullfoss, Iguazu Falls, and Valley of Flowers rarely spawning by relaxing their biome and coast placement requirements
+
 ### 0.7.1
 
 - Added a Custom option to Settlement Limit with individual Antiquity, Exploration, and Modern limits, each adjustable from 1 to 50
@@ -16,7 +21,6 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Added a Civilian Unit Cost setting mirroring Military Unit Cost
 - Added an Expensive option (50% more expensive) to both unit cost settings
 - Added two new game speeds: Online 2.0 (150% faster than Standard) and Marathon 2.0 (400% slower than Standard)
-- Extended the Age Length setting with Brief (90) and Doubled (280) options alongside the existing three
 
 ### 0.6.1
 
