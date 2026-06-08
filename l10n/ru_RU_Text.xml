@@ -262,23 +262,17 @@
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="ru_RU">
 			<Text>Чрезвычайно медленный темп. На 400% медленнее стандартного.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_NAME" Language="ru_RU">
-			<Text>Прогресс эпохи</Text>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_NAME" Language="ru_RU">
+			<Text>Краткая</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION" Language="ru_RU">
-			<Text>Определяет, сколько очков прогресса эпохи нужно для её завершения.[n]Действует вместе с настройкой длительности эпох.</Text>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_NAME" Language="ru_RU">
+			<Text>Удвоено</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_ONLINE" Language="ru_RU">
-			<Text>На 25% меньше очков: эпохи заканчиваются раньше.</Text>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="ru_RU">
+			<Text>Эпохи будут проходить быстрее. Эпохи будут заканчиваться, когда прогресс эпохи достигнет 90 (при стандартной скорости).</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>Стандартные очки: без изменений.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_EPIC" Language="ru_RU">
-			<Text>На 50% больше очков: эпохи длятся дольше.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_MARATHON" Language="ru_RU">
-			<Text>На 100% больше очков: эпохи длятся значительно дольше.</Text>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="ru_RU">
+			<Text>Эпохи будут длиться дольше. Эпохи будут заканчиваться, когда прогресс эпохи достигнет 280 (при стандартной скорости).</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

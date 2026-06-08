@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="Zatygold's Advanced Settings Pro" version="00701" xmlns="ModInfo">
+<Mod id="Zatygold's Advanced Settings" version="00702" xmlns="ModInfo">
 	<Properties>
 		<Name>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME</Name>
 		<Description>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION</Description>
 		<Authors>Zatygold</Authors>
-		<Version>0.7.1</Version>
+		<Version>0.7.2</Version>
 		<Package>Mod</Package>
 		<ShowInBrowser>1</ShowInBrowser>
 		<AffectsSavedGames>1</AffectsSavedGames>
@@ -305,25 +305,42 @@
 				<Value>ZG_CIVILIAN_UNIT_COST_EXPENSIVE</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="age-progression-online">
+
+<!--************************* CRITERIA: AGE LENGTH *****************************-->
+
+		<Criteria id="age-length-brief">
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
-				<ConfigurationId>AgeProgressionKey</ConfigurationId>
-				<Value>ZG_ONLINE_AGE_PROGRESSION</Value>
+				<ConfigurationId>AgeLengthKey</ConfigurationId>
+				<Value>ZG_AGE_LENGTH_BRIEF</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="age-progression-epic">
+		<Criteria id="age-length-abbreviated">
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
-				<ConfigurationId>AgeProgressionKey</ConfigurationId>
-				<Value>ZG_EPIC_AGE_PROGRESSION</Value>
+				<ConfigurationId>AgeLengthKey</ConfigurationId>
+				<Value>ZG_AGE_LENGTH_ABBREVIATED</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="age-progression-marathon">
+		<Criteria id="age-length-standard">
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
-				<ConfigurationId>AgeProgressionKey</ConfigurationId>
-				<Value>ZG_MARATHON_AGE_PROGRESSION</Value>
+				<ConfigurationId>AgeLengthKey</ConfigurationId>
+				<Value>ZG_AGE_LENGTH_STANDARD</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="age-length-long">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>AgeLengthKey</ConfigurationId>
+				<Value>ZG_AGE_LENGTH_LONG</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="age-length-doubled">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>AgeLengthKey</ConfigurationId>
+				<Value>ZG_AGE_LENGTH_DOUBLED</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 
@@ -2508,7 +2525,7 @@
 
 		<ActionGroup id="zg-options-settings-shell" scope="shell" criteria="always">
 			<Properties>
-				<LoadOrder>555555</LoadOrder>
+				<LoadOrder>500</LoadOrder>
 			</Properties>
 			<Actions>
 				<UIScripts>
@@ -2554,7 +2571,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-options-settings-game" scope="game" criteria="always">
 			<Properties>
-				<LoadOrder>555555</LoadOrder>
+				<LoadOrder>500</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateText>
@@ -2589,39 +2606,60 @@
 				</ImportFiles>
 				<UpdateDatabase>
 					<Item>data/game-speeds/new-game-speeds.sql</Item>
+					<Item>data/natural-wonders/natural-wonder-spawn-fixes.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
 
-<!--************************* SETTINGS: AGE PROGRESSION *************************-->
+<!--************************* SETTINGS: AGE LENGTH *****************************-->
 
-		<ActionGroup id="zg-age-progression-online" scope="game" criteria="age-progression-online">
+		<ActionGroup id="zg-age-length-brief" scope="game" criteria="age-length-brief">
 			<Properties>
 				<LoadOrder>999999999</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/ages/age-progression-online.sql</Item>
+					<Item>data/ages/age-length-brief.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-age-progression-epic" scope="game" criteria="age-progression-epic">
+		<ActionGroup id="zg-age-length-abbreviated" scope="game" criteria="age-length-abbreviated">
 			<Properties>
 				<LoadOrder>999999999</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/ages/age-progression-epic.sql</Item>
+					<Item>data/ages/age-length-abbreviated.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-age-progression-marathon" scope="game" criteria="age-progression-marathon">
+		<ActionGroup id="zg-age-length-standard" scope="game" criteria="age-length-standard">
 			<Properties>
 				<LoadOrder>999999999</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/ages/age-progression-marathon.sql</Item>
+					<Item>data/ages/age-length-standard.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-age-length-long" scope="game" criteria="age-length-long">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/ages/age-length-long.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-age-length-doubled" scope="game" criteria="age-length-doubled">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/ages/age-length-doubled.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -2858,7 +2896,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/settlement-limit-antiquity-more.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-antiquity-5.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -2868,7 +2906,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/settlement-limit-antiquity-less.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-antiquity-1.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -2878,7 +2916,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/settlement-limit-exploration-more.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-exploration-12.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -2888,7 +2926,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/settlement-limit-exploration-less.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-exploration-4.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -2898,7 +2936,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/settlement-limit-modern-more.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-modern-20.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -2908,7 +2946,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/settlement-limit-modern-less.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-modern-10.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

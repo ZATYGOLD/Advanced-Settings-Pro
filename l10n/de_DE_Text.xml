@@ -262,23 +262,17 @@
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="de_DE">
 			<Text>Ein extrem langsames Tempo. 400% langsamer als Standard.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_NAME" Language="de_DE">
-			<Text>Zeitalterfortschritt</Text>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_NAME" Language="de_DE">
+			<Text>Kurz</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION" Language="de_DE">
-			<Text>Legt fest, wie viele Zeitalter-Fortschrittspunkte nötig sind, um das Zeitalter zu beenden.[n]Wirkt zusätzlich zur Einstellung Zeitalterlänge.</Text>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_NAME" Language="de_DE">
+			<Text>Verdoppelt</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_ONLINE" Language="de_DE">
-			<Text>25% weniger Punkte: Zeitalter enden früher.</Text>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="de_DE">
+			<Text>Zeitalter werden schneller beendet und enden bei 90 Zeitalter-Fortschritt (auf Standardgeschwindigkeit).</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_STANDARD" Language="de_DE">
-			<Text>Standardpunkte: keine Änderung.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_EPIC" Language="de_DE">
-			<Text>50% mehr Punkte: Zeitalter dauern länger.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_MARATHON" Language="de_DE">
-			<Text>100% mehr Punkte: Zeitalter dauern deutlich länger.</Text>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="de_DE">
+			<Text>Zeitalter dauern länger an und enden bei 280 Zeitalter-Fortschritt (auf Standardgeschwindigkeit).</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

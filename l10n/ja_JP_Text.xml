@@ -262,23 +262,17 @@
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="ja_JP">
 			<Text>非常に遅いペース。標準より400%遅い。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_NAME" Language="ja_JP">
-			<Text>時代の進行</Text>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_NAME" Language="ja_JP">
+			<Text>短い</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION" Language="ja_JP">
-			<Text>時代を終了するために必要な時代進行ポイントの数を設定します。[n]時代の長さ設定と累積します。</Text>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_NAME" Language="ja_JP">
+			<Text>2倍</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_ONLINE" Language="ja_JP">
-			<Text>ポイント25%減：時代が早く終わります。</Text>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="ja_JP">
+			<Text>時代の終了が早まる。時代の進展90で終了する（通常速度の場合）。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_STANDARD" Language="ja_JP">
-			<Text>標準ポイント：変更なし。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_EPIC" Language="ja_JP">
-			<Text>ポイント50%増：時代が長く続きます。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_MARATHON" Language="ja_JP">
-			<Text>ポイント100%増：時代がさらに長く続きます。</Text>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="ja_JP">
+			<Text>時代がより長く継続する。時代の進展280で終了する（通常速度の場合）。</Text>
 		</Replace>
 	</LocalizedText>
 </Database>
