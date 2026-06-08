@@ -7,7 +7,6 @@
 		<Version>0.7.2</Version>
 		<Package>Mod</Package>
 		<ShowInBrowser>1</ShowInBrowser>
-		<AffectsSavedGames>0</AffectsSavedGames>
 		<EnabledByDefault>1</EnabledByDefault>
 	</Properties>
 	<Dependencies>
@@ -2526,6 +2525,7 @@
 		<ActionGroup id="zg-options-settings-shell" scope="shell" criteria="always">
 			<Properties>
 				<LoadOrder>500</LoadOrder>
+				<AffectsSavedGames>0</AffectsSavedGames>
 			</Properties>
 			<Actions>
 				<UIScripts>
