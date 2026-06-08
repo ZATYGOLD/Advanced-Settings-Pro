@@ -262,23 +262,17 @@
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="it_IT">
 			<Text>Un ritmo estremamente lento. 400% più lento della velocità Standard.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_NAME" Language="it_IT">
-			<Text>Progressione delle epoche</Text>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_NAME" Language="it_IT">
+			<Text>Breve</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION" Language="it_IT">
-			<Text>Determina quanti punti di progressione dell'epoca servono per concluderla.[n]Si somma all'impostazione della durata delle epoche.</Text>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_NAME" Language="it_IT">
+			<Text>Raddoppiato</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_ONLINE" Language="it_IT">
-			<Text>25% di punti in meno: le epoche finiscono prima.</Text>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="it_IT">
+			<Text>Le epoche durano di meno e si concludono a 90 Progresso nell'epoca (a velocità standard).</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_STANDARD" Language="it_IT">
-			<Text>Punti standard: nessuna modifica.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_EPIC" Language="it_IT">
-			<Text>50% di punti in più: le epoche durano di più.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_MARATHON" Language="it_IT">
-			<Text>100% di punti in più: le epoche durano molto di più.</Text>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="it_IT">
+			<Text>Le epoche durano di più e si concludono a 280 Progresso nell'epoca (a velocità standard).</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

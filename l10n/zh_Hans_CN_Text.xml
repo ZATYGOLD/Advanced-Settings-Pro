@@ -262,23 +262,17 @@
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>极慢的节奏。比标准慢400%。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_NAME" Language="zh_Hans_CN">
-			<Text>时代进程</Text>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_NAME" Language="zh_Hans_CN">
+			<Text>简短</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>设置结束时代所需的时代进度点数。[n]与时代长度设置叠加。</Text>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_NAME" Language="zh_Hans_CN">
+			<Text>翻倍</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_ONLINE" Language="zh_Hans_CN">
-			<Text>点数减少25%：时代更早结束。</Text>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="zh_Hans_CN">
+			<Text>时代将更快结束。时代将在时代进度到达90时结束（标准速度下）。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
-			<Text>标准点数：无变化。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_EPIC" Language="zh_Hans_CN">
-			<Text>点数增加50%：时代持续更久。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_MARATHON" Language="zh_Hans_CN">
-			<Text>点数增加100%：时代持续久得多。</Text>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="zh_Hans_CN">
+			<Text>时代将持续更久。时代将在时代进度到达280时结束（标准速度下）。</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

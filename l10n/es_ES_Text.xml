@@ -262,23 +262,17 @@
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="es_ES">
 			<Text>Un ritmo extremadamente lento. 400% más lento que Estándar.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_NAME" Language="es_ES">
-			<Text>Progreso de era</Text>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_NAME" Language="es_ES">
+			<Text>Breve</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION" Language="es_ES">
-			<Text>Establece cuántos puntos de progreso de era se necesitan para terminar la era.[n]Se acumula con el ajuste de duración de las eras.</Text>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_NAME" Language="es_ES">
+			<Text>Duplicado</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_ONLINE" Language="es_ES">
-			<Text>25% menos puntos: las eras terminan antes.</Text>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="es_ES">
+			<Text>Las eras terminarán antes, a los 90 turnos de progreso de era (a velocidad estándar).</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_STANDARD" Language="es_ES">
-			<Text>Puntos estándar: sin cambios.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_EPIC" Language="es_ES">
-			<Text>50% más puntos: las eras duran más.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_PROGRESSION_DESCRIPTION_MARATHON" Language="es_ES">
-			<Text>100% más puntos: las eras duran mucho más.</Text>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="es_ES">
+			<Text>Las eras terminarán más tarde, a los 280 turnos de progreso de era (a velocidad estándar).</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

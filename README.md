@@ -16,7 +16,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Added a Civilian Unit Cost setting mirroring Military Unit Cost
 - Added an Expensive option (50% more expensive) to both unit cost settings
 - Added two new game speeds: Online 2.0 (150% faster than Standard) and Marathon 2.0 (400% slower than Standard)
-- Added an Age Progression setting (Online, Standard, Epic, or Marathon) scaling how many points end an age, stacking with the game's Age Length setting
+- Extended the Age Length setting with Brief (90) and Doubled (280) options alongside the existing three
 
 ### 0.6.1
 
@@ -42,7 +42,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 - Single Player No Age Transitions: Enabled or Disabled
 - Game Speed: adds Online 2.0 (150% faster than Standard) and Marathon 2.0 (400% slower than Standard)
-- Age Progression: Online (ages end 25% sooner), Standard, Epic (ages last 50% longer), or Marathon (ages last 100% longer); stacks with the game's Age Length setting
+- Age Length: Brief, Abbreviated, Standard, Long, or Doubled (90 to 280 age progress points per age)
 - Disaster Frequency: Disabled, Light, Moderate, or Catastrophic
 - Settler Speed: Slow, Default, or Fast
 - Treasure Convoy Speed: Slow, Default, or Fast
