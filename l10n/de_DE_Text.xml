@@ -56,7 +56,7 @@
 			<Text>Schatzkonvoi-Tempo</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_NAME" Language="de_DE">
-			<Text>Anfängliche Anzahl unabhängiger Mächte</Text>
+			<Text>Anzahl unabhängiger Mächte</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="de_DE">
 			<Text>Abstand unabhängiger Mächte</Text>
@@ -273,6 +273,27 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="de_DE">
 			<Text>Zeitalter dauern länger an und enden bei 280 Zeitalter-Fortschritt (auf Standardgeschwindigkeit).</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="de_DE">
+			<Text>Aggressivität unabhängiger Mächte</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_CALM_NAME" Language="de_DE">
+			<Text>Ruhig</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_RAGING_NAME" Language="de_DE">
+			<Text>Wütend</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION" Language="de_DE">
+			<Text>Legt fest, wie aggressiv unabhängige Mächte plündern und angreifen.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_CALM" Language="de_DE">
+			<Text>Unabhängige Mächte plündern weniger kühn und brauchen länger, um Streitkräfte aufzubauen.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_DEFAULT" Language="de_DE">
+			<Text>Standard-Aggressivität unabhängiger Mächte.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING" Language="de_DE">
+			<Text>Unabhängige Mächte plündern kühner und bauen Streitkräfte schneller auf.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

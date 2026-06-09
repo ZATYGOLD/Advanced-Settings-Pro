@@ -23,6 +23,7 @@ const CONFLICTING_MODS = [
 	{ workshopId: "3509594994", modId: "5 TILES MIN CITY RANGE VERSION 2 BY ENIO" },
 	{ workshopId: "3735004833", modId: "phaetom-Longer-Age-Crisis" },
 	{ workshopId: "3558906672", modId: "natural-wonder-spawn-fixes" },
+	{ workshopId: "3736806530", modId: "independent-powers-plus" },
 ];
 
 const CONFLICTING_MOD_IDS = CONFLICTING_MODS.map((entry) => entry.modId);

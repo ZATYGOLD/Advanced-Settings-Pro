@@ -26,7 +26,7 @@
 	<!-- Setting Names -->
 		<Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME"><Text>Settler Speed</Text></Row>
 		<Row Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_NAME"><Text>Treasure Convoy Speed</Text></Row>
-		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_NAME"><Text>Initial Independent Amount</Text></Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_NAME"><Text>Independent Amount</Text></Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_NAME"><Text>Independent Spacing</Text></Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME"><Text>Initial Independent Units Amount</Text></Row>
 		<Row Tag="LOC_ZG_DISASTER_SETTINGS_NAME"><Text>Disasters</Text></Row>
@@ -406,5 +406,13 @@
 		<Row Tag="LOC_ZG_AGE_LENGTH_DOUBLED_NAME"><Text>Doubled</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC"><Text>Ages will end faster. Ages end at 90 age progress (on Standard Speed).</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC"><Text>Ages will last longer. Ages end at 280 age progress (on Standard Speed).</Text></Row>
+	<!-- Independent Aggression -->
+		<Row Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME"><Text>Independent Aggression</Text></Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_AGGRESSION_CALM_NAME"><Text>Calm</Text></Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_AGGRESSION_RAGING_NAME"><Text>Raging</Text></Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION"><Text>Sets how aggressively Independent Powers raid and attack.</Text></Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_CALM"><Text>Independent Powers raid less boldly and take longer to build up forces.</Text></Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_DEFAULT"><Text>Standard Independent Power aggression.</Text></Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING"><Text>Independent Powers raid more boldly and build up forces faster.</Text></Row>
 	</EnglishText>
 </Database>

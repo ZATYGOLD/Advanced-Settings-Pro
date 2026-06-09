@@ -56,7 +56,7 @@
 			<Text>Tempo konwoju skarbów</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_NAME" Language="pl_PL">
-			<Text>Początkowa liczba niezależnych mocarstw</Text>
+			<Text>Liczba niezależnych mocarstw</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="pl_PL">
 			<Text>Odstęp między niezależnymi mocarstwami</Text>
@@ -273,6 +273,27 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="pl_PL">
 			<Text>Dłuższe epoki. Epoki kończą się po osiągnięciu 280 punktów postępu epoki (przy standardowej prędkości).</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="pl_PL">
+			<Text>Agresja niezależnych sił</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_CALM_NAME" Language="pl_PL">
+			<Text>Spokojne</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_RAGING_NAME" Language="pl_PL">
+			<Text>Wściekłe</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION" Language="pl_PL">
+			<Text>Określa, jak agresywnie niezależne siły najeżdżają i atakują.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_CALM" Language="pl_PL">
+			<Text>Niezależne siły najeżdżają mniej śmiało i wolniej budują armie.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_DEFAULT" Language="pl_PL">
+			<Text>Standardowa agresja niezależnych sił.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING" Language="pl_PL">
+			<Text>Niezależne siły najeżdżają śmielej i szybciej budują armie.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

@@ -74,7 +74,7 @@ INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, Defaul
     VALUES
         ('ZG_IndependentCount', 'LOC_ZG_INDEPENDENT_COUNT_NAME', 'LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION','ZG_IndependentCountDomain', 'ZG_DEFAULT_INDEPENDENTS', 1, 'Game', 'IndependentCountKey', 'IndependentPowerOptions', 'MPAdvancedIndependentPowerOptions', 0, 700),
         ('ZG_IndependentSpace', 'LOC_ZG_INDEPENDENT_SPACE_NAME', 'LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION','ZG_IndependentSpaceDomain', 'ZG_DEFAULT_INDEPENDENTS_SPACING', 1, 'Game', 'IndependentSpaceKey', 'IndependentPowerOptions', 'MPAdvancedIndependentPowerOptions', 0, 7010),
-        ('ZG_IndependentUnitsCount', 'LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME', 'LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION','ZG_IndependentUnitsCountDomain', 'ZG_DEFAULT_INDEPENDENTS_UNIT_COUNT', 1, 'Game', 'IndependentUnitsCountKey', 'IndependentPowerOptions', 'MPAdvancedIndependentPowerOptions', 0, 7020);
+        ('ZG_IndependentAggression', 'LOC_ZG_INDEPENDENT_AGGRESSION_NAME', 'LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION','ZG_IndependentAggressionDomain', 'ZG_DEFAULT_AGGRESSION', 1, 'Game', 'IndependentAggressionKey', 'IndependentPowerOptions', 'MPAdvancedIndependentPowerOptions', 0, 7030);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
@@ -85,9 +85,9 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_IndependentSpaceDomain', 'ZG_LESS_INDEPENDENTS_SPACING', 'LOC_ZG_LESS_NAME', 'LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_LESS', 10),
         ('ZG_IndependentSpaceDomain', 'ZG_DEFAULT_INDEPENDENTS_SPACING', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_DEFAULT', 20),
         ('ZG_IndependentSpaceDomain', 'ZG_MORE_INDEPENDENTS_SPACING', 'LOC_ZG_MORE_NAME', 'LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE', 30),
-        ('ZG_IndependentUnitsCountDomain', 'ZG_LESS_INDEPENDENTS_UNIT_COUNT', 'LOC_ZG_LESS_NAME', 'LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_LESS', 10),
-        ('ZG_IndependentUnitsCountDomain', 'ZG_DEFAULT_INDEPENDENTS_UNIT_COUNT', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_DEFAULT', 20),
-        ('ZG_IndependentUnitsCountDomain', 'ZG_MORE_INDEPENDENTS_UNIT_COUNT', 'LOC_ZG_MORE_NAME', 'LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_MORE', 30);
+        ('ZG_IndependentAggressionDomain', 'ZG_CALM_AGGRESSION', 'LOC_ZG_INDEPENDENT_AGGRESSION_CALM_NAME', 'LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_CALM', 10),
+        ('ZG_IndependentAggressionDomain', 'ZG_DEFAULT_AGGRESSION', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_DEFAULT', 20),
+        ('ZG_IndependentAggressionDomain', 'ZG_RAGING_AGGRESSION', 'LOC_ZG_INDEPENDENT_AGGRESSION_RAGING_NAME', 'LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING', 30);
 
 
 --*******************************************************

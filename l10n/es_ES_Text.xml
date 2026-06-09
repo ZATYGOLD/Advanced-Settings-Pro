@@ -56,7 +56,7 @@
 			<Text>Velocidad del convoy del tesoro</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_NAME" Language="es_ES">
-			<Text>Cantidad inicial de potencias independientes</Text>
+			<Text>Cantidad de potencias independientes</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="es_ES">
 			<Text>Separación de potencias independientes</Text>
@@ -273,6 +273,27 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="es_ES">
 			<Text>Las eras terminarán más tarde, a los 280 turnos de progreso de era (a velocidad estándar).</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="es_ES">
+			<Text>Agresividad de potencias independientes</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_CALM_NAME" Language="es_ES">
+			<Text>Tranquilo</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_RAGING_NAME" Language="es_ES">
+			<Text>Furioso</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION" Language="es_ES">
+			<Text>Establece con qué agresividad asaltan y atacan las potencias independientes.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_CALM" Language="es_ES">
+			<Text>Las potencias independientes asaltan con menos audacia y tardan más en reunir fuerzas.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_DEFAULT" Language="es_ES">
+			<Text>Agresividad estándar de las potencias independientes.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING" Language="es_ES">
+			<Text>Las potencias independientes asaltan con más audacia y reúnen fuerzas más rápido.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

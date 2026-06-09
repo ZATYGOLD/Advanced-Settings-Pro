@@ -56,7 +56,7 @@
 			<Text>宝藏护送队速度</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_NAME" Language="zh_Hans_CN">
-			<Text>独立势力初始数量</Text>
+			<Text>独立势力数量</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="zh_Hans_CN">
 			<Text>独立势力间距</Text>
@@ -273,6 +273,27 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="zh_Hans_CN">
 			<Text>时代将持续更久。时代将在时代进度到达280时结束（标准速度下）。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="zh_Hans_CN">
+			<Text>独立势力侵略性</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_CALM_NAME" Language="zh_Hans_CN">
+			<Text>平静</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_RAGING_NAME" Language="zh_Hans_CN">
+			<Text>狂暴</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置独立势力袭击和攻击的积极程度。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_CALM" Language="zh_Hans_CN">
+			<Text>独立势力袭击更谨慎，集结部队更慢。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_DEFAULT" Language="zh_Hans_CN">
+			<Text>标准的独立势力侵略性。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING" Language="zh_Hans_CN">
+			<Text>独立势力袭击更大胆，集结部队更快。</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

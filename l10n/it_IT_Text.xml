@@ -56,7 +56,7 @@
 			<Text>Velocità dei convogli del tesoro</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_NAME" Language="it_IT">
-			<Text>Numero iniziale di potenze indipendenti</Text>
+			<Text>Numero di potenze indipendenti</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="it_IT">
 			<Text>Distanza tra potenze indipendenti</Text>
@@ -273,6 +273,27 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="it_IT">
 			<Text>Le epoche durano di più e si concludono a 280 Progresso nell'epoca (a velocità standard).</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="it_IT">
+			<Text>Aggressività delle potenze indipendenti</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_CALM_NAME" Language="it_IT">
+			<Text>Calmo</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_RAGING_NAME" Language="it_IT">
+			<Text>Furioso</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION" Language="it_IT">
+			<Text>Imposta quanto aggressivamente le potenze indipendenti razziano e attaccano.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_CALM" Language="it_IT">
+			<Text>Le potenze indipendenti razziano con meno audacia e impiegano più tempo a radunare forze.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_DEFAULT" Language="it_IT">
+			<Text>Aggressività standard delle potenze indipendenti.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING" Language="it_IT">
+			<Text>Le potenze indipendenti razziano con più audacia e radunano forze più rapidamente.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

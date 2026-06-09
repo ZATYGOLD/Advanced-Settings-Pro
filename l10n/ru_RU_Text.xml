@@ -56,7 +56,7 @@
 			<Text>Скорость серебряного каравана</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_NAME" Language="ru_RU">
-			<Text>Начальное число независимых держав</Text>
+			<Text>Число независимых держав</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="ru_RU">
 			<Text>Расстояние между независимыми державами</Text>
@@ -273,6 +273,27 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="ru_RU">
 			<Text>Эпохи будут длиться дольше. Эпохи будут заканчиваться, когда прогресс эпохи достигнет 280 (при стандартной скорости).</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="ru_RU">
+			<Text>Агрессивность независимых держав</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_CALM_NAME" Language="ru_RU">
+			<Text>Спокойные</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_RAGING_NAME" Language="ru_RU">
+			<Text>Яростные</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION" Language="ru_RU">
+			<Text>Задаёт, насколько агрессивно независимые державы совершают набеги и нападают.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_CALM" Language="ru_RU">
+			<Text>Независимые державы совершают набеги менее дерзко и дольше наращивают силы.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_DEFAULT" Language="ru_RU">
+			<Text>Стандартная агрессивность независимых держав.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING" Language="ru_RU">
+			<Text>Независимые державы совершают набеги дерзче и быстрее наращивают силы.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

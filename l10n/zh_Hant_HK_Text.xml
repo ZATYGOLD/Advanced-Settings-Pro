@@ -56,7 +56,7 @@
 			<Text>寶藏護衛隊速度</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_NAME" Language="zh_Hant_HK">
-			<Text>獨立勢力初始數量</Text>
+			<Text>獨立勢力數量</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="zh_Hant_HK">
 			<Text>獨立勢力間距</Text>
@@ -273,6 +273,27 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="zh_Hant_HK">
 			<Text>時代將會持續得更久。時代將於時代進度達280時結束（在標準遊戲速度下）。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="zh_Hant_HK">
+			<Text>獨立勢力侵略性</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_CALM_NAME" Language="zh_Hant_HK">
+			<Text>平靜</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_RAGING_NAME" Language="zh_Hant_HK">
+			<Text>狂暴</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>設定獨立勢力襲擊和攻擊的積極程度。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_CALM" Language="zh_Hant_HK">
+			<Text>獨立勢力襲擊較為謹慎，集結部隊較慢。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_DEFAULT" Language="zh_Hant_HK">
+			<Text>標準的獨立勢力侵略性。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING" Language="zh_Hant_HK">
+			<Text>獨立勢力襲擊更大膽，集結部隊更快。</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

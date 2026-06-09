@@ -56,7 +56,7 @@
 			<Text>Velocidade do comboio do tesouro</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_NAME" Language="pt_BR">
-			<Text>Quantidade inicial de potências independentes</Text>
+			<Text>Quantidade de potências independentes</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="pt_BR">
 			<Text>Espaçamento de potências independentes</Text>
@@ -273,6 +273,27 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="pt_BR">
 			<Text>Eras durarão mais. Eras terminam em 280 de Progresso da Era (na velocidade padrão).</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="pt_BR">
+			<Text>Agressividade das potências independentes</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_CALM_NAME" Language="pt_BR">
+			<Text>Calmo</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_RAGING_NAME" Language="pt_BR">
+			<Text>Furioso</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION" Language="pt_BR">
+			<Text>Define quão agressivamente as potências independentes saqueiam e atacam.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_CALM" Language="pt_BR">
+			<Text>As potências independentes saqueiam com menos ousadia e demoram mais para reunir forças.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_DEFAULT" Language="pt_BR">
+			<Text>Agressividade padrão das potências independentes.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING" Language="pt_BR">
+			<Text>As potências independentes saqueiam com mais ousadia e reúnem forças mais rápido.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

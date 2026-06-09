@@ -4,10 +4,15 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ## Version History
 
+### 0.7.3
+
+- Merged the Initial Independent Units Amount setting into Independent Aggression: Calm now also reduces starting independent units and Raging increases them
+
 ### 0.7.2
 
 - Extended the Age Length setting with Brief (90) and Doubled (280) options alongside the existing three
 - Fixed Gullfoss, Iguazu Falls, and Valley of Flowers rarely spawning by relaxing their biome and coast placement requirements
+- Added an Independent Aggression setting (Calm, Default, or Raging) that scales how boldly and quickly Independent Powers raid and attack
 
 ### 0.7.1
 
@@ -60,9 +65,9 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Settlement Limit: Less, Default, More, or Custom
 - Antiquity, Exploration, and Modern settlement limits: 1 to 50 each, applied when Settlement Limit is set to Custom
 - Settlement Distance: Less, Default, or More
-- Initial Independent Amount: None, Less, Default, or More
+- Independent Amount: None, Less, Default, or More
 - Independent Spacing: Less, Default, or More
-- Initial Independent Units Amount: Less, Default, or More
+- Independent Aggression: Calm, Default, or Raging (raid boldness plus starting independent units)
 
 All settings are chosen at game creation and apply for the full game.
 
