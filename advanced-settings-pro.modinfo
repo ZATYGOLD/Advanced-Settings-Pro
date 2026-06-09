@@ -439,16 +439,6 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--************************* CRITERIA: MOUNTAINS DISABLED *********************-->
-
-		<Criteria id="mountains-disabled">
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>MountainsKey</ConfigurationId>
-				<Value>ZG_DISABLED_MOUNTAINS</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-
 <!--************************* CRITERIA: NATURAL WONDER TOGGLES ******************-->
 
 		<Criteria id="nw-barrier-reef-disabled">
@@ -3194,27 +3184,6 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/map/lake-generation-less.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-
-<!--************************* SETTINGS: MOUNTAINS DISABLED *********************-->
-
-		<ActionGroup id="zg-mountains-disabled-wonders" scope="game" criteria="mountains-disabled">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/natural-wonders/natural-wonder-hoerikwaggo-disabled.sql</Item>
-					<Item>data/natural-wonders/natural-wonder-kilimanjaro-disabled.sql</Item>
-					<Item>data/natural-wonders/natural-wonder-machapuchare-disabled.sql</Item>
-					<Item>data/natural-wonders/natural-wonder-mount-everest-disabled.sql</Item>
-					<Item>data/natural-wonders/natural-wonder-mount-fuji-disabled.sql</Item>
-					<Item>data/natural-wonders/natural-wonder-torres-del-paine-disabled.sql</Item>
-					<Item>data/natural-wonders/natural-wonder-vihren-disabled.sql</Item>
-					<Item>data/natural-wonders/natural-wonder-vinicunca-disabled.sql</Item>
-					<Item>data/natural-wonders/natural-wonder-zhangjiajie-disabled.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

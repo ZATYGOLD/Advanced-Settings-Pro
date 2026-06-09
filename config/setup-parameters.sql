@@ -263,16 +263,3 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_MountainsDomain', 'ZG_LESS_MOUNTAINS', 'LOC_ZG_LESS_NAME', 'LOC_ZG_MOUNTAINS_DESCRIPTION_LESS', 20),
         ('ZG_MountainsDomain', 'ZG_DEFAULT_MOUNTAINS', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT', 30),
         ('ZG_MountainsDomain', 'ZG_MORE_MOUNTAINS', 'LOC_ZG_MORE_NAME', 'LOC_ZG_MOUNTAINS_DESCRIPTION_MORE', 40);
-
--- Hide mountain-terrain natural wonder toggles when Mountains is Disabled; they cannot spawn without mountains.
-INSERT OR IGNORE INTO ParameterDependencies (ParameterID, ConfigurationGroup, ConfigurationKey, Operator, ConfigurationValue)
-    VALUES
-        ('ZG_NW_Hoerikwaggo', 'Game', 'MountainsKey', 'NotEquals', 'ZG_DISABLED_MOUNTAINS'),
-        ('ZG_NW_Kilimanjaro', 'Game', 'MountainsKey', 'NotEquals', 'ZG_DISABLED_MOUNTAINS'),
-        ('ZG_NW_Machapuchare', 'Game', 'MountainsKey', 'NotEquals', 'ZG_DISABLED_MOUNTAINS'),
-        ('ZG_NW_MountEverest', 'Game', 'MountainsKey', 'NotEquals', 'ZG_DISABLED_MOUNTAINS'),
-        ('ZG_NW_MountFuji', 'Game', 'MountainsKey', 'NotEquals', 'ZG_DISABLED_MOUNTAINS'),
-        ('ZG_NW_TorresDelPaine', 'Game', 'MountainsKey', 'NotEquals', 'ZG_DISABLED_MOUNTAINS'),
-        ('ZG_NW_Vihren', 'Game', 'MountainsKey', 'NotEquals', 'ZG_DISABLED_MOUNTAINS'),
-        ('ZG_NW_Vinicunca', 'Game', 'MountainsKey', 'NotEquals', 'ZG_DISABLED_MOUNTAINS'),
-        ('ZG_NW_Zhangjiajie', 'Game', 'MountainsKey', 'NotEquals', 'ZG_DISABLED_MOUNTAINS');
