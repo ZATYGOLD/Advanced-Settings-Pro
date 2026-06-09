@@ -269,10 +269,64 @@
 			<Text>Doublé</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="fr_FR">
-			<Text>Les âges s'achèvent plus tôt, lorsque la progression d'âge atteint 90 (en vitesse normale).</Text>
+			<Text> Les âges s'achèvent plus tôt.
+				[n] [BLIST]
+				[LI] Online 2.0: 36 points.
+				[LI] Online: 45 points.
+				[LI] Quick: 60 points.
+				[LI] Standard: 90 points.
+				[LI] Epic: 135 points.
+				[LI] Marathon: 270 points.
+				[LI] Marathon 2.0: 450 points.[/BLIST]
+			</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="fr_FR">
-			<Text>Les âges s'achèvent plus tard, lorsque la progression d'âge atteint 280 (en vitesse normale).</Text>
+			<Text> Les âges s'achèvent plus tard.
+				[n] [BLIST]
+				[LI] Online 2.0: 112 points.
+				[LI] Online: 140 points.
+				[LI] Quick: 187 points.
+				[LI] Standard: 280 points.
+				[LI] Epic: 420 points.
+				[LI] Marathon: 840 points.
+				[LI] Marathon 2.0: 1400 points.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="fr_FR">
+			<Text> Les âges s'achèvent un peu plus tôt.
+				[n] [BLIST]
+				[LI] Online 2.0: 48 points.
+				[LI] Online: 60 points.
+				[LI] Quick: 80 points.
+				[LI] Standard: 120 points.
+				[LI] Epic: 180 points.
+				[LI] Marathon: 360 points.
+				[LI] Marathon 2.0: 600 points.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="fr_FR">
+			<Text> La durée d'âge par défaut.
+				[n] [BLIST]
+				[LI] Online 2.0: 56 points.
+				[LI] Online: 70 points.
+				[LI] Quick: 93 points.
+				[LI] Standard: 140 points.
+				[LI] Epic: 210 points.
+				[LI] Marathon: 420 points.
+				[LI] Marathon 2.0: 700 points.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="fr_FR">
+			<Text> Les âges s'achèvent un peu plus tard.
+				[n] [BLIST]
+				[LI] Online 2.0: 64 points.
+				[LI] Online: 80 points.
+				[LI] Quick: 107 points.
+				[LI] Standard: 160 points.
+				[LI] Epic: 240 points.
+				[LI] Marathon: 480 points.
+				[LI] Marathon 2.0: 800 points.[/BLIST]
+			</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="fr_FR">
 			<Text>Agressivité des puissances indépendantes</Text>

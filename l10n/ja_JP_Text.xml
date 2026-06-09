@@ -269,10 +269,64 @@
 			<Text>2倍</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="ja_JP">
-			<Text>時代の終了が早まる。時代の進展90で終了する（通常速度の場合）。</Text>
+			<Text> 時代の終了が早まる。
+				[n] [BLIST]
+				[LI] Online 2.0: 36 ポイント.
+				[LI] Online: 45 ポイント.
+				[LI] Quick: 60 ポイント.
+				[LI] Standard: 90 ポイント.
+				[LI] Epic: 135 ポイント.
+				[LI] Marathon: 270 ポイント.
+				[LI] Marathon 2.0: 450 ポイント.[/BLIST]
+			</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="ja_JP">
-			<Text>時代がより長く継続する。時代の進展280で終了する（通常速度の場合）。</Text>
+			<Text> 時代がより長く継続する。
+				[n] [BLIST]
+				[LI] Online 2.0: 112 ポイント.
+				[LI] Online: 140 ポイント.
+				[LI] Quick: 187 ポイント.
+				[LI] Standard: 280 ポイント.
+				[LI] Epic: 420 ポイント.
+				[LI] Marathon: 840 ポイント.
+				[LI] Marathon 2.0: 1400 ポイント.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="ja_JP">
+			<Text> 時代の終了がやや早まる。
+				[n] [BLIST]
+				[LI] Online 2.0: 48 ポイント.
+				[LI] Online: 60 ポイント.
+				[LI] Quick: 80 ポイント.
+				[LI] Standard: 120 ポイント.
+				[LI] Epic: 180 ポイント.
+				[LI] Marathon: 360 ポイント.
+				[LI] Marathon 2.0: 600 ポイント.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="ja_JP">
+			<Text> 標準的な時代の長さ。
+				[n] [BLIST]
+				[LI] Online 2.0: 56 ポイント.
+				[LI] Online: 70 ポイント.
+				[LI] Quick: 93 ポイント.
+				[LI] Standard: 140 ポイント.
+				[LI] Epic: 210 ポイント.
+				[LI] Marathon: 420 ポイント.
+				[LI] Marathon 2.0: 700 ポイント.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="ja_JP">
+			<Text> 時代がやや長く継続する。
+				[n] [BLIST]
+				[LI] Online 2.0: 64 ポイント.
+				[LI] Online: 80 ポイント.
+				[LI] Quick: 107 ポイント.
+				[LI] Standard: 160 ポイント.
+				[LI] Epic: 240 ポイント.
+				[LI] Marathon: 480 ポイント.
+				[LI] Marathon 2.0: 800 ポイント.[/BLIST]
+			</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="ja_JP">
 			<Text>独立勢力の攻撃性</Text>

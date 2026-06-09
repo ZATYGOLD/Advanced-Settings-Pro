@@ -269,10 +269,64 @@
 			<Text>翻倍</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="zh_Hant_HK">
-			<Text>時代將會結束得更快。時代將於時代進度達90時結束（在標準遊戲速度下）。</Text>
+			<Text> 時代將會結束得更快。
+				[n] [BLIST]
+				[LI] Online 2.0: 36 點.
+				[LI] Online: 45 點.
+				[LI] Quick: 60 點.
+				[LI] Standard: 90 點.
+				[LI] Epic: 135 點.
+				[LI] Marathon: 270 點.
+				[LI] Marathon 2.0: 450 點.[/BLIST]
+			</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="zh_Hant_HK">
-			<Text>時代將會持續得更久。時代將於時代進度達280時結束（在標準遊戲速度下）。</Text>
+			<Text> 時代將會持續得更久。
+				[n] [BLIST]
+				[LI] Online 2.0: 112 點.
+				[LI] Online: 140 點.
+				[LI] Quick: 187 點.
+				[LI] Standard: 280 點.
+				[LI] Epic: 420 點.
+				[LI] Marathon: 840 點.
+				[LI] Marathon 2.0: 1400 點.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="zh_Hant_HK">
+			<Text> 時代將會結束得稍快。
+				[n] [BLIST]
+				[LI] Online 2.0: 48 點.
+				[LI] Online: 60 點.
+				[LI] Quick: 80 點.
+				[LI] Standard: 120 點.
+				[LI] Epic: 180 點.
+				[LI] Marathon: 360 點.
+				[LI] Marathon 2.0: 600 點.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="zh_Hant_HK">
+			<Text> 預設的時代長度。
+				[n] [BLIST]
+				[LI] Online 2.0: 56 點.
+				[LI] Online: 70 點.
+				[LI] Quick: 93 點.
+				[LI] Standard: 140 點.
+				[LI] Epic: 210 點.
+				[LI] Marathon: 420 點.
+				[LI] Marathon 2.0: 700 點.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="zh_Hant_HK">
+			<Text> 時代將會持續得更久。
+				[n] [BLIST]
+				[LI] Online 2.0: 64 點.
+				[LI] Online: 80 點.
+				[LI] Quick: 107 點.
+				[LI] Standard: 160 點.
+				[LI] Epic: 240 點.
+				[LI] Marathon: 480 點.
+				[LI] Marathon 2.0: 800 點.[/BLIST]
+			</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="zh_Hant_HK">
 			<Text>獨立勢力侵略性</Text>

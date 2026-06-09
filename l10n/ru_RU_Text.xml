@@ -269,10 +269,64 @@
 			<Text>Удвоено</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="ru_RU">
-			<Text>Эпохи будут проходить быстрее. Эпохи будут заканчиваться, когда прогресс эпохи достигнет 90 (при стандартной скорости).</Text>
+			<Text> Эпохи будут проходить быстрее.
+				[n] [BLIST]
+				[LI] Online 2.0: 36 очков.
+				[LI] Online: 45 очков.
+				[LI] Quick: 60 очков.
+				[LI] Standard: 90 очков.
+				[LI] Epic: 135 очков.
+				[LI] Marathon: 270 очков.
+				[LI] Marathon 2.0: 450 очков.[/BLIST]
+			</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="ru_RU">
-			<Text>Эпохи будут длиться дольше. Эпохи будут заканчиваться, когда прогресс эпохи достигнет 280 (при стандартной скорости).</Text>
+			<Text> Эпохи будут длиться дольше.
+				[n] [BLIST]
+				[LI] Online 2.0: 112 очков.
+				[LI] Online: 140 очков.
+				[LI] Quick: 187 очков.
+				[LI] Standard: 280 очков.
+				[LI] Epic: 420 очков.
+				[LI] Marathon: 840 очков.
+				[LI] Marathon 2.0: 1400 очков.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="ru_RU">
+			<Text> Эпохи будут проходить немного быстрее.
+				[n] [BLIST]
+				[LI] Online 2.0: 48 очков.
+				[LI] Online: 60 очков.
+				[LI] Quick: 80 очков.
+				[LI] Standard: 120 очков.
+				[LI] Epic: 180 очков.
+				[LI] Marathon: 360 очков.
+				[LI] Marathon 2.0: 600 очков.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="ru_RU">
+			<Text> Стандартная длительность эпохи.
+				[n] [BLIST]
+				[LI] Online 2.0: 56 очков.
+				[LI] Online: 70 очков.
+				[LI] Quick: 93 очков.
+				[LI] Standard: 140 очков.
+				[LI] Epic: 210 очков.
+				[LI] Marathon: 420 очков.
+				[LI] Marathon 2.0: 700 очков.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="ru_RU">
+			<Text> Эпохи будут длиться немного дольше.
+				[n] [BLIST]
+				[LI] Online 2.0: 64 очков.
+				[LI] Online: 80 очков.
+				[LI] Quick: 107 очков.
+				[LI] Standard: 160 очков.
+				[LI] Epic: 240 очков.
+				[LI] Marathon: 480 очков.
+				[LI] Marathon 2.0: 800 очков.[/BLIST]
+			</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="ru_RU">
 			<Text>Агрессивность независимых держав</Text>

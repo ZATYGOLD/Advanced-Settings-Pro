@@ -269,10 +269,64 @@
 			<Text>2배</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="ko_KR">
-			<Text>시대가 더 빨리 종료됩니다. 시대가 90의 시대 진행도에서 종료됩니다(일반 속도 기준).</Text>
+			<Text> 시대가 더 빨리 종료됩니다.
+				[n] [BLIST]
+				[LI] Online 2.0: 36 포인트.
+				[LI] Online: 45 포인트.
+				[LI] Quick: 60 포인트.
+				[LI] Standard: 90 포인트.
+				[LI] Epic: 135 포인트.
+				[LI] Marathon: 270 포인트.
+				[LI] Marathon 2.0: 450 포인트.[/BLIST]
+			</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="ko_KR">
-			<Text>시대가 더 오래 지속됩니다. 시대가 280의 시대 진행도에서 종료됩니다(일반 속도 기준).</Text>
+			<Text> 시대가 더 오래 지속됩니다.
+				[n] [BLIST]
+				[LI] Online 2.0: 112 포인트.
+				[LI] Online: 140 포인트.
+				[LI] Quick: 187 포인트.
+				[LI] Standard: 280 포인트.
+				[LI] Epic: 420 포인트.
+				[LI] Marathon: 840 포인트.
+				[LI] Marathon 2.0: 1400 포인트.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="ko_KR">
+			<Text> 시대가 조금 더 빨리 종료됩니다.
+				[n] [BLIST]
+				[LI] Online 2.0: 48 포인트.
+				[LI] Online: 60 포인트.
+				[LI] Quick: 80 포인트.
+				[LI] Standard: 120 포인트.
+				[LI] Epic: 180 포인트.
+				[LI] Marathon: 360 포인트.
+				[LI] Marathon 2.0: 600 포인트.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="ko_KR">
+			<Text> 기본 시대 길이입니다.
+				[n] [BLIST]
+				[LI] Online 2.0: 56 포인트.
+				[LI] Online: 70 포인트.
+				[LI] Quick: 93 포인트.
+				[LI] Standard: 140 포인트.
+				[LI] Epic: 210 포인트.
+				[LI] Marathon: 420 포인트.
+				[LI] Marathon 2.0: 700 포인트.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="ko_KR">
+			<Text> 시대가 조금 더 오래 지속됩니다.
+				[n] [BLIST]
+				[LI] Online 2.0: 64 포인트.
+				[LI] Online: 80 포인트.
+				[LI] Quick: 107 포인트.
+				[LI] Standard: 160 포인트.
+				[LI] Epic: 240 포인트.
+				[LI] Marathon: 480 포인트.
+				[LI] Marathon 2.0: 800 포인트.[/BLIST]
+			</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="ko_KR">
 			<Text>독립 세력 공격성</Text>

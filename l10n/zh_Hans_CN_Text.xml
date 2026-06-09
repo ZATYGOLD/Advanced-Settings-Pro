@@ -269,10 +269,64 @@
 			<Text>翻倍</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="zh_Hans_CN">
-			<Text>时代将更快结束。时代将在时代进度到达90时结束（标准速度下）。</Text>
+			<Text> 时代将更快结束。
+				[n] [BLIST]
+				[LI] Online 2.0: 36 点.
+				[LI] Online: 45 点.
+				[LI] Quick: 60 点.
+				[LI] Standard: 90 点.
+				[LI] Epic: 135 点.
+				[LI] Marathon: 270 点.
+				[LI] Marathon 2.0: 450 点.[/BLIST]
+			</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="zh_Hans_CN">
-			<Text>时代将持续更久。时代将在时代进度到达280时结束（标准速度下）。</Text>
+			<Text> 时代将持续更久。
+				[n] [BLIST]
+				[LI] Online 2.0: 112 点.
+				[LI] Online: 140 点.
+				[LI] Quick: 187 点.
+				[LI] Standard: 280 点.
+				[LI] Epic: 420 点.
+				[LI] Marathon: 840 点.
+				[LI] Marathon 2.0: 1400 点.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="zh_Hans_CN">
+			<Text> 时代将稍快结束。
+				[n] [BLIST]
+				[LI] Online 2.0: 48 点.
+				[LI] Online: 60 点.
+				[LI] Quick: 80 点.
+				[LI] Standard: 120 点.
+				[LI] Epic: 180 点.
+				[LI] Marathon: 360 点.
+				[LI] Marathon 2.0: 600 点.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="zh_Hans_CN">
+			<Text> 默认的时代长度。
+				[n] [BLIST]
+				[LI] Online 2.0: 56 点.
+				[LI] Online: 70 点.
+				[LI] Quick: 93 点.
+				[LI] Standard: 140 点.
+				[LI] Epic: 210 点.
+				[LI] Marathon: 420 点.
+				[LI] Marathon 2.0: 700 点.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="zh_Hans_CN">
+			<Text> 时代将持续稍久。
+				[n] [BLIST]
+				[LI] Online 2.0: 64 点.
+				[LI] Online: 80 点.
+				[LI] Quick: 107 点.
+				[LI] Standard: 160 点.
+				[LI] Epic: 240 点.
+				[LI] Marathon: 480 点.
+				[LI] Marathon 2.0: 800 点.[/BLIST]
+			</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="zh_Hans_CN">
 			<Text>独立势力侵略性</Text>

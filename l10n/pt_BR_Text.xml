@@ -269,10 +269,64 @@
 			<Text>Dobrado</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="pt_BR">
-			<Text>Eras terminarão mais rápido. Eras terminam em 90 de Progresso da Era (na velocidade padrão).</Text>
+			<Text> Eras terminarão mais rápido.
+				[n] [BLIST]
+				[LI] Online 2.0: 36 pontos.
+				[LI] Online: 45 pontos.
+				[LI] Quick: 60 pontos.
+				[LI] Standard: 90 pontos.
+				[LI] Epic: 135 pontos.
+				[LI] Marathon: 270 pontos.
+				[LI] Marathon 2.0: 450 pontos.[/BLIST]
+			</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="pt_BR">
-			<Text>Eras durarão mais. Eras terminam em 280 de Progresso da Era (na velocidade padrão).</Text>
+			<Text> Eras durarão mais.
+				[n] [BLIST]
+				[LI] Online 2.0: 112 pontos.
+				[LI] Online: 140 pontos.
+				[LI] Quick: 187 pontos.
+				[LI] Standard: 280 pontos.
+				[LI] Epic: 420 pontos.
+				[LI] Marathon: 840 pontos.
+				[LI] Marathon 2.0: 1400 pontos.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="pt_BR">
+			<Text> Eras terminarão um pouco mais rápido.
+				[n] [BLIST]
+				[LI] Online 2.0: 48 pontos.
+				[LI] Online: 60 pontos.
+				[LI] Quick: 80 pontos.
+				[LI] Standard: 120 pontos.
+				[LI] Epic: 180 pontos.
+				[LI] Marathon: 360 pontos.
+				[LI] Marathon 2.0: 600 pontos.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="pt_BR">
+			<Text> A duração de era padrão.
+				[n] [BLIST]
+				[LI] Online 2.0: 56 pontos.
+				[LI] Online: 70 pontos.
+				[LI] Quick: 93 pontos.
+				[LI] Standard: 140 pontos.
+				[LI] Epic: 210 pontos.
+				[LI] Marathon: 420 pontos.
+				[LI] Marathon 2.0: 700 pontos.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="pt_BR">
+			<Text> Eras durarão um pouco mais.
+				[n] [BLIST]
+				[LI] Online 2.0: 64 pontos.
+				[LI] Online: 80 pontos.
+				[LI] Quick: 107 pontos.
+				[LI] Standard: 160 pontos.
+				[LI] Epic: 240 pontos.
+				[LI] Marathon: 480 pontos.
+				[LI] Marathon 2.0: 800 pontos.[/BLIST]
+			</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="pt_BR">
 			<Text>Agressividade das potências independentes</Text>
