@@ -295,5 +295,23 @@
 		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING" Language="ko_KR">
 			<Text>독립 세력이 더 과감하게 약탈하고 병력을 더 빠르게 증강합니다.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_NAME" Language="ko_KR">
+			<Text>산</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION" Language="ko_KR">
+			<Text>맵 생성 시 만들어지는 산의 수를 설정합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DISABLED" Language="ko_KR">
+			<Text>산이 생성되지 않습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_LESS" Language="ko_KR">
+			<Text>산이 더 적게 생성됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT" Language="ko_KR">
+			<Text>선택한 맵 유형의 기본 산 생성입니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="ko_KR">
+			<Text>산이 더 많이 생성됩니다.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

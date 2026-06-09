@@ -414,5 +414,12 @@
 		<Row Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_CALM"><Text>Independent Powers raid less boldly and take longer to build up forces.</Text></Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_DEFAULT"><Text>Standard Independent Power aggression.</Text></Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING"><Text>Independent Powers raid more boldly and build up forces faster.</Text></Row>
+	<!-- Mountains -->
+		<Row Tag="LOC_ZG_MOUNTAINS_NAME"><Text>Mountains</Text></Row>
+		<Row Tag="LOC_ZG_MOUNTAINS_DESCRIPTION"><Text>Sets how many mountains are generated when the map is created.</Text></Row>
+		<Row Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DISABLED"><Text>No mountains are generated.</Text></Row>
+		<Row Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_LESS"><Text>Generates fewer mountains.</Text></Row>
+		<Row Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT"><Text>Standard mountain generation for the chosen map type.</Text></Row>
+		<Row Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE"><Text>Generates more mountains.</Text></Row>
 	</EnglishText>
 </Database>

@@ -295,5 +295,23 @@
 		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING" Language="pl_PL">
 			<Text>Niezależne siły najeżdżają śmielej i szybciej budują armie.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_NAME" Language="pl_PL">
+			<Text>Góry</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION" Language="pl_PL">
+			<Text>Określa, ile gór jest generowanych podczas tworzenia mapy.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DISABLED" Language="pl_PL">
+			<Text>Góry nie są generowane.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_LESS" Language="pl_PL">
+			<Text>Generuje mniej gór.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT" Language="pl_PL">
+			<Text>Standardowe generowanie gór dla wybranego typu mapy.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="pl_PL">
+			<Text>Generuje więcej gór.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

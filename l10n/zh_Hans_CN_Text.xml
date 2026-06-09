@@ -295,5 +295,23 @@
 		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING" Language="zh_Hans_CN">
 			<Text>独立势力袭击更大胆，集结部队更快。</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_NAME" Language="zh_Hans_CN">
+			<Text>山脉</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置创建地图时生成的山脉数量。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DISABLED" Language="zh_Hans_CN">
+			<Text>不生成山脉。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_LESS" Language="zh_Hans_CN">
+			<Text>生成更少的山脉。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT" Language="zh_Hans_CN">
+			<Text>所选地图类型的标准山脉生成。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="zh_Hans_CN">
+			<Text>生成更多的山脉。</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

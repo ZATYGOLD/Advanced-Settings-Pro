@@ -295,5 +295,23 @@
 		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING" Language="it_IT">
 			<Text>Le potenze indipendenti razziano con più audacia e radunano forze più rapidamente.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_NAME" Language="it_IT">
+			<Text>Montagne</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION" Language="it_IT">
+			<Text>Determina quante montagne vengono generate alla creazione della mappa.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DISABLED" Language="it_IT">
+			<Text>Non vengono generate montagne.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_LESS" Language="it_IT">
+			<Text>Genera meno montagne.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT" Language="it_IT">
+			<Text>Generazione standard delle montagne per il tipo di mappa scelto.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="it_IT">
+			<Text>Genera più montagne.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

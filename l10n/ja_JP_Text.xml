@@ -295,5 +295,23 @@
 		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING" Language="ja_JP">
 			<Text>独立勢力はより大胆に襲撃し、戦力を素早く増強します。</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_NAME" Language="ja_JP">
+			<Text>山</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION" Language="ja_JP">
+			<Text>マップ作成時に生成される山の数を設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DISABLED" Language="ja_JP">
+			<Text>山は生成されません。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_LESS" Language="ja_JP">
+			<Text>生成される山が少なくなります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT" Language="ja_JP">
+			<Text>選択したマップタイプの標準的な山の生成。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="ja_JP">
+			<Text>生成される山が多くなります。</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

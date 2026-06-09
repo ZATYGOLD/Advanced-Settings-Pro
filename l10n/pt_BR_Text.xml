@@ -295,5 +295,23 @@
 		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING" Language="pt_BR">
 			<Text>As potências independentes saqueiam com mais ousadia e reúnem forças mais rápido.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_NAME" Language="pt_BR">
+			<Text>Montanhas</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION" Language="pt_BR">
+			<Text>Define quantas montanhas são geradas na criação do mapa.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DISABLED" Language="pt_BR">
+			<Text>Nenhuma montanha é gerada.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_LESS" Language="pt_BR">
+			<Text>Gera menos montanhas.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT" Language="pt_BR">
+			<Text>Geração padrão de montanhas para o tipo de mapa escolhido.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="pt_BR">
+			<Text>Gera mais montanhas.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

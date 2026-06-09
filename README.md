@@ -7,6 +7,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 ### 0.7.3
 
 - Merged the Initial Independent Units Amount setting into Independent Aggression: Calm now also reduces starting independent units and Raging increases them
+- Added a Mountains setting (Disabled, Less, Default, or More) controlling mountain generation; Disabled applies to all map types, while Less and More apply to the seven non-Voronoi maps
 
 ### 0.7.2
 
@@ -61,6 +62,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Natural Wonder Selection: Enabled or Disabled for each of the 20 natural wonders, including DLC wonders
 - Lakes: Disabled, Less, Default, or More
 - Rivers: Disabled, Less, Default, or More
+- Mountains: Disabled, Less, Default, or More
 - Crisis Speed: Crawl, Slow, Default, Quick, or Fast
 - Settlement Limit: Less, Default, More, or Custom
 - Antiquity, Exploration, and Modern settlement limits: 1 to 50 each, applied when Settlement Limit is set to Custom

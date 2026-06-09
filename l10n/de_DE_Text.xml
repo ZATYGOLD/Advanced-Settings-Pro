@@ -295,5 +295,23 @@
 		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING" Language="de_DE">
 			<Text>Unabhängige Mächte plündern kühner und bauen Streitkräfte schneller auf.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_NAME" Language="de_DE">
+			<Text>Berge</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION" Language="de_DE">
+			<Text>Legt fest, wie viele Berge bei der Kartenerstellung generiert werden.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DISABLED" Language="de_DE">
+			<Text>Es werden keine Berge generiert.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_LESS" Language="de_DE">
+			<Text>Generiert weniger Berge.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT" Language="de_DE">
+			<Text>Standard-Berggenerierung für den gewählten Kartentyp.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="de_DE">
+			<Text>Generiert mehr Berge.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

@@ -295,5 +295,23 @@
 		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING" Language="ru_RU">
 			<Text>Независимые державы совершают набеги дерзче и быстрее наращивают силы.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_NAME" Language="ru_RU">
+			<Text>Горы</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION" Language="ru_RU">
+			<Text>Определяет, сколько гор создаётся при генерации карты.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DISABLED" Language="ru_RU">
+			<Text>Горы не создаются.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_LESS" Language="ru_RU">
+			<Text>Создаёт меньше гор.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT" Language="ru_RU">
+			<Text>Стандартная генерация гор для выбранного типа карты.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="ru_RU">
+			<Text>Создаёт больше гор.</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

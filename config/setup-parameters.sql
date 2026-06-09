@@ -247,7 +247,8 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
-        ('ZG_Rivers', 'LOC_ZG_RIVERS_NAME', 'LOC_ZG_RIVERS_DESCRIPTION','ZG_RiversDomain', 'ZG_DEFAULT_RIVERS', 0, 'Game', 'RiversKey', 'MapOptions', 'MPAdvancedMapOptions', 0, 1034);
+        ('ZG_Rivers', 'LOC_ZG_RIVERS_NAME', 'LOC_ZG_RIVERS_DESCRIPTION','ZG_RiversDomain', 'ZG_DEFAULT_RIVERS', 0, 'Game', 'RiversKey', 'MapOptions', 'MPAdvancedMapOptions', 0, 1034),
+        ('ZG_Mountains', 'LOC_ZG_MOUNTAINS_NAME', 'LOC_ZG_MOUNTAINS_DESCRIPTION','ZG_MountainsDomain', 'ZG_DEFAULT_MOUNTAINS', 0, 'Game', 'MountainsKey', 'MapOptions', 'MPAdvancedMapOptions', 0, 1035);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
@@ -255,3 +256,23 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_RiversDomain', 'ZG_LESS_RIVERS', 'LOC_ZG_LESS_NAME', 'LOC_ZG_RIVERS_DESCRIPTION_LESS', 20),
         ('ZG_RiversDomain', 'ZG_DEFAULT_RIVERS', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_RIVERS_DESCRIPTION_DEFAULT', 30),
         ('ZG_RiversDomain', 'ZG_MORE_RIVERS', 'LOC_ZG_MORE_NAME', 'LOC_ZG_RIVERS_DESCRIPTION_MORE', 40);
+
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES
+        ('ZG_MountainsDomain', 'ZG_DISABLED_MOUNTAINS', 'LOC_ZG_DISABLED_NAME', 'LOC_ZG_MOUNTAINS_DESCRIPTION_DISABLED', 10),
+        ('ZG_MountainsDomain', 'ZG_LESS_MOUNTAINS', 'LOC_ZG_LESS_NAME', 'LOC_ZG_MOUNTAINS_DESCRIPTION_LESS', 20),
+        ('ZG_MountainsDomain', 'ZG_DEFAULT_MOUNTAINS', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT', 30),
+        ('ZG_MountainsDomain', 'ZG_MORE_MOUNTAINS', 'LOC_ZG_MORE_NAME', 'LOC_ZG_MOUNTAINS_DESCRIPTION_MORE', 40);
+
+-- Hide mountain-terrain natural wonder toggles when Mountains is Disabled; they cannot spawn without mountains.
+INSERT OR IGNORE INTO ParameterDependencies (ParameterID, ConfigurationGroup, ConfigurationKey, Operator, ConfigurationValue)
+    VALUES
+        ('ZG_NW_Hoerikwaggo', 'Game', 'MountainsKey', 'NotEquals', 'ZG_DISABLED_MOUNTAINS'),
+        ('ZG_NW_Kilimanjaro', 'Game', 'MountainsKey', 'NotEquals', 'ZG_DISABLED_MOUNTAINS'),
+        ('ZG_NW_Machapuchare', 'Game', 'MountainsKey', 'NotEquals', 'ZG_DISABLED_MOUNTAINS'),
+        ('ZG_NW_MountEverest', 'Game', 'MountainsKey', 'NotEquals', 'ZG_DISABLED_MOUNTAINS'),
+        ('ZG_NW_MountFuji', 'Game', 'MountainsKey', 'NotEquals', 'ZG_DISABLED_MOUNTAINS'),
+        ('ZG_NW_TorresDelPaine', 'Game', 'MountainsKey', 'NotEquals', 'ZG_DISABLED_MOUNTAINS'),
+        ('ZG_NW_Vihren', 'Game', 'MountainsKey', 'NotEquals', 'ZG_DISABLED_MOUNTAINS'),
+        ('ZG_NW_Vinicunca', 'Game', 'MountainsKey', 'NotEquals', 'ZG_DISABLED_MOUNTAINS'),
+        ('ZG_NW_Zhangjiajie', 'Game', 'MountainsKey', 'NotEquals', 'ZG_DISABLED_MOUNTAINS');
