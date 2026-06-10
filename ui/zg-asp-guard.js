@@ -26,23 +26,24 @@ const CONFLICTING_MODS = [
 	{ workshopId: "3736806530", modId: "independent-powers-plus" },
 ];
 
-const CONFLICTING_MOD_IDS = CONFLICTING_MODS.map((entry) => entry.modId);
+// Set for O(1) membership checks against installed mod ids.
+const CONFLICTING_MOD_IDS = new Set(CONFLICTING_MODS.map((entry) => entry.modId));
 
-// Main menu buttons that auto-disable active conflicts when clicked,
-// identified by their stable audio attribute.
-const GUARDED_BUTTON_AUDIO_REFS = [
+// Main menu buttons that gate on active conflicts when clicked, identified by
+// their stable audio attribute. Set for O(1) lookups in the activation handler.
+const GUARDED_BUTTON_AUDIO_REFS = new Set([
 	"data-audio-clicked-continue",     // Continue
 	"data-audio-clicked-create-game",  // New Game
 	"data-audio-clicked-load-game",    // Load Game
 	"data-audio-clicked-multiplayer",  // Multiplayer
-];
+]);
 
 // Set true to log every installed mod id to UI.log when hunting for new ids.
 const LOG_INSTALLED_MODS = false;
 
 function getActiveConflicts() {
 	return Modding.getInstalledMods().filter(
-		(mod) => mod.enabled && CONFLICTING_MOD_IDS.includes(mod.id)
+		(mod) => mod.enabled && CONFLICTING_MOD_IDS.has(mod.id)
 	);
 }
 
@@ -82,15 +83,19 @@ function showConflictDialog(conflicts) {
 function guardMainMenuButtons() {
 	document.addEventListener("action-activate", (event) => {
 		const target = event.target;
-		if (!target || !target.closest) {
+		if (!target || !target.getAttribute) {
 			return;
 		}
-		const button = target.closest("[data-audio-activate-ref]");
-		if (!button) {
-			return;
+		// Fast path: most activations carry the audio ref on the target itself,
+		// so we avoid a DOM walk. Only fall back to closest() when the event
+		// originated from a child element with no ref of its own.
+		const ownRef = target.getAttribute("data-audio-activate-ref");
+		let isGuarded = ownRef != null && GUARDED_BUTTON_AUDIO_REFS.has(ownRef);
+		if (!isGuarded && ownRef == null && target.closest) {
+			const button = target.closest("[data-audio-activate-ref]");
+			isGuarded = button != null && GUARDED_BUTTON_AUDIO_REFS.has(button.getAttribute("data-audio-activate-ref"));
 		}
-		const audioRef = button.getAttribute("data-audio-activate-ref");
-		if (!GUARDED_BUTTON_AUDIO_REFS.includes(audioRef)) {
+		if (!isGuarded) {
 			return;
 		}
 		const conflicts = getActiveConflicts();
