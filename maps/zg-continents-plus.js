@@ -1,6 +1,7 @@
 // Copy of {base-standard}maps/continents-plus.js with a tier-aware river model;
 // imports are repointed at the base module so everything else stays stock.
 import { zgModelRivers } from './zg-map-rivers.js';
+import { zgAddMountains, zgAddVolcanoes, zgAddTundraVolcanoes } from './zg-map-mountains.js';
 import { zgGenerateLakes } from './zg-map-lakes.js';
 import { assignAdvancedStartRegions } from 'fs://game/base-standard/maps/assign-advanced-start-region.js';
 import { chooseStartSectors, assignStartPositions } from 'fs://game/base-standard/maps/assign-starting-plots.js';
@@ -215,8 +216,8 @@ function generateMap() {
   expandCoastsPlus(eastContinent.east + g_OceanWaterColumns, 0, iHeight);
   AreaBuilder.recalculateAreas();
   TerrainBuilder.stampContinents();
-  addMountains(iWidth, iHeight);
-  addVolcanoes(iWidth, iHeight);
+  zgAddMountains(iWidth, iHeight);
+  zgAddVolcanoes(iWidth, iHeight);
   zgGenerateLakes(iWidth, iHeight, iTilesPerLake);
   AreaBuilder.recalculateAreas();
   TerrainBuilder.buildElevation();
@@ -226,7 +227,7 @@ function generateMap() {
   TerrainBuilder.validateAndFixTerrain();
   TerrainBuilder.defineNamedRivers();
   designateBiomes(iWidth, iHeight);
-  addTundraVolcanoes(iWidth, iHeight);
+  zgAddTundraVolcanoes(iWidth, iHeight);
   addNaturalWonders(iWidth, iHeight, iNumNaturalWonders, naturalWonderEvent, requestedNaturalWonders);
   TerrainBuilder.addFloodplains(4, 10);
   addFeatures(iWidth, iHeight);

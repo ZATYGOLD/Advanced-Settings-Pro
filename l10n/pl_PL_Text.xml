@@ -56,7 +56,7 @@
 			<Text>Tempo konwoju skarbów</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_NAME" Language="pl_PL">
-			<Text>Początkowa liczba niezależnych mocarstw</Text>
+			<Text>Liczba niezależnych mocarstw</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="pl_PL">
 			<Text>Odstęp między niezależnymi mocarstwami</Text>
@@ -269,10 +269,103 @@
 			<Text>Podwojona</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="pl_PL">
-			<Text>Krótsze epoki. Epoki kończą się po osiągnięciu 90 punktów postępu epoki (przy standardowej prędkości).</Text>
+			<Text> Krótsze epoki.
+				[n] [BLIST]
+				[LI] Online 2.0: 36 punktów.
+				[LI] Online: 45 punktów.
+				[LI] Quick: 60 punktów.
+				[LI] Standard: 90 punktów.
+				[LI] Epic: 135 punktów.
+				[LI] Marathon: 270 punktów.
+				[LI] Marathon 2.0: 450 punktów.[/BLIST]
+			</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="pl_PL">
-			<Text>Dłuższe epoki. Epoki kończą się po osiągnięciu 280 punktów postępu epoki (przy standardowej prędkości).</Text>
+			<Text> Dłuższe epoki.
+				[n] [BLIST]
+				[LI] Online 2.0: 112 punktów.
+				[LI] Online: 140 punktów.
+				[LI] Quick: 187 punktów.
+				[LI] Standard: 280 punktów.
+				[LI] Epic: 420 punktów.
+				[LI] Marathon: 840 punktów.
+				[LI] Marathon 2.0: 1400 punktów.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="pl_PL">
+			<Text> Nieco krótsze epoki.
+				[n] [BLIST]
+				[LI] Online 2.0: 48 punktów.
+				[LI] Online: 60 punktów.
+				[LI] Quick: 80 punktów.
+				[LI] Standard: 120 punktów.
+				[LI] Epic: 180 punktów.
+				[LI] Marathon: 360 punktów.
+				[LI] Marathon 2.0: 600 punktów.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="pl_PL">
+			<Text> Domyślna długość epoki.
+				[n] [BLIST]
+				[LI] Online 2.0: 56 punktów.
+				[LI] Online: 70 punktów.
+				[LI] Quick: 93 punktów.
+				[LI] Standard: 140 punktów.
+				[LI] Epic: 210 punktów.
+				[LI] Marathon: 420 punktów.
+				[LI] Marathon 2.0: 700 punktów.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="pl_PL">
+			<Text> Nieco dłuższe epoki.
+				[n] [BLIST]
+				[LI] Online 2.0: 64 punktów.
+				[LI] Online: 80 punktów.
+				[LI] Quick: 107 punktów.
+				[LI] Standard: 160 punktów.
+				[LI] Epic: 240 punktów.
+				[LI] Marathon: 480 punktów.
+				[LI] Marathon 2.0: 800 punktów.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="pl_PL">
+			<Text>Agresja niezależnych sił</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_CALM_NAME" Language="pl_PL">
+			<Text>Spokojne</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_RAGING_NAME" Language="pl_PL">
+			<Text>Wściekłe</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION" Language="pl_PL">
+			<Text>Określa, jak agresywnie niezależne siły najeżdżają i atakują.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_CALM" Language="pl_PL">
+			<Text>Niezależne siły najeżdżają mniej śmiało i wolniej budują armie.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_DEFAULT" Language="pl_PL">
+			<Text>Standardowa agresja niezależnych sił.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING" Language="pl_PL">
+			<Text>Niezależne siły najeżdżają śmielej i szybciej budują armie.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_NAME" Language="pl_PL">
+			<Text>Góry</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION" Language="pl_PL">
+			<Text>Określa, ile gór jest generowanych podczas tworzenia mapy.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DISABLED" Language="pl_PL">
+			<Text>Góry nie są generowane.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_LESS" Language="pl_PL">
+			<Text>Generuje mniej gór.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT" Language="pl_PL">
+			<Text>Standardowe generowanie gór dla wybranego typu mapy.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="pl_PL">
+			<Text>Generuje więcej gór.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

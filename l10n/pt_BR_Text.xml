@@ -56,7 +56,7 @@
 			<Text>Velocidade do comboio do tesouro</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_NAME" Language="pt_BR">
-			<Text>Quantidade inicial de potências independentes</Text>
+			<Text>Quantidade de potências independentes</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="pt_BR">
 			<Text>Espaçamento de potências independentes</Text>
@@ -269,10 +269,103 @@
 			<Text>Dobrado</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="pt_BR">
-			<Text>Eras terminarão mais rápido. Eras terminam em 90 de Progresso da Era (na velocidade padrão).</Text>
+			<Text> Eras terminarão mais rápido.
+				[n] [BLIST]
+				[LI] Online 2.0: 36 pontos.
+				[LI] Online: 45 pontos.
+				[LI] Quick: 60 pontos.
+				[LI] Standard: 90 pontos.
+				[LI] Epic: 135 pontos.
+				[LI] Marathon: 270 pontos.
+				[LI] Marathon 2.0: 450 pontos.[/BLIST]
+			</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="pt_BR">
-			<Text>Eras durarão mais. Eras terminam em 280 de Progresso da Era (na velocidade padrão).</Text>
+			<Text> Eras durarão mais.
+				[n] [BLIST]
+				[LI] Online 2.0: 112 pontos.
+				[LI] Online: 140 pontos.
+				[LI] Quick: 187 pontos.
+				[LI] Standard: 280 pontos.
+				[LI] Epic: 420 pontos.
+				[LI] Marathon: 840 pontos.
+				[LI] Marathon 2.0: 1400 pontos.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="pt_BR">
+			<Text> Eras terminarão um pouco mais rápido.
+				[n] [BLIST]
+				[LI] Online 2.0: 48 pontos.
+				[LI] Online: 60 pontos.
+				[LI] Quick: 80 pontos.
+				[LI] Standard: 120 pontos.
+				[LI] Epic: 180 pontos.
+				[LI] Marathon: 360 pontos.
+				[LI] Marathon 2.0: 600 pontos.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="pt_BR">
+			<Text> A duração de era padrão.
+				[n] [BLIST]
+				[LI] Online 2.0: 56 pontos.
+				[LI] Online: 70 pontos.
+				[LI] Quick: 93 pontos.
+				[LI] Standard: 140 pontos.
+				[LI] Epic: 210 pontos.
+				[LI] Marathon: 420 pontos.
+				[LI] Marathon 2.0: 700 pontos.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="pt_BR">
+			<Text> Eras durarão um pouco mais.
+				[n] [BLIST]
+				[LI] Online 2.0: 64 pontos.
+				[LI] Online: 80 pontos.
+				[LI] Quick: 107 pontos.
+				[LI] Standard: 160 pontos.
+				[LI] Epic: 240 pontos.
+				[LI] Marathon: 480 pontos.
+				[LI] Marathon 2.0: 800 pontos.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="pt_BR">
+			<Text>Agressividade das potências independentes</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_CALM_NAME" Language="pt_BR">
+			<Text>Calmo</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_RAGING_NAME" Language="pt_BR">
+			<Text>Furioso</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION" Language="pt_BR">
+			<Text>Define quão agressivamente as potências independentes saqueiam e atacam.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_CALM" Language="pt_BR">
+			<Text>As potências independentes saqueiam com menos ousadia e demoram mais para reunir forças.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_DEFAULT" Language="pt_BR">
+			<Text>Agressividade padrão das potências independentes.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING" Language="pt_BR">
+			<Text>As potências independentes saqueiam com mais ousadia e reúnem forças mais rápido.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_NAME" Language="pt_BR">
+			<Text>Montanhas</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION" Language="pt_BR">
+			<Text>Define quantas montanhas são geradas na criação do mapa.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DISABLED" Language="pt_BR">
+			<Text>Nenhuma montanha é gerada.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_LESS" Language="pt_BR">
+			<Text>Gera menos montanhas.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT" Language="pt_BR">
+			<Text>Geração padrão de montanhas para o tipo de mapa escolhido.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="pt_BR">
+			<Text>Gera mais montanhas.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

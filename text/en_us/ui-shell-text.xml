@@ -26,7 +26,7 @@
 	<!-- Setting Names -->
 		<Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME"><Text>Settler Speed</Text></Row>
 		<Row Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_NAME"><Text>Treasure Convoy Speed</Text></Row>
-		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_NAME"><Text>Initial Independent Amount</Text></Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_NAME"><Text>Independent Amount</Text></Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_NAME"><Text>Independent Spacing</Text></Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME"><Text>Initial Independent Units Amount</Text></Row>
 		<Row Tag="LOC_ZG_DISASTER_SETTINGS_NAME"><Text>Disasters</Text></Row>
@@ -102,12 +102,12 @@
 			</Text>
 		</Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION">
-			<Text>Sets the initial number of an Independent Power's units. 
+			<Text>Sets the initial number of an Independent Power's units.
 				[n] Independent Powers always start with 1[icon:UNIT_SCOUT]Scout.
 			</Text>
 		</Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_LESS">
-			<Text>Sets the initial number of an Independent Power's units. 
+			<Text>Sets the initial number of an Independent Power's units.
 				[n] Independent Powers always start with 1[icon:UNIT_SCOUT]Scout.
 				[n] [BLIST]
 				[LI] Antiquity: 0[icon:UNIT_WARRIOR]Warriors.
@@ -404,7 +404,80 @@
 	<!-- Age Length -->
 		<Row Tag="LOC_ZG_AGE_LENGTH_BRIEF_NAME"><Text>Brief</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_DOUBLED_NAME"><Text>Doubled</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC"><Text>Ages will end faster. Ages end at 90 age progress (on Standard Speed).</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC"><Text>Ages will last longer. Ages end at 280 age progress (on Standard Speed).</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC">
+			<Text> Ages will end faster.
+				[n] [BLIST]
+				[LI] Online 2.0: 36 Points.
+				[LI] Online: 45 Points.
+				[LI] Quick: 60 Points.
+				[LI] Standard: 90 Points.
+				[LI] Epic: 135 Points.
+				[LI] Marathon: 270 Points.
+				[LI] Marathon 2.0: 450 Points.[/BLIST]
+			</Text>
+		</Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC">
+			<Text> Ages will last longer.
+				[n] [BLIST]
+				[LI] Online 2.0: 112 Points.
+				[LI] Online: 140 Points.
+				[LI] Quick: 187 Points.
+				[LI] Standard: 280 Points.
+				[LI] Epic: 420 Points.
+				[LI] Marathon: 840 Points.
+				[LI] Marathon 2.0: 1400 Points.[/BLIST]
+			</Text>
+		</Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC">
+			<Text> Ages will end slightly faster.
+				[n] [BLIST]
+				[LI] Online 2.0: 48 Points.
+				[LI] Online: 60 Points.
+				[LI] Quick: 80 Points.
+				[LI] Standard: 120 Points.
+				[LI] Epic: 180 Points.
+				[LI] Marathon: 360 Points.
+				[LI] Marathon 2.0: 600 Points.[/BLIST]
+			</Text>
+		</Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC">
+			<Text> The default age length.
+				[n] [BLIST]
+				[LI] Online 2.0: 56 Points.
+				[LI] Online: 70 Points.
+				[LI] Quick: 93 Points.
+				[LI] Standard: 140 Points.
+				[LI] Epic: 210 Points.
+				[LI] Marathon: 420 Points.
+				[LI] Marathon 2.0: 700 Points.[/BLIST]
+			</Text>
+		</Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_LONG_DESC">
+			<Text> Ages will last slightly longer.
+				[n] [BLIST]
+				[LI] Online 2.0: 64 Points.
+				[LI] Online: 80 Points.
+				[LI] Quick: 107 Points.
+				[LI] Standard: 160 Points.
+				[LI] Epic: 240 Points.
+				[LI] Marathon: 480 Points.
+				[LI] Marathon 2.0: 800 Points.[/BLIST]
+			</Text>
+		</Row>
+	<!-- Independent Aggression -->
+		<Row Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME"><Text>Independent Aggression</Text></Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_AGGRESSION_CALM_NAME"><Text>Calm</Text></Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_AGGRESSION_RAGING_NAME"><Text>Raging</Text></Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION"><Text>Sets how aggressively Independent Powers raid and attack.</Text></Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_CALM"><Text>Independent Powers raid less boldly and take longer to build up forces.</Text></Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_DEFAULT"><Text>Standard Independent Power aggression.</Text></Row>
+		<Row Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING"><Text>Independent Powers raid more boldly and build up forces faster.</Text></Row>
+	<!-- Mountains -->
+		<Row Tag="LOC_ZG_MOUNTAINS_NAME"><Text>Mountains</Text></Row>
+		<Row Tag="LOC_ZG_MOUNTAINS_DESCRIPTION"><Text>Sets how many mountains are generated when the map is created.</Text></Row>
+		<Row Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DISABLED"><Text>No mountains are generated.</Text></Row>
+		<Row Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_LESS"><Text>Generates fewer mountains.</Text></Row>
+		<Row Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT"><Text>Standard mountain generation for the chosen map type.</Text></Row>
+		<Row Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE"><Text>Generates more mountains.</Text></Row>
 	</EnglishText>
 </Database>

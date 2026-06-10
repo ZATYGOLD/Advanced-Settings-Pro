@@ -1,6 +1,7 @@
 // Copy of {base-standard}maps/fractal-voronoi.js with a tier-aware river model;
 // imports are repointed at the base module so everything else stays stock.
 import { zgModelRivers } from './zg-map-rivers.js';
+import { zgMountainsDisabled } from './zg-map-mountains.js';
 import { zgGenerateLakes } from './zg-map-lakes.js';
 import { assignAdvancedStartRegions } from 'fs://game/base-standard/maps/assign-advanced-start-region.js';
 import { PlayerRegion, assignStartPositionsFromTiles } from 'fs://game/base-standard/maps/assign-starting-plots.js';
@@ -65,8 +66,9 @@ async function generateMap() {
           case TerrainType.Flat:
             return g_FlatTerrain;
           case TerrainType.Mountainous:
+            return zgMountainsDisabled() ? g_HillTerrain : g_MountainTerrain;
           case TerrainType.Volcano:
-            return g_MountainTerrain;
+            return zgMountainsDisabled() ? g_HillTerrain : g_MountainTerrain;
           case TerrainType.Rough:
             return g_HillTerrain;
           case TerrainType.Ocean:
@@ -78,7 +80,7 @@ async function generateMap() {
         }
       })();
       TerrainBuilder.setTerrainType(x, y, type);
-      if (tile.terrainType === TerrainType.Volcano) {
+      if (tile.terrainType === TerrainType.Volcano && !zgMountainsDisabled()) {
         TerrainBuilder.setFeatureType(x, y, {
           Feature: g_VolcanoFeature,
           Direction: -1,

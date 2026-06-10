@@ -56,7 +56,7 @@
 			<Text>Schatzkonvoi-Tempo</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_NAME" Language="de_DE">
-			<Text>Anfängliche Anzahl unabhängiger Mächte</Text>
+			<Text>Anzahl unabhängiger Mächte</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="de_DE">
 			<Text>Abstand unabhängiger Mächte</Text>
@@ -269,10 +269,103 @@
 			<Text>Verdoppelt</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="de_DE">
-			<Text>Zeitalter werden schneller beendet und enden bei 90 Zeitalter-Fortschritt (auf Standardgeschwindigkeit).</Text>
+			<Text> Zeitalter werden schneller beendet.
+				[n] [BLIST]
+				[LI] Online 2.0: 36 Punkte.
+				[LI] Online: 45 Punkte.
+				[LI] Quick: 60 Punkte.
+				[LI] Standard: 90 Punkte.
+				[LI] Epic: 135 Punkte.
+				[LI] Marathon: 270 Punkte.
+				[LI] Marathon 2.0: 450 Punkte.[/BLIST]
+			</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="de_DE">
-			<Text>Zeitalter dauern länger an und enden bei 280 Zeitalter-Fortschritt (auf Standardgeschwindigkeit).</Text>
+			<Text> Zeitalter dauern länger an.
+				[n] [BLIST]
+				[LI] Online 2.0: 112 Punkte.
+				[LI] Online: 140 Punkte.
+				[LI] Quick: 187 Punkte.
+				[LI] Standard: 280 Punkte.
+				[LI] Epic: 420 Punkte.
+				[LI] Marathon: 840 Punkte.
+				[LI] Marathon 2.0: 1400 Punkte.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="de_DE">
+			<Text> Zeitalter werden etwas schneller beendet.
+				[n] [BLIST]
+				[LI] Online 2.0: 48 Punkte.
+				[LI] Online: 60 Punkte.
+				[LI] Quick: 80 Punkte.
+				[LI] Standard: 120 Punkte.
+				[LI] Epic: 180 Punkte.
+				[LI] Marathon: 360 Punkte.
+				[LI] Marathon 2.0: 600 Punkte.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="de_DE">
+			<Text> Die standardmäßige Zeitalterlänge.
+				[n] [BLIST]
+				[LI] Online 2.0: 56 Punkte.
+				[LI] Online: 70 Punkte.
+				[LI] Quick: 93 Punkte.
+				[LI] Standard: 140 Punkte.
+				[LI] Epic: 210 Punkte.
+				[LI] Marathon: 420 Punkte.
+				[LI] Marathon 2.0: 700 Punkte.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="de_DE">
+			<Text> Zeitalter dauern etwas länger an.
+				[n] [BLIST]
+				[LI] Online 2.0: 64 Punkte.
+				[LI] Online: 80 Punkte.
+				[LI] Quick: 107 Punkte.
+				[LI] Standard: 160 Punkte.
+				[LI] Epic: 240 Punkte.
+				[LI] Marathon: 480 Punkte.
+				[LI] Marathon 2.0: 800 Punkte.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="de_DE">
+			<Text>Aggressivität unabhängiger Mächte</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_CALM_NAME" Language="de_DE">
+			<Text>Ruhig</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_RAGING_NAME" Language="de_DE">
+			<Text>Wütend</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION" Language="de_DE">
+			<Text>Legt fest, wie aggressiv unabhängige Mächte plündern und angreifen.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_CALM" Language="de_DE">
+			<Text>Unabhängige Mächte plündern weniger kühn und brauchen länger, um Streitkräfte aufzubauen.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_DEFAULT" Language="de_DE">
+			<Text>Standard-Aggressivität unabhängiger Mächte.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING" Language="de_DE">
+			<Text>Unabhängige Mächte plündern kühner und bauen Streitkräfte schneller auf.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_NAME" Language="de_DE">
+			<Text>Berge</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION" Language="de_DE">
+			<Text>Legt fest, wie viele Berge bei der Kartenerstellung generiert werden.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DISABLED" Language="de_DE">
+			<Text>Es werden keine Berge generiert.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_LESS" Language="de_DE">
+			<Text>Generiert weniger Berge.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT" Language="de_DE">
+			<Text>Standard-Berggenerierung für den gewählten Kartentyp.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="de_DE">
+			<Text>Generiert mehr Berge.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

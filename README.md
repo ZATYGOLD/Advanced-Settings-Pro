@@ -4,6 +4,18 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ## Version History
 
+### 0.7.4
+
+- Age Length descriptions now list the resulting age progress points for every game speed (Online 2.0 through Marathon 2.0), so the exact target for ending an age is visible before you start
+- Reworked the mod conflict guard: enabled conflicting mods are now disabled automatically on load with no startup dialog; instead, the conflict dialog appears when you click Continue, New Game, Load Game, or Multiplayer while a conflict is still active, holding that action until it is resolved
+- Optimized the conflict guard so its main menu hook does no work outside the guarded buttons
+
+### 0.7.3
+
+- Merged the Initial Independent Units Amount setting into Independent Aggression: Calm now also reduces starting independent units and Raging increases them
+- Added a Mountains setting (Disabled, Less, Default, or More) controlling mountain generation; Disabled applies to all map types, while Less and More apply to the seven non-Voronoi maps
+- Added an Independent Aggression setting (Calm, Default, or Raging) that scales how boldly and quickly Independent Powers raid and attack
+
 ### 0.7.2
 
 - Extended the Age Length setting with Brief (90) and Doubled (280) options alongside the existing three
@@ -56,13 +68,14 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Natural Wonder Selection: Enabled or Disabled for each of the 20 natural wonders, including DLC wonders
 - Lakes: Disabled, Less, Default, or More
 - Rivers: Disabled, Less, Default, or More
+- Mountains: Disabled, Less, Default, or More
 - Crisis Speed: Crawl, Slow, Default, Quick, or Fast
 - Settlement Limit: Less, Default, More, or Custom
 - Antiquity, Exploration, and Modern settlement limits: 1 to 50 each, applied when Settlement Limit is set to Custom
 - Settlement Distance: Less, Default, or More
-- Initial Independent Amount: None, Less, Default, or More
+- Independent Amount: None, Less, Default, or More
 - Independent Spacing: Less, Default, or More
-- Initial Independent Units Amount: Less, Default, or More
+- Independent Aggression: Calm, Default, or Raging (raid boldness plus starting independent units)
 
 All settings are chosen at game creation and apply for the full game.
 

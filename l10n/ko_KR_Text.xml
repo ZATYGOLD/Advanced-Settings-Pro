@@ -56,7 +56,7 @@
 			<Text>보물 호송대 속도</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_NAME" Language="ko_KR">
-			<Text>독립 세력 초기 수</Text>
+			<Text>독립 세력 수</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="ko_KR">
 			<Text>독립 세력 간격</Text>
@@ -269,10 +269,103 @@
 			<Text>2배</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="ko_KR">
-			<Text>시대가 더 빨리 종료됩니다. 시대가 90의 시대 진행도에서 종료됩니다(일반 속도 기준).</Text>
+			<Text> 시대가 더 빨리 종료됩니다.
+				[n] [BLIST]
+				[LI] Online 2.0: 36 포인트.
+				[LI] Online: 45 포인트.
+				[LI] Quick: 60 포인트.
+				[LI] Standard: 90 포인트.
+				[LI] Epic: 135 포인트.
+				[LI] Marathon: 270 포인트.
+				[LI] Marathon 2.0: 450 포인트.[/BLIST]
+			</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="ko_KR">
-			<Text>시대가 더 오래 지속됩니다. 시대가 280의 시대 진행도에서 종료됩니다(일반 속도 기준).</Text>
+			<Text> 시대가 더 오래 지속됩니다.
+				[n] [BLIST]
+				[LI] Online 2.0: 112 포인트.
+				[LI] Online: 140 포인트.
+				[LI] Quick: 187 포인트.
+				[LI] Standard: 280 포인트.
+				[LI] Epic: 420 포인트.
+				[LI] Marathon: 840 포인트.
+				[LI] Marathon 2.0: 1400 포인트.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="ko_KR">
+			<Text> 시대가 조금 더 빨리 종료됩니다.
+				[n] [BLIST]
+				[LI] Online 2.0: 48 포인트.
+				[LI] Online: 60 포인트.
+				[LI] Quick: 80 포인트.
+				[LI] Standard: 120 포인트.
+				[LI] Epic: 180 포인트.
+				[LI] Marathon: 360 포인트.
+				[LI] Marathon 2.0: 600 포인트.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="ko_KR">
+			<Text> 기본 시대 길이입니다.
+				[n] [BLIST]
+				[LI] Online 2.0: 56 포인트.
+				[LI] Online: 70 포인트.
+				[LI] Quick: 93 포인트.
+				[LI] Standard: 140 포인트.
+				[LI] Epic: 210 포인트.
+				[LI] Marathon: 420 포인트.
+				[LI] Marathon 2.0: 700 포인트.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="ko_KR">
+			<Text> 시대가 조금 더 오래 지속됩니다.
+				[n] [BLIST]
+				[LI] Online 2.0: 64 포인트.
+				[LI] Online: 80 포인트.
+				[LI] Quick: 107 포인트.
+				[LI] Standard: 160 포인트.
+				[LI] Epic: 240 포인트.
+				[LI] Marathon: 480 포인트.
+				[LI] Marathon 2.0: 800 포인트.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="ko_KR">
+			<Text>독립 세력 공격성</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_CALM_NAME" Language="ko_KR">
+			<Text>평온</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_RAGING_NAME" Language="ko_KR">
+			<Text>광폭</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION" Language="ko_KR">
+			<Text>독립 세력이 얼마나 공격적으로 약탈하고 공격하는지 설정합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_CALM" Language="ko_KR">
+			<Text>독립 세력이 덜 과감하게 약탈하고 병력 증강에 더 오래 걸립니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_DEFAULT" Language="ko_KR">
+			<Text>표준 독립 세력 공격성입니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING" Language="ko_KR">
+			<Text>독립 세력이 더 과감하게 약탈하고 병력을 더 빠르게 증강합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_NAME" Language="ko_KR">
+			<Text>산</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION" Language="ko_KR">
+			<Text>맵 생성 시 만들어지는 산의 수를 설정합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DISABLED" Language="ko_KR">
+			<Text>산이 생성되지 않습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_LESS" Language="ko_KR">
+			<Text>산이 더 적게 생성됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT" Language="ko_KR">
+			<Text>선택한 맵 유형의 기본 산 생성입니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="ko_KR">
+			<Text>산이 더 많이 생성됩니다.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

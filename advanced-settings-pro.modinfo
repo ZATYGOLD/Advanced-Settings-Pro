@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="Zatygold's Advanced Settings Pro" version="00702" xmlns="ModInfo">
+<Mod id="AdvancedSettingsPro" version="00704" xmlns="ModInfo">
 	<Properties>
 		<Name>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME</Name>
 		<Description>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION</Description>
 		<Authors>Zatygold</Authors>
-		<Version>0.7.2</Version>
+		<Version>0.7.4</Version>
 		<Package>Mod</Package>
 		<ShowInBrowser>1</ShowInBrowser>
 		<EnabledByDefault>1</EnabledByDefault>
@@ -137,48 +137,65 @@
 			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
-				<ConfigurationId>IndependentUnitsCountKey</ConfigurationId>
-				<Value>ZG_MORE_INDEPENDENTS_UNIT_COUNT</Value>
+				<ConfigurationId>IndependentAggressionKey</ConfigurationId>
+				<Value>ZG_RAGING_AGGRESSION</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="less-independents-units-antiquity">
 			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
-				<ConfigurationId>IndependentUnitsCountKey</ConfigurationId>
-				<Value>ZG_LESS_INDEPENDENTS_UNIT_COUNT</Value>
+				<ConfigurationId>IndependentAggressionKey</ConfigurationId>
+				<Value>ZG_CALM_AGGRESSION</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="more-independents-units-exploration">
 			<AgeInUse>AGE_EXPLORATION</AgeInUse>
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
-				<ConfigurationId>IndependentUnitsCountKey</ConfigurationId>
-				<Value>ZG_MORE_INDEPENDENTS_UNIT_COUNT</Value>
+				<ConfigurationId>IndependentAggressionKey</ConfigurationId>
+				<Value>ZG_RAGING_AGGRESSION</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="less-independents-units-exploration">
 			<AgeInUse>AGE_EXPLORATION</AgeInUse>
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
-				<ConfigurationId>IndependentUnitsCountKey</ConfigurationId>
-				<Value>ZG_LESS_INDEPENDENTS_UNIT_COUNT</Value>
+				<ConfigurationId>IndependentAggressionKey</ConfigurationId>
+				<Value>ZG_CALM_AGGRESSION</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="more-independents-units-modern">
 			<AgeInUse>AGE_MODERN</AgeInUse>
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
-				<ConfigurationId>IndependentUnitsCountKey</ConfigurationId>
-				<Value>ZG_MORE_INDEPENDENTS_UNIT_COUNT</Value>
+				<ConfigurationId>IndependentAggressionKey</ConfigurationId>
+				<Value>ZG_RAGING_AGGRESSION</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="less-independents-units-modern">
 			<AgeInUse>AGE_MODERN</AgeInUse>
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
-				<ConfigurationId>IndependentUnitsCountKey</ConfigurationId>
-				<Value>ZG_LESS_INDEPENDENTS_UNIT_COUNT</Value>
+				<ConfigurationId>IndependentAggressionKey</ConfigurationId>
+				<Value>ZG_CALM_AGGRESSION</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+
+<!--************************* CRITERIA: INDEPENDENT AGGRESSION ******************-->
+
+		<Criteria id="calm-independents">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>IndependentAggressionKey</ConfigurationId>
+				<Value>ZG_CALM_AGGRESSION</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="raging-independents">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>IndependentAggressionKey</ConfigurationId>
+				<Value>ZG_RAGING_AGGRESSION</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 
@@ -2529,6 +2546,7 @@
 			</Properties>
 			<Actions>
 				<UIScripts>
+					<Item>ui/zg-conflict-guard.js</Item>
 					<Item>ui/zg-asp-guard.js</Item>
 					<Item>ui/zg-setup-rules.js</Item>
 				</UIScripts>
@@ -2555,6 +2573,7 @@
 				<ImportFiles>
 					<Item>maps/zg-map-rivers.js</Item>
 					<Item>maps/zg-map-lakes.js</Item>
+					<Item>maps/zg-map-mountains.js</Item>
 					<Item>maps/zg-continents-voronoi.js</Item>
 					<Item>maps/zg-pangaea-voronoi.js</Item>
 					<Item>maps/zg-fractal-voronoi.js</Item>
@@ -2592,6 +2611,7 @@
 				<ImportFiles>
 					<Item>maps/zg-map-rivers.js</Item>
 					<Item>maps/zg-map-lakes.js</Item>
+					<Item>maps/zg-map-mountains.js</Item>
 					<Item>maps/zg-continents-voronoi.js</Item>
 					<Item>maps/zg-pangaea-voronoi.js</Item>
 					<Item>maps/zg-fractal-voronoi.js</Item>
@@ -2871,6 +2891,29 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/independents/independent-units-modern-less.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
+<!--************************* SETTINGS: INDEPENDENT AGGRESSION ******************-->
+
+		<ActionGroup id="zg-calm-independents" scope="game" criteria="calm-independents">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/independent-aggression-calm.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-raging-independents" scope="game" criteria="raging-independents">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/independents/independent-aggression-raging.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

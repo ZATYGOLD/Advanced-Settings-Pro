@@ -56,7 +56,7 @@
 			<Text>寶藏護衛隊速度</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_NAME" Language="zh_Hant_HK">
-			<Text>獨立勢力初始數量</Text>
+			<Text>獨立勢力數量</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="zh_Hant_HK">
 			<Text>獨立勢力間距</Text>
@@ -269,10 +269,103 @@
 			<Text>翻倍</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="zh_Hant_HK">
-			<Text>時代將會結束得更快。時代將於時代進度達90時結束（在標準遊戲速度下）。</Text>
+			<Text> 時代將會結束得更快。
+				[n] [BLIST]
+				[LI] Online 2.0: 36 點.
+				[LI] Online: 45 點.
+				[LI] Quick: 60 點.
+				[LI] Standard: 90 點.
+				[LI] Epic: 135 點.
+				[LI] Marathon: 270 點.
+				[LI] Marathon 2.0: 450 點.[/BLIST]
+			</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="zh_Hant_HK">
-			<Text>時代將會持續得更久。時代將於時代進度達280時結束（在標準遊戲速度下）。</Text>
+			<Text> 時代將會持續得更久。
+				[n] [BLIST]
+				[LI] Online 2.0: 112 點.
+				[LI] Online: 140 點.
+				[LI] Quick: 187 點.
+				[LI] Standard: 280 點.
+				[LI] Epic: 420 點.
+				[LI] Marathon: 840 點.
+				[LI] Marathon 2.0: 1400 點.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="zh_Hant_HK">
+			<Text> 時代將會結束得稍快。
+				[n] [BLIST]
+				[LI] Online 2.0: 48 點.
+				[LI] Online: 60 點.
+				[LI] Quick: 80 點.
+				[LI] Standard: 120 點.
+				[LI] Epic: 180 點.
+				[LI] Marathon: 360 點.
+				[LI] Marathon 2.0: 600 點.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="zh_Hant_HK">
+			<Text> 預設的時代長度。
+				[n] [BLIST]
+				[LI] Online 2.0: 56 點.
+				[LI] Online: 70 點.
+				[LI] Quick: 93 點.
+				[LI] Standard: 140 點.
+				[LI] Epic: 210 點.
+				[LI] Marathon: 420 點.
+				[LI] Marathon 2.0: 700 點.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="zh_Hant_HK">
+			<Text> 時代將會持續得更久。
+				[n] [BLIST]
+				[LI] Online 2.0: 64 點.
+				[LI] Online: 80 點.
+				[LI] Quick: 107 點.
+				[LI] Standard: 160 點.
+				[LI] Epic: 240 點.
+				[LI] Marathon: 480 點.
+				[LI] Marathon 2.0: 800 點.[/BLIST]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="zh_Hant_HK">
+			<Text>獨立勢力侵略性</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_CALM_NAME" Language="zh_Hant_HK">
+			<Text>平靜</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_RAGING_NAME" Language="zh_Hant_HK">
+			<Text>狂暴</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>設定獨立勢力襲擊和攻擊的積極程度。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_CALM" Language="zh_Hant_HK">
+			<Text>獨立勢力襲擊較為謹慎，集結部隊較慢。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_DEFAULT" Language="zh_Hant_HK">
+			<Text>標準的獨立勢力侵略性。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING" Language="zh_Hant_HK">
+			<Text>獨立勢力襲擊更大膽，集結部隊更快。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_NAME" Language="zh_Hant_HK">
+			<Text>山脈</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>設定建立地圖時生成的山脈數量。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DISABLED" Language="zh_Hant_HK">
+			<Text>不生成山脈。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_LESS" Language="zh_Hant_HK">
+			<Text>生成更少的山脈。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT" Language="zh_Hant_HK">
+			<Text>所選地圖類型的標準山脈生成。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="zh_Hant_HK">
+			<Text>生成更多的山脈。</Text>
 		</Replace>
 	</LocalizedText>
 </Database>
