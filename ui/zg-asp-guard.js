@@ -1,12 +1,15 @@
-import { DialogBoxManager } from 'fs://game/core/ui/dialog-box/manager-dialog-box.js';
+// Advanced Settings Pro entry point for the shared mod conflict guard.
+// All conflict-handling logic lives in zg-conflict-guard.js; this file only
+// supplies the list of mods that conflict with Advanced Settings Pro.
+//
+// Conflicting mods are keyed by their immutable Steam Workshop id for reference,
+// but the game only exposes a mod's .modinfo <Mod id> at runtime, so modId is
+// what the guard matches against. To find a new mod's id, pass
+// { logInstalledMods: true } as the second argument, launch to the main menu,
+// and read the ids from the console / UI.log.
+import { registerModConflicts } from './zg-conflict-guard.js';
 
-// Conflicting mods, keyed by their immutable Steam Workshop id.
-// The game only exposes a mod's .modinfo <Mod id> at runtime (the modding
-// database and install paths are not accessible from scripts), so modId is the
-// value the check matches against. It is a cached lookup result: if a mod
-// changes its modId in an update, set LOG_INSTALLED_MODS to true, launch to
-// the main menu once, and refresh the value from UI.log.
-const CONFLICTING_MODS = [
+registerModConflicts([
 	{ workshopId: "3542861519", modId: "mws-settlement-limit-settings" },
 	{ workshopId: "3601908082", modId: "Mattifus's Natural Wonder Setting" },
 	{ workshopId: "3542338658", modId: "more-natural-wonders" },
@@ -24,107 +27,4 @@ const CONFLICTING_MODS = [
 	{ workshopId: "3735004833", modId: "phaetom-Longer-Age-Crisis" },
 	{ workshopId: "3558906672", modId: "natural-wonder-spawn-fixes" },
 	{ workshopId: "3736806530", modId: "independent-powers-plus" },
-];
-
-// Set for O(1) membership checks against installed mod ids.
-const CONFLICTING_MOD_IDS = new Set(CONFLICTING_MODS.map((entry) => entry.modId));
-
-// Main menu buttons that gate on active conflicts when clicked, identified by
-// their stable audio attribute. Set for O(1) lookups in the activation handler.
-const GUARDED_BUTTON_AUDIO_REFS = new Set([
-	"data-audio-clicked-continue",     // Continue
-	"data-audio-clicked-create-game",  // New Game
-	"data-audio-clicked-load-game",    // Load Game
-	"data-audio-clicked-multiplayer",  // Multiplayer
 ]);
-
-// Set true to log every installed mod id to UI.log when hunting for new ids.
-const LOG_INSTALLED_MODS = false;
-
-function getActiveConflicts() {
-	return Modding.getInstalledMods().filter(
-		(mod) => mod.enabled && CONFLICTING_MOD_IDS.has(mod.id)
-	);
-}
-
-function disableConflicts(conflicts) {
-	console.warn(`ZG-ASP disabling conflicting mods: ${conflicts.map((mod) => mod.id).join(", ")}`);
-	Modding.disableMods(conflicts.map((mod) => mod.handle));
-}
-
-function showConflictDialog(conflicts) {
-	const items = conflicts.map((mod) => `[LI]${Locale.compose(mod.name)}`).join("");
-	const body =
-		Locale.compose("LOC_ZG_MOD_CONFLICT_BODY_HEADER") +
-		`[N][BLIST]  ${items}[/BLIST][N]` +
-		Locale.compose("LOC_ZG_MOD_CONFLICT_BODY_FOOTER");
-	DialogBoxManager.createDialog_MultiOption({
-		title: "LOC_ZG_MOD_CONFLICT_TITLE",
-		body: body,
-		canClose: false,
-		displayQueue: "SystemMessage",
-		addToFront: true,
-		options: [
-			{
-				actions: ["accept"],
-				label: "LOC_ZG_MOD_CONFLICT_DISABLE",
-				callback: () => disableConflicts(conflicts)
-			}
-		]
-	});
-}
-
-// When Continue, New Game, Load Game or Multiplayer is activated, bring up the
-// conflict dialog for any conflicting mods that are still enabled at that point.
-// Runs in the capture phase: closest() finds the guarded button even when the
-// event originates from a child element, and when a conflict is active we stop
-// the event so the menu action (e.g. opening New Game) is gated behind the
-// dialog instead of navigating away before it can be seen.
-function guardMainMenuButtons() {
-	document.addEventListener("action-activate", (event) => {
-		const target = event.target;
-		if (!target || !target.getAttribute) {
-			return;
-		}
-		// Fast path: most activations carry the audio ref on the target itself,
-		// so we avoid a DOM walk. Only fall back to closest() when the event
-		// originated from a child element with no ref of its own.
-		const ownRef = target.getAttribute("data-audio-activate-ref");
-		let isGuarded = ownRef != null && GUARDED_BUTTON_AUDIO_REFS.has(ownRef);
-		if (!isGuarded && ownRef == null && target.closest) {
-			const button = target.closest("[data-audio-activate-ref]");
-			isGuarded = button != null && GUARDED_BUTTON_AUDIO_REFS.has(button.getAttribute("data-audio-activate-ref"));
-		}
-		if (!isGuarded) {
-			return;
-		}
-		const conflicts = getActiveConflicts();
-		if (conflicts.length === 0) {
-			return;
-		}
-		event.preventDefault();
-		event.stopImmediatePropagation();
-		showConflictDialog(conflicts);
-	}, true);
-}
-
-function checkForModConflicts() {
-	if (LOG_INSTALLED_MODS) {
-		console.warn("ZG-ASP conflict check running. Installed mods:");
-		for (const mod of Modding.getInstalledMods()) {
-			console.warn(`ZG-ASP   id='${mod.id}' enabled=${mod.enabled} name='${Locale.compose(mod.name)}'`);
-		}
-	}
-	const conflicts = getActiveConflicts();
-	if (conflicts.length == 0) {
-		return;
-	}
-	// On load: silently disable conflicts without a dialog. The dialog is only
-	// shown later if a conflict is still enabled when a guarded main-menu button
-	// is clicked (see guardMainMenuButtons).
-	console.warn(`ZG-ASP conflict detected on load: ${conflicts.map((mod) => mod.id).join(", ")}`);
-	disableConflicts(conflicts);
-}
-
-guardMainMenuButtons();
-checkForModConflicts();

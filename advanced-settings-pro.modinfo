@@ -2546,6 +2546,7 @@
 			</Properties>
 			<Actions>
 				<UIScripts>
+					<Item>ui/zg-conflict-guard.js</Item>
 					<Item>ui/zg-asp-guard.js</Item>
 					<Item>ui/zg-setup-rules.js</Item>
 				</UIScripts>

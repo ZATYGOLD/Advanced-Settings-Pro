@@ -14,12 +14,12 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 - Merged the Initial Independent Units Amount setting into Independent Aggression: Calm now also reduces starting independent units and Raging increases them
 - Added a Mountains setting (Disabled, Less, Default, or More) controlling mountain generation; Disabled applies to all map types, while Less and More apply to the seven non-Voronoi maps
+- Added an Independent Aggression setting (Calm, Default, or Raging) that scales how boldly and quickly Independent Powers raid and attack
 
 ### 0.7.2
 
 - Extended the Age Length setting with Brief (90) and Doubled (280) options alongside the existing three
 - Fixed Gullfoss, Iguazu Falls, and Valley of Flowers rarely spawning by relaxing their biome and coast placement requirements
-- Added an Independent Aggression setting (Calm, Default, or Raging) that scales how boldly and quickly Independent Powers raid and attack
 
 ### 0.7.1
 
