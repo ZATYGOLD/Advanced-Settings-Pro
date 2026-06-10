@@ -4,6 +4,12 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ## Version History
 
+### 0.7.4
+
+- Age Length descriptions now list the resulting age progress points for every game speed (Online 2.0 through Marathon 2.0), so the exact target for ending an age is visible before you start
+- Reworked the mod conflict guard: enabled conflicting mods are now disabled automatically on load with no startup dialog; instead, the conflict dialog appears when you click Continue, New Game, Load Game, or Multiplayer while a conflict is still active, holding that action until it is resolved
+- Optimized the conflict guard so its main menu hook does no work outside the guarded buttons
+
 ### 0.7.3
 
 - Merged the Initial Independent Units Amount setting into Independent Aggression: Calm now also reduces starting independent units and Raging increases them
