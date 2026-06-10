@@ -73,23 +73,33 @@ function showConflictDialog(conflicts) {
 	});
 }
 
-// Safety net: when Continue, New Game, Load Game or Multiplayer is activated,
-// silently disable any conflicting mods that are still enabled. The capture
-// phase runs before the button's own handler starts the chosen flow.
+// When Continue, New Game, Load Game or Multiplayer is activated, bring up the
+// conflict dialog for any conflicting mods that are still enabled at that point.
+// Runs in the capture phase: closest() finds the guarded button even when the
+// event originates from a child element, and when a conflict is active we stop
+// the event so the menu action (e.g. opening New Game) is gated behind the
+// dialog instead of navigating away before it can be seen.
 function guardMainMenuButtons() {
 	document.addEventListener("action-activate", (event) => {
 		const target = event.target;
-		if (!target || !target.getAttribute) {
+		if (!target || !target.closest) {
 			return;
 		}
-		const audioRef = target.getAttribute("data-audio-activate-ref");
-		if (!audioRef || !GUARDED_BUTTON_AUDIO_REFS.includes(audioRef)) {
+		const button = target.closest("[data-audio-activate-ref]");
+		if (!button) {
+			return;
+		}
+		const audioRef = button.getAttribute("data-audio-activate-ref");
+		if (!GUARDED_BUTTON_AUDIO_REFS.includes(audioRef)) {
 			return;
 		}
 		const conflicts = getActiveConflicts();
-		if (conflicts.length > 0) {
-			disableConflicts(conflicts);
+		if (conflicts.length === 0) {
+			return;
 		}
+		event.preventDefault();
+		event.stopImmediatePropagation();
+		showConflictDialog(conflicts);
 	}, true);
 }
 
@@ -104,21 +114,11 @@ function checkForModConflicts() {
 	if (conflicts.length == 0) {
 		return;
 	}
-	console.warn(`ZG-ASP conflict detected: ${conflicts.map((mod) => mod.id).join(", ")}`);
-
-	// The dialog system is only usable once the main menu UI is mounted, which
-	// happens after this shell script first runs. Wait for it before showing.
-	let frames = 0;
-	const waitForMainMenu = () => {
-		if (document.querySelector("main-menu")) {
-			showConflictDialog(conflicts);
-		} else if (frames++ < 600) {
-			requestAnimationFrame(waitForMainMenu);
-		} else {
-			console.warn("ZG-ASP: main menu never appeared; conflict dialog not shown");
-		}
-	};
-	waitForMainMenu();
+	// On load: silently disable conflicts without a dialog. The dialog is only
+	// shown later if a conflict is still enabled when a guarded main-menu button
+	// is clicked (see guardMainMenuButtons).
+	console.warn(`ZG-ASP conflict detected on load: ${conflicts.map((mod) => mod.id).join(", ")}`);
+	disableConflicts(conflicts);
 }
 
 guardMainMenuButtons();
