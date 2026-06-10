@@ -9,10 +9,10 @@ import { DialogBoxManager } from 'fs://game/core/ui/dialog-box/manager-dialog-bo
 const CONFLICTING_MODS = [
 	{ workshopId: "3542861519", modId: "mws-settlement-limit-settings" },
 	{ workshopId: "3601908082", modId: "Mattifus's Natural Wonder Setting" },
-	{ workshopId: "3542338658", modId: "more-natural-wonders" },            
-	{ workshopId: "3684060469", modId: "NaturalWonderManager" },  
+	{ workshopId: "3542338658", modId: "more-natural-wonders" },
+	{ workshopId: "3684060469", modId: "NaturalWonderManager" },
 	{ workshopId: "3737965906", modId: "phaetom-Settlement" },
-	{ workshopId: "3736792223", modId: "eras-plus" },  
+	{ workshopId: "3736792223", modId: "eras-plus" },
 	{ workshopId: "3639453691", modId: "mg-settlement-spacing" },
 	{ workshopId: "3730342877", modId: "phaetom_Longer_Long_Ages" },
 	{ workshopId: "3603609022", modId: "phaetom_Longer_Long_Ages" },

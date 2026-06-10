@@ -2572,7 +2572,7 @@
 				<ImportFiles>
 					<Item>maps/zg-map-rivers.js</Item>
 					<Item>maps/zg-map-lakes.js</Item>
-						<Item>maps/zg-map-mountains.js</Item>
+					<Item>maps/zg-map-mountains.js</Item>
 					<Item>maps/zg-continents-voronoi.js</Item>
 					<Item>maps/zg-pangaea-voronoi.js</Item>
 					<Item>maps/zg-fractal-voronoi.js</Item>
@@ -2610,7 +2610,7 @@
 				<ImportFiles>
 					<Item>maps/zg-map-rivers.js</Item>
 					<Item>maps/zg-map-lakes.js</Item>
-						<Item>maps/zg-map-mountains.js</Item>
+					<Item>maps/zg-map-mountains.js</Item>
 					<Item>maps/zg-continents-voronoi.js</Item>
 					<Item>maps/zg-pangaea-voronoi.js</Item>
 					<Item>maps/zg-fractal-voronoi.js</Item>

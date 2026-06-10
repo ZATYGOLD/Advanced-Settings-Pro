@@ -102,12 +102,12 @@
 			</Text>
 		</Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION">
-			<Text>Sets the initial number of an Independent Power's units. 
+			<Text>Sets the initial number of an Independent Power's units.
 				[n] Independent Powers always start with 1[icon:UNIT_SCOUT]Scout.
 			</Text>
 		</Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_LESS">
-			<Text>Sets the initial number of an Independent Power's units. 
+			<Text>Sets the initial number of an Independent Power's units.
 				[n] Independent Powers always start with 1[icon:UNIT_SCOUT]Scout.
 				[n] [BLIST]
 				[LI] Antiquity: 0[icon:UNIT_WARRIOR]Warriors.
