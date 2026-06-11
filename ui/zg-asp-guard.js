@@ -27,4 +27,5 @@ registerModConflicts([
 	{ workshopId: "3735004833", modId: "phaetom-Longer-Age-Crisis" },
 	{ workshopId: "3558906672", modId: "natural-wonder-spawn-fixes" },
 	{ workshopId: "3736806530", modId: "independent-powers-plus" },
+	{ workshopId: "3736762795", modId: "game-setup-plus" },
 ]);
