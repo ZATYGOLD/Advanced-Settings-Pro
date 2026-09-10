@@ -199,13 +199,193 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--************************* CRITERIA: DISASTERS TOGGLE ************************-->
+<!--************************* CRITERIA: DISASTER FREQUENCY *********************-->
 
-		<Criteria id="disabled-disasters">
+		<Criteria id="disasters-disabled">
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
-				<ConfigurationId>RealismSettingType</ConfigurationId>
-				<Value>ZG_DISABLED_DISASTERS</Value>
+				<ConfigurationId>DisasterFrequencyKey</ConfigurationId>
+				<Value>ZG_DISASTERS_DISABLED</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="disasters-light">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisasterFrequencyKey</ConfigurationId>
+				<Value>ZG_DISASTERS_LIGHT</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="disasters-moderate">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisasterFrequencyKey</ConfigurationId>
+				<Value>ZG_DISASTERS_MODERATE</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="disasters-catastrophic">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisasterFrequencyKey</ConfigurationId>
+				<Value>ZG_DISASTERS_CATASTROPHIC</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+
+<!--************************* CRITERIA: DISASTER FREQUENCY PER AGE *************-->
+
+		<Criteria id="disasters-antiquity-disabled">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisasterFrequencyKey</ConfigurationId>
+				<Value>ZG_DISASTERS_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisastersAntiquityKey</ConfigurationId>
+				<Value>ZG_DISASTERS_DISABLED</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="disasters-antiquity-light">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisasterFrequencyKey</ConfigurationId>
+				<Value>ZG_DISASTERS_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisastersAntiquityKey</ConfigurationId>
+				<Value>ZG_DISASTERS_LIGHT</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="disasters-antiquity-moderate">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisasterFrequencyKey</ConfigurationId>
+				<Value>ZG_DISASTERS_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisastersAntiquityKey</ConfigurationId>
+				<Value>ZG_DISASTERS_MODERATE</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="disasters-antiquity-catastrophic">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisasterFrequencyKey</ConfigurationId>
+				<Value>ZG_DISASTERS_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisastersAntiquityKey</ConfigurationId>
+				<Value>ZG_DISASTERS_CATASTROPHIC</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="disasters-exploration-disabled">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisasterFrequencyKey</ConfigurationId>
+				<Value>ZG_DISASTERS_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisastersExplorationKey</ConfigurationId>
+				<Value>ZG_DISASTERS_DISABLED</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="disasters-exploration-light">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisasterFrequencyKey</ConfigurationId>
+				<Value>ZG_DISASTERS_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisastersExplorationKey</ConfigurationId>
+				<Value>ZG_DISASTERS_LIGHT</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="disasters-exploration-moderate">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisasterFrequencyKey</ConfigurationId>
+				<Value>ZG_DISASTERS_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisastersExplorationKey</ConfigurationId>
+				<Value>ZG_DISASTERS_MODERATE</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="disasters-exploration-catastrophic">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisasterFrequencyKey</ConfigurationId>
+				<Value>ZG_DISASTERS_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisastersExplorationKey</ConfigurationId>
+				<Value>ZG_DISASTERS_CATASTROPHIC</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="disasters-modern-disabled">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisasterFrequencyKey</ConfigurationId>
+				<Value>ZG_DISASTERS_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisastersModernKey</ConfigurationId>
+				<Value>ZG_DISASTERS_DISABLED</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="disasters-modern-light">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisasterFrequencyKey</ConfigurationId>
+				<Value>ZG_DISASTERS_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisastersModernKey</ConfigurationId>
+				<Value>ZG_DISASTERS_LIGHT</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="disasters-modern-moderate">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisasterFrequencyKey</ConfigurationId>
+				<Value>ZG_DISASTERS_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisastersModernKey</ConfigurationId>
+				<Value>ZG_DISASTERS_MODERATE</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="disasters-modern-catastrophic">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisasterFrequencyKey</ConfigurationId>
+				<Value>ZG_DISASTERS_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>DisastersModernKey</ConfigurationId>
+				<Value>ZG_DISASTERS_CATASTROPHIC</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 
@@ -362,32 +542,18 @@
 
 <!--************************* CRITERIA: CRISIS PACING ***************************-->
 
-		<Criteria id="crisis-speed-fast">
+		<Criteria id="crisis-timing-early">
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
-				<ConfigurationId>CrisisSpeedKey</ConfigurationId>
-				<Value>ZG_FAST_CRISIS_SPEED</Value>
+				<ConfigurationId>CrisisTimingKey</ConfigurationId>
+				<Value>ZG_EARLY_CRISIS_TIMING</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="crisis-speed-quick">
+		<Criteria id="crisis-timing-late">
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
-				<ConfigurationId>CrisisSpeedKey</ConfigurationId>
-				<Value>ZG_QUICK_CRISIS_SPEED</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="crisis-speed-slow">
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CrisisSpeedKey</ConfigurationId>
-				<Value>ZG_SLOW_CRISIS_SPEED</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="crisis-speed-crawl">
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CrisisSpeedKey</ConfigurationId>
-				<Value>ZG_CRAWL_CRISIS_SPEED</Value>
+				<ConfigurationId>CrisisTimingKey</ConfigurationId>
+				<Value>ZG_LATE_CRISIS_TIMING</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 
@@ -2933,15 +3099,168 @@
 			</Actions>
 		</ActionGroup>
 
-<!--************************* SETTINGS: DISASTERS TOGGLE ************************-->
+<!--************************* SETTINGS: DISASTER FREQUENCY *********************-->
 
-		<ActionGroup id="zg-disabled-disasters" scope="game" criteria="disabled-disasters">
+		<ActionGroup id="zg-disasters-disabled" scope="game" criteria="disasters-disabled">
 			<Properties>
 				<LoadOrder>999999999</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/disasters/disasters-disabled.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-disasters-light" scope="game" criteria="disasters-light">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/disasters/disasters-tier-light.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-disasters-moderate" scope="game" criteria="disasters-moderate">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/disasters/disasters-tier-moderate.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-disasters-catastrophic" scope="game" criteria="disasters-catastrophic">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/disasters/disasters-tier-catastrophic.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
+<!--************************* SETTINGS: DISASTER FREQUENCY PER AGE *************-->
+
+		<ActionGroup id="zg-disasters-antiquity-disabled" scope="game" criteria="disasters-antiquity-disabled">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/disasters/disasters-disabled.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-disasters-antiquity-light" scope="game" criteria="disasters-antiquity-light">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/disasters/disasters-tier-light.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-disasters-antiquity-moderate" scope="game" criteria="disasters-antiquity-moderate">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/disasters/disasters-tier-moderate.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-disasters-antiquity-catastrophic" scope="game" criteria="disasters-antiquity-catastrophic">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/disasters/disasters-tier-catastrophic.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-disasters-exploration-disabled" scope="game" criteria="disasters-exploration-disabled">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/disasters/disasters-disabled.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-disasters-exploration-light" scope="game" criteria="disasters-exploration-light">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/disasters/disasters-tier-light.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-disasters-exploration-moderate" scope="game" criteria="disasters-exploration-moderate">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/disasters/disasters-tier-moderate.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-disasters-exploration-catastrophic" scope="game" criteria="disasters-exploration-catastrophic">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/disasters/disasters-tier-catastrophic.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-disasters-modern-disabled" scope="game" criteria="disasters-modern-disabled">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/disasters/disasters-disabled.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-disasters-modern-light" scope="game" criteria="disasters-modern-light">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/disasters/disasters-tier-light.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-disasters-modern-moderate" scope="game" criteria="disasters-modern-moderate">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/disasters/disasters-tier-moderate.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-disasters-modern-catastrophic" scope="game" criteria="disasters-modern-catastrophic">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/disasters/disasters-tier-catastrophic.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3097,43 +3416,23 @@
 
 <!--************************* SETTINGS: CRISIS PACING ***************************-->
 
-		<ActionGroup id="zg-crisis-speed-fast" scope="game" criteria="crisis-speed-fast">
+		<ActionGroup id="zg-crisis-timing-early" scope="game" criteria="crisis-timing-early">
 			<Properties>
 				<LoadOrder>999999999</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/crisis/crisis-speed-fast.sql</Item>
+					<Item>data/crisis/crisis-timing-early.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-crisis-speed-quick" scope="game" criteria="crisis-speed-quick">
+		<ActionGroup id="zg-crisis-timing-late" scope="game" criteria="crisis-timing-late">
 			<Properties>
 				<LoadOrder>999999999</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/crisis/crisis-speed-quick.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-crisis-speed-slow" scope="game" criteria="crisis-speed-slow">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/crisis/crisis-speed-slow.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-crisis-speed-crawl" scope="game" criteria="crisis-speed-crawl">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/crisis/crisis-speed-crawl.sql</Item>
+					<Item>data/crisis/crisis-timing-late.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

@@ -96,11 +96,32 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 
 
 --*******************************************************
---************* DISASTER INTENSITY SETTINGS *************
+--************* DISASTER FREQUENCY **********************
 --*******************************************************
+-- Replaces the base Disaster Intensity setting with one that adds Disabled and
+-- Custom. The base parameter is hidden and stays at its Light default; each
+-- option below sets the actual frequencies, so the engine always sees a valid
+-- intensity. Custom uses the per-age settings that follow.
+UPDATE Parameters SET Hidden = 1 WHERE ParameterID = 'DisasterIntensity';
+
+INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
+    VALUES
+        ('ZG_DisasterFrequency', 'LOC_ZG_DISASTER_SETTINGS_NAME', 'LOC_ADVANCED_OPTIONS_DISASTER_INTENSITY_DESC', 'ZG_DisasterFrequencyDomain', 'ZG_DISASTERS_LIGHT', 1, 'Game', 'DisasterFrequencyKey', 'DisasterOptions', 'MPAdvancedDisasterOptions', 0, 3010),
+        ('ZG_DisastersAntiquity', 'LOC_AGE_ANTIQUITY_NAME', 'LOC_ZG_DISASTER_AGE_DESCRIPTION', 'ZG_DisasterAgeDomain', 'ZG_DISASTERS_LIGHT', 1, 'Game', 'DisastersAntiquityKey', 'DisasterOptions', 'MPAdvancedDisasterOptions', 0, 3011),
+        ('ZG_DisastersExploration', 'LOC_AGE_EXPLORATION_NAME', 'LOC_ZG_DISASTER_AGE_DESCRIPTION', 'ZG_DisasterAgeDomain', 'ZG_DISASTERS_LIGHT', 1, 'Game', 'DisastersExplorationKey', 'DisasterOptions', 'MPAdvancedDisasterOptions', 0, 3012),
+        ('ZG_DisastersModern', 'LOC_AGE_MODERN_NAME', 'LOC_ZG_DISASTER_AGE_DESCRIPTION', 'ZG_DisasterAgeDomain', 'ZG_DISASTERS_LIGHT', 1, 'Game', 'DisastersModernKey', 'DisasterOptions', 'MPAdvancedDisasterOptions', 0, 3013);
+
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
-        ('StandardDisasterIntensities', 'ZG_DISABLED_DISASTERS', 'LOC_ZG_DISABLED_NAME', 'LOC_ZG_DISASTER_SETTINGS_DESCRIPTION', 40);
+        ('ZG_DisasterFrequencyDomain', 'ZG_DISASTERS_DISABLED', 'LOC_ZG_DISABLED_NAME', 'LOC_ZG_DISASTER_SETTINGS_DESCRIPTION', 10),
+        ('ZG_DisasterFrequencyDomain', 'ZG_DISASTERS_LIGHT', 'LOC_ADVANCED_OPTIONS_LIGHT', 'LOC_ADVANCED_OPTIONS_LIGHT_TOOLTIP', 20),
+        ('ZG_DisasterFrequencyDomain', 'ZG_DISASTERS_MODERATE', 'LOC_ADVANCED_OPTIONS_MODERATE', 'LOC_ADVANCED_OPTIONS_MODERATE_TOOLTIP', 30),
+        ('ZG_DisasterFrequencyDomain', 'ZG_DISASTERS_CATASTROPHIC', 'LOC_ADVANCED_OPTIONS_CATASTROPHIC', 'LOC_ADVANCED_OPTIONS_CATASTROPHIC_TOOLTIP', 40),
+        ('ZG_DisasterFrequencyDomain', 'ZG_DISASTERS_CUSTOM', 'LOC_ZG_CUSTOM_NAME', 'LOC_ZG_DISASTER_FREQUENCY_DESCRIPTION_CUSTOM', 50),
+        ('ZG_DisasterAgeDomain', 'ZG_DISASTERS_DISABLED', 'LOC_ZG_DISABLED_NAME', 'LOC_ZG_DISASTER_SETTINGS_DESCRIPTION', 10),
+        ('ZG_DisasterAgeDomain', 'ZG_DISASTERS_LIGHT', 'LOC_ADVANCED_OPTIONS_LIGHT', 'LOC_ADVANCED_OPTIONS_LIGHT_TOOLTIP', 20),
+        ('ZG_DisasterAgeDomain', 'ZG_DISASTERS_MODERATE', 'LOC_ADVANCED_OPTIONS_MODERATE', 'LOC_ADVANCED_OPTIONS_MODERATE_TOOLTIP', 30),
+        ('ZG_DisasterAgeDomain', 'ZG_DISASTERS_CATASTROPHIC', 'LOC_ADVANCED_OPTIONS_CATASTROPHIC', 'LOC_ADVANCED_OPTIONS_CATASTROPHIC_TOOLTIP', 40);
 
 --*******************************************************
 --************* SETTLEMENT SETTINGS *********************
@@ -189,20 +210,29 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 -- difficulty settings, keeping them on the General tab while the disaster
 -- settings show on the Map tab. The base Crises multiselect renders as a titled
 -- list, so it must stay last in its group. Multiplayer grouping is unchanged.
-UPDATE Parameters SET GroupId = 'CrisisOptions', SortIndex = 510 WHERE ParameterID = 'Crises';
+UPDATE Parameters SET GroupId = 'CrisisOptions', SortIndex = 510, Name = 'LOC_ZG_CRISIS_SELECTION_NAME' WHERE ParameterID = 'Crises';
 
+-- Master switch for crises. It drives the base per-crisis selection through
+-- ui/zg-setup-rules.js, so the game applies it through its own ExcludeCrises key.
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
-         ('ZG_CrisisSpeed', 'LOC_ZG_CRISIS_SPEED_NAME', 'LOC_ZG_CRISIS_SPEED_DESCRIPTION','ZG_CrisisSpeedDomain', 'ZG_DEFAULT_CRISIS_SPEED', 0, 'Game', 'CrisisSpeedKey', 'CrisisOptions', 'MPAdvancedDisasterOptions', 0, 500);
-
+        ('ZG_Crises', 'LOC_ZG_CRISES_NAME', 'LOC_ZG_CRISES_DESCRIPTION', 'ZG_CrisesDomain', 'ZG_ENABLED', 1, 'Game', 'CrisesKey', 'CrisisOptions', 'MPAdvancedDisasterOptions', 0, 490);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
-        ('ZG_CrisisSpeedDomain', 'ZG_CRAWL_CRISIS_SPEED', 'LOC_ZG_CRAWL_NAME', 'LOC_ZG_CRISIS_SPEED_DESCRIPTION_CRAWL', 10),
-        ('ZG_CrisisSpeedDomain', 'ZG_SLOW_CRISIS_SPEED', 'LOC_ZG_SLOW_NAME', 'LOC_ZG_CRISIS_SPEED_DESCRIPTION_SLOW', 20),
-        ('ZG_CrisisSpeedDomain', 'ZG_DEFAULT_CRISIS_SPEED', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_CRISIS_SPEED_DESCRIPTION_DEFAULT', 30),
-        ('ZG_CrisisSpeedDomain', 'ZG_QUICK_CRISIS_SPEED', 'LOC_ZG_QUICK_NAME', 'LOC_ZG_CRISIS_SPEED_DESCRIPTION_QUICK', 40),
-        ('ZG_CrisisSpeedDomain', 'ZG_FAST_CRISIS_SPEED', 'LOC_ZG_FAST_NAME', 'LOC_ZG_CRISIS_SPEED_DESCRIPTION_FAST', 50);
+        ('ZG_CrisesDomain', 'ZG_ENABLED', 'LOC_ZG_ENABLED_NAME', 'LOC_ZG_CRISES_DESCRIPTION', 10),
+        ('ZG_CrisesDomain', 'ZG_DISABLED', 'LOC_ZG_DISABLED_NAME', 'LOC_ZG_CRISES_DESCRIPTION', 20);
+
+INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
+    VALUES
+        ('ZG_CrisisTiming', 'LOC_ZG_CRISIS_TIMING_NAME', 'LOC_ZG_CRISIS_TIMING_DESCRIPTION', 'ZG_CrisisTimingDomain', 'ZG_DEFAULT_CRISIS_TIMING', 0, 'Game', 'CrisisTimingKey', 'CrisisOptions', 'MPAdvancedDisasterOptions', 0, 500);
+
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES
+        ('ZG_CrisisTimingDomain', 'ZG_DISABLED_CRISIS_TIMING', 'LOC_ZG_DISABLED_NAME', 'LOC_ZG_CRISIS_TIMING_DESCRIPTION_DISABLED', 10),
+        ('ZG_CrisisTimingDomain', 'ZG_EARLY_CRISIS_TIMING', 'LOC_ZG_EARLY_NAME', 'LOC_ZG_CRISIS_TIMING_DESCRIPTION_EARLY', 20),
+        ('ZG_CrisisTimingDomain', 'ZG_DEFAULT_CRISIS_TIMING', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_CRISIS_TIMING_DESCRIPTION_DEFAULT', 30),
+        ('ZG_CrisisTimingDomain', 'ZG_LATE_CRISIS_TIMING', 'LOC_ZG_LATE_NAME', 'LOC_ZG_CRISIS_TIMING_DESCRIPTION_LATE', 40);
 
 
 --*******************************************************

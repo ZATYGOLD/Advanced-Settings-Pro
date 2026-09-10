@@ -19,6 +19,12 @@
 		<Replace Tag="LOC_ZG_DEFAULT_NAME" Language="it_IT">
 			<Text>Predefinito</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_EARLY_NAME" Language="it_IT">
+			<Text>Presto</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LATE_NAME" Language="it_IT">
+			<Text>Tardi</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_NONE_NAME" Language="it_IT">
 			<Text>Nessuna</Text>
 		</Replace>
@@ -34,14 +40,8 @@
 		<Replace Tag="LOC_ZG_FAST_NAME" Language="it_IT">
 			<Text>Veloce</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_QUICK_NAME" Language="it_IT">
-			<Text>Rapido</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_SLOW_NAME" Language="it_IT">
 			<Text>Lento</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CRAWL_NAME" Language="it_IT">
-			<Text>Lentissimo</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MORE_NAME" Language="it_IT">
 			<Text>Più</Text>
@@ -76,8 +76,14 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="it_IT">
 			<Text>Costo delle unità militari</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_NAME" Language="it_IT">
-			<Text>Ritmo delle crisi</Text>
+		<Replace Tag="LOC_ZG_CRISES_NAME" Language="it_IT">
+			<Text>Crisi</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SELECTION_NAME" Language="it_IT">
+			<Text>Selezione delle crisi</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_NAME" Language="it_IT">
+			<Text>Tempistica delle crisi</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_NAME" Language="it_IT">
 			<Text>Meraviglie naturali</Text>
@@ -130,6 +136,12 @@
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="it_IT">
 			<Text>Disattiva tutti i disastri naturali.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_DISASTER_FREQUENCY_DESCRIPTION_CUSTOM" Language="it_IT">
+			<Text>Personalizzato: imposta la frequenza dei disastri per ogni epoca singolarmente.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DISASTER_AGE_DESCRIPTION" Language="it_IT">
+			<Text>Imposta la frequenza dei disastri di questa epoca.[n]Si applica solo quando Disastri è su Personalizzato.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" Language="it_IT">
 			<Text>Imposta il [icon:SETTLEMENT_LIMIT]limite di insediamenti iniziale di ogni epoca.</Text>
 		</Replace>
@@ -148,23 +160,23 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="it_IT">
 			<Text>Imposta il costo di produzione delle unità da combattimento.[n] [BLIST][LI] Meno: 25% più economiche.[LI] Predefinito: nessuno sconto.[LI] Più: 25% più costose.[LI] Costoso: 50% più costose.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="it_IT">
-			<Text>Imposta il ritmo delle crisi.</Text>
+		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="it_IT">
+			<Text>Attiva o disattiva tutte le crisi.[n]Disattivato spegne ogni crisi in Selezione delle crisi.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_DEFAULT" Language="it_IT">
-			<Text>Imposta il ritmo delle crisi.[n] [BLIST][LI] Fase 1: inizia al 70%.[LI] Fase 2: inizia al 80%.[LI] Fase 3: inizia al 90%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION" Language="it_IT">
+			<Text>Imposta quando iniziano le crisi.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_QUICK" Language="it_IT">
-			<Text>Imposta il ritmo delle crisi.[n] [BLIST][LI] Fase 1: inizia al 75%.[LI] Fase 2: inizia al 85%.[LI] Fase 3: inizia al 95%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DISABLED" Language="it_IT">
+			<Text>Non si verificano crisi.[n]Imposta Crisi su Attivato per scegliere una tempistica.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_CRAWL" Language="it_IT">
-			<Text>Imposta il ritmo delle crisi.[n] [BLIST][LI] Fase 1: inizia al 50%.[LI] Fase 2: inizia al 65%.[LI] Fase 3: inizia al 85%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_EARLY" Language="it_IT">
+			<Text>Imposta quando iniziano le crisi.[n] [BLIST][LI] Fase 1: inizia al 50%.[LI] Fase 2: inizia al 65%.[LI] Fase 3: inizia al 85%.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_SLOW" Language="it_IT">
-			<Text>Imposta il ritmo delle crisi.[n] [BLIST][LI] Fase 1: inizia al 60%.[LI] Fase 2: inizia al 75%.[LI] Fase 3: inizia al 90%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DEFAULT" Language="it_IT">
+			<Text>Imposta quando iniziano le crisi.[n] [BLIST][LI] Fase 1: inizia al 70%.[LI] Fase 2: inizia al 80%.[LI] Fase 3: inizia al 90%.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_FAST" Language="it_IT">
-			<Text>Imposta il ritmo delle crisi.[n] [BLIST][LI] Fase 1: inizia al 85%.[LI] Fase 2: inizia al 90%.[LI] Fase 3: inizia al 95%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_LATE" Language="it_IT">
+			<Text>Imposta quando iniziano le crisi.[n] [BLIST][LI] Fase 1: inizia al 85%.[LI] Fase 2: inizia al 90%.[LI] Fase 3: inizia al 95%.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="it_IT">
 			<Text>Imposta la quantità di [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] meraviglie naturali sulla mappa.[n] [BLIST][LI] Disattivato: 0 meraviglie naturali.[LI] Metà: 50% di meraviglie naturali in meno.[LI] Predefinito: nessuna modifica.[LI] Più: 50% di meraviglie naturali in più.[LI] Doppio: 100% di meraviglie naturali in più.[/BLIST]</Text>

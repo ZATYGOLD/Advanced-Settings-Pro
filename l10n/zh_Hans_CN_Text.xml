@@ -19,6 +19,12 @@
 		<Replace Tag="LOC_ZG_DEFAULT_NAME" Language="zh_Hans_CN">
 			<Text>默认</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_EARLY_NAME" Language="zh_Hans_CN">
+			<Text>提前</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LATE_NAME" Language="zh_Hans_CN">
+			<Text>延后</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_NONE_NAME" Language="zh_Hans_CN">
 			<Text>无</Text>
 		</Replace>
@@ -34,14 +40,8 @@
 		<Replace Tag="LOC_ZG_FAST_NAME" Language="zh_Hans_CN">
 			<Text>快</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_QUICK_NAME" Language="zh_Hans_CN">
-			<Text>较快</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_SLOW_NAME" Language="zh_Hans_CN">
 			<Text>慢</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CRAWL_NAME" Language="zh_Hans_CN">
-			<Text>极慢</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MORE_NAME" Language="zh_Hans_CN">
 			<Text>更多</Text>
@@ -76,8 +76,14 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="zh_Hans_CN">
 			<Text>军事单位花费</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_NAME" Language="zh_Hans_CN">
-			<Text>危机速度</Text>
+		<Replace Tag="LOC_ZG_CRISES_NAME" Language="zh_Hans_CN">
+			<Text>危机</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SELECTION_NAME" Language="zh_Hans_CN">
+			<Text>危机选择</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_NAME" Language="zh_Hans_CN">
+			<Text>危机时机</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_NAME" Language="zh_Hans_CN">
 			<Text>自然奇观</Text>
@@ -130,6 +136,12 @@
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>禁用所有自然灾害。</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_DISASTER_FREQUENCY_DESCRIPTION_CUSTOM" Language="zh_Hans_CN">
+			<Text>自定义：为每个时代单独设置灾难频率。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DISASTER_AGE_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置该时代的灾难频率。[n]仅当灾难设为自定义时生效。</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>设置每个时代的初始[icon:SETTLEMENT_LIMIT]定居点上限。</Text>
 		</Replace>
@@ -148,23 +160,23 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>设置战斗单位的生产花费。[n] [BLIST][LI] 更少：便宜25%。[LI] 默认：无折扣。[LI] 更多：昂贵25%。[LI] 昂贵：昂贵50%。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>设置危机的推进速度。</Text>
+		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>启用或禁用所有危机。[n]禁用将关闭危机选择中的所有危机。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_DEFAULT" Language="zh_Hans_CN">
-			<Text>设置危机的推进速度。[n] [BLIST][LI] 第1阶段：于70%开始。[LI] 第2阶段：于80%开始。[LI] 第3阶段：于90%开始。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置危机开始的时间。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_QUICK" Language="zh_Hans_CN">
-			<Text>设置危机的推进速度。[n] [BLIST][LI] 第1阶段：于75%开始。[LI] 第2阶段：于85%开始。[LI] 第3阶段：于95%开始。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DISABLED" Language="zh_Hans_CN">
+			<Text>不会发生危机。[n]将危机设为启用以选择时机。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_CRAWL" Language="zh_Hans_CN">
-			<Text>设置危机的推进速度。[n] [BLIST][LI] 第1阶段：于50%开始。[LI] 第2阶段：于65%开始。[LI] 第3阶段：于85%开始。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_EARLY" Language="zh_Hans_CN">
+			<Text>设置危机开始的时间。[n] [BLIST][LI] 第1阶段：于50%开始。[LI] 第2阶段：于65%开始。[LI] 第3阶段：于85%开始。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_SLOW" Language="zh_Hans_CN">
-			<Text>设置危机的推进速度。[n] [BLIST][LI] 第1阶段：于60%开始。[LI] 第2阶段：于75%开始。[LI] 第3阶段：于90%开始。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DEFAULT" Language="zh_Hans_CN">
+			<Text>设置危机开始的时间。[n] [BLIST][LI] 第1阶段：于70%开始。[LI] 第2阶段：于80%开始。[LI] 第3阶段：于90%开始。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_FAST" Language="zh_Hans_CN">
-			<Text>设置危机的推进速度。[n] [BLIST][LI] 第1阶段：于85%开始。[LI] 第2阶段：于90%开始。[LI] 第3阶段：于95%开始。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_LATE" Language="zh_Hans_CN">
+			<Text>设置危机开始的时间。[n] [BLIST][LI] 第1阶段：于85%开始。[LI] 第2阶段：于90%开始。[LI] 第3阶段：于95%开始。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>设置地图上[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然奇观的数量。[n] [BLIST][LI] 禁用：0个自然奇观。[LI] 减半：自然奇观减少50%。[LI] 默认：自然奇观不变。[LI] 更多：自然奇观增加50%。[LI] 双倍：自然奇观增加100%。[/BLIST]</Text>

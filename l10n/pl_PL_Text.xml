@@ -19,6 +19,12 @@
 		<Replace Tag="LOC_ZG_DEFAULT_NAME" Language="pl_PL">
 			<Text>Domyślne</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_EARLY_NAME" Language="pl_PL">
+			<Text>Wcześnie</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LATE_NAME" Language="pl_PL">
+			<Text>Późno</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_NONE_NAME" Language="pl_PL">
 			<Text>Brak</Text>
 		</Replace>
@@ -34,14 +40,8 @@
 		<Replace Tag="LOC_ZG_FAST_NAME" Language="pl_PL">
 			<Text>Szybko</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_QUICK_NAME" Language="pl_PL">
-			<Text>Dość szybko</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_SLOW_NAME" Language="pl_PL">
 			<Text>Wolno</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CRAWL_NAME" Language="pl_PL">
-			<Text>Bardzo wolno</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MORE_NAME" Language="pl_PL">
 			<Text>Więcej</Text>
@@ -76,8 +76,14 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="pl_PL">
 			<Text>Koszt jednostek wojskowych</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_NAME" Language="pl_PL">
-			<Text>Tempo kryzysów</Text>
+		<Replace Tag="LOC_ZG_CRISES_NAME" Language="pl_PL">
+			<Text>Kryzysy</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SELECTION_NAME" Language="pl_PL">
+			<Text>Wybór kryzysów</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_NAME" Language="pl_PL">
+			<Text>Moment kryzysów</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_NAME" Language="pl_PL">
 			<Text>Cuda natury</Text>
@@ -130,6 +136,12 @@
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="pl_PL">
 			<Text>Wyłącza wszystkie katastrofy naturalne.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_DISASTER_FREQUENCY_DESCRIPTION_CUSTOM" Language="pl_PL">
+			<Text>Niestandardowe: ustaw częstotliwość katastrof dla każdej epoki osobno.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DISASTER_AGE_DESCRIPTION" Language="pl_PL">
+			<Text>Ustawia częstotliwość katastrof tej epoki.[n]Działa tylko, gdy Katastrofy ustawiono na Niestandardowe.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" Language="pl_PL">
 			<Text>Określa początkowy [icon:SETTLEMENT_LIMIT]limit osad w każdej epoce.</Text>
 		</Replace>
@@ -148,23 +160,23 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="pl_PL">
 			<Text>Określa koszt produkcji jednostek bojowych.[n] [BLIST][LI] Mniej: 25% taniej.[LI] Domyślne: bez rabatu.[LI] Więcej: 25% drożej.[LI] Drogie: 50% drożej.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="pl_PL">
-			<Text>Określa tempo kryzysów.</Text>
+		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="pl_PL">
+			<Text>Włącza lub wyłącza wszystkie kryzysy.[n]Wyłączone wyłącza każdy kryzys w Wyborze kryzysów.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_DEFAULT" Language="pl_PL">
-			<Text>Określa tempo kryzysów.[n] [BLIST][LI] Etap 1: zaczyna się przy 70%.[LI] Etap 2: zaczyna się przy 80%.[LI] Etap 3: zaczyna się przy 90%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION" Language="pl_PL">
+			<Text>Określa, kiedy zaczynają się kryzysy.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_QUICK" Language="pl_PL">
-			<Text>Określa tempo kryzysów.[n] [BLIST][LI] Etap 1: zaczyna się przy 75%.[LI] Etap 2: zaczyna się przy 85%.[LI] Etap 3: zaczyna się przy 95%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DISABLED" Language="pl_PL">
+			<Text>Kryzysy nie występują.[n]Ustaw Kryzysy na Włączone, aby wybrać moment.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_CRAWL" Language="pl_PL">
-			<Text>Określa tempo kryzysów.[n] [BLIST][LI] Etap 1: zaczyna się przy 50%.[LI] Etap 2: zaczyna się przy 65%.[LI] Etap 3: zaczyna się przy 85%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_EARLY" Language="pl_PL">
+			<Text>Określa, kiedy zaczynają się kryzysy.[n] [BLIST][LI] Etap 1: zaczyna się przy 50%.[LI] Etap 2: zaczyna się przy 65%.[LI] Etap 3: zaczyna się przy 85%.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_SLOW" Language="pl_PL">
-			<Text>Określa tempo kryzysów.[n] [BLIST][LI] Etap 1: zaczyna się przy 60%.[LI] Etap 2: zaczyna się przy 75%.[LI] Etap 3: zaczyna się przy 90%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DEFAULT" Language="pl_PL">
+			<Text>Określa, kiedy zaczynają się kryzysy.[n] [BLIST][LI] Etap 1: zaczyna się przy 70%.[LI] Etap 2: zaczyna się przy 80%.[LI] Etap 3: zaczyna się przy 90%.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_FAST" Language="pl_PL">
-			<Text>Określa tempo kryzysów.[n] [BLIST][LI] Etap 1: zaczyna się przy 85%.[LI] Etap 2: zaczyna się przy 90%.[LI] Etap 3: zaczyna się przy 95%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_LATE" Language="pl_PL">
+			<Text>Określa, kiedy zaczynają się kryzysy.[n] [BLIST][LI] Etap 1: zaczyna się przy 85%.[LI] Etap 2: zaczyna się przy 90%.[LI] Etap 3: zaczyna się przy 95%.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="pl_PL">
 			<Text>Określa liczbę [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] cudów natury na mapie.[n] [BLIST][LI] Wyłączone: 0 cudów natury.[LI] Połowa: o 50% mniej cudów natury.[LI] Domyślne: bez zmian.[LI] Więcej: o 50% więcej cudów natury.[LI] Podwójnie: o 100% więcej cudów natury.[/BLIST]</Text>

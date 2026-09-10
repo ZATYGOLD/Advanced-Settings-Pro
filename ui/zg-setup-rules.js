@@ -11,6 +11,21 @@
 //   5. A curated tier is selected   -> the per-age limits show that tier's values.
 //   6. A per-age limit is changed away from the curated tier's values
 //      -> the Settlement Limit setting switches to Custom.
+//
+// Disasters:
+//   7. A frequency tier is selected -> every age shows that tier (Disabled included).
+//   8. An age is changed away from the selected tier
+//      -> the Disasters setting switches to Custom.
+//
+// Crises:
+//   9. Crises set to Disabled       -> every crisis in the selection is excluded.
+//  10. Crises leaves Disabled       -> every crisis in the selection is included.
+//  11. Every crisis excluded        -> Crises becomes Disabled; any crisis included
+//      while it says Disabled       -> Crises becomes Enabled.
+//  12. Crises Disabled              -> Crisis Timing shows Disabled; Crises Enabled
+//      while the timing says Disabled -> the timing returns to Default.
+//  13. Crisis Timing set to Disabled -> Crises becomes Disabled; the timing leaves
+//      Disabled                     -> Crises becomes Enabled.
 
 const NW_COUNT_PARAM_ID = "ZG_NaturalWondersCount";
 const MAP_SIZE_PARAM_ID = "MapSize";
@@ -32,6 +47,14 @@ const SL_TIER_VALUES = {
 	"LOC_ZG_MORE_NAME": [5, 12, 20],
 };
 
+const DF_PARAM_ID = "ZG_DisasterFrequency";
+const DF_AGE_PARAM_IDS = ["ZG_DisastersAntiquity", "ZG_DisastersExploration", "ZG_DisastersModern"];
+
+const CRISES_PARAM_ID = "ZG_Crises";
+// The base multiselect lists excluded crises (UxHint InvertSelection).
+const CRISES_SELECTION_PARAM_ID = "Crises";
+const CRISIS_TIMING_PARAM_ID = "ZG_CrisisTiming";
+
 const TIER_DISABLED = "LOC_ZG_DISABLED_NAME";
 const TIER_HALF = "LOC_ZG_HALF_NAME";
 const TIER_DEFAULT = "LOC_ZG_DEFAULT_NAME";
@@ -48,6 +71,9 @@ const POLL_MS = 250;
 let lastRevision = -1;
 let nwLastTier = null;
 let slLastTier = null;
+let dfLastTier = null;
+let crisesLastToggle = null;
+let crisisTimingLast = null;
 let applying = false;
 
 function resolveName(handle) {
@@ -173,6 +199,101 @@ function syncSettlementLimits() {
 	}
 }
 
+// --------------------------------------------------------------- disasters --
+
+function syncDisasters() {
+	const tierParam = GameSetup.findGameParameter(DF_PARAM_ID);
+	if (!tierParam) {
+		return;
+	}
+	const ageParams = DF_AGE_PARAM_IDS.map((id) => GameSetup.findGameParameter(id));
+	if (ageParams.some((param) => !param)) {
+		return;
+	}
+	const tier = currentValueName(tierParam);
+	const isCurated = tier != TIER_CUSTOM;
+
+	// 7: the player changed the tier; every age follows it.
+	if (dfLastTier != null && tier != dfLastTier) {
+		if (isCurated) {
+			DF_AGE_PARAM_IDS.forEach((id) => setParamByName(id, tier));
+		}
+		dfLastTier = tier;
+		return;
+	}
+	dfLastTier = tier;
+	// 8: an age no longer matches the tier; switch to Custom.
+	if (isCurated && ageParams.some((param) => currentValueName(param) != tier)) {
+		setParamByName(DF_PARAM_ID, TIER_CUSTOM);
+		dfLastTier = TIER_CUSTOM;
+	}
+}
+
+// ------------------------------------------------------------------ crises --
+
+function syncCrises() {
+	const toggleParam = GameSetup.findGameParameter(CRISES_PARAM_ID);
+	const selectionParam = GameSetup.findGameParameter(CRISES_SELECTION_PARAM_ID);
+	if (!toggleParam || !selectionParam) {
+		return;
+	}
+	const possible = (selectionParam.domain?.possibleValues ?? []).map((entry) => entry.value);
+	if (possible.length == 0) {
+		return;
+	}
+	const toggle = currentValueName(toggleParam);
+	const excluded = (selectionParam.values ?? []).map((entry) => entry.value);
+	const allExcluded = possible.every((value) => excluded.includes(value));
+	const timingParam = GameSetup.findGameParameter(CRISIS_TIMING_PARAM_ID);
+	const timing = timingParam ? currentValueName(timingParam) : null;
+
+	// 9 & 10: the player changed the toggle; cascade to the selection and timing.
+	if (crisesLastToggle != null && toggle != crisesLastToggle) {
+		if (toggle == TOGGLE_DISABLED) {
+			GameSetup.setGameParameterValue(CRISES_SELECTION_PARAM_ID, possible);
+			setParamByName(CRISIS_TIMING_PARAM_ID, TIER_DISABLED);
+		} else if (crisesLastToggle == TOGGLE_DISABLED) {
+			GameSetup.setGameParameterValue(CRISES_SELECTION_PARAM_ID, []);
+			if (timing == TIER_DISABLED) {
+				setParamByName(CRISIS_TIMING_PARAM_ID, TIER_DEFAULT);
+			}
+		}
+		crisesLastToggle = toggle;
+		crisisTimingLast = null;
+		return;
+	}
+	crisesLastToggle = toggle;
+	// 13: the player changed the timing to or from Disabled; the toggle follows.
+	if (timing != null && crisisTimingLast != null && timing != crisisTimingLast) {
+		if (timing == TIER_DISABLED && toggle != TOGGLE_DISABLED) {
+			setParamByName(CRISES_PARAM_ID, TOGGLE_DISABLED);
+		} else if (crisisTimingLast == TIER_DISABLED && toggle == TOGGLE_DISABLED) {
+			setParamByName(CRISES_PARAM_ID, TOGGLE_ENABLED);
+		}
+		crisisTimingLast = timing;
+		return;
+	}
+	crisisTimingLast = timing;
+	// 11 & 12: keep the toggle truthful about the selection, and the timing about the toggle.
+	if (allExcluded && toggle != TOGGLE_DISABLED) {
+		setParamByName(CRISES_PARAM_ID, TOGGLE_DISABLED);
+		setParamByName(CRISIS_TIMING_PARAM_ID, TIER_DISABLED);
+		crisesLastToggle = TOGGLE_DISABLED;
+		crisisTimingLast = null;
+	} else if (!allExcluded && toggle == TOGGLE_DISABLED) {
+		setParamByName(CRISES_PARAM_ID, TOGGLE_ENABLED);
+		if (timing == TIER_DISABLED) {
+			setParamByName(CRISIS_TIMING_PARAM_ID, TIER_DEFAULT);
+		}
+		crisesLastToggle = TOGGLE_ENABLED;
+		crisisTimingLast = null;
+	} else if (timing != null && (timing == TIER_DISABLED) != (toggle == TOGGLE_DISABLED)) {
+		// Loaded configurations can disagree; the toggle wins.
+		setParamByName(CRISIS_TIMING_PARAM_ID, toggle == TOGGLE_DISABLED ? TIER_DISABLED : TIER_DEFAULT);
+		crisisTimingLast = null;
+	}
+}
+
 // ------------------------------------------------------------------ poller --
 
 setInterval(() => {
@@ -191,6 +312,16 @@ setInterval(() => {
 		syncSettlementLimits();
 	} catch (e) {
 		console.warn(`ZG-ASP settlement sync error: ${e}`);
+	}
+	try {
+		syncDisasters();
+	} catch (e) {
+		console.warn(`ZG-ASP disaster sync error: ${e}`);
+	}
+	try {
+		syncCrises();
+	} catch (e) {
+		console.warn(`ZG-ASP crises sync error: ${e}`);
 	}
 	applying = false;
 }, POLL_MS);

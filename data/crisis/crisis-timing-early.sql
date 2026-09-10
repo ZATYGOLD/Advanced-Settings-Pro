@@ -1,19 +1,18 @@
--- Fast: 85%, 90%, 95%
+-- Early: 50%, 65%, 85%
 UPDATE AgeCrisisStages
 SET
   AgeProgressTriggerPercent = CASE Stage
-    WHEN 1 THEN 85
-    WHEN 2 THEN 90
-    WHEN 3 THEN 95
+    WHEN 1 THEN 50
+    WHEN 2 THEN 65
+    WHEN 3 THEN 85
     WHEN 4 THEN 100
     ELSE AgeProgressTriggerPercent
   END,
   AgeProgressEndPercent = CASE Stage
-    WHEN 1 THEN 90
-    WHEN 2 THEN 95
+    WHEN 1 THEN 65
+    WHEN 2 THEN 85
     WHEN 3 THEN 100
     WHEN 4 THEN 100
     ELSE AgeProgressEndPercent
-  END,
-  MinDuration = 2
+  END
 WHERE Stage IN (1,2,3,4);

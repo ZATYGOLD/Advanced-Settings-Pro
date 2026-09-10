@@ -19,6 +19,12 @@
 		<Replace Tag="LOC_ZG_DEFAULT_NAME" Language="ja_JP">
 			<Text>デフォルト</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_EARLY_NAME" Language="ja_JP">
+			<Text>早い</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LATE_NAME" Language="ja_JP">
+			<Text>遅い</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_NONE_NAME" Language="ja_JP">
 			<Text>なし</Text>
 		</Replace>
@@ -34,14 +40,8 @@
 		<Replace Tag="LOC_ZG_FAST_NAME" Language="ja_JP">
 			<Text>速い</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_QUICK_NAME" Language="ja_JP">
-			<Text>やや速い</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_SLOW_NAME" Language="ja_JP">
 			<Text>遅い</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CRAWL_NAME" Language="ja_JP">
-			<Text>非常に遅い</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MORE_NAME" Language="ja_JP">
 			<Text>多い</Text>
@@ -76,8 +76,14 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="ja_JP">
 			<Text>軍事ユニットのコスト</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_NAME" Language="ja_JP">
-			<Text>危機の速度</Text>
+		<Replace Tag="LOC_ZG_CRISES_NAME" Language="ja_JP">
+			<Text>危機</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SELECTION_NAME" Language="ja_JP">
+			<Text>危機の選択</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_NAME" Language="ja_JP">
+			<Text>危機のタイミング</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_NAME" Language="ja_JP">
 			<Text>自然遺産</Text>
@@ -130,6 +136,12 @@
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="ja_JP">
 			<Text>すべての自然災害を無効にします。</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_DISASTER_FREQUENCY_DESCRIPTION_CUSTOM" Language="ja_JP">
+			<Text>カスタム：時代ごとに災害の頻度を個別に設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DISASTER_AGE_DESCRIPTION" Language="ja_JP">
+			<Text>この時代の災害の頻度を設定します。[n]災害がカスタムの場合のみ適用されます。</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" Language="ja_JP">
 			<Text>各時代の初期[icon:SETTLEMENT_LIMIT]入植地上限を設定します。</Text>
 		</Replace>
@@ -148,23 +160,23 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="ja_JP">
 			<Text>戦闘ユニットの生産コストを設定します。[n] [BLIST][LI] 少ない：25%割安。[LI] デフォルト：割引なし。[LI] 多い：25%割高。[LI] 高価：50%割高。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="ja_JP">
-			<Text>危機の進行速度を設定します。</Text>
+		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="ja_JP">
+			<Text>すべての危機を有効または無効にします。[n]無効にすると、危機の選択のすべての危機がオフになります。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_DEFAULT" Language="ja_JP">
-			<Text>危機の進行速度を設定します。[n] [BLIST][LI] 第1段階：70%で開始。[LI] 第2段階：80%で開始。[LI] 第3段階：90%で開始。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION" Language="ja_JP">
+			<Text>危機が始まる時期を設定します。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_QUICK" Language="ja_JP">
-			<Text>危機の進行速度を設定します。[n] [BLIST][LI] 第1段階：75%で開始。[LI] 第2段階：85%で開始。[LI] 第3段階：95%で開始。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DISABLED" Language="ja_JP">
+			<Text>危機は発生しません。[n]タイミングを選ぶには危機を有効にしてください。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_CRAWL" Language="ja_JP">
-			<Text>危機の進行速度を設定します。[n] [BLIST][LI] 第1段階：50%で開始。[LI] 第2段階：65%で開始。[LI] 第3段階：85%で開始。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_EARLY" Language="ja_JP">
+			<Text>危機が始まる時期を設定します。[n] [BLIST][LI] 第1段階：50%で開始。[LI] 第2段階：65%で開始。[LI] 第3段階：85%で開始。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_SLOW" Language="ja_JP">
-			<Text>危機の進行速度を設定します。[n] [BLIST][LI] 第1段階：60%で開始。[LI] 第2段階：75%で開始。[LI] 第3段階：90%で開始。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DEFAULT" Language="ja_JP">
+			<Text>危機が始まる時期を設定します。[n] [BLIST][LI] 第1段階：70%で開始。[LI] 第2段階：80%で開始。[LI] 第3段階：90%で開始。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_FAST" Language="ja_JP">
-			<Text>危機の進行速度を設定します。[n] [BLIST][LI] 第1段階：85%で開始。[LI] 第2段階：90%で開始。[LI] 第3段階：95%で開始。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_LATE" Language="ja_JP">
+			<Text>危機が始まる時期を設定します。[n] [BLIST][LI] 第1段階：85%で開始。[LI] 第2段階：90%で開始。[LI] 第3段階：95%で開始。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="ja_JP">
 			<Text>マップ上の[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然遺産の数を設定します。[n] [BLIST][LI] 無効：自然遺産0。[LI] 半分：自然遺産50%減。[LI] デフォルト：変更なし。[LI] 多い：自然遺産50%増。[LI] 2倍：自然遺産100%増。[/BLIST]</Text>

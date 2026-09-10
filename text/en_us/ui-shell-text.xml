@@ -16,14 +16,14 @@
 		<Row Tag="LOC_ZG_ENABLED_NAME"><Text>Enabled</Text></Row>
 		<Row Tag="LOC_ZG_DISABLED_NAME"><Text>Disabled</Text></Row>
 		<Row Tag="LOC_ZG_DEFAULT_NAME"><Text>Default</Text></Row>
+		<Row Tag="LOC_ZG_EARLY_NAME"><Text>Early</Text></Row>
+		<Row Tag="LOC_ZG_LATE_NAME"><Text>Late</Text></Row>
 		<Row Tag="LOC_ZG_NONE_NAME"><Text>None</Text></Row>
 		<Row Tag="LOC_ZG_CUSTOM_NAME"><Text>Custom</Text></Row>
 		<Row Tag="LOC_ZG_DOUBLE_NAME"><Text>Double</Text></Row>
 		<Row Tag="LOC_ZG_HALF_NAME"><Text>Half</Text></Row>
 		<Row Tag="LOC_ZG_FAST_NAME"><Text>Fast</Text></Row>
-		<Row Tag="LOC_ZG_QUICK_NAME"><Text>Quick</Text></Row>
 		<Row Tag="LOC_ZG_SLOW_NAME"><Text>Slow</Text></Row>
-		<Row Tag="LOC_ZG_CRAWL_NAME"><Text>Crawl</Text></Row>
 		<Row Tag="LOC_ZG_MORE_NAME"><Text>More</Text></Row>
 		<Row Tag="LOC_ZG_LESS_NAME"><Text>Less</Text></Row>
 		<Row Tag="LOC_ZG_EXPENSIVE_NAME"><Text>Expensive</Text></Row>
@@ -42,7 +42,9 @@
 		<Row Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME"><Text>Settlement Distance</Text></Row>
 		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_NAME"><Text>Military Unit Cost</Text></Row>
 		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME"><Text>Civilian Unit Cost</Text></Row>
-		<Row Tag="LOC_ZG_CRISIS_SPEED_NAME"><Text>Crisis Speed</Text></Row>
+		<Row Tag="LOC_ZG_CRISES_NAME"><Text>Crises</Text></Row>
+		<Row Tag="LOC_ZG_CRISIS_SELECTION_NAME"><Text>Crisis Selection</Text></Row>
+		<Row Tag="LOC_ZG_CRISIS_TIMING_NAME"><Text>Crisis Timing</Text></Row>
 		<Row Tag="LOC_ZG_NATURAL_WONDER_COUNT_NAME"><Text>Natural Wonders</Text></Row>
 		<Row Tag="LOC_ZG_LAKE_GENERATION_NAME"><Text>Lakes</Text></Row>
 
@@ -146,6 +148,12 @@
 		<Row Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION">
 			<Text> Disables all natural disasters.</Text>
 		</Row>
+		<Row Tag="LOC_ZG_DISASTER_FREQUENCY_DESCRIPTION_CUSTOM">
+			<Text>Custom: set the disaster frequency for each age individually.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_DISASTER_AGE_DESCRIPTION">
+			<Text>Sets this age's disaster frequency.[n]Applies only when Disasters is set to Custom.</Text>
+		</Row>
 
 	<!-- Settlement Limit Custom Setting -->
 
@@ -211,43 +219,33 @@
 		</Row>
 
 	<!-- Crisis Descriptions -->
-		<Row Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION">
-			<Text>Sets the pacing of the crises.</Text>
+		<Row Tag="LOC_ZG_CRISES_DESCRIPTION">
+			<Text>Enables or disables all crises.[n]Disabled turns off every crisis in Crisis Selection.</Text>
 		</Row>
-		<Row Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_DEFAULT">
-			<Text>Sets the pacing of the crises.
-				[n] [BLIST]
-				[LI] Stage 1: Begins at 70%.
-				[LI] Stage 2: Begins at 80%.
-				[LI] Stage 3: Begins at 90%.[/BLIST]
-			</Text>
+		<Row Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION">
+			<Text>Sets when the crises begin.</Text>
 		</Row>
-		<Row Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_QUICK">
-			<Text>Sets the pacing of the crises.
-				[n] [BLIST]
-				[LI] Stage 1: Begins at 75%.
-				[LI] Stage 2: Begins at 85%.
-				[LI] Stage 3: Begins at 95%.[/BLIST]
-			</Text>
+		<Row Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DISABLED">
+			<Text>No crises occur.[n]Set Crises to Enabled to choose a timing.</Text>
 		</Row>
-		<Row Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_CRAWL">
-			<Text>Sets the pacing of the crises.
+		<Row Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_EARLY">
+			<Text>Sets when the crises begin.
 				[n] [BLIST]
 				[LI] Stage 1: Begins at 50%.
 				[LI] Stage 2: Begins at 65%.
 				[LI] Stage 3: Begins at 85%.[/BLIST]
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_SLOW">
-			<Text>Sets the pacing of the crises.
+		<Row Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DEFAULT">
+			<Text>Sets when the crises begin.
 				[n] [BLIST]
-				[LI] Stage 1: Begins at 60%.
-				[LI] Stage 2: Begins at 75%.
+				[LI] Stage 1: Begins at 70%.
+				[LI] Stage 2: Begins at 80%.
 				[LI] Stage 3: Begins at 90%.[/BLIST]
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_FAST">
-			<Text>Sets the pacing of the crises.
+		<Row Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_LATE">
+			<Text>Sets when the crises begin.
 				[n] [BLIST]
 				[LI] Stage 1: Begins at 85%.
 				[LI] Stage 2: Begins at 90%.

@@ -19,6 +19,12 @@
 		<Replace Tag="LOC_ZG_DEFAULT_NAME" Language="ru_RU">
 			<Text>По умолчанию</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_EARLY_NAME" Language="ru_RU">
+			<Text>Рано</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LATE_NAME" Language="ru_RU">
+			<Text>Поздно</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_NONE_NAME" Language="ru_RU">
 			<Text>Нет</Text>
 		</Replace>
@@ -34,14 +40,8 @@
 		<Replace Tag="LOC_ZG_FAST_NAME" Language="ru_RU">
 			<Text>Быстро</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_QUICK_NAME" Language="ru_RU">
-			<Text>Ускоренно</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_SLOW_NAME" Language="ru_RU">
 			<Text>Медленно</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CRAWL_NAME" Language="ru_RU">
-			<Text>Очень медленно</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MORE_NAME" Language="ru_RU">
 			<Text>Больше</Text>
@@ -76,8 +76,14 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="ru_RU">
 			<Text>Стоимость военных юнитов</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_NAME" Language="ru_RU">
-			<Text>Темп кризисов</Text>
+		<Replace Tag="LOC_ZG_CRISES_NAME" Language="ru_RU">
+			<Text>Кризисы</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SELECTION_NAME" Language="ru_RU">
+			<Text>Выбор кризисов</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_NAME" Language="ru_RU">
+			<Text>Время кризисов</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_NAME" Language="ru_RU">
 			<Text>Чудеса природы</Text>
@@ -130,6 +136,12 @@
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="ru_RU">
 			<Text>Отключает все стихийные бедствия.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_DISASTER_FREQUENCY_DESCRIPTION_CUSTOM" Language="ru_RU">
+			<Text>Особый: задайте частоту катастроф для каждой эпохи отдельно.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DISASTER_AGE_DESCRIPTION" Language="ru_RU">
+			<Text>Задаёт частоту катастроф этой эпохи.[n]Действует только если «Катастрофы» установлены на Особый.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" Language="ru_RU">
 			<Text>Задаёт начальный [icon:SETTLEMENT_LIMIT]лимит поселений для каждой эпохи.</Text>
 		</Replace>
@@ -148,23 +160,23 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="ru_RU">
 			<Text>Задаёт стоимость производства боевых юнитов.[n] [BLIST][LI] Меньше: на 25% дешевле.[LI] По умолчанию: без скидки.[LI] Больше: на 25% дороже.[LI] Дорого: на 50% дороже.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт темп кризисов.</Text>
+		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="ru_RU">
+			<Text>Включает или отключает все кризисы.[n]Отключено выключает каждый кризис в разделе «Выбор кризисов».</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_DEFAULT" Language="ru_RU">
-			<Text>Задаёт темп кризисов.[n] [BLIST][LI] Этап 1: начинается при 70%.[LI] Этап 2: начинается при 80%.[LI] Этап 3: начинается при 90%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION" Language="ru_RU">
+			<Text>Задаёт, когда начинаются кризисы.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_QUICK" Language="ru_RU">
-			<Text>Задаёт темп кризисов.[n] [BLIST][LI] Этап 1: начинается при 75%.[LI] Этап 2: начинается при 85%.[LI] Этап 3: начинается при 95%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DISABLED" Language="ru_RU">
+			<Text>Кризисы не происходят.[n]Включите «Кризисы», чтобы выбрать время.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_CRAWL" Language="ru_RU">
-			<Text>Задаёт темп кризисов.[n] [BLIST][LI] Этап 1: начинается при 50%.[LI] Этап 2: начинается при 65%.[LI] Этап 3: начинается при 85%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_EARLY" Language="ru_RU">
+			<Text>Задаёт, когда начинаются кризисы.[n] [BLIST][LI] Этап 1: начинается при 50%.[LI] Этап 2: начинается при 65%.[LI] Этап 3: начинается при 85%.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_SLOW" Language="ru_RU">
-			<Text>Задаёт темп кризисов.[n] [BLIST][LI] Этап 1: начинается при 60%.[LI] Этап 2: начинается при 75%.[LI] Этап 3: начинается при 90%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DEFAULT" Language="ru_RU">
+			<Text>Задаёт, когда начинаются кризисы.[n] [BLIST][LI] Этап 1: начинается при 70%.[LI] Этап 2: начинается при 80%.[LI] Этап 3: начинается при 90%.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_FAST" Language="ru_RU">
-			<Text>Задаёт темп кризисов.[n] [BLIST][LI] Этап 1: начинается при 85%.[LI] Этап 2: начинается при 90%.[LI] Этап 3: начинается при 95%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_LATE" Language="ru_RU">
+			<Text>Задаёт, когда начинаются кризисы.[n] [BLIST][LI] Этап 1: начинается при 85%.[LI] Этап 2: начинается при 90%.[LI] Этап 3: начинается при 95%.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="ru_RU">
 			<Text>Задаёт число [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] чудес природы на карте.[n] [BLIST][LI] Отключено: 0 чудес природы.[LI] Половина: на 50% меньше чудес природы.[LI] По умолчанию: без изменений.[LI] Больше: на 50% больше чудес природы.[LI] Вдвое больше: на 100% больше чудес природы.[/BLIST]</Text>

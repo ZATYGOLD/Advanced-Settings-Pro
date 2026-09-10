@@ -59,7 +59,8 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Single Player No Age Transitions: Enabled or Disabled
 - Game Speed: adds Online 2.0 (150% faster than Standard) and Marathon 2.0 (400% slower than Standard)
 - Age Length: Brief, Abbreviated, Standard, Long, or Doubled (90 to 280 age progress points per age)
-- Disaster Frequency: Disabled, Light, Moderate, or Catastrophic
+- Disaster Frequency: Disabled, Light, Moderate, Catastrophic, or Custom
+- Antiquity, Exploration, and Modern disaster frequency: Disabled, Light, Moderate, or Catastrophic each, applied when Disaster Frequency is set to Custom
 - Settler Speed: Slow, Default, or Fast
 - Treasure Convoy Speed: Slow, Default, or Fast
 - Military Unit Cost: Less, Default, More, or Expensive
@@ -69,7 +70,8 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Lakes: Disabled, Less, Default, or More
 - Rivers: Disabled, Less, Default, or More
 - Mountains: Disabled, Less, Default, or More
-- Crisis Speed: Crawl, Slow, Default, Quick, or Fast
+- Crises: Enabled or Disabled, driving the game's per-crisis selection
+- Crisis Timing: Early, Default, or Late (Disabled while Crises is Disabled)
 - Settlement Limit: Less, Default, More, or Custom
 - Antiquity, Exploration, and Modern settlement limits: 1 to 50 each, applied when Settlement Limit is set to Custom
 - Settlement Distance: Less, Default, or More
