@@ -19,6 +19,12 @@
 		<Replace Tag="LOC_ZG_DEFAULT_NAME" Language="zh_Hant_HK">
 			<Text>預設</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_EARLY_NAME" Language="zh_Hant_HK">
+			<Text>提前</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LATE_NAME" Language="zh_Hant_HK">
+			<Text>延後</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_NONE_NAME" Language="zh_Hant_HK">
 			<Text>無</Text>
 		</Replace>
@@ -34,14 +40,8 @@
 		<Replace Tag="LOC_ZG_FAST_NAME" Language="zh_Hant_HK">
 			<Text>快</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_QUICK_NAME" Language="zh_Hant_HK">
-			<Text>較快</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_SLOW_NAME" Language="zh_Hant_HK">
 			<Text>慢</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CRAWL_NAME" Language="zh_Hant_HK">
-			<Text>極慢</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MORE_NAME" Language="zh_Hant_HK">
 			<Text>更多</Text>
@@ -76,8 +76,14 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="zh_Hant_HK">
 			<Text>軍事單位花費</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_NAME" Language="zh_Hant_HK">
-			<Text>危機速度</Text>
+		<Replace Tag="LOC_ZG_CRISES_NAME" Language="zh_Hant_HK">
+			<Text>危機</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SELECTION_NAME" Language="zh_Hant_HK">
+			<Text>危機選擇</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_NAME" Language="zh_Hant_HK">
+			<Text>危機時機</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_NAME" Language="zh_Hant_HK">
 			<Text>自然奇觀</Text>
@@ -95,25 +101,55 @@
 			<Text>近代</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>設定開拓者的基礎移動力與登船移動力。[n] [BLIST][LI] 慢：基礎2[icon:Action_Move]，登船1[icon:Action_Move]。[LI] 預設：基礎3[icon:Action_Move]，登船2[icon:Action_Move]。[LI] 快：基礎4[icon:Action_Move]，登船3[icon:Action_Move]。[/BLIST]</Text>
+			<Text>設定開拓者的基礎移動力與登船移動力。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_SLOW" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 慢：基礎2[icon:Action_Move]，登船1[icon:Action_Move]。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 預設：基礎3[icon:Action_Move]，登船2[icon:Action_Move]。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 快：基礎4[icon:Action_Move]，登船3[icon:Action_Move]。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>設定寶藏護衛隊的基礎移動力與登船移動力。[n] [BLIST][LI] 慢：基礎與登船移動力均為1[icon:Action_Move]。[LI] 預設：基礎與登船移動力均為2[icon:Action_Move]。[LI] 快：基礎與登船移動力均為3[icon:Action_Move]。[/BLIST]</Text>
+			<Text>設定寶藏護衛隊的基礎移動力與登船移動力。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_SLOW" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 慢：基礎與登船移動力均為1[icon:Action_Move]。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 預設：基礎與登船移動力均為2[icon:Action_Move]。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 快：基礎與登船移動力均為3[icon:Action_Move]。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>設定[icon:INDEPENDENT_POWER]獨立勢力的初始數量。結果可能有所不同。[n] [BLIST][LI] 無：0個獨立勢力。[LI] 更少：每個文明2個獨立勢力。[LI] 預設：每個文明3個獨立勢力。[LI] 更多：每個文明4個獨立勢力。[/BLIST][n] [n]遊戲會嘗試產生所需數量，但實際數量可能不完全一致。[n]結果將盡可能接近預期值。</Text>
+			<Text>設定[icon:INDEPENDENT_POWER]獨立勢力的初始數量。結果可能有所不同。[n]遊戲會嘗試產生所需數量，但實際數量可能不完全一致。[n]結果將盡可能接近預期值。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_NONE" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 無：0個獨立勢力。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_LESS" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 更少：每個文明2個獨立勢力。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_DEFAULT" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 預設：每個文明3個獨立勢力。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_MORE" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 更多：每個文明4個獨立勢力。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>設定獨立勢力之間的最小距離。[n] 這可能影響獨立勢力的總數。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_LESS" Language="zh_Hant_HK">
-			<Text>設定獨立勢力之間的最小距離。[n] 這可能影響獨立勢力的總數。[n] [BLIST][LI] 古典：4格。[LI] 探索：3格。[LI] 近代：2格。[/BLIST]</Text>
+			<Text>[BLIST][LI] 古典：4格。[LI] 探索：3格。[LI] 近代：2格。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_DEFAULT" Language="zh_Hant_HK">
-			<Text>設定獨立勢力之間的最小距離。[n] 這可能影響獨立勢力的總數。[n] [BLIST][LI] 古典：6格。[LI] 探索：6格。[LI] 近代：4格。[/BLIST]</Text>
+			<Text>[BLIST][LI] 古典：6格。[LI] 探索：6格。[LI] 近代：4格。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="zh_Hant_HK">
-			<Text>設定獨立勢力之間的最小距離。[n] 這可能影響獨立勢力的總數。[n] [BLIST][LI] 古典：7格。[LI] 探索：7格。[LI] 近代：5格。[/BLIST]</Text>
+			<Text>[BLIST][LI] 古典：7格。[LI] 探索：7格。[LI] 近代：5格。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>設定獨立勢力的初始單位數量。 [n] 獨立勢力始終以1個[icon:UNIT_SCOUT]偵察兵開局。</Text>
@@ -128,64 +164,100 @@
 			<Text>設定獨立勢力的初始單位數量。 [n] 獨立勢力始終以1個[icon:UNIT_SCOUT]偵察兵開局。[n] [BLIST][LI] 古典：2[icon:UNIT_WARRIOR]戰士。[LI] 探索：4[icon:UNIT_SWORDSMAN]劍士。[LI] 近代：5[icon:UNIT_LINE_INFANTRY]戰列步兵。[/BLIST][n] [n]單位數量取決於村莊中心及其第一環內可用的陸地格數。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>停用所有自然災害。[n]危機事件不受此設定影響。</Text>
+			<Text>停用所有自然災害。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DISASTER_FREQUENCY_DESCRIPTION_CUSTOM" Language="zh_Hant_HK">
+			<Text>自訂：為每個時代單獨設定災難頻率。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DISASTER_AGE_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>設定該時代的災難頻率。[n]僅當災難設為自訂時生效。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>設定每個時代的初始[icon:SETTLEMENT_LIMIT]聚居地上限。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_DEFAULT" Language="zh_Hant_HK">
-			<Text>設定每個時代的初始[icon:SETTLEMENT_LIMIT]聚居地上限。[n] [BLIST][LI] 古典：聚居地上限3。[LI] 探索：聚居地上限8。[LI] 近代：聚居地上限16。[/BLIST]</Text>
+			<Text>[BLIST][LI] 古典：聚居地上限3。[LI] 探索：聚居地上限8。[LI] 近代：聚居地上限16。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_MORE" Language="zh_Hant_HK">
-			<Text>設定每個時代的初始[icon:SETTLEMENT_LIMIT]聚居地上限。[n] [BLIST][LI] 古典：聚居地上限5。[LI] 探索：聚居地上限12。[LI] 近代：聚居地上限20。[/BLIST]</Text>
+			<Text>[BLIST][LI] 古典：聚居地上限5。[LI] 探索：聚居地上限12。[LI] 近代：聚居地上限20。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_LESS" Language="zh_Hant_HK">
-			<Text>設定每個時代的初始[icon:SETTLEMENT_LIMIT]聚居地上限。[n] [BLIST][LI] 古典：聚居地上限1。[LI] 探索：聚居地上限4。[LI] 近代：聚居地上限10。[/BLIST]</Text>
+			<Text>[BLIST][LI] 古典：聚居地上限1。[LI] 探索：聚居地上限4。[LI] 近代：聚居地上限10。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>設定聚居地之間的最小距離。[n] [BLIST][LI] 更少：2格。[LI] 預設：3格。[LI] 更多：4格。[/BLIST]</Text>
+			<Text>設定聚居地之間的最小距離。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_LESS" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 更少：2格。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_DEFAULT" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 預設：3格。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 更多：4格。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>設定戰鬥單位的生產花費。[n] [BLIST][LI] 更少：便宜25%。[LI] 預設：無折扣。[LI] 更多：昂貴25%。[LI] 昂貴：昂貴50%。[/BLIST]</Text>
+			<Text>設定戰鬥單位的生產花費。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>設定危機的推進速度。</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_CHEAPER" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 便宜：便宜25%。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_DEFAULT" Language="zh_Hant_HK">
-			<Text>設定危機的推進速度。[n] [BLIST][LI] 第1階段：於70%開始。[LI] 第2階段：於80%開始。[LI] 第3階段：於90%開始。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 標準：無折扣。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_QUICK" Language="zh_Hant_HK">
-			<Text>設定危機的推進速度。[n] [BLIST][LI] 第1階段：於75%開始。[LI] 第2階段：於85%開始。[LI] 第3階段：於95%開始。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 實惠：昂貴50%。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_CRAWL" Language="zh_Hant_HK">
-			<Text>設定危機的推進速度。[n] [BLIST][LI] 第1階段：於50%開始。[LI] 第2階段：於65%開始。[LI] 第3階段：於85%開始。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 昂貴：昂貴100%。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_SLOW" Language="zh_Hant_HK">
-			<Text>設定危機的推進速度。[n] [BLIST][LI] 第1階段：於60%開始。[LI] 第2階段：於75%開始。[LI] 第3階段：於90%開始。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>啟用或停用所有危機。[n]停用將關閉危機選擇中的所有危機。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_FAST" Language="zh_Hant_HK">
-			<Text>設定危機的推進速度。[n] [BLIST][LI] 第1階段：於85%開始。[LI] 第2階段：於90%開始。[LI] 第3階段：於95%開始。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>設定危機開始的時間。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DISABLED" Language="zh_Hant_HK">
+			<Text>不會發生危機。[n]將危機設為啟用以選擇時機。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_EARLY" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 第1階段：於50%開始。[LI] 第2階段：於65%開始。[LI] 第3階段：於85%開始。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DEFAULT" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 第1階段：於70%開始。[LI] 第2階段：於80%開始。[LI] 第3階段：於90%開始。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_LATE" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 第1階段：於85%開始。[LI] 第2階段：於90%開始。[LI] 第3階段：於95%開始。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>設定地圖上[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然奇觀的數量。[n] [BLIST][LI] 停用：0個自然奇觀。[LI] 減半：自然奇觀減少50%。[LI] 預設：自然奇觀不變。[LI] 更多：自然奇觀增加50%。[LI] 雙倍：自然奇觀增加100%。[/BLIST]</Text>
+			<Text>設定地圖上[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然奇觀的數量。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE" Language="zh_Hant_HK">
-			<Text>設定地圖上[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然奇觀的數量。[n] 地圖大小[n] [BLIST][LI] 極小：0個自然奇觀。[LI] 小：0個自然奇觀。[LI] 標準：0個自然奇觀。[LI] 大：0個自然奇觀。[LI] 巨大：0個自然奇觀。[/BLIST]</Text>
+			<Text>地圖大小[n] [BLIST][LI] 極小：0個自然奇觀。[LI] 小：0個自然奇觀。[LI] 標準：0個自然奇觀。[LI] 大：0個自然奇觀。[LI] 巨大：0個自然奇觀。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF" Language="zh_Hant_HK">
-			<Text>設定地圖上[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然奇觀的數量。[n] 地圖大小[n] [BLIST][LI] 極小：1個自然奇觀。[LI] 小：2個自然奇觀。[LI] 標準：2個自然奇觀。[LI] 大：3個自然奇觀。[LI] 巨大：3個自然奇觀。[/BLIST]</Text>
+			<Text>地圖大小[n] [BLIST][LI] 極小：1個自然奇觀。[LI] 小：2個自然奇觀。[LI] 標準：2個自然奇觀。[LI] 大：3個自然奇觀。[LI] 巨大：3個自然奇觀。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DEFAULT" Language="zh_Hant_HK">
-			<Text>設定地圖上[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然奇觀的數量。[n] 地圖大小[n] [BLIST][LI] 極小：3個自然奇觀。[LI] 小：4個自然奇觀。[LI] 標準：5個自然奇觀。[LI] 大：6個自然奇觀。[LI] 巨大：7個自然奇觀。[/BLIST]</Text>
+			<Text>地圖大小[n] [BLIST][LI] 極小：3個自然奇觀。[LI] 小：4個自然奇觀。[LI] 標準：5個自然奇觀。[LI] 大：6個自然奇觀。[LI] 巨大：7個自然奇觀。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE" Language="zh_Hant_HK">
-			<Text>設定地圖上[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然奇觀的數量。[n] 地圖大小[n] [BLIST][LI] 極小：5個自然奇觀。[LI] 小：6個自然奇觀。[LI] 標準：8個自然奇觀。[LI] 大：9個自然奇觀。[LI] 巨大：11個自然奇觀。[/BLIST]</Text>
+			<Text>地圖大小[n] [BLIST][LI] 極小：5個自然奇觀。[LI] 小：6個自然奇觀。[LI] 標準：8個自然奇觀。[LI] 大：9個自然奇觀。[LI] 巨大：11個自然奇觀。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE" Language="zh_Hant_HK">
-			<Text>設定地圖上[icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]自然奇觀的數量。[n] 地圖大小[n] [BLIST][LI] 極小：6個自然奇觀。[LI] 小：8個自然奇觀。[LI] 標準：10個自然奇觀。[LI] 大：12個自然奇觀。[LI] 巨大：14個自然奇觀。[/BLIST]</Text>
+			<Text>地圖大小[n] [BLIST][LI] 極小：6個自然奇觀。[LI] 小：8個自然奇觀。[LI] 標準：10個自然奇觀。[LI] 大：12個自然奇觀。[LI] 巨大：14個自然奇觀。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>設定地圖上湖泊的出現頻率。結果可能有所不同。[n] 遊戲會嘗試調整湖泊數量。[n] 但地圖產生可能將其還原為預設值。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_LESS" Language="zh_Hant_HK">
+			<Text>生成更少的湖泊。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DEFAULT" Language="zh_Hant_HK">
+			<Text>所選地圖類型的標準湖泊生成。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_MORE" Language="zh_Hant_HK">
+			<Text>生成更多的湖泊。</Text>
 		</Replace>
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="zh_Hant_HK">
 			<Text>Advanced Settings Pro</Text>
@@ -198,6 +270,15 @@
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="zh_Hant_HK">
 			<Text>自然奇觀選擇</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_CRISISOPTIONS" Language="zh_Hant_HK">
+			<Text>危機設定</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_DISASTEROPTIONS" Language="zh_Hant_HK">
+			<Text>災難設定</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS" Language="zh_Hant_HK">
+			<Text>地圖</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="zh_Hant_HK">
 			<Text>偵測到模組衝突</Text>
@@ -213,6 +294,24 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="zh_Hant_HK">
 			<Text>保留兩者</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="zh_Hant_HK">
+			<Text>新增以下設定的未識別模組：</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="zh_Hant_HK">
+			<Text>隨機紀念品</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTO_1_NAME" Language="zh_Hant_HK">
+			<Text>紀念品 1</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTO_2_NAME" Language="zh_Hant_HK">
+			<Text>紀念品 2</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="zh_Hant_HK">
+			<Text>自訂：為每個時代單獨設定凱旋集。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRIUMPH_SET_AGE_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>設定該時代的凱旋集。[n]僅當凱旋集設為自訂時生效。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM" Language="zh_Hant_HK">
 			<Text>自訂：為每個時代單獨設定聚居地上限。</Text>
@@ -235,11 +334,11 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="zh_Hant_HK">
 			<Text>生成更多的河流，其中更多可通航。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED" Language="zh_Hant_HK">
-			<Text>不生成河流。</Text>
+		<Replace Tag="LOC_ZG_CHEAPER_NAME" Language="zh_Hant_HK">
+			<Text>便宜</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="zh_Hant_HK">
-			<Text>不生成湖泊。</Text>
+		<Replace Tag="LOC_ZG_AFFORDABLE_NAME" Language="zh_Hant_HK">
+			<Text>實惠</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="zh_Hant_HK">
 			<Text>昂貴</Text>
@@ -248,7 +347,19 @@
 			<Text>平民單位花費</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>設定平民單位的生產花費。[n] [BLIST][LI] 更少：便宜25%。[LI] 預設：無折扣。[LI] 更多：昂貴25%。[LI] 昂貴：昂貴50%。[/BLIST]</Text>
+			<Text>設定平民單位的生產花費。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_CHEAPER" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 便宜：便宜25%。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 標準：無折扣。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 實惠：昂貴50%。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 昂貴：昂貴100%。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="zh_Hant_HK">
 			<Text>線上2.0</Text>
@@ -354,9 +465,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>設定建立地圖時生成的山脈數量。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DISABLED" Language="zh_Hant_HK">
-			<Text>不生成山脈。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_LESS" Language="zh_Hant_HK">
 			<Text>生成更少的山脈。</Text>

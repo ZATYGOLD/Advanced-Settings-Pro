@@ -1,13 +1,11 @@
 // Applies the Mountains setup setting when a map script places mountains.
 // Mirrors the base addMountains, which turns land above a fractal height
 // percentile into mountains (default cutoff 90 = the tallest ~10% of land).
-// A higher cutoff yields fewer mountains, a lower cutoff more; Disabled skips
-// mountain placement entirely. Default keeps the base behavior unchanged.
+// A higher cutoff yields fewer mountains, a lower cutoff more; Standard keeps
+// the base behavior unchanged.
 import { g_MountainFractal, g_HillFractal, g_MountainTerrain, g_FlatTerrain } from 'fs://game/base-standard/maps/map-globals.js';
-import { addVolcanoes, addTundraVolcanoes } from 'fs://game/base-standard/maps/volcano-generator.js';
 
 const MOUNTAINS_SETTING_KEY = "MountainsKey";
-const MOUNTAINS_DISABLED = "ZG_DISABLED_MOUNTAINS";
 // Fractal height percentile cutoff per tier; higher = fewer mountains.
 const MOUNTAIN_TIER_CUTOFF = {
 	ZG_LESS_MOUNTAINS: 95,
@@ -16,31 +14,8 @@ const MOUNTAIN_TIER_CUTOFF = {
 const BASE_CUTOFF = 93;
 const BASE_ADJUSTMENT = 3;
 
-export function zgMountainsDisabled() {
-	return Configuration.getGameValue(MOUNTAINS_SETTING_KEY) == MOUNTAINS_DISABLED;
-}
-
-export function zgAddVolcanoes(iWidth, iHeight) {
-	if (zgMountainsDisabled()) {
-		console.log("ZG-ASP mountains 'ZG_DISABLED_MOUNTAINS': skipping volcanoes (boundary mountains)");
-		return;
-	}
-	addVolcanoes(iWidth, iHeight);
-}
-
-export function zgAddTundraVolcanoes(iWidth, iHeight) {
-	if (zgMountainsDisabled()) {
-		return;
-	}
-	addTundraVolcanoes(iWidth, iHeight);
-}
-
 export function zgAddMountains(iWidth, iHeight) {
 	const setting = Configuration.getGameValue(MOUNTAINS_SETTING_KEY);
-	if (setting == MOUNTAINS_DISABLED) {
-		console.log("ZG-ASP mountains setting 'ZG_DISABLED_MOUNTAINS': skipping mountain generation");
-		return;
-	}
 	const iFlags = 0;
 	const grainAmount = 5;
 	let extraMountains = 0;

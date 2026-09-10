@@ -19,6 +19,12 @@
 		<Replace Tag="LOC_ZG_DEFAULT_NAME" Language="ru_RU">
 			<Text>По умолчанию</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_EARLY_NAME" Language="ru_RU">
+			<Text>Рано</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LATE_NAME" Language="ru_RU">
+			<Text>Поздно</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_NONE_NAME" Language="ru_RU">
 			<Text>Нет</Text>
 		</Replace>
@@ -34,14 +40,8 @@
 		<Replace Tag="LOC_ZG_FAST_NAME" Language="ru_RU">
 			<Text>Быстро</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_QUICK_NAME" Language="ru_RU">
-			<Text>Ускоренно</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_SLOW_NAME" Language="ru_RU">
 			<Text>Медленно</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CRAWL_NAME" Language="ru_RU">
-			<Text>Очень медленно</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MORE_NAME" Language="ru_RU">
 			<Text>Больше</Text>
@@ -76,8 +76,14 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="ru_RU">
 			<Text>Стоимость военных юнитов</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_NAME" Language="ru_RU">
-			<Text>Темп кризисов</Text>
+		<Replace Tag="LOC_ZG_CRISES_NAME" Language="ru_RU">
+			<Text>Кризисы</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SELECTION_NAME" Language="ru_RU">
+			<Text>Выбор кризисов</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_NAME" Language="ru_RU">
+			<Text>Время кризисов</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_NAME" Language="ru_RU">
 			<Text>Чудеса природы</Text>
@@ -95,25 +101,55 @@
 			<Text>Современность</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт базовое передвижение поселенца и его скорость на воде.[n] [BLIST][LI] Медленно: 2[icon:Action_Move]базового и 1[icon:Action_Move]на воде.[LI] По умолчанию: 3[icon:Action_Move]базового и 2[icon:Action_Move]на воде.[LI] Быстро: 4[icon:Action_Move]базового и 3[icon:Action_Move]на воде.[/BLIST]</Text>
+			<Text>Задаёт базовое передвижение поселенца и его скорость на воде.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_SLOW" Language="ru_RU">
+			<Text>[BLIST][LI] Медленно: 2[icon:Action_Move]базового и 1[icon:Action_Move]на воде.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="ru_RU">
+			<Text>[BLIST][LI] По умолчанию: 3[icon:Action_Move]базового и 2[icon:Action_Move]на воде.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="ru_RU">
+			<Text>[BLIST][LI] Быстро: 4[icon:Action_Move]базового и 3[icon:Action_Move]на воде.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт базовое передвижение серебряного каравана и его скорость на воде.[n] [BLIST][LI] Медленно: 1[icon:Action_Move]передвижения на суше и на воде.[LI] По умолчанию: 2[icon:Action_Move]передвижения на суше и на воде.[LI] Быстро: 3[icon:Action_Move]передвижения на суше и на воде.[/BLIST]</Text>
+			<Text>Задаёт базовое передвижение серебряного каравана и его скорость на воде.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_SLOW" Language="ru_RU">
+			<Text>[BLIST][LI] Медленно: 1[icon:Action_Move]передвижения на суше и на воде.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="ru_RU">
+			<Text>[BLIST][LI] По умолчанию: 2[icon:Action_Move]передвижения на суше и на воде.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="ru_RU">
+			<Text>[BLIST][LI] Быстро: 3[icon:Action_Move]передвижения на суше и на воде.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт начальное число [icon:INDEPENDENT_POWER]независимых держав. Результат может отличаться.[n] [BLIST][LI] Нет: 0 независимых держав.[LI] Меньше: 2 независимых держав на цивилизацию.[LI] По умолчанию: 3 независимых держав на цивилизацию.[LI] Больше: 4 независимых держав на цивилизацию.[/BLIST][n] [n]Игра постарается создать заданное количество, однако точное число может отличаться.[n]Результат будет максимально близок к ожидаемому.</Text>
+			<Text>Задаёт начальное число [icon:INDEPENDENT_POWER]независимых держав. Результат может отличаться.[n]Игра постарается создать заданное количество, однако точное число может отличаться.[n]Результат будет максимально близок к ожидаемому.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_NONE" Language="ru_RU">
+			<Text>[BLIST][LI] Нет: 0 независимых держав.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_LESS" Language="ru_RU">
+			<Text>[BLIST][LI] Меньше: 2 независимых держав на цивилизацию.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_DEFAULT" Language="ru_RU">
+			<Text>[BLIST][LI] По умолчанию: 3 независимых держав на цивилизацию.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_MORE" Language="ru_RU">
+			<Text>[BLIST][LI] Больше: 4 независимых держав на цивилизацию.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION" Language="ru_RU">
 			<Text>Задаёт минимальное расстояние между независимыми державами.[n] Это может повлиять на их общее число.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_LESS" Language="ru_RU">
-			<Text>Задаёт минимальное расстояние между независимыми державами.[n] Это может повлиять на их общее число.[n] [BLIST][LI] Античность: 4 клеток.[LI] Исследования: 3 клеток.[LI] Современность: 2 клеток.[/BLIST]</Text>
+			<Text>[BLIST][LI] Античность: 4 клеток.[LI] Исследования: 3 клеток.[LI] Современность: 2 клеток.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_DEFAULT" Language="ru_RU">
-			<Text>Задаёт минимальное расстояние между независимыми державами.[n] Это может повлиять на их общее число.[n] [BLIST][LI] Античность: 6 клеток.[LI] Исследования: 6 клеток.[LI] Современность: 4 клеток.[/BLIST]</Text>
+			<Text>[BLIST][LI] Античность: 6 клеток.[LI] Исследования: 6 клеток.[LI] Современность: 4 клеток.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="ru_RU">
-			<Text>Задаёт минимальное расстояние между независимыми державами.[n] Это может повлиять на их общее число.[n] [BLIST][LI] Античность: 7 клеток.[LI] Исследования: 7 клеток.[LI] Современность: 5 клеток.[/BLIST]</Text>
+			<Text>[BLIST][LI] Античность: 7 клеток.[LI] Исследования: 7 клеток.[LI] Современность: 5 клеток.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION" Language="ru_RU">
 			<Text>Задаёт начальное число юнитов независимой державы. [n] Независимые державы всегда начинают с 1[icon:UNIT_SCOUT]Разведчиком.</Text>
@@ -128,64 +164,100 @@
 			<Text>Задаёт начальное число юнитов независимой державы. [n] Независимые державы всегда начинают с 1[icon:UNIT_SCOUT]Разведчиком.[n] [BLIST][LI] Античность: 2[icon:UNIT_WARRIOR]Воины.[LI] Исследования: 4[icon:UNIT_SWORDSMAN]Мечники.[LI] Современность: 5[icon:UNIT_LINE_INFANTRY]Линейная пехота.[/BLIST][n] [n]Число юнитов зависит от доступных клеток суши в первом кольце, включая центр деревни.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="ru_RU">
-			<Text>Отключает все стихийные бедствия.[n]События кризисов этот параметр не затрагивает.</Text>
+			<Text>Отключает все стихийные бедствия.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DISASTER_FREQUENCY_DESCRIPTION_CUSTOM" Language="ru_RU">
+			<Text>Особый: задайте частоту катастроф для каждой эпохи отдельно.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DISASTER_AGE_DESCRIPTION" Language="ru_RU">
+			<Text>Задаёт частоту катастроф этой эпохи.[n]Действует только если «Катастрофы» установлены на Особый.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" Language="ru_RU">
 			<Text>Задаёт начальный [icon:SETTLEMENT_LIMIT]лимит поселений для каждой эпохи.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_DEFAULT" Language="ru_RU">
-			<Text>Задаёт начальный [icon:SETTLEMENT_LIMIT]лимит поселений для каждой эпохи.[n] [BLIST][LI] Античность: лимит поселений 3.[LI] Исследования: лимит поселений 8.[LI] Современность: лимит поселений 16.[/BLIST]</Text>
+			<Text>[BLIST][LI] Античность: лимит поселений 3.[LI] Исследования: лимит поселений 8.[LI] Современность: лимит поселений 16.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_MORE" Language="ru_RU">
-			<Text>Задаёт начальный [icon:SETTLEMENT_LIMIT]лимит поселений для каждой эпохи.[n] [BLIST][LI] Античность: лимит поселений 5.[LI] Исследования: лимит поселений 12.[LI] Современность: лимит поселений 20.[/BLIST]</Text>
+			<Text>[BLIST][LI] Античность: лимит поселений 5.[LI] Исследования: лимит поселений 12.[LI] Современность: лимит поселений 20.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_LESS" Language="ru_RU">
-			<Text>Задаёт начальный [icon:SETTLEMENT_LIMIT]лимит поселений для каждой эпохи.[n] [BLIST][LI] Античность: лимит поселений 1.[LI] Исследования: лимит поселений 4.[LI] Современность: лимит поселений 10.[/BLIST]</Text>
+			<Text>[BLIST][LI] Античность: лимит поселений 1.[LI] Исследования: лимит поселений 4.[LI] Современность: лимит поселений 10.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт минимальное расстояние между поселениями.[n] [BLIST][LI] Меньше: 2 клеток.[LI] По умолчанию: 3 клеток.[LI] Больше: 4 клеток.[/BLIST]</Text>
+			<Text>Задаёт минимальное расстояние между поселениями.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_LESS" Language="ru_RU">
+			<Text>[BLIST][LI] Меньше: 2 клеток.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_DEFAULT" Language="ru_RU">
+			<Text>[BLIST][LI] По умолчанию: 3 клеток.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="ru_RU">
+			<Text>[BLIST][LI] Больше: 4 клеток.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт стоимость производства боевых юнитов.[n] [BLIST][LI] Меньше: на 25% дешевле.[LI] По умолчанию: без скидки.[LI] Больше: на 25% дороже.[LI] Дорого: на 50% дороже.[/BLIST]</Text>
+			<Text>Задаёт стоимость производства боевых юнитов.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт темп кризисов.</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_CHEAPER" Language="ru_RU">
+			<Text>[BLIST][LI] Дешевле: на 25% дешевле.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_DEFAULT" Language="ru_RU">
-			<Text>Задаёт темп кризисов.[n] [BLIST][LI] Этап 1: начинается при 70%.[LI] Этап 2: начинается при 80%.[LI] Этап 3: начинается при 90%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>[BLIST][LI] Стандарт: без скидки.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_QUICK" Language="ru_RU">
-			<Text>Задаёт темп кризисов.[n] [BLIST][LI] Этап 1: начинается при 75%.[LI] Этап 2: начинается при 85%.[LI] Этап 3: начинается при 95%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="ru_RU">
+			<Text>[BLIST][LI] Доступно: на 50% дороже.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_CRAWL" Language="ru_RU">
-			<Text>Задаёт темп кризисов.[n] [BLIST][LI] Этап 1: начинается при 50%.[LI] Этап 2: начинается при 65%.[LI] Этап 3: начинается при 85%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="ru_RU">
+			<Text>[BLIST][LI] Дорого: на 100% дороже.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_SLOW" Language="ru_RU">
-			<Text>Задаёт темп кризисов.[n] [BLIST][LI] Этап 1: начинается при 60%.[LI] Этап 2: начинается при 75%.[LI] Этап 3: начинается при 90%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="ru_RU">
+			<Text>Включает или отключает все кризисы.[n]Отключено выключает каждый кризис в разделе «Выбор кризисов».</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_FAST" Language="ru_RU">
-			<Text>Задаёт темп кризисов.[n] [BLIST][LI] Этап 1: начинается при 85%.[LI] Этап 2: начинается при 90%.[LI] Этап 3: начинается при 95%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION" Language="ru_RU">
+			<Text>Задаёт, когда начинаются кризисы.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DISABLED" Language="ru_RU">
+			<Text>Кризисы не происходят.[n]Включите «Кризисы», чтобы выбрать время.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_EARLY" Language="ru_RU">
+			<Text>[BLIST][LI] Этап 1: начинается при 50%.[LI] Этап 2: начинается при 65%.[LI] Этап 3: начинается при 85%.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DEFAULT" Language="ru_RU">
+			<Text>[BLIST][LI] Этап 1: начинается при 70%.[LI] Этап 2: начинается при 80%.[LI] Этап 3: начинается при 90%.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_LATE" Language="ru_RU">
+			<Text>[BLIST][LI] Этап 1: начинается при 85%.[LI] Этап 2: начинается при 90%.[LI] Этап 3: начинается при 95%.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт число [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] чудес природы на карте.[n] [BLIST][LI] Отключено: 0 чудес природы.[LI] Половина: на 50% меньше чудес природы.[LI] По умолчанию: без изменений.[LI] Больше: на 50% больше чудес природы.[LI] Вдвое больше: на 100% больше чудес природы.[/BLIST]</Text>
+			<Text>Задаёт число [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] чудес природы на карте.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE" Language="ru_RU">
-			<Text>Задаёт число [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] чудес природы на карте.[n] Размер карты[n] [BLIST][LI] Крошечная: 0 чудес природы.[LI] Малая: 0 чудес природы.[LI] Стандартная: 0 чудес природы.[LI] Большая: 0 чудес природы.[LI] Огромная: 0 чудес природы.[/BLIST]</Text>
+			<Text>Размер карты[n] [BLIST][LI] Крошечная: 0 чудес природы.[LI] Малая: 0 чудес природы.[LI] Стандартная: 0 чудес природы.[LI] Большая: 0 чудес природы.[LI] Огромная: 0 чудес природы.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF" Language="ru_RU">
-			<Text>Задаёт число [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] чудес природы на карте.[n] Размер карты[n] [BLIST][LI] Крошечная: 1 чудес природы.[LI] Малая: 2 чудес природы.[LI] Стандартная: 2 чудес природы.[LI] Большая: 3 чудес природы.[LI] Огромная: 3 чудес природы.[/BLIST]</Text>
+			<Text>Размер карты[n] [BLIST][LI] Крошечная: 1 чудес природы.[LI] Малая: 2 чудес природы.[LI] Стандартная: 2 чудес природы.[LI] Большая: 3 чудес природы.[LI] Огромная: 3 чудес природы.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DEFAULT" Language="ru_RU">
-			<Text>Задаёт число [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] чудес природы на карте.[n] Размер карты[n] [BLIST][LI] Крошечная: 3 чудес природы.[LI] Малая: 4 чудес природы.[LI] Стандартная: 5 чудес природы.[LI] Большая: 6 чудес природы.[LI] Огромная: 7 чудес природы.[/BLIST]</Text>
+			<Text>Размер карты[n] [BLIST][LI] Крошечная: 3 чудес природы.[LI] Малая: 4 чудес природы.[LI] Стандартная: 5 чудес природы.[LI] Большая: 6 чудес природы.[LI] Огромная: 7 чудес природы.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE" Language="ru_RU">
-			<Text>Задаёт число [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] чудес природы на карте.[n] Размер карты[n] [BLIST][LI] Крошечная: 5 чудес природы.[LI] Малая: 6 чудес природы.[LI] Стандартная: 8 чудес природы.[LI] Большая: 9 чудес природы.[LI] Огромная: 11 чудес природы.[/BLIST]</Text>
+			<Text>Размер карты[n] [BLIST][LI] Крошечная: 5 чудес природы.[LI] Малая: 6 чудес природы.[LI] Стандартная: 8 чудес природы.[LI] Большая: 9 чудес природы.[LI] Огромная: 11 чудес природы.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE" Language="ru_RU">
-			<Text>Задаёт число [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] чудес природы на карте.[n] Размер карты[n] [BLIST][LI] Крошечная: 6 чудес природы.[LI] Малая: 8 чудес природы.[LI] Стандартная: 10 чудес природы.[LI] Большая: 12 чудес природы.[LI] Огромная: 14 чудес природы.[/BLIST]</Text>
+			<Text>Размер карты[n] [BLIST][LI] Крошечная: 6 чудес природы.[LI] Малая: 8 чудес природы.[LI] Стандартная: 10 чудес природы.[LI] Большая: 12 чудес природы.[LI] Огромная: 14 чудес природы.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION" Language="ru_RU">
 			<Text>Задаёт частоту озёр на карте. Результат может отличаться.[n] Игра постарается изменить число озёр.[n] Однако генерация карты может вернуть значение по умолчанию.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_LESS" Language="ru_RU">
+			<Text>Создаёт меньше озёр.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DEFAULT" Language="ru_RU">
+			<Text>Стандартная генерация озёр для выбранного типа карты.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_MORE" Language="ru_RU">
+			<Text>Создаёт больше озёр.</Text>
 		</Replace>
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="ru_RU">
 			<Text>Advanced Settings Pro</Text>
@@ -198,6 +270,15 @@
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="ru_RU">
 			<Text>Выбор чудес природы</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_CRISISOPTIONS" Language="ru_RU">
+			<Text>Настройки кризисов</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_DISASTEROPTIONS" Language="ru_RU">
+			<Text>Настройки катастроф</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS" Language="ru_RU">
+			<Text>Карта</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="ru_RU">
 			<Text>Обнаружен конфликт модов</Text>
@@ -213,6 +294,24 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="ru_RU">
 			<Text>Оставить оба</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="ru_RU">
+			<Text>Неопознанный мод, добавляющий настройки:</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="ru_RU">
+			<Text>Случайные памятные вещи</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTO_1_NAME" Language="ru_RU">
+			<Text>Памятная вещь 1</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTO_2_NAME" Language="ru_RU">
+			<Text>Памятная вещь 2</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="ru_RU">
+			<Text>Особый: задайте набор триумфов для каждой эпохи отдельно.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRIUMPH_SET_AGE_DESCRIPTION" Language="ru_RU">
+			<Text>Задаёт набор триумфов этой эпохи.[n]Действует только если набор триумфов установлен на Особый.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM" Language="ru_RU">
 			<Text>Особый: задайте лимит поселений для каждой эпохи отдельно.</Text>
@@ -235,11 +334,11 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="ru_RU">
 			<Text>Создаёт больше рек, и больше из них судоходны.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED" Language="ru_RU">
-			<Text>Реки не создаются.</Text>
+		<Replace Tag="LOC_ZG_CHEAPER_NAME" Language="ru_RU">
+			<Text>Дешевле</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="ru_RU">
-			<Text>Озёра не создаются.</Text>
+		<Replace Tag="LOC_ZG_AFFORDABLE_NAME" Language="ru_RU">
+			<Text>Доступно</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="ru_RU">
 			<Text>Дорого</Text>
@@ -248,7 +347,19 @@
 			<Text>Стоимость гражданских юнитов</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт стоимость производства гражданских юнитов.[n] [BLIST][LI] Меньше: на 25% дешевле.[LI] По умолчанию: без скидки.[LI] Больше: на 25% дороже.[LI] Дорого: на 50% дороже.[/BLIST]</Text>
+			<Text>Задаёт стоимость производства гражданских юнитов.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_CHEAPER" Language="ru_RU">
+			<Text>[BLIST][LI] Дешевле: на 25% дешевле.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>[BLIST][LI] Стандарт: без скидки.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="ru_RU">
+			<Text>[BLIST][LI] Доступно: на 50% дороже.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="ru_RU">
+			<Text>[BLIST][LI] Дорого: на 100% дороже.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="ru_RU">
 			<Text>Онлайн 2.0</Text>
@@ -354,9 +465,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION" Language="ru_RU">
 			<Text>Определяет, сколько гор создаётся при генерации карты.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DISABLED" Language="ru_RU">
-			<Text>Горы не создаются.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_LESS" Language="ru_RU">
 			<Text>Создаёт меньше гор.</Text>

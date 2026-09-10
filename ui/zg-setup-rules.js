@@ -11,6 +11,21 @@
 //   5. A curated tier is selected   -> the per-age limits show that tier's values.
 //   6. A per-age limit is changed away from the curated tier's values
 //      -> the Settlement Limit setting switches to Custom.
+//
+// Disasters and Triumph Sets (shared tier/age sync):
+//   7. A tier is selected           -> every age shows that tier.
+//   8. An age is changed away from the selected tier
+//      -> the primary setting switches to Custom.
+//
+// Crises:
+//   9. Crises set to Disabled       -> every crisis in the selection is excluded.
+//  10. Crises leaves Disabled       -> every crisis in the selection is included.
+//  11. Every crisis excluded        -> Crises becomes Disabled; any crisis included
+//      while it says Disabled       -> Crises becomes Enabled.
+//  12. Crises Disabled              -> Crisis Timing shows Disabled; Crises Enabled
+//      while the timing says Disabled -> the timing returns to Default.
+//  13. Crisis Timing set to Disabled -> Crises becomes Disabled; the timing leaves
+//      Disabled                     -> Crises becomes Enabled.
 
 const NW_COUNT_PARAM_ID = "ZG_NaturalWondersCount";
 const MAP_SIZE_PARAM_ID = "MapSize";
@@ -18,8 +33,9 @@ const WONDER_PARAM_IDS = [
 	"ZG_NW_BarrierReef", "ZG_NW_BermudaTriangle", "ZG_NW_GrandCanyon", "ZG_NW_GreatBlueHole",
 	"ZG_NW_Gullfoss", "ZG_NW_Hoerikwaggo", "ZG_NW_IguazuFalls", "ZG_NW_Kilimanjaro",
 	"ZG_NW_Machapuchare", "ZG_NW_MapuAVaeaBlowholes", "ZG_NW_MountEverest", "ZG_NW_MountFuji",
-	"ZG_NW_RedwoodForest", "ZG_NW_Thera", "ZG_NW_TorresDelPaine", "ZG_NW_Uluru",
-	"ZG_NW_ValleyOfFlowers", "ZG_NW_Vihren", "ZG_NW_Vinicunca", "ZG_NW_Zhangjiajie",
+	"ZG_NW_NachiFalls", "ZG_NW_RedwoodForest", "ZG_NW_SeongsanIlchulbong", "ZG_NW_Thera",
+	"ZG_NW_TorresDelPaine", "ZG_NW_Uluru", "ZG_NW_ValleyOfFlowers", "ZG_NW_Vihren",
+	"ZG_NW_Vinicunca", "ZG_NW_Zhangjiajie",
 ];
 
 const SL_PARAM_ID = "ZG_SettlementLimit";
@@ -30,6 +46,17 @@ const SL_TIER_VALUES = {
 	"LOC_ZG_DEFAULT_NAME": [3, 8, 16],
 	"LOC_ZG_MORE_NAME": [5, 12, 20],
 };
+
+// Primary settings whose per-age values are kept in step (rules 7 & 8).
+const TIER_AGE_SYNCS = [
+	{ tierId: "ZG_DisasterFrequency", ageIds: ["ZG_DisastersAntiquity", "ZG_DisastersExploration", "ZG_DisastersModern"], lastTier: null },
+	{ tierId: "LegacySets", ageIds: ["ZG_TriumphSetAntiquity", "ZG_TriumphSetExploration", "ZG_TriumphSetModern"], lastTier: null },
+];
+
+const CRISES_PARAM_ID = "ZG_Crises";
+// The base multiselect lists excluded crises (UxHint InvertSelection).
+const CRISES_SELECTION_PARAM_ID = "Crises";
+const CRISIS_TIMING_PARAM_ID = "ZG_CrisisTiming";
 
 const TIER_DISABLED = "LOC_ZG_DISABLED_NAME";
 const TIER_HALF = "LOC_ZG_HALF_NAME";
@@ -47,6 +74,8 @@ const POLL_MS = 250;
 let lastRevision = -1;
 let nwLastTier = null;
 let slLastTier = null;
+let crisesLastToggle = null;
+let crisisTimingLast = null;
 let applying = false;
 
 function resolveName(handle) {
@@ -172,6 +201,101 @@ function syncSettlementLimits() {
 	}
 }
 
+// ------------------------------------------------------- tier / age sync --
+
+function syncTierWithAges(sync) {
+	const tierParam = GameSetup.findGameParameter(sync.tierId);
+	if (!tierParam) {
+		return;
+	}
+	const ageParams = sync.ageIds.map((id) => GameSetup.findGameParameter(id));
+	if (ageParams.some((param) => !param)) {
+		return;
+	}
+	const tier = currentValueName(tierParam);
+	const isCurated = tier != TIER_CUSTOM;
+
+	// 7: the player changed the tier; every age follows it.
+	if (sync.lastTier != null && tier != sync.lastTier) {
+		if (isCurated) {
+			sync.ageIds.forEach((id) => setParamByName(id, tier));
+		}
+		sync.lastTier = tier;
+		return;
+	}
+	sync.lastTier = tier;
+	// 8: an age no longer matches the tier; switch to Custom.
+	if (isCurated && ageParams.some((param) => currentValueName(param) != tier)) {
+		setParamByName(sync.tierId, TIER_CUSTOM);
+		sync.lastTier = TIER_CUSTOM;
+	}
+}
+
+// ------------------------------------------------------------------ crises --
+
+function syncCrises() {
+	const toggleParam = GameSetup.findGameParameter(CRISES_PARAM_ID);
+	const selectionParam = GameSetup.findGameParameter(CRISES_SELECTION_PARAM_ID);
+	if (!toggleParam || !selectionParam) {
+		return;
+	}
+	const possible = (selectionParam.domain?.possibleValues ?? []).map((entry) => entry.value);
+	if (possible.length == 0) {
+		return;
+	}
+	const toggle = currentValueName(toggleParam);
+	const excluded = (selectionParam.values ?? []).map((entry) => entry.value);
+	const allExcluded = possible.every((value) => excluded.includes(value));
+	const timingParam = GameSetup.findGameParameter(CRISIS_TIMING_PARAM_ID);
+	const timing = timingParam ? currentValueName(timingParam) : null;
+
+	// 9 & 10: the player changed the toggle; cascade to the selection and timing.
+	if (crisesLastToggle != null && toggle != crisesLastToggle) {
+		if (toggle == TOGGLE_DISABLED) {
+			GameSetup.setGameParameterValue(CRISES_SELECTION_PARAM_ID, possible);
+			setParamByName(CRISIS_TIMING_PARAM_ID, TIER_DISABLED);
+		} else if (crisesLastToggle == TOGGLE_DISABLED) {
+			GameSetup.setGameParameterValue(CRISES_SELECTION_PARAM_ID, []);
+			if (timing == TIER_DISABLED) {
+				setParamByName(CRISIS_TIMING_PARAM_ID, TIER_DEFAULT);
+			}
+		}
+		crisesLastToggle = toggle;
+		crisisTimingLast = null;
+		return;
+	}
+	crisesLastToggle = toggle;
+	// 13: the player changed the timing to or from Disabled; the toggle follows.
+	if (timing != null && crisisTimingLast != null && timing != crisisTimingLast) {
+		if (timing == TIER_DISABLED && toggle != TOGGLE_DISABLED) {
+			setParamByName(CRISES_PARAM_ID, TOGGLE_DISABLED);
+		} else if (crisisTimingLast == TIER_DISABLED && toggle == TOGGLE_DISABLED) {
+			setParamByName(CRISES_PARAM_ID, TOGGLE_ENABLED);
+		}
+		crisisTimingLast = timing;
+		return;
+	}
+	crisisTimingLast = timing;
+	// 11 & 12: keep the toggle truthful about the selection, and the timing about the toggle.
+	if (allExcluded && toggle != TOGGLE_DISABLED) {
+		setParamByName(CRISES_PARAM_ID, TOGGLE_DISABLED);
+		setParamByName(CRISIS_TIMING_PARAM_ID, TIER_DISABLED);
+		crisesLastToggle = TOGGLE_DISABLED;
+		crisisTimingLast = null;
+	} else if (!allExcluded && toggle == TOGGLE_DISABLED) {
+		setParamByName(CRISES_PARAM_ID, TOGGLE_ENABLED);
+		if (timing == TIER_DISABLED) {
+			setParamByName(CRISIS_TIMING_PARAM_ID, TIER_DEFAULT);
+		}
+		crisesLastToggle = TOGGLE_ENABLED;
+		crisisTimingLast = null;
+	} else if (timing != null && (timing == TIER_DISABLED) != (toggle == TOGGLE_DISABLED)) {
+		// Loaded configurations can disagree; the toggle wins.
+		setParamByName(CRISIS_TIMING_PARAM_ID, toggle == TOGGLE_DISABLED ? TIER_DISABLED : TIER_DEFAULT);
+		crisisTimingLast = null;
+	}
+}
+
 // ------------------------------------------------------------------ poller --
 
 setInterval(() => {
@@ -190,6 +314,18 @@ setInterval(() => {
 		syncSettlementLimits();
 	} catch (e) {
 		console.warn(`ZG-ASP settlement sync error: ${e}`);
+	}
+	for (const sync of TIER_AGE_SYNCS) {
+		try {
+			syncTierWithAges(sync);
+		} catch (e) {
+			console.warn(`ZG-ASP ${sync.tierId} sync error: ${e}`);
+		}
+	}
+	try {
+		syncCrises();
+	} catch (e) {
+		console.warn(`ZG-ASP crises sync error: ${e}`);
 	}
 	applying = false;
 }, POLL_MS);

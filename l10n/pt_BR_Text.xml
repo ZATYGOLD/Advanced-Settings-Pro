@@ -19,6 +19,12 @@
 		<Replace Tag="LOC_ZG_DEFAULT_NAME" Language="pt_BR">
 			<Text>Padrão</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_EARLY_NAME" Language="pt_BR">
+			<Text>Cedo</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LATE_NAME" Language="pt_BR">
+			<Text>Tarde</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_NONE_NAME" Language="pt_BR">
 			<Text>Nenhuma</Text>
 		</Replace>
@@ -34,14 +40,8 @@
 		<Replace Tag="LOC_ZG_FAST_NAME" Language="pt_BR">
 			<Text>Rápido</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_QUICK_NAME" Language="pt_BR">
-			<Text>Ligeiro</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_SLOW_NAME" Language="pt_BR">
 			<Text>Lento</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CRAWL_NAME" Language="pt_BR">
-			<Text>Muito lento</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MORE_NAME" Language="pt_BR">
 			<Text>Mais</Text>
@@ -76,8 +76,14 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="pt_BR">
 			<Text>Custo de unidades militares</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_NAME" Language="pt_BR">
-			<Text>Ritmo das crises</Text>
+		<Replace Tag="LOC_ZG_CRISES_NAME" Language="pt_BR">
+			<Text>Crises</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_SELECTION_NAME" Language="pt_BR">
+			<Text>Seleção de crises</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_NAME" Language="pt_BR">
+			<Text>Momento das crises</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_NAME" Language="pt_BR">
 			<Text>Maravilhas naturais</Text>
@@ -95,25 +101,55 @@
 			<Text>Moderna</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="pt_BR">
-			<Text>Define o movimento base e embarcado do colono.[n] [BLIST][LI] Lento: 2[icon:Action_Move]base e 1[icon:Action_Move]embarcado.[LI] Padrão: 3[icon:Action_Move]base e 2[icon:Action_Move]embarcado.[LI] Rápido: 4[icon:Action_Move]base e 3[icon:Action_Move]embarcado.[/BLIST]</Text>
+			<Text>Define o movimento base e embarcado do colono.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_SLOW" Language="pt_BR">
+			<Text>[BLIST][LI] Lento: 2[icon:Action_Move]base e 1[icon:Action_Move]embarcado.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="pt_BR">
+			<Text>[BLIST][LI] Padrão: 3[icon:Action_Move]base e 2[icon:Action_Move]embarcado.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="pt_BR">
+			<Text>[BLIST][LI] Rápido: 4[icon:Action_Move]base e 3[icon:Action_Move]embarcado.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION" Language="pt_BR">
-			<Text>Define o movimento base e embarcado do comboio do tesouro.[n] [BLIST][LI] Lento: 1[icon:Action_Move]de movimento base e embarcado.[LI] Padrão: 2[icon:Action_Move]de movimento base e embarcado.[LI] Rápido: 3[icon:Action_Move]de movimento base e embarcado.[/BLIST]</Text>
+			<Text>Define o movimento base e embarcado do comboio do tesouro.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_SLOW" Language="pt_BR">
+			<Text>[BLIST][LI] Lento: 1[icon:Action_Move]de movimento base e embarcado.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="pt_BR">
+			<Text>[BLIST][LI] Padrão: 2[icon:Action_Move]de movimento base e embarcado.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="pt_BR">
+			<Text>[BLIST][LI] Rápido: 3[icon:Action_Move]de movimento base e embarcado.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION" Language="pt_BR">
-			<Text>Define o número inicial de [icon:INDEPENDENT_POWER]potências independentes. Os resultados podem variar.[n] [BLIST][LI] Nenhuma: 0 potências independentes.[LI] Menos: 2 potências independentes por civilização.[LI] Padrão: 3 potências independentes por civilização.[LI] Mais: 4 potências independentes por civilização.[/BLIST][n] [n]O jogo tentará gerar a quantidade desejada, mas o número exato pode variar.[n]O resultado ficará o mais próximo possível do valor esperado.</Text>
+			<Text>Define o número inicial de [icon:INDEPENDENT_POWER]potências independentes. Os resultados podem variar.[n]O jogo tentará gerar a quantidade desejada, mas o número exato pode variar.[n]O resultado ficará o mais próximo possível do valor esperado.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_NONE" Language="pt_BR">
+			<Text>[BLIST][LI] Nenhuma: 0 potências independentes.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_LESS" Language="pt_BR">
+			<Text>[BLIST][LI] Menos: 2 potências independentes por civilização.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_DEFAULT" Language="pt_BR">
+			<Text>[BLIST][LI] Padrão: 3 potências independentes por civilização.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_MORE" Language="pt_BR">
+			<Text>[BLIST][LI] Mais: 4 potências independentes por civilização.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION" Language="pt_BR">
 			<Text>Define a distância mínima entre potências independentes.[n] Isso pode afetar o número total de potências independentes.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_LESS" Language="pt_BR">
-			<Text>Define a distância mínima entre potências independentes.[n] Isso pode afetar o número total de potências independentes.[n] [BLIST][LI] Antiguidade: 4 células.[LI] Exploração: 3 células.[LI] Moderna: 2 células.[/BLIST]</Text>
+			<Text>[BLIST][LI] Antiguidade: 4 células.[LI] Exploração: 3 células.[LI] Moderna: 2 células.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_DEFAULT" Language="pt_BR">
-			<Text>Define a distância mínima entre potências independentes.[n] Isso pode afetar o número total de potências independentes.[n] [BLIST][LI] Antiguidade: 6 células.[LI] Exploração: 6 células.[LI] Moderna: 4 células.[/BLIST]</Text>
+			<Text>[BLIST][LI] Antiguidade: 6 células.[LI] Exploração: 6 células.[LI] Moderna: 4 células.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="pt_BR">
-			<Text>Define a distância mínima entre potências independentes.[n] Isso pode afetar o número total de potências independentes.[n] [BLIST][LI] Antiguidade: 7 células.[LI] Exploração: 7 células.[LI] Moderna: 5 células.[/BLIST]</Text>
+			<Text>[BLIST][LI] Antiguidade: 7 células.[LI] Exploração: 7 células.[LI] Moderna: 5 células.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION" Language="pt_BR">
 			<Text>Define o número inicial de unidades de uma potência independente. [n] Potências independentes sempre começam com 1[icon:UNIT_SCOUT]Batedor.</Text>
@@ -128,64 +164,100 @@
 			<Text>Define o número inicial de unidades de uma potência independente. [n] Potências independentes sempre começam com 1[icon:UNIT_SCOUT]Batedor.[n] [BLIST][LI] Antiguidade: 2[icon:UNIT_WARRIOR]Guerreiros.[LI] Exploração: 4[icon:UNIT_SWORDSMAN]Espadachins.[LI] Moderna: 5[icon:UNIT_LINE_INFANTRY]Infantaria de Linha.[/BLIST][n] [n]O número de unidades dependerá das células de terra disponíveis no primeiro anel, incluindo o centro da aldeia.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="pt_BR">
-			<Text>Desativa todos os desastres naturais.[n]Eventos de crise não são afetados por esta configuração.</Text>
+			<Text>Desativa todos os desastres naturais.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DISASTER_FREQUENCY_DESCRIPTION_CUSTOM" Language="pt_BR">
+			<Text>Personalizado: defina a frequência de desastres de cada era individualmente.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_DISASTER_AGE_DESCRIPTION" Language="pt_BR">
+			<Text>Define a frequência de desastres desta era.[n]Aplica-se apenas quando Desastres está em Personalizado.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" Language="pt_BR">
 			<Text>Define o [icon:SETTLEMENT_LIMIT]limite de assentamentos inicial de cada era.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_DEFAULT" Language="pt_BR">
-			<Text>Define o [icon:SETTLEMENT_LIMIT]limite de assentamentos inicial de cada era.[n] [BLIST][LI] Antiguidade: limite de assentamentos 3.[LI] Exploração: limite de assentamentos 8.[LI] Moderna: limite de assentamentos 16.[/BLIST]</Text>
+			<Text>[BLIST][LI] Antiguidade: limite de assentamentos 3.[LI] Exploração: limite de assentamentos 8.[LI] Moderna: limite de assentamentos 16.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_MORE" Language="pt_BR">
-			<Text>Define o [icon:SETTLEMENT_LIMIT]limite de assentamentos inicial de cada era.[n] [BLIST][LI] Antiguidade: limite de assentamentos 5.[LI] Exploração: limite de assentamentos 12.[LI] Moderna: limite de assentamentos 20.[/BLIST]</Text>
+			<Text>[BLIST][LI] Antiguidade: limite de assentamentos 5.[LI] Exploração: limite de assentamentos 12.[LI] Moderna: limite de assentamentos 20.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_LESS" Language="pt_BR">
-			<Text>Define o [icon:SETTLEMENT_LIMIT]limite de assentamentos inicial de cada era.[n] [BLIST][LI] Antiguidade: limite de assentamentos 1.[LI] Exploração: limite de assentamentos 4.[LI] Moderna: limite de assentamentos 10.[/BLIST]</Text>
+			<Text>[BLIST][LI] Antiguidade: limite de assentamentos 1.[LI] Exploração: limite de assentamentos 4.[LI] Moderna: limite de assentamentos 10.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION" Language="pt_BR">
-			<Text>Define a distância mínima entre assentamentos.[n] [BLIST][LI] Menos: 2 células.[LI] Padrão: 3 células.[LI] Mais: 4 células.[/BLIST]</Text>
+			<Text>Define a distância mínima entre assentamentos.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_LESS" Language="pt_BR">
+			<Text>[BLIST][LI] Menos: 2 células.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_DEFAULT" Language="pt_BR">
+			<Text>[BLIST][LI] Padrão: 3 células.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="pt_BR">
+			<Text>[BLIST][LI] Mais: 4 células.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="pt_BR">
-			<Text>Define o custo de produção das unidades de combate.[n] [BLIST][LI] Menos: 25% mais baratas.[LI] Padrão: sem desconto.[LI] Mais: 25% mais caras.[LI] Caro: 50% mais caras.[/BLIST]</Text>
+			<Text>Define o custo de produção das unidades de combate.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION" Language="pt_BR">
-			<Text>Define o ritmo das crises.</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_CHEAPER" Language="pt_BR">
+			<Text>[BLIST][LI] Mais baratas: 25% mais baratas.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_DEFAULT" Language="pt_BR">
-			<Text>Define o ritmo das crises.[n] [BLIST][LI] Estágio 1: começa em 70%.[LI] Estágio 2: começa em 80%.[LI] Estágio 3: começa em 90%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="pt_BR">
+			<Text>[BLIST][LI] Padrão: sem desconto.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_QUICK" Language="pt_BR">
-			<Text>Define o ritmo das crises.[n] [BLIST][LI] Estágio 1: começa em 75%.[LI] Estágio 2: começa em 85%.[LI] Estágio 3: começa em 95%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="pt_BR">
+			<Text>[BLIST][LI] Acessíveis: 50% mais caras.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_CRAWL" Language="pt_BR">
-			<Text>Define o ritmo das crises.[n] [BLIST][LI] Estágio 1: começa em 50%.[LI] Estágio 2: começa em 65%.[LI] Estágio 3: começa em 85%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="pt_BR">
+			<Text>[BLIST][LI] Caro: 100% mais caras.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_SLOW" Language="pt_BR">
-			<Text>Define o ritmo das crises.[n] [BLIST][LI] Estágio 1: começa em 60%.[LI] Estágio 2: começa em 75%.[LI] Estágio 3: começa em 90%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="pt_BR">
+			<Text>Ativa ou desativa todas as crises.[n]Desativado desliga todas as crises da Seleção de crises.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CRISIS_SPEED_DESCRIPTION_FAST" Language="pt_BR">
-			<Text>Define o ritmo das crises.[n] [BLIST][LI] Estágio 1: começa em 85%.[LI] Estágio 2: começa em 90%.[LI] Estágio 3: começa em 95%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION" Language="pt_BR">
+			<Text>Define quando as crises começam.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DISABLED" Language="pt_BR">
+			<Text>Nenhuma crise ocorre.[n]Defina Crises como Ativado para escolher um momento.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_EARLY" Language="pt_BR">
+			<Text>[BLIST][LI] Estágio 1: começa em 50%.[LI] Estágio 2: começa em 65%.[LI] Estágio 3: começa em 85%.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DEFAULT" Language="pt_BR">
+			<Text>[BLIST][LI] Estágio 1: começa em 70%.[LI] Estágio 2: começa em 80%.[LI] Estágio 3: começa em 90%.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_LATE" Language="pt_BR">
+			<Text>[BLIST][LI] Estágio 1: começa em 85%.[LI] Estágio 2: começa em 90%.[LI] Estágio 3: começa em 95%.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="pt_BR">
-			<Text>Define a quantidade de [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] maravilhas naturais no mapa.[n] [BLIST][LI] Desativado: 0 maravilhas naturais.[LI] Metade: 50% menos maravilhas naturais.[LI] Padrão: sem mudanças nas maravilhas naturais.[LI] Mais: 50% mais maravilhas naturais.[LI] Dobro: 100% mais maravilhas naturais.[/BLIST]</Text>
+			<Text>Define a quantidade de [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] maravilhas naturais no mapa.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE" Language="pt_BR">
-			<Text>Define a quantidade de [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] maravilhas naturais no mapa.[n] Tamanho do mapa[n] [BLIST][LI] Minúsculo: 0 maravilhas naturais.[LI] Pequeno: 0 maravilhas naturais.[LI] Padrão: 0 maravilhas naturais.[LI] Grande: 0 maravilhas naturais.[LI] Enorme: 0 maravilhas naturais.[/BLIST]</Text>
+			<Text>Tamanho do mapa[n] [BLIST][LI] Minúsculo: 0 maravilhas naturais.[LI] Pequeno: 0 maravilhas naturais.[LI] Padrão: 0 maravilhas naturais.[LI] Grande: 0 maravilhas naturais.[LI] Enorme: 0 maravilhas naturais.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF" Language="pt_BR">
-			<Text>Define a quantidade de [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] maravilhas naturais no mapa.[n] Tamanho do mapa[n] [BLIST][LI] Minúsculo: 1 maravilhas naturais.[LI] Pequeno: 2 maravilhas naturais.[LI] Padrão: 2 maravilhas naturais.[LI] Grande: 3 maravilhas naturais.[LI] Enorme: 3 maravilhas naturais.[/BLIST]</Text>
+			<Text>Tamanho do mapa[n] [BLIST][LI] Minúsculo: 1 maravilhas naturais.[LI] Pequeno: 2 maravilhas naturais.[LI] Padrão: 2 maravilhas naturais.[LI] Grande: 3 maravilhas naturais.[LI] Enorme: 3 maravilhas naturais.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DEFAULT" Language="pt_BR">
-			<Text>Define a quantidade de [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] maravilhas naturais no mapa.[n] Tamanho do mapa[n] [BLIST][LI] Minúsculo: 3 maravilhas naturais.[LI] Pequeno: 4 maravilhas naturais.[LI] Padrão: 5 maravilhas naturais.[LI] Grande: 6 maravilhas naturais.[LI] Enorme: 7 maravilhas naturais.[/BLIST]</Text>
+			<Text>Tamanho do mapa[n] [BLIST][LI] Minúsculo: 3 maravilhas naturais.[LI] Pequeno: 4 maravilhas naturais.[LI] Padrão: 5 maravilhas naturais.[LI] Grande: 6 maravilhas naturais.[LI] Enorme: 7 maravilhas naturais.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE" Language="pt_BR">
-			<Text>Define a quantidade de [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] maravilhas naturais no mapa.[n] Tamanho do mapa[n] [BLIST][LI] Minúsculo: 5 maravilhas naturais.[LI] Pequeno: 6 maravilhas naturais.[LI] Padrão: 8 maravilhas naturais.[LI] Grande: 9 maravilhas naturais.[LI] Enorme: 11 maravilhas naturais.[/BLIST]</Text>
+			<Text>Tamanho do mapa[n] [BLIST][LI] Minúsculo: 5 maravilhas naturais.[LI] Pequeno: 6 maravilhas naturais.[LI] Padrão: 8 maravilhas naturais.[LI] Grande: 9 maravilhas naturais.[LI] Enorme: 11 maravilhas naturais.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE" Language="pt_BR">
-			<Text>Define a quantidade de [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] maravilhas naturais no mapa.[n] Tamanho do mapa[n] [BLIST][LI] Minúsculo: 6 maravilhas naturais.[LI] Pequeno: 8 maravilhas naturais.[LI] Padrão: 10 maravilhas naturais.[LI] Grande: 12 maravilhas naturais.[LI] Enorme: 14 maravilhas naturais.[/BLIST]</Text>
+			<Text>Tamanho do mapa[n] [BLIST][LI] Minúsculo: 6 maravilhas naturais.[LI] Pequeno: 8 maravilhas naturais.[LI] Padrão: 10 maravilhas naturais.[LI] Grande: 12 maravilhas naturais.[LI] Enorme: 14 maravilhas naturais.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION" Language="pt_BR">
 			<Text>Define a frequência de lagos no mapa. Os resultados podem variar.[n] O jogo tentará ajustar o número de lagos.[n] No entanto, a geração do mapa pode restaurar o padrão.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_LESS" Language="pt_BR">
+			<Text>Gera menos lagos.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DEFAULT" Language="pt_BR">
+			<Text>Geração padrão de lagos para o tipo de mapa escolhido.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_MORE" Language="pt_BR">
+			<Text>Gera mais lagos.</Text>
 		</Replace>
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="pt_BR">
 			<Text>Advanced Settings Pro</Text>
@@ -198,6 +270,15 @@
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="pt_BR">
 			<Text>Seleção de maravilhas naturais</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_CRISISOPTIONS" Language="pt_BR">
+			<Text>Configurações de crises</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_DISASTEROPTIONS" Language="pt_BR">
+			<Text>Configurações de desastres</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS" Language="pt_BR">
+			<Text>Mapa</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="pt_BR">
 			<Text>Conflito de mods detectado</Text>
@@ -213,6 +294,24 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="pt_BR">
 			<Text>Manter ambos</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="pt_BR">
+			<Text>Mod não identificado que adiciona as configurações:</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="pt_BR">
+			<Text>Lembranças aleatórias</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTO_1_NAME" Language="pt_BR">
+			<Text>Lembrança 1</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTO_2_NAME" Language="pt_BR">
+			<Text>Lembrança 2</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="pt_BR">
+			<Text>Personalizado: defina o conjunto de triunfos de cada era individualmente.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRIUMPH_SET_AGE_DESCRIPTION" Language="pt_BR">
+			<Text>Define o conjunto de triunfos desta era.[n]Aplica-se apenas quando o conjunto de triunfos está em Personalizado.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM" Language="pt_BR">
 			<Text>Personalizado: defina o limite de assentamentos de cada era individualmente.</Text>
@@ -235,11 +334,11 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="pt_BR">
 			<Text>Gera mais rios, e mais deles são navegáveis.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED" Language="pt_BR">
-			<Text>Nenhum rio é gerado.</Text>
+		<Replace Tag="LOC_ZG_CHEAPER_NAME" Language="pt_BR">
+			<Text>Mais baratas</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="pt_BR">
-			<Text>Nenhum lago é gerado.</Text>
+		<Replace Tag="LOC_ZG_AFFORDABLE_NAME" Language="pt_BR">
+			<Text>Acessíveis</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="pt_BR">
 			<Text>Caro</Text>
@@ -248,7 +347,19 @@
 			<Text>Custo de unidades civis</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="pt_BR">
-			<Text>Define o custo de produção das unidades civis.[n] [BLIST][LI] Menos: 25% mais baratas.[LI] Padrão: sem desconto.[LI] Mais: 25% mais caras.[LI] Caro: 50% mais caras.[/BLIST]</Text>
+			<Text>Define o custo de produção das unidades civis.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_CHEAPER" Language="pt_BR">
+			<Text>[BLIST][LI] Mais baratas: 25% mais baratas.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="pt_BR">
+			<Text>[BLIST][LI] Padrão: sem desconto.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="pt_BR">
+			<Text>[BLIST][LI] Acessíveis: 50% mais caras.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="pt_BR">
+			<Text>[BLIST][LI] Caro: 100% mais caras.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="pt_BR">
 			<Text>Online 2.0</Text>
@@ -354,9 +465,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION" Language="pt_BR">
 			<Text>Define quantas montanhas são geradas na criação do mapa.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DISABLED" Language="pt_BR">
-			<Text>Nenhuma montanha é gerada.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_LESS" Language="pt_BR">
 			<Text>Gera menos montanhas.</Text>
