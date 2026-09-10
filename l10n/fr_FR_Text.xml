@@ -199,17 +199,17 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="fr_FR">
 			<Text>Définit le coût de production des unités de combat.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_LESS" Language="fr_FR">
-			<Text>[BLIST][LI] Moins : 25% moins chères.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_CHEAPER" Language="fr_FR">
+			<Text>[BLIST][LI] Moins chères : 25% moins chères.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DEFAULT" Language="fr_FR">
-			<Text>[BLIST][LI] Par défaut : aucune réduction.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="fr_FR">
+			<Text>[BLIST][LI] Standard : aucune réduction.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_MORE" Language="fr_FR">
-			<Text>[BLIST][LI] Plus : 25% plus chères.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="fr_FR">
+			<Text>[BLIST][LI] Abordables : 50% plus chères.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="fr_FR">
-			<Text>[BLIST][LI] Cher : 50% plus chères.[/BLIST]</Text>
+			<Text>[BLIST][LI] Cher : 100% plus chères.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="fr_FR">
 			<Text>Active ou désactive toutes les crises.[n]Désactivé éteint chaque crise de la Sélection des crises.</Text>
@@ -322,6 +322,12 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="fr_FR">
 			<Text>Génère plus de rivières, dont davantage de fleuves navigables.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_CHEAPER_NAME" Language="fr_FR">
+			<Text>Moins chères</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AFFORDABLE_NAME" Language="fr_FR">
+			<Text>Abordables</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="fr_FR">
 			<Text>Cher</Text>
 		</Replace>
@@ -331,17 +337,17 @@
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="fr_FR">
 			<Text>Définit le coût de production des unités civiles.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_LESS" Language="fr_FR">
-			<Text>[BLIST][LI] Moins : 25% moins chères.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_CHEAPER" Language="fr_FR">
+			<Text>[BLIST][LI] Moins chères : 25% moins chères.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DEFAULT" Language="fr_FR">
-			<Text>[BLIST][LI] Par défaut : aucune réduction.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="fr_FR">
+			<Text>[BLIST][LI] Standard : aucune réduction.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_MORE" Language="fr_FR">
-			<Text>[BLIST][LI] Plus : 25% plus chères.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="fr_FR">
+			<Text>[BLIST][LI] Abordables : 50% plus chères.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="fr_FR">
-			<Text>[BLIST][LI] Cher : 50% plus chères.[/BLIST]</Text>
+			<Text>[BLIST][LI] Cher : 100% plus chères.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="fr_FR">
 			<Text>En ligne 2.0</Text>

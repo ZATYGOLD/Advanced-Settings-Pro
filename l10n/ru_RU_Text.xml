@@ -199,17 +199,17 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="ru_RU">
 			<Text>Задаёт стоимость производства боевых юнитов.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_LESS" Language="ru_RU">
-			<Text>[BLIST][LI] Меньше: на 25% дешевле.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_CHEAPER" Language="ru_RU">
+			<Text>[BLIST][LI] Дешевле: на 25% дешевле.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DEFAULT" Language="ru_RU">
-			<Text>[BLIST][LI] По умолчанию: без скидки.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>[BLIST][LI] Стандарт: без скидки.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_MORE" Language="ru_RU">
-			<Text>[BLIST][LI] Больше: на 25% дороже.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="ru_RU">
+			<Text>[BLIST][LI] Доступно: на 50% дороже.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="ru_RU">
-			<Text>[BLIST][LI] Дорого: на 50% дороже.[/BLIST]</Text>
+			<Text>[BLIST][LI] Дорого: на 100% дороже.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="ru_RU">
 			<Text>Включает или отключает все кризисы.[n]Отключено выключает каждый кризис в разделе «Выбор кризисов».</Text>
@@ -322,6 +322,12 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="ru_RU">
 			<Text>Создаёт больше рек, и больше из них судоходны.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_CHEAPER_NAME" Language="ru_RU">
+			<Text>Дешевле</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AFFORDABLE_NAME" Language="ru_RU">
+			<Text>Доступно</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="ru_RU">
 			<Text>Дорого</Text>
 		</Replace>
@@ -331,17 +337,17 @@
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="ru_RU">
 			<Text>Задаёт стоимость производства гражданских юнитов.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_LESS" Language="ru_RU">
-			<Text>[BLIST][LI] Меньше: на 25% дешевле.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_CHEAPER" Language="ru_RU">
+			<Text>[BLIST][LI] Дешевле: на 25% дешевле.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DEFAULT" Language="ru_RU">
-			<Text>[BLIST][LI] По умолчанию: без скидки.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>[BLIST][LI] Стандарт: без скидки.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_MORE" Language="ru_RU">
-			<Text>[BLIST][LI] Больше: на 25% дороже.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="ru_RU">
+			<Text>[BLIST][LI] Доступно: на 50% дороже.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="ru_RU">
-			<Text>[BLIST][LI] Дорого: на 50% дороже.[/BLIST]</Text>
+			<Text>[BLIST][LI] Дорого: на 100% дороже.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="ru_RU">
 			<Text>Онлайн 2.0</Text>

@@ -57,14 +57,15 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 ## Settings
 
 - Single Player No Age Transitions: Enabled or Disabled
+- Game Random Seed and Map Random Seed: a Random button beside each field rolls a new seed (single player)
 - Game Speed: adds Online 2.0 (150% faster than Standard) and Marathon 2.0 (400% slower than Standard)
 - Age Length: Brief, Abbreviated, Standard, Long, or Doubled (90 to 280 age progress points per age)
 - Disaster Frequency: Disabled, Light, Moderate, Catastrophic, or Custom
 - Antiquity, Exploration, and Modern disaster frequency: Disabled, Light, Moderate, or Catastrophic each, applied when Disaster Frequency is set to Custom
 - Settler Speed: Slow, Default, or Fast
 - Treasure Convoy Speed: Slow, Default, or Fast
-- Military Unit Cost: Less, Default, More, or Expensive
-- Civilian Unit Cost: Less, Default, More, or Expensive
+- Military Unit Cost: Cheaper (25% cheaper), Standard, Affordable (50% more), or Expensive (100% more)
+- Civilian Unit Cost: Cheaper (25% cheaper), Standard, Affordable (50% more), or Expensive (100% more)
 - Natural Wonders: Disabled, Half, Default, More, or Double
 - Natural Wonder Selection: Enabled or Disabled for each of the 22 natural wonders, including DLC wonders
 - Lakes: Less, Standard, or More

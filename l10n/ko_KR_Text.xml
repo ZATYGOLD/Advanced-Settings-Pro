@@ -199,17 +199,17 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="ko_KR">
 			<Text>전투 유닛의 생산 비용을 설정합니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_LESS" Language="ko_KR">
-			<Text>[BLIST][LI] 적음: 25% 저렴.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_CHEAPER" Language="ko_KR">
+			<Text>[BLIST][LI] 저렴: 25% 저렴.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DEFAULT" Language="ko_KR">
-			<Text>[BLIST][LI] 기본: 할인 없음.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="ko_KR">
+			<Text>[BLIST][LI] 일반: 할인 없음.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_MORE" Language="ko_KR">
-			<Text>[BLIST][LI] 많음: 25% 비쌈.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="ko_KR">
+			<Text>[BLIST][LI] 적정: 50% 비쌈.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="ko_KR">
-			<Text>[BLIST][LI] 비쌈: 50% 비쌈.[/BLIST]</Text>
+			<Text>[BLIST][LI] 비쌈: 100% 비쌈.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="ko_KR">
 			<Text>모든 위기를 활성화 또는 비활성화합니다.[n]비활성화하면 위기 선택의 모든 위기가 꺼집니다.</Text>
@@ -322,6 +322,12 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="ko_KR">
 			<Text>강이 더 많이 생성되며, 항행 가능한 강도 늘어납니다.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_CHEAPER_NAME" Language="ko_KR">
+			<Text>저렴</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AFFORDABLE_NAME" Language="ko_KR">
+			<Text>적정</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="ko_KR">
 			<Text>비쌈</Text>
 		</Replace>
@@ -331,17 +337,17 @@
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="ko_KR">
 			<Text>민간 유닛의 생산 비용을 설정합니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_LESS" Language="ko_KR">
-			<Text>[BLIST][LI] 적음: 25% 저렴.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_CHEAPER" Language="ko_KR">
+			<Text>[BLIST][LI] 저렴: 25% 저렴.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DEFAULT" Language="ko_KR">
-			<Text>[BLIST][LI] 기본: 할인 없음.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="ko_KR">
+			<Text>[BLIST][LI] 일반: 할인 없음.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_MORE" Language="ko_KR">
-			<Text>[BLIST][LI] 많음: 25% 비쌈.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="ko_KR">
+			<Text>[BLIST][LI] 적정: 50% 비쌈.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="ko_KR">
-			<Text>[BLIST][LI] 비쌈: 50% 비쌈.[/BLIST]</Text>
+			<Text>[BLIST][LI] 비쌈: 100% 비쌈.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="ko_KR">
 			<Text>온라인 2.0</Text>

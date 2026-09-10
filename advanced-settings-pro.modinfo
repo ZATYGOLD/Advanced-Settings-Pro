@@ -463,14 +463,14 @@
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
 				<ConfigurationId>CombatUnitCostKey</ConfigurationId>
-				<Value>ZG_COMBAT_UNIT_COST_MORE</Value>
+				<Value>ZG_COMBAT_UNIT_COST_AFFORDABLE</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="cheaper-military-units">
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
 				<ConfigurationId>CombatUnitCostKey</ConfigurationId>
-				<Value>ZG_COMBAT_UNIT_COST_LESS</Value>
+				<Value>ZG_COMBAT_UNIT_COST_CHEAPER</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="premium-military-units">
@@ -484,14 +484,14 @@
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
 				<ConfigurationId>CivilianUnitCostKey</ConfigurationId>
-				<Value>ZG_CIVILIAN_UNIT_COST_MORE</Value>
+				<Value>ZG_CIVILIAN_UNIT_COST_AFFORDABLE</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="cheaper-civilian-units">
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
 				<ConfigurationId>CivilianUnitCostKey</ConfigurationId>
-				<Value>ZG_CIVILIAN_UNIT_COST_LESS</Value>
+				<Value>ZG_CIVILIAN_UNIT_COST_CHEAPER</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="premium-civilian-units">
@@ -2383,6 +2383,7 @@
 					<Item>ui/zg-asp-guard.js</Item>
 					<Item>ui/zg-setup-rules.js</Item>
 					<Item>ui/zg-map-tab.js</Item>
+					<Item>ui/zg-seed-randomizer.js</Item>
 				</UIScripts>
 				<UpdateText>
 					<Item>text/en_us/ui-shell-text.xml</Item>
@@ -3010,7 +3011,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/units/military-unit-cost-more.sql</Item>
+					<Item>data/units/military-unit-cost-affordable.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3020,7 +3021,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/units/military-unit-cost-less.sql</Item>
+					<Item>data/units/military-unit-cost-cheaper.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3040,7 +3041,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/units/civilian-unit-cost-more.sql</Item>
+					<Item>data/units/civilian-unit-cost-affordable.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3050,7 +3051,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/units/civilian-unit-cost-less.sql</Item>
+					<Item>data/units/civilian-unit-cost-cheaper.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

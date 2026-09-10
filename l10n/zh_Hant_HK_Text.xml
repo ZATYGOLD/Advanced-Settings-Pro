@@ -199,17 +199,17 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>設定戰鬥單位的生產花費。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_LESS" Language="zh_Hant_HK">
-			<Text>[BLIST][LI] 更少：便宜25%。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_CHEAPER" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 便宜：便宜25%。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DEFAULT" Language="zh_Hant_HK">
-			<Text>[BLIST][LI] 預設：無折扣。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 標準：無折扣。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_MORE" Language="zh_Hant_HK">
-			<Text>[BLIST][LI] 更多：昂貴25%。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 實惠：昂貴50%。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="zh_Hant_HK">
-			<Text>[BLIST][LI] 昂貴：昂貴50%。[/BLIST]</Text>
+			<Text>[BLIST][LI] 昂貴：昂貴100%。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>啟用或停用所有危機。[n]停用將關閉危機選擇中的所有危機。</Text>
@@ -322,6 +322,12 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="zh_Hant_HK">
 			<Text>生成更多的河流，其中更多可通航。</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_CHEAPER_NAME" Language="zh_Hant_HK">
+			<Text>便宜</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AFFORDABLE_NAME" Language="zh_Hant_HK">
+			<Text>實惠</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="zh_Hant_HK">
 			<Text>昂貴</Text>
 		</Replace>
@@ -331,17 +337,17 @@
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>設定平民單位的生產花費。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_LESS" Language="zh_Hant_HK">
-			<Text>[BLIST][LI] 更少：便宜25%。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_CHEAPER" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 便宜：便宜25%。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DEFAULT" Language="zh_Hant_HK">
-			<Text>[BLIST][LI] 預設：無折扣。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 標準：無折扣。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_MORE" Language="zh_Hant_HK">
-			<Text>[BLIST][LI] 更多：昂貴25%。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 實惠：昂貴50%。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="zh_Hant_HK">
-			<Text>[BLIST][LI] 昂貴：昂貴50%。[/BLIST]</Text>
+			<Text>[BLIST][LI] 昂貴：昂貴100%。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="zh_Hant_HK">
 			<Text>線上2.0</Text>

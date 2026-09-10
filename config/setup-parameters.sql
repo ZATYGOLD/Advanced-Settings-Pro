@@ -50,8 +50,8 @@ INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, Defaul
     VALUES
         ('ZG_SettlerMovementSpeed', 'LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME', 'LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION', 'ZG_SettlerMovementDomain','ZG_SETTLER_MOVES_DEFAULT', 1, 'Game', 'SettlerMovementKey', 'UnitOptions', 'MPAdvancedUnitOptions', 0, 1050),
         ('ZG_TreasureMovementSpeed', 'LOC_ZG_TREASURE_MOVEMENT_SPEED_NAME', 'LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION', 'ZG_TreasureMovementDomain', 'ZG_TREASURE_MOVES_DEFAULT', 1, 'Game','TreasureMovementKey', 'UnitOptions', 'MPAdvancedUnitOptions', 0, 1051),
-        ('ZG_CombatUnitCost', 'LOC_ZG_COMBAT_UNIT_COST_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION', 'ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_DEFAULT', 1, 'Game','CombatUnitCostKey', 'UnitOptions', 'MPAdvancedUnitOptions', 0, 1052),
-        ('ZG_CivilianUnitCost', 'LOC_ZG_CIVILIAN_UNIT_COST_NAME', 'LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION', 'ZG_CivilianUnitCostDomain', 'ZG_CIVILIAN_UNIT_COST_DEFAULT', 1, 'Game','CivilianUnitCostKey', 'UnitOptions', 'MPAdvancedUnitOptions', 0, 1053);
+        ('ZG_CombatUnitCost', 'LOC_ZG_COMBAT_UNIT_COST_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION', 'ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_STANDARD', 1, 'Game','CombatUnitCostKey', 'UnitOptions', 'MPAdvancedUnitOptions', 0, 1052),
+        ('ZG_CivilianUnitCost', 'LOC_ZG_CIVILIAN_UNIT_COST_NAME', 'LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION', 'ZG_CivilianUnitCostDomain', 'ZG_CIVILIAN_UNIT_COST_STANDARD', 1, 'Game','CivilianUnitCostKey', 'UnitOptions', 'MPAdvancedUnitOptions', 0, 1053);
 
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
@@ -62,13 +62,13 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_TreasureMovementDomain', 'ZG_TREASURE_MOVES_SLOW', 'LOC_ZG_SLOW_NAME', 'LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_SLOW', 10),
         ('ZG_TreasureMovementDomain', 'ZG_TREASURE_MOVES_DEFAULT', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_DEFAULT', 20),
         ('ZG_TreasureMovementDomain', 'ZG_TREASURE_MOVES_FAST', 'LOC_ZG_FAST_NAME', 'LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_FAST', 30),
-        ('ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_LESS', 'LOC_ZG_LESS_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_LESS', 10),
-        ('ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_DEFAULT', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DEFAULT', 20),
-        ('ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_MORE', 'LOC_ZG_MORE_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_MORE', 30),
+        ('ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_CHEAPER', 'LOC_ZG_CHEAPER_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_CHEAPER', 10),
+        ('ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_STANDARD', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD', 20),
+        ('ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_AFFORDABLE', 'LOC_ZG_AFFORDABLE_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_AFFORDABLE', 30),
         ('ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_EXPENSIVE', 'LOC_ZG_EXPENSIVE_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_EXPENSIVE', 40),
-        ('ZG_CivilianUnitCostDomain', 'ZG_CIVILIAN_UNIT_COST_LESS', 'LOC_ZG_LESS_NAME', 'LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_LESS', 10),
-        ('ZG_CivilianUnitCostDomain', 'ZG_CIVILIAN_UNIT_COST_DEFAULT', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DEFAULT', 20),
-        ('ZG_CivilianUnitCostDomain', 'ZG_CIVILIAN_UNIT_COST_MORE', 'LOC_ZG_MORE_NAME', 'LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_MORE', 30),
+        ('ZG_CivilianUnitCostDomain', 'ZG_CIVILIAN_UNIT_COST_CHEAPER', 'LOC_ZG_CHEAPER_NAME', 'LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_CHEAPER', 10),
+        ('ZG_CivilianUnitCostDomain', 'ZG_CIVILIAN_UNIT_COST_STANDARD', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD', 20),
+        ('ZG_CivilianUnitCostDomain', 'ZG_CIVILIAN_UNIT_COST_AFFORDABLE', 'LOC_ZG_AFFORDABLE_NAME', 'LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_AFFORDABLE', 30),
         ('ZG_CivilianUnitCostDomain', 'ZG_CIVILIAN_UNIT_COST_EXPENSIVE', 'LOC_ZG_EXPENSIVE_NAME', 'LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_EXPENSIVE', 40);
 
 
@@ -100,7 +100,7 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 --*******************************************************
 -- The base Initial Independent Hostility setting belongs with the other
 -- Independent Power settings.
-UPDATE Parameters SET GroupId = 'IndependentPowerOptions', GroupIDMultiplayerOverride = 'MPAdvancedIndependentPowerOptions', SortIndex = 7020 WHERE ParameterID = 'IndependentHostility';
+UPDATE Parameters SET GroupId = 'IndependentPowerOptions', GroupIDMultiplayerOverride = 'MPAdvancedIndependentPowerOptions', SortIndex = 690 WHERE ParameterID = 'IndependentHostility';
 
 --*******************************************************
 --************* TRIUMPH SETS ****************************

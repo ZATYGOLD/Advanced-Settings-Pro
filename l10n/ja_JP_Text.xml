@@ -199,17 +199,17 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="ja_JP">
 			<Text>戦闘ユニットの生産コストを設定します。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_LESS" Language="ja_JP">
-			<Text>[BLIST][LI] 少ない：25%割安。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_CHEAPER" Language="ja_JP">
+			<Text>[BLIST][LI] 割安：25%割安。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DEFAULT" Language="ja_JP">
-			<Text>[BLIST][LI] デフォルト：割引なし。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="ja_JP">
+			<Text>[BLIST][LI] 標準：割引なし。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_MORE" Language="ja_JP">
-			<Text>[BLIST][LI] 多い：25%割高。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="ja_JP">
+			<Text>[BLIST][LI] 手頃：50%割高。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="ja_JP">
-			<Text>[BLIST][LI] 高価：50%割高。[/BLIST]</Text>
+			<Text>[BLIST][LI] 高価：100%割高。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="ja_JP">
 			<Text>すべての危機を有効または無効にします。[n]無効にすると、危機の選択のすべての危機がオフになります。</Text>
@@ -322,6 +322,12 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="ja_JP">
 			<Text>生成される川が多くなり、航行可能な川も増えます。</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_CHEAPER_NAME" Language="ja_JP">
+			<Text>割安</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AFFORDABLE_NAME" Language="ja_JP">
+			<Text>手頃</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="ja_JP">
 			<Text>高価</Text>
 		</Replace>
@@ -331,17 +337,17 @@
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="ja_JP">
 			<Text>民間ユニットの生産コストを設定します。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_LESS" Language="ja_JP">
-			<Text>[BLIST][LI] 少ない：25%割安。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_CHEAPER" Language="ja_JP">
+			<Text>[BLIST][LI] 割安：25%割安。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DEFAULT" Language="ja_JP">
-			<Text>[BLIST][LI] デフォルト：割引なし。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="ja_JP">
+			<Text>[BLIST][LI] 標準：割引なし。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_MORE" Language="ja_JP">
-			<Text>[BLIST][LI] 多い：25%割高。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="ja_JP">
+			<Text>[BLIST][LI] 手頃：50%割高。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="ja_JP">
-			<Text>[BLIST][LI] 高価：50%割高。[/BLIST]</Text>
+			<Text>[BLIST][LI] 高価：100%割高。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="ja_JP">
 			<Text>オンライン2.0</Text>

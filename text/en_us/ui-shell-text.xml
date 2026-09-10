@@ -26,6 +26,8 @@
 		<Row Tag="LOC_ZG_SLOW_NAME"><Text>Slow</Text></Row>
 		<Row Tag="LOC_ZG_MORE_NAME"><Text>More</Text></Row>
 		<Row Tag="LOC_ZG_LESS_NAME"><Text>Less</Text></Row>
+		<Row Tag="LOC_ZG_CHEAPER_NAME"><Text>Cheaper</Text></Row>
+		<Row Tag="LOC_ZG_AFFORDABLE_NAME"><Text>Affordable</Text></Row>
 		<Row Tag="LOC_ZG_EXPENSIVE_NAME"><Text>Expensive</Text></Row>
 
 	<!-- Setting Names -->
@@ -245,47 +247,47 @@
 		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION">
 			<Text>Sets production cost of combat units.</Text>
 		</Row>
-		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_LESS">
+		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_CHEAPER">
 			<Text>[BLIST]
-				[LI] Less: 25% Cheaper.[/BLIST]
+				[LI] Cheaper: 25% cheaper.[/BLIST]
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DEFAULT">
+		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD">
 			<Text>[BLIST]
-				[LI] Default: No Discount.[/BLIST]
+				[LI] Standard: no discount.[/BLIST]
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_MORE">
+		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_AFFORDABLE">
 			<Text>[BLIST]
-				[LI] More: 25% More Expensive.[/BLIST]
+				[LI] Affordable: 50% more expensive.[/BLIST]
 			</Text>
 		</Row>
 		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_EXPENSIVE">
 			<Text>[BLIST]
-				[LI] Expensive: 50% More Expensive.[/BLIST]
+				[LI] Expensive: 100% more expensive.[/BLIST]
 			</Text>
 		</Row>
 		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION">
 			<Text>Sets production cost of civilian units.</Text>
 		</Row>
-		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_LESS">
+		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_CHEAPER">
 			<Text>[BLIST]
-				[LI] Less: 25% Cheaper.[/BLIST]
+				[LI] Cheaper: 25% cheaper.[/BLIST]
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DEFAULT">
+		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD">
 			<Text>[BLIST]
-				[LI] Default: No Discount.[/BLIST]
+				[LI] Standard: no discount.[/BLIST]
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_MORE">
+		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_AFFORDABLE">
 			<Text>[BLIST]
-				[LI] More: 25% More Expensive.[/BLIST]
+				[LI] Affordable: 50% more expensive.[/BLIST]
 			</Text>
 		</Row>
 		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_EXPENSIVE">
 			<Text>[BLIST]
-				[LI] Expensive: 50% More Expensive.[/BLIST]
+				[LI] Expensive: 100% more expensive.[/BLIST]
 			</Text>
 		</Row>
 
