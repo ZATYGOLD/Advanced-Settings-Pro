@@ -295,6 +295,9 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="ko_KR">
 			<Text>둘 다 유지</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="ko_KR">
+			<Text>다음 설정을 추가하는 확인되지 않은 모드:</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="ko_KR">
 			<Text>무작위 기념품</Text>
 		</Replace>

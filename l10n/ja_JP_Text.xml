@@ -295,6 +295,9 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="ja_JP">
 			<Text>両方とも使う</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="ja_JP">
+			<Text>次の設定を追加する未特定のMod：</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="ja_JP">
 			<Text>ランダムな形見</Text>
 		</Replace>

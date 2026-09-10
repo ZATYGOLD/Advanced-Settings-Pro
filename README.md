@@ -82,6 +82,8 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - AI Mementos (Player tab, single player): Major and Minor Memento dropdowns on each AI player's row beside Leader and Civilization, each with a Random option rolled afresh every game
 - Triumph Set: adds Custom to the game's setting, with an Antiquity, Exploration, and Modern Triumph Set each choosable from the game's sets
 
+The conflict guard recognises conflicting mods by their id and by the setup settings they add to the game, so renaming a mod does not bypass it.
+
 All settings are chosen at game creation and apply for the full game.
 
 In single player, the Advanced Settings screen gains a Map tab between General and Player that holds the map, natural wonder, and disaster settings, while the crisis settings move into their own Crisis Settings group on General and Initial Independent Hostility joins the Independent Power settings; multiplayer keeps the game's standard layout.

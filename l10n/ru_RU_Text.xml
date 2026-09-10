@@ -295,6 +295,9 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="ru_RU">
 			<Text>Оставить оба</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="ru_RU">
+			<Text>Неопознанный мод, добавляющий настройки:</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="ru_RU">
 			<Text>Случайные памятные вещи</Text>
 		</Replace>

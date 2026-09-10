@@ -2374,7 +2374,7 @@
 
 		<ActionGroup id="zg-options-settings-shell" scope="shell" criteria="always">
 			<Properties>
-				<LoadOrder>2,147,483,647</LoadOrder>
+				<LoadOrder>2147483647</LoadOrder>
 				<AffectsSavedGames>0</AffectsSavedGames>
 			</Properties>
 			<Actions>

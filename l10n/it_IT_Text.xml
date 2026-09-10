@@ -295,6 +295,9 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="it_IT">
 			<Text>Mantieni entrambe</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="it_IT">
+			<Text>Mod non identificata che aggiunge le impostazioni:</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="it_IT">
 			<Text>Ricordi casuali</Text>
 		</Replace>

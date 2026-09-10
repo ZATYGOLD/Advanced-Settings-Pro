@@ -404,6 +404,7 @@
 		<Row Tag="LOC_ZG_MOD_CONFLICT_BODY_FOOTER"><Text>[n] [n]Please unsubscribe from the mods now. [n] [n]</Text></Row>
 		<Row Tag="LOC_ZG_MOD_CONFLICT_DISABLE"><Text>Ok</Text></Row>
 		<Row Tag="LOC_ZG_MOD_CONFLICT_IGNORE"><Text>Cancel</Text></Row>
+		<Row Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD"><Text>Unidentified mod adding the settings:</Text></Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM">
 			<Text>Custom: set the settlement limit for each age individually.</Text>
 		</Row>

@@ -295,6 +295,9 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="zh_Hans_CN">
 			<Text>保留两者</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="zh_Hans_CN">
+			<Text>添加以下设置的未识别模组：</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="zh_Hans_CN">
 			<Text>随机纪念品</Text>
 		</Replace>

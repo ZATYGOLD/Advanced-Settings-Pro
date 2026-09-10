@@ -295,6 +295,9 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="de_DE">
 			<Text>Beide behalten</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="de_DE">
+			<Text>Nicht identifizierte Mod, die diese Einstellungen hinzufügt:</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="de_DE">
 			<Text>Zufällige Erinnerungsstücke</Text>
 		</Replace>
