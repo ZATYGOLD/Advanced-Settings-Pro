@@ -65,7 +65,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Military Unit Cost: Less, Default, More, or Expensive
 - Civilian Unit Cost: Less, Default, More, or Expensive
 - Natural Wonders: Disabled, Half, Default, More, or Double
-- Natural Wonder Selection: Enabled or Disabled for each of the 20 natural wonders, including DLC wonders
+- Natural Wonder Selection: Enabled or Disabled for each of the 22 natural wonders, including DLC wonders
 - Lakes: Disabled, Less, Default, or More
 - Rivers: Disabled, Less, Default, or More
 - Mountains: Disabled, Less, Default, or More

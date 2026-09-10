@@ -18,8 +18,9 @@ const WONDER_PARAM_IDS = [
 	"ZG_NW_BarrierReef", "ZG_NW_BermudaTriangle", "ZG_NW_GrandCanyon", "ZG_NW_GreatBlueHole",
 	"ZG_NW_Gullfoss", "ZG_NW_Hoerikwaggo", "ZG_NW_IguazuFalls", "ZG_NW_Kilimanjaro",
 	"ZG_NW_Machapuchare", "ZG_NW_MapuAVaeaBlowholes", "ZG_NW_MountEverest", "ZG_NW_MountFuji",
-	"ZG_NW_RedwoodForest", "ZG_NW_Thera", "ZG_NW_TorresDelPaine", "ZG_NW_Uluru",
-	"ZG_NW_ValleyOfFlowers", "ZG_NW_Vihren", "ZG_NW_Vinicunca", "ZG_NW_Zhangjiajie",
+	"ZG_NW_NachiFalls", "ZG_NW_RedwoodForest", "ZG_NW_SeongsanIlchulbong", "ZG_NW_Thera",
+	"ZG_NW_TorresDelPaine", "ZG_NW_Uluru", "ZG_NW_ValleyOfFlowers", "ZG_NW_Vihren",
+	"ZG_NW_Vinicunca", "ZG_NW_Zhangjiajie",
 ];
 
 const SL_PARAM_ID = "ZG_SettlementLimit";

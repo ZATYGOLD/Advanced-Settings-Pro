@@ -433,6 +433,42 @@
 		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="zh_Hant_HK">
 			<Text>富士山</Text>
 		</Replace>
+		<Replace Tag="LOC_FEATURE_NACHI_FALLS_NAME" Language="en_US">
+			<Text>Nachi Falls</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NACHI_FALLS_NAME" Language="de_DE">
+			<Text>Nachi-Wasserfall|Nachi-Wasserfall|Nachi-Wasserfall|Nachi-Wasserfalls|Nachi-Wasserfall</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NACHI_FALLS_NAME" Language="es_ES">
+			<Text>Cascada Nachi</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NACHI_FALLS_NAME" Language="fr_FR">
+			<Text>Chute d'eau de Nachi</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NACHI_FALLS_NAME" Language="it_IT">
+			<Text>Cascata di Nachi</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NACHI_FALLS_NAME" Language="ja_JP">
+			<Text>那智の滝</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NACHI_FALLS_NAME" Language="ko_KR">
+			<Text>나치 폭포</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NACHI_FALLS_NAME" Language="pl_PL">
+			<Text>Wodospad Nachi|Wodospadu Nachi|Wodospadowi Nachi|Wodospad Nachi|Wodospadem Nachi|Wodospadzie Nachi|wodospad Nachi|wodospadu Nachi|wodospadowi Nachi|wodospad Nachi|wodospadem Nachi|wodospadzie Nachi</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NACHI_FALLS_NAME" Language="pt_BR">
+			<Text>Cachoeira de Nachi</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NACHI_FALLS_NAME" Language="ru_RU">
+			<Text>Нати|Нати|Нати|Нати|Нати|Нати</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NACHI_FALLS_NAME" Language="zh_Hans_CN">
+			<Text>那智瀑布</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NACHI_FALLS_NAME" Language="zh_Hant_HK">
+			<Text>那智瀑布</Text>
+		</Replace>
 		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="en_US">
 			<Text>Redwood Forest</Text>
 		</Replace>
@@ -468,6 +504,42 @@
 		</Replace>
 		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="zh_Hant_HK">
 			<Text>紅木森林</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME" Language="en_US">
+			<Text>Seongsan Ilchulbong</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME" Language="de_DE">
+			<Text>Seongsan Ilchulbong|Seongsan Ilchulbong|Seongsan Ilchulbong|Seongsan Ilchulbong|Seongsan Ilchulbong</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME" Language="es_ES">
+			<Text>Seongsan Ilchulbong</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME" Language="fr_FR">
+			<Text>Seongsan Ilchulbong</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME" Language="it_IT">
+			<Text>Seongsan Ilchulbong</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME" Language="ja_JP">
+			<Text>城山日出峰</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME" Language="ko_KR">
+			<Text>성산일출봉</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME" Language="pl_PL">
+			<Text>Seongsan Ilchulbong|Seongsan Ilchulbongu|Seongsan Ilchulbongowi|Seongsan Ilchulbong|Seongsan Ilchulbongiem|Seongsan Ilchulbongu|Seongsan Ilchulbong|Seongsan Ilchulbongu|Seongsan Ilchulbongowi|Seongsan Ilchulbong|Seongsan Ilchulbongiem|Seongsan Ilchulbongu</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME" Language="pt_BR">
+			<Text>Seongsan Ilchulbong</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME" Language="ru_RU">
+			<Text>Пик Сонсан Ильчульбон|пика Сонсан Ильчульбон|пику Сонсан Ильчульбон|пик Сонсан Ильчульбон|пиком Сонсан Ильчульбон|пике Сонсан Ильчульбон</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME" Language="zh_Hans_CN">
+			<Text>城山日出峰</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME" Language="zh_Hant_HK">
+			<Text>城山日出峰</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="en_US">
 			<Text>Thera</Text>
