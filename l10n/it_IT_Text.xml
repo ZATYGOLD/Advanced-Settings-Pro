@@ -280,6 +280,9 @@
 		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS" Language="it_IT">
 			<Text>Mappa</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_AGES" Language="it_IT">
+			<Text>Epoche</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="it_IT">
 			<Text>Conflitto tra mod rilevato</Text>
 		</Replace>
@@ -297,6 +300,93 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="it_IT">
 			<Text>Mod non identificata che aggiunge le impostazioni:</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="it_IT">
+			<Text>Impostazioni del ritmo di gioco</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FASTER_NAME" Language="it_IT">
+			<Text>Più veloce</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM" Language="it_IT">
+			<Text>Personalizzato: imposta questo valore per ogni epoca singolarmente.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="it_IT">
+			<Text>Imposta il valore di questa epoca.[n]Si applica solo quando l'impostazione del ritmo di gioco è su Personalizzato.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="it_IT">
+			<Text>Progresso dell'epoca</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION" Language="it_IT">
+			<Text>Imposta quanto rapidamente le pietre miliari e le tecnologie e i principi futuri riempiono l'indicatore dell'epoca.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_NAME" Language="it_IT">
+			<Text>Costo delle tecnologie</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION" Language="it_IT">
+			<Text>Imposta il costo di ricerca delle tecnologie.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_NAME" Language="it_IT">
+			<Text>Costo dei principi civici</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION" Language="it_IT">
+			<Text>Imposta il costo in cultura dei principi civici.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_NAME" Language="it_IT">
+			<Text>Crescita delle città</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION" Language="it_IT">
+			<Text>Imposta quanto cibo serve alle città per crescere.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_NAME" Language="it_IT">
+			<Text>Strade</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION" Language="it_IT">
+			<Text>Imposta quanto movimento costano strade e ferrovie.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_NAME" Language="it_IT">
+			<Text>Costo dei progetti di vittoria</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION" Language="it_IT">
+			<Text>Imposta il costo di produzione dei progetti di vittoria e di eredità nell'Epoca moderna.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="it_IT">
+			<Text>[BLIST][LI] Lento: 50% di punti in meno.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD" Language="it_IT">
+			<Text>[BLIST][LI] Standard: nessuna modifica.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST" Language="it_IT">
+			<Text>[BLIST][LI] Veloce: 50% di punti in più.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_CHEAPER" Language="it_IT">
+			<Text>[BLIST][LI] Più economiche: 25% più economiche.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_STANDARD" Language="it_IT">
+			<Text>[BLIST][LI] Standard: nessuna modifica.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_AFFORDABLE" Language="it_IT">
+			<Text>[BLIST][LI] Accessibili: 50% più costose.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_EXPENSIVE" Language="it_IT">
+			<Text>[BLIST][LI] Costoso: 100% più costose.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW" Language="it_IT">
+			<Text>[BLIST][LI] Lento: le città crescono più lentamente.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="it_IT">
+			<Text>[BLIST][LI] Standard: nessuna modifica.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="it_IT">
+			<Text>[BLIST][LI] Veloce: le città crescono più in fretta.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD" Language="it_IT">
+			<Text>[BLIST][LI] Standard: nessuna modifica.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_FAST" Language="it_IT">
+			<Text>[BLIST][LI] Veloce: costo di movimento ridotto del 25%.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_FASTER" Language="it_IT">
+			<Text>[BLIST][LI] Più veloce: costo di movimento ridotto del 50%.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="it_IT">
 			<Text>Ricordi casuali</Text>

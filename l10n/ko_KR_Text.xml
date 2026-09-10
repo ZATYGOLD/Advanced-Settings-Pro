@@ -280,6 +280,9 @@
 		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS" Language="ko_KR">
 			<Text>지도</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_AGES" Language="ko_KR">
+			<Text>시대</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="ko_KR">
 			<Text>모드 충돌 감지됨</Text>
 		</Replace>
@@ -297,6 +300,93 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="ko_KR">
 			<Text>다음 설정을 추가하는 확인되지 않은 모드:</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="ko_KR">
+			<Text>게임 진행 속도 설정</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FASTER_NAME" Language="ko_KR">
+			<Text>더 빠름</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM" Language="ko_KR">
+			<Text>사용자 지정: 시대별로 개별 설정합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="ko_KR">
+			<Text>이 시대의 값을 설정합니다.[n]게임 진행 속도 설정이 사용자 지정일 때만 적용됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="ko_KR">
+			<Text>시대 진행 속도</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION" Language="ko_KR">
+			<Text>이정표와 미래 기술 및 사회 제도가 시대 게이지를 채우는 속도를 설정합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_NAME" Language="ko_KR">
+			<Text>기술 비용</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION" Language="ko_KR">
+			<Text>기술의 연구 비용을 설정합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_NAME" Language="ko_KR">
+			<Text>사회 제도 비용</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION" Language="ko_KR">
+			<Text>사회 제도의 문화 비용을 설정합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_NAME" Language="ko_KR">
+			<Text>도시 성장</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION" Language="ko_KR">
+			<Text>도시 성장에 필요한 식량을 설정합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_NAME" Language="ko_KR">
+			<Text>도로</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION" Language="ko_KR">
+			<Text>도로와 철도의 이동 비용을 설정합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_NAME" Language="ko_KR">
+			<Text>승리 프로젝트 비용</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION" Language="ko_KR">
+			<Text>근대의 승리 및 유산 프로젝트 생산 비용을 설정합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="ko_KR">
+			<Text>[BLIST][LI] 느림: 포인트 50% 감소.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD" Language="ko_KR">
+			<Text>[BLIST][LI] 일반: 변경 없음.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST" Language="ko_KR">
+			<Text>[BLIST][LI] 빠름: 포인트 50% 증가.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_CHEAPER" Language="ko_KR">
+			<Text>[BLIST][LI] 저렴: 25% 저렴.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_STANDARD" Language="ko_KR">
+			<Text>[BLIST][LI] 일반: 변경 없음.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_AFFORDABLE" Language="ko_KR">
+			<Text>[BLIST][LI] 적정: 50% 비쌈.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_EXPENSIVE" Language="ko_KR">
+			<Text>[BLIST][LI] 비쌈: 100% 비쌈.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW" Language="ko_KR">
+			<Text>[BLIST][LI] 느림: 도시가 더 느리게 성장합니다.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="ko_KR">
+			<Text>[BLIST][LI] 일반: 변경 없음.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="ko_KR">
+			<Text>[BLIST][LI] 빠름: 도시가 더 빠르게 성장합니다.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD" Language="ko_KR">
+			<Text>[BLIST][LI] 일반: 변경 없음.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_FAST" Language="ko_KR">
+			<Text>[BLIST][LI] 빠름: 이동 비용 25% 감소.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_FASTER" Language="ko_KR">
+			<Text>[BLIST][LI] 더 빠름: 이동 비용 50% 감소.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="ko_KR">
 			<Text>무작위 기념품</Text>

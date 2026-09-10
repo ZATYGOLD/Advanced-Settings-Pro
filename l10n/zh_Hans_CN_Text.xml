@@ -280,6 +280,9 @@
 		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS" Language="zh_Hans_CN">
 			<Text>地图</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_AGES" Language="zh_Hans_CN">
+			<Text>时代</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="zh_Hans_CN">
 			<Text>检测到模组冲突</Text>
 		</Replace>
@@ -297,6 +300,93 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="zh_Hans_CN">
 			<Text>添加以下设置的未识别模组：</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="zh_Hans_CN">
+			<Text>游戏节奏设置</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FASTER_NAME" Language="zh_Hans_CN">
+			<Text>更快</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM" Language="zh_Hans_CN">
+			<Text>自定义：为每个时代单独设置。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置该时代的值。[n]仅当游戏节奏设置为自定义时生效。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="zh_Hans_CN">
+			<Text>时代进度速度</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置里程碑以及未来科技与市政填充时代进度条的速度。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_NAME" Language="zh_Hans_CN">
+			<Text>科技花费</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置科技的研究花费。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_NAME" Language="zh_Hans_CN">
+			<Text>市政花费</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置市政的文化花费。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_NAME" Language="zh_Hans_CN">
+			<Text>城市成长</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置城市成长所需的食物。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_NAME" Language="zh_Hans_CN">
+			<Text>道路</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置道路和铁路的移动消耗。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_NAME" Language="zh_Hans_CN">
+			<Text>胜利项目花费</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置近世胜利项目和遗产项目的生产花费。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 慢：点数减少50%。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 标准：无变化。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 快：点数增加50%。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_CHEAPER" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 便宜：便宜25%。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 标准：无变化。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_AFFORDABLE" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 实惠：昂贵50%。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_EXPENSIVE" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 昂贵：昂贵100%。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 慢：城市成长更慢。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 标准：无变化。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 快：城市成长更快。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 标准：无变化。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_FAST" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 快：移动消耗减少25%。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_FASTER" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 更快：移动消耗减少50%。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="zh_Hans_CN">
 			<Text>随机纪念品</Text>

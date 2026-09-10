@@ -280,6 +280,9 @@
 		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS" Language="ru_RU">
 			<Text>Карта</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_AGES" Language="ru_RU">
+			<Text>Эпохи</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="ru_RU">
 			<Text>Обнаружен конфликт модов</Text>
 		</Replace>
@@ -297,6 +300,93 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="ru_RU">
 			<Text>Неопознанный мод, добавляющий настройки:</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="ru_RU">
+			<Text>Настройки темпа игры</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FASTER_NAME" Language="ru_RU">
+			<Text>Ещё быстрее</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM" Language="ru_RU">
+			<Text>Особый: задайте это для каждой эпохи отдельно.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="ru_RU">
+			<Text>Задаёт значение этой эпохи.[n]Действует только если настройка темпа игры установлена на Особый.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="ru_RU">
+			<Text>Прогресс эпохи</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION" Language="ru_RU">
+			<Text>Задаёт, как быстро вехи, а также технологии и институты будущего заполняют шкалу эпохи.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_NAME" Language="ru_RU">
+			<Text>Стоимость технологий</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION" Language="ru_RU">
+			<Text>Задаёт стоимость исследования технологий.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_NAME" Language="ru_RU">
+			<Text>Стоимость общественных институтов</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION" Language="ru_RU">
+			<Text>Задаёт стоимость общественных институтов в культуре.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_NAME" Language="ru_RU">
+			<Text>Рост городов</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION" Language="ru_RU">
+			<Text>Задаёт, сколько еды нужно городам для роста.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_NAME" Language="ru_RU">
+			<Text>Дороги</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION" Language="ru_RU">
+			<Text>Задаёт стоимость передвижения по дорогам и железным дорогам.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_NAME" Language="ru_RU">
+			<Text>Стоимость победных проектов</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION" Language="ru_RU">
+			<Text>Задаёт стоимость производства победных проектов и проектов наследия в Современности.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="ru_RU">
+			<Text>[BLIST][LI] Медленно: на 50% меньше очков.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>[BLIST][LI] Стандарт: без изменений.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST" Language="ru_RU">
+			<Text>[BLIST][LI] Быстро: на 50% больше очков.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_CHEAPER" Language="ru_RU">
+			<Text>[BLIST][LI] Дешевле: на 25% дешевле.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>[BLIST][LI] Стандарт: без изменений.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_AFFORDABLE" Language="ru_RU">
+			<Text>[BLIST][LI] Доступно: на 50% дороже.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_EXPENSIVE" Language="ru_RU">
+			<Text>[BLIST][LI] Дорого: на 100% дороже.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW" Language="ru_RU">
+			<Text>[BLIST][LI] Медленно: города растут медленнее.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>[BLIST][LI] Стандарт: без изменений.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="ru_RU">
+			<Text>[BLIST][LI] Быстро: города растут быстрее.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>[BLIST][LI] Стандарт: без изменений.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_FAST" Language="ru_RU">
+			<Text>[BLIST][LI] Быстро: стоимость передвижения на 25% ниже.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_FASTER" Language="ru_RU">
+			<Text>[BLIST][LI] Ещё быстрее: стоимость передвижения на 50% ниже.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="ru_RU">
 			<Text>Случайные памятные вещи</Text>

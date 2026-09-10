@@ -280,6 +280,9 @@
 		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS" Language="ja_JP">
 			<Text>マップ</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_AGES" Language="ja_JP">
+			<Text>時代</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="ja_JP">
 			<Text>Modの競合を検出</Text>
 		</Replace>
@@ -297,6 +300,93 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="ja_JP">
 			<Text>次の設定を追加する未特定のMod：</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="ja_JP">
+			<Text>ゲーム進行速度の設定</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FASTER_NAME" Language="ja_JP">
+			<Text>より速い</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM" Language="ja_JP">
+			<Text>カスタム：時代ごとに個別に設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="ja_JP">
+			<Text>この時代の値を設定します。[n]ゲーム進行速度の設定がカスタムの場合のみ適用されます。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="ja_JP">
+			<Text>時代の進行速度</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION" Language="ja_JP">
+			<Text>マイルストーンと未来の技術・社会制度が時代メーターを満たす速さを設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_NAME" Language="ja_JP">
+			<Text>技術コスト</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION" Language="ja_JP">
+			<Text>技術の研究コストを設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_NAME" Language="ja_JP">
+			<Text>社会制度コスト</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION" Language="ja_JP">
+			<Text>社会制度の文化コストを設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_NAME" Language="ja_JP">
+			<Text>都市の成長</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION" Language="ja_JP">
+			<Text>都市の成長に必要な食料の量を設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_NAME" Language="ja_JP">
+			<Text>道路</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION" Language="ja_JP">
+			<Text>道路と鉄道の移動コストを設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_NAME" Language="ja_JP">
+			<Text>勝利プロジェクトのコスト</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION" Language="ja_JP">
+			<Text>近代の勝利プロジェクトとレガシープロジェクトの生産コストを設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="ja_JP">
+			<Text>[BLIST][LI] 遅い：ポイント50%減。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD" Language="ja_JP">
+			<Text>[BLIST][LI] 標準：変更なし。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST" Language="ja_JP">
+			<Text>[BLIST][LI] 速い：ポイント50%増。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_CHEAPER" Language="ja_JP">
+			<Text>[BLIST][LI] 割安：25%割安。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_STANDARD" Language="ja_JP">
+			<Text>[BLIST][LI] 標準：変更なし。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_AFFORDABLE" Language="ja_JP">
+			<Text>[BLIST][LI] 手頃：50%割高。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_EXPENSIVE" Language="ja_JP">
+			<Text>[BLIST][LI] 高価：100%割高。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW" Language="ja_JP">
+			<Text>[BLIST][LI] 遅い：都市の成長が遅くなります。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="ja_JP">
+			<Text>[BLIST][LI] 標準：変更なし。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="ja_JP">
+			<Text>[BLIST][LI] 速い：都市の成長が速くなります。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD" Language="ja_JP">
+			<Text>[BLIST][LI] 標準：変更なし。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_FAST" Language="ja_JP">
+			<Text>[BLIST][LI] 速い：移動コスト25%減。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_FASTER" Language="ja_JP">
+			<Text>[BLIST][LI] より速い：移動コスト50%減。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="ja_JP">
 			<Text>ランダムな形見</Text>

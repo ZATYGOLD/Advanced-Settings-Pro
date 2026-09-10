@@ -1,0 +1,126 @@
+[h1]Zatygold's Advanced Settings Pro[/h1]
+[i]Version 0.8.0[/i]
+Expands game setup for Single Player and Multiplayer with extra options in the Advanced Settings menu, letting you fine-tune systems the game normally locks away.
+
+[hr][/hr]
+[h2]If you are having trouble accessing your save file:[/h2]
+[list]
+[*][b]Navigate to your workshop folder:[/b]
+....\steamapps\workshop\content\1295660\3642011075
+
+[*][b]Edit the file called "advanced-settings-pro.modinfo"[/b]
+[*][b]Look for this:[/b]
+<Mod id="Zatygold's Advanced Settings Pro" version="00800" xmlns="ModInfo">
+<Mod id="AdvancedSettingsPro" version="00800" xmlns="ModInfo">
+[/list]
+[*]If the mod id is the top one with Zatygold then try renaming it to the one without spaces.
+[*]If it already doesn't have spaces then try it with the Zatygold's and spaces added.
+[*]If either of these don't work try changing the version (the one here in the same line) number.
+
+When you try to load a save it will tell you what version you need. For example v800 means 00800 or v704 means 00704.
+
+[hr][/hr]
+[h2]New in 0.8.0[/h2]
+[list]
+[*]A dedicated [b]Map[/b] tab in single-player Advanced Settings, next to General and Player
+[*][b]AI Mementos[/b] on the Player tab, with None and Random options
+[*][b]Game Pacing Settings[/b]: Age Length, Age Progress Rate, Technology and Civic Cost, City Growth, Roads, and Victory Project Cost, with a [b]Game Pacing Selection[/b] group for per-age values
+[*]Per-age [b]Disaster Frequency[/b] and per-age [b]Triumph Sets[/b]
+[*][b]Crises[/b] on/off switch and [b]Crisis Timing[/b]
+[*]Random buttons for the Game and Map seeds
+[*]Two new natural wonders, cleaner tooltips, and a stronger conflict guard
+[/list]
+
+[hr][/hr]
+[h2]General Tab[/h2]
+[h3]Game Settings[/h3]
+[list]
+[*][b]Game Speed[/b] — adds Online 2.0 (150% faster) and Marathon 2.0 (400% slower)
+[*][b]Single Player No Age Transitions[/b] — Enabled or Disabled
+[*][b]Game Random Seed[/b] — a Random button beside the field rolls a new seed
+[/list]
+[h3]Game Pacing Settings[/h3]
+[list]
+[*][b]Age Length[/b] — Brief, Abbreviated, Standard, Long, Doubled, or Custom
+[*][b]Age Progress Rate[/b] — Slow, Standard, Fast, or Custom. How quickly milestones and future techs and civics fill the age meter
+[*][b]Technology Cost[/b] — Cheaper (25% cheaper), Standard, Affordable (50% more), Expensive (100% more), or Custom
+[*][b]Civic Cost[/b] — Cheaper, Standard, Affordable, Expensive, or Custom
+[*][b]City Growth[/b] — Slow, Standard, Fast, or Custom
+[*][b]Roads[/b] — Standard, Fast (25% less movement cost), Faster (50% less), or Custom
+[*][b]Victory Project Cost[/b] — Cheaper, Standard, Affordable, or Expensive. Modern Age victory and legacy projects
+[/list]
+[h3]Game Pacing Selection[/h3]
+Antiquity, Exploration, and Modern rows for each of the settings above (for example "Antiquity: Age Progress Rate"), applied when that setting is set to Custom.
+[h3]Triumph Settings[/h3]
+[list]
+[*][b]Triumph Set[/b] — the game's sets plus Custom
+[*][b]Antiquity / Exploration / Modern Triumph Set[/b] — choose a different set for each age when Triumph Set is Custom
+[/list]
+[h3]Crisis Settings[/h3]
+[list]
+[*][b]Crises[/b] — Enabled or Disabled; Disabled turns off every crisis at once
+[*][b]Crisis Timing[/b] — Early, Default, or Late (shows Disabled while Crises is Disabled)
+[*][b]Crisis Selection[/b] — the game's per-crisis list, kept in sync with the Crises setting
+[/list]
+[h3]Settlement Settings[/h3]
+[list]
+[*][b]Settlement Limit[/b] — Less, Default, More, or Custom
+[*][b]Custom Settlement Limits[/b] — set the limit for each age individually: 1 to 25, then 30 to 75 in steps of 5
+[*][b]Settlement Distance[/b] — Less, Default, or More
+[/list]
+[h3]Independent Power Settings[/h3]
+[list]
+[*][b]Initial Independent Hostility[/b] — the game's setting, now grouped here
+[*][b]Initial Independent Amount[/b] — None, Less, Default, or More
+[*][b]Independent Spacing[/b] — Less, Default, or More
+[*][b]Independent Aggression[/b] — Calm, Default, or Raging. Raging now triples raid and attack boldness, spawns warriors three times as fast, and starts independents with 3/5/7 units per age
+[/list]
+[h3]Unit Settings[/h3]
+[list]
+[*][b]Settler Movement[/b] — Slow, Default, or Fast. Adjusts base and embarked movement
+[*][b]Treasure Convoy Movement[/b] — Slow, Default, or Fast. Adjusts movement on land and at sea
+[*][b]Military Unit Cost[/b] — Cheaper (25% cheaper), Standard, Affordable (50% more), or Expensive (100% more)
+[*][b]Civilian Unit Cost[/b] — Cheaper (25% cheaper), Standard, Affordable (50% more), or Expensive (100% more)
+[/list]
+
+[h2]Map Tab[/h2]
+[h3]Map Settings[/h3]
+[list]
+[*][b]Map Random Seed[/b] — a Random button beside the field rolls a new seed
+[*][b]Lakes[/b] — Less, Standard, or More
+[*][b]Rivers[/b] — Less, Standard, or More
+[*][b]Mountains[/b] — Less, Standard, or More
+[/list]
+[h3]Natural Wonder Settings[/h3]
+[list]
+[*][b]Natural Wonders[/b] — Disabled, Half, Default, More, or Double
+[*][b]Natural Wonder Selection[/b] — enable or disable each of the 22 natural wonders individually, DLC wonders included (now with Nachi Falls and Seongsan Ilchulbong). The selection stays in sync with the Natural Wonders setting automatically
+[/list]
+[h3]Disaster Settings[/h3]
+[list]
+[*][b]Disasters[/b] — Disabled, Light, Moderate, Catastrophic, or Custom
+[*][b]Antiquity / Exploration / Modern[/b] — set the disaster frequency for each age when Disasters is Custom
+[/list]
+
+[h2]Player Tab[/h2]
+[list]
+[*][b]Mementos[/b] — Memento 1 and Memento 2 dropdowns on every AI player's row, beside Leader and Civilization, with None and Random. Random rolls a fresh memento for every new game
+[/list]
+
+[hr][/hr]
+[h2]Good to Know[/h2]
+[list]
+[*]All settings are chosen at game creation and apply for the full game
+[*]Fully localized in all 12 languages supported by the game
+[*]The Map tab, seed buttons, and AI mementos are single-player features; multiplayer keeps the game's standard layout
+[*]Every tooltip shows the selected value's own details under the setting's description
+[*]Built-in conflict guard: conflicting mods are disabled on load, and the guard holds Continue, New Game, Load Game, and Multiplayer while one is still active. It recognizes conflicting mods by the settings they add, so a renamed mod does not slip past it
+[/list]
+[h2]Coming Soon[/h2]
+[list]
+[*][b]Difficulty[/b] — Apprentice, God, or Chaos.
+[/list]
+
+[hr][/hr]
+[url=https://ko-fi.com/zatygold][img]https://storage.ko-fi.com/cdn/brandasset/v2/support_me_on_kofi_badge_red.png[/img][/url]
+[url=https://discord.gg/htwZefWnyJ][img]https://cdn-icons-png.flaticon.com/128/3670/3670157.png[/img][/url][url=https://github.com/ZATYGOLD/Advanced-Settings-Pro][img]https://cdn-icons-png.flaticon.com/128/2111/2111432.png[/img][/url]

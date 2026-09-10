@@ -6,6 +6,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ### 0.8.0
 
+- Added an Ages tab to the single-player Advanced Settings screen with Game Pacing Settings (Age Length, now moved here, plus Age Progress Rate, Technology Cost, Civic Cost, City Growth, Roads, and Victory Project Cost) and an Antiquity, Exploration, and Modern group holding each setting's per-age row, used when the setting is Custom (Victory Project Cost is Modern-only)
 - Added a Map tab to the single-player Advanced Settings screen, holding the map, natural wonder, and disaster settings; General keeps the game and crisis settings
 - Added Nachi Falls and Seongsan Ilchulbong (Japan & Korea Wonders) to Natural Wonder Selection, for 22 wonders in total
 - Split the game's disaster and crisis settings: a Disaster Settings group on the Map tab and a Crisis Settings group on General
@@ -79,7 +80,13 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Single Player No Age Transitions: Enabled or Disabled
 - Game Random Seed and Map Random Seed: a Random button beside each field rolls a new seed (single player)
 - Game Speed: adds Online 2.0 (150% faster than Standard) and Marathon 2.0 (400% slower than Standard)
-- Age Length: Brief, Abbreviated, Standard, Long, or Doubled (90 to 280 age progress points per age)
+- Age Length: Brief, Abbreviated, Standard, Long, Doubled, or Custom (90 to 280 age progress points per age)
+- Age Progress Rate: Slow, Standard, Fast, or Custom (milestone and future tech/civic points x0.5 / x1 / x1.5)
+- Technology Cost and Civic Cost: Cheaper (25% cheaper), Standard, Affordable (50% more), Expensive (100% more), or Custom
+- City Growth: Slow, Standard, Fast, or Custom
+- Roads: Standard, Fast (25% less movement cost), Faster (50% less), or Custom
+- Victory Project Cost: Cheaper, Standard, Affordable, or Expensive (Modern Age victory and legacy projects)
+- Antiquity, Exploration, and Modern rows for each Custom pacing setting above
 - Disaster Frequency: Disabled, Light, Moderate, Catastrophic, or Custom
 - Antiquity, Exploration, and Modern disaster frequency: Disabled, Light, Moderate, or Catastrophic each, applied when Disaster Frequency is set to Custom
 - Settler Speed: Slow, Default, or Fast
@@ -106,7 +113,7 @@ The conflict guard recognises conflicting mods by their id and by the setup sett
 
 All settings are chosen at game creation and apply for the full game.
 
-In single player, the Advanced Settings screen gains a Map tab between General and Player that holds the map, natural wonder, and disaster settings, while the crisis settings move into their own Crisis Settings group on General and Initial Independent Hostility joins the Independent Power settings; multiplayer keeps the game's standard layout.
+In single player, the Advanced Settings screen gains an Ages tab (game pacing, with a group per age) and a Map tab between General and Player; the Map tab holds the map, natural wonder, and disaster settings, while the crisis settings move into their own Crisis Settings group on General and Initial Independent Hostility joins the Independent Power settings; multiplayer keeps the game's standard layout.
 
 ## Project Structure
 

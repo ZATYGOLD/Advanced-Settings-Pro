@@ -11,6 +11,7 @@
 
 	<!-- Advanced Settings Tabs -->
 		<Row Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS"><Text>Map</Text></Row>
+		<Row Tag="LOC_ZG_ADVANCED_OPTIONS_AGES"><Text>Ages</Text></Row>
 
 	<!-- Universal Names -->
 		<Row Tag="LOC_ZG_ENABLED_NAME"><Text>Enabled</Text></Row>
@@ -184,6 +185,37 @@
 		<Row Tag="LOC_ZG_DISASTER_AGE_DESCRIPTION">
 			<Text>Sets this age's disaster frequency.[n]Applies only when Disasters is set to Custom.</Text>
 		</Row>
+
+	<!-- Game Pacing -->
+		<Row Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS"><Text>Game Pacing Settings</Text></Row>
+		<Row Tag="LOC_ZG_FASTER_NAME"><Text>Faster</Text></Row>
+		<Row Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM"><Text>Custom: set this for each age individually.</Text></Row>
+		<Row Tag="LOC_ZG_PACING_AGE_DESCRIPTION"><Text>Sets this age's value.[n]Applies only when the Game Pacing setting is set to Custom.</Text></Row>
+		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME"><Text>Age Progress Rate</Text></Row>
+		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION"><Text>Sets how quickly milestones and future techs and civics fill the age meter.</Text></Row>
+		<Row Tag="LOC_ZG_TECHNOLOGY_COST_NAME"><Text>Technology Cost</Text></Row>
+		<Row Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION"><Text>Sets the research cost of technologies.</Text></Row>
+		<Row Tag="LOC_ZG_CIVIC_COST_NAME"><Text>Civic Cost</Text></Row>
+		<Row Tag="LOC_ZG_CIVIC_COST_DESCRIPTION"><Text>Sets the culture cost of civics.</Text></Row>
+		<Row Tag="LOC_ZG_CITY_GROWTH_NAME"><Text>City Growth</Text></Row>
+		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION"><Text>Sets how much food cities need to grow.</Text></Row>
+		<Row Tag="LOC_ZG_ROADS_NAME"><Text>Roads</Text></Row>
+		<Row Tag="LOC_ZG_ROADS_DESCRIPTION"><Text>Sets how much movement roads and railroads cost.</Text></Row>
+		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_NAME"><Text>Victory Project Cost</Text></Row>
+		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION"><Text>Sets the production cost of victory and legacy projects in the Modern Age.</Text></Row>
+		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW"><Text>[BLIST][LI] Slow: 50% fewer points.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD"><Text>[BLIST][LI] Standard: no change.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST"><Text>[BLIST][LI] Fast: 50% more points.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_COST_DESCRIPTION_CHEAPER"><Text>[BLIST][LI] Cheaper: 25% cheaper.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_COST_DESCRIPTION_STANDARD"><Text>[BLIST][LI] Standard: no change.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_COST_DESCRIPTION_AFFORDABLE"><Text>[BLIST][LI] Affordable: 50% more expensive.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_COST_DESCRIPTION_EXPENSIVE"><Text>[BLIST][LI] Expensive: 100% more expensive.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW"><Text>[BLIST][LI] Slow: cities grow more slowly.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD"><Text>[BLIST][LI] Standard: no change.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST"><Text>[BLIST][LI] Fast: cities grow faster.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD"><Text>[BLIST][LI] Standard: no change.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_FAST"><Text>[BLIST][LI] Fast: 25% less movement cost.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_FASTER"><Text>[BLIST][LI] Faster: 50% less movement cost.[/BLIST]</Text></Row>
 
 	<!-- Random Mementos -->
 		<Row Tag="LOC_ZG_RANDOM_MEMENTOS_NAME"><Text>Random Mementos</Text></Row>

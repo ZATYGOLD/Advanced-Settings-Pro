@@ -51,6 +51,12 @@ const SL_TIER_VALUES = {
 const TIER_AGE_SYNCS = [
 	{ tierId: "ZG_DisasterFrequency", ageIds: ["ZG_DisastersAntiquity", "ZG_DisastersExploration", "ZG_DisastersModern"], lastTier: null },
 	{ tierId: "LegacySets", ageIds: ["ZG_TriumphSetAntiquity", "ZG_TriumphSetExploration", "ZG_TriumphSetModern"], lastTier: null },
+	{ tierId: "ZG_AgeLength", ageIds: ["ZG_AgeLengthAntiquity", "ZG_AgeLengthExploration", "ZG_AgeLengthModern"], lastTier: null },
+	{ tierId: "ZG_AgeProgressRate", ageIds: ["ZG_AgeProgressRateAntiquity", "ZG_AgeProgressRateExploration", "ZG_AgeProgressRateModern"], lastTier: null },
+	{ tierId: "ZG_TechnologyCost", ageIds: ["ZG_TechnologyCostAntiquity", "ZG_TechnologyCostExploration", "ZG_TechnologyCostModern"], lastTier: null },
+	{ tierId: "ZG_CivicCost", ageIds: ["ZG_CivicCostAntiquity", "ZG_CivicCostExploration", "ZG_CivicCostModern"], lastTier: null },
+	{ tierId: "ZG_CityGrowth", ageIds: ["ZG_CityGrowthAntiquity", "ZG_CityGrowthExploration", "ZG_CityGrowthModern"], lastTier: null },
+	{ tierId: "ZG_Roads", ageIds: ["ZG_RoadsAntiquity", "ZG_RoadsExploration", "ZG_RoadsModern"], lastTier: null },
 ];
 
 const CRISES_PARAM_ID = "ZG_Crises";
