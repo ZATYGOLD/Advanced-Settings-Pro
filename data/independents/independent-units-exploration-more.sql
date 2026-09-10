@@ -1,5 +1,5 @@
 UPDATE TribeTagSets
 SET
-    InitialUnitAmount = 4,
-    MaxUnitAmount = 4
+    InitialUnitAmount = 5,
+    MaxUnitAmount = 5
 WHERE TribeTagName = 'DEFAULT_DEFENDER_TAGS';

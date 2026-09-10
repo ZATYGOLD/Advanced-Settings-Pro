@@ -37,19 +37,24 @@ function groupBelongsToTab(groupId, tab) {
 }
 
 // 1. Model facade: same groupNames, groups narrowed to the active tab.
+//    The game's model is created only when first read, exactly as the game does
+//    it: creating it at script load (before a game mode exists) would pull
+//    multiplayer-only settings into single-player setup.
 const groupsModel = ModelRegistry.get("GameSetupParameterGroupsModel");
 const createBaseGroupsModel = groupsModel?.factory;
 if (createBaseGroupsModel) {
 	ModelRegistry.register("GameSetupParameterGroupsModel", ModelLifecycle.Singleton, () => {
-		const base = createBaseGroupsModel();
+		let base = null;
+		const resolve = () => (base ??= createBaseGroupsModel());
 		return {
-			get groupNames() { return base.groupNames; },
+			get groupNames() { return resolve().groupNames; },
 			get groups() {
+				const groups = resolve().groups;
 				const tab = activeTab();
 				const filtered = {};
-				for (const groupId of Object.keys(base.groups)) {
+				for (const groupId of Object.keys(groups)) {
 					if (groupBelongsToTab(groupId, tab)) {
-						filtered[groupId] = base.groups[groupId];
+						filtered[groupId] = groups[groupId];
 					}
 				}
 				return filtered;
