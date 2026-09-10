@@ -79,6 +79,8 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 All settings are chosen at game creation and apply for the full game.
 
+In single player, the Advanced Settings screen gains a Map tab between General and Player that holds the map, natural wonder, and disaster settings, while the crisis settings move into their own Crisis Settings group on General; multiplayer keeps the game's standard layout.
+
 ## Project Structure
 
 ```

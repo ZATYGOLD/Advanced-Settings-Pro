@@ -128,7 +128,7 @@
 			<Text>독립 세력의 초기 유닛 수를 설정합니다. [n] 독립 세력은 항상 [icon:UNIT_SCOUT]정찰병 1기로 시작합니다.[n] [BLIST][LI] 고대: 2[icon:UNIT_WARRIOR]전사.[LI] 대항해: 4[icon:UNIT_SWORDSMAN]검사.[LI] 근대: 5[icon:UNIT_LINE_INFANTRY]전열보병.[/BLIST][n] [n]유닛 수는 마을 중심을 포함한 첫 번째 링의 사용 가능한 육지 타일 수에 따라 달라집니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="ko_KR">
-			<Text>모든 자연재해를 비활성화합니다.[n]위기 이벤트는 이 설정의 영향을 받지 않습니다.</Text>
+			<Text>모든 자연재해를 비활성화합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" Language="ko_KR">
 			<Text>각 시대의 초기 [icon:SETTLEMENT_LIMIT]정착지 제한을 설정합니다.</Text>
@@ -198,6 +198,15 @@
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="ko_KR">
 			<Text>자연경관 선택</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_CRISISOPTIONS" Language="ko_KR">
+			<Text>위기 설정</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_DISASTEROPTIONS" Language="ko_KR">
+			<Text>재난 설정</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS" Language="ko_KR">
+			<Text>지도</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="ko_KR">
 			<Text>모드 충돌 감지됨</Text>

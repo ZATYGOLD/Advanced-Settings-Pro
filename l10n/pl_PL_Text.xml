@@ -128,7 +128,7 @@
 			<Text>Określa początkową liczbę jednostek niezależnego mocarstwa. [n] Niezależne mocarstwa zawsze zaczynają z 1[icon:UNIT_SCOUT]Zwiadowcą.[n] [BLIST][LI] Epoka antyku: 2[icon:UNIT_WARRIOR]Wojownicy.[LI] Epoka odkryć: 4[icon:UNIT_SWORDSMAN]Zbrojni.[LI] Epoka nowożytna: 5[icon:UNIT_LINE_INFANTRY]Piechota liniowa.[/BLIST][n] [n]Liczba jednostek zależy od dostępnych pól lądowych w pierwszym pierścieniu, łącznie z centrum wioski.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="pl_PL">
-			<Text>Wyłącza wszystkie katastrofy naturalne.[n]Wydarzenia kryzysowe nie podlegają temu ustawieniu.</Text>
+			<Text>Wyłącza wszystkie katastrofy naturalne.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" Language="pl_PL">
 			<Text>Określa początkowy [icon:SETTLEMENT_LIMIT]limit osad w każdej epoce.</Text>
@@ -198,6 +198,15 @@
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="pl_PL">
 			<Text>Wybór cudów natury</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_CRISISOPTIONS" Language="pl_PL">
+			<Text>Ustawienia kryzysów</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_DISASTEROPTIONS" Language="pl_PL">
+			<Text>Ustawienia katastrof</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS" Language="pl_PL">
+			<Text>Mapa</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="pl_PL">
 			<Text>Wykryto konflikt modów</Text>

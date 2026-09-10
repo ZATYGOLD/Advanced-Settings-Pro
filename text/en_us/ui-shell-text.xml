@@ -6,6 +6,11 @@
 		<Row Tag="LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS"><Text>Independent Power Settings</Text></Row>
 		<Row Tag="LOC_GROUPID_ZG_SETTLEMENTOPTIONS"><Text>Settlement Settings</Text></Row>
 		<Row Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS"><Text>Natural Wonder Settings</Text></Row>
+		<Row Tag="LOC_GROUPID_ZG_CRISISOPTIONS"><Text>Crisis Settings</Text></Row>
+		<Row Tag="LOC_GROUPID_ZG_DISASTEROPTIONS"><Text>Disaster Settings</Text></Row>
+
+	<!-- Advanced Settings Tabs -->
+		<Row Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS"><Text>Map</Text></Row>
 
 	<!-- Universal Names -->
 		<Row Tag="LOC_ZG_ENABLED_NAME"><Text>Enabled</Text></Row>
@@ -139,7 +144,7 @@
 
 	<!-- Disaster Descriptions -->
 		<Row Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION">
-			<Text> Disables all natural disasters.[n]Crisis events are not affected by this setting.</Text>
+			<Text> Disables all natural disasters.</Text>
 		</Row>
 
 	<!-- Settlement Limit Custom Setting -->

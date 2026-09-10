@@ -128,7 +128,7 @@
 			<Text>設定獨立勢力的初始單位數量。 [n] 獨立勢力始終以1個[icon:UNIT_SCOUT]偵察兵開局。[n] [BLIST][LI] 古典：2[icon:UNIT_WARRIOR]戰士。[LI] 探索：4[icon:UNIT_SWORDSMAN]劍士。[LI] 近代：5[icon:UNIT_LINE_INFANTRY]戰列步兵。[/BLIST][n] [n]單位數量取決於村莊中心及其第一環內可用的陸地格數。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>停用所有自然災害。[n]危機事件不受此設定影響。</Text>
+			<Text>停用所有自然災害。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>設定每個時代的初始[icon:SETTLEMENT_LIMIT]聚居地上限。</Text>
@@ -198,6 +198,15 @@
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="zh_Hant_HK">
 			<Text>自然奇觀選擇</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_CRISISOPTIONS" Language="zh_Hant_HK">
+			<Text>危機設定</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_DISASTEROPTIONS" Language="zh_Hant_HK">
+			<Text>災難設定</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS" Language="zh_Hant_HK">
+			<Text>地圖</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="zh_Hant_HK">
 			<Text>偵測到模組衝突</Text>

@@ -128,7 +128,7 @@
 			<Text>Establece el número inicial de unidades de una potencia independiente. [n] Las potencias independientes siempre empiezan con 1[icon:UNIT_SCOUT]Explorador.[n] [BLIST][LI] Antigüedad: 2[icon:UNIT_WARRIOR]Guerreros.[LI] Descubrimientos: 4[icon:UNIT_SWORDSMAN]Soldados con espada.[LI] Modernidad: 5[icon:UNIT_LINE_INFANTRY]Infantería de línea.[/BLIST][n] [n]El número de unidades dependerá de las casillas de tierra disponibles en el primer anillo, incluido el centro de la aldea.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="es_ES">
-			<Text>Desactiva todos los desastres naturales.[n]Los eventos de crisis no se ven afectados por este ajuste.</Text>
+			<Text>Desactiva todos los desastres naturales.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" Language="es_ES">
 			<Text>Establece el [icon:SETTLEMENT_LIMIT]límite de asentamientos inicial de cada era.</Text>
@@ -198,6 +198,15 @@
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="es_ES">
 			<Text>Selección de maravillas naturales</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_CRISISOPTIONS" Language="es_ES">
+			<Text>Ajustes de crisis</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_DISASTEROPTIONS" Language="es_ES">
+			<Text>Ajustes de desastres</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS" Language="es_ES">
+			<Text>Mapa</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="es_ES">
 			<Text>Conflicto de mods detectado</Text>

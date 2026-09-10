@@ -128,7 +128,7 @@
 			<Text>Legt die anfängliche Anzahl der Einheiten einer unabhängigen Macht fest. [n] Unabhängige Mächte beginnen immer mit 1[icon:UNIT_SCOUT]Späher.[n] [BLIST][LI] Antike: 2[icon:UNIT_WARRIOR]Krieger.[LI] Erkundung: 4[icon:UNIT_SWORDSMAN]Schwertkämpfer.[LI] Moderne: 5[icon:UNIT_LINE_INFANTRY]Linieninfanterie.[/BLIST][n] [n]Die Anzahl der Einheiten hängt von den verfügbaren Landfeldern im ersten Ring einschließlich des Dorfzentrums ab.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="de_DE">
-			<Text>Deaktiviert alle Naturkatastrophen.[n]Krisenereignisse sind von dieser Einstellung nicht betroffen.</Text>
+			<Text>Deaktiviert alle Naturkatastrophen.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" Language="de_DE">
 			<Text>Legt das anfängliche [icon:SETTLEMENT_LIMIT]Siedlungslimit für jedes Zeitalter fest.</Text>
@@ -198,6 +198,15 @@
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="de_DE">
 			<Text>Naturwunder-Auswahl</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_CRISISOPTIONS" Language="de_DE">
+			<Text>Kriseneinstellungen</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_DISASTEROPTIONS" Language="de_DE">
+			<Text>Katastropheneinstellungen</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS" Language="de_DE">
+			<Text>Karte</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="de_DE">
 			<Text>Mod-Konflikt erkannt</Text>

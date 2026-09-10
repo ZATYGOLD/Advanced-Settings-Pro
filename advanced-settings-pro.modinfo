@@ -2563,6 +2563,7 @@
 					<Item>ui/zg-conflict-guard.js</Item>
 					<Item>ui/zg-asp-guard.js</Item>
 					<Item>ui/zg-setup-rules.js</Item>
+					<Item>ui/zg-map-tab.js</Item>
 				</UIScripts>
 				<UpdateText>
 					<Item>text/en_us/ui-shell-text.xml</Item>

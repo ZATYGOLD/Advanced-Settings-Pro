@@ -128,7 +128,7 @@
 			<Text>Задаёт начальное число юнитов независимой державы. [n] Независимые державы всегда начинают с 1[icon:UNIT_SCOUT]Разведчиком.[n] [BLIST][LI] Античность: 2[icon:UNIT_WARRIOR]Воины.[LI] Исследования: 4[icon:UNIT_SWORDSMAN]Мечники.[LI] Современность: 5[icon:UNIT_LINE_INFANTRY]Линейная пехота.[/BLIST][n] [n]Число юнитов зависит от доступных клеток суши в первом кольце, включая центр деревни.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="ru_RU">
-			<Text>Отключает все стихийные бедствия.[n]События кризисов этот параметр не затрагивает.</Text>
+			<Text>Отключает все стихийные бедствия.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" Language="ru_RU">
 			<Text>Задаёт начальный [icon:SETTLEMENT_LIMIT]лимит поселений для каждой эпохи.</Text>
@@ -198,6 +198,15 @@
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="ru_RU">
 			<Text>Выбор чудес природы</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_CRISISOPTIONS" Language="ru_RU">
+			<Text>Настройки кризисов</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_DISASTEROPTIONS" Language="ru_RU">
+			<Text>Настройки катастроф</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS" Language="ru_RU">
+			<Text>Карта</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="ru_RU">
 			<Text>Обнаружен конфликт модов</Text>

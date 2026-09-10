@@ -10,7 +10,12 @@ INSERT OR IGNORE INTO ParameterGroups (GroupId, Name)
         ('SettlementOptions', 'LOC_GROUPID_ZG_SETTLEMENTOPTIONS'),
         ('MPAdvancedSettlementOptions', 'LOC_GROUPID_ZG_SETTLEMENTOPTIONS'),
         ('NaturalWonderSelectionOptions', 'LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS'),
-        ('MPAdvancedNaturalWonderSelectionOptions', 'LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS');
+        ('MPAdvancedNaturalWonderSelectionOptions', 'LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS'),
+        ('CrisisOptions', 'LOC_GROUPID_ZG_CRISISOPTIONS');
+
+-- The single-player disaster group no longer holds the crisis settings, so it is
+-- renamed to Disaster Settings. Multiplayer keeps the base name.
+UPDATE ParameterGroups SET Name = 'LOC_GROUPID_ZG_DISASTEROPTIONS' WHERE GroupID = 'DisasterOptions';
 
 --*******************************************************
 --***************** SINGLE AGE SETTINGS *****************
@@ -180,9 +185,15 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 --*******************************************************
 --************* CRISIS SETTINGS *************************
 --*******************************************************
+-- In single player the crisis settings get their own group after the game and
+-- difficulty settings, keeping them on the General tab while the disaster
+-- settings show on the Map tab. The base Crises multiselect renders as a titled
+-- list, so it must stay last in its group. Multiplayer grouping is unchanged.
+UPDATE Parameters SET GroupId = 'CrisisOptions', SortIndex = 510 WHERE ParameterID = 'Crises';
+
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
-         ('ZG_CrisisSpeed', 'LOC_ZG_CRISIS_SPEED_NAME', 'LOC_ZG_CRISIS_SPEED_DESCRIPTION','ZG_CrisisSpeedDomain', 'ZG_DEFAULT_CRISIS_SPEED', 0, 'Game', 'CrisisSpeedKey', 'DisasterOptions', 'MPAdvancedDisasterOptions', 0, 3029);
+         ('ZG_CrisisSpeed', 'LOC_ZG_CRISIS_SPEED_NAME', 'LOC_ZG_CRISIS_SPEED_DESCRIPTION','ZG_CrisisSpeedDomain', 'ZG_DEFAULT_CRISIS_SPEED', 0, 'Game', 'CrisisSpeedKey', 'CrisisOptions', 'MPAdvancedDisasterOptions', 0, 500);
 
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)

@@ -128,7 +128,7 @@
 			<Text>设置独立势力的初始单位数量。 [n] 独立势力始终以1个[icon:UNIT_SCOUT]侦察兵开局。[n] [BLIST][LI] 古典：2[icon:UNIT_WARRIOR]战士。[LI] 探索：4[icon:UNIT_SWORDSMAN]剑士。[LI] 近世：5[icon:UNIT_LINE_INFANTRY]线列步兵。[/BLIST][n] [n]单位数量取决于村庄中心及其第一环内可用的陆地格数。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>禁用所有自然灾害。[n]危机事件不受此设置影响。</Text>
+			<Text>禁用所有自然灾害。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>设置每个时代的初始[icon:SETTLEMENT_LIMIT]定居点上限。</Text>
@@ -198,6 +198,15 @@
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="zh_Hans_CN">
 			<Text>自然奇观选择</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_CRISISOPTIONS" Language="zh_Hans_CN">
+			<Text>危机设置</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_DISASTEROPTIONS" Language="zh_Hans_CN">
+			<Text>灾难设置</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS" Language="zh_Hans_CN">
+			<Text>地图</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="zh_Hans_CN">
 			<Text>检测到模组冲突</Text>

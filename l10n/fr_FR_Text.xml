@@ -128,7 +128,7 @@
 			<Text>Définit le nombre initial d'unités d'une puissance indépendante. [n] Les puissances indépendantes commencent toujours avec 1[icon:UNIT_SCOUT]Éclaireur.[n] [BLIST][LI] Antiquité : 2[icon:UNIT_WARRIOR]Guerriers.[LI] Âge de l'exploration : 4[icon:UNIT_SWORDSMAN]Spadassins.[LI] Âge moderne : 5[icon:UNIT_LINE_INFANTRY]Infanterie de ligne.[/BLIST][n] [n]Le nombre d'unités dépend des cases terrestres disponibles dans le premier anneau, centre du village compris.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="fr_FR">
-			<Text>Désactive toutes les catastrophes naturelles.[n]Les événements de crise ne sont pas affectés par ce paramètre.</Text>
+			<Text>Désactive toutes les catastrophes naturelles.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION" Language="fr_FR">
 			<Text>Définit la [icon:SETTLEMENT_LIMIT]limite de colonies initiale de chaque âge.</Text>
@@ -198,6 +198,15 @@
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS" Language="fr_FR">
 			<Text>Sélection des merveilles naturelles</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_CRISISOPTIONS" Language="fr_FR">
+			<Text>Paramètres des crises</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_DISASTEROPTIONS" Language="fr_FR">
+			<Text>Paramètres des désastres</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS" Language="fr_FR">
+			<Text>Carte</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="fr_FR">
 			<Text>Conflit de mods détecté</Text>
