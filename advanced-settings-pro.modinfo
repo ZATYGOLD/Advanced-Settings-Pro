@@ -2384,6 +2384,7 @@
 					<Item>ui/zg-setup-rules.js</Item>
 					<Item>ui/zg-map-tab.js</Item>
 					<Item>ui/zg-seed-randomizer.js</Item>
+					<Item>ui/zg-player-mementos.js</Item>
 				</UIScripts>
 				<UpdateText>
 					<Item>text/en_us/ui-shell-text.xml</Item>

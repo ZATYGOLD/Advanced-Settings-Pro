@@ -295,6 +295,15 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="de_DE">
 			<Text>Beide behalten</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="de_DE">
+			<Text>Zufällige Erinnerungsstücke</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTO_1_NAME" Language="de_DE">
+			<Text>Erinnerungsstück 1</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTO_2_NAME" Language="de_DE">
+			<Text>Erinnerungsstück 2</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="de_DE">
 			<Text>Benutzerdefiniert: Lege das Triumph-Set für jedes Zeitalter einzeln fest.</Text>
 		</Replace>

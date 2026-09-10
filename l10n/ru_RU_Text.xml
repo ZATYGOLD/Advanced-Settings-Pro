@@ -295,6 +295,15 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="ru_RU">
 			<Text>Оставить оба</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="ru_RU">
+			<Text>Случайные памятные вещи</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTO_1_NAME" Language="ru_RU">
+			<Text>Памятная вещь 1</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTO_2_NAME" Language="ru_RU">
+			<Text>Памятная вещь 2</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="ru_RU">
 			<Text>Особый: задайте набор триумфов для каждой эпохи отдельно.</Text>
 		</Replace>

@@ -295,6 +295,15 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="ko_KR">
 			<Text>둘 다 유지</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="ko_KR">
+			<Text>무작위 기념품</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTO_1_NAME" Language="ko_KR">
+			<Text>기념품 1</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTO_2_NAME" Language="ko_KR">
+			<Text>기념품 2</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="ko_KR">
 			<Text>사용자 지정: 시대별로 개가 세트를 개별 설정합니다.</Text>
 		</Replace>

@@ -295,6 +295,15 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="pl_PL">
 			<Text>Zachowaj oba</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="pl_PL">
+			<Text>Losowe pamiątki</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTO_1_NAME" Language="pl_PL">
+			<Text>Pamiątka 1</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTO_2_NAME" Language="pl_PL">
+			<Text>Pamiątka 2</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="pl_PL">
 			<Text>Niestandardowe: ustaw zestaw triumfów dla każdej epoki osobno.</Text>
 		</Replace>

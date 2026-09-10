@@ -96,6 +96,22 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 
 
 --*******************************************************
+--************* RANDOM MEMENTOS *************************
+--*******************************************************
+-- Remembers which of an AI player's memento slots are set to Random; the slots
+-- themselves hold a real memento rolled by ui/zg-player-mementos.js.
+INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
+    VALUES
+        ('ZG_PlayerRandomMementos', 'LOC_ZG_RANDOM_MEMENTOS_NAME', '', 'ZG_RandomMementosDomain', 'ZG_RANDOM_MEMENTOS_NONE', 0, 'Player', 'ZGRandomMementos', 'PlayerOptions', NULL, 0, 3040);
+
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES
+        ('ZG_RandomMementosDomain', 'ZG_RANDOM_MEMENTOS_NONE', 'LOC_ZG_NONE_NAME', '', 10),
+        ('ZG_RandomMementosDomain', 'ZG_RANDOM_MEMENTOS_MAJOR', 'LOC_ZG_RANDOM_MEMENTOS_NAME', '', 20),
+        ('ZG_RandomMementosDomain', 'ZG_RANDOM_MEMENTOS_MINOR', 'LOC_ZG_RANDOM_MEMENTOS_NAME', '', 30),
+        ('ZG_RandomMementosDomain', 'ZG_RANDOM_MEMENTOS_BOTH', 'LOC_ZG_RANDOM_MEMENTOS_NAME', '', 40);
+
+--*******************************************************
 --************* INDEPENDENT HOSTILITY *******************
 --*******************************************************
 -- The base Initial Independent Hostility setting belongs with the other

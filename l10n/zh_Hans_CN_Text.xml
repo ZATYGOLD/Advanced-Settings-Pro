@@ -295,6 +295,15 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="zh_Hans_CN">
 			<Text>保留两者</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="zh_Hans_CN">
+			<Text>随机纪念品</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTO_1_NAME" Language="zh_Hans_CN">
+			<Text>纪念品 1</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTO_2_NAME" Language="zh_Hans_CN">
+			<Text>纪念品 2</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="zh_Hans_CN">
 			<Text>自定义：为每个时代单独设置凯旋集。</Text>
 		</Replace>

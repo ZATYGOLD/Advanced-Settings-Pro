@@ -79,6 +79,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Independent Amount: None, Less, Default, or More
 - Independent Spacing: Less, Default, or More
 - Independent Aggression: Calm, Default, or Raging (raid boldness plus starting independent units)
+- AI Mementos (Player tab, single player): Major and Minor Memento dropdowns on each AI player's row beside Leader and Civilization, each with a Random option rolled afresh every game
 - Triumph Set: adds Custom to the game's setting, with an Antiquity, Exploration, and Modern Triumph Set each choosable from the game's sets
 
 All settings are chosen at game creation and apply for the full game.

@@ -185,6 +185,11 @@
 			<Text>Sets this age's disaster frequency.[n]Applies only when Disasters is set to Custom.</Text>
 		</Row>
 
+	<!-- Random Mementos -->
+		<Row Tag="LOC_ZG_RANDOM_MEMENTOS_NAME"><Text>Random Mementos</Text></Row>
+		<Row Tag="LOC_ZG_MEMENTO_1_NAME"><Text>Memento 1</Text></Row>
+		<Row Tag="LOC_ZG_MEMENTO_2_NAME"><Text>Memento 2</Text></Row>
+
 	<!-- Triumph Set Descriptions -->
 		<Row Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM">
 			<Text>Custom: set the Triumph Set for each age individually.</Text>
