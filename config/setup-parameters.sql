@@ -56,20 +56,20 @@ INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, Defaul
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
-        ('ZG_SettlerMovementDomain', 'ZG_SETTLER_MOVES_SLOW', 'LOC_ZG_SLOW_NAME', 'LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION', 10),
-        ('ZG_SettlerMovementDomain', 'ZG_SETTLER_MOVES_DEFAULT', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION', 20),
-        ('ZG_SettlerMovementDomain', 'ZG_SETTLER_MOVES_FAST', 'LOC_ZG_FAST_NAME', 'LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION', 30),
-        ('ZG_TreasureMovementDomain', 'ZG_TREASURE_MOVES_SLOW', 'LOC_ZG_SLOW_NAME', 'LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION', 10),
-        ('ZG_TreasureMovementDomain', 'ZG_TREASURE_MOVES_DEFAULT', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION', 20),
-        ('ZG_TreasureMovementDomain', 'ZG_TREASURE_MOVES_FAST', 'LOC_ZG_FAST_NAME', 'LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION', 30),
-        ('ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_LESS', 'LOC_ZG_LESS_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION', 10),
-        ('ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_DEFAULT', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION', 20),
-        ('ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_MORE', 'LOC_ZG_MORE_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION', 30),
-        ('ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_EXPENSIVE', 'LOC_ZG_EXPENSIVE_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION', 40),
-        ('ZG_CivilianUnitCostDomain', 'ZG_CIVILIAN_UNIT_COST_LESS', 'LOC_ZG_LESS_NAME', 'LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION', 10),
-        ('ZG_CivilianUnitCostDomain', 'ZG_CIVILIAN_UNIT_COST_DEFAULT', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION', 20),
-        ('ZG_CivilianUnitCostDomain', 'ZG_CIVILIAN_UNIT_COST_MORE', 'LOC_ZG_MORE_NAME', 'LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION', 30),
-        ('ZG_CivilianUnitCostDomain', 'ZG_CIVILIAN_UNIT_COST_EXPENSIVE', 'LOC_ZG_EXPENSIVE_NAME', 'LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION', 40);
+        ('ZG_SettlerMovementDomain', 'ZG_SETTLER_MOVES_SLOW', 'LOC_ZG_SLOW_NAME', 'LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_SLOW', 10),
+        ('ZG_SettlerMovementDomain', 'ZG_SETTLER_MOVES_DEFAULT', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_DEFAULT', 20),
+        ('ZG_SettlerMovementDomain', 'ZG_SETTLER_MOVES_FAST', 'LOC_ZG_FAST_NAME', 'LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_FAST', 30),
+        ('ZG_TreasureMovementDomain', 'ZG_TREASURE_MOVES_SLOW', 'LOC_ZG_SLOW_NAME', 'LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_SLOW', 10),
+        ('ZG_TreasureMovementDomain', 'ZG_TREASURE_MOVES_DEFAULT', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_DEFAULT', 20),
+        ('ZG_TreasureMovementDomain', 'ZG_TREASURE_MOVES_FAST', 'LOC_ZG_FAST_NAME', 'LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_FAST', 30),
+        ('ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_LESS', 'LOC_ZG_LESS_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_LESS', 10),
+        ('ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_DEFAULT', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DEFAULT', 20),
+        ('ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_MORE', 'LOC_ZG_MORE_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_MORE', 30),
+        ('ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_EXPENSIVE', 'LOC_ZG_EXPENSIVE_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_EXPENSIVE', 40),
+        ('ZG_CivilianUnitCostDomain', 'ZG_CIVILIAN_UNIT_COST_LESS', 'LOC_ZG_LESS_NAME', 'LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_LESS', 10),
+        ('ZG_CivilianUnitCostDomain', 'ZG_CIVILIAN_UNIT_COST_DEFAULT', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DEFAULT', 20),
+        ('ZG_CivilianUnitCostDomain', 'ZG_CIVILIAN_UNIT_COST_MORE', 'LOC_ZG_MORE_NAME', 'LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_MORE', 30),
+        ('ZG_CivilianUnitCostDomain', 'ZG_CIVILIAN_UNIT_COST_EXPENSIVE', 'LOC_ZG_EXPENSIVE_NAME', 'LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_EXPENSIVE', 40);
 
 
 --*******************************************************
@@ -83,10 +83,10 @@ INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, Defaul
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
-        ('ZG_IndependentCountDomain', 'ZG_NONE_INDEPENDENTS', 'LOC_ZG_NONE_NAME', 'LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION', 10),
-        ('ZG_IndependentCountDomain', 'ZG_LESS_INDEPENDENTS', 'LOC_ZG_LESS_NAME', 'LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION', 20),
-        ('ZG_IndependentCountDomain', 'ZG_DEFAULT_INDEPENDENTS', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION', 30),
-        ('ZG_IndependentCountDomain', 'ZG_MORE_INDEPENDENTS', 'LOC_ZG_MORE_NAME', 'LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION', 40),
+        ('ZG_IndependentCountDomain', 'ZG_NONE_INDEPENDENTS', 'LOC_ZG_NONE_NAME', 'LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_NONE', 10),
+        ('ZG_IndependentCountDomain', 'ZG_LESS_INDEPENDENTS', 'LOC_ZG_LESS_NAME', 'LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_LESS', 20),
+        ('ZG_IndependentCountDomain', 'ZG_DEFAULT_INDEPENDENTS', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_DEFAULT', 30),
+        ('ZG_IndependentCountDomain', 'ZG_MORE_INDEPENDENTS', 'LOC_ZG_MORE_NAME', 'LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_MORE', 40),
         ('ZG_IndependentSpaceDomain', 'ZG_LESS_INDEPENDENTS_SPACING', 'LOC_ZG_LESS_NAME', 'LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_LESS', 10),
         ('ZG_IndependentSpaceDomain', 'ZG_DEFAULT_INDEPENDENTS_SPACING', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_DEFAULT', 20),
         ('ZG_IndependentSpaceDomain', 'ZG_MORE_INDEPENDENTS_SPACING', 'LOC_ZG_MORE_NAME', 'LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE', 30),
@@ -94,6 +94,38 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_IndependentAggressionDomain', 'ZG_DEFAULT_AGGRESSION', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_DEFAULT', 20),
         ('ZG_IndependentAggressionDomain', 'ZG_RAGING_AGGRESSION', 'LOC_ZG_INDEPENDENT_AGGRESSION_RAGING_NAME', 'LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION_RAGING', 30);
 
+
+--*******************************************************
+--************* INDEPENDENT HOSTILITY *******************
+--*******************************************************
+-- The base Initial Independent Hostility setting belongs with the other
+-- Independent Power settings.
+UPDATE Parameters SET GroupId = 'IndependentPowerOptions', GroupIDMultiplayerOverride = 'MPAdvancedIndependentPowerOptions', SortIndex = 7020 WHERE ParameterID = 'IndependentHostility';
+
+--*******************************************************
+--************* TRIUMPH SETS ****************************
+--*******************************************************
+-- Adds Custom to the base Triumph Set setting. While Custom is selected the
+-- engine reads the ZG_LEGACY_SET_CUSTOM set, which data/triumphs fills with
+-- the set chosen for the age being played.
+INSERT OR IGNORE INTO LegacySets (LegacySetType, Name, Description, SortIndex)
+    VALUES
+        ('ZG_LEGACY_SET_CUSTOM', 'LOC_ZG_CUSTOM_NAME', 'LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM', 5);
+
+INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
+    VALUES
+        ('ZG_TriumphSetAntiquity', 'LOC_AGE_ANTIQUITY_NAME', 'LOC_ZG_TRIUMPH_SET_AGE_DESCRIPTION', 'ZG_TriumphSetAgeDomain', 'ZG_TRIUMPHS_DEFAULT', 1, 'Game', 'TriumphSetAntiquityKey', 'TriumphSettings', NULL, 0, 11),
+        ('ZG_TriumphSetExploration', 'LOC_AGE_EXPLORATION_NAME', 'LOC_ZG_TRIUMPH_SET_AGE_DESCRIPTION', 'ZG_TriumphSetAgeDomain', 'ZG_TRIUMPHS_DEFAULT', 1, 'Game', 'TriumphSetExplorationKey', 'TriumphSettings', NULL, 0, 12),
+        ('ZG_TriumphSetModern', 'LOC_AGE_MODERN_NAME', 'LOC_ZG_TRIUMPH_SET_AGE_DESCRIPTION', 'ZG_TriumphSetAgeDomain', 'ZG_TRIUMPHS_DEFAULT', 1, 'Game', 'TriumphSetModernKey', 'TriumphSettings', NULL, 0, 13);
+
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES
+        ('ZG_TriumphSetAgeDomain', 'ZG_TRIUMPHS_DEFAULT', 'LOC_TRIUMPH_SET_DEFAULT_NAME', 'LOC_TRIUMPH_SET_DEFAULT_DESCRIPTION', 10),
+        ('ZG_TriumphSetAgeDomain', 'ZG_TRIUMPHS_CLASSIC', 'LOC_TRIUMPH_SET_CLASSIC_NAME', 'LOC_TRIUMPH_SET_CLASSIC_DESCRIPTION', 20),
+        ('ZG_TriumphSetAgeDomain', 'ZG_TRIUMPHS_RACE', 'LOC_TRIUMPH_SET_RACE_NAME', 'LOC_TRIUMPH_SET_RACE_DESCRIPTION', 30),
+        ('ZG_TriumphSetAgeDomain', 'ZG_TRIUMPHS_CONQUEROR', 'LOC_TRIUMPH_SET_CONQUEROR_NAME', 'LOC_TRIUMPH_SET_CONQUEROR_DESCRIPTION', 40),
+        ('ZG_TriumphSetAgeDomain', 'ZG_TRIUMPHS_EXPLORER', 'LOC_TRIUMPH_SET_EXPLORER_NAME', 'LOC_TRIUMPH_SET_EXPLORER_DESCRIPTION', 50),
+        ('ZG_TriumphSetAgeDomain', 'ZG_TRIUMPHS_NONE', 'LOC_TRIUMPH_SET_NONE_NAME', 'LOC_TRIUMPH_SET_NONE_DESCRIPTION', 60);
 
 --*******************************************************
 --************* DISASTER FREQUENCY **********************
@@ -139,9 +171,9 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_SettlementLimitDomain', 'ZG_DEFAULT_SETTLEMENT_LIMIT_COUNT', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_DEFAULT', 20),
         ('ZG_SettlementLimitDomain', 'ZG_MORE_SETTLEMENT_LIMIT_COUNT', 'LOC_ZG_MORE_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_MORE', 30),
         ('ZG_SettlementLimitDomain', 'ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT', 'LOC_ZG_CUSTOM_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM', 40),
-        ('ZG_SettlementDistanceDomain', 'ZG_LESS_SETTLEMENT_DISTANCE_COUNT', 'LOC_ZG_LESS_NAME', 'LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION', 10),
-        ('ZG_SettlementDistanceDomain', 'ZG_DEFAULT_SETTLEMENT_DISTANCE_COUNT', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION', 20),
-        ('ZG_SettlementDistanceDomain', 'ZG_MORE_SETTLEMENT_DISTANCE_COUNT', 'LOC_ZG_MORE_NAME', 'LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION', 30);
+        ('ZG_SettlementDistanceDomain', 'ZG_LESS_SETTLEMENT_DISTANCE_COUNT', 'LOC_ZG_LESS_NAME', 'LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_LESS', 10),
+        ('ZG_SettlementDistanceDomain', 'ZG_DEFAULT_SETTLEMENT_DISTANCE_COUNT', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_DEFAULT', 20),
+        ('ZG_SettlementDistanceDomain', 'ZG_MORE_SETTLEMENT_DISTANCE_COUNT', 'LOC_ZG_MORE_NAME', 'LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE', 30);
 
 
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
@@ -150,58 +182,44 @@ INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, Defaul
         ('ZG_SettlementLimitExploration', 'LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 'ZG_SettlementLimitValueDomain', 'ZG_SL_8', 1, 'Game', 'SettlementLimitExplorationKey', 'SettlementOptions', 'MPAdvancedSettlementOptions', 0, 612),
         ('ZG_SettlementLimitModern', 'LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 'ZG_SettlementLimitValueDomain', 'ZG_SL_16', 1, 'Game', 'SettlementLimitModernKey', 'SettlementOptions', 'MPAdvancedSettlementOptions', 0, 613);
 
+-- 1-25 step by 1, then 30-75 step by 5.
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_1', 'LOC_ZG_NUM_1', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 10),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_2', 'LOC_ZG_NUM_2', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 20),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_3', 'LOC_ZG_NUM_3', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 30),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_4', 'LOC_ZG_NUM_4', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 40),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_5', 'LOC_ZG_NUM_5', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 50),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_6', 'LOC_ZG_NUM_6', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 60),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_7', 'LOC_ZG_NUM_7', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 70),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_8', 'LOC_ZG_NUM_8', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 80),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_9', 'LOC_ZG_NUM_9', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 90),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_10', 'LOC_ZG_NUM_10', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 100),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_11', 'LOC_ZG_NUM_11', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 110),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_12', 'LOC_ZG_NUM_12', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 120),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_13', 'LOC_ZG_NUM_13', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 130),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_14', 'LOC_ZG_NUM_14', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 140),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_15', 'LOC_ZG_NUM_15', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 150),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_16', 'LOC_ZG_NUM_16', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 160),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_17', 'LOC_ZG_NUM_17', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 170),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_18', 'LOC_ZG_NUM_18', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 180),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_19', 'LOC_ZG_NUM_19', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 190),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_20', 'LOC_ZG_NUM_20', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 200),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_21', 'LOC_ZG_NUM_21', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 210),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_22', 'LOC_ZG_NUM_22', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 220),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_23', 'LOC_ZG_NUM_23', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 230),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_24', 'LOC_ZG_NUM_24', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 240),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_25', 'LOC_ZG_NUM_25', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 250),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_26', 'LOC_ZG_NUM_26', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 260),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_27', 'LOC_ZG_NUM_27', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 270),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_28', 'LOC_ZG_NUM_28', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 280),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_29', 'LOC_ZG_NUM_29', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 290),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_30', 'LOC_ZG_NUM_30', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 300),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_31', 'LOC_ZG_NUM_31', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 310),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_32', 'LOC_ZG_NUM_32', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 320),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_33', 'LOC_ZG_NUM_33', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 330),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_34', 'LOC_ZG_NUM_34', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 340),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_35', 'LOC_ZG_NUM_35', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 350),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_36', 'LOC_ZG_NUM_36', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 360),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_37', 'LOC_ZG_NUM_37', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 370),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_38', 'LOC_ZG_NUM_38', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 380),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_39', 'LOC_ZG_NUM_39', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 390),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_40', 'LOC_ZG_NUM_40', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 400),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_41', 'LOC_ZG_NUM_41', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 410),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_42', 'LOC_ZG_NUM_42', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 420),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_43', 'LOC_ZG_NUM_43', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 430),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_44', 'LOC_ZG_NUM_44', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 440),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_45', 'LOC_ZG_NUM_45', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 450),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_46', 'LOC_ZG_NUM_46', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 460),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_47', 'LOC_ZG_NUM_47', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 470),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_48', 'LOC_ZG_NUM_48', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 480),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_49', 'LOC_ZG_NUM_49', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 490),
-        ('ZG_SettlementLimitValueDomain', 'ZG_SL_50', 'LOC_ZG_NUM_50', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 500);
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_1', 'LOC_ZG_NUM_1', 'LOC_ZG_NUM_1', 10),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_2', 'LOC_ZG_NUM_2', 'LOC_ZG_NUM_2', 20),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_3', 'LOC_ZG_NUM_3', 'LOC_ZG_NUM_3', 30),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_4', 'LOC_ZG_NUM_4', 'LOC_ZG_NUM_4', 40),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_5', 'LOC_ZG_NUM_5', 'LOC_ZG_NUM_5', 50),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_6', 'LOC_ZG_NUM_6', 'LOC_ZG_NUM_6', 60),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_7', 'LOC_ZG_NUM_7', 'LOC_ZG_NUM_7', 70),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_8', 'LOC_ZG_NUM_8', 'LOC_ZG_NUM_8', 80),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_9', 'LOC_ZG_NUM_9', 'LOC_ZG_NUM_9', 90),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_10', 'LOC_ZG_NUM_10', 'LOC_ZG_NUM_10', 100),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_11', 'LOC_ZG_NUM_11', 'LOC_ZG_NUM_11', 110),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_12', 'LOC_ZG_NUM_12', 'LOC_ZG_NUM_12', 120),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_13', 'LOC_ZG_NUM_13', 'LOC_ZG_NUM_13', 130),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_14', 'LOC_ZG_NUM_14', 'LOC_ZG_NUM_14', 140),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_15', 'LOC_ZG_NUM_15', 'LOC_ZG_NUM_15', 150),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_16', 'LOC_ZG_NUM_16', 'LOC_ZG_NUM_16', 160),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_17', 'LOC_ZG_NUM_17', 'LOC_ZG_NUM_17', 170),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_18', 'LOC_ZG_NUM_18', 'LOC_ZG_NUM_18', 180),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_19', 'LOC_ZG_NUM_19', 'LOC_ZG_NUM_19', 190),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_20', 'LOC_ZG_NUM_20', 'LOC_ZG_NUM_20', 200),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_21', 'LOC_ZG_NUM_21', 'LOC_ZG_NUM_21', 210),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_22', 'LOC_ZG_NUM_22', 'LOC_ZG_NUM_22', 220),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_23', 'LOC_ZG_NUM_23', 'LOC_ZG_NUM_23', 230),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_24', 'LOC_ZG_NUM_24', 'LOC_ZG_NUM_24', 240),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_25', 'LOC_ZG_NUM_25', 'LOC_ZG_NUM_25', 250),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_30', 'LOC_ZG_NUM_30', 'LOC_ZG_NUM_30', 300),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_35', 'LOC_ZG_NUM_35', 'LOC_ZG_NUM_35', 350),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_40', 'LOC_ZG_NUM_40', 'LOC_ZG_NUM_40', 400),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_45', 'LOC_ZG_NUM_45', 'LOC_ZG_NUM_45', 450),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_50', 'LOC_ZG_NUM_50', 'LOC_ZG_NUM_50', 500),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_55', 'LOC_ZG_NUM_55', 'LOC_ZG_NUM_55', 550),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_60', 'LOC_ZG_NUM_60', 'LOC_ZG_NUM_60', 600),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_65', 'LOC_ZG_NUM_65', 'LOC_ZG_NUM_65', 650),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_70', 'LOC_ZG_NUM_70', 'LOC_ZG_NUM_70', 700),
+        ('ZG_SettlementLimitValueDomain', 'ZG_SL_75', 'LOC_ZG_NUM_75', 'LOC_ZG_NUM_75', 750);
 
 --*******************************************************
 --************* CRISIS SETTINGS *************************
@@ -220,8 +238,8 @@ INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, Defaul
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
-        ('ZG_CrisesDomain', 'ZG_ENABLED', 'LOC_ZG_ENABLED_NAME', 'LOC_ZG_CRISES_DESCRIPTION', 10),
-        ('ZG_CrisesDomain', 'ZG_DISABLED', 'LOC_ZG_DISABLED_NAME', 'LOC_ZG_CRISES_DESCRIPTION', 20);
+        ('ZG_CrisesDomain', 'ZG_ENABLED', 'LOC_ZG_ENABLED_NAME', 'LOC_ZG_ENABLED_NAME', 10),
+        ('ZG_CrisesDomain', 'ZG_DISABLED', 'LOC_ZG_DISABLED_NAME', 'LOC_ZG_DISABLED_NAME', 20);
 
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
@@ -249,10 +267,9 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_NaturalWonderCountDomain', 'ZG_DEFAULT_NATURAL_WONDER_COUNT', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_NATURAL_WONDER_DESCRIPTION_DEFAULT', 30),
         ('ZG_NaturalWonderCountDomain', 'ZG_MORE_NATURAL_WONDER_COUNT', 'LOC_ZG_MORE_NAME', 'LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE', 40),
         ('ZG_NaturalWonderCountDomain', 'ZG_DOUBLE_NATURAL_WONDER_COUNT', 'LOC_ZG_DOUBLE_NAME', 'LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE', 50),
-        ('ZG_LakeGenerationDomain', 'ZG_DISABLED_LAKE_GENERATION', 'LOC_ZG_DISABLED_NAME', 'LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED', 10),
-        ('ZG_LakeGenerationDomain', 'ZG_LESS_LAKE_GENERATION', 'LOC_ZG_LESS_NAME', 'LOC_ZG_LAKE_GENERATION_DESCRIPTION', 20),
-        ('ZG_LakeGenerationDomain', 'ZG_DEFAULT_LAKE_GENERATION', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_LAKE_GENERATION_DESCRIPTION', 30),
-        ('ZG_LakeGenerationDomain', 'ZG_MORE_LAKE_GENERATION', 'LOC_ZG_MORE_NAME', 'LOC_ZG_LAKE_GENERATION_DESCRIPTION', 40);
+        ('ZG_LakeGenerationDomain', 'ZG_LESS_LAKE_GENERATION', 'LOC_ZG_LESS_NAME', 'LOC_ZG_LAKE_GENERATION_DESCRIPTION_LESS', 20),
+        ('ZG_LakeGenerationDomain', 'ZG_DEFAULT_LAKE_GENERATION', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_LAKE_GENERATION_DESCRIPTION_DEFAULT', 30),
+        ('ZG_LakeGenerationDomain', 'ZG_MORE_LAKE_GENERATION', 'LOC_ZG_MORE_NAME', 'LOC_ZG_LAKE_GENERATION_DESCRIPTION_MORE', 40);
 
 --*******************************************************
 --************* NATURAL WONDER TOGGLES ******************
@@ -285,8 +302,8 @@ INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, Defaul
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
-        ('ZG_WonderToggleDomain', 'ZG_ENABLED', 'LOC_ZG_ENABLED_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 10),
-        ('ZG_WonderToggleDomain', 'ZG_DISABLED', 'LOC_ZG_DISABLED_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 20);
+        ('ZG_WonderToggleDomain', 'ZG_ENABLED', 'LOC_ZG_ENABLED_NAME', 'LOC_ZG_ENABLED_NAME', 10),
+        ('ZG_WonderToggleDomain', 'ZG_DISABLED', 'LOC_ZG_DISABLED_NAME', 'LOC_ZG_DISABLED_NAME', 20);
 
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
@@ -295,14 +312,12 @@ INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, Defaul
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
-        ('ZG_RiversDomain', 'ZG_DISABLED_RIVERS', 'LOC_ZG_DISABLED_NAME', 'LOC_ZG_RIVERS_DESCRIPTION_DISABLED', 10),
         ('ZG_RiversDomain', 'ZG_LESS_RIVERS', 'LOC_ZG_LESS_NAME', 'LOC_ZG_RIVERS_DESCRIPTION_LESS', 20),
-        ('ZG_RiversDomain', 'ZG_DEFAULT_RIVERS', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_RIVERS_DESCRIPTION_DEFAULT', 30),
+        ('ZG_RiversDomain', 'ZG_DEFAULT_RIVERS', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_RIVERS_DESCRIPTION_DEFAULT', 30),
         ('ZG_RiversDomain', 'ZG_MORE_RIVERS', 'LOC_ZG_MORE_NAME', 'LOC_ZG_RIVERS_DESCRIPTION_MORE', 40);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
-        ('ZG_MountainsDomain', 'ZG_DISABLED_MOUNTAINS', 'LOC_ZG_DISABLED_NAME', 'LOC_ZG_MOUNTAINS_DESCRIPTION_DISABLED', 10),
         ('ZG_MountainsDomain', 'ZG_LESS_MOUNTAINS', 'LOC_ZG_LESS_NAME', 'LOC_ZG_MOUNTAINS_DESCRIPTION_LESS', 20),
-        ('ZG_MountainsDomain', 'ZG_DEFAULT_MOUNTAINS', 'LOC_ZG_DEFAULT_NAME', 'LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT', 30),
+        ('ZG_MountainsDomain', 'ZG_DEFAULT_MOUNTAINS', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT', 30),
         ('ZG_MountainsDomain', 'ZG_MORE_MOUNTAINS', 'LOC_ZG_MORE_NAME', 'LOC_ZG_MOUNTAINS_DESCRIPTION_MORE', 40);

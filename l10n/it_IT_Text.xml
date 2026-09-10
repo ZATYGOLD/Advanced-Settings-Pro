@@ -101,25 +101,55 @@
 			<Text>Epoca moderna</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="it_IT">
-			<Text>Imposta il movimento base e imbarcato del colono.[n] [BLIST][LI] Lento: 2[icon:Action_Move]base e 1[icon:Action_Move]imbarcato.[LI] Predefinito: 3[icon:Action_Move]base e 2[icon:Action_Move]imbarcato.[LI] Veloce: 4[icon:Action_Move]base e 3[icon:Action_Move]imbarcato.[/BLIST]</Text>
+			<Text>Imposta il movimento base e imbarcato del colono.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_SLOW" Language="it_IT">
+			<Text>[BLIST][LI] Lento: 2[icon:Action_Move]base e 1[icon:Action_Move]imbarcato.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="it_IT">
+			<Text>[BLIST][LI] Predefinito: 3[icon:Action_Move]base e 2[icon:Action_Move]imbarcato.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="it_IT">
+			<Text>[BLIST][LI] Veloce: 4[icon:Action_Move]base e 3[icon:Action_Move]imbarcato.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION" Language="it_IT">
-			<Text>Imposta il movimento base e imbarcato del convoglio del tesoro.[n] [BLIST][LI] Lento: 1[icon:Action_Move]di movimento base e imbarcato.[LI] Predefinito: 2[icon:Action_Move]di movimento base e imbarcato.[LI] Veloce: 3[icon:Action_Move]di movimento base e imbarcato.[/BLIST]</Text>
+			<Text>Imposta il movimento base e imbarcato del convoglio del tesoro.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_SLOW" Language="it_IT">
+			<Text>[BLIST][LI] Lento: 1[icon:Action_Move]di movimento base e imbarcato.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="it_IT">
+			<Text>[BLIST][LI] Predefinito: 2[icon:Action_Move]di movimento base e imbarcato.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="it_IT">
+			<Text>[BLIST][LI] Veloce: 3[icon:Action_Move]di movimento base e imbarcato.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION" Language="it_IT">
-			<Text>Imposta il numero iniziale di [icon:INDEPENDENT_POWER]potenze indipendenti. I risultati possono variare.[n] [BLIST][LI] Nessuna: 0 potenze indipendenti.[LI] Meno: 2 potenze indipendenti per civiltà.[LI] Predefinito: 3 potenze indipendenti per civiltà.[LI] Più: 4 potenze indipendenti per civiltà.[/BLIST][n] [n]Il gioco cercherà di generare la quantità desiderata, ma il numero esatto può variare.[n]Il risultato sarà il più vicino possibile al valore previsto.</Text>
+			<Text>Imposta il numero iniziale di [icon:INDEPENDENT_POWER]potenze indipendenti. I risultati possono variare.[n]Il gioco cercherà di generare la quantità desiderata, ma il numero esatto può variare.[n]Il risultato sarà il più vicino possibile al valore previsto.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_NONE" Language="it_IT">
+			<Text>[BLIST][LI] Nessuna: 0 potenze indipendenti.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_LESS" Language="it_IT">
+			<Text>[BLIST][LI] Meno: 2 potenze indipendenti per civiltà.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_DEFAULT" Language="it_IT">
+			<Text>[BLIST][LI] Predefinito: 3 potenze indipendenti per civiltà.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_MORE" Language="it_IT">
+			<Text>[BLIST][LI] Più: 4 potenze indipendenti per civiltà.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION" Language="it_IT">
 			<Text>Imposta la distanza minima tra le potenze indipendenti.[n] Questo può influire sul loro numero totale.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_LESS" Language="it_IT">
-			<Text>Imposta la distanza minima tra le potenze indipendenti.[n] Questo può influire sul loro numero totale.[n] [BLIST][LI] Epoca antica: 4 caselle.[LI] Epoca delle esplorazioni: 3 caselle.[LI] Epoca moderna: 2 caselle.[/BLIST]</Text>
+			<Text>[BLIST][LI] Epoca antica: 4 caselle.[LI] Epoca delle esplorazioni: 3 caselle.[LI] Epoca moderna: 2 caselle.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_DEFAULT" Language="it_IT">
-			<Text>Imposta la distanza minima tra le potenze indipendenti.[n] Questo può influire sul loro numero totale.[n] [BLIST][LI] Epoca antica: 6 caselle.[LI] Epoca delle esplorazioni: 6 caselle.[LI] Epoca moderna: 4 caselle.[/BLIST]</Text>
+			<Text>[BLIST][LI] Epoca antica: 6 caselle.[LI] Epoca delle esplorazioni: 6 caselle.[LI] Epoca moderna: 4 caselle.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="it_IT">
-			<Text>Imposta la distanza minima tra le potenze indipendenti.[n] Questo può influire sul loro numero totale.[n] [BLIST][LI] Epoca antica: 7 caselle.[LI] Epoca delle esplorazioni: 7 caselle.[LI] Epoca moderna: 5 caselle.[/BLIST]</Text>
+			<Text>[BLIST][LI] Epoca antica: 7 caselle.[LI] Epoca delle esplorazioni: 7 caselle.[LI] Epoca moderna: 5 caselle.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION" Language="it_IT">
 			<Text>Imposta il numero iniziale di unità di una potenza indipendente. [n] Le potenze indipendenti iniziano sempre con 1[icon:UNIT_SCOUT]Esploratore.</Text>
@@ -146,19 +176,40 @@
 			<Text>Imposta il [icon:SETTLEMENT_LIMIT]limite di insediamenti iniziale di ogni epoca.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_DEFAULT" Language="it_IT">
-			<Text>Imposta il [icon:SETTLEMENT_LIMIT]limite di insediamenti iniziale di ogni epoca.[n] [BLIST][LI] Epoca antica: limite di insediamenti 3.[LI] Epoca delle esplorazioni: limite di insediamenti 8.[LI] Epoca moderna: limite di insediamenti 16.[/BLIST]</Text>
+			<Text>[BLIST][LI] Epoca antica: limite di insediamenti 3.[LI] Epoca delle esplorazioni: limite di insediamenti 8.[LI] Epoca moderna: limite di insediamenti 16.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_MORE" Language="it_IT">
-			<Text>Imposta il [icon:SETTLEMENT_LIMIT]limite di insediamenti iniziale di ogni epoca.[n] [BLIST][LI] Epoca antica: limite di insediamenti 5.[LI] Epoca delle esplorazioni: limite di insediamenti 12.[LI] Epoca moderna: limite di insediamenti 20.[/BLIST]</Text>
+			<Text>[BLIST][LI] Epoca antica: limite di insediamenti 5.[LI] Epoca delle esplorazioni: limite di insediamenti 12.[LI] Epoca moderna: limite di insediamenti 20.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_LESS" Language="it_IT">
-			<Text>Imposta il [icon:SETTLEMENT_LIMIT]limite di insediamenti iniziale di ogni epoca.[n] [BLIST][LI] Epoca antica: limite di insediamenti 1.[LI] Epoca delle esplorazioni: limite di insediamenti 4.[LI] Epoca moderna: limite di insediamenti 10.[/BLIST]</Text>
+			<Text>[BLIST][LI] Epoca antica: limite di insediamenti 1.[LI] Epoca delle esplorazioni: limite di insediamenti 4.[LI] Epoca moderna: limite di insediamenti 10.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION" Language="it_IT">
-			<Text>Imposta la distanza minima tra gli insediamenti.[n] [BLIST][LI] Meno: 2 caselle.[LI] Predefinito: 3 caselle.[LI] Più: 4 caselle.[/BLIST]</Text>
+			<Text>Imposta la distanza minima tra gli insediamenti.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_LESS" Language="it_IT">
+			<Text>[BLIST][LI] Meno: 2 caselle.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_DEFAULT" Language="it_IT">
+			<Text>[BLIST][LI] Predefinito: 3 caselle.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="it_IT">
+			<Text>[BLIST][LI] Più: 4 caselle.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="it_IT">
-			<Text>Imposta il costo di produzione delle unità da combattimento.[n] [BLIST][LI] Meno: 25% più economiche.[LI] Predefinito: nessuno sconto.[LI] Più: 25% più costose.[LI] Costoso: 50% più costose.[/BLIST]</Text>
+			<Text>Imposta il costo di produzione delle unità da combattimento.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_LESS" Language="it_IT">
+			<Text>[BLIST][LI] Meno: 25% più economiche.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DEFAULT" Language="it_IT">
+			<Text>[BLIST][LI] Predefinito: nessuno sconto.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_MORE" Language="it_IT">
+			<Text>[BLIST][LI] Più: 25% più costose.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="it_IT">
+			<Text>[BLIST][LI] Costoso: 50% più costose.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="it_IT">
 			<Text>Attiva o disattiva tutte le crisi.[n]Disattivato spegne ogni crisi in Selezione delle crisi.</Text>
@@ -170,34 +221,43 @@
 			<Text>Non si verificano crisi.[n]Imposta Crisi su Attivato per scegliere una tempistica.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_EARLY" Language="it_IT">
-			<Text>Imposta quando iniziano le crisi.[n] [BLIST][LI] Fase 1: inizia al 50%.[LI] Fase 2: inizia al 65%.[LI] Fase 3: inizia al 85%.[/BLIST]</Text>
+			<Text>[BLIST][LI] Fase 1: inizia al 50%.[LI] Fase 2: inizia al 65%.[LI] Fase 3: inizia al 85%.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DEFAULT" Language="it_IT">
-			<Text>Imposta quando iniziano le crisi.[n] [BLIST][LI] Fase 1: inizia al 70%.[LI] Fase 2: inizia al 80%.[LI] Fase 3: inizia al 90%.[/BLIST]</Text>
+			<Text>[BLIST][LI] Fase 1: inizia al 70%.[LI] Fase 2: inizia al 80%.[LI] Fase 3: inizia al 90%.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_LATE" Language="it_IT">
-			<Text>Imposta quando iniziano le crisi.[n] [BLIST][LI] Fase 1: inizia al 85%.[LI] Fase 2: inizia al 90%.[LI] Fase 3: inizia al 95%.[/BLIST]</Text>
+			<Text>[BLIST][LI] Fase 1: inizia al 85%.[LI] Fase 2: inizia al 90%.[LI] Fase 3: inizia al 95%.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="it_IT">
-			<Text>Imposta la quantità di [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] meraviglie naturali sulla mappa.[n] [BLIST][LI] Disattivato: 0 meraviglie naturali.[LI] Metà: 50% di meraviglie naturali in meno.[LI] Predefinito: nessuna modifica.[LI] Più: 50% di meraviglie naturali in più.[LI] Doppio: 100% di meraviglie naturali in più.[/BLIST]</Text>
+			<Text>Imposta la quantità di [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] meraviglie naturali sulla mappa.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE" Language="it_IT">
-			<Text>Imposta la quantità di [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] meraviglie naturali sulla mappa.[n] Dimensione della mappa[n] [BLIST][LI] Minuscola: 0 meraviglie naturali.[LI] Piccola: 0 meraviglie naturali.[LI] Standard: 0 meraviglie naturali.[LI] Grande: 0 meraviglie naturali.[LI] Enorme: 0 meraviglie naturali.[/BLIST]</Text>
+			<Text>Dimensione della mappa[n] [BLIST][LI] Minuscola: 0 meraviglie naturali.[LI] Piccola: 0 meraviglie naturali.[LI] Standard: 0 meraviglie naturali.[LI] Grande: 0 meraviglie naturali.[LI] Enorme: 0 meraviglie naturali.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF" Language="it_IT">
-			<Text>Imposta la quantità di [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] meraviglie naturali sulla mappa.[n] Dimensione della mappa[n] [BLIST][LI] Minuscola: 1 meraviglie naturali.[LI] Piccola: 2 meraviglie naturali.[LI] Standard: 2 meraviglie naturali.[LI] Grande: 3 meraviglie naturali.[LI] Enorme: 3 meraviglie naturali.[/BLIST]</Text>
+			<Text>Dimensione della mappa[n] [BLIST][LI] Minuscola: 1 meraviglie naturali.[LI] Piccola: 2 meraviglie naturali.[LI] Standard: 2 meraviglie naturali.[LI] Grande: 3 meraviglie naturali.[LI] Enorme: 3 meraviglie naturali.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DEFAULT" Language="it_IT">
-			<Text>Imposta la quantità di [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] meraviglie naturali sulla mappa.[n] Dimensione della mappa[n] [BLIST][LI] Minuscola: 3 meraviglie naturali.[LI] Piccola: 4 meraviglie naturali.[LI] Standard: 5 meraviglie naturali.[LI] Grande: 6 meraviglie naturali.[LI] Enorme: 7 meraviglie naturali.[/BLIST]</Text>
+			<Text>Dimensione della mappa[n] [BLIST][LI] Minuscola: 3 meraviglie naturali.[LI] Piccola: 4 meraviglie naturali.[LI] Standard: 5 meraviglie naturali.[LI] Grande: 6 meraviglie naturali.[LI] Enorme: 7 meraviglie naturali.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE" Language="it_IT">
-			<Text>Imposta la quantità di [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] meraviglie naturali sulla mappa.[n] Dimensione della mappa[n] [BLIST][LI] Minuscola: 5 meraviglie naturali.[LI] Piccola: 6 meraviglie naturali.[LI] Standard: 8 meraviglie naturali.[LI] Grande: 9 meraviglie naturali.[LI] Enorme: 11 meraviglie naturali.[/BLIST]</Text>
+			<Text>Dimensione della mappa[n] [BLIST][LI] Minuscola: 5 meraviglie naturali.[LI] Piccola: 6 meraviglie naturali.[LI] Standard: 8 meraviglie naturali.[LI] Grande: 9 meraviglie naturali.[LI] Enorme: 11 meraviglie naturali.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE" Language="it_IT">
-			<Text>Imposta la quantità di [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] meraviglie naturali sulla mappa.[n] Dimensione della mappa[n] [BLIST][LI] Minuscola: 6 meraviglie naturali.[LI] Piccola: 8 meraviglie naturali.[LI] Standard: 10 meraviglie naturali.[LI] Grande: 12 meraviglie naturali.[LI] Enorme: 14 meraviglie naturali.[/BLIST]</Text>
+			<Text>Dimensione della mappa[n] [BLIST][LI] Minuscola: 6 meraviglie naturali.[LI] Piccola: 8 meraviglie naturali.[LI] Standard: 10 meraviglie naturali.[LI] Grande: 12 meraviglie naturali.[LI] Enorme: 14 meraviglie naturali.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION" Language="it_IT">
 			<Text>Imposta la frequenza dei laghi sulla mappa. I risultati possono variare.[n] Il gioco cercherà di regolare il numero di laghi.[n] La generazione della mappa può tuttavia ripristinare il valore predefinito.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_LESS" Language="it_IT">
+			<Text>Genera meno laghi.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DEFAULT" Language="it_IT">
+			<Text>Generazione standard dei laghi per il tipo di mappa scelto.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_MORE" Language="it_IT">
+			<Text>Genera più laghi.</Text>
 		</Replace>
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="it_IT">
 			<Text>Advanced Settings Pro</Text>
@@ -235,6 +295,12 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="it_IT">
 			<Text>Mantieni entrambe</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="it_IT">
+			<Text>Personalizzato: imposta il set di trionfi per ogni epoca singolarmente.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRIUMPH_SET_AGE_DESCRIPTION" Language="it_IT">
+			<Text>Imposta il set di trionfi di questa epoca.[n]Si applica solo quando il set di trionfi è su Personalizzato.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM" Language="it_IT">
 			<Text>Personalizzato: imposta il limite di insediamenti per ogni epoca singolarmente.</Text>
 		</Replace>
@@ -256,12 +322,6 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="it_IT">
 			<Text>Genera più fiumi, e un numero maggiore è navigabile.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED" Language="it_IT">
-			<Text>Non vengono generati fiumi.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="it_IT">
-			<Text>Non vengono generati laghi.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="it_IT">
 			<Text>Costoso</Text>
 		</Replace>
@@ -269,7 +329,19 @@
 			<Text>Costo delle unità civili</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="it_IT">
-			<Text>Imposta il costo di produzione delle unità civili.[n] [BLIST][LI] Meno: 25% più economiche.[LI] Predefinito: nessuno sconto.[LI] Più: 25% più costose.[LI] Costoso: 50% più costose.[/BLIST]</Text>
+			<Text>Imposta il costo di produzione delle unità civili.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_LESS" Language="it_IT">
+			<Text>[BLIST][LI] Meno: 25% più economiche.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DEFAULT" Language="it_IT">
+			<Text>[BLIST][LI] Predefinito: nessuno sconto.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_MORE" Language="it_IT">
+			<Text>[BLIST][LI] Più: 25% più costose.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="it_IT">
+			<Text>[BLIST][LI] Costoso: 50% più costose.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="it_IT">
 			<Text>Online 2.0</Text>
@@ -375,9 +447,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION" Language="it_IT">
 			<Text>Determina quante montagne vengono generate alla creazione della mappa.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DISABLED" Language="it_IT">
-			<Text>Non vengono generate montagne.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_LESS" Language="it_IT">
 			<Text>Genera meno montagne.</Text>

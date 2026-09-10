@@ -101,25 +101,55 @@
 			<Text>Moderne</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="de_DE">
-			<Text>Legt die Basis- und eingeschiffte Bewegung des Siedlers fest.[n] [BLIST][LI] Langsam: 2[icon:Action_Move]Basis- und 1[icon:Action_Move]eingeschiffte Bewegung.[LI] Standard: 3[icon:Action_Move]Basis- und 2[icon:Action_Move]eingeschiffte Bewegung.[LI] Schnell: 4[icon:Action_Move]Basis- und 3[icon:Action_Move]eingeschiffte Bewegung.[/BLIST]</Text>
+			<Text>Legt die Basis- und eingeschiffte Bewegung des Siedlers fest.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_SLOW" Language="de_DE">
+			<Text>[BLIST][LI] Langsam: 2[icon:Action_Move]Basis- und 1[icon:Action_Move]eingeschiffte Bewegung.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="de_DE">
+			<Text>[BLIST][LI] Standard: 3[icon:Action_Move]Basis- und 2[icon:Action_Move]eingeschiffte Bewegung.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="de_DE">
+			<Text>[BLIST][LI] Schnell: 4[icon:Action_Move]Basis- und 3[icon:Action_Move]eingeschiffte Bewegung.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION" Language="de_DE">
-			<Text>Legt die Basis- und eingeschiffte Bewegung des Schatzkonvois fest.[n] [BLIST][LI] Langsam: 1[icon:Action_Move]Basis- und eingeschiffte Bewegung.[LI] Standard: 2[icon:Action_Move]Basis- und eingeschiffte Bewegung.[LI] Schnell: 3[icon:Action_Move]Basis- und eingeschiffte Bewegung.[/BLIST]</Text>
+			<Text>Legt die Basis- und eingeschiffte Bewegung des Schatzkonvois fest.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_SLOW" Language="de_DE">
+			<Text>[BLIST][LI] Langsam: 1[icon:Action_Move]Basis- und eingeschiffte Bewegung.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="de_DE">
+			<Text>[BLIST][LI] Standard: 2[icon:Action_Move]Basis- und eingeschiffte Bewegung.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="de_DE">
+			<Text>[BLIST][LI] Schnell: 3[icon:Action_Move]Basis- und eingeschiffte Bewegung.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION" Language="de_DE">
-			<Text>Legt die anfängliche Anzahl der [icon:INDEPENDENT_POWER]unabhängigen Mächte fest. Ergebnisse können abweichen.[n] [BLIST][LI] Keine: 0 unabhängige Mächte.[LI] Weniger: 2 unabhängige Mächte pro Zivilisation.[LI] Standard: 3 unabhängige Mächte pro Zivilisation.[LI] Mehr: 4 unabhängige Mächte pro Zivilisation.[/BLIST][n] [n]Es wird versucht, die gewünschte Anzahl zu erzeugen; die genaue Zahl kann jedoch abweichen.[n]Das Ergebnis liegt so nah wie möglich am erwarteten Wert.</Text>
+			<Text>Legt die anfängliche Anzahl der [icon:INDEPENDENT_POWER]unabhängigen Mächte fest. Ergebnisse können abweichen.[n]Es wird versucht, die gewünschte Anzahl zu erzeugen; die genaue Zahl kann jedoch abweichen.[n]Das Ergebnis liegt so nah wie möglich am erwarteten Wert.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_NONE" Language="de_DE">
+			<Text>[BLIST][LI] Keine: 0 unabhängige Mächte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_LESS" Language="de_DE">
+			<Text>[BLIST][LI] Weniger: 2 unabhängige Mächte pro Zivilisation.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_DEFAULT" Language="de_DE">
+			<Text>[BLIST][LI] Standard: 3 unabhängige Mächte pro Zivilisation.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_MORE" Language="de_DE">
+			<Text>[BLIST][LI] Mehr: 4 unabhängige Mächte pro Zivilisation.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION" Language="de_DE">
 			<Text>Legt den Mindestabstand für unabhängige Mächte fest.[n] Dies kann die Gesamtzahl der unabhängigen Mächte beeinflussen.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_LESS" Language="de_DE">
-			<Text>Legt den Mindestabstand für unabhängige Mächte fest.[n] Dies kann die Gesamtzahl der unabhängigen Mächte beeinflussen.[n] [BLIST][LI] Antike: 4 Felder.[LI] Erkundung: 3 Felder.[LI] Moderne: 2 Felder.[/BLIST]</Text>
+			<Text>[BLIST][LI] Antike: 4 Felder.[LI] Erkundung: 3 Felder.[LI] Moderne: 2 Felder.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_DEFAULT" Language="de_DE">
-			<Text>Legt den Mindestabstand für unabhängige Mächte fest.[n] Dies kann die Gesamtzahl der unabhängigen Mächte beeinflussen.[n] [BLIST][LI] Antike: 6 Felder.[LI] Erkundung: 6 Felder.[LI] Moderne: 4 Felder.[/BLIST]</Text>
+			<Text>[BLIST][LI] Antike: 6 Felder.[LI] Erkundung: 6 Felder.[LI] Moderne: 4 Felder.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="de_DE">
-			<Text>Legt den Mindestabstand für unabhängige Mächte fest.[n] Dies kann die Gesamtzahl der unabhängigen Mächte beeinflussen.[n] [BLIST][LI] Antike: 7 Felder.[LI] Erkundung: 7 Felder.[LI] Moderne: 5 Felder.[/BLIST]</Text>
+			<Text>[BLIST][LI] Antike: 7 Felder.[LI] Erkundung: 7 Felder.[LI] Moderne: 5 Felder.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION" Language="de_DE">
 			<Text>Legt die anfängliche Anzahl der Einheiten einer unabhängigen Macht fest. [n] Unabhängige Mächte beginnen immer mit 1[icon:UNIT_SCOUT]Späher.</Text>
@@ -146,19 +176,40 @@
 			<Text>Legt das anfängliche [icon:SETTLEMENT_LIMIT]Siedlungslimit für jedes Zeitalter fest.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_DEFAULT" Language="de_DE">
-			<Text>Legt das anfängliche [icon:SETTLEMENT_LIMIT]Siedlungslimit für jedes Zeitalter fest.[n] [BLIST][LI] Antike: Siedlungslimit 3.[LI] Erkundung: Siedlungslimit 8.[LI] Moderne: Siedlungslimit 16.[/BLIST]</Text>
+			<Text>[BLIST][LI] Antike: Siedlungslimit 3.[LI] Erkundung: Siedlungslimit 8.[LI] Moderne: Siedlungslimit 16.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_MORE" Language="de_DE">
-			<Text>Legt das anfängliche [icon:SETTLEMENT_LIMIT]Siedlungslimit für jedes Zeitalter fest.[n] [BLIST][LI] Antike: Siedlungslimit 5.[LI] Erkundung: Siedlungslimit 12.[LI] Moderne: Siedlungslimit 20.[/BLIST]</Text>
+			<Text>[BLIST][LI] Antike: Siedlungslimit 5.[LI] Erkundung: Siedlungslimit 12.[LI] Moderne: Siedlungslimit 20.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_LESS" Language="de_DE">
-			<Text>Legt das anfängliche [icon:SETTLEMENT_LIMIT]Siedlungslimit für jedes Zeitalter fest.[n] [BLIST][LI] Antike: Siedlungslimit 1.[LI] Erkundung: Siedlungslimit 4.[LI] Moderne: Siedlungslimit 10.[/BLIST]</Text>
+			<Text>[BLIST][LI] Antike: Siedlungslimit 1.[LI] Erkundung: Siedlungslimit 4.[LI] Moderne: Siedlungslimit 10.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION" Language="de_DE">
-			<Text>Legt den Mindestabstand zwischen Siedlungen fest.[n] [BLIST][LI] Weniger: 2 Felder.[LI] Standard: 3 Felder.[LI] Mehr: 4 Felder.[/BLIST]</Text>
+			<Text>Legt den Mindestabstand zwischen Siedlungen fest.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_LESS" Language="de_DE">
+			<Text>[BLIST][LI] Weniger: 2 Felder.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_DEFAULT" Language="de_DE">
+			<Text>[BLIST][LI] Standard: 3 Felder.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="de_DE">
+			<Text>[BLIST][LI] Mehr: 4 Felder.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="de_DE">
-			<Text>Legt die Produktionskosten von Kampfeinheiten fest.[n] [BLIST][LI] Weniger: 25% günstiger.[LI] Standard: kein Rabatt.[LI] Mehr: 25% teurer.[LI] Teuer: 50% teurer.[/BLIST]</Text>
+			<Text>Legt die Produktionskosten von Kampfeinheiten fest.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_LESS" Language="de_DE">
+			<Text>[BLIST][LI] Weniger: 25% günstiger.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DEFAULT" Language="de_DE">
+			<Text>[BLIST][LI] Standard: kein Rabatt.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_MORE" Language="de_DE">
+			<Text>[BLIST][LI] Mehr: 25% teurer.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="de_DE">
+			<Text>[BLIST][LI] Teuer: 50% teurer.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="de_DE">
 			<Text>Aktiviert oder deaktiviert alle Krisen.[n]Deaktiviert schaltet jede Krise in der Krisenauswahl aus.</Text>
@@ -170,34 +221,43 @@
 			<Text>Es treten keine Krisen auf.[n]Setze Krisen auf Aktiviert, um einen Zeitpunkt zu wählen.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_EARLY" Language="de_DE">
-			<Text>Legt fest, wann die Krisen beginnen.[n] [BLIST][LI] Phase 1: Beginnt bei 50%.[LI] Phase 2: Beginnt bei 65%.[LI] Phase 3: Beginnt bei 85%.[/BLIST]</Text>
+			<Text>[BLIST][LI] Phase 1: Beginnt bei 50%.[LI] Phase 2: Beginnt bei 65%.[LI] Phase 3: Beginnt bei 85%.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DEFAULT" Language="de_DE">
-			<Text>Legt fest, wann die Krisen beginnen.[n] [BLIST][LI] Phase 1: Beginnt bei 70%.[LI] Phase 2: Beginnt bei 80%.[LI] Phase 3: Beginnt bei 90%.[/BLIST]</Text>
+			<Text>[BLIST][LI] Phase 1: Beginnt bei 70%.[LI] Phase 2: Beginnt bei 80%.[LI] Phase 3: Beginnt bei 90%.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_LATE" Language="de_DE">
-			<Text>Legt fest, wann die Krisen beginnen.[n] [BLIST][LI] Phase 1: Beginnt bei 85%.[LI] Phase 2: Beginnt bei 90%.[LI] Phase 3: Beginnt bei 95%.[/BLIST]</Text>
+			<Text>[BLIST][LI] Phase 1: Beginnt bei 85%.[LI] Phase 2: Beginnt bei 90%.[LI] Phase 3: Beginnt bei 95%.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="de_DE">
-			<Text>Legt die Anzahl der [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] Naturwunder auf der Karte fest.[n] [BLIST][LI] Deaktiviert: 0 Naturwunder.[LI] Halb: 50% weniger Naturwunder.[LI] Standard: keine Änderung der Naturwunder.[LI] Mehr: 50% mehr Naturwunder.[LI] Doppelt: 100% mehr Naturwunder.[/BLIST]</Text>
+			<Text>Legt die Anzahl der [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] Naturwunder auf der Karte fest.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE" Language="de_DE">
-			<Text>Legt die Anzahl der [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] Naturwunder auf der Karte fest.[n] Kartengröße[n] [BLIST][LI] Winzig: 0 Naturwunder.[LI] Klein: 0 Naturwunder.[LI] Standard: 0 Naturwunder.[LI] Groß: 0 Naturwunder.[LI] Riesig: 0 Naturwunder.[/BLIST]</Text>
+			<Text>Kartengröße[n] [BLIST][LI] Winzig: 0 Naturwunder.[LI] Klein: 0 Naturwunder.[LI] Standard: 0 Naturwunder.[LI] Groß: 0 Naturwunder.[LI] Riesig: 0 Naturwunder.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF" Language="de_DE">
-			<Text>Legt die Anzahl der [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] Naturwunder auf der Karte fest.[n] Kartengröße[n] [BLIST][LI] Winzig: 1 Naturwunder.[LI] Klein: 2 Naturwunder.[LI] Standard: 2 Naturwunder.[LI] Groß: 3 Naturwunder.[LI] Riesig: 3 Naturwunder.[/BLIST]</Text>
+			<Text>Kartengröße[n] [BLIST][LI] Winzig: 1 Naturwunder.[LI] Klein: 2 Naturwunder.[LI] Standard: 2 Naturwunder.[LI] Groß: 3 Naturwunder.[LI] Riesig: 3 Naturwunder.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DEFAULT" Language="de_DE">
-			<Text>Legt die Anzahl der [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] Naturwunder auf der Karte fest.[n] Kartengröße[n] [BLIST][LI] Winzig: 3 Naturwunder.[LI] Klein: 4 Naturwunder.[LI] Standard: 5 Naturwunder.[LI] Groß: 6 Naturwunder.[LI] Riesig: 7 Naturwunder.[/BLIST]</Text>
+			<Text>Kartengröße[n] [BLIST][LI] Winzig: 3 Naturwunder.[LI] Klein: 4 Naturwunder.[LI] Standard: 5 Naturwunder.[LI] Groß: 6 Naturwunder.[LI] Riesig: 7 Naturwunder.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE" Language="de_DE">
-			<Text>Legt die Anzahl der [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] Naturwunder auf der Karte fest.[n] Kartengröße[n] [BLIST][LI] Winzig: 5 Naturwunder.[LI] Klein: 6 Naturwunder.[LI] Standard: 8 Naturwunder.[LI] Groß: 9 Naturwunder.[LI] Riesig: 11 Naturwunder.[/BLIST]</Text>
+			<Text>Kartengröße[n] [BLIST][LI] Winzig: 5 Naturwunder.[LI] Klein: 6 Naturwunder.[LI] Standard: 8 Naturwunder.[LI] Groß: 9 Naturwunder.[LI] Riesig: 11 Naturwunder.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE" Language="de_DE">
-			<Text>Legt die Anzahl der [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] Naturwunder auf der Karte fest.[n] Kartengröße[n] [BLIST][LI] Winzig: 6 Naturwunder.[LI] Klein: 8 Naturwunder.[LI] Standard: 10 Naturwunder.[LI] Groß: 12 Naturwunder.[LI] Riesig: 14 Naturwunder.[/BLIST]</Text>
+			<Text>Kartengröße[n] [BLIST][LI] Winzig: 6 Naturwunder.[LI] Klein: 8 Naturwunder.[LI] Standard: 10 Naturwunder.[LI] Groß: 12 Naturwunder.[LI] Riesig: 14 Naturwunder.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION" Language="de_DE">
 			<Text>Legt die Häufigkeit von Seen auf der Karte fest. Ergebnisse können abweichen.[n] Es wird versucht, die Anzahl der Seen anzupassen.[n] Die Kartengenerierung kann die Einstellung jedoch auf den Standard zurücksetzen.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_LESS" Language="de_DE">
+			<Text>Generiert weniger Seen.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DEFAULT" Language="de_DE">
+			<Text>Standard-Seegenerierung für den gewählten Kartentyp.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_MORE" Language="de_DE">
+			<Text>Generiert mehr Seen.</Text>
 		</Replace>
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="de_DE">
 			<Text>Advanced Settings Pro</Text>
@@ -235,6 +295,12 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="de_DE">
 			<Text>Beide behalten</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="de_DE">
+			<Text>Benutzerdefiniert: Lege das Triumph-Set für jedes Zeitalter einzeln fest.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRIUMPH_SET_AGE_DESCRIPTION" Language="de_DE">
+			<Text>Legt das Triumph-Set dieses Zeitalters fest.[n]Gilt nur, wenn das Triumph-Set auf Benutzerdefiniert steht.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM" Language="de_DE">
 			<Text>Benutzerdefiniert: Lege das Siedlungslimit für jedes Zeitalter einzeln fest.</Text>
 		</Replace>
@@ -256,12 +322,6 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="de_DE">
 			<Text>Generiert mehr Flüsse, von denen mehr schiffbar sind.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED" Language="de_DE">
-			<Text>Es werden keine Flüsse generiert.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="de_DE">
-			<Text>Es werden keine Seen generiert.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="de_DE">
 			<Text>Teuer</Text>
 		</Replace>
@@ -269,7 +329,19 @@
 			<Text>Kosten von Zivileinheiten</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="de_DE">
-			<Text>Legt die Produktionskosten von Zivileinheiten fest.[n] [BLIST][LI] Weniger: 25% günstiger.[LI] Standard: kein Rabatt.[LI] Mehr: 25% teurer.[LI] Teuer: 50% teurer.[/BLIST]</Text>
+			<Text>Legt die Produktionskosten von Zivileinheiten fest.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_LESS" Language="de_DE">
+			<Text>[BLIST][LI] Weniger: 25% günstiger.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DEFAULT" Language="de_DE">
+			<Text>[BLIST][LI] Standard: kein Rabatt.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_MORE" Language="de_DE">
+			<Text>[BLIST][LI] Mehr: 25% teurer.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="de_DE">
+			<Text>[BLIST][LI] Teuer: 50% teurer.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="de_DE">
 			<Text>Online 2.0</Text>
@@ -375,9 +447,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION" Language="de_DE">
 			<Text>Legt fest, wie viele Berge bei der Kartenerstellung generiert werden.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DISABLED" Language="de_DE">
-			<Text>Es werden keine Berge generiert.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_LESS" Language="de_DE">
 			<Text>Generiert weniger Berge.</Text>

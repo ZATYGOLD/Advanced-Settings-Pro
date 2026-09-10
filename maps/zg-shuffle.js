@@ -1,8 +1,7 @@
 // Copy of {base-standard}maps/shuffle.js with a tier-aware river model;
 // imports are repointed at the base module so everything else stays stock.
 import { zgModelRivers } from './zg-map-rivers.js';
-import { zgAddMountains, zgAddVolcanoes, zgAddTundraVolcanoes } from './zg-map-mountains.js';
-import { zgGenerateLakes } from './zg-map-lakes.js';
+import { zgAddMountains } from './zg-map-mountains.js';
 import { assignAdvancedStartRegions } from 'fs://game/base-standard/maps/assign-advanced-start-region.js';
 import { chooseStartSectors, assignStartPositions } from 'fs://game/base-standard/maps/assign-starting-plots.js';
 import { generateDiscoveries } from 'fs://game/base-standard/maps/discovery-generator.js';
@@ -167,8 +166,8 @@ function generateMap() {
   AreaBuilder.recalculateAreas();
   TerrainBuilder.stampContinents();
   zgAddMountains(iWidth, iHeight);
-  zgAddVolcanoes(iWidth, iHeight);
-  zgGenerateLakes(iWidth, iHeight, iTilesPerLake);
+  addVolcanoes(iWidth, iHeight);
+  generateLakes(iWidth, iHeight, iTilesPerLake);
   AreaBuilder.recalculateAreas();
   TerrainBuilder.buildElevation();
   addHills(iWidth, iHeight);

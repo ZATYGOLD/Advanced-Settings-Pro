@@ -101,25 +101,55 @@
 			<Text>Epoka nowożytna</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="pl_PL">
-			<Text>Określa ruch bazowy i ruch na wodzie osadnika.[n] [BLIST][LI] Wolno: 2[icon:Action_Move]bazowego i 1[icon:Action_Move]ruchu na wodzie.[LI] Domyślne: 3[icon:Action_Move]bazowego i 2[icon:Action_Move]ruchu na wodzie.[LI] Szybko: 4[icon:Action_Move]bazowego i 3[icon:Action_Move]ruchu na wodzie.[/BLIST]</Text>
+			<Text>Określa ruch bazowy i ruch na wodzie osadnika.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_SLOW" Language="pl_PL">
+			<Text>[BLIST][LI] Wolno: 2[icon:Action_Move]bazowego i 1[icon:Action_Move]ruchu na wodzie.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="pl_PL">
+			<Text>[BLIST][LI] Domyślne: 3[icon:Action_Move]bazowego i 2[icon:Action_Move]ruchu na wodzie.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="pl_PL">
+			<Text>[BLIST][LI] Szybko: 4[icon:Action_Move]bazowego i 3[icon:Action_Move]ruchu na wodzie.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION" Language="pl_PL">
-			<Text>Określa ruch bazowy i ruch na wodzie konwoju skarbów.[n] [BLIST][LI] Wolno: 1[icon:Action_Move]ruchu bazowego i na wodzie.[LI] Domyślne: 2[icon:Action_Move]ruchu bazowego i na wodzie.[LI] Szybko: 3[icon:Action_Move]ruchu bazowego i na wodzie.[/BLIST]</Text>
+			<Text>Określa ruch bazowy i ruch na wodzie konwoju skarbów.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_SLOW" Language="pl_PL">
+			<Text>[BLIST][LI] Wolno: 1[icon:Action_Move]ruchu bazowego i na wodzie.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="pl_PL">
+			<Text>[BLIST][LI] Domyślne: 2[icon:Action_Move]ruchu bazowego i na wodzie.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="pl_PL">
+			<Text>[BLIST][LI] Szybko: 3[icon:Action_Move]ruchu bazowego i na wodzie.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION" Language="pl_PL">
-			<Text>Określa początkową liczbę [icon:INDEPENDENT_POWER]niezależnych mocarstw. Wyniki mogą się różnić.[n] [BLIST][LI] Brak: 0 niezależnych mocarstw.[LI] Mniej: 2 niezależnych mocarstw na cywilizację.[LI] Domyślne: 3 niezależnych mocarstw na cywilizację.[LI] Więcej: 4 niezależnych mocarstw na cywilizację.[/BLIST][n] [n]Gra spróbuje utworzyć żądaną liczbę, ale dokładna wartość może się różnić.[n]Wynik będzie możliwie najbliższy oczekiwanemu.</Text>
+			<Text>Określa początkową liczbę [icon:INDEPENDENT_POWER]niezależnych mocarstw. Wyniki mogą się różnić.[n]Gra spróbuje utworzyć żądaną liczbę, ale dokładna wartość może się różnić.[n]Wynik będzie możliwie najbliższy oczekiwanemu.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_NONE" Language="pl_PL">
+			<Text>[BLIST][LI] Brak: 0 niezależnych mocarstw.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_LESS" Language="pl_PL">
+			<Text>[BLIST][LI] Mniej: 2 niezależnych mocarstw na cywilizację.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_DEFAULT" Language="pl_PL">
+			<Text>[BLIST][LI] Domyślne: 3 niezależnych mocarstw na cywilizację.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_MORE" Language="pl_PL">
+			<Text>[BLIST][LI] Więcej: 4 niezależnych mocarstw na cywilizację.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION" Language="pl_PL">
 			<Text>Określa minimalną odległość między niezależnymi mocarstwami.[n] Może to wpłynąć na ich łączną liczbę.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_LESS" Language="pl_PL">
-			<Text>Określa minimalną odległość między niezależnymi mocarstwami.[n] Może to wpłynąć na ich łączną liczbę.[n] [BLIST][LI] Epoka antyku: 4 pól.[LI] Epoka odkryć: 3 pól.[LI] Epoka nowożytna: 2 pól.[/BLIST]</Text>
+			<Text>[BLIST][LI] Epoka antyku: 4 pól.[LI] Epoka odkryć: 3 pól.[LI] Epoka nowożytna: 2 pól.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_DEFAULT" Language="pl_PL">
-			<Text>Określa minimalną odległość między niezależnymi mocarstwami.[n] Może to wpłynąć na ich łączną liczbę.[n] [BLIST][LI] Epoka antyku: 6 pól.[LI] Epoka odkryć: 6 pól.[LI] Epoka nowożytna: 4 pól.[/BLIST]</Text>
+			<Text>[BLIST][LI] Epoka antyku: 6 pól.[LI] Epoka odkryć: 6 pól.[LI] Epoka nowożytna: 4 pól.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="pl_PL">
-			<Text>Określa minimalną odległość między niezależnymi mocarstwami.[n] Może to wpłynąć na ich łączną liczbę.[n] [BLIST][LI] Epoka antyku: 7 pól.[LI] Epoka odkryć: 7 pól.[LI] Epoka nowożytna: 5 pól.[/BLIST]</Text>
+			<Text>[BLIST][LI] Epoka antyku: 7 pól.[LI] Epoka odkryć: 7 pól.[LI] Epoka nowożytna: 5 pól.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION" Language="pl_PL">
 			<Text>Określa początkową liczbę jednostek niezależnego mocarstwa. [n] Niezależne mocarstwa zawsze zaczynają z 1[icon:UNIT_SCOUT]Zwiadowcą.</Text>
@@ -146,19 +176,40 @@
 			<Text>Określa początkowy [icon:SETTLEMENT_LIMIT]limit osad w każdej epoce.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_DEFAULT" Language="pl_PL">
-			<Text>Określa początkowy [icon:SETTLEMENT_LIMIT]limit osad w każdej epoce.[n] [BLIST][LI] Epoka antyku: limit osad 3.[LI] Epoka odkryć: limit osad 8.[LI] Epoka nowożytna: limit osad 16.[/BLIST]</Text>
+			<Text>[BLIST][LI] Epoka antyku: limit osad 3.[LI] Epoka odkryć: limit osad 8.[LI] Epoka nowożytna: limit osad 16.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_MORE" Language="pl_PL">
-			<Text>Określa początkowy [icon:SETTLEMENT_LIMIT]limit osad w każdej epoce.[n] [BLIST][LI] Epoka antyku: limit osad 5.[LI] Epoka odkryć: limit osad 12.[LI] Epoka nowożytna: limit osad 20.[/BLIST]</Text>
+			<Text>[BLIST][LI] Epoka antyku: limit osad 5.[LI] Epoka odkryć: limit osad 12.[LI] Epoka nowożytna: limit osad 20.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_LESS" Language="pl_PL">
-			<Text>Określa początkowy [icon:SETTLEMENT_LIMIT]limit osad w każdej epoce.[n] [BLIST][LI] Epoka antyku: limit osad 1.[LI] Epoka odkryć: limit osad 4.[LI] Epoka nowożytna: limit osad 10.[/BLIST]</Text>
+			<Text>[BLIST][LI] Epoka antyku: limit osad 1.[LI] Epoka odkryć: limit osad 4.[LI] Epoka nowożytna: limit osad 10.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION" Language="pl_PL">
-			<Text>Określa minimalną odległość między osadami.[n] [BLIST][LI] Mniej: 2 pól.[LI] Domyślne: 3 pól.[LI] Więcej: 4 pól.[/BLIST]</Text>
+			<Text>Określa minimalną odległość między osadami.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_LESS" Language="pl_PL">
+			<Text>[BLIST][LI] Mniej: 2 pól.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_DEFAULT" Language="pl_PL">
+			<Text>[BLIST][LI] Domyślne: 3 pól.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="pl_PL">
+			<Text>[BLIST][LI] Więcej: 4 pól.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="pl_PL">
-			<Text>Określa koszt produkcji jednostek bojowych.[n] [BLIST][LI] Mniej: 25% taniej.[LI] Domyślne: bez rabatu.[LI] Więcej: 25% drożej.[LI] Drogie: 50% drożej.[/BLIST]</Text>
+			<Text>Określa koszt produkcji jednostek bojowych.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_LESS" Language="pl_PL">
+			<Text>[BLIST][LI] Mniej: 25% taniej.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DEFAULT" Language="pl_PL">
+			<Text>[BLIST][LI] Domyślne: bez rabatu.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_MORE" Language="pl_PL">
+			<Text>[BLIST][LI] Więcej: 25% drożej.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="pl_PL">
+			<Text>[BLIST][LI] Drogie: 50% drożej.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="pl_PL">
 			<Text>Włącza lub wyłącza wszystkie kryzysy.[n]Wyłączone wyłącza każdy kryzys w Wyborze kryzysów.</Text>
@@ -170,34 +221,43 @@
 			<Text>Kryzysy nie występują.[n]Ustaw Kryzysy na Włączone, aby wybrać moment.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_EARLY" Language="pl_PL">
-			<Text>Określa, kiedy zaczynają się kryzysy.[n] [BLIST][LI] Etap 1: zaczyna się przy 50%.[LI] Etap 2: zaczyna się przy 65%.[LI] Etap 3: zaczyna się przy 85%.[/BLIST]</Text>
+			<Text>[BLIST][LI] Etap 1: zaczyna się przy 50%.[LI] Etap 2: zaczyna się przy 65%.[LI] Etap 3: zaczyna się przy 85%.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DEFAULT" Language="pl_PL">
-			<Text>Określa, kiedy zaczynają się kryzysy.[n] [BLIST][LI] Etap 1: zaczyna się przy 70%.[LI] Etap 2: zaczyna się przy 80%.[LI] Etap 3: zaczyna się przy 90%.[/BLIST]</Text>
+			<Text>[BLIST][LI] Etap 1: zaczyna się przy 70%.[LI] Etap 2: zaczyna się przy 80%.[LI] Etap 3: zaczyna się przy 90%.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_LATE" Language="pl_PL">
-			<Text>Określa, kiedy zaczynają się kryzysy.[n] [BLIST][LI] Etap 1: zaczyna się przy 85%.[LI] Etap 2: zaczyna się przy 90%.[LI] Etap 3: zaczyna się przy 95%.[/BLIST]</Text>
+			<Text>[BLIST][LI] Etap 1: zaczyna się przy 85%.[LI] Etap 2: zaczyna się przy 90%.[LI] Etap 3: zaczyna się przy 95%.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="pl_PL">
-			<Text>Określa liczbę [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] cudów natury na mapie.[n] [BLIST][LI] Wyłączone: 0 cudów natury.[LI] Połowa: o 50% mniej cudów natury.[LI] Domyślne: bez zmian.[LI] Więcej: o 50% więcej cudów natury.[LI] Podwójnie: o 100% więcej cudów natury.[/BLIST]</Text>
+			<Text>Określa liczbę [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] cudów natury na mapie.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE" Language="pl_PL">
-			<Text>Określa liczbę [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] cudów natury na mapie.[n] Rozmiar mapy[n] [BLIST][LI] Malutka: 0 cudów natury.[LI] Mała: 0 cudów natury.[LI] Standardowa: 0 cudów natury.[LI] Duża: 0 cudów natury.[LI] Ogromna: 0 cudów natury.[/BLIST]</Text>
+			<Text>Rozmiar mapy[n] [BLIST][LI] Malutka: 0 cudów natury.[LI] Mała: 0 cudów natury.[LI] Standardowa: 0 cudów natury.[LI] Duża: 0 cudów natury.[LI] Ogromna: 0 cudów natury.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF" Language="pl_PL">
-			<Text>Określa liczbę [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] cudów natury na mapie.[n] Rozmiar mapy[n] [BLIST][LI] Malutka: 1 cudów natury.[LI] Mała: 2 cudów natury.[LI] Standardowa: 2 cudów natury.[LI] Duża: 3 cudów natury.[LI] Ogromna: 3 cudów natury.[/BLIST]</Text>
+			<Text>Rozmiar mapy[n] [BLIST][LI] Malutka: 1 cudów natury.[LI] Mała: 2 cudów natury.[LI] Standardowa: 2 cudów natury.[LI] Duża: 3 cudów natury.[LI] Ogromna: 3 cudów natury.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DEFAULT" Language="pl_PL">
-			<Text>Określa liczbę [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] cudów natury na mapie.[n] Rozmiar mapy[n] [BLIST][LI] Malutka: 3 cudów natury.[LI] Mała: 4 cudów natury.[LI] Standardowa: 5 cudów natury.[LI] Duża: 6 cudów natury.[LI] Ogromna: 7 cudów natury.[/BLIST]</Text>
+			<Text>Rozmiar mapy[n] [BLIST][LI] Malutka: 3 cudów natury.[LI] Mała: 4 cudów natury.[LI] Standardowa: 5 cudów natury.[LI] Duża: 6 cudów natury.[LI] Ogromna: 7 cudów natury.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE" Language="pl_PL">
-			<Text>Określa liczbę [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] cudów natury na mapie.[n] Rozmiar mapy[n] [BLIST][LI] Malutka: 5 cudów natury.[LI] Mała: 6 cudów natury.[LI] Standardowa: 8 cudów natury.[LI] Duża: 9 cudów natury.[LI] Ogromna: 11 cudów natury.[/BLIST]</Text>
+			<Text>Rozmiar mapy[n] [BLIST][LI] Malutka: 5 cudów natury.[LI] Mała: 6 cudów natury.[LI] Standardowa: 8 cudów natury.[LI] Duża: 9 cudów natury.[LI] Ogromna: 11 cudów natury.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE" Language="pl_PL">
-			<Text>Określa liczbę [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] cudów natury na mapie.[n] Rozmiar mapy[n] [BLIST][LI] Malutka: 6 cudów natury.[LI] Mała: 8 cudów natury.[LI] Standardowa: 10 cudów natury.[LI] Duża: 12 cudów natury.[LI] Ogromna: 14 cudów natury.[/BLIST]</Text>
+			<Text>Rozmiar mapy[n] [BLIST][LI] Malutka: 6 cudów natury.[LI] Mała: 8 cudów natury.[LI] Standardowa: 10 cudów natury.[LI] Duża: 12 cudów natury.[LI] Ogromna: 14 cudów natury.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION" Language="pl_PL">
 			<Text>Określa częstotliwość jezior na mapie. Wyniki mogą się różnić.[n] Gra spróbuje dostosować liczbę jezior.[n] Generowanie mapy może jednak przywrócić wartość domyślną.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_LESS" Language="pl_PL">
+			<Text>Generuje mniej jezior.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DEFAULT" Language="pl_PL">
+			<Text>Standardowe generowanie jezior dla wybranego typu mapy.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_MORE" Language="pl_PL">
+			<Text>Generuje więcej jezior.</Text>
 		</Replace>
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="pl_PL">
 			<Text>Advanced Settings Pro</Text>
@@ -235,6 +295,12 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="pl_PL">
 			<Text>Zachowaj oba</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="pl_PL">
+			<Text>Niestandardowe: ustaw zestaw triumfów dla każdej epoki osobno.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRIUMPH_SET_AGE_DESCRIPTION" Language="pl_PL">
+			<Text>Ustawia zestaw triumfów tej epoki.[n]Działa tylko, gdy zestaw triumfów ustawiono na Niestandardowe.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM" Language="pl_PL">
 			<Text>Niestandardowe: ustaw limit osad dla każdej epoki osobno.</Text>
 		</Replace>
@@ -256,12 +322,6 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="pl_PL">
 			<Text>Generuje więcej rzek, z których więcej jest żeglownych.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED" Language="pl_PL">
-			<Text>Rzeki nie są generowane.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="pl_PL">
-			<Text>Jeziora nie są generowane.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="pl_PL">
 			<Text>Drogie</Text>
 		</Replace>
@@ -269,7 +329,19 @@
 			<Text>Koszt jednostek cywilnych</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="pl_PL">
-			<Text>Określa koszt produkcji jednostek cywilnych.[n] [BLIST][LI] Mniej: 25% taniej.[LI] Domyślne: bez rabatu.[LI] Więcej: 25% drożej.[LI] Drogie: 50% drożej.[/BLIST]</Text>
+			<Text>Określa koszt produkcji jednostek cywilnych.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_LESS" Language="pl_PL">
+			<Text>[BLIST][LI] Mniej: 25% taniej.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DEFAULT" Language="pl_PL">
+			<Text>[BLIST][LI] Domyślne: bez rabatu.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_MORE" Language="pl_PL">
+			<Text>[BLIST][LI] Więcej: 25% drożej.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="pl_PL">
+			<Text>[BLIST][LI] Drogie: 50% drożej.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="pl_PL">
 			<Text>Online 2.0</Text>
@@ -375,9 +447,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION" Language="pl_PL">
 			<Text>Określa, ile gór jest generowanych podczas tworzenia mapy.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DISABLED" Language="pl_PL">
-			<Text>Góry nie są generowane.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_LESS" Language="pl_PL">
 			<Text>Generuje mniej gór.</Text>

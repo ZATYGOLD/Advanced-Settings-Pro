@@ -12,10 +12,10 @@
 //   6. A per-age limit is changed away from the curated tier's values
 //      -> the Settlement Limit setting switches to Custom.
 //
-// Disasters:
-//   7. A frequency tier is selected -> every age shows that tier (Disabled included).
+// Disasters and Triumph Sets (shared tier/age sync):
+//   7. A tier is selected           -> every age shows that tier.
 //   8. An age is changed away from the selected tier
-//      -> the Disasters setting switches to Custom.
+//      -> the primary setting switches to Custom.
 //
 // Crises:
 //   9. Crises set to Disabled       -> every crisis in the selection is excluded.
@@ -47,8 +47,11 @@ const SL_TIER_VALUES = {
 	"LOC_ZG_MORE_NAME": [5, 12, 20],
 };
 
-const DF_PARAM_ID = "ZG_DisasterFrequency";
-const DF_AGE_PARAM_IDS = ["ZG_DisastersAntiquity", "ZG_DisastersExploration", "ZG_DisastersModern"];
+// Primary settings whose per-age values are kept in step (rules 7 & 8).
+const TIER_AGE_SYNCS = [
+	{ tierId: "ZG_DisasterFrequency", ageIds: ["ZG_DisastersAntiquity", "ZG_DisastersExploration", "ZG_DisastersModern"], lastTier: null },
+	{ tierId: "LegacySets", ageIds: ["ZG_TriumphSetAntiquity", "ZG_TriumphSetExploration", "ZG_TriumphSetModern"], lastTier: null },
+];
 
 const CRISES_PARAM_ID = "ZG_Crises";
 // The base multiselect lists excluded crises (UxHint InvertSelection).
@@ -71,7 +74,6 @@ const POLL_MS = 250;
 let lastRevision = -1;
 let nwLastTier = null;
 let slLastTier = null;
-let dfLastTier = null;
 let crisesLastToggle = null;
 let crisisTimingLast = null;
 let applying = false;
@@ -199,14 +201,14 @@ function syncSettlementLimits() {
 	}
 }
 
-// --------------------------------------------------------------- disasters --
+// ------------------------------------------------------- tier / age sync --
 
-function syncDisasters() {
-	const tierParam = GameSetup.findGameParameter(DF_PARAM_ID);
+function syncTierWithAges(sync) {
+	const tierParam = GameSetup.findGameParameter(sync.tierId);
 	if (!tierParam) {
 		return;
 	}
-	const ageParams = DF_AGE_PARAM_IDS.map((id) => GameSetup.findGameParameter(id));
+	const ageParams = sync.ageIds.map((id) => GameSetup.findGameParameter(id));
 	if (ageParams.some((param) => !param)) {
 		return;
 	}
@@ -214,18 +216,18 @@ function syncDisasters() {
 	const isCurated = tier != TIER_CUSTOM;
 
 	// 7: the player changed the tier; every age follows it.
-	if (dfLastTier != null && tier != dfLastTier) {
+	if (sync.lastTier != null && tier != sync.lastTier) {
 		if (isCurated) {
-			DF_AGE_PARAM_IDS.forEach((id) => setParamByName(id, tier));
+			sync.ageIds.forEach((id) => setParamByName(id, tier));
 		}
-		dfLastTier = tier;
+		sync.lastTier = tier;
 		return;
 	}
-	dfLastTier = tier;
+	sync.lastTier = tier;
 	// 8: an age no longer matches the tier; switch to Custom.
 	if (isCurated && ageParams.some((param) => currentValueName(param) != tier)) {
-		setParamByName(DF_PARAM_ID, TIER_CUSTOM);
-		dfLastTier = TIER_CUSTOM;
+		setParamByName(sync.tierId, TIER_CUSTOM);
+		sync.lastTier = TIER_CUSTOM;
 	}
 }
 
@@ -313,10 +315,12 @@ setInterval(() => {
 	} catch (e) {
 		console.warn(`ZG-ASP settlement sync error: ${e}`);
 	}
-	try {
-		syncDisasters();
-	} catch (e) {
-		console.warn(`ZG-ASP disaster sync error: ${e}`);
+	for (const sync of TIER_AGE_SYNCS) {
+		try {
+			syncTierWithAges(sync);
+		} catch (e) {
+			console.warn(`ZG-ASP ${sync.tierId} sync error: ${e}`);
+		}
 	}
 	try {
 		syncCrises();

@@ -762,7 +762,245 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
+<!--************************* CRITERIA: TRIUMPH SET PER AGE ********************-->
+
+		<Criteria id="triumph-set-antiquity-default">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>LegacySet</ConfigurationId>
+				<Value>ZG_LEGACY_SET_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TriumphSetAntiquityKey</ConfigurationId>
+				<Value>ZG_TRIUMPHS_DEFAULT</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="triumph-set-antiquity-classic">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>LegacySet</ConfigurationId>
+				<Value>ZG_LEGACY_SET_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TriumphSetAntiquityKey</ConfigurationId>
+				<Value>ZG_TRIUMPHS_CLASSIC</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="triumph-set-antiquity-race">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>LegacySet</ConfigurationId>
+				<Value>ZG_LEGACY_SET_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TriumphSetAntiquityKey</ConfigurationId>
+				<Value>ZG_TRIUMPHS_RACE</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="triumph-set-antiquity-conqueror">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>LegacySet</ConfigurationId>
+				<Value>ZG_LEGACY_SET_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TriumphSetAntiquityKey</ConfigurationId>
+				<Value>ZG_TRIUMPHS_CONQUEROR</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="triumph-set-antiquity-explorer">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>LegacySet</ConfigurationId>
+				<Value>ZG_LEGACY_SET_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TriumphSetAntiquityKey</ConfigurationId>
+				<Value>ZG_TRIUMPHS_EXPLORER</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="triumph-set-antiquity-none">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>LegacySet</ConfigurationId>
+				<Value>ZG_LEGACY_SET_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TriumphSetAntiquityKey</ConfigurationId>
+				<Value>ZG_TRIUMPHS_NONE</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="triumph-set-exploration-default">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>LegacySet</ConfigurationId>
+				<Value>ZG_LEGACY_SET_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TriumphSetExplorationKey</ConfigurationId>
+				<Value>ZG_TRIUMPHS_DEFAULT</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="triumph-set-exploration-classic">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>LegacySet</ConfigurationId>
+				<Value>ZG_LEGACY_SET_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TriumphSetExplorationKey</ConfigurationId>
+				<Value>ZG_TRIUMPHS_CLASSIC</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="triumph-set-exploration-race">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>LegacySet</ConfigurationId>
+				<Value>ZG_LEGACY_SET_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TriumphSetExplorationKey</ConfigurationId>
+				<Value>ZG_TRIUMPHS_RACE</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="triumph-set-exploration-conqueror">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>LegacySet</ConfigurationId>
+				<Value>ZG_LEGACY_SET_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TriumphSetExplorationKey</ConfigurationId>
+				<Value>ZG_TRIUMPHS_CONQUEROR</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="triumph-set-exploration-explorer">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>LegacySet</ConfigurationId>
+				<Value>ZG_LEGACY_SET_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TriumphSetExplorationKey</ConfigurationId>
+				<Value>ZG_TRIUMPHS_EXPLORER</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="triumph-set-exploration-none">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>LegacySet</ConfigurationId>
+				<Value>ZG_LEGACY_SET_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TriumphSetExplorationKey</ConfigurationId>
+				<Value>ZG_TRIUMPHS_NONE</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="triumph-set-modern-default">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>LegacySet</ConfigurationId>
+				<Value>ZG_LEGACY_SET_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TriumphSetModernKey</ConfigurationId>
+				<Value>ZG_TRIUMPHS_DEFAULT</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="triumph-set-modern-classic">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>LegacySet</ConfigurationId>
+				<Value>ZG_LEGACY_SET_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TriumphSetModernKey</ConfigurationId>
+				<Value>ZG_TRIUMPHS_CLASSIC</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="triumph-set-modern-race">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>LegacySet</ConfigurationId>
+				<Value>ZG_LEGACY_SET_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TriumphSetModernKey</ConfigurationId>
+				<Value>ZG_TRIUMPHS_RACE</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="triumph-set-modern-conqueror">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>LegacySet</ConfigurationId>
+				<Value>ZG_LEGACY_SET_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TriumphSetModernKey</ConfigurationId>
+				<Value>ZG_TRIUMPHS_CONQUEROR</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="triumph-set-modern-explorer">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>LegacySet</ConfigurationId>
+				<Value>ZG_LEGACY_SET_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TriumphSetModernKey</ConfigurationId>
+				<Value>ZG_TRIUMPHS_EXPLORER</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="triumph-set-modern-none">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>LegacySet</ConfigurationId>
+				<Value>ZG_LEGACY_SET_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TriumphSetModernKey</ConfigurationId>
+				<Value>ZG_TRIUMPHS_NONE</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+
 <!--************************* CRITERIA: CUSTOM SETTLEMENT LIMIT *****************************-->
+<!-- Values 1-25 step by 1, then 30-75 step by 5; every age shares data/settlements/custom/settlement-limit-N.sql. -->
 
 		<Criteria id="custom-settlement-limit-antiquity-1">
 			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
@@ -1089,58 +1327,6 @@
 				<Value>ZG_SL_25</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="custom-settlement-limit-antiquity-26">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
-				<Value>ZG_SL_26</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-antiquity-27">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
-				<Value>ZG_SL_27</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-antiquity-28">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
-				<Value>ZG_SL_28</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-antiquity-29">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
-				<Value>ZG_SL_29</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
 		<Criteria id="custom-settlement-limit-antiquity-30">
 			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
 			<ConfigurationValueMatches>
@@ -1152,58 +1338,6 @@
 				<Group>Game</Group>
 				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
 				<Value>ZG_SL_30</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-antiquity-31">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
-				<Value>ZG_SL_31</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-antiquity-32">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
-				<Value>ZG_SL_32</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-antiquity-33">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
-				<Value>ZG_SL_33</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-antiquity-34">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
-				<Value>ZG_SL_34</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="custom-settlement-limit-antiquity-35">
@@ -1219,58 +1353,6 @@
 				<Value>ZG_SL_35</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="custom-settlement-limit-antiquity-36">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
-				<Value>ZG_SL_36</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-antiquity-37">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
-				<Value>ZG_SL_37</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-antiquity-38">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
-				<Value>ZG_SL_38</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-antiquity-39">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
-				<Value>ZG_SL_39</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
 		<Criteria id="custom-settlement-limit-antiquity-40">
 			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
 			<ConfigurationValueMatches>
@@ -1282,58 +1364,6 @@
 				<Group>Game</Group>
 				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
 				<Value>ZG_SL_40</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-antiquity-41">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
-				<Value>ZG_SL_41</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-antiquity-42">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
-				<Value>ZG_SL_42</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-antiquity-43">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
-				<Value>ZG_SL_43</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-antiquity-44">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
-				<Value>ZG_SL_44</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="custom-settlement-limit-antiquity-45">
@@ -1349,58 +1379,6 @@
 				<Value>ZG_SL_45</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="custom-settlement-limit-antiquity-46">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
-				<Value>ZG_SL_46</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-antiquity-47">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
-				<Value>ZG_SL_47</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-antiquity-48">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
-				<Value>ZG_SL_48</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-antiquity-49">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
-				<Value>ZG_SL_49</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
 		<Criteria id="custom-settlement-limit-antiquity-50">
 			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
 			<ConfigurationValueMatches>
@@ -1412,6 +1390,71 @@
 				<Group>Game</Group>
 				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
 				<Value>ZG_SL_50</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="custom-settlement-limit-antiquity-55">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitKey</ConfigurationId>
+				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
+				<Value>ZG_SL_55</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="custom-settlement-limit-antiquity-60">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitKey</ConfigurationId>
+				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
+				<Value>ZG_SL_60</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="custom-settlement-limit-antiquity-65">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitKey</ConfigurationId>
+				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
+				<Value>ZG_SL_65</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="custom-settlement-limit-antiquity-70">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitKey</ConfigurationId>
+				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
+				<Value>ZG_SL_70</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="custom-settlement-limit-antiquity-75">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitKey</ConfigurationId>
+				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitAntiquityKey</ConfigurationId>
+				<Value>ZG_SL_75</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="custom-settlement-limit-exploration-1">
@@ -1739,58 +1782,6 @@
 				<Value>ZG_SL_25</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="custom-settlement-limit-exploration-26">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
-				<Value>ZG_SL_26</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-exploration-27">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
-				<Value>ZG_SL_27</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-exploration-28">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
-				<Value>ZG_SL_28</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-exploration-29">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
-				<Value>ZG_SL_29</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
 		<Criteria id="custom-settlement-limit-exploration-30">
 			<AgeInUse>AGE_EXPLORATION</AgeInUse>
 			<ConfigurationValueMatches>
@@ -1802,58 +1793,6 @@
 				<Group>Game</Group>
 				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
 				<Value>ZG_SL_30</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-exploration-31">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
-				<Value>ZG_SL_31</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-exploration-32">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
-				<Value>ZG_SL_32</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-exploration-33">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
-				<Value>ZG_SL_33</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-exploration-34">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
-				<Value>ZG_SL_34</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="custom-settlement-limit-exploration-35">
@@ -1869,58 +1808,6 @@
 				<Value>ZG_SL_35</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="custom-settlement-limit-exploration-36">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
-				<Value>ZG_SL_36</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-exploration-37">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
-				<Value>ZG_SL_37</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-exploration-38">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
-				<Value>ZG_SL_38</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-exploration-39">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
-				<Value>ZG_SL_39</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
 		<Criteria id="custom-settlement-limit-exploration-40">
 			<AgeInUse>AGE_EXPLORATION</AgeInUse>
 			<ConfigurationValueMatches>
@@ -1932,58 +1819,6 @@
 				<Group>Game</Group>
 				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
 				<Value>ZG_SL_40</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-exploration-41">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
-				<Value>ZG_SL_41</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-exploration-42">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
-				<Value>ZG_SL_42</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-exploration-43">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
-				<Value>ZG_SL_43</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-exploration-44">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
-				<Value>ZG_SL_44</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="custom-settlement-limit-exploration-45">
@@ -1999,58 +1834,6 @@
 				<Value>ZG_SL_45</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="custom-settlement-limit-exploration-46">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
-				<Value>ZG_SL_46</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-exploration-47">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
-				<Value>ZG_SL_47</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-exploration-48">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
-				<Value>ZG_SL_48</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-exploration-49">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
-				<Value>ZG_SL_49</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
 		<Criteria id="custom-settlement-limit-exploration-50">
 			<AgeInUse>AGE_EXPLORATION</AgeInUse>
 			<ConfigurationValueMatches>
@@ -2062,6 +1845,71 @@
 				<Group>Game</Group>
 				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
 				<Value>ZG_SL_50</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="custom-settlement-limit-exploration-55">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitKey</ConfigurationId>
+				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
+				<Value>ZG_SL_55</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="custom-settlement-limit-exploration-60">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitKey</ConfigurationId>
+				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
+				<Value>ZG_SL_60</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="custom-settlement-limit-exploration-65">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitKey</ConfigurationId>
+				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
+				<Value>ZG_SL_65</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="custom-settlement-limit-exploration-70">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitKey</ConfigurationId>
+				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
+				<Value>ZG_SL_70</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="custom-settlement-limit-exploration-75">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitKey</ConfigurationId>
+				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitExplorationKey</ConfigurationId>
+				<Value>ZG_SL_75</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="custom-settlement-limit-modern-1">
@@ -2389,58 +2237,6 @@
 				<Value>ZG_SL_25</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="custom-settlement-limit-modern-26">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
-				<Value>ZG_SL_26</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-modern-27">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
-				<Value>ZG_SL_27</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-modern-28">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
-				<Value>ZG_SL_28</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-modern-29">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
-				<Value>ZG_SL_29</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
 		<Criteria id="custom-settlement-limit-modern-30">
 			<AgeInUse>AGE_MODERN</AgeInUse>
 			<ConfigurationValueMatches>
@@ -2452,58 +2248,6 @@
 				<Group>Game</Group>
 				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
 				<Value>ZG_SL_30</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-modern-31">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
-				<Value>ZG_SL_31</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-modern-32">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
-				<Value>ZG_SL_32</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-modern-33">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
-				<Value>ZG_SL_33</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-modern-34">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
-				<Value>ZG_SL_34</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="custom-settlement-limit-modern-35">
@@ -2519,58 +2263,6 @@
 				<Value>ZG_SL_35</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="custom-settlement-limit-modern-36">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
-				<Value>ZG_SL_36</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-modern-37">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
-				<Value>ZG_SL_37</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-modern-38">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
-				<Value>ZG_SL_38</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-modern-39">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
-				<Value>ZG_SL_39</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
 		<Criteria id="custom-settlement-limit-modern-40">
 			<AgeInUse>AGE_MODERN</AgeInUse>
 			<ConfigurationValueMatches>
@@ -2582,58 +2274,6 @@
 				<Group>Game</Group>
 				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
 				<Value>ZG_SL_40</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-modern-41">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
-				<Value>ZG_SL_41</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-modern-42">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
-				<Value>ZG_SL_42</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-modern-43">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
-				<Value>ZG_SL_43</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-modern-44">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
-				<Value>ZG_SL_44</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="custom-settlement-limit-modern-45">
@@ -2649,58 +2289,6 @@
 				<Value>ZG_SL_45</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="custom-settlement-limit-modern-46">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
-				<Value>ZG_SL_46</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-modern-47">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
-				<Value>ZG_SL_47</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-modern-48">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
-				<Value>ZG_SL_48</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="custom-settlement-limit-modern-49">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitKey</ConfigurationId>
-				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
-				<Value>ZG_SL_49</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
 		<Criteria id="custom-settlement-limit-modern-50">
 			<AgeInUse>AGE_MODERN</AgeInUse>
 			<ConfigurationValueMatches>
@@ -2712,6 +2300,71 @@
 				<Group>Game</Group>
 				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
 				<Value>ZG_SL_50</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="custom-settlement-limit-modern-55">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitKey</ConfigurationId>
+				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
+				<Value>ZG_SL_55</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="custom-settlement-limit-modern-60">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitKey</ConfigurationId>
+				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
+				<Value>ZG_SL_60</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="custom-settlement-limit-modern-65">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitKey</ConfigurationId>
+				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
+				<Value>ZG_SL_65</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="custom-settlement-limit-modern-70">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitKey</ConfigurationId>
+				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
+				<Value>ZG_SL_70</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="custom-settlement-limit-modern-75">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitKey</ConfigurationId>
+				<Value>ZG_CUSTOM_SETTLEMENT_LIMIT_COUNT</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SettlementLimitModernKey</ConfigurationId>
+				<Value>ZG_SL_75</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 	</ActionCriteria>
@@ -2753,7 +2406,6 @@
 				</UpdateDatabase>
 				<ImportFiles>
 					<Item>maps/zg-map-rivers.js</Item>
-					<Item>maps/zg-map-lakes.js</Item>
 					<Item>maps/zg-map-mountains.js</Item>
 					<Item>maps/zg-continents-voronoi.js</Item>
 					<Item>maps/zg-pangaea-voronoi.js</Item>
@@ -2791,7 +2443,6 @@
 				</UpdateText>
 				<ImportFiles>
 					<Item>maps/zg-map-rivers.js</Item>
-					<Item>maps/zg-map-lakes.js</Item>
 					<Item>maps/zg-map-mountains.js</Item>
 					<Item>maps/zg-continents-voronoi.js</Item>
 					<Item>maps/zg-pangaea-voronoi.js</Item>
@@ -3273,7 +2924,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-5.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-5.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3283,7 +2934,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-1.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-1.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3293,7 +2944,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-12.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-12.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3303,7 +2954,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-4.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-4.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3313,7 +2964,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-20.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-20.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3323,7 +2974,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-10.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-10.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3726,6 +3377,204 @@
 			</Actions>
 		</ActionGroup>
 
+<!--************************* SETTINGS: TRIUMPH SET PER AGE ********************-->
+
+		<ActionGroup id="zg-triumph-set-antiquity-default" scope="game" criteria="triumph-set-antiquity-default">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/triumphs/triumph-set-custom.sql</Item>
+					<Item>data/triumphs/triumph-set-default.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-triumph-set-antiquity-classic" scope="game" criteria="triumph-set-antiquity-classic">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/triumphs/triumph-set-custom.sql</Item>
+					<Item>data/triumphs/triumph-set-classic.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-triumph-set-antiquity-race" scope="game" criteria="triumph-set-antiquity-race">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/triumphs/triumph-set-custom.sql</Item>
+					<Item>data/triumphs/triumph-set-race.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-triumph-set-antiquity-conqueror" scope="game" criteria="triumph-set-antiquity-conqueror">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/triumphs/triumph-set-custom.sql</Item>
+					<Item>data/triumphs/triumph-set-conqueror.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-triumph-set-antiquity-explorer" scope="game" criteria="triumph-set-antiquity-explorer">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/triumphs/triumph-set-custom.sql</Item>
+					<Item>data/triumphs/triumph-set-explorer.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-triumph-set-antiquity-none" scope="game" criteria="triumph-set-antiquity-none">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/triumphs/triumph-set-custom.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-triumph-set-exploration-default" scope="game" criteria="triumph-set-exploration-default">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/triumphs/triumph-set-custom.sql</Item>
+					<Item>data/triumphs/triumph-set-default.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-triumph-set-exploration-classic" scope="game" criteria="triumph-set-exploration-classic">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/triumphs/triumph-set-custom.sql</Item>
+					<Item>data/triumphs/triumph-set-classic.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-triumph-set-exploration-race" scope="game" criteria="triumph-set-exploration-race">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/triumphs/triumph-set-custom.sql</Item>
+					<Item>data/triumphs/triumph-set-race.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-triumph-set-exploration-conqueror" scope="game" criteria="triumph-set-exploration-conqueror">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/triumphs/triumph-set-custom.sql</Item>
+					<Item>data/triumphs/triumph-set-conqueror.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-triumph-set-exploration-explorer" scope="game" criteria="triumph-set-exploration-explorer">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/triumphs/triumph-set-custom.sql</Item>
+					<Item>data/triumphs/triumph-set-explorer.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-triumph-set-exploration-none" scope="game" criteria="triumph-set-exploration-none">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/triumphs/triumph-set-custom.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-triumph-set-modern-default" scope="game" criteria="triumph-set-modern-default">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/triumphs/triumph-set-custom.sql</Item>
+					<Item>data/triumphs/triumph-set-default.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-triumph-set-modern-classic" scope="game" criteria="triumph-set-modern-classic">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/triumphs/triumph-set-custom.sql</Item>
+					<Item>data/triumphs/triumph-set-classic.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-triumph-set-modern-race" scope="game" criteria="triumph-set-modern-race">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/triumphs/triumph-set-custom.sql</Item>
+					<Item>data/triumphs/triumph-set-race.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-triumph-set-modern-conqueror" scope="game" criteria="triumph-set-modern-conqueror">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/triumphs/triumph-set-custom.sql</Item>
+					<Item>data/triumphs/triumph-set-conqueror.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-triumph-set-modern-explorer" scope="game" criteria="triumph-set-modern-explorer">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/triumphs/triumph-set-custom.sql</Item>
+					<Item>data/triumphs/triumph-set-explorer.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-triumph-set-modern-none" scope="game" criteria="triumph-set-modern-none">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/triumphs/triumph-set-custom.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
 <!--************************* SETTINGS: CUSTOM SETTLEMENT LIMIT *****************************-->
 
 		<ActionGroup id="zg-custom-settlement-limit-antiquity-1" scope="game" criteria="custom-settlement-limit-antiquity-1">
@@ -3734,7 +3583,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-1.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-1.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3744,7 +3593,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-2.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-2.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3754,7 +3603,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-3.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-3.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3764,7 +3613,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-4.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-4.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3774,7 +3623,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-5.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-5.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3784,7 +3633,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-6.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-6.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3794,7 +3643,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-7.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-7.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3804,7 +3653,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-8.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-8.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3814,7 +3663,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-9.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-9.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3824,7 +3673,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-10.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-10.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3834,7 +3683,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-11.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-11.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3844,7 +3693,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-12.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-12.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3854,7 +3703,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-13.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-13.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3864,7 +3713,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-14.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-14.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3874,7 +3723,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-15.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-15.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3884,7 +3733,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-16.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-16.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3894,7 +3743,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-17.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-17.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3904,7 +3753,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-18.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-18.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3914,7 +3763,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-19.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-19.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3924,7 +3773,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-20.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-20.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3934,7 +3783,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-21.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-21.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3944,7 +3793,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-22.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-22.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3954,7 +3803,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-23.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-23.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3964,7 +3813,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-24.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-24.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -3974,47 +3823,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-25.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-antiquity-26" scope="game" criteria="custom-settlement-limit-antiquity-26">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-26.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-antiquity-27" scope="game" criteria="custom-settlement-limit-antiquity-27">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-27.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-antiquity-28" scope="game" criteria="custom-settlement-limit-antiquity-28">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-28.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-antiquity-29" scope="game" criteria="custom-settlement-limit-antiquity-29">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-29.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-25.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4024,47 +3833,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-30.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-antiquity-31" scope="game" criteria="custom-settlement-limit-antiquity-31">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-31.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-antiquity-32" scope="game" criteria="custom-settlement-limit-antiquity-32">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-32.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-antiquity-33" scope="game" criteria="custom-settlement-limit-antiquity-33">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-33.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-antiquity-34" scope="game" criteria="custom-settlement-limit-antiquity-34">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-34.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-30.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4074,47 +3843,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-35.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-antiquity-36" scope="game" criteria="custom-settlement-limit-antiquity-36">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-36.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-antiquity-37" scope="game" criteria="custom-settlement-limit-antiquity-37">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-37.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-antiquity-38" scope="game" criteria="custom-settlement-limit-antiquity-38">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-38.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-antiquity-39" scope="game" criteria="custom-settlement-limit-antiquity-39">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-39.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-35.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4124,47 +3853,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-40.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-antiquity-41" scope="game" criteria="custom-settlement-limit-antiquity-41">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-41.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-antiquity-42" scope="game" criteria="custom-settlement-limit-antiquity-42">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-42.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-antiquity-43" scope="game" criteria="custom-settlement-limit-antiquity-43">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-43.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-antiquity-44" scope="game" criteria="custom-settlement-limit-antiquity-44">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-44.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-40.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4174,47 +3863,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-45.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-antiquity-46" scope="game" criteria="custom-settlement-limit-antiquity-46">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-46.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-antiquity-47" scope="game" criteria="custom-settlement-limit-antiquity-47">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-47.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-antiquity-48" scope="game" criteria="custom-settlement-limit-antiquity-48">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-48.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-antiquity-49" scope="game" criteria="custom-settlement-limit-antiquity-49">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-49.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-45.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4224,7 +3873,57 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-antiquity-50.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-50.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-custom-settlement-limit-antiquity-55" scope="game" criteria="custom-settlement-limit-antiquity-55">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/custom/settlement-limit-55.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-custom-settlement-limit-antiquity-60" scope="game" criteria="custom-settlement-limit-antiquity-60">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/custom/settlement-limit-60.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-custom-settlement-limit-antiquity-65" scope="game" criteria="custom-settlement-limit-antiquity-65">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/custom/settlement-limit-65.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-custom-settlement-limit-antiquity-70" scope="game" criteria="custom-settlement-limit-antiquity-70">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/custom/settlement-limit-70.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-custom-settlement-limit-antiquity-75" scope="game" criteria="custom-settlement-limit-antiquity-75">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/custom/settlement-limit-75.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4234,7 +3933,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-1.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-1.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4244,7 +3943,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-2.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-2.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4254,7 +3953,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-3.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-3.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4264,7 +3963,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-4.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-4.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4274,7 +3973,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-5.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-5.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4284,7 +3983,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-6.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-6.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4294,7 +3993,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-7.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-7.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4304,7 +4003,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-8.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-8.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4314,7 +4013,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-9.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-9.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4324,7 +4023,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-10.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-10.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4334,7 +4033,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-11.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-11.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4344,7 +4043,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-12.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-12.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4354,7 +4053,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-13.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-13.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4364,7 +4063,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-14.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-14.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4374,7 +4073,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-15.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-15.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4384,7 +4083,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-16.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-16.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4394,7 +4093,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-17.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-17.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4404,7 +4103,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-18.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-18.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4414,7 +4113,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-19.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-19.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4424,7 +4123,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-20.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-20.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4434,7 +4133,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-21.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-21.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4444,7 +4143,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-22.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-22.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4454,7 +4153,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-23.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-23.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4464,7 +4163,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-24.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-24.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4474,47 +4173,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-25.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-exploration-26" scope="game" criteria="custom-settlement-limit-exploration-26">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-26.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-exploration-27" scope="game" criteria="custom-settlement-limit-exploration-27">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-27.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-exploration-28" scope="game" criteria="custom-settlement-limit-exploration-28">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-28.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-exploration-29" scope="game" criteria="custom-settlement-limit-exploration-29">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-29.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-25.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4524,47 +4183,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-30.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-exploration-31" scope="game" criteria="custom-settlement-limit-exploration-31">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-31.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-exploration-32" scope="game" criteria="custom-settlement-limit-exploration-32">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-32.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-exploration-33" scope="game" criteria="custom-settlement-limit-exploration-33">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-33.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-exploration-34" scope="game" criteria="custom-settlement-limit-exploration-34">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-34.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-30.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4574,47 +4193,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-35.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-exploration-36" scope="game" criteria="custom-settlement-limit-exploration-36">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-36.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-exploration-37" scope="game" criteria="custom-settlement-limit-exploration-37">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-37.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-exploration-38" scope="game" criteria="custom-settlement-limit-exploration-38">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-38.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-exploration-39" scope="game" criteria="custom-settlement-limit-exploration-39">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-39.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-35.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4624,47 +4203,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-40.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-exploration-41" scope="game" criteria="custom-settlement-limit-exploration-41">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-41.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-exploration-42" scope="game" criteria="custom-settlement-limit-exploration-42">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-42.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-exploration-43" scope="game" criteria="custom-settlement-limit-exploration-43">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-43.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-exploration-44" scope="game" criteria="custom-settlement-limit-exploration-44">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-44.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-40.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4674,47 +4213,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-45.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-exploration-46" scope="game" criteria="custom-settlement-limit-exploration-46">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-46.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-exploration-47" scope="game" criteria="custom-settlement-limit-exploration-47">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-47.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-exploration-48" scope="game" criteria="custom-settlement-limit-exploration-48">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-48.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-exploration-49" scope="game" criteria="custom-settlement-limit-exploration-49">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-49.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-45.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4724,7 +4223,57 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-exploration-50.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-50.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-custom-settlement-limit-exploration-55" scope="game" criteria="custom-settlement-limit-exploration-55">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/custom/settlement-limit-55.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-custom-settlement-limit-exploration-60" scope="game" criteria="custom-settlement-limit-exploration-60">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/custom/settlement-limit-60.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-custom-settlement-limit-exploration-65" scope="game" criteria="custom-settlement-limit-exploration-65">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/custom/settlement-limit-65.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-custom-settlement-limit-exploration-70" scope="game" criteria="custom-settlement-limit-exploration-70">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/custom/settlement-limit-70.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-custom-settlement-limit-exploration-75" scope="game" criteria="custom-settlement-limit-exploration-75">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/custom/settlement-limit-75.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4734,7 +4283,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-1.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-1.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4744,7 +4293,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-2.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-2.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4754,7 +4303,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-3.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-3.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4764,7 +4313,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-4.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-4.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4774,7 +4323,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-5.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-5.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4784,7 +4333,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-6.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-6.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4794,7 +4343,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-7.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-7.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4804,7 +4353,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-8.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-8.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4814,7 +4363,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-9.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-9.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4824,7 +4373,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-10.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-10.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4834,7 +4383,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-11.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-11.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4844,7 +4393,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-12.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-12.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4854,7 +4403,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-13.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-13.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4864,7 +4413,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-14.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-14.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4874,7 +4423,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-15.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-15.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4884,7 +4433,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-16.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-16.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4894,7 +4443,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-17.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-17.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4904,7 +4453,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-18.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-18.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4914,7 +4463,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-19.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-19.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4924,7 +4473,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-20.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-20.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4934,7 +4483,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-21.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-21.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4944,7 +4493,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-22.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-22.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4954,7 +4503,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-23.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-23.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4964,7 +4513,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-24.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-24.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -4974,47 +4523,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-25.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-modern-26" scope="game" criteria="custom-settlement-limit-modern-26">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-26.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-modern-27" scope="game" criteria="custom-settlement-limit-modern-27">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-27.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-modern-28" scope="game" criteria="custom-settlement-limit-modern-28">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-28.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-modern-29" scope="game" criteria="custom-settlement-limit-modern-29">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-29.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-25.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -5024,47 +4533,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-30.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-modern-31" scope="game" criteria="custom-settlement-limit-modern-31">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-31.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-modern-32" scope="game" criteria="custom-settlement-limit-modern-32">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-32.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-modern-33" scope="game" criteria="custom-settlement-limit-modern-33">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-33.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-modern-34" scope="game" criteria="custom-settlement-limit-modern-34">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-34.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-30.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -5074,47 +4543,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-35.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-modern-36" scope="game" criteria="custom-settlement-limit-modern-36">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-36.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-modern-37" scope="game" criteria="custom-settlement-limit-modern-37">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-37.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-modern-38" scope="game" criteria="custom-settlement-limit-modern-38">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-38.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-modern-39" scope="game" criteria="custom-settlement-limit-modern-39">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-39.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-35.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -5124,47 +4553,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-40.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-modern-41" scope="game" criteria="custom-settlement-limit-modern-41">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-41.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-modern-42" scope="game" criteria="custom-settlement-limit-modern-42">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-42.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-modern-43" scope="game" criteria="custom-settlement-limit-modern-43">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-43.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-modern-44" scope="game" criteria="custom-settlement-limit-modern-44">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-44.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-40.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -5174,47 +4563,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-45.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-modern-46" scope="game" criteria="custom-settlement-limit-modern-46">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-46.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-modern-47" scope="game" criteria="custom-settlement-limit-modern-47">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-47.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-modern-48" scope="game" criteria="custom-settlement-limit-modern-48">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-48.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-custom-settlement-limit-modern-49" scope="game" criteria="custom-settlement-limit-modern-49">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-49.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-45.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -5224,7 +4573,57 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/custom/settlement-limit-modern-50.sql</Item>
+					<Item>data/settlements/custom/settlement-limit-50.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-custom-settlement-limit-modern-55" scope="game" criteria="custom-settlement-limit-modern-55">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/custom/settlement-limit-55.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-custom-settlement-limit-modern-60" scope="game" criteria="custom-settlement-limit-modern-60">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/custom/settlement-limit-60.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-custom-settlement-limit-modern-65" scope="game" criteria="custom-settlement-limit-modern-65">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/custom/settlement-limit-65.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-custom-settlement-limit-modern-70" scope="game" criteria="custom-settlement-limit-modern-70">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/custom/settlement-limit-70.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-custom-settlement-limit-modern-75" scope="game" criteria="custom-settlement-limit-modern-75">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/custom/settlement-limit-75.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

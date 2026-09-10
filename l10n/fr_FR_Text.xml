@@ -101,25 +101,55 @@
 			<Text>Âge moderne</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="fr_FR">
-			<Text>Définit le mouvement de base et embarqué du colon.[n] [BLIST][LI] Lent : 2[icon:Action_Move]de base et 1[icon:Action_Move]embarqué.[LI] Par défaut : 3[icon:Action_Move]de base et 2[icon:Action_Move]embarqué.[LI] Rapide : 4[icon:Action_Move]de base et 3[icon:Action_Move]embarqué.[/BLIST]</Text>
+			<Text>Définit le mouvement de base et embarqué du colon.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_SLOW" Language="fr_FR">
+			<Text>[BLIST][LI] Lent : 2[icon:Action_Move]de base et 1[icon:Action_Move]embarqué.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="fr_FR">
+			<Text>[BLIST][LI] Par défaut : 3[icon:Action_Move]de base et 2[icon:Action_Move]embarqué.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="fr_FR">
+			<Text>[BLIST][LI] Rapide : 4[icon:Action_Move]de base et 3[icon:Action_Move]embarqué.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION" Language="fr_FR">
-			<Text>Définit le mouvement de base et embarqué du convoi de trésors.[n] [BLIST][LI] Lent : 1[icon:Action_Move]de mouvement de base et embarqué.[LI] Par défaut : 2[icon:Action_Move]de mouvement de base et embarqué.[LI] Rapide : 3[icon:Action_Move]de mouvement de base et embarqué.[/BLIST]</Text>
+			<Text>Définit le mouvement de base et embarqué du convoi de trésors.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_SLOW" Language="fr_FR">
+			<Text>[BLIST][LI] Lent : 1[icon:Action_Move]de mouvement de base et embarqué.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="fr_FR">
+			<Text>[BLIST][LI] Par défaut : 2[icon:Action_Move]de mouvement de base et embarqué.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="fr_FR">
+			<Text>[BLIST][LI] Rapide : 3[icon:Action_Move]de mouvement de base et embarqué.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION" Language="fr_FR">
-			<Text>Définit le nombre initial de [icon:INDEPENDENT_POWER]puissances indépendantes. Les résultats peuvent varier.[n] [BLIST][LI] Aucune : 0 puissance indépendante.[LI] Moins : 2 puissances indépendantes par civilisation.[LI] Par défaut : 3 puissances indépendantes par civilisation.[LI] Plus : 4 puissances indépendantes par civilisation.[/BLIST][n] [n]Le jeu tentera de générer le nombre souhaité, sans garantie du nombre exact.[n]Le résultat sera aussi proche que possible de la valeur attendue.</Text>
+			<Text>Définit le nombre initial de [icon:INDEPENDENT_POWER]puissances indépendantes. Les résultats peuvent varier.[n]Le jeu tentera de générer le nombre souhaité, sans garantie du nombre exact.[n]Le résultat sera aussi proche que possible de la valeur attendue.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_NONE" Language="fr_FR">
+			<Text>[BLIST][LI] Aucune : 0 puissance indépendante.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_LESS" Language="fr_FR">
+			<Text>[BLIST][LI] Moins : 2 puissances indépendantes par civilisation.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_DEFAULT" Language="fr_FR">
+			<Text>[BLIST][LI] Par défaut : 3 puissances indépendantes par civilisation.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_MORE" Language="fr_FR">
+			<Text>[BLIST][LI] Plus : 4 puissances indépendantes par civilisation.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION" Language="fr_FR">
 			<Text>Définit la distance minimale entre puissances indépendantes.[n] Cela peut influer sur leur nombre total.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_LESS" Language="fr_FR">
-			<Text>Définit la distance minimale entre puissances indépendantes.[n] Cela peut influer sur leur nombre total.[n] [BLIST][LI] Antiquité : 4 cases.[LI] Âge de l'exploration : 3 cases.[LI] Âge moderne : 2 cases.[/BLIST]</Text>
+			<Text>[BLIST][LI] Antiquité : 4 cases.[LI] Âge de l'exploration : 3 cases.[LI] Âge moderne : 2 cases.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_DEFAULT" Language="fr_FR">
-			<Text>Définit la distance minimale entre puissances indépendantes.[n] Cela peut influer sur leur nombre total.[n] [BLIST][LI] Antiquité : 6 cases.[LI] Âge de l'exploration : 6 cases.[LI] Âge moderne : 4 cases.[/BLIST]</Text>
+			<Text>[BLIST][LI] Antiquité : 6 cases.[LI] Âge de l'exploration : 6 cases.[LI] Âge moderne : 4 cases.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="fr_FR">
-			<Text>Définit la distance minimale entre puissances indépendantes.[n] Cela peut influer sur leur nombre total.[n] [BLIST][LI] Antiquité : 7 cases.[LI] Âge de l'exploration : 7 cases.[LI] Âge moderne : 5 cases.[/BLIST]</Text>
+			<Text>[BLIST][LI] Antiquité : 7 cases.[LI] Âge de l'exploration : 7 cases.[LI] Âge moderne : 5 cases.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION" Language="fr_FR">
 			<Text>Définit le nombre initial d'unités d'une puissance indépendante. [n] Les puissances indépendantes commencent toujours avec 1[icon:UNIT_SCOUT]Éclaireur.</Text>
@@ -146,19 +176,40 @@
 			<Text>Définit la [icon:SETTLEMENT_LIMIT]limite de colonies initiale de chaque âge.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_DEFAULT" Language="fr_FR">
-			<Text>Définit la [icon:SETTLEMENT_LIMIT]limite de colonies initiale de chaque âge.[n] [BLIST][LI] Antiquité : limite de colonies de 3.[LI] Âge de l'exploration : limite de colonies de 8.[LI] Âge moderne : limite de colonies de 16.[/BLIST]</Text>
+			<Text>[BLIST][LI] Antiquité : limite de colonies de 3.[LI] Âge de l'exploration : limite de colonies de 8.[LI] Âge moderne : limite de colonies de 16.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_MORE" Language="fr_FR">
-			<Text>Définit la [icon:SETTLEMENT_LIMIT]limite de colonies initiale de chaque âge.[n] [BLIST][LI] Antiquité : limite de colonies de 5.[LI] Âge de l'exploration : limite de colonies de 12.[LI] Âge moderne : limite de colonies de 20.[/BLIST]</Text>
+			<Text>[BLIST][LI] Antiquité : limite de colonies de 5.[LI] Âge de l'exploration : limite de colonies de 12.[LI] Âge moderne : limite de colonies de 20.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_LESS" Language="fr_FR">
-			<Text>Définit la [icon:SETTLEMENT_LIMIT]limite de colonies initiale de chaque âge.[n] [BLIST][LI] Antiquité : limite de colonies de 1.[LI] Âge de l'exploration : limite de colonies de 4.[LI] Âge moderne : limite de colonies de 10.[/BLIST]</Text>
+			<Text>[BLIST][LI] Antiquité : limite de colonies de 1.[LI] Âge de l'exploration : limite de colonies de 4.[LI] Âge moderne : limite de colonies de 10.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION" Language="fr_FR">
-			<Text>Définit la distance minimale entre les colonies.[n] [BLIST][LI] Moins : 2 cases.[LI] Par défaut : 3 cases.[LI] Plus : 4 cases.[/BLIST]</Text>
+			<Text>Définit la distance minimale entre les colonies.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_LESS" Language="fr_FR">
+			<Text>[BLIST][LI] Moins : 2 cases.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_DEFAULT" Language="fr_FR">
+			<Text>[BLIST][LI] Par défaut : 3 cases.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="fr_FR">
+			<Text>[BLIST][LI] Plus : 4 cases.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="fr_FR">
-			<Text>Définit le coût de production des unités de combat.[n] [BLIST][LI] Moins : 25% moins chères.[LI] Par défaut : aucune réduction.[LI] Plus : 25% plus chères.[LI] Cher : 50% plus chères.[/BLIST]</Text>
+			<Text>Définit le coût de production des unités de combat.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_LESS" Language="fr_FR">
+			<Text>[BLIST][LI] Moins : 25% moins chères.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DEFAULT" Language="fr_FR">
+			<Text>[BLIST][LI] Par défaut : aucune réduction.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_MORE" Language="fr_FR">
+			<Text>[BLIST][LI] Plus : 25% plus chères.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="fr_FR">
+			<Text>[BLIST][LI] Cher : 50% plus chères.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="fr_FR">
 			<Text>Active ou désactive toutes les crises.[n]Désactivé éteint chaque crise de la Sélection des crises.</Text>
@@ -170,34 +221,43 @@
 			<Text>Aucune crise ne se produit.[n]Mettez Crises sur Activé pour choisir un moment.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_EARLY" Language="fr_FR">
-			<Text>Définit le moment où les crises commencent.[n] [BLIST][LI] Phase 1 : commence à 50%.[LI] Phase 2 : commence à 65%.[LI] Phase 3 : commence à 85%.[/BLIST]</Text>
+			<Text>[BLIST][LI] Phase 1 : commence à 50%.[LI] Phase 2 : commence à 65%.[LI] Phase 3 : commence à 85%.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DEFAULT" Language="fr_FR">
-			<Text>Définit le moment où les crises commencent.[n] [BLIST][LI] Phase 1 : commence à 70%.[LI] Phase 2 : commence à 80%.[LI] Phase 3 : commence à 90%.[/BLIST]</Text>
+			<Text>[BLIST][LI] Phase 1 : commence à 70%.[LI] Phase 2 : commence à 80%.[LI] Phase 3 : commence à 90%.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_LATE" Language="fr_FR">
-			<Text>Définit le moment où les crises commencent.[n] [BLIST][LI] Phase 1 : commence à 85%.[LI] Phase 2 : commence à 90%.[LI] Phase 3 : commence à 95%.[/BLIST]</Text>
+			<Text>[BLIST][LI] Phase 1 : commence à 85%.[LI] Phase 2 : commence à 90%.[LI] Phase 3 : commence à 95%.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="fr_FR">
-			<Text>Définit le nombre de [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] merveilles naturelles sur la carte.[n] [BLIST][LI] Aucune : 0 merveille naturelle.[LI] Moitié : 50% de merveilles naturelles en moins.[LI] Par défaut : aucun changement.[LI] Plus : 50% de merveilles naturelles en plus.[LI] Double : 100% de merveilles naturelles en plus.[/BLIST]</Text>
+			<Text>Définit le nombre de [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] merveilles naturelles sur la carte.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE" Language="fr_FR">
-			<Text>Définit le nombre de [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] merveilles naturelles sur la carte.[n] Taille de la carte[n] [BLIST][LI] Minuscule : 0 merveilles naturelles.[LI] Petite : 0 merveilles naturelles.[LI] Standard : 0 merveilles naturelles.[LI] Grande : 0 merveilles naturelles.[LI] Immense : 0 merveilles naturelles.[/BLIST]</Text>
+			<Text>Taille de la carte[n] [BLIST][LI] Minuscule : 0 merveilles naturelles.[LI] Petite : 0 merveilles naturelles.[LI] Standard : 0 merveilles naturelles.[LI] Grande : 0 merveilles naturelles.[LI] Immense : 0 merveilles naturelles.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF" Language="fr_FR">
-			<Text>Définit le nombre de [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] merveilles naturelles sur la carte.[n] Taille de la carte[n] [BLIST][LI] Minuscule : 1 merveilles naturelles.[LI] Petite : 2 merveilles naturelles.[LI] Standard : 2 merveilles naturelles.[LI] Grande : 3 merveilles naturelles.[LI] Immense : 3 merveilles naturelles.[/BLIST]</Text>
+			<Text>Taille de la carte[n] [BLIST][LI] Minuscule : 1 merveilles naturelles.[LI] Petite : 2 merveilles naturelles.[LI] Standard : 2 merveilles naturelles.[LI] Grande : 3 merveilles naturelles.[LI] Immense : 3 merveilles naturelles.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DEFAULT" Language="fr_FR">
-			<Text>Définit le nombre de [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] merveilles naturelles sur la carte.[n] Taille de la carte[n] [BLIST][LI] Minuscule : 3 merveilles naturelles.[LI] Petite : 4 merveilles naturelles.[LI] Standard : 5 merveilles naturelles.[LI] Grande : 6 merveilles naturelles.[LI] Immense : 7 merveilles naturelles.[/BLIST]</Text>
+			<Text>Taille de la carte[n] [BLIST][LI] Minuscule : 3 merveilles naturelles.[LI] Petite : 4 merveilles naturelles.[LI] Standard : 5 merveilles naturelles.[LI] Grande : 6 merveilles naturelles.[LI] Immense : 7 merveilles naturelles.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE" Language="fr_FR">
-			<Text>Définit le nombre de [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] merveilles naturelles sur la carte.[n] Taille de la carte[n] [BLIST][LI] Minuscule : 5 merveilles naturelles.[LI] Petite : 6 merveilles naturelles.[LI] Standard : 8 merveilles naturelles.[LI] Grande : 9 merveilles naturelles.[LI] Immense : 11 merveilles naturelles.[/BLIST]</Text>
+			<Text>Taille de la carte[n] [BLIST][LI] Minuscule : 5 merveilles naturelles.[LI] Petite : 6 merveilles naturelles.[LI] Standard : 8 merveilles naturelles.[LI] Grande : 9 merveilles naturelles.[LI] Immense : 11 merveilles naturelles.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE" Language="fr_FR">
-			<Text>Définit le nombre de [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] merveilles naturelles sur la carte.[n] Taille de la carte[n] [BLIST][LI] Minuscule : 6 merveilles naturelles.[LI] Petite : 8 merveilles naturelles.[LI] Standard : 10 merveilles naturelles.[LI] Grande : 12 merveilles naturelles.[LI] Immense : 14 merveilles naturelles.[/BLIST]</Text>
+			<Text>Taille de la carte[n] [BLIST][LI] Minuscule : 6 merveilles naturelles.[LI] Petite : 8 merveilles naturelles.[LI] Standard : 10 merveilles naturelles.[LI] Grande : 12 merveilles naturelles.[LI] Immense : 14 merveilles naturelles.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION" Language="fr_FR">
 			<Text>Définit la fréquence des lacs sur la carte. Les résultats peuvent varier.[n] Le jeu tentera d'ajuster le nombre de lacs.[n] La génération de la carte peut toutefois rétablir la valeur par défaut.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_LESS" Language="fr_FR">
+			<Text>Génère moins de lacs.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DEFAULT" Language="fr_FR">
+			<Text>Génération de lacs standard pour le type de carte choisi.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_MORE" Language="fr_FR">
+			<Text>Génère plus de lacs.</Text>
 		</Replace>
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="fr_FR">
 			<Text>Advanced Settings Pro</Text>
@@ -235,6 +295,12 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="fr_FR">
 			<Text>Garder les deux</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="fr_FR">
+			<Text>Personnalisé : définissez l'ensemble de triomphes de chaque âge individuellement.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRIUMPH_SET_AGE_DESCRIPTION" Language="fr_FR">
+			<Text>Définit l'ensemble de triomphes de cet âge.[n]Ne s'applique que si l'ensemble de triomphes est sur Personnalisé.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM" Language="fr_FR">
 			<Text>Personnalisé : définissez la limite de colonies de chaque âge individuellement.</Text>
 		</Replace>
@@ -256,12 +322,6 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="fr_FR">
 			<Text>Génère plus de rivières, dont davantage de fleuves navigables.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DISABLED" Language="fr_FR">
-			<Text>Aucune rivière n'est générée.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_DISABLED" Language="fr_FR">
-			<Text>Aucun lac n'est généré.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="fr_FR">
 			<Text>Cher</Text>
 		</Replace>
@@ -269,7 +329,19 @@
 			<Text>Coût des unités civiles</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="fr_FR">
-			<Text>Définit le coût de production des unités civiles.[n] [BLIST][LI] Moins : 25% moins chères.[LI] Par défaut : aucune réduction.[LI] Plus : 25% plus chères.[LI] Cher : 50% plus chères.[/BLIST]</Text>
+			<Text>Définit le coût de production des unités civiles.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_LESS" Language="fr_FR">
+			<Text>[BLIST][LI] Moins : 25% moins chères.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DEFAULT" Language="fr_FR">
+			<Text>[BLIST][LI] Par défaut : aucune réduction.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_MORE" Language="fr_FR">
+			<Text>[BLIST][LI] Plus : 25% plus chères.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="fr_FR">
+			<Text>[BLIST][LI] Cher : 50% plus chères.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="fr_FR">
 			<Text>En ligne 2.0</Text>
@@ -375,9 +447,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION" Language="fr_FR">
 			<Text>Définit le nombre de montagnes générées à la création de la carte.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DISABLED" Language="fr_FR">
-			<Text>Aucune montagne n'est générée.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_LESS" Language="fr_FR">
 			<Text>Génère moins de montagnes.</Text>

@@ -67,21 +67,22 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Civilian Unit Cost: Less, Default, More, or Expensive
 - Natural Wonders: Disabled, Half, Default, More, or Double
 - Natural Wonder Selection: Enabled or Disabled for each of the 22 natural wonders, including DLC wonders
-- Lakes: Disabled, Less, Default, or More
-- Rivers: Disabled, Less, Default, or More
-- Mountains: Disabled, Less, Default, or More
+- Lakes: Less, Standard, or More
+- Rivers: Less, Standard, or More
+- Mountains: Less, Standard, or More
 - Crises: Enabled or Disabled, driving the game's per-crisis selection
 - Crisis Timing: Early, Default, or Late (Disabled while Crises is Disabled)
 - Settlement Limit: Less, Default, More, or Custom
-- Antiquity, Exploration, and Modern settlement limits: 1 to 50 each, applied when Settlement Limit is set to Custom
+- Antiquity, Exploration, and Modern settlement limits: 1 to 25, then 30 to 75 in steps of 5, applied when Settlement Limit is set to Custom
 - Settlement Distance: Less, Default, or More
 - Independent Amount: None, Less, Default, or More
 - Independent Spacing: Less, Default, or More
 - Independent Aggression: Calm, Default, or Raging (raid boldness plus starting independent units)
+- Triumph Set: adds Custom to the game's setting, with an Antiquity, Exploration, and Modern Triumph Set each choosable from the game's sets
 
 All settings are chosen at game creation and apply for the full game.
 
-In single player, the Advanced Settings screen gains a Map tab between General and Player that holds the map, natural wonder, and disaster settings, while the crisis settings move into their own Crisis Settings group on General; multiplayer keeps the game's standard layout.
+In single player, the Advanced Settings screen gains a Map tab between General and Player that holds the map, natural wonder, and disaster settings, while the crisis settings move into their own Crisis Settings group on General and Initial Independent Hostility joins the Independent Power settings; multiplayer keeps the game's standard layout.
 
 ## Project Structure
 
