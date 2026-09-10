@@ -33,11 +33,15 @@ UPDATE Parameters SET SupportsSinglePlayer = 1 WHERE ParameterID = 'SingleAgeGam
 --*******************************************************
 --***************** AGE LENGTH *************************
 --*******************************************************
--- Replaces the base Age Length setting with an extended version that adds
--- Brief (90) and Doubled (280) to the existing three options. The base
--- parameter is hidden so only one Age Length control is shown; it stays at
--- its Standard default while each option below sets the actual point total.
-UPDATE Parameters SET Hidden = 1 WHERE ParameterID = 'AgeLength';
+-- Extends the base Age Length setting (General tab) with Brief (90), Doubled
+-- (280), and Custom on the Ages tab. The base setting stays visible and drives
+-- the Ages tab setting; each option below sets the same point total for every
+-- base length so the engine's own choice never changes the result. The base
+-- setting also gains Custom, shown whenever the Ages tab holds a length the
+-- General tab does not offer.
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES
+        ('StandardAgeLengths', 'ZG_AGE_LENGTH_CUSTOM', 'LOC_ZG_CUSTOM_NAME', 'LOC_ZG_PACING_DESCRIPTION_CUSTOM', 40);
 
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES

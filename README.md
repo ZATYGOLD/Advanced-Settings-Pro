@@ -6,7 +6,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ### 0.8.0
 
-- Added an Ages tab to the single-player Advanced Settings screen with Game Pacing Settings (Age Length, now moved here, plus Age Progress Rate, Technology Cost, Civic Cost, City Growth, Roads, and Victory Project Cost) and an Antiquity, Exploration, and Modern group holding each setting's per-age row, used when the setting is Custom (Victory Project Cost is Modern-only)
+- Added an Ages tab to the single-player Advanced Settings screen with Game Pacing Settings (Age Length, Age Progress Rate, Technology Cost, Civic Cost, City Growth, Roads, and Victory Project Cost) and an Antiquity, Exploration, and Modern group holding each setting's per-age row, used when the setting is Custom (Victory Project Cost is Modern-only)
 - Added a Map tab to the single-player Advanced Settings screen, holding the map, natural wonder, and disaster settings; General keeps the game and crisis settings
 - Added Nachi Falls and Seongsan Ilchulbong (Japan & Korea Wonders) to Natural Wonder Selection, for 22 wonders in total
 - Split the game's disaster and crisis settings: a Disaster Settings group on the Map tab and a Crisis Settings group on General
@@ -80,7 +80,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Single Player No Age Transitions: Enabled or Disabled
 - Game Random Seed and Map Random Seed: a Random button beside each field rolls a new seed (single player)
 - Game Speed: adds Online 2.0 (150% faster than Standard) and Marathon 2.0 (400% slower than Standard)
-- Age Length: Brief, Abbreviated, Standard, Long, Doubled, or Custom (90 to 280 age progress points per age)
+- Age Length: Brief, Abbreviated, Standard, Long, Doubled, or Custom (90 to 280 age progress points per age). The game's own Age Length setting stays on the General tab (gaining Custom) and drives the Ages tab setting, which in turn drives the per-age rows; a per-age change shows Custom on both
 - Age Progress Rate: Slow, Standard, Fast, or Custom (milestone and future tech/civic points x0.5 / x1 / x1.5)
 - Technology Cost and Civic Cost: Cheaper (25% cheaper), Standard, Affordable (50% more), Expensive (100% more), or Custom
 - City Growth: Slow, Standard, Fast, or Custom

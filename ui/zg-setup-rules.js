@@ -17,14 +17,19 @@
 //   8. An age is changed away from the selected tier
 //      -> the primary setting switches to Custom.
 //
+// Age Length (mirrored settings):
+//   9. The General tab Age Length changes -> the Ages tab Age Length follows it.
+//  10. The Ages tab Age Length changes -> the General tab follows it, or shows
+//      Custom when it does not offer that length.
+//
 // Crises:
-//   9. Crises set to Disabled       -> every crisis in the selection is excluded.
-//  10. Crises leaves Disabled       -> every crisis in the selection is included.
-//  11. Every crisis excluded        -> Crises becomes Disabled; any crisis included
+//  11. Crises set to Disabled       -> every crisis in the selection is excluded.
+//  12. Crises leaves Disabled       -> every crisis in the selection is included.
+//  13. Every crisis excluded        -> Crises becomes Disabled; any crisis included
 //      while it says Disabled       -> Crises becomes Enabled.
-//  12. Crises Disabled              -> Crisis Timing shows Disabled; Crises Enabled
+//  14. Crises Disabled              -> Crisis Timing shows Disabled; Crises Enabled
 //      while the timing says Disabled -> the timing returns to Default.
-//  13. Crisis Timing set to Disabled -> Crises becomes Disabled; the timing leaves
+//  15. Crisis Timing set to Disabled -> Crises becomes Disabled; the timing leaves
 //      Disabled                     -> Crises becomes Enabled.
 
 const NW_COUNT_PARAM_ID = "ZG_NaturalWondersCount";
@@ -57,6 +62,11 @@ const TIER_AGE_SYNCS = [
 	{ tierId: "ZG_CivicCost", ageIds: ["ZG_CivicCostAntiquity", "ZG_CivicCostExploration", "ZG_CivicCostModern"], lastTier: null },
 	{ tierId: "ZG_CityGrowth", ageIds: ["ZG_CityGrowthAntiquity", "ZG_CityGrowthExploration", "ZG_CityGrowthModern"], lastTier: null },
 	{ tierId: "ZG_Roads", ageIds: ["ZG_RoadsAntiquity", "ZG_RoadsExploration", "ZG_RoadsModern"], lastTier: null },
+];
+
+// Base settings mirrored by a mod setting on another tab (rules 9 & 10).
+const MIRROR_SYNCS = [
+	{ primaryId: "AgeLength", mirrorId: "ZG_AgeLength", lastPrimary: null, lastMirror: null },
 ];
 
 const CRISES_PARAM_ID = "ZG_Crises";
@@ -237,6 +247,35 @@ function syncTierWithAges(sync) {
 	}
 }
 
+// ----------------------------------------------------------------- mirrors --
+
+function syncMirror(sync) {
+	const primaryParam = GameSetup.findGameParameter(sync.primaryId);
+	const mirrorParam = GameSetup.findGameParameter(sync.mirrorId);
+	if (!primaryParam || !mirrorParam) {
+		return;
+	}
+	const primary = currentValueName(primaryParam);
+	const mirror = currentValueName(mirrorParam);
+	const primaryChanged = sync.lastPrimary != null && primary != sync.lastPrimary;
+	const mirrorChanged = sync.lastMirror != null && mirror != sync.lastMirror;
+	sync.lastPrimary = primary;
+	sync.lastMirror = mirror;
+
+	// 9: the primary changed; the mirror follows it.
+	if (primaryChanged) {
+		setParamByName(sync.mirrorId, primary);
+		sync.lastMirror = primary;
+		return;
+	}
+	// 10: the mirror changed; the primary follows it or falls back to Custom.
+	if (mirrorChanged) {
+		const target = valueForName(primaryParam, mirror) != null ? mirror : TIER_CUSTOM;
+		setParamByName(sync.primaryId, target);
+		sync.lastPrimary = target;
+	}
+}
+
 // ------------------------------------------------------------------ crises --
 
 function syncCrises() {
@@ -255,7 +294,7 @@ function syncCrises() {
 	const timingParam = GameSetup.findGameParameter(CRISIS_TIMING_PARAM_ID);
 	const timing = timingParam ? currentValueName(timingParam) : null;
 
-	// 9 & 10: the player changed the toggle; cascade to the selection and timing.
+	// 11 & 12: the player changed the toggle; cascade to the selection and timing.
 	if (crisesLastToggle != null && toggle != crisesLastToggle) {
 		if (toggle == TOGGLE_DISABLED) {
 			GameSetup.setGameParameterValue(CRISES_SELECTION_PARAM_ID, possible);
@@ -271,7 +310,7 @@ function syncCrises() {
 		return;
 	}
 	crisesLastToggle = toggle;
-	// 13: the player changed the timing to or from Disabled; the toggle follows.
+	// 15: the player changed the timing to or from Disabled; the toggle follows.
 	if (timing != null && crisisTimingLast != null && timing != crisisTimingLast) {
 		if (timing == TIER_DISABLED && toggle != TOGGLE_DISABLED) {
 			setParamByName(CRISES_PARAM_ID, TOGGLE_DISABLED);
@@ -282,7 +321,7 @@ function syncCrises() {
 		return;
 	}
 	crisisTimingLast = timing;
-	// 11 & 12: keep the toggle truthful about the selection, and the timing about the toggle.
+	// 13 & 14: keep the toggle truthful about the selection, and the timing about the toggle.
 	if (allExcluded && toggle != TOGGLE_DISABLED) {
 		setParamByName(CRISES_PARAM_ID, TOGGLE_DISABLED);
 		setParamByName(CRISIS_TIMING_PARAM_ID, TIER_DISABLED);
@@ -320,6 +359,13 @@ setInterval(() => {
 		syncSettlementLimits();
 	} catch (e) {
 		console.warn(`ZG-ASP settlement sync error: ${e}`);
+	}
+	for (const sync of MIRROR_SYNCS) {
+		try {
+			syncMirror(sync);
+		} catch (e) {
+			console.warn(`ZG-ASP ${sync.primaryId} mirror sync error: ${e}`);
+		}
 	}
 	for (const sync of TIER_AGE_SYNCS) {
 		try {
