@@ -89,6 +89,7 @@ const TIER_AGE_SYNCS = [
 // or a per-age list (Antiquity, Exploration, Modern) that puts it on Custom.
 const PACE_PARAM_ID = "ZG_PacePreset";
 const PACE_MIRROR_PARAM_ID = "ZG_PaceSetMirror";
+const PACE_CUSTOM = "LOC_ZG_PACE_PRESET_CUSTOM_NAME";
 const PACE_STANDARD = {
 	[AGE_LENGTH_PARAM_ID]: "LOC_ADVANCED_OPTIONS_STANDARD",
 	ZG_AgeProgressRate: "LOC_ADVANCED_OPTIONS_STANDARD",
@@ -101,7 +102,7 @@ const PACE_STANDARD = {
 const PACE_PRESETS = {
 	"LOC_ZG_PACE_PRESET_STANDARD_NAME": PACE_STANDARD,
 	// Eras+ Balanced Extended+: age caps 153/166/196, its milestone curve, 1.5x techs and civics.
-	"LOC_ZG_BALANCED_NAME": {
+	"LOC_ZG_PACE_PRESET_BALANCED_NAME": {
 		...PACE_STANDARD,
 		[AGE_LENGTH_PARAM_ID]: ["LOC_ZG_NUM_153", "LOC_ZG_NUM_166", "LOC_ZG_NUM_196"],
 		ZG_AgeProgressRate: "LOC_ZG_BALANCED_NAME",
@@ -374,8 +375,8 @@ function syncPacePreset() {
 	}
 	// 10: a pacing setting no longer matches the preset; it becomes Custom.
 	if (preset && !matchesPacePreset(preset)) {
-		setParamByName(PACE_PARAM_ID, TIER_CUSTOM);
-		lastPace = TIER_CUSTOM;
+		setParamByName(PACE_PARAM_ID, PACE_CUSTOM);
+		lastPace = PACE_CUSTOM;
 	}
 }
 

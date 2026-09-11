@@ -187,8 +187,8 @@
 	<!-- Pace (All Ages) -->
 		<Row Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS"><Text>Pace Settings</Text></Row>
 		<Row Tag="LOC_ZG_FASTER_NAME"><Text>Faster</Text></Row>
-		<Row Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM"><Text>Custom: set this for each age individually.</Text></Row>
-		<Row Tag="LOC_ZG_PACING_AGE_DESCRIPTION"><Text>Sets this age's value.[n]Applies only when the matching Pace Settings row is set to Custom.</Text></Row>
+		<Row Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM"><Text>Custom: each age uses its own row in the age groups below.</Text></Row>
+		<Row Tag="LOC_ZG_PACING_AGE_DESCRIPTION"><Text>Sets this age's value.[n]Applies only when the matching Pace Settings row is set to Custom. Pace Set presets fill these rows; changing one switches Pace Set to Custom.</Text></Row>
 		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME"><Text>Age Progress Rate</Text></Row>
 		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION"><Text>Sets how quickly milestones and future techs and civics fill the age meter.</Text></Row>
 		<Row Tag="LOC_ZG_TECHNOLOGY_COST_NAME"><Text>Technology Cost</Text></Row>
@@ -528,6 +528,28 @@
 	<!-- Age Length -->
 		<Row Tag="LOC_ZG_AGE_LENGTH_BRIEF_NAME"><Text>Brief</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_DOUBLED_NAME"><Text>Doubled</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC"><Text>Custom: each age uses the Age Length row in its own group below. Balanced sets 153, 166, and 196 points; Multiplayer sets 140, 155, and 190.</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_90"><Text>[BLIST][LI] Online 2.0: 36 Points.[LI] Online: 45 Points.[LI] Quick: 60 Points.[LI] Standard: 90 Points.[LI] Epic: 135 Points.[LI] Marathon: 270 Points.[LI] Marathon 2.0: 450 Points.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100"><Text>[BLIST][LI] Online 2.0: 40 Points.[LI] Online: 50 Points.[LI] Quick: 67 Points.[LI] Standard: 100 Points.[LI] Epic: 150 Points.[LI] Marathon: 300 Points.[LI] Marathon 2.0: 500 Points.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110"><Text>[BLIST][LI] Online 2.0: 44 Points.[LI] Online: 55 Points.[LI] Quick: 73 Points.[LI] Standard: 110 Points.[LI] Epic: 165 Points.[LI] Marathon: 330 Points.[LI] Marathon 2.0: 550 Points.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120"><Text>[BLIST][LI] Online 2.0: 48 Points.[LI] Online: 60 Points.[LI] Quick: 80 Points.[LI] Standard: 120 Points.[LI] Epic: 180 Points.[LI] Marathon: 360 Points.[LI] Marathon 2.0: 600 Points.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130"><Text>[BLIST][LI] Online 2.0: 52 Points.[LI] Online: 65 Points.[LI] Quick: 87 Points.[LI] Standard: 130 Points.[LI] Epic: 195 Points.[LI] Marathon: 390 Points.[LI] Marathon 2.0: 650 Points.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140"><Text>[BLIST][LI] Online 2.0: 56 Points.[LI] Online: 70 Points.[LI] Quick: 93 Points.[LI] Standard: 140 Points.[LI] Epic: 210 Points.[LI] Marathon: 420 Points.[LI] Marathon 2.0: 700 Points.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150"><Text>[BLIST][LI] Online 2.0: 60 Points.[LI] Online: 75 Points.[LI] Quick: 100 Points.[LI] Standard: 150 Points.[LI] Epic: 225 Points.[LI] Marathon: 450 Points.[LI] Marathon 2.0: 750 Points.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153"><Text>[BLIST][LI] Online 2.0: 61 Points.[LI] Online: 76 Points.[LI] Quick: 102 Points.[LI] Standard: 153 Points.[LI] Epic: 230 Points.[LI] Marathon: 459 Points.[LI] Marathon 2.0: 765 Points.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155"><Text>[BLIST][LI] Online 2.0: 62 Points.[LI] Online: 78 Points.[LI] Quick: 103 Points.[LI] Standard: 155 Points.[LI] Epic: 232 Points.[LI] Marathon: 465 Points.[LI] Marathon 2.0: 775 Points.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160"><Text>[BLIST][LI] Online 2.0: 64 Points.[LI] Online: 80 Points.[LI] Quick: 107 Points.[LI] Standard: 160 Points.[LI] Epic: 240 Points.[LI] Marathon: 480 Points.[LI] Marathon 2.0: 800 Points.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166"><Text>[BLIST][LI] Online 2.0: 66 Points.[LI] Online: 83 Points.[LI] Quick: 111 Points.[LI] Standard: 166 Points.[LI] Epic: 249 Points.[LI] Marathon: 498 Points.[LI] Marathon 2.0: 830 Points.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170"><Text>[BLIST][LI] Online 2.0: 68 Points.[LI] Online: 85 Points.[LI] Quick: 113 Points.[LI] Standard: 170 Points.[LI] Epic: 255 Points.[LI] Marathon: 510 Points.[LI] Marathon 2.0: 850 Points.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180"><Text>[BLIST][LI] Online 2.0: 72 Points.[LI] Online: 90 Points.[LI] Quick: 120 Points.[LI] Standard: 180 Points.[LI] Epic: 270 Points.[LI] Marathon: 540 Points.[LI] Marathon 2.0: 900 Points.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190"><Text>[BLIST][LI] Online 2.0: 76 Points.[LI] Online: 95 Points.[LI] Quick: 127 Points.[LI] Standard: 190 Points.[LI] Epic: 285 Points.[LI] Marathon: 570 Points.[LI] Marathon 2.0: 950 Points.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196"><Text>[BLIST][LI] Online 2.0: 78 Points.[LI] Online: 98 Points.[LI] Quick: 131 Points.[LI] Standard: 196 Points.[LI] Epic: 294 Points.[LI] Marathon: 588 Points.[LI] Marathon 2.0: 980 Points.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200"><Text>[BLIST][LI] Online 2.0: 80 Points.[LI] Online: 100 Points.[LI] Quick: 133 Points.[LI] Standard: 200 Points.[LI] Epic: 300 Points.[LI] Marathon: 600 Points.[LI] Marathon 2.0: 1000 Points.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220"><Text>[BLIST][LI] Online 2.0: 88 Points.[LI] Online: 110 Points.[LI] Quick: 147 Points.[LI] Standard: 220 Points.[LI] Epic: 330 Points.[LI] Marathon: 660 Points.[LI] Marathon 2.0: 1100 Points.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240"><Text>[BLIST][LI] Online 2.0: 96 Points.[LI] Online: 120 Points.[LI] Quick: 160 Points.[LI] Standard: 240 Points.[LI] Epic: 360 Points.[LI] Marathon: 720 Points.[LI] Marathon 2.0: 1200 Points.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260"><Text>[BLIST][LI] Online 2.0: 104 Points.[LI] Online: 130 Points.[LI] Quick: 173 Points.[LI] Standard: 260 Points.[LI] Epic: 390 Points.[LI] Marathon: 780 Points.[LI] Marathon 2.0: 1300 Points.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280"><Text>[BLIST][LI] Online 2.0: 112 Points.[LI] Online: 140 Points.[LI] Quick: 187 Points.[LI] Standard: 280 Points.[LI] Epic: 420 Points.[LI] Marathon: 840 Points.[LI] Marathon 2.0: 1400 Points.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300"><Text>[BLIST][LI] Online 2.0: 120 Points.[LI] Online: 150 Points.[LI] Quick: 200 Points.[LI] Standard: 300 Points.[LI] Epic: 450 Points.[LI] Marathon: 900 Points.[LI] Marathon 2.0: 1500 Points.[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC">
 			<Text> Ages will end faster.
 				[n] [BLIST]
@@ -565,7 +587,7 @@
 			</Text>
 		</Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC">
-			<Text> The default age length.
+			<Text> The standard age length.
 				[n] [BLIST]
 				[LI] Online 2.0: 56 Points.
 				[LI] Online: 70 Points.
@@ -607,11 +629,13 @@
 		<Row Tag="LOC_ZG_PACE_PRESET_NAME"><Text>Pace Set</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION"><Text>Applies a pacing preset to the Pace Settings on the Pace tab.</Text></Row>
 		<Row Tag="LOC_ZG_BALANCED_NAME"><Text>Balanced</Text></Row>
-		<Row Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME"><Text>Multiplayer</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_BALANCED_NAME"><Text>Balanced Pace</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_CUSTOM_NAME"><Text>Custom Pace</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME"><Text>Multiplayer Pace</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME"><Text>Standard Pace</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD"><Text>Standard Pace: the game's own pacing. Sets every Pace Settings row to Standard.</Text></Row>
-		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED"><Text>Balanced: longer ages with Epic-style research. Sets Age Length to 153, 166, and 196 points by age, Age Progress Rate to Balanced, and Technology Cost and Civic Cost to High.</Text></Row>
-		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER"><Text>Multiplayer: a lighter stretch for sessions. Sets Age Length to 140, 155, and 190 points by age, Age Progress Rate to Balanced, Technology Cost to +35%, +50%, and +75% by age, Civic Cost to +45%, +60%, and +85%, City Growth to Slow, Roads to Fast (Express in Modern), and Modern Victory Project Cost to +20%.</Text></Row>
-		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM"><Text>Custom: the Pace Settings on the Pace tab no longer match a preset.</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED"><Text>Balanced Pace: longer ages with Epic-style research. Sets Age Length to 153, 166, and 196 points by age, Age Progress Rate to Balanced, and Technology Cost and Civic Cost to High.</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER"><Text>Multiplayer Pace: a lighter stretch for sessions. Sets Age Length to 140, 155, and 190 points by age, Age Progress Rate to Balanced, Technology Cost to +35%, +50%, and +75% by age, Civic Cost to +45%, +60%, and +85%, City Growth to Slow, Roads to Fast (Express in Modern), and Modern Victory Project Cost to +20%.</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM"><Text>Custom Pace: the Pace Settings on the Pace tab no longer match a preset.</Text></Row>
 	</EnglishText>
 </Database>

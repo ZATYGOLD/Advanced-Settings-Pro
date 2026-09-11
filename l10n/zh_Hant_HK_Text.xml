@@ -305,10 +305,10 @@
 			<Text>更快</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM" Language="zh_Hant_HK">
-			<Text>自訂：為每個時代單獨設定。</Text>
+			<Text>自訂：每個時代使用下方時代分組中各自的行。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>設定此時代的值。[n]僅當「節奏設定」中的設定為自訂時生效。</Text>
+			<Text>設定此時代的值。[n]僅當「節奏設定」中對應的行為自訂時生效。節奏套組預設會填寫這些行；修改任一行會將節奏套組切換為自訂。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="zh_Hant_HK">
 			<Text>時代進度速度</Text>
@@ -478,6 +478,72 @@
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_NAME" Language="zh_Hant_HK">
 			<Text>翻倍</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="zh_Hant_HK">
+			<Text>自訂：每個時代使用下方各自分組中的時代長度行。平衡設為153、166、196點；多人遊戲設為140、155、190點。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_90" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] Online 2.0: 36 點.[LI] Online: 45 點.[LI] Quick: 60 點.[LI] Standard: 90 點.[LI] Epic: 135 點.[LI] Marathon: 270 點.[LI] Marathon 2.0: 450 點.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] Online 2.0: 40 點.[LI] Online: 50 點.[LI] Quick: 67 點.[LI] Standard: 100 點.[LI] Epic: 150 點.[LI] Marathon: 300 點.[LI] Marathon 2.0: 500 點.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] Online 2.0: 44 點.[LI] Online: 55 點.[LI] Quick: 73 點.[LI] Standard: 110 點.[LI] Epic: 165 點.[LI] Marathon: 330 點.[LI] Marathon 2.0: 550 點.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] Online 2.0: 48 點.[LI] Online: 60 點.[LI] Quick: 80 點.[LI] Standard: 120 點.[LI] Epic: 180 點.[LI] Marathon: 360 點.[LI] Marathon 2.0: 600 點.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] Online 2.0: 52 點.[LI] Online: 65 點.[LI] Quick: 87 點.[LI] Standard: 130 點.[LI] Epic: 195 點.[LI] Marathon: 390 點.[LI] Marathon 2.0: 650 點.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] Online 2.0: 56 點.[LI] Online: 70 點.[LI] Quick: 93 點.[LI] Standard: 140 點.[LI] Epic: 210 點.[LI] Marathon: 420 點.[LI] Marathon 2.0: 700 點.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] Online 2.0: 60 點.[LI] Online: 75 點.[LI] Quick: 100 點.[LI] Standard: 150 點.[LI] Epic: 225 點.[LI] Marathon: 450 點.[LI] Marathon 2.0: 750 點.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] Online 2.0: 61 點.[LI] Online: 76 點.[LI] Quick: 102 點.[LI] Standard: 153 點.[LI] Epic: 230 點.[LI] Marathon: 459 點.[LI] Marathon 2.0: 765 點.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] Online 2.0: 62 點.[LI] Online: 78 點.[LI] Quick: 103 點.[LI] Standard: 155 點.[LI] Epic: 232 點.[LI] Marathon: 465 點.[LI] Marathon 2.0: 775 點.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] Online 2.0: 64 點.[LI] Online: 80 點.[LI] Quick: 107 點.[LI] Standard: 160 點.[LI] Epic: 240 點.[LI] Marathon: 480 點.[LI] Marathon 2.0: 800 點.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] Online 2.0: 66 點.[LI] Online: 83 點.[LI] Quick: 111 點.[LI] Standard: 166 點.[LI] Epic: 249 點.[LI] Marathon: 498 點.[LI] Marathon 2.0: 830 點.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] Online 2.0: 68 點.[LI] Online: 85 點.[LI] Quick: 113 點.[LI] Standard: 170 點.[LI] Epic: 255 點.[LI] Marathon: 510 點.[LI] Marathon 2.0: 850 點.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] Online 2.0: 72 點.[LI] Online: 90 點.[LI] Quick: 120 點.[LI] Standard: 180 點.[LI] Epic: 270 點.[LI] Marathon: 540 點.[LI] Marathon 2.0: 900 點.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] Online 2.0: 76 點.[LI] Online: 95 點.[LI] Quick: 127 點.[LI] Standard: 190 點.[LI] Epic: 285 點.[LI] Marathon: 570 點.[LI] Marathon 2.0: 950 點.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] Online 2.0: 78 點.[LI] Online: 98 點.[LI] Quick: 131 點.[LI] Standard: 196 點.[LI] Epic: 294 點.[LI] Marathon: 588 點.[LI] Marathon 2.0: 980 點.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] Online 2.0: 80 點.[LI] Online: 100 點.[LI] Quick: 133 點.[LI] Standard: 200 點.[LI] Epic: 300 點.[LI] Marathon: 600 點.[LI] Marathon 2.0: 1000 點.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] Online 2.0: 88 點.[LI] Online: 110 點.[LI] Quick: 147 點.[LI] Standard: 220 點.[LI] Epic: 330 點.[LI] Marathon: 660 點.[LI] Marathon 2.0: 1100 點.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] Online 2.0: 96 點.[LI] Online: 120 點.[LI] Quick: 160 點.[LI] Standard: 240 點.[LI] Epic: 360 點.[LI] Marathon: 720 點.[LI] Marathon 2.0: 1200 點.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] Online 2.0: 104 點.[LI] Online: 130 點.[LI] Quick: 173 點.[LI] Standard: 260 點.[LI] Epic: 390 點.[LI] Marathon: 780 點.[LI] Marathon 2.0: 1300 點.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] Online 2.0: 112 點.[LI] Online: 140 點.[LI] Quick: 187 點.[LI] Standard: 280 點.[LI] Epic: 420 點.[LI] Marathon: 840 點.[LI] Marathon 2.0: 1400 點.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] Online 2.0: 120 點.[LI] Online: 150 點.[LI] Quick: 200 點.[LI] Standard: 300 點.[LI] Epic: 450 點.[LI] Marathon: 900 點.[LI] Marathon 2.0: 1500 點.[/BLIST]</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="zh_Hant_HK">
 			<Text> 時代將會結束得更快。
 				[n] [BLIST]
@@ -515,7 +581,7 @@
 			</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="zh_Hant_HK">
-			<Text> 預設的時代長度。
+			<Text> 標準的時代長度。
 				[n] [BLIST]
 				[LI] Online 2.0: 56 點.
 				[LI] Online: 70 點.
@@ -583,8 +649,14 @@
 		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="zh_Hant_HK">
 			<Text>平衡</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_BALANCED_NAME" Language="zh_Hant_HK">
+			<Text>平衡節奏</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_CUSTOM_NAME" Language="zh_Hant_HK">
+			<Text>自訂節奏</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME" Language="zh_Hant_HK">
-			<Text>多人遊戲</Text>
+			<Text>多人節奏</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME" Language="zh_Hant_HK">
 			<Text>標準節奏</Text>
@@ -593,13 +665,13 @@
 			<Text>標準節奏：遊戲本身的節奏。將「節奏設定」中的所有設定設為標準。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="zh_Hant_HK">
-			<Text>平衡：以史詩式的研究節奏延長各時代。將時代長度按時代設為153、166、196點，時代進度速率設為平衡，科技花費和市政花費設為高。</Text>
+			<Text>平衡節奏：以史詩式的研究節奏延長各時代。將時代長度按時代設為153、166、196點，時代進度速率設為平衡，科技花費和市政花費設為高。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="zh_Hant_HK">
-			<Text>多人遊戲：面向連線對局的輕度延長。將時代長度按時代設為140、155、190點，時代進度速率設為平衡，科技花費按時代設為+35%、+50%、+75%，市政花費設為+45%、+60%、+85%，城市成長設為慢，道路設為快（現代為特快），現代勝利計畫花費設為+20%。</Text>
+			<Text>多人節奏：面向連線對局的輕度延長。將時代長度按時代設為140、155、190點，時代進度速率設為平衡，科技花費按時代設為+35%、+50%、+75%，市政花費設為+45%、+60%、+85%，城市成長設為慢，道路設為快（現代為特快），現代勝利計畫花費設為+20%。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="zh_Hant_HK">
-			<Text>自訂：「節奏」分頁中「節奏設定」的設定已不再與任何預設一致。</Text>
+			<Text>自訂節奏：「節奏」分頁中「節奏設定」的設定已不再與任何預設一致。</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

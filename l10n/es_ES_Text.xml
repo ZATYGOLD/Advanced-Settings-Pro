@@ -305,10 +305,10 @@
 			<Text>Más rápido</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM" Language="es_ES">
-			<Text>Personalizado: establece esto para cada era individualmente.</Text>
+			<Text>Personalizado: cada era usa su propia fila en los grupos de eras más abajo.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="es_ES">
-			<Text>Establece el valor de esta era.[n]Solo se aplica cuando la fila correspondiente de Configuración de ritmo está en Personalizado.</Text>
+			<Text>Establece el valor de esta era.[n]Solo se aplica cuando la fila correspondiente de Configuración de ritmo está en Personalizado. Los ajustes predefinidos del Conjunto de ritmo rellenan estas filas; cambiar una pone el Conjunto de ritmo en Personalizado.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="es_ES">
 			<Text>Progreso de la era</Text>
@@ -478,6 +478,72 @@
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_NAME" Language="es_ES">
 			<Text>Duplicado</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="es_ES">
+			<Text>Personalizado: cada era usa la fila Duración de las eras de su propio grupo más abajo. Equilibrado fija 153, 166 y 196 puntos; Multijugador fija 140, 155 y 190.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_90" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 36 puntos.[LI] Online: 45 puntos.[LI] Quick: 60 puntos.[LI] Standard: 90 puntos.[LI] Epic: 135 puntos.[LI] Marathon: 270 puntos.[LI] Marathon 2.0: 450 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 40 puntos.[LI] Online: 50 puntos.[LI] Quick: 67 puntos.[LI] Standard: 100 puntos.[LI] Epic: 150 puntos.[LI] Marathon: 300 puntos.[LI] Marathon 2.0: 500 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 44 puntos.[LI] Online: 55 puntos.[LI] Quick: 73 puntos.[LI] Standard: 110 puntos.[LI] Epic: 165 puntos.[LI] Marathon: 330 puntos.[LI] Marathon 2.0: 550 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 48 puntos.[LI] Online: 60 puntos.[LI] Quick: 80 puntos.[LI] Standard: 120 puntos.[LI] Epic: 180 puntos.[LI] Marathon: 360 puntos.[LI] Marathon 2.0: 600 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 52 puntos.[LI] Online: 65 puntos.[LI] Quick: 87 puntos.[LI] Standard: 130 puntos.[LI] Epic: 195 puntos.[LI] Marathon: 390 puntos.[LI] Marathon 2.0: 650 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 56 puntos.[LI] Online: 70 puntos.[LI] Quick: 93 puntos.[LI] Standard: 140 puntos.[LI] Epic: 210 puntos.[LI] Marathon: 420 puntos.[LI] Marathon 2.0: 700 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 60 puntos.[LI] Online: 75 puntos.[LI] Quick: 100 puntos.[LI] Standard: 150 puntos.[LI] Epic: 225 puntos.[LI] Marathon: 450 puntos.[LI] Marathon 2.0: 750 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 61 puntos.[LI] Online: 76 puntos.[LI] Quick: 102 puntos.[LI] Standard: 153 puntos.[LI] Epic: 230 puntos.[LI] Marathon: 459 puntos.[LI] Marathon 2.0: 765 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 62 puntos.[LI] Online: 78 puntos.[LI] Quick: 103 puntos.[LI] Standard: 155 puntos.[LI] Epic: 232 puntos.[LI] Marathon: 465 puntos.[LI] Marathon 2.0: 775 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 64 puntos.[LI] Online: 80 puntos.[LI] Quick: 107 puntos.[LI] Standard: 160 puntos.[LI] Epic: 240 puntos.[LI] Marathon: 480 puntos.[LI] Marathon 2.0: 800 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 66 puntos.[LI] Online: 83 puntos.[LI] Quick: 111 puntos.[LI] Standard: 166 puntos.[LI] Epic: 249 puntos.[LI] Marathon: 498 puntos.[LI] Marathon 2.0: 830 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 68 puntos.[LI] Online: 85 puntos.[LI] Quick: 113 puntos.[LI] Standard: 170 puntos.[LI] Epic: 255 puntos.[LI] Marathon: 510 puntos.[LI] Marathon 2.0: 850 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 72 puntos.[LI] Online: 90 puntos.[LI] Quick: 120 puntos.[LI] Standard: 180 puntos.[LI] Epic: 270 puntos.[LI] Marathon: 540 puntos.[LI] Marathon 2.0: 900 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 76 puntos.[LI] Online: 95 puntos.[LI] Quick: 127 puntos.[LI] Standard: 190 puntos.[LI] Epic: 285 puntos.[LI] Marathon: 570 puntos.[LI] Marathon 2.0: 950 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 78 puntos.[LI] Online: 98 puntos.[LI] Quick: 131 puntos.[LI] Standard: 196 puntos.[LI] Epic: 294 puntos.[LI] Marathon: 588 puntos.[LI] Marathon 2.0: 980 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 80 puntos.[LI] Online: 100 puntos.[LI] Quick: 133 puntos.[LI] Standard: 200 puntos.[LI] Epic: 300 puntos.[LI] Marathon: 600 puntos.[LI] Marathon 2.0: 1000 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 88 puntos.[LI] Online: 110 puntos.[LI] Quick: 147 puntos.[LI] Standard: 220 puntos.[LI] Epic: 330 puntos.[LI] Marathon: 660 puntos.[LI] Marathon 2.0: 1100 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 96 puntos.[LI] Online: 120 puntos.[LI] Quick: 160 puntos.[LI] Standard: 240 puntos.[LI] Epic: 360 puntos.[LI] Marathon: 720 puntos.[LI] Marathon 2.0: 1200 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 104 puntos.[LI] Online: 130 puntos.[LI] Quick: 173 puntos.[LI] Standard: 260 puntos.[LI] Epic: 390 puntos.[LI] Marathon: 780 puntos.[LI] Marathon 2.0: 1300 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 112 puntos.[LI] Online: 140 puntos.[LI] Quick: 187 puntos.[LI] Standard: 280 puntos.[LI] Epic: 420 puntos.[LI] Marathon: 840 puntos.[LI] Marathon 2.0: 1400 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 120 puntos.[LI] Online: 150 puntos.[LI] Quick: 200 puntos.[LI] Standard: 300 puntos.[LI] Epic: 450 puntos.[LI] Marathon: 900 puntos.[LI] Marathon 2.0: 1500 puntos.[/BLIST]</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="es_ES">
 			<Text> Las eras terminarán antes.
 				[n] [BLIST]
@@ -515,7 +581,7 @@
 			</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="es_ES">
-			<Text> La duración de era predeterminada.
+			<Text> La duración de era estándar.
 				[n] [BLIST]
 				[LI] Online 2.0: 56 puntos.
 				[LI] Online: 70 puntos.
@@ -583,8 +649,14 @@
 		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="es_ES">
 			<Text>Equilibrado</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_BALANCED_NAME" Language="es_ES">
+			<Text>Ritmo equilibrado</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_CUSTOM_NAME" Language="es_ES">
+			<Text>Ritmo personalizado</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME" Language="es_ES">
-			<Text>Multijugador</Text>
+			<Text>Ritmo multijugador</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME" Language="es_ES">
 			<Text>Ritmo estándar</Text>
@@ -593,13 +665,13 @@
 			<Text>Ritmo estándar: el ritmo propio del juego. Pone todas las filas de Configuración de ritmo en Estándar.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="es_ES">
-			<Text>Equilibrado: eras más largas con investigación al estilo Épico. Pone Duración de las eras en 153, 166 y 196 puntos por era, Ritmo de progreso de era en Equilibrado y Coste de tecnologías y Coste de principios en Alto.</Text>
+			<Text>Ritmo equilibrado: eras más largas con investigación al estilo Épico. Pone Duración de las eras en 153, 166 y 196 puntos por era, Ritmo de progreso de era en Equilibrado y Coste de tecnologías y Coste de principios en Alto.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="es_ES">
-			<Text>Multijugador: una extensión más ligera para sesiones. Pone Duración de las eras en 140, 155 y 190 puntos por era, Ritmo de progreso de era en Equilibrado, Coste de tecnologías en +35%, +50% y +75% por era, Coste de principios en +45%, +60% y +85%, Crecimiento de ciudades en Lento, Carreteras en Rápido (Exprés en la Era Moderna) y Coste de proyectos de victoria en +20% en la Era Moderna.</Text>
+			<Text>Ritmo multijugador: una extensión más ligera para sesiones. Pone Duración de las eras en 140, 155 y 190 puntos por era, Ritmo de progreso de era en Equilibrado, Coste de tecnologías en +35%, +50% y +75% por era, Coste de principios en +45%, +60% y +85%, Crecimiento de ciudades en Lento, Carreteras en Rápido (Exprés en la Era Moderna) y Coste de proyectos de victoria en +20% en la Era Moderna.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="es_ES">
-			<Text>Personalizado: la Configuración de ritmo de la pestaña Ritmo ya no coincide con ningún ajuste predefinido.</Text>
+			<Text>Ritmo personalizado: la Configuración de ritmo de la pestaña Ritmo ya no coincide con ningún ajuste predefinido.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

@@ -305,10 +305,10 @@
 			<Text>Schneller</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM" Language="de_DE">
-			<Text>Benutzerdefiniert: Lege dies für jedes Zeitalter einzeln fest.</Text>
+			<Text>Benutzerdefiniert: Jedes Zeitalter nutzt seine eigene Zeile in den Zeitalter-Gruppen darunter.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="de_DE">
-			<Text>Legt den Wert dieses Zeitalters fest.[n]Gilt nur, wenn die zugehörige Zeile unter „Tempo-Einstellungen“ auf Benutzerdefiniert steht.</Text>
+			<Text>Legt den Wert dieses Zeitalters fest.[n]Gilt nur, wenn die zugehörige Zeile unter „Tempo-Einstellungen“ auf Benutzerdefiniert steht. Tempo-Set-Vorlagen füllen diese Zeilen; eine Änderung stellt das Tempo-Set auf Benutzerdefiniert.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="de_DE">
 			<Text>Zeitalterfortschritt</Text>
@@ -478,6 +478,72 @@
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_NAME" Language="de_DE">
 			<Text>Verdoppelt</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="de_DE">
+			<Text>Benutzerdefiniert: Jedes Zeitalter nutzt die Zeile „Zeitalterlänge“ in seiner eigenen Gruppe darunter. Ausgewogen setzt 153, 166 und 196 Punkte; Mehrspieler setzt 140, 155 und 190.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_90" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 36 Punkte.[LI] Online: 45 Punkte.[LI] Quick: 60 Punkte.[LI] Standard: 90 Punkte.[LI] Epic: 135 Punkte.[LI] Marathon: 270 Punkte.[LI] Marathon 2.0: 450 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 40 Punkte.[LI] Online: 50 Punkte.[LI] Quick: 67 Punkte.[LI] Standard: 100 Punkte.[LI] Epic: 150 Punkte.[LI] Marathon: 300 Punkte.[LI] Marathon 2.0: 500 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 44 Punkte.[LI] Online: 55 Punkte.[LI] Quick: 73 Punkte.[LI] Standard: 110 Punkte.[LI] Epic: 165 Punkte.[LI] Marathon: 330 Punkte.[LI] Marathon 2.0: 550 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 48 Punkte.[LI] Online: 60 Punkte.[LI] Quick: 80 Punkte.[LI] Standard: 120 Punkte.[LI] Epic: 180 Punkte.[LI] Marathon: 360 Punkte.[LI] Marathon 2.0: 600 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 52 Punkte.[LI] Online: 65 Punkte.[LI] Quick: 87 Punkte.[LI] Standard: 130 Punkte.[LI] Epic: 195 Punkte.[LI] Marathon: 390 Punkte.[LI] Marathon 2.0: 650 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 56 Punkte.[LI] Online: 70 Punkte.[LI] Quick: 93 Punkte.[LI] Standard: 140 Punkte.[LI] Epic: 210 Punkte.[LI] Marathon: 420 Punkte.[LI] Marathon 2.0: 700 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 60 Punkte.[LI] Online: 75 Punkte.[LI] Quick: 100 Punkte.[LI] Standard: 150 Punkte.[LI] Epic: 225 Punkte.[LI] Marathon: 450 Punkte.[LI] Marathon 2.0: 750 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 61 Punkte.[LI] Online: 76 Punkte.[LI] Quick: 102 Punkte.[LI] Standard: 153 Punkte.[LI] Epic: 230 Punkte.[LI] Marathon: 459 Punkte.[LI] Marathon 2.0: 765 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 62 Punkte.[LI] Online: 78 Punkte.[LI] Quick: 103 Punkte.[LI] Standard: 155 Punkte.[LI] Epic: 232 Punkte.[LI] Marathon: 465 Punkte.[LI] Marathon 2.0: 775 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 64 Punkte.[LI] Online: 80 Punkte.[LI] Quick: 107 Punkte.[LI] Standard: 160 Punkte.[LI] Epic: 240 Punkte.[LI] Marathon: 480 Punkte.[LI] Marathon 2.0: 800 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 66 Punkte.[LI] Online: 83 Punkte.[LI] Quick: 111 Punkte.[LI] Standard: 166 Punkte.[LI] Epic: 249 Punkte.[LI] Marathon: 498 Punkte.[LI] Marathon 2.0: 830 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 68 Punkte.[LI] Online: 85 Punkte.[LI] Quick: 113 Punkte.[LI] Standard: 170 Punkte.[LI] Epic: 255 Punkte.[LI] Marathon: 510 Punkte.[LI] Marathon 2.0: 850 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 72 Punkte.[LI] Online: 90 Punkte.[LI] Quick: 120 Punkte.[LI] Standard: 180 Punkte.[LI] Epic: 270 Punkte.[LI] Marathon: 540 Punkte.[LI] Marathon 2.0: 900 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 76 Punkte.[LI] Online: 95 Punkte.[LI] Quick: 127 Punkte.[LI] Standard: 190 Punkte.[LI] Epic: 285 Punkte.[LI] Marathon: 570 Punkte.[LI] Marathon 2.0: 950 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 78 Punkte.[LI] Online: 98 Punkte.[LI] Quick: 131 Punkte.[LI] Standard: 196 Punkte.[LI] Epic: 294 Punkte.[LI] Marathon: 588 Punkte.[LI] Marathon 2.0: 980 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 80 Punkte.[LI] Online: 100 Punkte.[LI] Quick: 133 Punkte.[LI] Standard: 200 Punkte.[LI] Epic: 300 Punkte.[LI] Marathon: 600 Punkte.[LI] Marathon 2.0: 1000 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 88 Punkte.[LI] Online: 110 Punkte.[LI] Quick: 147 Punkte.[LI] Standard: 220 Punkte.[LI] Epic: 330 Punkte.[LI] Marathon: 660 Punkte.[LI] Marathon 2.0: 1100 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 96 Punkte.[LI] Online: 120 Punkte.[LI] Quick: 160 Punkte.[LI] Standard: 240 Punkte.[LI] Epic: 360 Punkte.[LI] Marathon: 720 Punkte.[LI] Marathon 2.0: 1200 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 104 Punkte.[LI] Online: 130 Punkte.[LI] Quick: 173 Punkte.[LI] Standard: 260 Punkte.[LI] Epic: 390 Punkte.[LI] Marathon: 780 Punkte.[LI] Marathon 2.0: 1300 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 112 Punkte.[LI] Online: 140 Punkte.[LI] Quick: 187 Punkte.[LI] Standard: 280 Punkte.[LI] Epic: 420 Punkte.[LI] Marathon: 840 Punkte.[LI] Marathon 2.0: 1400 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 120 Punkte.[LI] Online: 150 Punkte.[LI] Quick: 200 Punkte.[LI] Standard: 300 Punkte.[LI] Epic: 450 Punkte.[LI] Marathon: 900 Punkte.[LI] Marathon 2.0: 1500 Punkte.[/BLIST]</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="de_DE">
 			<Text> Zeitalter werden schneller beendet.
 				[n] [BLIST]
@@ -583,8 +649,14 @@
 		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="de_DE">
 			<Text>Ausgewogen</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_BALANCED_NAME" Language="de_DE">
+			<Text>Ausgewogenes Tempo</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_CUSTOM_NAME" Language="de_DE">
+			<Text>Benutzerdefiniertes Tempo</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME" Language="de_DE">
-			<Text>Mehrspieler</Text>
+			<Text>Mehrspieler-Tempo</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME" Language="de_DE">
 			<Text>Standardtempo</Text>
@@ -593,13 +665,13 @@
 			<Text>Standardtempo: das Tempo des Spiels. Setzt jede Zeile der Tempo-Einstellungen auf Standard.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="de_DE">
-			<Text>Ausgewogen: längere Zeitalter mit Forschung im Epic-Stil. Setzt Zeitalterlänge auf 153, 166 und 196 Punkte je Zeitalter, Zeitalterfortschritt auf Ausgewogen sowie Technologiekosten und Bürgerrechtskosten auf Hoch.</Text>
+			<Text>Ausgewogenes Tempo: längere Zeitalter mit Forschung im Epic-Stil. Setzt Zeitalterlänge auf 153, 166 und 196 Punkte je Zeitalter, Zeitalterfortschritt auf Ausgewogen sowie Technologiekosten und Bürgerrechtskosten auf Hoch.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="de_DE">
-			<Text>Mehrspieler: eine leichtere Streckung für Sitzungen. Setzt Zeitalterlänge auf 140, 155 und 190 Punkte je Zeitalter, Zeitalterfortschritt auf Ausgewogen, Technologiekosten auf +35%, +50% und +75% je Zeitalter, Bürgerrechtskosten auf +45%, +60% und +85%, Stadtwachstum auf Langsam, Straßen auf Schnell (Express in der Moderne) und Siegprojektkosten in der Moderne auf +20%.</Text>
+			<Text>Mehrspieler-Tempo: eine leichtere Streckung für Sitzungen. Setzt Zeitalterlänge auf 140, 155 und 190 Punkte je Zeitalter, Zeitalterfortschritt auf Ausgewogen, Technologiekosten auf +35%, +50% und +75% je Zeitalter, Bürgerrechtskosten auf +45%, +60% und +85%, Stadtwachstum auf Langsam, Straßen auf Schnell (Express in der Moderne) und Siegprojektkosten in der Moderne auf +20%.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="de_DE">
-			<Text>Benutzerdefiniert: Die Tempo-Einstellungen im Tempo-Reiter entsprechen keiner Vorlage mehr.</Text>
+			<Text>Benutzerdefiniertes Tempo: Die Tempo-Einstellungen im Tempo-Reiter entsprechen keiner Vorlage mehr.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

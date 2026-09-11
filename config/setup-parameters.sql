@@ -44,7 +44,7 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
         ('StandardAgeLengths', 'ZG_AGE_LENGTH_BRIEF', 'LOC_ZG_AGE_LENGTH_BRIEF_NAME', 'LOC_ZG_AGE_LENGTH_BRIEF_DESC', 5),
         ('StandardAgeLengths', 'ZG_AGE_LENGTH_DOUBLED', 'LOC_ZG_AGE_LENGTH_DOUBLED_NAME', 'LOC_ZG_AGE_LENGTH_DOUBLED_DESC', 35),
-        ('StandardAgeLengths', 'ZG_AGE_LENGTH_CUSTOM', 'LOC_ZG_CUSTOM_NAME', 'LOC_ZG_PACING_DESCRIPTION_CUSTOM', 40);
+        ('StandardAgeLengths', 'ZG_AGE_LENGTH_CUSTOM', 'LOC_ZG_CUSTOM_NAME', 'LOC_ZG_AGE_LENGTH_CUSTOM_DESC', 40);
 
 UPDATE DomainValues SET Description = 'LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC' WHERE Domain = 'StandardAgeLengths' AND Value = 'AGE_LENGTH_ABBREVIATED';
 UPDATE DomainValues SET Description = 'LOC_ZG_AGE_LENGTH_STANDARD_DESC' WHERE Domain = 'StandardAgeLengths' AND Value = 'AGE_LENGTH_STANDARD';
@@ -133,9 +133,9 @@ INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, Defaul
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
         ('ZG_PacePresetDomain', 'ZG_PACE_PRESET_STANDARD', 'LOC_ZG_PACE_PRESET_STANDARD_NAME', 'LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD', 10),
-        ('ZG_PacePresetDomain', 'ZG_PACE_PRESET_BALANCED', 'LOC_ZG_BALANCED_NAME', 'LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED', 20),
+        ('ZG_PacePresetDomain', 'ZG_PACE_PRESET_BALANCED', 'LOC_ZG_PACE_PRESET_BALANCED_NAME', 'LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED', 20),
         ('ZG_PacePresetDomain', 'ZG_PACE_PRESET_MULTIPLAYER', 'LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME', 'LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER', 30),
-        ('ZG_PacePresetDomain', 'ZG_PACE_PRESET_CUSTOM', 'LOC_ZG_CUSTOM_NAME', 'LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM', 40);
+        ('ZG_PacePresetDomain', 'ZG_PACE_PRESET_CUSTOM', 'LOC_ZG_PACE_PRESET_CUSTOM_NAME', 'LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM', 40);
 
 --*******************************************************
 --************* GAME PACING *****************************
@@ -177,27 +177,27 @@ INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, Defaul
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
-        ('ZG_AgeLengthAgeDomain', 'ZG_AL_90', 'LOC_ZG_NUM_90', 'LOC_ZG_NUM_90', 10),
-        ('ZG_AgeLengthAgeDomain', 'ZG_AL_100', 'LOC_ZG_NUM_100', 'LOC_ZG_NUM_100', 20),
-        ('ZG_AgeLengthAgeDomain', 'ZG_AL_110', 'LOC_ZG_NUM_110', 'LOC_ZG_NUM_110', 30),
-        ('ZG_AgeLengthAgeDomain', 'ZG_AL_120', 'LOC_ZG_NUM_120', 'LOC_ZG_NUM_120', 40),
-        ('ZG_AgeLengthAgeDomain', 'ZG_AL_130', 'LOC_ZG_NUM_130', 'LOC_ZG_NUM_130', 50),
-        ('ZG_AgeLengthAgeDomain', 'ZG_AL_140', 'LOC_ZG_NUM_140', 'LOC_ZG_NUM_140', 60),
-        ('ZG_AgeLengthAgeDomain', 'ZG_AL_150', 'LOC_ZG_NUM_150', 'LOC_ZG_NUM_150', 70),
-        ('ZG_AgeLengthAgeDomain', 'ZG_AL_153', 'LOC_ZG_NUM_153', 'LOC_ZG_NUM_153', 80),
-        ('ZG_AgeLengthAgeDomain', 'ZG_AL_155', 'LOC_ZG_NUM_155', 'LOC_ZG_NUM_155', 90),
-        ('ZG_AgeLengthAgeDomain', 'ZG_AL_160', 'LOC_ZG_NUM_160', 'LOC_ZG_NUM_160', 100),
-        ('ZG_AgeLengthAgeDomain', 'ZG_AL_166', 'LOC_ZG_NUM_166', 'LOC_ZG_NUM_166', 110),
-        ('ZG_AgeLengthAgeDomain', 'ZG_AL_170', 'LOC_ZG_NUM_170', 'LOC_ZG_NUM_170', 120),
-        ('ZG_AgeLengthAgeDomain', 'ZG_AL_180', 'LOC_ZG_NUM_180', 'LOC_ZG_NUM_180', 130),
-        ('ZG_AgeLengthAgeDomain', 'ZG_AL_190', 'LOC_ZG_NUM_190', 'LOC_ZG_NUM_190', 140),
-        ('ZG_AgeLengthAgeDomain', 'ZG_AL_196', 'LOC_ZG_NUM_196', 'LOC_ZG_NUM_196', 150),
-        ('ZG_AgeLengthAgeDomain', 'ZG_AL_200', 'LOC_ZG_NUM_200', 'LOC_ZG_NUM_200', 160),
-        ('ZG_AgeLengthAgeDomain', 'ZG_AL_220', 'LOC_ZG_NUM_220', 'LOC_ZG_NUM_220', 170),
-        ('ZG_AgeLengthAgeDomain', 'ZG_AL_240', 'LOC_ZG_NUM_240', 'LOC_ZG_NUM_240', 180),
-        ('ZG_AgeLengthAgeDomain', 'ZG_AL_260', 'LOC_ZG_NUM_260', 'LOC_ZG_NUM_260', 190),
-        ('ZG_AgeLengthAgeDomain', 'ZG_AL_280', 'LOC_ZG_NUM_280', 'LOC_ZG_NUM_280', 200),
-        ('ZG_AgeLengthAgeDomain', 'ZG_AL_300', 'LOC_ZG_NUM_300', 'LOC_ZG_NUM_300', 210),
+        ('ZG_AgeLengthAgeDomain', 'ZG_AL_90', 'LOC_ZG_NUM_90', 'LOC_ZG_AGE_LENGTH_POINTS_DESC_90', 10),
+        ('ZG_AgeLengthAgeDomain', 'ZG_AL_100', 'LOC_ZG_NUM_100', 'LOC_ZG_AGE_LENGTH_POINTS_DESC_100', 20),
+        ('ZG_AgeLengthAgeDomain', 'ZG_AL_110', 'LOC_ZG_NUM_110', 'LOC_ZG_AGE_LENGTH_POINTS_DESC_110', 30),
+        ('ZG_AgeLengthAgeDomain', 'ZG_AL_120', 'LOC_ZG_NUM_120', 'LOC_ZG_AGE_LENGTH_POINTS_DESC_120', 40),
+        ('ZG_AgeLengthAgeDomain', 'ZG_AL_130', 'LOC_ZG_NUM_130', 'LOC_ZG_AGE_LENGTH_POINTS_DESC_130', 50),
+        ('ZG_AgeLengthAgeDomain', 'ZG_AL_140', 'LOC_ZG_NUM_140', 'LOC_ZG_AGE_LENGTH_POINTS_DESC_140', 60),
+        ('ZG_AgeLengthAgeDomain', 'ZG_AL_150', 'LOC_ZG_NUM_150', 'LOC_ZG_AGE_LENGTH_POINTS_DESC_150', 70),
+        ('ZG_AgeLengthAgeDomain', 'ZG_AL_153', 'LOC_ZG_NUM_153', 'LOC_ZG_AGE_LENGTH_POINTS_DESC_153', 80),
+        ('ZG_AgeLengthAgeDomain', 'ZG_AL_155', 'LOC_ZG_NUM_155', 'LOC_ZG_AGE_LENGTH_POINTS_DESC_155', 90),
+        ('ZG_AgeLengthAgeDomain', 'ZG_AL_160', 'LOC_ZG_NUM_160', 'LOC_ZG_AGE_LENGTH_POINTS_DESC_160', 100),
+        ('ZG_AgeLengthAgeDomain', 'ZG_AL_166', 'LOC_ZG_NUM_166', 'LOC_ZG_AGE_LENGTH_POINTS_DESC_166', 110),
+        ('ZG_AgeLengthAgeDomain', 'ZG_AL_170', 'LOC_ZG_NUM_170', 'LOC_ZG_AGE_LENGTH_POINTS_DESC_170', 120),
+        ('ZG_AgeLengthAgeDomain', 'ZG_AL_180', 'LOC_ZG_NUM_180', 'LOC_ZG_AGE_LENGTH_POINTS_DESC_180', 130),
+        ('ZG_AgeLengthAgeDomain', 'ZG_AL_190', 'LOC_ZG_NUM_190', 'LOC_ZG_AGE_LENGTH_POINTS_DESC_190', 140),
+        ('ZG_AgeLengthAgeDomain', 'ZG_AL_196', 'LOC_ZG_NUM_196', 'LOC_ZG_AGE_LENGTH_POINTS_DESC_196', 150),
+        ('ZG_AgeLengthAgeDomain', 'ZG_AL_200', 'LOC_ZG_NUM_200', 'LOC_ZG_AGE_LENGTH_POINTS_DESC_200', 160),
+        ('ZG_AgeLengthAgeDomain', 'ZG_AL_220', 'LOC_ZG_NUM_220', 'LOC_ZG_AGE_LENGTH_POINTS_DESC_220', 170),
+        ('ZG_AgeLengthAgeDomain', 'ZG_AL_240', 'LOC_ZG_NUM_240', 'LOC_ZG_AGE_LENGTH_POINTS_DESC_240', 180),
+        ('ZG_AgeLengthAgeDomain', 'ZG_AL_260', 'LOC_ZG_NUM_260', 'LOC_ZG_AGE_LENGTH_POINTS_DESC_260', 190),
+        ('ZG_AgeLengthAgeDomain', 'ZG_AL_280', 'LOC_ZG_NUM_280', 'LOC_ZG_AGE_LENGTH_POINTS_DESC_280', 200),
+        ('ZG_AgeLengthAgeDomain', 'ZG_AL_300', 'LOC_ZG_NUM_300', 'LOC_ZG_AGE_LENGTH_POINTS_DESC_300', 210),
         ('ZG_AgeProgressRateDomain', 'ZG_AGE_PROGRESS_SLOW', 'LOC_ZG_SLOW_NAME', 'LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW', 10),
         ('ZG_AgeProgressRateDomain', 'ZG_AGE_PROGRESS_STANDARD', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD', 20),
         ('ZG_AgeProgressRateDomain', 'ZG_AGE_PROGRESS_BALANCED', 'LOC_ZG_BALANCED_NAME', 'LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED', 30),

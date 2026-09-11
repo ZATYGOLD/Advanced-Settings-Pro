@@ -305,10 +305,10 @@
 			<Text>Ещё быстрее</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM" Language="ru_RU">
-			<Text>Особый: задайте это для каждой эпохи отдельно.</Text>
+			<Text>Особый: каждая эпоха использует свою строку в группах эпох ниже.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт значение для этой эпохи.[n]Действует, только если настройка в разделе «Настройки темпа» стоит на «Особый».</Text>
+			<Text>Задаёт значение для этой эпохи.[n]Действует, только если соответствующая строка в «Настройках темпа» стоит на «Особый». Готовые наборы темпа заполняют эти строки; изменение одной из них переводит Набор темпа на «Особый».</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="ru_RU">
 			<Text>Прогресс эпохи</Text>
@@ -478,6 +478,72 @@
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_NAME" Language="ru_RU">
 			<Text>Удвоено</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="ru_RU">
+			<Text>Особый: каждая эпоха использует строку «Длительность эпохи» в своей группе ниже. Сбалансированный ставит 153, 166 и 196 очков; Многопользовательский — 140, 155 и 190.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_90" Language="ru_RU">
+			<Text>[BLIST][LI] Online 2.0: 36 очков.[LI] Online: 45 очков.[LI] Quick: 60 очков.[LI] Standard: 90 очков.[LI] Epic: 135 очков.[LI] Marathon: 270 очков.[LI] Marathon 2.0: 450 очков.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100" Language="ru_RU">
+			<Text>[BLIST][LI] Online 2.0: 40 очков.[LI] Online: 50 очков.[LI] Quick: 67 очков.[LI] Standard: 100 очков.[LI] Epic: 150 очков.[LI] Marathon: 300 очков.[LI] Marathon 2.0: 500 очков.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110" Language="ru_RU">
+			<Text>[BLIST][LI] Online 2.0: 44 очков.[LI] Online: 55 очков.[LI] Quick: 73 очков.[LI] Standard: 110 очков.[LI] Epic: 165 очков.[LI] Marathon: 330 очков.[LI] Marathon 2.0: 550 очков.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120" Language="ru_RU">
+			<Text>[BLIST][LI] Online 2.0: 48 очков.[LI] Online: 60 очков.[LI] Quick: 80 очков.[LI] Standard: 120 очков.[LI] Epic: 180 очков.[LI] Marathon: 360 очков.[LI] Marathon 2.0: 600 очков.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130" Language="ru_RU">
+			<Text>[BLIST][LI] Online 2.0: 52 очков.[LI] Online: 65 очков.[LI] Quick: 87 очков.[LI] Standard: 130 очков.[LI] Epic: 195 очков.[LI] Marathon: 390 очков.[LI] Marathon 2.0: 650 очков.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140" Language="ru_RU">
+			<Text>[BLIST][LI] Online 2.0: 56 очков.[LI] Online: 70 очков.[LI] Quick: 93 очков.[LI] Standard: 140 очков.[LI] Epic: 210 очков.[LI] Marathon: 420 очков.[LI] Marathon 2.0: 700 очков.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150" Language="ru_RU">
+			<Text>[BLIST][LI] Online 2.0: 60 очков.[LI] Online: 75 очков.[LI] Quick: 100 очков.[LI] Standard: 150 очков.[LI] Epic: 225 очков.[LI] Marathon: 450 очков.[LI] Marathon 2.0: 750 очков.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153" Language="ru_RU">
+			<Text>[BLIST][LI] Online 2.0: 61 очков.[LI] Online: 76 очков.[LI] Quick: 102 очков.[LI] Standard: 153 очков.[LI] Epic: 230 очков.[LI] Marathon: 459 очков.[LI] Marathon 2.0: 765 очков.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155" Language="ru_RU">
+			<Text>[BLIST][LI] Online 2.0: 62 очков.[LI] Online: 78 очков.[LI] Quick: 103 очков.[LI] Standard: 155 очков.[LI] Epic: 232 очков.[LI] Marathon: 465 очков.[LI] Marathon 2.0: 775 очков.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="ru_RU">
+			<Text>[BLIST][LI] Online 2.0: 64 очков.[LI] Online: 80 очков.[LI] Quick: 107 очков.[LI] Standard: 160 очков.[LI] Epic: 240 очков.[LI] Marathon: 480 очков.[LI] Marathon 2.0: 800 очков.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166" Language="ru_RU">
+			<Text>[BLIST][LI] Online 2.0: 66 очков.[LI] Online: 83 очков.[LI] Quick: 111 очков.[LI] Standard: 166 очков.[LI] Epic: 249 очков.[LI] Marathon: 498 очков.[LI] Marathon 2.0: 830 очков.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="ru_RU">
+			<Text>[BLIST][LI] Online 2.0: 68 очков.[LI] Online: 85 очков.[LI] Quick: 113 очков.[LI] Standard: 170 очков.[LI] Epic: 255 очков.[LI] Marathon: 510 очков.[LI] Marathon 2.0: 850 очков.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180" Language="ru_RU">
+			<Text>[BLIST][LI] Online 2.0: 72 очков.[LI] Online: 90 очков.[LI] Quick: 120 очков.[LI] Standard: 180 очков.[LI] Epic: 270 очков.[LI] Marathon: 540 очков.[LI] Marathon 2.0: 900 очков.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190" Language="ru_RU">
+			<Text>[BLIST][LI] Online 2.0: 76 очков.[LI] Online: 95 очков.[LI] Quick: 127 очков.[LI] Standard: 190 очков.[LI] Epic: 285 очков.[LI] Marathon: 570 очков.[LI] Marathon 2.0: 950 очков.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196" Language="ru_RU">
+			<Text>[BLIST][LI] Online 2.0: 78 очков.[LI] Online: 98 очков.[LI] Quick: 131 очков.[LI] Standard: 196 очков.[LI] Epic: 294 очков.[LI] Marathon: 588 очков.[LI] Marathon 2.0: 980 очков.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="ru_RU">
+			<Text>[BLIST][LI] Online 2.0: 80 очков.[LI] Online: 100 очков.[LI] Quick: 133 очков.[LI] Standard: 200 очков.[LI] Epic: 300 очков.[LI] Marathon: 600 очков.[LI] Marathon 2.0: 1000 очков.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220" Language="ru_RU">
+			<Text>[BLIST][LI] Online 2.0: 88 очков.[LI] Online: 110 очков.[LI] Quick: 147 очков.[LI] Standard: 220 очков.[LI] Epic: 330 очков.[LI] Marathon: 660 очков.[LI] Marathon 2.0: 1100 очков.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240" Language="ru_RU">
+			<Text>[BLIST][LI] Online 2.0: 96 очков.[LI] Online: 120 очков.[LI] Quick: 160 очков.[LI] Standard: 240 очков.[LI] Epic: 360 очков.[LI] Marathon: 720 очков.[LI] Marathon 2.0: 1200 очков.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260" Language="ru_RU">
+			<Text>[BLIST][LI] Online 2.0: 104 очков.[LI] Online: 130 очков.[LI] Quick: 173 очков.[LI] Standard: 260 очков.[LI] Epic: 390 очков.[LI] Marathon: 780 очков.[LI] Marathon 2.0: 1300 очков.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280" Language="ru_RU">
+			<Text>[BLIST][LI] Online 2.0: 112 очков.[LI] Online: 140 очков.[LI] Quick: 187 очков.[LI] Standard: 280 очков.[LI] Epic: 420 очков.[LI] Marathon: 840 очков.[LI] Marathon 2.0: 1400 очков.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300" Language="ru_RU">
+			<Text>[BLIST][LI] Online 2.0: 120 очков.[LI] Online: 150 очков.[LI] Quick: 200 очков.[LI] Standard: 300 очков.[LI] Epic: 450 очков.[LI] Marathon: 900 очков.[LI] Marathon 2.0: 1500 очков.[/BLIST]</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="ru_RU">
 			<Text> Эпохи будут проходить быстрее.
 				[n] [BLIST]
@@ -583,8 +649,14 @@
 		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="ru_RU">
 			<Text>Сбалансированный</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_BALANCED_NAME" Language="ru_RU">
+			<Text>Сбалансированный темп</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_CUSTOM_NAME" Language="ru_RU">
+			<Text>Особый темп</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME" Language="ru_RU">
-			<Text>Многопользовательский</Text>
+			<Text>Многопользовательский темп</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME" Language="ru_RU">
 			<Text>Стандартный темп</Text>
@@ -593,13 +665,13 @@
 			<Text>Стандартный темп: собственный темп игры. Переводит все настройки раздела «Настройки темпа» на стандартные.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="ru_RU">
-			<Text>Сбалансированный: более долгие эпохи с исследованиями в эпическом стиле. Ставит длительность эпохи 153, 166 и 196 очков по эпохам, темп прогресса эпохи — «Сбалансированный», стоимость технологий и институтов — «Высокая».</Text>
+			<Text>Сбалансированный темп: более долгие эпохи с исследованиями в эпическом стиле. Ставит длительность эпохи 153, 166 и 196 очков по эпохам, темп прогресса эпохи — «Сбалансированный», стоимость технологий и институтов — «Высокая».</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="ru_RU">
-			<Text>Многопользовательский: более мягкое удлинение для сессий. Ставит длительность эпохи 140, 155 и 190 очков по эпохам, темп прогресса эпохи — «Сбалансированный», стоимость технологий +35%, +50% и +75% по эпохам, стоимость институтов +45%, +60% и +85%, рост городов — «Медленный», дороги — «Быстрые» (в Новейшее время — «Экспресс»), стоимость проектов победы в Новейшее время +20%.</Text>
+			<Text>Многопользовательский темп: более мягкое удлинение для сессий. Ставит длительность эпохи 140, 155 и 190 очков по эпохам, темп прогресса эпохи — «Сбалансированный», стоимость технологий +35%, +50% и +75% по эпохам, стоимость институтов +45%, +60% и +85%, рост городов — «Медленный», дороги — «Быстрые» (в Новейшее время — «Экспресс»), стоимость проектов победы в Новейшее время +20%.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="ru_RU">
-			<Text>Особый: настройки раздела «Настройки темпа» на вкладке «Темп» больше не соответствуют ни одному готовому темпу.</Text>
+			<Text>Особый темп: настройки раздела «Настройки темпа» на вкладке «Темп» больше не соответствуют ни одному готовому темпу.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

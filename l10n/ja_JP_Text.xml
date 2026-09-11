@@ -305,10 +305,10 @@
 			<Text>より速い</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM" Language="ja_JP">
-			<Text>カスタム：時代ごとに個別に設定します。</Text>
+			<Text>カスタム：各時代は下の時代グループにあるそれぞれの行を使います。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="ja_JP">
-			<Text>この時代の値を設定します。[n]「ペース設定」が「カスタム」のときのみ適用されます。</Text>
+			<Text>この時代の値を設定します。[n]「ペース設定」の対応する行が「カスタム」のときのみ適用されます。ペースセットのプリセットがこれらの行を埋め、いずれかを変更するとペースセットは「カスタム」になります。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="ja_JP">
 			<Text>時代の進行速度</Text>
@@ -478,6 +478,72 @@
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_NAME" Language="ja_JP">
 			<Text>2倍</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="ja_JP">
+			<Text>カスタム：各時代は下のそれぞれのグループにある「時代の長さ」の行を使います。バランスは153、166、196ポイント、マルチプレイヤーは140、155、190ポイントに設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_90" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 36 ポイント.[LI] Online: 45 ポイント.[LI] Quick: 60 ポイント.[LI] Standard: 90 ポイント.[LI] Epic: 135 ポイント.[LI] Marathon: 270 ポイント.[LI] Marathon 2.0: 450 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 40 ポイント.[LI] Online: 50 ポイント.[LI] Quick: 67 ポイント.[LI] Standard: 100 ポイント.[LI] Epic: 150 ポイント.[LI] Marathon: 300 ポイント.[LI] Marathon 2.0: 500 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 44 ポイント.[LI] Online: 55 ポイント.[LI] Quick: 73 ポイント.[LI] Standard: 110 ポイント.[LI] Epic: 165 ポイント.[LI] Marathon: 330 ポイント.[LI] Marathon 2.0: 550 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 48 ポイント.[LI] Online: 60 ポイント.[LI] Quick: 80 ポイント.[LI] Standard: 120 ポイント.[LI] Epic: 180 ポイント.[LI] Marathon: 360 ポイント.[LI] Marathon 2.0: 600 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 52 ポイント.[LI] Online: 65 ポイント.[LI] Quick: 87 ポイント.[LI] Standard: 130 ポイント.[LI] Epic: 195 ポイント.[LI] Marathon: 390 ポイント.[LI] Marathon 2.0: 650 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 56 ポイント.[LI] Online: 70 ポイント.[LI] Quick: 93 ポイント.[LI] Standard: 140 ポイント.[LI] Epic: 210 ポイント.[LI] Marathon: 420 ポイント.[LI] Marathon 2.0: 700 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 60 ポイント.[LI] Online: 75 ポイント.[LI] Quick: 100 ポイント.[LI] Standard: 150 ポイント.[LI] Epic: 225 ポイント.[LI] Marathon: 450 ポイント.[LI] Marathon 2.0: 750 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 61 ポイント.[LI] Online: 76 ポイント.[LI] Quick: 102 ポイント.[LI] Standard: 153 ポイント.[LI] Epic: 230 ポイント.[LI] Marathon: 459 ポイント.[LI] Marathon 2.0: 765 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 62 ポイント.[LI] Online: 78 ポイント.[LI] Quick: 103 ポイント.[LI] Standard: 155 ポイント.[LI] Epic: 232 ポイント.[LI] Marathon: 465 ポイント.[LI] Marathon 2.0: 775 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 64 ポイント.[LI] Online: 80 ポイント.[LI] Quick: 107 ポイント.[LI] Standard: 160 ポイント.[LI] Epic: 240 ポイント.[LI] Marathon: 480 ポイント.[LI] Marathon 2.0: 800 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 66 ポイント.[LI] Online: 83 ポイント.[LI] Quick: 111 ポイント.[LI] Standard: 166 ポイント.[LI] Epic: 249 ポイント.[LI] Marathon: 498 ポイント.[LI] Marathon 2.0: 830 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 68 ポイント.[LI] Online: 85 ポイント.[LI] Quick: 113 ポイント.[LI] Standard: 170 ポイント.[LI] Epic: 255 ポイント.[LI] Marathon: 510 ポイント.[LI] Marathon 2.0: 850 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 72 ポイント.[LI] Online: 90 ポイント.[LI] Quick: 120 ポイント.[LI] Standard: 180 ポイント.[LI] Epic: 270 ポイント.[LI] Marathon: 540 ポイント.[LI] Marathon 2.0: 900 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 76 ポイント.[LI] Online: 95 ポイント.[LI] Quick: 127 ポイント.[LI] Standard: 190 ポイント.[LI] Epic: 285 ポイント.[LI] Marathon: 570 ポイント.[LI] Marathon 2.0: 950 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 78 ポイント.[LI] Online: 98 ポイント.[LI] Quick: 131 ポイント.[LI] Standard: 196 ポイント.[LI] Epic: 294 ポイント.[LI] Marathon: 588 ポイント.[LI] Marathon 2.0: 980 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 80 ポイント.[LI] Online: 100 ポイント.[LI] Quick: 133 ポイント.[LI] Standard: 200 ポイント.[LI] Epic: 300 ポイント.[LI] Marathon: 600 ポイント.[LI] Marathon 2.0: 1000 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 88 ポイント.[LI] Online: 110 ポイント.[LI] Quick: 147 ポイント.[LI] Standard: 220 ポイント.[LI] Epic: 330 ポイント.[LI] Marathon: 660 ポイント.[LI] Marathon 2.0: 1100 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 96 ポイント.[LI] Online: 120 ポイント.[LI] Quick: 160 ポイント.[LI] Standard: 240 ポイント.[LI] Epic: 360 ポイント.[LI] Marathon: 720 ポイント.[LI] Marathon 2.0: 1200 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 104 ポイント.[LI] Online: 130 ポイント.[LI] Quick: 173 ポイント.[LI] Standard: 260 ポイント.[LI] Epic: 390 ポイント.[LI] Marathon: 780 ポイント.[LI] Marathon 2.0: 1300 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 112 ポイント.[LI] Online: 140 ポイント.[LI] Quick: 187 ポイント.[LI] Standard: 280 ポイント.[LI] Epic: 420 ポイント.[LI] Marathon: 840 ポイント.[LI] Marathon 2.0: 1400 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 120 ポイント.[LI] Online: 150 ポイント.[LI] Quick: 200 ポイント.[LI] Standard: 300 ポイント.[LI] Epic: 450 ポイント.[LI] Marathon: 900 ポイント.[LI] Marathon 2.0: 1500 ポイント.[/BLIST]</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="ja_JP">
 			<Text> 時代の終了が早まる。
 				[n] [BLIST]
@@ -583,8 +649,14 @@
 		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="ja_JP">
 			<Text>バランス</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_BALANCED_NAME" Language="ja_JP">
+			<Text>バランスペース</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_CUSTOM_NAME" Language="ja_JP">
+			<Text>カスタムペース</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME" Language="ja_JP">
-			<Text>マルチプレイヤー</Text>
+			<Text>マルチプレイヤーペース</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME" Language="ja_JP">
 			<Text>標準ペース</Text>
@@ -593,13 +665,13 @@
 			<Text>標準ペース：ゲーム本来のペース。「ペース設定」のすべての設定を標準にします。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="ja_JP">
-			<Text>バランス：エピック風の研究でより長い時代に。時代の長さを時代ごとに153、166、196ポイント、時代進行速度を「バランス」、技術コストと社会制度コストを「高」にします。</Text>
+			<Text>バランスペース：エピック風の研究でより長い時代に。時代の長さを時代ごとに153、166、196ポイント、時代進行速度を「バランス」、技術コストと社会制度コストを「高」にします。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="ja_JP">
-			<Text>マルチプレイヤー：セッション向けの軽めの延長。時代の長さを時代ごとに140、155、190ポイント、時代進行速度を「バランス」、技術コストを時代ごとに+35%、+50%、+75%、社会制度コストを+45%、+60%、+85%、都市の成長を「遅い」、道路を「速い」（近代は「特急」）、近代の勝利プロジェクトコストを+20%にします。</Text>
+			<Text>マルチプレイヤーペース：セッション向けの軽めの延長。時代の長さを時代ごとに140、155、190ポイント、時代進行速度を「バランス」、技術コストを時代ごとに+35%、+50%、+75%、社会制度コストを+45%、+60%、+85%、都市の成長を「遅い」、道路を「速い」（近代は「特急」）、近代の勝利プロジェクトコストを+20%にします。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="ja_JP">
-			<Text>カスタム：「ペース」タブの「ペース設定」がどのプリセットとも一致していません。</Text>
+			<Text>カスタムペース：「ペース」タブの「ペース設定」がどのプリセットとも一致していません。</Text>
 		</Replace>
 	</LocalizedText>
 </Database>
