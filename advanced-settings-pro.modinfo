@@ -2924,13 +2924,6 @@
 				<Value>ZG_VICTORY_PROJECT_COST_LOW</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="pacing-victory-projects-plus-20">
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>VictoryProjectCostKey</ConfigurationId>
-				<Value>ZG_VICTORY_PROJECT_COST_PLUS_20</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
 		<Criteria id="pacing-victory-projects-high">
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
@@ -2943,6 +2936,162 @@
 				<Group>Game</Group>
 				<ConfigurationId>VictoryProjectCostKey</ConfigurationId>
 				<Value>ZG_VICTORY_PROJECT_COST_DOUBLE</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-victory-projects-antiquity-minus-25">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>VictoryProjectCostKey</ConfigurationId>
+				<Value>ZG_VICTORY_PROJECT_COST_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>VictoryProjectCostAntiquityKey</ConfigurationId>
+				<Value>ZG_VICTORY_PROJECT_COST_MINUS_25</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-victory-projects-antiquity-plus-20">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>VictoryProjectCostKey</ConfigurationId>
+				<Value>ZG_VICTORY_PROJECT_COST_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>VictoryProjectCostAntiquityKey</ConfigurationId>
+				<Value>ZG_VICTORY_PROJECT_COST_PLUS_20</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-victory-projects-antiquity-plus-50">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>VictoryProjectCostKey</ConfigurationId>
+				<Value>ZG_VICTORY_PROJECT_COST_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>VictoryProjectCostAntiquityKey</ConfigurationId>
+				<Value>ZG_VICTORY_PROJECT_COST_PLUS_50</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-victory-projects-antiquity-plus-100">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>VictoryProjectCostKey</ConfigurationId>
+				<Value>ZG_VICTORY_PROJECT_COST_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>VictoryProjectCostAntiquityKey</ConfigurationId>
+				<Value>ZG_VICTORY_PROJECT_COST_PLUS_100</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-victory-projects-exploration-minus-25">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>VictoryProjectCostKey</ConfigurationId>
+				<Value>ZG_VICTORY_PROJECT_COST_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>VictoryProjectCostExplorationKey</ConfigurationId>
+				<Value>ZG_VICTORY_PROJECT_COST_MINUS_25</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-victory-projects-exploration-plus-20">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>VictoryProjectCostKey</ConfigurationId>
+				<Value>ZG_VICTORY_PROJECT_COST_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>VictoryProjectCostExplorationKey</ConfigurationId>
+				<Value>ZG_VICTORY_PROJECT_COST_PLUS_20</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-victory-projects-exploration-plus-50">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>VictoryProjectCostKey</ConfigurationId>
+				<Value>ZG_VICTORY_PROJECT_COST_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>VictoryProjectCostExplorationKey</ConfigurationId>
+				<Value>ZG_VICTORY_PROJECT_COST_PLUS_50</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-victory-projects-exploration-plus-100">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>VictoryProjectCostKey</ConfigurationId>
+				<Value>ZG_VICTORY_PROJECT_COST_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>VictoryProjectCostExplorationKey</ConfigurationId>
+				<Value>ZG_VICTORY_PROJECT_COST_PLUS_100</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-victory-projects-modern-minus-25">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>VictoryProjectCostKey</ConfigurationId>
+				<Value>ZG_VICTORY_PROJECT_COST_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>VictoryProjectCostModernKey</ConfigurationId>
+				<Value>ZG_VICTORY_PROJECT_COST_MINUS_25</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-victory-projects-modern-plus-20">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>VictoryProjectCostKey</ConfigurationId>
+				<Value>ZG_VICTORY_PROJECT_COST_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>VictoryProjectCostModernKey</ConfigurationId>
+				<Value>ZG_VICTORY_PROJECT_COST_PLUS_20</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-victory-projects-modern-plus-50">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>VictoryProjectCostKey</ConfigurationId>
+				<Value>ZG_VICTORY_PROJECT_COST_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>VictoryProjectCostModernKey</ConfigurationId>
+				<Value>ZG_VICTORY_PROJECT_COST_PLUS_50</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-victory-projects-modern-plus-100">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>VictoryProjectCostKey</ConfigurationId>
+				<Value>ZG_VICTORY_PROJECT_COST_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>VictoryProjectCostModernKey</ConfigurationId>
+				<Value>ZG_VICTORY_PROJECT_COST_PLUS_100</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 
@@ -7082,17 +7231,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/pacing/victory-projects-low.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-victory-projects-plus-20" scope="game" criteria="pacing-victory-projects-plus-20">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/victory-projects-plus-20.sql</Item>
+					<Item>data/pacing/victory-projects-minus-25.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -7102,7 +7241,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/pacing/victory-projects-high.sql</Item>
+					<Item>data/pacing/victory-projects-plus-50.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -7112,7 +7251,127 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/pacing/victory-projects-double.sql</Item>
+					<Item>data/pacing/victory-projects-plus-100.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-victory-projects-antiquity-minus-25" scope="game" criteria="pacing-victory-projects-antiquity-minus-25">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/victory-projects-minus-25.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-victory-projects-antiquity-plus-20" scope="game" criteria="pacing-victory-projects-antiquity-plus-20">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/victory-projects-plus-20.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-victory-projects-antiquity-plus-50" scope="game" criteria="pacing-victory-projects-antiquity-plus-50">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/victory-projects-plus-50.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-victory-projects-antiquity-plus-100" scope="game" criteria="pacing-victory-projects-antiquity-plus-100">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/victory-projects-plus-100.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-victory-projects-exploration-minus-25" scope="game" criteria="pacing-victory-projects-exploration-minus-25">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/victory-projects-minus-25.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-victory-projects-exploration-plus-20" scope="game" criteria="pacing-victory-projects-exploration-plus-20">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/victory-projects-plus-20.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-victory-projects-exploration-plus-50" scope="game" criteria="pacing-victory-projects-exploration-plus-50">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/victory-projects-plus-50.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-victory-projects-exploration-plus-100" scope="game" criteria="pacing-victory-projects-exploration-plus-100">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/victory-projects-plus-100.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-victory-projects-modern-minus-25" scope="game" criteria="pacing-victory-projects-modern-minus-25">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/victory-projects-minus-25.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-victory-projects-modern-plus-20" scope="game" criteria="pacing-victory-projects-modern-plus-20">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/victory-projects-plus-20.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-victory-projects-modern-plus-50" scope="game" criteria="pacing-victory-projects-modern-plus-50">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/victory-projects-plus-50.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-victory-projects-modern-plus-100" scope="game" criteria="pacing-victory-projects-modern-plus-100">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/victory-projects-plus-100.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

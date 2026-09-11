@@ -6,10 +6,10 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ### 0.8.0
 
-- Added an Age Pace setting to Game Settings: Standard, Balanced (age caps 153/166/196, the Balanced progress curve, High technology and civic costs), Multiplayer (age caps 140/155/190, the Balanced progress curve, technologies +35/+50/+75% and civics +45/+60/+85% by age, Slow growth, Fast roads with Express railroads in Modern, victory projects +20%), or Custom. A preset writes its values into the Defaults settings on the Pace tab; changing one afterwards switches the preset to Custom
+- Added a Pace Set setting to Game Settings (after Rule Set, mirrored at the top of Pace Settings on the Pace tab): Standard Pace, Balanced (age caps 153/166/196, the Balanced progress curve, High technology and civic costs), Multiplayer (age caps 140/155/190, the Balanced progress curve, technologies +35/+50/+75% and civics +45/+60/+85% by age, Slow growth, Fast roads with Express railroads in Modern, Modern victory projects +20%), or Custom. A preset writes its values into the Pace Settings on the Pace tab; changing one afterwards switches the preset to Custom
 - Per-age Age Length rows now take an exact age progress total (90 to 300), and per-age Technology and Civic Cost rows a percentage (-25% to +100%); Age Progress Rate gains Balanced, City Growth gains Slower, Roads gains Express, and Victory Project Cost gains +20%
 - Cost settings are now named Low, Standard, High, and Double; the Default option of the other settings is now called Standard
-- Added a Pace tab to the single-player Advanced Settings screen with a Defaults group (Age Length, Age Progress Rate, Technology Cost, Civic Cost, City Growth, Roads, and Victory Project Cost) and an Antiquity, Exploration, and Modern group holding each setting's per-age row, used when the setting is Custom (Victory Project Cost is Modern-only)
+- Added a Pace tab to the single-player Advanced Settings screen with a Pace Settings group (Age Length, Age Progress Rate, Technology Cost, Civic Cost, City Growth, Roads, and Victory Project Cost) and an Antiquity, Exploration, and Modern group holding each setting's per-age row, used when the setting is Custom
 - Added a Map tab to the single-player Advanced Settings screen, holding the map, natural wonder, and disaster settings; General keeps the game and crisis settings
 - Natural Wonders now sits in Map Settings right after Map Size; the per-wonder toggles keep their own Natural Wonder Selection group
 - Added Nachi Falls and Seongsan Ilchulbong (Japan & Korea Wonders) to Natural Wonder Selection, for 22 wonders in total
@@ -84,13 +84,13 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Single Player No Age Transitions: Enabled or Disabled
 - Game Random Seed and Map Random Seed: a Random button beside each field rolls a new seed (single player)
 - Game Speed: adds Online 2.0 (150% faster than Standard) and Marathon 2.0 (400% slower than Standard)
-- Age Length: the game's own setting, moved to Defaults on the Pace tab and extended with Brief (90), Doubled (280), and Custom; it drives the per-age rows (any total from 90 to 300), and a per-age change shows Custom; switching it off Custom returns every other Defaults setting to Standard
-- Age Pace (Game Settings): Standard, Balanced, Multiplayer, or Custom (written into the Defaults settings on the Pace tab)
+- Age Length: the game's own setting, moved to Pace Settings on the Pace tab and extended with Brief (90), Doubled (280), and Custom; it drives the per-age rows (any total from 90 to 300), and a per-age change shows Custom; switching it off Custom returns every other Pace Settings setting to Standard
+- Pace Set (Game Settings, mirrored on the Pace tab): Standard Pace, Balanced, Multiplayer, or Custom (written into the Pace Settings on the Pace tab)
 - Age Progress Rate: Slow, Standard, Balanced, Fast, or Custom (milestone and future tech/civic points x0.5 / x1 / the Balanced curve / x1.5)
 - Technology Cost and Civic Cost: Low (25% cheaper), Standard, High (50% more), Double (100% more), or Custom (per-age rows pick -25%, +35% to +100%)
 - City Growth: Slower, Slow, Standard, Fast, or Custom
 - Roads: Standard, Fast (25% less movement cost), Express (25% less on roads, 50% less on railroads), Faster (50% less), or Custom
-- Victory Project Cost: Low, Standard, +20%, High, or Double (Modern Age victory and legacy projects)
+- Victory Project Cost: Low, Standard, High, Double, or Custom (per-age rows pick -25%, +20%, +50%, or +100%); covers every age's science and military triumph projects, from Chart the Stars to Launch Rocket and Operation Ivy
 - Antiquity, Exploration, and Modern rows for each Custom pacing setting above
 - Disaster Frequency: Disabled, Light, Moderate, Catastrophic, or Custom
 - Antiquity, Exploration, and Modern disaster frequency: Disabled, Light, Moderate, or Catastrophic each, applied when Disaster Frequency is set to Custom
@@ -118,7 +118,7 @@ The conflict guard recognises conflicting mods by their id and by the setup sett
 
 All settings are chosen at game creation and apply for the full game.
 
-In single player, the Advanced Settings screen gains a Pace tab (Defaults pacing settings plus a group per age) and a Map tab between General and Player; the Map tab holds the map, natural wonder, and disaster settings, while the crisis settings move into their own Crisis Settings group on General and Initial Independent Hostility joins the Independent Power settings; multiplayer keeps the game's standard layout.
+In single player, the Advanced Settings screen gains a Pace tab (Pace Settings plus a group per age) and a Map tab between General and Player; the Map tab holds the map, natural wonder, and disaster settings, while the crisis settings move into their own Crisis Settings group on General and Initial Independent Hostility joins the Independent Power settings; multiplayer keeps the game's standard layout.
 
 ## Project Structure
 

@@ -299,7 +299,7 @@
 			<Text>Неопознанный мод, добавляющий настройки:</Text>
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="ru_RU">
-			<Text>По умолчанию</Text>
+			<Text>Настройки темпа</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_FASTER_NAME" Language="ru_RU">
 			<Text>Ещё быстрее</Text>
@@ -308,7 +308,7 @@
 			<Text>Особый: задайте это для каждой эпохи отдельно.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт значение для этой эпохи.[n]Действует, только если настройка в разделе «По умолчанию» стоит на «Особый».</Text>
+			<Text>Задаёт значение для этой эпохи.[n]Действует, только если настройка в разделе «Настройки темпа» стоит на «Особый».</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="ru_RU">
 			<Text>Прогресс эпохи</Text>
@@ -344,7 +344,7 @@
 			<Text>Стоимость победных проектов</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт стоимость производства победных проектов и проектов наследия в Современности.</Text>
+			<Text>Задаёт стоимость производства научных и военных проектов триумфа в каждую эпоху.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="ru_RU">
 			<Text>[BLIST][LI] Медленно: на 50% меньше очков.[/BLIST]</Text>
@@ -384,9 +384,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED" Language="ru_RU">
 			<Text>[BLIST][LI] Сбалансированный: вехи дают 4, 7 и 11 очков в Античности, 4, 8 и 12 в эпоху Открытий и 4 и 8 в Новейшее время; будущие технологии и институты дают 8, в Новейшее время — 7.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_PLUS_20" Language="ru_RU">
-			<Text>[BLIST][LI] +20%: на 20% дороже.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="ru_RU">
 			<Text>[BLIST][LI] Стандарт: без изменений.[/BLIST]</Text>
@@ -578,10 +575,10 @@
 			<Text>Создаёт больше гор.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="ru_RU">
-			<Text>Темп эпох</Text>
+			<Text>Набор темпа</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION" Language="ru_RU">
-			<Text>Применяет готовый темп к настройкам раздела «По умолчанию» на вкладке «Темп».</Text>
+			<Text>Применяет готовый темп к настройкам раздела «Настройки темпа» на вкладке «Темп».</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="ru_RU">
 			<Text>Сбалансированный</Text>
@@ -589,17 +586,20 @@
 		<Replace Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME" Language="ru_RU">
 			<Text>Многопользовательский</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME" Language="ru_RU">
+			<Text>Стандартный темп</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>Стандартный: собственный темп игры. Переводит все настройки раздела «По умолчанию» на стандартные.</Text>
+			<Text>Стандартный темп: собственный темп игры. Переводит все настройки раздела «Настройки темпа» на стандартные.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="ru_RU">
 			<Text>Сбалансированный: более долгие эпохи с исследованиями в эпическом стиле. Ставит длительность эпохи 153, 166 и 196 очков по эпохам, темп прогресса эпохи — «Сбалансированный», стоимость технологий и институтов — «Высокая».</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="ru_RU">
-			<Text>Многопользовательский: более мягкое удлинение для сессий. Ставит длительность эпохи 140, 155 и 190 очков по эпохам, темп прогресса эпохи — «Сбалансированный», стоимость технологий +35%, +50% и +75% по эпохам, стоимость институтов +45%, +60% и +85%, рост городов — «Медленный», дороги — «Быстрые» (в Новейшее время — «Экспресс»), стоимость проектов победы +20%.</Text>
+			<Text>Многопользовательский: более мягкое удлинение для сессий. Ставит длительность эпохи 140, 155 и 190 очков по эпохам, темп прогресса эпохи — «Сбалансированный», стоимость технологий +35%, +50% и +75% по эпохам, стоимость институтов +45%, +60% и +85%, рост городов — «Медленный», дороги — «Быстрые» (в Новейшее время — «Экспресс»), стоимость проектов победы в Новейшее время +20%.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="ru_RU">
-			<Text>Особый: настройки раздела «По умолчанию» на вкладке «Темп» больше не соответствуют ни одному готовому темпу.</Text>
+			<Text>Особый: настройки раздела «Настройки темпа» на вкладке «Темп» больше не соответствуют ни одному готовому темпу.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

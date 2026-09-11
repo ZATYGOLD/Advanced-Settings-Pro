@@ -299,7 +299,7 @@
 			<Text>添加以下设置的未识别模组：</Text>
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="zh_Hans_CN">
-			<Text>默认值</Text>
+			<Text>节奏设置</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_FASTER_NAME" Language="zh_Hans_CN">
 			<Text>更快</Text>
@@ -308,7 +308,7 @@
 			<Text>自定义：为每个时代单独设置。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>设置此时代的值。[n]仅当"默认值"中的设置为自定义时生效。</Text>
+			<Text>设置此时代的值。[n]仅当"节奏设置"中的设置为自定义时生效。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="zh_Hans_CN">
 			<Text>时代进度速度</Text>
@@ -344,7 +344,7 @@
 			<Text>胜利项目花费</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>设置近世胜利项目和遗产项目的生产花费。</Text>
+			<Text>设置每个时代科学与军事胜利项目的生产花费。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="zh_Hans_CN">
 			<Text>[BLIST][LI] 慢：点数减少50%。[/BLIST]</Text>
@@ -384,9 +384,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED" Language="zh_Hans_CN">
 			<Text>[BLIST][LI] 平衡：里程碑在远古给予4、7、11点，探索4、8、12点，现代4、8点；未来科技和市政给予8点（现代为7点）。[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_PLUS_20" Language="zh_Hans_CN">
-			<Text>[BLIST][LI] +20%：昂贵20%。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
 			<Text>[BLIST][LI] 标准：无变化。[/BLIST]</Text>
@@ -578,10 +575,10 @@
 			<Text>生成更多的山脉。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="zh_Hans_CN">
-			<Text>时代节奏</Text>
+			<Text>节奏套组</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>为"节奏"标签页中"默认值"的设置应用一套节奏预设。</Text>
+			<Text>为"节奏"标签页中"节奏设置"的设置应用一套节奏预设。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="zh_Hans_CN">
 			<Text>平衡</Text>
@@ -589,17 +586,20 @@
 		<Replace Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME" Language="zh_Hans_CN">
 			<Text>多人游戏</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME" Language="zh_Hans_CN">
+			<Text>标准节奏</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
-			<Text>标准：游戏自身的节奏。将"默认值"中的所有设置设为标准。</Text>
+			<Text>标准节奏：游戏自身的节奏。将"节奏设置"中的所有设置设为标准。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="zh_Hans_CN">
 			<Text>平衡：以史诗式的研究节奏延长各时代。将时代长度按时代设为153、166、196点，时代进度速率设为平衡，科技花费和市政花费设为高。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="zh_Hans_CN">
-			<Text>多人游戏：面向联机对局的轻度延长。将时代长度按时代设为140、155、190点，时代进度速率设为平衡，科技花费按时代设为+35%、+50%、+75%，市政花费设为+45%、+60%、+85%，城市增长设为慢，道路设为快（现代为特快），胜利项目花费设为+20%。</Text>
+			<Text>多人游戏：面向联机对局的轻度延长。将时代长度按时代设为140、155、190点，时代进度速率设为平衡，科技花费按时代设为+35%、+50%、+75%，市政花费设为+45%、+60%、+85%，城市增长设为慢，道路设为快（现代为特快），现代胜利项目花费设为+20%。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="zh_Hans_CN">
-			<Text>自定义："节奏"标签页中"默认值"的设置已不再与任何预设一致。</Text>
+			<Text>自定义："节奏"标签页中"节奏设置"的设置已不再与任何预设一致。</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

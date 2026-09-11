@@ -185,10 +185,10 @@
 		</Row>
 
 	<!-- Pace (All Ages) -->
-		<Row Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS"><Text>Defaults</Text></Row>
+		<Row Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS"><Text>Pace Settings</Text></Row>
 		<Row Tag="LOC_ZG_FASTER_NAME"><Text>Faster</Text></Row>
 		<Row Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM"><Text>Custom: set this for each age individually.</Text></Row>
-		<Row Tag="LOC_ZG_PACING_AGE_DESCRIPTION"><Text>Sets this age's value.[n]Applies only when the matching setting under Defaults is set to Custom.</Text></Row>
+		<Row Tag="LOC_ZG_PACING_AGE_DESCRIPTION"><Text>Sets this age's value.[n]Applies only when the matching Pace Settings row is set to Custom.</Text></Row>
 		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME"><Text>Age Progress Rate</Text></Row>
 		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION"><Text>Sets how quickly milestones and future techs and civics fill the age meter.</Text></Row>
 		<Row Tag="LOC_ZG_TECHNOLOGY_COST_NAME"><Text>Technology Cost</Text></Row>
@@ -200,7 +200,7 @@
 		<Row Tag="LOC_ZG_ROADS_NAME"><Text>Roads</Text></Row>
 		<Row Tag="LOC_ZG_ROADS_DESCRIPTION"><Text>Sets how much movement roads and railroads cost.</Text></Row>
 		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_NAME"><Text>Victory Project Cost</Text></Row>
-		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION"><Text>Sets the production cost of victory and legacy projects in the Modern Age.</Text></Row>
+		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION"><Text>Sets the production cost of the science and military triumph projects in every age.</Text></Row>
 		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW"><Text>[BLIST][LI] Slow: 50% fewer points.[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD"><Text>[BLIST][LI] Standard: no change.[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST"><Text>[BLIST][LI] Fast: 50% more points.[/BLIST]</Text></Row>
@@ -214,7 +214,6 @@
 		<Row Tag="LOC_ZG_ROADS_EXPRESS_NAME"><Text>Express</Text></Row>
 		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_EXPRESS"><Text>[BLIST][LI] Express: 25% less movement cost on roads, 50% less on railroads.[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED"><Text>[BLIST][LI] Balanced: milestones award 4, 7, and 11 points in Antiquity, 4, 8, and 12 in Exploration, and 4 and 8 in Modern; future techs and civics award 8, or 7 in Modern.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_COST_DESCRIPTION_PLUS_20"><Text>[BLIST][LI] +20%: 20% more expensive.[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_PCT_MINUS_25"><Text>-25%</Text></Row>
 		<Row Tag="LOC_ZG_PCT_PLUS_20"><Text>+20%</Text></Row>
 		<Row Tag="LOC_ZG_PCT_PLUS_35"><Text>+35%</Text></Row>
@@ -604,14 +603,15 @@
 		<Row Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT"><Text>Standard mountain generation for the chosen map type.</Text></Row>
 		<Row Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE"><Text>Generates more mountains.</Text></Row>
 
-	<!-- Age Pace -->
-		<Row Tag="LOC_ZG_PACE_PRESET_NAME"><Text>Age Pace</Text></Row>
-		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION"><Text>Applies a pacing preset to the settings under Defaults on the Pace tab.</Text></Row>
+	<!-- Pace Set -->
+		<Row Tag="LOC_ZG_PACE_PRESET_NAME"><Text>Pace Set</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION"><Text>Applies a pacing preset to the Pace Settings on the Pace tab.</Text></Row>
 		<Row Tag="LOC_ZG_BALANCED_NAME"><Text>Balanced</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME"><Text>Multiplayer</Text></Row>
-		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD"><Text>Standard: the game's own pacing. Sets every setting under Defaults to Standard.</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME"><Text>Standard Pace</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD"><Text>Standard Pace: the game's own pacing. Sets every Pace Settings row to Standard.</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED"><Text>Balanced: longer ages with Epic-style research. Sets Age Length to 153, 166, and 196 points by age, Age Progress Rate to Balanced, and Technology Cost and Civic Cost to High.</Text></Row>
-		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER"><Text>Multiplayer: a lighter stretch for sessions. Sets Age Length to 140, 155, and 190 points by age, Age Progress Rate to Balanced, Technology Cost to +35%, +50%, and +75% by age, Civic Cost to +45%, +60%, and +85%, City Growth to Slow, Roads to Fast (Express in Modern), and Victory Project Cost to +20%.</Text></Row>
-		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM"><Text>Custom: the settings under Defaults on the Pace tab no longer match a preset.</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER"><Text>Multiplayer: a lighter stretch for sessions. Sets Age Length to 140, 155, and 190 points by age, Age Progress Rate to Balanced, Technology Cost to +35%, +50%, and +75% by age, Civic Cost to +45%, +60%, and +85%, City Growth to Slow, Roads to Fast (Express in Modern), and Modern Victory Project Cost to +20%.</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM"><Text>Custom: the Pace Settings on the Pace tab no longer match a preset.</Text></Row>
 	</EnglishText>
 </Database>

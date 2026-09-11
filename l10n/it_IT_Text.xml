@@ -299,7 +299,7 @@
 			<Text>Mod non identificata che aggiunge le impostazioni:</Text>
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="it_IT">
-			<Text>Valori predefiniti</Text>
+			<Text>Impostazioni del ritmo</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_FASTER_NAME" Language="it_IT">
 			<Text>Più veloce</Text>
@@ -308,7 +308,7 @@
 			<Text>Personalizzato: imposta questo valore per ogni epoca singolarmente.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="it_IT">
-			<Text>Imposta il valore di quest'era.[n]Si applica solo quando l'impostazione in Valori predefiniti è su Personalizzato.</Text>
+			<Text>Imposta il valore di quest'era.[n]Si applica solo quando la riga corrispondente delle Impostazioni del ritmo è su Personalizzato.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="it_IT">
 			<Text>Progresso dell'epoca</Text>
@@ -344,7 +344,7 @@
 			<Text>Costo dei progetti di vittoria</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION" Language="it_IT">
-			<Text>Imposta il costo di produzione dei progetti di vittoria e di eredità nell'Epoca moderna.</Text>
+			<Text>Imposta il costo di produzione dei progetti di trionfo scientifici e militari in ogni era.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="it_IT">
 			<Text>[BLIST][LI] Lento: 50% di punti in meno.[/BLIST]</Text>
@@ -384,9 +384,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED" Language="it_IT">
 			<Text>[BLIST][LI] Bilanciato: i traguardi assegnano 4, 7 e 11 punti nell'Antichità, 4, 8 e 12 nell'Esplorazione e 4 e 8 nell'Era Moderna; le tecnologie e i principi civici futuri assegnano 8, o 7 nell'Era Moderna.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_PLUS_20" Language="it_IT">
-			<Text>[BLIST][LI] +20%: 20% più costose.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="it_IT">
 			<Text>[BLIST][LI] Standard: nessuna modifica.[/BLIST]</Text>
@@ -578,10 +575,10 @@
 			<Text>Genera più montagne.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="it_IT">
-			<Text>Ritmo delle ere</Text>
+			<Text>Set di ritmo</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION" Language="it_IT">
-			<Text>Applica un ritmo predefinito alle impostazioni di Valori predefiniti nella scheda Ritmo.</Text>
+			<Text>Applica un ritmo predefinito alle Impostazioni del ritmo nella scheda Ritmo.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="it_IT">
 			<Text>Bilanciato</Text>
@@ -589,17 +586,20 @@
 		<Replace Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME" Language="it_IT">
 			<Text>Multigiocatore</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME" Language="it_IT">
+			<Text>Ritmo standard</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD" Language="it_IT">
-			<Text>Standard: il ritmo del gioco stesso. Imposta ogni impostazione di Valori predefiniti su Standard.</Text>
+			<Text>Ritmo standard: il ritmo del gioco stesso. Imposta ogni riga delle Impostazioni del ritmo su Standard.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="it_IT">
 			<Text>Bilanciato: ere più lunghe con ricerca in stile Epico. Imposta Durata delle ere su 153, 166 e 196 punti per era, Ritmo di progresso dell'era su Bilanciato e Costo delle tecnologie e Costo dei principi civici su Alto.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="it_IT">
-			<Text>Multigiocatore: un'estensione più leggera per le sessioni. Imposta Durata delle ere su 140, 155 e 190 punti per era, Ritmo di progresso dell'era su Bilanciato, Costo delle tecnologie su +35%, +50% e +75% per era, Costo dei principi civici su +45%, +60% e +85%, Crescita delle città su Lenta, Strade su Veloce (Espresso nell'Era Moderna) e Costo dei progetti di vittoria su +20%.</Text>
+			<Text>Multigiocatore: un'estensione più leggera per le sessioni. Imposta Durata delle ere su 140, 155 e 190 punti per era, Ritmo di progresso dell'era su Bilanciato, Costo delle tecnologie su +35%, +50% e +75% per era, Costo dei principi civici su +45%, +60% e +85%, Crescita delle città su Lenta, Strade su Veloce (Espresso nell'Era Moderna) e Costo dei progetti di vittoria su +20% nell'Era Moderna.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="it_IT">
-			<Text>Personalizzato: le impostazioni di Valori predefiniti nella scheda Ritmo non corrispondono più a un ritmo predefinito.</Text>
+			<Text>Personalizzato: le Impostazioni del ritmo nella scheda Ritmo non corrispondono più a un ritmo predefinito.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

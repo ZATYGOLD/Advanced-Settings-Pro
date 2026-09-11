@@ -299,7 +299,7 @@
 			<Text>Nicht identifizierte Mod, die diese Einstellungen hinzufügt:</Text>
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="de_DE">
-			<Text>Standardwerte</Text>
+			<Text>Tempo-Einstellungen</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_FASTER_NAME" Language="de_DE">
 			<Text>Schneller</Text>
@@ -308,7 +308,7 @@
 			<Text>Benutzerdefiniert: Lege dies für jedes Zeitalter einzeln fest.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="de_DE">
-			<Text>Legt den Wert dieses Zeitalters fest.[n]Gilt nur, wenn die Einstellung unter „Standardwerte“ auf Benutzerdefiniert steht.</Text>
+			<Text>Legt den Wert dieses Zeitalters fest.[n]Gilt nur, wenn die zugehörige Zeile unter „Tempo-Einstellungen“ auf Benutzerdefiniert steht.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="de_DE">
 			<Text>Zeitalterfortschritt</Text>
@@ -344,7 +344,7 @@
 			<Text>Kosten für Siegprojekte</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION" Language="de_DE">
-			<Text>Legt die Produktionskosten von Sieg- und Vermächtnisprojekten in der Moderne fest.</Text>
+			<Text>Legt die Produktionskosten der Wissenschafts- und Militär-Triumphprojekte in jedem Zeitalter fest.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="de_DE">
 			<Text>[BLIST][LI] Langsam: 50% weniger Punkte.[/BLIST]</Text>
@@ -384,9 +384,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED" Language="de_DE">
 			<Text>[BLIST][LI] Ausgewogen: Meilensteine geben 4, 7 und 11 Punkte in der Antike, 4, 8 und 12 in der Entdeckungszeit und 4 und 8 in der Moderne; Zukunftstechnologien und -bürgerrechte geben 8, in der Moderne 7.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_PLUS_20" Language="de_DE">
-			<Text>[BLIST][LI] +20%: 20% teurer.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="de_DE">
 			<Text>[BLIST][LI] Standard: keine Änderung.[/BLIST]</Text>
@@ -578,10 +575,10 @@
 			<Text>Generiert mehr Berge.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="de_DE">
-			<Text>Zeitaltertempo</Text>
+			<Text>Tempo-Set</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION" Language="de_DE">
-			<Text>Wendet eine Tempo-Vorlage auf die Einstellungen unter „Standardwerte“ im Tempo-Reiter an.</Text>
+			<Text>Wendet eine Tempo-Vorlage auf die Tempo-Einstellungen im Tempo-Reiter an.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="de_DE">
 			<Text>Ausgewogen</Text>
@@ -589,17 +586,20 @@
 		<Replace Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME" Language="de_DE">
 			<Text>Mehrspieler</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME" Language="de_DE">
+			<Text>Standardtempo</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD" Language="de_DE">
-			<Text>Standard: das Tempo des Spiels. Setzt jede Einstellung unter „Standardwerte“ auf Standard.</Text>
+			<Text>Standardtempo: das Tempo des Spiels. Setzt jede Zeile der Tempo-Einstellungen auf Standard.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="de_DE">
 			<Text>Ausgewogen: längere Zeitalter mit Forschung im Epic-Stil. Setzt Zeitalterlänge auf 153, 166 und 196 Punkte je Zeitalter, Zeitalterfortschritt auf Ausgewogen sowie Technologiekosten und Bürgerrechtskosten auf Hoch.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="de_DE">
-			<Text>Mehrspieler: eine leichtere Streckung für Sitzungen. Setzt Zeitalterlänge auf 140, 155 und 190 Punkte je Zeitalter, Zeitalterfortschritt auf Ausgewogen, Technologiekosten auf +35%, +50% und +75% je Zeitalter, Bürgerrechtskosten auf +45%, +60% und +85%, Stadtwachstum auf Langsam, Straßen auf Schnell (Express in der Moderne) und Siegprojektkosten auf +20%.</Text>
+			<Text>Mehrspieler: eine leichtere Streckung für Sitzungen. Setzt Zeitalterlänge auf 140, 155 und 190 Punkte je Zeitalter, Zeitalterfortschritt auf Ausgewogen, Technologiekosten auf +35%, +50% und +75% je Zeitalter, Bürgerrechtskosten auf +45%, +60% und +85%, Stadtwachstum auf Langsam, Straßen auf Schnell (Express in der Moderne) und Siegprojektkosten in der Moderne auf +20%.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="de_DE">
-			<Text>Benutzerdefiniert: Die Einstellungen unter „Standardwerte“ im Tempo-Reiter entsprechen keiner Vorlage mehr.</Text>
+			<Text>Benutzerdefiniert: Die Tempo-Einstellungen im Tempo-Reiter entsprechen keiner Vorlage mehr.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

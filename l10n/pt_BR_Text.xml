@@ -299,7 +299,7 @@
 			<Text>Mod não identificado que adiciona as configurações:</Text>
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="pt_BR">
-			<Text>Padrões</Text>
+			<Text>Configurações de ritmo</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_FASTER_NAME" Language="pt_BR">
 			<Text>Mais rápido</Text>
@@ -308,7 +308,7 @@
 			<Text>Personalizado: defina isto para cada era individualmente.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="pt_BR">
-			<Text>Define o valor desta era.[n]Aplica-se apenas quando a configuração em Padrões está como Personalizado.</Text>
+			<Text>Define o valor desta era.[n]Aplica-se apenas quando a linha correspondente das Configurações de ritmo está como Personalizado.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="pt_BR">
 			<Text>Progresso da era</Text>
@@ -344,7 +344,7 @@
 			<Text>Custo de projetos de vitória</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION" Language="pt_BR">
-			<Text>Define o custo de produção dos projetos de vitória e de legado na Era Moderna.</Text>
+			<Text>Define o custo de produção dos projetos de triunfo científicos e militares em todas as eras.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="pt_BR">
 			<Text>[BLIST][LI] Lento: 50% menos pontos.[/BLIST]</Text>
@@ -384,9 +384,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED" Language="pt_BR">
 			<Text>[BLIST][LI] Equilibrado: marcos concedem 4, 7 e 11 pontos na Antiguidade, 4, 8 e 12 na Exploração e 4 e 8 na Era Moderna; tecnologias e cívicos futuros concedem 8, ou 7 na Era Moderna.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_PLUS_20" Language="pt_BR">
-			<Text>[BLIST][LI] +20%: 20% mais caras.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="pt_BR">
 			<Text>[BLIST][LI] Padrão: sem alteração.[/BLIST]</Text>
@@ -578,10 +575,10 @@
 			<Text>Gera mais montanhas.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="pt_BR">
-			<Text>Ritmo das eras</Text>
+			<Text>Conjunto de ritmo</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION" Language="pt_BR">
-			<Text>Aplica uma predefinição de ritmo às configurações de Padrões na aba Ritmo.</Text>
+			<Text>Aplica uma predefinição de ritmo às Configurações de ritmo na aba Ritmo.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="pt_BR">
 			<Text>Equilibrado</Text>
@@ -589,17 +586,20 @@
 		<Replace Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME" Language="pt_BR">
 			<Text>Multijogador</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME" Language="pt_BR">
+			<Text>Ritmo padrão</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD" Language="pt_BR">
-			<Text>Padrão: o ritmo do próprio jogo. Define todas as configurações de Padrões como Padrão.</Text>
+			<Text>Ritmo padrão: o ritmo do próprio jogo. Define todas as linhas das Configurações de ritmo como Padrão.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="pt_BR">
 			<Text>Equilibrado: eras mais longas com pesquisa no estilo Épico. Define Duração da era como 153, 166 e 196 pontos por era, Ritmo de progresso da era como Equilibrado e Custo de tecnologias e Custo de cívicos como Alto.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="pt_BR">
-			<Text>Multijogador: uma extensão mais leve para sessões. Define Duração da era como 140, 155 e 190 pontos por era, Ritmo de progresso da era como Equilibrado, Custo de tecnologias como +35%, +50% e +75% por era, Custo de cívicos como +45%, +60% e +85%, Crescimento das cidades como Lento, Estradas como Rápidas (Expresso na Era Moderna) e Custo de projetos de vitória como +20%.</Text>
+			<Text>Multijogador: uma extensão mais leve para sessões. Define Duração da era como 140, 155 e 190 pontos por era, Ritmo de progresso da era como Equilibrado, Custo de tecnologias como +35%, +50% e +75% por era, Custo de cívicos como +45%, +60% e +85%, Crescimento das cidades como Lento, Estradas como Rápidas (Expresso na Era Moderna) e Custo de projetos de vitória como +20% na Era Moderna.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="pt_BR">
-			<Text>Personalizado: as configurações de Padrões na aba Ritmo não correspondem mais a uma predefinição.</Text>
+			<Text>Personalizado: as Configurações de ritmo na aba Ritmo não correspondem mais a uma predefinição.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

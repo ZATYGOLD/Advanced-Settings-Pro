@@ -119,18 +119,20 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_RandomMementosDomain', 'ZG_RANDOM_MEMENTOS_BOTH', 'LOC_ZG_RANDOM_MEMENTOS_NAME', '', 40);
 
 --*******************************************************
---************* PACE PRESET *****************************
+--************* PACE SET *******************************
 --*******************************************************
--- Preset selector in Game Settings. Each preset sets the All Ages settings on
--- the Pace tab to the values it stands for (ui/zg-setup-rules.js); changing
--- one of them afterwards switches the preset to Custom.
+-- Preset selector in Game Settings, after Rule Set, mirrored by ZG_PaceSetMirror
+-- at the top of Pace Settings on the Pace tab. Each preset sets the Pace
+-- Settings to the values it stands for (ui/zg-setup-rules.js); changing one of
+-- them afterwards switches the preset to Custom.
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
-        ('ZG_PacePreset', 'LOC_ZG_PACE_PRESET_NAME', 'LOC_ZG_PACE_PRESET_DESCRIPTION', 'ZG_PacePresetDomain', 'ZG_PACE_PRESET_STANDARD', 1, 'Game', 'PacePresetKey', 'GameOptions', 'MPAdvancedGameOptions', 0, 138);
+        ('ZG_PacePreset', 'LOC_ZG_PACE_PRESET_NAME', 'LOC_ZG_PACE_PRESET_DESCRIPTION', 'ZG_PacePresetDomain', 'ZG_PACE_PRESET_STANDARD', 1, 'Game', 'PacePresetKey', 'GameOptions', 'MPAdvancedGameOptions', 0, 15),
+        ('ZG_PaceSetMirror', 'LOC_ZG_PACE_PRESET_NAME', 'LOC_ZG_PACE_PRESET_DESCRIPTION', 'ZG_PacePresetDomain', 'ZG_PACE_PRESET_STANDARD', 1, 'Game', 'PaceSetMirrorKey', 'GamePacingOptions', 'MPAdvancedGamePacingOptions', 0, 28);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
-        ('ZG_PacePresetDomain', 'ZG_PACE_PRESET_STANDARD', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD', 10),
+        ('ZG_PacePresetDomain', 'ZG_PACE_PRESET_STANDARD', 'LOC_ZG_PACE_PRESET_STANDARD_NAME', 'LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD', 10),
         ('ZG_PacePresetDomain', 'ZG_PACE_PRESET_BALANCED', 'LOC_ZG_BALANCED_NAME', 'LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED', 20),
         ('ZG_PacePresetDomain', 'ZG_PACE_PRESET_MULTIPLAYER', 'LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME', 'LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER', 30),
         ('ZG_PacePresetDomain', 'ZG_PACE_PRESET_CUSTOM', 'LOC_ZG_CUSTOM_NAME', 'LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM', 40);
@@ -141,8 +143,7 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 -- Shown on the Pace tab (ui/zg-map-tab.js): All Ages holds the primaries
 -- (Age Length above and the settings below); the Antiquity,
 -- Exploration, and Modern groups hold each setting's per-age row, used when the
--- primary is Custom and synced by ui/zg-setup-rules.js. Victory Project Cost is
--- Modern-only, so it has no rows.
+-- primary is Custom and synced by ui/zg-setup-rules.js.
 
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
@@ -169,7 +170,10 @@ INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, Defaul
         ('ZG_RoadsAntiquity', 'LOC_ZG_ROADS_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_RoadsAgeDomain', 'ZG_ROADS_STANDARD', 1, 'Game', 'RoadsAntiquityKey', 'PacingAntiquityOptions', 'MPAdvancedPacingAntiquityOptions', 0, 105),
         ('ZG_RoadsExploration', 'LOC_ZG_ROADS_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_RoadsAgeDomain', 'ZG_ROADS_STANDARD', 1, 'Game', 'RoadsExplorationKey', 'PacingExplorationOptions', 'MPAdvancedPacingExplorationOptions', 0, 115),
         ('ZG_RoadsModern', 'LOC_ZG_ROADS_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_RoadsAgeDomain', 'ZG_ROADS_STANDARD', 1, 'Game', 'RoadsModernKey', 'PacingModernOptions', 'MPAdvancedPacingModernOptions', 0, 125),
-        ('ZG_VictoryProjectCost', 'LOC_ZG_VICTORY_PROJECT_COST_NAME', 'LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION', 'ZG_VictoryProjectCostDomain', 'ZG_VICTORY_PROJECT_COST_STANDARD', 1, 'Game', 'VictoryProjectCostKey', 'GamePacingOptions', 'MPAdvancedGamePacingOptions', 0, 52);
+        ('ZG_VictoryProjectCost', 'LOC_ZG_VICTORY_PROJECT_COST_NAME', 'LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION', 'ZG_VictoryProjectCostDomain', 'ZG_VICTORY_PROJECT_COST_STANDARD', 1, 'Game', 'VictoryProjectCostKey', 'GamePacingOptions', 'MPAdvancedGamePacingOptions', 0, 52),
+        ('ZG_VictoryProjectCostAntiquity', 'LOC_ZG_VICTORY_PROJECT_COST_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_VictoryProjectCostAgeDomain', 'ZG_VICTORY_PROJECT_COST_STANDARD', 1, 'Game', 'VictoryProjectCostAntiquityKey', 'PacingAntiquityOptions', 'MPAdvancedPacingAntiquityOptions', 0, 106),
+        ('ZG_VictoryProjectCostExploration', 'LOC_ZG_VICTORY_PROJECT_COST_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_VictoryProjectCostAgeDomain', 'ZG_VICTORY_PROJECT_COST_STANDARD', 1, 'Game', 'VictoryProjectCostExplorationKey', 'PacingExplorationOptions', 'MPAdvancedPacingExplorationOptions', 0, 116),
+        ('ZG_VictoryProjectCostModern', 'LOC_ZG_VICTORY_PROJECT_COST_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_VictoryProjectCostAgeDomain', 'ZG_VICTORY_PROJECT_COST_STANDARD', 1, 'Game', 'VictoryProjectCostModernKey', 'PacingModernOptions', 'MPAdvancedPacingModernOptions', 0, 126);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
@@ -251,9 +255,14 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_RoadsAgeDomain', 'ZG_ROADS_FASTER', 'LOC_ZG_FASTER_NAME', 'LOC_ZG_ROADS_DESCRIPTION_FASTER', 40),
         ('ZG_VictoryProjectCostDomain', 'ZG_VICTORY_PROJECT_COST_LOW', 'LOC_ZG_LOW_NAME', 'LOC_ZG_COST_DESCRIPTION_LOW', 10),
         ('ZG_VictoryProjectCostDomain', 'ZG_VICTORY_PROJECT_COST_STANDARD', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_COST_DESCRIPTION_STANDARD', 20),
-        ('ZG_VictoryProjectCostDomain', 'ZG_VICTORY_PROJECT_COST_PLUS_20', 'LOC_ZG_PCT_PLUS_20', 'LOC_ZG_COST_DESCRIPTION_PLUS_20', 30),
-        ('ZG_VictoryProjectCostDomain', 'ZG_VICTORY_PROJECT_COST_HIGH', 'LOC_ZG_HIGH_NAME', 'LOC_ZG_COST_DESCRIPTION_HIGH', 40),
-        ('ZG_VictoryProjectCostDomain', 'ZG_VICTORY_PROJECT_COST_DOUBLE', 'LOC_ZG_DOUBLE_NAME', 'LOC_ZG_COST_DESCRIPTION_DOUBLE', 50);
+        ('ZG_VictoryProjectCostDomain', 'ZG_VICTORY_PROJECT_COST_HIGH', 'LOC_ZG_HIGH_NAME', 'LOC_ZG_COST_DESCRIPTION_HIGH', 30),
+        ('ZG_VictoryProjectCostDomain', 'ZG_VICTORY_PROJECT_COST_DOUBLE', 'LOC_ZG_DOUBLE_NAME', 'LOC_ZG_COST_DESCRIPTION_DOUBLE', 40),
+        ('ZG_VictoryProjectCostDomain', 'ZG_VICTORY_PROJECT_COST_CUSTOM', 'LOC_ZG_CUSTOM_NAME', 'LOC_ZG_PACING_DESCRIPTION_CUSTOM', 50),
+        ('ZG_VictoryProjectCostAgeDomain', 'ZG_VICTORY_PROJECT_COST_MINUS_25', 'LOC_ZG_PCT_MINUS_25', 'LOC_ZG_PCT_MINUS_25', 10),
+        ('ZG_VictoryProjectCostAgeDomain', 'ZG_VICTORY_PROJECT_COST_STANDARD', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_COST_DESCRIPTION_STANDARD', 20),
+        ('ZG_VictoryProjectCostAgeDomain', 'ZG_VICTORY_PROJECT_COST_PLUS_20', 'LOC_ZG_PCT_PLUS_20', 'LOC_ZG_PCT_PLUS_20', 30),
+        ('ZG_VictoryProjectCostAgeDomain', 'ZG_VICTORY_PROJECT_COST_PLUS_50', 'LOC_ZG_PCT_PLUS_50', 'LOC_ZG_PCT_PLUS_50', 40),
+        ('ZG_VictoryProjectCostAgeDomain', 'ZG_VICTORY_PROJECT_COST_PLUS_100', 'LOC_ZG_PCT_PLUS_100', 'LOC_ZG_PCT_PLUS_100', 50);
 
 --*******************************************************
 --************* INDEPENDENT HOSTILITY *******************

@@ -299,7 +299,7 @@
 			<Text>Mod non identifié ajoutant les paramètres :</Text>
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="fr_FR">
-			<Text>Valeurs par défaut</Text>
+			<Text>Paramètres de rythme</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_FASTER_NAME" Language="fr_FR">
 			<Text>Plus rapide</Text>
@@ -308,7 +308,7 @@
 			<Text>Personnalisé : définissez ceci pour chaque âge individuellement.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="fr_FR">
-			<Text>Définit la valeur de cet âge.[n]Ne s'applique que lorsque le paramètre des Valeurs par défaut est réglé sur Personnalisé.</Text>
+			<Text>Définit la valeur de cet âge.[n]Ne s'applique que lorsque la ligne correspondante des Paramètres de rythme est réglée sur Personnalisé.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="fr_FR">
 			<Text>Progression des âges</Text>
@@ -344,7 +344,7 @@
 			<Text>Coût des projets de victoire</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION" Language="fr_FR">
-			<Text>Définit le coût de production des projets de victoire et d'héritage à l'Âge moderne.</Text>
+			<Text>Définit le coût de production des projets de triomphe scientifiques et militaires à chaque âge.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="fr_FR">
 			<Text>[BLIST][LI] Lent : 50% de points en moins.[/BLIST]</Text>
@@ -384,9 +384,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED" Language="fr_FR">
 			<Text>[BLIST][LI] Équilibré : les jalons rapportent 4, 7 et 11 points dans l'Antiquité, 4, 8 et 12 dans l'Exploration et 4 et 8 dans l'Âge moderne ; les technologies et dogmes futurs rapportent 8, ou 7 dans l'Âge moderne.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_PLUS_20" Language="fr_FR">
-			<Text>[BLIST][LI] +20% : 20% plus chères.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="fr_FR">
 			<Text>[BLIST][LI] Standard : aucun changement.[/BLIST]</Text>
@@ -578,10 +575,10 @@
 			<Text>Génère plus de montagnes.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="fr_FR">
-			<Text>Rythme des âges</Text>
+			<Text>Ensemble de rythme</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION" Language="fr_FR">
-			<Text>Applique un préréglage de rythme aux paramètres des Valeurs par défaut dans l'onglet Rythme.</Text>
+			<Text>Applique un préréglage de rythme aux Paramètres de rythme de l'onglet Rythme.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="fr_FR">
 			<Text>Équilibré</Text>
@@ -589,17 +586,20 @@
 		<Replace Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME" Language="fr_FR">
 			<Text>Multijoueur</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME" Language="fr_FR">
+			<Text>Rythme standard</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD" Language="fr_FR">
-			<Text>Standard : le rythme du jeu lui-même. Règle chaque paramètre des Valeurs par défaut sur Standard.</Text>
+			<Text>Rythme standard : le rythme du jeu lui-même. Règle chaque ligne des Paramètres de rythme sur Standard.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="fr_FR">
 			<Text>Équilibré : des âges plus longs avec une recherche de style Épique. Règle la Durée des âges sur 153, 166 et 196 points par âge, le Rythme de progression d'âge sur Équilibré et le Coût des technologies et le Coût des dogmes sur Élevé.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="fr_FR">
-			<Text>Multijoueur : un allongement plus léger pour les sessions. Règle la Durée des âges sur 140, 155 et 190 points par âge, le Rythme de progression d'âge sur Équilibré, le Coût des technologies sur +35%, +50% et +75% par âge, le Coût des dogmes sur +45%, +60% et +85%, la Croissance des villes sur Lente, les Routes sur Rapide (Express dans l'Âge moderne) et le Coût des projets de victoire sur +20%.</Text>
+			<Text>Multijoueur : un allongement plus léger pour les sessions. Règle la Durée des âges sur 140, 155 et 190 points par âge, le Rythme de progression d'âge sur Équilibré, le Coût des technologies sur +35%, +50% et +75% par âge, le Coût des dogmes sur +45%, +60% et +85%, la Croissance des villes sur Lente, les Routes sur Rapide (Express dans l'Âge moderne) et le Coût des projets de victoire sur +20% dans l'Âge moderne.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="fr_FR">
-			<Text>Personnalisé : les paramètres des Valeurs par défaut dans l'onglet Rythme ne correspondent plus à un préréglage.</Text>
+			<Text>Personnalisé : les Paramètres de rythme de l'onglet Rythme ne correspondent plus à un préréglage.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

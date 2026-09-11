@@ -299,7 +299,7 @@
 			<Text>次の設定を追加する未特定のMod：</Text>
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="ja_JP">
-			<Text>デフォルト</Text>
+			<Text>ペース設定</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_FASTER_NAME" Language="ja_JP">
 			<Text>より速い</Text>
@@ -308,7 +308,7 @@
 			<Text>カスタム：時代ごとに個別に設定します。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="ja_JP">
-			<Text>この時代の値を設定します。[n]「デフォルト」の設定が「カスタム」のときのみ適用されます。</Text>
+			<Text>この時代の値を設定します。[n]「ペース設定」が「カスタム」のときのみ適用されます。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="ja_JP">
 			<Text>時代の進行速度</Text>
@@ -344,7 +344,7 @@
 			<Text>勝利プロジェクトのコスト</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION" Language="ja_JP">
-			<Text>近代の勝利プロジェクトとレガシープロジェクトの生産コストを設定します。</Text>
+			<Text>各時代の科学および軍事の勝利プロジェクトの生産コストを設定します。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="ja_JP">
 			<Text>[BLIST][LI] 遅い：ポイント50%減。[/BLIST]</Text>
@@ -384,9 +384,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED" Language="ja_JP">
 			<Text>[BLIST][LI] バランス：マイルストーンで古代は4、7、11ポイント、探検は4、8、12ポイント、近代は4、8ポイントを獲得。未来の技術と社会制度は8ポイント（近代は7）。[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_PLUS_20" Language="ja_JP">
-			<Text>[BLIST][LI] +20%：20%割高。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="ja_JP">
 			<Text>[BLIST][LI] 標準：変更なし。[/BLIST]</Text>
@@ -578,10 +575,10 @@
 			<Text>生成される山が多くなります。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="ja_JP">
-			<Text>時代ペース</Text>
+			<Text>ペースセット</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION" Language="ja_JP">
-			<Text>「ペース」タブの「デフォルト」の設定にペースのプリセットを適用します。</Text>
+			<Text>「ペース」タブの「ペース設定」にペースのプリセットを適用します。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="ja_JP">
 			<Text>バランス</Text>
@@ -589,17 +586,20 @@
 		<Replace Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME" Language="ja_JP">
 			<Text>マルチプレイヤー</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME" Language="ja_JP">
+			<Text>標準ペース</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD" Language="ja_JP">
-			<Text>標準：ゲーム本来のペース。「デフォルト」のすべての設定を標準にします。</Text>
+			<Text>標準ペース：ゲーム本来のペース。「ペース設定」のすべての設定を標準にします。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="ja_JP">
 			<Text>バランス：エピック風の研究でより長い時代に。時代の長さを時代ごとに153、166、196ポイント、時代進行速度を「バランス」、技術コストと社会制度コストを「高」にします。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="ja_JP">
-			<Text>マルチプレイヤー：セッション向けの軽めの延長。時代の長さを時代ごとに140、155、190ポイント、時代進行速度を「バランス」、技術コストを時代ごとに+35%、+50%、+75%、社会制度コストを+45%、+60%、+85%、都市の成長を「遅い」、道路を「速い」（近代は「特急」）、勝利プロジェクトコストを+20%にします。</Text>
+			<Text>マルチプレイヤー：セッション向けの軽めの延長。時代の長さを時代ごとに140、155、190ポイント、時代進行速度を「バランス」、技術コストを時代ごとに+35%、+50%、+75%、社会制度コストを+45%、+60%、+85%、都市の成長を「遅い」、道路を「速い」（近代は「特急」）、近代の勝利プロジェクトコストを+20%にします。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="ja_JP">
-			<Text>カスタム：「ペース」タブの「デフォルト」の設定がどのプリセットとも一致していません。</Text>
+			<Text>カスタム：「ペース」タブの「ペース設定」がどのプリセットとも一致していません。</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

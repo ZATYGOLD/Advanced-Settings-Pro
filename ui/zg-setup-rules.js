@@ -17,20 +17,21 @@
 //   8. An age is changed away from the selected tier
 //      -> the primary setting switches to Custom.
 //
-// Age Pace:
+// Pace Set:
 //   9. A preset is selected         -> every All Ages setting takes the preset's value.
 //  10. An All Ages setting no longer matches the selected preset
-//      -> Age Pace switches to Custom.
+//      -> Pace Set switches to Custom.
 //  11. Age Length leaves Custom      -> every other All Ages setting returns to Standard.
+//  12. Pace Set (General) and Pace Set (Pace tab) mirror each other.
 //
 // Crises:
-//  12. Crises set to Disabled       -> every crisis in the selection is excluded.
-//  13. Crises leaves Disabled       -> every crisis in the selection is included.
-//  14. Every crisis excluded        -> Crises becomes Disabled; any crisis included
+//  13. Crises set to Disabled       -> every crisis in the selection is excluded.
+//  14. Crises leaves Disabled       -> every crisis in the selection is included.
+//  15. Every crisis excluded        -> Crises becomes Disabled; any crisis included
 //      while it says Disabled       -> Crises becomes Enabled.
-//  15. Crises Disabled              -> Crisis Timing shows Disabled; Crises Enabled
+//  16. Crises Disabled              -> Crisis Timing shows Disabled; Crises Enabled
 //      while the timing says Disabled -> the timing returns to Default.
-//  16. Crisis Timing set to Disabled -> Crises becomes Disabled; the timing leaves
+//  17. Crisis Timing set to Disabled -> Crises becomes Disabled; the timing leaves
 //      Disabled                     -> Crises becomes Enabled.
 
 const NW_COUNT_PARAM_ID = "ZG_NaturalWondersCount";
@@ -81,11 +82,13 @@ const TIER_AGE_SYNCS = [
 	{ tierId: "ZG_CivicCost", ageIds: ["ZG_CivicCostAntiquity", "ZG_CivicCostExploration", "ZG_CivicCostModern"], ageNames: COST_AGE_NAMES, lastTier: null },
 	{ tierId: "ZG_CityGrowth", ageIds: ["ZG_CityGrowthAntiquity", "ZG_CityGrowthExploration", "ZG_CityGrowthModern"], lastTier: null },
 	{ tierId: "ZG_Roads", ageIds: ["ZG_RoadsAntiquity", "ZG_RoadsExploration", "ZG_RoadsModern"], lastTier: null },
+	{ tierId: "ZG_VictoryProjectCost", ageIds: ["ZG_VictoryProjectCostAntiquity", "ZG_VictoryProjectCostExploration", "ZG_VictoryProjectCostModern"], ageNames: COST_AGE_NAMES, lastTier: null },
 ];
 
-// Age Pace presets (rules 9 & 10): each All Ages setting's value by name,
+// Pace Set presets (rules 9 & 10): each All Ages setting's value by name,
 // or a per-age list (Antiquity, Exploration, Modern) that puts it on Custom.
 const PACE_PARAM_ID = "ZG_PacePreset";
+const PACE_MIRROR_PARAM_ID = "ZG_PaceSetMirror";
 const PACE_STANDARD = {
 	[AGE_LENGTH_PARAM_ID]: "LOC_ADVANCED_OPTIONS_STANDARD",
 	ZG_AgeProgressRate: "LOC_ADVANCED_OPTIONS_STANDARD",
@@ -96,7 +99,7 @@ const PACE_STANDARD = {
 	ZG_VictoryProjectCost: "LOC_ADVANCED_OPTIONS_STANDARD",
 };
 const PACE_PRESETS = {
-	"LOC_ADVANCED_OPTIONS_STANDARD": PACE_STANDARD,
+	"LOC_ZG_PACE_PRESET_STANDARD_NAME": PACE_STANDARD,
 	// Eras+ Balanced Extended+: age caps 153/166/196, its milestone curve, 1.5x techs and civics.
 	"LOC_ZG_BALANCED_NAME": {
 		...PACE_STANDARD,
@@ -116,10 +119,11 @@ const PACE_PRESETS = {
 		ZG_CivicCost: ["LOC_ZG_PCT_PLUS_45", "LOC_ZG_PCT_PLUS_60", "LOC_ZG_PCT_PLUS_85"],
 		ZG_CityGrowth: "LOC_ZG_SLOW_NAME",
 		ZG_Roads: ["LOC_ZG_FAST_NAME", "LOC_ZG_FAST_NAME", "LOC_ZG_ROADS_EXPRESS_NAME"],
-		ZG_VictoryProjectCost: "LOC_ZG_PCT_PLUS_20",
+		ZG_VictoryProjectCost: ["LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ZG_PCT_PLUS_20"],
 	},
 };
 let lastPace = null;
+let lastPaceMirror = null;
 let lastAgeLength = null;
 
 const CRISES_PARAM_ID = "ZG_Crises";
@@ -329,6 +333,20 @@ function matchesPacePreset(preset) {
 	});
 }
 
+// 12: the two Pace Set dropdowns share one value; whichever changed wins.
+function syncPaceMirror() {
+	const pace = currentValueName(GameSetup.findGameParameter(PACE_PARAM_ID));
+	const mirror = currentValueName(GameSetup.findGameParameter(PACE_MIRROR_PARAM_ID));
+	const paceChanged = lastPace != null && pace != lastPace;
+	const mirrorChanged = lastPaceMirror != null && mirror != lastPaceMirror;
+	if (mirrorChanged && !paceChanged) {
+		setParamByName(PACE_PARAM_ID, mirror);
+	} else if (pace != mirror) {
+		setParamByName(PACE_MIRROR_PARAM_ID, pace);
+	}
+	lastPaceMirror = currentValueName(GameSetup.findGameParameter(PACE_MIRROR_PARAM_ID));
+}
+
 function syncPacePreset() {
 	const paceParam = GameSetup.findGameParameter(PACE_PARAM_ID);
 	if (!paceParam) {
@@ -379,7 +397,7 @@ function syncCrises() {
 	const timingParam = GameSetup.findGameParameter(CRISIS_TIMING_PARAM_ID);
 	const timing = timingParam ? currentValueName(timingParam) : null;
 
-	// 12 & 13: the player changed the toggle; cascade to the selection and timing.
+	// 13 & 14: the player changed the toggle; cascade to the selection and timing.
 	if (crisesLastToggle != null && toggle != crisesLastToggle) {
 		if (toggle == TOGGLE_DISABLED) {
 			GameSetup.setGameParameterValue(CRISES_SELECTION_PARAM_ID, possible);
@@ -395,7 +413,7 @@ function syncCrises() {
 		return;
 	}
 	crisesLastToggle = toggle;
-	// 16: the player changed the timing to or from Disabled; the toggle follows.
+	// 17: the player changed the timing to or from Disabled; the toggle follows.
 	if (timing != null && crisisTimingLast != null && timing != crisisTimingLast) {
 		if (timing == TIER_DISABLED && toggle != TOGGLE_DISABLED) {
 			setParamByName(CRISES_PARAM_ID, TOGGLE_DISABLED);
@@ -406,7 +424,7 @@ function syncCrises() {
 		return;
 	}
 	crisisTimingLast = timing;
-	// 14 & 15: keep the toggle truthful about the selection, and the timing about the toggle.
+	// 15 & 16: keep the toggle truthful about the selection, and the timing about the toggle.
 	if (allExcluded && toggle != TOGGLE_DISABLED) {
 		setParamByName(CRISES_PARAM_ID, TOGGLE_DISABLED);
 		setParamByName(CRISIS_TIMING_PARAM_ID, TIER_DISABLED);
@@ -446,9 +464,10 @@ setInterval(() => {
 		console.warn(`ZG-ASP settlement sync error: ${e}`);
 	}
 	try {
+		syncPaceMirror();
 		syncPacePreset();
 	} catch (e) {
-		console.warn(`ZG-ASP pace preset sync error: ${e}`);
+		console.warn(`ZG-ASP pace set sync error: ${e}`);
 	}
 	for (const sync of TIER_AGE_SYNCS) {
 		try {

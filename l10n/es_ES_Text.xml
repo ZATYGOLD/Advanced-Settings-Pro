@@ -299,7 +299,7 @@
 			<Text>Mod no identificado que añade los ajustes:</Text>
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="es_ES">
-			<Text>Valores predeterminados</Text>
+			<Text>Configuración de ritmo</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_FASTER_NAME" Language="es_ES">
 			<Text>Más rápido</Text>
@@ -308,7 +308,7 @@
 			<Text>Personalizado: establece esto para cada era individualmente.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="es_ES">
-			<Text>Establece el valor de esta era.[n]Solo se aplica cuando el ajuste de Valores predeterminados está en Personalizado.</Text>
+			<Text>Establece el valor de esta era.[n]Solo se aplica cuando la fila correspondiente de Configuración de ritmo está en Personalizado.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="es_ES">
 			<Text>Progreso de la era</Text>
@@ -344,7 +344,7 @@
 			<Text>Coste de proyectos de victoria</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION" Language="es_ES">
-			<Text>Establece el coste de producción de los proyectos de victoria y de legado en la Modernidad.</Text>
+			<Text>Establece el coste de producción de los proyectos de triunfo científicos y militares en todas las eras.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="es_ES">
 			<Text>[BLIST][LI] Lento: 50% menos puntos.[/BLIST]</Text>
@@ -384,9 +384,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED" Language="es_ES">
 			<Text>[BLIST][LI] Equilibrado: los hitos otorgan 4, 7 y 11 puntos en la Antigüedad, 4, 8 y 12 en la Exploración y 4 y 8 en la Era Moderna; las tecnologías y principios futuros otorgan 8, o 7 en la Era Moderna.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_PLUS_20" Language="es_ES">
-			<Text>[BLIST][LI] +20%: 20% más caras.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="es_ES">
 			<Text>[BLIST][LI] Estándar: sin cambios.[/BLIST]</Text>
@@ -578,10 +575,10 @@
 			<Text>Genera más montañas.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="es_ES">
-			<Text>Ritmo de las eras</Text>
+			<Text>Conjunto de ritmo</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION" Language="es_ES">
-			<Text>Aplica un ajuste predefinido de ritmo a la configuración de Valores predeterminados en la pestaña Ritmo.</Text>
+			<Text>Aplica un ajuste predefinido de ritmo a la Configuración de ritmo de la pestaña Ritmo.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="es_ES">
 			<Text>Equilibrado</Text>
@@ -589,17 +586,20 @@
 		<Replace Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME" Language="es_ES">
 			<Text>Multijugador</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME" Language="es_ES">
+			<Text>Ritmo estándar</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD" Language="es_ES">
-			<Text>Estándar: el ritmo propio del juego. Pone toda la configuración de Valores predeterminados en Estándar.</Text>
+			<Text>Ritmo estándar: el ritmo propio del juego. Pone todas las filas de Configuración de ritmo en Estándar.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="es_ES">
 			<Text>Equilibrado: eras más largas con investigación al estilo Épico. Pone Duración de las eras en 153, 166 y 196 puntos por era, Ritmo de progreso de era en Equilibrado y Coste de tecnologías y Coste de principios en Alto.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="es_ES">
-			<Text>Multijugador: una extensión más ligera para sesiones. Pone Duración de las eras en 140, 155 y 190 puntos por era, Ritmo de progreso de era en Equilibrado, Coste de tecnologías en +35%, +50% y +75% por era, Coste de principios en +45%, +60% y +85%, Crecimiento de ciudades en Lento, Carreteras en Rápido (Exprés en la Era Moderna) y Coste de proyectos de victoria en +20%.</Text>
+			<Text>Multijugador: una extensión más ligera para sesiones. Pone Duración de las eras en 140, 155 y 190 puntos por era, Ritmo de progreso de era en Equilibrado, Coste de tecnologías en +35%, +50% y +75% por era, Coste de principios en +45%, +60% y +85%, Crecimiento de ciudades en Lento, Carreteras en Rápido (Exprés en la Era Moderna) y Coste de proyectos de victoria en +20% en la Era Moderna.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="es_ES">
-			<Text>Personalizado: la configuración de Valores predeterminados en la pestaña Ritmo ya no coincide con ningún ajuste predefinido.</Text>
+			<Text>Personalizado: la Configuración de ritmo de la pestaña Ritmo ya no coincide con ningún ajuste predefinido.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

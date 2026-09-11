@@ -299,7 +299,7 @@
 			<Text>다음 설정을 추가하는 확인되지 않은 모드:</Text>
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="ko_KR">
-			<Text>기본값</Text>
+			<Text>페이스 설정</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_FASTER_NAME" Language="ko_KR">
 			<Text>더 빠름</Text>
@@ -308,7 +308,7 @@
 			<Text>사용자 지정: 시대별로 개별 설정합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="ko_KR">
-			<Text>이 시대의 값을 정합니다.[n]기본값 설정이 사용자 지정일 때만 적용됩니다.</Text>
+			<Text>이 시대의 값을 정합니다.[n]페이스 설정이 사용자 지정일 때만 적용됩니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="ko_KR">
 			<Text>시대 진행 속도</Text>
@@ -344,7 +344,7 @@
 			<Text>승리 프로젝트 비용</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION" Language="ko_KR">
-			<Text>근대의 승리 및 유산 프로젝트 생산 비용을 설정합니다.</Text>
+			<Text>모든 시대의 과학 및 군사 승리 프로젝트의 생산 비용을 정합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="ko_KR">
 			<Text>[BLIST][LI] 느림: 포인트 50% 감소.[/BLIST]</Text>
@@ -384,9 +384,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED" Language="ko_KR">
 			<Text>[BLIST][LI] 균형: 이정표가 고대에서 4, 7, 11점, 탐험에서 4, 8, 12점, 근대에서 4, 8점을 줍니다. 미래 기술과 사회 제도는 8점(근대는 7점)을 줍니다.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_PLUS_20" Language="ko_KR">
-			<Text>[BLIST][LI] +20%: 20% 비쌈.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="ko_KR">
 			<Text>[BLIST][LI] 일반: 변경 없음.[/BLIST]</Text>
@@ -578,10 +575,10 @@
 			<Text>산이 더 많이 생성됩니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="ko_KR">
-			<Text>시대 페이스</Text>
+			<Text>페이스 세트</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION" Language="ko_KR">
-			<Text>페이스 탭의 기본값 설정에 페이스 프리셋을 적용합니다.</Text>
+			<Text>페이스 탭의 페이스 설정에 페이스 프리셋을 적용합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="ko_KR">
 			<Text>균형</Text>
@@ -589,17 +586,20 @@
 		<Replace Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME" Language="ko_KR">
 			<Text>멀티플레이어</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME" Language="ko_KR">
+			<Text>표준 페이스</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD" Language="ko_KR">
-			<Text>표준: 게임 본연의 페이스입니다. 기본값 설정을 전부 표준으로 맞춥니다.</Text>
+			<Text>표준 페이스: 게임 본연의 페이스입니다. 페이스 설정을 전부 표준으로 맞춥니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="ko_KR">
 			<Text>균형: 에픽 스타일의 연구로 더 긴 시대를 즐깁니다. 시대 길이를 시대별로 153, 166, 196점, 시대 진행 속도를 균형, 기술 비용과 사회 제도 비용을 높음으로 맞춥니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="ko_KR">
-			<Text>멀티플레이어: 세션에 맞춘 가벼운 연장입니다. 시대 길이를 시대별로 140, 155, 190점, 시대 진행 속도를 균형, 기술 비용을 시대별로 +35%, +50%, +75%, 사회 제도 비용을 +45%, +60%, +85%, 도시 성장을 느림, 도로를 빠름(근대는 급행), 승리 프로젝트 비용을 +20%로 맞춥니다.</Text>
+			<Text>멀티플레이어: 세션에 맞춘 가벼운 연장입니다. 시대 길이를 시대별로 140, 155, 190점, 시대 진행 속도를 균형, 기술 비용을 시대별로 +35%, +50%, +75%, 사회 제도 비용을 +45%, +60%, +85%, 도시 성장을 느림, 도로를 빠름(근대는 급행), 근대의 승리 프로젝트 비용을 +20%로 맞춥니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="ko_KR">
-			<Text>사용자 지정: 페이스 탭의 기본값 설정이 더 이상 어떤 프리셋과도 일치하지 않습니다.</Text>
+			<Text>사용자 지정: 페이스 탭의 페이스 설정이 더 이상 어떤 프리셋과도 일치하지 않습니다.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

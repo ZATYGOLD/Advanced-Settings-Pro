@@ -1,9 +1,0 @@
--- High: victory and legacy project costs x1.5.
-UPDATE Projects
-SET Cost = ROUND(Cost * 1.5)
-WHERE Cost IS NOT NULL
-AND (
-    RequireCompletedLegacyPathType IS NOT NULL
-    OR ProjectVictoryCinematicLocation <> 'NO_PROJECT_VICTORY_CINEMATIC_LOCATION'
-    OR ProjectType IN ('PROJECT_TRANS_OCEANIC_FLIGHT', 'PROJECT_BREAK_SOUND_BARRIER', 'PROJECT_LAUNCH_SATELLITE', 'PROJECT_CREWED_SPACE_FLIGHT_RESEARCH', 'PROJECT_CREWED_SPACE_FLIGHT_PREP')
-);

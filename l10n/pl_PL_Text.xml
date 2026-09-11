@@ -299,7 +299,7 @@
 			<Text>Niezidentyfikowany mod dodający ustawienia:</Text>
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="pl_PL">
-			<Text>Domyślne</Text>
+			<Text>Ustawienia tempa</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_FASTER_NAME" Language="pl_PL">
 			<Text>Szybciej</Text>
@@ -308,7 +308,7 @@
 			<Text>Niestandardowe: ustaw to osobno dla każdej epoki.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="pl_PL">
-			<Text>Ustawia wartość dla tej epoki.[n]Działa tylko wtedy, gdy ustawienie w sekcji Domyślne ma wartość Własne.</Text>
+			<Text>Ustawia wartość dla tej epoki.[n]Działa tylko wtedy, gdy odpowiedni wiersz w sekcji Ustawienia tempa ma wartość Własne.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="pl_PL">
 			<Text>Postęp epoki</Text>
@@ -344,7 +344,7 @@
 			<Text>Koszt projektów zwycięstwa</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION" Language="pl_PL">
-			<Text>Określa koszt produkcji projektów zwycięstwa i dziedzictwa w epoce nowożytnej.</Text>
+			<Text>Ustawia koszt produkcji naukowych i militarnych projektów triumfu w każdej epoce.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="pl_PL">
 			<Text>[BLIST][LI] Wolno: 50% mniej punktów.[/BLIST]</Text>
@@ -384,9 +384,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED" Language="pl_PL">
 			<Text>[BLIST][LI] Zrównoważone: kamienie milowe dają 4, 7 i 11 punktów w starożytności, 4, 8 i 12 w epoce odkryć oraz 4 i 8 w epoce nowoczesnej; przyszłe technologie i idee dają 8, a w epoce nowoczesnej 7.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_PLUS_20" Language="pl_PL">
-			<Text>[BLIST][LI] +20%: 20% drożej.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="pl_PL">
 			<Text>[BLIST][LI] Standardowe: bez zmian.[/BLIST]</Text>
@@ -578,10 +575,10 @@
 			<Text>Generuje więcej gór.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="pl_PL">
-			<Text>Tempo epok</Text>
+			<Text>Zestaw tempa</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION" Language="pl_PL">
-			<Text>Stosuje gotowy zestaw tempa do ustawień w sekcji Domyślne na karcie Tempo.</Text>
+			<Text>Stosuje gotowy zestaw tempa do sekcji Ustawienia tempa na karcie Tempo.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="pl_PL">
 			<Text>Zrównoważone</Text>
@@ -589,17 +586,20 @@
 		<Replace Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME" Language="pl_PL">
 			<Text>Tryb wieloosobowy</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME" Language="pl_PL">
+			<Text>Standardowe tempo</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD" Language="pl_PL">
-			<Text>Standardowe: własne tempo gry. Ustawia każde ustawienie w sekcji Domyślne na standardowe.</Text>
+			<Text>Standardowe tempo: własne tempo gry. Ustawia każdy wiersz w sekcji Ustawienia tempa na standardowy.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="pl_PL">
 			<Text>Zrównoważone: dłuższe epoki z badaniami w stylu epickim. Ustawia Długość epoki na 153, 166 i 196 punktów według epoki, Tempo postępu epoki na Zrównoważone, a Koszt technologii i Koszt idei na Wysokie.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="pl_PL">
-			<Text>Tryb wieloosobowy: lżejsze wydłużenie na potrzeby sesji. Ustawia Długość epoki na 140, 155 i 190 punktów według epoki, Tempo postępu epoki na Zrównoważone, Koszt technologii na +35%, +50% i +75% według epoki, Koszt idei na +45%, +60% i +85%, Wzrost miast na Wolny, Drogi na Szybkie (Ekspresowe w epoce nowoczesnej), a Koszt projektów zwycięstwa na +20%.</Text>
+			<Text>Tryb wieloosobowy: lżejsze wydłużenie na potrzeby sesji. Ustawia Długość epoki na 140, 155 i 190 punktów według epoki, Tempo postępu epoki na Zrównoważone, Koszt technologii na +35%, +50% i +75% według epoki, Koszt idei na +45%, +60% i +85%, Wzrost miast na Wolny, Drogi na Szybkie (Ekspresowe w epoce nowoczesnej), a Koszt projektów zwycięstwa w epoce nowoczesnej na +20%.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="pl_PL">
-			<Text>Własne: ustawienia w sekcji Domyślne na karcie Tempo nie odpowiadają już żadnemu zestawowi.</Text>
+			<Text>Własne: sekcja Ustawienia tempa na karcie Tempo nie odpowiada już żadnemu zestawowi.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>
