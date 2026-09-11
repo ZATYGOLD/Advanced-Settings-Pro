@@ -4,31 +4,28 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ## Version History
 
+### 0.8.1
+
+- New Pace tab: Age Length, Age Progress Rate, Technology Cost, Civic Cost, City Growth, Roads, and Victory Project Cost, each with Antiquity, Exploration, and Modern rows
+- New Pace Set (Game Settings, mirrored on the Pace tab): Standard Pace, Balanced Pace, Multiplayer Pace, or Custom Pace
+- Age Length moved to the Pace tab, with Brief, Doubled, and Custom; per-age rows pick an exact point total
+- Victory Project Cost now covers every age's science and military triumph projects
+- New Map Temperature setting (Cold, Standard, Hot) after Map Size; Natural Wonders now sits in Map Settings
+- Renamed cost options to Low, Standard, High, and Double; Default is now Standard everywhere
+
 ### 0.8.0
 
-- Added a Pace Set setting to Game Settings (after Rule Set, mirrored at the top of Pace Settings on the Pace tab): Standard Pace, Balanced Pace (age caps 153/166/196, the Balanced progress curve, High technology and civic costs), Multiplayer Pace (age caps 140/155/190, the Balanced progress curve, technologies +35/+50/+75% and civics +45/+60/+85% by age, Slow growth, Fast roads with Express railroads in Modern, Modern victory projects +20%), or Custom Pace. A preset writes its values into the Pace Settings on the Pace tab; changing one afterwards switches the preset to Custom
-- Per-age Age Length rows now take an exact age progress total (90 to 300), each listing its point total for every game speed; Age Length on Custom names what each Pace Set preset put in the rows, and per-age Technology and Civic Cost rows a percentage (-25% to +100%); Age Progress Rate gains Balanced, City Growth gains Slower, Roads gains Express, and Victory Project Cost gains +20%
-- Cost settings are now named Low, Standard, High, and Double; the Default option of the other settings is now called Standard
-- Added a Pace tab to the single-player Advanced Settings screen with a Pace Settings group (Age Length, Age Progress Rate, Technology Cost, Civic Cost, City Growth, Roads, and Victory Project Cost) and an Antiquity, Exploration, and Modern group holding each setting's per-age row, used when the setting is Custom
-- Added a Map tab to the single-player Advanced Settings screen, holding the map, natural wonder, and disaster settings; General keeps the game and crisis settings
-- Added a Map Temperature setting (Cold, Standard, or Hot) to Map Settings, right after Map Size: it shifts the climate bands the map scripts use to assign biomes, so Cold grows tundra while Hot grows tropical and desert
-- Natural Wonders now sits in Map Settings after Map Temperature; the per-wonder toggles keep their own Natural Wonder Selection group
-- Added Nachi Falls and Seongsan Ilchulbong (Japan & Korea Wonders) to Natural Wonder Selection, for 22 wonders in total
-- Split the game's disaster and crisis settings: a Disaster Settings group on the Map tab and a Crisis Settings group on General
-- Added a Crises setting (Enabled or Disabled) that drives the game's per-crisis selection, now titled Crisis Selection
-- Replaced Crisis Speed with Crisis Timing: Early, Standard, or Late, showing Disabled while Crises is Disabled
-- Disaster Frequency now offers Custom with separate Antiquity, Exploration, and Modern frequencies, each Disabled, Light, Moderate, or Catastrophic
-- Triumph Set gains Custom with separate Antiquity, Exploration, and Modern Triumph Sets chosen from the game's sets
-- Added Major and Minor Memento dropdowns for AI players on the Player tab, beside Leader and Civilization, each with None and Random options; Random rolls a fresh memento every game
-- Added a Random button beside the Game Random Seed and Map Random Seed fields
-- Custom settlement limits now run 1 to 25, then 30 to 75 in steps of 5, with one shared file per value instead of one per age
-- Unit costs are now Low (25% cheaper), Standard, High (50% more), or Double (100% more)
-- Lakes, Rivers, and Mountains drop their Disabled option and label their default Standard
-- Raging Independent Aggression is stronger: triple boldness, warriors spawn three times as fast, and 3/5/7 starting units per age
-- Initial Independent Hostility moved to the top of Independent Power Settings
-- Every setting's tooltip now shows its own value line under the setting's description instead of repeating the description or listing every tier
-- The conflict guard also recognises conflicting mods by the setup settings they add, so renaming or re-ordering a mod no longer bypasses it; an unidentified mod is reported by those settings
-- Fixed multiplayer-only settings appearing in single-player setup
+- New Map tab holding the map, natural wonder, and disaster settings
+- Added Nachi Falls and Seongsan Ilchulbong to Natural Wonder Selection (22 wonders)
+- Crisis Settings group with a Crises on/off switch and Crisis Timing (Early, Standard, Late)
+- Disaster Frequency and Triumph Set gain Custom with per-age choices
+- AI Mementos on the Player tab, with None and Random
+- Random buttons for the Game and Map seeds
+- Custom settlement limits run 1 to 25, then 30 to 75 in steps of 5
+- Unit costs: Low, Standard, High, or Double
+- Lakes, Rivers, and Mountains drop Disabled; Raging independents are stronger (x3 boldness, 3/5/7 starting units)
+- Initial Independent Hostility moved to Independent Power Settings
+- Cleaner tooltips, a stronger conflict guard (recognizes conflicting mods by their settings), and a fix for multiplayer settings showing in single player
 
 ### 0.7.4
 
@@ -116,7 +113,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - AI Mementos (Player tab, single player): Major and Minor Memento dropdowns on each AI player's row beside Leader and Civilization, each with a Random option rolled afresh every game
 - Triumph Set: adds Custom to the game's setting, with an Antiquity, Exploration, and Modern Triumph Set each choosable from the game's sets
 
-The conflict guard recognises conflicting mods by their id and by the setup settings they add to the game, so renaming a mod does not bypass it.
+The conflict guard recognizes conflicting mods by their id and by the setup settings they add to the game, so renaming a mod does not bypass it.
 
 All settings are chosen at game creation and apply for the full game.
 
