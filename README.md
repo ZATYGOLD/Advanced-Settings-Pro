@@ -6,18 +6,21 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ### 0.8.0
 
-- Added an Ages tab to the single-player Advanced Settings screen with Game Pacing Settings (Age Length, Age Progress Rate, Technology Cost, Civic Cost, City Growth, Roads, and Victory Project Cost) and an Antiquity, Exploration, and Modern group holding each setting's per-age row, used when the setting is Custom (Victory Project Cost is Modern-only)
+- Added an Age Pace setting to Game Settings: Standard, Balanced (age caps 153/166/196, the Balanced progress curve, High technology and civic costs), Multiplayer (age caps 140/155/190, the Balanced progress curve, technologies +35/+50/+75% and civics +45/+60/+85% by age, Slow growth, Fast roads with Express railroads in Modern, victory projects +20%), or Custom. A preset writes its values into the Defaults settings on the Pace tab; changing one afterwards switches the preset to Custom
+- Per-age Age Length rows now take an exact age progress total (90 to 300), and per-age Technology and Civic Cost rows a percentage (-25% to +100%); Age Progress Rate gains Balanced, City Growth gains Slower, Roads gains Express, and Victory Project Cost gains +20%
+- Cost settings are now named Low, Standard, High, and Double; the Default option of the other settings is now called Standard
+- Added a Pace tab to the single-player Advanced Settings screen with a Defaults group (Age Length, Age Progress Rate, Technology Cost, Civic Cost, City Growth, Roads, and Victory Project Cost) and an Antiquity, Exploration, and Modern group holding each setting's per-age row, used when the setting is Custom (Victory Project Cost is Modern-only)
 - Added a Map tab to the single-player Advanced Settings screen, holding the map, natural wonder, and disaster settings; General keeps the game and crisis settings
 - Added Nachi Falls and Seongsan Ilchulbong (Japan & Korea Wonders) to Natural Wonder Selection, for 22 wonders in total
 - Split the game's disaster and crisis settings: a Disaster Settings group on the Map tab and a Crisis Settings group on General
 - Added a Crises setting (Enabled or Disabled) that drives the game's per-crisis selection, now titled Crisis Selection
-- Replaced Crisis Speed with Crisis Timing: Early, Default, or Late, showing Disabled while Crises is Disabled
+- Replaced Crisis Speed with Crisis Timing: Early, Standard, or Late, showing Disabled while Crises is Disabled
 - Disaster Frequency now offers Custom with separate Antiquity, Exploration, and Modern frequencies, each Disabled, Light, Moderate, or Catastrophic
 - Triumph Set gains Custom with separate Antiquity, Exploration, and Modern Triumph Sets chosen from the game's sets
 - Added Major and Minor Memento dropdowns for AI players on the Player tab, beside Leader and Civilization, each with None and Random options; Random rolls a fresh memento every game
 - Added a Random button beside the Game Random Seed and Map Random Seed fields
 - Custom settlement limits now run 1 to 25, then 30 to 75 in steps of 5, with one shared file per value instead of one per age
-- Unit costs are now Cheaper (25% cheaper), Standard, Affordable (50% more), or Expensive (100% more)
+- Unit costs are now Low (25% cheaper), Standard, High (50% more), or Double (100% more)
 - Lakes, Rivers, and Mountains drop their Disabled option and label their default Standard
 - Raging Independent Aggression is stronger: triple boldness, warriors spawn three times as fast, and 3/5/7 starting units per age
 - Initial Independent Hostility moved to the top of Independent Power Settings
@@ -80,32 +83,33 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Single Player No Age Transitions: Enabled or Disabled
 - Game Random Seed and Map Random Seed: a Random button beside each field rolls a new seed (single player)
 - Game Speed: adds Online 2.0 (150% faster than Standard) and Marathon 2.0 (400% slower than Standard)
-- Age Length: Brief, Abbreviated, Standard, Long, Doubled, or Custom (90 to 280 age progress points per age). The game's own Age Length setting stays on the General tab (gaining Custom) and drives the Ages tab setting, which in turn drives the per-age rows; a per-age change shows Custom on both
-- Age Progress Rate: Slow, Standard, Fast, or Custom (milestone and future tech/civic points x0.5 / x1 / x1.5)
-- Technology Cost and Civic Cost: Cheaper (25% cheaper), Standard, Affordable (50% more), Expensive (100% more), or Custom
-- City Growth: Slow, Standard, Fast, or Custom
-- Roads: Standard, Fast (25% less movement cost), Faster (50% less), or Custom
-- Victory Project Cost: Cheaper, Standard, Affordable, or Expensive (Modern Age victory and legacy projects)
+- Age Length: the game's own setting, moved to Defaults on the Pace tab and extended with Brief (90), Doubled (280), and Custom; it drives the per-age rows (any total from 90 to 300), and a per-age change shows Custom; switching it off Custom returns every other Defaults setting to Standard
+- Age Pace (Game Settings): Standard, Balanced, Multiplayer, or Custom (written into the Defaults settings on the Pace tab)
+- Age Progress Rate: Slow, Standard, Balanced, Fast, or Custom (milestone and future tech/civic points x0.5 / x1 / the Balanced curve / x1.5)
+- Technology Cost and Civic Cost: Low (25% cheaper), Standard, High (50% more), Double (100% more), or Custom (per-age rows pick -25%, +35% to +100%)
+- City Growth: Slower, Slow, Standard, Fast, or Custom
+- Roads: Standard, Fast (25% less movement cost), Express (25% less on roads, 50% less on railroads), Faster (50% less), or Custom
+- Victory Project Cost: Low, Standard, +20%, High, or Double (Modern Age victory and legacy projects)
 - Antiquity, Exploration, and Modern rows for each Custom pacing setting above
 - Disaster Frequency: Disabled, Light, Moderate, Catastrophic, or Custom
 - Antiquity, Exploration, and Modern disaster frequency: Disabled, Light, Moderate, or Catastrophic each, applied when Disaster Frequency is set to Custom
-- Settler Speed: Slow, Default, or Fast
-- Treasure Convoy Speed: Slow, Default, or Fast
-- Military Unit Cost: Cheaper (25% cheaper), Standard, Affordable (50% more), or Expensive (100% more)
-- Civilian Unit Cost: Cheaper (25% cheaper), Standard, Affordable (50% more), or Expensive (100% more)
-- Natural Wonders: Disabled, Half, Default, More, or Double
+- Settler Speed: Slow, Standard, or Fast
+- Treasure Convoy Speed: Slow, Standard, or Fast
+- Military Unit Cost: Low (25% cheaper), Standard, High (50% more), or Double (100% more)
+- Civilian Unit Cost: Low (25% cheaper), Standard, High (50% more), or Double (100% more)
+- Natural Wonders: Disabled, Half, Standard, More, or Double
 - Natural Wonder Selection: Enabled or Disabled for each of the 22 natural wonders, including DLC wonders
 - Lakes: Less, Standard, or More
 - Rivers: Less, Standard, or More
 - Mountains: Less, Standard, or More
 - Crises: Enabled or Disabled, driving the game's per-crisis selection
-- Crisis Timing: Early, Default, or Late (Disabled while Crises is Disabled)
-- Settlement Limit: Less, Default, More, or Custom
+- Crisis Timing: Early, Standard, or Late (Disabled while Crises is Disabled)
+- Settlement Limit: Less, Standard, More, or Custom
 - Antiquity, Exploration, and Modern settlement limits: 1 to 25, then 30 to 75 in steps of 5, applied when Settlement Limit is set to Custom
-- Settlement Distance: Less, Default, or More
-- Independent Amount: None, Less, Default, or More
-- Independent Spacing: Less, Default, or More
-- Independent Aggression: Calm, Default, or Raging (raid boldness plus starting independent units)
+- Settlement Distance: Less, Standard, or More
+- Independent Amount: None, Less, Standard, or More
+- Independent Spacing: Less, Standard, or More
+- Independent Aggression: Calm, Standard, or Raging (raid boldness plus starting independent units)
 - AI Mementos (Player tab, single player): Major and Minor Memento dropdowns on each AI player's row beside Leader and Civilization, each with a Random option rolled afresh every game
 - Triumph Set: adds Custom to the game's setting, with an Antiquity, Exploration, and Modern Triumph Set each choosable from the game's sets
 
@@ -113,7 +117,7 @@ The conflict guard recognises conflicting mods by their id and by the setup sett
 
 All settings are chosen at game creation and apply for the full game.
 
-In single player, the Advanced Settings screen gains an Ages tab (game pacing, with a group per age) and a Map tab between General and Player; the Map tab holds the map, natural wonder, and disaster settings, while the crisis settings move into their own Crisis Settings group on General and Initial Independent Hostility joins the Independent Power settings; multiplayer keeps the game's standard layout.
+In single player, the Advanced Settings screen gains a Pace tab (Defaults pacing settings plus a group per age) and a Map tab between General and Player; the Map tab holds the map, natural wonder, and disaster settings, while the crisis settings move into their own Crisis Settings group on General and Initial Independent Hostility joins the Independent Power settings; multiplayer keeps the game's standard layout.
 
 ## Project Structure
 

@@ -11,12 +11,11 @@
 
 	<!-- Advanced Settings Tabs -->
 		<Row Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS"><Text>Map</Text></Row>
-		<Row Tag="LOC_ZG_ADVANCED_OPTIONS_AGES"><Text>Ages</Text></Row>
+		<Row Tag="LOC_ZG_ADVANCED_OPTIONS_AGES"><Text>Pace</Text></Row>
 
 	<!-- Universal Names -->
 		<Row Tag="LOC_ZG_ENABLED_NAME"><Text>Enabled</Text></Row>
 		<Row Tag="LOC_ZG_DISABLED_NAME"><Text>Disabled</Text></Row>
-		<Row Tag="LOC_ZG_DEFAULT_NAME"><Text>Default</Text></Row>
 		<Row Tag="LOC_ZG_EARLY_NAME"><Text>Early</Text></Row>
 		<Row Tag="LOC_ZG_LATE_NAME"><Text>Late</Text></Row>
 		<Row Tag="LOC_ZG_NONE_NAME"><Text>None</Text></Row>
@@ -27,9 +26,8 @@
 		<Row Tag="LOC_ZG_SLOW_NAME"><Text>Slow</Text></Row>
 		<Row Tag="LOC_ZG_MORE_NAME"><Text>More</Text></Row>
 		<Row Tag="LOC_ZG_LESS_NAME"><Text>Less</Text></Row>
-		<Row Tag="LOC_ZG_CHEAPER_NAME"><Text>Cheaper</Text></Row>
-		<Row Tag="LOC_ZG_AFFORDABLE_NAME"><Text>Affordable</Text></Row>
-		<Row Tag="LOC_ZG_EXPENSIVE_NAME"><Text>Expensive</Text></Row>
+		<Row Tag="LOC_ZG_LOW_NAME"><Text>Low</Text></Row>
+		<Row Tag="LOC_ZG_HIGH_NAME"><Text>High</Text></Row>
 
 	<!-- Setting Names -->
 		<Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME"><Text>Settler Speed</Text></Row>
@@ -62,7 +60,7 @@
 		</Row>
 		<Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_DEFAULT">
 			<Text>[BLIST]
-				[LI] Default: 3[icon:Action_Move]Base and 2[icon:Action_Move]Embarked Movement.[/BLIST]
+				[LI] Standard: 3[icon:Action_Move]Base and 2[icon:Action_Move]Embarked Movement.[/BLIST]
 			</Text>
 		</Row>
 		<Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_FAST">
@@ -80,7 +78,7 @@
 		</Row>
 		<Row Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_DEFAULT">
 			<Text>[BLIST]
-				[LI] Default: 2[icon:Action_Move]Base and Embarked Movement.[/BLIST]
+				[LI] Standard: 2[icon:Action_Move]Base and Embarked Movement.[/BLIST]
 			</Text>
 		</Row>
 		<Row Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_FAST">
@@ -105,7 +103,7 @@
 		</Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_DEFAULT">
 			<Text>[BLIST]
-				[LI] Default: 3 Independent Powers per Civilization.[/BLIST]
+				[LI] Standard: 3 Independent Powers per Civilization.[/BLIST]
 			</Text>
 		</Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_MORE">
@@ -186,11 +184,11 @@
 			<Text>Sets this age's disaster frequency.[n]Applies only when Disasters is set to Custom.</Text>
 		</Row>
 
-	<!-- Game Pacing -->
-		<Row Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS"><Text>Game Pacing Settings</Text></Row>
+	<!-- Pace (All Ages) -->
+		<Row Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS"><Text>Defaults</Text></Row>
 		<Row Tag="LOC_ZG_FASTER_NAME"><Text>Faster</Text></Row>
 		<Row Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM"><Text>Custom: set this for each age individually.</Text></Row>
-		<Row Tag="LOC_ZG_PACING_AGE_DESCRIPTION"><Text>Sets this age's value.[n]Applies only when the Game Pacing setting is set to Custom.</Text></Row>
+		<Row Tag="LOC_ZG_PACING_AGE_DESCRIPTION"><Text>Sets this age's value.[n]Applies only when the matching setting under Defaults is set to Custom.</Text></Row>
 		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME"><Text>Age Progress Rate</Text></Row>
 		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION"><Text>Sets how quickly milestones and future techs and civics fill the age meter.</Text></Row>
 		<Row Tag="LOC_ZG_TECHNOLOGY_COST_NAME"><Text>Technology Cost</Text></Row>
@@ -206,11 +204,26 @@
 		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW"><Text>[BLIST][LI] Slow: 50% fewer points.[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD"><Text>[BLIST][LI] Standard: no change.[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST"><Text>[BLIST][LI] Fast: 50% more points.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_COST_DESCRIPTION_CHEAPER"><Text>[BLIST][LI] Cheaper: 25% cheaper.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_COST_DESCRIPTION_LOW"><Text>[BLIST][LI] Low: 25% cheaper.[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_COST_DESCRIPTION_STANDARD"><Text>[BLIST][LI] Standard: no change.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_COST_DESCRIPTION_AFFORDABLE"><Text>[BLIST][LI] Affordable: 50% more expensive.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_COST_DESCRIPTION_EXPENSIVE"><Text>[BLIST][LI] Expensive: 100% more expensive.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW"><Text>[BLIST][LI] Slow: cities grow more slowly.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_COST_DESCRIPTION_HIGH"><Text>[BLIST][LI] High: 50% more expensive.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_COST_DESCRIPTION_DOUBLE"><Text>[BLIST][LI] Double: 100% more expensive.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOWER"><Text>[BLIST][LI] Slower: cities grow more slowly.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW"><Text>[BLIST][LI] Slow: cities grow a little more slowly.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_SLOWER_NAME"><Text>Slower</Text></Row>
+		<Row Tag="LOC_ZG_ROADS_EXPRESS_NAME"><Text>Express</Text></Row>
+		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_EXPRESS"><Text>[BLIST][LI] Express: 25% less movement cost on roads, 50% less on railroads.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED"><Text>[BLIST][LI] Balanced: milestones award 4, 7, and 11 points in Antiquity, 4, 8, and 12 in Exploration, and 4 and 8 in Modern; future techs and civics award 8, or 7 in Modern.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_COST_DESCRIPTION_PLUS_20"><Text>[BLIST][LI] +20%: 20% more expensive.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_PCT_MINUS_25"><Text>-25%</Text></Row>
+		<Row Tag="LOC_ZG_PCT_PLUS_20"><Text>+20%</Text></Row>
+		<Row Tag="LOC_ZG_PCT_PLUS_35"><Text>+35%</Text></Row>
+		<Row Tag="LOC_ZG_PCT_PLUS_45"><Text>+45%</Text></Row>
+		<Row Tag="LOC_ZG_PCT_PLUS_50"><Text>+50%</Text></Row>
+		<Row Tag="LOC_ZG_PCT_PLUS_60"><Text>+60%</Text></Row>
+		<Row Tag="LOC_ZG_PCT_PLUS_75"><Text>+75%</Text></Row>
+		<Row Tag="LOC_ZG_PCT_PLUS_85"><Text>+85%</Text></Row>
+		<Row Tag="LOC_ZG_PCT_PLUS_100"><Text>+100%</Text></Row>
 		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD"><Text>[BLIST][LI] Standard: no change.[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST"><Text>[BLIST][LI] Fast: cities grow faster.[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD"><Text>[BLIST][LI] Standard: no change.[/BLIST]</Text></Row>
@@ -271,7 +284,7 @@
 		</Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_DEFAULT">
 			<Text>[BLIST]
-				[LI] Default: 3 Tiles.[/BLIST]
+				[LI] Standard: 3 Tiles.[/BLIST]
 			</Text>
 		</Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE">
@@ -284,9 +297,9 @@
 		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION">
 			<Text>Sets production cost of combat units.</Text>
 		</Row>
-		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_CHEAPER">
+		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_LOW">
 			<Text>[BLIST]
-				[LI] Cheaper: 25% cheaper.[/BLIST]
+				[LI] Low: 25% cheaper.[/BLIST]
 			</Text>
 		</Row>
 		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD">
@@ -294,22 +307,22 @@
 				[LI] Standard: no discount.[/BLIST]
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_AFFORDABLE">
+		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_HIGH">
 			<Text>[BLIST]
-				[LI] Affordable: 50% more expensive.[/BLIST]
+				[LI] High: 50% more expensive.[/BLIST]
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_EXPENSIVE">
+		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DOUBLE">
 			<Text>[BLIST]
-				[LI] Expensive: 100% more expensive.[/BLIST]
+				[LI] Double: 100% more expensive.[/BLIST]
 			</Text>
 		</Row>
 		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION">
 			<Text>Sets production cost of civilian units.</Text>
 		</Row>
-		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_CHEAPER">
+		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_LOW">
 			<Text>[BLIST]
-				[LI] Cheaper: 25% cheaper.[/BLIST]
+				[LI] Low: 25% cheaper.[/BLIST]
 			</Text>
 		</Row>
 		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD">
@@ -317,14 +330,14 @@
 				[LI] Standard: no discount.[/BLIST]
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_AFFORDABLE">
+		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_HIGH">
 			<Text>[BLIST]
-				[LI] Affordable: 50% more expensive.[/BLIST]
+				[LI] High: 50% more expensive.[/BLIST]
 			</Text>
 		</Row>
-		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_EXPENSIVE">
+		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE">
 			<Text>[BLIST]
-				[LI] Expensive: 100% more expensive.[/BLIST]
+				[LI] Double: 100% more expensive.[/BLIST]
 			</Text>
 		</Row>
 
@@ -478,6 +491,27 @@
 		<Row Tag="LOC_ZG_NUM_65"><Text>65</Text></Row>
 		<Row Tag="LOC_ZG_NUM_70"><Text>70</Text></Row>
 		<Row Tag="LOC_ZG_NUM_75"><Text>75</Text></Row>
+		<Row Tag="LOC_ZG_NUM_90"><Text>90</Text></Row>
+		<Row Tag="LOC_ZG_NUM_100"><Text>100</Text></Row>
+		<Row Tag="LOC_ZG_NUM_110"><Text>110</Text></Row>
+		<Row Tag="LOC_ZG_NUM_120"><Text>120</Text></Row>
+		<Row Tag="LOC_ZG_NUM_130"><Text>130</Text></Row>
+		<Row Tag="LOC_ZG_NUM_140"><Text>140</Text></Row>
+		<Row Tag="LOC_ZG_NUM_150"><Text>150</Text></Row>
+		<Row Tag="LOC_ZG_NUM_153"><Text>153</Text></Row>
+		<Row Tag="LOC_ZG_NUM_155"><Text>155</Text></Row>
+		<Row Tag="LOC_ZG_NUM_160"><Text>160</Text></Row>
+		<Row Tag="LOC_ZG_NUM_166"><Text>166</Text></Row>
+		<Row Tag="LOC_ZG_NUM_170"><Text>170</Text></Row>
+		<Row Tag="LOC_ZG_NUM_180"><Text>180</Text></Row>
+		<Row Tag="LOC_ZG_NUM_190"><Text>190</Text></Row>
+		<Row Tag="LOC_ZG_NUM_196"><Text>196</Text></Row>
+		<Row Tag="LOC_ZG_NUM_200"><Text>200</Text></Row>
+		<Row Tag="LOC_ZG_NUM_220"><Text>220</Text></Row>
+		<Row Tag="LOC_ZG_NUM_240"><Text>240</Text></Row>
+		<Row Tag="LOC_ZG_NUM_260"><Text>260</Text></Row>
+		<Row Tag="LOC_ZG_NUM_280"><Text>280</Text></Row>
+		<Row Tag="LOC_ZG_NUM_300"><Text>300</Text></Row>
 
 	<!-- River Settings -->
 		<Row Tag="LOC_ZG_RIVERS_NAME"><Text>Rivers</Text></Row>
@@ -569,5 +603,15 @@
 		<Row Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_LESS"><Text>Generates fewer mountains.</Text></Row>
 		<Row Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT"><Text>Standard mountain generation for the chosen map type.</Text></Row>
 		<Row Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE"><Text>Generates more mountains.</Text></Row>
+
+	<!-- Age Pace -->
+		<Row Tag="LOC_ZG_PACE_PRESET_NAME"><Text>Age Pace</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION"><Text>Applies a pacing preset to the settings under Defaults on the Pace tab.</Text></Row>
+		<Row Tag="LOC_ZG_BALANCED_NAME"><Text>Balanced</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME"><Text>Multiplayer</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD"><Text>Standard: the game's own pacing. Sets every setting under Defaults to Standard.</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED"><Text>Balanced: longer ages with Epic-style research. Sets Age Length to 153, 166, and 196 points by age, Age Progress Rate to Balanced, and Technology Cost and Civic Cost to High.</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER"><Text>Multiplayer: a lighter stretch for sessions. Sets Age Length to 140, 155, and 190 points by age, Age Progress Rate to Balanced, Technology Cost to +35%, +50%, and +75% by age, Civic Cost to +45%, +60%, and +85%, City Growth to Slow, Roads to Fast (Express in Modern), and Victory Project Cost to +20%.</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM"><Text>Custom: the settings under Defaults on the Pace tab no longer match a preset.</Text></Row>
 	</EnglishText>
 </Database>

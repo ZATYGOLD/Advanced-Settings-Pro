@@ -1,6 +1,6 @@
--- Affordable: victory and legacy project costs x1.5.
+-- Low: victory and legacy project costs x0.75.
 UPDATE Projects
-SET Cost = ROUND(Cost * 1.5)
+SET Cost = ROUND(Cost * 0.75)
 WHERE Cost IS NOT NULL
 AND (
     RequireCompletedLegacyPathType IS NOT NULL

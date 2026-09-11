@@ -1,4 +1,4 @@
-// Adds Ages and Map tabs to the single-player Advanced Settings screen.
+// Adds Pace and Map tabs to the single-player Advanced Settings screen.
 //
 // The screen hard-codes its General and Player tabs, so the tabs are injected
 // through the game's own override mechanisms instead of replacing any file:
@@ -23,7 +23,7 @@ const GENERAL_TAB_NAME = "advanced-options-general";
 // Extra tabs, in display order, each claiming the parameter groups it shows.
 const EXTRA_TABS = [
 	{
-		name: "zg-advanced-options-ages",
+		name: "zg-advanced-options-pace",
 		title: "LOC_ZG_ADVANCED_OPTIONS_AGES",
 		groups: new Set(["GamePacingOptions", "PacingAntiquityOptions", "PacingExplorationOptions", "PacingModernOptions"]),
 	},

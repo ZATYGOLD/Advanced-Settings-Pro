@@ -16,9 +16,6 @@
 		<Replace Tag="LOC_ZG_DISABLED_NAME" Language="zh_Hant_HK">
 			<Text>停用</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_DEFAULT_NAME" Language="zh_Hant_HK">
-			<Text>預設</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_EARLY_NAME" Language="zh_Hant_HK">
 			<Text>提前</Text>
 		</Replace>
@@ -107,7 +104,7 @@
 			<Text>[BLIST][LI] 慢：基礎2[icon:Action_Move]，登船1[icon:Action_Move]。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="zh_Hant_HK">
-			<Text>[BLIST][LI] 預設：基礎3[icon:Action_Move]，登船2[icon:Action_Move]。[/BLIST]</Text>
+			<Text>[BLIST][LI] 標準：基礎3[icon:Action_Move]，登船2[icon:Action_Move]。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="zh_Hant_HK">
 			<Text>[BLIST][LI] 快：基礎4[icon:Action_Move]，登船3[icon:Action_Move]。[/BLIST]</Text>
@@ -119,7 +116,7 @@
 			<Text>[BLIST][LI] 慢：基礎與登船移動力均為1[icon:Action_Move]。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="zh_Hant_HK">
-			<Text>[BLIST][LI] 預設：基礎與登船移動力均為2[icon:Action_Move]。[/BLIST]</Text>
+			<Text>[BLIST][LI] 標準：基礎與登船移動力均為2[icon:Action_Move]。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="zh_Hant_HK">
 			<Text>[BLIST][LI] 快：基礎與登船移動力均為3[icon:Action_Move]。[/BLIST]</Text>
@@ -134,7 +131,7 @@
 			<Text>[BLIST][LI] 更少：每個文明2個獨立勢力。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_DEFAULT" Language="zh_Hant_HK">
-			<Text>[BLIST][LI] 預設：每個文明3個獨立勢力。[/BLIST]</Text>
+			<Text>[BLIST][LI] 標準：每個文明3個獨立勢力。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_MORE" Language="zh_Hant_HK">
 			<Text>[BLIST][LI] 更多：每個文明4個獨立勢力。[/BLIST]</Text>
@@ -191,7 +188,7 @@
 			<Text>[BLIST][LI] 更少：2格。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_DEFAULT" Language="zh_Hant_HK">
-			<Text>[BLIST][LI] 預設：3格。[/BLIST]</Text>
+			<Text>[BLIST][LI] 標準：3格。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="zh_Hant_HK">
 			<Text>[BLIST][LI] 更多：4格。[/BLIST]</Text>
@@ -199,17 +196,17 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>設定戰鬥單位的生產花費。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_CHEAPER" Language="zh_Hant_HK">
-			<Text>[BLIST][LI] 便宜：便宜25%。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_LOW" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 低：便宜25%。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
 			<Text>[BLIST][LI] 標準：無折扣。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="zh_Hant_HK">
-			<Text>[BLIST][LI] 實惠：昂貴50%。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_HIGH" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 高：昂貴50%。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="zh_Hant_HK">
-			<Text>[BLIST][LI] 昂貴：昂貴100%。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DOUBLE" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 雙倍：昂貴100%。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>啟用或停用所有危機。[n]停用將關閉危機選擇中的所有危機。</Text>
@@ -281,7 +278,7 @@
 			<Text>地圖</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_AGES" Language="zh_Hant_HK">
-			<Text>時代</Text>
+			<Text>節奏</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="zh_Hant_HK">
 			<Text>偵測到模組衝突</Text>
@@ -302,7 +299,7 @@
 			<Text>新增以下設定的未識別模組：</Text>
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="zh_Hant_HK">
-			<Text>遊戲節奏設定</Text>
+			<Text>預設值</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_FASTER_NAME" Language="zh_Hant_HK">
 			<Text>更快</Text>
@@ -311,7 +308,7 @@
 			<Text>自訂：為每個時代單獨設定。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>設定該時代的值。[n]僅當遊戲節奏設定為自訂時生效。</Text>
+			<Text>設定此時代的值。[n]僅當「預設值」中的設定為自訂時生效。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="zh_Hant_HK">
 			<Text>時代進度速度</Text>
@@ -358,20 +355,38 @@
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST" Language="zh_Hant_HK">
 			<Text>[BLIST][LI] 快：點數增加50%。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_CHEAPER" Language="zh_Hant_HK">
-			<Text>[BLIST][LI] 便宜：便宜25%。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_LOW" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 低：便宜25%。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COST_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
 			<Text>[BLIST][LI] 標準：無變化。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_AFFORDABLE" Language="zh_Hant_HK">
-			<Text>[BLIST][LI] 實惠：昂貴50%。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_HIGH" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 高：昂貴50%。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_EXPENSIVE" Language="zh_Hant_HK">
-			<Text>[BLIST][LI] 昂貴：昂貴100%。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_DOUBLE" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 雙倍：昂貴100%。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOWER" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 更慢：城市成長更慢。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW" Language="zh_Hant_HK">
-			<Text>[BLIST][LI] 慢：城市成長更慢。[/BLIST]</Text>
+			<Text>[BLIST][LI] 慢：城市成長略慢。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SLOWER_NAME" Language="zh_Hant_HK">
+			<Text>更慢</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_EXPRESS_NAME" Language="zh_Hant_HK">
+			<Text>特快</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXPRESS" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 特快：道路移動消耗降低25%，鐵路降低50%。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 平衡：里程碑在遠古給予4、7、11點，探索4、8、12點，現代4、8點；未來科技和市政給予8點（現代為7點）。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_PLUS_20" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] +20%：昂貴20%。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
 			<Text>[BLIST][LI] 標準：無變化。[/BLIST]</Text>
@@ -424,14 +439,11 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="zh_Hant_HK">
 			<Text>生成更多的河流，其中更多可通航。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CHEAPER_NAME" Language="zh_Hant_HK">
-			<Text>便宜</Text>
+		<Replace Tag="LOC_ZG_LOW_NAME" Language="zh_Hant_HK">
+			<Text>低</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AFFORDABLE_NAME" Language="zh_Hant_HK">
-			<Text>實惠</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="zh_Hant_HK">
-			<Text>昂貴</Text>
+		<Replace Tag="LOC_ZG_HIGH_NAME" Language="zh_Hant_HK">
+			<Text>高</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME" Language="zh_Hant_HK">
 			<Text>平民單位花費</Text>
@@ -439,17 +451,17 @@
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>設定平民單位的生產花費。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_CHEAPER" Language="zh_Hant_HK">
-			<Text>[BLIST][LI] 便宜：便宜25%。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_LOW" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 低：便宜25%。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
 			<Text>[BLIST][LI] 標準：無折扣。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="zh_Hant_HK">
-			<Text>[BLIST][LI] 實惠：昂貴50%。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_HIGH" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 高：昂貴50%。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="zh_Hant_HK">
-			<Text>[BLIST][LI] 昂貴：昂貴100%。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE" Language="zh_Hant_HK">
+			<Text>[BLIST][LI] 雙倍：昂貴100%。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="zh_Hant_HK">
 			<Text>線上2.0</Text>
@@ -564,6 +576,30 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="zh_Hant_HK">
 			<Text>生成更多的山脈。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="zh_Hant_HK">
+			<Text>時代節奏</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>為「節奏」分頁中「預設值」的設定套用一套節奏預設。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="zh_Hant_HK">
+			<Text>平衡</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME" Language="zh_Hant_HK">
+			<Text>多人遊戲</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
+			<Text>標準：遊戲本身的節奏。將「預設值」中的所有設定設為標準。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="zh_Hant_HK">
+			<Text>平衡：以史詩式的研究節奏延長各時代。將時代長度按時代設為153、166、196點，時代進度速率設為平衡，科技花費和市政花費設為高。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="zh_Hant_HK">
+			<Text>多人遊戲：面向連線對局的輕度延長。將時代長度按時代設為140、155、190點，時代進度速率設為平衡，科技花費按時代設為+35%、+50%、+75%，市政花費設為+45%、+60%、+85%，城市成長設為慢，道路設為快（現代為特快），勝利計畫花費設為+20%。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="zh_Hant_HK">
+			<Text>自訂：「節奏」分頁中「預設值」的設定已不再與任何預設一致。</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

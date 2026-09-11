@@ -16,9 +16,6 @@
 		<Replace Tag="LOC_ZG_DISABLED_NAME" Language="ru_RU">
 			<Text>Отключено</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_DEFAULT_NAME" Language="ru_RU">
-			<Text>По умолчанию</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_EARLY_NAME" Language="ru_RU">
 			<Text>Рано</Text>
 		</Replace>
@@ -107,7 +104,7 @@
 			<Text>[BLIST][LI] Медленно: 2[icon:Action_Move]базового и 1[icon:Action_Move]на воде.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="ru_RU">
-			<Text>[BLIST][LI] По умолчанию: 3[icon:Action_Move]базового и 2[icon:Action_Move]на воде.[/BLIST]</Text>
+			<Text>[BLIST][LI] Стандарт: 3[icon:Action_Move]базового и 2[icon:Action_Move]на воде.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="ru_RU">
 			<Text>[BLIST][LI] Быстро: 4[icon:Action_Move]базового и 3[icon:Action_Move]на воде.[/BLIST]</Text>
@@ -119,7 +116,7 @@
 			<Text>[BLIST][LI] Медленно: 1[icon:Action_Move]передвижения на суше и на воде.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="ru_RU">
-			<Text>[BLIST][LI] По умолчанию: 2[icon:Action_Move]передвижения на суше и на воде.[/BLIST]</Text>
+			<Text>[BLIST][LI] Стандарт: 2[icon:Action_Move]передвижения на суше и на воде.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="ru_RU">
 			<Text>[BLIST][LI] Быстро: 3[icon:Action_Move]передвижения на суше и на воде.[/BLIST]</Text>
@@ -134,7 +131,7 @@
 			<Text>[BLIST][LI] Меньше: 2 независимых держав на цивилизацию.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_DEFAULT" Language="ru_RU">
-			<Text>[BLIST][LI] По умолчанию: 3 независимых держав на цивилизацию.[/BLIST]</Text>
+			<Text>[BLIST][LI] Стандарт: 3 независимых держав на цивилизацию.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_MORE" Language="ru_RU">
 			<Text>[BLIST][LI] Больше: 4 независимых держав на цивилизацию.[/BLIST]</Text>
@@ -191,7 +188,7 @@
 			<Text>[BLIST][LI] Меньше: 2 клеток.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_DEFAULT" Language="ru_RU">
-			<Text>[BLIST][LI] По умолчанию: 3 клеток.[/BLIST]</Text>
+			<Text>[BLIST][LI] Стандарт: 3 клеток.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="ru_RU">
 			<Text>[BLIST][LI] Больше: 4 клеток.[/BLIST]</Text>
@@ -199,17 +196,17 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="ru_RU">
 			<Text>Задаёт стоимость производства боевых юнитов.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_CHEAPER" Language="ru_RU">
-			<Text>[BLIST][LI] Дешевле: на 25% дешевле.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_LOW" Language="ru_RU">
+			<Text>[BLIST][LI] Низкая: на 25% дешевле.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="ru_RU">
 			<Text>[BLIST][LI] Стандарт: без скидки.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="ru_RU">
-			<Text>[BLIST][LI] Доступно: на 50% дороже.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_HIGH" Language="ru_RU">
+			<Text>[BLIST][LI] Высокая: на 50% дороже.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="ru_RU">
-			<Text>[BLIST][LI] Дорого: на 100% дороже.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DOUBLE" Language="ru_RU">
+			<Text>[BLIST][LI] Вдвое больше: на 100% дороже.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="ru_RU">
 			<Text>Включает или отключает все кризисы.[n]Отключено выключает каждый кризис в разделе «Выбор кризисов».</Text>
@@ -281,7 +278,7 @@
 			<Text>Карта</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_AGES" Language="ru_RU">
-			<Text>Эпохи</Text>
+			<Text>Темп</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="ru_RU">
 			<Text>Обнаружен конфликт модов</Text>
@@ -302,7 +299,7 @@
 			<Text>Неопознанный мод, добавляющий настройки:</Text>
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="ru_RU">
-			<Text>Настройки темпа игры</Text>
+			<Text>По умолчанию</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_FASTER_NAME" Language="ru_RU">
 			<Text>Ещё быстрее</Text>
@@ -311,7 +308,7 @@
 			<Text>Особый: задайте это для каждой эпохи отдельно.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт значение этой эпохи.[n]Действует только если настройка темпа игры установлена на Особый.</Text>
+			<Text>Задаёт значение для этой эпохи.[n]Действует, только если настройка в разделе «По умолчанию» стоит на «Особый».</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="ru_RU">
 			<Text>Прогресс эпохи</Text>
@@ -358,20 +355,38 @@
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST" Language="ru_RU">
 			<Text>[BLIST][LI] Быстро: на 50% больше очков.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_CHEAPER" Language="ru_RU">
-			<Text>[BLIST][LI] Дешевле: на 25% дешевле.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_LOW" Language="ru_RU">
+			<Text>[BLIST][LI] Низкая: на 25% дешевле.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COST_DESCRIPTION_STANDARD" Language="ru_RU">
 			<Text>[BLIST][LI] Стандарт: без изменений.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_AFFORDABLE" Language="ru_RU">
-			<Text>[BLIST][LI] Доступно: на 50% дороже.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_HIGH" Language="ru_RU">
+			<Text>[BLIST][LI] Высокая: на 50% дороже.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_EXPENSIVE" Language="ru_RU">
-			<Text>[BLIST][LI] Дорого: на 100% дороже.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_DOUBLE" Language="ru_RU">
+			<Text>[BLIST][LI] Вдвое больше: на 100% дороже.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOWER" Language="ru_RU">
+			<Text>[BLIST][LI] Медленнее: города растут медленнее.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW" Language="ru_RU">
-			<Text>[BLIST][LI] Медленно: города растут медленнее.[/BLIST]</Text>
+			<Text>[BLIST][LI] Медленно: города растут чуть медленнее.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SLOWER_NAME" Language="ru_RU">
+			<Text>Медленнее</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_EXPRESS_NAME" Language="ru_RU">
+			<Text>Экспресс</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXPRESS" Language="ru_RU">
+			<Text>[BLIST][LI] Экспресс: на 25% меньше очков передвижения на дорогах, на 50% — на железных дорогах.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED" Language="ru_RU">
+			<Text>[BLIST][LI] Сбалансированный: вехи дают 4, 7 и 11 очков в Античности, 4, 8 и 12 в эпоху Открытий и 4 и 8 в Новейшее время; будущие технологии и институты дают 8, в Новейшее время — 7.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_PLUS_20" Language="ru_RU">
+			<Text>[BLIST][LI] +20%: на 20% дороже.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="ru_RU">
 			<Text>[BLIST][LI] Стандарт: без изменений.[/BLIST]</Text>
@@ -424,14 +439,11 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="ru_RU">
 			<Text>Создаёт больше рек, и больше из них судоходны.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CHEAPER_NAME" Language="ru_RU">
-			<Text>Дешевле</Text>
+		<Replace Tag="LOC_ZG_LOW_NAME" Language="ru_RU">
+			<Text>Низкая</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AFFORDABLE_NAME" Language="ru_RU">
-			<Text>Доступно</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="ru_RU">
-			<Text>Дорого</Text>
+		<Replace Tag="LOC_ZG_HIGH_NAME" Language="ru_RU">
+			<Text>Высокая</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME" Language="ru_RU">
 			<Text>Стоимость гражданских юнитов</Text>
@@ -439,17 +451,17 @@
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="ru_RU">
 			<Text>Задаёт стоимость производства гражданских юнитов.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_CHEAPER" Language="ru_RU">
-			<Text>[BLIST][LI] Дешевле: на 25% дешевле.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_LOW" Language="ru_RU">
+			<Text>[BLIST][LI] Низкая: на 25% дешевле.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="ru_RU">
 			<Text>[BLIST][LI] Стандарт: без скидки.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="ru_RU">
-			<Text>[BLIST][LI] Доступно: на 50% дороже.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_HIGH" Language="ru_RU">
+			<Text>[BLIST][LI] Высокая: на 50% дороже.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="ru_RU">
-			<Text>[BLIST][LI] Дорого: на 100% дороже.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE" Language="ru_RU">
+			<Text>[BLIST][LI] Вдвое больше: на 100% дороже.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="ru_RU">
 			<Text>Онлайн 2.0</Text>
@@ -564,6 +576,30 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="ru_RU">
 			<Text>Создаёт больше гор.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="ru_RU">
+			<Text>Темп эпох</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION" Language="ru_RU">
+			<Text>Применяет готовый темп к настройкам раздела «По умолчанию» на вкладке «Темп».</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="ru_RU">
+			<Text>Сбалансированный</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME" Language="ru_RU">
+			<Text>Многопользовательский</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>Стандартный: собственный темп игры. Переводит все настройки раздела «По умолчанию» на стандартные.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="ru_RU">
+			<Text>Сбалансированный: более долгие эпохи с исследованиями в эпическом стиле. Ставит длительность эпохи 153, 166 и 196 очков по эпохам, темп прогресса эпохи — «Сбалансированный», стоимость технологий и институтов — «Высокая».</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="ru_RU">
+			<Text>Многопользовательский: более мягкое удлинение для сессий. Ставит длительность эпохи 140, 155 и 190 очков по эпохам, темп прогресса эпохи — «Сбалансированный», стоимость технологий +35%, +50% и +75% по эпохам, стоимость институтов +45%, +60% и +85%, рост городов — «Медленный», дороги — «Быстрые» (в Новейшее время — «Экспресс»), стоимость проектов победы +20%.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="ru_RU">
+			<Text>Особый: настройки раздела «По умолчанию» на вкладке «Темп» больше не соответствуют ни одному готовому темпу.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

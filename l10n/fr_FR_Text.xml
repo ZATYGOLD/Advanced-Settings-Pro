@@ -16,9 +16,6 @@
 		<Replace Tag="LOC_ZG_DISABLED_NAME" Language="fr_FR">
 			<Text>Désactivé</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_DEFAULT_NAME" Language="fr_FR">
-			<Text>Par défaut</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_EARLY_NAME" Language="fr_FR">
 			<Text>Tôt</Text>
 		</Replace>
@@ -107,7 +104,7 @@
 			<Text>[BLIST][LI] Lent : 2[icon:Action_Move]de base et 1[icon:Action_Move]embarqué.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="fr_FR">
-			<Text>[BLIST][LI] Par défaut : 3[icon:Action_Move]de base et 2[icon:Action_Move]embarqué.[/BLIST]</Text>
+			<Text>[BLIST][LI] Standard : 3[icon:Action_Move]de base et 2[icon:Action_Move]embarqué.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="fr_FR">
 			<Text>[BLIST][LI] Rapide : 4[icon:Action_Move]de base et 3[icon:Action_Move]embarqué.[/BLIST]</Text>
@@ -119,7 +116,7 @@
 			<Text>[BLIST][LI] Lent : 1[icon:Action_Move]de mouvement de base et embarqué.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="fr_FR">
-			<Text>[BLIST][LI] Par défaut : 2[icon:Action_Move]de mouvement de base et embarqué.[/BLIST]</Text>
+			<Text>[BLIST][LI] Standard : 2[icon:Action_Move]de mouvement de base et embarqué.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="fr_FR">
 			<Text>[BLIST][LI] Rapide : 3[icon:Action_Move]de mouvement de base et embarqué.[/BLIST]</Text>
@@ -134,7 +131,7 @@
 			<Text>[BLIST][LI] Moins : 2 puissances indépendantes par civilisation.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_DEFAULT" Language="fr_FR">
-			<Text>[BLIST][LI] Par défaut : 3 puissances indépendantes par civilisation.[/BLIST]</Text>
+			<Text>[BLIST][LI] Standard : 3 puissances indépendantes par civilisation.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_MORE" Language="fr_FR">
 			<Text>[BLIST][LI] Plus : 4 puissances indépendantes par civilisation.[/BLIST]</Text>
@@ -191,7 +188,7 @@
 			<Text>[BLIST][LI] Moins : 2 cases.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_DEFAULT" Language="fr_FR">
-			<Text>[BLIST][LI] Par défaut : 3 cases.[/BLIST]</Text>
+			<Text>[BLIST][LI] Standard : 3 cases.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="fr_FR">
 			<Text>[BLIST][LI] Plus : 4 cases.[/BLIST]</Text>
@@ -199,17 +196,17 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="fr_FR">
 			<Text>Définit le coût de production des unités de combat.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_CHEAPER" Language="fr_FR">
-			<Text>[BLIST][LI] Moins chères : 25% moins chères.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_LOW" Language="fr_FR">
+			<Text>[BLIST][LI] Bas : 25% moins chères.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="fr_FR">
 			<Text>[BLIST][LI] Standard : aucune réduction.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="fr_FR">
-			<Text>[BLIST][LI] Abordables : 50% plus chères.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_HIGH" Language="fr_FR">
+			<Text>[BLIST][LI] Élevé : 50% plus chères.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="fr_FR">
-			<Text>[BLIST][LI] Cher : 100% plus chères.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DOUBLE" Language="fr_FR">
+			<Text>[BLIST][LI] Double : 100% plus chères.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="fr_FR">
 			<Text>Active ou désactive toutes les crises.[n]Désactivé éteint chaque crise de la Sélection des crises.</Text>
@@ -281,7 +278,7 @@
 			<Text>Carte</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_AGES" Language="fr_FR">
-			<Text>Âges</Text>
+			<Text>Rythme</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="fr_FR">
 			<Text>Conflit de mods détecté</Text>
@@ -302,7 +299,7 @@
 			<Text>Mod non identifié ajoutant les paramètres :</Text>
 		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="fr_FR">
-			<Text>Paramètres du rythme de jeu</Text>
+			<Text>Valeurs par défaut</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_FASTER_NAME" Language="fr_FR">
 			<Text>Plus rapide</Text>
@@ -311,7 +308,7 @@
 			<Text>Personnalisé : définissez ceci pour chaque âge individuellement.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="fr_FR">
-			<Text>Définit la valeur de cet âge.[n]Ne s'applique que si le paramètre de rythme de jeu est sur Personnalisé.</Text>
+			<Text>Définit la valeur de cet âge.[n]Ne s'applique que lorsque le paramètre des Valeurs par défaut est réglé sur Personnalisé.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="fr_FR">
 			<Text>Progression des âges</Text>
@@ -358,20 +355,38 @@
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST" Language="fr_FR">
 			<Text>[BLIST][LI] Rapide : 50% de points en plus.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_CHEAPER" Language="fr_FR">
-			<Text>[BLIST][LI] Moins chères : 25% moins chères.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_LOW" Language="fr_FR">
+			<Text>[BLIST][LI] Bas : 25% moins chères.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COST_DESCRIPTION_STANDARD" Language="fr_FR">
 			<Text>[BLIST][LI] Standard : aucun changement.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_AFFORDABLE" Language="fr_FR">
-			<Text>[BLIST][LI] Abordables : 50% plus chères.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_HIGH" Language="fr_FR">
+			<Text>[BLIST][LI] Élevé : 50% plus chères.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_EXPENSIVE" Language="fr_FR">
-			<Text>[BLIST][LI] Cher : 100% plus chères.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_DOUBLE" Language="fr_FR">
+			<Text>[BLIST][LI] Double : 100% plus chères.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOWER" Language="fr_FR">
+			<Text>[BLIST][LI] Plus lent : les villes grandissent plus lentement.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW" Language="fr_FR">
-			<Text>[BLIST][LI] Lent : les villes grandissent plus lentement.[/BLIST]</Text>
+			<Text>[BLIST][LI] Lent : les villes grandissent un peu plus lentement.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SLOWER_NAME" Language="fr_FR">
+			<Text>Plus lent</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_EXPRESS_NAME" Language="fr_FR">
+			<Text>Express</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXPRESS" Language="fr_FR">
+			<Text>[BLIST][LI] Express : 25% de coût de mouvement en moins sur les routes, 50% en moins sur les voies ferrées.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED" Language="fr_FR">
+			<Text>[BLIST][LI] Équilibré : les jalons rapportent 4, 7 et 11 points dans l'Antiquité, 4, 8 et 12 dans l'Exploration et 4 et 8 dans l'Âge moderne ; les technologies et dogmes futurs rapportent 8, ou 7 dans l'Âge moderne.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_PLUS_20" Language="fr_FR">
+			<Text>[BLIST][LI] +20% : 20% plus chères.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="fr_FR">
 			<Text>[BLIST][LI] Standard : aucun changement.[/BLIST]</Text>
@@ -424,14 +439,11 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="fr_FR">
 			<Text>Génère plus de rivières, dont davantage de fleuves navigables.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CHEAPER_NAME" Language="fr_FR">
-			<Text>Moins chères</Text>
+		<Replace Tag="LOC_ZG_LOW_NAME" Language="fr_FR">
+			<Text>Bas</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AFFORDABLE_NAME" Language="fr_FR">
-			<Text>Abordables</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="fr_FR">
-			<Text>Cher</Text>
+		<Replace Tag="LOC_ZG_HIGH_NAME" Language="fr_FR">
+			<Text>Élevé</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME" Language="fr_FR">
 			<Text>Coût des unités civiles</Text>
@@ -439,17 +451,17 @@
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="fr_FR">
 			<Text>Définit le coût de production des unités civiles.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_CHEAPER" Language="fr_FR">
-			<Text>[BLIST][LI] Moins chères : 25% moins chères.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_LOW" Language="fr_FR">
+			<Text>[BLIST][LI] Bas : 25% moins chères.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="fr_FR">
 			<Text>[BLIST][LI] Standard : aucune réduction.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="fr_FR">
-			<Text>[BLIST][LI] Abordables : 50% plus chères.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_HIGH" Language="fr_FR">
+			<Text>[BLIST][LI] Élevé : 50% plus chères.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="fr_FR">
-			<Text>[BLIST][LI] Cher : 100% plus chères.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE" Language="fr_FR">
+			<Text>[BLIST][LI] Double : 100% plus chères.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="fr_FR">
 			<Text>En ligne 2.0</Text>
@@ -564,6 +576,30 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="fr_FR">
 			<Text>Génère plus de montagnes.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="fr_FR">
+			<Text>Rythme des âges</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION" Language="fr_FR">
+			<Text>Applique un préréglage de rythme aux paramètres des Valeurs par défaut dans l'onglet Rythme.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="fr_FR">
+			<Text>Équilibré</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME" Language="fr_FR">
+			<Text>Multijoueur</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD" Language="fr_FR">
+			<Text>Standard : le rythme du jeu lui-même. Règle chaque paramètre des Valeurs par défaut sur Standard.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="fr_FR">
+			<Text>Équilibré : des âges plus longs avec une recherche de style Épique. Règle la Durée des âges sur 153, 166 et 196 points par âge, le Rythme de progression d'âge sur Équilibré et le Coût des technologies et le Coût des dogmes sur Élevé.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="fr_FR">
+			<Text>Multijoueur : un allongement plus léger pour les sessions. Règle la Durée des âges sur 140, 155 et 190 points par âge, le Rythme de progression d'âge sur Équilibré, le Coût des technologies sur +35%, +50% et +75% par âge, le Coût des dogmes sur +45%, +60% et +85%, la Croissance des villes sur Lente, les Routes sur Rapide (Express dans l'Âge moderne) et le Coût des projets de victoire sur +20%.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="fr_FR">
+			<Text>Personnalisé : les paramètres des Valeurs par défaut dans l'onglet Rythme ne correspondent plus à un préréglage.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

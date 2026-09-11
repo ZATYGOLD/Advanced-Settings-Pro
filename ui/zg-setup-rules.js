@@ -17,19 +17,20 @@
 //   8. An age is changed away from the selected tier
 //      -> the primary setting switches to Custom.
 //
-// Age Length (mirrored settings):
-//   9. The General tab Age Length changes -> the Ages tab Age Length follows it.
-//  10. The Ages tab Age Length changes -> the General tab follows it, or shows
-//      Custom when it does not offer that length.
+// Age Pace:
+//   9. A preset is selected         -> every All Ages setting takes the preset's value.
+//  10. An All Ages setting no longer matches the selected preset
+//      -> Age Pace switches to Custom.
+//  11. Age Length leaves Custom      -> every other All Ages setting returns to Standard.
 //
 // Crises:
-//  11. Crises set to Disabled       -> every crisis in the selection is excluded.
-//  12. Crises leaves Disabled       -> every crisis in the selection is included.
-//  13. Every crisis excluded        -> Crises becomes Disabled; any crisis included
+//  12. Crises set to Disabled       -> every crisis in the selection is excluded.
+//  13. Crises leaves Disabled       -> every crisis in the selection is included.
+//  14. Every crisis excluded        -> Crises becomes Disabled; any crisis included
 //      while it says Disabled       -> Crises becomes Enabled.
-//  14. Crises Disabled              -> Crisis Timing shows Disabled; Crises Enabled
+//  15. Crises Disabled              -> Crisis Timing shows Disabled; Crises Enabled
 //      while the timing says Disabled -> the timing returns to Default.
-//  15. Crisis Timing set to Disabled -> Crises becomes Disabled; the timing leaves
+//  16. Crisis Timing set to Disabled -> Crises becomes Disabled; the timing leaves
 //      Disabled                     -> Crises becomes Enabled.
 
 const NW_COUNT_PARAM_ID = "ZG_NaturalWondersCount";
@@ -48,26 +49,78 @@ const SL_AGE_PARAM_IDS = ["ZG_SettlementLimitAntiquity", "ZG_SettlementLimitExpl
 // Values applied by the curated tiers' SQL, in age order (Antiquity, Exploration, Modern).
 const SL_TIER_VALUES = {
 	"LOC_ZG_LESS_NAME": [1, 4, 10],
-	"LOC_ZG_DEFAULT_NAME": [3, 8, 16],
+	"LOC_ADVANCED_OPTIONS_STANDARD": [3, 8, 16],
 	"LOC_ZG_MORE_NAME": [5, 12, 20],
 };
 
+const AGE_LENGTH_PARAM_ID = "AgeLength";
+
+// Per-age value names for primaries whose age rows use a different scale.
+const AGE_LENGTH_AGE_NAMES = {
+	"LOC_ZG_AGE_LENGTH_BRIEF_NAME": "LOC_ZG_NUM_90",
+	"LOC_ADVANCED_OPTIONS_ABBREVIATED": "LOC_ZG_NUM_120",
+	"LOC_ADVANCED_OPTIONS_STANDARD": "LOC_ZG_NUM_140",
+	"LOC_ADVANCED_OPTIONS_LONG": "LOC_ZG_NUM_160",
+	"LOC_ZG_AGE_LENGTH_DOUBLED_NAME": "LOC_ZG_NUM_280",
+};
+const COST_AGE_NAMES = {
+	"LOC_ZG_LOW_NAME": "LOC_ZG_PCT_MINUS_25",
+	"LOC_ADVANCED_OPTIONS_STANDARD": "LOC_ADVANCED_OPTIONS_STANDARD",
+	"LOC_ZG_HIGH_NAME": "LOC_ZG_PCT_PLUS_50",
+	"LOC_ZG_DOUBLE_NAME": "LOC_ZG_PCT_PLUS_100",
+};
+
 // Primary settings whose per-age values are kept in step (rules 7 & 8).
+// ageNames maps a primary value name to its per-age value name (identity when absent).
 const TIER_AGE_SYNCS = [
 	{ tierId: "ZG_DisasterFrequency", ageIds: ["ZG_DisastersAntiquity", "ZG_DisastersExploration", "ZG_DisastersModern"], lastTier: null },
 	{ tierId: "LegacySets", ageIds: ["ZG_TriumphSetAntiquity", "ZG_TriumphSetExploration", "ZG_TriumphSetModern"], lastTier: null },
-	{ tierId: "ZG_AgeLength", ageIds: ["ZG_AgeLengthAntiquity", "ZG_AgeLengthExploration", "ZG_AgeLengthModern"], lastTier: null },
+	{ tierId: AGE_LENGTH_PARAM_ID, ageIds: ["ZG_AgeLengthAntiquity", "ZG_AgeLengthExploration", "ZG_AgeLengthModern"], ageNames: AGE_LENGTH_AGE_NAMES, lastTier: null },
 	{ tierId: "ZG_AgeProgressRate", ageIds: ["ZG_AgeProgressRateAntiquity", "ZG_AgeProgressRateExploration", "ZG_AgeProgressRateModern"], lastTier: null },
-	{ tierId: "ZG_TechnologyCost", ageIds: ["ZG_TechnologyCostAntiquity", "ZG_TechnologyCostExploration", "ZG_TechnologyCostModern"], lastTier: null },
-	{ tierId: "ZG_CivicCost", ageIds: ["ZG_CivicCostAntiquity", "ZG_CivicCostExploration", "ZG_CivicCostModern"], lastTier: null },
+	{ tierId: "ZG_TechnologyCost", ageIds: ["ZG_TechnologyCostAntiquity", "ZG_TechnologyCostExploration", "ZG_TechnologyCostModern"], ageNames: COST_AGE_NAMES, lastTier: null },
+	{ tierId: "ZG_CivicCost", ageIds: ["ZG_CivicCostAntiquity", "ZG_CivicCostExploration", "ZG_CivicCostModern"], ageNames: COST_AGE_NAMES, lastTier: null },
 	{ tierId: "ZG_CityGrowth", ageIds: ["ZG_CityGrowthAntiquity", "ZG_CityGrowthExploration", "ZG_CityGrowthModern"], lastTier: null },
 	{ tierId: "ZG_Roads", ageIds: ["ZG_RoadsAntiquity", "ZG_RoadsExploration", "ZG_RoadsModern"], lastTier: null },
 ];
 
-// Base settings mirrored by a mod setting on another tab (rules 9 & 10).
-const MIRROR_SYNCS = [
-	{ primaryId: "AgeLength", mirrorId: "ZG_AgeLength", lastPrimary: null, lastMirror: null },
-];
+// Age Pace presets (rules 9 & 10): each All Ages setting's value by name,
+// or a per-age list (Antiquity, Exploration, Modern) that puts it on Custom.
+const PACE_PARAM_ID = "ZG_PacePreset";
+const PACE_STANDARD = {
+	[AGE_LENGTH_PARAM_ID]: "LOC_ADVANCED_OPTIONS_STANDARD",
+	ZG_AgeProgressRate: "LOC_ADVANCED_OPTIONS_STANDARD",
+	ZG_TechnologyCost: "LOC_ADVANCED_OPTIONS_STANDARD",
+	ZG_CivicCost: "LOC_ADVANCED_OPTIONS_STANDARD",
+	ZG_CityGrowth: "LOC_ADVANCED_OPTIONS_STANDARD",
+	ZG_Roads: "LOC_ADVANCED_OPTIONS_STANDARD",
+	ZG_VictoryProjectCost: "LOC_ADVANCED_OPTIONS_STANDARD",
+};
+const PACE_PRESETS = {
+	"LOC_ADVANCED_OPTIONS_STANDARD": PACE_STANDARD,
+	// Eras+ Balanced Extended+: age caps 153/166/196, its milestone curve, 1.5x techs and civics.
+	"LOC_ZG_BALANCED_NAME": {
+		...PACE_STANDARD,
+		[AGE_LENGTH_PARAM_ID]: ["LOC_ZG_NUM_153", "LOC_ZG_NUM_166", "LOC_ZG_NUM_196"],
+		ZG_AgeProgressRate: "LOC_ZG_BALANCED_NAME",
+		ZG_TechnologyCost: "LOC_ZG_HIGH_NAME",
+		ZG_CivicCost: "LOC_ZG_HIGH_NAME",
+	},
+	// Eras+ MP Pace: age caps 140/155/190, its milestone curve, techs 1.35/1.5/1.75x,
+	// civics 1.45/1.6/1.85x, slightly slower growth, faster roads and Modern railroads,
+	// victory projects 1.2x.
+	"LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME": {
+		...PACE_STANDARD,
+		[AGE_LENGTH_PARAM_ID]: ["LOC_ZG_NUM_140", "LOC_ZG_NUM_155", "LOC_ZG_NUM_190"],
+		ZG_AgeProgressRate: "LOC_ZG_BALANCED_NAME",
+		ZG_TechnologyCost: ["LOC_ZG_PCT_PLUS_35", "LOC_ZG_PCT_PLUS_50", "LOC_ZG_PCT_PLUS_75"],
+		ZG_CivicCost: ["LOC_ZG_PCT_PLUS_45", "LOC_ZG_PCT_PLUS_60", "LOC_ZG_PCT_PLUS_85"],
+		ZG_CityGrowth: "LOC_ZG_SLOW_NAME",
+		ZG_Roads: ["LOC_ZG_FAST_NAME", "LOC_ZG_FAST_NAME", "LOC_ZG_ROADS_EXPRESS_NAME"],
+		ZG_VictoryProjectCost: "LOC_ZG_PCT_PLUS_20",
+	},
+};
+let lastPace = null;
+let lastAgeLength = null;
 
 const CRISES_PARAM_ID = "ZG_Crises";
 // The base multiselect lists excluded crises (UxHint InvertSelection).
@@ -76,7 +129,7 @@ const CRISIS_TIMING_PARAM_ID = "ZG_CrisisTiming";
 
 const TIER_DISABLED = "LOC_ZG_DISABLED_NAME";
 const TIER_HALF = "LOC_ZG_HALF_NAME";
-const TIER_DEFAULT = "LOC_ZG_DEFAULT_NAME";
+const TIER_STANDARD = "LOC_ADVANCED_OPTIONS_STANDARD";
 const TIER_MORE = "LOC_ZG_MORE_NAME";
 const TIER_DOUBLE = "LOC_ZG_DOUBLE_NAME";
 const TIER_CUSTOM = "LOC_ZG_CUSTOM_NAME";
@@ -140,7 +193,7 @@ function getBaseWonders() {
 function requiredWonders(tier, base) {
 	switch (tier) {
 		case TIER_HALF: return base <= 1 ? 1 : Math.floor(base / 2);
-		case TIER_DEFAULT: return base;
+		case TIER_STANDARD: return base;
 		case TIER_MORE: return Math.floor(base * 1.5);
 		case TIER_DOUBLE: return base * 2;
 		default: return 0;
@@ -230,49 +283,81 @@ function syncTierWithAges(sync) {
 	}
 	const tier = currentValueName(tierParam);
 	const isCurated = tier != TIER_CUSTOM;
+	const ageName = sync.ageNames?.[tier] ?? tier;
 
 	// 7: the player changed the tier; every age follows it.
 	if (sync.lastTier != null && tier != sync.lastTier) {
 		if (isCurated) {
-			sync.ageIds.forEach((id) => setParamByName(id, tier));
+			sync.ageIds.forEach((id) => setParamByName(id, ageName));
 		}
 		sync.lastTier = tier;
 		return;
 	}
 	sync.lastTier = tier;
 	// 8: an age no longer matches the tier; switch to Custom.
-	if (isCurated && ageParams.some((param) => currentValueName(param) != tier)) {
+	if (isCurated && ageParams.some((param) => currentValueName(param) != ageName)) {
 		setParamByName(sync.tierId, TIER_CUSTOM);
 		sync.lastTier = TIER_CUSTOM;
 	}
 }
 
-// ----------------------------------------------------------------- mirrors --
+// -------------------------------------------------------------- game pace --
 
-function syncMirror(sync) {
-	const primaryParam = GameSetup.findGameParameter(sync.primaryId);
-	const mirrorParam = GameSetup.findGameParameter(sync.mirrorId);
-	if (!primaryParam || !mirrorParam) {
+function paceAgeIds(settingId) {
+	return TIER_AGE_SYNCS.find((sync) => sync.tierId == settingId)?.ageIds ?? [];
+}
+
+function applyPacePreset(preset) {
+	for (const [settingId, expected] of Object.entries(preset)) {
+		if (Array.isArray(expected)) {
+			setParamByName(settingId, TIER_CUSTOM);
+			paceAgeIds(settingId).forEach((ageId, index) => setParamByName(ageId, expected[index]));
+		} else {
+			setParamByName(settingId, expected);
+		}
+	}
+}
+
+function matchesPacePreset(preset) {
+	return Object.entries(preset).every(([settingId, expected]) => {
+		const tier = currentValueName(GameSetup.findGameParameter(settingId));
+		if (!Array.isArray(expected)) {
+			return tier == expected;
+		}
+		return tier == TIER_CUSTOM
+			&& paceAgeIds(settingId).every((ageId, index) => currentValueName(GameSetup.findGameParameter(ageId)) == expected[index]);
+	});
+}
+
+function syncPacePreset() {
+	const paceParam = GameSetup.findGameParameter(PACE_PARAM_ID);
+	if (!paceParam) {
 		return;
 	}
-	const primary = currentValueName(primaryParam);
-	const mirror = currentValueName(mirrorParam);
-	const primaryChanged = sync.lastPrimary != null && primary != sync.lastPrimary;
-	const mirrorChanged = sync.lastMirror != null && mirror != sync.lastMirror;
-	sync.lastPrimary = primary;
-	sync.lastMirror = mirror;
+	const pace = currentValueName(paceParam);
+	const preset = PACE_PRESETS[pace];
+	const ageLength = currentValueName(GameSetup.findGameParameter(AGE_LENGTH_PARAM_ID));
+	const leftCustomAgeLength = lastAgeLength == TIER_CUSTOM && ageLength != TIER_CUSTOM;
+	lastAgeLength = ageLength;
 
-	// 9: the primary changed; the mirror follows it.
-	if (primaryChanged) {
-		setParamByName(sync.mirrorId, primary);
-		sync.lastMirror = primary;
+	// 9: the player chose a preset; every pacing setting takes its value.
+	if (lastPace != null && pace != lastPace) {
+		if (preset) {
+			applyPacePreset(preset);
+			lastAgeLength = null;
+		}
+		lastPace = pace;
 		return;
 	}
-	// 10: the mirror changed; the primary follows it or falls back to Custom.
-	if (mirrorChanged) {
-		const target = valueForName(primaryParam, mirror) != null ? mirror : TIER_CUSTOM;
-		setParamByName(sync.primaryId, target);
-		sync.lastPrimary = target;
+	lastPace = pace;
+	// 11: Age Length left Custom; the other pacing settings return to Standard.
+	if (leftCustomAgeLength) {
+		applyPacePreset(Object.fromEntries(Object.entries(PACE_STANDARD).filter(([id]) => id != AGE_LENGTH_PARAM_ID)));
+	}
+	// 10: a pacing setting no longer matches the preset; it becomes Custom.
+	if (preset && !matchesPacePreset(preset)) {
+		setParamByName(PACE_PARAM_ID, TIER_CUSTOM);
+		lastPace = TIER_CUSTOM;
 	}
 }
 
@@ -294,7 +379,7 @@ function syncCrises() {
 	const timingParam = GameSetup.findGameParameter(CRISIS_TIMING_PARAM_ID);
 	const timing = timingParam ? currentValueName(timingParam) : null;
 
-	// 11 & 12: the player changed the toggle; cascade to the selection and timing.
+	// 12 & 13: the player changed the toggle; cascade to the selection and timing.
 	if (crisesLastToggle != null && toggle != crisesLastToggle) {
 		if (toggle == TOGGLE_DISABLED) {
 			GameSetup.setGameParameterValue(CRISES_SELECTION_PARAM_ID, possible);
@@ -302,7 +387,7 @@ function syncCrises() {
 		} else if (crisesLastToggle == TOGGLE_DISABLED) {
 			GameSetup.setGameParameterValue(CRISES_SELECTION_PARAM_ID, []);
 			if (timing == TIER_DISABLED) {
-				setParamByName(CRISIS_TIMING_PARAM_ID, TIER_DEFAULT);
+				setParamByName(CRISIS_TIMING_PARAM_ID, TIER_STANDARD);
 			}
 		}
 		crisesLastToggle = toggle;
@@ -310,7 +395,7 @@ function syncCrises() {
 		return;
 	}
 	crisesLastToggle = toggle;
-	// 15: the player changed the timing to or from Disabled; the toggle follows.
+	// 16: the player changed the timing to or from Disabled; the toggle follows.
 	if (timing != null && crisisTimingLast != null && timing != crisisTimingLast) {
 		if (timing == TIER_DISABLED && toggle != TOGGLE_DISABLED) {
 			setParamByName(CRISES_PARAM_ID, TOGGLE_DISABLED);
@@ -321,7 +406,7 @@ function syncCrises() {
 		return;
 	}
 	crisisTimingLast = timing;
-	// 13 & 14: keep the toggle truthful about the selection, and the timing about the toggle.
+	// 14 & 15: keep the toggle truthful about the selection, and the timing about the toggle.
 	if (allExcluded && toggle != TOGGLE_DISABLED) {
 		setParamByName(CRISES_PARAM_ID, TOGGLE_DISABLED);
 		setParamByName(CRISIS_TIMING_PARAM_ID, TIER_DISABLED);
@@ -330,13 +415,13 @@ function syncCrises() {
 	} else if (!allExcluded && toggle == TOGGLE_DISABLED) {
 		setParamByName(CRISES_PARAM_ID, TOGGLE_ENABLED);
 		if (timing == TIER_DISABLED) {
-			setParamByName(CRISIS_TIMING_PARAM_ID, TIER_DEFAULT);
+			setParamByName(CRISIS_TIMING_PARAM_ID, TIER_STANDARD);
 		}
 		crisesLastToggle = TOGGLE_ENABLED;
 		crisisTimingLast = null;
 	} else if (timing != null && (timing == TIER_DISABLED) != (toggle == TOGGLE_DISABLED)) {
 		// Loaded configurations can disagree; the toggle wins.
-		setParamByName(CRISIS_TIMING_PARAM_ID, toggle == TOGGLE_DISABLED ? TIER_DISABLED : TIER_DEFAULT);
+		setParamByName(CRISIS_TIMING_PARAM_ID, toggle == TOGGLE_DISABLED ? TIER_DISABLED : TIER_STANDARD);
 		crisisTimingLast = null;
 	}
 }
@@ -360,12 +445,10 @@ setInterval(() => {
 	} catch (e) {
 		console.warn(`ZG-ASP settlement sync error: ${e}`);
 	}
-	for (const sync of MIRROR_SYNCS) {
-		try {
-			syncMirror(sync);
-		} catch (e) {
-			console.warn(`ZG-ASP ${sync.primaryId} mirror sync error: ${e}`);
-		}
+	try {
+		syncPacePreset();
+	} catch (e) {
+		console.warn(`ZG-ASP pace preset sync error: ${e}`);
 	}
 	for (const sync of TIER_AGE_SYNCS) {
 		try {

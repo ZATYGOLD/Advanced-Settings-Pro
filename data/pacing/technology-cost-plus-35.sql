@@ -1,8 +1,8 @@
--- Cheaper: techs costs x0.75.
+-- +35%: tech costs x1.35.
 UPDATE ProgressionTreeNodes
-SET Cost = ROUND(Cost * 0.75),
+SET Cost = ROUND(Cost * 1.35),
     RepeatableCostProgressionParam1 = CASE
-        WHEN RepeatableCostProgressionParam1 > 0 THEN ROUND(RepeatableCostProgressionParam1 * 0.75)
+        WHEN RepeatableCostProgressionParam1 > 0 THEN ROUND(RepeatableCostProgressionParam1 * 1.35)
         ELSE RepeatableCostProgressionParam1
     END
 WHERE ProgressionTree LIKE 'TREE_TECHS%'

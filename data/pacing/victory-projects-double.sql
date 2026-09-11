@@ -1,4 +1,4 @@
--- Expensive: victory and legacy project costs x2.0.
+-- Double: victory and legacy project costs x2.0.
 UPDATE Projects
 SET Cost = ROUND(Cost * 2.0)
 WHERE Cost IS NOT NULL

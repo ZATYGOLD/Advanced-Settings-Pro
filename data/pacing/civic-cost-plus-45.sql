@@ -1,8 +1,8 @@
--- Affordable: civics costs x1.5.
+-- +45%: civic costs x1.45.
 UPDATE ProgressionTreeNodes
-SET Cost = ROUND(Cost * 1.5),
+SET Cost = ROUND(Cost * 1.45),
     RepeatableCostProgressionParam1 = CASE
-        WHEN RepeatableCostProgressionParam1 > 0 THEN ROUND(RepeatableCostProgressionParam1 * 1.5)
+        WHEN RepeatableCostProgressionParam1 > 0 THEN ROUND(RepeatableCostProgressionParam1 * 1.45)
         ELSE RepeatableCostProgressionParam1
     END
 WHERE ProgressionTree LIKE 'TREE_CIVICS%'

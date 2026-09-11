@@ -1,4 +1,4 @@
--- Slow: cities need more food to grow.
+-- Slow: cities need a little more food to grow.
 UPDATE AgeGrowthBalances
-SET Scalar = ROUND(Scalar * 1.1),
-    Exponent = ROUND(Exponent * 1.3);
+SET Scalar = ROUND(Scalar * 1.05),
+    Exponent = ROUND(Exponent * 1.15);
