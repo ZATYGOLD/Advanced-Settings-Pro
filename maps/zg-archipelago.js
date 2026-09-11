@@ -2,11 +2,12 @@
 // imports are repointed at the base module so everything else stays stock.
 import { zgModelRivers } from './zg-map-rivers.js';
 import { zgAddMountains } from './zg-map-mountains.js';
+import { zgDesignateBiomes } from './zg-map-biomes.js';
 import { assignAdvancedStartRegions } from 'fs://game/base-standard/maps/assign-advanced-start-region.js';
 import { chooseStartSectors, assignStartPositions } from 'fs://game/base-standard/maps/assign-starting-plots.js';
 import { generateDiscoveries } from 'fs://game/base-standard/maps/discovery-generator.js';
 import { expandCoasts, addMountains, addHills, buildRainfallMap } from 'fs://game/base-standard/maps/elevation-terrain-generator.js';
-import { designateBiomes, addFeatures } from 'fs://game/base-standard/maps/feature-biome-generator.js';
+import { addFeatures } from 'fs://game/base-standard/maps/feature-biome-generator.js';
 import { dumpStartSectors, dumpContinents, dumpTerrain, dumpElevation, dumpRainfall, dumpBiomes, dumpFeatures, dumpResources, dumpNoisePredicate } from 'fs://game/base-standard/maps/map-debug-helpers.js';
 import { g_OceanWaterColumns, g_PolarWaterRows, g_NavigableRiverTerrain, g_OceanTerrain, g_CoastTerrain, g_LandmassFractal, g_FlatTerrain } from 'fs://game/base-standard/maps/map-globals.js';
 import { needHumanNearEquator, markLandmassRegionId, isAdjacentToLand, getSector, getHeightAdjustingForStartSector } from 'fs://game/base-standard/maps/map-utilities.js';
@@ -131,7 +132,7 @@ function generateMap() {
   zgModelRivers(5, 70);
   TerrainBuilder.validateAndFixTerrain();
   TerrainBuilder.defineNamedRivers();
-  designateBiomes(iWidth, iHeight);
+  zgDesignateBiomes(iWidth, iHeight);
   addTundraVolcanoes(iWidth, iHeight);
   addNaturalWonders(iWidth, iHeight, iNumNaturalWonders);
   TerrainBuilder.addFloodplains(4, 10);

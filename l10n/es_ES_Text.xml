@@ -16,9 +16,6 @@
 		<Replace Tag="LOC_ZG_DISABLED_NAME" Language="es_ES">
 			<Text>Desactivado</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_DEFAULT_NAME" Language="es_ES">
-			<Text>Predeterminado</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_EARLY_NAME" Language="es_ES">
 			<Text>Temprano</Text>
 		</Replace>
@@ -60,9 +57,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="es_ES">
 			<Text>Separación de potencias independientes</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME" Language="es_ES">
-			<Text>Unidades iniciales de potencias independientes</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_NAME" Language="es_ES">
 			<Text>Desastres</Text>
@@ -107,7 +101,7 @@
 			<Text>[BLIST][LI] Lento: 2[icon:Action_Move]base y 1[icon:Action_Move]embarcado.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="es_ES">
-			<Text>[BLIST][LI] Predeterminado: 3[icon:Action_Move]base y 2[icon:Action_Move]embarcado.[/BLIST]</Text>
+			<Text>[BLIST][LI] Estándar: 3[icon:Action_Move]base y 2[icon:Action_Move]embarcado.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="es_ES">
 			<Text>[BLIST][LI] Rápido: 4[icon:Action_Move]base y 3[icon:Action_Move]embarcado.[/BLIST]</Text>
@@ -119,7 +113,7 @@
 			<Text>[BLIST][LI] Lento: 1[icon:Action_Move]de movimiento base y embarcado.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="es_ES">
-			<Text>[BLIST][LI] Predeterminado: 2[icon:Action_Move]de movimiento base y embarcado.[/BLIST]</Text>
+			<Text>[BLIST][LI] Estándar: 2[icon:Action_Move]de movimiento base y embarcado.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="es_ES">
 			<Text>[BLIST][LI] Rápido: 3[icon:Action_Move]de movimiento base y embarcado.[/BLIST]</Text>
@@ -134,7 +128,7 @@
 			<Text>[BLIST][LI] Menos: 2 potencias independientes por civilización.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_DEFAULT" Language="es_ES">
-			<Text>[BLIST][LI] Predeterminado: 3 potencias independientes por civilización.[/BLIST]</Text>
+			<Text>[BLIST][LI] Estándar: 3 potencias independientes por civilización.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_MORE" Language="es_ES">
 			<Text>[BLIST][LI] Más: 4 potencias independientes por civilización.[/BLIST]</Text>
@@ -150,18 +144,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="es_ES">
 			<Text>[BLIST][LI] Antigüedad: 7 casillas.[LI] Descubrimientos: 7 casillas.[LI] Modernidad: 5 casillas.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION" Language="es_ES">
-			<Text>Establece el número inicial de unidades de una potencia independiente. [n] Las potencias independientes siempre empiezan con 1[icon:UNIT_SCOUT]Explorador.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_LESS" Language="es_ES">
-			<Text>Establece el número inicial de unidades de una potencia independiente. [n] Las potencias independientes siempre empiezan con 1[icon:UNIT_SCOUT]Explorador.[n] [BLIST][LI] Antigüedad: 0[icon:UNIT_WARRIOR]Guerreros.[LI] Descubrimientos: 2[icon:UNIT_SWORDSMAN]Soldados con espada.[LI] Modernidad: 3[icon:UNIT_LINE_INFANTRY]Infantería de línea.[/BLIST][n] [n]El número de unidades dependerá de las casillas de tierra disponibles en el primer anillo, incluido el centro de la aldea.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_DEFAULT" Language="es_ES">
-			<Text>Establece el número inicial de unidades de una potencia independiente. [n] Las potencias independientes siempre empiezan con 1[icon:UNIT_SCOUT]Explorador.[n] [BLIST][LI] Antigüedad: 1[icon:UNIT_WARRIOR]Guerreros.[LI] Descubrimientos: 3[icon:UNIT_SWORDSMAN]Soldados con espada.[LI] Modernidad: 4[icon:UNIT_LINE_INFANTRY]Infantería de línea.[/BLIST][n] [n]El número de unidades dependerá de las casillas de tierra disponibles en el primer anillo, incluido el centro de la aldea.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_MORE" Language="es_ES">
-			<Text>Establece el número inicial de unidades de una potencia independiente. [n] Las potencias independientes siempre empiezan con 1[icon:UNIT_SCOUT]Explorador.[n] [BLIST][LI] Antigüedad: 2[icon:UNIT_WARRIOR]Guerreros.[LI] Descubrimientos: 4[icon:UNIT_SWORDSMAN]Soldados con espada.[LI] Modernidad: 5[icon:UNIT_LINE_INFANTRY]Infantería de línea.[/BLIST][n] [n]El número de unidades dependerá de las casillas de tierra disponibles en el primer anillo, incluido el centro de la aldea.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="es_ES">
 			<Text>Desactiva todos los desastres naturales.</Text>
@@ -191,7 +173,7 @@
 			<Text>[BLIST][LI] Menos: 2 casillas.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_DEFAULT" Language="es_ES">
-			<Text>[BLIST][LI] Predeterminado: 3 casillas.[/BLIST]</Text>
+			<Text>[BLIST][LI] Estándar: 3 casillas.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="es_ES">
 			<Text>[BLIST][LI] Más: 4 casillas.[/BLIST]</Text>
@@ -199,17 +181,17 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="es_ES">
 			<Text>Establece el coste de producción de las unidades de combate.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_CHEAPER" Language="es_ES">
-			<Text>[BLIST][LI] Más baratas: 25% más baratas.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_LOW" Language="es_ES">
+			<Text>[BLIST][LI] Bajo: 25% más baratas.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="es_ES">
 			<Text>[BLIST][LI] Estándar: sin descuento.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="es_ES">
-			<Text>[BLIST][LI] Asequibles: 50% más caras.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_HIGH" Language="es_ES">
+			<Text>[BLIST][LI] Alto: 50% más caras.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="es_ES">
-			<Text>[BLIST][LI] Caro: 100% más caras.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DOUBLE" Language="es_ES">
+			<Text>[BLIST][LI] Doble: 100% más caras.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="es_ES">
 			<Text>Activa o desactiva todas las crisis.[n]Desactivado apaga todas las crisis de Selección de crisis.</Text>
@@ -280,6 +262,9 @@
 		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS" Language="es_ES">
 			<Text>Mapa</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_AGES" Language="es_ES">
+			<Text>Ritmo</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="es_ES">
 			<Text>Conflicto de mods detectado</Text>
 		</Replace>
@@ -292,11 +277,110 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="es_ES">
 			<Text>Desactivar mods en conflicto</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="es_ES">
-			<Text>Mantener ambos</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="es_ES">
 			<Text>Mod no identificado que añade los ajustes:</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="es_ES">
+			<Text>Configuración de ritmo</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FASTER_NAME" Language="es_ES">
+			<Text>Más rápido</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM" Language="es_ES">
+			<Text>Personalizado: cada era usa su propia fila en los grupos de eras más abajo.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="es_ES">
+			<Text>Establece el valor de esta era.[n]Solo se aplica cuando la fila correspondiente de Configuración de ritmo está en Personalizado. Los ajustes predefinidos del Conjunto de ritmo rellenan estas filas; cambiar una pone el Conjunto de ritmo en Personalizado.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="es_ES">
+			<Text>Progreso de la era</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION" Language="es_ES">
+			<Text>Establece con qué rapidez los hitos y las tecnologías y principios futuros llenan el medidor de la era.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_NAME" Language="es_ES">
+			<Text>Coste de tecnologías</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION" Language="es_ES">
+			<Text>Establece el coste de investigación de las tecnologías.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_NAME" Language="es_ES">
+			<Text>Coste de principios</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION" Language="es_ES">
+			<Text>Establece el coste de cultura de los principios.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_NAME" Language="es_ES">
+			<Text>Crecimiento de ciudades</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION" Language="es_ES">
+			<Text>Establece cuánta comida necesitan las ciudades para crecer.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_NAME" Language="es_ES">
+			<Text>Caminos</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION" Language="es_ES">
+			<Text>Establece cuánto movimiento cuestan los caminos y ferrocarriles.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_NAME" Language="es_ES">
+			<Text>Coste de proyectos de victoria</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION" Language="es_ES">
+			<Text>Establece el coste de producción de los proyectos de triunfo científicos y militares en todas las eras.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="es_ES">
+			<Text>[BLIST][LI] Lento: 50% menos puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD" Language="es_ES">
+			<Text>[BLIST][LI] Estándar: sin cambios.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST" Language="es_ES">
+			<Text>[BLIST][LI] Rápido: 50% más puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_LOW" Language="es_ES">
+			<Text>[BLIST][LI] Bajo: 25% más baratas.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_STANDARD" Language="es_ES">
+			<Text>[BLIST][LI] Estándar: sin cambios.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_HIGH" Language="es_ES">
+			<Text>[BLIST][LI] Alto: 50% más caras.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_DOUBLE" Language="es_ES">
+			<Text>[BLIST][LI] Doble: 100% más caras.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOWER" Language="es_ES">
+			<Text>[BLIST][LI] Más lento: las ciudades crecen más despacio.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW" Language="es_ES">
+			<Text>[BLIST][LI] Lento: las ciudades crecen un poco más despacio.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SLOWER_NAME" Language="es_ES">
+			<Text>Más lento</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_EXPRESS_NAME" Language="es_ES">
+			<Text>Exprés</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXPRESS" Language="es_ES">
+			<Text>[BLIST][LI] Exprés: 25% menos de coste de movimiento en carreteras, 50% menos en ferrocarriles.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED" Language="es_ES">
+			<Text>[BLIST][LI] Equilibrado: los hitos otorgan 4, 7 y 11 puntos en la Antigüedad, 4, 8 y 12 en la Exploración y 4 y 8 en la Era Moderna; las tecnologías y principios futuros otorgan 8, o 7 en la Era Moderna.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="es_ES">
+			<Text>[BLIST][LI] Estándar: sin cambios.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="es_ES">
+			<Text>[BLIST][LI] Rápido: las ciudades crecen más deprisa.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD" Language="es_ES">
+			<Text>[BLIST][LI] Estándar: sin cambios.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_FAST" Language="es_ES">
+			<Text>[BLIST][LI] Rápido: 25% menos coste de movimiento.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_FASTER" Language="es_ES">
+			<Text>[BLIST][LI] Más rápido: 50% menos coste de movimiento.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="es_ES">
 			<Text>Recuerdos aleatorios</Text>
@@ -319,6 +403,27 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="es_ES">
 			<Text>Establece el límite de asentamientos de esta era.[n]Solo se aplica cuando el límite de asentamientos está en Personalizado.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_NAME" Language="es_ES">
+			<Text>Temperatura del mapa</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="es_ES">
+			<Text>Desplaza las franjas climáticas que determinan el bioma de cada casilla de tierra.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COLD_NAME" Language="es_ES">
+			<Text>Frío</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HOT_NAME" Language="es_ES">
+			<Text>Cálido</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="es_ES">
+			<Text>Frío: la tundra empieza más cerca del ecuador, a costa de la pradera.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="es_ES">
+			<Text>Clima estándar para el tipo de mapa elegido.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="es_ES">
+			<Text>Cálido: el trópico y el desierto se extienden más lejos del ecuador, a costa de las llanuras y la pradera.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="es_ES">
 			<Text>Ríos</Text>
 		</Replace>
@@ -334,14 +439,11 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="es_ES">
 			<Text>Genera más ríos, y más de ellos son navegables.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CHEAPER_NAME" Language="es_ES">
-			<Text>Más baratas</Text>
+		<Replace Tag="LOC_ZG_LOW_NAME" Language="es_ES">
+			<Text>Bajo</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AFFORDABLE_NAME" Language="es_ES">
-			<Text>Asequibles</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="es_ES">
-			<Text>Caro</Text>
+		<Replace Tag="LOC_ZG_HIGH_NAME" Language="es_ES">
+			<Text>Alto</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME" Language="es_ES">
 			<Text>Coste de unidades civiles</Text>
@@ -349,17 +451,17 @@
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="es_ES">
 			<Text>Establece el coste de producción de las unidades civiles.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_CHEAPER" Language="es_ES">
-			<Text>[BLIST][LI] Más baratas: 25% más baratas.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_LOW" Language="es_ES">
+			<Text>[BLIST][LI] Bajo: 25% más baratas.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="es_ES">
 			<Text>[BLIST][LI] Estándar: sin descuento.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="es_ES">
-			<Text>[BLIST][LI] Asequibles: 50% más caras.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_HIGH" Language="es_ES">
+			<Text>[BLIST][LI] Alto: 50% más caras.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="es_ES">
-			<Text>[BLIST][LI] Caro: 100% más caras.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE" Language="es_ES">
+			<Text>[BLIST][LI] Doble: 100% más caras.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="es_ES">
 			<Text>En línea 2.0</Text>
@@ -378,6 +480,72 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_NAME" Language="es_ES">
 			<Text>Duplicado</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="es_ES">
+			<Text>Personalizado: cada era usa la fila Duración de las eras de su propio grupo más abajo. Equilibrado fija 153, 166 y 196 puntos; Multijugador fija 140, 155 y 190.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_90" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 36 puntos.[LI] Online: 45 puntos.[LI] Quick: 60 puntos.[LI] Standard: 90 puntos.[LI] Epic: 135 puntos.[LI] Marathon: 270 puntos.[LI] Marathon 2.0: 450 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 40 puntos.[LI] Online: 50 puntos.[LI] Quick: 67 puntos.[LI] Standard: 100 puntos.[LI] Epic: 150 puntos.[LI] Marathon: 300 puntos.[LI] Marathon 2.0: 500 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 44 puntos.[LI] Online: 55 puntos.[LI] Quick: 73 puntos.[LI] Standard: 110 puntos.[LI] Epic: 165 puntos.[LI] Marathon: 330 puntos.[LI] Marathon 2.0: 550 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 48 puntos.[LI] Online: 60 puntos.[LI] Quick: 80 puntos.[LI] Standard: 120 puntos.[LI] Epic: 180 puntos.[LI] Marathon: 360 puntos.[LI] Marathon 2.0: 600 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 52 puntos.[LI] Online: 65 puntos.[LI] Quick: 87 puntos.[LI] Standard: 130 puntos.[LI] Epic: 195 puntos.[LI] Marathon: 390 puntos.[LI] Marathon 2.0: 650 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 56 puntos.[LI] Online: 70 puntos.[LI] Quick: 93 puntos.[LI] Standard: 140 puntos.[LI] Epic: 210 puntos.[LI] Marathon: 420 puntos.[LI] Marathon 2.0: 700 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 60 puntos.[LI] Online: 75 puntos.[LI] Quick: 100 puntos.[LI] Standard: 150 puntos.[LI] Epic: 225 puntos.[LI] Marathon: 450 puntos.[LI] Marathon 2.0: 750 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 61 puntos.[LI] Online: 76 puntos.[LI] Quick: 102 puntos.[LI] Standard: 153 puntos.[LI] Epic: 230 puntos.[LI] Marathon: 459 puntos.[LI] Marathon 2.0: 765 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 62 puntos.[LI] Online: 78 puntos.[LI] Quick: 103 puntos.[LI] Standard: 155 puntos.[LI] Epic: 232 puntos.[LI] Marathon: 465 puntos.[LI] Marathon 2.0: 775 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 64 puntos.[LI] Online: 80 puntos.[LI] Quick: 107 puntos.[LI] Standard: 160 puntos.[LI] Epic: 240 puntos.[LI] Marathon: 480 puntos.[LI] Marathon 2.0: 800 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 66 puntos.[LI] Online: 83 puntos.[LI] Quick: 111 puntos.[LI] Standard: 166 puntos.[LI] Epic: 249 puntos.[LI] Marathon: 498 puntos.[LI] Marathon 2.0: 830 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 68 puntos.[LI] Online: 85 puntos.[LI] Quick: 113 puntos.[LI] Standard: 170 puntos.[LI] Epic: 255 puntos.[LI] Marathon: 510 puntos.[LI] Marathon 2.0: 850 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 72 puntos.[LI] Online: 90 puntos.[LI] Quick: 120 puntos.[LI] Standard: 180 puntos.[LI] Epic: 270 puntos.[LI] Marathon: 540 puntos.[LI] Marathon 2.0: 900 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 76 puntos.[LI] Online: 95 puntos.[LI] Quick: 127 puntos.[LI] Standard: 190 puntos.[LI] Epic: 285 puntos.[LI] Marathon: 570 puntos.[LI] Marathon 2.0: 950 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 78 puntos.[LI] Online: 98 puntos.[LI] Quick: 131 puntos.[LI] Standard: 196 puntos.[LI] Epic: 294 puntos.[LI] Marathon: 588 puntos.[LI] Marathon 2.0: 980 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 80 puntos.[LI] Online: 100 puntos.[LI] Quick: 133 puntos.[LI] Standard: 200 puntos.[LI] Epic: 300 puntos.[LI] Marathon: 600 puntos.[LI] Marathon 2.0: 1000 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 88 puntos.[LI] Online: 110 puntos.[LI] Quick: 147 puntos.[LI] Standard: 220 puntos.[LI] Epic: 330 puntos.[LI] Marathon: 660 puntos.[LI] Marathon 2.0: 1100 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 96 puntos.[LI] Online: 120 puntos.[LI] Quick: 160 puntos.[LI] Standard: 240 puntos.[LI] Epic: 360 puntos.[LI] Marathon: 720 puntos.[LI] Marathon 2.0: 1200 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 104 puntos.[LI] Online: 130 puntos.[LI] Quick: 173 puntos.[LI] Standard: 260 puntos.[LI] Epic: 390 puntos.[LI] Marathon: 780 puntos.[LI] Marathon 2.0: 1300 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 112 puntos.[LI] Online: 140 puntos.[LI] Quick: 187 puntos.[LI] Standard: 280 puntos.[LI] Epic: 420 puntos.[LI] Marathon: 840 puntos.[LI] Marathon 2.0: 1400 puntos.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300" Language="es_ES">
+			<Text>[BLIST][LI] Online 2.0: 120 puntos.[LI] Online: 150 puntos.[LI] Quick: 200 puntos.[LI] Standard: 300 puntos.[LI] Epic: 450 puntos.[LI] Marathon: 900 puntos.[LI] Marathon 2.0: 1500 puntos.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="es_ES">
 			<Text> Las eras terminarán antes.
@@ -416,7 +584,7 @@
 			</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="es_ES">
-			<Text> La duración de era predeterminada.
+			<Text> La duración de era estándar.
 				[n] [BLIST]
 				[LI] Online 2.0: 56 puntos.
 				[LI] Online: 70 puntos.
@@ -474,6 +642,39 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="es_ES">
 			<Text>Genera más montañas.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="es_ES">
+			<Text>Conjunto de ritmo</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION" Language="es_ES">
+			<Text>Aplica un ajuste predefinido de ritmo a la Configuración de ritmo de la pestaña Ritmo.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="es_ES">
+			<Text>Equilibrado</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_BALANCED_NAME" Language="es_ES">
+			<Text>Ritmo equilibrado</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_CUSTOM_NAME" Language="es_ES">
+			<Text>Ritmo personalizado</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME" Language="es_ES">
+			<Text>Ritmo multijugador</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME" Language="es_ES">
+			<Text>Ritmo estándar</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD" Language="es_ES">
+			<Text>Ritmo estándar: el ritmo propio del juego. Pone todas las filas de Configuración de ritmo en Estándar.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="es_ES">
+			<Text>Ritmo equilibrado: eras más largas con investigación al estilo Épico. Pone Duración de las eras en 153, 166 y 196 puntos por era, Ritmo de progreso de era en Equilibrado y Coste de tecnologías y Coste de principios en Alto.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="es_ES">
+			<Text>Ritmo multijugador: una extensión más ligera para sesiones. Pone Duración de las eras en 140, 155 y 190 puntos por era, Ritmo de progreso de era en Equilibrado, Coste de tecnologías en +35%, +50% y +75% por era, Coste de principios en +45%, +60% y +85%, Crecimiento de ciudades en Lento, Carreteras en Rápido (Exprés en la Era Moderna) y Coste de proyectos de victoria en +20% en la Era Moderna.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="es_ES">
+			<Text>Ritmo personalizado: la Configuración de ritmo de la pestaña Ritmo ya no coincide con ningún ajuste predefinido.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

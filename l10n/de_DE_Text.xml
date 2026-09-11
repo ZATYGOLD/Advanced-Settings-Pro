@@ -16,9 +16,6 @@
 		<Replace Tag="LOC_ZG_DISABLED_NAME" Language="de_DE">
 			<Text>Deaktiviert</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_DEFAULT_NAME" Language="de_DE">
-			<Text>Standard</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_EARLY_NAME" Language="de_DE">
 			<Text>Früh</Text>
 		</Replace>
@@ -60,9 +57,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="de_DE">
 			<Text>Abstand unabhängiger Mächte</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME" Language="de_DE">
-			<Text>Anfängliche Einheiten unabhängiger Mächte</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_NAME" Language="de_DE">
 			<Text>Katastrophen</Text>
@@ -151,18 +145,6 @@
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="de_DE">
 			<Text>[BLIST][LI] Antike: 7 Felder.[LI] Erkundung: 7 Felder.[LI] Moderne: 5 Felder.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION" Language="de_DE">
-			<Text>Legt die anfängliche Anzahl der Einheiten einer unabhängigen Macht fest. [n] Unabhängige Mächte beginnen immer mit 1[icon:UNIT_SCOUT]Späher.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_LESS" Language="de_DE">
-			<Text>Legt die anfängliche Anzahl der Einheiten einer unabhängigen Macht fest. [n] Unabhängige Mächte beginnen immer mit 1[icon:UNIT_SCOUT]Späher.[n] [BLIST][LI] Antike: 0[icon:UNIT_WARRIOR]Krieger.[LI] Erkundung: 2[icon:UNIT_SWORDSMAN]Schwertkämpfer.[LI] Moderne: 3[icon:UNIT_LINE_INFANTRY]Linieninfanterie.[/BLIST][n] [n]Die Anzahl der Einheiten hängt von den verfügbaren Landfeldern im ersten Ring einschließlich des Dorfzentrums ab.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_DEFAULT" Language="de_DE">
-			<Text>Legt die anfängliche Anzahl der Einheiten einer unabhängigen Macht fest. [n] Unabhängige Mächte beginnen immer mit 1[icon:UNIT_SCOUT]Späher.[n] [BLIST][LI] Antike: 1[icon:UNIT_WARRIOR]Krieger.[LI] Erkundung: 3[icon:UNIT_SWORDSMAN]Schwertkämpfer.[LI] Moderne: 4[icon:UNIT_LINE_INFANTRY]Linieninfanterie.[/BLIST][n] [n]Die Anzahl der Einheiten hängt von den verfügbaren Landfeldern im ersten Ring einschließlich des Dorfzentrums ab.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_MORE" Language="de_DE">
-			<Text>Legt die anfängliche Anzahl der Einheiten einer unabhängigen Macht fest. [n] Unabhängige Mächte beginnen immer mit 1[icon:UNIT_SCOUT]Späher.[n] [BLIST][LI] Antike: 2[icon:UNIT_WARRIOR]Krieger.[LI] Erkundung: 4[icon:UNIT_SWORDSMAN]Schwertkämpfer.[LI] Moderne: 5[icon:UNIT_LINE_INFANTRY]Linieninfanterie.[/BLIST][n] [n]Die Anzahl der Einheiten hängt von den verfügbaren Landfeldern im ersten Ring einschließlich des Dorfzentrums ab.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="de_DE">
 			<Text>Deaktiviert alle Naturkatastrophen.</Text>
 		</Replace>
@@ -199,17 +181,17 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="de_DE">
 			<Text>Legt die Produktionskosten von Kampfeinheiten fest.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_CHEAPER" Language="de_DE">
-			<Text>[BLIST][LI] Günstiger: 25% günstiger.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_LOW" Language="de_DE">
+			<Text>[BLIST][LI] Niedrig: 25% günstiger.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="de_DE">
 			<Text>[BLIST][LI] Standard: kein Rabatt.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="de_DE">
-			<Text>[BLIST][LI] Erschwinglich: 50% teurer.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_HIGH" Language="de_DE">
+			<Text>[BLIST][LI] Hoch: 50% teurer.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="de_DE">
-			<Text>[BLIST][LI] Teuer: 100% teurer.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DOUBLE" Language="de_DE">
+			<Text>[BLIST][LI] Doppelt: 100% teurer.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="de_DE">
 			<Text>Aktiviert oder deaktiviert alle Krisen.[n]Deaktiviert schaltet jede Krise in der Krisenauswahl aus.</Text>
@@ -280,6 +262,9 @@
 		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS" Language="de_DE">
 			<Text>Karte</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_AGES" Language="de_DE">
+			<Text>Tempo</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="de_DE">
 			<Text>Mod-Konflikt erkannt</Text>
 		</Replace>
@@ -292,11 +277,110 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="de_DE">
 			<Text>Konfliktmods deaktivieren</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="de_DE">
-			<Text>Beide behalten</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="de_DE">
 			<Text>Nicht identifizierte Mod, die diese Einstellungen hinzufügt:</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="de_DE">
+			<Text>Tempo-Einstellungen</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FASTER_NAME" Language="de_DE">
+			<Text>Schneller</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM" Language="de_DE">
+			<Text>Benutzerdefiniert: Jedes Zeitalter nutzt seine eigene Zeile in den Zeitalter-Gruppen darunter.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="de_DE">
+			<Text>Legt den Wert dieses Zeitalters fest.[n]Gilt nur, wenn die zugehörige Zeile unter „Tempo-Einstellungen“ auf Benutzerdefiniert steht. Tempo-Set-Vorlagen füllen diese Zeilen; eine Änderung stellt das Tempo-Set auf Benutzerdefiniert.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="de_DE">
+			<Text>Zeitalterfortschritt</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION" Language="de_DE">
+			<Text>Legt fest, wie schnell Meilensteine sowie Zukunftstechnologien und -bürgerrechte den Zeitalterfortschritt füllen.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_NAME" Language="de_DE">
+			<Text>Technologiekosten</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION" Language="de_DE">
+			<Text>Legt die Forschungskosten von Technologien fest.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_NAME" Language="de_DE">
+			<Text>Kosten für Bürgerrechte</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION" Language="de_DE">
+			<Text>Legt die Kulturkosten von Bürgerrechten fest.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_NAME" Language="de_DE">
+			<Text>Stadtwachstum</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION" Language="de_DE">
+			<Text>Legt fest, wie viel Nahrung Städte zum Wachsen benötigen.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_NAME" Language="de_DE">
+			<Text>Straßen</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION" Language="de_DE">
+			<Text>Legt fest, wie viel Bewegung Straßen und Eisenbahnen kosten.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_NAME" Language="de_DE">
+			<Text>Kosten für Siegprojekte</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION" Language="de_DE">
+			<Text>Legt die Produktionskosten der Wissenschafts- und Militär-Triumphprojekte in jedem Zeitalter fest.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="de_DE">
+			<Text>[BLIST][LI] Langsam: 50% weniger Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD" Language="de_DE">
+			<Text>[BLIST][LI] Standard: keine Änderung.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST" Language="de_DE">
+			<Text>[BLIST][LI] Schnell: 50% mehr Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_LOW" Language="de_DE">
+			<Text>[BLIST][LI] Niedrig: 25% günstiger.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_STANDARD" Language="de_DE">
+			<Text>[BLIST][LI] Standard: keine Änderung.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_HIGH" Language="de_DE">
+			<Text>[BLIST][LI] Hoch: 50% teurer.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_DOUBLE" Language="de_DE">
+			<Text>[BLIST][LI] Doppelt: 100% teurer.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOWER" Language="de_DE">
+			<Text>[BLIST][LI] Langsamer: Städte wachsen langsamer.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW" Language="de_DE">
+			<Text>[BLIST][LI] Langsam: Städte wachsen etwas langsamer.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SLOWER_NAME" Language="de_DE">
+			<Text>Langsamer</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_EXPRESS_NAME" Language="de_DE">
+			<Text>Express</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXPRESS" Language="de_DE">
+			<Text>[BLIST][LI] Express: 25% weniger Bewegungskosten auf Straßen, 50% weniger auf Eisenbahnen.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED" Language="de_DE">
+			<Text>[BLIST][LI] Ausgewogen: Meilensteine geben 4, 7 und 11 Punkte in der Antike, 4, 8 und 12 in der Entdeckungszeit und 4 und 8 in der Moderne; Zukunftstechnologien und -bürgerrechte geben 8, in der Moderne 7.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="de_DE">
+			<Text>[BLIST][LI] Standard: keine Änderung.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="de_DE">
+			<Text>[BLIST][LI] Schnell: Städte wachsen schneller.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD" Language="de_DE">
+			<Text>[BLIST][LI] Standard: keine Änderung.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_FAST" Language="de_DE">
+			<Text>[BLIST][LI] Schnell: 25% weniger Bewegungskosten.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_FASTER" Language="de_DE">
+			<Text>[BLIST][LI] Schneller: 50% weniger Bewegungskosten.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="de_DE">
 			<Text>Zufällige Erinnerungsstücke</Text>
@@ -319,6 +403,27 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="de_DE">
 			<Text>Legt das Siedlungslimit dieses Zeitalters fest.[n]Gilt nur, wenn das Siedlungslimit auf Benutzerdefiniert steht.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_NAME" Language="de_DE">
+			<Text>Kartentemperatur</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="de_DE">
+			<Text>Verschiebt die Klimazonen, die das Biom jedes Landfeldes bestimmen.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COLD_NAME" Language="de_DE">
+			<Text>Kalt</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HOT_NAME" Language="de_DE">
+			<Text>Heiß</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="de_DE">
+			<Text>Kalt: Die Tundra beginnt näher am Äquator, auf Kosten des Graslands.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="de_DE">
+			<Text>Standardklima für den gewählten Kartentyp.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="de_DE">
+			<Text>Heiß: Tropen und Wüste reichen weiter vom Äquator weg, auf Kosten von Ebenen und Grasland.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="de_DE">
 			<Text>Flüsse</Text>
 		</Replace>
@@ -334,14 +439,11 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="de_DE">
 			<Text>Generiert mehr Flüsse, von denen mehr schiffbar sind.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CHEAPER_NAME" Language="de_DE">
-			<Text>Günstiger</Text>
+		<Replace Tag="LOC_ZG_LOW_NAME" Language="de_DE">
+			<Text>Niedrig</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AFFORDABLE_NAME" Language="de_DE">
-			<Text>Erschwinglich</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="de_DE">
-			<Text>Teuer</Text>
+		<Replace Tag="LOC_ZG_HIGH_NAME" Language="de_DE">
+			<Text>Hoch</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME" Language="de_DE">
 			<Text>Kosten von Zivileinheiten</Text>
@@ -349,17 +451,17 @@
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="de_DE">
 			<Text>Legt die Produktionskosten von Zivileinheiten fest.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_CHEAPER" Language="de_DE">
-			<Text>[BLIST][LI] Günstiger: 25% günstiger.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_LOW" Language="de_DE">
+			<Text>[BLIST][LI] Niedrig: 25% günstiger.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="de_DE">
 			<Text>[BLIST][LI] Standard: kein Rabatt.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="de_DE">
-			<Text>[BLIST][LI] Erschwinglich: 50% teurer.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_HIGH" Language="de_DE">
+			<Text>[BLIST][LI] Hoch: 50% teurer.[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="de_DE">
-			<Text>[BLIST][LI] Teuer: 100% teurer.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE" Language="de_DE">
+			<Text>[BLIST][LI] Doppelt: 100% teurer.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="de_DE">
 			<Text>Online 2.0</Text>
@@ -378,6 +480,72 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_NAME" Language="de_DE">
 			<Text>Verdoppelt</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="de_DE">
+			<Text>Benutzerdefiniert: Jedes Zeitalter nutzt die Zeile „Zeitalterlänge“ in seiner eigenen Gruppe darunter. Ausgewogen setzt 153, 166 und 196 Punkte; Mehrspieler setzt 140, 155 und 190.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_90" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 36 Punkte.[LI] Online: 45 Punkte.[LI] Quick: 60 Punkte.[LI] Standard: 90 Punkte.[LI] Epic: 135 Punkte.[LI] Marathon: 270 Punkte.[LI] Marathon 2.0: 450 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 40 Punkte.[LI] Online: 50 Punkte.[LI] Quick: 67 Punkte.[LI] Standard: 100 Punkte.[LI] Epic: 150 Punkte.[LI] Marathon: 300 Punkte.[LI] Marathon 2.0: 500 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 44 Punkte.[LI] Online: 55 Punkte.[LI] Quick: 73 Punkte.[LI] Standard: 110 Punkte.[LI] Epic: 165 Punkte.[LI] Marathon: 330 Punkte.[LI] Marathon 2.0: 550 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 48 Punkte.[LI] Online: 60 Punkte.[LI] Quick: 80 Punkte.[LI] Standard: 120 Punkte.[LI] Epic: 180 Punkte.[LI] Marathon: 360 Punkte.[LI] Marathon 2.0: 600 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 52 Punkte.[LI] Online: 65 Punkte.[LI] Quick: 87 Punkte.[LI] Standard: 130 Punkte.[LI] Epic: 195 Punkte.[LI] Marathon: 390 Punkte.[LI] Marathon 2.0: 650 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 56 Punkte.[LI] Online: 70 Punkte.[LI] Quick: 93 Punkte.[LI] Standard: 140 Punkte.[LI] Epic: 210 Punkte.[LI] Marathon: 420 Punkte.[LI] Marathon 2.0: 700 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 60 Punkte.[LI] Online: 75 Punkte.[LI] Quick: 100 Punkte.[LI] Standard: 150 Punkte.[LI] Epic: 225 Punkte.[LI] Marathon: 450 Punkte.[LI] Marathon 2.0: 750 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 61 Punkte.[LI] Online: 76 Punkte.[LI] Quick: 102 Punkte.[LI] Standard: 153 Punkte.[LI] Epic: 230 Punkte.[LI] Marathon: 459 Punkte.[LI] Marathon 2.0: 765 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 62 Punkte.[LI] Online: 78 Punkte.[LI] Quick: 103 Punkte.[LI] Standard: 155 Punkte.[LI] Epic: 232 Punkte.[LI] Marathon: 465 Punkte.[LI] Marathon 2.0: 775 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 64 Punkte.[LI] Online: 80 Punkte.[LI] Quick: 107 Punkte.[LI] Standard: 160 Punkte.[LI] Epic: 240 Punkte.[LI] Marathon: 480 Punkte.[LI] Marathon 2.0: 800 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 66 Punkte.[LI] Online: 83 Punkte.[LI] Quick: 111 Punkte.[LI] Standard: 166 Punkte.[LI] Epic: 249 Punkte.[LI] Marathon: 498 Punkte.[LI] Marathon 2.0: 830 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 68 Punkte.[LI] Online: 85 Punkte.[LI] Quick: 113 Punkte.[LI] Standard: 170 Punkte.[LI] Epic: 255 Punkte.[LI] Marathon: 510 Punkte.[LI] Marathon 2.0: 850 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 72 Punkte.[LI] Online: 90 Punkte.[LI] Quick: 120 Punkte.[LI] Standard: 180 Punkte.[LI] Epic: 270 Punkte.[LI] Marathon: 540 Punkte.[LI] Marathon 2.0: 900 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 76 Punkte.[LI] Online: 95 Punkte.[LI] Quick: 127 Punkte.[LI] Standard: 190 Punkte.[LI] Epic: 285 Punkte.[LI] Marathon: 570 Punkte.[LI] Marathon 2.0: 950 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 78 Punkte.[LI] Online: 98 Punkte.[LI] Quick: 131 Punkte.[LI] Standard: 196 Punkte.[LI] Epic: 294 Punkte.[LI] Marathon: 588 Punkte.[LI] Marathon 2.0: 980 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 80 Punkte.[LI] Online: 100 Punkte.[LI] Quick: 133 Punkte.[LI] Standard: 200 Punkte.[LI] Epic: 300 Punkte.[LI] Marathon: 600 Punkte.[LI] Marathon 2.0: 1000 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 88 Punkte.[LI] Online: 110 Punkte.[LI] Quick: 147 Punkte.[LI] Standard: 220 Punkte.[LI] Epic: 330 Punkte.[LI] Marathon: 660 Punkte.[LI] Marathon 2.0: 1100 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 96 Punkte.[LI] Online: 120 Punkte.[LI] Quick: 160 Punkte.[LI] Standard: 240 Punkte.[LI] Epic: 360 Punkte.[LI] Marathon: 720 Punkte.[LI] Marathon 2.0: 1200 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 104 Punkte.[LI] Online: 130 Punkte.[LI] Quick: 173 Punkte.[LI] Standard: 260 Punkte.[LI] Epic: 390 Punkte.[LI] Marathon: 780 Punkte.[LI] Marathon 2.0: 1300 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 112 Punkte.[LI] Online: 140 Punkte.[LI] Quick: 187 Punkte.[LI] Standard: 280 Punkte.[LI] Epic: 420 Punkte.[LI] Marathon: 840 Punkte.[LI] Marathon 2.0: 1400 Punkte.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300" Language="de_DE">
+			<Text>[BLIST][LI] Online 2.0: 120 Punkte.[LI] Online: 150 Punkte.[LI] Quick: 200 Punkte.[LI] Standard: 300 Punkte.[LI] Epic: 450 Punkte.[LI] Marathon: 900 Punkte.[LI] Marathon 2.0: 1500 Punkte.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="de_DE">
 			<Text> Zeitalter werden schneller beendet.
@@ -474,6 +642,39 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="de_DE">
 			<Text>Generiert mehr Berge.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="de_DE">
+			<Text>Tempo-Set</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION" Language="de_DE">
+			<Text>Wendet eine Tempo-Vorlage auf die Tempo-Einstellungen im Tempo-Reiter an.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="de_DE">
+			<Text>Ausgewogen</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_BALANCED_NAME" Language="de_DE">
+			<Text>Ausgewogenes Tempo</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_CUSTOM_NAME" Language="de_DE">
+			<Text>Benutzerdefiniertes Tempo</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME" Language="de_DE">
+			<Text>Mehrspieler-Tempo</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME" Language="de_DE">
+			<Text>Standardtempo</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD" Language="de_DE">
+			<Text>Standardtempo: das Tempo des Spiels. Setzt jede Zeile der Tempo-Einstellungen auf Standard.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="de_DE">
+			<Text>Ausgewogenes Tempo: längere Zeitalter mit Forschung im Epic-Stil. Setzt Zeitalterlänge auf 153, 166 und 196 Punkte je Zeitalter, Zeitalterfortschritt auf Ausgewogen sowie Technologiekosten und Bürgerrechtskosten auf Hoch.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="de_DE">
+			<Text>Mehrspieler-Tempo: eine leichtere Streckung für Sitzungen. Setzt Zeitalterlänge auf 140, 155 und 190 Punkte je Zeitalter, Zeitalterfortschritt auf Ausgewogen, Technologiekosten auf +35%, +50% und +75% je Zeitalter, Bürgerrechtskosten auf +45%, +60% und +85%, Stadtwachstum auf Langsam, Straßen auf Schnell (Express in der Moderne) und Siegprojektkosten in der Moderne auf +20%.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="de_DE">
+			<Text>Benutzerdefiniertes Tempo: Die Tempo-Einstellungen im Tempo-Reiter entsprechen keiner Vorlage mehr.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

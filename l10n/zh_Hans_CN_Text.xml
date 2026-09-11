@@ -16,9 +16,6 @@
 		<Replace Tag="LOC_ZG_DISABLED_NAME" Language="zh_Hans_CN">
 			<Text>禁用</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_DEFAULT_NAME" Language="zh_Hans_CN">
-			<Text>默认</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_EARLY_NAME" Language="zh_Hans_CN">
 			<Text>提前</Text>
 		</Replace>
@@ -60,9 +57,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="zh_Hans_CN">
 			<Text>独立势力间距</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME" Language="zh_Hans_CN">
-			<Text>独立势力初始单位数量</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_NAME" Language="zh_Hans_CN">
 			<Text>灾害</Text>
@@ -107,7 +101,7 @@
 			<Text>[BLIST][LI] 慢：基础2[icon:Action_Move]，登船1[icon:Action_Move]。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="zh_Hans_CN">
-			<Text>[BLIST][LI] 默认：基础3[icon:Action_Move]，登船2[icon:Action_Move]。[/BLIST]</Text>
+			<Text>[BLIST][LI] 标准：基础3[icon:Action_Move]，登船2[icon:Action_Move]。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="zh_Hans_CN">
 			<Text>[BLIST][LI] 快：基础4[icon:Action_Move]，登船3[icon:Action_Move]。[/BLIST]</Text>
@@ -119,7 +113,7 @@
 			<Text>[BLIST][LI] 慢：基础与登船移动力均为1[icon:Action_Move]。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="zh_Hans_CN">
-			<Text>[BLIST][LI] 默认：基础与登船移动力均为2[icon:Action_Move]。[/BLIST]</Text>
+			<Text>[BLIST][LI] 标准：基础与登船移动力均为2[icon:Action_Move]。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="zh_Hans_CN">
 			<Text>[BLIST][LI] 快：基础与登船移动力均为3[icon:Action_Move]。[/BLIST]</Text>
@@ -134,7 +128,7 @@
 			<Text>[BLIST][LI] 更少：每个文明2个独立势力。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_DEFAULT" Language="zh_Hans_CN">
-			<Text>[BLIST][LI] 默认：每个文明3个独立势力。[/BLIST]</Text>
+			<Text>[BLIST][LI] 标准：每个文明3个独立势力。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_MORE" Language="zh_Hans_CN">
 			<Text>[BLIST][LI] 更多：每个文明4个独立势力。[/BLIST]</Text>
@@ -150,18 +144,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="zh_Hans_CN">
 			<Text>[BLIST][LI] 古典：7格。[LI] 探索：7格。[LI] 近世：5格。[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>设置独立势力的初始单位数量。 [n] 独立势力始终以1个[icon:UNIT_SCOUT]侦察兵开局。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_LESS" Language="zh_Hans_CN">
-			<Text>设置独立势力的初始单位数量。 [n] 独立势力始终以1个[icon:UNIT_SCOUT]侦察兵开局。[n] [BLIST][LI] 古典：0[icon:UNIT_WARRIOR]战士。[LI] 探索：2[icon:UNIT_SWORDSMAN]剑士。[LI] 近世：3[icon:UNIT_LINE_INFANTRY]线列步兵。[/BLIST][n] [n]单位数量取决于村庄中心及其第一环内可用的陆地格数。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_DEFAULT" Language="zh_Hans_CN">
-			<Text>设置独立势力的初始单位数量。 [n] 独立势力始终以1个[icon:UNIT_SCOUT]侦察兵开局。[n] [BLIST][LI] 古典：1[icon:UNIT_WARRIOR]战士。[LI] 探索：3[icon:UNIT_SWORDSMAN]剑士。[LI] 近世：4[icon:UNIT_LINE_INFANTRY]线列步兵。[/BLIST][n] [n]单位数量取决于村庄中心及其第一环内可用的陆地格数。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_MORE" Language="zh_Hans_CN">
-			<Text>设置独立势力的初始单位数量。 [n] 独立势力始终以1个[icon:UNIT_SCOUT]侦察兵开局。[n] [BLIST][LI] 古典：2[icon:UNIT_WARRIOR]战士。[LI] 探索：4[icon:UNIT_SWORDSMAN]剑士。[LI] 近世：5[icon:UNIT_LINE_INFANTRY]线列步兵。[/BLIST][n] [n]单位数量取决于村庄中心及其第一环内可用的陆地格数。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>禁用所有自然灾害。</Text>
@@ -191,7 +173,7 @@
 			<Text>[BLIST][LI] 更少：2格。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_DEFAULT" Language="zh_Hans_CN">
-			<Text>[BLIST][LI] 默认：3格。[/BLIST]</Text>
+			<Text>[BLIST][LI] 标准：3格。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="zh_Hans_CN">
 			<Text>[BLIST][LI] 更多：4格。[/BLIST]</Text>
@@ -199,17 +181,17 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>设置战斗单位的生产花费。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_CHEAPER" Language="zh_Hans_CN">
-			<Text>[BLIST][LI] 便宜：便宜25%。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_LOW" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 低：便宜25%。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
 			<Text>[BLIST][LI] 标准：无折扣。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="zh_Hans_CN">
-			<Text>[BLIST][LI] 实惠：昂贵50%。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_HIGH" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 高：昂贵50%。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="zh_Hans_CN">
-			<Text>[BLIST][LI] 昂贵：昂贵100%。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DOUBLE" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 双倍：昂贵100%。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>启用或禁用所有危机。[n]禁用将关闭危机选择中的所有危机。</Text>
@@ -280,6 +262,9 @@
 		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS" Language="zh_Hans_CN">
 			<Text>地图</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_AGES" Language="zh_Hans_CN">
+			<Text>节奏</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="zh_Hans_CN">
 			<Text>检测到模组冲突</Text>
 		</Replace>
@@ -292,11 +277,110 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="zh_Hans_CN">
 			<Text>禁用冲突模组</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="zh_Hans_CN">
-			<Text>保留两者</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="zh_Hans_CN">
 			<Text>添加以下设置的未识别模组：</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="zh_Hans_CN">
+			<Text>节奏设置</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FASTER_NAME" Language="zh_Hans_CN">
+			<Text>更快</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM" Language="zh_Hans_CN">
+			<Text>自定义：每个时代使用下方时代分组中各自的行。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置此时代的值。[n]仅当"节奏设置"中对应的行为自定义时生效。节奏套组预设会填写这些行；修改任意一行会将节奏套组切换为自定义。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="zh_Hans_CN">
+			<Text>时代进度速度</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置里程碑以及未来科技与市政填充时代进度条的速度。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_NAME" Language="zh_Hans_CN">
+			<Text>科技花费</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置科技的研究花费。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_NAME" Language="zh_Hans_CN">
+			<Text>市政花费</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置市政的文化花费。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_NAME" Language="zh_Hans_CN">
+			<Text>城市成长</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置城市成长所需的食物。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_NAME" Language="zh_Hans_CN">
+			<Text>道路</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置道路和铁路的移动消耗。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_NAME" Language="zh_Hans_CN">
+			<Text>胜利项目花费</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置每个时代科学与军事胜利项目的生产花费。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 慢：点数减少50%。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 标准：无变化。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 快：点数增加50%。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_LOW" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 低：便宜25%。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 标准：无变化。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_HIGH" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 高：昂贵50%。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_DOUBLE" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 双倍：昂贵100%。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOWER" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 更慢：城市成长更慢。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 慢：城市成长略慢。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SLOWER_NAME" Language="zh_Hans_CN">
+			<Text>更慢</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_EXPRESS_NAME" Language="zh_Hans_CN">
+			<Text>特快</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXPRESS" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 特快：道路移动消耗降低25%，铁路降低50%。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 平衡：里程碑在远古给予4、7、11点，探索4、8、12点，现代4、8点；未来科技和市政给予8点（现代为7点）。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 标准：无变化。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 快：城市成长更快。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 标准：无变化。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_FAST" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 快：移动消耗减少25%。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_FASTER" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 更快：移动消耗减少50%。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="zh_Hans_CN">
 			<Text>随机纪念品</Text>
@@ -319,6 +403,27 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>设置该时代的定居点上限。[n]仅当定居点上限设为自定义时生效。</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_NAME" Language="zh_Hans_CN">
+			<Text>地图气温</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>移动决定每块陆地地块生物群系的气候带。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COLD_NAME" Language="zh_Hans_CN">
+			<Text>寒冷</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HOT_NAME" Language="zh_Hans_CN">
+			<Text>炎热</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="zh_Hans_CN">
+			<Text>寒冷：冻原从更靠近赤道处开始，草原相应减少。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
+			<Text>所选地图类型的标准气候。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="zh_Hans_CN">
+			<Text>炎热：热带和沙漠延伸到离赤道更远处，平原和草原相应减少。</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="zh_Hans_CN">
 			<Text>河流</Text>
 		</Replace>
@@ -334,14 +439,11 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="zh_Hans_CN">
 			<Text>生成更多的河流，其中更多可通航。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CHEAPER_NAME" Language="zh_Hans_CN">
-			<Text>便宜</Text>
+		<Replace Tag="LOC_ZG_LOW_NAME" Language="zh_Hans_CN">
+			<Text>低</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AFFORDABLE_NAME" Language="zh_Hans_CN">
-			<Text>实惠</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="zh_Hans_CN">
-			<Text>昂贵</Text>
+		<Replace Tag="LOC_ZG_HIGH_NAME" Language="zh_Hans_CN">
+			<Text>高</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME" Language="zh_Hans_CN">
 			<Text>平民单位花费</Text>
@@ -349,17 +451,17 @@
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>设置平民单位的生产花费。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_CHEAPER" Language="zh_Hans_CN">
-			<Text>[BLIST][LI] 便宜：便宜25%。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_LOW" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 低：便宜25%。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
 			<Text>[BLIST][LI] 标准：无折扣。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="zh_Hans_CN">
-			<Text>[BLIST][LI] 实惠：昂贵50%。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_HIGH" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 高：昂贵50%。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="zh_Hans_CN">
-			<Text>[BLIST][LI] 昂贵：昂贵100%。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] 双倍：昂贵100%。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="zh_Hans_CN">
 			<Text>线上2.0</Text>
@@ -378,6 +480,72 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_NAME" Language="zh_Hans_CN">
 			<Text>翻倍</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="zh_Hans_CN">
+			<Text>自定义：每个时代使用下方各自分组中的时代长度行。平衡设为153、166、196点；多人游戏设为140、155、190点。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_90" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] Online 2.0: 36 点.[LI] Online: 45 点.[LI] Quick: 60 点.[LI] Standard: 90 点.[LI] Epic: 135 点.[LI] Marathon: 270 点.[LI] Marathon 2.0: 450 点.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] Online 2.0: 40 点.[LI] Online: 50 点.[LI] Quick: 67 点.[LI] Standard: 100 点.[LI] Epic: 150 点.[LI] Marathon: 300 点.[LI] Marathon 2.0: 500 点.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] Online 2.0: 44 点.[LI] Online: 55 点.[LI] Quick: 73 点.[LI] Standard: 110 点.[LI] Epic: 165 点.[LI] Marathon: 330 点.[LI] Marathon 2.0: 550 点.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] Online 2.0: 48 点.[LI] Online: 60 点.[LI] Quick: 80 点.[LI] Standard: 120 点.[LI] Epic: 180 点.[LI] Marathon: 360 点.[LI] Marathon 2.0: 600 点.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] Online 2.0: 52 点.[LI] Online: 65 点.[LI] Quick: 87 点.[LI] Standard: 130 点.[LI] Epic: 195 点.[LI] Marathon: 390 点.[LI] Marathon 2.0: 650 点.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] Online 2.0: 56 点.[LI] Online: 70 点.[LI] Quick: 93 点.[LI] Standard: 140 点.[LI] Epic: 210 点.[LI] Marathon: 420 点.[LI] Marathon 2.0: 700 点.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] Online 2.0: 60 点.[LI] Online: 75 点.[LI] Quick: 100 点.[LI] Standard: 150 点.[LI] Epic: 225 点.[LI] Marathon: 450 点.[LI] Marathon 2.0: 750 点.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] Online 2.0: 61 点.[LI] Online: 76 点.[LI] Quick: 102 点.[LI] Standard: 153 点.[LI] Epic: 230 点.[LI] Marathon: 459 点.[LI] Marathon 2.0: 765 点.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] Online 2.0: 62 点.[LI] Online: 78 点.[LI] Quick: 103 点.[LI] Standard: 155 点.[LI] Epic: 232 点.[LI] Marathon: 465 点.[LI] Marathon 2.0: 775 点.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] Online 2.0: 64 点.[LI] Online: 80 点.[LI] Quick: 107 点.[LI] Standard: 160 点.[LI] Epic: 240 点.[LI] Marathon: 480 点.[LI] Marathon 2.0: 800 点.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] Online 2.0: 66 点.[LI] Online: 83 点.[LI] Quick: 111 点.[LI] Standard: 166 点.[LI] Epic: 249 点.[LI] Marathon: 498 点.[LI] Marathon 2.0: 830 点.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] Online 2.0: 68 点.[LI] Online: 85 点.[LI] Quick: 113 点.[LI] Standard: 170 点.[LI] Epic: 255 点.[LI] Marathon: 510 点.[LI] Marathon 2.0: 850 点.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] Online 2.0: 72 点.[LI] Online: 90 点.[LI] Quick: 120 点.[LI] Standard: 180 点.[LI] Epic: 270 点.[LI] Marathon: 540 点.[LI] Marathon 2.0: 900 点.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] Online 2.0: 76 点.[LI] Online: 95 点.[LI] Quick: 127 点.[LI] Standard: 190 点.[LI] Epic: 285 点.[LI] Marathon: 570 点.[LI] Marathon 2.0: 950 点.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] Online 2.0: 78 点.[LI] Online: 98 点.[LI] Quick: 131 点.[LI] Standard: 196 点.[LI] Epic: 294 点.[LI] Marathon: 588 点.[LI] Marathon 2.0: 980 点.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] Online 2.0: 80 点.[LI] Online: 100 点.[LI] Quick: 133 点.[LI] Standard: 200 点.[LI] Epic: 300 点.[LI] Marathon: 600 点.[LI] Marathon 2.0: 1000 点.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] Online 2.0: 88 点.[LI] Online: 110 点.[LI] Quick: 147 点.[LI] Standard: 220 点.[LI] Epic: 330 点.[LI] Marathon: 660 点.[LI] Marathon 2.0: 1100 点.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] Online 2.0: 96 点.[LI] Online: 120 点.[LI] Quick: 160 点.[LI] Standard: 240 点.[LI] Epic: 360 点.[LI] Marathon: 720 点.[LI] Marathon 2.0: 1200 点.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] Online 2.0: 104 点.[LI] Online: 130 点.[LI] Quick: 173 点.[LI] Standard: 260 点.[LI] Epic: 390 点.[LI] Marathon: 780 点.[LI] Marathon 2.0: 1300 点.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] Online 2.0: 112 点.[LI] Online: 140 点.[LI] Quick: 187 点.[LI] Standard: 280 点.[LI] Epic: 420 点.[LI] Marathon: 840 点.[LI] Marathon 2.0: 1400 点.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300" Language="zh_Hans_CN">
+			<Text>[BLIST][LI] Online 2.0: 120 点.[LI] Online: 150 点.[LI] Quick: 200 点.[LI] Standard: 300 点.[LI] Epic: 450 点.[LI] Marathon: 900 点.[LI] Marathon 2.0: 1500 点.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="zh_Hans_CN">
 			<Text> 时代将更快结束。
@@ -416,7 +584,7 @@
 			</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="zh_Hans_CN">
-			<Text> 默认的时代长度。
+			<Text> 标准的时代长度。
 				[n] [BLIST]
 				[LI] Online 2.0: 56 点.
 				[LI] Online: 70 点.
@@ -474,6 +642,39 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="zh_Hans_CN">
 			<Text>生成更多的山脉。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="zh_Hans_CN">
+			<Text>节奏套组</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>为"节奏"标签页中"节奏设置"的设置应用一套节奏预设。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="zh_Hans_CN">
+			<Text>平衡</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_BALANCED_NAME" Language="zh_Hans_CN">
+			<Text>平衡节奏</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_CUSTOM_NAME" Language="zh_Hans_CN">
+			<Text>自定义节奏</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME" Language="zh_Hans_CN">
+			<Text>多人节奏</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME" Language="zh_Hans_CN">
+			<Text>标准节奏</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
+			<Text>标准节奏：游戏自身的节奏。将"节奏设置"中的所有设置设为标准。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="zh_Hans_CN">
+			<Text>平衡节奏：以史诗式的研究节奏延长各时代。将时代长度按时代设为153、166、196点，时代进度速率设为平衡，科技花费和市政花费设为高。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="zh_Hans_CN">
+			<Text>多人节奏：面向联机对局的轻度延长。将时代长度按时代设为140、155、190点，时代进度速率设为平衡，科技花费按时代设为+35%、+50%、+75%，市政花费设为+45%、+60%、+85%，城市增长设为慢，道路设为快（现代为特快），现代胜利项目花费设为+20%。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="zh_Hans_CN">
+			<Text>自定义节奏："节奏"标签页中"节奏设置"的设置已不再与任何预设一致。</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

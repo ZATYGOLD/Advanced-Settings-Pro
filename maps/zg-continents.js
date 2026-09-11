@@ -1,12 +1,13 @@
 // Copy of {base-standard}maps/continents.js with a tier-aware river model;
 // imports are repointed at the base module so everything else stays stock.
 import { zgModelRivers } from './zg-map-rivers.js';
+import { zgDesignateBiomes } from './zg-map-biomes.js';
 import { zgAddMountains } from './zg-map-mountains.js';
 import { assignAdvancedStartRegions } from 'fs://game/base-standard/maps/assign-advanced-start-region.js';
 import { chooseStartSectors, assignStartPositions } from 'fs://game/base-standard/maps/assign-starting-plots.js';
 import { generateDiscoveries } from 'fs://game/base-standard/maps/discovery-generator.js';
 import { expandCoasts, addMountains, generateLakes, addHills, buildRainfallMap } from 'fs://game/base-standard/maps/elevation-terrain-generator.js';
-import { designateBiomes, addFeatures } from 'fs://game/base-standard/maps/feature-biome-generator.js';
+import { addFeatures } from 'fs://game/base-standard/maps/feature-biome-generator.js';
 import { dumpStartSectors, dumpContinents, dumpTerrain, dumpElevation, dumpRainfall, dumpBiomes, dumpFeatures, dumpResources, dumpNoisePredicate } from 'fs://game/base-standard/maps/map-debug-helpers.js';
 import { g_OceanWaterColumns, g_PolarWaterRows, g_WaterPercent, g_Cutoff, g_NavigableRiverTerrain, g_LandmassFractal, g_FlatTerrain, g_OceanTerrain, g_FractalWeight, g_CenterWeight, g_StartSectorWeight, g_CoastTerrain } from 'fs://game/base-standard/maps/map-globals.js';
 import { needHumanNearEquator, applyCoastalErosionAdjustingForStartSectors, createOrganicLandmasses, applyCoastalErosion, markLandmassRegionId, getHeightAdjustingForStartSector, getSector } from 'fs://game/base-standard/maps/map-utilities.js';
@@ -159,7 +160,7 @@ function generateMap() {
   zgModelRivers(5, 15);
   TerrainBuilder.validateAndFixTerrain();
   TerrainBuilder.defineNamedRivers();
-  designateBiomes(iWidth, iHeight);
+  zgDesignateBiomes(iWidth, iHeight);
   addTundraVolcanoes(iWidth, iHeight);
   addNaturalWonders(iWidth, iHeight, iNumNaturalWonders);
   TerrainBuilder.addFloodplains(4, 10);

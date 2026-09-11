@@ -16,9 +16,6 @@
 		<Replace Tag="LOC_ZG_DISABLED_NAME" Language="ja_JP">
 			<Text>無効</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_DEFAULT_NAME" Language="ja_JP">
-			<Text>デフォルト</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_EARLY_NAME" Language="ja_JP">
 			<Text>早い</Text>
 		</Replace>
@@ -60,9 +57,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="ja_JP">
 			<Text>独立勢力の間隔</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME" Language="ja_JP">
-			<Text>独立勢力の初期ユニット数</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_NAME" Language="ja_JP">
 			<Text>災害</Text>
@@ -107,7 +101,7 @@
 			<Text>[BLIST][LI] 遅い：基本2[icon:Action_Move]、乗船時1[icon:Action_Move]。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="ja_JP">
-			<Text>[BLIST][LI] デフォルト：基本3[icon:Action_Move]、乗船時2[icon:Action_Move]。[/BLIST]</Text>
+			<Text>[BLIST][LI] 標準：基本3[icon:Action_Move]、乗船時2[icon:Action_Move]。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="ja_JP">
 			<Text>[BLIST][LI] 速い：基本4[icon:Action_Move]、乗船時3[icon:Action_Move]。[/BLIST]</Text>
@@ -119,7 +113,7 @@
 			<Text>[BLIST][LI] 遅い：基本・乗船時ともに1[icon:Action_Move]。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="ja_JP">
-			<Text>[BLIST][LI] デフォルト：基本・乗船時ともに2[icon:Action_Move]。[/BLIST]</Text>
+			<Text>[BLIST][LI] 標準：基本・乗船時ともに2[icon:Action_Move]。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="ja_JP">
 			<Text>[BLIST][LI] 速い：基本・乗船時ともに3[icon:Action_Move]。[/BLIST]</Text>
@@ -134,7 +128,7 @@
 			<Text>[BLIST][LI] 少ない：文明ごとに独立勢力2。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_DEFAULT" Language="ja_JP">
-			<Text>[BLIST][LI] デフォルト：文明ごとに独立勢力3。[/BLIST]</Text>
+			<Text>[BLIST][LI] 標準：文明ごとに独立勢力3。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_MORE" Language="ja_JP">
 			<Text>[BLIST][LI] 多い：文明ごとに独立勢力4。[/BLIST]</Text>
@@ -150,18 +144,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="ja_JP">
 			<Text>[BLIST][LI] 古代：7タイル。[LI] 探検の時代：7タイル。[LI] 近代：5タイル。[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION" Language="ja_JP">
-			<Text>独立勢力の初期ユニット数を設定します。 [n] 独立勢力は常に1体の[icon:UNIT_SCOUT]斥候を持って開始します。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_LESS" Language="ja_JP">
-			<Text>独立勢力の初期ユニット数を設定します。 [n] 独立勢力は常に1体の[icon:UNIT_SCOUT]斥候を持って開始します。[n] [BLIST][LI] 古代：0[icon:UNIT_WARRIOR]戦士。[LI] 探検の時代：2[icon:UNIT_SWORDSMAN]剣士。[LI] 近代：3[icon:UNIT_LINE_INFANTRY]戦列歩兵。[/BLIST][n] [n]ユニット数は、集落の中心を含む第1リング内の利用可能な陸地タイル数によって決まります。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_DEFAULT" Language="ja_JP">
-			<Text>独立勢力の初期ユニット数を設定します。 [n] 独立勢力は常に1体の[icon:UNIT_SCOUT]斥候を持って開始します。[n] [BLIST][LI] 古代：1[icon:UNIT_WARRIOR]戦士。[LI] 探検の時代：3[icon:UNIT_SWORDSMAN]剣士。[LI] 近代：4[icon:UNIT_LINE_INFANTRY]戦列歩兵。[/BLIST][n] [n]ユニット数は、集落の中心を含む第1リング内の利用可能な陸地タイル数によって決まります。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_MORE" Language="ja_JP">
-			<Text>独立勢力の初期ユニット数を設定します。 [n] 独立勢力は常に1体の[icon:UNIT_SCOUT]斥候を持って開始します。[n] [BLIST][LI] 古代：2[icon:UNIT_WARRIOR]戦士。[LI] 探検の時代：4[icon:UNIT_SWORDSMAN]剣士。[LI] 近代：5[icon:UNIT_LINE_INFANTRY]戦列歩兵。[/BLIST][n] [n]ユニット数は、集落の中心を含む第1リング内の利用可能な陸地タイル数によって決まります。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="ja_JP">
 			<Text>すべての自然災害を無効にします。</Text>
@@ -191,7 +173,7 @@
 			<Text>[BLIST][LI] 少ない：2タイル。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_DEFAULT" Language="ja_JP">
-			<Text>[BLIST][LI] デフォルト：3タイル。[/BLIST]</Text>
+			<Text>[BLIST][LI] 標準：3タイル。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="ja_JP">
 			<Text>[BLIST][LI] 多い：4タイル。[/BLIST]</Text>
@@ -199,17 +181,17 @@
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="ja_JP">
 			<Text>戦闘ユニットの生産コストを設定します。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_CHEAPER" Language="ja_JP">
-			<Text>[BLIST][LI] 割安：25%割安。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_LOW" Language="ja_JP">
+			<Text>[BLIST][LI] 低：25%割安。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="ja_JP">
 			<Text>[BLIST][LI] 標準：割引なし。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="ja_JP">
-			<Text>[BLIST][LI] 手頃：50%割高。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_HIGH" Language="ja_JP">
+			<Text>[BLIST][LI] 高：50%割高。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="ja_JP">
-			<Text>[BLIST][LI] 高価：100%割高。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DOUBLE" Language="ja_JP">
+			<Text>[BLIST][LI] 2倍：100%割高。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="ja_JP">
 			<Text>すべての危機を有効または無効にします。[n]無効にすると、危機の選択のすべての危機がオフになります。</Text>
@@ -280,6 +262,9 @@
 		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS" Language="ja_JP">
 			<Text>マップ</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_ADVANCED_OPTIONS_AGES" Language="ja_JP">
+			<Text>ペース</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_TITLE" Language="ja_JP">
 			<Text>Modの競合を検出</Text>
 		</Replace>
@@ -292,11 +277,110 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="ja_JP">
 			<Text>競合Modを無効化</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="ja_JP">
-			<Text>両方とも使う</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="ja_JP">
 			<Text>次の設定を追加する未特定のMod：</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="ja_JP">
+			<Text>ペース設定</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FASTER_NAME" Language="ja_JP">
+			<Text>より速い</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM" Language="ja_JP">
+			<Text>カスタム：各時代は下の時代グループにあるそれぞれの行を使います。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="ja_JP">
+			<Text>この時代の値を設定します。[n]「ペース設定」の対応する行が「カスタム」のときのみ適用されます。ペースセットのプリセットがこれらの行を埋め、いずれかを変更するとペースセットは「カスタム」になります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="ja_JP">
+			<Text>時代の進行速度</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION" Language="ja_JP">
+			<Text>マイルストーンと未来の技術・社会制度が時代メーターを満たす速さを設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_NAME" Language="ja_JP">
+			<Text>技術コスト</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION" Language="ja_JP">
+			<Text>技術の研究コストを設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_NAME" Language="ja_JP">
+			<Text>社会制度コスト</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION" Language="ja_JP">
+			<Text>社会制度の文化コストを設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_NAME" Language="ja_JP">
+			<Text>都市の成長</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION" Language="ja_JP">
+			<Text>都市の成長に必要な食料の量を設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_NAME" Language="ja_JP">
+			<Text>道路</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION" Language="ja_JP">
+			<Text>道路と鉄道の移動コストを設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_NAME" Language="ja_JP">
+			<Text>勝利プロジェクトのコスト</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION" Language="ja_JP">
+			<Text>各時代の科学および軍事の勝利プロジェクトの生産コストを設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="ja_JP">
+			<Text>[BLIST][LI] 遅い：ポイント50%減。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD" Language="ja_JP">
+			<Text>[BLIST][LI] 標準：変更なし。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST" Language="ja_JP">
+			<Text>[BLIST][LI] 速い：ポイント50%増。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_LOW" Language="ja_JP">
+			<Text>[BLIST][LI] 低：25%割安。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_STANDARD" Language="ja_JP">
+			<Text>[BLIST][LI] 標準：変更なし。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_HIGH" Language="ja_JP">
+			<Text>[BLIST][LI] 高：50%割高。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COST_DESCRIPTION_DOUBLE" Language="ja_JP">
+			<Text>[BLIST][LI] 2倍：100%割高。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOWER" Language="ja_JP">
+			<Text>[BLIST][LI] より遅い：都市の成長が遅くなります。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW" Language="ja_JP">
+			<Text>[BLIST][LI] 遅い：都市の成長が少し遅くなります。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SLOWER_NAME" Language="ja_JP">
+			<Text>より遅い</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_EXPRESS_NAME" Language="ja_JP">
+			<Text>特急</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXPRESS" Language="ja_JP">
+			<Text>[BLIST][LI] 特急：道路の移動コストが25%減、鉄道は50%減。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED" Language="ja_JP">
+			<Text>[BLIST][LI] バランス：マイルストーンで古代は4、7、11ポイント、探検は4、8、12ポイント、近代は4、8ポイントを獲得。未来の技術と社会制度は8ポイント（近代は7）。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="ja_JP">
+			<Text>[BLIST][LI] 標準：変更なし。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="ja_JP">
+			<Text>[BLIST][LI] 速い：都市の成長が速くなります。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD" Language="ja_JP">
+			<Text>[BLIST][LI] 標準：変更なし。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_FAST" Language="ja_JP">
+			<Text>[BLIST][LI] 速い：移動コスト25%減。[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_FASTER" Language="ja_JP">
+			<Text>[BLIST][LI] より速い：移動コスト50%減。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="ja_JP">
 			<Text>ランダムな形見</Text>
@@ -319,6 +403,27 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="ja_JP">
 			<Text>この時代の入植地上限を設定します。[n]入植地の上限がカスタムの場合のみ適用されます。</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_NAME" Language="ja_JP">
+			<Text>マップの気温</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="ja_JP">
+			<Text>各陸地タイルのバイオームを決める気候帯をずらします。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COLD_NAME" Language="ja_JP">
+			<Text>寒冷</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HOT_NAME" Language="ja_JP">
+			<Text>高温</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="ja_JP">
+			<Text>寒冷：ツンドラが赤道寄りから始まり、その分草原が減ります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="ja_JP">
+			<Text>選択したマップタイプの標準的な気候。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="ja_JP">
+			<Text>高温：熱帯と砂漠が赤道から遠くまで広がり、その分平原と草原が減ります。</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="ja_JP">
 			<Text>川</Text>
 		</Replace>
@@ -334,14 +439,11 @@
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="ja_JP">
 			<Text>生成される川が多くなり、航行可能な川も増えます。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CHEAPER_NAME" Language="ja_JP">
-			<Text>割安</Text>
+		<Replace Tag="LOC_ZG_LOW_NAME" Language="ja_JP">
+			<Text>低</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AFFORDABLE_NAME" Language="ja_JP">
-			<Text>手頃</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_EXPENSIVE_NAME" Language="ja_JP">
-			<Text>高価</Text>
+		<Replace Tag="LOC_ZG_HIGH_NAME" Language="ja_JP">
+			<Text>高</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME" Language="ja_JP">
 			<Text>民間ユニットのコスト</Text>
@@ -349,17 +451,17 @@
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="ja_JP">
 			<Text>民間ユニットの生産コストを設定します。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_CHEAPER" Language="ja_JP">
-			<Text>[BLIST][LI] 割安：25%割安。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_LOW" Language="ja_JP">
+			<Text>[BLIST][LI] 低：25%割安。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="ja_JP">
 			<Text>[BLIST][LI] 標準：割引なし。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_AFFORDABLE" Language="ja_JP">
-			<Text>[BLIST][LI] 手頃：50%割高。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_HIGH" Language="ja_JP">
+			<Text>[BLIST][LI] 高：50%割高。[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_EXPENSIVE" Language="ja_JP">
-			<Text>[BLIST][LI] 高価：100%割高。[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE" Language="ja_JP">
+			<Text>[BLIST][LI] 2倍：100%割高。[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="ja_JP">
 			<Text>オンライン2.0</Text>
@@ -378,6 +480,72 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_NAME" Language="ja_JP">
 			<Text>2倍</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="ja_JP">
+			<Text>カスタム：各時代は下のそれぞれのグループにある「時代の長さ」の行を使います。バランスは153、166、196ポイント、マルチプレイヤーは140、155、190ポイントに設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_90" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 36 ポイント.[LI] Online: 45 ポイント.[LI] Quick: 60 ポイント.[LI] Standard: 90 ポイント.[LI] Epic: 135 ポイント.[LI] Marathon: 270 ポイント.[LI] Marathon 2.0: 450 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 40 ポイント.[LI] Online: 50 ポイント.[LI] Quick: 67 ポイント.[LI] Standard: 100 ポイント.[LI] Epic: 150 ポイント.[LI] Marathon: 300 ポイント.[LI] Marathon 2.0: 500 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 44 ポイント.[LI] Online: 55 ポイント.[LI] Quick: 73 ポイント.[LI] Standard: 110 ポイント.[LI] Epic: 165 ポイント.[LI] Marathon: 330 ポイント.[LI] Marathon 2.0: 550 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 48 ポイント.[LI] Online: 60 ポイント.[LI] Quick: 80 ポイント.[LI] Standard: 120 ポイント.[LI] Epic: 180 ポイント.[LI] Marathon: 360 ポイント.[LI] Marathon 2.0: 600 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 52 ポイント.[LI] Online: 65 ポイント.[LI] Quick: 87 ポイント.[LI] Standard: 130 ポイント.[LI] Epic: 195 ポイント.[LI] Marathon: 390 ポイント.[LI] Marathon 2.0: 650 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 56 ポイント.[LI] Online: 70 ポイント.[LI] Quick: 93 ポイント.[LI] Standard: 140 ポイント.[LI] Epic: 210 ポイント.[LI] Marathon: 420 ポイント.[LI] Marathon 2.0: 700 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 60 ポイント.[LI] Online: 75 ポイント.[LI] Quick: 100 ポイント.[LI] Standard: 150 ポイント.[LI] Epic: 225 ポイント.[LI] Marathon: 450 ポイント.[LI] Marathon 2.0: 750 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 61 ポイント.[LI] Online: 76 ポイント.[LI] Quick: 102 ポイント.[LI] Standard: 153 ポイント.[LI] Epic: 230 ポイント.[LI] Marathon: 459 ポイント.[LI] Marathon 2.0: 765 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 62 ポイント.[LI] Online: 78 ポイント.[LI] Quick: 103 ポイント.[LI] Standard: 155 ポイント.[LI] Epic: 232 ポイント.[LI] Marathon: 465 ポイント.[LI] Marathon 2.0: 775 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 64 ポイント.[LI] Online: 80 ポイント.[LI] Quick: 107 ポイント.[LI] Standard: 160 ポイント.[LI] Epic: 240 ポイント.[LI] Marathon: 480 ポイント.[LI] Marathon 2.0: 800 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 66 ポイント.[LI] Online: 83 ポイント.[LI] Quick: 111 ポイント.[LI] Standard: 166 ポイント.[LI] Epic: 249 ポイント.[LI] Marathon: 498 ポイント.[LI] Marathon 2.0: 830 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 68 ポイント.[LI] Online: 85 ポイント.[LI] Quick: 113 ポイント.[LI] Standard: 170 ポイント.[LI] Epic: 255 ポイント.[LI] Marathon: 510 ポイント.[LI] Marathon 2.0: 850 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 72 ポイント.[LI] Online: 90 ポイント.[LI] Quick: 120 ポイント.[LI] Standard: 180 ポイント.[LI] Epic: 270 ポイント.[LI] Marathon: 540 ポイント.[LI] Marathon 2.0: 900 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 76 ポイント.[LI] Online: 95 ポイント.[LI] Quick: 127 ポイント.[LI] Standard: 190 ポイント.[LI] Epic: 285 ポイント.[LI] Marathon: 570 ポイント.[LI] Marathon 2.0: 950 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 78 ポイント.[LI] Online: 98 ポイント.[LI] Quick: 131 ポイント.[LI] Standard: 196 ポイント.[LI] Epic: 294 ポイント.[LI] Marathon: 588 ポイント.[LI] Marathon 2.0: 980 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 80 ポイント.[LI] Online: 100 ポイント.[LI] Quick: 133 ポイント.[LI] Standard: 200 ポイント.[LI] Epic: 300 ポイント.[LI] Marathon: 600 ポイント.[LI] Marathon 2.0: 1000 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 88 ポイント.[LI] Online: 110 ポイント.[LI] Quick: 147 ポイント.[LI] Standard: 220 ポイント.[LI] Epic: 330 ポイント.[LI] Marathon: 660 ポイント.[LI] Marathon 2.0: 1100 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 96 ポイント.[LI] Online: 120 ポイント.[LI] Quick: 160 ポイント.[LI] Standard: 240 ポイント.[LI] Epic: 360 ポイント.[LI] Marathon: 720 ポイント.[LI] Marathon 2.0: 1200 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 104 ポイント.[LI] Online: 130 ポイント.[LI] Quick: 173 ポイント.[LI] Standard: 260 ポイント.[LI] Epic: 390 ポイント.[LI] Marathon: 780 ポイント.[LI] Marathon 2.0: 1300 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 112 ポイント.[LI] Online: 140 ポイント.[LI] Quick: 187 ポイント.[LI] Standard: 280 ポイント.[LI] Epic: 420 ポイント.[LI] Marathon: 840 ポイント.[LI] Marathon 2.0: 1400 ポイント.[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300" Language="ja_JP">
+			<Text>[BLIST][LI] Online 2.0: 120 ポイント.[LI] Online: 150 ポイント.[LI] Quick: 200 ポイント.[LI] Standard: 300 ポイント.[LI] Epic: 450 ポイント.[LI] Marathon: 900 ポイント.[LI] Marathon 2.0: 1500 ポイント.[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="ja_JP">
 			<Text> 時代の終了が早まる。
@@ -474,6 +642,39 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="ja_JP">
 			<Text>生成される山が多くなります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="ja_JP">
+			<Text>ペースセット</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION" Language="ja_JP">
+			<Text>「ペース」タブの「ペース設定」にペースのプリセットを適用します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="ja_JP">
+			<Text>バランス</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_BALANCED_NAME" Language="ja_JP">
+			<Text>バランスペース</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_CUSTOM_NAME" Language="ja_JP">
+			<Text>カスタムペース</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME" Language="ja_JP">
+			<Text>マルチプレイヤーペース</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME" Language="ja_JP">
+			<Text>標準ペース</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD" Language="ja_JP">
+			<Text>標準ペース：ゲーム本来のペース。「ペース設定」のすべての設定を標準にします。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="ja_JP">
+			<Text>バランスペース：エピック風の研究でより長い時代に。時代の長さを時代ごとに153、166、196ポイント、時代進行速度を「バランス」、技術コストと社会制度コストを「高」にします。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="ja_JP">
+			<Text>マルチプレイヤーペース：セッション向けの軽めの延長。時代の長さを時代ごとに140、155、190ポイント、時代進行速度を「バランス」、技術コストを時代ごとに+35%、+50%、+75%、社会制度コストを+45%、+60%、+85%、都市の成長を「遅い」、道路を「速い」（近代は「特急」）、近代の勝利プロジェクトコストを+20%にします。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="ja_JP">
+			<Text>カスタムペース：「ペース」タブの「ペース設定」がどのプリセットとも一致していません。</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

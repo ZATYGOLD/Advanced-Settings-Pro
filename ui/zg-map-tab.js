@@ -1,11 +1,12 @@
-// Adds a Map tab to the single-player Advanced Settings screen.
+// Adds Pace and Map tabs to the single-player Advanced Settings screen.
 //
-// The screen hard-codes its General and Player tabs, so the tab is injected
+// The screen hard-codes its General and Player tabs, so the tabs are injected
 // through the game's own override mechanisms instead of replacing any file:
 //   1. GameSetupParameterGroupsModel is wrapped so its groups are filtered by
-//      whichever tab is currently rendering (unfiltered when neither is).
-//   2. Tab.Item is wrapped so the General item also emits a Map item that
-//      renders the same game-setup body, which then sees only the map groups.
+//      whichever tab is currently rendering (unfiltered when none is).
+//   2. Tab.Item is wrapped so the General item also emits one item per extra
+//      tab, each rendering the same game-setup body, which then sees only that
+//      tab's groups. General shows every group no extra tab claims.
 //
 // Every option row, the Player tab, and the multiplayer screen remain the
 // game's own code.
@@ -18,22 +19,28 @@ import 'fs://game/core/ui-next/screens/create-game/game-parameters-model.js';
 
 const OVERRIDE_PRIORITY = 100;
 const GENERAL_TAB_NAME = "advanced-options-general";
-const MAP_TAB_NAME = "zg-advanced-options-map";
-const MAP_TAB_TITLE = "LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS";
 
-// Parameter groups shown on the Map tab; everything else stays on General.
-const MAP_GROUP_IDS = new Set([
-	"MapOptions",
-	"DisasterOptions",
-	"NaturalWonderSelectionOptions",
-]);
+// Extra tabs, in display order, each claiming the parameter groups it shows.
+const EXTRA_TABS = [
+	{
+		name: "zg-advanced-options-pace",
+		title: "LOC_ZG_ADVANCED_OPTIONS_AGES",
+		groups: new Set(["GamePacingOptions", "PacingAntiquityOptions", "PacingExplorationOptions", "PacingModernOptions"]),
+	},
+	{
+		name: "zg-advanced-options-map",
+		title: "LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS",
+		groups: new Set(["MapOptions", "DisasterOptions", "NaturalWonderSelectionOptions"]),
+	},
+];
 
-const TAB_GENERAL = "general";
-const TAB_MAP = "map";
+// The tab whose body is rendering: an EXTRA_TABS entry, GENERAL_TAB_NAME, or null.
 const [activeTab, setActiveTab] = createSignal(null);
 
 function groupBelongsToTab(groupId, tab) {
-	return tab == null || MAP_GROUP_IDS.has(groupId) == (tab == TAB_MAP);
+	if (tab == null) return true;
+	if (tab == GENERAL_TAB_NAME) return !EXTRA_TABS.some((extra) => extra.groups.has(groupId));
+	return tab.groups.has(groupId);
 }
 
 // 1. Model facade: same groupNames, groups narrowed to the active tab.
@@ -63,7 +70,7 @@ if (createBaseGroupsModel) {
 	}, OVERRIDE_PRIORITY);
 }
 
-// 2. Tab.Item wrapper: General renders filtered, plus a sibling Map item.
+// 2. Tab.Item wrapper: General renders filtered, plus one sibling item per extra tab.
 function tabBody(tab, body) {
 	return () => {
 		setActiveTab(tab);
@@ -84,12 +91,12 @@ if (createBaseTabItem) {
 			}
 			const body = props.body;
 			return [
-				createBaseTabItem(mergeProps(props, { body: tabBody(TAB_GENERAL, body) })),
-				createBaseTabItem({
-					name: MAP_TAB_NAME,
-					title: () => createComponent(L10n.Compose, { text: MAP_TAB_TITLE }),
-					body: tabBody(TAB_MAP, body),
-				}),
+				createBaseTabItem(mergeProps(props, { body: tabBody(GENERAL_TAB_NAME, body) })),
+				...EXTRA_TABS.map((tab) => createBaseTabItem({
+					name: tab.name,
+					title: () => createComponent(L10n.Compose, { text: tab.title }),
+					body: tabBody(tab, body),
+				})),
 			];
 		},
 	});
