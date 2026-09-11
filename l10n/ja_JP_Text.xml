@@ -58,9 +58,6 @@
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="ja_JP">
 			<Text>独立勢力の間隔</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME" Language="ja_JP">
-			<Text>独立勢力の初期ユニット数</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_NAME" Language="ja_JP">
 			<Text>災害</Text>
 		</Replace>
@@ -147,18 +144,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="ja_JP">
 			<Text>[BLIST][LI] 古代：7タイル。[LI] 探検の時代：7タイル。[LI] 近代：5タイル。[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION" Language="ja_JP">
-			<Text>独立勢力の初期ユニット数を設定します。 [n] 独立勢力は常に1体の[icon:UNIT_SCOUT]斥候を持って開始します。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_LESS" Language="ja_JP">
-			<Text>独立勢力の初期ユニット数を設定します。 [n] 独立勢力は常に1体の[icon:UNIT_SCOUT]斥候を持って開始します。[n] [BLIST][LI] 古代：0[icon:UNIT_WARRIOR]戦士。[LI] 探検の時代：2[icon:UNIT_SWORDSMAN]剣士。[LI] 近代：3[icon:UNIT_LINE_INFANTRY]戦列歩兵。[/BLIST][n] [n]ユニット数は、集落の中心を含む第1リング内の利用可能な陸地タイル数によって決まります。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_DEFAULT" Language="ja_JP">
-			<Text>独立勢力の初期ユニット数を設定します。 [n] 独立勢力は常に1体の[icon:UNIT_SCOUT]斥候を持って開始します。[n] [BLIST][LI] 古代：1[icon:UNIT_WARRIOR]戦士。[LI] 探検の時代：3[icon:UNIT_SWORDSMAN]剣士。[LI] 近代：4[icon:UNIT_LINE_INFANTRY]戦列歩兵。[/BLIST][n] [n]ユニット数は、集落の中心を含む第1リング内の利用可能な陸地タイル数によって決まります。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_MORE" Language="ja_JP">
-			<Text>独立勢力の初期ユニット数を設定します。 [n] 独立勢力は常に1体の[icon:UNIT_SCOUT]斥候を持って開始します。[n] [BLIST][LI] 古代：2[icon:UNIT_WARRIOR]戦士。[LI] 探検の時代：4[icon:UNIT_SWORDSMAN]剣士。[LI] 近代：5[icon:UNIT_LINE_INFANTRY]戦列歩兵。[/BLIST][n] [n]ユニット数は、集落の中心を含む第1リング内の利用可能な陸地タイル数によって決まります。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="ja_JP">
 			<Text>すべての自然災害を無効にします。</Text>
@@ -291,9 +276,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="ja_JP">
 			<Text>競合Modを無効化</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="ja_JP">
-			<Text>両方とも使う</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="ja_JP">
 			<Text>次の設定を追加する未特定のMod：</Text>

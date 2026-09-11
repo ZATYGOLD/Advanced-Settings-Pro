@@ -540,7 +540,7 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--************************* CRITERIA: CRISIS PACING ***************************-->
+<!--************************* CRITERIA: CRISIS TIMING *************************-->
 
 		<Criteria id="crisis-timing-early">
 			<ConfigurationValueMatches>
@@ -999,7 +999,7 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--************************* CRITERIA: GAME PACING ***************************-->
+<!--************************* CRITERIA: PACE SETTINGS *************************-->
 
 		<Criteria id="age-length-antiquity-90">
 			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
@@ -5165,7 +5165,7 @@
 			</Actions>
 		</ActionGroup>
 
-<!--************************* SETTINGS: CRISIS PACING ***************************-->
+<!--************************* SETTINGS: CRISIS TIMING *************************-->
 
 		<ActionGroup id="zg-crisis-timing-early" scope="game" criteria="crisis-timing-early">
 			<Properties>
@@ -5675,7 +5675,7 @@
 			</Actions>
 		</ActionGroup>
 
-<!--************************* SETTINGS: GAME PACING ***************************-->
+<!--************************* SETTINGS: PACE SETTINGS *************************-->
 
 		<ActionGroup id="zg-age-length-antiquity-90" scope="game" criteria="age-length-antiquity-90">
 			<Properties>

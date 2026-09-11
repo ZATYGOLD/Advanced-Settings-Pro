@@ -58,9 +58,6 @@
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="ko_KR">
 			<Text>독립 세력 간격</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME" Language="ko_KR">
-			<Text>독립 세력 초기 유닛 수</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_NAME" Language="ko_KR">
 			<Text>재해</Text>
 		</Replace>
@@ -147,18 +144,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="ko_KR">
 			<Text>[BLIST][LI] 고대: 7타일.[LI] 대항해: 7타일.[LI] 근대: 5타일.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION" Language="ko_KR">
-			<Text>독립 세력의 초기 유닛 수를 설정합니다. [n] 독립 세력은 항상 [icon:UNIT_SCOUT]정찰병 1기로 시작합니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_LESS" Language="ko_KR">
-			<Text>독립 세력의 초기 유닛 수를 설정합니다. [n] 독립 세력은 항상 [icon:UNIT_SCOUT]정찰병 1기로 시작합니다.[n] [BLIST][LI] 고대: 0[icon:UNIT_WARRIOR]전사.[LI] 대항해: 2[icon:UNIT_SWORDSMAN]검사.[LI] 근대: 3[icon:UNIT_LINE_INFANTRY]전열보병.[/BLIST][n] [n]유닛 수는 마을 중심을 포함한 첫 번째 링의 사용 가능한 육지 타일 수에 따라 달라집니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_DEFAULT" Language="ko_KR">
-			<Text>독립 세력의 초기 유닛 수를 설정합니다. [n] 독립 세력은 항상 [icon:UNIT_SCOUT]정찰병 1기로 시작합니다.[n] [BLIST][LI] 고대: 1[icon:UNIT_WARRIOR]전사.[LI] 대항해: 3[icon:UNIT_SWORDSMAN]검사.[LI] 근대: 4[icon:UNIT_LINE_INFANTRY]전열보병.[/BLIST][n] [n]유닛 수는 마을 중심을 포함한 첫 번째 링의 사용 가능한 육지 타일 수에 따라 달라집니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_MORE" Language="ko_KR">
-			<Text>독립 세력의 초기 유닛 수를 설정합니다. [n] 독립 세력은 항상 [icon:UNIT_SCOUT]정찰병 1기로 시작합니다.[n] [BLIST][LI] 고대: 2[icon:UNIT_WARRIOR]전사.[LI] 대항해: 4[icon:UNIT_SWORDSMAN]검사.[LI] 근대: 5[icon:UNIT_LINE_INFANTRY]전열보병.[/BLIST][n] [n]유닛 수는 마을 중심을 포함한 첫 번째 링의 사용 가능한 육지 타일 수에 따라 달라집니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="ko_KR">
 			<Text>모든 자연재해를 비활성화합니다.</Text>
@@ -291,9 +276,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="ko_KR">
 			<Text>충돌 모드 비활성화</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="ko_KR">
-			<Text>둘 다 유지</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="ko_KR">
 			<Text>다음 설정을 추가하는 확인되지 않은 모드:</Text>

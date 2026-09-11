@@ -58,9 +58,6 @@
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="pt_BR">
 			<Text>Espaçamento de potências independentes</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME" Language="pt_BR">
-			<Text>Unidades iniciais das potências independentes</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_NAME" Language="pt_BR">
 			<Text>Desastres</Text>
 		</Replace>
@@ -147,18 +144,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="pt_BR">
 			<Text>[BLIST][LI] Antiguidade: 7 células.[LI] Exploração: 7 células.[LI] Moderna: 5 células.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION" Language="pt_BR">
-			<Text>Define o número inicial de unidades de uma potência independente. [n] Potências independentes sempre começam com 1[icon:UNIT_SCOUT]Batedor.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_LESS" Language="pt_BR">
-			<Text>Define o número inicial de unidades de uma potência independente. [n] Potências independentes sempre começam com 1[icon:UNIT_SCOUT]Batedor.[n] [BLIST][LI] Antiguidade: 0[icon:UNIT_WARRIOR]Guerreiros.[LI] Exploração: 2[icon:UNIT_SWORDSMAN]Espadachins.[LI] Moderna: 3[icon:UNIT_LINE_INFANTRY]Infantaria de Linha.[/BLIST][n] [n]O número de unidades dependerá das células de terra disponíveis no primeiro anel, incluindo o centro da aldeia.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_DEFAULT" Language="pt_BR">
-			<Text>Define o número inicial de unidades de uma potência independente. [n] Potências independentes sempre começam com 1[icon:UNIT_SCOUT]Batedor.[n] [BLIST][LI] Antiguidade: 1[icon:UNIT_WARRIOR]Guerreiros.[LI] Exploração: 3[icon:UNIT_SWORDSMAN]Espadachins.[LI] Moderna: 4[icon:UNIT_LINE_INFANTRY]Infantaria de Linha.[/BLIST][n] [n]O número de unidades dependerá das células de terra disponíveis no primeiro anel, incluindo o centro da aldeia.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_MORE" Language="pt_BR">
-			<Text>Define o número inicial de unidades de uma potência independente. [n] Potências independentes sempre começam com 1[icon:UNIT_SCOUT]Batedor.[n] [BLIST][LI] Antiguidade: 2[icon:UNIT_WARRIOR]Guerreiros.[LI] Exploração: 4[icon:UNIT_SWORDSMAN]Espadachins.[LI] Moderna: 5[icon:UNIT_LINE_INFANTRY]Infantaria de Linha.[/BLIST][n] [n]O número de unidades dependerá das células de terra disponíveis no primeiro anel, incluindo o centro da aldeia.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="pt_BR">
 			<Text>Desativa todos os desastres naturais.</Text>
@@ -291,9 +276,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="pt_BR">
 			<Text>Desativar mods conflitantes</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="pt_BR">
-			<Text>Manter ambos</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="pt_BR">
 			<Text>Mod não identificado que adiciona as configurações:</Text>

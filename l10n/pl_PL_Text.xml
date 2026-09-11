@@ -58,9 +58,6 @@
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="pl_PL">
 			<Text>Odstęp między niezależnymi mocarstwami</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME" Language="pl_PL">
-			<Text>Początkowe jednostki niezależnych mocarstw</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_NAME" Language="pl_PL">
 			<Text>Katastrofy</Text>
 		</Replace>
@@ -147,18 +144,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="pl_PL">
 			<Text>[BLIST][LI] Epoka antyku: 7 pól.[LI] Epoka odkryć: 7 pól.[LI] Epoka nowożytna: 5 pól.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION" Language="pl_PL">
-			<Text>Określa początkową liczbę jednostek niezależnego mocarstwa. [n] Niezależne mocarstwa zawsze zaczynają z 1[icon:UNIT_SCOUT]Zwiadowcą.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_LESS" Language="pl_PL">
-			<Text>Określa początkową liczbę jednostek niezależnego mocarstwa. [n] Niezależne mocarstwa zawsze zaczynają z 1[icon:UNIT_SCOUT]Zwiadowcą.[n] [BLIST][LI] Epoka antyku: 0[icon:UNIT_WARRIOR]Wojownicy.[LI] Epoka odkryć: 2[icon:UNIT_SWORDSMAN]Zbrojni.[LI] Epoka nowożytna: 3[icon:UNIT_LINE_INFANTRY]Piechota liniowa.[/BLIST][n] [n]Liczba jednostek zależy od dostępnych pól lądowych w pierwszym pierścieniu, łącznie z centrum wioski.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_DEFAULT" Language="pl_PL">
-			<Text>Określa początkową liczbę jednostek niezależnego mocarstwa. [n] Niezależne mocarstwa zawsze zaczynają z 1[icon:UNIT_SCOUT]Zwiadowcą.[n] [BLIST][LI] Epoka antyku: 1[icon:UNIT_WARRIOR]Wojownicy.[LI] Epoka odkryć: 3[icon:UNIT_SWORDSMAN]Zbrojni.[LI] Epoka nowożytna: 4[icon:UNIT_LINE_INFANTRY]Piechota liniowa.[/BLIST][n] [n]Liczba jednostek zależy od dostępnych pól lądowych w pierwszym pierścieniu, łącznie z centrum wioski.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_MORE" Language="pl_PL">
-			<Text>Określa początkową liczbę jednostek niezależnego mocarstwa. [n] Niezależne mocarstwa zawsze zaczynają z 1[icon:UNIT_SCOUT]Zwiadowcą.[n] [BLIST][LI] Epoka antyku: 2[icon:UNIT_WARRIOR]Wojownicy.[LI] Epoka odkryć: 4[icon:UNIT_SWORDSMAN]Zbrojni.[LI] Epoka nowożytna: 5[icon:UNIT_LINE_INFANTRY]Piechota liniowa.[/BLIST][n] [n]Liczba jednostek zależy od dostępnych pól lądowych w pierwszym pierścieniu, łącznie z centrum wioski.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="pl_PL">
 			<Text>Wyłącza wszystkie katastrofy naturalne.</Text>
@@ -291,9 +276,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="pl_PL">
 			<Text>Wyłącz konfliktujące mody</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="pl_PL">
-			<Text>Zachowaj oba</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="pl_PL">
 			<Text>Niezidentyfikowany mod dodający ustawienia:</Text>

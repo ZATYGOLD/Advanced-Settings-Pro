@@ -58,9 +58,6 @@
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="it_IT">
 			<Text>Distanza tra potenze indipendenti</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME" Language="it_IT">
-			<Text>Unità iniziali delle potenze indipendenti</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_NAME" Language="it_IT">
 			<Text>Disastri</Text>
 		</Replace>
@@ -147,18 +144,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="it_IT">
 			<Text>[BLIST][LI] Epoca antica: 7 caselle.[LI] Epoca delle esplorazioni: 7 caselle.[LI] Epoca moderna: 5 caselle.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION" Language="it_IT">
-			<Text>Imposta il numero iniziale di unità di una potenza indipendente. [n] Le potenze indipendenti iniziano sempre con 1[icon:UNIT_SCOUT]Esploratore.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_LESS" Language="it_IT">
-			<Text>Imposta il numero iniziale di unità di una potenza indipendente. [n] Le potenze indipendenti iniziano sempre con 1[icon:UNIT_SCOUT]Esploratore.[n] [BLIST][LI] Epoca antica: 0[icon:UNIT_WARRIOR]Guerrieri.[LI] Epoca delle esplorazioni: 2[icon:UNIT_SWORDSMAN]Spadaccini.[LI] Epoca moderna: 3[icon:UNIT_LINE_INFANTRY]Fanteria di linea.[/BLIST][n] [n]Il numero di unità dipende dalle caselle di terra disponibili nel primo anello, centro del villaggio incluso.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_DEFAULT" Language="it_IT">
-			<Text>Imposta il numero iniziale di unità di una potenza indipendente. [n] Le potenze indipendenti iniziano sempre con 1[icon:UNIT_SCOUT]Esploratore.[n] [BLIST][LI] Epoca antica: 1[icon:UNIT_WARRIOR]Guerrieri.[LI] Epoca delle esplorazioni: 3[icon:UNIT_SWORDSMAN]Spadaccini.[LI] Epoca moderna: 4[icon:UNIT_LINE_INFANTRY]Fanteria di linea.[/BLIST][n] [n]Il numero di unità dipende dalle caselle di terra disponibili nel primo anello, centro del villaggio incluso.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_MORE" Language="it_IT">
-			<Text>Imposta il numero iniziale di unità di una potenza indipendente. [n] Le potenze indipendenti iniziano sempre con 1[icon:UNIT_SCOUT]Esploratore.[n] [BLIST][LI] Epoca antica: 2[icon:UNIT_WARRIOR]Guerrieri.[LI] Epoca delle esplorazioni: 4[icon:UNIT_SWORDSMAN]Spadaccini.[LI] Epoca moderna: 5[icon:UNIT_LINE_INFANTRY]Fanteria di linea.[/BLIST][n] [n]Il numero di unità dipende dalle caselle di terra disponibili nel primo anello, centro del villaggio incluso.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="it_IT">
 			<Text>Disattiva tutti i disastri naturali.</Text>
@@ -291,9 +276,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="it_IT">
 			<Text>Disattiva mod in conflitto</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="it_IT">
-			<Text>Mantieni entrambe</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="it_IT">
 			<Text>Mod non identificata che aggiunge le impostazioni:</Text>

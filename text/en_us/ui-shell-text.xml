@@ -34,7 +34,6 @@
 		<Row Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_NAME"><Text>Treasure Convoy Speed</Text></Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_NAME"><Text>Independent Amount</Text></Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_NAME"><Text>Independent Spacing</Text></Row>
-		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME"><Text>Initial Independent Units Amount</Text></Row>
 		<Row Tag="LOC_ZG_DISASTER_SETTINGS_NAME"><Text>Disasters</Text></Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_NAME"><Text>Settlement Limit</Text></Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME"><Text>Antiquity</Text></Row>
@@ -135,41 +134,6 @@
 				[LI] Antiquity: 7 Tiles.
 				[LI] Exploration: 7 Tiles.
 				[LI] Modern: 5 Tiles.[/BLIST]
-			</Text>
-		</Row>
-		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION">
-			<Text>Sets the initial number of an Independent Power's units.
-				[n] Independent Powers always start with 1[icon:UNIT_SCOUT]Scout.
-			</Text>
-		</Row>
-		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_LESS">
-			<Text>Sets the initial number of an Independent Power's units.
-				[n] Independent Powers always start with 1[icon:UNIT_SCOUT]Scout.
-				[n] [BLIST]
-				[LI] Antiquity: 0[icon:UNIT_WARRIOR]Warriors.
-				[LI] Exploration: 2[icon:UNIT_SWORDSMAN]Swordsmen.
-				[LI] Modern: 3 [icon:UNIT_LINE_INFANTRY]Line Infantry.[/BLIST]
-				[n] [n]The number of units will depend upon the number of land tiles available within the first ring including the village center.
-			</Text>
-		</Row>
-		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_DEFAULT">
-			<Text>Sets the initial number of an Independent Power's units.
-				[n] Independent Powers always start with 1[icon:UNIT_SCOUT]Scout.
-				[n] [BLIST]
-				[LI] Antiquity: 1[icon:UNIT_WARRIOR]Warrior.
-				[LI] Exploration: 3[icon:UNIT_SWORDSMAN]Swordsmen.
-				[LI] Modern: 4 [icon:UNIT_LINE_INFANTRY]Line Infantry.[/BLIST]
-				[n] [n]The number of units will depend upon the number of land tiles available within the first ring including the village center.
-			</Text>
-		</Row>
-		<Row Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_MORE">
-			<Text>Sets the initial number of an Independent Power's units.
-				[n]Independent Powers always start with 1[icon:UNIT_SCOUT]Scout.
-				[n] [BLIST]
-				[LI] Antiquity: 2[icon:UNIT_WARRIOR]Warriors.
-				[LI] Exploration: 4[icon:UNIT_SWORDSMAN]Swordsmen.
-				[LI] Modern: 5 [icon:UNIT_LINE_INFANTRY]Line Infantry.[/BLIST]
-				[n] [n]The number of units will depend upon the number of land tiles available within the first ring including the village center.
 			</Text>
 		</Row>
 
@@ -447,7 +411,6 @@
 		<Row Tag="LOC_ZG_MOD_CONFLICT_BODY_HEADER"><Text>The following mods are causing conflicts: [n] [n]</Text></Row>
 		<Row Tag="LOC_ZG_MOD_CONFLICT_BODY_FOOTER"><Text>[n] [n]Please unsubscribe from the mods now. [n] [n]</Text></Row>
 		<Row Tag="LOC_ZG_MOD_CONFLICT_DISABLE"><Text>Ok</Text></Row>
-		<Row Tag="LOC_ZG_MOD_CONFLICT_IGNORE"><Text>Cancel</Text></Row>
 		<Row Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD"><Text>Unidentified mod adding the settings:</Text></Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM">
 			<Text>Custom: set the settlement limit for each age individually.</Text>

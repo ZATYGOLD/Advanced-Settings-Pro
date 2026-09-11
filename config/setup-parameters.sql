@@ -138,7 +138,7 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_PacePresetDomain', 'ZG_PACE_PRESET_CUSTOM', 'LOC_ZG_PACE_PRESET_CUSTOM_NAME', 'LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM', 40);
 
 --*******************************************************
---************* GAME PACING *****************************
+--************* PACE SETTINGS ***************************
 --*******************************************************
 -- Shown on the Pace tab (ui/zg-map-tab.js): All Ages holds the primaries
 -- (Age Length above and the settings below); the Antiquity,

@@ -58,9 +58,6 @@
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="zh_Hans_CN">
 			<Text>独立势力间距</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME" Language="zh_Hans_CN">
-			<Text>独立势力初始单位数量</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_NAME" Language="zh_Hans_CN">
 			<Text>灾害</Text>
 		</Replace>
@@ -147,18 +144,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="zh_Hans_CN">
 			<Text>[BLIST][LI] 古典：7格。[LI] 探索：7格。[LI] 近世：5格。[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>设置独立势力的初始单位数量。 [n] 独立势力始终以1个[icon:UNIT_SCOUT]侦察兵开局。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_LESS" Language="zh_Hans_CN">
-			<Text>设置独立势力的初始单位数量。 [n] 独立势力始终以1个[icon:UNIT_SCOUT]侦察兵开局。[n] [BLIST][LI] 古典：0[icon:UNIT_WARRIOR]战士。[LI] 探索：2[icon:UNIT_SWORDSMAN]剑士。[LI] 近世：3[icon:UNIT_LINE_INFANTRY]线列步兵。[/BLIST][n] [n]单位数量取决于村庄中心及其第一环内可用的陆地格数。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_DEFAULT" Language="zh_Hans_CN">
-			<Text>设置独立势力的初始单位数量。 [n] 独立势力始终以1个[icon:UNIT_SCOUT]侦察兵开局。[n] [BLIST][LI] 古典：1[icon:UNIT_WARRIOR]战士。[LI] 探索：3[icon:UNIT_SWORDSMAN]剑士。[LI] 近世：4[icon:UNIT_LINE_INFANTRY]线列步兵。[/BLIST][n] [n]单位数量取决于村庄中心及其第一环内可用的陆地格数。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_MORE" Language="zh_Hans_CN">
-			<Text>设置独立势力的初始单位数量。 [n] 独立势力始终以1个[icon:UNIT_SCOUT]侦察兵开局。[n] [BLIST][LI] 古典：2[icon:UNIT_WARRIOR]战士。[LI] 探索：4[icon:UNIT_SWORDSMAN]剑士。[LI] 近世：5[icon:UNIT_LINE_INFANTRY]线列步兵。[/BLIST][n] [n]单位数量取决于村庄中心及其第一环内可用的陆地格数。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>禁用所有自然灾害。</Text>
@@ -291,9 +276,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="zh_Hans_CN">
 			<Text>禁用冲突模组</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="zh_Hans_CN">
-			<Text>保留两者</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="zh_Hans_CN">
 			<Text>添加以下设置的未识别模组：</Text>

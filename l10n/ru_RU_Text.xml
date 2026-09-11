@@ -58,9 +58,6 @@
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_NAME" Language="ru_RU">
 			<Text>Расстояние между независимыми державами</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_NAME" Language="ru_RU">
-			<Text>Начальные юниты независимых держав</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_NAME" Language="ru_RU">
 			<Text>Стихийные бедствия</Text>
 		</Replace>
@@ -147,18 +144,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="ru_RU">
 			<Text>[BLIST][LI] Античность: 7 клеток.[LI] Исследования: 7 клеток.[LI] Современность: 5 клеток.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_COUNT_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт начальное число юнитов независимой державы. [n] Независимые державы всегда начинают с 1[icon:UNIT_SCOUT]Разведчиком.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_LESS" Language="ru_RU">
-			<Text>Задаёт начальное число юнитов независимой державы. [n] Независимые державы всегда начинают с 1[icon:UNIT_SCOUT]Разведчиком.[n] [BLIST][LI] Античность: 0[icon:UNIT_WARRIOR]Воины.[LI] Исследования: 2[icon:UNIT_SWORDSMAN]Мечники.[LI] Современность: 3[icon:UNIT_LINE_INFANTRY]Линейная пехота.[/BLIST][n] [n]Число юнитов зависит от доступных клеток суши в первом кольце, включая центр деревни.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_DEFAULT" Language="ru_RU">
-			<Text>Задаёт начальное число юнитов независимой державы. [n] Независимые державы всегда начинают с 1[icon:UNIT_SCOUT]Разведчиком.[n] [BLIST][LI] Античность: 1[icon:UNIT_WARRIOR]Воины.[LI] Исследования: 3[icon:UNIT_SWORDSMAN]Мечники.[LI] Современность: 4[icon:UNIT_LINE_INFANTRY]Линейная пехота.[/BLIST][n] [n]Число юнитов зависит от доступных клеток суши в первом кольце, включая центр деревни.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_INDEPENDENT_INITIAL_UNITS_DESCRIPTION_MORE" Language="ru_RU">
-			<Text>Задаёт начальное число юнитов независимой державы. [n] Независимые державы всегда начинают с 1[icon:UNIT_SCOUT]Разведчиком.[n] [BLIST][LI] Античность: 2[icon:UNIT_WARRIOR]Воины.[LI] Исследования: 4[icon:UNIT_SWORDSMAN]Мечники.[LI] Современность: 5[icon:UNIT_LINE_INFANTRY]Линейная пехота.[/BLIST][n] [n]Число юнитов зависит от доступных клеток суши в первом кольце, включая центр деревни.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="ru_RU">
 			<Text>Отключает все стихийные бедствия.</Text>
@@ -291,9 +276,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="ru_RU">
 			<Text>Отключить конфликтующие моды</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MOD_CONFLICT_IGNORE" Language="ru_RU">
-			<Text>Оставить оба</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="ru_RU">
 			<Text>Неопознанный мод, добавляющий настройки:</Text>
