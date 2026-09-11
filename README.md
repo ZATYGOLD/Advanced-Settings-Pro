@@ -11,6 +11,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Cost settings are now named Low, Standard, High, and Double; the Default option of the other settings is now called Standard
 - Added a Pace tab to the single-player Advanced Settings screen with a Defaults group (Age Length, Age Progress Rate, Technology Cost, Civic Cost, City Growth, Roads, and Victory Project Cost) and an Antiquity, Exploration, and Modern group holding each setting's per-age row, used when the setting is Custom (Victory Project Cost is Modern-only)
 - Added a Map tab to the single-player Advanced Settings screen, holding the map, natural wonder, and disaster settings; General keeps the game and crisis settings
+- Natural Wonders now sits in Map Settings right after Map Size; the per-wonder toggles keep their own Natural Wonder Selection group
 - Added Nachi Falls and Seongsan Ilchulbong (Japan & Korea Wonders) to Natural Wonder Selection, for 22 wonders in total
 - Split the game's disaster and crisis settings: a Disaster Settings group on the Map tab and a Crisis Settings group on General
 - Added a Crises setting (Enabled or Disabled) that drives the game's per-crisis selection, now titled Crisis Selection
