@@ -421,6 +421,27 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="ja_JP">
 			<Text>この時代の入植地上限を設定します。[n]入植地の上限がカスタムの場合のみ適用されます。</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_NAME" Language="ja_JP">
+			<Text>マップの気温</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="ja_JP">
+			<Text>各陸地タイルのバイオームを決める気候帯をずらします。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COLD_NAME" Language="ja_JP">
+			<Text>寒冷</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HOT_NAME" Language="ja_JP">
+			<Text>高温</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="ja_JP">
+			<Text>寒冷：ツンドラが赤道寄りから始まり、その分草原が減ります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="ja_JP">
+			<Text>選択したマップタイプの標準的な気候。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="ja_JP">
+			<Text>高温：熱帯と砂漠が赤道から遠くまで広がり、その分平原と草原が減ります。</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="ja_JP">
 			<Text>川</Text>
 		</Replace>

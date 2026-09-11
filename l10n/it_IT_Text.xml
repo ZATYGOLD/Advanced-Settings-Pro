@@ -421,6 +421,27 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="it_IT">
 			<Text>Imposta il limite di insediamenti di questa epoca.[n]Si applica solo quando il limite di insediamenti è su Personalizzato.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_NAME" Language="it_IT">
+			<Text>Temperatura della mappa</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="it_IT">
+			<Text>Sposta le fasce climatiche che determinano il bioma di ogni casella di terra.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COLD_NAME" Language="it_IT">
+			<Text>Freddo</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HOT_NAME" Language="it_IT">
+			<Text>Caldo</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="it_IT">
+			<Text>Freddo: la tundra inizia più vicino all'equatore, a scapito della prateria.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="it_IT">
+			<Text>Clima standard per il tipo di mappa scelto.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="it_IT">
+			<Text>Caldo: tropici e deserto si estendono più lontano dall'equatore, a scapito di pianure e prateria.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="it_IT">
 			<Text>Fiumi</Text>
 		</Replace>

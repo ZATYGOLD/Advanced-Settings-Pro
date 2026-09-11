@@ -2,11 +2,12 @@
 // imports are repointed at the base module so everything else stays stock.
 import { zgModelRivers } from './zg-map-rivers.js';
 import { zgAddMountains } from './zg-map-mountains.js';
+import { zgDesignateBiomes } from './zg-map-biomes.js';
 import { assignAdvancedStartRegions } from 'fs://game/base-standard/maps/assign-advanced-start-region.js';
 import { chooseStartSectors, assignStartPositions } from 'fs://game/base-standard/maps/assign-starting-plots.js';
 import { generateDiscoveries } from 'fs://game/base-standard/maps/discovery-generator.js';
 import { expandCoastsPlus, addMountains, generateLakes, addHills, buildRainfallMap } from 'fs://game/base-standard/maps/elevation-terrain-generator.js';
-import { designateBiomes, addFeatures } from 'fs://game/base-standard/maps/feature-biome-generator.js';
+import { addFeatures } from 'fs://game/base-standard/maps/feature-biome-generator.js';
 import { dumpStartSectors, dumpTerrain, dumpContinents, dumpElevation, dumpRainfall, dumpBiomes, dumpFeatures, dumpResources, dumpNoisePredicate } from 'fs://game/base-standard/maps/map-debug-helpers.js';
 import { g_PolarWaterRows, g_AvoidSeamOffset, g_IslandWidth, g_WaterPercent, g_Cutoff, g_OceanWaterColumns, g_NavigableRiverTerrain, g_LandmassFractal, g_FlatTerrain, g_OceanTerrain, g_FractalWeight, g_CenterWeight, g_StartSectorWeight } from 'fs://game/base-standard/maps/map-globals.js';
 import { needHumanNearEquator, createIslands, applyCoastalErosionAdjustingForStartSectors, applyCoastalErosion, createOrganicLandmasses, markLandmassRegionId, getHeightAdjustingForStartSector } from 'fs://game/base-standard/maps/map-utilities.js';
@@ -225,7 +226,7 @@ function generateMap() {
   zgModelRivers(5, 15);
   TerrainBuilder.validateAndFixTerrain();
   TerrainBuilder.defineNamedRivers();
-  designateBiomes(iWidth, iHeight);
+  zgDesignateBiomes(iWidth, iHeight);
   addTundraVolcanoes(iWidth, iHeight);
   addNaturalWonders(iWidth, iHeight, iNumNaturalWonders, naturalWonderEvent, requestedNaturalWonders);
   TerrainBuilder.addFloodplains(4, 10);

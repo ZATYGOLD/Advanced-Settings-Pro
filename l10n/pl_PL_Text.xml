@@ -421,6 +421,27 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="pl_PL">
 			<Text>Ustawia limit osad tej epoki.[n]Działa tylko, gdy limit osad ustawiono na Niestandardowe.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_NAME" Language="pl_PL">
+			<Text>Temperatura mapy</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="pl_PL">
+			<Text>Przesuwa strefy klimatyczne decydujące o biomie każdego pola lądowego.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COLD_NAME" Language="pl_PL">
+			<Text>Zimna</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HOT_NAME" Language="pl_PL">
+			<Text>Gorąca</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="pl_PL">
+			<Text>Zimna: tundra zaczyna się bliżej równika, kosztem łąk.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="pl_PL">
+			<Text>Standardowy klimat dla wybranego typu mapy.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="pl_PL">
+			<Text>Gorąca: tropiki i pustynia sięgają dalej od równika, kosztem równin i łąk.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="pl_PL">
 			<Text>Rzeki</Text>
 		</Replace>

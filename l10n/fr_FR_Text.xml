@@ -421,6 +421,27 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="fr_FR">
 			<Text>Définit la limite de colonies de cet âge.[n]Ne s'applique que si la limite de colonies est sur Personnalisé.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_NAME" Language="fr_FR">
+			<Text>Température de la carte</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="fr_FR">
+			<Text>Décale les zones climatiques qui déterminent le biome de chaque case terrestre.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COLD_NAME" Language="fr_FR">
+			<Text>Froid</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HOT_NAME" Language="fr_FR">
+			<Text>Chaud</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="fr_FR">
+			<Text>Froid : la toundra commence plus près de l'équateur, aux dépens des prairies.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="fr_FR">
+			<Text>Climat standard pour le type de carte choisi.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="fr_FR">
+			<Text>Chaud : les zones tropicales et le désert s'étendent plus loin de l'équateur, aux dépens des plaines et des prairies.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="fr_FR">
 			<Text>Rivières</Text>
 		</Replace>

@@ -421,6 +421,27 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>设置该时代的定居点上限。[n]仅当定居点上限设为自定义时生效。</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_NAME" Language="zh_Hans_CN">
+			<Text>地图气温</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>移动决定每块陆地地块生物群系的气候带。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COLD_NAME" Language="zh_Hans_CN">
+			<Text>寒冷</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HOT_NAME" Language="zh_Hans_CN">
+			<Text>炎热</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="zh_Hans_CN">
+			<Text>寒冷：冻原从更靠近赤道处开始，草原相应减少。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
+			<Text>所选地图类型的标准气候。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="zh_Hans_CN">
+			<Text>炎热：热带和沙漠延伸到离赤道更远处，平原和草原相应减少。</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="zh_Hans_CN">
 			<Text>河流</Text>
 		</Replace>

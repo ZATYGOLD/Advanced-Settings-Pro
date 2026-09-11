@@ -421,6 +421,27 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="ru_RU">
 			<Text>Задаёт лимит поселений этой эпохи.[n]Действует только если лимит поселений установлен на Особый.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_NAME" Language="ru_RU">
+			<Text>Температура карты</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="ru_RU">
+			<Text>Сдвигает климатические пояса, определяющие биом каждой клетки суши.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COLD_NAME" Language="ru_RU">
+			<Text>Холодная</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HOT_NAME" Language="ru_RU">
+			<Text>Жаркая</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="ru_RU">
+			<Text>Холодная: тундра начинается ближе к экватору за счёт лугов.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>Стандартный климат для выбранного типа карты.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="ru_RU">
+			<Text>Жаркая: тропики и пустыни простираются дальше от экватора за счёт равнин и лугов.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="ru_RU">
 			<Text>Реки</Text>
 		</Replace>

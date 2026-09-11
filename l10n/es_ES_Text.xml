@@ -421,6 +421,27 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="es_ES">
 			<Text>Establece el límite de asentamientos de esta era.[n]Solo se aplica cuando el límite de asentamientos está en Personalizado.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_NAME" Language="es_ES">
+			<Text>Temperatura del mapa</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="es_ES">
+			<Text>Desplaza las franjas climáticas que determinan el bioma de cada casilla de tierra.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COLD_NAME" Language="es_ES">
+			<Text>Frío</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HOT_NAME" Language="es_ES">
+			<Text>Cálido</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="es_ES">
+			<Text>Frío: la tundra empieza más cerca del ecuador, a costa de la pradera.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="es_ES">
+			<Text>Clima estándar para el tipo de mapa elegido.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="es_ES">
+			<Text>Cálido: el trópico y el desierto se extienden más lejos del ecuador, a costa de las llanuras y la pradera.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="es_ES">
 			<Text>Ríos</Text>
 		</Replace>

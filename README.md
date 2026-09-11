@@ -11,7 +11,8 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Cost settings are now named Low, Standard, High, and Double; the Default option of the other settings is now called Standard
 - Added a Pace tab to the single-player Advanced Settings screen with a Pace Settings group (Age Length, Age Progress Rate, Technology Cost, Civic Cost, City Growth, Roads, and Victory Project Cost) and an Antiquity, Exploration, and Modern group holding each setting's per-age row, used when the setting is Custom
 - Added a Map tab to the single-player Advanced Settings screen, holding the map, natural wonder, and disaster settings; General keeps the game and crisis settings
-- Natural Wonders now sits in Map Settings right after Map Size; the per-wonder toggles keep their own Natural Wonder Selection group
+- Added a Map Temperature setting (Cold, Standard, or Hot) to Map Settings, right after Map Size: it shifts the climate bands the map scripts use to assign biomes, so Cold grows tundra while Hot grows tropical and desert
+- Natural Wonders now sits in Map Settings after Map Temperature; the per-wonder toggles keep their own Natural Wonder Selection group
 - Added Nachi Falls and Seongsan Ilchulbong (Japan & Korea Wonders) to Natural Wonder Selection, for 22 wonders in total
 - Split the game's disaster and crisis settings: a Disaster Settings group on the Map tab and a Crisis Settings group on General
 - Added a Crises setting (Enabled or Disabled) that drives the game's per-crisis selection, now titled Crisis Selection
@@ -100,6 +101,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Civilian Unit Cost: Low (25% cheaper), Standard, High (50% more), or Double (100% more)
 - Natural Wonders: Disabled, Half, Standard, More, or Double
 - Natural Wonder Selection: Enabled or Disabled for each of the 22 natural wonders, including DLC wonders
+- Map Temperature: Cold, Standard, or Hot (Hot extends the tropical band 8 degrees and the desert band 7 degrees toward the poles; Cold starts tundra 8 degrees closer to the equator; plains and grassland only shrink where those bands grow)
 - Lakes: Less, Standard, or More
 - Rivers: Less, Standard, or More
 - Mountains: Less, Standard, or More

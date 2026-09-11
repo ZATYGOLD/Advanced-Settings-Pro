@@ -421,6 +421,27 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="de_DE">
 			<Text>Legt das Siedlungslimit dieses Zeitalters fest.[n]Gilt nur, wenn das Siedlungslimit auf Benutzerdefiniert steht.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_NAME" Language="de_DE">
+			<Text>Kartentemperatur</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="de_DE">
+			<Text>Verschiebt die Klimazonen, die das Biom jedes Landfeldes bestimmen.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COLD_NAME" Language="de_DE">
+			<Text>Kalt</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HOT_NAME" Language="de_DE">
+			<Text>Heiß</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="de_DE">
+			<Text>Kalt: Die Tundra beginnt näher am Äquator, auf Kosten des Graslands.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="de_DE">
+			<Text>Standardklima für den gewählten Kartentyp.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="de_DE">
+			<Text>Heiß: Tropen und Wüste reichen weiter vom Äquator weg, auf Kosten von Ebenen und Grasland.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="de_DE">
 			<Text>Flüsse</Text>
 		</Replace>

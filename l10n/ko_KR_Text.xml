@@ -421,6 +421,27 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="ko_KR">
 			<Text>이 시대의 정착지 제한을 설정합니다.[n]정착지 제한이 사용자 지정일 때만 적용됩니다.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_NAME" Language="ko_KR">
+			<Text>맵 기온</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="ko_KR">
+			<Text>각 육지 타일의 생물군계를 정하는 기후대를 이동합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COLD_NAME" Language="ko_KR">
+			<Text>한랭</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HOT_NAME" Language="ko_KR">
+			<Text>고온</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="ko_KR">
+			<Text>한랭: 툰드라가 적도에 더 가까운 곳에서 시작되며 그만큼 초원이 줄어듭니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="ko_KR">
+			<Text>선택한 맵 유형의 표준 기후입니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="ko_KR">
+			<Text>고온: 열대와 사막이 적도에서 더 멀리까지 뻗으며 그만큼 평원과 초원이 줄어듭니다.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="ko_KR">
 			<Text>강</Text>
 		</Replace>
