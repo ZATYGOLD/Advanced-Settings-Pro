@@ -485,10 +485,24 @@
 		<Row Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD"><Text>Standard climate for the chosen map type.</Text></Row>
 		<Row Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT"><Text>Hot: tropical and desert reach further from the equator, at the expense of plains and grassland.</Text></Row>
 		<Row Tag="LOC_ZG_RIVERS_NAME"><Text>Rivers</Text></Row>
-		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION"><Text>Sets how many rivers are generated when the map is created.</Text></Row>
-		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT"><Text>Standard river generation for the chosen map type.</Text></Row>
-		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_LESS"><Text>Generates fewer rivers.</Text></Row>
-		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE"><Text>Generates more rivers, and more of them are navigable.</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION"><Text>Sets how many rivers are generated and what share of them are Navigable Rivers rather than Minor Rivers.</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_WADI_NAME"><Text>Wadis</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_WADI"><Text>Few rivers, with far fewer of them navigable.</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_ARID_NAME"><Text>Arid</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_ARID"><Text>Few rivers, with the usual share of them navigable.</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_CHANNEL_NAME"><Text>Channels</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_CHANNEL"><Text>Few rivers, with far more of them navigable.</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_SHALLOW_NAME"><Text>Shallow</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_SHALLOW"><Text>A standard number of rivers, with far fewer of them navigable.</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT"><Text>The usual number of rivers for the chosen map type, with the usual share of them navigable.</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_WATERWAY_NAME"><Text>Waterways</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_WATERWAY"><Text>A standard number of rivers, with far more of them navigable.</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_STREAM_NAME"><Text>Streams</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_STREAM"><Text>Many rivers, with far fewer of them navigable.</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_RIVERLAND_NAME"><Text>Riverlands</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_RIVERLAND"><Text>Many rivers, with the usual share of them navigable.</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DEEP_NAME"><Text>Deep</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_DEEP"><Text>Many rivers, with far more of them navigable.</Text></Row>
 
 	<!-- Game Speeds -->
 		<Row Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME"><Text>Online 2.0</Text></Row>

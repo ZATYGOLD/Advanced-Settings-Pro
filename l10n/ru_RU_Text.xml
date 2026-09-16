@@ -428,16 +428,58 @@
 			<Text>Реки</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION" Language="ru_RU">
-			<Text>Определяет, сколько рек создаётся при генерации карты.</Text>
+			<Text>Определяет, сколько рек создаётся и какая их доля будет судоходными реками, а не малыми.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_WADI_NAME" Language="ru_RU">
+			<Text>Вади</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WADI" Language="ru_RU">
+			<Text>Мало рек, и судоходных среди них гораздо меньше обычного.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_ARID_NAME" Language="ru_RU">
+			<Text>Засуха</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_ARID" Language="ru_RU">
+			<Text>Мало рек, судоходна обычная их доля.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_CHANNEL_NAME" Language="ru_RU">
+			<Text>Русла</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_CHANNEL" Language="ru_RU">
+			<Text>Мало рек, но судоходных среди них гораздо больше.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_SHALLOW_NAME" Language="ru_RU">
+			<Text>Мелководье</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_SHALLOW" Language="ru_RU">
+			<Text>Обычное количество рек, но судоходных среди них гораздо меньше обычного.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="ru_RU">
-			<Text>Стандартная генерация рек для выбранного типа карты.</Text>
+			<Text>Обычное количество рек для выбранного типа карты, судоходна обычная их доля.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_LESS" Language="ru_RU">
-			<Text>Создаёт меньше рек.</Text>
+		<Replace Tag="LOC_ZG_RIVERS_WATERWAY_NAME" Language="ru_RU">
+			<Text>Водные пути</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="ru_RU">
-			<Text>Создаёт больше рек, и больше из них судоходны.</Text>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WATERWAY" Language="ru_RU">
+			<Text>Обычное количество рек, но судоходных среди них гораздо больше.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_STREAM_NAME" Language="ru_RU">
+			<Text>Ручьи</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_STREAM" Language="ru_RU">
+			<Text>Много рек, но судоходных среди них гораздо меньше обычного.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_RIVERLAND_NAME" Language="ru_RU">
+			<Text>Речной край</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_RIVERLAND" Language="ru_RU">
+			<Text>Много рек, судоходна обычная их доля.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DEEP_NAME" Language="ru_RU">
+			<Text>Глубоководье</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEEP" Language="ru_RU">
+			<Text>Много рек, и судоходных среди них гораздо больше.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LOW_NAME" Language="ru_RU">
 			<Text>Низкая</Text>

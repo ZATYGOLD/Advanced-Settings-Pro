@@ -64,13 +64,24 @@ function modText(mod) {
 	return [mod.id, Locale.compose(mod.name), Modding.getModProperty(mod.handle, "Name") ?? ""].join("\n").toLowerCase();
 }
 
+// Translates a SQL LIKE pattern (% and _ wildcards) into an equivalent regular
+// expression, case-insensitive to match LIKE's behaviour on ASCII.
+function likeToRegExp(pattern) {
+	const escaped = pattern.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+	return new RegExp(`^${escaped.replace(/%/g, ".*").replace(/_/g, ".")}$`, "i");
+}
+
+// The game only ever issues static queries, so the patterns are matched here
+// rather than interpolated into the SQL.
 function parametersMatching(patterns) {
-	const found = [];
-	for (const pattern of patterns) {
-		const rows = Database.query("config", `SELECT ParameterID FROM Parameters WHERE ParameterID LIKE '${pattern}'`) ?? [];
-		found.push(...rows.map((row) => row.ParameterID));
+	if (patterns.length === 0) {
+		return [];
 	}
-	return found;
+	const rows = Database.query("config", "SELECT ParameterID FROM Parameters") ?? [];
+	const matchers = patterns.map(likeToRegExp);
+	return rows
+		.map((row) => row.ParameterID)
+		.filter((id) => matchers.some((matcher) => matcher.test(id)));
 }
 
 function createGuard() {

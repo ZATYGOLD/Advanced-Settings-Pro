@@ -16,6 +16,7 @@ import { GenerationContext, GenerationPhases } from 'fs://game/base-standard/scr
 import { profileScope, profileFunction } from 'fs://game/base-standard/scripts/profiling.js';
 import { zgModelRivers } from './zg-map-rivers.js';
 import { zgDesignateBiomes } from './zg-map-biomes.js';
+import { zgAdjustHexMountains } from './zg-map-mountains.js';
 
 export async function zgGenerateMapFeatures(hexMap, context = new GenerationContext()) {
   const generateMapFeaturesScope = new profileScope("Generate Features");
@@ -29,6 +30,9 @@ export async function zgGenerateMapFeatures(hexMap, context = new GenerationCont
     profileFunction("generateLakes", () => hexMap.GenerateLakes());
   }
   if (context.phases & GenerationPhases.WriteToTerrainBuilder) {
+    // ZG-ASP: apply the Mountains setting to the simulated tiles before they
+    // are written out, since these maps never call addMountains.
+    profileFunction("zgAdjustHexMountains", () => zgAdjustHexMountains(hexMap));
     hexMap.writeToTerrainBuilder();
   }
   profileFunction("TerrainBuilder.validateAndFixTerrain", () => TerrainBuilder.validateAndFixTerrain());

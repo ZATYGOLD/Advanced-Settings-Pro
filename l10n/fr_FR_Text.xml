@@ -428,16 +428,58 @@
 			<Text>Rivières</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION" Language="fr_FR">
-			<Text>Définit le nombre de rivières générées à la création de la carte.</Text>
+			<Text>Définit le nombre de fleuves générés et la proportion d'entre eux qui sont des fleuves navigables plutôt que des fleuves mineurs.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_WADI_NAME" Language="fr_FR">
+			<Text>Oueds</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WADI" Language="fr_FR">
+			<Text>Peu de fleuves, dont bien moins sont navigables que d'ordinaire.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_ARID_NAME" Language="fr_FR">
+			<Text>Aride</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_ARID" Language="fr_FR">
+			<Text>Peu de fleuves, dont la proportion habituelle est navigable.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_CHANNEL_NAME" Language="fr_FR">
+			<Text>Chenaux</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_CHANNEL" Language="fr_FR">
+			<Text>Peu de fleuves, dont bien plus sont navigables.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_SHALLOW_NAME" Language="fr_FR">
+			<Text>Hauts-fonds</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_SHALLOW" Language="fr_FR">
+			<Text>Un nombre normal de fleuves, dont bien moins sont navigables que d'ordinaire.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="fr_FR">
-			<Text>Génération de rivières standard pour le type de carte choisi.</Text>
+			<Text>Le nombre habituel de fleuves pour le type de carte choisi, dont la proportion habituelle est navigable.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_LESS" Language="fr_FR">
-			<Text>Génère moins de rivières.</Text>
+		<Replace Tag="LOC_ZG_RIVERS_WATERWAY_NAME" Language="fr_FR">
+			<Text>Voies navigables</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="fr_FR">
-			<Text>Génère plus de rivières, dont davantage de fleuves navigables.</Text>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WATERWAY" Language="fr_FR">
+			<Text>Un nombre normal de fleuves, dont bien plus sont navigables.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_STREAM_NAME" Language="fr_FR">
+			<Text>Ruisseaux</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_STREAM" Language="fr_FR">
+			<Text>De nombreux fleuves, dont bien moins sont navigables que d'ordinaire.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_RIVERLAND_NAME" Language="fr_FR">
+			<Text>Terres fluviales</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_RIVERLAND" Language="fr_FR">
+			<Text>De nombreux fleuves, dont la proportion habituelle est navigable.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DEEP_NAME" Language="fr_FR">
+			<Text>Grands fonds</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEEP" Language="fr_FR">
+			<Text>De nombreux fleuves, dont bien plus sont navigables.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LOW_NAME" Language="fr_FR">
 			<Text>Bas</Text>

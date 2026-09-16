@@ -428,16 +428,58 @@
 			<Text>Rios</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION" Language="pt_BR">
-			<Text>Define quantos rios são gerados na criação do mapa.</Text>
+			<Text>Define quantos rios são gerados e que proporção deles são rios navegáveis em vez de rios pequenos.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_WADI_NAME" Language="pt_BR">
+			<Text>Uádis</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WADI" Language="pt_BR">
+			<Text>Poucos rios, com muito menos deles navegáveis do que o habitual.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_ARID_NAME" Language="pt_BR">
+			<Text>Árido</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_ARID" Language="pt_BR">
+			<Text>Poucos rios, com a proporção habitual deles navegável.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_CHANNEL_NAME" Language="pt_BR">
+			<Text>Canais</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_CHANNEL" Language="pt_BR">
+			<Text>Poucos rios, com muito mais deles navegáveis.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_SHALLOW_NAME" Language="pt_BR">
+			<Text>Raso</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_SHALLOW" Language="pt_BR">
+			<Text>Um número normal de rios, com muito menos deles navegáveis do que o habitual.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="pt_BR">
-			<Text>Geração padrão de rios para o tipo de mapa escolhido.</Text>
+			<Text>O número habitual de rios para o tipo de mapa escolhido, com a proporção habitual deles navegável.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_LESS" Language="pt_BR">
-			<Text>Gera menos rios.</Text>
+		<Replace Tag="LOC_ZG_RIVERS_WATERWAY_NAME" Language="pt_BR">
+			<Text>Hidrovias</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="pt_BR">
-			<Text>Gera mais rios, e mais deles são navegáveis.</Text>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WATERWAY" Language="pt_BR">
+			<Text>Um número normal de rios, com muito mais deles navegáveis.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_STREAM_NAME" Language="pt_BR">
+			<Text>Riachos</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_STREAM" Language="pt_BR">
+			<Text>Muitos rios, com muito menos deles navegáveis do que o habitual.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_RIVERLAND_NAME" Language="pt_BR">
+			<Text>Terras fluviais</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_RIVERLAND" Language="pt_BR">
+			<Text>Muitos rios, com a proporção habitual deles navegável.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DEEP_NAME" Language="pt_BR">
+			<Text>Fundo</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEEP" Language="pt_BR">
+			<Text>Muitos rios, com muito mais deles navegáveis.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LOW_NAME" Language="pt_BR">
 			<Text>Baixo</Text>

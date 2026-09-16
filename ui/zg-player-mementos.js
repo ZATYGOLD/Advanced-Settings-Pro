@@ -5,7 +5,7 @@
 // with the game's own components, models and templates (a port of the game's
 // AdvancedOptionsPlayerSetup) plus a Mementos column, and swaps it in for the
 // Player tab through the same Tab.Item hook the Map tab uses.
-import { template, insert, className } from 'fs://game/core/vendor/solid-js/web/dist/web.js';
+import { template, insert } from 'fs://game/core/vendor/solid-js/web/dist/web.js';
 import { createMemo, createComponent, createRenderEffect, mergeProps, For, Show } from 'fs://game/core/vendor/solid-js/dist/solid.js';
 import { ComponentRegistry } from 'fs://game/core/ui-next/services/component-registry.js';
 import { Activatable } from 'fs://game/core/ui-next/components/activatable.js';

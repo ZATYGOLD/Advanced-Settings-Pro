@@ -428,16 +428,58 @@
 			<Text>강</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION" Language="ko_KR">
-			<Text>맵 생성 시 만들어지는 강의 수를 설정합니다.</Text>
+			<Text>생성되는 강의 수와, 그중 얕은 하천이 아닌 깊은 강이 되는 비율을 설정합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_WADI_NAME" Language="ko_KR">
+			<Text>마른 하천</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WADI" Language="ko_KR">
+			<Text>강이 적으며, 깊은 강의 비율도 평소보다 훨씬 낮습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_ARID_NAME" Language="ko_KR">
+			<Text>건조</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_ARID" Language="ko_KR">
+			<Text>강이 적으며, 깊은 강의 비율은 평소와 같습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_CHANNEL_NAME" Language="ko_KR">
+			<Text>물길</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_CHANNEL" Language="ko_KR">
+			<Text>강은 적지만 깊은 강의 비율이 훨씬 높습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_SHALLOW_NAME" Language="ko_KR">
+			<Text>얕은 하천</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_SHALLOW" Language="ko_KR">
+			<Text>강의 수는 표준이지만 깊은 강의 비율은 평소보다 훨씬 낮습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="ko_KR">
-			<Text>선택한 맵 유형의 기본 강 생성입니다.</Text>
+			<Text>선택한 지도 유형의 일반적인 강 수이며, 깊은 강의 비율도 평소와 같습니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_LESS" Language="ko_KR">
-			<Text>강이 더 적게 생성됩니다.</Text>
+		<Replace Tag="LOC_ZG_RIVERS_WATERWAY_NAME" Language="ko_KR">
+			<Text>수로</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="ko_KR">
-			<Text>강이 더 많이 생성되며, 항행 가능한 강도 늘어납니다.</Text>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WATERWAY" Language="ko_KR">
+			<Text>강의 수는 표준이지만 깊은 강의 비율이 훨씬 높습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_STREAM_NAME" Language="ko_KR">
+			<Text>개울</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_STREAM" Language="ko_KR">
+			<Text>강이 많지만 깊은 강의 비율은 평소보다 훨씬 낮습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_RIVERLAND_NAME" Language="ko_KR">
+			<Text>하천 지대</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_RIVERLAND" Language="ko_KR">
+			<Text>강이 많으며, 깊은 강의 비율은 평소와 같습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DEEP_NAME" Language="ko_KR">
+			<Text>깊은 강</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEEP" Language="ko_KR">
+			<Text>강이 많고 깊은 강의 비율도 훨씬 높습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LOW_NAME" Language="ko_KR">
 			<Text>낮음</Text>

@@ -428,16 +428,58 @@
 			<Text>川</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION" Language="ja_JP">
-			<Text>マップ作成時に生成される川の数を設定します。</Text>
+			<Text>生成される河川の数と、そのうち小規模河川ではなく航行可能な河川になる割合を設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_WADI_NAME" Language="ja_JP">
+			<Text>涸れ川</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WADI" Language="ja_JP">
+			<Text>河川は少なく、航行可能な河川の割合も通常よりはるかに低くなります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_ARID_NAME" Language="ja_JP">
+			<Text>乾燥</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_ARID" Language="ja_JP">
+			<Text>河川は少なく、航行可能な河川の割合は通常どおりです。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_CHANNEL_NAME" Language="ja_JP">
+			<Text>河道</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_CHANNEL" Language="ja_JP">
+			<Text>河川は少ないものの、航行可能な河川の割合ははるかに高くなります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_SHALLOW_NAME" Language="ja_JP">
+			<Text>浅瀬</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_SHALLOW" Language="ja_JP">
+			<Text>河川の数は標準的で、航行可能な河川の割合は通常よりはるかに低くなります。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="ja_JP">
-			<Text>選択したマップタイプの標準的な川の生成。</Text>
+			<Text>選択したマップタイプの通常の河川数で、航行可能な河川の割合も通常どおりです。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_LESS" Language="ja_JP">
-			<Text>生成される川が少なくなります。</Text>
+		<Replace Tag="LOC_ZG_RIVERS_WATERWAY_NAME" Language="ja_JP">
+			<Text>水路</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="ja_JP">
-			<Text>生成される川が多くなり、航行可能な川も増えます。</Text>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WATERWAY" Language="ja_JP">
+			<Text>河川の数は標準的で、航行可能な河川の割合ははるかに高くなります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_STREAM_NAME" Language="ja_JP">
+			<Text>小川</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_STREAM" Language="ja_JP">
+			<Text>河川は多いものの、航行可能な河川の割合は通常よりはるかに低くなります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_RIVERLAND_NAME" Language="ja_JP">
+			<Text>河川地帯</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_RIVERLAND" Language="ja_JP">
+			<Text>河川は多く、航行可能な河川の割合は通常どおりです。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DEEP_NAME" Language="ja_JP">
+			<Text>深瀬</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEEP" Language="ja_JP">
+			<Text>河川は多く、航行可能な河川の割合もはるかに高くなります。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LOW_NAME" Language="ja_JP">
 			<Text>低</Text>

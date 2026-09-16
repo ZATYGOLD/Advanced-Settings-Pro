@@ -428,16 +428,58 @@
 			<Text>河流</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>設定建立地圖時生成的河流數量。</Text>
+			<Text>設定生成的河流數量，以及其中成為可航行河流而非小型河流的比例。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_WADI_NAME" Language="zh_Hant_HK">
+			<Text>旱谷</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WADI" Language="zh_Hant_HK">
+			<Text>河流稀少，可航行河流的比例也遠低於平常。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_ARID_NAME" Language="zh_Hant_HK">
+			<Text>乾旱</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_ARID" Language="zh_Hant_HK">
+			<Text>河流稀少，可航行河流的比例與平常相同。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_CHANNEL_NAME" Language="zh_Hant_HK">
+			<Text>河道</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_CHANNEL" Language="zh_Hant_HK">
+			<Text>河流稀少，但可航行河流的比例高得多。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_SHALLOW_NAME" Language="zh_Hant_HK">
+			<Text>淺水</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_SHALLOW" Language="zh_Hant_HK">
+			<Text>河流數量標準，但可航行河流的比例遠低於平常。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="zh_Hant_HK">
-			<Text>所選地圖類型的標準河流生成。</Text>
+			<Text>所選地圖類型的常規河流數量，可航行河流的比例也與平常相同。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_LESS" Language="zh_Hant_HK">
-			<Text>生成更少的河流。</Text>
+		<Replace Tag="LOC_ZG_RIVERS_WATERWAY_NAME" Language="zh_Hant_HK">
+			<Text>水路</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="zh_Hant_HK">
-			<Text>生成更多的河流，其中更多可通航。</Text>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WATERWAY" Language="zh_Hant_HK">
+			<Text>河流數量標準，但可航行河流的比例高得多。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_STREAM_NAME" Language="zh_Hant_HK">
+			<Text>溪流</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_STREAM" Language="zh_Hant_HK">
+			<Text>河流眾多，但可航行河流的比例遠低於平常。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_RIVERLAND_NAME" Language="zh_Hant_HK">
+			<Text>河流之地</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_RIVERLAND" Language="zh_Hant_HK">
+			<Text>河流眾多，可航行河流的比例與平常相同。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DEEP_NAME" Language="zh_Hant_HK">
+			<Text>深水</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEEP" Language="zh_Hant_HK">
+			<Text>河流眾多，可航行河流的比例也高得多。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LOW_NAME" Language="zh_Hant_HK">
 			<Text>低</Text>

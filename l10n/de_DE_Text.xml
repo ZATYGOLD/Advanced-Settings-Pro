@@ -428,16 +428,58 @@
 			<Text>Flüsse</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION" Language="de_DE">
-			<Text>Legt fest, wie viele Flüsse bei der Kartenerstellung generiert werden.</Text>
+			<Text>Legt fest, wie viele Flüsse generiert werden und welcher Anteil davon schiffbare Flüsse statt kleiner Flüsse sind.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_WADI_NAME" Language="de_DE">
+			<Text>Wadis</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WADI" Language="de_DE">
+			<Text>Wenige Flüsse, davon weit weniger schiffbar als üblich.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_ARID_NAME" Language="de_DE">
+			<Text>Trocken</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_ARID" Language="de_DE">
+			<Text>Wenige Flüsse, davon der übliche Anteil schiffbar.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_CHANNEL_NAME" Language="de_DE">
+			<Text>Fahrrinnen</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_CHANNEL" Language="de_DE">
+			<Text>Wenige Flüsse, davon weit mehr schiffbar.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_SHALLOW_NAME" Language="de_DE">
+			<Text>Seicht</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_SHALLOW" Language="de_DE">
+			<Text>Eine normale Anzahl Flüsse, davon weit weniger schiffbar als üblich.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="de_DE">
-			<Text>Standard-Flussgenerierung für den gewählten Kartentyp.</Text>
+			<Text>Die übliche Anzahl Flüsse für den gewählten Kartentyp, davon der übliche Anteil schiffbar.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_LESS" Language="de_DE">
-			<Text>Generiert weniger Flüsse.</Text>
+		<Replace Tag="LOC_ZG_RIVERS_WATERWAY_NAME" Language="de_DE">
+			<Text>Wasserstraßen</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="de_DE">
-			<Text>Generiert mehr Flüsse, von denen mehr schiffbar sind.</Text>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WATERWAY" Language="de_DE">
+			<Text>Eine normale Anzahl Flüsse, davon weit mehr schiffbar.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_STREAM_NAME" Language="de_DE">
+			<Text>Bäche</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_STREAM" Language="de_DE">
+			<Text>Viele Flüsse, davon weit weniger schiffbar als üblich.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_RIVERLAND_NAME" Language="de_DE">
+			<Text>Flussland</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_RIVERLAND" Language="de_DE">
+			<Text>Viele Flüsse, davon der übliche Anteil schiffbar.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DEEP_NAME" Language="de_DE">
+			<Text>Tief</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEEP" Language="de_DE">
+			<Text>Viele Flüsse, davon weit mehr schiffbar.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LOW_NAME" Language="de_DE">
 			<Text>Niedrig</Text>

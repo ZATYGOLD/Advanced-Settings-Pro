@@ -428,16 +428,58 @@
 			<Text>Rzeki</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION" Language="pl_PL">
-			<Text>Określa, ile rzek jest generowanych podczas tworzenia mapy.</Text>
+			<Text>Określa, ile rzek jest generowanych i jaka ich część to rzeki żeglowne zamiast pomniejszych rzek.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_WADI_NAME" Language="pl_PL">
+			<Text>Wadi</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WADI" Language="pl_PL">
+			<Text>Niewiele rzek, a żeglownych jest znacznie mniej niż zwykle.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_ARID_NAME" Language="pl_PL">
+			<Text>Susza</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_ARID" Language="pl_PL">
+			<Text>Niewiele rzek, a żeglowna jest zwykła ich część.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_CHANNEL_NAME" Language="pl_PL">
+			<Text>Koryta</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_CHANNEL" Language="pl_PL">
+			<Text>Niewiele rzek, ale znacznie więcej z nich jest żeglownych.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_SHALLOW_NAME" Language="pl_PL">
+			<Text>Płycizny</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_SHALLOW" Language="pl_PL">
+			<Text>Standardowa liczba rzek, ale żeglownych jest znacznie mniej niż zwykle.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="pl_PL">
-			<Text>Standardowe generowanie rzek dla wybranego typu mapy.</Text>
+			<Text>Zwykła liczba rzek dla wybranego typu mapy, a żeglowna jest zwykła ich część.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_LESS" Language="pl_PL">
-			<Text>Generuje mniej rzek.</Text>
+		<Replace Tag="LOC_ZG_RIVERS_WATERWAY_NAME" Language="pl_PL">
+			<Text>Drogi wodne</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="pl_PL">
-			<Text>Generuje więcej rzek, z których więcej jest żeglownych.</Text>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WATERWAY" Language="pl_PL">
+			<Text>Standardowa liczba rzek, ale znacznie więcej z nich jest żeglownych.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_STREAM_NAME" Language="pl_PL">
+			<Text>Strumienie</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_STREAM" Language="pl_PL">
+			<Text>Wiele rzek, ale żeglownych jest znacznie mniej niż zwykle.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_RIVERLAND_NAME" Language="pl_PL">
+			<Text>Kraina rzek</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_RIVERLAND" Language="pl_PL">
+			<Text>Wiele rzek, a żeglowna jest zwykła ich część.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DEEP_NAME" Language="pl_PL">
+			<Text>Głębiny</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEEP" Language="pl_PL">
+			<Text>Wiele rzek, a znacznie więcej z nich jest żeglownych.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LOW_NAME" Language="pl_PL">
 			<Text>Niskie</Text>

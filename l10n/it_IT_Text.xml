@@ -428,16 +428,58 @@
 			<Text>Fiumi</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION" Language="it_IT">
-			<Text>Determina quanti fiumi vengono generati alla creazione della mappa.</Text>
+			<Text>Determina quanti fiumi vengono generati e quale quota di essi è costituita da fiumi navigabili anziché da fiumi minori.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_WADI_NAME" Language="it_IT">
+			<Text>Uadi</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WADI" Language="it_IT">
+			<Text>Pochi fiumi, con molti meno di essi navigabili del solito.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_ARID_NAME" Language="it_IT">
+			<Text>Arido</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_ARID" Language="it_IT">
+			<Text>Pochi fiumi, con la consueta quota di essi navigabile.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_CHANNEL_NAME" Language="it_IT">
+			<Text>Canali</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_CHANNEL" Language="it_IT">
+			<Text>Pochi fiumi, con molti più di essi navigabili.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_SHALLOW_NAME" Language="it_IT">
+			<Text>Acque basse</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_SHALLOW" Language="it_IT">
+			<Text>Un numero normale di fiumi, con molti meno di essi navigabili del solito.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="it_IT">
-			<Text>Generazione standard dei fiumi per il tipo di mappa scelto.</Text>
+			<Text>Il consueto numero di fiumi per il tipo di mappa scelto, con la consueta quota di essi navigabile.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_LESS" Language="it_IT">
-			<Text>Genera meno fiumi.</Text>
+		<Replace Tag="LOC_ZG_RIVERS_WATERWAY_NAME" Language="it_IT">
+			<Text>Vie d'acqua</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="it_IT">
-			<Text>Genera più fiumi, e un numero maggiore è navigabile.</Text>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WATERWAY" Language="it_IT">
+			<Text>Un numero normale di fiumi, con molti più di essi navigabili.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_STREAM_NAME" Language="it_IT">
+			<Text>Ruscelli</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_STREAM" Language="it_IT">
+			<Text>Molti fiumi, con molti meno di essi navigabili del solito.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_RIVERLAND_NAME" Language="it_IT">
+			<Text>Terre fluviali</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_RIVERLAND" Language="it_IT">
+			<Text>Molti fiumi, con la consueta quota di essi navigabile.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DEEP_NAME" Language="it_IT">
+			<Text>Acque profonde</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEEP" Language="it_IT">
+			<Text>Molti fiumi, con molti più di essi navigabili.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LOW_NAME" Language="it_IT">
 			<Text>Basso</Text>

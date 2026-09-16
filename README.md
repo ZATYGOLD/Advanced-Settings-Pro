@@ -4,6 +4,12 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ## Version History
 
+### 0.8.3
+
+- Mountains now applies to the four Voronoi maps as well, so the setting covers all eleven map types; ranges are eroded from their edges or grown outward so they stay contiguous
+- Rivers now covers navigable water as well, replacing Less, Standard, and More with nine options that pair three river counts with three navigable shares: Wadis, Arid, Channels, Shallow, Standard, Waterways, Streams, Riverlands, and Deep
+- Removed unused imports across the map scripts and replaced a built SQL string in the conflict guard with a static query, matching the base game's own practice
+
 ### 0.8.2
 
 - Updated for the latest game patch, which consolidated the Voronoi maps' terrain generation into a single shared routine
@@ -108,7 +114,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Natural Wonder Selection: Enabled or Disabled for each of the 22 natural wonders, including DLC wonders
 - Map Temperature: Cold, Standard, or Hot (Hot extends the tropical band 8 degrees and the desert band 7 degrees toward the poles; Cold starts tundra 8 degrees closer to the equator; plains and grassland only shrink where those bands grow)
 - Lakes: Less, Standard, or More
-- Rivers: Less, Standard, or More
+- Rivers: sets both how many rivers are generated and what share of them are Navigable Rivers rather than Minor Rivers, as every pairing of three river counts with three navigable shares. The list is grouped by river count, fewest first. Few rivers: Wadis, Arid, or Channels. A standard number: Shallow, Standard, or Waterways. Many rivers: Streams, Riverlands, or Deep. Within each group the first has far fewer of those rivers navigable, the second keeps the game's own share, and the third has far more; Standard leaves generation entirely untouched
 - Mountains: Less, Standard, or More
 - Crises: Enabled or Disabled, driving the game's per-crisis selection
 - Crisis Timing: Early, Standard, or Late (Disabled while Crises is Disabled)
@@ -134,7 +140,7 @@ advanced-settings-pro.modinfo   Mod manifest: setup criteria and action groups
 config/                         Setup screen parameters (shell scope)
 data/                           Gameplay adjustments (game scope), grouped by system
 l10n/                           Localized text for the 11 non-English languages
-maps/                           Map script copies that apply the Rivers setting
+maps/                           Map script copies that apply the map generation settings
 text/                           English source strings and shared localization data
 ui/                             Shell scripts: mod conflict guard and setup rule sync
 ```
