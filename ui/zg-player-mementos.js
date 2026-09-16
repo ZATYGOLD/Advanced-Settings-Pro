@@ -411,13 +411,16 @@ const PlayerSetup = () => {
 // ------------------------------------------------------------ tab hook --
 
 const tabItem = ComponentRegistry.get("Tab.Item");
-const createPreviousTabItem = tabItem?.factory;
+// `factory` is a signal accessor returning the currently registered factory.
+// Read it once here to capture the previous implementation before this module
+// overrides the registration; reading it later would return our own factory.
+const createPreviousTabItem = tabItem?.factory?.();
 if (createPreviousTabItem) {
 	ComponentRegistry.register({
 		name: "Tab.Item",
 		overridePriority: OVERRIDE_PRIORITY,
 		createInstance: (props) => {
-			if (props.name != PLAYER_TAB_NAME) {
+			if (props?.name != PLAYER_TAB_NAME) {
 				return createPreviousTabItem(props);
 			}
 			return createPreviousTabItem(mergeProps(props, { body: () => createComponent(PlayerSetup, {}) }));

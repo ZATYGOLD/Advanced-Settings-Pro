@@ -25,7 +25,7 @@ function seedValues() {
 }
 
 function isSeedField(props) {
-	return typeof props.value == "function" && typeof props.setValue == "function"
+	return props != null && typeof props.value == "function" && typeof props.setValue == "function"
 		&& props.enableVirtualKeyboard === true && seedValues().includes(String(props.value()));
 }
 
@@ -34,7 +34,10 @@ function randomSeed() {
 }
 
 const textInput = ComponentRegistry.get("TextInput");
-const createBaseTextInput = textInput?.factory;
+// `factory` is a signal accessor returning the currently registered factory.
+// Read it once here to capture the base implementation before this module
+// overrides the registration; reading it later would return our own factory.
+const createBaseTextInput = textInput?.factory?.();
 if (createBaseTextInput) {
 	ComponentRegistry.register({
 		name: "TextInput",

@@ -4,6 +4,14 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ## Version History
 
+### 0.8.2
+
+- Updated for the latest game patch, which consolidated the Voronoi maps' terrain generation into a single shared routine
+- Rebuilt the four Voronoi map scripts (Continents and Islands, Pangaea, Fractal, Shattered Seas) on the new generation pipeline, so the Rivers and Biome settings keep applying on those maps
+- Fixed a black screen when opening leader selection: the patch changed the component registry so a registered component's `factory` is an accessor returning the current factory rather than the factory itself, which made the Player, Map and seed field overrides hand the interface a bare function
+- Setup screen overrides now tolerate being created without properties, so a future change of this kind cannot blank the screen
+- Fixed the per-age Age Length rows defaulting to a value outside their own list, which could leave them blank on the Pace tab
+
 ### 0.8.1
 
 - New Pace tab: Age Length, Age Progress Rate, Technology Cost, Civic Cost, City Growth, Roads, and Victory Project Cost, each with Antiquity, Exploration, and Modern rows

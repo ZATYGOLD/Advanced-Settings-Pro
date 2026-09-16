@@ -80,13 +80,16 @@ function tabBody(tab, body) {
 }
 
 const tabItem = ComponentRegistry.get("Tab.Item");
-const createBaseTabItem = tabItem?.factory;
+// `factory` is a signal accessor returning the currently registered factory.
+// Read it once here to capture the base implementation before this module
+// overrides the registration; reading it later would return our own factory.
+const createBaseTabItem = tabItem?.factory?.();
 if (createBaseTabItem) {
 	ComponentRegistry.register({
 		name: "Tab.Item",
 		overridePriority: OVERRIDE_PRIORITY,
 		createInstance: (props) => {
-			if (props.name != GENERAL_TAB_NAME || typeof props.body != "function") {
+			if (props?.name != GENERAL_TAB_NAME || typeof props?.body != "function") {
 				return createBaseTabItem(props);
 			}
 			const body = props.body;
