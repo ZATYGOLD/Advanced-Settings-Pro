@@ -303,6 +303,12 @@ setInterval(() => {
 	if (revision == lastRevision) {
 		return;
 	}
+	// A fresh setup screen restarts the revision counter. Forget what was rolled
+	// so the next game picks again, rather than keeping the last game's mementos
+	// for as long as the app stays open.
+	if (revision < lastRevision) {
+		rolledThisSession.clear();
+	}
 	lastRevision = revision;
 	for (const playerId of Configuration.getGame()?.participatingPlayerIDs ?? []) {
 		randomFlags(playerId).forEach((isRandom, slotIndex) => {

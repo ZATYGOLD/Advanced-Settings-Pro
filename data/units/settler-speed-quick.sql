@@ -1,6 +1,6 @@
 -- Currently only works for land based movement.
 UPDATE Units
-SET BaseMoves = 5
+SET BaseMoves = 4
 WHERE UnitType = 'UNIT_SETTLER'
     OR UnitType IN (
         SELECT CivUniqueUnitType

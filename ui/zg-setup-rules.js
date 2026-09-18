@@ -57,18 +57,66 @@ const SL_TIER_VALUES = {
 const AGE_LENGTH_PARAM_ID = "AgeLength";
 
 // Per-age value names for primaries whose age rows use a different scale.
+// A mapped value may be one name for every age, or one name per age
+// (Antiquity, Exploration, Modern) when the curated option differs by age.
 const AGE_LENGTH_AGE_NAMES = {
-	"LOC_ZG_AGE_LENGTH_BRIEF_NAME": "LOC_ZG_NUM_90",
 	"LOC_ADVANCED_OPTIONS_ABBREVIATED": "LOC_ZG_NUM_120",
 	"LOC_ADVANCED_OPTIONS_STANDARD": "LOC_ZG_NUM_140",
+	"LOC_ZG_BALANCED_NAME": ["LOC_ZG_NUM_153", "LOC_ZG_NUM_166", "LOC_ZG_NUM_196"],
 	"LOC_ADVANCED_OPTIONS_LONG": "LOC_ZG_NUM_160",
-	"LOC_ZG_AGE_LENGTH_DOUBLED_NAME": "LOC_ZG_NUM_280",
+	"LOC_ZG_SWIFT_NAME": ["LOC_ZG_NUM_90", "LOC_ZG_NUM_100", "LOC_ZG_NUM_110"],
+	"LOC_ZG_EXTENDED_NAME": ["LOC_ZG_NUM_240", "LOC_ZG_NUM_260", "LOC_ZG_NUM_280"],
 };
 const COST_AGE_NAMES = {
 	"LOC_ZG_LOW_NAME": "LOC_ZG_PCT_MINUS_25",
 	"LOC_ADVANCED_OPTIONS_STANDARD": "LOC_ADVANCED_OPTIONS_STANDARD",
+	"LOC_ZG_MEDIUM_NAME": "LOC_ZG_PCT_PLUS_25",
 	"LOC_ZG_HIGH_NAME": "LOC_ZG_PCT_PLUS_50",
 	"LOC_ZG_DOUBLE_NAME": "LOC_ZG_PCT_PLUS_100",
+};
+// Each setting's Balanced option expands to its own per-age shape, so the four
+// costs and the two speeds each need their own map rather than a shared one.
+const TECHNOLOGY_AGE_NAMES = {
+	...COST_AGE_NAMES,
+	// Front-loaded: dearer early, standard mid, cheaper late.
+	"LOC_ZG_BALANCED_NAME": ["LOC_ZG_PCT_PLUS_25", "LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ZG_PCT_MINUS_25"],
+	"LOC_ZG_SWIFT_NAME": ["LOC_ZG_PCT_MINUS_25", "LOC_ZG_PCT_MINUS_25", "LOC_ADVANCED_OPTIONS_STANDARD"],
+	"LOC_ZG_EXTENDED_NAME": ["LOC_ZG_PCT_PLUS_25", "LOC_ZG_PCT_PLUS_50", "LOC_ZG_PCT_PLUS_50"],
+};
+const CIVIC_AGE_NAMES = {
+	...COST_AGE_NAMES,
+	// Back-loaded: standard early, dearer once the tree opens up.
+	"LOC_ZG_BALANCED_NAME": ["LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ZG_PCT_PLUS_25", "LOC_ZG_PCT_PLUS_25"],
+	"LOC_ZG_SWIFT_NAME": ["LOC_ZG_PCT_MINUS_25", "LOC_ZG_PCT_MINUS_25", "LOC_ADVANCED_OPTIONS_STANDARD"],
+	"LOC_ZG_EXTENDED_NAME": ["LOC_ZG_PCT_PLUS_25", "LOC_ZG_PCT_PLUS_50", "LOC_ZG_PCT_PLUS_50"],
+};
+const VICTORY_AGE_NAMES = {
+	...COST_AGE_NAMES,
+	"LOC_ZG_BALANCED_NAME": ["LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ZG_PCT_MINUS_25", "LOC_ZG_PCT_MINUS_25"],
+	"LOC_ZG_SWIFT_NAME": ["LOC_ZG_PCT_MINUS_25", "LOC_ZG_PCT_MINUS_25", "LOC_ZG_PCT_MINUS_25"],
+	"LOC_ZG_EXTENDED_NAME": ["LOC_ZG_PCT_PLUS_25", "LOC_ZG_PCT_PLUS_25", "LOC_ZG_PCT_PLUS_25"],
+};
+// City Growth and Roads name their age rows by percentage, so Slow/Quick/Fast
+// have to be translated before they are written down to an age.
+const PACE_SPEED_AGE_NAMES = {
+	"LOC_ZG_SLOW_NAME": "LOC_ZG_PCT_PLUS_25",
+	"LOC_ADVANCED_OPTIONS_STANDARD": "LOC_ADVANCED_OPTIONS_STANDARD",
+	"LOC_ZG_QUICK_NAME": "LOC_ZG_PCT_MINUS_25",
+	"LOC_ZG_FAST_NAME": "LOC_ZG_PCT_MINUS_50",
+};
+const CITY_GROWTH_AGE_NAMES = {
+	...PACE_SPEED_AGE_NAMES,
+	// Cities catch up early, then settle to standard in Modern.
+	"LOC_ZG_BALANCED_NAME": ["LOC_ZG_PCT_MINUS_25", "LOC_ZG_PCT_MINUS_25", "LOC_ADVANCED_OPTIONS_STANDARD"],
+	"LOC_ZG_SWIFT_NAME": ["LOC_ZG_PCT_MINUS_25", "LOC_ZG_PCT_MINUS_25", "LOC_ZG_PCT_MINUS_25"],
+	"LOC_ZG_EXTENDED_NAME": ["LOC_ZG_PCT_PLUS_25", "LOC_ZG_PCT_PLUS_25", "LOC_ZG_PCT_PLUS_25"],
+};
+const ROADS_AGE_NAMES = {
+	...PACE_SPEED_AGE_NAMES,
+	// Roads only start to matter once the map is large and railroads arrive.
+	"LOC_ZG_BALANCED_NAME": ["LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ZG_PCT_MINUS_25"],
+	"LOC_ZG_SWIFT_NAME": ["LOC_ZG_PCT_MINUS_25", "LOC_ZG_PCT_MINUS_50", "LOC_ZG_PCT_MINUS_50"],
+	"LOC_ZG_EXTENDED_NAME": ["LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ZG_PCT_MINUS_25"],
 };
 
 // Primary settings whose per-age values are kept in step (rules 7 & 8).
@@ -78,11 +126,11 @@ const TIER_AGE_SYNCS = [
 	{ tierId: "LegacySets", ageIds: ["ZG_TriumphSetAntiquity", "ZG_TriumphSetExploration", "ZG_TriumphSetModern"], lastTier: null },
 	{ tierId: AGE_LENGTH_PARAM_ID, ageIds: ["ZG_AgeLengthAntiquity", "ZG_AgeLengthExploration", "ZG_AgeLengthModern"], ageNames: AGE_LENGTH_AGE_NAMES, lastTier: null },
 	{ tierId: "ZG_AgeProgressRate", ageIds: ["ZG_AgeProgressRateAntiquity", "ZG_AgeProgressRateExploration", "ZG_AgeProgressRateModern"], lastTier: null },
-	{ tierId: "ZG_TechnologyCost", ageIds: ["ZG_TechnologyCostAntiquity", "ZG_TechnologyCostExploration", "ZG_TechnologyCostModern"], ageNames: COST_AGE_NAMES, lastTier: null },
-	{ tierId: "ZG_CivicCost", ageIds: ["ZG_CivicCostAntiquity", "ZG_CivicCostExploration", "ZG_CivicCostModern"], ageNames: COST_AGE_NAMES, lastTier: null },
-	{ tierId: "ZG_CityGrowth", ageIds: ["ZG_CityGrowthAntiquity", "ZG_CityGrowthExploration", "ZG_CityGrowthModern"], lastTier: null },
-	{ tierId: "ZG_Roads", ageIds: ["ZG_RoadsAntiquity", "ZG_RoadsExploration", "ZG_RoadsModern"], lastTier: null },
-	{ tierId: "ZG_VictoryProjectCost", ageIds: ["ZG_VictoryProjectCostAntiquity", "ZG_VictoryProjectCostExploration", "ZG_VictoryProjectCostModern"], ageNames: COST_AGE_NAMES, lastTier: null },
+	{ tierId: "ZG_TechnologyCost", ageIds: ["ZG_TechnologyCostAntiquity", "ZG_TechnologyCostExploration", "ZG_TechnologyCostModern"], ageNames: TECHNOLOGY_AGE_NAMES, lastTier: null },
+	{ tierId: "ZG_CivicCost", ageIds: ["ZG_CivicCostAntiquity", "ZG_CivicCostExploration", "ZG_CivicCostModern"], ageNames: CIVIC_AGE_NAMES, lastTier: null },
+	{ tierId: "ZG_CityGrowth", ageIds: ["ZG_CityGrowthAntiquity", "ZG_CityGrowthExploration", "ZG_CityGrowthModern"], ageNames: CITY_GROWTH_AGE_NAMES, lastTier: null },
+	{ tierId: "ZG_Roads", ageIds: ["ZG_RoadsAntiquity", "ZG_RoadsExploration", "ZG_RoadsModern"], ageNames: ROADS_AGE_NAMES, lastTier: null },
+	{ tierId: "ZG_VictoryProjectCost", ageIds: ["ZG_VictoryProjectCostAntiquity", "ZG_VictoryProjectCostExploration", "ZG_VictoryProjectCostModern"], ageNames: VICTORY_AGE_NAMES, lastTier: null },
 ];
 
 // Pace Set presets (rules 9 & 10): each All Ages setting's value by name,
@@ -100,14 +148,42 @@ const PACE_STANDARD = {
 	ZG_VictoryProjectCost: "LOC_ADVANCED_OPTIONS_STANDARD",
 };
 const PACE_PRESETS = {
+	// A 90 point age with full price research would cut the tree short, so Swift
+	// scales the costs down with the age and lets cities grow into it faster.
+	"LOC_ZG_PACE_PRESET_SWIFT_NAME": {
+		...PACE_STANDARD,
+		[AGE_LENGTH_PARAM_ID]: "LOC_ZG_SWIFT_NAME",
+		ZG_TechnologyCost: "LOC_ZG_SWIFT_NAME",
+		ZG_CivicCost: "LOC_ZG_SWIFT_NAME",
+		ZG_CityGrowth: "LOC_ZG_SWIFT_NAME",
+		ZG_Roads: "LOC_ZG_SWIFT_NAME",
+		ZG_VictoryProjectCost: "LOC_ZG_SWIFT_NAME",
+	},
 	"LOC_ZG_PACE_PRESET_STANDARD_NAME": PACE_STANDARD,
-	// Eras+ Balanced Extended+: age caps 153/166/196, its milestone curve, 1.5x techs and civics.
+	// Eras+ Balanced Extended+: age caps 153/166/196, its milestone curve, 1.25x techs
+	// and civics, and cities that grow a quarter faster to keep pace with the longer ages.
+	// Triumph projects get 25% cheaper in the two later ages so the longer Exploration
+	// and Modern caps do not push a victory out of reach. Roads stay standard.
 	"LOC_ZG_PACE_PRESET_BALANCED_NAME": {
 		...PACE_STANDARD,
-		[AGE_LENGTH_PARAM_ID]: ["LOC_ZG_NUM_153", "LOC_ZG_NUM_166", "LOC_ZG_NUM_196"],
+		[AGE_LENGTH_PARAM_ID]: "LOC_ZG_BALANCED_NAME",
 		ZG_AgeProgressRate: "LOC_ZG_BALANCED_NAME",
-		ZG_TechnologyCost: "LOC_ZG_HIGH_NAME",
-		ZG_CivicCost: "LOC_ZG_HIGH_NAME",
+		ZG_TechnologyCost: "LOC_ZG_BALANCED_NAME",
+		ZG_CivicCost: "LOC_ZG_BALANCED_NAME",
+		ZG_CityGrowth: "LOC_ZG_BALANCED_NAME",
+		ZG_Roads: "LOC_ZG_BALANCED_NAME",
+		ZG_VictoryProjectCost: "LOC_ZG_BALANCED_NAME",
+	},
+	// A 280 point age runs out of tree long before it ends, so Extended raises the
+	// research and triumph costs to fill it.
+	"LOC_ZG_PACE_PRESET_EXTENDED_NAME": {
+		...PACE_STANDARD,
+		[AGE_LENGTH_PARAM_ID]: "LOC_ZG_EXTENDED_NAME",
+		ZG_TechnologyCost: "LOC_ZG_EXTENDED_NAME",
+		ZG_CivicCost: "LOC_ZG_EXTENDED_NAME",
+		ZG_CityGrowth: "LOC_ZG_EXTENDED_NAME",
+		ZG_Roads: "LOC_ZG_EXTENDED_NAME",
+		ZG_VictoryProjectCost: "LOC_ZG_EXTENDED_NAME",
 	},
 	// Eras+ MP Pace: age caps 140/155/190, its milestone curve, techs 1.35/1.5/1.75x,
 	// civics 1.45/1.6/1.85x, slightly slower growth, faster roads and Modern railroads,
@@ -119,7 +195,8 @@ const PACE_PRESETS = {
 		ZG_TechnologyCost: ["LOC_ZG_PCT_PLUS_35", "LOC_ZG_PCT_PLUS_50", "LOC_ZG_PCT_PLUS_75"],
 		ZG_CivicCost: ["LOC_ZG_PCT_PLUS_45", "LOC_ZG_PCT_PLUS_60", "LOC_ZG_PCT_PLUS_85"],
 		ZG_CityGrowth: "LOC_ZG_SLOW_NAME",
-		ZG_Roads: ["LOC_ZG_FAST_NAME", "LOC_ZG_FAST_NAME", "LOC_ZG_ROADS_EXPRESS_NAME"],
+		// Per-age Roads rows are named by percentage, so the preset matches on those.
+		ZG_Roads: ["LOC_ZG_PCT_MINUS_25", "LOC_ZG_PCT_MINUS_25", "LOC_ZG_PCT_MINUS_50"],
 		ZG_VictoryProjectCost: ["LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ZG_PCT_PLUS_20"],
 	},
 };
@@ -288,19 +365,21 @@ function syncTierWithAges(sync) {
 	}
 	const tier = currentValueName(tierParam);
 	const isCurated = tier != TIER_CUSTOM;
-	const ageName = sync.ageNames?.[tier] ?? tier;
+	const mapped = sync.ageNames?.[tier] ?? tier;
+	// A curated option is either one name shared by all three ages, or one per age.
+	const ageNameAt = (index) => Array.isArray(mapped) ? mapped[index] : mapped;
 
 	// 7: the player changed the tier; every age follows it.
 	if (sync.lastTier != null && tier != sync.lastTier) {
 		if (isCurated) {
-			sync.ageIds.forEach((id) => setParamByName(id, ageName));
+			sync.ageIds.forEach((id, index) => setParamByName(id, ageNameAt(index)));
 		}
 		sync.lastTier = tier;
 		return;
 	}
 	sync.lastTier = tier;
 	// 8: an age no longer matches the tier; switch to Custom.
-	if (isCurated && ageParams.some((param) => currentValueName(param) != ageName)) {
+	if (isCurated && ageParams.some((param, index) => currentValueName(param) != ageNameAt(index))) {
 		setParamByName(sync.tierId, TIER_CUSTOM);
 		sync.lastTier = TIER_CUSTOM;
 	}
@@ -455,32 +534,36 @@ setInterval(() => {
 	lastRevision = revision;
 	applying = true;
 	try {
-		syncNaturalWonderSetup();
-	} catch (e) {
-		console.warn(`ZG-ASP wonder sync error: ${e}`);
-	}
-	try {
-		syncSettlementLimits();
-	} catch (e) {
-		console.warn(`ZG-ASP settlement sync error: ${e}`);
-	}
-	try {
-		syncPaceMirror();
-		syncPacePreset();
-	} catch (e) {
-		console.warn(`ZG-ASP pace set sync error: ${e}`);
-	}
-	for (const sync of TIER_AGE_SYNCS) {
 		try {
-			syncTierWithAges(sync);
+			syncNaturalWonderSetup();
 		} catch (e) {
-			console.warn(`ZG-ASP ${sync.tierId} sync error: ${e}`);
+			console.warn(`ZG-ASP wonder sync error: ${e}`);
 		}
+		try {
+			syncSettlementLimits();
+		} catch (e) {
+			console.warn(`ZG-ASP settlement sync error: ${e}`);
+		}
+		try {
+			syncPaceMirror();
+			syncPacePreset();
+		} catch (e) {
+			console.warn(`ZG-ASP pace set sync error: ${e}`);
+		}
+		for (const sync of TIER_AGE_SYNCS) {
+			try {
+				syncTierWithAges(sync);
+			} catch (e) {
+				console.warn(`ZG-ASP ${sync.tierId} sync error: ${e}`);
+			}
+		}
+		try {
+			syncCrises();
+		} catch (e) {
+			console.warn(`ZG-ASP crises sync error: ${e}`);
+		}
+	} finally {
+		// Never leave the guard latched: a throw here would freeze every rule.
+		applying = false;
 	}
-	try {
-		syncCrises();
-	} catch (e) {
-		console.warn(`ZG-ASP crises sync error: ${e}`);
-	}
-	applying = false;
 }, POLL_MS);

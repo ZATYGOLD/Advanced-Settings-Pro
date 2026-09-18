@@ -13,8 +13,104 @@
 		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="ko_KR">
 			<Text>활성화</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_FAST" Language="ko_KR">
+			<Text>이 시대의 각 획득량이 1.5배가 됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_BALANCED" Language="ko_KR">
+			<Text>이 시대는 초반 이정표가 작고 후반이 큽니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_STANDARD" Language="ko_KR">
+			<Text>이 시대의 게임 기본 획득량입니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_SLOW" Language="ko_KR">
+			<Text>이 시대의 각 획득량이 절반이 됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WONDER_TOGGLE_DESCRIPTION_ENABLED" Language="ko_KR">
+			<Text>이 자연경관이 지도에 나타날 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WONDER_TOGGLE_DESCRIPTION_DISABLED" Language="ko_KR">
+			<Text>이 자연경관은 지도에 나타나지 않습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_50" Language="ko_KR">
+			<Text>이 시대의 승리 프로젝트 생산력 50% 증가.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_25" Language="ko_KR">
+			<Text>이 시대의 승리 프로젝트 생산력 25% 증가.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_20" Language="ko_KR">
+			<Text>이 시대의 승리 프로젝트 생산력 20% 증가.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_100" Language="ko_KR">
+			<Text>이 시대의 승리 프로젝트 생산력 100% 증가.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_MINUS_25" Language="ko_KR">
+			<Text>이 시대의 승리 프로젝트 생산력 25% 감소.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_85" Language="ko_KR">
+			<Text>이 시대의 과학 85% 증가.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_75" Language="ko_KR">
+			<Text>이 시대의 과학 75% 증가.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_60" Language="ko_KR">
+			<Text>이 시대의 과학 60% 증가.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_50" Language="ko_KR">
+			<Text>이 시대의 과학 50% 증가.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_45" Language="ko_KR">
+			<Text>이 시대의 과학 45% 증가.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_35" Language="ko_KR">
+			<Text>이 시대의 과학 35% 증가.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_25" Language="ko_KR">
+			<Text>이 시대의 과학 25% 증가.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_100" Language="ko_KR">
+			<Text>이 시대의 과학 100% 증가.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_MINUS_25" Language="ko_KR">
+			<Text>이 시대의 과학 25% 감소.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_VALUE_DESCRIPTION" Language="ko_KR">
+			<Text>이 시대에 보유할 수 있는 최대 정착지 수입니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_85" Language="ko_KR">
+			<Text>이 시대의 문화 85% 증가.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_75" Language="ko_KR">
+			<Text>이 시대의 문화 75% 증가.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_60" Language="ko_KR">
+			<Text>이 시대의 문화 60% 증가.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_50" Language="ko_KR">
+			<Text>이 시대의 문화 50% 증가.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_45" Language="ko_KR">
+			<Text>이 시대의 문화 45% 증가.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_35" Language="ko_KR">
+			<Text>이 시대의 문화 35% 증가.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_25" Language="ko_KR">
+			<Text>이 시대의 문화 25% 증가.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_100" Language="ko_KR">
+			<Text>이 시대의 문화 100% 증가.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_MINUS_25" Language="ko_KR">
+			<Text>이 시대의 문화 25% 감소.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION_ENABLED" Language="ko_KR">
+			<Text>아래 선택 목록의 모든 위기가 발생할 수 있습니다.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_DISABLED_NAME" Language="ko_KR">
 			<Text>비활성화</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION_DISABLED" Language="ko_KR">
+			<Text>위기가 발생하지 않습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_EARLY_NAME" Language="ko_KR">
 			<Text>이른</Text>
@@ -36,6 +132,9 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_FAST_NAME" Language="ko_KR">
 			<Text>빠름</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_QUICK_NAME" Language="ko_KR">
+			<Text>약간 빠름</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SLOW_NAME" Language="ko_KR">
 			<Text>느림</Text>
@@ -95,61 +194,76 @@
 			<Text>근대</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="ko_KR">
-			<Text>개척자의 기본 이동력과 승선 이동력을 설정합니다.</Text>
+			<Text>개척자가 육지와 바다에서 이동하는 거리를 설정합니다. 빠른 개척자는 경쟁자보다 먼저 먼 부지를 차지합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_SLOW" Language="ko_KR">
-			<Text>[BLIST][LI] 느림: 기본 2[icon:Action_Move], 승선 1[icon:Action_Move].[/BLIST]</Text>
+			<Text>기본 2[icon:Action_Move], 승선 1[icon:Action_Move].</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="ko_KR">
-			<Text>[BLIST][LI] 일반: 기본 3[icon:Action_Move], 승선 2[icon:Action_Move].[/BLIST]</Text>
+			<Text>기본 3[icon:Action_Move], 승선 2[icon:Action_Move].</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="ko_KR">
-			<Text>[BLIST][LI] 빠름: 기본 4[icon:Action_Move], 승선 3[icon:Action_Move].[/BLIST]</Text>
+			<Text>기본 5[icon:Action_Move], 승선 4[icon:Action_Move].</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_QUICK" Language="ko_KR">
+			<Text>기본 4[icon:Action_Move], 승선 3[icon:Action_Move].</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION" Language="ko_KR">
-			<Text>보물 호송대의 기본 이동력과 승선 이동력을 설정합니다.</Text>
+			<Text>보물 수송대가 육지와 바다에서 이동하는 거리를 설정합니다. 빠른 수송대는 약탈자에게 노출되는 시간이 짧습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_SLOW" Language="ko_KR">
-			<Text>[BLIST][LI] 느림: 기본 및 승선 이동력 1[icon:Action_Move].[/BLIST]</Text>
+			<Text>기본 및 승선 이동력 1[icon:Action_Move].</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="ko_KR">
-			<Text>[BLIST][LI] 일반: 기본 및 승선 이동력 2[icon:Action_Move].[/BLIST]</Text>
+			<Text>기본 및 승선 이동력 2[icon:Action_Move].</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="ko_KR">
-			<Text>[BLIST][LI] 빠름: 기본 및 승선 이동력 3[icon:Action_Move].[/BLIST]</Text>
+			<Text>기본 및 승선 이동력 4[icon:Action_Move].</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_QUICK" Language="ko_KR">
+			<Text>기본 및 승선 이동력 3[icon:Action_Move].</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION" Language="ko_KR">
-			<Text>[icon:INDEPENDENT_POWER]독립 세력의 초기 수를 설정합니다. 결과는 달라질 수 있습니다.[n]원하는 수만큼 생성을 시도하지만 정확한 수는 달라질 수 있습니다.[n]가능한 한 기대치에 가깝게 생성됩니다.</Text>
+			<Text>[icon:INDEPENDENT_POWER]독립 세력의 초기 수를 설정합니다.[n]지도는 최대한 이 수에 가깝게 배치하지만, 정확히 그 수가 되지 않을 수 있습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_NONE" Language="ko_KR">
-			<Text>[BLIST][LI] 없음: 독립 세력 0.[/BLIST]</Text>
+			<Text>독립 세력 0.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_LESS" Language="ko_KR">
-			<Text>[BLIST][LI] 적음: 문명당 독립 세력 2.[/BLIST]</Text>
+			<Text>문명당 독립 세력 2.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_DEFAULT" Language="ko_KR">
-			<Text>[BLIST][LI] 일반: 문명당 독립 세력 3.[/BLIST]</Text>
+			<Text>문명당 독립 세력 3.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_MORE" Language="ko_KR">
-			<Text>[BLIST][LI] 많음: 문명당 독립 세력 4.[/BLIST]</Text>
+			<Text>문명당 독립 세력 4.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION" Language="ko_KR">
-			<Text>독립 세력 간 최소 거리를 설정합니다.[n] 독립 세력의 총수에 영향을 줄 수 있습니다.</Text>
+			<Text>독립 세력 간 최소 거리를 설정합니다.[n]독립 세력의 총수에 영향을 줄 수 있습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_LESS" Language="ko_KR">
-			<Text>[BLIST][LI] 고대: 4타일.[LI] 대항해: 3타일.[LI] 근대: 2타일.[/BLIST]</Text>
+			<Text>독립 세력 사이 간격이 좁아져 더 많이 배치됩니다.[nn][BLIST]
+				[LI] 고대: 4타일
+				[LI] 대항해: 3타일
+				[LI] 근대: 2타일[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_DEFAULT" Language="ko_KR">
-			<Text>[BLIST][LI] 고대: 6타일.[LI] 대항해: 6타일.[LI] 근대: 4타일.[/BLIST]</Text>
+			<Text>게임 기본 독립 세력 간격입니다.[nn][BLIST]
+				[LI] 고대: 6타일
+				[LI] 대항해: 6타일
+				[LI] 근대: 4타일[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="ko_KR">
-			<Text>[BLIST][LI] 고대: 7타일.[LI] 대항해: 7타일.[LI] 근대: 5타일.[/BLIST]</Text>
+			<Text>독립 세력 사이 간격이 넓어져 더 적게 배치됩니다.[nn][BLIST]
+				[LI] 고대: 7타일
+				[LI] 대항해: 7타일
+				[LI] 근대: 5타일[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="ko_KR">
 			<Text>모든 자연재해를 비활성화합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_FREQUENCY_DESCRIPTION_CUSTOM" Language="ko_KR">
-			<Text>사용자 지정: 시대별로 재난 빈도를 개별 설정합니다.</Text>
+			<Text>시대별로 재난 빈도를 개별 설정합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_AGE_DESCRIPTION" Language="ko_KR">
 			<Text>이 시대의 재난 빈도를 설정합니다.[n]재난이 사용자 지정일 때만 적용됩니다.</Text>
@@ -158,40 +272,52 @@
 			<Text>각 시대의 초기 [icon:SETTLEMENT_LIMIT]정착지 제한을 설정합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_DEFAULT" Language="ko_KR">
-			<Text>[BLIST][LI] 고대: 정착지 제한 3.[LI] 대항해: 정착지 제한 8.[LI] 근대: 정착지 제한 16.[/BLIST]</Text>
+			<Text>게임 기본 정착지 상한입니다.[nn][BLIST]
+				[LI] 고대: 정착지 제한 3
+				[LI] 대항해: 정착지 제한 8
+				[LI] 근대: 정착지 제한 16[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_MORE" Language="ko_KR">
-			<Text>[BLIST][LI] 고대: 정착지 제한 5.[LI] 대항해: 정착지 제한 12.[LI] 근대: 정착지 제한 20.[/BLIST]</Text>
+			<Text>보유할 수 있는 정착지 상한이 더 높아집니다.[nn][BLIST]
+				[LI] 고대: 정착지 제한 5
+				[LI] 대항해: 정착지 제한 12
+				[LI] 근대: 정착지 제한 20[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_LESS" Language="ko_KR">
-			<Text>[BLIST][LI] 고대: 정착지 제한 1.[LI] 대항해: 정착지 제한 4.[LI] 근대: 정착지 제한 10.[/BLIST]</Text>
+			<Text>보유할 수 있는 정착지 상한이 더 낮아집니다.[nn][BLIST]
+				[LI] 고대: 정착지 제한 1
+				[LI] 대항해: 정착지 제한 4
+				[LI] 근대: 정착지 제한 10[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION" Language="ko_KR">
 			<Text>정착지 간 최소 거리를 설정합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_LESS" Language="ko_KR">
-			<Text>[BLIST][LI] 적음: 2타일.[/BLIST]</Text>
+			<Text>2타일.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_DEFAULT" Language="ko_KR">
-			<Text>[BLIST][LI] 일반: 3타일.[/BLIST]</Text>
+			<Text>3타일.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="ko_KR">
-			<Text>[BLIST][LI] 많음: 4타일.[/BLIST]</Text>
+			<Text>4타일.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="ko_KR">
-			<Text>전투 유닛의 생산 비용을 설정합니다.</Text>
+			<Text>전투 유닛의 생산력 비용을 설정합니다. 비용이 높을수록 상비군은 큰 투자가 됩니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_LOW" Language="ko_KR">
-			<Text>[BLIST][LI] 낮음: 25% 저렴.[/BLIST]</Text>
+			<Text>생산력 25% 감소. 전사: 30 대신 23. (일반 속도 기준)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="ko_KR">
-			<Text>[BLIST][LI] 일반: 할인 없음.[/BLIST]</Text>
+			<Text>게임 기본 유닛 비용 그대로입니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_HIGH" Language="ko_KR">
-			<Text>[BLIST][LI] 높음: 50% 비쌈.[/BLIST]</Text>
+			<Text>생산력 50% 증가. 전사: 30 대신 45. (일반 속도 기준)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_MEDIUM" Language="ko_KR">
+			<Text>생산력 25% 증가. 전사: 30 대신 38. (일반 속도 기준)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DOUBLE" Language="ko_KR">
-			<Text>[BLIST][LI] 2배: 100% 비쌈.[/BLIST]</Text>
+			<Text>생산력 2배. 전사: 30 대신 60. (일반 속도 기준)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="ko_KR">
 			<Text>모든 위기를 활성화 또는 비활성화합니다.[n]비활성화하면 위기 선택의 모든 위기가 꺼집니다.</Text>
@@ -203,34 +329,68 @@
 			<Text>위기가 발생하지 않습니다.[n]시기를 선택하려면 위기를 활성화로 설정하세요.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_EARLY" Language="ko_KR">
-			<Text>[BLIST][LI] 1단계: 50%에서 시작.[LI] 2단계: 65%에서 시작.[LI] 3단계: 85%에서 시작.[/BLIST]</Text>
+			<Text>각 위기 단계가 시대 내에서 더 일찍 시작됩니다.[nn][BLIST]
+				[LI] 1단계: 50%에서 시작
+				[LI] 2단계: 65%에서 시작
+				[LI] 3단계: 85%에서 시작[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DEFAULT" Language="ko_KR">
-			<Text>[BLIST][LI] 1단계: 70%에서 시작.[LI] 2단계: 80%에서 시작.[LI] 3단계: 90%에서 시작.[/BLIST]</Text>
+			<Text>게임 기본 위기 시점입니다.[nn][BLIST]
+				[LI] 1단계: 70%에서 시작
+				[LI] 2단계: 80%에서 시작
+				[LI] 3단계: 90%에서 시작[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_LATE" Language="ko_KR">
-			<Text>[BLIST][LI] 1단계: 85%에서 시작.[LI] 2단계: 90%에서 시작.[LI] 3단계: 95%에서 시작.[/BLIST]</Text>
+			<Text>각 위기 단계가 시대 내에서 더 늦게 시작됩니다.[nn][BLIST]
+				[LI] 1단계: 85%에서 시작
+				[LI] 2단계: 90%에서 시작
+				[LI] 3단계: 95%에서 시작[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="ko_KR">
 			<Text>지도의 [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER]자연경관 수를 설정합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE" Language="ko_KR">
-			<Text>지도 크기[n] [BLIST][LI] 아주 작음: 자연경관 0.[LI] 작음: 자연경관 0.[LI] 표준: 자연경관 0.[LI] 큼: 자연경관 0.[LI] 아주 큼: 자연경관 0.[/BLIST]</Text>
+			<Text>자연경관이 배치되지 않습니다.[nn][BLIST]
+				[LI] 아주 작음: 자연경관 0
+				[LI] 작음: 자연경관 0
+				[LI] 표준: 자연경관 0
+				[LI] 큼: 자연경관 0
+				[LI] 아주 큼: 자연경관 0[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF" Language="ko_KR">
-			<Text>지도 크기[n] [BLIST][LI] 아주 작음: 자연경관 1.[LI] 작음: 자연경관 2.[LI] 표준: 자연경관 2.[LI] 큼: 자연경관 3.[LI] 아주 큼: 자연경관 3.[/BLIST]</Text>
+			<Text>일반적인 수의 약 절반에 해당하는 자연경관.[nn][BLIST]
+				[LI] 아주 작음: 자연경관 1
+				[LI] 작음: 자연경관 2
+				[LI] 표준: 자연경관 2
+				[LI] 큼: 자연경관 3
+				[LI] 아주 큼: 자연경관 3[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DEFAULT" Language="ko_KR">
-			<Text>지도 크기[n] [BLIST][LI] 아주 작음: 자연경관 3.[LI] 작음: 자연경관 4.[LI] 표준: 자연경관 5.[LI] 큼: 자연경관 6.[LI] 아주 큼: 자연경관 7.[/BLIST]</Text>
+			<Text>일반적인 수의 자연경관.[nn][BLIST]
+				[LI] 아주 작음: 자연경관 3
+				[LI] 작음: 자연경관 4
+				[LI] 표준: 자연경관 5
+				[LI] 큼: 자연경관 6
+				[LI] 아주 큼: 자연경관 7[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE" Language="ko_KR">
-			<Text>지도 크기[n] [BLIST][LI] 아주 작음: 자연경관 5.[LI] 작음: 자연경관 6.[LI] 표준: 자연경관 8.[LI] 큼: 자연경관 9.[LI] 아주 큼: 자연경관 11.[/BLIST]</Text>
+			<Text>일반적인 수보다 훨씬 많은 자연경관.[nn][BLIST]
+				[LI] 아주 작음: 자연경관 5
+				[LI] 작음: 자연경관 6
+				[LI] 표준: 자연경관 8
+				[LI] 큼: 자연경관 9
+				[LI] 아주 큼: 자연경관 11[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE" Language="ko_KR">
-			<Text>지도 크기[n] [BLIST][LI] 아주 작음: 자연경관 6.[LI] 작음: 자연경관 8.[LI] 표준: 자연경관 10.[LI] 큼: 자연경관 12.[LI] 아주 큼: 자연경관 14.[/BLIST]</Text>
+			<Text>일반적인 수의 2배에 해당하는 자연경관.[nn][BLIST]
+				[LI] 아주 작음: 자연경관 6
+				[LI] 작음: 자연경관 8
+				[LI] 표준: 자연경관 10
+				[LI] 큼: 자연경관 12
+				[LI] 아주 큼: 자연경관 14[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION" Language="ko_KR">
-			<Text>지도의 호수 빈도를 설정합니다. 결과는 달라질 수 있습니다.[n] 호수 수 조정을 시도합니다.[n] 다만 지도 생성 과정에서 기본값으로 되돌아갈 수 있습니다.</Text>
+			<Text>지도가 생성하는 호수의 수를 설정합니다.[n]지도 생성이 이를 무시할 수 있어 결과가 달라질 수 있습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_LESS" Language="ko_KR">
 			<Text>호수가 더 적게 생성됩니다.</Text>
@@ -283,11 +443,8 @@
 		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="ko_KR">
 			<Text>페이스 설정</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_FASTER_NAME" Language="ko_KR">
-			<Text>더 빠름</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM" Language="ko_KR">
-			<Text>사용자 지정: 각 시대는 아래 시대 그룹의 해당 행을 사용합니다.</Text>
+			<Text>각 시대는 아래 시대 그룹의 해당 행을 사용합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="ko_KR">
 			<Text>이 시대의 값을 정합니다.[n]페이스 설정의 해당 행이 사용자 지정일 때만 적용됩니다. 페이스 세트 프리셋이 이 행들을 채우며, 하나를 바꾸면 페이스 세트가 사용자 지정으로 바뀝니다.</Text>
@@ -296,91 +453,319 @@
 			<Text>시대 진행 속도</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION" Language="ko_KR">
-			<Text>이정표와 미래 기술 및 사회 제도가 시대 게이지를 채우는 속도를 설정합니다.</Text>
+			<Text>시대 게이지가 차는 속도입니다. 레거시 경로의 각 이정표와 미래 기술·사회 제도가 점수를 더하며, 시대를 끝내는 총합은 시대 길이가 정합니다.[n]이정표 수치는 각 시대의 첫 번째, 두 번째, 세 번째입니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_NAME" Language="ko_KR">
 			<Text>기술 비용</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION" Language="ko_KR">
-			<Text>기술의 연구 비용을 설정합니다.</Text>
+			<Text>각 기술에 필요한 과학을 설정합니다. 비용이 높을수록 시대가 길어지고, 낮을수록 기술 트리를 빠르게 내려갈 수 있습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_NAME" Language="ko_KR">
 			<Text>사회 제도 비용</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION" Language="ko_KR">
-			<Text>사회 제도의 문화 비용을 설정합니다.</Text>
+			<Text>각 사회 제도에 필요한 문화를 설정합니다. 비용이 높을수록 시대가 길어지고, 낮을수록 트리를 빠르게 내려갈 수 있습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_NAME" Language="ko_KR">
 			<Text>도시 성장</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION" Language="ko_KR">
-			<Text>도시 성장에 필요한 식량을 설정합니다.</Text>
+			<Text>도시가 시민 한 명을 늘리는 데 필요한 식량을 설정합니다. 요구치가 낮을수록 인구 10을 훨씬 일찍 넘어섭니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_NAME" Language="ko_KR">
 			<Text>도로</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION" Language="ko_KR">
-			<Text>도로와 철도의 이동 비용을 설정합니다.</Text>
+			<Text>도로와 철도를 따라 이동할 때의 이동력 소모를 설정합니다. 도로가 저렴할수록 군대가 영토를 훨씬 적은 턴에 가로지릅니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_NAME" Language="ko_KR">
 			<Text>승리 프로젝트 비용</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION" Language="ko_KR">
-			<Text>모든 시대의 과학 및 군사 승리 프로젝트의 생산 비용을 정합니다.</Text>
+			<Text>과학 및 군사 승리 프로젝트 12종의 생산력 비용을 설정합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="ko_KR">
-			<Text>[BLIST][LI] 느림: 포인트 50% 감소.[/BLIST]</Text>
+			<Text>각 획득량이 절반이 되어 시대가 더 오래 이어집니다.[nn][BLIST]
+				[LI] 고대: 3, 3, 5
+				[LI] 대항해: 3, 5, 10
+				[LI] 근대: 3, 5[/BLIST][nn]미래 기술과 사회 제도: 각 5점.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD" Language="ko_KR">
-			<Text>[BLIST][LI] 일반: 변경 없음.[/BLIST]</Text>
+			<Text>게임 기본 획득량 그대로입니다.[nn][BLIST]
+				[LI] 고대: 5, 5, 10
+				[LI] 대항해: 5, 10, 20
+				[LI] 근대: 5, 10[/BLIST][nn]미래 기술과 사회 제도: 각 10점.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST" Language="ko_KR">
-			<Text>[BLIST][LI] 빠름: 포인트 50% 증가.[/BLIST]</Text>
+			<Text>각 획득량이 1.5배가 되어 시대가 더 빨리 끝납니다.[nn][BLIST]
+				[LI] 고대: 8, 8, 15
+				[LI] 대항해: 8, 15, 30
+				[LI] 근대: 8, 15[/BLIST][nn]미래 기술과 사회 제도: 각 15점.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_LOW" Language="ko_KR">
-			<Text>[BLIST][LI] 낮음: 25% 저렴.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_LOW" Language="ko_KR">
+			<Text>생산력 25% 감소.[n]각 승리 프로젝트 비용: [BLIST]
+				[LI] 별자리 지도 작성: 338
+				[LI] 구형 지구: 450
+				[LI] 지동설: 563
+				[LI] 미적분학 발명: 675
+				[LI] 음속 장벽 돌파: 750
+				[LI] 인공위성 발사: 750
+				[LI] 핵무기 생산: 750
+				[LI] 대양 횡단 비행: 750
+				[LI] 전파망원경: 900
+				[LI] 유인 우주 비행 준비: 1500
+				[LI] 아이비 작전: 1800
+				[LI] 유인 우주 비행: 2250[/BLIST][nn](일반 속도 기준)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_LOW" Language="ko_KR">
+			<Text>문화 25% 감소. 족장제: 90 대신 68. (일반 속도 기준)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_LOW" Language="ko_KR">
+			<Text>과학 25% 감소. 도예: 70 대신 53. (일반 속도 기준)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COST_DESCRIPTION_STANDARD" Language="ko_KR">
-			<Text>[BLIST][LI] 일반: 변경 없음.[/BLIST]</Text>
+			<Text>게임 기본 비용 그대로입니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_HIGH" Language="ko_KR">
-			<Text>[BLIST][LI] 높음: 50% 비쌈.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_STANDARD" Language="ko_KR">
+			<Text>게임 기본 비용 그대로입니다.[n]각 승리 프로젝트 비용: [BLIST]
+				[LI] 별자리 지도 작성: 450
+				[LI] 구형 지구: 600
+				[LI] 지동설: 750
+				[LI] 미적분학 발명: 900
+				[LI] 음속 장벽 돌파: 1000
+				[LI] 인공위성 발사: 1000
+				[LI] 핵무기 생산: 1000
+				[LI] 대양 횡단 비행: 1000
+				[LI] 전파망원경: 1200
+				[LI] 유인 우주 비행 준비: 2000
+				[LI] 아이비 작전: 2400
+				[LI] 유인 우주 비행: 3000[/BLIST][nn](일반 속도 기준)</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_DOUBLE" Language="ko_KR">
-			<Text>[BLIST][LI] 2배: 100% 비쌈.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_BALANCED" Language="ko_KR">
+			<Text>고대에는 일반 수준이고, 이후 승리 프로젝트가 저렴해집니다.[nn][BLIST]
+				[LI] 고대: 일반
+				[LI] 대항해: -25%
+				[LI] 근대: -25%[/BLIST][nn]시대별 비용 (고대 / 대항해 / 근대): [BLIST]
+				[LI] 별자리 지도 작성: 450 / 338 / 338
+				[LI] 구형 지구: 600 / 450 / 450
+				[LI] 지동설: 750 / 563 / 563
+				[LI] 미적분학 발명: 900 / 675 / 675
+				[LI] 음속 장벽 돌파: 1000 / 750 / 750
+				[LI] 인공위성 발사: 1000 / 750 / 750
+				[LI] 핵무기 생산: 1000 / 750 / 750
+				[LI] 대양 횡단 비행: 1000 / 750 / 750
+				[LI] 전파망원경: 1200 / 900 / 900
+				[LI] 유인 우주 비행 준비: 2000 / 1500 / 1500
+				[LI] 아이비 작전: 2400 / 1800 / 1800
+				[LI] 유인 우주 비행: 3000 / 2250 / 2250[/BLIST][nn](일반 속도 기준)</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOWER" Language="ko_KR">
-			<Text>[BLIST][LI] 더 느림: 도시가 더 느리게 성장합니다.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_EXTENDED" Language="ko_KR">
+			<Text>모든 시대에서 승리 프로젝트 비용이 높아집니다.[nn][BLIST]
+				[LI] 고대: +25%
+				[LI] 대항해: +25%
+				[LI] 근대: +25%[/BLIST][nn]시대별 비용 (고대 / 대항해 / 근대): [BLIST]
+				[LI] 별자리 지도 작성: 563 / 563 / 563
+				[LI] 구형 지구: 750 / 750 / 750
+				[LI] 지동설: 938 / 938 / 938
+				[LI] 미적분학 발명: 1125 / 1125 / 1125
+				[LI] 음속 장벽 돌파: 1250 / 1250 / 1250
+				[LI] 인공위성 발사: 1250 / 1250 / 1250
+				[LI] 핵무기 생산: 1250 / 1250 / 1250
+				[LI] 대양 횡단 비행: 1250 / 1250 / 1250
+				[LI] 전파망원경: 1500 / 1500 / 1500
+				[LI] 유인 우주 비행 준비: 2500 / 2500 / 2500
+				[LI] 아이비 작전: 3000 / 3000 / 3000
+				[LI] 유인 우주 비행: 3750 / 3750 / 3750[/BLIST][nn](일반 속도 기준)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_SWIFT" Language="ko_KR">
+			<Text>모든 시대에서 승리 프로젝트 비용이 낮아집니다.[nn][BLIST]
+				[LI] 고대: -25%
+				[LI] 대항해: -25%
+				[LI] 근대: -25%[/BLIST][nn]시대별 비용 (고대 / 대항해 / 근대): [BLIST]
+				[LI] 별자리 지도 작성: 338 / 338 / 338
+				[LI] 구형 지구: 450 / 450 / 450
+				[LI] 지동설: 563 / 563 / 563
+				[LI] 미적분학 발명: 675 / 675 / 675
+				[LI] 음속 장벽 돌파: 750 / 750 / 750
+				[LI] 인공위성 발사: 750 / 750 / 750
+				[LI] 핵무기 생산: 750 / 750 / 750
+				[LI] 대양 횡단 비행: 750 / 750 / 750
+				[LI] 전파망원경: 900 / 900 / 900
+				[LI] 유인 우주 비행 준비: 1500 / 1500 / 1500
+				[LI] 아이비 작전: 1800 / 1800 / 1800
+				[LI] 유인 우주 비행: 2250 / 2250 / 2250[/BLIST][nn](일반 속도 기준)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="ko_KR">
+			<Text>게임 기본 비용 그대로입니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="ko_KR">
+			<Text>초반 사회 제도는 일반 수준이고, 트리가 넓어질수록 비싸집니다.[nn][BLIST]
+				[LI] 고대: 일반
+				[LI] 대항해: +25%
+				[LI] 근대: +25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_EXTENDED" Language="ko_KR">
+			<Text>모든 시대에서 사회 제도 비용이 오르며, 고대 이후에는 크게 오릅니다.[nn][BLIST]
+				[LI] 고대: +25%
+				[LI] 대항해: +50%
+				[LI] 근대: +50%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_SWIFT" Language="ko_KR">
+			<Text>초반 사회 제도 비용이 저렴하고, 근대부터는 일반 수준입니다.[nn][BLIST]
+				[LI] 고대: -25%
+				[LI] 대항해: -25%
+				[LI] 근대: 일반[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="ko_KR">
+			<Text>게임 기본 비용 그대로입니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="ko_KR">
+			<Text>초반 연구 비용이 비싸고, 트리가 넓어질수록 저렴해집니다.[nn][BLIST]
+				[LI] 고대: +25%
+				[LI] 대항해: 일반
+				[LI] 근대: -25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_EXTENDED" Language="ko_KR">
+			<Text>모든 시대에서 연구 비용이 오르며, 고대 이후에는 크게 오릅니다.[nn][BLIST]
+				[LI] 고대: +25%
+				[LI] 대항해: +50%
+				[LI] 근대: +50%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_SWIFT" Language="ko_KR">
+			<Text>초반 연구 비용이 저렴하고, 근대부터는 일반 수준입니다.[nn][BLIST]
+				[LI] 고대: -25%
+				[LI] 대항해: -25%
+				[LI] 근대: 일반[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_HIGH" Language="ko_KR">
+			<Text>생산력 50% 증가.[n]각 승리 프로젝트 비용: [BLIST]
+				[LI] 별자리 지도 작성: 675
+				[LI] 구형 지구: 900
+				[LI] 지동설: 1125
+				[LI] 미적분학 발명: 1350
+				[LI] 음속 장벽 돌파: 1500
+				[LI] 인공위성 발사: 1500
+				[LI] 핵무기 생산: 1500
+				[LI] 대양 횡단 비행: 1500
+				[LI] 전파망원경: 1800
+				[LI] 유인 우주 비행 준비: 3000
+				[LI] 아이비 작전: 3600
+				[LI] 유인 우주 비행: 4500[/BLIST][nn](일반 속도 기준)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_HIGH" Language="ko_KR">
+			<Text>문화 50% 증가. 족장제: 90 대신 135. (일반 속도 기준)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_HIGH" Language="ko_KR">
+			<Text>과학 50% 증가. 도예: 70 대신 105. (일반 속도 기준)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_MEDIUM" Language="ko_KR">
+			<Text>생산력 25% 증가.[n]각 승리 프로젝트 비용: [BLIST]
+				[LI] 별자리 지도 작성: 563
+				[LI] 구형 지구: 750
+				[LI] 지동설: 938
+				[LI] 미적분학 발명: 1125
+				[LI] 음속 장벽 돌파: 1250
+				[LI] 인공위성 발사: 1250
+				[LI] 핵무기 생산: 1250
+				[LI] 대양 횡단 비행: 1250
+				[LI] 전파망원경: 1500
+				[LI] 유인 우주 비행 준비: 2500
+				[LI] 아이비 작전: 3000
+				[LI] 유인 우주 비행: 3750[/BLIST][nn](일반 속도 기준)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_MEDIUM" Language="ko_KR">
+			<Text>문화 25% 증가. 족장제: 90 대신 113. (일반 속도 기준)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_MEDIUM" Language="ko_KR">
+			<Text>과학 25% 증가. 도예: 70 대신 88. (일반 속도 기준)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_DOUBLE" Language="ko_KR">
+			<Text>생산력 2배.[n]각 승리 프로젝트 비용: [BLIST]
+				[LI] 별자리 지도 작성: 900
+				[LI] 구형 지구: 1200
+				[LI] 지동설: 1500
+				[LI] 미적분학 발명: 1800
+				[LI] 음속 장벽 돌파: 2000
+				[LI] 인공위성 발사: 2000
+				[LI] 핵무기 생산: 2000
+				[LI] 대양 횡단 비행: 2000
+				[LI] 전파망원경: 2400
+				[LI] 유인 우주 비행 준비: 4000
+				[LI] 아이비 작전: 4800
+				[LI] 유인 우주 비행: 6000[/BLIST][nn](일반 속도 기준)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_DOUBLE" Language="ko_KR">
+			<Text>문화 2배. 족장제: 90 대신 180. (일반 속도 기준)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_DOUBLE" Language="ko_KR">
+			<Text>과학 2배. 도예: 70 대신 140. (일반 속도 기준)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW" Language="ko_KR">
-			<Text>[BLIST][LI] 느림: 도시가 조금 더 느리게 성장합니다.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SLOWER_NAME" Language="ko_KR">
-			<Text>더 느림</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_ROADS_EXPRESS_NAME" Language="ko_KR">
-			<Text>급행</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXPRESS" Language="ko_KR">
-			<Text>[BLIST][LI] 급행: 도로 이동 비용 25% 감소, 철도 50% 감소.[/BLIST]</Text>
+			<Text>시민당 식량 25% 증가.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED" Language="ko_KR">
-			<Text>[BLIST][LI] 균형: 이정표가 고대에서 4, 7, 11점, 탐험에서 4, 8, 12점, 근대에서 4, 8점을 줍니다. 미래 기술과 사회 제도는 8점(근대는 7점)을 줍니다.[/BLIST]</Text>
+			<Text>초반 이정표는 작고 후반은 크게 하여, 초반 몰아치기만으로 시대가 끝나지 않게 합니다.[nn][BLIST]
+				[LI] 고대: 4, 7, 11
+				[LI] 대항해: 4, 8, 12
+				[LI] 근대: 4, 8[/BLIST][nn]미래 기술과 사회 제도: 8점, 근대에는 7점.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="ko_KR">
-			<Text>[BLIST][LI] 일반: 변경 없음.[/BLIST]</Text>
+			<Text>변경 없음.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="ko_KR">
+			<Text>초반에는 도시가 빠르게 성장하다가 이후 일반 수준으로 돌아옵니다.[nn][BLIST]
+				[LI] 고대: -25%
+				[LI] 대항해: -25%
+				[LI] 근대: 일반[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_EXTENDED" Language="ko_KR">
+			<Text>모든 시대에서 도시가 더 느리게 성장합니다.[nn][BLIST]
+				[LI] 고대: +25%
+				[LI] 대항해: +25%
+				[LI] 근대: +25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SWIFT" Language="ko_KR">
+			<Text>모든 시대에서 도시가 더 빠르게 성장합니다.[nn][BLIST]
+				[LI] 고대: -25%
+				[LI] 대항해: -25%
+				[LI] 근대: -25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="ko_KR">
-			<Text>[BLIST][LI] 빠름: 도시가 더 빠르게 성장합니다.[/BLIST]</Text>
+			<Text>시민당 식량 50% 감소.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_QUICK" Language="ko_KR">
+			<Text>시민당 식량 25% 감소.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD" Language="ko_KR">
-			<Text>[BLIST][LI] 일반: 변경 없음.[/BLIST]</Text>
+			<Text>변경 없음.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_BALANCED" Language="ko_KR">
+			<Text>근대까지는 일반 도로이고, 이후에는 저렴해집니다.[nn][BLIST]
+				[LI] 고대: 일반
+				[LI] 대항해: 일반
+				[LI] 근대: -25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXTENDED" Language="ko_KR">
+			<Text>근대까지는 일반 도로이고, 이후에는 저렴해집니다.[nn][BLIST]
+				[LI] 고대: 일반
+				[LI] 대항해: 일반
+				[LI] 근대: -25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SWIFT" Language="ko_KR">
+			<Text>지도가 넓어질수록 도로 이동 비용이 낮아집니다.[nn][BLIST]
+				[LI] 고대: -25%
+				[LI] 대항해: -50%
+				[LI] 근대: -50%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SLOW" Language="ko_KR">
+			<Text>타일당 이동력 25% 증가.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_FAST" Language="ko_KR">
-			<Text>[BLIST][LI] 빠름: 이동 비용 25% 감소.[/BLIST]</Text>
+			<Text>타일당 이동력 50% 감소.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_FASTER" Language="ko_KR">
-			<Text>[BLIST][LI] 더 빠름: 이동 비용 50% 감소.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_QUICK" Language="ko_KR">
+			<Text>타일당 이동력 25% 감소.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="ko_KR">
 			<Text>무작위 기념품</Text>
@@ -398,7 +783,7 @@
 			<Text>이 시대의 개가 세트를 설정합니다.[n]개가 세트가 사용자 지정일 때만 적용됩니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM" Language="ko_KR">
-			<Text>사용자 지정: 시대별로 정착지 제한을 개별 설정합니다.</Text>
+			<Text>시대별로 정착지 제한을 개별 설정합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="ko_KR">
 			<Text>이 시대의 정착지 제한을 설정합니다.[n]정착지 제한이 사용자 지정일 때만 적용됩니다.</Text>
@@ -416,13 +801,13 @@
 			<Text>고온</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="ko_KR">
-			<Text>한랭: 툰드라가 적도에 더 가까운 곳에서 시작되며 그만큼 초원이 줄어듭니다.</Text>
+			<Text>툰드라가 적도에 더 가까운 곳에서 시작되며 그만큼 초원이 줄어듭니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="ko_KR">
 			<Text>선택한 맵 유형의 표준 기후입니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="ko_KR">
-			<Text>고온: 열대와 사막이 적도에서 더 멀리까지 뻗으며 그만큼 평원과 초원이 줄어듭니다.</Text>
+			<Text>열대와 사막이 적도에서 더 멀리까지 뻗으며 그만큼 평원과 초원이 줄어듭니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="ko_KR">
 			<Text>강</Text>
@@ -487,23 +872,29 @@
 		<Replace Tag="LOC_ZG_HIGH_NAME" Language="ko_KR">
 			<Text>높음</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MEDIUM_NAME" Language="ko_KR">
+			<Text>중간</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME" Language="ko_KR">
 			<Text>민간 유닛 비용</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="ko_KR">
-			<Text>민간 유닛의 생산 비용을 설정합니다.</Text>
+			<Text>개척자나 상인 같은 민간 유닛의 생산력 비용을 설정합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_LOW" Language="ko_KR">
-			<Text>[BLIST][LI] 낮음: 25% 저렴.[/BLIST]</Text>
+			<Text>생산력 25% 감소. 개척자: 50 대신 38. (일반 속도 기준)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="ko_KR">
-			<Text>[BLIST][LI] 일반: 할인 없음.[/BLIST]</Text>
+			<Text>게임 기본 유닛 비용 그대로입니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_HIGH" Language="ko_KR">
-			<Text>[BLIST][LI] 높음: 50% 비쌈.[/BLIST]</Text>
+			<Text>생산력 50% 증가. 개척자: 50 대신 75. (일반 속도 기준)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_MEDIUM" Language="ko_KR">
+			<Text>생산력 25% 증가. 개척자: 50 대신 63. (일반 속도 기준)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE" Language="ko_KR">
-			<Text>[BLIST][LI] 2배: 100% 비쌈.[/BLIST]</Text>
+			<Text>생산력 2배. 개척자: 50 대신 100. (일반 속도 기준)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="ko_KR">
 			<Text>온라인 2.0</Text>
@@ -517,137 +908,266 @@
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="ko_KR">
 			<Text>매우 느린 속도입니다. 표준보다 400% 느립니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_NAME" Language="ko_KR">
-			<Text>짧음</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_NAME" Language="ko_KR">
-			<Text>2배</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="ko_KR">
-			<Text>사용자 지정: 각 시대는 아래 해당 그룹의 시대 길이 행을 사용합니다. 균형은 153, 166, 196점, 멀티플레이어는 140, 155, 190점으로 맞춥니다.</Text>
+			<Text>각 시대는 아래 해당 그룹의 시대 길이 행을 사용합니다. 균형은 153, 166, 196점, 멀티플레이어는 140, 155, 190점으로 맞춥니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="ko_KR">
+			<Text>긴 시대이며, 뒤로 갈수록 더 길어집니다.[nn][BLIST]
+				[LI] 고대: 153점
+				[LI] 대항해: 166점
+				[LI] 근대: 196점[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_EXTENDED_DESC" Language="ko_KR">
+			<Text>매우 긴 시대로, 길게 즐기는 게임에 적합합니다.[nn][BLIST]
+				[LI] 고대: 240점
+				[LI] 대항해: 260점
+				[LI] 근대: 280점[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_SWIFT_DESC" Language="ko_KR">
+			<Text>짧은 시대이며, 게임이 진행될수록 조금씩 길어집니다.[nn][BLIST]
+				[LI] 고대: 90점
+				[LI] 대항해: 100점
+				[LI] 근대: 110점[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_90" Language="ko_KR">
-			<Text>[BLIST][LI] Online 2.0: 36 포인트.[LI] Online: 45 포인트.[LI] Quick: 60 포인트.[LI] Standard: 90 포인트.[LI] Epic: 135 포인트.[LI] Marathon: 270 포인트.[LI] Marathon 2.0: 450 포인트.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 36 포인트
+				[LI] Online: 45 포인트
+				[LI] Quick: 60 포인트
+				[LI] Standard: 90 포인트
+				[LI] Epic: 135 포인트
+				[LI] Marathon: 270 포인트
+				[LI] Marathon 2.0: 450 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100" Language="ko_KR">
-			<Text>[BLIST][LI] Online 2.0: 40 포인트.[LI] Online: 50 포인트.[LI] Quick: 67 포인트.[LI] Standard: 100 포인트.[LI] Epic: 150 포인트.[LI] Marathon: 300 포인트.[LI] Marathon 2.0: 500 포인트.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 40 포인트
+				[LI] Online: 50 포인트
+				[LI] Quick: 67 포인트
+				[LI] Standard: 100 포인트
+				[LI] Epic: 150 포인트
+				[LI] Marathon: 300 포인트
+				[LI] Marathon 2.0: 500 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110" Language="ko_KR">
-			<Text>[BLIST][LI] Online 2.0: 44 포인트.[LI] Online: 55 포인트.[LI] Quick: 73 포인트.[LI] Standard: 110 포인트.[LI] Epic: 165 포인트.[LI] Marathon: 330 포인트.[LI] Marathon 2.0: 550 포인트.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 44 포인트
+				[LI] Online: 55 포인트
+				[LI] Quick: 73 포인트
+				[LI] Standard: 110 포인트
+				[LI] Epic: 165 포인트
+				[LI] Marathon: 330 포인트
+				[LI] Marathon 2.0: 550 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120" Language="ko_KR">
-			<Text>[BLIST][LI] Online 2.0: 48 포인트.[LI] Online: 60 포인트.[LI] Quick: 80 포인트.[LI] Standard: 120 포인트.[LI] Epic: 180 포인트.[LI] Marathon: 360 포인트.[LI] Marathon 2.0: 600 포인트.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 48 포인트
+				[LI] Online: 60 포인트
+				[LI] Quick: 80 포인트
+				[LI] Standard: 120 포인트
+				[LI] Epic: 180 포인트
+				[LI] Marathon: 360 포인트
+				[LI] Marathon 2.0: 600 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130" Language="ko_KR">
-			<Text>[BLIST][LI] Online 2.0: 52 포인트.[LI] Online: 65 포인트.[LI] Quick: 87 포인트.[LI] Standard: 130 포인트.[LI] Epic: 195 포인트.[LI] Marathon: 390 포인트.[LI] Marathon 2.0: 650 포인트.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 52 포인트
+				[LI] Online: 65 포인트
+				[LI] Quick: 87 포인트
+				[LI] Standard: 130 포인트
+				[LI] Epic: 195 포인트
+				[LI] Marathon: 390 포인트
+				[LI] Marathon 2.0: 650 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140" Language="ko_KR">
-			<Text>[BLIST][LI] Online 2.0: 56 포인트.[LI] Online: 70 포인트.[LI] Quick: 93 포인트.[LI] Standard: 140 포인트.[LI] Epic: 210 포인트.[LI] Marathon: 420 포인트.[LI] Marathon 2.0: 700 포인트.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 56 포인트
+				[LI] Online: 70 포인트
+				[LI] Quick: 93 포인트
+				[LI] Standard: 140 포인트
+				[LI] Epic: 210 포인트
+				[LI] Marathon: 420 포인트
+				[LI] Marathon 2.0: 700 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150" Language="ko_KR">
-			<Text>[BLIST][LI] Online 2.0: 60 포인트.[LI] Online: 75 포인트.[LI] Quick: 100 포인트.[LI] Standard: 150 포인트.[LI] Epic: 225 포인트.[LI] Marathon: 450 포인트.[LI] Marathon 2.0: 750 포인트.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 60 포인트
+				[LI] Online: 75 포인트
+				[LI] Quick: 100 포인트
+				[LI] Standard: 150 포인트
+				[LI] Epic: 225 포인트
+				[LI] Marathon: 450 포인트
+				[LI] Marathon 2.0: 750 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153" Language="ko_KR">
-			<Text>[BLIST][LI] Online 2.0: 61 포인트.[LI] Online: 76 포인트.[LI] Quick: 102 포인트.[LI] Standard: 153 포인트.[LI] Epic: 230 포인트.[LI] Marathon: 459 포인트.[LI] Marathon 2.0: 765 포인트.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 61 포인트
+				[LI] Online: 76 포인트
+				[LI] Quick: 102 포인트
+				[LI] Standard: 153 포인트
+				[LI] Epic: 230 포인트
+				[LI] Marathon: 459 포인트
+				[LI] Marathon 2.0: 765 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155" Language="ko_KR">
-			<Text>[BLIST][LI] Online 2.0: 62 포인트.[LI] Online: 78 포인트.[LI] Quick: 103 포인트.[LI] Standard: 155 포인트.[LI] Epic: 232 포인트.[LI] Marathon: 465 포인트.[LI] Marathon 2.0: 775 포인트.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 62 포인트
+				[LI] Online: 78 포인트
+				[LI] Quick: 103 포인트
+				[LI] Standard: 155 포인트
+				[LI] Epic: 232 포인트
+				[LI] Marathon: 465 포인트
+				[LI] Marathon 2.0: 775 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="ko_KR">
-			<Text>[BLIST][LI] Online 2.0: 64 포인트.[LI] Online: 80 포인트.[LI] Quick: 107 포인트.[LI] Standard: 160 포인트.[LI] Epic: 240 포인트.[LI] Marathon: 480 포인트.[LI] Marathon 2.0: 800 포인트.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 64 포인트
+				[LI] Online: 80 포인트
+				[LI] Quick: 107 포인트
+				[LI] Standard: 160 포인트
+				[LI] Epic: 240 포인트
+				[LI] Marathon: 480 포인트
+				[LI] Marathon 2.0: 800 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166" Language="ko_KR">
-			<Text>[BLIST][LI] Online 2.0: 66 포인트.[LI] Online: 83 포인트.[LI] Quick: 111 포인트.[LI] Standard: 166 포인트.[LI] Epic: 249 포인트.[LI] Marathon: 498 포인트.[LI] Marathon 2.0: 830 포인트.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 66 포인트
+				[LI] Online: 83 포인트
+				[LI] Quick: 111 포인트
+				[LI] Standard: 166 포인트
+				[LI] Epic: 249 포인트
+				[LI] Marathon: 498 포인트
+				[LI] Marathon 2.0: 830 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="ko_KR">
-			<Text>[BLIST][LI] Online 2.0: 68 포인트.[LI] Online: 85 포인트.[LI] Quick: 113 포인트.[LI] Standard: 170 포인트.[LI] Epic: 255 포인트.[LI] Marathon: 510 포인트.[LI] Marathon 2.0: 850 포인트.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 68 포인트
+				[LI] Online: 85 포인트
+				[LI] Quick: 113 포인트
+				[LI] Standard: 170 포인트
+				[LI] Epic: 255 포인트
+				[LI] Marathon: 510 포인트
+				[LI] Marathon 2.0: 850 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180" Language="ko_KR">
-			<Text>[BLIST][LI] Online 2.0: 72 포인트.[LI] Online: 90 포인트.[LI] Quick: 120 포인트.[LI] Standard: 180 포인트.[LI] Epic: 270 포인트.[LI] Marathon: 540 포인트.[LI] Marathon 2.0: 900 포인트.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 72 포인트
+				[LI] Online: 90 포인트
+				[LI] Quick: 120 포인트
+				[LI] Standard: 180 포인트
+				[LI] Epic: 270 포인트
+				[LI] Marathon: 540 포인트
+				[LI] Marathon 2.0: 900 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190" Language="ko_KR">
-			<Text>[BLIST][LI] Online 2.0: 76 포인트.[LI] Online: 95 포인트.[LI] Quick: 127 포인트.[LI] Standard: 190 포인트.[LI] Epic: 285 포인트.[LI] Marathon: 570 포인트.[LI] Marathon 2.0: 950 포인트.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 76 포인트
+				[LI] Online: 95 포인트
+				[LI] Quick: 127 포인트
+				[LI] Standard: 190 포인트
+				[LI] Epic: 285 포인트
+				[LI] Marathon: 570 포인트
+				[LI] Marathon 2.0: 950 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196" Language="ko_KR">
-			<Text>[BLIST][LI] Online 2.0: 78 포인트.[LI] Online: 98 포인트.[LI] Quick: 131 포인트.[LI] Standard: 196 포인트.[LI] Epic: 294 포인트.[LI] Marathon: 588 포인트.[LI] Marathon 2.0: 980 포인트.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 78 포인트
+				[LI] Online: 98 포인트
+				[LI] Quick: 131 포인트
+				[LI] Standard: 196 포인트
+				[LI] Epic: 294 포인트
+				[LI] Marathon: 588 포인트
+				[LI] Marathon 2.0: 980 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="ko_KR">
-			<Text>[BLIST][LI] Online 2.0: 80 포인트.[LI] Online: 100 포인트.[LI] Quick: 133 포인트.[LI] Standard: 200 포인트.[LI] Epic: 300 포인트.[LI] Marathon: 600 포인트.[LI] Marathon 2.0: 1000 포인트.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 80 포인트
+				[LI] Online: 100 포인트
+				[LI] Quick: 133 포인트
+				[LI] Standard: 200 포인트
+				[LI] Epic: 300 포인트
+				[LI] Marathon: 600 포인트
+				[LI] Marathon 2.0: 1000 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220" Language="ko_KR">
-			<Text>[BLIST][LI] Online 2.0: 88 포인트.[LI] Online: 110 포인트.[LI] Quick: 147 포인트.[LI] Standard: 220 포인트.[LI] Epic: 330 포인트.[LI] Marathon: 660 포인트.[LI] Marathon 2.0: 1100 포인트.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 88 포인트
+				[LI] Online: 110 포인트
+				[LI] Quick: 147 포인트
+				[LI] Standard: 220 포인트
+				[LI] Epic: 330 포인트
+				[LI] Marathon: 660 포인트
+				[LI] Marathon 2.0: 1100 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240" Language="ko_KR">
-			<Text>[BLIST][LI] Online 2.0: 96 포인트.[LI] Online: 120 포인트.[LI] Quick: 160 포인트.[LI] Standard: 240 포인트.[LI] Epic: 360 포인트.[LI] Marathon: 720 포인트.[LI] Marathon 2.0: 1200 포인트.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 96 포인트
+				[LI] Online: 120 포인트
+				[LI] Quick: 160 포인트
+				[LI] Standard: 240 포인트
+				[LI] Epic: 360 포인트
+				[LI] Marathon: 720 포인트
+				[LI] Marathon 2.0: 1200 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260" Language="ko_KR">
-			<Text>[BLIST][LI] Online 2.0: 104 포인트.[LI] Online: 130 포인트.[LI] Quick: 173 포인트.[LI] Standard: 260 포인트.[LI] Epic: 390 포인트.[LI] Marathon: 780 포인트.[LI] Marathon 2.0: 1300 포인트.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 104 포인트
+				[LI] Online: 130 포인트
+				[LI] Quick: 173 포인트
+				[LI] Standard: 260 포인트
+				[LI] Epic: 390 포인트
+				[LI] Marathon: 780 포인트
+				[LI] Marathon 2.0: 1300 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280" Language="ko_KR">
-			<Text>[BLIST][LI] Online 2.0: 112 포인트.[LI] Online: 140 포인트.[LI] Quick: 187 포인트.[LI] Standard: 280 포인트.[LI] Epic: 420 포인트.[LI] Marathon: 840 포인트.[LI] Marathon 2.0: 1400 포인트.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 112 포인트
+				[LI] Online: 140 포인트
+				[LI] Quick: 187 포인트
+				[LI] Standard: 280 포인트
+				[LI] Epic: 420 포인트
+				[LI] Marathon: 840 포인트
+				[LI] Marathon 2.0: 1400 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300" Language="ko_KR">
-			<Text>[BLIST][LI] Online 2.0: 120 포인트.[LI] Online: 150 포인트.[LI] Quick: 200 포인트.[LI] Standard: 300 포인트.[LI] Epic: 450 포인트.[LI] Marathon: 900 포인트.[LI] Marathon 2.0: 1500 포인트.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="ko_KR">
-			<Text> 시대가 더 빨리 종료됩니다.
-				[n] [BLIST]
-				[LI] Online 2.0: 36 포인트.
-				[LI] Online: 45 포인트.
-				[LI] Quick: 60 포인트.
-				[LI] Standard: 90 포인트.
-				[LI] Epic: 135 포인트.
-				[LI] Marathon: 270 포인트.
-				[LI] Marathon 2.0: 450 포인트.[/BLIST]
-			</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="ko_KR">
-			<Text> 시대가 더 오래 지속됩니다.
-				[n] [BLIST]
-				[LI] Online 2.0: 112 포인트.
-				[LI] Online: 140 포인트.
-				[LI] Quick: 187 포인트.
-				[LI] Standard: 280 포인트.
-				[LI] Epic: 420 포인트.
-				[LI] Marathon: 840 포인트.
-				[LI] Marathon 2.0: 1400 포인트.[/BLIST]
-			</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 120 포인트
+				[LI] Online: 150 포인트
+				[LI] Quick: 200 포인트
+				[LI] Standard: 300 포인트
+				[LI] Epic: 450 포인트
+				[LI] Marathon: 900 포인트
+				[LI] Marathon 2.0: 1500 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="ko_KR">
-			<Text> 시대가 조금 더 빨리 종료됩니다.
-				[n] [BLIST]
-				[LI] Online 2.0: 48 포인트.
-				[LI] Online: 60 포인트.
-				[LI] Quick: 80 포인트.
-				[LI] Standard: 120 포인트.
-				[LI] Epic: 180 포인트.
-				[LI] Marathon: 360 포인트.
-				[LI] Marathon 2.0: 600 포인트.[/BLIST]
-			</Text>
+			<Text>시대가 조금 더 빨리 종료됩니다.[nn][BLIST]
+				[LI] Online 2.0: 48점
+				[LI] Online: 60점
+				[LI] Quick: 80점
+				[LI] Standard: 120점
+				[LI] Epic: 180점
+				[LI] Marathon: 360점
+				[LI] Marathon 2.0: 600점[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="ko_KR">
-			<Text> 표준 시대 길이입니다.
-				[n] [BLIST]
-				[LI] Online 2.0: 56 포인트.
-				[LI] Online: 70 포인트.
-				[LI] Quick: 93 포인트.
-				[LI] Standard: 140 포인트.
-				[LI] Epic: 210 포인트.
-				[LI] Marathon: 420 포인트.
-				[LI] Marathon 2.0: 700 포인트.[/BLIST]
-			</Text>
+			<Text>표준 시대 길이입니다.[nn][BLIST]
+				[LI] Online 2.0: 56점
+				[LI] Online: 70점
+				[LI] Quick: 93점
+				[LI] Standard: 140점
+				[LI] Epic: 210점
+				[LI] Marathon: 420점
+				[LI] Marathon 2.0: 700점[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="ko_KR">
-			<Text> 시대가 조금 더 오래 지속됩니다.
-				[n] [BLIST]
-				[LI] Online 2.0: 64 포인트.
-				[LI] Online: 80 포인트.
-				[LI] Quick: 107 포인트.
-				[LI] Standard: 160 포인트.
-				[LI] Epic: 240 포인트.
-				[LI] Marathon: 480 포인트.
-				[LI] Marathon 2.0: 800 포인트.[/BLIST]
-			</Text>
+			<Text>시대가 조금 더 오래 지속됩니다.[nn][BLIST]
+				[LI] Online 2.0: 64점
+				[LI] Online: 80점
+				[LI] Quick: 107점
+				[LI] Standard: 160점
+				[LI] Epic: 240점
+				[LI] Marathon: 480점
+				[LI] Marathon 2.0: 800점[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="ko_KR">
 			<Text>독립 세력 공격성</Text>
@@ -694,6 +1214,12 @@
 		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="ko_KR">
 			<Text>균형</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_EXTENDED_NAME" Language="ko_KR">
+			<Text>장기</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SWIFT_NAME" Language="ko_KR">
+			<Text>신속</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_BALANCED_NAME" Language="ko_KR">
 			<Text>균형 페이스</Text>
 		</Replace>
@@ -706,17 +1232,57 @@
 		<Replace Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME" Language="ko_KR">
 			<Text>표준 페이스</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_EXTENDED_NAME" Language="ko_KR">
+			<Text>장기 페이스</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_SWIFT_NAME" Language="ko_KR">
+			<Text>신속 페이스</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD" Language="ko_KR">
-			<Text>표준 페이스: 게임 본연의 페이스입니다. 페이스 설정을 전부 표준으로 맞춥니다.</Text>
+			<Text>모든 페이스 설정이 일반 값으로 유지됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_EXTENDED" Language="ko_KR">
+			<Text>매우 긴 시대를 채우도록 비용을 높인 구성입니다.[nn][BLIST]
+				[LI] 시대 길이: 장기
+				[LI] 시대 진행 속도: 일반
+				[LI] 기술 비용: 장기
+				[LI] 사회 제도 비용: 장기
+				[LI] 도시 성장: 장기
+				[LI] 도로: 장기
+				[LI] 승리 프로젝트 비용: 장기[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT" Language="ko_KR">
+			<Text>짧은 시대에 맞춰 비용도 낮춘 구성입니다.[nn][BLIST]
+				[LI] 시대 길이: 신속
+				[LI] 시대 진행 속도: 일반
+				[LI] 기술 비용: 신속
+				[LI] 사회 제도 비용: 신속
+				[LI] 도시 성장: 신속
+				[LI] 도로: 신속
+				[LI] 승리 프로젝트 비용: 신속[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="ko_KR">
-			<Text>균형 페이스: 에픽 스타일의 연구로 더 긴 시대를 즐깁니다. 시대 길이를 시대별로 153, 166, 196점, 시대 진행 속도를 균형, 기술 비용과 사회 제도 비용을 높음으로 맞춥니다.</Text>
+			<Text>긴 시대에 맞춰 연구와 성장을 조정한 구성입니다.[nn][BLIST]
+				[LI] 시대 길이: 균형
+				[LI] 시대 진행 속도: 균형
+				[LI] 기술 비용: 균형
+				[LI] 사회 제도 비용: 균형
+				[LI] 도시 성장: 균형
+				[LI] 도로: 균형
+				[LI] 승리 프로젝트 비용: 균형[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="ko_KR">
-			<Text>멀티플레이어 페이스: 세션에 맞춘 가벼운 연장입니다. 시대 길이를 시대별로 140, 155, 190점, 시대 진행 속도를 균형, 기술 비용을 시대별로 +35%, +50%, +75%, 사회 제도 비용을 +45%, +60%, +85%, 도시 성장을 느림, 도로를 빠름(근대는 급행), 근대의 승리 프로젝트 비용을 +20%로 맞춥니다.</Text>
+			<Text>한 자리에서 끝내는 세션에 맞춘 구성입니다.[nn][BLIST]
+				[LI] 시대 길이: 140 / 155 / 190
+				[LI] 시대 진행 속도: 균형
+				[LI] 기술 비용: +35% / +50% / +75%
+				[LI] 사회 제도 비용: +45% / +60% / +85%
+				[LI] 도시 성장: 느림
+				[LI] 도로: -25% / -25% / -50%
+				[LI] 승리 프로젝트 비용: 일반 / 일반 / +20%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="ko_KR">
-			<Text>사용자 지정 페이스: 페이스 탭의 페이스 설정이 더 이상 어떤 프리셋과도 일치하지 않습니다.</Text>
+			<Text>페이스 탭의 페이스 설정이 더 이상 어떤 프리셋과도 일치하지 않습니다.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

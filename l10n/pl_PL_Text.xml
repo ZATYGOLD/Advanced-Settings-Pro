@@ -13,8 +13,104 @@
 		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="pl_PL">
 			<Text>Włączone</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_FAST" Language="pl_PL">
+			<Text>Każda nagroda w tej epoce daje o połowę więcej.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_BALANCED" Language="pl_PL">
+			<Text>Mniejsze wczesne i większe późniejsze kamienie milowe w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_STANDARD" Language="pl_PL">
+			<Text>Własne nagrody gry dla tej epoki.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_SLOW" Language="pl_PL">
+			<Text>Każda nagroda w tej epoce daje o połowę mniej.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WONDER_TOGGLE_DESCRIPTION_ENABLED" Language="pl_PL">
+			<Text>Ten cud natury może pojawić się na mapie.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WONDER_TOGGLE_DESCRIPTION_DISABLED" Language="pl_PL">
+			<Text>Ten cud natury nie pojawi się na mapie.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_50" Language="pl_PL">
+			<Text>50% więcej produkcji na projekty zwycięstwa w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_25" Language="pl_PL">
+			<Text>25% więcej produkcji na projekty zwycięstwa w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_20" Language="pl_PL">
+			<Text>20% więcej produkcji na projekty zwycięstwa w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_100" Language="pl_PL">
+			<Text>100% więcej produkcji na projekty zwycięstwa w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_MINUS_25" Language="pl_PL">
+			<Text>25% mniej produkcji na projekty zwycięstwa w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_85" Language="pl_PL">
+			<Text>85% więcej nauki w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_75" Language="pl_PL">
+			<Text>75% więcej nauki w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_60" Language="pl_PL">
+			<Text>60% więcej nauki w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_50" Language="pl_PL">
+			<Text>50% więcej nauki w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_45" Language="pl_PL">
+			<Text>45% więcej nauki w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_35" Language="pl_PL">
+			<Text>35% więcej nauki w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_25" Language="pl_PL">
+			<Text>25% więcej nauki w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_100" Language="pl_PL">
+			<Text>100% więcej nauki w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_MINUS_25" Language="pl_PL">
+			<Text>25% mniej nauki w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_VALUE_DESCRIPTION" Language="pl_PL">
+			<Text>Największa liczba osad, jakie możesz posiadać w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_85" Language="pl_PL">
+			<Text>85% więcej kultury w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_75" Language="pl_PL">
+			<Text>75% więcej kultury w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_60" Language="pl_PL">
+			<Text>60% więcej kultury w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_50" Language="pl_PL">
+			<Text>50% więcej kultury w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_45" Language="pl_PL">
+			<Text>45% więcej kultury w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_35" Language="pl_PL">
+			<Text>35% więcej kultury w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_25" Language="pl_PL">
+			<Text>25% więcej kultury w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_100" Language="pl_PL">
+			<Text>100% więcej kultury w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_MINUS_25" Language="pl_PL">
+			<Text>25% mniej kultury w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION_ENABLED" Language="pl_PL">
+			<Text>Może wystąpić każdy kryzys z poniższego wyboru.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_DISABLED_NAME" Language="pl_PL">
 			<Text>Wyłączone</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION_DISABLED" Language="pl_PL">
+			<Text>Nie występują żadne kryzysy.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_EARLY_NAME" Language="pl_PL">
 			<Text>Wcześnie</Text>
@@ -36,6 +132,9 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_FAST_NAME" Language="pl_PL">
 			<Text>Szybko</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_QUICK_NAME" Language="pl_PL">
+			<Text>Sprawnie</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SLOW_NAME" Language="pl_PL">
 			<Text>Wolno</Text>
@@ -95,61 +194,76 @@
 			<Text>Epoka nowożytna</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="pl_PL">
-			<Text>Określa ruch bazowy i ruch na wodzie osadnika.</Text>
+			<Text>Określa, jak daleko osadnicy poruszają się lądem i morzem. Szybsi osadnicy docierają do odległych miejsc przed rywalem.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_SLOW" Language="pl_PL">
-			<Text>[BLIST][LI] Wolno: 2[icon:Action_Move]bazowego i 1[icon:Action_Move]ruchu na wodzie.[/BLIST]</Text>
+			<Text>2[icon:Action_Move]bazowego i 1[icon:Action_Move]ruchu na wodzie.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="pl_PL">
-			<Text>[BLIST][LI] Standardowe: 3[icon:Action_Move]bazowego i 2[icon:Action_Move]ruchu na wodzie.[/BLIST]</Text>
+			<Text>3[icon:Action_Move]bazowego i 2[icon:Action_Move]ruchu na wodzie.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="pl_PL">
-			<Text>[BLIST][LI] Szybko: 4[icon:Action_Move]bazowego i 3[icon:Action_Move]ruchu na wodzie.[/BLIST]</Text>
+			<Text>5[icon:Action_Move]bazowego i 4[icon:Action_Move]ruchu na wodzie.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_QUICK" Language="pl_PL">
+			<Text>4[icon:Action_Move]bazowego i 3[icon:Action_Move]ruchu na wodzie.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION" Language="pl_PL">
-			<Text>Określa ruch bazowy i ruch na wodzie konwoju skarbów.</Text>
+			<Text>Określa, jak daleko konwoje skarbów poruszają się lądem i morzem. Szybsze konwoje krócej są narażone na najeźdźców.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_SLOW" Language="pl_PL">
-			<Text>[BLIST][LI] Wolno: 1[icon:Action_Move]ruchu bazowego i na wodzie.[/BLIST]</Text>
+			<Text>1[icon:Action_Move]ruchu bazowego i na wodzie.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="pl_PL">
-			<Text>[BLIST][LI] Standardowe: 2[icon:Action_Move]ruchu bazowego i na wodzie.[/BLIST]</Text>
+			<Text>2[icon:Action_Move]ruchu bazowego i na wodzie.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="pl_PL">
-			<Text>[BLIST][LI] Szybko: 3[icon:Action_Move]ruchu bazowego i na wodzie.[/BLIST]</Text>
+			<Text>4[icon:Action_Move]ruchu bazowego i na wodzie.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_QUICK" Language="pl_PL">
+			<Text>3[icon:Action_Move]ruchu bazowego i na wodzie.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION" Language="pl_PL">
-			<Text>Określa początkową liczbę [icon:INDEPENDENT_POWER]niezależnych mocarstw. Wyniki mogą się różnić.[n]Gra spróbuje utworzyć żądaną liczbę, ale dokładna wartość może się różnić.[n]Wynik będzie możliwie najbliższy oczekiwanemu.</Text>
+			<Text>Ustala początkową liczbę [icon:INDEPENDENT_POWER]niezależnych potęg.[n]Mapa zbliża się do niej najbardziej jak może, ale może nie umieścić dokładnie tylu.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_NONE" Language="pl_PL">
-			<Text>[BLIST][LI] Brak: 0 niezależnych mocarstw.[/BLIST]</Text>
+			<Text>0 niezależnych mocarstw.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_LESS" Language="pl_PL">
-			<Text>[BLIST][LI] Mniej: 2 niezależnych mocarstw na cywilizację.[/BLIST]</Text>
+			<Text>2 niezależnych mocarstw na cywilizację.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_DEFAULT" Language="pl_PL">
-			<Text>[BLIST][LI] Standardowe: 3 niezależnych mocarstw na cywilizację.[/BLIST]</Text>
+			<Text>3 niezależnych mocarstw na cywilizację.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_MORE" Language="pl_PL">
-			<Text>[BLIST][LI] Więcej: 4 niezależnych mocarstw na cywilizację.[/BLIST]</Text>
+			<Text>4 niezależnych mocarstw na cywilizację.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION" Language="pl_PL">
-			<Text>Określa minimalną odległość między niezależnymi mocarstwami.[n] Może to wpłynąć na ich łączną liczbę.</Text>
+			<Text>Określa minimalną odległość między niezależnymi mocarstwami.[n]Może to wpłynąć na ich łączną liczbę.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_LESS" Language="pl_PL">
-			<Text>[BLIST][LI] Epoka antyku: 4 pól.[LI] Epoka odkryć: 3 pól.[LI] Epoka nowożytna: 2 pól.[/BLIST]</Text>
+			<Text>Mniej miejsca między niezależnymi potęgami, więc mieści się ich więcej.[nn][BLIST]
+				[LI] Starożytność: 4 pól
+				[LI] Epoka odkryć: 3 pól
+				[LI] Epoka nowożytna: 2 pól[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_DEFAULT" Language="pl_PL">
-			<Text>[BLIST][LI] Epoka antyku: 6 pól.[LI] Epoka odkryć: 6 pól.[LI] Epoka nowożytna: 4 pól.[/BLIST]</Text>
+			<Text>Własny odstęp gry między niezależnymi potęgami.[nn][BLIST]
+				[LI] Starożytność: 6 pól
+				[LI] Epoka odkryć: 6 pól
+				[LI] Epoka nowożytna: 4 pól[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="pl_PL">
-			<Text>[BLIST][LI] Epoka antyku: 7 pól.[LI] Epoka odkryć: 7 pól.[LI] Epoka nowożytna: 5 pól.[/BLIST]</Text>
+			<Text>Więcej miejsca między niezależnymi potęgami, więc mieści się ich mniej.[nn][BLIST]
+				[LI] Starożytność: 7 pól
+				[LI] Epoka odkryć: 7 pól
+				[LI] Epoka nowożytna: 5 pól[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="pl_PL">
 			<Text>Wyłącza wszystkie katastrofy naturalne.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_FREQUENCY_DESCRIPTION_CUSTOM" Language="pl_PL">
-			<Text>Niestandardowe: ustaw częstotliwość katastrof dla każdej epoki osobno.</Text>
+			<Text>Ustaw częstotliwość katastrof dla każdej epoki osobno.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_AGE_DESCRIPTION" Language="pl_PL">
 			<Text>Ustawia częstotliwość katastrof tej epoki.[n]Działa tylko, gdy Katastrofy ustawiono na Niestandardowe.</Text>
@@ -158,40 +272,52 @@
 			<Text>Określa początkowy [icon:SETTLEMENT_LIMIT]limit osad w każdej epoce.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_DEFAULT" Language="pl_PL">
-			<Text>[BLIST][LI] Epoka antyku: limit osad 3.[LI] Epoka odkryć: limit osad 8.[LI] Epoka nowożytna: limit osad 16.[/BLIST]</Text>
+			<Text>Własny limit osad gry.[nn][BLIST]
+				[LI] Starożytność: Limit osad 3
+				[LI] Epoka odkryć: Limit osad 8
+				[LI] Epoka nowożytna: Limit osad 16[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_MORE" Language="pl_PL">
-			<Text>[BLIST][LI] Epoka antyku: limit osad 5.[LI] Epoka odkryć: limit osad 12.[LI] Epoka nowożytna: limit osad 20.[/BLIST]</Text>
+			<Text>Luźniejszy limit liczby posiadanych osad.[nn][BLIST]
+				[LI] Starożytność: Limit osad 5
+				[LI] Epoka odkryć: Limit osad 12
+				[LI] Epoka nowożytna: Limit osad 20[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_LESS" Language="pl_PL">
-			<Text>[BLIST][LI] Epoka antyku: limit osad 1.[LI] Epoka odkryć: limit osad 4.[LI] Epoka nowożytna: limit osad 10.[/BLIST]</Text>
+			<Text>Ściślejszy limit liczby posiadanych osad.[nn][BLIST]
+				[LI] Starożytność: Limit osad 1
+				[LI] Epoka odkryć: Limit osad 4
+				[LI] Epoka nowożytna: Limit osad 10[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION" Language="pl_PL">
 			<Text>Określa minimalną odległość między osadami.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_LESS" Language="pl_PL">
-			<Text>[BLIST][LI] Mniej: 2 pól.[/BLIST]</Text>
+			<Text>2 pól.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_DEFAULT" Language="pl_PL">
-			<Text>[BLIST][LI] Standardowe: 3 pól.[/BLIST]</Text>
+			<Text>3 pól.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="pl_PL">
-			<Text>[BLIST][LI] Więcej: 4 pól.[/BLIST]</Text>
+			<Text>4 pól.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="pl_PL">
-			<Text>Określa koszt produkcji jednostek bojowych.</Text>
+			<Text>Określa koszt produkcji jednostek bojowych. Wyższy koszt sprawia, że stała armia to poważna inwestycja.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_LOW" Language="pl_PL">
-			<Text>[BLIST][LI] Niskie: 25% taniej.[/BLIST]</Text>
+			<Text>25% mniej produkcji. Wojownicy: 23 zamiast 30. (Przy standardowym tempie)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="pl_PL">
-			<Text>[BLIST][LI] Standardowe: bez rabatu.[/BLIST]</Text>
+			<Text>Koszty jednostek z gry, bez zmian.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_HIGH" Language="pl_PL">
-			<Text>[BLIST][LI] Wysokie: 50% drożej.[/BLIST]</Text>
+			<Text>50% więcej produkcji. Wojownicy: 45 zamiast 30. (Przy standardowym tempie)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_MEDIUM" Language="pl_PL">
+			<Text>25% więcej produkcji. Wojownicy: 38 zamiast 30. (Przy standardowym tempie)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DOUBLE" Language="pl_PL">
-			<Text>[BLIST][LI] Podwójnie: 100% drożej.[/BLIST]</Text>
+			<Text>Dwa razy więcej produkcji. Wojownicy: 60 zamiast 30. (Przy standardowym tempie)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="pl_PL">
 			<Text>Włącza lub wyłącza wszystkie kryzysy.[n]Wyłączone wyłącza każdy kryzys w Wyborze kryzysów.</Text>
@@ -203,34 +329,68 @@
 			<Text>Kryzysy nie występują.[n]Ustaw Kryzysy na Włączone, aby wybrać moment.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_EARLY" Language="pl_PL">
-			<Text>[BLIST][LI] Etap 1: zaczyna się przy 50%.[LI] Etap 2: zaczyna się przy 65%.[LI] Etap 3: zaczyna się przy 85%.[/BLIST]</Text>
+			<Text>Każdy etap kryzysu zaczyna się wcześniej w epoce.[nn][BLIST]
+				[LI] Etap 1: Zaczyna się przy 50%
+				[LI] Etap 2: Zaczyna się przy 65%
+				[LI] Etap 3: Zaczyna się przy 85%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DEFAULT" Language="pl_PL">
-			<Text>[BLIST][LI] Etap 1: zaczyna się przy 70%.[LI] Etap 2: zaczyna się przy 80%.[LI] Etap 3: zaczyna się przy 90%.[/BLIST]</Text>
+			<Text>Własny czas kryzysów gry.[nn][BLIST]
+				[LI] Etap 1: Zaczyna się przy 70%
+				[LI] Etap 2: Zaczyna się przy 80%
+				[LI] Etap 3: Zaczyna się przy 90%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_LATE" Language="pl_PL">
-			<Text>[BLIST][LI] Etap 1: zaczyna się przy 85%.[LI] Etap 2: zaczyna się przy 90%.[LI] Etap 3: zaczyna się przy 95%.[/BLIST]</Text>
+			<Text>Każdy etap kryzysu zaczyna się później w epoce.[nn][BLIST]
+				[LI] Etap 1: Zaczyna się przy 85%
+				[LI] Etap 2: Zaczyna się przy 90%
+				[LI] Etap 3: Zaczyna się przy 95%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="pl_PL">
 			<Text>Określa liczbę [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] cudów natury na mapie.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE" Language="pl_PL">
-			<Text>Rozmiar mapy[n] [BLIST][LI] Malutka: 0 cudów natury.[LI] Mała: 0 cudów natury.[LI] Standardowa: 0 cudów natury.[LI] Duża: 0 cudów natury.[LI] Ogromna: 0 cudów natury.[/BLIST]</Text>
+			<Text>Cuda natury nie są umieszczane.[nn][BLIST]
+				[LI] Malutka: 0 cudów natury
+				[LI] Mała: 0 cudów natury
+				[LI] Standardowa: 0 cudów natury
+				[LI] Duża: 0 cudów natury
+				[LI] Ogromna: 0 cudów natury[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF" Language="pl_PL">
-			<Text>Rozmiar mapy[n] [BLIST][LI] Malutka: 1 cudów natury.[LI] Mała: 2 cudów natury.[LI] Standardowa: 2 cudów natury.[LI] Duża: 3 cudów natury.[LI] Ogromna: 3 cudów natury.[/BLIST]</Text>
+			<Text>Około połowy standardowej liczby cudów natury.[nn][BLIST]
+				[LI] Malutka: 1 cud natury
+				[LI] Mała: 2 cuda natury
+				[LI] Standardowa: 2 cuda natury
+				[LI] Duża: 3 cuda natury
+				[LI] Ogromna: 3 cuda natury[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DEFAULT" Language="pl_PL">
-			<Text>Rozmiar mapy[n] [BLIST][LI] Malutka: 3 cudów natury.[LI] Mała: 4 cudów natury.[LI] Standardowa: 5 cudów natury.[LI] Duża: 6 cudów natury.[LI] Ogromna: 7 cudów natury.[/BLIST]</Text>
+			<Text>Standardowa liczba cudów natury.[nn][BLIST]
+				[LI] Malutka: 3 cuda natury
+				[LI] Mała: 4 cuda natury
+				[LI] Standardowa: 5 cudów natury
+				[LI] Duża: 6 cudów natury
+				[LI] Ogromna: 7 cudów natury[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE" Language="pl_PL">
-			<Text>Rozmiar mapy[n] [BLIST][LI] Malutka: 5 cudów natury.[LI] Mała: 6 cudów natury.[LI] Standardowa: 8 cudów natury.[LI] Duża: 9 cudów natury.[LI] Ogromna: 11 cudów natury.[/BLIST]</Text>
+			<Text>Znacznie więcej cudów natury niż standardowo.[nn][BLIST]
+				[LI] Malutka: 5 cudów natury
+				[LI] Mała: 6 cudów natury
+				[LI] Standardowa: 8 cudów natury
+				[LI] Duża: 9 cudów natury
+				[LI] Ogromna: 11 cudów natury[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE" Language="pl_PL">
-			<Text>Rozmiar mapy[n] [BLIST][LI] Malutka: 6 cudów natury.[LI] Mała: 8 cudów natury.[LI] Standardowa: 10 cudów natury.[LI] Duża: 12 cudów natury.[LI] Ogromna: 14 cudów natury.[/BLIST]</Text>
+			<Text>Dwukrotność standardowej liczby cudów natury.[nn][BLIST]
+				[LI] Malutka: 6 cudów natury
+				[LI] Mała: 8 cudów natury
+				[LI] Standardowa: 10 cudów natury
+				[LI] Duża: 12 cudów natury
+				[LI] Ogromna: 14 cudów natury[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION" Language="pl_PL">
-			<Text>Określa częstotliwość jezior na mapie. Wyniki mogą się różnić.[n] Gra spróbuje dostosować liczbę jezior.[n] Generowanie mapy może jednak przywrócić wartość domyślną.</Text>
+			<Text>Określa, ile jezior generuje mapa.[n]Generowanie mapy może to nadpisać, więc wyniki mogą się różnić.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_LESS" Language="pl_PL">
 			<Text>Generuje mniej jezior.</Text>
@@ -283,11 +443,8 @@
 		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="pl_PL">
 			<Text>Ustawienia tempa</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_FASTER_NAME" Language="pl_PL">
-			<Text>Szybciej</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM" Language="pl_PL">
-			<Text>Własne: każda epoka używa własnego wiersza w grupach epok poniżej.</Text>
+			<Text>Każda epoka używa własnego wiersza w grupach epok poniżej.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="pl_PL">
 			<Text>Ustawia wartość dla tej epoki.[n]Działa tylko wtedy, gdy odpowiedni wiersz w sekcji Ustawienia tempa ma wartość Własne. Zestawy tempa wypełniają te wiersze; zmiana jednego przełącza Zestaw tempa na Własne.</Text>
@@ -296,91 +453,319 @@
 			<Text>Postęp epoki</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION" Language="pl_PL">
-			<Text>Określa, jak szybko kamienie milowe oraz przyszłe technologie i idee wypełniają wskaźnik epoki.</Text>
+			<Text>Jak szybko zapełnia się wskaźnik epoki. Każdy kamień milowy ścieżki dziedzictwa oraz każda przyszła technologia lub ustrój dodaje do niego punkty; długość epoki ustala sumę, która ją kończy.[n]Liczby kamieni milowych to pierwszy, drugi i trzeci w danej epoce.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_NAME" Language="pl_PL">
 			<Text>Koszt technologii</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION" Language="pl_PL">
-			<Text>Określa koszt badania technologii.</Text>
+			<Text>Określa, ile nauki kosztuje każda technologia. Wyższy koszt wydłuża erę, niższy pozwala pędzić przez drzewko.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_NAME" Language="pl_PL">
 			<Text>Koszt idei</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION" Language="pl_PL">
-			<Text>Określa koszt kultury idei.</Text>
+			<Text>Określa, ile kultury kosztuje każda ustrojowa. Wyższy koszt wydłuża erę, niższy pozwala pędzić przez drzewko.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_NAME" Language="pl_PL">
 			<Text>Wzrost miast</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION" Language="pl_PL">
-			<Text>Określa, ile żywności potrzebują miasta do wzrostu.</Text>
+			<Text>Określa, ile żywności miasto potrzebuje na każdego nowego obywatela. Niższe progi pozwalają przekroczyć rozmiar 10 znacznie wcześniej.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_NAME" Language="pl_PL">
 			<Text>Drogi</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION" Language="pl_PL">
-			<Text>Określa koszt ruchu po drogach i liniach kolejowych.</Text>
+			<Text>Określa, ile ruchu kosztuje podróż drogami i kolejami. Tańsze drogi pozwalają armiom przemierzyć terytorium w znacznie mniej tur.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_NAME" Language="pl_PL">
 			<Text>Koszt projektów zwycięstwa</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION" Language="pl_PL">
-			<Text>Ustawia koszt produkcji naukowych i militarnych projektów triumfu w każdej epoce.</Text>
+			<Text>Określa koszt produkcji 12 naukowych i wojskowych projektów triumfu.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="pl_PL">
-			<Text>[BLIST][LI] Wolno: 50% mniej punktów.[/BLIST]</Text>
+			<Text>Każda nagroda daje o połowę mniej, więc epoki trwają dłużej.[nn][BLIST]
+				[LI] Starożytność: 3, 3 i 5
+				[LI] Epoka odkryć: 3, 5 i 10
+				[LI] Epoka nowożytna: 3 i 5[/BLIST][nn]Przyszłe technologie i ustroje: po 5 punktów.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD" Language="pl_PL">
-			<Text>[BLIST][LI] Standardowe: bez zmian.[/BLIST]</Text>
+			<Text>Własne nagrody gry, bez zmian.[nn][BLIST]
+				[LI] Starożytność: 5, 5 i 10
+				[LI] Epoka odkryć: 5, 10 i 20
+				[LI] Epoka nowożytna: 5 i 10[/BLIST][nn]Przyszłe technologie i ustroje: po 10 punktów.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST" Language="pl_PL">
-			<Text>[BLIST][LI] Szybko: 50% więcej punktów.[/BLIST]</Text>
+			<Text>Każda nagroda daje o połowę więcej, więc epoki kończą się szybciej.[nn][BLIST]
+				[LI] Starożytność: 8, 8 i 15
+				[LI] Epoka odkryć: 8, 15 i 30
+				[LI] Epoka nowożytna: 8 i 15[/BLIST][nn]Przyszłe technologie i ustroje: po 15 punktów.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_LOW" Language="pl_PL">
-			<Text>[BLIST][LI] Niskie: 25% taniej.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_LOW" Language="pl_PL">
+			<Text>25% mniej produkcji.[n]Koszt każdego projektu zwycięstwa: [BLIST]
+				[LI] Mapa gwiazd: 338
+				[LI] Kulista Ziemia: 450
+				[LI] Model heliocentryczny: 563
+				[LI] Odkrycie rachunku różniczkowego: 675
+				[LI] Przekroczenie bariery dźwięku: 750
+				[LI] Wystrzelenie satelity: 750
+				[LI] Produkcja broni nuklearnej: 750
+				[LI] Lot transoceaniczny: 750
+				[LI] Radioteleskop: 900
+				[LI] Przygotowanie załogowego lotu kosmicznego: 1500
+				[LI] Operacja Bluszcz: 1800
+				[LI] Załogowy lot kosmiczny: 2250[/BLIST][nn](Przy standardowym tempie)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_LOW" Language="pl_PL">
+			<Text>25% mniej kultury. System wodzowski: 68 zamiast 90. (Przy standardowym tempie)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_LOW" Language="pl_PL">
+			<Text>25% mniej nauki. Garncarstwo: 53 zamiast 70. (Przy standardowym tempie)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COST_DESCRIPTION_STANDARD" Language="pl_PL">
-			<Text>[BLIST][LI] Standardowe: bez zmian.[/BLIST]</Text>
+			<Text>Koszty z gry, bez zmian.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_HIGH" Language="pl_PL">
-			<Text>[BLIST][LI] Wysokie: 50% drożej.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_STANDARD" Language="pl_PL">
+			<Text>Koszty z gry, bez zmian.[n]Koszt każdego projektu zwycięstwa: [BLIST]
+				[LI] Mapa gwiazd: 450
+				[LI] Kulista Ziemia: 600
+				[LI] Model heliocentryczny: 750
+				[LI] Odkrycie rachunku różniczkowego: 900
+				[LI] Przekroczenie bariery dźwięku: 1000
+				[LI] Wystrzelenie satelity: 1000
+				[LI] Produkcja broni nuklearnej: 1000
+				[LI] Lot transoceaniczny: 1000
+				[LI] Radioteleskop: 1200
+				[LI] Przygotowanie załogowego lotu kosmicznego: 2000
+				[LI] Operacja Bluszcz: 2400
+				[LI] Załogowy lot kosmiczny: 3000[/BLIST][nn](Przy standardowym tempie)</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_DOUBLE" Language="pl_PL">
-			<Text>[BLIST][LI] Podwójnie: 100% drożej.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_BALANCED" Language="pl_PL">
+			<Text>Standard w Starożytności, potem tańsze projekty zwycięstwa.[nn][BLIST]
+				[LI] Starożytność: Standardowe
+				[LI] Epoka odkryć: -25%
+				[LI] Epoka nowożytna: -25%[/BLIST][nn]Koszt według epoki (Starożytność / Epoka odkryć / Epoka nowożytna): [BLIST]
+				[LI] Mapa gwiazd: 450 / 338 / 338
+				[LI] Kulista Ziemia: 600 / 450 / 450
+				[LI] Model heliocentryczny: 750 / 563 / 563
+				[LI] Odkrycie rachunku różniczkowego: 900 / 675 / 675
+				[LI] Przekroczenie bariery dźwięku: 1000 / 750 / 750
+				[LI] Wystrzelenie satelity: 1000 / 750 / 750
+				[LI] Produkcja broni nuklearnej: 1000 / 750 / 750
+				[LI] Lot transoceaniczny: 1000 / 750 / 750
+				[LI] Radioteleskop: 1200 / 900 / 900
+				[LI] Przygotowanie załogowego lotu kosmicznego: 2000 / 1500 / 1500
+				[LI] Operacja Bluszcz: 2400 / 1800 / 1800
+				[LI] Załogowy lot kosmiczny: 3000 / 2250 / 2250[/BLIST][nn](Przy standardowym tempie)</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOWER" Language="pl_PL">
-			<Text>[BLIST][LI] Wolniej: miasta rosną wolniej.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_EXTENDED" Language="pl_PL">
+			<Text>Każdy projekt zwycięstwa kosztuje więcej w każdej epoce.[nn][BLIST]
+				[LI] Starożytność: +25%
+				[LI] Epoka odkryć: +25%
+				[LI] Epoka nowożytna: +25%[/BLIST][nn]Koszt według epoki (Starożytność / Epoka odkryć / Epoka nowożytna): [BLIST]
+				[LI] Mapa gwiazd: 563 / 563 / 563
+				[LI] Kulista Ziemia: 750 / 750 / 750
+				[LI] Model heliocentryczny: 938 / 938 / 938
+				[LI] Odkrycie rachunku różniczkowego: 1125 / 1125 / 1125
+				[LI] Przekroczenie bariery dźwięku: 1250 / 1250 / 1250
+				[LI] Wystrzelenie satelity: 1250 / 1250 / 1250
+				[LI] Produkcja broni nuklearnej: 1250 / 1250 / 1250
+				[LI] Lot transoceaniczny: 1250 / 1250 / 1250
+				[LI] Radioteleskop: 1500 / 1500 / 1500
+				[LI] Przygotowanie załogowego lotu kosmicznego: 2500 / 2500 / 2500
+				[LI] Operacja Bluszcz: 3000 / 3000 / 3000
+				[LI] Załogowy lot kosmiczny: 3750 / 3750 / 3750[/BLIST][nn](Przy standardowym tempie)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_SWIFT" Language="pl_PL">
+			<Text>Każdy projekt zwycięstwa kosztuje mniej w każdej epoce.[nn][BLIST]
+				[LI] Starożytność: -25%
+				[LI] Epoka odkryć: -25%
+				[LI] Epoka nowożytna: -25%[/BLIST][nn]Koszt według epoki (Starożytność / Epoka odkryć / Epoka nowożytna): [BLIST]
+				[LI] Mapa gwiazd: 338 / 338 / 338
+				[LI] Kulista Ziemia: 450 / 450 / 450
+				[LI] Model heliocentryczny: 563 / 563 / 563
+				[LI] Odkrycie rachunku różniczkowego: 675 / 675 / 675
+				[LI] Przekroczenie bariery dźwięku: 750 / 750 / 750
+				[LI] Wystrzelenie satelity: 750 / 750 / 750
+				[LI] Produkcja broni nuklearnej: 750 / 750 / 750
+				[LI] Lot transoceaniczny: 750 / 750 / 750
+				[LI] Radioteleskop: 900 / 900 / 900
+				[LI] Przygotowanie załogowego lotu kosmicznego: 1500 / 1500 / 1500
+				[LI] Operacja Bluszcz: 1800 / 1800 / 1800
+				[LI] Załogowy lot kosmiczny: 2250 / 2250 / 2250[/BLIST][nn](Przy standardowym tempie)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="pl_PL">
+			<Text>Koszty z gry, bez zmian.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="pl_PL">
+			<Text>Standardowe ustroje na początku, droższe gdy drzewko się otwiera.[nn][BLIST]
+				[LI] Starożytność: Standardowe
+				[LI] Epoka odkryć: +25%
+				[LI] Epoka nowożytna: +25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_EXTENDED" Language="pl_PL">
+			<Text>Ustroje kosztują więcej w każdej epoce, znacznie po Starożytności.[nn][BLIST]
+				[LI] Starożytność: +25%
+				[LI] Epoka odkryć: +50%
+				[LI] Epoka nowożytna: +50%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_SWIFT" Language="pl_PL">
+			<Text>Tańsze ustroje na początku, standardowe od epoki nowożytnej.[nn][BLIST]
+				[LI] Starożytność: -25%
+				[LI] Epoka odkryć: -25%
+				[LI] Epoka nowożytna: Standardowe[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="pl_PL">
+			<Text>Koszty z gry, bez zmian.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="pl_PL">
+			<Text>Droższe badania na początku, tańsze gdy drzewko się otwiera.[nn][BLIST]
+				[LI] Starożytność: +25%
+				[LI] Epoka odkryć: Standardowe
+				[LI] Epoka nowożytna: -25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_EXTENDED" Language="pl_PL">
+			<Text>Badania kosztują więcej w każdej epoce, znacznie po Starożytności.[nn][BLIST]
+				[LI] Starożytność: +25%
+				[LI] Epoka odkryć: +50%
+				[LI] Epoka nowożytna: +50%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_SWIFT" Language="pl_PL">
+			<Text>Tańsze badania na początku, standardowe od epoki nowożytnej.[nn][BLIST]
+				[LI] Starożytność: -25%
+				[LI] Epoka odkryć: -25%
+				[LI] Epoka nowożytna: Standardowe[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_HIGH" Language="pl_PL">
+			<Text>50% więcej produkcji.[n]Koszt każdego projektu zwycięstwa: [BLIST]
+				[LI] Mapa gwiazd: 675
+				[LI] Kulista Ziemia: 900
+				[LI] Model heliocentryczny: 1125
+				[LI] Odkrycie rachunku różniczkowego: 1350
+				[LI] Przekroczenie bariery dźwięku: 1500
+				[LI] Wystrzelenie satelity: 1500
+				[LI] Produkcja broni nuklearnej: 1500
+				[LI] Lot transoceaniczny: 1500
+				[LI] Radioteleskop: 1800
+				[LI] Przygotowanie załogowego lotu kosmicznego: 3000
+				[LI] Operacja Bluszcz: 3600
+				[LI] Załogowy lot kosmiczny: 4500[/BLIST][nn](Przy standardowym tempie)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_HIGH" Language="pl_PL">
+			<Text>50% więcej kultury. System wodzowski: 135 zamiast 90. (Przy standardowym tempie)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_HIGH" Language="pl_PL">
+			<Text>50% więcej nauki. Garncarstwo: 105 zamiast 70. (Przy standardowym tempie)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_MEDIUM" Language="pl_PL">
+			<Text>25% więcej produkcji.[n]Koszt każdego projektu zwycięstwa: [BLIST]
+				[LI] Mapa gwiazd: 563
+				[LI] Kulista Ziemia: 750
+				[LI] Model heliocentryczny: 938
+				[LI] Odkrycie rachunku różniczkowego: 1125
+				[LI] Przekroczenie bariery dźwięku: 1250
+				[LI] Wystrzelenie satelity: 1250
+				[LI] Produkcja broni nuklearnej: 1250
+				[LI] Lot transoceaniczny: 1250
+				[LI] Radioteleskop: 1500
+				[LI] Przygotowanie załogowego lotu kosmicznego: 2500
+				[LI] Operacja Bluszcz: 3000
+				[LI] Załogowy lot kosmiczny: 3750[/BLIST][nn](Przy standardowym tempie)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_MEDIUM" Language="pl_PL">
+			<Text>25% więcej kultury. System wodzowski: 113 zamiast 90. (Przy standardowym tempie)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_MEDIUM" Language="pl_PL">
+			<Text>25% więcej nauki. Garncarstwo: 88 zamiast 70. (Przy standardowym tempie)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_DOUBLE" Language="pl_PL">
+			<Text>Dwa razy więcej produkcji.[n]Koszt każdego projektu zwycięstwa: [BLIST]
+				[LI] Mapa gwiazd: 900
+				[LI] Kulista Ziemia: 1200
+				[LI] Model heliocentryczny: 1500
+				[LI] Odkrycie rachunku różniczkowego: 1800
+				[LI] Przekroczenie bariery dźwięku: 2000
+				[LI] Wystrzelenie satelity: 2000
+				[LI] Produkcja broni nuklearnej: 2000
+				[LI] Lot transoceaniczny: 2000
+				[LI] Radioteleskop: 2400
+				[LI] Przygotowanie załogowego lotu kosmicznego: 4000
+				[LI] Operacja Bluszcz: 4800
+				[LI] Załogowy lot kosmiczny: 6000[/BLIST][nn](Przy standardowym tempie)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_DOUBLE" Language="pl_PL">
+			<Text>Dwa razy więcej kultury. System wodzowski: 180 zamiast 90. (Przy standardowym tempie)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_DOUBLE" Language="pl_PL">
+			<Text>Dwa razy więcej nauki. Garncarstwo: 140 zamiast 70. (Przy standardowym tempie)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW" Language="pl_PL">
-			<Text>[BLIST][LI] Wolno: miasta rosną nieco wolniej.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SLOWER_NAME" Language="pl_PL">
-			<Text>Wolniej</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_ROADS_EXPRESS_NAME" Language="pl_PL">
-			<Text>Ekspresowe</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXPRESS" Language="pl_PL">
-			<Text>[BLIST][LI] Ekspresowe: 25% mniej kosztu ruchu na drogach, 50% mniej na liniach kolejowych.[/BLIST]</Text>
+			<Text>25% więcej żywności na obywatela.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED" Language="pl_PL">
-			<Text>[BLIST][LI] Zrównoważone: kamienie milowe dają 4, 7 i 11 punktów w starożytności, 4, 8 i 12 w epoce odkryć oraz 4 i 8 w epoce nowoczesnej; przyszłe technologie i idee dają 8, a w epoce nowoczesnej 7.[/BLIST]</Text>
+			<Text>Mniejsze wczesne kamienie milowe i większe późniejsze, by epoka nie kończyła się przez wczesny zryw.[nn][BLIST]
+				[LI] Starożytność: 4, 7 i 11
+				[LI] Epoka odkryć: 4, 8 i 12
+				[LI] Epoka nowożytna: 4 i 8[/BLIST][nn]Przyszłe technologie i ustroje: 8 punktów, w epoce nowożytnej 7.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="pl_PL">
-			<Text>[BLIST][LI] Standardowe: bez zmian.[/BLIST]</Text>
+			<Text>Bez zmian.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="pl_PL">
+			<Text>Miasta rosną szybciej na początku, potem wracają do standardu.[nn][BLIST]
+				[LI] Starożytność: -25%
+				[LI] Epoka odkryć: -25%
+				[LI] Epoka nowożytna: Standardowe[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_EXTENDED" Language="pl_PL">
+			<Text>Miasta rosną wolniej w każdej epoce.[nn][BLIST]
+				[LI] Starożytność: +25%
+				[LI] Epoka odkryć: +25%
+				[LI] Epoka nowożytna: +25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SWIFT" Language="pl_PL">
+			<Text>Miasta rosną szybciej w każdej epoce.[nn][BLIST]
+				[LI] Starożytność: -25%
+				[LI] Epoka odkryć: -25%
+				[LI] Epoka nowożytna: -25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="pl_PL">
-			<Text>[BLIST][LI] Szybko: miasta rosną szybciej.[/BLIST]</Text>
+			<Text>50% mniej żywności na obywatela.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_QUICK" Language="pl_PL">
+			<Text>25% mniej żywności na obywatela.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD" Language="pl_PL">
-			<Text>[BLIST][LI] Standardowe: bez zmian.[/BLIST]</Text>
+			<Text>Bez zmian.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_BALANCED" Language="pl_PL">
+			<Text>Standardowe drogi do epoki nowożytnej, potem tańsze.[nn][BLIST]
+				[LI] Starożytność: Standardowe
+				[LI] Epoka odkryć: Standardowe
+				[LI] Epoka nowożytna: -25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXTENDED" Language="pl_PL">
+			<Text>Standardowe drogi do epoki nowożytnej, potem tańsze.[nn][BLIST]
+				[LI] Starożytność: Standardowe
+				[LI] Epoka odkryć: Standardowe
+				[LI] Epoka nowożytna: -25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SWIFT" Language="pl_PL">
+			<Text>Drogi stają się tańsze w przemierzaniu, gdy mapa się otwiera.[nn][BLIST]
+				[LI] Starożytność: -25%
+				[LI] Epoka odkryć: -50%
+				[LI] Epoka nowożytna: -50%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SLOW" Language="pl_PL">
+			<Text>25% więcej ruchu na pole.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_FAST" Language="pl_PL">
-			<Text>[BLIST][LI] Szybko: koszt ruchu mniejszy o 25%.[/BLIST]</Text>
+			<Text>50% mniej ruchu na pole.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_FASTER" Language="pl_PL">
-			<Text>[BLIST][LI] Szybciej: koszt ruchu mniejszy o 50%.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_QUICK" Language="pl_PL">
+			<Text>25% mniej ruchu na pole.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="pl_PL">
 			<Text>Losowe pamiątki</Text>
@@ -398,7 +783,7 @@
 			<Text>Ustawia zestaw triumfów tej epoki.[n]Działa tylko, gdy zestaw triumfów ustawiono na Niestandardowe.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM" Language="pl_PL">
-			<Text>Niestandardowe: ustaw limit osad dla każdej epoki osobno.</Text>
+			<Text>Ustaw limit osad dla każdej epoki osobno.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="pl_PL">
 			<Text>Ustawia limit osad tej epoki.[n]Działa tylko, gdy limit osad ustawiono na Niestandardowe.</Text>
@@ -416,13 +801,13 @@
 			<Text>Gorąca</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="pl_PL">
-			<Text>Zimna: tundra zaczyna się bliżej równika, kosztem łąk.</Text>
+			<Text>Tundra zaczyna się bliżej równika, kosztem łąk.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="pl_PL">
 			<Text>Standardowy klimat dla wybranego typu mapy.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="pl_PL">
-			<Text>Gorąca: tropiki i pustynia sięgają dalej od równika, kosztem równin i łąk.</Text>
+			<Text>Tropiki i pustynia sięgają dalej od równika, kosztem równin i łąk.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="pl_PL">
 			<Text>Rzeki</Text>
@@ -487,23 +872,29 @@
 		<Replace Tag="LOC_ZG_HIGH_NAME" Language="pl_PL">
 			<Text>Wysokie</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MEDIUM_NAME" Language="pl_PL">
+			<Text>Średnie</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME" Language="pl_PL">
 			<Text>Koszt jednostek cywilnych</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="pl_PL">
-			<Text>Określa koszt produkcji jednostek cywilnych.</Text>
+			<Text>Określa koszt produkcji jednostek cywilnych, takich jak osadnicy i kupcy.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_LOW" Language="pl_PL">
-			<Text>[BLIST][LI] Niskie: 25% taniej.[/BLIST]</Text>
+			<Text>25% mniej produkcji. Osadnicy: 38 zamiast 50. (Przy standardowym tempie)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="pl_PL">
-			<Text>[BLIST][LI] Standardowe: bez rabatu.[/BLIST]</Text>
+			<Text>Koszty jednostek z gry, bez zmian.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_HIGH" Language="pl_PL">
-			<Text>[BLIST][LI] Wysokie: 50% drożej.[/BLIST]</Text>
+			<Text>50% więcej produkcji. Osadnicy: 75 zamiast 50. (Przy standardowym tempie)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_MEDIUM" Language="pl_PL">
+			<Text>25% więcej produkcji. Osadnicy: 63 zamiast 50. (Przy standardowym tempie)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE" Language="pl_PL">
-			<Text>[BLIST][LI] Podwójnie: 100% drożej.[/BLIST]</Text>
+			<Text>Dwa razy więcej produkcji. Osadnicy: 100 zamiast 50. (Przy standardowym tempie)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="pl_PL">
 			<Text>Online 2.0</Text>
@@ -517,137 +908,266 @@
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="pl_PL">
 			<Text>Ekstremalnie wolne tempo. 400% wolniej niż standardowe.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_NAME" Language="pl_PL">
-			<Text>Krótka</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_NAME" Language="pl_PL">
-			<Text>Podwojona</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="pl_PL">
 			<Text>Własne: każda epoka używa wiersza Długość epoki w swojej grupie poniżej. Zrównoważone ustawia 153, 166 i 196 punktów; Tryb wieloosobowy ustawia 140, 155 i 190.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="pl_PL">
+			<Text>Dłuższe epoki, każda dłuższa od poprzedniej.[nn][BLIST]
+				[LI] Starożytność: 153 punkty
+				[LI] Epoka odkryć: 166 punktów
+				[LI] Epoka nowożytna: 196 punktów[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_EXTENDED_DESC" Language="pl_PL">
+			<Text>Bardzo długie epoki dla przeciągniętej rozgrywki.[nn][BLIST]
+				[LI] Starożytność: 240 punktów
+				[LI] Epoka odkryć: 260 punktów
+				[LI] Epoka nowożytna: 280 punktów[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_SWIFT_DESC" Language="pl_PL">
+			<Text>Krótkie epoki, nieco dłuższe w miarę postępu rozgrywki.[nn][BLIST]
+				[LI] Starożytność: 90 punktów
+				[LI] Epoka odkryć: 100 punktów
+				[LI] Epoka nowożytna: 110 punktów[/BLIST]</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_90" Language="pl_PL">
-			<Text>[BLIST][LI] Online 2.0: 36 punktów.[LI] Online: 45 punktów.[LI] Quick: 60 punktów.[LI] Standard: 90 punktów.[LI] Epic: 135 punktów.[LI] Marathon: 270 punktów.[LI] Marathon 2.0: 450 punktów.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 36 punktów
+				[LI] Online: 45 punktów
+				[LI] Quick: 60 punktów
+				[LI] Standard: 90 punktów
+				[LI] Epic: 135 punktów
+				[LI] Marathon: 270 punktów
+				[LI] Marathon 2.0: 450 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100" Language="pl_PL">
-			<Text>[BLIST][LI] Online 2.0: 40 punktów.[LI] Online: 50 punktów.[LI] Quick: 67 punktów.[LI] Standard: 100 punktów.[LI] Epic: 150 punktów.[LI] Marathon: 300 punktów.[LI] Marathon 2.0: 500 punktów.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 40 punktów
+				[LI] Online: 50 punktów
+				[LI] Quick: 67 punktów
+				[LI] Standard: 100 punktów
+				[LI] Epic: 150 punktów
+				[LI] Marathon: 300 punktów
+				[LI] Marathon 2.0: 500 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110" Language="pl_PL">
-			<Text>[BLIST][LI] Online 2.0: 44 punktów.[LI] Online: 55 punktów.[LI] Quick: 73 punktów.[LI] Standard: 110 punktów.[LI] Epic: 165 punktów.[LI] Marathon: 330 punktów.[LI] Marathon 2.0: 550 punktów.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 44 punkty
+				[LI] Online: 55 punktów
+				[LI] Quick: 73 punkty
+				[LI] Standard: 110 punktów
+				[LI] Epic: 165 punktów
+				[LI] Marathon: 330 punktów
+				[LI] Marathon 2.0: 550 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120" Language="pl_PL">
-			<Text>[BLIST][LI] Online 2.0: 48 punktów.[LI] Online: 60 punktów.[LI] Quick: 80 punktów.[LI] Standard: 120 punktów.[LI] Epic: 180 punktów.[LI] Marathon: 360 punktów.[LI] Marathon 2.0: 600 punktów.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 48 punktów
+				[LI] Online: 60 punktów
+				[LI] Quick: 80 punktów
+				[LI] Standard: 120 punktów
+				[LI] Epic: 180 punktów
+				[LI] Marathon: 360 punktów
+				[LI] Marathon 2.0: 600 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130" Language="pl_PL">
-			<Text>[BLIST][LI] Online 2.0: 52 punktów.[LI] Online: 65 punktów.[LI] Quick: 87 punktów.[LI] Standard: 130 punktów.[LI] Epic: 195 punktów.[LI] Marathon: 390 punktów.[LI] Marathon 2.0: 650 punktów.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 52 punkty
+				[LI] Online: 65 punktów
+				[LI] Quick: 87 punktów
+				[LI] Standard: 130 punktów
+				[LI] Epic: 195 punktów
+				[LI] Marathon: 390 punktów
+				[LI] Marathon 2.0: 650 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140" Language="pl_PL">
-			<Text>[BLIST][LI] Online 2.0: 56 punktów.[LI] Online: 70 punktów.[LI] Quick: 93 punktów.[LI] Standard: 140 punktów.[LI] Epic: 210 punktów.[LI] Marathon: 420 punktów.[LI] Marathon 2.0: 700 punktów.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 56 punktów
+				[LI] Online: 70 punktów
+				[LI] Quick: 93 punkty
+				[LI] Standard: 140 punktów
+				[LI] Epic: 210 punktów
+				[LI] Marathon: 420 punktów
+				[LI] Marathon 2.0: 700 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150" Language="pl_PL">
-			<Text>[BLIST][LI] Online 2.0: 60 punktów.[LI] Online: 75 punktów.[LI] Quick: 100 punktów.[LI] Standard: 150 punktów.[LI] Epic: 225 punktów.[LI] Marathon: 450 punktów.[LI] Marathon 2.0: 750 punktów.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 60 punktów
+				[LI] Online: 75 punktów
+				[LI] Quick: 100 punktów
+				[LI] Standard: 150 punktów
+				[LI] Epic: 225 punktów
+				[LI] Marathon: 450 punktów
+				[LI] Marathon 2.0: 750 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153" Language="pl_PL">
-			<Text>[BLIST][LI] Online 2.0: 61 punktów.[LI] Online: 76 punktów.[LI] Quick: 102 punktów.[LI] Standard: 153 punktów.[LI] Epic: 230 punktów.[LI] Marathon: 459 punktów.[LI] Marathon 2.0: 765 punktów.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 61 punkt
+				[LI] Online: 76 punktów
+				[LI] Quick: 102 punkty
+				[LI] Standard: 153 punkty
+				[LI] Epic: 230 punktów
+				[LI] Marathon: 459 punktów
+				[LI] Marathon 2.0: 765 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155" Language="pl_PL">
-			<Text>[BLIST][LI] Online 2.0: 62 punktów.[LI] Online: 78 punktów.[LI] Quick: 103 punktów.[LI] Standard: 155 punktów.[LI] Epic: 232 punktów.[LI] Marathon: 465 punktów.[LI] Marathon 2.0: 775 punktów.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 62 punkty
+				[LI] Online: 78 punktów
+				[LI] Quick: 103 punkty
+				[LI] Standard: 155 punktów
+				[LI] Epic: 232 punkty
+				[LI] Marathon: 465 punktów
+				[LI] Marathon 2.0: 775 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="pl_PL">
-			<Text>[BLIST][LI] Online 2.0: 64 punktów.[LI] Online: 80 punktów.[LI] Quick: 107 punktów.[LI] Standard: 160 punktów.[LI] Epic: 240 punktów.[LI] Marathon: 480 punktów.[LI] Marathon 2.0: 800 punktów.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 64 punkty
+				[LI] Online: 80 punktów
+				[LI] Quick: 107 punktów
+				[LI] Standard: 160 punktów
+				[LI] Epic: 240 punktów
+				[LI] Marathon: 480 punktów
+				[LI] Marathon 2.0: 800 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166" Language="pl_PL">
-			<Text>[BLIST][LI] Online 2.0: 66 punktów.[LI] Online: 83 punktów.[LI] Quick: 111 punktów.[LI] Standard: 166 punktów.[LI] Epic: 249 punktów.[LI] Marathon: 498 punktów.[LI] Marathon 2.0: 830 punktów.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 66 punktów
+				[LI] Online: 83 punkty
+				[LI] Quick: 111 punktów
+				[LI] Standard: 166 punktów
+				[LI] Epic: 249 punktów
+				[LI] Marathon: 498 punktów
+				[LI] Marathon 2.0: 830 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="pl_PL">
-			<Text>[BLIST][LI] Online 2.0: 68 punktów.[LI] Online: 85 punktów.[LI] Quick: 113 punktów.[LI] Standard: 170 punktów.[LI] Epic: 255 punktów.[LI] Marathon: 510 punktów.[LI] Marathon 2.0: 850 punktów.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 68 punktów
+				[LI] Online: 85 punktów
+				[LI] Quick: 113 punktów
+				[LI] Standard: 170 punktów
+				[LI] Epic: 255 punktów
+				[LI] Marathon: 510 punktów
+				[LI] Marathon 2.0: 850 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180" Language="pl_PL">
-			<Text>[BLIST][LI] Online 2.0: 72 punktów.[LI] Online: 90 punktów.[LI] Quick: 120 punktów.[LI] Standard: 180 punktów.[LI] Epic: 270 punktów.[LI] Marathon: 540 punktów.[LI] Marathon 2.0: 900 punktów.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 72 punkty
+				[LI] Online: 90 punktów
+				[LI] Quick: 120 punktów
+				[LI] Standard: 180 punktów
+				[LI] Epic: 270 punktów
+				[LI] Marathon: 540 punktów
+				[LI] Marathon 2.0: 900 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190" Language="pl_PL">
-			<Text>[BLIST][LI] Online 2.0: 76 punktów.[LI] Online: 95 punktów.[LI] Quick: 127 punktów.[LI] Standard: 190 punktów.[LI] Epic: 285 punktów.[LI] Marathon: 570 punktów.[LI] Marathon 2.0: 950 punktów.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 76 punktów
+				[LI] Online: 95 punktów
+				[LI] Quick: 127 punktów
+				[LI] Standard: 190 punktów
+				[LI] Epic: 285 punktów
+				[LI] Marathon: 570 punktów
+				[LI] Marathon 2.0: 950 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196" Language="pl_PL">
-			<Text>[BLIST][LI] Online 2.0: 78 punktów.[LI] Online: 98 punktów.[LI] Quick: 131 punktów.[LI] Standard: 196 punktów.[LI] Epic: 294 punktów.[LI] Marathon: 588 punktów.[LI] Marathon 2.0: 980 punktów.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 78 punktów
+				[LI] Online: 98 punktów
+				[LI] Quick: 131 punkt
+				[LI] Standard: 196 punktów
+				[LI] Epic: 294 punkty
+				[LI] Marathon: 588 punktów
+				[LI] Marathon 2.0: 980 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="pl_PL">
-			<Text>[BLIST][LI] Online 2.0: 80 punktów.[LI] Online: 100 punktów.[LI] Quick: 133 punktów.[LI] Standard: 200 punktów.[LI] Epic: 300 punktów.[LI] Marathon: 600 punktów.[LI] Marathon 2.0: 1000 punktów.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 80 punktów
+				[LI] Online: 100 punktów
+				[LI] Quick: 133 punkty
+				[LI] Standard: 200 punktów
+				[LI] Epic: 300 punktów
+				[LI] Marathon: 600 punktów
+				[LI] Marathon 2.0: 1000 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220" Language="pl_PL">
-			<Text>[BLIST][LI] Online 2.0: 88 punktów.[LI] Online: 110 punktów.[LI] Quick: 147 punktów.[LI] Standard: 220 punktów.[LI] Epic: 330 punktów.[LI] Marathon: 660 punktów.[LI] Marathon 2.0: 1100 punktów.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 88 punktów
+				[LI] Online: 110 punktów
+				[LI] Quick: 147 punktów
+				[LI] Standard: 220 punktów
+				[LI] Epic: 330 punktów
+				[LI] Marathon: 660 punktów
+				[LI] Marathon 2.0: 1100 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240" Language="pl_PL">
-			<Text>[BLIST][LI] Online 2.0: 96 punktów.[LI] Online: 120 punktów.[LI] Quick: 160 punktów.[LI] Standard: 240 punktów.[LI] Epic: 360 punktów.[LI] Marathon: 720 punktów.[LI] Marathon 2.0: 1200 punktów.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 96 punktów
+				[LI] Online: 120 punktów
+				[LI] Quick: 160 punktów
+				[LI] Standard: 240 punktów
+				[LI] Epic: 360 punktów
+				[LI] Marathon: 720 punktów
+				[LI] Marathon 2.0: 1200 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260" Language="pl_PL">
-			<Text>[BLIST][LI] Online 2.0: 104 punktów.[LI] Online: 130 punktów.[LI] Quick: 173 punktów.[LI] Standard: 260 punktów.[LI] Epic: 390 punktów.[LI] Marathon: 780 punktów.[LI] Marathon 2.0: 1300 punktów.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 104 punkty
+				[LI] Online: 130 punktów
+				[LI] Quick: 173 punkty
+				[LI] Standard: 260 punktów
+				[LI] Epic: 390 punktów
+				[LI] Marathon: 780 punktów
+				[LI] Marathon 2.0: 1300 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280" Language="pl_PL">
-			<Text>[BLIST][LI] Online 2.0: 112 punktów.[LI] Online: 140 punktów.[LI] Quick: 187 punktów.[LI] Standard: 280 punktów.[LI] Epic: 420 punktów.[LI] Marathon: 840 punktów.[LI] Marathon 2.0: 1400 punktów.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 112 punktów
+				[LI] Online: 140 punktów
+				[LI] Quick: 187 punktów
+				[LI] Standard: 280 punktów
+				[LI] Epic: 420 punktów
+				[LI] Marathon: 840 punktów
+				[LI] Marathon 2.0: 1400 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300" Language="pl_PL">
-			<Text>[BLIST][LI] Online 2.0: 120 punktów.[LI] Online: 150 punktów.[LI] Quick: 200 punktów.[LI] Standard: 300 punktów.[LI] Epic: 450 punktów.[LI] Marathon: 900 punktów.[LI] Marathon 2.0: 1500 punktów.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="pl_PL">
-			<Text> Krótsze epoki.
-				[n] [BLIST]
-				[LI] Online 2.0: 36 punktów.
-				[LI] Online: 45 punktów.
-				[LI] Quick: 60 punktów.
-				[LI] Standard: 90 punktów.
-				[LI] Epic: 135 punktów.
-				[LI] Marathon: 270 punktów.
-				[LI] Marathon 2.0: 450 punktów.[/BLIST]
-			</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="pl_PL">
-			<Text> Dłuższe epoki.
-				[n] [BLIST]
-				[LI] Online 2.0: 112 punktów.
-				[LI] Online: 140 punktów.
-				[LI] Quick: 187 punktów.
-				[LI] Standard: 280 punktów.
-				[LI] Epic: 420 punktów.
-				[LI] Marathon: 840 punktów.
-				[LI] Marathon 2.0: 1400 punktów.[/BLIST]
-			</Text>
+			<Text>[BLIST]
+				[LI] Online 2.0: 120 punktów
+				[LI] Online: 150 punktów
+				[LI] Quick: 200 punktów
+				[LI] Standard: 300 punktów
+				[LI] Epic: 450 punktów
+				[LI] Marathon: 900 punktów
+				[LI] Marathon 2.0: 1500 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="pl_PL">
-			<Text> Nieco krótsze epoki.
-				[n] [BLIST]
-				[LI] Online 2.0: 48 punktów.
-				[LI] Online: 60 punktów.
-				[LI] Quick: 80 punktów.
-				[LI] Standard: 120 punktów.
-				[LI] Epic: 180 punktów.
-				[LI] Marathon: 360 punktów.
-				[LI] Marathon 2.0: 600 punktów.[/BLIST]
-			</Text>
+			<Text>Nieco krótsze epoki.[nn][BLIST]
+				[LI] Online 2.0: 48 punktów
+				[LI] Online: 60 punktów
+				[LI] Quick: 80 punktów
+				[LI] Standard: 120 punktów
+				[LI] Epic: 180 punktów
+				[LI] Marathon: 360 punktów
+				[LI] Marathon 2.0: 600 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="pl_PL">
-			<Text> Standardowa długość epoki.
-				[n] [BLIST]
-				[LI] Online 2.0: 56 punktów.
-				[LI] Online: 70 punktów.
-				[LI] Quick: 93 punktów.
-				[LI] Standard: 140 punktów.
-				[LI] Epic: 210 punktów.
-				[LI] Marathon: 420 punktów.
-				[LI] Marathon 2.0: 700 punktów.[/BLIST]
-			</Text>
+			<Text>Standardowa długość epoki.[nn][BLIST]
+				[LI] Online 2.0: 56 punktów
+				[LI] Online: 70 punktów
+				[LI] Quick: 93 punkty
+				[LI] Standard: 140 punktów
+				[LI] Epic: 210 punktów
+				[LI] Marathon: 420 punktów
+				[LI] Marathon 2.0: 700 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="pl_PL">
-			<Text> Nieco dłuższe epoki.
-				[n] [BLIST]
-				[LI] Online 2.0: 64 punktów.
-				[LI] Online: 80 punktów.
-				[LI] Quick: 107 punktów.
-				[LI] Standard: 160 punktów.
-				[LI] Epic: 240 punktów.
-				[LI] Marathon: 480 punktów.
-				[LI] Marathon 2.0: 800 punktów.[/BLIST]
-			</Text>
+			<Text>Nieco dłuższe epoki.[nn][BLIST]
+				[LI] Online 2.0: 64 punkty
+				[LI] Online: 80 punktów
+				[LI] Quick: 107 punktów
+				[LI] Standard: 160 punktów
+				[LI] Epic: 240 punktów
+				[LI] Marathon: 480 punktów
+				[LI] Marathon 2.0: 800 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="pl_PL">
 			<Text>Agresja niezależnych sił</Text>
@@ -694,6 +1214,12 @@
 		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="pl_PL">
 			<Text>Zrównoważone</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_EXTENDED_NAME" Language="pl_PL">
+			<Text>Wydłużone</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SWIFT_NAME" Language="pl_PL">
+			<Text>Szybkie</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_BALANCED_NAME" Language="pl_PL">
 			<Text>Zrównoważone tempo</Text>
 		</Replace>
@@ -706,17 +1232,57 @@
 		<Replace Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME" Language="pl_PL">
 			<Text>Standardowe tempo</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_EXTENDED_NAME" Language="pl_PL">
+			<Text>Wydłużone tempo</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_SWIFT_NAME" Language="pl_PL">
+			<Text>Szybkie tempo</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD" Language="pl_PL">
-			<Text>Standardowe tempo: własne tempo gry. Ustawia każdy wiersz w sekcji Ustawienia tempa na standardowy.</Text>
+			<Text>Wszystkie ustawienia tempa pozostają na wartości standardowej.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_EXTENDED" Language="pl_PL">
+			<Text>Bardzo długie epoki z podniesionymi kosztami, by je wypełnić.[nn][BLIST]
+				[LI] Długość epoki: Wydłużone
+				[LI] Postęp epoki: Standardowe
+				[LI] Koszt technologii: Wydłużone
+				[LI] Koszt idei: Wydłużone
+				[LI] Wzrost miast: Wydłużone
+				[LI] Drogi: Wydłużone
+				[LI] Koszt projektów zwycięstwa: Wydłużone[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT" Language="pl_PL">
+			<Text>Krótkie epoki z odpowiednio obniżonymi kosztami.[nn][BLIST]
+				[LI] Długość epoki: Szybkie
+				[LI] Postęp epoki: Standardowe
+				[LI] Koszt technologii: Szybkie
+				[LI] Koszt idei: Szybkie
+				[LI] Wzrost miast: Szybkie
+				[LI] Drogi: Szybkie
+				[LI] Koszt projektów zwycięstwa: Szybkie[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="pl_PL">
-			<Text>Zrównoważone tempo: dłuższe epoki z badaniami w stylu epickim. Ustawia Długość epoki na 153, 166 i 196 punktów według epoki, Tempo postępu epoki na Zrównoważone, a Koszt technologii i Koszt idei na Wysokie.</Text>
+			<Text>Dłuższe epoki z badaniami i rozwojem dostrojonymi do ich wypełnienia.[nn][BLIST]
+				[LI] Długość epoki: Zrównoważone
+				[LI] Postęp epoki: Zrównoważone
+				[LI] Koszt technologii: Zrównoważone
+				[LI] Koszt idei: Zrównoważone
+				[LI] Wzrost miast: Zrównoważone
+				[LI] Drogi: Zrównoważone
+				[LI] Koszt projektów zwycięstwa: Zrównoważone[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="pl_PL">
-			<Text>Tempo wieloosobowe: lżejsze wydłużenie na potrzeby sesji. Ustawia Długość epoki na 140, 155 i 190 punktów według epoki, Tempo postępu epoki na Zrównoważone, Koszt technologii na +35%, +50% i +75% według epoki, Koszt idei na +45%, +60% i +85%, Wzrost miast na Wolny, Drogi na Szybkie (Ekspresowe w epoce nowoczesnej), a Koszt projektów zwycięstwa w epoce nowoczesnej na +20%.</Text>
+			<Text>Dostrojone do rozgrywki za jednym posiedzeniem.[nn][BLIST]
+				[LI] Długość epoki: 140 / 155 / 190
+				[LI] Postęp epoki: Zrównoważone
+				[LI] Koszt technologii: +35% / +50% / +75%
+				[LI] Koszt idei: +45% / +60% / +85%
+				[LI] Wzrost miast: Wolno
+				[LI] Drogi: -25% / -25% / -50%
+				[LI] Koszt projektów zwycięstwa: Standardowe / Standardowe / +20%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="pl_PL">
-			<Text>Własne tempo: sekcja Ustawienia tempa na karcie Tempo nie odpowiada już żadnemu zestawowi.</Text>
+			<Text>Sekcja Ustawienia tempa na karcie Tempo nie odpowiada już żadnemu zestawowi.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

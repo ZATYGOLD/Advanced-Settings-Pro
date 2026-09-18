@@ -11,11 +11,103 @@
 
 	<!-- Advanced Settings Tabs -->
 		<Row Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS"><Text>Map</Text></Row>
+		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_FAST">
+			<Text>Every award in this age adds half as much again.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_BALANCED">
+			<Text>Smaller early milestones and larger later ones in this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_STANDARD">
+			<Text>The game's own awards for this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_SLOW">
+			<Text>Every award in this age adds half as much.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_WONDER_TOGGLE_DESCRIPTION_ENABLED">
+			<Text>This Natural Wonder can appear on the map.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_WONDER_TOGGLE_DESCRIPTION_DISABLED">
+			<Text>This Natural Wonder is kept off the map.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_50">
+			<Text>50% more Production for Victory Projects in this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_25">
+			<Text>25% more Production for Victory Projects in this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_20">
+			<Text>20% more Production for Victory Projects in this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_100">
+			<Text>100% more Production for Victory Projects in this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_MINUS_25">
+			<Text>25% less Production for Victory Projects in this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_85">
+			<Text>85% more Science in this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_75">
+			<Text>75% more Science in this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_60">
+			<Text>60% more Science in this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_50">
+			<Text>50% more Science in this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_45">
+			<Text>45% more Science in this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_35">
+			<Text>35% more Science in this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_25">
+			<Text>25% more Science in this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_100">
+			<Text>100% more Science in this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_MINUS_25">
+			<Text>25% less Science in this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_VALUE_DESCRIPTION">
+			<Text>The most settlements you may hold in this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_85">
+			<Text>85% more Culture in this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_75">
+			<Text>75% more Culture in this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_60">
+			<Text>60% more Culture in this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_50">
+			<Text>50% more Culture in this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_45">
+			<Text>45% more Culture in this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_35">
+			<Text>35% more Culture in this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_25">
+			<Text>25% more Culture in this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_100">
+			<Text>100% more Culture in this age.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_CIVIC_COST_AGE_DESC_MINUS_25">
+			<Text>25% less Culture in this age.</Text>
+		</Row>
 		<Row Tag="LOC_ZG_ADVANCED_OPTIONS_AGES"><Text>Pace</Text></Row>
 
 	<!-- Universal Names -->
 		<Row Tag="LOC_ZG_ENABLED_NAME"><Text>Enabled</Text></Row>
+		<Row Tag="LOC_ZG_CRISES_DESCRIPTION_ENABLED"><Text>Every crisis in the selection below can occur.</Text></Row>
 		<Row Tag="LOC_ZG_DISABLED_NAME"><Text>Disabled</Text></Row>
+		<Row Tag="LOC_ZG_CRISES_DESCRIPTION_DISABLED"><Text>No crises occur.</Text></Row>
 		<Row Tag="LOC_ZG_EARLY_NAME"><Text>Early</Text></Row>
 		<Row Tag="LOC_ZG_LATE_NAME"><Text>Late</Text></Row>
 		<Row Tag="LOC_ZG_NONE_NAME"><Text>None</Text></Row>
@@ -23,11 +115,13 @@
 		<Row Tag="LOC_ZG_DOUBLE_NAME"><Text>Double</Text></Row>
 		<Row Tag="LOC_ZG_HALF_NAME"><Text>Half</Text></Row>
 		<Row Tag="LOC_ZG_FAST_NAME"><Text>Fast</Text></Row>
+		<Row Tag="LOC_ZG_QUICK_NAME"><Text>Quick</Text></Row>
 		<Row Tag="LOC_ZG_SLOW_NAME"><Text>Slow</Text></Row>
 		<Row Tag="LOC_ZG_MORE_NAME"><Text>More</Text></Row>
 		<Row Tag="LOC_ZG_LESS_NAME"><Text>Less</Text></Row>
 		<Row Tag="LOC_ZG_LOW_NAME"><Text>Low</Text></Row>
 		<Row Tag="LOC_ZG_HIGH_NAME"><Text>High</Text></Row>
+		<Row Tag="LOC_ZG_MEDIUM_NAME"><Text>Medium</Text></Row>
 
 	<!-- Setting Names -->
 		<Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME"><Text>Settler Speed</Text></Row>
@@ -50,99 +144,81 @@
 
 	<!-- Unit Movement Descriptions -->
 		<Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION">
-			<Text>Sets the settler base movement and embarked speed.</Text>
+			<Text>Sets how far Settlers move on land and at sea. Faster Settlers reach distant sites before a rival claims them.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_SLOW">
-			<Text>[BLIST]
-				[LI] Slow: 2[icon:Action_Move]Base and 1[icon:Action_Move]Embarked Movement.[/BLIST]
-			</Text>
+			<Text>2[icon:Action_Move]Base and 1[icon:Action_Move]Embarked Movement.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_DEFAULT">
-			<Text>[BLIST]
-				[LI] Standard: 3[icon:Action_Move]Base and 2[icon:Action_Move]Embarked Movement.[/BLIST]
-			</Text>
+			<Text>3[icon:Action_Move]Base and 2[icon:Action_Move]Embarked Movement.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_FAST">
-			<Text>[BLIST]
-				[LI] Fast: 4[icon:Action_Move]Base and 3[icon:Action_Move]Embarked Movement.[/BLIST]
-			</Text>
+			<Text>5[icon:Action_Move]Base and 4[icon:Action_Move]Embarked Movement.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_QUICK">
+			<Text>4[icon:Action_Move]Base and 3[icon:Action_Move]Embarked Movement.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION">
-			<Text>Sets the treasure convoy base movement and embarked speed.</Text>
+			<Text>Sets how far Treasure Convoys move on land and at sea. Faster convoys spend less time exposed to raiders.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_SLOW">
-			<Text>[BLIST]
-				[LI] Slow: 1[icon:Action_Move]Base and Embarked Movement.[/BLIST]
-			</Text>
+			<Text>1[icon:Action_Move]Base and Embarked Movement.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_DEFAULT">
-			<Text>[BLIST]
-				[LI] Standard: 2[icon:Action_Move]Base and Embarked Movement.[/BLIST]
-			</Text>
+			<Text>2[icon:Action_Move]Base and Embarked Movement.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_FAST">
-			<Text>[BLIST]
-				[LI] Fast: 3[icon:Action_Move]Base and Embarked Movement.[/BLIST]
-			</Text>
+			<Text>4[icon:Action_Move]Base and Embarked Movement.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_QUICK">
+			<Text>3[icon:Action_Move]Base and Embarked Movement.</Text>
 		</Row>
 
 	<!-- Independent Power Descriptions -->
 		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION">
-			<Text>Sets the initial number of [icon:INDEPENDENT_POWER]Independent Powers. Results may vary.[n]This will attempt to spawn the desired amount, but may not get the exact expected number. However, this will get as close as possible to the expected number.</Text>
+			<Text>Sets the initial number of [icon:INDEPENDENT_POWER]Independent Powers.[n]The map gets as close to this as it can, but may not place exactly that many.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_NONE">
-			<Text>[BLIST]
-				[LI] None: 0 Independent Powers.[/BLIST]
-			</Text>
+			<Text>0 Independent Powers.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_LESS">
-			<Text>[BLIST]
-				[LI] Less: 2 Independent Powers per Civilization.[/BLIST]
-			</Text>
+			<Text>2 Independent Powers per Civilization.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_DEFAULT">
-			<Text>[BLIST]
-				[LI] Standard: 3 Independent Powers per Civilization.[/BLIST]
-			</Text>
+			<Text>3 Independent Powers per Civilization.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_MORE">
-			<Text>[BLIST]
-				[LI] More: 4 Independent Powers per Civilization.[/BLIST]
-			</Text>
+			<Text>4 Independent Powers per Civilization.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION">
 			<Text>Sets the minimum distance for Independent Powers.
-				[n] This may impact the total number of Independent Powers.
-			</Text>
+				[n]This may impact the total number of Independent Powers.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_LESS">
-			<Text>[BLIST]
-				[LI] Antiquity: 4 Tiles.
-				[LI] Exploration: 3 Tiles.
-				[LI] Modern: 2 Tiles.[/BLIST]
-			</Text>
+			<Text>Less room between Independent Powers, so more of them fit.[nn][BLIST]
+				[LI] Antiquity: 4 tiles
+				[LI] Exploration: 3 tiles
+				[LI] Modern: 2 tiles[/BLIST]</Text>
 		</Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_DEFAULT">
-			<Text>[BLIST]
-				[LI] Antiquity: 6 Tiles.
-				[LI] Exploration: 6 Tiles.
-				[LI] Modern: 4 Tiles.[/BLIST]
-			</Text>
+			<Text>The game's own spacing between Independent Powers.[nn][BLIST]
+				[LI] Antiquity: 6 tiles
+				[LI] Exploration: 6 tiles
+				[LI] Modern: 4 tiles[/BLIST]</Text>
 		</Row>
 		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE">
-			<Text>[BLIST]
-				[LI] Antiquity: 7 Tiles.
-				[LI] Exploration: 7 Tiles.
-				[LI] Modern: 5 Tiles.[/BLIST]
-			</Text>
+			<Text>More room between Independent Powers, so fewer of them fit.[nn][BLIST]
+				[LI] Antiquity: 7 tiles
+				[LI] Exploration: 7 tiles
+				[LI] Modern: 5 tiles[/BLIST]</Text>
 		</Row>
 
 	<!-- Disaster Descriptions -->
 		<Row Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION">
-			<Text> Disables all natural disasters.</Text>
+			<Text>Disables all natural disasters.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_DISASTER_FREQUENCY_DESCRIPTION_CUSTOM">
-			<Text>Custom: set the disaster frequency for each age individually.</Text>
+			<Text>Set the disaster frequency for each age individually.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_DISASTER_AGE_DESCRIPTION">
 			<Text>Sets this age's disaster frequency.[n]Applies only when Disasters is set to Custom.</Text>
@@ -150,36 +226,196 @@
 
 	<!-- Pace (All Ages) -->
 		<Row Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS"><Text>Pace Settings</Text></Row>
-		<Row Tag="LOC_ZG_FASTER_NAME"><Text>Faster</Text></Row>
-		<Row Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM"><Text>Custom: each age uses its own row in the age groups below.</Text></Row>
+		<Row Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM"><Text>Each age uses its own row in the age groups below.</Text></Row>
 		<Row Tag="LOC_ZG_PACING_AGE_DESCRIPTION"><Text>Sets this age's value.[n]Applies only when the matching Pace Settings row is set to Custom. Pace Set presets fill these rows; changing one switches Pace Set to Custom.</Text></Row>
 		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME"><Text>Age Progress Rate</Text></Row>
-		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION"><Text>Sets how quickly milestones and future techs and civics fill the age meter.</Text></Row>
+		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION"><Text>How quickly the age meter fills. Each Legacy Path milestone, and each future tech or civic, adds points to it; Age Length sets the total that ends the age.[n]Milestone figures are the first, second, and third of each age.</Text></Row>
 		<Row Tag="LOC_ZG_TECHNOLOGY_COST_NAME"><Text>Technology Cost</Text></Row>
-		<Row Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION"><Text>Sets the research cost of technologies.</Text></Row>
+		<Row Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION"><Text>Sets how much Science each technology costs. Higher costs stretch an age out; lower costs let you race down the tree.</Text></Row>
 		<Row Tag="LOC_ZG_CIVIC_COST_NAME"><Text>Civic Cost</Text></Row>
-		<Row Tag="LOC_ZG_CIVIC_COST_DESCRIPTION"><Text>Sets the culture cost of civics.</Text></Row>
+		<Row Tag="LOC_ZG_CIVIC_COST_DESCRIPTION"><Text>Sets how much Culture each civic costs. Higher costs stretch an age out; lower costs let you race down the tree.</Text></Row>
 		<Row Tag="LOC_ZG_CITY_GROWTH_NAME"><Text>City Growth</Text></Row>
-		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION"><Text>Sets how much food cities need to grow.</Text></Row>
+		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION"><Text>Sets how much Food a city needs for each new citizen. Lower thresholds let cities climb past size 10 far sooner.</Text></Row>
 		<Row Tag="LOC_ZG_ROADS_NAME"><Text>Roads</Text></Row>
-		<Row Tag="LOC_ZG_ROADS_DESCRIPTION"><Text>Sets how much movement roads and railroads cost.</Text></Row>
+		<Row Tag="LOC_ZG_ROADS_DESCRIPTION"><Text>Sets how much Movement it costs to travel along roads and railroads. Cheaper roads let armies cross your territory in far fewer turns.</Text></Row>
 		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_NAME"><Text>Victory Project Cost</Text></Row>
-		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION"><Text>Sets the production cost of the science and military triumph projects in every age.</Text></Row>
-		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW"><Text>[BLIST][LI] Slow: 50% fewer points.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD"><Text>[BLIST][LI] Standard: no change.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST"><Text>[BLIST][LI] Fast: 50% more points.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_COST_DESCRIPTION_LOW"><Text>[BLIST][LI] Low: 25% cheaper.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_COST_DESCRIPTION_STANDARD"><Text>[BLIST][LI] Standard: no change.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_COST_DESCRIPTION_HIGH"><Text>[BLIST][LI] High: 50% more expensive.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_COST_DESCRIPTION_DOUBLE"><Text>[BLIST][LI] Double: 100% more expensive.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOWER"><Text>[BLIST][LI] Slower: cities grow more slowly.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW"><Text>[BLIST][LI] Slow: cities grow a little more slowly.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_SLOWER_NAME"><Text>Slower</Text></Row>
-		<Row Tag="LOC_ZG_ROADS_EXPRESS_NAME"><Text>Express</Text></Row>
-		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_EXPRESS"><Text>[BLIST][LI] Express: 25% less movement cost on roads, 50% less on railroads.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED"><Text>[BLIST][LI] Balanced: milestones award 4, 7, and 11 points in Antiquity, 4, 8, and 12 in Exploration, and 4 and 8 in Modern; future techs and civics award 8, or 7 in Modern.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION"><Text>Sets the Production cost of the 12 science and military Victory Projects, from Chart The Stars to Crewed Space Flight.</Text></Row>
+		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW"><Text>Every award adds half as much, so ages run longer before they end.[nn][BLIST]
+				[LI] Antiquity: 3, 3, and 5
+				[LI] Exploration: 3, 5, and 10
+				[LI] Modern: 3 and 5[/BLIST][nn]Future techs and civics: 5 points each.</Text></Row>
+		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD"><Text>The game's own awards, left unchanged.[nn][BLIST]
+				[LI] Antiquity: 5, 5, and 10
+				[LI] Exploration: 5, 10, and 20
+				[LI] Modern: 5 and 10[/BLIST][nn]Future techs and civics: 10 points each.</Text></Row>
+		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST"><Text>Every award adds half as much again, so ages end sooner.[nn][BLIST]
+				[LI] Antiquity: 8, 8, and 15
+				[LI] Exploration: 8, 15, and 30
+				[LI] Modern: 8 and 15[/BLIST][nn]Future techs and civics: 15 points each.</Text></Row>
+		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_LOW"><Text>25% less Production.[n]Cost of each Victory Project: [BLIST]
+				[LI] Chart The Stars: 338
+				[LI] Spherical Earth: 450
+				[LI] Heliocentric Model: 563
+				[LI] Discover Calculus: 675
+				[LI] Break The Sound Barrier: 750
+				[LI] Launch Satellite: 750
+				[LI] Produce Nuclear Weapon: 750
+				[LI] Trans-Oceanic Flight: 750
+				[LI] Radio Telescope: 900
+				[LI] Crewed Space Flight Preparation: 1500
+				[LI] Operation Ivy: 1800
+				[LI] Crewed Space Flight: 2250[/BLIST][nn](On Standard Speed)</Text></Row>
+		<Row Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_LOW"><Text>25% less Culture. Chiefdom: 68 instead of 90. (On Standard Speed)</Text></Row>
+		<Row Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_LOW"><Text>25% less Science. Pottery: 53 instead of 70. (On Standard Speed)</Text></Row>
+		<Row Tag="LOC_ZG_COST_DESCRIPTION_STANDARD"><Text>The game's own costs, left unchanged.</Text></Row>
+		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_STANDARD"><Text>The game's own costs, left unchanged.[n]Cost of each Victory Project: [BLIST]
+				[LI] Chart The Stars: 450
+				[LI] Spherical Earth: 600
+				[LI] Heliocentric Model: 750
+				[LI] Discover Calculus: 900
+				[LI] Break The Sound Barrier: 1000
+				[LI] Launch Satellite: 1000
+				[LI] Produce Nuclear Weapon: 1000
+				[LI] Trans-Oceanic Flight: 1000
+				[LI] Radio Telescope: 1200
+				[LI] Crewed Space Flight Preparation: 2000
+				[LI] Operation Ivy: 2400
+				[LI] Crewed Space Flight: 3000[/BLIST][nn](On Standard Speed)</Text></Row>
+		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_BALANCED"><Text>Standard in Antiquity, then cheaper Victory Projects.[nn][BLIST]
+				[LI] Antiquity: Standard
+				[LI] Exploration: -25%
+				[LI] Modern: -25%[/BLIST][nn]Cost by age (Antiquity / Exploration / Modern): [BLIST]
+				[LI] Chart The Stars: 450 / 338 / 338
+				[LI] Spherical Earth: 600 / 450 / 450
+				[LI] Heliocentric Model: 750 / 563 / 563
+				[LI] Discover Calculus: 900 / 675 / 675
+				[LI] Break The Sound Barrier: 1000 / 750 / 750
+				[LI] Launch Satellite: 1000 / 750 / 750
+				[LI] Produce Nuclear Weapon: 1000 / 750 / 750
+				[LI] Trans-Oceanic Flight: 1000 / 750 / 750
+				[LI] Radio Telescope: 1200 / 900 / 900
+				[LI] Crewed Space Flight Preparation: 2000 / 1500 / 1500
+				[LI] Operation Ivy: 2400 / 1800 / 1800
+				[LI] Crewed Space Flight: 3000 / 2250 / 2250[/BLIST][nn](On Standard Speed)</Text></Row>
+		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_EXTENDED"><Text>Every Victory Project costs more in every age.[nn][BLIST]
+				[LI] Antiquity: +25%
+				[LI] Exploration: +25%
+				[LI] Modern: +25%[/BLIST][nn]Cost by age (Antiquity / Exploration / Modern): [BLIST]
+				[LI] Chart The Stars: 563 / 563 / 563
+				[LI] Spherical Earth: 750 / 750 / 750
+				[LI] Heliocentric Model: 938 / 938 / 938
+				[LI] Discover Calculus: 1125 / 1125 / 1125
+				[LI] Break The Sound Barrier: 1250 / 1250 / 1250
+				[LI] Launch Satellite: 1250 / 1250 / 1250
+				[LI] Produce Nuclear Weapon: 1250 / 1250 / 1250
+				[LI] Trans-Oceanic Flight: 1250 / 1250 / 1250
+				[LI] Radio Telescope: 1500 / 1500 / 1500
+				[LI] Crewed Space Flight Preparation: 2500 / 2500 / 2500
+				[LI] Operation Ivy: 3000 / 3000 / 3000
+				[LI] Crewed Space Flight: 3750 / 3750 / 3750[/BLIST][nn](On Standard Speed)</Text></Row>
+		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_SWIFT"><Text>Every Victory Project costs less in every age.[nn][BLIST]
+				[LI] Antiquity: -25%
+				[LI] Exploration: -25%
+				[LI] Modern: -25%[/BLIST][nn]Cost by age (Antiquity / Exploration / Modern): [BLIST]
+				[LI] Chart The Stars: 338 / 338 / 338
+				[LI] Spherical Earth: 450 / 450 / 450
+				[LI] Heliocentric Model: 563 / 563 / 563
+				[LI] Discover Calculus: 675 / 675 / 675
+				[LI] Break The Sound Barrier: 750 / 750 / 750
+				[LI] Launch Satellite: 750 / 750 / 750
+				[LI] Produce Nuclear Weapon: 750 / 750 / 750
+				[LI] Trans-Oceanic Flight: 750 / 750 / 750
+				[LI] Radio Telescope: 900 / 900 / 900
+				[LI] Crewed Space Flight Preparation: 1500 / 1500 / 1500
+				[LI] Operation Ivy: 1800 / 1800 / 1800
+				[LI] Crewed Space Flight: 2250 / 2250 / 2250[/BLIST][nn](On Standard Speed)</Text></Row>
+		<Row Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD"><Text>The game's own costs, left unchanged.</Text></Row>
+		<Row Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED"><Text>Standard civics early, dearer once the tree opens up.[nn][BLIST]
+				[LI] Antiquity: Standard
+				[LI] Exploration: +25%
+				[LI] Modern: +25%[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_EXTENDED"><Text>Civics cost more in every age, steeply so after Antiquity.[nn][BLIST]
+				[LI] Antiquity: +25%
+				[LI] Exploration: +50%
+				[LI] Modern: +50%[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_SWIFT"><Text>Cheaper civics early, standard once the Modern Age arrives.[nn][BLIST]
+				[LI] Antiquity: -25%
+				[LI] Exploration: -25%
+				[LI] Modern: Standard[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD"><Text>The game's own costs, left unchanged.</Text></Row>
+		<Row Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED"><Text>Dearer research early, cheaper once the tree opens up.[nn][BLIST]
+				[LI] Antiquity: +25%
+				[LI] Exploration: Standard
+				[LI] Modern: -25%[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_EXTENDED"><Text>Research costs more in every age, steeply so after Antiquity.[nn][BLIST]
+				[LI] Antiquity: +25%
+				[LI] Exploration: +50%
+				[LI] Modern: +50%[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_SWIFT"><Text>Cheaper research early, standard once the Modern Age arrives.[nn][BLIST]
+				[LI] Antiquity: -25%
+				[LI] Exploration: -25%
+				[LI] Modern: Standard[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_HIGH"><Text>50% more Production.[n]Cost of each Victory Project: [BLIST]
+				[LI] Chart The Stars: 675
+				[LI] Spherical Earth: 900
+				[LI] Heliocentric Model: 1125
+				[LI] Discover Calculus: 1350
+				[LI] Break The Sound Barrier: 1500
+				[LI] Launch Satellite: 1500
+				[LI] Produce Nuclear Weapon: 1500
+				[LI] Trans-Oceanic Flight: 1500
+				[LI] Radio Telescope: 1800
+				[LI] Crewed Space Flight Preparation: 3000
+				[LI] Operation Ivy: 3600
+				[LI] Crewed Space Flight: 4500[/BLIST][nn](On Standard Speed)</Text></Row>
+		<Row Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_HIGH"><Text>50% more Culture. Chiefdom: 135 instead of 90. (On Standard Speed)</Text></Row>
+		<Row Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_HIGH"><Text>50% more Science. Pottery: 105 instead of 70. (On Standard Speed)</Text></Row>
+		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_MEDIUM"><Text>25% more Production.[n]Cost of each Victory Project: [BLIST]
+				[LI] Chart The Stars: 563
+				[LI] Spherical Earth: 750
+				[LI] Heliocentric Model: 938
+				[LI] Discover Calculus: 1125
+				[LI] Break The Sound Barrier: 1250
+				[LI] Launch Satellite: 1250
+				[LI] Produce Nuclear Weapon: 1250
+				[LI] Trans-Oceanic Flight: 1250
+				[LI] Radio Telescope: 1500
+				[LI] Crewed Space Flight Preparation: 2500
+				[LI] Operation Ivy: 3000
+				[LI] Crewed Space Flight: 3750[/BLIST][nn](On Standard Speed)</Text></Row>
+		<Row Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_MEDIUM"><Text>25% more Culture. Chiefdom: 113 instead of 90. (On Standard Speed)</Text></Row>
+		<Row Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_MEDIUM"><Text>25% more Science. Pottery: 88 instead of 70. (On Standard Speed)</Text></Row>
+		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_DOUBLE"><Text>Twice the Production.[n]Cost of each Victory Project: [BLIST]
+				[LI] Chart The Stars: 900
+				[LI] Spherical Earth: 1200
+				[LI] Heliocentric Model: 1500
+				[LI] Discover Calculus: 1800
+				[LI] Break The Sound Barrier: 2000
+				[LI] Launch Satellite: 2000
+				[LI] Produce Nuclear Weapon: 2000
+				[LI] Trans-Oceanic Flight: 2000
+				[LI] Radio Telescope: 2400
+				[LI] Crewed Space Flight Preparation: 4000
+				[LI] Operation Ivy: 4800
+				[LI] Crewed Space Flight: 6000[/BLIST][nn](On Standard Speed)</Text></Row>
+		<Row Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_DOUBLE"><Text>Twice the Culture. Chiefdom: 180 instead of 90. (On Standard Speed)</Text></Row>
+		<Row Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_DOUBLE"><Text>Twice the Science. Pottery: 140 instead of 70. (On Standard Speed)</Text></Row>
+		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW"><Text>25% more Food per citizen.</Text></Row>
+		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED">
+			<Text>
+				Smaller early milestones and larger later ones, so an age does not end on an early rush. 
+				[nn][BLIST]
+				[LI] Antiquity: 4, 7, and 11
+				[LI] Exploration: 4, 8, and 12
+				[LI] Modern: 4 and 8
+				[/BLIST]
+				[nn]Future techs and civics: 8 points, 7 in Modern.
+			</Text>
+		</Row>
 		<Row Tag="LOC_ZG_PCT_MINUS_25"><Text>-25%</Text></Row>
+		<Row Tag="LOC_ZG_PCT_MINUS_50"><Text>-50%</Text></Row>
 		<Row Tag="LOC_ZG_PCT_PLUS_20"><Text>+20%</Text></Row>
+		<Row Tag="LOC_ZG_PCT_PLUS_25"><Text>+25%</Text></Row>
 		<Row Tag="LOC_ZG_PCT_PLUS_35"><Text>+35%</Text></Row>
 		<Row Tag="LOC_ZG_PCT_PLUS_45"><Text>+45%</Text></Row>
 		<Row Tag="LOC_ZG_PCT_PLUS_50"><Text>+50%</Text></Row>
@@ -187,11 +423,37 @@
 		<Row Tag="LOC_ZG_PCT_PLUS_75"><Text>+75%</Text></Row>
 		<Row Tag="LOC_ZG_PCT_PLUS_85"><Text>+85%</Text></Row>
 		<Row Tag="LOC_ZG_PCT_PLUS_100"><Text>+100%</Text></Row>
-		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD"><Text>[BLIST][LI] Standard: no change.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST"><Text>[BLIST][LI] Fast: cities grow faster.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD"><Text>[BLIST][LI] Standard: no change.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_FAST"><Text>[BLIST][LI] Fast: 25% less movement cost.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_FASTER"><Text>[BLIST][LI] Faster: 50% less movement cost.[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD"><Text>No change.</Text></Row>
+		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED"><Text>Cities grow faster early, then settle to standard.[nn][BLIST]
+				[LI] Antiquity: -25%
+				[LI] Exploration: -25%
+				[LI] Modern: Standard[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_EXTENDED"><Text>Cities grow more slowly in every age.[nn][BLIST]
+				[LI] Antiquity: +25%
+				[LI] Exploration: +25%
+				[LI] Modern: +25%[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SWIFT"><Text>Cities grow faster in every age.[nn][BLIST]
+				[LI] Antiquity: -25%
+				[LI] Exploration: -25%
+				[LI] Modern: -25%[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST"><Text>50% less Food per citizen.</Text></Row>
+		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_QUICK"><Text>25% less Food per citizen.</Text></Row>
+		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD"><Text>No change.</Text></Row>
+		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_BALANCED"><Text>Standard roads until the Modern Age, then cheaper.[nn][BLIST]
+				[LI] Antiquity: Standard
+				[LI] Exploration: Standard
+				[LI] Modern: -25%[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_EXTENDED"><Text>Standard roads until the Modern Age, then cheaper.[nn][BLIST]
+				[LI] Antiquity: Standard
+				[LI] Exploration: Standard
+				[LI] Modern: -25%[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_SWIFT"><Text>Roads get cheaper to cross as the map opens up.[nn][BLIST]
+				[LI] Antiquity: -25%
+				[LI] Exploration: -50%
+				[LI] Modern: -50%[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_SLOW"><Text>25% more Movement per tile.</Text></Row>
+		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_FAST"><Text>50% less Movement per tile.</Text></Row>
+		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_QUICK"><Text>25% less Movement per tile.</Text></Row>
 
 	<!-- Random Mementos -->
 		<Row Tag="LOC_ZG_RANDOM_MEMENTOS_NAME"><Text>Random Mementos</Text></Row>
@@ -215,25 +477,22 @@
 			<Text>Sets the initial [icon:SETTLEMENT_LIMIT]settlement limit for each age.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_DEFAULT">
-			<Text>[BLIST]
-				[LI] Antiquity: 3 settlement limit.
-				[LI] Exploration: 8 settlement limit.
-				[LI] Modern: 16 settlement limit.[/BLIST]
-			</Text>
+			<Text>The game's own settlement cap.[nn][BLIST]
+				[LI] Antiquity: 3 settlements
+				[LI] Exploration: 8 settlements
+				[LI] Modern: 16 settlements[/BLIST]</Text>
 		</Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_MORE">
-			<Text>[BLIST]
-				[LI] Antiquity: 5 settlement limit.
-				[LI] Exploration: 12 settlement limit.
-				[LI] Modern: 20 settlement limit.[/BLIST]
-			</Text>
+			<Text>A looser cap on how many settlements you may hold.[nn][BLIST]
+				[LI] Antiquity: 5 settlements
+				[LI] Exploration: 12 settlements
+				[LI] Modern: 20 settlements[/BLIST]</Text>
 		</Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_LESS">
-			<Text>[BLIST]
-				[LI] Antiquity: 1 settlement limit.
-				[LI] Exploration: 4 settlement limit.
-				[LI] Modern: 10 settlement limit.[/BLIST]
-			</Text>
+			<Text>A tighter cap on how many settlements you may hold.[nn][BLIST]
+				[LI] Antiquity: 1 settlement
+				[LI] Exploration: 4 settlements
+				[LI] Modern: 10 settlements[/BLIST]</Text>
 		</Row>
 
 	<!-- Settlement Distance Descriptions -->
@@ -241,67 +500,51 @@
 			<Text>Sets the minimum distance between settlements.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_LESS">
-			<Text>[BLIST]
-				[LI] Less: 2 Tiles.[/BLIST]
-			</Text>
+			<Text>2 tiles.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_DEFAULT">
-			<Text>[BLIST]
-				[LI] Standard: 3 Tiles.[/BLIST]
-			</Text>
+			<Text>3 tiles.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE">
-			<Text>[BLIST]
-				[LI] More: 4 Tiles.[/BLIST]
-			</Text>
+			<Text>4 tiles.</Text>
 		</Row>
 
 	<!-- Unit Cost Descriptions -->
 		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION">
-			<Text>Sets production cost of combat units.</Text>
+			<Text>Sets the Production cost of combat units. Higher costs make a standing army a real investment.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_LOW">
-			<Text>[BLIST]
-				[LI] Low: 25% cheaper.[/BLIST]
-			</Text>
+			<Text>25% less Production. Warrior: 23 instead of 30. (On Standard Speed)</Text>
 		</Row>
 		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD">
-			<Text>[BLIST]
-				[LI] Standard: no discount.[/BLIST]
-			</Text>
+			<Text>The game's own unit costs, left unchanged.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_HIGH">
-			<Text>[BLIST]
-				[LI] High: 50% more expensive.[/BLIST]
-			</Text>
+			<Text>50% more Production. Warrior: 45 instead of 30. (On Standard Speed)</Text>
+		</Row>
+		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_MEDIUM">
+			<Text>25% more Production. Warrior: 38 instead of 30. (On Standard Speed)</Text>
 		</Row>
 		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DOUBLE">
-			<Text>[BLIST]
-				[LI] Double: 100% more expensive.[/BLIST]
-			</Text>
+			<Text>Twice the Production. Warrior: 60 instead of 30. (On Standard Speed)</Text>
 		</Row>
 		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION">
-			<Text>Sets production cost of civilian units.</Text>
+			<Text>Sets the Production cost of civilian units such as Settlers and Merchants.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_LOW">
-			<Text>[BLIST]
-				[LI] Low: 25% cheaper.[/BLIST]
-			</Text>
+			<Text>25% less Production. Settler: 38 instead of 50. (On Standard Speed)</Text>
 		</Row>
 		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD">
-			<Text>[BLIST]
-				[LI] Standard: no discount.[/BLIST]
-			</Text>
+			<Text>The game's own unit costs, left unchanged.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_HIGH">
-			<Text>[BLIST]
-				[LI] High: 50% more expensive.[/BLIST]
-			</Text>
+			<Text>50% more Production. Settler: 75 instead of 50. (On Standard Speed)</Text>
+		</Row>
+		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_MEDIUM">
+			<Text>25% more Production. Settler: 63 instead of 50. (On Standard Speed)</Text>
 		</Row>
 		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE">
-			<Text>[BLIST]
-				[LI] Double: 100% more expensive.[/BLIST]
-			</Text>
+			<Text>Twice the Production. Settler: 100 instead of 50. (On Standard Speed)</Text>
 		</Row>
 
 	<!-- Crisis Descriptions -->
@@ -315,83 +558,72 @@
 			<Text>No crises occur.[n]Set Crises to Enabled to choose a timing.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_EARLY">
-			<Text>[BLIST]
-				[LI] Stage 1: Begins at 50%.
-				[LI] Stage 2: Begins at 65%.
-				[LI] Stage 3: Begins at 85%.[/BLIST]
-			</Text>
+			<Text>Each crisis stage begins earlier in the age.[nn][BLIST]
+				[LI] Stage 1: Begins at 50%
+				[LI] Stage 2: Begins at 65%
+				[LI] Stage 3: Begins at 85%[/BLIST]</Text>
 		</Row>
 		<Row Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DEFAULT">
-			<Text>[BLIST]
-				[LI] Stage 1: Begins at 70%.
-				[LI] Stage 2: Begins at 80%.
-				[LI] Stage 3: Begins at 90%.[/BLIST]
-			</Text>
+			<Text>The game's own crisis timing.[nn][BLIST]
+				[LI] Stage 1: Begins at 70%
+				[LI] Stage 2: Begins at 80%
+				[LI] Stage 3: Begins at 90%[/BLIST]</Text>
 		</Row>
 		<Row Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_LATE">
-			<Text>[BLIST]
-				[LI] Stage 1: Begins at 85%.
-				[LI] Stage 2: Begins at 90%.
-				[LI] Stage 3: Begins at 95%.[/BLIST]
-			</Text>
+			<Text>Each crisis stage begins later in the age.[nn][BLIST]
+				[LI] Stage 1: Begins at 85%
+				[LI] Stage 2: Begins at 90%
+				[LI] Stage 3: Begins at 95%[/BLIST]</Text>
 		</Row>
 
 	<!-- Natural Wonder Descriptions -->
 		<Row Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION">
-			<Text>Sets the amount of [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] Natural Wonders on the map.</Text>
+			<Text>Sets the number of [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] Natural Wonders on the map.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE">
-			<Text>[BLIST]
-				[LI] Tiny: 0 Natural Wonders.
-				[LI] Small: 0 Natural Wonders.
-				[LI] Standard: 0 Natural Wonders.
-				[LI] Large: 0 Natural Wonders.
-				[LI] Huge: 0 Natural Wonders.[/BLIST]
-			</Text>
+			<Text>No Natural Wonders are placed.[nn][BLIST]
+				[LI] Tiny: 0 Natural Wonders
+				[LI] Small: 0 Natural Wonders
+				[LI] Standard: 0 Natural Wonders
+				[LI] Large: 0 Natural Wonders
+				[LI] Huge: 0 Natural Wonders[/BLIST]</Text>
 		</Row>
 		<Row Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF">
-			<Text>[BLIST]
-				[LI] Tiny: 1 Natural Wonder.
-				[LI] Small: 2 Natural Wonders.
-				[LI] Standard: 2 Natural Wonders.
-				[LI] Large: 3 Natural Wonders.
-				[LI] Huge: 3 Natural Wonders.[/BLIST]
-			</Text>
+			<Text>About half the standard number of Natural Wonders.[nn][BLIST]
+				[LI] Tiny: 1 Natural Wonder
+				[LI] Small: 2 Natural Wonders
+				[LI] Standard: 2 Natural Wonders
+				[LI] Large: 3 Natural Wonders
+				[LI] Huge: 3 Natural Wonders[/BLIST]</Text>
 		</Row>
 		<Row Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DEFAULT">
-			<Text>[BLIST]
-				[LI] Tiny: 3 Natural Wonders.
-				[LI] Small: 4 Natural Wonders.
-				[LI] Standard: 5 Natural Wonders.
-				[LI] Large: 6 Natural Wonders.
-				[LI] Huge: 7 Natural Wonders.[/BLIST]
-			</Text>
+			<Text>The standard number of Natural Wonders.[nn][BLIST]
+				[LI] Tiny: 3 Natural Wonders
+				[LI] Small: 4 Natural Wonders
+				[LI] Standard: 5 Natural Wonders
+				[LI] Large: 6 Natural Wonders
+				[LI] Huge: 7 Natural Wonders[/BLIST]</Text>
 		</Row>
 		<Row Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE">
-			<Text>[BLIST]
-				[LI] Tiny: 5 Natural Wonders.
-				[LI] Small: 6 Natural Wonders.
-				[LI] Standard: 8 Natural Wonders.
-				[LI] Large: 9 Natural Wonders.
-				[LI] Huge: 11 Natural Wonders.[/BLIST]
-			</Text>
+			<Text>Noticeably more Natural Wonders than standard.[nn][BLIST]
+				[LI] Tiny: 5 Natural Wonders
+				[LI] Small: 6 Natural Wonders
+				[LI] Standard: 8 Natural Wonders
+				[LI] Large: 9 Natural Wonders
+				[LI] Huge: 11 Natural Wonders[/BLIST]</Text>
 		</Row>
 		<Row Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE">
-			<Text>[BLIST]
-				[LI] Tiny: 6 Natural Wonders.
-				[LI] Small: 8 Natural Wonders.
-				[LI] Standard: 10 Natural Wonders.
-				[LI] Large: 12 Natural Wonders.
-				[LI] Huge: 14 Natural Wonders.[/BLIST]
-			</Text>
+			<Text>Twice the standard number of Natural Wonders.[nn][BLIST]
+				[LI] Tiny: 6 Natural Wonders
+				[LI] Small: 8 Natural Wonders
+				[LI] Standard: 10 Natural Wonders
+				[LI] Large: 12 Natural Wonders
+				[LI] Huge: 14 Natural Wonders[/BLIST]</Text>
 		</Row>
 
 	<!-- Lake Generation Descriptions -->
 		<Row Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION">
-			<Text>Sets the frequency of lakes on the map. Results may vary.
-				[n] This will attempt to adjust the number of lakes on the map.
-				[n] However, map generation may override the settings back to default.
-			</Text>
+			<Text>Sets how many lakes the map generates.[n]Map generation may override this, so results can vary.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_LESS">
 			<Text>Generates fewer lakes.</Text>
@@ -408,12 +640,12 @@
 		</Row>
 
 		<Row Tag="LOC_ZG_MOD_CONFLICT_TITLE"><Text>Mod Conflict Detected</Text></Row>
-		<Row Tag="LOC_ZG_MOD_CONFLICT_BODY_HEADER"><Text>The following mods are causing conflicts: [n] [n]</Text></Row>
-		<Row Tag="LOC_ZG_MOD_CONFLICT_BODY_FOOTER"><Text>[n] [n]Please unsubscribe from the mods now. [n] [n]</Text></Row>
+		<Row Tag="LOC_ZG_MOD_CONFLICT_BODY_HEADER"><Text>The following mods are causing conflicts: [n]</Text></Row>
+		<Row Tag="LOC_ZG_MOD_CONFLICT_BODY_FOOTER"><Text>[n]Please unsubscribe from the mods now. [n]</Text></Row>
 		<Row Tag="LOC_ZG_MOD_CONFLICT_DISABLE"><Text>Ok</Text></Row>
 		<Row Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD"><Text>Unidentified mod adding the settings:</Text></Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM">
-			<Text>Custom: set the settlement limit for each age individually.</Text>
+			<Text>Set the settlement limit for each age individually.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION">
 			<Text>Sets this age's settlement limit.[n]Applies only when Settlement Limit is set to Custom.</Text>
@@ -481,9 +713,9 @@
 		<Row Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION"><Text>Shifts the climate bands that decide each land tile's biome.</Text></Row>
 		<Row Tag="LOC_ZG_COLD_NAME"><Text>Cold</Text></Row>
 		<Row Tag="LOC_ZG_HOT_NAME"><Text>Hot</Text></Row>
-		<Row Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD"><Text>Cold: tundra begins closer to the equator, at the expense of grassland.</Text></Row>
+		<Row Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD"><Text>Tundra begins closer to the equator, at the expense of grassland.</Text></Row>
 		<Row Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD"><Text>Standard climate for the chosen map type.</Text></Row>
-		<Row Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT"><Text>Hot: tropical and desert reach further from the equator, at the expense of plains and grassland.</Text></Row>
+		<Row Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT"><Text>Tropical and desert reach further from the equator, at the expense of plains and grassland.</Text></Row>
 		<Row Tag="LOC_ZG_RIVERS_NAME"><Text>Rivers</Text></Row>
 		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION"><Text>Sets how many rivers are generated and what share of them are Navigable Rivers rather than Minor Rivers.</Text></Row>
 		<Row Tag="LOC_ZG_RIVERS_WADI_NAME"><Text>Wadis</Text></Row>
@@ -511,89 +743,216 @@
 		<Row Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION"><Text>An extremely slow pace. 400% slower than Standard speed.</Text></Row>
 
 	<!-- Age Length -->
-		<Row Tag="LOC_ZG_AGE_LENGTH_BRIEF_NAME"><Text>Brief</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_DOUBLED_NAME"><Text>Doubled</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC"><Text>Custom: each age uses the Age Length row in its own group below. Balanced sets 153, 166, and 196 points; Multiplayer sets 140, 155, and 190.</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_90"><Text>[BLIST][LI] Online 2.0: 36 Points.[LI] Online: 45 Points.[LI] Quick: 60 Points.[LI] Standard: 90 Points.[LI] Epic: 135 Points.[LI] Marathon: 270 Points.[LI] Marathon 2.0: 450 Points.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100"><Text>[BLIST][LI] Online 2.0: 40 Points.[LI] Online: 50 Points.[LI] Quick: 67 Points.[LI] Standard: 100 Points.[LI] Epic: 150 Points.[LI] Marathon: 300 Points.[LI] Marathon 2.0: 500 Points.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110"><Text>[BLIST][LI] Online 2.0: 44 Points.[LI] Online: 55 Points.[LI] Quick: 73 Points.[LI] Standard: 110 Points.[LI] Epic: 165 Points.[LI] Marathon: 330 Points.[LI] Marathon 2.0: 550 Points.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120"><Text>[BLIST][LI] Online 2.0: 48 Points.[LI] Online: 60 Points.[LI] Quick: 80 Points.[LI] Standard: 120 Points.[LI] Epic: 180 Points.[LI] Marathon: 360 Points.[LI] Marathon 2.0: 600 Points.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130"><Text>[BLIST][LI] Online 2.0: 52 Points.[LI] Online: 65 Points.[LI] Quick: 87 Points.[LI] Standard: 130 Points.[LI] Epic: 195 Points.[LI] Marathon: 390 Points.[LI] Marathon 2.0: 650 Points.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140"><Text>[BLIST][LI] Online 2.0: 56 Points.[LI] Online: 70 Points.[LI] Quick: 93 Points.[LI] Standard: 140 Points.[LI] Epic: 210 Points.[LI] Marathon: 420 Points.[LI] Marathon 2.0: 700 Points.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150"><Text>[BLIST][LI] Online 2.0: 60 Points.[LI] Online: 75 Points.[LI] Quick: 100 Points.[LI] Standard: 150 Points.[LI] Epic: 225 Points.[LI] Marathon: 450 Points.[LI] Marathon 2.0: 750 Points.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153"><Text>[BLIST][LI] Online 2.0: 61 Points.[LI] Online: 76 Points.[LI] Quick: 102 Points.[LI] Standard: 153 Points.[LI] Epic: 230 Points.[LI] Marathon: 459 Points.[LI] Marathon 2.0: 765 Points.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155"><Text>[BLIST][LI] Online 2.0: 62 Points.[LI] Online: 78 Points.[LI] Quick: 103 Points.[LI] Standard: 155 Points.[LI] Epic: 232 Points.[LI] Marathon: 465 Points.[LI] Marathon 2.0: 775 Points.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160"><Text>[BLIST][LI] Online 2.0: 64 Points.[LI] Online: 80 Points.[LI] Quick: 107 Points.[LI] Standard: 160 Points.[LI] Epic: 240 Points.[LI] Marathon: 480 Points.[LI] Marathon 2.0: 800 Points.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166"><Text>[BLIST][LI] Online 2.0: 66 Points.[LI] Online: 83 Points.[LI] Quick: 111 Points.[LI] Standard: 166 Points.[LI] Epic: 249 Points.[LI] Marathon: 498 Points.[LI] Marathon 2.0: 830 Points.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170"><Text>[BLIST][LI] Online 2.0: 68 Points.[LI] Online: 85 Points.[LI] Quick: 113 Points.[LI] Standard: 170 Points.[LI] Epic: 255 Points.[LI] Marathon: 510 Points.[LI] Marathon 2.0: 850 Points.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180"><Text>[BLIST][LI] Online 2.0: 72 Points.[LI] Online: 90 Points.[LI] Quick: 120 Points.[LI] Standard: 180 Points.[LI] Epic: 270 Points.[LI] Marathon: 540 Points.[LI] Marathon 2.0: 900 Points.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190"><Text>[BLIST][LI] Online 2.0: 76 Points.[LI] Online: 95 Points.[LI] Quick: 127 Points.[LI] Standard: 190 Points.[LI] Epic: 285 Points.[LI] Marathon: 570 Points.[LI] Marathon 2.0: 950 Points.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196"><Text>[BLIST][LI] Online 2.0: 78 Points.[LI] Online: 98 Points.[LI] Quick: 131 Points.[LI] Standard: 196 Points.[LI] Epic: 294 Points.[LI] Marathon: 588 Points.[LI] Marathon 2.0: 980 Points.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200"><Text>[BLIST][LI] Online 2.0: 80 Points.[LI] Online: 100 Points.[LI] Quick: 133 Points.[LI] Standard: 200 Points.[LI] Epic: 300 Points.[LI] Marathon: 600 Points.[LI] Marathon 2.0: 1000 Points.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220"><Text>[BLIST][LI] Online 2.0: 88 Points.[LI] Online: 110 Points.[LI] Quick: 147 Points.[LI] Standard: 220 Points.[LI] Epic: 330 Points.[LI] Marathon: 660 Points.[LI] Marathon 2.0: 1100 Points.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240"><Text>[BLIST][LI] Online 2.0: 96 Points.[LI] Online: 120 Points.[LI] Quick: 160 Points.[LI] Standard: 240 Points.[LI] Epic: 360 Points.[LI] Marathon: 720 Points.[LI] Marathon 2.0: 1200 Points.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260"><Text>[BLIST][LI] Online 2.0: 104 Points.[LI] Online: 130 Points.[LI] Quick: 173 Points.[LI] Standard: 260 Points.[LI] Epic: 390 Points.[LI] Marathon: 780 Points.[LI] Marathon 2.0: 1300 Points.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280"><Text>[BLIST][LI] Online 2.0: 112 Points.[LI] Online: 140 Points.[LI] Quick: 187 Points.[LI] Standard: 280 Points.[LI] Epic: 420 Points.[LI] Marathon: 840 Points.[LI] Marathon 2.0: 1400 Points.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300"><Text>[BLIST][LI] Online 2.0: 120 Points.[LI] Online: 150 Points.[LI] Quick: 200 Points.[LI] Standard: 300 Points.[LI] Epic: 450 Points.[LI] Marathon: 900 Points.[LI] Marathon 2.0: 1500 Points.[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC">
-			<Text> Ages will end faster.
-				[n] [BLIST]
-				[LI] Online 2.0: 36 Points.
-				[LI] Online: 45 Points.
-				[LI] Quick: 60 Points.
-				[LI] Standard: 90 Points.
-				[LI] Epic: 135 Points.
-				[LI] Marathon: 270 Points.
-				[LI] Marathon 2.0: 450 Points.[/BLIST]
-			</Text>
-		</Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC">
-			<Text> Ages will last longer.
-				[n] [BLIST]
-				[LI] Online 2.0: 112 Points.
-				[LI] Online: 140 Points.
-				[LI] Quick: 187 Points.
-				[LI] Standard: 280 Points.
-				[LI] Epic: 420 Points.
-				[LI] Marathon: 840 Points.
-				[LI] Marathon 2.0: 1400 Points.[/BLIST]
-			</Text>
-		</Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC"><Text>Each age uses the Age Length row in its own group below. Balanced sets 153, 166, and 196 points; Multiplayer sets 140, 155, and 190.</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC"><Text>Longer ages, each one longer than the last.[nn][BLIST]
+				[LI] Antiquity: 153 points
+				[LI] Exploration: 166 points
+				[LI] Modern: 196 points[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_EXTENDED_DESC"><Text>Very long ages for a drawn-out game.[nn][BLIST]
+				[LI] Antiquity: 240 points
+				[LI] Exploration: 260 points
+				[LI] Modern: 280 points[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_SWIFT_DESC"><Text>Short ages that lengthen a little as the game goes on.[nn][BLIST]
+				[LI] Antiquity: 90 points
+				[LI] Exploration: 100 points
+				[LI] Modern: 110 points[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_90"><Text>[BLIST]
+				[LI] Online 2.0: 36 points
+				[LI] Online: 45 points
+				[LI] Quick: 60 points
+				[LI] Standard: 90 points
+				[LI] Epic: 135 points
+				[LI] Marathon: 270 points
+				[LI] Marathon 2.0: 450 points[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100"><Text>[BLIST]
+				[LI] Online 2.0: 40 points
+				[LI] Online: 50 points
+				[LI] Quick: 67 points
+				[LI] Standard: 100 points
+				[LI] Epic: 150 points
+				[LI] Marathon: 300 points
+				[LI] Marathon 2.0: 500 points[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110"><Text>[BLIST]
+				[LI] Online 2.0: 44 points
+				[LI] Online: 55 points
+				[LI] Quick: 73 points
+				[LI] Standard: 110 points
+				[LI] Epic: 165 points
+				[LI] Marathon: 330 points
+				[LI] Marathon 2.0: 550 points[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120"><Text>[BLIST]
+				[LI] Online 2.0: 48 points
+				[LI] Online: 60 points
+				[LI] Quick: 80 points
+				[LI] Standard: 120 points
+				[LI] Epic: 180 points
+				[LI] Marathon: 360 points
+				[LI] Marathon 2.0: 600 points[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130"><Text>[BLIST]
+				[LI] Online 2.0: 52 points
+				[LI] Online: 65 points
+				[LI] Quick: 87 points
+				[LI] Standard: 130 points
+				[LI] Epic: 195 points
+				[LI] Marathon: 390 points
+				[LI] Marathon 2.0: 650 points[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140"><Text>[BLIST]
+				[LI] Online 2.0: 56 points
+				[LI] Online: 70 points
+				[LI] Quick: 93 points
+				[LI] Standard: 140 points
+				[LI] Epic: 210 points
+				[LI] Marathon: 420 points
+				[LI] Marathon 2.0: 700 points[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150"><Text>[BLIST]
+				[LI] Online 2.0: 60 points
+				[LI] Online: 75 points
+				[LI] Quick: 100 points
+				[LI] Standard: 150 points
+				[LI] Epic: 225 points
+				[LI] Marathon: 450 points
+				[LI] Marathon 2.0: 750 points[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153"><Text>[BLIST]
+				[LI] Online 2.0: 61 points
+				[LI] Online: 76 points
+				[LI] Quick: 102 points
+				[LI] Standard: 153 points
+				[LI] Epic: 230 points
+				[LI] Marathon: 459 points
+				[LI] Marathon 2.0: 765 points[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155"><Text>[BLIST]
+				[LI] Online 2.0: 62 points
+				[LI] Online: 78 points
+				[LI] Quick: 103 points
+				[LI] Standard: 155 points
+				[LI] Epic: 232 points
+				[LI] Marathon: 465 points
+				[LI] Marathon 2.0: 775 points[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160"><Text>[BLIST]
+				[LI] Online 2.0: 64 points
+				[LI] Online: 80 points
+				[LI] Quick: 107 points
+				[LI] Standard: 160 points
+				[LI] Epic: 240 points
+				[LI] Marathon: 480 points
+				[LI] Marathon 2.0: 800 points[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166"><Text>[BLIST]
+				[LI] Online 2.0: 66 points
+				[LI] Online: 83 points
+				[LI] Quick: 111 points
+				[LI] Standard: 166 points
+				[LI] Epic: 249 points
+				[LI] Marathon: 498 points
+				[LI] Marathon 2.0: 830 points[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170"><Text>[BLIST]
+				[LI] Online 2.0: 68 points
+				[LI] Online: 85 points
+				[LI] Quick: 113 points
+				[LI] Standard: 170 points
+				[LI] Epic: 255 points
+				[LI] Marathon: 510 points
+				[LI] Marathon 2.0: 850 points[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180"><Text>[BLIST]
+				[LI] Online 2.0: 72 points
+				[LI] Online: 90 points
+				[LI] Quick: 120 points
+				[LI] Standard: 180 points
+				[LI] Epic: 270 points
+				[LI] Marathon: 540 points
+				[LI] Marathon 2.0: 900 points[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190"><Text>[BLIST]
+				[LI] Online 2.0: 76 points
+				[LI] Online: 95 points
+				[LI] Quick: 127 points
+				[LI] Standard: 190 points
+				[LI] Epic: 285 points
+				[LI] Marathon: 570 points
+				[LI] Marathon 2.0: 950 points[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196"><Text>[BLIST]
+				[LI] Online 2.0: 78 points
+				[LI] Online: 98 points
+				[LI] Quick: 131 points
+				[LI] Standard: 196 points
+				[LI] Epic: 294 points
+				[LI] Marathon: 588 points
+				[LI] Marathon 2.0: 980 points[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200"><Text>[BLIST]
+				[LI] Online 2.0: 80 points
+				[LI] Online: 100 points
+				[LI] Quick: 133 points
+				[LI] Standard: 200 points
+				[LI] Epic: 300 points
+				[LI] Marathon: 600 points
+				[LI] Marathon 2.0: 1000 points[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220"><Text>[BLIST]
+				[LI] Online 2.0: 88 points
+				[LI] Online: 110 points
+				[LI] Quick: 147 points
+				[LI] Standard: 220 points
+				[LI] Epic: 330 points
+				[LI] Marathon: 660 points
+				[LI] Marathon 2.0: 1100 points[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240"><Text>[BLIST]
+				[LI] Online 2.0: 96 points
+				[LI] Online: 120 points
+				[LI] Quick: 160 points
+				[LI] Standard: 240 points
+				[LI] Epic: 360 points
+				[LI] Marathon: 720 points
+				[LI] Marathon 2.0: 1200 points[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260"><Text>[BLIST]
+				[LI] Online 2.0: 104 points
+				[LI] Online: 130 points
+				[LI] Quick: 173 points
+				[LI] Standard: 260 points
+				[LI] Epic: 390 points
+				[LI] Marathon: 780 points
+				[LI] Marathon 2.0: 1300 points[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280"><Text>[BLIST]
+				[LI] Online 2.0: 112 points
+				[LI] Online: 140 points
+				[LI] Quick: 187 points
+				[LI] Standard: 280 points
+				[LI] Epic: 420 points
+				[LI] Marathon: 840 points
+				[LI] Marathon 2.0: 1400 points[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300"><Text>[BLIST]
+				[LI] Online 2.0: 120 points
+				[LI] Online: 150 points
+				[LI] Quick: 200 points
+				[LI] Standard: 300 points
+				[LI] Epic: 450 points
+				[LI] Marathon: 900 points
+				[LI] Marathon 2.0: 1500 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC">
-			<Text> Ages will end slightly faster.
-				[n] [BLIST]
-				[LI] Online 2.0: 48 Points.
-				[LI] Online: 60 Points.
-				[LI] Quick: 80 Points.
-				[LI] Standard: 120 Points.
-				[LI] Epic: 180 Points.
-				[LI] Marathon: 360 Points.
-				[LI] Marathon 2.0: 600 Points.[/BLIST]
-			</Text>
+			<Text>Ages will end slightly faster.[nn][BLIST]
+				[LI] Online 2.0: 48 points
+				[LI] Online: 60 points
+				[LI] Quick: 80 points
+				[LI] Standard: 120 points
+				[LI] Epic: 180 points
+				[LI] Marathon: 360 points
+				[LI] Marathon 2.0: 600 points[/BLIST]</Text>
 		</Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC">
-			<Text> The standard age length.
-				[n] [BLIST]
-				[LI] Online 2.0: 56 Points.
-				[LI] Online: 70 Points.
-				[LI] Quick: 93 Points.
-				[LI] Standard: 140 Points.
-				[LI] Epic: 210 Points.
-				[LI] Marathon: 420 Points.
-				[LI] Marathon 2.0: 700 Points.[/BLIST]
-			</Text>
+			<Text>The standard age length.[nn][BLIST]
+				[LI] Online 2.0: 56 points
+				[LI] Online: 70 points
+				[LI] Quick: 93 points
+				[LI] Standard: 140 points
+				[LI] Epic: 210 points
+				[LI] Marathon: 420 points
+				[LI] Marathon 2.0: 700 points[/BLIST]</Text>
 		</Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_LONG_DESC">
-			<Text> Ages will last slightly longer.
-				[n] [BLIST]
-				[LI] Online 2.0: 64 Points.
-				[LI] Online: 80 Points.
-				[LI] Quick: 107 Points.
-				[LI] Standard: 160 Points.
-				[LI] Epic: 240 Points.
-				[LI] Marathon: 480 Points.
-				[LI] Marathon 2.0: 800 Points.[/BLIST]
-			</Text>
+			<Text>Ages will last slightly longer.[nn][BLIST]
+				[LI] Online 2.0: 64 points
+				[LI] Online: 80 points
+				[LI] Quick: 107 points
+				[LI] Standard: 160 points
+				[LI] Epic: 240 points
+				[LI] Marathon: 480 points
+				[LI] Marathon 2.0: 800 points[/BLIST]</Text>
 		</Row>
 	<!-- Independent Aggression -->
 		<Row Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME"><Text>Independent Aggression</Text></Row>
@@ -614,13 +973,47 @@
 		<Row Tag="LOC_ZG_PACE_PRESET_NAME"><Text>Pace Set</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION"><Text>Applies a pacing preset to the Pace Settings on the Pace tab.</Text></Row>
 		<Row Tag="LOC_ZG_BALANCED_NAME"><Text>Balanced</Text></Row>
+		<Row Tag="LOC_ZG_EXTENDED_NAME"><Text>Extended</Text></Row>
+		<Row Tag="LOC_ZG_SWIFT_NAME"><Text>Swift</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_BALANCED_NAME"><Text>Balanced Pace</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_CUSTOM_NAME"><Text>Custom Pace</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME"><Text>Multiplayer Pace</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME"><Text>Standard Pace</Text></Row>
-		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD"><Text>Standard Pace: the game's own pacing. Sets every Pace Settings row to Standard.</Text></Row>
-		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED"><Text>Balanced Pace: longer ages with Epic-style research. Sets Age Length to 153, 166, and 196 points by age, Age Progress Rate to Balanced, and Technology Cost and Civic Cost to High.</Text></Row>
-		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER"><Text>Multiplayer Pace: a lighter stretch for sessions. Sets Age Length to 140, 155, and 190 points by age, Age Progress Rate to Balanced, Technology Cost to +35%, +50%, and +75% by age, Civic Cost to +45%, +60%, and +85%, City Growth to Slow, Roads to Fast (Express in Modern), and Modern Victory Project Cost to +20%.</Text></Row>
-		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM"><Text>Custom Pace: the Pace Settings on the Pace tab no longer match a preset.</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_EXTENDED_NAME"><Text>Extended Pace</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_SWIFT_NAME"><Text>Swift Pace</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD"><Text>Every pacing setting left at its standard value.</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_EXTENDED"><Text>Very long ages, with costs raised to fill them.[nn][BLIST]
+				[LI] Age Length: Extended
+				[LI] Age Progress Rate: Standard
+				[LI] Technology Cost: Extended
+				[LI] Civic Cost: Extended
+				[LI] City Growth: Extended
+				[LI] Roads: Extended
+				[LI] Victory Project Cost: Extended[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT"><Text>Short ages, with costs scaled down to match.[nn][BLIST]
+				[LI] Age Length: Swift
+				[LI] Age Progress Rate: Standard
+				[LI] Technology Cost: Swift
+				[LI] Civic Cost: Swift
+				[LI] City Growth: Swift
+				[LI] Roads: Swift
+				[LI] Victory Project Cost: Swift[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED"><Text>Longer ages, with research and growth tuned to fill them.[nn][BLIST]
+				[LI] Age Length: Balanced
+				[LI] Age Progress Rate: Balanced
+				[LI] Technology Cost: Balanced
+				[LI] Civic Cost: Balanced
+				[LI] City Growth: Balanced
+				[LI] Roads: Balanced
+				[LI] Victory Project Cost: Balanced[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER"><Text>Tuned for a session played in one sitting.[nn][BLIST]
+				[LI] Age Length: 140 / 155 / 190
+				[LI] Age Progress Rate: Balanced
+				[LI] Technology Cost: +35% / +50% / +75%
+				[LI] Civic Cost: +45% / +60% / +85%
+				[LI] City Growth: Slow
+				[LI] Roads: -25% / -25% / -50%
+				[LI] Victory Project Cost: Standard / Standard / +20%[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM"><Text>The Pace Settings on the Pace tab no longer match a preset.</Text></Row>
 	</EnglishText>
 </Database>
