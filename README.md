@@ -1,4 +1,4 @@
-# Zatygold's Advanced Settings Pro
+# Zatygold's Advanced Settings
 
 A Sid Meier's Civilization VII mod that expands game setup for single player and multiplayer. It adds extra options to the Advanced Settings menu, letting you fine-tune systems that normally are not adjustable.
 
