@@ -33,6 +33,11 @@ import './zg-map-tab.js';
 
 const OVERRIDE_PRIORITY = 110;
 const PLAYER_TAB_NAME = "advanced-options-player";
+// Mods that render their own Player tab. One of these being enabled is not a
+// conflict to resolve but a tab to concede: this file stands aside so the other
+// mod's tab body is the one that shows. Listed by mod id, as the modinfo
+// declares it.
+const PLAYER_TAB_MODS = ["Enable_Custom_Map_Start_Locations"];
 const MEMENTO_PARAM_IDS = ["PlayerMementoMajorSlot", "PlayerMementoMinorSlot1"];
 const MEMENTO_DEFAULT_ICON = "mem_min_leader.png";
 const MEMENTO_NONE_VALUE = "NONE";
@@ -663,12 +668,21 @@ const PlayerSetup = () => {
 
 // ------------------------------------------------------------ tab hook --
 
+// Tab.Item is a single component shared by every tab, so its override priority
+// cannot be set per tab: whoever holds the registration holds all of them. To
+// leave one tab to another mod, this file skips its own registration entirely
+// rather than lowering a priority, which would give away the Map and Pace tabs
+// registered by zg-map-tab.js as well.
+const claimingMod = Modding.getInstalledMods().find((mod) => mod.enabled && PLAYER_TAB_MODS.includes(mod.id));
+
 const tabItem = ComponentRegistry.get("Tab.Item");
 // `factory` is a signal accessor returning the currently registered factory.
 // Read it once here to capture the previous implementation before this module
 // overrides the registration; reading it later would return our own factory.
 const createPreviousTabItem = tabItem?.factory?.();
-if (createPreviousTabItem) {
+if (claimingMod) {
+	console.warn(`ZG player tab: leaving the Player tab to '${claimingMod.id}'`);
+} else if (createPreviousTabItem) {
 	ComponentRegistry.register({
 		name: "Tab.Item",
 		overridePriority: OVERRIDE_PRIORITY,
