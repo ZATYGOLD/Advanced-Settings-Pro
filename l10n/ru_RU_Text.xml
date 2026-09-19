@@ -15,7 +15,7 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MEMENTOS_NAME" Language="ru_RU"><Text>Реликвии</Text></Replace>
 		<Replace Tag="LOC_ZG_TEAM_DESCRIPTION" Language="ru_RU">
-			<Text>Игроки одной команды делят победу, обзор и постоянный мир.</Text>
+			<Text>Игроки одной команды побеждают вместе: победа засчитывается команде, а не отдельному игроку.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TEAM_NAME" Language="ru_RU">
 			<Text>Команда</Text>

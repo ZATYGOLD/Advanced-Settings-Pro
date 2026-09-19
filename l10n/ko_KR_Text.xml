@@ -15,7 +15,7 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MEMENTOS_NAME" Language="ko_KR"><Text>메멘토</Text></Replace>
 		<Replace Tag="LOC_ZG_TEAM_DESCRIPTION" Language="ko_KR">
-			<Text>같은 팀의 플레이어는 승리, 시야, 영구 평화를 공유합니다.</Text>
+			<Text>같은 팀의 플레이어는 함께 승리합니다. 승리는 개별 플레이어가 아니라 팀에 주어집니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TEAM_NAME" Language="ko_KR">
 			<Text>팀</Text>

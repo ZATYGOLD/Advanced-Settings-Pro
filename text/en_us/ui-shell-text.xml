@@ -13,7 +13,7 @@
 		<Row Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS"><Text>Map</Text></Row>
 		<Row Tag="LOC_ZG_MEMENTOS_NAME"><Text>Mementos</Text></Row>
 		<Row Tag="LOC_ZG_TEAM_DESCRIPTION">
-			<Text>Players on the same team share victory, vision, and a permanent peace.</Text>
+			<Text>Players on the same team win together: victory is scored for the team rather than the player.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_TEAM_NAME">
 			<Text>Team</Text>

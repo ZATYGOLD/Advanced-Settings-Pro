@@ -15,7 +15,7 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MEMENTOS_NAME" Language="es_ES"><Text>Recuerdos</Text></Replace>
 		<Replace Tag="LOC_ZG_TEAM_DESCRIPTION" Language="es_ES">
-			<Text>Los jugadores del mismo equipo comparten victoria, visión y una paz permanente.</Text>
+			<Text>Los jugadores del mismo equipo ganan juntos: la victoria se otorga al equipo y no al jugador.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TEAM_NAME" Language="es_ES">
 			<Text>Equipo</Text>

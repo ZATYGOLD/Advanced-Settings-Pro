@@ -15,7 +15,7 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MEMENTOS_NAME" Language="zh_Hant_HK"><Text>紀念物</Text></Replace>
 		<Replace Tag="LOC_ZG_TEAM_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>同一隊伍的玩家共享勝利、視野與永久和平。</Text>
+			<Text>同一隊伍的玩家共同獲勝，勝利歸於隊伍而非個別玩家。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TEAM_NAME" Language="zh_Hant_HK">
 			<Text>隊伍</Text>

@@ -1,10 +1,15 @@
-// Adds Memento selection for AI players to the single-player Advanced Settings
-// Player tab, on the same row as Leader and Civilization.
+// The single-player Advanced Settings Player tab: one row per player carrying
+// Leader, Team, Civilization and two Memento slots.
 //
 // The game's player list is not exported, so this file renders the list itself
 // with the game's own components, models and templates (a port of the game's
-// AdvancedOptionsPlayerSetup) plus a Mementos column, and swaps it in for the
-// Player tab through the same Tab.Item hook the Map tab uses.
+// AdvancedOptionsPlayerSetup), adding the Team and Memento columns the base tab
+// has no room for, and swaps it in through the same Tab.Item hook the Map tab
+// uses.
+//
+// It also owns the two settings the tab's Memento columns stand for: the
+// per-player Random flag behind a slot's Random entry, and Game Settings' AI
+// Mementos, which fills every AI player's slots at once.
 import { template, insert } from 'fs://game/core/vendor/solid-js/web/dist/web.js';
 import { createMemo, createComponent, createRenderEffect, mergeProps, For, Show } from 'fs://game/core/vendor/solid-js/dist/solid.js';
 import { ComponentRegistry } from 'fs://game/core/ui-next/services/component-registry.js';
@@ -42,12 +47,11 @@ const MEMENTO_NONE_TINT = "#8c7e62";
 const RANDOM_FLAG_PARAM_ID = "ZG_PlayerRandomMementos";
 const RANDOM_FLAGS = { ZG_RANDOM_MEMENTOS_NONE: [false, false], ZG_RANDOM_MEMENTOS_MAJOR: [true, false], ZG_RANDOM_MEMENTOS_MINOR: [false, true], ZG_RANDOM_MEMENTOS_BOTH: [true, true] };
 const RANDOM_OPTION = { value: "ZG_RANDOM", name: "LOC_ADVANCED_OPTIONS_RANDOM", description: "LOC_ADVANCED_OPTIONS_RANDOM", icon: null, sortIndex: -Infinity };
-// PlayerTeam is the game's own per-player parameter, the one the multiplayer
-// lobby writes. Its domain is a plain int, so it carries no list of choices and
-// the options have to be built here, the way the lobby builds its own.
-const TEAM_PARAM_ID = "PlayerTeam";
+// A team is a plain int on the player configuration, carrying no list of
+// choices, so the options are built here the way the lobby builds its own.
 const TEAM_NONE_VALUE = -1;
-const TEAM_FALLBACK_COUNT = 8;
+// The lobby offers eight teams, hard-coded, and so does this.
+const TEAM_COUNT = 8;
 const POLL_MS = 250;
 // Column proportions shared by the header and the rows. Team and the Mementos
 // each show one icon, so they need room for that and the dropdown arrow and no
@@ -274,27 +278,30 @@ function sortPossibleValues(possibleValues) {
 
 // ---------------------------------------------------------------- teams --
 
-// The choices for one player's team, built from the map's major player count
-// because an int parameter offers none of its own.
+// The choices for one player's team. An int parameter carries no list of its
+// own, so this mirrors the multiplayer lobby's own dropdown: a blank entry for
+// no team, then a fixed eight teams regardless of the map's player count.
 function teamChoices() {
-	const count = Math.min(Math.max(Configuration.getMap()?.maxMajorPlayers ?? TEAM_FALLBACK_COUNT, 2), TEAM_FALLBACK_COUNT);
 	const choices = [{ value: TEAM_NONE_VALUE, sortIndex: -1 }];
-	for (let team = 0; team < count; team++) {
+	for (let team = 0; team < TEAM_COUNT; team++) {
 		choices.push({ value: team, sortIndex: team });
 	}
 	return choices;
 }
 
 // A parameter-shaped view of a player's team, so it can drive the same dropdown
-// the Leader and Civilization columns use.
+// the Leader and Civilization columns use. The team is read and written through
+// the player configuration rather than the setup parameter: the multiplayer
+// lobby is the only part of the game that sets a team, and that is the path it
+// uses, so it is the one known to reach the engine.
 function teamParameter(playerId) {
 	const choices = teamChoices();
-	const current = GameSetup.findPlayerParameter(playerId, TEAM_PARAM_ID)?.value?.value;
+	const current = Configuration.getPlayer(playerId)?.team;
 	const selected = choices.find((choice) => choice.value == current) ?? choices[0];
 	return {
 		domain: { possibleValues: choices },
 		value: selected,
-		setValue: (value) => GameSetup.setPlayerParameterValue(playerId, TEAM_PARAM_ID, value),
+		setValue: (value) => Configuration.editPlayer(playerId)?.setTeam(value),
 	};
 }
 

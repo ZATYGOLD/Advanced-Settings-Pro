@@ -15,7 +15,7 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MEMENTOS_NAME" Language="it_IT"><Text>Cimeli</Text></Replace>
 		<Replace Tag="LOC_ZG_TEAM_DESCRIPTION" Language="it_IT">
-			<Text>I giocatori della stessa squadra condividono vittoria, visuale e una pace permanente.</Text>
+			<Text>I giocatori della stessa squadra vincono insieme: la vittoria è assegnata alla squadra e non al singolo giocatore.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TEAM_NAME" Language="it_IT">
 			<Text>Squadra</Text>

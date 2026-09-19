@@ -15,7 +15,7 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MEMENTOS_NAME" Language="ja_JP"><Text>メメント</Text></Replace>
 		<Replace Tag="LOC_ZG_TEAM_DESCRIPTION" Language="ja_JP">
-			<Text>同じチームのプレイヤーは勝利、視界、恒久的な和平を共有します。</Text>
+			<Text>同じチームのプレイヤーは共に勝利します。勝利は個々のプレイヤーではなくチームに与えられます。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TEAM_NAME" Language="ja_JP">
 			<Text>チーム</Text>

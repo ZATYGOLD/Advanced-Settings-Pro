@@ -15,7 +15,7 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MEMENTOS_NAME" Language="pl_PL"><Text>Pamiątki</Text></Replace>
 		<Replace Tag="LOC_ZG_TEAM_DESCRIPTION" Language="pl_PL">
-			<Text>Gracze w tej samej drużynie dzielą zwycięstwo, pole widzenia i trwały pokój.</Text>
+			<Text>Gracze w tej samej drużynie wygrywają razem: zwycięstwo liczy się dla drużyny, a nie dla gracza.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TEAM_NAME" Language="pl_PL">
 			<Text>Drużyna</Text>

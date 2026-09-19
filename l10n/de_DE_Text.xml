@@ -15,7 +15,7 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_MEMENTOS_NAME" Language="de_DE"><Text>Mementos</Text></Replace>
 		<Replace Tag="LOC_ZG_TEAM_DESCRIPTION" Language="de_DE">
-			<Text>Spieler im selben Team teilen Sieg, Sicht und dauerhaften Frieden.</Text>
+			<Text>Spieler im selben Team gewinnen gemeinsam: Der Sieg wird für das Team gewertet, nicht für den einzelnen Spieler.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TEAM_NAME" Language="de_DE">
 			<Text>Team</Text>

@@ -6,7 +6,8 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ### 0.8.5
 
-- Player tab gains a Team column, using the same per-player team the multiplayer lobby sets, shown as the lobby's own team badge: Leader, Team, Civilization, Mementos
+- Player tab gains a Team column, setting the same per-player team the multiplayer lobby does and by the same route, shown as the lobby's own team badge: Leader, Team, Civilization, Mementos
+- Teams offer no team plus eight numbered teams, matching the lobby; players on a team win together, since victory is scored per team
 - Player tab columns resized to 33.8% Leader, 11.5% Team, 33.8% Civilization, 10.5% each Memento; tighter gap before the Leader column, and long names truncate instead of running under the dropdown arrow
 - Memento slots show the icon alone under one Mementos heading, with an empty slot marked by a crossed-out circle; hovering still gives the full memento
 - New AI Mementos setting in Game Settings fills every AI player's slots at once: None, Random, Leader Match, or Civilization Match

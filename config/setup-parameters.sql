@@ -111,7 +111,7 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 --************* RANDOM MEMENTOS *************************
 --*******************************************************
 -- Remembers which of an AI player's memento slots are set to Random; the slots
--- themselves hold a real memento rolled by ui/zg-player-mementos.js.
+-- themselves hold a real memento rolled by ui/zg-player-tab.js.
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
         ('ZG_PlayerRandomMementos', 'LOC_ZG_RANDOM_MEMENTOS_NAME', '', 'ZG_RandomMementosDomain', 'ZG_RANDOM_MEMENTOS_NONE', 0, 'Player', 'ZGRandomMementos', 'PlayerOptions', NULL, 0, 3040);
@@ -124,7 +124,7 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_RandomMementosDomain', 'ZG_RANDOM_MEMENTOS_BOTH', 'LOC_ZG_RANDOM_MEMENTOS_NAME', '', 40);
 
 -- Fills every AI player's memento slots at once, in Game Settings directly after
--- Bypass Civilization Unlocks (SortIndex 155). Applied by ui/zg-player-mementos.js
+-- Bypass Civilization Unlocks (SortIndex 155). Applied by ui/zg-player-tab.js
 -- whenever the setting changes; the Player tab can still override a single slot
 -- afterwards.
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
