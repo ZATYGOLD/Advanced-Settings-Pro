@@ -4,6 +4,12 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ## Version History
 
+### 0.8.6
+
+- Fixed Fast Treasure Convoy Movement loading outside the Exploration age, where the treasure fleet ability it attaches to does not exist
+- Refiled 67 criteria and 68 action groups that had been appended to the end of the manifest instead of placed with their own setting; both lists now run in one section order, sorted by setting, age, then tier
+- Medium Military and Civilian Unit Cost now load at the same order as the other unit cost tiers
+
 ### 0.8.5
 
 - Player tab gains a Team column, setting the same per-player team the multiplayer lobby does and by the same route, shown as the lobby's own team badge: Leader, Team, Civilization, Mementos
