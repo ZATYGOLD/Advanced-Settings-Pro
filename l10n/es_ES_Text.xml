@@ -37,32 +37,14 @@
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_25" Language="es_ES">
 			<Text>25% más Producción para proyectos de victoria en esta era.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_20" Language="es_ES">
-			<Text>20% más Producción para proyectos de victoria en esta era.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_100" Language="es_ES">
 			<Text>100% más Producción para proyectos de victoria en esta era.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_MINUS_25" Language="es_ES">
 			<Text>25% menos Producción para proyectos de victoria en esta era.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_85" Language="es_ES">
-			<Text>85% más Ciencia en esta era.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_75" Language="es_ES">
-			<Text>75% más Ciencia en esta era.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_60" Language="es_ES">
-			<Text>60% más Ciencia en esta era.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_50" Language="es_ES">
 			<Text>50% más Ciencia en esta era.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_45" Language="es_ES">
-			<Text>45% más Ciencia en esta era.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_35" Language="es_ES">
-			<Text>35% más Ciencia en esta era.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_25" Language="es_ES">
 			<Text>25% más Ciencia en esta era.</Text>
@@ -76,23 +58,8 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_VALUE_DESCRIPTION" Language="es_ES">
 			<Text>El máximo de asentamientos que puedes tener en esta era.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_85" Language="es_ES">
-			<Text>85% más Cultura en esta era.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_75" Language="es_ES">
-			<Text>75% más Cultura en esta era.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_60" Language="es_ES">
-			<Text>60% más Cultura en esta era.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_50" Language="es_ES">
 			<Text>50% más Cultura en esta era.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_45" Language="es_ES">
-			<Text>45% más Cultura en esta era.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_35" Language="es_ES">
-			<Text>35% más Cultura en esta era.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_25" Language="es_ES">
 			<Text>25% más Cultura en esta era.</Text>
@@ -546,7 +513,7 @@
 			<Text>Estándar en la Antigüedad y proyectos de victoria más baratos después.[nn][BLIST]
 				[LI] Antigüedad: Estándar
 				[LI] Descubrimientos: -25%
-				[LI] Modernidad: -25%[/BLIST][nn]Coste por era (Antigüedad / Descubrimientos / Modernidad): [BLIST]
+				[LI] Modernidad: -25%[/BLIST][nn]Coste por era (Antigüedad / Descubrimientos / Modernidad):[BLIST]
 				[LI] Observar las estrellas: 450 / 338 / 338
 				[LI] Tierra esférica: 600 / 450 / 450
 				[LI] Modelo heliocéntrico: 750 / 563 / 563
@@ -564,7 +531,7 @@
 			<Text>Todos los proyectos de victoria cuestan más en todas las eras.[nn][BLIST]
 				[LI] Antigüedad: +25%
 				[LI] Descubrimientos: +25%
-				[LI] Modernidad: +25%[/BLIST][nn]Coste por era (Antigüedad / Descubrimientos / Modernidad): [BLIST]
+				[LI] Modernidad: +25%[/BLIST][nn]Coste por era (Antigüedad / Descubrimientos / Modernidad):[BLIST]
 				[LI] Observar las estrellas: 563 / 563 / 563
 				[LI] Tierra esférica: 750 / 750 / 750
 				[LI] Modelo heliocéntrico: 938 / 938 / 938
@@ -582,7 +549,7 @@
 			<Text>Todos los proyectos de victoria cuestan menos en todas las eras.[nn][BLIST]
 				[LI] Antigüedad: -25%
 				[LI] Descubrimientos: -25%
-				[LI] Modernidad: -25%[/BLIST][nn]Coste por era (Antigüedad / Descubrimientos / Modernidad): [BLIST]
+				[LI] Modernidad: -25%[/BLIST][nn]Coste por era (Antigüedad / Descubrimientos / Modernidad):[BLIST]
 				[LI] Observar las estrellas: 338 / 338 / 338
 				[LI] Tierra esférica: 450 / 450 / 450
 				[LI] Modelo heliocéntrico: 563 / 563 / 563
@@ -909,13 +876,13 @@
 			<Text>Un ritmo extremadamente lento. 400% más lento que Estándar.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="es_ES">
-			<Text>Cada era usa la fila Duración de las eras de su propio grupo más abajo. Equilibrado fija 153, 166 y 196 puntos; Multijugador fija 140, 155 y 190.</Text>
+			<Text>Cada era usa la fila Duración de las eras de su propio grupo más abajo. Equilibrado fija 150, 170 y 200 puntos; Multijugador fija 140, 160 y 180.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="es_ES">
 			<Text>Eras más largas, cada una más larga que la anterior.[nn][BLIST]
-				[LI] Antigüedad: 153 puntos
-				[LI] Descubrimientos: 166 puntos
-				[LI] Modernidad: 196 puntos[/BLIST]</Text>
+				[LI] Antigüedad: 150 puntos
+				[LI] Descubrimientos: 170 puntos
+				[LI] Modernidad: 200 puntos[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_EXTENDED_DESC" Language="es_ES">
 			<Text>Eras muy largas para una partida prolongada.[nn][BLIST]
@@ -999,26 +966,6 @@
 				[LI] Marathon: 450 puntos
 				[LI] Marathon 2.0: 750 puntos[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153" Language="es_ES">
-			<Text>[BLIST]
-				[LI] Online 2.0: 61 puntos
-				[LI] Online: 76 puntos
-				[LI] Quick: 102 puntos
-				[LI] Standard: 153 puntos
-				[LI] Epic: 230 puntos
-				[LI] Marathon: 459 puntos
-				[LI] Marathon 2.0: 765 puntos[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155" Language="es_ES">
-			<Text>[BLIST]
-				[LI] Online 2.0: 62 puntos
-				[LI] Online: 78 puntos
-				[LI] Quick: 103 puntos
-				[LI] Standard: 155 puntos
-				[LI] Epic: 232 puntos
-				[LI] Marathon: 465 puntos
-				[LI] Marathon 2.0: 775 puntos[/BLIST]</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="es_ES">
 			<Text>[BLIST]
 				[LI] Online 2.0: 64 puntos
@@ -1028,16 +975,6 @@
 				[LI] Epic: 240 puntos
 				[LI] Marathon: 480 puntos
 				[LI] Marathon 2.0: 800 puntos[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166" Language="es_ES">
-			<Text>[BLIST]
-				[LI] Online 2.0: 66 puntos
-				[LI] Online: 83 puntos
-				[LI] Quick: 111 puntos
-				[LI] Standard: 166 puntos
-				[LI] Epic: 249 puntos
-				[LI] Marathon: 498 puntos
-				[LI] Marathon 2.0: 830 puntos[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="es_ES">
 			<Text>[BLIST]
@@ -1068,16 +1005,6 @@
 				[LI] Epic: 285 puntos
 				[LI] Marathon: 570 puntos
 				[LI] Marathon 2.0: 950 puntos[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196" Language="es_ES">
-			<Text>[BLIST]
-				[LI] Online 2.0: 78 puntos
-				[LI] Online: 98 puntos
-				[LI] Quick: 131 puntos
-				[LI] Standard: 196 puntos
-				[LI] Epic: 294 puntos
-				[LI] Marathon: 588 puntos
-				[LI] Marathon 2.0: 980 puntos[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="es_ES">
 			<Text>[BLIST]
@@ -1243,43 +1170,43 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_EXTENDED" Language="es_ES">
 			<Text>Eras muy largas, con costes elevados para llenarlas.[nn][BLIST]
-				[LI] Duración de la era: Prolongado
+				[LI] Duración de la era: 240 / 260 / 280
 				[LI] Progreso de la era: Estándar
-				[LI] Coste de tecnologías: Prolongado
-				[LI] Coste de principios: Prolongado
-				[LI] Crecimiento de ciudades: Prolongado
-				[LI] Caminos: Prolongado
-				[LI] Coste de proyectos de victoria: Prolongado[/BLIST]</Text>
+				[LI] Coste de tecnologías: +25% / +50% / +50%
+				[LI] Coste de principios: +25% / +50% / +50%
+				[LI] Crecimiento de ciudades: +25%
+				[LI] Caminos: Estándar / Estándar / -25%
+				[LI] Coste de proyectos de victoria: +25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT" Language="es_ES">
 			<Text>Eras cortas, con costes reducidos a juego.[nn][BLIST]
-				[LI] Duración de la era: Veloz
+				[LI] Duración de la era: 90 / 100 / 110
 				[LI] Progreso de la era: Estándar
-				[LI] Coste de tecnologías: Veloz
-				[LI] Coste de principios: Veloz
-				[LI] Crecimiento de ciudades: Veloz
-				[LI] Caminos: Veloz
-				[LI] Coste de proyectos de victoria: Veloz[/BLIST]</Text>
+				[LI] Coste de tecnologías: -25% / -25% / Estándar
+				[LI] Coste de principios: -25% / -25% / Estándar
+				[LI] Crecimiento de ciudades: -25%
+				[LI] Caminos: -25% / -50% / -50%
+				[LI] Coste de proyectos de victoria: -25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="es_ES">
 			<Text>Eras más largas, con investigación y crecimiento ajustados para llenarlas.[nn][BLIST]
-				[LI] Duración de la era: Equilibrado
+				[LI] Duración de la era: 150 / 170 / 200
 				[LI] Progreso de la era: Equilibrado
-				[LI] Coste de tecnologías: Equilibrado
-				[LI] Coste de principios: Equilibrado
-				[LI] Crecimiento de ciudades: Equilibrado
-				[LI] Caminos: Equilibrado
-				[LI] Coste de proyectos de victoria: Equilibrado[/BLIST]</Text>
+				[LI] Coste de tecnologías: +25% / Estándar / -25%
+				[LI] Coste de principios: Estándar / +25% / +25%
+				[LI] Crecimiento de ciudades: -25% / -25% / Estándar
+				[LI] Caminos: Estándar / Estándar / -25%
+				[LI] Coste de proyectos de victoria: Estándar / -25% / -25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="es_ES">
 			<Text>Ajustado para una partida de una sola sentada.[nn][BLIST]
-				[LI] Duración de la era: 140 / 155 / 190
+				[LI] Duración de la era: 140 / 160 / 180
 				[LI] Progreso de la era: Equilibrado
-				[LI] Coste de tecnologías: +35% / +50% / +75%
-				[LI] Coste de principios: +45% / +60% / +85%
-				[LI] Crecimiento de ciudades: Lento
+				[LI] Coste de tecnologías: +25% / +50% / +100%
+				[LI] Coste de principios: +50% / +50% / +100%
+				[LI] Crecimiento de ciudades: +25%
 				[LI] Caminos: -25% / -25% / -50%
-				[LI] Coste de proyectos de victoria: Estándar / Estándar / +20%[/BLIST]</Text>
+				[LI] Coste de proyectos de victoria: Estándar / Estándar / +25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="es_ES">
 			<Text>La Configuración de ritmo de la pestaña Ritmo ya no coincide con ningún ajuste predefinido.</Text>

@@ -37,32 +37,14 @@
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_25" Language="it_IT">
 			<Text>25% Produzione in più per i progetti di vittoria in quest'era.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_20" Language="it_IT">
-			<Text>20% Produzione in più per i progetti di vittoria in quest'era.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_100" Language="it_IT">
 			<Text>100% Produzione in più per i progetti di vittoria in quest'era.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_MINUS_25" Language="it_IT">
 			<Text>25% Produzione in meno per i progetti di vittoria in quest'era.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_85" Language="it_IT">
-			<Text>85% Scienza in più in quest'era.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_75" Language="it_IT">
-			<Text>75% Scienza in più in quest'era.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_60" Language="it_IT">
-			<Text>60% Scienza in più in quest'era.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_50" Language="it_IT">
 			<Text>50% Scienza in più in quest'era.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_45" Language="it_IT">
-			<Text>45% Scienza in più in quest'era.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_35" Language="it_IT">
-			<Text>35% Scienza in più in quest'era.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_25" Language="it_IT">
 			<Text>25% Scienza in più in quest'era.</Text>
@@ -76,23 +58,8 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_VALUE_DESCRIPTION" Language="it_IT">
 			<Text>Il numero massimo di insediamenti che puoi avere in quest'era.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_85" Language="it_IT">
-			<Text>85% Cultura in più in quest'era.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_75" Language="it_IT">
-			<Text>75% Cultura in più in quest'era.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_60" Language="it_IT">
-			<Text>60% Cultura in più in quest'era.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_50" Language="it_IT">
 			<Text>50% Cultura in più in quest'era.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_45" Language="it_IT">
-			<Text>45% Cultura in più in quest'era.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_35" Language="it_IT">
-			<Text>35% Cultura in più in quest'era.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_25" Language="it_IT">
 			<Text>25% Cultura in più in quest'era.</Text>
@@ -546,7 +513,7 @@
 			<Text>Standard nell'Antichità, poi progetti di vittoria più economici.[nn][BLIST]
 				[LI] Antichità: Standard
 				[LI] Epoca delle esplorazioni: -25%
-				[LI] Epoca moderna: -25%[/BLIST][nn]Costo per era (Antichità / Epoca delle esplorazioni / Epoca moderna): [BLIST]
+				[LI] Epoca moderna: -25%[/BLIST][nn]Costo per era (Antichità / Epoca delle esplorazioni / Epoca moderna):[BLIST]
 				[LI] Mappa delle stelle: 450 / 338 / 338
 				[LI] Terra sferica: 600 / 450 / 450
 				[LI] Modello eliocentrico: 750 / 563 / 563
@@ -564,7 +531,7 @@
 			<Text>Ogni progetto di vittoria costa di più in ogni era.[nn][BLIST]
 				[LI] Antichità: +25%
 				[LI] Epoca delle esplorazioni: +25%
-				[LI] Epoca moderna: +25%[/BLIST][nn]Costo per era (Antichità / Epoca delle esplorazioni / Epoca moderna): [BLIST]
+				[LI] Epoca moderna: +25%[/BLIST][nn]Costo per era (Antichità / Epoca delle esplorazioni / Epoca moderna):[BLIST]
 				[LI] Mappa delle stelle: 563 / 563 / 563
 				[LI] Terra sferica: 750 / 750 / 750
 				[LI] Modello eliocentrico: 938 / 938 / 938
@@ -582,7 +549,7 @@
 			<Text>Ogni progetto di vittoria costa meno in ogni era.[nn][BLIST]
 				[LI] Antichità: -25%
 				[LI] Epoca delle esplorazioni: -25%
-				[LI] Epoca moderna: -25%[/BLIST][nn]Costo per era (Antichità / Epoca delle esplorazioni / Epoca moderna): [BLIST]
+				[LI] Epoca moderna: -25%[/BLIST][nn]Costo per era (Antichità / Epoca delle esplorazioni / Epoca moderna):[BLIST]
 				[LI] Mappa delle stelle: 338 / 338 / 338
 				[LI] Terra sferica: 450 / 450 / 450
 				[LI] Modello eliocentrico: 563 / 563 / 563
@@ -909,13 +876,13 @@
 			<Text>Un ritmo estremamente lento. 400% più lento della velocità Standard.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="it_IT">
-			<Text>Ogni era usa la riga Durata delle ere del proprio gruppo qui sotto. Bilanciato imposta 153, 166 e 196 punti; Multigiocatore imposta 140, 155 e 190.</Text>
+			<Text>Ogni era usa la riga Durata delle ere del proprio gruppo qui sotto. Bilanciato imposta 150, 170 e 200 punti; Multigiocatore imposta 140, 160 e 180.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="it_IT">
 			<Text>Ere più lunghe, ognuna più lunga della precedente.[nn][BLIST]
-				[LI] Antichità: 153 punti
-				[LI] Epoca delle esplorazioni: 166 punti
-				[LI] Epoca moderna: 196 punti[/BLIST]</Text>
+				[LI] Antichità: 150 punti
+				[LI] Epoca delle esplorazioni: 170 punti
+				[LI] Epoca moderna: 200 punti[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_EXTENDED_DESC" Language="it_IT">
 			<Text>Ere molto lunghe per una partita prolungata.[nn][BLIST]
@@ -999,26 +966,6 @@
 				[LI] Marathon: 450 punti
 				[LI] Marathon 2.0: 750 punti[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153" Language="it_IT">
-			<Text>[BLIST]
-				[LI] Online 2.0: 61 punti
-				[LI] Online: 76 punti
-				[LI] Quick: 102 punti
-				[LI] Standard: 153 punti
-				[LI] Epic: 230 punti
-				[LI] Marathon: 459 punti
-				[LI] Marathon 2.0: 765 punti[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155" Language="it_IT">
-			<Text>[BLIST]
-				[LI] Online 2.0: 62 punti
-				[LI] Online: 78 punti
-				[LI] Quick: 103 punti
-				[LI] Standard: 155 punti
-				[LI] Epic: 232 punti
-				[LI] Marathon: 465 punti
-				[LI] Marathon 2.0: 775 punti[/BLIST]</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="it_IT">
 			<Text>[BLIST]
 				[LI] Online 2.0: 64 punti
@@ -1028,16 +975,6 @@
 				[LI] Epic: 240 punti
 				[LI] Marathon: 480 punti
 				[LI] Marathon 2.0: 800 punti[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166" Language="it_IT">
-			<Text>[BLIST]
-				[LI] Online 2.0: 66 punti
-				[LI] Online: 83 punti
-				[LI] Quick: 111 punti
-				[LI] Standard: 166 punti
-				[LI] Epic: 249 punti
-				[LI] Marathon: 498 punti
-				[LI] Marathon 2.0: 830 punti[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="it_IT">
 			<Text>[BLIST]
@@ -1068,16 +1005,6 @@
 				[LI] Epic: 285 punti
 				[LI] Marathon: 570 punti
 				[LI] Marathon 2.0: 950 punti[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196" Language="it_IT">
-			<Text>[BLIST]
-				[LI] Online 2.0: 78 punti
-				[LI] Online: 98 punti
-				[LI] Quick: 131 punti
-				[LI] Standard: 196 punti
-				[LI] Epic: 294 punti
-				[LI] Marathon: 588 punti
-				[LI] Marathon 2.0: 980 punti[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="it_IT">
 			<Text>[BLIST]
@@ -1243,43 +1170,43 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_EXTENDED" Language="it_IT">
 			<Text>Ere molto lunghe, con costi alzati per riempirle.[nn][BLIST]
-				[LI] Durata dell'era: Prolungato
+				[LI] Durata dell'era: 240 / 260 / 280
 				[LI] Progresso dell'epoca: Standard
-				[LI] Costo delle tecnologie: Prolungato
-				[LI] Costo dei principi civici: Prolungato
-				[LI] Crescita delle città: Prolungato
-				[LI] Strade: Prolungato
-				[LI] Costo dei progetti di vittoria: Prolungato[/BLIST]</Text>
+				[LI] Costo delle tecnologie: +25% / +50% / +50%
+				[LI] Costo dei principi civici: +25% / +50% / +50%
+				[LI] Crescita delle città: +25%
+				[LI] Strade: Standard / Standard / -25%
+				[LI] Costo dei progetti di vittoria: +25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT" Language="it_IT">
 			<Text>Ere brevi, con costi ridotti di conseguenza.[nn][BLIST]
-				[LI] Durata dell'era: Rapido
+				[LI] Durata dell'era: 90 / 100 / 110
 				[LI] Progresso dell'epoca: Standard
-				[LI] Costo delle tecnologie: Rapido
-				[LI] Costo dei principi civici: Rapido
-				[LI] Crescita delle città: Rapido
-				[LI] Strade: Rapido
-				[LI] Costo dei progetti di vittoria: Rapido[/BLIST]</Text>
+				[LI] Costo delle tecnologie: -25% / -25% / Standard
+				[LI] Costo dei principi civici: -25% / -25% / Standard
+				[LI] Crescita delle città: -25%
+				[LI] Strade: -25% / -50% / -50%
+				[LI] Costo dei progetti di vittoria: -25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="it_IT">
 			<Text>Ere più lunghe, con ricerca e crescita calibrate per riempirle.[nn][BLIST]
-				[LI] Durata dell'era: Bilanciato
+				[LI] Durata dell'era: 150 / 170 / 200
 				[LI] Progresso dell'epoca: Bilanciato
-				[LI] Costo delle tecnologie: Bilanciato
-				[LI] Costo dei principi civici: Bilanciato
-				[LI] Crescita delle città: Bilanciato
-				[LI] Strade: Bilanciato
-				[LI] Costo dei progetti di vittoria: Bilanciato[/BLIST]</Text>
+				[LI] Costo delle tecnologie: +25% / Standard / -25%
+				[LI] Costo dei principi civici: Standard / +25% / +25%
+				[LI] Crescita delle città: -25% / -25% / Standard
+				[LI] Strade: Standard / Standard / -25%
+				[LI] Costo dei progetti di vittoria: Standard / -25% / -25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="it_IT">
 			<Text>Calibrato per una partita da fare tutta d'un fiato.[nn][BLIST]
-				[LI] Durata dell'era: 140 / 155 / 190
+				[LI] Durata dell'era: 140 / 160 / 180
 				[LI] Progresso dell'epoca: Bilanciato
-				[LI] Costo delle tecnologie: +35% / +50% / +75%
-				[LI] Costo dei principi civici: +45% / +60% / +85%
-				[LI] Crescita delle città: Lento
+				[LI] Costo delle tecnologie: +25% / +50% / +100%
+				[LI] Costo dei principi civici: +50% / +50% / +100%
+				[LI] Crescita delle città: +25%
 				[LI] Strade: -25% / -25% / -50%
-				[LI] Costo dei progetti di vittoria: Standard / Standard / +20%[/BLIST]</Text>
+				[LI] Costo dei progetti di vittoria: Standard / Standard / +25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="it_IT">
 			<Text>Le Impostazioni del ritmo nella scheda Ritmo non corrispondono più a un ritmo predefinito.</Text>

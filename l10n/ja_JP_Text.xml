@@ -37,32 +37,14 @@
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_25" Language="ja_JP">
 			<Text>この時代の勝利プロジェクトの生産力が25%増加。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_20" Language="ja_JP">
-			<Text>この時代の勝利プロジェクトの生産力が20%増加。</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_100" Language="ja_JP">
 			<Text>この時代の勝利プロジェクトの生産力が100%増加。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_MINUS_25" Language="ja_JP">
 			<Text>この時代の勝利プロジェクトの生産力が25%減少。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_85" Language="ja_JP">
-			<Text>この時代の科学力が85%増加。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_75" Language="ja_JP">
-			<Text>この時代の科学力が75%増加。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_60" Language="ja_JP">
-			<Text>この時代の科学力が60%増加。</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_50" Language="ja_JP">
 			<Text>この時代の科学力が50%増加。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_45" Language="ja_JP">
-			<Text>この時代の科学力が45%増加。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_35" Language="ja_JP">
-			<Text>この時代の科学力が35%増加。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_25" Language="ja_JP">
 			<Text>この時代の科学力が25%増加。</Text>
@@ -76,23 +58,8 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_VALUE_DESCRIPTION" Language="ja_JP">
 			<Text>この時代に保有できる入植地の最大数。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_85" Language="ja_JP">
-			<Text>この時代の文化力が85%増加。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_75" Language="ja_JP">
-			<Text>この時代の文化力が75%増加。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_60" Language="ja_JP">
-			<Text>この時代の文化力が60%増加。</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_50" Language="ja_JP">
 			<Text>この時代の文化力が50%増加。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_45" Language="ja_JP">
-			<Text>この時代の文化力が45%増加。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_35" Language="ja_JP">
-			<Text>この時代の文化力が35%増加。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_25" Language="ja_JP">
 			<Text>この時代の文化力が25%増加。</Text>
@@ -546,7 +513,7 @@
 			<Text>古代は標準、その後は勝利プロジェクトが安くなる。[nn][BLIST]
 				[LI] 古代：標準
 				[LI] 探検の時代：-25%
-				[LI] 近代：-25%[/BLIST][nn]時代別の費用（古代 / 探検の時代 / 近代）： [BLIST]
+				[LI] 近代：-25%[/BLIST][nn]時代別の費用（古代 / 探検の時代 / 近代）：[BLIST]
 				[LI] 星図作製：450 / 338 / 338
 				[LI] 地球球体説：600 / 450 / 450
 				[LI] 地動説の論理体系：750 / 563 / 563
@@ -564,7 +531,7 @@
 			<Text>どの時代も勝利プロジェクトの費用が上がる。[nn][BLIST]
 				[LI] 古代：+25%
 				[LI] 探検の時代：+25%
-				[LI] 近代：+25%[/BLIST][nn]時代別の費用（古代 / 探検の時代 / 近代）： [BLIST]
+				[LI] 近代：+25%[/BLIST][nn]時代別の費用（古代 / 探検の時代 / 近代）：[BLIST]
 				[LI] 星図作製：563 / 563 / 563
 				[LI] 地球球体説：750 / 750 / 750
 				[LI] 地動説の論理体系：938 / 938 / 938
@@ -582,7 +549,7 @@
 			<Text>どの時代も勝利プロジェクトの費用が下がる。[nn][BLIST]
 				[LI] 古代：-25%
 				[LI] 探検の時代：-25%
-				[LI] 近代：-25%[/BLIST][nn]時代別の費用（古代 / 探検の時代 / 近代）： [BLIST]
+				[LI] 近代：-25%[/BLIST][nn]時代別の費用（古代 / 探検の時代 / 近代）：[BLIST]
 				[LI] 星図作製：338 / 338 / 338
 				[LI] 地球球体説：450 / 450 / 450
 				[LI] 地動説の論理体系：563 / 563 / 563
@@ -909,13 +876,13 @@
 			<Text>非常に遅いペース。標準より400%遅い。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="ja_JP">
-			<Text>各時代は下のそれぞれのグループにある「時代の長さ」の行を使います。バランスは153、166、196ポイント、マルチプレイヤーは140、155、190ポイントに設定します。</Text>
+			<Text>各時代は下のそれぞれのグループにある「時代の長さ」の行を使います。バランスは150、170、200ポイント、マルチプレイヤーは140、160、180ポイントに設定します。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="ja_JP">
 			<Text>長めの時代。後の時代ほど長くなる。[nn][BLIST]
-				[LI] 古代：153ポイント
-				[LI] 探検の時代：166ポイント
-				[LI] 近代：196ポイント[/BLIST]</Text>
+				[LI] 古代：150ポイント
+				[LI] 探検の時代：170ポイント
+				[LI] 近代：200ポイント[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_EXTENDED_DESC" Language="ja_JP">
 			<Text>非常に長い時代。じっくり遊ぶ向け。[nn][BLIST]
@@ -999,26 +966,6 @@
 				[LI] Marathon:450ポイント
 				[LI] Marathon 2.0:750ポイント[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153" Language="ja_JP">
-			<Text>[BLIST]
-				[LI] Online 2.0:61ポイント
-				[LI] Online:76ポイント
-				[LI] Quick:102ポイント
-				[LI] Standard:153ポイント
-				[LI] Epic:230ポイント
-				[LI] Marathon:459ポイント
-				[LI] Marathon 2.0:765ポイント[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155" Language="ja_JP">
-			<Text>[BLIST]
-				[LI] Online 2.0:62ポイント
-				[LI] Online:78ポイント
-				[LI] Quick:103ポイント
-				[LI] Standard:155ポイント
-				[LI] Epic:232ポイント
-				[LI] Marathon:465ポイント
-				[LI] Marathon 2.0:775ポイント[/BLIST]</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="ja_JP">
 			<Text>[BLIST]
 				[LI] Online 2.0:64ポイント
@@ -1028,16 +975,6 @@
 				[LI] Epic:240ポイント
 				[LI] Marathon:480ポイント
 				[LI] Marathon 2.0:800ポイント[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166" Language="ja_JP">
-			<Text>[BLIST]
-				[LI] Online 2.0:66ポイント
-				[LI] Online:83ポイント
-				[LI] Quick:111ポイント
-				[LI] Standard:166ポイント
-				[LI] Epic:249ポイント
-				[LI] Marathon:498ポイント
-				[LI] Marathon 2.0:830ポイント[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="ja_JP">
 			<Text>[BLIST]
@@ -1068,16 +1005,6 @@
 				[LI] Epic:285ポイント
 				[LI] Marathon:570ポイント
 				[LI] Marathon 2.0:950ポイント[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196" Language="ja_JP">
-			<Text>[BLIST]
-				[LI] Online 2.0:78ポイント
-				[LI] Online:98ポイント
-				[LI] Quick:131ポイント
-				[LI] Standard:196ポイント
-				[LI] Epic:294ポイント
-				[LI] Marathon:588ポイント
-				[LI] Marathon 2.0:980ポイント[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="ja_JP">
 			<Text>[BLIST]
@@ -1243,43 +1170,43 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_EXTENDED" Language="ja_JP">
 			<Text>非常に長い時代。費用を上げて時代を埋める。[nn][BLIST]
-				[LI] 時代の長さ：長期
+				[LI] 時代の長さ：240 / 260 / 280
 				[LI] 時代の進行速度：標準
-				[LI] 技術コスト：長期
-				[LI] 社会制度コスト：長期
-				[LI] 都市の成長：長期
-				[LI] 道路：長期
-				[LI] 勝利プロジェクトのコスト：長期[/BLIST]</Text>
+				[LI] 技術コスト：+25% / +50% / +50%
+				[LI] 社会制度コスト：+25% / +50% / +50%
+				[LI] 都市の成長：+25%
+				[LI] 道路：標準 / 標準 / -25%
+				[LI] 勝利プロジェクトのコスト：+25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT" Language="ja_JP">
 			<Text>短い時代。費用もそれに合わせて下がる。[nn][BLIST]
-				[LI] 時代の長さ：快速
+				[LI] 時代の長さ：90 / 100 / 110
 				[LI] 時代の進行速度：標準
-				[LI] 技術コスト：快速
-				[LI] 社会制度コスト：快速
-				[LI] 都市の成長：快速
-				[LI] 道路：快速
-				[LI] 勝利プロジェクトのコスト：快速[/BLIST]</Text>
+				[LI] 技術コスト：-25% / -25% / 標準
+				[LI] 社会制度コスト：-25% / -25% / 標準
+				[LI] 都市の成長：-25%
+				[LI] 道路：-25% / -50% / -50%
+				[LI] 勝利プロジェクトのコスト：-25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="ja_JP">
 			<Text>長めの時代。研究と成長をそれに合わせて調整。[nn][BLIST]
-				[LI] 時代の長さ：バランス
+				[LI] 時代の長さ：150 / 170 / 200
 				[LI] 時代の進行速度：バランス
-				[LI] 技術コスト：バランス
-				[LI] 社会制度コスト：バランス
-				[LI] 都市の成長：バランス
-				[LI] 道路：バランス
-				[LI] 勝利プロジェクトのコスト：バランス[/BLIST]</Text>
+				[LI] 技術コスト：+25% / 標準 / -25%
+				[LI] 社会制度コスト：標準 / +25% / +25%
+				[LI] 都市の成長：-25% / -25% / 標準
+				[LI] 道路：標準 / 標準 / -25%
+				[LI] 勝利プロジェクトのコスト：標準 / -25% / -25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="ja_JP">
 			<Text>1回の対戦で遊びきる想定の調整。[nn][BLIST]
-				[LI] 時代の長さ：140 / 155 / 190
+				[LI] 時代の長さ：140 / 160 / 180
 				[LI] 時代の進行速度：バランス
-				[LI] 技術コスト：+35% / +50% / +75%
-				[LI] 社会制度コスト：+45% / +60% / +85%
-				[LI] 都市の成長：遅い
+				[LI] 技術コスト：+25% / +50% / +100%
+				[LI] 社会制度コスト：+50% / +50% / +100%
+				[LI] 都市の成長：+25%
 				[LI] 道路：-25% / -25% / -50%
-				[LI] 勝利プロジェクトのコスト：標準 / 標準 / +20%[/BLIST]</Text>
+				[LI] 勝利プロジェクトのコスト：標準 / 標準 / +25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="ja_JP">
 			<Text>「ペース」タブの「ペース設定」がどのプリセットとも一致していません。</Text>

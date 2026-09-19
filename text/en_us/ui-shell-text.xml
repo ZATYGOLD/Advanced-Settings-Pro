@@ -35,32 +35,14 @@
 		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_25">
 			<Text>25% more Production for Victory Projects in this age.</Text>
 		</Row>
-		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_20">
-			<Text>20% more Production for Victory Projects in this age.</Text>
-		</Row>
 		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_100">
 			<Text>100% more Production for Victory Projects in this age.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_MINUS_25">
 			<Text>25% less Production for Victory Projects in this age.</Text>
 		</Row>
-		<Row Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_85">
-			<Text>85% more Science in this age.</Text>
-		</Row>
-		<Row Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_75">
-			<Text>75% more Science in this age.</Text>
-		</Row>
-		<Row Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_60">
-			<Text>60% more Science in this age.</Text>
-		</Row>
 		<Row Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_50">
 			<Text>50% more Science in this age.</Text>
-		</Row>
-		<Row Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_45">
-			<Text>45% more Science in this age.</Text>
-		</Row>
-		<Row Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_35">
-			<Text>35% more Science in this age.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_25">
 			<Text>25% more Science in this age.</Text>
@@ -74,23 +56,8 @@
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_VALUE_DESCRIPTION">
 			<Text>The most settlements you may hold in this age.</Text>
 		</Row>
-		<Row Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_85">
-			<Text>85% more Culture in this age.</Text>
-		</Row>
-		<Row Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_75">
-			<Text>75% more Culture in this age.</Text>
-		</Row>
-		<Row Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_60">
-			<Text>60% more Culture in this age.</Text>
-		</Row>
 		<Row Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_50">
 			<Text>50% more Culture in this age.</Text>
-		</Row>
-		<Row Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_45">
-			<Text>45% more Culture in this age.</Text>
-		</Row>
-		<Row Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_35">
-			<Text>35% more Culture in this age.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_25">
 			<Text>25% more Culture in this age.</Text>
@@ -284,7 +251,7 @@
 		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_BALANCED"><Text>Standard in Antiquity, then cheaper Victory Projects.[nn][BLIST]
 				[LI] Antiquity: Standard
 				[LI] Exploration: -25%
-				[LI] Modern: -25%[/BLIST][nn]Cost by age (Antiquity / Exploration / Modern): [BLIST]
+				[LI] Modern: -25%[/BLIST][nn]Cost by age (Antiquity / Exploration / Modern):[BLIST]
 				[LI] Chart The Stars: 450 / 338 / 338
 				[LI] Spherical Earth: 600 / 450 / 450
 				[LI] Heliocentric Model: 750 / 563 / 563
@@ -300,7 +267,7 @@
 		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_EXTENDED"><Text>Every Victory Project costs more in every age.[nn][BLIST]
 				[LI] Antiquity: +25%
 				[LI] Exploration: +25%
-				[LI] Modern: +25%[/BLIST][nn]Cost by age (Antiquity / Exploration / Modern): [BLIST]
+				[LI] Modern: +25%[/BLIST][nn]Cost by age (Antiquity / Exploration / Modern):[BLIST]
 				[LI] Chart The Stars: 563 / 563 / 563
 				[LI] Spherical Earth: 750 / 750 / 750
 				[LI] Heliocentric Model: 938 / 938 / 938
@@ -316,7 +283,7 @@
 		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_SWIFT"><Text>Every Victory Project costs less in every age.[nn][BLIST]
 				[LI] Antiquity: -25%
 				[LI] Exploration: -25%
-				[LI] Modern: -25%[/BLIST][nn]Cost by age (Antiquity / Exploration / Modern): [BLIST]
+				[LI] Modern: -25%[/BLIST][nn]Cost by age (Antiquity / Exploration / Modern):[BLIST]
 				[LI] Chart The Stars: 338 / 338 / 338
 				[LI] Spherical Earth: 450 / 450 / 450
 				[LI] Heliocentric Model: 563 / 563 / 563
@@ -414,14 +381,8 @@
 		</Row>
 		<Row Tag="LOC_ZG_PCT_MINUS_25"><Text>-25%</Text></Row>
 		<Row Tag="LOC_ZG_PCT_MINUS_50"><Text>-50%</Text></Row>
-		<Row Tag="LOC_ZG_PCT_PLUS_20"><Text>+20%</Text></Row>
 		<Row Tag="LOC_ZG_PCT_PLUS_25"><Text>+25%</Text></Row>
-		<Row Tag="LOC_ZG_PCT_PLUS_35"><Text>+35%</Text></Row>
-		<Row Tag="LOC_ZG_PCT_PLUS_45"><Text>+45%</Text></Row>
 		<Row Tag="LOC_ZG_PCT_PLUS_50"><Text>+50%</Text></Row>
-		<Row Tag="LOC_ZG_PCT_PLUS_60"><Text>+60%</Text></Row>
-		<Row Tag="LOC_ZG_PCT_PLUS_75"><Text>+75%</Text></Row>
-		<Row Tag="LOC_ZG_PCT_PLUS_85"><Text>+85%</Text></Row>
 		<Row Tag="LOC_ZG_PCT_PLUS_100"><Text>+100%</Text></Row>
 		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD"><Text>No change.</Text></Row>
 		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED"><Text>Cities grow faster early, then settle to standard.[nn][BLIST]
@@ -692,14 +653,10 @@
 		<Row Tag="LOC_ZG_NUM_130"><Text>130</Text></Row>
 		<Row Tag="LOC_ZG_NUM_140"><Text>140</Text></Row>
 		<Row Tag="LOC_ZG_NUM_150"><Text>150</Text></Row>
-		<Row Tag="LOC_ZG_NUM_153"><Text>153</Text></Row>
-		<Row Tag="LOC_ZG_NUM_155"><Text>155</Text></Row>
 		<Row Tag="LOC_ZG_NUM_160"><Text>160</Text></Row>
-		<Row Tag="LOC_ZG_NUM_166"><Text>166</Text></Row>
 		<Row Tag="LOC_ZG_NUM_170"><Text>170</Text></Row>
 		<Row Tag="LOC_ZG_NUM_180"><Text>180</Text></Row>
 		<Row Tag="LOC_ZG_NUM_190"><Text>190</Text></Row>
-		<Row Tag="LOC_ZG_NUM_196"><Text>196</Text></Row>
 		<Row Tag="LOC_ZG_NUM_200"><Text>200</Text></Row>
 		<Row Tag="LOC_ZG_NUM_220"><Text>220</Text></Row>
 		<Row Tag="LOC_ZG_NUM_240"><Text>240</Text></Row>
@@ -743,11 +700,11 @@
 		<Row Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION"><Text>An extremely slow pace. 400% slower than Standard speed.</Text></Row>
 
 	<!-- Age Length -->
-		<Row Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC"><Text>Each age uses the Age Length row in its own group below. Balanced sets 153, 166, and 196 points; Multiplayer sets 140, 155, and 190.</Text></Row>
+		<Row Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC"><Text>Each age uses the Age Length row in its own group below. Balanced sets 150, 170, and 200 points; Multiplayer sets 140, 160, and 180.</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC"><Text>Longer ages, each one longer than the last.[nn][BLIST]
-				[LI] Antiquity: 153 points
-				[LI] Exploration: 166 points
-				[LI] Modern: 196 points[/BLIST]</Text></Row>
+				[LI] Antiquity: 150 points
+				[LI] Exploration: 170 points
+				[LI] Modern: 200 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_EXTENDED_DESC"><Text>Very long ages for a drawn-out game.[nn][BLIST]
 				[LI] Antiquity: 240 points
 				[LI] Exploration: 260 points
@@ -812,22 +769,6 @@
 				[LI] Epic: 225 points
 				[LI] Marathon: 450 points
 				[LI] Marathon 2.0: 750 points[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153"><Text>[BLIST]
-				[LI] Online 2.0: 61 points
-				[LI] Online: 76 points
-				[LI] Quick: 102 points
-				[LI] Standard: 153 points
-				[LI] Epic: 230 points
-				[LI] Marathon: 459 points
-				[LI] Marathon 2.0: 765 points[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155"><Text>[BLIST]
-				[LI] Online 2.0: 62 points
-				[LI] Online: 78 points
-				[LI] Quick: 103 points
-				[LI] Standard: 155 points
-				[LI] Epic: 232 points
-				[LI] Marathon: 465 points
-				[LI] Marathon 2.0: 775 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160"><Text>[BLIST]
 				[LI] Online 2.0: 64 points
 				[LI] Online: 80 points
@@ -836,14 +777,6 @@
 				[LI] Epic: 240 points
 				[LI] Marathon: 480 points
 				[LI] Marathon 2.0: 800 points[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166"><Text>[BLIST]
-				[LI] Online 2.0: 66 points
-				[LI] Online: 83 points
-				[LI] Quick: 111 points
-				[LI] Standard: 166 points
-				[LI] Epic: 249 points
-				[LI] Marathon: 498 points
-				[LI] Marathon 2.0: 830 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170"><Text>[BLIST]
 				[LI] Online 2.0: 68 points
 				[LI] Online: 85 points
@@ -868,14 +801,6 @@
 				[LI] Epic: 285 points
 				[LI] Marathon: 570 points
 				[LI] Marathon 2.0: 950 points[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196"><Text>[BLIST]
-				[LI] Online 2.0: 78 points
-				[LI] Online: 98 points
-				[LI] Quick: 131 points
-				[LI] Standard: 196 points
-				[LI] Epic: 294 points
-				[LI] Marathon: 588 points
-				[LI] Marathon 2.0: 980 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200"><Text>[BLIST]
 				[LI] Online 2.0: 80 points
 				[LI] Online: 100 points
@@ -983,37 +908,37 @@
 		<Row Tag="LOC_ZG_PACE_PRESET_SWIFT_NAME"><Text>Swift Pace</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD"><Text>Every pacing setting left at its standard value.</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_EXTENDED"><Text>Very long ages, with costs raised to fill them.[nn][BLIST]
-				[LI] Age Length: Extended
+				[LI] Age Length: 240 / 260 / 280
 				[LI] Age Progress Rate: Standard
-				[LI] Technology Cost: Extended
-				[LI] Civic Cost: Extended
-				[LI] City Growth: Extended
-				[LI] Roads: Extended
-				[LI] Victory Project Cost: Extended[/BLIST]</Text></Row>
+				[LI] Technology Cost: +25% / +50% / +50%
+				[LI] Civic Cost: +25% / +50% / +50%
+				[LI] City Growth: +25%
+				[LI] Roads: Standard / Standard / -25%
+				[LI] Victory Project Cost: +25%[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT"><Text>Short ages, with costs scaled down to match.[nn][BLIST]
-				[LI] Age Length: Swift
+				[LI] Age Length: 90 / 100 / 110
 				[LI] Age Progress Rate: Standard
-				[LI] Technology Cost: Swift
-				[LI] Civic Cost: Swift
-				[LI] City Growth: Swift
-				[LI] Roads: Swift
-				[LI] Victory Project Cost: Swift[/BLIST]</Text></Row>
+				[LI] Technology Cost: -25% / -25% / Standard
+				[LI] Civic Cost: -25% / -25% / Standard
+				[LI] City Growth: -25%
+				[LI] Roads: -25% / -50% / -50%
+				[LI] Victory Project Cost: -25%[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED"><Text>Longer ages, with research and growth tuned to fill them.[nn][BLIST]
-				[LI] Age Length: Balanced
+				[LI] Age Length: 150 / 170 / 200
 				[LI] Age Progress Rate: Balanced
-				[LI] Technology Cost: Balanced
-				[LI] Civic Cost: Balanced
-				[LI] City Growth: Balanced
-				[LI] Roads: Balanced
-				[LI] Victory Project Cost: Balanced[/BLIST]</Text></Row>
+				[LI] Technology Cost: +25% / Standard / -25%
+				[LI] Civic Cost: Standard / +25% / +25%
+				[LI] City Growth: -25% / -25% / Standard
+				[LI] Roads: Standard / Standard / -25%
+				[LI] Victory Project Cost: Standard / -25% / -25%[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER"><Text>Tuned for a session played in one sitting.[nn][BLIST]
-				[LI] Age Length: 140 / 155 / 190
+				[LI] Age Length: 140 / 160 / 180
 				[LI] Age Progress Rate: Balanced
-				[LI] Technology Cost: +35% / +50% / +75%
-				[LI] Civic Cost: +45% / +60% / +85%
-				[LI] City Growth: Slow
+				[LI] Technology Cost: +25% / +50% / +100%
+				[LI] Civic Cost: +50% / +50% / +100%
+				[LI] City Growth: +25%
 				[LI] Roads: -25% / -25% / -50%
-				[LI] Victory Project Cost: Standard / Standard / +20%[/BLIST]</Text></Row>
+				[LI] Victory Project Cost: Standard / Standard / +25%[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM"><Text>The Pace Settings on the Pace tab no longer match a preset.</Text></Row>
 	</EnglishText>
 </Database>

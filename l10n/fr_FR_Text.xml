@@ -37,32 +37,14 @@
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_25" Language="fr_FR">
 			<Text>25% de Production en plus pour les projets de victoire de cet âge.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_20" Language="fr_FR">
-			<Text>20% de Production en plus pour les projets de victoire de cet âge.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_100" Language="fr_FR">
 			<Text>100% de Production en plus pour les projets de victoire de cet âge.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_MINUS_25" Language="fr_FR">
 			<Text>25% de Production en moins pour les projets de victoire de cet âge.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_85" Language="fr_FR">
-			<Text>85% de Science en plus pour cet âge.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_75" Language="fr_FR">
-			<Text>75% de Science en plus pour cet âge.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_60" Language="fr_FR">
-			<Text>60% de Science en plus pour cet âge.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_50" Language="fr_FR">
 			<Text>50% de Science en plus pour cet âge.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_45" Language="fr_FR">
-			<Text>45% de Science en plus pour cet âge.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_35" Language="fr_FR">
-			<Text>35% de Science en plus pour cet âge.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_25" Language="fr_FR">
 			<Text>25% de Science en plus pour cet âge.</Text>
@@ -76,23 +58,8 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_VALUE_DESCRIPTION" Language="fr_FR">
 			<Text>Le nombre maximal de colonies que vous pouvez tenir durant cet âge.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_85" Language="fr_FR">
-			<Text>85% de Culture en plus pour cet âge.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_75" Language="fr_FR">
-			<Text>75% de Culture en plus pour cet âge.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_60" Language="fr_FR">
-			<Text>60% de Culture en plus pour cet âge.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_50" Language="fr_FR">
 			<Text>50% de Culture en plus pour cet âge.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_45" Language="fr_FR">
-			<Text>45% de Culture en plus pour cet âge.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_35" Language="fr_FR">
-			<Text>35% de Culture en plus pour cet âge.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_25" Language="fr_FR">
 			<Text>25% de Culture en plus pour cet âge.</Text>
@@ -546,7 +513,7 @@
 			<Text>Standard dans l'Antiquité, puis projets de victoire moins chers.[nn][BLIST]
 				[LI] Antiquité : Standard
 				[LI] Âge de l'exploration : -25%
-				[LI] Âge moderne : -25%[/BLIST][nn]Coût par âge (Antiquité / Âge de l'exploration / Âge moderne) : [BLIST]
+				[LI] Âge moderne : -25%[/BLIST][nn]Coût par âge (Antiquité / Âge de l'exploration / Âge moderne) :[BLIST]
 				[LI] Cartographie du firmament : 450 / 338 / 338
 				[LI] Terre sphérique : 600 / 450 / 450
 				[LI] Modèle héliocentrique : 750 / 563 / 563
@@ -564,7 +531,7 @@
 			<Text>Chaque projet de victoire coûte plus cher à chaque âge.[nn][BLIST]
 				[LI] Antiquité : +25%
 				[LI] Âge de l'exploration : +25%
-				[LI] Âge moderne : +25%[/BLIST][nn]Coût par âge (Antiquité / Âge de l'exploration / Âge moderne) : [BLIST]
+				[LI] Âge moderne : +25%[/BLIST][nn]Coût par âge (Antiquité / Âge de l'exploration / Âge moderne) :[BLIST]
 				[LI] Cartographie du firmament : 563 / 563 / 563
 				[LI] Terre sphérique : 750 / 750 / 750
 				[LI] Modèle héliocentrique : 938 / 938 / 938
@@ -582,7 +549,7 @@
 			<Text>Chaque projet de victoire coûte moins cher à chaque âge.[nn][BLIST]
 				[LI] Antiquité : -25%
 				[LI] Âge de l'exploration : -25%
-				[LI] Âge moderne : -25%[/BLIST][nn]Coût par âge (Antiquité / Âge de l'exploration / Âge moderne) : [BLIST]
+				[LI] Âge moderne : -25%[/BLIST][nn]Coût par âge (Antiquité / Âge de l'exploration / Âge moderne) :[BLIST]
 				[LI] Cartographie du firmament : 338 / 338 / 338
 				[LI] Terre sphérique : 450 / 450 / 450
 				[LI] Modèle héliocentrique : 563 / 563 / 563
@@ -909,13 +876,13 @@
 			<Text>Un rythme extrêmement lent. 400% plus lent que Standard.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="fr_FR">
-			<Text>Chaque âge utilise la ligne Durée des âges de son propre groupe ci-dessous. Équilibré fixe 153, 166 et 196 points ; Multijoueur fixe 140, 155 et 190.</Text>
+			<Text>Chaque âge utilise la ligne Durée des âges de son propre groupe ci-dessous. Équilibré fixe 150, 170 et 200 points ; Multijoueur fixe 140, 160 et 180.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="fr_FR">
 			<Text>Âges plus longs, chacun plus long que le précédent.[nn][BLIST]
-				[LI] Antiquité : 153 points
-				[LI] Âge de l'exploration : 166 points
-				[LI] Âge moderne : 196 points[/BLIST]</Text>
+				[LI] Antiquité : 150 points
+				[LI] Âge de l'exploration : 170 points
+				[LI] Âge moderne : 200 points[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_EXTENDED_DESC" Language="fr_FR">
 			<Text>Âges très longs pour une partie étirée.[nn][BLIST]
@@ -999,26 +966,6 @@
 				[LI] Marathon : 450 points
 				[LI] Marathon 2.0 : 750 points[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153" Language="fr_FR">
-			<Text>[BLIST]
-				[LI] Online 2.0 : 61 points
-				[LI] Online : 76 points
-				[LI] Quick : 102 points
-				[LI] Standard : 153 points
-				[LI] Epic : 230 points
-				[LI] Marathon : 459 points
-				[LI] Marathon 2.0 : 765 points[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155" Language="fr_FR">
-			<Text>[BLIST]
-				[LI] Online 2.0 : 62 points
-				[LI] Online : 78 points
-				[LI] Quick : 103 points
-				[LI] Standard : 155 points
-				[LI] Epic : 232 points
-				[LI] Marathon : 465 points
-				[LI] Marathon 2.0 : 775 points[/BLIST]</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="fr_FR">
 			<Text>[BLIST]
 				[LI] Online 2.0 : 64 points
@@ -1028,16 +975,6 @@
 				[LI] Epic : 240 points
 				[LI] Marathon : 480 points
 				[LI] Marathon 2.0 : 800 points[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166" Language="fr_FR">
-			<Text>[BLIST]
-				[LI] Online 2.0 : 66 points
-				[LI] Online : 83 points
-				[LI] Quick : 111 points
-				[LI] Standard : 166 points
-				[LI] Epic : 249 points
-				[LI] Marathon : 498 points
-				[LI] Marathon 2.0 : 830 points[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="fr_FR">
 			<Text>[BLIST]
@@ -1068,16 +1005,6 @@
 				[LI] Epic : 285 points
 				[LI] Marathon : 570 points
 				[LI] Marathon 2.0 : 950 points[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196" Language="fr_FR">
-			<Text>[BLIST]
-				[LI] Online 2.0 : 78 points
-				[LI] Online : 98 points
-				[LI] Quick : 131 points
-				[LI] Standard : 196 points
-				[LI] Epic : 294 points
-				[LI] Marathon : 588 points
-				[LI] Marathon 2.0 : 980 points[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="fr_FR">
 			<Text>[BLIST]
@@ -1243,43 +1170,43 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_EXTENDED" Language="fr_FR">
 			<Text>Âges très longs, avec des coûts relevés pour les remplir.[nn][BLIST]
-				[LI] Durée des âges : Prolongé
+				[LI] Durée des âges : 240 / 260 / 280
 				[LI] Progression des âges : Standard
-				[LI] Coût des technologies : Prolongé
-				[LI] Coût des dogmes : Prolongé
-				[LI] Croissance des villes : Prolongé
-				[LI] Routes : Prolongé
-				[LI] Coût des projets de victoire : Prolongé[/BLIST]</Text>
+				[LI] Coût des technologies : +25% / +50% / +50%
+				[LI] Coût des dogmes : +25% / +50% / +50%
+				[LI] Croissance des villes : +25%
+				[LI] Routes : Standard / Standard / -25%
+				[LI] Coût des projets de victoire : +25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT" Language="fr_FR">
 			<Text>Âges courts, avec des coûts réduits en conséquence.[nn][BLIST]
-				[LI] Durée des âges : Rapide
+				[LI] Durée des âges : 90 / 100 / 110
 				[LI] Progression des âges : Standard
-				[LI] Coût des technologies : Rapide
-				[LI] Coût des dogmes : Rapide
-				[LI] Croissance des villes : Rapide
-				[LI] Routes : Rapide
-				[LI] Coût des projets de victoire : Rapide[/BLIST]</Text>
+				[LI] Coût des technologies : -25% / -25% / Standard
+				[LI] Coût des dogmes : -25% / -25% / Standard
+				[LI] Croissance des villes : -25%
+				[LI] Routes : -25% / -50% / -50%
+				[LI] Coût des projets de victoire : -25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="fr_FR">
 			<Text>Âges plus longs, avec recherche et croissance ajustées pour les remplir.[nn][BLIST]
-				[LI] Durée des âges : Équilibré
+				[LI] Durée des âges : 150 / 170 / 200
 				[LI] Progression des âges : Équilibré
-				[LI] Coût des technologies : Équilibré
-				[LI] Coût des dogmes : Équilibré
-				[LI] Croissance des villes : Équilibré
-				[LI] Routes : Équilibré
-				[LI] Coût des projets de victoire : Équilibré[/BLIST]</Text>
+				[LI] Coût des technologies : +25% / Standard / -25%
+				[LI] Coût des dogmes : Standard / +25% / +25%
+				[LI] Croissance des villes : -25% / -25% / Standard
+				[LI] Routes : Standard / Standard / -25%
+				[LI] Coût des projets de victoire : Standard / -25% / -25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="fr_FR">
 			<Text>Ajusté pour une partie menée d'une traite.[nn][BLIST]
-				[LI] Durée des âges : 140 / 155 / 190
+				[LI] Durée des âges : 140 / 160 / 180
 				[LI] Progression des âges : Équilibré
-				[LI] Coût des technologies : +35% / +50% / +75%
-				[LI] Coût des dogmes : +45% / +60% / +85%
-				[LI] Croissance des villes : Lent
+				[LI] Coût des technologies : +25% / +50% / +100%
+				[LI] Coût des dogmes : +50% / +50% / +100%
+				[LI] Croissance des villes : +25%
 				[LI] Routes : -25% / -25% / -50%
-				[LI] Coût des projets de victoire : Standard / Standard / +20%[/BLIST]</Text>
+				[LI] Coût des projets de victoire : Standard / Standard / +25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="fr_FR">
 			<Text>Les Paramètres de rythme de l'onglet Rythme ne correspondent plus à un préréglage.</Text>

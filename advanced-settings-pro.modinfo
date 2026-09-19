@@ -1078,32 +1078,6 @@
 				<Value>ZG_AL_150</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="age-length-antiquity-153">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLength</ConfigurationId>
-				<Value>ZG_AGE_LENGTH_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLengthAntiquityKey</ConfigurationId>
-				<Value>ZG_AL_153</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="age-length-antiquity-155">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLength</ConfigurationId>
-				<Value>ZG_AGE_LENGTH_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLengthAntiquityKey</ConfigurationId>
-				<Value>ZG_AL_155</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
 		<Criteria id="age-length-antiquity-160">
 			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
 			<ConfigurationValueMatches>
@@ -1115,19 +1089,6 @@
 				<Group>Game</Group>
 				<ConfigurationId>AgeLengthAntiquityKey</ConfigurationId>
 				<Value>ZG_AL_160</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="age-length-antiquity-166">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLength</ConfigurationId>
-				<Value>ZG_AGE_LENGTH_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLengthAntiquityKey</ConfigurationId>
-				<Value>ZG_AL_166</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="age-length-antiquity-170">
@@ -1167,19 +1128,6 @@
 				<Group>Game</Group>
 				<ConfigurationId>AgeLengthAntiquityKey</ConfigurationId>
 				<Value>ZG_AL_190</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="age-length-antiquity-196">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLength</ConfigurationId>
-				<Value>ZG_AGE_LENGTH_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLengthAntiquityKey</ConfigurationId>
-				<Value>ZG_AL_196</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="age-length-antiquity-200">
@@ -1351,32 +1299,6 @@
 				<Value>ZG_AL_150</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="age-length-exploration-153">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLength</ConfigurationId>
-				<Value>ZG_AGE_LENGTH_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLengthExplorationKey</ConfigurationId>
-				<Value>ZG_AL_153</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="age-length-exploration-155">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLength</ConfigurationId>
-				<Value>ZG_AGE_LENGTH_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLengthExplorationKey</ConfigurationId>
-				<Value>ZG_AL_155</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
 		<Criteria id="age-length-exploration-160">
 			<AgeInUse>AGE_EXPLORATION</AgeInUse>
 			<ConfigurationValueMatches>
@@ -1388,19 +1310,6 @@
 				<Group>Game</Group>
 				<ConfigurationId>AgeLengthExplorationKey</ConfigurationId>
 				<Value>ZG_AL_160</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="age-length-exploration-166">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLength</ConfigurationId>
-				<Value>ZG_AGE_LENGTH_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLengthExplorationKey</ConfigurationId>
-				<Value>ZG_AL_166</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="age-length-exploration-170">
@@ -1440,19 +1349,6 @@
 				<Group>Game</Group>
 				<ConfigurationId>AgeLengthExplorationKey</ConfigurationId>
 				<Value>ZG_AL_190</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="age-length-exploration-196">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLength</ConfigurationId>
-				<Value>ZG_AGE_LENGTH_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLengthExplorationKey</ConfigurationId>
-				<Value>ZG_AL_196</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="age-length-exploration-200">
@@ -1624,32 +1520,6 @@
 				<Value>ZG_AL_150</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="age-length-modern-153">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLength</ConfigurationId>
-				<Value>ZG_AGE_LENGTH_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLengthModernKey</ConfigurationId>
-				<Value>ZG_AL_153</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="age-length-modern-155">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLength</ConfigurationId>
-				<Value>ZG_AGE_LENGTH_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLengthModernKey</ConfigurationId>
-				<Value>ZG_AL_155</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
 		<Criteria id="age-length-modern-160">
 			<AgeInUse>AGE_MODERN</AgeInUse>
 			<ConfigurationValueMatches>
@@ -1661,19 +1531,6 @@
 				<Group>Game</Group>
 				<ConfigurationId>AgeLengthModernKey</ConfigurationId>
 				<Value>ZG_AL_160</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="age-length-modern-166">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLength</ConfigurationId>
-				<Value>ZG_AGE_LENGTH_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLengthModernKey</ConfigurationId>
-				<Value>ZG_AL_166</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="age-length-modern-170">
@@ -1713,19 +1570,6 @@
 				<Group>Game</Group>
 				<ConfigurationId>AgeLengthModernKey</ConfigurationId>
 				<Value>ZG_AL_190</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="age-length-modern-196">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLength</ConfigurationId>
-				<Value>ZG_AGE_LENGTH_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLengthModernKey</ConfigurationId>
-				<Value>ZG_AL_196</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="age-length-modern-200">
@@ -1995,32 +1839,6 @@
 				<Value>ZG_TECHNOLOGY_COST_MINUS_25</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="pacing-technology-cost-antiquity-plus-35">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostAntiquityKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_PLUS_35</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-technology-cost-antiquity-plus-45">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostAntiquityKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_PLUS_45</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
 		<Criteria id="pacing-technology-cost-antiquity-plus-50">
 			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
 			<ConfigurationValueMatches>
@@ -2032,45 +1850,6 @@
 				<Group>Game</Group>
 				<ConfigurationId>TechnologyCostAntiquityKey</ConfigurationId>
 				<Value>ZG_TECHNOLOGY_COST_PLUS_50</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-technology-cost-antiquity-plus-60">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostAntiquityKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_PLUS_60</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-technology-cost-antiquity-plus-75">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostAntiquityKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_PLUS_75</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-technology-cost-antiquity-plus-85">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostAntiquityKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_PLUS_85</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="pacing-technology-cost-antiquity-plus-100">
@@ -2099,32 +1878,6 @@
 				<Value>ZG_TECHNOLOGY_COST_MINUS_25</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="pacing-technology-cost-exploration-plus-35">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostExplorationKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_PLUS_35</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-technology-cost-exploration-plus-45">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostExplorationKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_PLUS_45</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
 		<Criteria id="pacing-technology-cost-exploration-plus-50">
 			<AgeInUse>AGE_EXPLORATION</AgeInUse>
 			<ConfigurationValueMatches>
@@ -2136,45 +1889,6 @@
 				<Group>Game</Group>
 				<ConfigurationId>TechnologyCostExplorationKey</ConfigurationId>
 				<Value>ZG_TECHNOLOGY_COST_PLUS_50</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-technology-cost-exploration-plus-60">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostExplorationKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_PLUS_60</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-technology-cost-exploration-plus-75">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostExplorationKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_PLUS_75</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-technology-cost-exploration-plus-85">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostExplorationKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_PLUS_85</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="pacing-technology-cost-exploration-plus-100">
@@ -2203,32 +1917,6 @@
 				<Value>ZG_TECHNOLOGY_COST_MINUS_25</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="pacing-technology-cost-modern-plus-35">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostModernKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_PLUS_35</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-technology-cost-modern-plus-45">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostModernKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_PLUS_45</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
 		<Criteria id="pacing-technology-cost-modern-plus-50">
 			<AgeInUse>AGE_MODERN</AgeInUse>
 			<ConfigurationValueMatches>
@@ -2240,45 +1928,6 @@
 				<Group>Game</Group>
 				<ConfigurationId>TechnologyCostModernKey</ConfigurationId>
 				<Value>ZG_TECHNOLOGY_COST_PLUS_50</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-technology-cost-modern-plus-60">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostModernKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_PLUS_60</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-technology-cost-modern-plus-75">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostModernKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_PLUS_75</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-technology-cost-modern-plus-85">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>TechnologyCostModernKey</ConfigurationId>
-				<Value>ZG_TECHNOLOGY_COST_PLUS_85</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="pacing-technology-cost-modern-plus-100">
@@ -2328,32 +1977,6 @@
 				<Value>ZG_CIVIC_COST_MINUS_25</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="pacing-civic-cost-antiquity-plus-35">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostAntiquityKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_PLUS_35</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-civic-cost-antiquity-plus-45">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostAntiquityKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_PLUS_45</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
 		<Criteria id="pacing-civic-cost-antiquity-plus-50">
 			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
 			<ConfigurationValueMatches>
@@ -2365,45 +1988,6 @@
 				<Group>Game</Group>
 				<ConfigurationId>CivicCostAntiquityKey</ConfigurationId>
 				<Value>ZG_CIVIC_COST_PLUS_50</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-civic-cost-antiquity-plus-60">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostAntiquityKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_PLUS_60</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-civic-cost-antiquity-plus-75">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostAntiquityKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_PLUS_75</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-civic-cost-antiquity-plus-85">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostAntiquityKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_PLUS_85</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="pacing-civic-cost-antiquity-plus-100">
@@ -2432,32 +2016,6 @@
 				<Value>ZG_CIVIC_COST_MINUS_25</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="pacing-civic-cost-exploration-plus-35">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostExplorationKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_PLUS_35</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-civic-cost-exploration-plus-45">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostExplorationKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_PLUS_45</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
 		<Criteria id="pacing-civic-cost-exploration-plus-50">
 			<AgeInUse>AGE_EXPLORATION</AgeInUse>
 			<ConfigurationValueMatches>
@@ -2469,45 +2027,6 @@
 				<Group>Game</Group>
 				<ConfigurationId>CivicCostExplorationKey</ConfigurationId>
 				<Value>ZG_CIVIC_COST_PLUS_50</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-civic-cost-exploration-plus-60">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostExplorationKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_PLUS_60</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-civic-cost-exploration-plus-75">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostExplorationKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_PLUS_75</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-civic-cost-exploration-plus-85">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostExplorationKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_PLUS_85</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="pacing-civic-cost-exploration-plus-100">
@@ -2536,32 +2055,6 @@
 				<Value>ZG_CIVIC_COST_MINUS_25</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="pacing-civic-cost-modern-plus-35">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostModernKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_PLUS_35</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-civic-cost-modern-plus-45">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostModernKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_PLUS_45</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
 		<Criteria id="pacing-civic-cost-modern-plus-50">
 			<AgeInUse>AGE_MODERN</AgeInUse>
 			<ConfigurationValueMatches>
@@ -2573,45 +2066,6 @@
 				<Group>Game</Group>
 				<ConfigurationId>CivicCostModernKey</ConfigurationId>
 				<Value>ZG_CIVIC_COST_PLUS_50</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-civic-cost-modern-plus-60">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostModernKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_PLUS_60</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-civic-cost-modern-plus-75">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostModernKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_PLUS_75</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-civic-cost-modern-plus-85">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivicCostModernKey</ConfigurationId>
-				<Value>ZG_CIVIC_COST_PLUS_85</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="pacing-civic-cost-modern-plus-100">
@@ -2845,19 +2299,6 @@
 				<Value>ZG_VICTORY_PROJECT_COST_MINUS_25</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="pacing-victory-projects-antiquity-plus-20">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>VictoryProjectCostKey</ConfigurationId>
-				<Value>ZG_VICTORY_PROJECT_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>VictoryProjectCostAntiquityKey</ConfigurationId>
-				<Value>ZG_VICTORY_PROJECT_COST_PLUS_20</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
 		<Criteria id="pacing-victory-projects-antiquity-plus-50">
 			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
 			<ConfigurationValueMatches>
@@ -2897,19 +2338,6 @@
 				<Value>ZG_VICTORY_PROJECT_COST_MINUS_25</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="pacing-victory-projects-exploration-plus-20">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>VictoryProjectCostKey</ConfigurationId>
-				<Value>ZG_VICTORY_PROJECT_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>VictoryProjectCostExplorationKey</ConfigurationId>
-				<Value>ZG_VICTORY_PROJECT_COST_PLUS_20</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
 		<Criteria id="pacing-victory-projects-exploration-plus-50">
 			<AgeInUse>AGE_EXPLORATION</AgeInUse>
 			<ConfigurationValueMatches>
@@ -2947,19 +2375,6 @@
 				<Group>Game</Group>
 				<ConfigurationId>VictoryProjectCostModernKey</ConfigurationId>
 				<Value>ZG_VICTORY_PROJECT_COST_MINUS_25</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-victory-projects-modern-plus-20">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>VictoryProjectCostKey</ConfigurationId>
-				<Value>ZG_VICTORY_PROJECT_COST_CUSTOM</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>VictoryProjectCostModernKey</ConfigurationId>
-				<Value>ZG_VICTORY_PROJECT_COST_PLUS_20</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="pacing-victory-projects-modern-plus-50">
@@ -5417,7 +4832,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/independents/independent-spacing-antiquity-more.sql</Item>
+					<Item>data/independents/independent-spacing-7.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -5427,7 +4842,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/independents/independent-spacing-antiquity-less.sql</Item>
+					<Item>data/independents/independent-spacing-4.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -5437,7 +4852,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/independents/independent-spacing-exploration-more.sql</Item>
+					<Item>data/independents/independent-spacing-7.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -5447,7 +4862,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/independents/independent-spacing-exploration-less.sql</Item>
+					<Item>data/independents/independent-spacing-3.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -5457,7 +4872,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/independents/independent-spacing-modern-more.sql</Item>
+					<Item>data/independents/independent-spacing-5.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -5467,7 +4882,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/independents/independent-spacing-modern-less.sql</Item>
+					<Item>data/independents/independent-spacing-2.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -5480,7 +4895,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/independents/independent-units-antiquity-more.sql</Item>
+					<Item>data/independents/independent-units-3.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -5490,7 +4905,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/independents/independent-units-antiquity-less.sql</Item>
+					<Item>data/independents/independent-units-0.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -5500,7 +4915,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/independents/independent-units-exploration-more.sql</Item>
+					<Item>data/independents/independent-units-5.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -5510,7 +4925,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/independents/independent-units-exploration-less.sql</Item>
+					<Item>data/independents/independent-units-2.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -5520,7 +4935,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/independents/independent-units-modern-more.sql</Item>
+					<Item>data/independents/independent-units-7.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -5530,7 +4945,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/independents/independent-units-modern-less.sql</Item>
+					<Item>data/independents/independent-units-3.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -6455,26 +5870,6 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-age-length-antiquity-153" scope="game" criteria="age-length-antiquity-153">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/ages/age-length-153.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-age-length-antiquity-155" scope="game" criteria="age-length-antiquity-155">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/ages/age-length-155.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
 		<ActionGroup id="zg-age-length-antiquity-160" scope="game" criteria="age-length-antiquity-160">
 			<Properties>
 				<LoadOrder>999999999</LoadOrder>
@@ -6482,16 +5877,6 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/ages/age-length-160.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-age-length-antiquity-166" scope="game" criteria="age-length-antiquity-166">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/ages/age-length-166.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -6522,16 +5907,6 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/ages/age-length-190.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-age-length-antiquity-196" scope="game" criteria="age-length-antiquity-196">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/ages/age-length-196.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -6665,26 +6040,6 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-age-length-exploration-153" scope="game" criteria="age-length-exploration-153">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/ages/age-length-153.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-age-length-exploration-155" scope="game" criteria="age-length-exploration-155">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/ages/age-length-155.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
 		<ActionGroup id="zg-age-length-exploration-160" scope="game" criteria="age-length-exploration-160">
 			<Properties>
 				<LoadOrder>999999999</LoadOrder>
@@ -6692,16 +6047,6 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/ages/age-length-160.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-age-length-exploration-166" scope="game" criteria="age-length-exploration-166">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/ages/age-length-166.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -6732,16 +6077,6 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/ages/age-length-190.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-age-length-exploration-196" scope="game" criteria="age-length-exploration-196">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/ages/age-length-196.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -6875,26 +6210,6 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-age-length-modern-153" scope="game" criteria="age-length-modern-153">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/ages/age-length-153.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-age-length-modern-155" scope="game" criteria="age-length-modern-155">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/ages/age-length-155.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
 		<ActionGroup id="zg-age-length-modern-160" scope="game" criteria="age-length-modern-160">
 			<Properties>
 				<LoadOrder>999999999</LoadOrder>
@@ -6902,16 +6217,6 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/ages/age-length-160.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-age-length-modern-166" scope="game" criteria="age-length-modern-166">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/ages/age-length-166.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -6942,16 +6247,6 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/ages/age-length-190.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-age-length-modern-196" scope="game" criteria="age-length-modern-196">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/ages/age-length-196.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -7195,26 +6490,6 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-pacing-technology-cost-antiquity-plus-35" scope="game" criteria="pacing-technology-cost-antiquity-plus-35">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/technology-cost-plus-35.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-technology-cost-antiquity-plus-45" scope="game" criteria="pacing-technology-cost-antiquity-plus-45">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/technology-cost-plus-45.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-antiquity-plus-50" scope="game" criteria="pacing-technology-cost-antiquity-plus-50">
 			<Properties>
 				<LoadOrder>999999999</LoadOrder>
@@ -7222,36 +6497,6 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/pacing/technology-cost-plus-50.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-technology-cost-antiquity-plus-60" scope="game" criteria="pacing-technology-cost-antiquity-plus-60">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/technology-cost-plus-60.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-technology-cost-antiquity-plus-75" scope="game" criteria="pacing-technology-cost-antiquity-plus-75">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/technology-cost-plus-75.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-technology-cost-antiquity-plus-85" scope="game" criteria="pacing-technology-cost-antiquity-plus-85">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/technology-cost-plus-85.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -7275,26 +6520,6 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-pacing-technology-cost-exploration-plus-35" scope="game" criteria="pacing-technology-cost-exploration-plus-35">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/technology-cost-plus-35.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-technology-cost-exploration-plus-45" scope="game" criteria="pacing-technology-cost-exploration-plus-45">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/technology-cost-plus-45.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-exploration-plus-50" scope="game" criteria="pacing-technology-cost-exploration-plus-50">
 			<Properties>
 				<LoadOrder>999999999</LoadOrder>
@@ -7302,36 +6527,6 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/pacing/technology-cost-plus-50.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-technology-cost-exploration-plus-60" scope="game" criteria="pacing-technology-cost-exploration-plus-60">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/technology-cost-plus-60.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-technology-cost-exploration-plus-75" scope="game" criteria="pacing-technology-cost-exploration-plus-75">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/technology-cost-plus-75.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-technology-cost-exploration-plus-85" scope="game" criteria="pacing-technology-cost-exploration-plus-85">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/technology-cost-plus-85.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -7355,26 +6550,6 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-pacing-technology-cost-modern-plus-35" scope="game" criteria="pacing-technology-cost-modern-plus-35">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/technology-cost-plus-35.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-technology-cost-modern-plus-45" scope="game" criteria="pacing-technology-cost-modern-plus-45">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/technology-cost-plus-45.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-modern-plus-50" scope="game" criteria="pacing-technology-cost-modern-plus-50">
 			<Properties>
 				<LoadOrder>999999999</LoadOrder>
@@ -7382,36 +6557,6 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/pacing/technology-cost-plus-50.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-technology-cost-modern-plus-60" scope="game" criteria="pacing-technology-cost-modern-plus-60">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/technology-cost-plus-60.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-technology-cost-modern-plus-75" scope="game" criteria="pacing-technology-cost-modern-plus-75">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/technology-cost-plus-75.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-technology-cost-modern-plus-85" scope="game" criteria="pacing-technology-cost-modern-plus-85">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/technology-cost-plus-85.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -7465,26 +6610,6 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-pacing-civic-cost-antiquity-plus-35" scope="game" criteria="pacing-civic-cost-antiquity-plus-35">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/civic-cost-plus-35.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-civic-cost-antiquity-plus-45" scope="game" criteria="pacing-civic-cost-antiquity-plus-45">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/civic-cost-plus-45.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-antiquity-plus-50" scope="game" criteria="pacing-civic-cost-antiquity-plus-50">
 			<Properties>
 				<LoadOrder>999999999</LoadOrder>
@@ -7492,36 +6617,6 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/pacing/civic-cost-plus-50.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-civic-cost-antiquity-plus-60" scope="game" criteria="pacing-civic-cost-antiquity-plus-60">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/civic-cost-plus-60.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-civic-cost-antiquity-plus-75" scope="game" criteria="pacing-civic-cost-antiquity-plus-75">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/civic-cost-plus-75.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-civic-cost-antiquity-plus-85" scope="game" criteria="pacing-civic-cost-antiquity-plus-85">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/civic-cost-plus-85.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -7545,26 +6640,6 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-pacing-civic-cost-exploration-plus-35" scope="game" criteria="pacing-civic-cost-exploration-plus-35">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/civic-cost-plus-35.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-civic-cost-exploration-plus-45" scope="game" criteria="pacing-civic-cost-exploration-plus-45">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/civic-cost-plus-45.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-exploration-plus-50" scope="game" criteria="pacing-civic-cost-exploration-plus-50">
 			<Properties>
 				<LoadOrder>999999999</LoadOrder>
@@ -7572,36 +6647,6 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/pacing/civic-cost-plus-50.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-civic-cost-exploration-plus-60" scope="game" criteria="pacing-civic-cost-exploration-plus-60">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/civic-cost-plus-60.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-civic-cost-exploration-plus-75" scope="game" criteria="pacing-civic-cost-exploration-plus-75">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/civic-cost-plus-75.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-civic-cost-exploration-plus-85" scope="game" criteria="pacing-civic-cost-exploration-plus-85">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/civic-cost-plus-85.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -7625,26 +6670,6 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-pacing-civic-cost-modern-plus-35" scope="game" criteria="pacing-civic-cost-modern-plus-35">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/civic-cost-plus-35.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-civic-cost-modern-plus-45" scope="game" criteria="pacing-civic-cost-modern-plus-45">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/civic-cost-plus-45.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-modern-plus-50" scope="game" criteria="pacing-civic-cost-modern-plus-50">
 			<Properties>
 				<LoadOrder>999999999</LoadOrder>
@@ -7652,36 +6677,6 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/pacing/civic-cost-plus-50.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-civic-cost-modern-plus-60" scope="game" criteria="pacing-civic-cost-modern-plus-60">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/civic-cost-plus-60.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-civic-cost-modern-plus-75" scope="game" criteria="pacing-civic-cost-modern-plus-75">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/civic-cost-plus-75.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-civic-cost-modern-plus-85" scope="game" criteria="pacing-civic-cost-modern-plus-85">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/civic-cost-plus-85.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -7895,16 +6890,6 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-pacing-victory-projects-antiquity-plus-20" scope="game" criteria="pacing-victory-projects-antiquity-plus-20">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/victory-projects-plus-20.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-antiquity-plus-50" scope="game" criteria="pacing-victory-projects-antiquity-plus-50">
 			<Properties>
 				<LoadOrder>999999999</LoadOrder>
@@ -7935,16 +6920,6 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-pacing-victory-projects-exploration-plus-20" scope="game" criteria="pacing-victory-projects-exploration-plus-20">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/victory-projects-plus-20.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-exploration-plus-50" scope="game" criteria="pacing-victory-projects-exploration-plus-50">
 			<Properties>
 				<LoadOrder>999999999</LoadOrder>
@@ -7972,16 +6947,6 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/pacing/victory-projects-minus-25.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-pacing-victory-projects-modern-plus-20" scope="game" criteria="pacing-victory-projects-modern-plus-20">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/victory-projects-plus-20.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -9307,7 +8272,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/ages/age-length-153.sql</Item>
+					<Item>data/ages/age-length-150.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -9317,7 +8282,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/ages/age-length-166.sql</Item>
+					<Item>data/ages/age-length-170.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -9327,7 +8292,7 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/ages/age-length-196.sql</Item>
+					<Item>data/ages/age-length-200.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

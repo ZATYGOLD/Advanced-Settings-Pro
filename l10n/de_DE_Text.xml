@@ -37,32 +37,14 @@
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_25" Language="de_DE">
 			<Text>25% mehr Produktion für Siegprojekte in diesem Zeitalter.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_20" Language="de_DE">
-			<Text>20% mehr Produktion für Siegprojekte in diesem Zeitalter.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_100" Language="de_DE">
 			<Text>100% mehr Produktion für Siegprojekte in diesem Zeitalter.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_MINUS_25" Language="de_DE">
 			<Text>25% weniger Produktion für Siegprojekte in diesem Zeitalter.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_85" Language="de_DE">
-			<Text>85% mehr Wissenschaft in diesem Zeitalter.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_75" Language="de_DE">
-			<Text>75% mehr Wissenschaft in diesem Zeitalter.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_60" Language="de_DE">
-			<Text>60% mehr Wissenschaft in diesem Zeitalter.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_50" Language="de_DE">
 			<Text>50% mehr Wissenschaft in diesem Zeitalter.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_45" Language="de_DE">
-			<Text>45% mehr Wissenschaft in diesem Zeitalter.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_35" Language="de_DE">
-			<Text>35% mehr Wissenschaft in diesem Zeitalter.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_25" Language="de_DE">
 			<Text>25% mehr Wissenschaft in diesem Zeitalter.</Text>
@@ -76,23 +58,8 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_VALUE_DESCRIPTION" Language="de_DE">
 			<Text>Die Höchstzahl an Siedlungen, die du in diesem Zeitalter halten darfst.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_85" Language="de_DE">
-			<Text>85% mehr Kultur in diesem Zeitalter.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_75" Language="de_DE">
-			<Text>75% mehr Kultur in diesem Zeitalter.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_60" Language="de_DE">
-			<Text>60% mehr Kultur in diesem Zeitalter.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_50" Language="de_DE">
 			<Text>50% mehr Kultur in diesem Zeitalter.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_45" Language="de_DE">
-			<Text>45% mehr Kultur in diesem Zeitalter.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_35" Language="de_DE">
-			<Text>35% mehr Kultur in diesem Zeitalter.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_25" Language="de_DE">
 			<Text>25% mehr Kultur in diesem Zeitalter.</Text>
@@ -546,7 +513,7 @@
 			<Text>In der Antike Standard, danach günstigere Siegprojekte.[nn][BLIST]
 				[LI] Antike: Standard
 				[LI] Erkundung: -25%
-				[LI] Moderne: -25%[/BLIST][nn]Kosten nach Zeitalter (Antike / Erkundung / Moderne): [BLIST]
+				[LI] Moderne: -25%[/BLIST][nn]Kosten nach Zeitalter (Antike / Erkundung / Moderne):[BLIST]
 				[LI] Sternenkarte: 450 / 338 / 338
 				[LI] Sphärische Erde: 600 / 450 / 450
 				[LI] Heliozentrisches Modell: 750 / 563 / 563
@@ -564,7 +531,7 @@
 			<Text>Jedes Siegprojekt kostet in jedem Zeitalter mehr.[nn][BLIST]
 				[LI] Antike: +25%
 				[LI] Erkundung: +25%
-				[LI] Moderne: +25%[/BLIST][nn]Kosten nach Zeitalter (Antike / Erkundung / Moderne): [BLIST]
+				[LI] Moderne: +25%[/BLIST][nn]Kosten nach Zeitalter (Antike / Erkundung / Moderne):[BLIST]
 				[LI] Sternenkarte: 563 / 563 / 563
 				[LI] Sphärische Erde: 750 / 750 / 750
 				[LI] Heliozentrisches Modell: 938 / 938 / 938
@@ -582,7 +549,7 @@
 			<Text>Jedes Siegprojekt kostet in jedem Zeitalter weniger.[nn][BLIST]
 				[LI] Antike: -25%
 				[LI] Erkundung: -25%
-				[LI] Moderne: -25%[/BLIST][nn]Kosten nach Zeitalter (Antike / Erkundung / Moderne): [BLIST]
+				[LI] Moderne: -25%[/BLIST][nn]Kosten nach Zeitalter (Antike / Erkundung / Moderne):[BLIST]
 				[LI] Sternenkarte: 338 / 338 / 338
 				[LI] Sphärische Erde: 450 / 450 / 450
 				[LI] Heliozentrisches Modell: 563 / 563 / 563
@@ -909,13 +876,13 @@
 			<Text>Ein extrem langsames Tempo. 400% langsamer als Standard.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="de_DE">
-			<Text>Jedes Zeitalter nutzt die Zeile „Zeitalterlänge“ in seiner eigenen Gruppe darunter. Ausgewogen setzt 153, 166 und 196 Punkte; Mehrspieler setzt 140, 155 und 190.</Text>
+			<Text>Jedes Zeitalter nutzt die Zeile „Zeitalterlänge“ in seiner eigenen Gruppe darunter. Ausgewogen setzt 150, 170 und 200 Punkte; Mehrspieler setzt 140, 160 und 180.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="de_DE">
 			<Text>Längere Zeitalter, jedes länger als das vorige.[nn][BLIST]
-				[LI] Antike: 153 Punkte
-				[LI] Erkundung: 166 Punkte
-				[LI] Moderne: 196 Punkte[/BLIST]</Text>
+				[LI] Antike: 150 Punkte
+				[LI] Erkundung: 170 Punkte
+				[LI] Moderne: 200 Punkte[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_EXTENDED_DESC" Language="de_DE">
 			<Text>Sehr lange Zeitalter für eine ausgedehnte Partie.[nn][BLIST]
@@ -999,26 +966,6 @@
 				[LI] Marathon: 450 Punkte
 				[LI] Marathon 2.0: 750 Punkte[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153" Language="de_DE">
-			<Text>[BLIST]
-				[LI] Online 2.0: 61 Punkte
-				[LI] Online: 76 Punkte
-				[LI] Quick: 102 Punkte
-				[LI] Standard: 153 Punkte
-				[LI] Epic: 230 Punkte
-				[LI] Marathon: 459 Punkte
-				[LI] Marathon 2.0: 765 Punkte[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155" Language="de_DE">
-			<Text>[BLIST]
-				[LI] Online 2.0: 62 Punkte
-				[LI] Online: 78 Punkte
-				[LI] Quick: 103 Punkte
-				[LI] Standard: 155 Punkte
-				[LI] Epic: 232 Punkte
-				[LI] Marathon: 465 Punkte
-				[LI] Marathon 2.0: 775 Punkte[/BLIST]</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="de_DE">
 			<Text>[BLIST]
 				[LI] Online 2.0: 64 Punkte
@@ -1028,16 +975,6 @@
 				[LI] Epic: 240 Punkte
 				[LI] Marathon: 480 Punkte
 				[LI] Marathon 2.0: 800 Punkte[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166" Language="de_DE">
-			<Text>[BLIST]
-				[LI] Online 2.0: 66 Punkte
-				[LI] Online: 83 Punkte
-				[LI] Quick: 111 Punkte
-				[LI] Standard: 166 Punkte
-				[LI] Epic: 249 Punkte
-				[LI] Marathon: 498 Punkte
-				[LI] Marathon 2.0: 830 Punkte[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="de_DE">
 			<Text>[BLIST]
@@ -1068,16 +1005,6 @@
 				[LI] Epic: 285 Punkte
 				[LI] Marathon: 570 Punkte
 				[LI] Marathon 2.0: 950 Punkte[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196" Language="de_DE">
-			<Text>[BLIST]
-				[LI] Online 2.0: 78 Punkte
-				[LI] Online: 98 Punkte
-				[LI] Quick: 131 Punkte
-				[LI] Standard: 196 Punkte
-				[LI] Epic: 294 Punkte
-				[LI] Marathon: 588 Punkte
-				[LI] Marathon 2.0: 980 Punkte[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="de_DE">
 			<Text>[BLIST]
@@ -1243,43 +1170,43 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_EXTENDED" Language="de_DE">
 			<Text>Sehr lange Zeitalter, mit erhöhten Kosten zum Ausfüllen.[nn][BLIST]
-				[LI] Zeitalterlänge: Ausgedehnt
+				[LI] Zeitalterlänge: 240 / 260 / 280
 				[LI] Zeitalterfortschritt: Standard
-				[LI] Technologiekosten: Ausgedehnt
-				[LI] Kosten für Bürgerrechte: Ausgedehnt
-				[LI] Stadtwachstum: Ausgedehnt
-				[LI] Straßen: Ausgedehnt
-				[LI] Kosten für Siegprojekte: Ausgedehnt[/BLIST]</Text>
+				[LI] Technologiekosten: +25% / +50% / +50%
+				[LI] Kosten für Bürgerrechte: +25% / +50% / +50%
+				[LI] Stadtwachstum: +25%
+				[LI] Straßen: Standard / Standard / -25%
+				[LI] Kosten für Siegprojekte: +25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT" Language="de_DE">
 			<Text>Kurze Zeitalter mit entsprechend gesenkten Kosten.[nn][BLIST]
-				[LI] Zeitalterlänge: Zügig
+				[LI] Zeitalterlänge: 90 / 100 / 110
 				[LI] Zeitalterfortschritt: Standard
-				[LI] Technologiekosten: Zügig
-				[LI] Kosten für Bürgerrechte: Zügig
-				[LI] Stadtwachstum: Zügig
-				[LI] Straßen: Zügig
-				[LI] Kosten für Siegprojekte: Zügig[/BLIST]</Text>
+				[LI] Technologiekosten: -25% / -25% / Standard
+				[LI] Kosten für Bürgerrechte: -25% / -25% / Standard
+				[LI] Stadtwachstum: -25%
+				[LI] Straßen: -25% / -50% / -50%
+				[LI] Kosten für Siegprojekte: -25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="de_DE">
 			<Text>Längere Zeitalter, mit passend abgestimmter Forschung und Entwicklung.[nn][BLIST]
-				[LI] Zeitalterlänge: Ausgewogen
+				[LI] Zeitalterlänge: 150 / 170 / 200
 				[LI] Zeitalterfortschritt: Ausgewogen
-				[LI] Technologiekosten: Ausgewogen
-				[LI] Kosten für Bürgerrechte: Ausgewogen
-				[LI] Stadtwachstum: Ausgewogen
-				[LI] Straßen: Ausgewogen
-				[LI] Kosten für Siegprojekte: Ausgewogen[/BLIST]</Text>
+				[LI] Technologiekosten: +25% / Standard / -25%
+				[LI] Kosten für Bürgerrechte: Standard / +25% / +25%
+				[LI] Stadtwachstum: -25% / -25% / Standard
+				[LI] Straßen: Standard / Standard / -25%
+				[LI] Kosten für Siegprojekte: Standard / -25% / -25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="de_DE">
 			<Text>Abgestimmt auf eine Partie in einer Sitzung.[nn][BLIST]
-				[LI] Zeitalterlänge: 140 / 155 / 190
+				[LI] Zeitalterlänge: 140 / 160 / 180
 				[LI] Zeitalterfortschritt: Ausgewogen
-				[LI] Technologiekosten: +35% / +50% / +75%
-				[LI] Kosten für Bürgerrechte: +45% / +60% / +85%
-				[LI] Stadtwachstum: Langsam
+				[LI] Technologiekosten: +25% / +50% / +100%
+				[LI] Kosten für Bürgerrechte: +50% / +50% / +100%
+				[LI] Stadtwachstum: +25%
 				[LI] Straßen: -25% / -25% / -50%
-				[LI] Kosten für Siegprojekte: Standard / Standard / +20%[/BLIST]</Text>
+				[LI] Kosten für Siegprojekte: Standard / Standard / +25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="de_DE">
 			<Text>Die Tempo-Einstellungen im Tempo-Reiter entsprechen keiner Vorlage mehr.</Text>

@@ -62,7 +62,7 @@ const AGE_LENGTH_PARAM_ID = "AgeLength";
 const AGE_LENGTH_AGE_NAMES = {
 	"LOC_ADVANCED_OPTIONS_ABBREVIATED": "LOC_ZG_NUM_120",
 	"LOC_ADVANCED_OPTIONS_STANDARD": "LOC_ZG_NUM_140",
-	"LOC_ZG_BALANCED_NAME": ["LOC_ZG_NUM_153", "LOC_ZG_NUM_166", "LOC_ZG_NUM_196"],
+	"LOC_ZG_BALANCED_NAME": ["LOC_ZG_NUM_150", "LOC_ZG_NUM_170", "LOC_ZG_NUM_200"],
 	"LOC_ADVANCED_OPTIONS_LONG": "LOC_ZG_NUM_160",
 	"LOC_ZG_SWIFT_NAME": ["LOC_ZG_NUM_90", "LOC_ZG_NUM_100", "LOC_ZG_NUM_110"],
 	"LOC_ZG_EXTENDED_NAME": ["LOC_ZG_NUM_240", "LOC_ZG_NUM_260", "LOC_ZG_NUM_280"],
@@ -160,7 +160,7 @@ const PACE_PRESETS = {
 		ZG_VictoryProjectCost: "LOC_ZG_SWIFT_NAME",
 	},
 	"LOC_ZG_PACE_PRESET_STANDARD_NAME": PACE_STANDARD,
-	// Eras+ Balanced Extended+: age caps 153/166/196, its milestone curve, 1.25x techs
+	// Eras+ Balanced Extended+: age caps 150/170/200, its milestone curve, 1.25x techs
 	// and civics, and cities that grow a quarter faster to keep pace with the longer ages.
 	// Triumph projects get 25% cheaper in the two later ages so the longer Exploration
 	// and Modern caps do not push a victory out of reach. Roads stay standard.
@@ -185,19 +185,24 @@ const PACE_PRESETS = {
 		ZG_Roads: "LOC_ZG_EXTENDED_NAME",
 		ZG_VictoryProjectCost: "LOC_ZG_EXTENDED_NAME",
 	},
-	// Eras+ MP Pace: age caps 140/155/190, its milestone curve, techs 1.35/1.5/1.75x,
-	// civics 1.45/1.6/1.85x, slightly slower growth, faster roads and Modern railroads,
-	// victory projects 1.2x.
+	// Eras+ MP Pace: age caps 140/160/180, its milestone curve, dearer research and
+	// civics that climb with the age, slightly slower growth, faster roads and Modern
+	// railroads, and pricier Modern victory projects.
+	//
+	// The costs are quoted on the same scale every other option uses. They were once
+	// set to their own steps (techs 1.35/1.5/1.75x, civics 1.45/1.6/1.85x, projects
+	// 1.2x), which meant carrying six percentages, their SQL, and their action groups
+	// for this one preset. The nearest shared steps play the same way.
 	"LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME": {
 		...PACE_STANDARD,
-		[AGE_LENGTH_PARAM_ID]: ["LOC_ZG_NUM_140", "LOC_ZG_NUM_155", "LOC_ZG_NUM_190"],
+		[AGE_LENGTH_PARAM_ID]: ["LOC_ZG_NUM_140", "LOC_ZG_NUM_160", "LOC_ZG_NUM_180"],
 		ZG_AgeProgressRate: "LOC_ZG_BALANCED_NAME",
-		ZG_TechnologyCost: ["LOC_ZG_PCT_PLUS_35", "LOC_ZG_PCT_PLUS_50", "LOC_ZG_PCT_PLUS_75"],
-		ZG_CivicCost: ["LOC_ZG_PCT_PLUS_45", "LOC_ZG_PCT_PLUS_60", "LOC_ZG_PCT_PLUS_85"],
+		ZG_TechnologyCost: ["LOC_ZG_PCT_PLUS_25", "LOC_ZG_PCT_PLUS_50", "LOC_ZG_PCT_PLUS_100"],
+		ZG_CivicCost: ["LOC_ZG_PCT_PLUS_50", "LOC_ZG_PCT_PLUS_50", "LOC_ZG_PCT_PLUS_100"],
 		ZG_CityGrowth: "LOC_ZG_SLOW_NAME",
 		// Per-age Roads rows are named by percentage, so the preset matches on those.
 		ZG_Roads: ["LOC_ZG_PCT_MINUS_25", "LOC_ZG_PCT_MINUS_25", "LOC_ZG_PCT_MINUS_50"],
-		ZG_VictoryProjectCost: ["LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ZG_PCT_PLUS_20"],
+		ZG_VictoryProjectCost: ["LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ZG_PCT_PLUS_25"],
 	},
 };
 let lastPace = null;

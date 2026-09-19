@@ -37,32 +37,14 @@
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_25" Language="ru_RU">
 			<Text>На 25% больше производства для проектов победы в эту эпоху.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_20" Language="ru_RU">
-			<Text>На 20% больше производства для проектов победы в эту эпоху.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_100" Language="ru_RU">
 			<Text>На 100% больше производства для проектов победы в эту эпоху.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_MINUS_25" Language="ru_RU">
 			<Text>На 25% меньше производства для проектов победы в эту эпоху.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_85" Language="ru_RU">
-			<Text>На 85% больше науки в эту эпоху.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_75" Language="ru_RU">
-			<Text>На 75% больше науки в эту эпоху.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_60" Language="ru_RU">
-			<Text>На 60% больше науки в эту эпоху.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_50" Language="ru_RU">
 			<Text>На 50% больше науки в эту эпоху.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_45" Language="ru_RU">
-			<Text>На 45% больше науки в эту эпоху.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_35" Language="ru_RU">
-			<Text>На 35% больше науки в эту эпоху.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_25" Language="ru_RU">
 			<Text>На 25% больше науки в эту эпоху.</Text>
@@ -76,23 +58,8 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_VALUE_DESCRIPTION" Language="ru_RU">
 			<Text>Наибольшее число поселений, которое можно держать в эту эпоху.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_85" Language="ru_RU">
-			<Text>На 85% больше культуры в эту эпоху.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_75" Language="ru_RU">
-			<Text>На 75% больше культуры в эту эпоху.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_60" Language="ru_RU">
-			<Text>На 60% больше культуры в эту эпоху.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_50" Language="ru_RU">
 			<Text>На 50% больше культуры в эту эпоху.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_45" Language="ru_RU">
-			<Text>На 45% больше культуры в эту эпоху.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_35" Language="ru_RU">
-			<Text>На 35% больше культуры в эту эпоху.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_25" Language="ru_RU">
 			<Text>На 25% больше культуры в эту эпоху.</Text>
@@ -546,7 +513,7 @@
 			<Text>Стандарт в Античности, затем проекты победы дешевле.[nn][BLIST]
 				[LI] Античность: Стандарт
 				[LI] Исследования: -25%
-				[LI] Современность: -25%[/BLIST][nn]Стоимость по эпохам (Античность / Исследования / Современность): [BLIST]
+				[LI] Современность: -25%[/BLIST][nn]Стоимость по эпохам (Античность / Исследования / Современность):[BLIST]
 				[LI] Картирование звезд: 450 / 338 / 338
 				[LI] Сферическая Земля: 600 / 450 / 450
 				[LI] Гелиоцентрическая модель: 750 / 563 / 563
@@ -564,7 +531,7 @@
 			<Text>Все проекты победы дороже во все эпохи.[nn][BLIST]
 				[LI] Античность: +25%
 				[LI] Исследования: +25%
-				[LI] Современность: +25%[/BLIST][nn]Стоимость по эпохам (Античность / Исследования / Современность): [BLIST]
+				[LI] Современность: +25%[/BLIST][nn]Стоимость по эпохам (Античность / Исследования / Современность):[BLIST]
 				[LI] Картирование звезд: 563 / 563 / 563
 				[LI] Сферическая Земля: 750 / 750 / 750
 				[LI] Гелиоцентрическая модель: 938 / 938 / 938
@@ -582,7 +549,7 @@
 			<Text>Все проекты победы дешевле во все эпохи.[nn][BLIST]
 				[LI] Античность: -25%
 				[LI] Исследования: -25%
-				[LI] Современность: -25%[/BLIST][nn]Стоимость по эпохам (Античность / Исследования / Современность): [BLIST]
+				[LI] Современность: -25%[/BLIST][nn]Стоимость по эпохам (Античность / Исследования / Современность):[BLIST]
 				[LI] Картирование звезд: 338 / 338 / 338
 				[LI] Сферическая Земля: 450 / 450 / 450
 				[LI] Гелиоцентрическая модель: 563 / 563 / 563
@@ -909,13 +876,13 @@
 			<Text>Чрезвычайно медленный темп. На 400% медленнее стандартного.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="ru_RU">
-			<Text>Каждая эпоха использует строку «Длительность эпохи» в своей группе ниже. Сбалансированный ставит 153, 166 и 196 очков; Многопользовательский — 140, 155 и 190.</Text>
+			<Text>Каждая эпоха использует строку «Длительность эпохи» в своей группе ниже. Сбалансированный ставит 150, 170 и 200 очков; Многопользовательский — 140, 160 и 180.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="ru_RU">
 			<Text>Длинные эпохи, каждая длиннее предыдущей.[nn][BLIST]
-				[LI] Античность: 153 очка
-				[LI] Исследования: 166 очков
-				[LI] Современность: 196 очков[/BLIST]</Text>
+				[LI] Античность: 150 очков
+				[LI] Исследования: 170 очков
+				[LI] Современность: 200 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_EXTENDED_DESC" Language="ru_RU">
 			<Text>Очень длинные эпохи для затяжной партии.[nn][BLIST]
@@ -999,26 +966,6 @@
 				[LI] Marathon: 450 очков
 				[LI] Marathon 2.0: 750 очков[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153" Language="ru_RU">
-			<Text>[BLIST]
-				[LI] Online 2.0: 61 очко
-				[LI] Online: 76 очков
-				[LI] Quick: 102 очка
-				[LI] Standard: 153 очка
-				[LI] Epic: 230 очков
-				[LI] Marathon: 459 очков
-				[LI] Marathon 2.0: 765 очков[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155" Language="ru_RU">
-			<Text>[BLIST]
-				[LI] Online 2.0: 62 очка
-				[LI] Online: 78 очков
-				[LI] Quick: 103 очка
-				[LI] Standard: 155 очков
-				[LI] Epic: 232 очка
-				[LI] Marathon: 465 очков
-				[LI] Marathon 2.0: 775 очков[/BLIST]</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="ru_RU">
 			<Text>[BLIST]
 				[LI] Online 2.0: 64 очка
@@ -1028,16 +975,6 @@
 				[LI] Epic: 240 очков
 				[LI] Marathon: 480 очков
 				[LI] Marathon 2.0: 800 очков[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166" Language="ru_RU">
-			<Text>[BLIST]
-				[LI] Online 2.0: 66 очков
-				[LI] Online: 83 очка
-				[LI] Quick: 111 очков
-				[LI] Standard: 166 очков
-				[LI] Epic: 249 очков
-				[LI] Marathon: 498 очков
-				[LI] Marathon 2.0: 830 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="ru_RU">
 			<Text>[BLIST]
@@ -1068,16 +1005,6 @@
 				[LI] Epic: 285 очков
 				[LI] Marathon: 570 очков
 				[LI] Marathon 2.0: 950 очков[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196" Language="ru_RU">
-			<Text>[BLIST]
-				[LI] Online 2.0: 78 очков
-				[LI] Online: 98 очков
-				[LI] Quick: 131 очко
-				[LI] Standard: 196 очков
-				[LI] Epic: 294 очка
-				[LI] Marathon: 588 очков
-				[LI] Marathon 2.0: 980 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="ru_RU">
 			<Text>[BLIST]
@@ -1243,43 +1170,43 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_EXTENDED" Language="ru_RU">
 			<Text>Очень длинные эпохи с повышенной стоимостью, чтобы их заполнить.[nn][BLIST]
-				[LI] Длительность эпохи: Растянуто
+				[LI] Длительность эпохи: 240 / 260 / 280
 				[LI] Прогресс эпохи: Стандарт
-				[LI] Стоимость технологий: Растянуто
-				[LI] Стоимость общественных институтов: Растянуто
-				[LI] Рост городов: Растянуто
-				[LI] Дороги: Растянуто
-				[LI] Стоимость победных проектов: Растянуто[/BLIST]</Text>
+				[LI] Стоимость технологий: +25% / +50% / +50%
+				[LI] Стоимость общественных институтов: +25% / +50% / +50%
+				[LI] Рост городов: +25%
+				[LI] Дороги: Стандарт / Стандарт / -25%
+				[LI] Стоимость победных проектов: +25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT" Language="ru_RU">
 			<Text>Короткие эпохи с соответственно сниженной стоимостью.[nn][BLIST]
-				[LI] Длительность эпохи: Стремительно
+				[LI] Длительность эпохи: 90 / 100 / 110
 				[LI] Прогресс эпохи: Стандарт
-				[LI] Стоимость технологий: Стремительно
-				[LI] Стоимость общественных институтов: Стремительно
-				[LI] Рост городов: Стремительно
-				[LI] Дороги: Стремительно
-				[LI] Стоимость победных проектов: Стремительно[/BLIST]</Text>
+				[LI] Стоимость технологий: -25% / -25% / Стандарт
+				[LI] Стоимость общественных институтов: -25% / -25% / Стандарт
+				[LI] Рост городов: -25%
+				[LI] Дороги: -25% / -50% / -50%
+				[LI] Стоимость победных проектов: -25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="ru_RU">
 			<Text>Длинные эпохи с исследованиями и ростом, подогнанными под них.[nn][BLIST]
-				[LI] Длительность эпохи: Сбалансированный
+				[LI] Длительность эпохи: 150 / 170 / 200
 				[LI] Прогресс эпохи: Сбалансированный
-				[LI] Стоимость технологий: Сбалансированный
-				[LI] Стоимость общественных институтов: Сбалансированный
-				[LI] Рост городов: Сбалансированный
-				[LI] Дороги: Сбалансированный
-				[LI] Стоимость победных проектов: Сбалансированный[/BLIST]</Text>
+				[LI] Стоимость технологий: +25% / Стандарт / -25%
+				[LI] Стоимость общественных институтов: Стандарт / +25% / +25%
+				[LI] Рост городов: -25% / -25% / Стандарт
+				[LI] Дороги: Стандарт / Стандарт / -25%
+				[LI] Стоимость победных проектов: Стандарт / -25% / -25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="ru_RU">
 			<Text>Настроено на партию за один присест.[nn][BLIST]
-				[LI] Длительность эпохи: 140 / 155 / 190
+				[LI] Длительность эпохи: 140 / 160 / 180
 				[LI] Прогресс эпохи: Сбалансированный
-				[LI] Стоимость технологий: +35% / +50% / +75%
-				[LI] Стоимость общественных институтов: +45% / +60% / +85%
-				[LI] Рост городов: Медленно
+				[LI] Стоимость технологий: +25% / +50% / +100%
+				[LI] Стоимость общественных институтов: +50% / +50% / +100%
+				[LI] Рост городов: +25%
 				[LI] Дороги: -25% / -25% / -50%
-				[LI] Стоимость победных проектов: Стандарт / Стандарт / +20%[/BLIST]</Text>
+				[LI] Стоимость победных проектов: Стандарт / Стандарт / +25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="ru_RU">
 			<Text>Настройки раздела «Настройки темпа» на вкладке «Темп» больше не соответствуют ни одному готовому темпу.</Text>

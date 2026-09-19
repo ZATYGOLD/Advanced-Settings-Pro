@@ -37,32 +37,14 @@
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_25" Language="zh_Hans_CN">
 			<Text>本时代胜利项目生产力增加25%。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_20" Language="zh_Hans_CN">
-			<Text>本时代胜利项目生产力增加20%。</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_100" Language="zh_Hans_CN">
 			<Text>本时代胜利项目生产力增加100%。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_MINUS_25" Language="zh_Hans_CN">
 			<Text>本时代胜利项目生产力减少25%。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_85" Language="zh_Hans_CN">
-			<Text>本时代科技值增加85%。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_75" Language="zh_Hans_CN">
-			<Text>本时代科技值增加75%。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_60" Language="zh_Hans_CN">
-			<Text>本时代科技值增加60%。</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_50" Language="zh_Hans_CN">
 			<Text>本时代科技值增加50%。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_45" Language="zh_Hans_CN">
-			<Text>本时代科技值增加45%。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_35" Language="zh_Hans_CN">
-			<Text>本时代科技值增加35%。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_25" Language="zh_Hans_CN">
 			<Text>本时代科技值增加25%。</Text>
@@ -76,23 +58,8 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_VALUE_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>本时代可拥有的定居点上限。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_85" Language="zh_Hans_CN">
-			<Text>本时代文化值增加85%。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_75" Language="zh_Hans_CN">
-			<Text>本时代文化值增加75%。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_60" Language="zh_Hans_CN">
-			<Text>本时代文化值增加60%。</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_50" Language="zh_Hans_CN">
 			<Text>本时代文化值增加50%。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_45" Language="zh_Hans_CN">
-			<Text>本时代文化值增加45%。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_35" Language="zh_Hans_CN">
-			<Text>本时代文化值增加35%。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_25" Language="zh_Hans_CN">
 			<Text>本时代文化值增加25%。</Text>
@@ -546,7 +513,7 @@
 			<Text>远古为标准，之后胜利项目更便宜。[nn][BLIST]
 				[LI] 远古：标准
 				[LI] 探索：-25%
-				[LI] 近世：-25%[/BLIST][nn]各时代费用（远古 / 探索 / 近世）： [BLIST]
+				[LI] 近世：-25%[/BLIST][nn]各时代费用（远古 / 探索 / 近世）：[BLIST]
 				[LI] 绘制星图：450 / 338 / 338
 				[LI] 地圆说：600 / 450 / 450
 				[LI] 日心模型：750 / 563 / 563
@@ -564,7 +531,7 @@
 			<Text>各时代所有胜利项目费用都更高。[nn][BLIST]
 				[LI] 远古：+25%
 				[LI] 探索：+25%
-				[LI] 近世：+25%[/BLIST][nn]各时代费用（远古 / 探索 / 近世）： [BLIST]
+				[LI] 近世：+25%[/BLIST][nn]各时代费用（远古 / 探索 / 近世）：[BLIST]
 				[LI] 绘制星图：563 / 563 / 563
 				[LI] 地圆说：750 / 750 / 750
 				[LI] 日心模型：938 / 938 / 938
@@ -582,7 +549,7 @@
 			<Text>各时代所有胜利项目费用都更低。[nn][BLIST]
 				[LI] 远古：-25%
 				[LI] 探索：-25%
-				[LI] 近世：-25%[/BLIST][nn]各时代费用（远古 / 探索 / 近世）： [BLIST]
+				[LI] 近世：-25%[/BLIST][nn]各时代费用（远古 / 探索 / 近世）：[BLIST]
 				[LI] 绘制星图：338 / 338 / 338
 				[LI] 地圆说：450 / 450 / 450
 				[LI] 日心模型：563 / 563 / 563
@@ -909,13 +876,13 @@
 			<Text>极慢的节奏。比标准慢400%。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="zh_Hans_CN">
-			<Text>每个时代使用下方各自分组中的时代长度行。平衡设为153、166、196点；多人游戏设为140、155、190点。</Text>
+			<Text>每个时代使用下方各自分组中的时代长度行。平衡设为150、170、200点；多人游戏设为140、160、180点。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="zh_Hans_CN">
 			<Text>更长的时代，一个比一个长。[nn][BLIST]
-				[LI] 远古：153点
-				[LI] 探索：166点
-				[LI] 近世：196点[/BLIST]</Text>
+				[LI] 远古：150点
+				[LI] 探索：170点
+				[LI] 近世：200点[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_EXTENDED_DESC" Language="zh_Hans_CN">
 			<Text>非常长的时代，适合慢节奏的长局。[nn][BLIST]
@@ -999,26 +966,6 @@
 				[LI] Marathon:450点
 				[LI] Marathon 2.0:750点[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153" Language="zh_Hans_CN">
-			<Text>[BLIST]
-				[LI] Online 2.0:61点
-				[LI] Online:76点
-				[LI] Quick:102点
-				[LI] Standard:153点
-				[LI] Epic:230点
-				[LI] Marathon:459点
-				[LI] Marathon 2.0:765点[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155" Language="zh_Hans_CN">
-			<Text>[BLIST]
-				[LI] Online 2.0:62点
-				[LI] Online:78点
-				[LI] Quick:103点
-				[LI] Standard:155点
-				[LI] Epic:232点
-				[LI] Marathon:465点
-				[LI] Marathon 2.0:775点[/BLIST]</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="zh_Hans_CN">
 			<Text>[BLIST]
 				[LI] Online 2.0:64点
@@ -1028,16 +975,6 @@
 				[LI] Epic:240点
 				[LI] Marathon:480点
 				[LI] Marathon 2.0:800点[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166" Language="zh_Hans_CN">
-			<Text>[BLIST]
-				[LI] Online 2.0:66点
-				[LI] Online:83点
-				[LI] Quick:111点
-				[LI] Standard:166点
-				[LI] Epic:249点
-				[LI] Marathon:498点
-				[LI] Marathon 2.0:830点[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="zh_Hans_CN">
 			<Text>[BLIST]
@@ -1068,16 +1005,6 @@
 				[LI] Epic:285点
 				[LI] Marathon:570点
 				[LI] Marathon 2.0:950点[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196" Language="zh_Hans_CN">
-			<Text>[BLIST]
-				[LI] Online 2.0:78点
-				[LI] Online:98点
-				[LI] Quick:131点
-				[LI] Standard:196点
-				[LI] Epic:294点
-				[LI] Marathon:588点
-				[LI] Marathon 2.0:980点[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="zh_Hans_CN">
 			<Text>[BLIST]
@@ -1243,43 +1170,43 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_EXTENDED" Language="zh_Hans_CN">
 			<Text>非常长的时代，通过提高费用来填满。[nn][BLIST]
-				[LI] 时代长度：延长
+				[LI] 时代长度：240 / 260 / 280
 				[LI] 时代进度速度：标准
-				[LI] 科技花费：延长
-				[LI] 市政花费：延长
-				[LI] 城市成长：延长
-				[LI] 道路：延长
-				[LI] 胜利项目花费：延长[/BLIST]</Text>
+				[LI] 科技花费：+25% / +50% / +50%
+				[LI] 市政花费：+25% / +50% / +50%
+				[LI] 城市成长：+25%
+				[LI] 道路：标准 / 标准 / -25%
+				[LI] 胜利项目花费：+25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT" Language="zh_Hans_CN">
 			<Text>较短的时代，费用也相应降低。[nn][BLIST]
-				[LI] 时代长度：迅捷
+				[LI] 时代长度：90 / 100 / 110
 				[LI] 时代进度速度：标准
-				[LI] 科技花费：迅捷
-				[LI] 市政花费：迅捷
-				[LI] 城市成长：迅捷
-				[LI] 道路：迅捷
-				[LI] 胜利项目花费：迅捷[/BLIST]</Text>
+				[LI] 科技花费：-25% / -25% / 标准
+				[LI] 市政花费：-25% / -25% / 标准
+				[LI] 城市成长：-25%
+				[LI] 道路：-25% / -50% / -50%
+				[LI] 胜利项目花费：-25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="zh_Hans_CN">
 			<Text>更长的时代，研究与成长经过调整以填满时代。[nn][BLIST]
-				[LI] 时代长度：平衡
+				[LI] 时代长度：150 / 170 / 200
 				[LI] 时代进度速度：平衡
-				[LI] 科技花费：平衡
-				[LI] 市政花费：平衡
-				[LI] 城市成长：平衡
-				[LI] 道路：平衡
-				[LI] 胜利项目花费：平衡[/BLIST]</Text>
+				[LI] 科技花费：+25% / 标准 / -25%
+				[LI] 市政花费：标准 / +25% / +25%
+				[LI] 城市成长：-25% / -25% / 标准
+				[LI] 道路：标准 / 标准 / -25%
+				[LI] 胜利项目花费：标准 / -25% / -25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="zh_Hans_CN">
 			<Text>针对一次坐下即可打完的对局调整。[nn][BLIST]
-				[LI] 时代长度：140 / 155 / 190
+				[LI] 时代长度：140 / 160 / 180
 				[LI] 时代进度速度：平衡
-				[LI] 科技花费：+35% / +50% / +75%
-				[LI] 市政花费：+45% / +60% / +85%
-				[LI] 城市成长：慢
+				[LI] 科技花费：+25% / +50% / +100%
+				[LI] 市政花费：+50% / +50% / +100%
+				[LI] 城市成长：+25%
 				[LI] 道路：-25% / -25% / -50%
-				[LI] 胜利项目花费：标准 / 标准 / +20%[/BLIST]</Text>
+				[LI] 胜利项目花费：标准 / 标准 / +25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="zh_Hans_CN">
 			<Text>"节奏"标签页中"节奏设置"的设置已不再与任何预设一致。</Text>

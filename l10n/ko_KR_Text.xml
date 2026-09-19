@@ -37,32 +37,14 @@
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_25" Language="ko_KR">
 			<Text>이 시대의 승리 프로젝트 생산력 25% 증가.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_20" Language="ko_KR">
-			<Text>이 시대의 승리 프로젝트 생산력 20% 증가.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_100" Language="ko_KR">
 			<Text>이 시대의 승리 프로젝트 생산력 100% 증가.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_MINUS_25" Language="ko_KR">
 			<Text>이 시대의 승리 프로젝트 생산력 25% 감소.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_85" Language="ko_KR">
-			<Text>이 시대의 과학 85% 증가.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_75" Language="ko_KR">
-			<Text>이 시대의 과학 75% 증가.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_60" Language="ko_KR">
-			<Text>이 시대의 과학 60% 증가.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_50" Language="ko_KR">
 			<Text>이 시대의 과학 50% 증가.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_45" Language="ko_KR">
-			<Text>이 시대의 과학 45% 증가.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_35" Language="ko_KR">
-			<Text>이 시대의 과학 35% 증가.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_25" Language="ko_KR">
 			<Text>이 시대의 과학 25% 증가.</Text>
@@ -76,23 +58,8 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_VALUE_DESCRIPTION" Language="ko_KR">
 			<Text>이 시대에 보유할 수 있는 최대 정착지 수입니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_85" Language="ko_KR">
-			<Text>이 시대의 문화 85% 증가.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_75" Language="ko_KR">
-			<Text>이 시대의 문화 75% 증가.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_60" Language="ko_KR">
-			<Text>이 시대의 문화 60% 증가.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_50" Language="ko_KR">
 			<Text>이 시대의 문화 50% 증가.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_45" Language="ko_KR">
-			<Text>이 시대의 문화 45% 증가.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_35" Language="ko_KR">
-			<Text>이 시대의 문화 35% 증가.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_25" Language="ko_KR">
 			<Text>이 시대의 문화 25% 증가.</Text>
@@ -546,7 +513,7 @@
 			<Text>고대에는 일반 수준이고, 이후 승리 프로젝트가 저렴해집니다.[nn][BLIST]
 				[LI] 고대: 일반
 				[LI] 대항해: -25%
-				[LI] 근대: -25%[/BLIST][nn]시대별 비용 (고대 / 대항해 / 근대): [BLIST]
+				[LI] 근대: -25%[/BLIST][nn]시대별 비용 (고대 / 대항해 / 근대):[BLIST]
 				[LI] 별자리 지도 작성: 450 / 338 / 338
 				[LI] 구형 지구: 600 / 450 / 450
 				[LI] 지동설: 750 / 563 / 563
@@ -564,7 +531,7 @@
 			<Text>모든 시대에서 승리 프로젝트 비용이 높아집니다.[nn][BLIST]
 				[LI] 고대: +25%
 				[LI] 대항해: +25%
-				[LI] 근대: +25%[/BLIST][nn]시대별 비용 (고대 / 대항해 / 근대): [BLIST]
+				[LI] 근대: +25%[/BLIST][nn]시대별 비용 (고대 / 대항해 / 근대):[BLIST]
 				[LI] 별자리 지도 작성: 563 / 563 / 563
 				[LI] 구형 지구: 750 / 750 / 750
 				[LI] 지동설: 938 / 938 / 938
@@ -582,7 +549,7 @@
 			<Text>모든 시대에서 승리 프로젝트 비용이 낮아집니다.[nn][BLIST]
 				[LI] 고대: -25%
 				[LI] 대항해: -25%
-				[LI] 근대: -25%[/BLIST][nn]시대별 비용 (고대 / 대항해 / 근대): [BLIST]
+				[LI] 근대: -25%[/BLIST][nn]시대별 비용 (고대 / 대항해 / 근대):[BLIST]
 				[LI] 별자리 지도 작성: 338 / 338 / 338
 				[LI] 구형 지구: 450 / 450 / 450
 				[LI] 지동설: 563 / 563 / 563
@@ -909,13 +876,13 @@
 			<Text>매우 느린 속도입니다. 표준보다 400% 느립니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="ko_KR">
-			<Text>각 시대는 아래 해당 그룹의 시대 길이 행을 사용합니다. 균형은 153, 166, 196점, 멀티플레이어는 140, 155, 190점으로 맞춥니다.</Text>
+			<Text>각 시대는 아래 해당 그룹의 시대 길이 행을 사용합니다. 균형은 150, 170, 200점, 멀티플레이어는 140, 160, 180점으로 맞춥니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="ko_KR">
 			<Text>긴 시대이며, 뒤로 갈수록 더 길어집니다.[nn][BLIST]
-				[LI] 고대: 153점
-				[LI] 대항해: 166점
-				[LI] 근대: 196점[/BLIST]</Text>
+				[LI] 고대: 150점
+				[LI] 대항해: 170점
+				[LI] 근대: 200점[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_EXTENDED_DESC" Language="ko_KR">
 			<Text>매우 긴 시대로, 길게 즐기는 게임에 적합합니다.[nn][BLIST]
@@ -999,26 +966,6 @@
 				[LI] Marathon: 450 포인트
 				[LI] Marathon 2.0: 750 포인트[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153" Language="ko_KR">
-			<Text>[BLIST]
-				[LI] Online 2.0: 61 포인트
-				[LI] Online: 76 포인트
-				[LI] Quick: 102 포인트
-				[LI] Standard: 153 포인트
-				[LI] Epic: 230 포인트
-				[LI] Marathon: 459 포인트
-				[LI] Marathon 2.0: 765 포인트[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155" Language="ko_KR">
-			<Text>[BLIST]
-				[LI] Online 2.0: 62 포인트
-				[LI] Online: 78 포인트
-				[LI] Quick: 103 포인트
-				[LI] Standard: 155 포인트
-				[LI] Epic: 232 포인트
-				[LI] Marathon: 465 포인트
-				[LI] Marathon 2.0: 775 포인트[/BLIST]</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="ko_KR">
 			<Text>[BLIST]
 				[LI] Online 2.0: 64 포인트
@@ -1028,16 +975,6 @@
 				[LI] Epic: 240 포인트
 				[LI] Marathon: 480 포인트
 				[LI] Marathon 2.0: 800 포인트[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166" Language="ko_KR">
-			<Text>[BLIST]
-				[LI] Online 2.0: 66 포인트
-				[LI] Online: 83 포인트
-				[LI] Quick: 111 포인트
-				[LI] Standard: 166 포인트
-				[LI] Epic: 249 포인트
-				[LI] Marathon: 498 포인트
-				[LI] Marathon 2.0: 830 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="ko_KR">
 			<Text>[BLIST]
@@ -1068,16 +1005,6 @@
 				[LI] Epic: 285 포인트
 				[LI] Marathon: 570 포인트
 				[LI] Marathon 2.0: 950 포인트[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196" Language="ko_KR">
-			<Text>[BLIST]
-				[LI] Online 2.0: 78 포인트
-				[LI] Online: 98 포인트
-				[LI] Quick: 131 포인트
-				[LI] Standard: 196 포인트
-				[LI] Epic: 294 포인트
-				[LI] Marathon: 588 포인트
-				[LI] Marathon 2.0: 980 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="ko_KR">
 			<Text>[BLIST]
@@ -1243,43 +1170,43 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_EXTENDED" Language="ko_KR">
 			<Text>매우 긴 시대를 채우도록 비용을 높인 구성입니다.[nn][BLIST]
-				[LI] 시대 길이: 장기
+				[LI] 시대 길이: 240 / 260 / 280
 				[LI] 시대 진행 속도: 일반
-				[LI] 기술 비용: 장기
-				[LI] 사회 제도 비용: 장기
-				[LI] 도시 성장: 장기
-				[LI] 도로: 장기
-				[LI] 승리 프로젝트 비용: 장기[/BLIST]</Text>
+				[LI] 기술 비용: +25% / +50% / +50%
+				[LI] 사회 제도 비용: +25% / +50% / +50%
+				[LI] 도시 성장: +25%
+				[LI] 도로: 일반 / 일반 / -25%
+				[LI] 승리 프로젝트 비용: +25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT" Language="ko_KR">
 			<Text>짧은 시대에 맞춰 비용도 낮춘 구성입니다.[nn][BLIST]
-				[LI] 시대 길이: 신속
+				[LI] 시대 길이: 90 / 100 / 110
 				[LI] 시대 진행 속도: 일반
-				[LI] 기술 비용: 신속
-				[LI] 사회 제도 비용: 신속
-				[LI] 도시 성장: 신속
-				[LI] 도로: 신속
-				[LI] 승리 프로젝트 비용: 신속[/BLIST]</Text>
+				[LI] 기술 비용: -25% / -25% / 일반
+				[LI] 사회 제도 비용: -25% / -25% / 일반
+				[LI] 도시 성장: -25%
+				[LI] 도로: -25% / -50% / -50%
+				[LI] 승리 프로젝트 비용: -25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="ko_KR">
 			<Text>긴 시대에 맞춰 연구와 성장을 조정한 구성입니다.[nn][BLIST]
-				[LI] 시대 길이: 균형
+				[LI] 시대 길이: 150 / 170 / 200
 				[LI] 시대 진행 속도: 균형
-				[LI] 기술 비용: 균형
-				[LI] 사회 제도 비용: 균형
-				[LI] 도시 성장: 균형
-				[LI] 도로: 균형
-				[LI] 승리 프로젝트 비용: 균형[/BLIST]</Text>
+				[LI] 기술 비용: +25% / 일반 / -25%
+				[LI] 사회 제도 비용: 일반 / +25% / +25%
+				[LI] 도시 성장: -25% / -25% / 일반
+				[LI] 도로: 일반 / 일반 / -25%
+				[LI] 승리 프로젝트 비용: 일반 / -25% / -25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="ko_KR">
 			<Text>한 자리에서 끝내는 세션에 맞춘 구성입니다.[nn][BLIST]
-				[LI] 시대 길이: 140 / 155 / 190
+				[LI] 시대 길이: 140 / 160 / 180
 				[LI] 시대 진행 속도: 균형
-				[LI] 기술 비용: +35% / +50% / +75%
-				[LI] 사회 제도 비용: +45% / +60% / +85%
-				[LI] 도시 성장: 느림
+				[LI] 기술 비용: +25% / +50% / +100%
+				[LI] 사회 제도 비용: +50% / +50% / +100%
+				[LI] 도시 성장: +25%
 				[LI] 도로: -25% / -25% / -50%
-				[LI] 승리 프로젝트 비용: 일반 / 일반 / +20%[/BLIST]</Text>
+				[LI] 승리 프로젝트 비용: 일반 / 일반 / +25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="ko_KR">
 			<Text>페이스 탭의 페이스 설정이 더 이상 어떤 프리셋과도 일치하지 않습니다.</Text>

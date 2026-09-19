@@ -37,32 +37,14 @@
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_25" Language="pl_PL">
 			<Text>25% więcej produkcji na projekty zwycięstwa w tej epoce.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_20" Language="pl_PL">
-			<Text>20% więcej produkcji na projekty zwycięstwa w tej epoce.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_100" Language="pl_PL">
 			<Text>100% więcej produkcji na projekty zwycięstwa w tej epoce.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_MINUS_25" Language="pl_PL">
 			<Text>25% mniej produkcji na projekty zwycięstwa w tej epoce.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_85" Language="pl_PL">
-			<Text>85% więcej nauki w tej epoce.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_75" Language="pl_PL">
-			<Text>75% więcej nauki w tej epoce.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_60" Language="pl_PL">
-			<Text>60% więcej nauki w tej epoce.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_50" Language="pl_PL">
 			<Text>50% więcej nauki w tej epoce.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_45" Language="pl_PL">
-			<Text>45% więcej nauki w tej epoce.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_35" Language="pl_PL">
-			<Text>35% więcej nauki w tej epoce.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_25" Language="pl_PL">
 			<Text>25% więcej nauki w tej epoce.</Text>
@@ -76,23 +58,8 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_VALUE_DESCRIPTION" Language="pl_PL">
 			<Text>Największa liczba osad, jakie możesz posiadać w tej epoce.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_85" Language="pl_PL">
-			<Text>85% więcej kultury w tej epoce.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_75" Language="pl_PL">
-			<Text>75% więcej kultury w tej epoce.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_60" Language="pl_PL">
-			<Text>60% więcej kultury w tej epoce.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_50" Language="pl_PL">
 			<Text>50% więcej kultury w tej epoce.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_45" Language="pl_PL">
-			<Text>45% więcej kultury w tej epoce.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_35" Language="pl_PL">
-			<Text>35% więcej kultury w tej epoce.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_25" Language="pl_PL">
 			<Text>25% więcej kultury w tej epoce.</Text>
@@ -546,7 +513,7 @@
 			<Text>Standard w Starożytności, potem tańsze projekty zwycięstwa.[nn][BLIST]
 				[LI] Starożytność: Standardowe
 				[LI] Epoka odkryć: -25%
-				[LI] Epoka nowożytna: -25%[/BLIST][nn]Koszt według epoki (Starożytność / Epoka odkryć / Epoka nowożytna): [BLIST]
+				[LI] Epoka nowożytna: -25%[/BLIST][nn]Koszt według epoki (Starożytność / Epoka odkryć / Epoka nowożytna):[BLIST]
 				[LI] Mapa gwiazd: 450 / 338 / 338
 				[LI] Kulista Ziemia: 600 / 450 / 450
 				[LI] Model heliocentryczny: 750 / 563 / 563
@@ -564,7 +531,7 @@
 			<Text>Każdy projekt zwycięstwa kosztuje więcej w każdej epoce.[nn][BLIST]
 				[LI] Starożytność: +25%
 				[LI] Epoka odkryć: +25%
-				[LI] Epoka nowożytna: +25%[/BLIST][nn]Koszt według epoki (Starożytność / Epoka odkryć / Epoka nowożytna): [BLIST]
+				[LI] Epoka nowożytna: +25%[/BLIST][nn]Koszt według epoki (Starożytność / Epoka odkryć / Epoka nowożytna):[BLIST]
 				[LI] Mapa gwiazd: 563 / 563 / 563
 				[LI] Kulista Ziemia: 750 / 750 / 750
 				[LI] Model heliocentryczny: 938 / 938 / 938
@@ -582,7 +549,7 @@
 			<Text>Każdy projekt zwycięstwa kosztuje mniej w każdej epoce.[nn][BLIST]
 				[LI] Starożytność: -25%
 				[LI] Epoka odkryć: -25%
-				[LI] Epoka nowożytna: -25%[/BLIST][nn]Koszt według epoki (Starożytność / Epoka odkryć / Epoka nowożytna): [BLIST]
+				[LI] Epoka nowożytna: -25%[/BLIST][nn]Koszt według epoki (Starożytność / Epoka odkryć / Epoka nowożytna):[BLIST]
 				[LI] Mapa gwiazd: 338 / 338 / 338
 				[LI] Kulista Ziemia: 450 / 450 / 450
 				[LI] Model heliocentryczny: 563 / 563 / 563
@@ -909,13 +876,13 @@
 			<Text>Ekstremalnie wolne tempo. 400% wolniej niż standardowe.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="pl_PL">
-			<Text>Własne: każda epoka używa wiersza Długość epoki w swojej grupie poniżej. Zrównoważone ustawia 153, 166 i 196 punktów; Tryb wieloosobowy ustawia 140, 155 i 190.</Text>
+			<Text>Własne: każda epoka używa wiersza Długość epoki w swojej grupie poniżej. Zrównoważone ustawia 150, 170 i 200 punktów; Tryb wieloosobowy ustawia 140, 160 i 180.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="pl_PL">
 			<Text>Dłuższe epoki, każda dłuższa od poprzedniej.[nn][BLIST]
-				[LI] Starożytność: 153 punkty
-				[LI] Epoka odkryć: 166 punktów
-				[LI] Epoka nowożytna: 196 punktów[/BLIST]</Text>
+				[LI] Starożytność: 150 punktów
+				[LI] Epoka odkryć: 170 punktów
+				[LI] Epoka nowożytna: 200 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_EXTENDED_DESC" Language="pl_PL">
 			<Text>Bardzo długie epoki dla przeciągniętej rozgrywki.[nn][BLIST]
@@ -999,26 +966,6 @@
 				[LI] Marathon: 450 punktów
 				[LI] Marathon 2.0: 750 punktów[/BLIST]</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153" Language="pl_PL">
-			<Text>[BLIST]
-				[LI] Online 2.0: 61 punkt
-				[LI] Online: 76 punktów
-				[LI] Quick: 102 punkty
-				[LI] Standard: 153 punkty
-				[LI] Epic: 230 punktów
-				[LI] Marathon: 459 punktów
-				[LI] Marathon 2.0: 765 punktów[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155" Language="pl_PL">
-			<Text>[BLIST]
-				[LI] Online 2.0: 62 punkty
-				[LI] Online: 78 punktów
-				[LI] Quick: 103 punkty
-				[LI] Standard: 155 punktów
-				[LI] Epic: 232 punkty
-				[LI] Marathon: 465 punktów
-				[LI] Marathon 2.0: 775 punktów[/BLIST]</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="pl_PL">
 			<Text>[BLIST]
 				[LI] Online 2.0: 64 punkty
@@ -1028,16 +975,6 @@
 				[LI] Epic: 240 punktów
 				[LI] Marathon: 480 punktów
 				[LI] Marathon 2.0: 800 punktów[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166" Language="pl_PL">
-			<Text>[BLIST]
-				[LI] Online 2.0: 66 punktów
-				[LI] Online: 83 punkty
-				[LI] Quick: 111 punktów
-				[LI] Standard: 166 punktów
-				[LI] Epic: 249 punktów
-				[LI] Marathon: 498 punktów
-				[LI] Marathon 2.0: 830 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="pl_PL">
 			<Text>[BLIST]
@@ -1068,16 +1005,6 @@
 				[LI] Epic: 285 punktów
 				[LI] Marathon: 570 punktów
 				[LI] Marathon 2.0: 950 punktów[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196" Language="pl_PL">
-			<Text>[BLIST]
-				[LI] Online 2.0: 78 punktów
-				[LI] Online: 98 punktów
-				[LI] Quick: 131 punkt
-				[LI] Standard: 196 punktów
-				[LI] Epic: 294 punkty
-				[LI] Marathon: 588 punktów
-				[LI] Marathon 2.0: 980 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="pl_PL">
 			<Text>[BLIST]
@@ -1243,43 +1170,43 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_EXTENDED" Language="pl_PL">
 			<Text>Bardzo długie epoki z podniesionymi kosztami, by je wypełnić.[nn][BLIST]
-				[LI] Długość epoki: Wydłużone
+				[LI] Długość epoki: 240 / 260 / 280
 				[LI] Postęp epoki: Standardowe
-				[LI] Koszt technologii: Wydłużone
-				[LI] Koszt idei: Wydłużone
-				[LI] Wzrost miast: Wydłużone
-				[LI] Drogi: Wydłużone
-				[LI] Koszt projektów zwycięstwa: Wydłużone[/BLIST]</Text>
+				[LI] Koszt technologii: +25% / +50% / +50%
+				[LI] Koszt idei: +25% / +50% / +50%
+				[LI] Wzrost miast: +25%
+				[LI] Drogi: Standardowe / Standardowe / -25%
+				[LI] Koszt projektów zwycięstwa: +25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT" Language="pl_PL">
 			<Text>Krótkie epoki z odpowiednio obniżonymi kosztami.[nn][BLIST]
-				[LI] Długość epoki: Szybkie
+				[LI] Długość epoki: 90 / 100 / 110
 				[LI] Postęp epoki: Standardowe
-				[LI] Koszt technologii: Szybkie
-				[LI] Koszt idei: Szybkie
-				[LI] Wzrost miast: Szybkie
-				[LI] Drogi: Szybkie
-				[LI] Koszt projektów zwycięstwa: Szybkie[/BLIST]</Text>
+				[LI] Koszt technologii: -25% / -25% / Standardowe
+				[LI] Koszt idei: -25% / -25% / Standardowe
+				[LI] Wzrost miast: -25%
+				[LI] Drogi: -25% / -50% / -50%
+				[LI] Koszt projektów zwycięstwa: -25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="pl_PL">
 			<Text>Dłuższe epoki z badaniami i rozwojem dostrojonymi do ich wypełnienia.[nn][BLIST]
-				[LI] Długość epoki: Zrównoważone
+				[LI] Długość epoki: 150 / 170 / 200
 				[LI] Postęp epoki: Zrównoważone
-				[LI] Koszt technologii: Zrównoważone
-				[LI] Koszt idei: Zrównoważone
-				[LI] Wzrost miast: Zrównoważone
-				[LI] Drogi: Zrównoważone
-				[LI] Koszt projektów zwycięstwa: Zrównoważone[/BLIST]</Text>
+				[LI] Koszt technologii: +25% / Standardowe / -25%
+				[LI] Koszt idei: Standardowe / +25% / +25%
+				[LI] Wzrost miast: -25% / -25% / Standardowe
+				[LI] Drogi: Standardowe / Standardowe / -25%
+				[LI] Koszt projektów zwycięstwa: Standardowe / -25% / -25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="pl_PL">
 			<Text>Dostrojone do rozgrywki za jednym posiedzeniem.[nn][BLIST]
-				[LI] Długość epoki: 140 / 155 / 190
+				[LI] Długość epoki: 140 / 160 / 180
 				[LI] Postęp epoki: Zrównoważone
-				[LI] Koszt technologii: +35% / +50% / +75%
-				[LI] Koszt idei: +45% / +60% / +85%
-				[LI] Wzrost miast: Wolno
+				[LI] Koszt technologii: +25% / +50% / +100%
+				[LI] Koszt idei: +50% / +50% / +100%
+				[LI] Wzrost miast: +25%
 				[LI] Drogi: -25% / -25% / -50%
-				[LI] Koszt projektów zwycięstwa: Standardowe / Standardowe / +20%[/BLIST]</Text>
+				[LI] Koszt projektów zwycięstwa: Standardowe / Standardowe / +25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="pl_PL">
 			<Text>Sekcja Ustawienia tempa na karcie Tempo nie odpowiada już żadnemu zestawowi.</Text>
