@@ -315,7 +315,7 @@ function teamParameter(playerId) {
 }
 
 // The multiplayer lobby's team badge: one tinted image for the ring, a second
-// tinted with the team's colour inside it, and the team number over the top.
+// tinted with the team's color inside it, and the team number over the top.
 const TEAM_IMAGE = "url('fs://game/mp_lobby_teamcolor.png')";
 const TEAM_RING_TINT = "#8c7e62";
 const tplTeamBadge = template(`<div class="relative size-12 flex items-center justify-center"><div class="absolute inset-0 bg-cover"></div><div class="absolute bg-cover" style="left:0.25rem;top:0.25rem;right:0.25rem;bottom:0.25rem"></div><div class="relative font-title text-base"></div></div>`);

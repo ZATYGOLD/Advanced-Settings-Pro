@@ -2,7 +2,7 @@
 // of the single-player Advanced Settings screen.
 //
 // The screen renders every integer setting through the registered TextInput
-// component without naming the parameter, so the seed fields are recognised
+// component without naming the parameter, so the seed fields are recognized
 // by their current value matching one of the seed parameters when the field
 // is created. The button feeds a new seed through the field's own setValue.
 import { createComponent, mergeProps } from 'fs://game/core/vendor/solid-js/dist/solid.js';

@@ -5,7 +5,7 @@
 // The base game consolidated the Voronoi maps' terrain generation into this one
 // helper. The Voronoi map copies call zgGenerateMapFeatures instead of the base
 // generateMapFeatures so the Rivers and Biome settings still apply, while the
-// phase order, profiling and GenerationContext behaviour match the base exactly.
+// phase order, profiling and GenerationContext behavior match the base exactly.
 import { addHills, buildRainfallMap } from 'fs://game/base-standard/maps/elevation-terrain-generator.js';
 import { addFeatures } from 'fs://game/base-standard/maps/feature-biome-generator.js';
 import { dumpContinents, dumpTerrain, dumpElevation, dumpRainfall, dumpBiomes, dumpFeatures, dumpResources } from 'fs://game/base-standard/maps/map-debug-helpers.js';

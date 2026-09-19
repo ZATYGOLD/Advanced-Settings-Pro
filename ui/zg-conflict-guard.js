@@ -65,7 +65,7 @@ function modText(mod) {
 }
 
 // Translates a SQL LIKE pattern (% and _ wildcards) into an equivalent regular
-// expression, case-insensitive to match LIKE's behaviour on ASCII.
+// expression, case-insensitive to match LIKE's behavior on ASCII.
 function likeToRegExp(pattern) {
 	const escaped = pattern.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 	return new RegExp(`^${escaped.replace(/%/g, ".*").replace(/_/g, ".")}$`, "i");
