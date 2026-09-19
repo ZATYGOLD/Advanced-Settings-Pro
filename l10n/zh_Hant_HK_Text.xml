@@ -742,7 +742,32 @@
 			<Text>每格移動力減少25%。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="zh_Hant_HK">
-			<Text>隨機紀念品</Text>
+			<Text>隨機紀念物</Text>
+		</Replace>
+
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_NAME" Language="zh_Hant_HK">
+			<Text>AI紀念物</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>一次過填滿所有AI玩家的紀念物欄位。[n]個別欄位仍可在玩家頁籤中更改。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_NONE" Language="zh_Hant_HK">
+			<Text>AI玩家開局不帶紀念物。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_RANDOM" Language="zh_Hant_HK">
+			<Text>每個欄位抽取任意紀念物，每局新遊戲重新抽取。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_LEADER_NAME" Language="zh_Hant_HK">
+			<Text>匹配領袖</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_LEADER" Language="zh_Hant_HK">
+			<Text>每個欄位抽取與領袖兩項屬性之一相符的紀念物。[n]僅對已指定領袖的玩家生效，仍設為隨機的領袖抽取任意紀念物。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_CIVILIZATION_NAME" Language="zh_Hant_HK">
+			<Text>匹配文明</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_CIVILIZATION" Language="zh_Hant_HK">
+			<Text>每個欄位抽取與文明兩項屬性之一相符的紀念物。[n]僅對已指定文明的玩家生效，仍設為隨機的文明抽取任意紀念物。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="zh_Hant_HK">
 			<Text>自訂：為每個時代單獨設定凱旋集。</Text>

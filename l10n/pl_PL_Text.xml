@@ -744,6 +744,31 @@
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="pl_PL">
 			<Text>Losowe pamiątki</Text>
 		</Replace>
+
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_NAME" Language="pl_PL">
+			<Text>Pamiątki SI</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION" Language="pl_PL">
+			<Text>Wypełnia za jednym razem sloty pamiątek wszystkich graczy SI.[n]Pojedyncze sloty nadal można zmieniać na karcie Gracze.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_NONE" Language="pl_PL">
+			<Text>Gracze SI zaczynają bez pamiątek.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_RANDOM" Language="pl_PL">
+			<Text>Każdy slot losuje dowolną pamiątkę, ponownie przy każdej nowej grze.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_LEADER_NAME" Language="pl_PL">
+			<Text>Dopasowanie do przywódcy</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_LEADER" Language="pl_PL">
+			<Text>Każdy slot losuje pamiątkę pasującą do jednej z dwóch cech przywódcy.[n]Dotyczy tylko wybranych przywódców; pozostawieni na Losowo losują dowolną pamiątkę.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_CIVILIZATION_NAME" Language="pl_PL">
+			<Text>Dopasowanie do cywilizacji</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_CIVILIZATION" Language="pl_PL">
+			<Text>Każdy slot losuje pamiątkę pasującą do jednej z dwóch cech cywilizacji.[n]Dotyczy tylko wybranych cywilizacji; pozostawione na Losowo losują dowolną pamiątkę.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="pl_PL">
 			<Text>Niestandardowe: ustaw zestaw triumfów dla każdej epoki osobno.</Text>
 		</Replace>

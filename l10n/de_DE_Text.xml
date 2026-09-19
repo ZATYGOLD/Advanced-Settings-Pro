@@ -742,7 +742,32 @@
 			<Text>25% weniger Bewegung pro Feld.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="de_DE">
-			<Text>Zufällige Erinnerungsstücke</Text>
+			<Text>Zufällige Mementos</Text>
+		</Replace>
+
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_NAME" Language="de_DE">
+			<Text>KI-Mementos</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION" Language="de_DE">
+			<Text>Füllt die Memento-Plätze aller KI-Spieler auf einmal.[n]Einzelne Plätze lassen sich weiterhin im Reiter „Spieler“ ändern.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_NONE" Language="de_DE">
+			<Text>KI-Spieler starten ohne Mementos.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_RANDOM" Language="de_DE">
+			<Text>Jeder Platz zieht ein beliebiges Memento, für jedes neue Spiel neu ausgelost.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_LEADER_NAME" Language="de_DE">
+			<Text>Passend zum Anführer</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_LEADER" Language="de_DE">
+			<Text>Jeder Platz zieht ein Memento, das zu einem der beiden Attribute des Anführers passt.[n]Gilt nur für gewählte Anführer; auf Zufällig belassene KI-Anführer ziehen ein beliebiges Memento.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_CIVILIZATION_NAME" Language="de_DE">
+			<Text>Passend zur Zivilisation</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_CIVILIZATION" Language="de_DE">
+			<Text>Jeder Platz zieht ein Memento, das zu einem der beiden Attribute der Zivilisation passt.[n]Gilt nur für gewählte Zivilisationen; auf Zufällig belassene ziehen ein beliebiges Memento.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="de_DE">
 			<Text>Benutzerdefiniert: Lege das Triumph-Set für jedes Zeitalter einzeln fest.</Text>

@@ -742,7 +742,32 @@
 			<Text>1タイルあたりの移動力が25%減少。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="ja_JP">
-			<Text>ランダムな形見</Text>
+			<Text>ランダムなメメント</Text>
+		</Replace>
+
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_NAME" Language="ja_JP">
+			<Text>AIのメメント</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION" Language="ja_JP">
+			<Text>すべてのAIプレイヤーのメメント枠をまとめて設定します。[n]個々の枠はプレイヤータブで変更できます。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_NONE" Language="ja_JP">
+			<Text>AIプレイヤーはメメントなしで開始します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_RANDOM" Language="ja_JP">
+			<Text>各枠が任意のメメントを引き、新しいゲームごとに引き直します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_LEADER_NAME" Language="ja_JP">
+			<Text>指導者に合わせる</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_LEADER" Language="ja_JP">
+			<Text>各枠が指導者の2つの特性のいずれかに一致するメメントを引きます。[n]指導者を選んだプレイヤーにのみ適用され、ランダムのままなら任意のメメントを引きます。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_CIVILIZATION_NAME" Language="ja_JP">
+			<Text>文明に合わせる</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_CIVILIZATION" Language="ja_JP">
+			<Text>各枠が文明の2つの特性のいずれかに一致するメメントを引きます。[n]文明を選んだプレイヤーにのみ適用され、ランダムのままなら任意のメメントを引きます。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="ja_JP">
 			<Text>カスタム：時代ごとにトライアンフセットを個別に設定します。</Text>

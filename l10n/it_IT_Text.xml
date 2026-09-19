@@ -742,7 +742,32 @@
 			<Text>25% di movimento per casella in meno.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="it_IT">
-			<Text>Ricordi casuali</Text>
+			<Text>Cimeli casuali</Text>
+		</Replace>
+
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_NAME" Language="it_IT">
+			<Text>Cimeli dell'IA</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION" Language="it_IT">
+			<Text>Riempie in una volta sola gli slot Cimelio di tutti i giocatori IA.[n]I singoli slot restano modificabili nella scheda Giocatori.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_NONE" Language="it_IT">
+			<Text>I giocatori IA iniziano senza Cimeli.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_RANDOM" Language="it_IT">
+			<Text>Ogni slot pesca un Cimelio qualsiasi, estratto di nuovo a ogni partita.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_LEADER_NAME" Language="it_IT">
+			<Text>In base al leader</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_LEADER" Language="it_IT">
+			<Text>Ogni slot pesca un Cimelio corrispondente a uno dei due attributi del leader.[n]Si applica solo ai leader scelti; quelli lasciati su Casuale pescano un Cimelio qualsiasi.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_CIVILIZATION_NAME" Language="it_IT">
+			<Text>In base alla civiltà</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_CIVILIZATION" Language="it_IT">
+			<Text>Ogni slot pesca un Cimelio corrispondente a uno dei due attributi della civiltà.[n]Si applica solo alle civiltà scelte; quelle lasciate su Casuale pescano un Cimelio qualsiasi.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="it_IT">
 			<Text>Personalizzato: imposta il set di trionfi per ogni epoca singolarmente.</Text>

@@ -742,7 +742,32 @@
 			<Text>타일당 이동력 25% 감소.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="ko_KR">
-			<Text>무작위 기념품</Text>
+			<Text>무작위 메멘토</Text>
+		</Replace>
+
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_NAME" Language="ko_KR">
+			<Text>AI 메멘토</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION" Language="ko_KR">
+			<Text>모든 AI 플레이어의 메멘토 슬롯을 한 번에 채웁니다.[n]개별 슬롯은 플레이어 탭에서 계속 변경할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_NONE" Language="ko_KR">
+			<Text>AI 플레이어가 메멘토 없이 시작합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_RANDOM" Language="ko_KR">
+			<Text>각 슬롯이 아무 메멘토나 뽑으며, 새 게임마다 다시 뽑습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_LEADER_NAME" Language="ko_KR">
+			<Text>지도자 일치</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_LEADER" Language="ko_KR">
+			<Text>각 슬롯이 지도자의 두 속성 중 하나와 일치하는 메멘토를 뽑습니다.[n]지도자를 지정한 플레이어에게만 적용되며, 무작위로 남은 지도자는 아무 메멘토나 뽑습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_CIVILIZATION_NAME" Language="ko_KR">
+			<Text>문명 일치</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_CIVILIZATION" Language="ko_KR">
+			<Text>각 슬롯이 문명의 두 속성 중 하나와 일치하는 메멘토를 뽑습니다.[n]문명을 지정한 플레이어에게만 적용되며, 무작위로 남은 문명은 아무 메멘토나 뽑습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="ko_KR">
 			<Text>사용자 지정: 시대별로 개가 세트를 개별 설정합니다.</Text>

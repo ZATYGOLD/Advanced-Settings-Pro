@@ -123,6 +123,21 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_RandomMementosDomain', 'ZG_RANDOM_MEMENTOS_MINOR', 'LOC_ZG_RANDOM_MEMENTOS_NAME', '', 30),
         ('ZG_RandomMementosDomain', 'ZG_RANDOM_MEMENTOS_BOTH', 'LOC_ZG_RANDOM_MEMENTOS_NAME', '', 40);
 
+-- Fills every AI player's memento slots at once, in Game Settings directly after
+-- Bypass Civilization Unlocks (SortIndex 155). Applied by ui/zg-player-mementos.js
+-- whenever the setting changes; the Player tab can still override a single slot
+-- afterwards.
+INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
+    VALUES
+        ('ZG_AIMementos', 'LOC_ZG_AI_MEMENTOS_NAME', 'LOC_ZG_AI_MEMENTOS_DESCRIPTION', 'ZG_AIMementosDomain', 'ZG_AI_MEMENTOS_NONE', 1, 'Game', 'AIMementosKey', 'GameOptions', 'MPAdvancedGameOptions', 0, 156);
+
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES
+        ('ZG_AIMementosDomain', 'ZG_AI_MEMENTOS_NONE', 'LOC_ZG_NONE_NAME', 'LOC_ZG_AI_MEMENTOS_DESCRIPTION_NONE', 10),
+        ('ZG_AIMementosDomain', 'ZG_AI_MEMENTOS_RANDOM', 'LOC_ADVANCED_OPTIONS_RANDOM', 'LOC_ZG_AI_MEMENTOS_DESCRIPTION_RANDOM', 20),
+        ('ZG_AIMementosDomain', 'ZG_AI_MEMENTOS_LEADER', 'LOC_ZG_AI_MEMENTOS_LEADER_NAME', 'LOC_ZG_AI_MEMENTOS_DESCRIPTION_LEADER', 30),
+        ('ZG_AIMementosDomain', 'ZG_AI_MEMENTOS_CIVILIZATION', 'LOC_ZG_AI_MEMENTOS_CIVILIZATION_NAME', 'LOC_ZG_AI_MEMENTOS_DESCRIPTION_CIVILIZATION', 40);
+
 --*******************************************************
 --************* PACE SET *******************************
 --*******************************************************

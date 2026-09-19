@@ -742,7 +742,32 @@
 			<Text>На 25% меньше передвижения за клетку.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="ru_RU">
-			<Text>Случайные памятные вещи</Text>
+			<Text>Случайные реликвии</Text>
+		</Replace>
+
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_NAME" Language="ru_RU">
+			<Text>Реликвии ИИ</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION" Language="ru_RU">
+			<Text>Заполняет ячейки реликвий всех игроков под управлением ИИ разом.[n]Отдельные ячейки по-прежнему можно изменить на вкладке «Игроки».</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_NONE" Language="ru_RU">
+			<Text>Игроки под управлением ИИ начинают без реликвий.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_RANDOM" Language="ru_RU">
+			<Text>Каждая ячейка получает любую реликвию, выбираемую заново для каждой новой игры.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_LEADER_NAME" Language="ru_RU">
+			<Text>По лидеру</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_LEADER" Language="ru_RU">
+			<Text>Каждая ячейка получает реликвию, соответствующую одному из двух атрибутов лидера.[n]Действует только для выбранных лидеров; оставленные случайными получают любые реликвии.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_CIVILIZATION_NAME" Language="ru_RU">
+			<Text>По цивилизации</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_CIVILIZATION" Language="ru_RU">
+			<Text>Каждая ячейка получает реликвию, соответствующую одному из двух атрибутов цивилизации.[n]Действует только для выбранных цивилизаций; оставленные случайными получают любые реликвии.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="ru_RU">
 			<Text>Особый: задайте набор триумфов для каждой эпохи отдельно.</Text>

@@ -744,6 +744,31 @@
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="es_ES">
 			<Text>Recuerdos aleatorios</Text>
 		</Replace>
+
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_NAME" Language="es_ES">
+			<Text>Recuerdos de la IA</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION" Language="es_ES">
+			<Text>Rellena de una vez las ranuras de Recuerdos de todos los jugadores de la IA.[n]Cada ranura se puede seguir cambiando en la pestaña Jugadores.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_NONE" Language="es_ES">
+			<Text>Los jugadores de la IA empiezan sin Recuerdos.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_RANDOM" Language="es_ES">
+			<Text>Cada ranura toma un Recuerdo cualquiera, sorteado de nuevo en cada partida.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_LEADER_NAME" Language="es_ES">
+			<Text>Según el líder</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_LEADER" Language="es_ES">
+			<Text>Cada ranura toma un Recuerdo que coincide con uno de los dos atributos del líder.[n]Solo se aplica a los líderes elegidos; los dejados en Aleatorio toman un Recuerdo cualquiera.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_CIVILIZATION_NAME" Language="es_ES">
+			<Text>Según la civilización</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_CIVILIZATION" Language="es_ES">
+			<Text>Cada ranura toma un Recuerdo que coincide con uno de los dos atributos de la civilización.[n]Solo se aplica a las civilizaciones elegidas; las dejadas en Aleatorio toman un Recuerdo cualquiera.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="es_ES">
 			<Text>Personalizado: establece el conjunto de triunfos de cada era individualmente.</Text>
 		</Replace>

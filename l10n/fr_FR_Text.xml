@@ -744,6 +744,31 @@
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="fr_FR">
 			<Text>Souvenirs aléatoires</Text>
 		</Replace>
+
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_NAME" Language="fr_FR">
+			<Text>Souvenirs de l'IA</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION" Language="fr_FR">
+			<Text>Remplit d'un coup les emplacements de Souvenirs de tous les joueurs IA.[n]Chaque emplacement reste modifiable dans l'onglet Joueurs.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_NONE" Language="fr_FR">
+			<Text>Les joueurs IA commencent sans Souvenir.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_RANDOM" Language="fr_FR">
+			<Text>Chaque emplacement tire un Souvenir quelconque, retiré à chaque nouvelle partie.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_LEADER_NAME" Language="fr_FR">
+			<Text>Selon le dirigeant</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_LEADER" Language="fr_FR">
+			<Text>Chaque emplacement tire un Souvenir correspondant à l'un des deux attributs du dirigeant.[n]Ne s'applique qu'aux dirigeants choisis ; ceux laissés sur Aléatoire tirent un Souvenir quelconque.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_CIVILIZATION_NAME" Language="fr_FR">
+			<Text>Selon la civilisation</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_CIVILIZATION" Language="fr_FR">
+			<Text>Chaque emplacement tire un Souvenir correspondant à l'un des deux attributs de la civilisation.[n]Ne s'applique qu'aux civilisations choisies ; celles laissées sur Aléatoire tirent un Souvenir quelconque.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="fr_FR">
 			<Text>Personnalisé : définissez l'ensemble de triomphes de chaque âge individuellement.</Text>
 		</Replace>

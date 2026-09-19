@@ -4,6 +4,15 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ## Version History
 
+### 0.8.5
+
+- Player tab gains a Team column, using the same per-player team the multiplayer lobby sets, shown as the lobby's own team badge: Leader, Team, Civilization, Mementos
+- Player tab columns resized to 33.8% Leader, 11.5% Team, 33.8% Civilization, 10.5% each Memento; tighter gap before the Leader column, and long names truncate instead of running under the dropdown arrow
+- Memento slots show the icon alone under one Mementos heading, with an empty slot marked by a crossed-out circle; hovering still gives the full memento
+- New AI Mementos setting in Game Settings fills every AI player's slots at once: None, Random, Leader Match, or Civilization Match
+- A Match draws each slot from one of the leader's or civilization's two attributes, the first slot from the first attribute; it applies only to players whose leader or civilization has been chosen, since AI slots stay on Random until the game starts
+- Random Mementos now uses each language's own word for a memento, matching the Mementos column
+
 ### 0.8.4
 
 - Cost settings run Low (-25%), Standard, Medium (+25%), High (+50%), Double (+100%); Technology, Civic, and Victory Project Cost share one per-age scale
@@ -19,7 +28,6 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Rewrote every option description in all 12 languages: no option repeats its own name, figures are exact, and anything with more to say reads as a summary with labelled bullets per age, map size, or project
 - Age Progress Rate explains what its points do, and all four options give their figures
 - Pace Set descriptions list what each one puts on every age
-- Player tab gains a Team column, using the same per-player team the multiplayer lobby sets: Leader, Team, Civilization, Memento 1, Memento 2
 - Random AI mementos re-roll when a new setup screen opens
 - Fixed Slow Age Progress Rate giving Modern a third milestone the base game disables
 

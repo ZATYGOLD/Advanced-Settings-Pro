@@ -423,8 +423,27 @@
 		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_FAST"><Text>50% less Movement per tile.</Text></Row>
 		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_QUICK"><Text>25% less Movement per tile.</Text></Row>
 
-	<!-- Random Mementos -->
+	<!-- Mementos -->
 		<Row Tag="LOC_ZG_RANDOM_MEMENTOS_NAME"><Text>Random Mementos</Text></Row>
+
+		<Row Tag="LOC_ZG_AI_MEMENTOS_NAME"><Text>AI Mementos</Text></Row>
+		<Row Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION">
+			<Text>Fills the Memento slots of every AI player at once.[n]Individual slots can still be changed on the Player tab.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_NONE">
+			<Text>AI players start with no Mementos.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_RANDOM">
+			<Text>Every slot draws any Memento, rolled again for each new game.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_AI_MEMENTOS_LEADER_NAME"><Text>Leader Match</Text></Row>
+		<Row Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_LEADER">
+			<Text>Each slot draws a Memento matching one of the leader's two attributes.[n]Applies only where a leader has been chosen; AI leaders left on Random draw any Memento.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_AI_MEMENTOS_CIVILIZATION_NAME"><Text>Civilization Match</Text></Row>
+		<Row Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_CIVILIZATION">
+			<Text>Each slot draws a Memento matching one of the civilization's two attributes.[n]Applies only where a civilization has been chosen; those left on Random draw any Memento.</Text>
+		</Row>
 
 	<!-- Triumph Set Descriptions -->
 		<Row Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM">

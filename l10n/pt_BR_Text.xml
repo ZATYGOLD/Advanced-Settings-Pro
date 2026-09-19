@@ -744,6 +744,31 @@
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="pt_BR">
 			<Text>Lembranças aleatórias</Text>
 		</Replace>
+
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_NAME" Language="pt_BR">
+			<Text>Lembranças da IA</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION" Language="pt_BR">
+			<Text>Preenche de uma vez os espaços de Lembranças de todos os jogadores de IA.[n]Cada espaço ainda pode ser alterado na aba Jogadores.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_NONE" Language="pt_BR">
+			<Text>Os jogadores de IA começam sem Lembranças.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_RANDOM" Language="pt_BR">
+			<Text>Cada espaço tira uma Lembrança qualquer, sorteada de novo a cada partida.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_LEADER_NAME" Language="pt_BR">
+			<Text>De acordo com o líder</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_LEADER" Language="pt_BR">
+			<Text>Cada espaço tira uma Lembrança que corresponde a um dos dois atributos do líder.[n]Só se aplica aos líderes escolhidos; os deixados em Aleatório tiram uma Lembrança qualquer.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_CIVILIZATION_NAME" Language="pt_BR">
+			<Text>De acordo com a civilização</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_CIVILIZATION" Language="pt_BR">
+			<Text>Cada espaço tira uma Lembrança que corresponde a um dos dois atributos da civilização.[n]Só se aplica às civilizações escolhidas; as deixadas em Aleatório tiram uma Lembrança qualquer.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="pt_BR">
 			<Text>Personalizado: defina o conjunto de triunfos de cada era individualmente.</Text>
 		</Replace>
