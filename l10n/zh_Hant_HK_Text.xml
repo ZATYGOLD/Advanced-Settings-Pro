@@ -13,6 +13,13 @@
 		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="zh_Hant_HK">
 			<Text>啟用</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTOS_NAME" Language="zh_Hant_HK"><Text>紀念物</Text></Replace>
+		<Replace Tag="LOC_ZG_TEAM_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>同一隊伍的玩家共享勝利、視野與永久和平。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TEAM_NAME" Language="zh_Hant_HK">
+			<Text>隊伍</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_FAST" Language="zh_Hant_HK">
 			<Text>本時代每次獲得的點數增加一半。</Text>
 		</Replace>
@@ -736,12 +743,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="zh_Hant_HK">
 			<Text>隨機紀念品</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MEMENTO_1_NAME" Language="zh_Hant_HK">
-			<Text>紀念品 1</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MEMENTO_2_NAME" Language="zh_Hant_HK">
-			<Text>紀念品 2</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="zh_Hant_HK">
 			<Text>自訂：為每個時代單獨設定凱旋集。</Text>

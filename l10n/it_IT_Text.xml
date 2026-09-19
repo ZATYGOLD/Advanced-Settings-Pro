@@ -13,6 +13,13 @@
 		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="it_IT">
 			<Text>Attivato</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTOS_NAME" Language="it_IT"><Text>Cimeli</Text></Replace>
+		<Replace Tag="LOC_ZG_TEAM_DESCRIPTION" Language="it_IT">
+			<Text>I giocatori della stessa squadra condividono vittoria, visuale e una pace permanente.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TEAM_NAME" Language="it_IT">
+			<Text>Squadra</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_FAST" Language="it_IT">
 			<Text>Ogni assegnazione di quest'era vale una metà in più.</Text>
 		</Replace>
@@ -736,12 +743,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="it_IT">
 			<Text>Ricordi casuali</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MEMENTO_1_NAME" Language="it_IT">
-			<Text>Ricordo 1</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MEMENTO_2_NAME" Language="it_IT">
-			<Text>Ricordo 2</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="it_IT">
 			<Text>Personalizzato: imposta il set di trionfi per ogni epoca singolarmente.</Text>

@@ -13,6 +13,13 @@
 		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="pl_PL">
 			<Text>Włączone</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTOS_NAME" Language="pl_PL"><Text>Pamiątki</Text></Replace>
+		<Replace Tag="LOC_ZG_TEAM_DESCRIPTION" Language="pl_PL">
+			<Text>Gracze w tej samej drużynie dzielą zwycięstwo, pole widzenia i trwały pokój.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TEAM_NAME" Language="pl_PL">
+			<Text>Drużyna</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_FAST" Language="pl_PL">
 			<Text>Każda nagroda w tej epoce daje o połowę więcej.</Text>
 		</Replace>
@@ -736,12 +743,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="pl_PL">
 			<Text>Losowe pamiątki</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MEMENTO_1_NAME" Language="pl_PL">
-			<Text>Pamiątka 1</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MEMENTO_2_NAME" Language="pl_PL">
-			<Text>Pamiątka 2</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="pl_PL">
 			<Text>Niestandardowe: ustaw zestaw triumfów dla każdej epoki osobno.</Text>

@@ -13,6 +13,13 @@
 		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="ko_KR">
 			<Text>활성화</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTOS_NAME" Language="ko_KR"><Text>메멘토</Text></Replace>
+		<Replace Tag="LOC_ZG_TEAM_DESCRIPTION" Language="ko_KR">
+			<Text>같은 팀의 플레이어는 승리, 시야, 영구 평화를 공유합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TEAM_NAME" Language="ko_KR">
+			<Text>팀</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_FAST" Language="ko_KR">
 			<Text>이 시대의 각 획득량이 1.5배가 됩니다.</Text>
 		</Replace>
@@ -736,12 +743,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="ko_KR">
 			<Text>무작위 기념품</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MEMENTO_1_NAME" Language="ko_KR">
-			<Text>기념품 1</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MEMENTO_2_NAME" Language="ko_KR">
-			<Text>기념품 2</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="ko_KR">
 			<Text>사용자 지정: 시대별로 개가 세트를 개별 설정합니다.</Text>

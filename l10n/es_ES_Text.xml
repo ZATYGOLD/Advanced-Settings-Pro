@@ -13,6 +13,13 @@
 		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="es_ES">
 			<Text>Activado</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTOS_NAME" Language="es_ES"><Text>Recuerdos</Text></Replace>
+		<Replace Tag="LOC_ZG_TEAM_DESCRIPTION" Language="es_ES">
+			<Text>Los jugadores del mismo equipo comparten victoria, visión y una paz permanente.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TEAM_NAME" Language="es_ES">
+			<Text>Equipo</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_FAST" Language="es_ES">
 			<Text>Cada concesión de esta era aporta la mitad más.</Text>
 		</Replace>
@@ -736,12 +743,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="es_ES">
 			<Text>Recuerdos aleatorios</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MEMENTO_1_NAME" Language="es_ES">
-			<Text>Recuerdo 1</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MEMENTO_2_NAME" Language="es_ES">
-			<Text>Recuerdo 2</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="es_ES">
 			<Text>Personalizado: establece el conjunto de triunfos de cada era individualmente.</Text>

@@ -8,6 +8,7 @@
 import { template, insert } from 'fs://game/core/vendor/solid-js/web/dist/web.js';
 import { createMemo, createComponent, createRenderEffect, mergeProps, For, Show } from 'fs://game/core/vendor/solid-js/dist/solid.js';
 import { ComponentRegistry } from 'fs://game/core/ui-next/services/component-registry.js';
+import { multiplayerTeamColors } from 'fs://game/core/ui/utilities/utilities-network-constants.js';
 import { Activatable } from 'fs://game/core/ui-next/components/activatable.js';
 import { Button } from 'fs://game/core/ui-next/components/button.js';
 import { Dropdown, DropdownItem } from 'fs://game/core/ui-next/components/dropdown.js';
@@ -28,18 +29,39 @@ import './zg-map-tab.js';
 const OVERRIDE_PRIORITY = 110;
 const PLAYER_TAB_NAME = "advanced-options-player";
 const MEMENTO_PARAM_IDS = ["PlayerMementoMajorSlot", "PlayerMementoMinorSlot1"];
-const MEMENTO_HEADERS = ["LOC_ZG_MEMENTO_1_NAME", "LOC_ZG_MEMENTO_2_NAME"];
 const MEMENTO_DEFAULT_ICON = "mem_min_leader.png";
 const MEMENTO_NONE_VALUE = "NONE";
-const MEMENTO_NONE_NAME = "LOC_ZG_NONE_NAME";
+// An empty slot gets a crossed-out circle rather than a memento's own art. The
+// game's only such image is its "cannot place" cursor, which ships on every
+// platform. It is red, so it is tinted to sit beside the Random icon; set the
+// tint to "" to leave it in the game's own red.
+const MEMENTO_NONE_ICON = "fs://game/core/ui/cursors/macos/cantplace.png";
+const MEMENTO_NONE_TINT = "#8c7e62";
 // Random is not a memento the game knows: the mod keeps a per-player flag and
 // rolls a real memento into the slot, once per game session.
 const RANDOM_FLAG_PARAM_ID = "ZG_PlayerRandomMementos";
 const RANDOM_FLAGS = { ZG_RANDOM_MEMENTOS_NONE: [false, false], ZG_RANDOM_MEMENTOS_MAJOR: [true, false], ZG_RANDOM_MEMENTOS_MINOR: [false, true], ZG_RANDOM_MEMENTOS_BOTH: [true, true] };
 const RANDOM_OPTION = { value: "ZG_RANDOM", name: "LOC_ADVANCED_OPTIONS_RANDOM", description: "LOC_ADVANCED_OPTIONS_RANDOM", icon: null, sortIndex: -Infinity };
+// PlayerTeam is the game's own per-player parameter, the one the multiplayer
+// lobby writes. Its domain is a plain int, so it carries no list of choices and
+// the options have to be built here, the way the lobby builds its own.
+const TEAM_PARAM_ID = "PlayerTeam";
+const TEAM_NONE_VALUE = -1;
+const TEAM_FALLBACK_COUNT = 8;
 const POLL_MS = 250;
-// Column proportions shared by the header and the rows: Leader, Civilization, Memento 1, Memento 2.
-const COLUMN_FLEX = ["2 1 0", "2 1 0", "1.5 1 0", "1.5 1 0"];
+// Column proportions shared by the header and the rows. Team and the Mementos
+// each show one icon, so they need room for that and the dropdown arrow and no
+// more; the two name columns take what is left.
+const COLUMN_FLEX = [2, 0.68, 2, 0.62, 0.62];
+const flexOf = (grow) => `${grow} 1 0`;
+// One header can sit over more than one column: the two memento slots share a
+// single "Mementos" heading.
+const COLUMN_HEADERS = [
+	{ text: "LOC_GENERIC_LEADER", columns: [0] },
+	{ text: "LOC_ZG_TEAM_NAME", columns: [1] },
+	{ text: "LOC_GENERIC_CIVILIZATION", columns: [2] },
+	{ text: "LOC_ZG_MEMENTOS_NAME", columns: [3, 4] },
+];
 
 const resolve = (handle) => GameSetup.resolveString(handle) ?? "";
 const functionalDescriptionName = GameSetup.findString("FunctionalDescription");
@@ -53,15 +75,17 @@ const tplTagIcon = template(`<div class="create-game-civ-card-icon flex items-ce
 const tplTagText = template(`<div class="uppercase ml-2 mr-4"></div>`);
 const tplBonusTitle = template(`<div class="uppercase text-secondary-1 text-sm font-title mt-4"></div>`);
 const tplBonusRow = template(`<div class="flex flex-row mt-1 items-center"></div>`);
-const tplOption = template(`<div class="flex flex-row items-center"></div>`);
-const tplHeader = template(`<div class="flex flex-row mt-4"><div class=w-12></div><div class="flex flex-row flex-auto px-6"></div><div class=w-14></div></div>`);
+const tplOption = template(`<div class="flex flex-row items-center min-w-0"></div>`);
+// A long name has to be able to shrink, or it runs under the dropdown arrow.
+const tplOptionText = template(`<div class="min-w-0 flex-1 truncate"></div>`);
+const tplHeader = template(`<div class="flex flex-row mt-4"><div class=w-10></div><div class="flex flex-row flex-auto pl-1 pr-6"></div><div class=w-14 style="position:relative;left:0.525rem"></div></div>`);
 const tplHeaderCell = template(`<div class="m-2 flex items-center justify-center uppercase font-title tracking-150 pointer-events-auto" role=columnheader></div>`);
 const tplColumn = template(`<div class="flex flex-row"></div>`);
 const tplAddPlayer = template(`<div class="flex-auto flex flex-row justify-start items-center"><div class="advanced-options_add-player-plus bg-no-repeat bg-contain size-12 m-3"></div></div>`);
 const tplCloseBg = template(`<div class="close-button__bg absolute inset-0"></div>`);
 const tplCloseHover = template(`<div class="close-button__bg-hover absolute inset-0 opacity-0 group-hover\\:opacity-100 group-focus\\:opacity-100 transition-opacity"></div>`);
 const tplClosePressed = template(`<div class="close-button__bg-pressed absolute inset-0 opacity-0 group-active\\:opacity-100 group-pressed\\:opacity-100"></div>`);
-const tplRow = template(`<div class="flex flex-row"><div class="w-12 flex items-center justify-start text-base font-title"></div><div class="flex flex-row flex-auto px-6"></div><div class=w-14></div></div>`);
+const tplRow = template(`<div class="flex flex-row"><div class="w-10 flex items-center justify-start text-base font-title"></div><div class="flex flex-row flex-auto pl-1 pr-6"></div><div class=w-14 style="position:relative;left:0.525rem"></div></div>`);
 const tplMementoIcon = template(`<div class="size-8 mr-3 ml-2 bg-contain bg-center bg-no-repeat"></div>`);
 const tplMementoText = template(`<div class="mt-2"></div>`);
 
@@ -189,31 +213,52 @@ const MementoTooltip = (props) => {
 
 // ------------------------------------------------------------- options --
 
+function optionText(child) {
+	const el = tplOptionText();
+	insert(el, child);
+	return el;
+}
+
 const PlayerOption = (props) => {
 	const el = tplOption();
 	insert(el, createComponent(Icon, {
 		get class() { return props.param.value == "RANDOM" ? "size-8 mr-3 ml-2" : "size-12 mr-1"; },
 		get name() { return props.param.value == "RANDOM" ? "LEADER_RANDOM" : props.param.value; },
 	}), null);
-	insert(el, createComponent(L10n.Stylize, { get text() { return resolve(props.param.name); } }), null);
+	insert(el, optionText(createComponent(L10n.Stylize, { get text() { return resolve(props.param.name); } })), null);
 	return el;
 };
 
-const MementoOption = (props) => {
-	const el = tplOption();
+function addMementoIcon(el, props) {
 	if (props.param === RANDOM_OPTION) {
 		insert(el, createComponent(Icon, { class: "size-8 mr-3 ml-2", name: "LEADER_RANDOM" }), null);
-		insert(el, createComponent(L10n.Compose, { text: RANDOM_OPTION.name }), null);
-		return el;
+		return;
 	}
 	const icon = tplMementoIcon();
 	createRenderEffect(() => {
+		if (props.param.value == MEMENTO_NONE_VALUE) {
+			icon.style.backgroundImage = `url("${MEMENTO_NONE_ICON}")`;
+			if (MEMENTO_NONE_TINT) {
+				icon.style.setProperty("fxs-background-image-tint", MEMENTO_NONE_TINT);
+			} else {
+				icon.style.removeProperty("fxs-background-image-tint");
+			}
+			return;
+		}
 		icon.style.backgroundImage = `url("fs://game/${resolve(props.param.icon) || MEMENTO_DEFAULT_ICON}")`;
+		icon.style.removeProperty("fxs-background-image-tint");
 	});
 	el.appendChild(icon);
-	insert(el, createComponent(L10n.Compose, { get text() { return props.param.value == MEMENTO_NONE_VALUE ? MEMENTO_NONE_NAME : resolve(props.param.name); } }), null);
+}
+
+// A memento is shown by its icon alone, in the closed dropdown and in the open
+// list. Hovering either still gives the full memento tooltip.
+const MementoIcon = (props) => {
+	const el = tplOption();
+	addMementoIcon(el, props);
 	return el;
 };
+
 
 // Sorted, with each value listed once (the memento domain repeats its "none" entry).
 function sortPossibleValues(possibleValues) {
@@ -227,17 +272,80 @@ function sortPossibleValues(possibleValues) {
 		});
 }
 
+// ---------------------------------------------------------------- teams --
+
+// The choices for one player's team, built from the map's major player count
+// because an int parameter offers none of its own.
+function teamChoices() {
+	const count = Math.min(Math.max(Configuration.getMap()?.maxMajorPlayers ?? TEAM_FALLBACK_COUNT, 2), TEAM_FALLBACK_COUNT);
+	const choices = [{ value: TEAM_NONE_VALUE, sortIndex: -1 }];
+	for (let team = 0; team < count; team++) {
+		choices.push({ value: team, sortIndex: team });
+	}
+	return choices;
+}
+
+// A parameter-shaped view of a player's team, so it can drive the same dropdown
+// the Leader and Civilization columns use.
+function teamParameter(playerId) {
+	const choices = teamChoices();
+	const current = GameSetup.findPlayerParameter(playerId, TEAM_PARAM_ID)?.value?.value;
+	const selected = choices.find((choice) => choice.value == current) ?? choices[0];
+	return {
+		domain: { possibleValues: choices },
+		value: selected,
+		setValue: (value) => GameSetup.setPlayerParameterValue(playerId, TEAM_PARAM_ID, value),
+	};
+}
+
+// The multiplayer lobby's team badge: one tinted image for the ring, a second
+// tinted with the team's colour inside it, and the team number over the top.
+const TEAM_IMAGE = "url('fs://game/mp_lobby_teamcolor.png')";
+const TEAM_RING_TINT = "#8c7e62";
+const tplTeamBadge = template(`<div class="relative size-12 flex items-center justify-center"><div class="absolute inset-0 bg-cover"></div><div class="absolute bg-cover" style="left:0.25rem;top:0.25rem;right:0.25rem;bottom:0.25rem"></div><div class="relative font-title text-base"></div></div>`);
+const tplTeamNumber = template(`<div class="flex flex-row items-center font-title text-base"></div>`);
+
+// Colour index 0 is the empty badge, so a team maps one past it.
+const teamColor = (value) => multiplayerTeamColors[(value < 0 ? 0 : value + 1) % multiplayerTeamColors.length];
+const teamNumber = (value) => (value < 0 ? "" : `${value + 1}`);
+
+const TeamBadge = (props) => {
+	const el = tplTeamBadge();
+	const ring = el.firstChild, fill = ring.nextSibling, label = fill.nextSibling;
+	ring.style.backgroundImage = TEAM_IMAGE;
+	ring.style.setProperty("fxs-background-image-tint", TEAM_RING_TINT);
+	fill.style.backgroundImage = TEAM_IMAGE;
+	createRenderEffect(() => {
+		fill.style.setProperty("fxs-background-image-tint", teamColor(props.param.value));
+		label.textContent = teamNumber(props.param.value);
+	});
+	return el;
+};
+
+const TeamNumber = (props) => {
+	const el = tplTeamNumber();
+	createRenderEffect(() => { el.textContent = teamNumber(props.param.value); });
+	return el;
+};
+
+const TeamTooltip = () => createComponent(Tooltip.Frame, {
+	class: "flex flex-col relative max-w-128",
+	get children() { return createComponent(L10n.Compose, { text: "LOC_ZG_TEAM_DESCRIPTION" }); },
+});
+
 // A row cell sized by the shared column proportions.
 function column(index, child) {
 	const el = tplColumn();
-	el.style.flex = COLUMN_FLEX[index];
+	el.style.flex = flexOf(COLUMN_FLEX[index]);
 	insert(el, child);
 	return el;
 }
 
 // A dropdown over a setup parameter, with the given option and tooltip components.
 // `random` (optional) adds a Random item: { isRandom, setRandom }.
-function parameterDropdown(param, option, tooltip, side, classes, random) {
+// `listOption` (optional) draws the items in the open list when they should look
+// different from the selected one, as the team badge does.
+function parameterDropdown(param, option, tooltip, side, classes, random, listOption) {
 	const withTooltip = (value, trigger) => createComponent(Tooltip, {
 		initialHPosition: side,
 		get children() {
@@ -264,9 +372,10 @@ function parameterDropdown(param, option, tooltip, side, classes, random) {
 			}
 		},
 		get children() {
+			const item = listOption ?? option;
 			return createComponent(For, {
 				get each() { return items(); },
-				children: (value) => withTooltip(value, () => createComponent(DropdownItem, { value, get children() { return createComponent(option, { param: value }); } })),
+				children: (value) => withTooltip(value, () => createComponent(DropdownItem, { value, get children() { return createComponent(item, { param: value }); } })),
 			});
 		},
 	});
@@ -352,9 +461,9 @@ const PlayerSetup = () => {
 	const header = () => {
 		const el = tplHeader();
 		const cells = el.firstChild.nextSibling;
-		["LOC_GENERIC_LEADER", "LOC_GENERIC_CIVILIZATION", ...MEMENTO_HEADERS].forEach((text, index) => {
+		COLUMN_HEADERS.forEach(({ text, columns }) => {
 			const cell = tplHeaderCell();
-			cell.style.flex = COLUMN_FLEX[index];
+			cell.style.flex = flexOf(columns.reduce((total, index) => total + COLUMN_FLEX[index], 0));
 			insert(cell, createComponent(L10n.Compose, { text }));
 			cells.appendChild(cell);
 		});
@@ -366,11 +475,12 @@ const PlayerSetup = () => {
 		const number = el.firstChild, controls = number.nextSibling, close = controls.nextSibling;
 		insert(number, () => slotNum() + 1);
 		controls.appendChild(column(0, parameterDropdown(() => playerParam(slot, "PlayerLeader"), PlayerOption, LeaderTooltip, TooltipHorizontalPosition.RIGHT, "my-2 mr-2 flex-auto")));
-		controls.appendChild(column(1, parameterDropdown(() => playerParam(slot, "PlayerCivilization"), PlayerOption, CivTooltip, TooltipHorizontalPosition.LEFT, "my-2 mx-2 flex-auto")));
+		controls.appendChild(column(1, parameterDropdown(() => teamParameter(slot.playerId), TeamBadge, TeamTooltip, TooltipHorizontalPosition.LEFT, "my-2 mx-2 flex-auto", null, TeamNumber)));
+		controls.appendChild(column(2, parameterDropdown(() => playerParam(slot, "PlayerCivilization"), PlayerOption, CivTooltip, TooltipHorizontalPosition.LEFT, "my-2 mx-2 flex-auto")));
 		MEMENTO_PARAM_IDS.forEach((id, slotIndex) => {
-			controls.appendChild(column(2 + slotIndex, createComponent(Show, {
+			controls.appendChild(column(3 + slotIndex, createComponent(Show, {
 				get when() { return !slot.isLocalPlayer && playerParam(slot, id)?.domain?.possibleValues?.length > 0; },
-				get children() { return parameterDropdown(() => playerParam(slot, id), MementoOption, MementoTooltip, TooltipHorizontalPosition.LEFT, "my-2 ml-2 flex-auto", randomFor(slot, slotIndex)); },
+				get children() { return parameterDropdown(() => playerParam(slot, id), MementoIcon, MementoTooltip, TooltipHorizontalPosition.LEFT, "my-2 ml-2 flex-auto", randomFor(slot, slotIndex)); },
 			})));
 		});
 		insert(close, createComponent(Show, {

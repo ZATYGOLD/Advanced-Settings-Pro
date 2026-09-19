@@ -13,6 +13,13 @@
 		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="fr_FR">
 			<Text>Activé</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTOS_NAME" Language="fr_FR"><Text>Souvenirs</Text></Replace>
+		<Replace Tag="LOC_ZG_TEAM_DESCRIPTION" Language="fr_FR">
+			<Text>Les joueurs d'une même équipe partagent la victoire, la vision et une paix permanente.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TEAM_NAME" Language="fr_FR">
+			<Text>Équipe</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_FAST" Language="fr_FR">
 			<Text>Chaque gain de cet âge rapporte moitié plus.</Text>
 		</Replace>
@@ -736,12 +743,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="fr_FR">
 			<Text>Souvenirs aléatoires</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MEMENTO_1_NAME" Language="fr_FR">
-			<Text>Souvenir 1</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MEMENTO_2_NAME" Language="fr_FR">
-			<Text>Souvenir 2</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="fr_FR">
 			<Text>Personnalisé : définissez l'ensemble de triomphes de chaque âge individuellement.</Text>

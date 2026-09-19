@@ -13,6 +13,13 @@
 		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="de_DE">
 			<Text>Aktiviert</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTOS_NAME" Language="de_DE"><Text>Mementos</Text></Replace>
+		<Replace Tag="LOC_ZG_TEAM_DESCRIPTION" Language="de_DE">
+			<Text>Spieler im selben Team teilen Sieg, Sicht und dauerhaften Frieden.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TEAM_NAME" Language="de_DE">
+			<Text>Team</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_FAST" Language="de_DE">
 			<Text>Jede Zuteilung in diesem Zeitalter gibt die Hälfte mehr.</Text>
 		</Replace>
@@ -736,12 +743,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="de_DE">
 			<Text>Zufällige Erinnerungsstücke</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MEMENTO_1_NAME" Language="de_DE">
-			<Text>Erinnerungsstück 1</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MEMENTO_2_NAME" Language="de_DE">
-			<Text>Erinnerungsstück 2</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="de_DE">
 			<Text>Benutzerdefiniert: Lege das Triumph-Set für jedes Zeitalter einzeln fest.</Text>

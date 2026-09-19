@@ -13,6 +13,13 @@
 		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="ru_RU">
 			<Text>Включено</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTOS_NAME" Language="ru_RU"><Text>Реликвии</Text></Replace>
+		<Replace Tag="LOC_ZG_TEAM_DESCRIPTION" Language="ru_RU">
+			<Text>Игроки одной команды делят победу, обзор и постоянный мир.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TEAM_NAME" Language="ru_RU">
+			<Text>Команда</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_FAST" Language="ru_RU">
 			<Text>Каждое начисление в эту эпоху даёт в полтора раза больше.</Text>
 		</Replace>
@@ -736,12 +743,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="ru_RU">
 			<Text>Случайные памятные вещи</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MEMENTO_1_NAME" Language="ru_RU">
-			<Text>Памятная вещь 1</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MEMENTO_2_NAME" Language="ru_RU">
-			<Text>Памятная вещь 2</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="ru_RU">
 			<Text>Особый: задайте набор триумфов для каждой эпохи отдельно.</Text>

@@ -13,6 +13,13 @@
 		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="ja_JP">
 			<Text>有効</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTOS_NAME" Language="ja_JP"><Text>メメント</Text></Replace>
+		<Replace Tag="LOC_ZG_TEAM_DESCRIPTION" Language="ja_JP">
+			<Text>同じチームのプレイヤーは勝利、視界、恒久的な和平を共有します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TEAM_NAME" Language="ja_JP">
+			<Text>チーム</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_FAST" Language="ja_JP">
 			<Text>この時代の各獲得量が1.5倍になる。</Text>
 		</Replace>
@@ -736,12 +743,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="ja_JP">
 			<Text>ランダムな形見</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MEMENTO_1_NAME" Language="ja_JP">
-			<Text>形見 1</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MEMENTO_2_NAME" Language="ja_JP">
-			<Text>形見 2</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="ja_JP">
 			<Text>カスタム：時代ごとにトライアンフセットを個別に設定します。</Text>

@@ -19,6 +19,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Rewrote every option description in all 12 languages: no option repeats its own name, figures are exact, and anything with more to say reads as a summary with labelled bullets per age, map size, or project
 - Age Progress Rate explains what its points do, and all four options give their figures
 - Pace Set descriptions list what each one puts on every age
+- Player tab gains a Team column, using the same per-player team the multiplayer lobby sets: Leader, Team, Civilization, Memento 1, Memento 2
 - Random AI mementos re-roll when a new setup screen opens
 - Fixed Slow Age Progress Rate giving Modern a third milestone the base game disables
 
