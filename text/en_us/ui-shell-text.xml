@@ -918,6 +918,48 @@
 		<Row Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT"><Text>Standard mountain generation for the chosen map type.</Text></Row>
 		<Row Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE"><Text>Generates more mountains.</Text></Row>
 
+		<Row Tag="LOC_GROUPID_ZG_TERRAINOPTIONS"><Text>Terrain Settings</Text></Row>
+		<Row Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS"><Text>Resource Settings</Text></Row>
+		<Row Tag="LOC_ZG_RESOURCE_DENSITY_NAME"><Text>Resource Density</Text></Row>
+		<Row Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION">
+			<Text>Sets how many resources are placed on the map.[n]No new resources are added, and none of the guaranteed ones are lost.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_LESS">
+			<Text>Half the usual resources.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_STANDARD">
+			<Text>The number of resources the map would place on its own.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_MORE">
+			<Text>Half again as many resources as usual.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_RESOURCE_CLUSTERING_NAME"><Text>Resource Clustering</Text></Row>
+		<Row Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION">
+			<Text>Sets whether resources gather into patches of the same kind instead of spreading out.[n]The map holds about the same number either way.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_STANDARD">
+			<Text>Resources spread out, as the map places them on its own.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_MORE">
+			<Text>A third of deposits pair up with a second tile.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_DOUBLE">
+			<Text>Three quarters of deposits grow into patches of up to three tiles.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_RESOURCE_MINIMUM_NAME"><Text>Guaranteed Resources</Text></Row>
+		<Row Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION">
+			<Text>Sets how many of each empire resource every landmass is guaranteed.[n]Applies to the ten resources the map already guarantees, and adds no floor to any other.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_LESS">
+			<Text>Two per landmass.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD">
+			<Text>Three per landmass.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_MORE">
+			<Text>Four per landmass.</Text>
+		</Row>
+
 	<!-- Pace Set -->
 		<Row Tag="LOC_ZG_PACE_PRESET_NAME"><Text>Pace Set</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION"><Text>Applies a pacing preset to the Pace Settings on the Pace tab.</Text></Row>

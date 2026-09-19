@@ -1158,6 +1158,58 @@
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="pt_BR">
 			<Text>Gera mais montanhas.</Text>
 		</Replace>
+
+		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="pt_BR">
+			<Text>Configurações do terreno</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="pt_BR">
+			<Text>Configurações de recursos</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_NAME" Language="pt_BR">
+			<Text>Densidade de recursos</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION" Language="pt_BR">
+			<Text>Define quantos recursos são colocados no mapa.[n]Nenhum recurso novo é adicionado e nenhum dos garantidos é perdido.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_LESS" Language="pt_BR">
+			<Text>Metade dos recursos habituais.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_STANDARD" Language="pt_BR">
+			<Text>Os recursos que o mapa colocaria por conta própria.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_MORE" Language="pt_BR">
+			<Text>Metade a mais de recursos que o habitual.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_NAME" Language="pt_BR">
+			<Text>Agrupamento de recursos</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION" Language="pt_BR">
+			<Text>Define se os recursos se juntam em manchas do mesmo tipo em vez de se espalharem.[n]O total fica praticamente igual nos dois casos.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_STANDARD" Language="pt_BR">
+			<Text>Os recursos se espalham como o próprio mapa os coloca.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_MORE" Language="pt_BR">
+			<Text>Um terço dos depósitos ganha um segundo espaço.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_DOUBLE" Language="pt_BR">
+			<Text>Três quartos dos depósitos crescem em manchas de até três espaços.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="pt_BR">
+			<Text>Recursos garantidos</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION" Language="pt_BR">
+			<Text>Define quantos recursos de império cada massa de terra tem garantidos.[n]Aplica-se aos dez recursos já garantidos e não cria mínimo para nenhum outro.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_LESS" Language="pt_BR">
+			<Text>Dois por massa de terra.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD" Language="pt_BR">
+			<Text>Três por massa de terra.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_MORE" Language="pt_BR">
+			<Text>Quatro por massa de terra.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="pt_BR">
 			<Text>Conjunto de ritmo</Text>
 		</Replace>

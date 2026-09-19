@@ -10,7 +10,7 @@ import { addHills, buildRainfallMap } from 'fs://game/base-standard/maps/elevati
 import { addFeatures } from 'fs://game/base-standard/maps/feature-biome-generator.js';
 import { dumpContinents, dumpTerrain, dumpElevation, dumpRainfall, dumpBiomes, dumpFeatures, dumpResources } from 'fs://game/base-standard/maps/map-debug-helpers.js';
 import { addNaturalWonders } from 'fs://game/base-standard/maps/natural-wonder-generator.js';
-import { generateResources } from 'fs://game/base-standard/maps/resource-generator.js';
+import { zgGenerateResources } from './zg-map-resources.js';
 import { generateSnow, dumpPermanentSnow } from 'fs://game/base-standard/maps/snow-generator.js';
 import { GenerationContext, GenerationPhases } from 'fs://game/base-standard/scripts/common-generation.js';
 import { profileScope, profileFunction } from 'fs://game/base-standard/scripts/profiling.js';
@@ -84,7 +84,7 @@ export async function zgGenerateMapFeatures(hexMap, context = new GenerationCont
     profileFunction("generateSnow", () => generateSnow(iWidth, iHeight));
   }
   if (context.phases & GenerationPhases.Resources) {
-    profileFunction("generateResources", () => generateResources(iWidth, iHeight));
+    profileFunction("generateResources", () => zgGenerateResources(iWidth, iHeight));
   }
   dumpContinents(iWidth, iHeight);
   dumpTerrain(iWidth, iHeight);

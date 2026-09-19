@@ -28,4 +28,8 @@ registerModConflicts([
 	{ workshopId: "3558906672", modId: "natural-wonder-spawn-fixes" },
 	{ workshopId: "3736806530", modId: "independent-powers-plus" },
 	{ workshopId: "3736762795", modId: "game-setup-plus" },
+	// Replaces the base resource generator, which this mod's map copies no longer
+	// call, so its density and clustering settings would show in setup and do
+	// nothing. Also matched by the parameters it adds, in case it is renamed.
+	{ workshopId: "3773880144", modId: "naxts-bmd-resource-density", parameterPatterns: ["BmdResource%"], nameHints: ["resource density"] },
 ]);

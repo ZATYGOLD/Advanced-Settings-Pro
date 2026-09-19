@@ -12,7 +12,7 @@ import { dumpStartSectors, dumpContinents, dumpTerrain, dumpElevation, dumpRainf
 import { g_OceanWaterColumns, g_PolarWaterRows, g_WaterPercent, g_Cutoff, g_LandmassFractal, g_FlatTerrain, g_OceanTerrain, g_FractalWeight, g_CenterWeight, g_StartSectorWeight, g_CoastTerrain } from 'fs://game/base-standard/maps/map-globals.js';
 import { needHumanNearEquator, applyCoastalErosionAdjustingForStartSectors, createOrganicLandmasses, applyCoastalErosion, markLandmassRegionId, getHeightAdjustingForStartSector, getSector } from 'fs://game/base-standard/maps/map-utilities.js';
 import { addNaturalWonders } from 'fs://game/base-standard/maps/natural-wonder-generator.js';
-import { generateResources } from 'fs://game/base-standard/maps/resource-generator.js';
+import { zgGenerateResources } from './zg-map-resources.js';
 import { generateSnow, dumpPermanentSnow } from 'fs://game/base-standard/maps/snow-generator.js';
 import { addVolcanoes, addTundraVolcanoes } from 'fs://game/base-standard/maps/volcano-generator.js';
 
@@ -176,7 +176,7 @@ function generateMap() {
   dumpBiomes(iWidth, iHeight);
   dumpFeatures(iWidth, iHeight);
   dumpPermanentSnow(iWidth, iHeight);
-  generateResources(iWidth, iHeight);
+  zgGenerateResources(iWidth, iHeight);
   startPositions = assignStartPositions(
     iNumPlayers1,
     iNumPlayers2,

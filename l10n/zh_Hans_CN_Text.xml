@@ -1158,6 +1158,58 @@
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="zh_Hans_CN">
 			<Text>生成更多的山脉。</Text>
 		</Replace>
+
+		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="zh_Hans_CN">
+			<Text>地形设置</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="zh_Hans_CN">
+			<Text>资源设置</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_NAME" Language="zh_Hans_CN">
+			<Text>资源密度</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置地图上放置的资源数量。[n]不会新增资源，也不会减少任何保证出现的资源。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_LESS" Language="zh_Hans_CN">
+			<Text>通常资源量的一半。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
+			<Text>地图自行放置的资源量。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_MORE" Language="zh_Hans_CN">
+			<Text>比通常多一半的资源。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_NAME" Language="zh_Hans_CN">
+			<Text>资源聚集</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置资源是聚成同类的小片还是分散分布。[n]两种情况下总量大致相同。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
+			<Text>资源按地图自行放置的方式分散。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_MORE" Language="zh_Hans_CN">
+			<Text>三分之一的矿藏会多出一格。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_DOUBLE" Language="zh_Hans_CN">
+			<Text>四分之三的矿藏会扩展为最多三格的小片。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="zh_Hans_CN">
+			<Text>保证资源</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置每块大陆保证获得的帝国资源数量。[n]适用于已获保证的十种资源，不会为其他资源设置下限。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_LESS" Language="zh_Hans_CN">
+			<Text>每块大陆两个。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
+			<Text>每块大陆三个。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_MORE" Language="zh_Hans_CN">
+			<Text>每块大陆四个。</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="zh_Hans_CN">
 			<Text>节奏套组</Text>
 		</Replace>

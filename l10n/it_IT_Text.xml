@@ -1158,6 +1158,58 @@
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="it_IT">
 			<Text>Genera più montagne.</Text>
 		</Replace>
+
+		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="it_IT">
+			<Text>Impostazioni del terreno</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="it_IT">
+			<Text>Impostazioni delle risorse</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_NAME" Language="it_IT">
+			<Text>Densità delle risorse</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION" Language="it_IT">
+			<Text>Imposta quante risorse vengono collocate sulla mappa.[n]Non vengono aggiunte nuove risorse e nessuna di quelle garantite va persa.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_LESS" Language="it_IT">
+			<Text>Metà delle risorse abituali.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_STANDARD" Language="it_IT">
+			<Text>Le risorse che la mappa collocherebbe da sola.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_MORE" Language="it_IT">
+			<Text>Una metà in più di risorse del solito.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_NAME" Language="it_IT">
+			<Text>Raggruppamento delle risorse</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION" Language="it_IT">
+			<Text>Imposta se le risorse si raccolgono in gruppi dello stesso tipo invece di distribuirsi.[n]Il totale resta all'incirca lo stesso in entrambi i casi.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_STANDARD" Language="it_IT">
+			<Text>Le risorse si distribuiscono come le colloca la mappa stessa.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_MORE" Language="it_IT">
+			<Text>Un terzo dei giacimenti si accompagna a una seconda casella.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_DOUBLE" Language="it_IT">
+			<Text>Tre quarti dei giacimenti crescono in gruppi fino a tre caselle.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="it_IT">
+			<Text>Risorse garantite</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION" Language="it_IT">
+			<Text>Imposta quante risorse imperiali sono garantite a ogni massa continentale.[n]Si applica alle dieci risorse già garantite e non ne impone ad altre.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_LESS" Language="it_IT">
+			<Text>Due per massa continentale.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD" Language="it_IT">
+			<Text>Tre per massa continentale.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_MORE" Language="it_IT">
+			<Text>Quattro per massa continentale.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="it_IT">
 			<Text>Set di ritmo</Text>
 		</Replace>

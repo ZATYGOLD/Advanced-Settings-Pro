@@ -1158,6 +1158,58 @@
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="zh_Hant_HK">
 			<Text>生成更多的山脈。</Text>
 		</Replace>
+
+		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="zh_Hant_HK">
+			<Text>地形設定</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="zh_Hant_HK">
+			<Text>資源設定</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_NAME" Language="zh_Hant_HK">
+			<Text>資源密度</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>設定地圖上放置的資源數量。[n]不會新增資源，也不會減少任何保證出現的資源。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_LESS" Language="zh_Hant_HK">
+			<Text>通常資源量的一半。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
+			<Text>地圖自行放置的資源量。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_MORE" Language="zh_Hant_HK">
+			<Text>比通常多一半的資源。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_NAME" Language="zh_Hant_HK">
+			<Text>資源聚集</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>設定資源是聚成同類的小片還是分散分佈。[n]兩種情況下總量大致相同。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
+			<Text>資源按地圖自行放置的方式分散。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_MORE" Language="zh_Hant_HK">
+			<Text>三分之一的礦藏會多出一格。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_DOUBLE" Language="zh_Hant_HK">
+			<Text>四分之三的礦藏會擴展為最多三格的小片。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="zh_Hant_HK">
+			<Text>保證資源</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>設定每塊大陸保證獲得的帝國資源數量。[n]適用於已獲保證的十種資源，不會為其他資源設定下限。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_LESS" Language="zh_Hant_HK">
+			<Text>每塊大陸兩個。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
+			<Text>每塊大陸三個。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_MORE" Language="zh_Hant_HK">
+			<Text>每塊大陸四個。</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="zh_Hant_HK">
 			<Text>節奏套組</Text>
 		</Replace>

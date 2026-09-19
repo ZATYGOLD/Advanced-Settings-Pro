@@ -1158,6 +1158,58 @@
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="ko_KR">
 			<Text>산이 더 많이 생성됩니다.</Text>
 		</Replace>
+
+		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="ko_KR">
+			<Text>지형 설정</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="ko_KR">
+			<Text>자원 설정</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_NAME" Language="ko_KR">
+			<Text>자원 밀도</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION" Language="ko_KR">
+			<Text>지도에 배치되는 자원의 양을 설정합니다.[n]새로운 자원이 추가되지 않으며 보장된 자원도 사라지지 않습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_LESS" Language="ko_KR">
+			<Text>평소의 절반에 해당하는 자원.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_STANDARD" Language="ko_KR">
+			<Text>지도가 자체적으로 배치하는 만큼의 자원.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_MORE" Language="ko_KR">
+			<Text>평소보다 절반 더 많은 자원.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_NAME" Language="ko_KR">
+			<Text>자원 군집</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION" Language="ko_KR">
+			<Text>자원이 흩어지지 않고 같은 종류끼리 뭉치는지 설정합니다.[n]어느 쪽이든 총량은 거의 같습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_STANDARD" Language="ko_KR">
+			<Text>지도가 자체적으로 배치하는 대로 자원이 흩어집니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_MORE" Language="ko_KR">
+			<Text>자원의 3분의 1이 두 번째 타일과 짝을 이룹니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_DOUBLE" Language="ko_KR">
+			<Text>자원의 4분의 3이 최대 3타일 규모로 뭉칩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="ko_KR">
+			<Text>보장 자원</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION" Language="ko_KR">
+			<Text>각 대륙에 보장되는 제국 자원의 수를 설정합니다.[n]이미 보장된 10종의 자원에 적용되며 다른 자원에는 하한을 두지 않습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_LESS" Language="ko_KR">
+			<Text>대륙당 2개.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD" Language="ko_KR">
+			<Text>대륙당 3개.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_MORE" Language="ko_KR">
+			<Text>대륙당 4개.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="ko_KR">
 			<Text>페이스 세트</Text>
 		</Replace>

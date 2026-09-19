@@ -1158,6 +1158,58 @@
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="ja_JP">
 			<Text>生成される山が多くなります。</Text>
 		</Replace>
+
+		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="ja_JP">
+			<Text>地形設定</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="ja_JP">
+			<Text>資源設定</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_NAME" Language="ja_JP">
+			<Text>資源の密度</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION" Language="ja_JP">
+			<Text>マップに配置される資源の量を設定します。[n]新しい資源は追加されず、保証された資源も失われません。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_LESS" Language="ja_JP">
+			<Text>通常の半分の資源。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_STANDARD" Language="ja_JP">
+			<Text>マップが本来配置する量の資源。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_MORE" Language="ja_JP">
+			<Text>通常より5割多い資源。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_NAME" Language="ja_JP">
+			<Text>資源の集中</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION" Language="ja_JP">
+			<Text>資源が分散せず同種のまとまりを作るかどうかを設定します。[n]どちらでも総量はほぼ変わりません。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_STANDARD" Language="ja_JP">
+			<Text>マップが本来配置するとおりに資源が分散します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_MORE" Language="ja_JP">
+			<Text>3分の1の資源が2タイル目を伴います。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_DOUBLE" Language="ja_JP">
+			<Text>4分の3の資源が最大3タイルのまとまりに広がります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="ja_JP">
+			<Text>保証された資源</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION" Language="ja_JP">
+			<Text>各大陸に保証される帝国資源の数を設定します。[n]すでに保証されている10種の資源に適用され、それ以外に下限は設けません。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_LESS" Language="ja_JP">
+			<Text>大陸ごとに2つ。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD" Language="ja_JP">
+			<Text>大陸ごとに3つ。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_MORE" Language="ja_JP">
+			<Text>大陸ごとに4つ。</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="ja_JP">
 			<Text>ペースセット</Text>
 		</Replace>

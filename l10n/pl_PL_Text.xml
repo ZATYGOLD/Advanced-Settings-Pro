@@ -1158,6 +1158,58 @@
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="pl_PL">
 			<Text>Generuje więcej gór.</Text>
 		</Replace>
+
+		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="pl_PL">
+			<Text>Ustawienia terenu</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="pl_PL">
+			<Text>Ustawienia surowców</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_NAME" Language="pl_PL">
+			<Text>Gęstość surowców</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION" Language="pl_PL">
+			<Text>Ustala, ile surowców pojawia się na mapie.[n]Nie dodaje nowych surowców ani nie odbiera żadnego z gwarantowanych.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_LESS" Language="pl_PL">
+			<Text>Połowa zwykłej liczby surowców.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_STANDARD" Language="pl_PL">
+			<Text>Tyle surowców, ile mapa rozmieściłaby sama.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_MORE" Language="pl_PL">
+			<Text>O połowę więcej surowców niż zwykle.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_NAME" Language="pl_PL">
+			<Text>Skupiska surowców</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION" Language="pl_PL">
+			<Text>Ustala, czy surowce skupiają się w płaty tego samego rodzaju zamiast się rozpraszać.[n]Łączna liczba pozostaje w obu przypadkach zbliżona.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_STANDARD" Language="pl_PL">
+			<Text>Surowce rozkładają się tak, jak rozmieszcza je sama mapa.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_MORE" Language="pl_PL">
+			<Text>Jedna trzecia złóż zyskuje drugie pole.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_DOUBLE" Language="pl_PL">
+			<Text>Trzy czwarte złóż rozrasta się w płaty do trzech pól.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="pl_PL">
+			<Text>Gwarantowane surowce</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION" Language="pl_PL">
+			<Text>Ustala, ile surowców imperialnych ma gwarantowany każdy ląd.[n]Dotyczy dziesięciu już gwarantowanych surowców i nie nadaje minimum żadnemu innemu.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_LESS" Language="pl_PL">
+			<Text>Dwa na ląd.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD" Language="pl_PL">
+			<Text>Trzy na ląd.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_MORE" Language="pl_PL">
+			<Text>Cztery na ląd.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="pl_PL">
 			<Text>Zestaw tempa</Text>
 		</Replace>

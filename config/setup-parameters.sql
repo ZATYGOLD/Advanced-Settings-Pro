@@ -19,7 +19,11 @@ INSERT OR IGNORE INTO ParameterGroups (GroupId, Name)
         ('PacingExplorationOptions', 'LOC_AGE_EXPLORATION_NAME'),
         ('MPAdvancedPacingExplorationOptions', 'LOC_AGE_EXPLORATION_NAME'),
         ('PacingModernOptions', 'LOC_AGE_MODERN_NAME'),
-        ('MPAdvancedPacingModernOptions', 'LOC_AGE_MODERN_NAME');
+        ('MPAdvancedPacingModernOptions', 'LOC_AGE_MODERN_NAME'),
+        ('TerrainOptions', 'LOC_GROUPID_ZG_TERRAINOPTIONS'),
+        ('MPAdvancedTerrainOptions', 'LOC_GROUPID_ZG_TERRAINOPTIONS'),
+        ('ResourceOptions', 'LOC_GROUPID_ZG_RESOURCEOPTIONS'),
+        ('MPAdvancedResourceOptions', 'LOC_GROUPID_ZG_RESOURCEOPTIONS');
 
 -- The single-player disaster group no longer holds the crisis settings, so it is
 -- renamed to Disaster Settings. Multiplayer keeps the base name.
@@ -455,7 +459,7 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 --*******************************************************
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
-        ('ZG_LakeGeneration', 'LOC_ZG_LAKE_GENERATION_NAME', 'LOC_ZG_LAKE_GENERATION_DESCRIPTION','ZG_LakeGenerationDomain', 'ZG_DEFAULT_LAKE_GENERATION', 0, 'Game', 'LakeGenerationKey', 'MapOptions', 'MPAdvancedMapOptions', 0, 1033);
+        ('ZG_LakeGeneration', 'LOC_ZG_LAKE_GENERATION_NAME', 'LOC_ZG_LAKE_GENERATION_DESCRIPTION','ZG_LakeGenerationDomain', 'ZG_DEFAULT_LAKE_GENERATION', 0, 'Game', 'LakeGenerationKey', 'TerrainOptions', 'MPAdvancedTerrainOptions', 0, 150);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
@@ -505,8 +509,11 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
         ('ZG_MapTemperature', 'LOC_ZG_MAP_TEMPERATURE_NAME', 'LOC_ZG_MAP_TEMPERATURE_DESCRIPTION', 'ZG_MapTemperatureDomain', 'ZG_STANDARD_TEMPERATURE', 0, 'Game', 'MapTemperatureKey', 'MapOptions', 'MPAdvancedMapOptions', 0, 1031),
-        ('ZG_Rivers', 'LOC_ZG_RIVERS_NAME', 'LOC_ZG_RIVERS_DESCRIPTION','ZG_RiversDomain', 'ZG_DEFAULT_RIVERS', 0, 'Game', 'RiversKey', 'MapOptions', 'MPAdvancedMapOptions', 0, 1034),
-        ('ZG_Mountains', 'LOC_ZG_MOUNTAINS_NAME', 'LOC_ZG_MOUNTAINS_DESCRIPTION','ZG_MountainsDomain', 'ZG_DEFAULT_MOUNTAINS', 0, 'Game', 'MountainsKey', 'MapOptions', 'MPAdvancedMapOptions', 0, 1035);
+        ('ZG_Rivers', 'LOC_ZG_RIVERS_NAME', 'LOC_ZG_RIVERS_DESCRIPTION','ZG_RiversDomain', 'ZG_DEFAULT_RIVERS', 0, 'Game', 'RiversKey', 'TerrainOptions', 'MPAdvancedTerrainOptions', 0, 151),
+        ('ZG_Mountains', 'LOC_ZG_MOUNTAINS_NAME', 'LOC_ZG_MOUNTAINS_DESCRIPTION','ZG_MountainsDomain', 'ZG_DEFAULT_MOUNTAINS', 0, 'Game', 'MountainsKey', 'TerrainOptions', 'MPAdvancedTerrainOptions', 0, 152),
+        ('ZG_ResourceDensity', 'LOC_ZG_RESOURCE_DENSITY_NAME', 'LOC_ZG_RESOURCE_DENSITY_DESCRIPTION', 'ZG_ResourceDensityDomain', 'ZG_RESOURCE_DENSITY_STANDARD', 0, 'Game', 'ResourceDensityKey', 'ResourceOptions', 'MPAdvancedResourceOptions', 0, 160),
+        ('ZG_ResourceClustering', 'LOC_ZG_RESOURCE_CLUSTERING_NAME', 'LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION', 'ZG_ResourceClusteringDomain', 'ZG_RESOURCE_CLUSTER_STANDARD', 0, 'Game', 'ResourceClusteringKey', 'ResourceOptions', 'MPAdvancedResourceOptions', 0, 161),
+        ('ZG_ResourceMinimum', 'LOC_ZG_RESOURCE_MINIMUM_NAME', 'LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION', 'ZG_ResourceMinimumDomain', 'ZG_RESOURCE_MINIMUM_STANDARD', 0, 'Game', 'ResourceMinimumKey', 'ResourceOptions', 'MPAdvancedResourceOptions', 0, 162);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
@@ -527,4 +534,16 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
         ('ZG_MountainsDomain', 'ZG_LESS_MOUNTAINS', 'LOC_ZG_LESS_NAME', 'LOC_ZG_MOUNTAINS_DESCRIPTION_LESS', 20),
         ('ZG_MountainsDomain', 'ZG_DEFAULT_MOUNTAINS', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT', 30),
-        ('ZG_MountainsDomain', 'ZG_MORE_MOUNTAINS', 'LOC_ZG_MORE_NAME', 'LOC_ZG_MOUNTAINS_DESCRIPTION_MORE', 40);
+        ('ZG_MountainsDomain', 'ZG_MORE_MOUNTAINS', 'LOC_ZG_MORE_NAME', 'LOC_ZG_MOUNTAINS_DESCRIPTION_MORE', 40),
+        ('ZG_ResourceDensityDomain', 'ZG_RESOURCE_DENSITY_LESS', 'LOC_ZG_LESS_NAME', 'LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_LESS', 10),
+        ('ZG_ResourceDensityDomain', 'ZG_RESOURCE_DENSITY_STANDARD', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_STANDARD', 20),
+        ('ZG_ResourceDensityDomain', 'ZG_RESOURCE_DENSITY_MORE', 'LOC_ZG_MORE_NAME', 'LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_MORE', 30),
+        ('ZG_ResourceClusteringDomain', 'ZG_RESOURCE_CLUSTER_STANDARD', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_STANDARD', 10),
+        ('ZG_ResourceClusteringDomain', 'ZG_RESOURCE_CLUSTER_MORE', 'LOC_ZG_MORE_NAME', 'LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_MORE', 20),
+        ('ZG_ResourceClusteringDomain', 'ZG_RESOURCE_CLUSTER_DOUBLE', 'LOC_ZG_DOUBLE_NAME', 'LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_DOUBLE', 30),
+        ('ZG_ResourceMinimumDomain', 'ZG_RESOURCE_MINIMUM_LESS', 'LOC_ZG_LESS_NAME', 'LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_LESS', 10),
+        ('ZG_ResourceMinimumDomain', 'ZG_RESOURCE_MINIMUM_STANDARD', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD', 20),
+        ('ZG_ResourceMinimumDomain', 'ZG_RESOURCE_MINIMUM_MORE', 'LOC_ZG_MORE_NAME', 'LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_MORE', 30);
+-- Sea Level joins the mod's Terrain Settings group. The base game defines it once
+-- per map through Key1/Key2 scoping, so every one of those rows moves together.
+UPDATE Parameters SET GroupId = 'TerrainOptions', GroupIDMultiplayerOverride = 'MPAdvancedTerrainOptions', SortIndex = 153 WHERE ParameterID = 'MapSeaLevel';

@@ -4,7 +4,7 @@
 		<Name>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME</Name>
 		<Description>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION</Description>
 		<Authors>Zatygold</Authors>
-		<Version>0.8.6</Version>
+		<Version>0.8.7</Version>
 		<Package>Mod</Package>
 		<ShowInBrowser>1</ShowInBrowser>
 		<EnabledByDefault>1</EnabledByDefault>
@@ -4645,6 +4645,7 @@
 					<Item>maps/zg-map-rivers.js</Item>
 					<Item>maps/zg-map-mountains.js</Item>
 					<Item>maps/zg-map-biomes.js</Item>
+					<Item>maps/zg-map-resources.js</Item>
 					<Item>maps/zg-map-generation.js</Item>
 					<Item>maps/zg-continents-voronoi.js</Item>
 					<Item>maps/zg-pangaea-voronoi.js</Item>
@@ -4684,6 +4685,7 @@
 					<Item>maps/zg-map-rivers.js</Item>
 					<Item>maps/zg-map-mountains.js</Item>
 					<Item>maps/zg-map-biomes.js</Item>
+					<Item>maps/zg-map-resources.js</Item>
 					<Item>maps/zg-map-generation.js</Item>
 					<Item>maps/zg-continents-voronoi.js</Item>
 					<Item>maps/zg-pangaea-voronoi.js</Item>

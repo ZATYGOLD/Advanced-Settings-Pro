@@ -1158,6 +1158,58 @@
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="fr_FR">
 			<Text>Génère plus de montagnes.</Text>
 		</Replace>
+
+		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="fr_FR">
+			<Text>Paramètres du terrain</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="fr_FR">
+			<Text>Paramètres des ressources</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_NAME" Language="fr_FR">
+			<Text>Densité des ressources</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION" Language="fr_FR">
+			<Text>Définit combien de ressources sont placées sur la carte.[n]Aucune ressource n'est ajoutée et aucune ressource garantie n'est perdue.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_LESS" Language="fr_FR">
+			<Text>Moitié moins de ressources que d'habitude.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_STANDARD" Language="fr_FR">
+			<Text>Le nombre de ressources que la carte placerait d'elle-même.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_MORE" Language="fr_FR">
+			<Text>Moitié plus de ressources que d'habitude.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_NAME" Language="fr_FR">
+			<Text>Regroupement des ressources</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION" Language="fr_FR">
+			<Text>Définit si les ressources se regroupent en parcelles de même type au lieu de se disperser.[n]Le total reste à peu près le même dans les deux cas.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_STANDARD" Language="fr_FR">
+			<Text>Les ressources se dispersent comme la carte les place d'elle-même.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_MORE" Language="fr_FR">
+			<Text>Un tiers des gisements gagne une seconde case.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_DOUBLE" Language="fr_FR">
+			<Text>Trois quarts des gisements forment des parcelles allant jusqu'à trois cases.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="fr_FR">
+			<Text>Ressources garanties</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION" Language="fr_FR">
+			<Text>Définit combien de ressources d'empire sont garanties sur chaque masse continentale.[n]S'applique aux dix ressources déjà garanties et n'en impose à aucune autre.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_LESS" Language="fr_FR">
+			<Text>Deux par masse continentale.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD" Language="fr_FR">
+			<Text>Trois par masse continentale.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_MORE" Language="fr_FR">
+			<Text>Quatre par masse continentale.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="fr_FR">
 			<Text>Ensemble de rythme</Text>
 		</Replace>

@@ -1158,6 +1158,58 @@
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="ru_RU">
 			<Text>Создаёт больше гор.</Text>
 		</Replace>
+
+		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="ru_RU">
+			<Text>Настройки местности</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="ru_RU">
+			<Text>Настройки ресурсов</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_NAME" Language="ru_RU">
+			<Text>Плотность ресурсов</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION" Language="ru_RU">
+			<Text>Задает, сколько ресурсов размещается на карте.[n]Новые ресурсы не добавляются, и ни один из гарантированных не теряется.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_LESS" Language="ru_RU">
+			<Text>Вдвое меньше ресурсов, чем обычно.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>Столько ресурсов, сколько карта разместила бы сама.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_MORE" Language="ru_RU">
+			<Text>В полтора раза больше ресурсов, чем обычно.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_NAME" Language="ru_RU">
+			<Text>Скопления ресурсов</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION" Language="ru_RU">
+			<Text>Задает, собираются ли ресурсы в пятна одного вида вместо равномерного распределения.[n]Общее количество при этом почти не меняется.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>Ресурсы распределяются так, как их размещает сама карта.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_MORE" Language="ru_RU">
+			<Text>Треть залежей получает вторую клетку.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_DOUBLE" Language="ru_RU">
+			<Text>Три четверти залежей разрастаются в пятна до трех клеток.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="ru_RU">
+			<Text>Гарантированные ресурсы</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION" Language="ru_RU">
+			<Text>Задает, сколько имперских ресурсов гарантировано каждому материку.[n]Применяется к десяти уже гарантированным ресурсам и не задает минимум остальным.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_LESS" Language="ru_RU">
+			<Text>Два на материк.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>Три на материк.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_MORE" Language="ru_RU">
+			<Text>Четыре на материк.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="ru_RU">
 			<Text>Набор темпа</Text>
 		</Replace>

@@ -1158,6 +1158,58 @@
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="de_DE">
 			<Text>Generiert mehr Berge.</Text>
 		</Replace>
+
+		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="de_DE">
+			<Text>Geländeeinstellungen</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="de_DE">
+			<Text>Ressourceneinstellungen</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_NAME" Language="de_DE">
+			<Text>Ressourcendichte</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION" Language="de_DE">
+			<Text>Legt fest, wie viele Ressourcen auf der Karte platziert werden.[n]Es kommen keine neuen hinzu, und keine der garantierten geht verloren.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_LESS" Language="de_DE">
+			<Text>Halb so viele Ressourcen wie üblich.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_STANDARD" Language="de_DE">
+			<Text>So viele Ressourcen, wie die Karte von sich aus platzieren würde.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_MORE" Language="de_DE">
+			<Text>Die Hälfte mehr Ressourcen als üblich.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_NAME" Language="de_DE">
+			<Text>Ressourcenbündelung</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION" Language="de_DE">
+			<Text>Legt fest, ob sich Ressourcen zu Feldern gleicher Art zusammenfinden, statt sich zu verteilen.[n]Die Gesamtzahl bleibt dabei etwa gleich.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_STANDARD" Language="de_DE">
+			<Text>Ressourcen verteilen sich so, wie die Karte sie von sich aus platziert.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_MORE" Language="de_DE">
+			<Text>Ein Drittel der Vorkommen erhält ein zweites Feld.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_DOUBLE" Language="de_DE">
+			<Text>Drei Viertel der Vorkommen wachsen zu Feldern von bis zu drei Kacheln.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="de_DE">
+			<Text>Garantierte Ressourcen</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION" Language="de_DE">
+			<Text>Legt fest, wie viele Reichsressourcen jeder Landmasse garantiert sind.[n]Gilt für die zehn bereits garantierten Ressourcen und fügt keiner anderen eine Untergrenze hinzu.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_LESS" Language="de_DE">
+			<Text>Zwei pro Landmasse.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD" Language="de_DE">
+			<Text>Drei pro Landmasse.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_MORE" Language="de_DE">
+			<Text>Vier pro Landmasse.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="de_DE">
 			<Text>Tempo-Set</Text>
 		</Replace>

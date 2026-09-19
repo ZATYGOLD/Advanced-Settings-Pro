@@ -4,6 +4,14 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ## Version History
 
+### 0.8.7
+
+- The Map tab gains two groups below Map Settings: Terrain Settings holds Lakes, Rivers, Mountains, and the game's own Sea Level; Resource Settings holds the three new resource settings
+- New Resource Density setting: Less (half), Standard, or More (half again), scaling how many resources the map places
+- New Resource Clustering setting: Standard, More, or Double, gathering resources into patches of the same kind; the density is scaled back so the map total holds
+- New Guaranteed Resources setting: Less, Standard, or More, setting how many of each empire resource every landmass is promised, from two to four
+- Resource placement runs through the mod's own copy on all eleven maps, so no base file is replaced
+
 ### 0.8.6
 
 - Fixed Fast Treasure Convoy Movement loading outside the Exploration age, where the treasure fleet ability it attaches to does not exist
