@@ -33,10 +33,14 @@ import './zg-map-tab.js';
 
 const OVERRIDE_PRIORITY = 110;
 const PLAYER_TAB_NAME = "advanced-options-player";
-// Mods that render their own Player tab. One of these being enabled is not a
-// conflict to resolve but a tab to concede: this file stands aside so the other
-// mod's tab body is the one that shows. Listed by mod id, as the modinfo
-// declares it.
+// INTERIM: mods that render their own Player tab, by mod id as their modinfo
+// declares it. One of these being enabled is not a conflict to resolve but a tab
+// to concede, so this file stands aside and lets their tab body show.
+//
+// This is a stopgap held on this side while those authors have not handled the
+// overlap on theirs, and is meant to be removed rather than grown. To drop it,
+// delete this list and the `claimingMod` branch at the tab hook below; nothing
+// else refers to either.
 const PLAYER_TAB_MODS = ["Enable_Custom_Map_Start_Locations"];
 const MEMENTO_PARAM_IDS = ["PlayerMementoMajorSlot", "PlayerMementoMinorSlot1"];
 const MEMENTO_DEFAULT_ICON = "mem_min_leader.png";
@@ -668,6 +672,8 @@ const PlayerSetup = () => {
 
 // ------------------------------------------------------------ tab hook --
 
+// INTERIM, removed with PLAYER_TAB_MODS above.
+//
 // Tab.Item is a single component shared by every tab, so its override priority
 // cannot be set per tab: whoever holds the registration holds all of them. To
 // leave one tab to another mod, this file skips its own registration entirely

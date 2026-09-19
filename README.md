@@ -13,7 +13,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - New AI Mementos setting in Game Settings fills every AI player's slots at once: None, Random, Leader Match, or Civilization Match
 - A Match draws each slot from one of the leader's or civilization's two attributes, the first slot from the first attribute; it applies only to players whose leader or civilization has been chosen, since AI slots stay on Random until the game starts
 - Random Mementos now uses each language's own word for a memento, matching the Mementos column
-- Player tab stands aside for mods that provide their own, leaving that tab to them while keeping the Pace and Map tabs
+- Player tab stands aside for mods that provide their own, leaving that tab to them while keeping the Pace and Map tabs; an interim measure until those mods handle the overlap themselves
 
 ### 0.8.4
 
