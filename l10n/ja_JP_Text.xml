@@ -889,12 +889,6 @@
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE" Language="ja_JP">
 			<Text>生産力が2倍。開拓者：50ではなく100（標準速度の場合）。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="ja_JP">
-			<Text>オンライン2.0</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="ja_JP">
-			<Text>非常に速いペース。標準より150%速い。</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="ja_JP">
 			<Text>マラソン2.0</Text>
 		</Replace>
@@ -924,7 +918,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_90" Language="ja_JP">
 			<Text>[BLIST]
-				[LI] Online 2.0:36ポイント
 				[LI] Online:45ポイント
 				[LI] Quick:60ポイント
 				[LI] Standard:90ポイント
@@ -934,7 +927,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100" Language="ja_JP">
 			<Text>[BLIST]
-				[LI] Online 2.0:40ポイント
 				[LI] Online:50ポイント
 				[LI] Quick:67ポイント
 				[LI] Standard:100ポイント
@@ -944,7 +936,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110" Language="ja_JP">
 			<Text>[BLIST]
-				[LI] Online 2.0:44ポイント
 				[LI] Online:55ポイント
 				[LI] Quick:73ポイント
 				[LI] Standard:110ポイント
@@ -954,7 +945,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120" Language="ja_JP">
 			<Text>[BLIST]
-				[LI] Online 2.0:48ポイント
 				[LI] Online:60ポイント
 				[LI] Quick:80ポイント
 				[LI] Standard:120ポイント
@@ -964,7 +954,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130" Language="ja_JP">
 			<Text>[BLIST]
-				[LI] Online 2.0:52ポイント
 				[LI] Online:65ポイント
 				[LI] Quick:87ポイント
 				[LI] Standard:130ポイント
@@ -974,7 +963,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140" Language="ja_JP">
 			<Text>[BLIST]
-				[LI] Online 2.0:56ポイント
 				[LI] Online:70ポイント
 				[LI] Quick:93ポイント
 				[LI] Standard:140ポイント
@@ -984,7 +972,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150" Language="ja_JP">
 			<Text>[BLIST]
-				[LI] Online 2.0:60ポイント
 				[LI] Online:75ポイント
 				[LI] Quick:100ポイント
 				[LI] Standard:150ポイント
@@ -994,7 +981,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="ja_JP">
 			<Text>[BLIST]
-				[LI] Online 2.0:64ポイント
 				[LI] Online:80ポイント
 				[LI] Quick:107ポイント
 				[LI] Standard:160ポイント
@@ -1004,7 +990,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="ja_JP">
 			<Text>[BLIST]
-				[LI] Online 2.0:68ポイント
 				[LI] Online:85ポイント
 				[LI] Quick:113ポイント
 				[LI] Standard:170ポイント
@@ -1014,7 +999,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180" Language="ja_JP">
 			<Text>[BLIST]
-				[LI] Online 2.0:72ポイント
 				[LI] Online:90ポイント
 				[LI] Quick:120ポイント
 				[LI] Standard:180ポイント
@@ -1024,7 +1008,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190" Language="ja_JP">
 			<Text>[BLIST]
-				[LI] Online 2.0:76ポイント
 				[LI] Online:95ポイント
 				[LI] Quick:127ポイント
 				[LI] Standard:190ポイント
@@ -1034,7 +1017,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="ja_JP">
 			<Text>[BLIST]
-				[LI] Online 2.0:80ポイント
 				[LI] Online:100ポイント
 				[LI] Quick:133ポイント
 				[LI] Standard:200ポイント
@@ -1044,7 +1026,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220" Language="ja_JP">
 			<Text>[BLIST]
-				[LI] Online 2.0:88ポイント
 				[LI] Online:110ポイント
 				[LI] Quick:147ポイント
 				[LI] Standard:220ポイント
@@ -1054,7 +1035,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240" Language="ja_JP">
 			<Text>[BLIST]
-				[LI] Online 2.0:96ポイント
 				[LI] Online:120ポイント
 				[LI] Quick:160ポイント
 				[LI] Standard:240ポイント
@@ -1064,7 +1044,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260" Language="ja_JP">
 			<Text>[BLIST]
-				[LI] Online 2.0:104ポイント
 				[LI] Online:130ポイント
 				[LI] Quick:173ポイント
 				[LI] Standard:260ポイント
@@ -1074,7 +1053,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280" Language="ja_JP">
 			<Text>[BLIST]
-				[LI] Online 2.0:112ポイント
 				[LI] Online:140ポイント
 				[LI] Quick:187ポイント
 				[LI] Standard:280ポイント
@@ -1084,7 +1062,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300" Language="ja_JP">
 			<Text>[BLIST]
-				[LI] Online 2.0:120ポイント
 				[LI] Online:150ポイント
 				[LI] Quick:200ポイント
 				[LI] Standard:300ポイント
@@ -1094,7 +1071,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="ja_JP">
 			<Text>時代の終了がやや早まる。[nn][BLIST]
-				[LI] Online 2.0：48ポイント
 				[LI] Online：60ポイント
 				[LI] Quick：80ポイント
 				[LI] Standard：120ポイント
@@ -1104,7 +1080,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="ja_JP">
 			<Text>標準的な時代の長さ。[nn][BLIST]
-				[LI] Online 2.0：56ポイント
 				[LI] Online：70ポイント
 				[LI] Quick：93ポイント
 				[LI] Standard：140ポイント
@@ -1114,7 +1089,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="ja_JP">
 			<Text>時代がやや長く継続する。[nn][BLIST]
-				[LI] Online 2.0：64ポイント
 				[LI] Online：80ポイント
 				[LI] Quick：107ポイント
 				[LI] Standard：160ポイント
@@ -1159,41 +1133,23 @@
 			<Text>生成される山が多くなります。</Text>
 		</Replace>
 
-		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="ja_JP">
-			<Text>地形設定</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_NAME" Language="ja_JP">
+			<Text>資源</Text>
 		</Replace>
-		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="ja_JP">
-			<Text>資源設定</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION" Language="ja_JP">
+			<Text>マップに配置される資源の量と、資源がまとまりを作るかどうかを設定します。[n]新しい資源は追加されず、保証された資源も失われません。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_NAME" Language="ja_JP">
-			<Text>資源の密度</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_SPARSE" Language="ja_JP">
+			<Text>通常の半分の資源が、最大3タイルのまとまりに集まります。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION" Language="ja_JP">
-			<Text>マップに配置される資源の量を設定します。[n]新しい資源は追加されず、保証された資源も失われません。</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_STANDARD" Language="ja_JP">
+			<Text>マップが本来配置する量の資源が、均等に散らばります。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_LESS" Language="ja_JP">
-			<Text>通常の半分の資源。</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT" Language="ja_JP">
+			<Text>通常より5割多い資源が、均等に散らばります。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_STANDARD" Language="ja_JP">
-			<Text>マップが本来配置する量の資源。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_MORE" Language="ja_JP">
-			<Text>通常より5割多い資源。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_NAME" Language="ja_JP">
-			<Text>資源の集中</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION" Language="ja_JP">
-			<Text>資源が分散せず同種のまとまりを作るかどうかを設定します。[n]どちらでも総量はほぼ変わりません。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_STANDARD" Language="ja_JP">
-			<Text>マップが本来配置するとおりに資源が分散します。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_MORE" Language="ja_JP">
-			<Text>3分の1の資源が2タイル目を伴います。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_DOUBLE" Language="ja_JP">
-			<Text>4分の3の資源が最大3タイルのまとまりに広がります。</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_RANDOM" Language="ja_JP">
+			<Text>マップ生成時に他の設定から抽選されます。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="ja_JP">
 			<Text>保証された資源</Text>
@@ -1201,14 +1157,27 @@
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION" Language="ja_JP">
 			<Text>各大陸に保証される帝国資源の数を設定します。[n]すでに保証されている10種の資源に適用され、それ以外に下限は設けません。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_LESS" Language="ja_JP">
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_SPARSE" Language="ja_JP">
 			<Text>大陸ごとに2つ。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD" Language="ja_JP">
 			<Text>大陸ごとに3つ。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_MORE" Language="ja_JP">
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT" Language="ja_JP">
 			<Text>大陸ごとに4つ。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_RANDOM" Language="ja_JP">
+			<Text>マップ生成時に他の設定から抽選されます。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="ja_JP">
+			<Text>マップ生成時に他の設定から抽選されます。</Text>
+		</Replace>
+
+		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="ja_JP">
+			<Text>地形設定</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="ja_JP">
+			<Text>資源設定</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="ja_JP">
 			<Text>ペースセット</Text>

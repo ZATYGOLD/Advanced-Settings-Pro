@@ -4,7 +4,7 @@
 		<Name>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME</Name>
 		<Description>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION</Description>
 		<Authors>Zatygold</Authors>
-		<Version>0.8.7</Version>
+		<Version>0.8.8</Version>
 		<Package>Mod</Package>
 		<ShowInBrowser>1</ShowInBrowser>
 		<EnabledByDefault>1</EnabledByDefault>
@@ -4641,6 +4641,7 @@
 					<Item>config/map-scripts.sql</Item>
 				</UpdateDatabase>
 				<ImportFiles>
+					<Item>maps/zg-map-settings.js</Item>
 					<Item>maps/zg-map-rivers.js</Item>
 					<Item>maps/zg-map-mountains.js</Item>
 					<Item>maps/zg-map-biomes.js</Item>
@@ -4681,6 +4682,7 @@
 					<Item>l10n/zh_Hant_HK_Text.xml</Item>
 				</UpdateText>
 				<ImportFiles>
+					<Item>maps/zg-map-settings.js</Item>
 					<Item>maps/zg-map-rivers.js</Item>
 					<Item>maps/zg-map-mountains.js</Item>
 					<Item>maps/zg-map-biomes.js</Item>

@@ -718,8 +718,6 @@
 		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_DEEP"><Text>Many rivers, with far more of them navigable.</Text></Row>
 
 	<!-- Game Speeds -->
-		<Row Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME"><Text>Online 2.0</Text></Row>
-		<Row Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION"><Text>An extremely fast pace. 150% faster than Standard speed.</Text></Row>
 		<Row Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME"><Text>Marathon 2.0</Text></Row>
 		<Row Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION"><Text>An extremely slow pace. 400% slower than Standard speed.</Text></Row>
 
@@ -738,7 +736,6 @@
 				[LI] Exploration: 100 points
 				[LI] Modern: 110 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_90"><Text>[BLIST]
-				[LI] Online 2.0: 36 points
 				[LI] Online: 45 points
 				[LI] Quick: 60 points
 				[LI] Standard: 90 points
@@ -746,7 +743,6 @@
 				[LI] Marathon: 270 points
 				[LI] Marathon 2.0: 450 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100"><Text>[BLIST]
-				[LI] Online 2.0: 40 points
 				[LI] Online: 50 points
 				[LI] Quick: 67 points
 				[LI] Standard: 100 points
@@ -754,7 +750,6 @@
 				[LI] Marathon: 300 points
 				[LI] Marathon 2.0: 500 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110"><Text>[BLIST]
-				[LI] Online 2.0: 44 points
 				[LI] Online: 55 points
 				[LI] Quick: 73 points
 				[LI] Standard: 110 points
@@ -762,7 +757,6 @@
 				[LI] Marathon: 330 points
 				[LI] Marathon 2.0: 550 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120"><Text>[BLIST]
-				[LI] Online 2.0: 48 points
 				[LI] Online: 60 points
 				[LI] Quick: 80 points
 				[LI] Standard: 120 points
@@ -770,7 +764,6 @@
 				[LI] Marathon: 360 points
 				[LI] Marathon 2.0: 600 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130"><Text>[BLIST]
-				[LI] Online 2.0: 52 points
 				[LI] Online: 65 points
 				[LI] Quick: 87 points
 				[LI] Standard: 130 points
@@ -778,7 +771,6 @@
 				[LI] Marathon: 390 points
 				[LI] Marathon 2.0: 650 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140"><Text>[BLIST]
-				[LI] Online 2.0: 56 points
 				[LI] Online: 70 points
 				[LI] Quick: 93 points
 				[LI] Standard: 140 points
@@ -786,7 +778,6 @@
 				[LI] Marathon: 420 points
 				[LI] Marathon 2.0: 700 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150"><Text>[BLIST]
-				[LI] Online 2.0: 60 points
 				[LI] Online: 75 points
 				[LI] Quick: 100 points
 				[LI] Standard: 150 points
@@ -794,7 +785,6 @@
 				[LI] Marathon: 450 points
 				[LI] Marathon 2.0: 750 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160"><Text>[BLIST]
-				[LI] Online 2.0: 64 points
 				[LI] Online: 80 points
 				[LI] Quick: 107 points
 				[LI] Standard: 160 points
@@ -802,7 +792,6 @@
 				[LI] Marathon: 480 points
 				[LI] Marathon 2.0: 800 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170"><Text>[BLIST]
-				[LI] Online 2.0: 68 points
 				[LI] Online: 85 points
 				[LI] Quick: 113 points
 				[LI] Standard: 170 points
@@ -810,7 +799,6 @@
 				[LI] Marathon: 510 points
 				[LI] Marathon 2.0: 850 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180"><Text>[BLIST]
-				[LI] Online 2.0: 72 points
 				[LI] Online: 90 points
 				[LI] Quick: 120 points
 				[LI] Standard: 180 points
@@ -818,7 +806,6 @@
 				[LI] Marathon: 540 points
 				[LI] Marathon 2.0: 900 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190"><Text>[BLIST]
-				[LI] Online 2.0: 76 points
 				[LI] Online: 95 points
 				[LI] Quick: 127 points
 				[LI] Standard: 190 points
@@ -826,7 +813,6 @@
 				[LI] Marathon: 570 points
 				[LI] Marathon 2.0: 950 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200"><Text>[BLIST]
-				[LI] Online 2.0: 80 points
 				[LI] Online: 100 points
 				[LI] Quick: 133 points
 				[LI] Standard: 200 points
@@ -834,7 +820,6 @@
 				[LI] Marathon: 600 points
 				[LI] Marathon 2.0: 1000 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220"><Text>[BLIST]
-				[LI] Online 2.0: 88 points
 				[LI] Online: 110 points
 				[LI] Quick: 147 points
 				[LI] Standard: 220 points
@@ -842,7 +827,6 @@
 				[LI] Marathon: 660 points
 				[LI] Marathon 2.0: 1100 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240"><Text>[BLIST]
-				[LI] Online 2.0: 96 points
 				[LI] Online: 120 points
 				[LI] Quick: 160 points
 				[LI] Standard: 240 points
@@ -850,7 +834,6 @@
 				[LI] Marathon: 720 points
 				[LI] Marathon 2.0: 1200 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260"><Text>[BLIST]
-				[LI] Online 2.0: 104 points
 				[LI] Online: 130 points
 				[LI] Quick: 173 points
 				[LI] Standard: 260 points
@@ -858,7 +841,6 @@
 				[LI] Marathon: 780 points
 				[LI] Marathon 2.0: 1300 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280"><Text>[BLIST]
-				[LI] Online 2.0: 112 points
 				[LI] Online: 140 points
 				[LI] Quick: 187 points
 				[LI] Standard: 280 points
@@ -866,7 +848,6 @@
 				[LI] Marathon: 840 points
 				[LI] Marathon 2.0: 1400 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300"><Text>[BLIST]
-				[LI] Online 2.0: 120 points
 				[LI] Online: 150 points
 				[LI] Quick: 200 points
 				[LI] Standard: 300 points
@@ -875,7 +856,6 @@
 				[LI] Marathon 2.0: 1500 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC">
 			<Text>Ages will end slightly faster.[nn][BLIST]
-				[LI] Online 2.0: 48 points
 				[LI] Online: 60 points
 				[LI] Quick: 80 points
 				[LI] Standard: 120 points
@@ -885,7 +865,6 @@
 		</Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC">
 			<Text>The standard age length.[nn][BLIST]
-				[LI] Online 2.0: 56 points
 				[LI] Online: 70 points
 				[LI] Quick: 93 points
 				[LI] Standard: 140 points
@@ -895,7 +874,6 @@
 		</Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_LONG_DESC">
 			<Text>Ages will last slightly longer.[nn][BLIST]
-				[LI] Online 2.0: 64 points
 				[LI] Online: 80 points
 				[LI] Quick: 107 points
 				[LI] Standard: 160 points
@@ -918,47 +896,44 @@
 		<Row Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT"><Text>Standard mountain generation for the chosen map type.</Text></Row>
 		<Row Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE"><Text>Generates more mountains.</Text></Row>
 
-		<Row Tag="LOC_GROUPID_ZG_TERRAINOPTIONS"><Text>Terrain Settings</Text></Row>
-		<Row Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS"><Text>Resource Settings</Text></Row>
-		<Row Tag="LOC_ZG_RESOURCE_DENSITY_NAME"><Text>Resource Density</Text></Row>
-		<Row Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION">
-			<Text>Sets how many resources are placed on the map.[n]No new resources are added, and none of the guaranteed ones are lost.</Text>
+		<Row Tag="LOC_ZG_RESOURCES_NAME"><Text>Resources</Text></Row>
+		<Row Tag="LOC_ZG_RESOURCES_DESCRIPTION">
+			<Text>Sets how many resources are placed on the map and whether they gather into patches.[n]No new resources are added, and none of the guaranteed ones are lost.</Text>
 		</Row>
-		<Row Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_LESS">
-			<Text>Half the usual resources.</Text>
+		<Row Tag="LOC_ZG_RESOURCES_DESCRIPTION_SPARSE">
+			<Text>Half the usual resources, gathered into patches of up to three tiles.</Text>
 		</Row>
-		<Row Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_STANDARD">
-			<Text>The number of resources the map would place on its own.</Text>
+		<Row Tag="LOC_ZG_RESOURCES_DESCRIPTION_STANDARD">
+			<Text>The resources the map would place on its own, spread evenly.</Text>
 		</Row>
-		<Row Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_MORE">
-			<Text>Half again as many resources as usual.</Text>
+		<Row Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT">
+			<Text>Half again as many resources as usual, spread evenly.</Text>
 		</Row>
-		<Row Tag="LOC_ZG_RESOURCE_CLUSTERING_NAME"><Text>Resource Clustering</Text></Row>
-		<Row Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION">
-			<Text>Sets whether resources gather into patches of the same kind instead of spreading out.[n]The map holds about the same number either way.</Text>
-		</Row>
-		<Row Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_STANDARD">
-			<Text>Resources spread out, as the map places them on its own.</Text>
-		</Row>
-		<Row Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_MORE">
-			<Text>A third of deposits pair up with a second tile.</Text>
-		</Row>
-		<Row Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_DOUBLE">
-			<Text>Three quarters of deposits grow into patches of up to three tiles.</Text>
+		<Row Tag="LOC_ZG_RESOURCES_DESCRIPTION_RANDOM">
+			<Text>Drawn from the other settings when the map is generated.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_RESOURCE_MINIMUM_NAME"><Text>Guaranteed Resources</Text></Row>
 		<Row Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION">
 			<Text>Sets how many of each empire resource every landmass is guaranteed.[n]Applies to the ten resources the map already guarantees, and adds no floor to any other.</Text>
 		</Row>
-		<Row Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_LESS">
+		<Row Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_SPARSE">
 			<Text>Two per landmass.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD">
 			<Text>Three per landmass.</Text>
 		</Row>
-		<Row Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_MORE">
+		<Row Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT">
 			<Text>Four per landmass.</Text>
 		</Row>
+		<Row Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_RANDOM">
+			<Text>Drawn from the other settings when the map is generated.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM">
+			<Text>Drawn from the other settings when the map is generated.</Text>
+		</Row>
+
+		<Row Tag="LOC_GROUPID_ZG_TERRAINOPTIONS"><Text>Terrain Settings</Text></Row>
+		<Row Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS"><Text>Resource Settings</Text></Row>
 
 	<!-- Pace Set -->
 		<Row Tag="LOC_ZG_PACE_PRESET_NAME"><Text>Pace Set</Text></Row>

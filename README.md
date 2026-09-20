@@ -4,12 +4,18 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ## Version History
 
+### 0.8.8
+
+- Resource Density and Resource Clustering become one Resources setting: Sparse (half, gathered into patches of up to three tiles), Standard, Abundant (half again, spread evenly), or Random
+- Guaranteed Resources runs Sparse, Standard, Abundant, or Random
+- Map Temperature gains Random
+- A setting left on Random is drawn when the map is generated rather than in the setup screen, so the result follows the map seed and stays unknown until the map exists
+- Removed the Online 2.0 game speed, and the Age Length point tables lose its column
+
 ### 0.8.7
 
-- The Map tab gains two groups below Map Settings: Terrain Settings holds Lakes, Rivers, Mountains, and the game's own Sea Level; Resource Settings holds the three new resource settings
-- New Resource Density setting: Less (half), Standard, or More (half again), scaling how many resources the map places
-- New Resource Clustering setting: Standard, More, or Double, gathering resources into patches of the same kind; the density is scaled back so the map total holds
-- New Guaranteed Resources setting: Less, Standard, or More, setting how many of each empire resource every landmass is promised, from two to four
+- The Map tab gains two groups below Map Settings: Terrain Settings holds Lakes, Rivers, Mountains, and the game's own Sea Level; Resource Settings holds the new resource settings
+- New Resource Density, Resource Clustering, and Guaranteed Resources settings
 - Resource placement runs through the mod's own copy on all eleven maps, so no base file is replaced
 
 ### 0.8.6
@@ -138,27 +144,28 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 - Single Player No Age Transitions: Enabled or Disabled
 - Game Random Seed and Map Random Seed: a Random button beside each field rolls a new seed (single player)
-- Game Speed: adds Online 2.0 (150% faster than Standard) and Marathon 2.0 (400% slower than Standard)
-- Age Length: the game's own setting, moved to Pace Settings on the Pace tab and extended with Brief (90), Doubled (280), and Custom; it drives the per-age rows (any total from 90 to 300), and a per-age change shows Custom; switching it off Custom returns every other Pace Settings setting to Standard
+- Game Speed: adds Marathon 2.0 (400% slower than Standard)
 - Pace Set (Game Settings, mirrored on the Pace tab): Swift Pace, Standard Pace, Balanced Pace, Extended Pace, Multiplayer Pace, or Custom Pace (written into the Pace Settings on the Pace tab)
+- Age Length: the game's own setting, moved to Pace Settings on the Pace tab and extended with Swift, Balanced, Extended, and Custom, giving Swift, Abbreviated, Standard, Balanced, Long, Extended, or Custom; it drives the per-age rows, and a per-age change shows Custom; switching it off Custom returns every other Pace Settings setting to Standard
 - Age Progress Rate: Slow, Standard, Balanced, Fast, or Custom (milestone and future tech/civic points x0.5 / x1 / the Balanced curve / x1.5)
-- Technology Cost and Civic Cost: Low (25% cheaper), Standard, Medium (25% more), High (50% more), Double (100% more), or Custom (per-age rows pick -25%, +25%, +35% to +100%)
-- City Growth: Slow (25% more Food per citizen), Standard, Quick (25% less), Fast (half), or Custom
-- Roads: Slow (25% more movement cost), Standard, Quick (25% less), Fast (50% less), or Custom
-- Victory Project Cost: Low, Standard, Medium, High, Double, or Custom (per-age rows pick -25%, +20%, +25%, +50%, or +100%); covers every age's science and military triumph projects, from Chart the Stars to Launch Rocket and Operation Ivy
-- Antiquity, Exploration, and Modern rows for each Custom pacing setting above
+- Technology Cost, Civic Cost, and Victory Project Cost: Low (25% cheaper), Standard, Medium (25% more), High (50% more), Double (100% more), Swift, Balanced, Extended, or Custom; Victory Project Cost covers every age's science and military triumph projects, from Chart the Stars to Launch Rocket and Operation Ivy
+- City Growth: Slow (25% more Food per citizen), Standard, Quick (25% less), Fast (half), Swift, Balanced, Extended, or Custom
+- Roads: Slow (25% more movement cost), Standard, Quick (25% less), Fast (50% less), Swift, Balanced, Extended, or Custom
+- Antiquity, Exploration, and Modern rows for each pacing setting above, used when it is Custom: Age Length picks a total from 90 to 300, the cost rows pick -25%, Standard, +25%, +50%, or +100%, and City Growth and Roads pick +25%, Standard, -25%, or -50%
 - Disaster Frequency: Disabled, Light, Moderate, Catastrophic, or Custom
 - Antiquity, Exploration, and Modern disaster frequency: Disabled, Light, Moderate, or Catastrophic each, applied when Disaster Frequency is set to Custom
-- Settler Speed: Slow, Standard, Quick, or Fast
-- Treasure Convoy Speed: Slow, Standard, Quick, or Fast
-- Military Unit Cost: Low (25% cheaper), Standard, Medium (25% more), High (50% more), or Double (100% more)
-- Civilian Unit Cost: Low (25% cheaper), Standard, Medium (25% more), High (50% more), or Double (100% more)
+- Settler Movement and Treasure Convoy Movement: Slow, Standard, Quick, or Fast
+- Military Unit Cost and Civilian Unit Cost: Low (25% cheaper), Standard, Medium (25% more), High (50% more), or Double (100% more)
 - Natural Wonders: Disabled, Half, Standard, More, or Double
 - Natural Wonder Selection: Enabled or Disabled for each of the 22 natural wonders, including DLC wonders
-- Map Temperature: Cold, Standard, or Hot (Hot extends the tropical band 8 degrees and the desert band 7 degrees toward the poles; Cold starts tundra 8 degrees closer to the equator; plains and grassland only shrink where those bands grow)
+- Map Temperature: Cold, Standard, Hot, or Random (Hot extends the tropical band 8 degrees and the desert band 7 degrees toward the poles; Cold starts tundra 8 degrees closer to the equator; plains and grassland only shrink where those bands grow)
 - Lakes: Less, Standard, or More
 - Rivers: sets both how many rivers are generated and what share of them are Navigable Rivers rather than Minor Rivers, as every pairing of three river counts with three navigable shares. The list is grouped by river count, fewest first. Few rivers: Wadis, Arid, or Channels. A standard number: Shallow, Standard, or Waterways. Many rivers: Streams, Riverlands, or Deep. Within each group the first has far fewer of those rivers navigable, the second keeps the game's own share, and the third has far more; Standard leaves generation entirely untouched
 - Mountains: Less, Standard, or More
+- Sea Level: the game's own setting, grouped with the terrain settings
+- Resources: Sparse, Standard, Abundant, or Random; sets both how many resources are placed and whether they gather into patches of the same kind. Sparse is half the usual number gathered into patches of up to three tiles, Abundant is half again as many spread evenly, and the total is held steady against the clustering so the two halves stay independent
+- Guaranteed Resources: Sparse, Standard, Abundant, or Random, setting how many of each empire resource every landmass is promised, from two to four; it applies to the ten resources the game already guarantees and adds no floor to any other
+- A setting offering Random draws one of its real values when the map is generated, not in the setup screen, so the result follows the map seed and stays unknown until the map exists
 - Crises: Enabled or Disabled, driving the game's per-crisis selection
 - Crisis Timing: Early, Standard, or Late (Disabled while Crises is Disabled)
 - Settlement Limit: Less, Standard, More, or Custom
@@ -167,14 +174,15 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Independent Amount: None, Less, Standard, or More
 - Independent Spacing: Less, Standard, or More
 - Independent Aggression: Calm, Standard, or Raging (raid boldness plus starting independent units)
-- AI Mementos (Player tab, single player): Major and Minor Memento dropdowns on each AI player's row beside Leader and Civilization, each with a Random option rolled afresh every game
+- AI Mementos (Game Settings, single player): None, Random, Leader Match, or Civilization Match, filling every AI player's memento slots at once; a Match draws each slot from one of that leader's or civilization's two attributes, and applies only to players whose leader or civilization has been chosen
+- Player tab (single player): Leader, Team, Civilization, and two Memento slots on every player's row. Team is no team or any of eight, shown as the multiplayer lobby's own badge, and players on a team win together. Each AI memento slot offers None and Random, with Random rolled afresh every game
 - Triumph Set: adds Custom to the game's setting, with an Antiquity, Exploration, and Modern Triumph Set each choosable from the game's sets
 
 The conflict guard recognizes conflicting mods by their id and by the setup settings they add to the game, so renaming a mod does not bypass it.
 
 All settings are chosen at game creation and apply for the full game.
 
-In single player, the Advanced Settings screen gains a Pace tab (Pace Settings plus a group per age) and a Map tab between General and Player; the Map tab holds the map, natural wonder, and disaster settings, while the crisis settings move into their own Crisis Settings group on General and Initial Independent Hostility joins the Independent Power settings; multiplayer keeps the game's standard layout.
+In single player, the Advanced Settings screen gains a Pace tab (Pace Settings plus a group per age) and a Map tab between General and Player. The Map tab runs Map Settings, then Terrain Settings (Lakes, Rivers, Mountains, Sea Level), Resource Settings, Natural Wonder Selection, and Disaster Settings. On General, the crisis settings move into their own Crisis Settings group and Initial Independent Hostility joins the Independent Power settings. The Player tab is rendered by the mod so it can carry the Team and Memento columns, and stands aside for any mod that provides its own. Multiplayer keeps the game's standard layout.
 
 ## Project Structure
 

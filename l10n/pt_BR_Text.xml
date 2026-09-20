@@ -889,12 +889,6 @@
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE" Language="pt_BR">
 			<Text>O dobro de produção. Colono: 100 em vez de 50. (Em velocidade padrão)</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="pt_BR">
-			<Text>Online 2.0</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="pt_BR">
-			<Text>Um ritmo extremamente rápido. 150% mais rápido que o Padrão.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="pt_BR">
 			<Text>Maratona 2.0</Text>
 		</Replace>
@@ -924,7 +918,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_90" Language="pt_BR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 36 pontos
 				[LI] Online: 45 pontos
 				[LI] Quick: 60 pontos
 				[LI] Standard: 90 pontos
@@ -934,7 +927,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100" Language="pt_BR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 40 pontos
 				[LI] Online: 50 pontos
 				[LI] Quick: 67 pontos
 				[LI] Standard: 100 pontos
@@ -944,7 +936,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110" Language="pt_BR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 44 pontos
 				[LI] Online: 55 pontos
 				[LI] Quick: 73 pontos
 				[LI] Standard: 110 pontos
@@ -954,7 +945,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120" Language="pt_BR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 48 pontos
 				[LI] Online: 60 pontos
 				[LI] Quick: 80 pontos
 				[LI] Standard: 120 pontos
@@ -964,7 +954,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130" Language="pt_BR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 52 pontos
 				[LI] Online: 65 pontos
 				[LI] Quick: 87 pontos
 				[LI] Standard: 130 pontos
@@ -974,7 +963,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140" Language="pt_BR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 56 pontos
 				[LI] Online: 70 pontos
 				[LI] Quick: 93 pontos
 				[LI] Standard: 140 pontos
@@ -984,7 +972,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150" Language="pt_BR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 60 pontos
 				[LI] Online: 75 pontos
 				[LI] Quick: 100 pontos
 				[LI] Standard: 150 pontos
@@ -994,7 +981,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="pt_BR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 64 pontos
 				[LI] Online: 80 pontos
 				[LI] Quick: 107 pontos
 				[LI] Standard: 160 pontos
@@ -1004,7 +990,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="pt_BR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 68 pontos
 				[LI] Online: 85 pontos
 				[LI] Quick: 113 pontos
 				[LI] Standard: 170 pontos
@@ -1014,7 +999,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180" Language="pt_BR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 72 pontos
 				[LI] Online: 90 pontos
 				[LI] Quick: 120 pontos
 				[LI] Standard: 180 pontos
@@ -1024,7 +1008,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190" Language="pt_BR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 76 pontos
 				[LI] Online: 95 pontos
 				[LI] Quick: 127 pontos
 				[LI] Standard: 190 pontos
@@ -1034,7 +1017,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="pt_BR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 80 pontos
 				[LI] Online: 100 pontos
 				[LI] Quick: 133 pontos
 				[LI] Standard: 200 pontos
@@ -1044,7 +1026,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220" Language="pt_BR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 88 pontos
 				[LI] Online: 110 pontos
 				[LI] Quick: 147 pontos
 				[LI] Standard: 220 pontos
@@ -1054,7 +1035,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240" Language="pt_BR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 96 pontos
 				[LI] Online: 120 pontos
 				[LI] Quick: 160 pontos
 				[LI] Standard: 240 pontos
@@ -1064,7 +1044,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260" Language="pt_BR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 104 pontos
 				[LI] Online: 130 pontos
 				[LI] Quick: 173 pontos
 				[LI] Standard: 260 pontos
@@ -1074,7 +1053,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280" Language="pt_BR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 112 pontos
 				[LI] Online: 140 pontos
 				[LI] Quick: 187 pontos
 				[LI] Standard: 280 pontos
@@ -1084,7 +1062,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300" Language="pt_BR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 120 pontos
 				[LI] Online: 150 pontos
 				[LI] Quick: 200 pontos
 				[LI] Standard: 300 pontos
@@ -1094,7 +1071,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="pt_BR">
 			<Text>Eras terminarão um pouco mais rápido.[nn][BLIST]
-				[LI] Online 2.0: 48 pontos
 				[LI] Online: 60 pontos
 				[LI] Quick: 80 pontos
 				[LI] Standard: 120 pontos
@@ -1104,7 +1080,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="pt_BR">
 			<Text>A duração de era padrão.[nn][BLIST]
-				[LI] Online 2.0: 56 pontos
 				[LI] Online: 70 pontos
 				[LI] Quick: 93 pontos
 				[LI] Standard: 140 pontos
@@ -1114,7 +1089,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="pt_BR">
 			<Text>Eras durarão um pouco mais.[nn][BLIST]
-				[LI] Online 2.0: 64 pontos
 				[LI] Online: 80 pontos
 				[LI] Quick: 107 pontos
 				[LI] Standard: 160 pontos
@@ -1159,41 +1133,23 @@
 			<Text>Gera mais montanhas.</Text>
 		</Replace>
 
-		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="pt_BR">
-			<Text>Configurações do terreno</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_NAME" Language="pt_BR">
+			<Text>Recursos</Text>
 		</Replace>
-		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="pt_BR">
-			<Text>Configurações de recursos</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION" Language="pt_BR">
+			<Text>Define quantos recursos são colocados no mapa e se eles se juntam em manchas.[n]Nenhum recurso novo é adicionado e nenhum dos garantidos é perdido.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_NAME" Language="pt_BR">
-			<Text>Densidade de recursos</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_SPARSE" Language="pt_BR">
+			<Text>Metade dos recursos habituais, reunidos em manchas de até três espaços.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION" Language="pt_BR">
-			<Text>Define quantos recursos são colocados no mapa.[n]Nenhum recurso novo é adicionado e nenhum dos garantidos é perdido.</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_STANDARD" Language="pt_BR">
+			<Text>Os recursos que o mapa colocaria por conta própria, espalhados de forma uniforme.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_LESS" Language="pt_BR">
-			<Text>Metade dos recursos habituais.</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT" Language="pt_BR">
+			<Text>Metade a mais de recursos que o habitual, espalhados de forma uniforme.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_STANDARD" Language="pt_BR">
-			<Text>Os recursos que o mapa colocaria por conta própria.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_MORE" Language="pt_BR">
-			<Text>Metade a mais de recursos que o habitual.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_NAME" Language="pt_BR">
-			<Text>Agrupamento de recursos</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION" Language="pt_BR">
-			<Text>Define se os recursos se juntam em manchas do mesmo tipo em vez de se espalharem.[n]O total fica praticamente igual nos dois casos.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_STANDARD" Language="pt_BR">
-			<Text>Os recursos se espalham como o próprio mapa os coloca.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_MORE" Language="pt_BR">
-			<Text>Um terço dos depósitos ganha um segundo espaço.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_DOUBLE" Language="pt_BR">
-			<Text>Três quartos dos depósitos crescem em manchas de até três espaços.</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_RANDOM" Language="pt_BR">
+			<Text>Sorteado entre as outras opções ao gerar o mapa.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="pt_BR">
 			<Text>Recursos garantidos</Text>
@@ -1201,14 +1157,27 @@
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION" Language="pt_BR">
 			<Text>Define quantos recursos de império cada massa de terra tem garantidos.[n]Aplica-se aos dez recursos já garantidos e não cria mínimo para nenhum outro.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_LESS" Language="pt_BR">
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_SPARSE" Language="pt_BR">
 			<Text>Dois por massa de terra.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD" Language="pt_BR">
 			<Text>Três por massa de terra.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_MORE" Language="pt_BR">
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT" Language="pt_BR">
 			<Text>Quatro por massa de terra.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_RANDOM" Language="pt_BR">
+			<Text>Sorteado entre as outras opções ao gerar o mapa.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="pt_BR">
+			<Text>Sorteado entre as outras opções ao gerar o mapa.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="pt_BR">
+			<Text>Configurações do terreno</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="pt_BR">
+			<Text>Configurações de recursos</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="pt_BR">
 			<Text>Conjunto de ritmo</Text>

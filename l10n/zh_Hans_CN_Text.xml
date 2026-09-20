@@ -889,12 +889,6 @@
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE" Language="zh_Hans_CN">
 			<Text>生产力翻倍。开拓者：100，而非50（标准速度下）。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="zh_Hans_CN">
-			<Text>线上2.0</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>极快的节奏。比标准快150%。</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="zh_Hans_CN">
 			<Text>马拉松2.0</Text>
 		</Replace>
@@ -924,7 +918,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_90" Language="zh_Hans_CN">
 			<Text>[BLIST]
-				[LI] Online 2.0:36点
 				[LI] Online:45点
 				[LI] Quick:60点
 				[LI] Standard:90点
@@ -934,7 +927,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100" Language="zh_Hans_CN">
 			<Text>[BLIST]
-				[LI] Online 2.0:40点
 				[LI] Online:50点
 				[LI] Quick:67点
 				[LI] Standard:100点
@@ -944,7 +936,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110" Language="zh_Hans_CN">
 			<Text>[BLIST]
-				[LI] Online 2.0:44点
 				[LI] Online:55点
 				[LI] Quick:73点
 				[LI] Standard:110点
@@ -954,7 +945,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120" Language="zh_Hans_CN">
 			<Text>[BLIST]
-				[LI] Online 2.0:48点
 				[LI] Online:60点
 				[LI] Quick:80点
 				[LI] Standard:120点
@@ -964,7 +954,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130" Language="zh_Hans_CN">
 			<Text>[BLIST]
-				[LI] Online 2.0:52点
 				[LI] Online:65点
 				[LI] Quick:87点
 				[LI] Standard:130点
@@ -974,7 +963,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140" Language="zh_Hans_CN">
 			<Text>[BLIST]
-				[LI] Online 2.0:56点
 				[LI] Online:70点
 				[LI] Quick:93点
 				[LI] Standard:140点
@@ -984,7 +972,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150" Language="zh_Hans_CN">
 			<Text>[BLIST]
-				[LI] Online 2.0:60点
 				[LI] Online:75点
 				[LI] Quick:100点
 				[LI] Standard:150点
@@ -994,7 +981,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="zh_Hans_CN">
 			<Text>[BLIST]
-				[LI] Online 2.0:64点
 				[LI] Online:80点
 				[LI] Quick:107点
 				[LI] Standard:160点
@@ -1004,7 +990,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="zh_Hans_CN">
 			<Text>[BLIST]
-				[LI] Online 2.0:68点
 				[LI] Online:85点
 				[LI] Quick:113点
 				[LI] Standard:170点
@@ -1014,7 +999,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180" Language="zh_Hans_CN">
 			<Text>[BLIST]
-				[LI] Online 2.0:72点
 				[LI] Online:90点
 				[LI] Quick:120点
 				[LI] Standard:180点
@@ -1024,7 +1008,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190" Language="zh_Hans_CN">
 			<Text>[BLIST]
-				[LI] Online 2.0:76点
 				[LI] Online:95点
 				[LI] Quick:127点
 				[LI] Standard:190点
@@ -1034,7 +1017,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="zh_Hans_CN">
 			<Text>[BLIST]
-				[LI] Online 2.0:80点
 				[LI] Online:100点
 				[LI] Quick:133点
 				[LI] Standard:200点
@@ -1044,7 +1026,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220" Language="zh_Hans_CN">
 			<Text>[BLIST]
-				[LI] Online 2.0:88点
 				[LI] Online:110点
 				[LI] Quick:147点
 				[LI] Standard:220点
@@ -1054,7 +1035,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240" Language="zh_Hans_CN">
 			<Text>[BLIST]
-				[LI] Online 2.0:96点
 				[LI] Online:120点
 				[LI] Quick:160点
 				[LI] Standard:240点
@@ -1064,7 +1044,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260" Language="zh_Hans_CN">
 			<Text>[BLIST]
-				[LI] Online 2.0:104点
 				[LI] Online:130点
 				[LI] Quick:173点
 				[LI] Standard:260点
@@ -1074,7 +1053,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280" Language="zh_Hans_CN">
 			<Text>[BLIST]
-				[LI] Online 2.0:112点
 				[LI] Online:140点
 				[LI] Quick:187点
 				[LI] Standard:280点
@@ -1084,7 +1062,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300" Language="zh_Hans_CN">
 			<Text>[BLIST]
-				[LI] Online 2.0:120点
 				[LI] Online:150点
 				[LI] Quick:200点
 				[LI] Standard:300点
@@ -1094,7 +1071,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="zh_Hans_CN">
 			<Text>时代将稍快结束。[nn][BLIST]
-				[LI] Online 2.0：48点
 				[LI] Online：60点
 				[LI] Quick：80点
 				[LI] Standard：120点
@@ -1104,7 +1080,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="zh_Hans_CN">
 			<Text>标准的时代长度。[nn][BLIST]
-				[LI] Online 2.0：56点
 				[LI] Online：70点
 				[LI] Quick：93点
 				[LI] Standard：140点
@@ -1114,7 +1089,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="zh_Hans_CN">
 			<Text>时代将持续稍久。[nn][BLIST]
-				[LI] Online 2.0：64点
 				[LI] Online：80点
 				[LI] Quick：107点
 				[LI] Standard：160点
@@ -1159,41 +1133,23 @@
 			<Text>生成更多的山脉。</Text>
 		</Replace>
 
-		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="zh_Hans_CN">
-			<Text>地形设置</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_NAME" Language="zh_Hans_CN">
+			<Text>资源</Text>
 		</Replace>
-		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="zh_Hans_CN">
-			<Text>资源设置</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置地图上放置的资源数量，以及资源是否聚成小片。[n]不会新增资源，也不会减少任何保证出现的资源。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_NAME" Language="zh_Hans_CN">
-			<Text>资源密度</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_SPARSE" Language="zh_Hans_CN">
+			<Text>通常资源量的一半，聚成最多三格的小片。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>设置地图上放置的资源数量。[n]不会新增资源，也不会减少任何保证出现的资源。</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
+			<Text>地图自行放置的资源量，均匀分布。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_LESS" Language="zh_Hans_CN">
-			<Text>通常资源量的一半。</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT" Language="zh_Hans_CN">
+			<Text>比通常多一半的资源，均匀分布。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
-			<Text>地图自行放置的资源量。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_MORE" Language="zh_Hans_CN">
-			<Text>比通常多一半的资源。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_NAME" Language="zh_Hans_CN">
-			<Text>资源聚集</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>设置资源是聚成同类的小片还是分散分布。[n]两种情况下总量大致相同。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
-			<Text>资源按地图自行放置的方式分散。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_MORE" Language="zh_Hans_CN">
-			<Text>三分之一的矿藏会多出一格。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_DOUBLE" Language="zh_Hans_CN">
-			<Text>四分之三的矿藏会扩展为最多三格的小片。</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_RANDOM" Language="zh_Hans_CN">
+			<Text>生成地图时从其他选项中抽取。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="zh_Hans_CN">
 			<Text>保证资源</Text>
@@ -1201,14 +1157,27 @@
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>设置每块大陆保证获得的帝国资源数量。[n]适用于已获保证的十种资源，不会为其他资源设置下限。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_LESS" Language="zh_Hans_CN">
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_SPARSE" Language="zh_Hans_CN">
 			<Text>每块大陆两个。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
 			<Text>每块大陆三个。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_MORE" Language="zh_Hans_CN">
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT" Language="zh_Hans_CN">
 			<Text>每块大陆四个。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_RANDOM" Language="zh_Hans_CN">
+			<Text>生成地图时从其他选项中抽取。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="zh_Hans_CN">
+			<Text>生成地图时从其他选项中抽取。</Text>
+		</Replace>
+
+		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="zh_Hans_CN">
+			<Text>地形设置</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="zh_Hans_CN">
+			<Text>资源设置</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="zh_Hans_CN">
 			<Text>节奏套组</Text>

@@ -889,12 +889,6 @@
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE" Language="ru_RU">
 			<Text>Вдвое больше производства. Поселенцы: 100 вместо 50. (При стандартной скорости)</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="ru_RU">
-			<Text>Онлайн 2.0</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="ru_RU">
-			<Text>Чрезвычайно быстрый темп. На 150% быстрее стандартного.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="ru_RU">
 			<Text>Марафон 2.0</Text>
 		</Replace>
@@ -924,7 +918,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_90" Language="ru_RU">
 			<Text>[BLIST]
-				[LI] Online 2.0: 36 очков
 				[LI] Online: 45 очков
 				[LI] Quick: 60 очков
 				[LI] Standard: 90 очков
@@ -934,7 +927,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100" Language="ru_RU">
 			<Text>[BLIST]
-				[LI] Online 2.0: 40 очков
 				[LI] Online: 50 очков
 				[LI] Quick: 67 очков
 				[LI] Standard: 100 очков
@@ -944,7 +936,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110" Language="ru_RU">
 			<Text>[BLIST]
-				[LI] Online 2.0: 44 очка
 				[LI] Online: 55 очков
 				[LI] Quick: 73 очка
 				[LI] Standard: 110 очков
@@ -954,7 +945,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120" Language="ru_RU">
 			<Text>[BLIST]
-				[LI] Online 2.0: 48 очков
 				[LI] Online: 60 очков
 				[LI] Quick: 80 очков
 				[LI] Standard: 120 очков
@@ -964,7 +954,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130" Language="ru_RU">
 			<Text>[BLIST]
-				[LI] Online 2.0: 52 очка
 				[LI] Online: 65 очков
 				[LI] Quick: 87 очков
 				[LI] Standard: 130 очков
@@ -974,7 +963,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140" Language="ru_RU">
 			<Text>[BLIST]
-				[LI] Online 2.0: 56 очков
 				[LI] Online: 70 очков
 				[LI] Quick: 93 очка
 				[LI] Standard: 140 очков
@@ -984,7 +972,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150" Language="ru_RU">
 			<Text>[BLIST]
-				[LI] Online 2.0: 60 очков
 				[LI] Online: 75 очков
 				[LI] Quick: 100 очков
 				[LI] Standard: 150 очков
@@ -994,7 +981,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="ru_RU">
 			<Text>[BLIST]
-				[LI] Online 2.0: 64 очка
 				[LI] Online: 80 очков
 				[LI] Quick: 107 очков
 				[LI] Standard: 160 очков
@@ -1004,7 +990,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="ru_RU">
 			<Text>[BLIST]
-				[LI] Online 2.0: 68 очков
 				[LI] Online: 85 очков
 				[LI] Quick: 113 очков
 				[LI] Standard: 170 очков
@@ -1014,7 +999,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180" Language="ru_RU">
 			<Text>[BLIST]
-				[LI] Online 2.0: 72 очка
 				[LI] Online: 90 очков
 				[LI] Quick: 120 очков
 				[LI] Standard: 180 очков
@@ -1024,7 +1008,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190" Language="ru_RU">
 			<Text>[BLIST]
-				[LI] Online 2.0: 76 очков
 				[LI] Online: 95 очков
 				[LI] Quick: 127 очков
 				[LI] Standard: 190 очков
@@ -1034,7 +1017,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="ru_RU">
 			<Text>[BLIST]
-				[LI] Online 2.0: 80 очков
 				[LI] Online: 100 очков
 				[LI] Quick: 133 очка
 				[LI] Standard: 200 очков
@@ -1044,7 +1026,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220" Language="ru_RU">
 			<Text>[BLIST]
-				[LI] Online 2.0: 88 очков
 				[LI] Online: 110 очков
 				[LI] Quick: 147 очков
 				[LI] Standard: 220 очков
@@ -1054,7 +1035,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240" Language="ru_RU">
 			<Text>[BLIST]
-				[LI] Online 2.0: 96 очков
 				[LI] Online: 120 очков
 				[LI] Quick: 160 очков
 				[LI] Standard: 240 очков
@@ -1064,7 +1044,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260" Language="ru_RU">
 			<Text>[BLIST]
-				[LI] Online 2.0: 104 очка
 				[LI] Online: 130 очков
 				[LI] Quick: 173 очка
 				[LI] Standard: 260 очков
@@ -1074,7 +1053,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280" Language="ru_RU">
 			<Text>[BLIST]
-				[LI] Online 2.0: 112 очков
 				[LI] Online: 140 очков
 				[LI] Quick: 187 очков
 				[LI] Standard: 280 очков
@@ -1084,7 +1062,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300" Language="ru_RU">
 			<Text>[BLIST]
-				[LI] Online 2.0: 120 очков
 				[LI] Online: 150 очков
 				[LI] Quick: 200 очков
 				[LI] Standard: 300 очков
@@ -1094,7 +1071,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="ru_RU">
 			<Text>Эпохи будут проходить немного быстрее.[nn][BLIST]
-				[LI] Online 2.0: 48 очков
 				[LI] Online: 60 очков
 				[LI] Quick: 80 очков
 				[LI] Standard: 120 очков
@@ -1104,7 +1080,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="ru_RU">
 			<Text>Стандартная длительность эпохи.[nn][BLIST]
-				[LI] Online 2.0: 56 очков
 				[LI] Online: 70 очков
 				[LI] Quick: 93 очка
 				[LI] Standard: 140 очков
@@ -1114,7 +1089,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="ru_RU">
 			<Text>Эпохи будут длиться немного дольше.[nn][BLIST]
-				[LI] Online 2.0: 64 очка
 				[LI] Online: 80 очков
 				[LI] Quick: 107 очков
 				[LI] Standard: 160 очков
@@ -1159,41 +1133,23 @@
 			<Text>Создаёт больше гор.</Text>
 		</Replace>
 
-		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="ru_RU">
-			<Text>Настройки местности</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_NAME" Language="ru_RU">
+			<Text>Ресурсы</Text>
 		</Replace>
-		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="ru_RU">
-			<Text>Настройки ресурсов</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION" Language="ru_RU">
+			<Text>Задает, сколько ресурсов размещается на карте и собираются ли они в пятна.[n]Новые ресурсы не добавляются, и ни один из гарантированных не теряется.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_NAME" Language="ru_RU">
-			<Text>Плотность ресурсов</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_SPARSE" Language="ru_RU">
+			<Text>Вдвое меньше ресурсов, чем обычно, собранных в пятна до трех клеток.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION" Language="ru_RU">
-			<Text>Задает, сколько ресурсов размещается на карте.[n]Новые ресурсы не добавляются, и ни один из гарантированных не теряется.</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>Столько ресурсов, сколько карта разместила бы сама, распределенных равномерно.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_LESS" Language="ru_RU">
-			<Text>Вдвое меньше ресурсов, чем обычно.</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT" Language="ru_RU">
+			<Text>В полтора раза больше ресурсов, чем обычно, распределенных равномерно.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>Столько ресурсов, сколько карта разместила бы сама.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_MORE" Language="ru_RU">
-			<Text>В полтора раза больше ресурсов, чем обычно.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_NAME" Language="ru_RU">
-			<Text>Скопления ресурсов</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION" Language="ru_RU">
-			<Text>Задает, собираются ли ресурсы в пятна одного вида вместо равномерного распределения.[n]Общее количество при этом почти не меняется.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>Ресурсы распределяются так, как их размещает сама карта.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_MORE" Language="ru_RU">
-			<Text>Треть залежей получает вторую клетку.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_DOUBLE" Language="ru_RU">
-			<Text>Три четверти залежей разрастаются в пятна до трех клеток.</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_RANDOM" Language="ru_RU">
+			<Text>Выбирается среди остальных вариантов при создании карты.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="ru_RU">
 			<Text>Гарантированные ресурсы</Text>
@@ -1201,14 +1157,27 @@
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION" Language="ru_RU">
 			<Text>Задает, сколько имперских ресурсов гарантировано каждому материку.[n]Применяется к десяти уже гарантированным ресурсам и не задает минимум остальным.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_LESS" Language="ru_RU">
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_SPARSE" Language="ru_RU">
 			<Text>Два на материк.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD" Language="ru_RU">
 			<Text>Три на материк.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_MORE" Language="ru_RU">
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT" Language="ru_RU">
 			<Text>Четыре на материк.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_RANDOM" Language="ru_RU">
+			<Text>Выбирается среди остальных вариантов при создании карты.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="ru_RU">
+			<Text>Выбирается среди остальных вариантов при создании карты.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="ru_RU">
+			<Text>Настройки местности</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="ru_RU">
+			<Text>Настройки ресурсов</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="ru_RU">
 			<Text>Набор темпа</Text>

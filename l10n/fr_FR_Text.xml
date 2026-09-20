@@ -889,12 +889,6 @@
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE" Language="fr_FR">
 			<Text>Deux fois plus de production. Colon : 100 au lieu de 50. (À vitesse standard)</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="fr_FR">
-			<Text>En ligne 2.0</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="fr_FR">
-			<Text>Un rythme extrêmement rapide. 150% plus rapide que Standard.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="fr_FR">
 			<Text>Marathon 2.0</Text>
 		</Replace>
@@ -924,7 +918,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_90" Language="fr_FR">
 			<Text>[BLIST]
-				[LI] Online 2.0 : 36 points
 				[LI] Online : 45 points
 				[LI] Quick : 60 points
 				[LI] Standard : 90 points
@@ -934,7 +927,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100" Language="fr_FR">
 			<Text>[BLIST]
-				[LI] Online 2.0 : 40 points
 				[LI] Online : 50 points
 				[LI] Quick : 67 points
 				[LI] Standard : 100 points
@@ -944,7 +936,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110" Language="fr_FR">
 			<Text>[BLIST]
-				[LI] Online 2.0 : 44 points
 				[LI] Online : 55 points
 				[LI] Quick : 73 points
 				[LI] Standard : 110 points
@@ -954,7 +945,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120" Language="fr_FR">
 			<Text>[BLIST]
-				[LI] Online 2.0 : 48 points
 				[LI] Online : 60 points
 				[LI] Quick : 80 points
 				[LI] Standard : 120 points
@@ -964,7 +954,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130" Language="fr_FR">
 			<Text>[BLIST]
-				[LI] Online 2.0 : 52 points
 				[LI] Online : 65 points
 				[LI] Quick : 87 points
 				[LI] Standard : 130 points
@@ -974,7 +963,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140" Language="fr_FR">
 			<Text>[BLIST]
-				[LI] Online 2.0 : 56 points
 				[LI] Online : 70 points
 				[LI] Quick : 93 points
 				[LI] Standard : 140 points
@@ -984,7 +972,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150" Language="fr_FR">
 			<Text>[BLIST]
-				[LI] Online 2.0 : 60 points
 				[LI] Online : 75 points
 				[LI] Quick : 100 points
 				[LI] Standard : 150 points
@@ -994,7 +981,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="fr_FR">
 			<Text>[BLIST]
-				[LI] Online 2.0 : 64 points
 				[LI] Online : 80 points
 				[LI] Quick : 107 points
 				[LI] Standard : 160 points
@@ -1004,7 +990,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="fr_FR">
 			<Text>[BLIST]
-				[LI] Online 2.0 : 68 points
 				[LI] Online : 85 points
 				[LI] Quick : 113 points
 				[LI] Standard : 170 points
@@ -1014,7 +999,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180" Language="fr_FR">
 			<Text>[BLIST]
-				[LI] Online 2.0 : 72 points
 				[LI] Online : 90 points
 				[LI] Quick : 120 points
 				[LI] Standard : 180 points
@@ -1024,7 +1008,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190" Language="fr_FR">
 			<Text>[BLIST]
-				[LI] Online 2.0 : 76 points
 				[LI] Online : 95 points
 				[LI] Quick : 127 points
 				[LI] Standard : 190 points
@@ -1034,7 +1017,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="fr_FR">
 			<Text>[BLIST]
-				[LI] Online 2.0 : 80 points
 				[LI] Online : 100 points
 				[LI] Quick : 133 points
 				[LI] Standard : 200 points
@@ -1044,7 +1026,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220" Language="fr_FR">
 			<Text>[BLIST]
-				[LI] Online 2.0 : 88 points
 				[LI] Online : 110 points
 				[LI] Quick : 147 points
 				[LI] Standard : 220 points
@@ -1054,7 +1035,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240" Language="fr_FR">
 			<Text>[BLIST]
-				[LI] Online 2.0 : 96 points
 				[LI] Online : 120 points
 				[LI] Quick : 160 points
 				[LI] Standard : 240 points
@@ -1064,7 +1044,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260" Language="fr_FR">
 			<Text>[BLIST]
-				[LI] Online 2.0 : 104 points
 				[LI] Online : 130 points
 				[LI] Quick : 173 points
 				[LI] Standard : 260 points
@@ -1074,7 +1053,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280" Language="fr_FR">
 			<Text>[BLIST]
-				[LI] Online 2.0 : 112 points
 				[LI] Online : 140 points
 				[LI] Quick : 187 points
 				[LI] Standard : 280 points
@@ -1084,7 +1062,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300" Language="fr_FR">
 			<Text>[BLIST]
-				[LI] Online 2.0 : 120 points
 				[LI] Online : 150 points
 				[LI] Quick : 200 points
 				[LI] Standard : 300 points
@@ -1094,7 +1071,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="fr_FR">
 			<Text>Les âges s'achèvent un peu plus tôt.[nn][BLIST]
-				[LI] Online 2.0 : 48 points
 				[LI] Online : 60 points
 				[LI] Quick : 80 points
 				[LI] Standard : 120 points
@@ -1104,7 +1080,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="fr_FR">
 			<Text>La durée d'âge standard.[nn][BLIST]
-				[LI] Online 2.0 : 56 points
 				[LI] Online : 70 points
 				[LI] Quick : 93 points
 				[LI] Standard : 140 points
@@ -1114,7 +1089,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="fr_FR">
 			<Text>Les âges s'achèvent un peu plus tard.[nn][BLIST]
-				[LI] Online 2.0 : 64 points
 				[LI] Online : 80 points
 				[LI] Quick : 107 points
 				[LI] Standard : 160 points
@@ -1159,41 +1133,23 @@
 			<Text>Génère plus de montagnes.</Text>
 		</Replace>
 
-		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="fr_FR">
-			<Text>Paramètres du terrain</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_NAME" Language="fr_FR">
+			<Text>Ressources</Text>
 		</Replace>
-		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="fr_FR">
-			<Text>Paramètres des ressources</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION" Language="fr_FR">
+			<Text>Définit combien de ressources sont placées sur la carte et si elles se regroupent en parcelles.[n]Aucune ressource n'est ajoutée et aucune ressource garantie n'est perdue.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_NAME" Language="fr_FR">
-			<Text>Densité des ressources</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_SPARSE" Language="fr_FR">
+			<Text>Moitié moins de ressources que d'habitude, regroupées en parcelles allant jusqu'à trois cases.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION" Language="fr_FR">
-			<Text>Définit combien de ressources sont placées sur la carte.[n]Aucune ressource n'est ajoutée et aucune ressource garantie n'est perdue.</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_STANDARD" Language="fr_FR">
+			<Text>Les ressources que la carte placerait d'elle-même, réparties uniformément.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_LESS" Language="fr_FR">
-			<Text>Moitié moins de ressources que d'habitude.</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT" Language="fr_FR">
+			<Text>Moitié plus de ressources que d'habitude, réparties uniformément.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_STANDARD" Language="fr_FR">
-			<Text>Le nombre de ressources que la carte placerait d'elle-même.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_MORE" Language="fr_FR">
-			<Text>Moitié plus de ressources que d'habitude.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_NAME" Language="fr_FR">
-			<Text>Regroupement des ressources</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION" Language="fr_FR">
-			<Text>Définit si les ressources se regroupent en parcelles de même type au lieu de se disperser.[n]Le total reste à peu près le même dans les deux cas.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_STANDARD" Language="fr_FR">
-			<Text>Les ressources se dispersent comme la carte les place d'elle-même.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_MORE" Language="fr_FR">
-			<Text>Un tiers des gisements gagne une seconde case.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_DOUBLE" Language="fr_FR">
-			<Text>Trois quarts des gisements forment des parcelles allant jusqu'à trois cases.</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_RANDOM" Language="fr_FR">
+			<Text>Tirée parmi les autres réglages lors de la création de la carte.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="fr_FR">
 			<Text>Ressources garanties</Text>
@@ -1201,14 +1157,27 @@
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION" Language="fr_FR">
 			<Text>Définit combien de ressources d'empire sont garanties sur chaque masse continentale.[n]S'applique aux dix ressources déjà garanties et n'en impose à aucune autre.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_LESS" Language="fr_FR">
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_SPARSE" Language="fr_FR">
 			<Text>Deux par masse continentale.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD" Language="fr_FR">
 			<Text>Trois par masse continentale.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_MORE" Language="fr_FR">
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT" Language="fr_FR">
 			<Text>Quatre par masse continentale.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_RANDOM" Language="fr_FR">
+			<Text>Tirée parmi les autres réglages lors de la création de la carte.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="fr_FR">
+			<Text>Tirée parmi les autres réglages lors de la création de la carte.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="fr_FR">
+			<Text>Paramètres du terrain</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="fr_FR">
+			<Text>Paramètres des ressources</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="fr_FR">
 			<Text>Ensemble de rythme</Text>

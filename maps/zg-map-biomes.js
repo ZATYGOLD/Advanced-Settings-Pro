@@ -6,19 +6,22 @@
 // band grows into them. The rainfall extremes that force Desert and Tropical
 // are unchanged.
 import { g_PlainsLatitude, g_MarineBiome, g_DesertBiome, g_MountainTerrain, g_TropicalBiome, g_PlainsBiome, g_GrasslandBiome, g_TundraBiome } from 'fs://game/base-standard/maps/map-globals.js';
+import { zgSettingTier } from './zg-map-settings.js';
 
 const TEMPERATURE_SETTING_KEY = "MapTemperatureKey";
-// Upper bounds of the Tropical, Plains, Desert, and Grassland bands; Tundra lies beyond.
-const STANDARD_BANDS = [17, 33, 44, 58];
+const TEMPERATURE_RANDOM = "ZG_RANDOM_TEMPERATURE";
+// Upper bounds of the Tropical, Plains, Desert, and Grassland bands; Tundra lies
+// beyond. Standard carries the base game's own bands, so Random has a real third
+// tier to draw rather than only the two extremes.
 const TEMPERATURE_BANDS = {
 	ZG_COLD_TEMPERATURE: [17, 33, 44, 50],
+	ZG_STANDARD_TEMPERATURE: [17, 33, 44, 58],
 	ZG_HOT_TEMPERATURE: [25, 33, 51, 58],
 };
 
 function temperatureBands() {
-	const setting = Configuration.getGameValue(TEMPERATURE_SETTING_KEY);
-	const bands = TEMPERATURE_BANDS[setting] ?? STANDARD_BANDS;
-	console.log(`ZG-ASP temperature setting '${setting}': biome bands ${bands.join("/")}`);
+	const bands = zgSettingTier(TEMPERATURE_BANDS, TEMPERATURE_SETTING_KEY, "ZG_STANDARD_TEMPERATURE", TEMPERATURE_RANDOM);
+	console.log(`ZG-ASP temperature: biome bands ${bands.join("/")}`);
 	return bands;
 }
 

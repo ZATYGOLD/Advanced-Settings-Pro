@@ -889,12 +889,6 @@
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE" Language="ko_KR">
 			<Text>생산력 2배. 개척자: 50 대신 100. (일반 속도 기준)</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="ko_KR">
-			<Text>온라인 2.0</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="ko_KR">
-			<Text>매우 빠른 속도입니다. 표준보다 150% 빠릅니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="ko_KR">
 			<Text>마라톤 2.0</Text>
 		</Replace>
@@ -924,7 +918,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_90" Language="ko_KR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 36 포인트
 				[LI] Online: 45 포인트
 				[LI] Quick: 60 포인트
 				[LI] Standard: 90 포인트
@@ -934,7 +927,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100" Language="ko_KR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 40 포인트
 				[LI] Online: 50 포인트
 				[LI] Quick: 67 포인트
 				[LI] Standard: 100 포인트
@@ -944,7 +936,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110" Language="ko_KR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 44 포인트
 				[LI] Online: 55 포인트
 				[LI] Quick: 73 포인트
 				[LI] Standard: 110 포인트
@@ -954,7 +945,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120" Language="ko_KR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 48 포인트
 				[LI] Online: 60 포인트
 				[LI] Quick: 80 포인트
 				[LI] Standard: 120 포인트
@@ -964,7 +954,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130" Language="ko_KR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 52 포인트
 				[LI] Online: 65 포인트
 				[LI] Quick: 87 포인트
 				[LI] Standard: 130 포인트
@@ -974,7 +963,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140" Language="ko_KR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 56 포인트
 				[LI] Online: 70 포인트
 				[LI] Quick: 93 포인트
 				[LI] Standard: 140 포인트
@@ -984,7 +972,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150" Language="ko_KR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 60 포인트
 				[LI] Online: 75 포인트
 				[LI] Quick: 100 포인트
 				[LI] Standard: 150 포인트
@@ -994,7 +981,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="ko_KR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 64 포인트
 				[LI] Online: 80 포인트
 				[LI] Quick: 107 포인트
 				[LI] Standard: 160 포인트
@@ -1004,7 +990,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="ko_KR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 68 포인트
 				[LI] Online: 85 포인트
 				[LI] Quick: 113 포인트
 				[LI] Standard: 170 포인트
@@ -1014,7 +999,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180" Language="ko_KR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 72 포인트
 				[LI] Online: 90 포인트
 				[LI] Quick: 120 포인트
 				[LI] Standard: 180 포인트
@@ -1024,7 +1008,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190" Language="ko_KR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 76 포인트
 				[LI] Online: 95 포인트
 				[LI] Quick: 127 포인트
 				[LI] Standard: 190 포인트
@@ -1034,7 +1017,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="ko_KR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 80 포인트
 				[LI] Online: 100 포인트
 				[LI] Quick: 133 포인트
 				[LI] Standard: 200 포인트
@@ -1044,7 +1026,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220" Language="ko_KR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 88 포인트
 				[LI] Online: 110 포인트
 				[LI] Quick: 147 포인트
 				[LI] Standard: 220 포인트
@@ -1054,7 +1035,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240" Language="ko_KR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 96 포인트
 				[LI] Online: 120 포인트
 				[LI] Quick: 160 포인트
 				[LI] Standard: 240 포인트
@@ -1064,7 +1044,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260" Language="ko_KR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 104 포인트
 				[LI] Online: 130 포인트
 				[LI] Quick: 173 포인트
 				[LI] Standard: 260 포인트
@@ -1074,7 +1053,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280" Language="ko_KR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 112 포인트
 				[LI] Online: 140 포인트
 				[LI] Quick: 187 포인트
 				[LI] Standard: 280 포인트
@@ -1084,7 +1062,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300" Language="ko_KR">
 			<Text>[BLIST]
-				[LI] Online 2.0: 120 포인트
 				[LI] Online: 150 포인트
 				[LI] Quick: 200 포인트
 				[LI] Standard: 300 포인트
@@ -1094,7 +1071,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="ko_KR">
 			<Text>시대가 조금 더 빨리 종료됩니다.[nn][BLIST]
-				[LI] Online 2.0: 48점
 				[LI] Online: 60점
 				[LI] Quick: 80점
 				[LI] Standard: 120점
@@ -1104,7 +1080,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="ko_KR">
 			<Text>표준 시대 길이입니다.[nn][BLIST]
-				[LI] Online 2.0: 56점
 				[LI] Online: 70점
 				[LI] Quick: 93점
 				[LI] Standard: 140점
@@ -1114,7 +1089,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="ko_KR">
 			<Text>시대가 조금 더 오래 지속됩니다.[nn][BLIST]
-				[LI] Online 2.0: 64점
 				[LI] Online: 80점
 				[LI] Quick: 107점
 				[LI] Standard: 160점
@@ -1159,41 +1133,23 @@
 			<Text>산이 더 많이 생성됩니다.</Text>
 		</Replace>
 
-		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="ko_KR">
-			<Text>지형 설정</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_NAME" Language="ko_KR">
+			<Text>자원</Text>
 		</Replace>
-		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="ko_KR">
-			<Text>자원 설정</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION" Language="ko_KR">
+			<Text>지도에 배치되는 자원의 양과 자원이 뭉치는지를 설정합니다.[n]새로운 자원이 추가되지 않으며 보장된 자원도 사라지지 않습니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_NAME" Language="ko_KR">
-			<Text>자원 밀도</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_SPARSE" Language="ko_KR">
+			<Text>평소의 절반에 해당하는 자원이 최대 3타일 규모로 뭉칩니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION" Language="ko_KR">
-			<Text>지도에 배치되는 자원의 양을 설정합니다.[n]새로운 자원이 추가되지 않으며 보장된 자원도 사라지지 않습니다.</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_STANDARD" Language="ko_KR">
+			<Text>지도가 자체적으로 배치하는 만큼의 자원이 고르게 흩어집니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_LESS" Language="ko_KR">
-			<Text>평소의 절반에 해당하는 자원.</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT" Language="ko_KR">
+			<Text>평소보다 절반 더 많은 자원이 고르게 흩어집니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_STANDARD" Language="ko_KR">
-			<Text>지도가 자체적으로 배치하는 만큼의 자원.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_DENSITY_DESCRIPTION_MORE" Language="ko_KR">
-			<Text>평소보다 절반 더 많은 자원.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_NAME" Language="ko_KR">
-			<Text>자원 군집</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION" Language="ko_KR">
-			<Text>자원이 흩어지지 않고 같은 종류끼리 뭉치는지 설정합니다.[n]어느 쪽이든 총량은 거의 같습니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_STANDARD" Language="ko_KR">
-			<Text>지도가 자체적으로 배치하는 대로 자원이 흩어집니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_MORE" Language="ko_KR">
-			<Text>자원의 3분의 1이 두 번째 타일과 짝을 이룹니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_CLUSTERING_DESCRIPTION_DOUBLE" Language="ko_KR">
-			<Text>자원의 4분의 3이 최대 3타일 규모로 뭉칩니다.</Text>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_RANDOM" Language="ko_KR">
+			<Text>지도를 생성할 때 다른 설정 중에서 뽑습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="ko_KR">
 			<Text>보장 자원</Text>
@@ -1201,14 +1157,27 @@
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION" Language="ko_KR">
 			<Text>각 대륙에 보장되는 제국 자원의 수를 설정합니다.[n]이미 보장된 10종의 자원에 적용되며 다른 자원에는 하한을 두지 않습니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_LESS" Language="ko_KR">
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_SPARSE" Language="ko_KR">
 			<Text>대륙당 2개.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD" Language="ko_KR">
 			<Text>대륙당 3개.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_MORE" Language="ko_KR">
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT" Language="ko_KR">
 			<Text>대륙당 4개.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_RANDOM" Language="ko_KR">
+			<Text>지도를 생성할 때 다른 설정 중에서 뽑습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="ko_KR">
+			<Text>지도를 생성할 때 다른 설정 중에서 뽑습니다.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="ko_KR">
+			<Text>지형 설정</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="ko_KR">
+			<Text>자원 설정</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="ko_KR">
 			<Text>페이스 세트</Text>
