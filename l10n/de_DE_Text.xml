@@ -794,13 +794,13 @@
 			<Text>Heiß</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="de_DE">
-			<Text>Die Tundra beginnt näher am Äquator, auf Kosten des Graslands.</Text>
+			<Text>Tundra beginnt näher am Äquator, und Wüste weicht Grasland.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="de_DE">
 			<Text>Standardklima für den gewählten Kartentyp.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="de_DE">
-			<Text>Tropen und Wüste reichen weiter vom Äquator weg, auf Kosten von Ebenen und Grasland.</Text>
+			<Text>Wüste reicht weiter vom Äquator fort, und Tundra zieht sich zu den Polen zurück.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="de_DE">
 			<Text>Flüsse</Text>

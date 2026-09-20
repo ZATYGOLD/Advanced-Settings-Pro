@@ -794,13 +794,13 @@
 			<Text>Жаркая</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="ru_RU">
-			<Text>Тундра начинается ближе к экватору за счёт лугов.</Text>
+			<Text>Тундра начинается ближе к экватору, а пустыня уступает место лугам.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="ru_RU">
 			<Text>Стандартный климат для выбранного типа карты.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="ru_RU">
-			<Text>Тропики и пустыни простираются дальше от экватора за счёт равнин и лугов.</Text>
+			<Text>Пустыня простирается дальше от экватора, а тундра отступает к полюсам.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="ru_RU">
 			<Text>Реки</Text>

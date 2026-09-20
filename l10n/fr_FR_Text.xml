@@ -794,13 +794,13 @@
 			<Text>Chaud</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="fr_FR">
-			<Text>La toundra commence plus près de l'équateur, aux dépens des prairies.</Text>
+			<Text>La toundra commence plus près de l'équateur et le désert cède la place à la prairie.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="fr_FR">
 			<Text>Climat standard pour le type de carte choisi.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="fr_FR">
-			<Text>Les zones tropicales et le désert s'étendent plus loin de l'équateur, aux dépens des plaines et des prairies.</Text>
+			<Text>Le désert s'étend plus loin de l'équateur et la toundra se retire vers les pôles.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="fr_FR">
 			<Text>Rivières</Text>

@@ -794,13 +794,13 @@
 			<Text>고온</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="ko_KR">
-			<Text>툰드라가 적도에 더 가까운 곳에서 시작되며 그만큼 초원이 줄어듭니다.</Text>
+			<Text>툰드라가 적도에 더 가까워지고 사막이 초원으로 바뀝니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="ko_KR">
 			<Text>선택한 맵 유형의 표준 기후입니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="ko_KR">
-			<Text>열대와 사막이 적도에서 더 멀리까지 뻗으며 그만큼 평원과 초원이 줄어듭니다.</Text>
+			<Text>사막이 적도에서 더 멀리 뻗어 나가고 툰드라가 극지방으로 물러납니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="ko_KR">
 			<Text>강</Text>

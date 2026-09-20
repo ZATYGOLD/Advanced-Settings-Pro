@@ -794,13 +794,13 @@
 			<Text>Gorąca</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="pl_PL">
-			<Text>Tundra zaczyna się bliżej równika, kosztem łąk.</Text>
+			<Text>Tundra zaczyna się bliżej równika, a pustynia ustępuje łąkom.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="pl_PL">
 			<Text>Standardowy klimat dla wybranego typu mapy.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="pl_PL">
-			<Text>Tropiki i pustynia sięgają dalej od równika, kosztem równin i łąk.</Text>
+			<Text>Pustynia sięga dalej od równika, a tundra cofa się ku biegunom.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="pl_PL">
 			<Text>Rzeki</Text>

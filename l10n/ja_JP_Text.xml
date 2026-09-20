@@ -794,13 +794,13 @@
 			<Text>高温</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="ja_JP">
-			<Text>ツンドラが赤道寄りから始まり、その分草原が減ります。</Text>
+			<Text>ツンドラが赤道に近づき、砂漠が草原に置き換わります。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="ja_JP">
 			<Text>選択したマップタイプの標準的な気候。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="ja_JP">
-			<Text>熱帯と砂漠が赤道から遠くまで広がり、その分平原と草原が減ります。</Text>
+			<Text>砂漠が赤道から遠くまで広がり、ツンドラが極方向へ後退します。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="ja_JP">
 			<Text>川</Text>

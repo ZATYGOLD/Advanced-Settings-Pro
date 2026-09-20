@@ -794,13 +794,13 @@
 			<Text>Quente</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="pt_BR">
-			<Text>A tundra começa mais perto do equador, à custa da pradaria.</Text>
+			<Text>A tundra começa mais perto do equador e o deserto dá lugar à pradaria.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="pt_BR">
 			<Text>Clima padrão para o tipo de mapa escolhido.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="pt_BR">
-			<Text>Trópicos e deserto se estendem mais longe do equador, à custa de planícies e pradaria.</Text>
+			<Text>O deserto alcança mais longe do equador e a tundra recua para os polos.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="pt_BR">
 			<Text>Rios</Text>

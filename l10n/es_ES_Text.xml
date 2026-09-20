@@ -794,13 +794,13 @@
 			<Text>Cálido</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="es_ES">
-			<Text>La tundra empieza más cerca del ecuador, a costa de la pradera.</Text>
+			<Text>La tundra empieza más cerca del ecuador y el desierto cede ante la pradera.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="es_ES">
 			<Text>Clima estándar para el tipo de mapa elegido.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="es_ES">
-			<Text>El trópico y el desierto se extienden más lejos del ecuador, a costa de las llanuras y la pradera.</Text>
+			<Text>El desierto llega más lejos del ecuador y la tundra se retira hacia los polos.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="es_ES">
 			<Text>Ríos</Text>

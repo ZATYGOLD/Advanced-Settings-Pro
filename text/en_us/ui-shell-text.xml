@@ -694,9 +694,9 @@
 		<Row Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION"><Text>Shifts the climate bands that decide each land tile's biome.</Text></Row>
 		<Row Tag="LOC_ZG_COLD_NAME"><Text>Cold</Text></Row>
 		<Row Tag="LOC_ZG_HOT_NAME"><Text>Hot</Text></Row>
-		<Row Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD"><Text>Tundra begins closer to the equator, at the expense of grassland.</Text></Row>
+		<Row Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD"><Text>Tundra begins closer to the equator and desert gives way to grassland.</Text></Row>
 		<Row Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD"><Text>Standard climate for the chosen map type.</Text></Row>
-		<Row Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT"><Text>Tropical and desert reach further from the equator, at the expense of plains and grassland.</Text></Row>
+		<Row Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT"><Text>Desert reaches further from the equator and tundra retreats toward the poles.</Text></Row>
 		<Row Tag="LOC_ZG_RIVERS_NAME"><Text>Rivers</Text></Row>
 		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION"><Text>Sets how many rivers are generated and what share of them are Navigable Rivers rather than Minor Rivers.</Text></Row>
 		<Row Tag="LOC_ZG_RIVERS_WADI_NAME"><Text>Wadis</Text></Row>

@@ -8,7 +8,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 - Resource Density and Resource Clustering become one Resources setting: Sparse (half, gathered into patches of up to three tiles), Standard, Abundant (half again, spread evenly), or Random
 - Guaranteed Resources runs Sparse, Standard, Abundant, or Random
-- Map Temperature gains Random
+- Map Temperature gains Random, and Cold and Hot now move the desert and tundra bands rather than the tropical one: Hot is drier and warmer, Cold colder and less arid, with tropical and plains unchanged in both
 - A setting left on Random is drawn when the map is generated rather than in the setup screen, so the result follows the map seed and stays unknown until the map exists
 - Removed the Online 2.0 game speed, and the Age Length point tables lose its column
 
@@ -158,7 +158,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Military Unit Cost and Civilian Unit Cost: Low (25% cheaper), Standard, Medium (25% more), High (50% more), or Double (100% more)
 - Natural Wonders: Disabled, Half, Standard, More, or Double
 - Natural Wonder Selection: Enabled or Disabled for each of the 22 natural wonders, including DLC wonders
-- Map Temperature: Cold, Standard, Hot, or Random (Hot extends the tropical band 8 degrees and the desert band 7 degrees toward the poles; Cold starts tundra 8 degrees closer to the equator; plains and grassland only shrink where those bands grow)
+- Map Temperature: Cold, Standard, Hot, or Random (Hot widens the desert band 7 degrees and pushes tundra 7 degrees toward the poles; Cold narrows desert by the same 7 degrees and starts tundra 8 degrees closer to the equator; tropical and plains keep their standard edges in every tier)
 - Lakes: Less, Standard, or More
 - Rivers: sets both how many rivers are generated and what share of them are Navigable Rivers rather than Minor Rivers, as every pairing of three river counts with three navigable shares. The list is grouped by river count, fewest first. Few rivers: Wadis, Arid, or Channels. A standard number: Shallow, Standard, or Waterways. Many rivers: Streams, Riverlands, or Deep. Within each group the first has far fewer of those rivers navigable, the second keeps the game's own share, and the third has far more; Standard leaves generation entirely untouched
 - Mountains: Less, Standard, or More
