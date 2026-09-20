@@ -35,6 +35,20 @@ UPDATE ParameterGroups SET Name = 'LOC_GROUPID_ZG_DISASTEROPTIONS' WHERE GroupID
 UPDATE Parameters SET SupportsSinglePlayer = 1 WHERE ParameterID = 'SingleAgeGame';
 
 --*******************************************************
+--***************** GAME SPEEDS *************************
+--*******************************************************
+-- Puts Online 2.0 and Marathon 2.0 in the Game Speed dropdown. This is the
+-- configuration database's own GameSpeeds table, which only carries what the
+-- setup screen shows; the speeds themselves, with their cost multipliers and
+-- turn pacing, are defined against the gameplay table of the same name in
+-- data/game-speeds/new-game-speeds.sql.
+
+INSERT OR IGNORE INTO GameSpeeds (GameSpeedType, Name, Description, SortIndex)
+    VALUES
+        ('GAMESPEED_ZG_ONLINE_2', 'LOC_ZG_GAMESPEED_ONLINE_2_NAME', 'LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION', 5),
+        ('GAMESPEED_ZG_MARATHON_2', 'LOC_ZG_GAMESPEED_MARATHON_2_NAME', 'LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION', 60);
+
+--*******************************************************
 --***************** AGE LENGTH *************************
 --*******************************************************
 -- The base Age Length setting moves to All Ages on the Pace tab, gains Brief

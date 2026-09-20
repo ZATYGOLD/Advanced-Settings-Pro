@@ -4639,7 +4639,6 @@
 				<UpdateDatabase>
 					<Item>config/setup-parameters.sql</Item>
 					<Item>config/map-scripts.sql</Item>
-					<Item>config/game-speeds.sql</Item>
 				</UpdateDatabase>
 				<ImportFiles>
 					<Item>maps/zg-map-rivers.js</Item>
