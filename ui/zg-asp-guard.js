@@ -39,4 +39,81 @@ registerModConflicts([
 		parameterPatterns: ["BmdResourceDensity", "BmdResourceClustering"],
 		nameHints: ["resource density"],
 	},
+	// Sets the same settlement cap this mod's Settlement Limit does.
+	{
+		workshopId: "3768448251",
+		modId: "custom-settlement-limits",
+		parameterPatterns: ["SettlementLimitOption"],
+		nameHints: ["custom settlement limits"],
+	},
+	// Forces every crisis to Disabled as setup initializes, which fights the
+	// Crises setting and the per-crisis list it keeps in sync. Adds no setup
+	// parameter of its own, so there is no footprint to match on.
+	{ workshopId: "3763044817", modId: "crisis-disabler" },
+	// Its city limit and research cost multipliers scale the same values as
+	// Settlement Limit and Technology Cost.
+	{
+		workshopId: "3796057068",
+		modId: "lobby-setup-enhancements",
+		parameterPatterns: ["VNCityLimitMultiplier", "VNResearchCostMultiplier"],
+		nameHints: ["lobby setup"],
+	},
+	// Named in full rather than as CompactCities%: the prefix is the author's,
+	// not the setting's, and a wildcard would claim anything else they ship.
+	{
+		workshopId: "3781288701",
+		modId: "compact-cities",
+		parameterPatterns: ["CompactCities-RingLock", "CompactCities-Density", "CompactCitiesToggle"],
+		nameHints: ["compact cities"],
+	},
+	{
+		workshopId: "3747759512",
+		modId: "PEN_SelectableVictory",
+		parameterPatterns: [
+			"PenSelectableCulture",
+			"PenSelectableEconomic",
+			"PenSelectableMilitary",
+			"PenSelectableScience",
+			"PenSelectableScore",
+		],
+		nameHints: ["selectable victory"],
+	},
+	// Raises Huge maps to 32 players and randomizes the roster. It adds map
+	// sizes rather than setup parameters, so there is no footprint to match on.
+	{ workshopId: "3805458999", modId: "huge-earth-player-expansion-bmd" },
+	// Scores and times the victories the Triumph Set and Victory Project Cost
+	// settings already shape.
+	{
+		workshopId: "3799035703",
+		modId: "Advanced-Victory-Settings",
+		parameterPatterns: ["VictoryCountdownLength", "TriumphScoringAmount", "MinorTriumphsEnabled"],
+		nameHints: ["advanced victory"],
+	},
+	// Both fill the same per-player memento slots the Player tab writes to and
+	// the AI Mementos setting rolls. Their slots are the base game's
+	// PlayerMementoMajorSlot and PlayerMementoMinorSlot1, which exist with or
+	// without them, so neither can be matched on a footprint.
+	{ workshopId: "3739160866", modId: "scapehs-better-memento-setup" },
+	{
+		workshopId: "3509318341",
+		modId: "slothoth-setup-improved",
+		parameterPatterns: ["AiMementos", "AiMementosLock"],
+		nameHints: ["ai memento", "slothoth"],
+	},
+	// Retargets age progress, which Age Length and Age Progress Rate set. It also
+	// edits the base AgeLength parameter, but that one ships with the game and
+	// would match on every install, so only its own parameter is named here.
+	{
+		workshopId: "3744582898",
+		modId: "aventura-era-turn-target",
+		parameterPatterns: ["AventuraEraProgressTarget"],
+		nameHints: ["era turn target", "aventura"],
+	},
+	// Presets the settlement cap that Settlement Limit sets.
+	{
+		workshopId: "3794139950",
+		modId: "aventura-city-capacity",
+		parameterPatterns: ["AventuraCityCapacity"],
+		nameHints: ["city capacity", "aventura"],
+	},
 ]);
