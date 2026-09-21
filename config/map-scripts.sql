@@ -155,3 +155,51 @@ WHERE Key1 = 'Map' AND Key2 = '{base-standard}maps/fractal-voronoi.js';
 UPDATE Parameters
 SET Key2 = '{AdvancedSettingsPro}maps/zg-shattered-seas-voronoi.js'
 WHERE Key1 = 'Map' AND Key2 = '{base-standard}maps/shattered-seas-voronoi.js';
+
+UPDATE Maps
+SET File = '{AdvancedSettingsPro}maps/zg-archipelago-voronoi.js'
+WHERE File = '{base-standard}maps/archipelago-voronoi.js';
+
+UPDATE SupportedValuesByMap
+SET Map = '{AdvancedSettingsPro}maps/zg-archipelago-voronoi.js'
+WHERE Map = '{base-standard}maps/archipelago-voronoi.js';
+
+UPDATE ParameterDependencies
+SET ConfigurationValue = '{AdvancedSettingsPro}maps/zg-archipelago-voronoi.js'
+WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/archipelago-voronoi.js';
+
+UPDATE Parameters
+SET Key2 = '{AdvancedSettingsPro}maps/zg-archipelago-voronoi.js'
+WHERE Key1 = 'Map' AND Key2 = '{base-standard}maps/archipelago-voronoi.js';
+
+UPDATE Maps
+SET File = '{AdvancedSettingsPro}maps/zg-shuffle-voronoi.js'
+WHERE File = '{base-standard}maps/shuffle-voronoi.js';
+
+UPDATE SupportedValuesByMap
+SET Map = '{AdvancedSettingsPro}maps/zg-shuffle-voronoi.js'
+WHERE Map = '{base-standard}maps/shuffle-voronoi.js';
+
+UPDATE ParameterDependencies
+SET ConfigurationValue = '{AdvancedSettingsPro}maps/zg-shuffle-voronoi.js'
+WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/shuffle-voronoi.js';
+
+UPDATE Parameters
+SET Key2 = '{AdvancedSettingsPro}maps/zg-shuffle-voronoi.js'
+WHERE Key1 = 'Map' AND Key2 = '{base-standard}maps/shuffle-voronoi.js';
+
+UPDATE Maps
+SET File = '{AdvancedSettingsPro}maps/zg-terra-incognita-voronoi.js'
+WHERE File = '{base-standard}maps/terra-incognita-voronoi.js';
+
+UPDATE SupportedValuesByMap
+SET Map = '{AdvancedSettingsPro}maps/zg-terra-incognita-voronoi.js'
+WHERE Map = '{base-standard}maps/terra-incognita-voronoi.js';
+
+UPDATE ParameterDependencies
+SET ConfigurationValue = '{AdvancedSettingsPro}maps/zg-terra-incognita-voronoi.js'
+WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/terra-incognita-voronoi.js';
+
+UPDATE Parameters
+SET Key2 = '{AdvancedSettingsPro}maps/zg-terra-incognita-voronoi.js'
+WHERE Key1 = 'Map' AND Key2 = '{base-standard}maps/terra-incognita-voronoi.js';

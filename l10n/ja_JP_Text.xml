@@ -282,7 +282,7 @@
 			<Text>生産力が25%減少。戦士：30ではなく23（標準速度の場合）。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="ja_JP">
-			<Text>ゲーム本来のユニットコストのままです。</Text>
+			<Text>ゲーム本来のユニットコスト。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_HIGH" Language="ja_JP">
 			<Text>生産力が50%増加。戦士：30ではなく45（標準速度の場合）。</Text>
@@ -291,7 +291,7 @@
 			<Text>生産力が25%増加。戦士：30ではなく38（標準速度の場合）。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DOUBLE" Language="ja_JP">
-			<Text>生産力が2倍。戦士：30ではなく60（標準速度の場合）。</Text>
+			<Text>生産力が100%増加。戦士：30ではなく60（標準速度の場合）。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="ja_JP">
 			<Text>すべての危機を有効または無効にします。[n]無効にすると、危機の選択のすべての危機がオフになります。</Text>
@@ -332,7 +332,7 @@
 				[LI] 特大：自然遺産0[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF" Language="ja_JP">
-			<Text>通常の約半分の自然遺産。[nn][BLIST]
+			<Text>自然遺産が50%減少。[nn][BLIST]
 				[LI] 極小：自然遺産1
 				[LI] 小：自然遺産2
 				[LI] 標準：自然遺産2
@@ -348,7 +348,7 @@
 				[LI] 特大：自然遺産7[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE" Language="ja_JP">
-			<Text>通常よりかなり多い自然遺産。[nn][BLIST]
+			<Text>自然遺産が50%増加。[nn][BLIST]
 				[LI] 極小：自然遺産5
 				[LI] 小：自然遺産6
 				[LI] 標準：自然遺産8
@@ -356,7 +356,7 @@
 				[LI] 特大：自然遺産11[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE" Language="ja_JP">
-			<Text>通常の2倍の自然遺産。[nn][BLIST]
+			<Text>自然遺産が100%増加。[nn][BLIST]
 				[LI] 極小：自然遺産6
 				[LI] 小：自然遺産8
 				[LI] 標準：自然遺産10
@@ -424,7 +424,7 @@
 			<Text>時代の進行速度</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION" Language="ja_JP">
-			<Text>時代ゲージが満ちる速さ。レガシーパスの各マイルストーンと、未来の技術・社会制度がポイントを加える。時代を終わらせる合計値は「時代の長さ」で決まる。[n]マイルストーンの数値は各時代の1番目、2番目、3番目。</Text>
+			<Text>時代ゲージが満ちる速さを設定します。レガシーパスの各マイルストーンと、未来の技術・社会制度がポイントを加える。時代を終わらせる合計値は「時代の長さ」で決まる。[n]マイルストーンの数値は各時代の1番目、2番目、3番目。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_NAME" Language="ja_JP">
 			<Text>技術コスト</Text>
@@ -457,19 +457,19 @@
 			<Text>科学および軍事の凱旋プロジェクト12件の生産力コストを設定します。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="ja_JP">
-			<Text>各獲得量が半分になり、時代が長く続く。[nn][BLIST]
+			<Text>各獲得量が50%減少し、時代が長く続く。[nn][BLIST]
 				[LI] 古代：3、3、5
 				[LI] 探検の時代：3、5、10
 				[LI] 近代：3、5[/BLIST][nn]未来の技術と社会制度：各5ポイント。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD" Language="ja_JP">
-			<Text>ゲーム本来の獲得量のまま。[nn][BLIST]
+			<Text>ゲーム本来の獲得量。[nn][BLIST]
 				[LI] 古代：5、5、10
 				[LI] 探検の時代：5、10、20
 				[LI] 近代：5、10[/BLIST][nn]未来の技術と社会制度：各10ポイント。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST" Language="ja_JP">
-			<Text>各獲得量が1.5倍になり、時代が早く終わる。[nn][BLIST]
+			<Text>各獲得量が50%増加し、時代が早く終わる。[nn][BLIST]
 				[LI] 古代：8、8、15
 				[LI] 探検の時代：8、15、30
 				[LI] 近代：8、15[/BLIST][nn]未来の技術と社会制度：各15ポイント。</Text>
@@ -496,10 +496,10 @@
 			<Text>科学力が25%減少。陶磁器：70ではなく53（標準速度の場合）。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COST_DESCRIPTION_STANDARD" Language="ja_JP">
-			<Text>ゲーム本来のコストのままです。</Text>
+			<Text>ゲーム本来のコスト。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_STANDARD" Language="ja_JP">
-			<Text>ゲーム本来のコストのままです。[n]各勝利プロジェクトの費用： [BLIST]
+			<Text>ゲーム本来のコスト。[n]各勝利プロジェクトの費用： [BLIST]
 				[LI] 星図作製：450
 				[LI] 地球球体説：600
 				[LI] 地動説の論理体系：750
@@ -568,7 +568,7 @@
 				[LI] 有人宇宙飛行：2250 / 2250 / 2250[/BLIST][nn]（標準速度の場合）</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="ja_JP">
-			<Text>ゲーム本来のコストのままです。</Text>
+			<Text>ゲーム本来のコスト。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="ja_JP">
 			<Text>序盤の社会制度は標準、ツリーが広がると高くなる。[nn][BLIST]
@@ -589,7 +589,7 @@
 				[LI] 近代：標準[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="ja_JP">
-			<Text>ゲーム本来のコストのままです。</Text>
+			<Text>ゲーム本来のコスト。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="ja_JP">
 			<Text>序盤の研究は高く、ツリーが広がると安くなる。[nn][BLIST]
@@ -652,7 +652,7 @@
 			<Text>科学力が25%増加。陶磁器：70ではなく88（標準速度の場合）。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_DOUBLE" Language="ja_JP">
-			<Text>生産力が2倍。[n]各勝利プロジェクトの費用： [BLIST]
+			<Text>生産力が100%増加。[n]各勝利プロジェクトの費用： [BLIST]
 				[LI] 星図作製：900
 				[LI] 地球球体説：1200
 				[LI] 地動説の論理体系：1500
@@ -667,10 +667,10 @@
 				[LI] 有人宇宙飛行：6000[/BLIST][nn]（標準速度の場合）</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_DOUBLE" Language="ja_JP">
-			<Text>文化力が2倍。首長制：90ではなく180（標準速度の場合）。</Text>
+			<Text>文化力が100%増加。首長制：90ではなく180（標準速度の場合）。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_DOUBLE" Language="ja_JP">
-			<Text>科学力が2倍。陶磁器：70ではなく140（標準速度の場合）。</Text>
+			<Text>科学力が100%増加。陶磁器：70ではなく140（標準速度の場合）。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW" Language="ja_JP">
 			<Text>市民1人あたりの食料が25%増加。</Text>
@@ -682,7 +682,7 @@
 				[LI] 近代：4、8[/BLIST][nn]未来の技術と社会制度：8ポイント（近代は7）。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="ja_JP">
-			<Text>変更なし。</Text>
+			<Text>ゲーム本来の食料の必要量。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="ja_JP">
 			<Text>序盤は都市の成長が速く、その後は標準に落ち着く。[nn][BLIST]
@@ -709,7 +709,7 @@
 			<Text>市民1人あたりの食料が25%減少。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD" Language="ja_JP">
-			<Text>変更なし。</Text>
+			<Text>ゲーム本来の移動コスト。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_BALANCED" Language="ja_JP">
 			<Text>近代までは標準の道路、その後は安くなる。[nn][BLIST]
@@ -809,52 +809,52 @@
 			<Text>涸れ川</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WADI" Language="ja_JP">
-			<Text>河川は少なく、航行可能な河川の割合も通常よりはるかに低くなります。</Text>
+			<Text>河川が50%減少し、航行可能な河川の割合も通常よりはるかに低くなります。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_ARID_NAME" Language="ja_JP">
 			<Text>乾燥</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_ARID" Language="ja_JP">
-			<Text>河川は少なく、航行可能な河川の割合は通常どおりです。</Text>
+			<Text>河川が50%減少し、航行可能な河川の割合は通常どおりです。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_CHANNEL_NAME" Language="ja_JP">
 			<Text>河道</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_CHANNEL" Language="ja_JP">
-			<Text>河川は少ないものの、航行可能な河川の割合ははるかに高くなります。</Text>
+			<Text>河川は50%減少するものの、航行可能な河川の割合ははるかに高くなります。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_SHALLOW_NAME" Language="ja_JP">
 			<Text>浅瀬</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_SHALLOW" Language="ja_JP">
-			<Text>河川の数は標準的で、航行可能な河川の割合は通常よりはるかに低くなります。</Text>
+			<Text>河川数は通常どおりで、航行可能な河川の割合は通常よりはるかに低くなります。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="ja_JP">
-			<Text>選択したマップタイプの通常の河川数で、航行可能な河川の割合も通常どおりです。</Text>
+			<Text>河川数は通常どおりで、航行可能な河川の割合も通常どおりです。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_WATERWAY_NAME" Language="ja_JP">
 			<Text>水路</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WATERWAY" Language="ja_JP">
-			<Text>河川の数は標準的で、航行可能な河川の割合ははるかに高くなります。</Text>
+			<Text>河川数は通常どおりで、航行可能な河川の割合ははるかに高くなります。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_STREAM_NAME" Language="ja_JP">
 			<Text>小川</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_STREAM" Language="ja_JP">
-			<Text>河川は多いものの、航行可能な河川の割合は通常よりはるかに低くなります。</Text>
+			<Text>河川は50%増加するものの、航行可能な河川の割合は通常よりはるかに低くなります。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_RIVERLAND_NAME" Language="ja_JP">
 			<Text>河川地帯</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_RIVERLAND" Language="ja_JP">
-			<Text>河川は多く、航行可能な河川の割合は通常どおりです。</Text>
+			<Text>河川が50%増加し、航行可能な河川の割合は通常どおりです。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DEEP_NAME" Language="ja_JP">
 			<Text>深瀬</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEEP" Language="ja_JP">
-			<Text>河川は多く、航行可能な河川の割合もはるかに高くなります。</Text>
+			<Text>河川が50%増加し、航行可能な河川の割合もはるかに高くなります。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LOW_NAME" Language="ja_JP">
 			<Text>低</Text>
@@ -875,7 +875,7 @@
 			<Text>生産力が25%減少。開拓者：50ではなく38（標準速度の場合）。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="ja_JP">
-			<Text>ゲーム本来のユニットコストのままです。</Text>
+			<Text>ゲーム本来のユニットコスト。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_HIGH" Language="ja_JP">
 			<Text>生産力が50%増加。開拓者：50ではなく75（標準速度の場合）。</Text>
@@ -884,7 +884,7 @@
 			<Text>生産力が25%増加。開拓者：50ではなく63（標準速度の場合）。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE" Language="ja_JP">
-			<Text>生産力が2倍。開拓者：50ではなく100（標準速度の場合）。</Text>
+			<Text>生産力が100%増加。開拓者：50ではなく100（標準速度の場合）。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="ja_JP">
 			<Text>マラソン2.0</Text>
@@ -1130,58 +1130,40 @@
 			<Text>生成される山が多くなります。</Text>
 		</Replace>
 
-		<Replace Tag="LOC_ZG_WORLD_AGE_NAME" Language="ja_JP">
-			<Text>世界の年代</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_NAME" Language="ja_JP">
+			<Text>マップの年代</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION" Language="ja_JP">
-			<Text>大地の起伏の激しさを設定します。[n]山は別に設定するため、ここでは平地と丘陵の割合だけが変わります。</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION" Language="ja_JP">
+			<Text>大地の起伏の激しさを設定します。[n]山は別に設定するため、ここでは平地と荒地の割合だけが変わります。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_NEW" Language="ja_JP">
-			<Text>隆起したばかりの大地。丘陵が多く、平地が少なくなります。</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_NEW" Language="ja_JP">
+			<Text>隆起したばかりの大地。荒地が多く、平地が少なくなります。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_STANDARD" Language="ja_JP">
-			<Text>マップが本来形作る地形。</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_STANDARD" Language="ja_JP">
+			<Text>選択したマップタイプの標準的な地形。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_OLD" Language="ja_JP">
-			<Text>侵食された大地。丘陵が少なく、平野が広がります。</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_OLD" Language="ja_JP">
+			<Text>侵食された大地。荒地が少なく、平野が広がります。</Text>
 		</Replace>
 
 		<Replace Tag="LOC_ZG_RESOURCES_NAME" Language="ja_JP">
 			<Text>資源</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION" Language="ja_JP">
-			<Text>マップに配置される資源の量と、資源がまとまりを作るかどうかを設定します。[n]新しい資源は追加されず、保証された資源も失われません。</Text>
+			<Text>マップが配置する資源の量、まとまりを作るかどうか、各大陸に保証される帝国資源の数を設定します。[n]新しい資源は追加されません。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_SPARSE" Language="ja_JP">
-			<Text>通常の半分の資源が、最大3タイルのまとまりに集まります。</Text>
+			<Text>資源が25%減少し、最大3タイルのまとまりに集まり、大陸ごとに帝国資源2つが保証されます。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_STANDARD" Language="ja_JP">
-			<Text>マップが本来配置する量の資源が、均等に散らばります。</Text>
+			<Text>通常の資源量が均等に散らばり、大陸ごとに帝国資源3つが保証されます。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT" Language="ja_JP">
-			<Text>通常より5割多い資源が、均等に散らばります。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="ja_JP">
-			<Text>保証された資源</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION" Language="ja_JP">
-			<Text>各大陸に保証される帝国資源の数を設定します。[n]すでに保証されている10種の資源に適用され、それ以外に下限は設けません。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_SPARSE" Language="ja_JP">
-			<Text>大陸ごとに2つ。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD" Language="ja_JP">
-			<Text>大陸ごとに3つ。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT" Language="ja_JP">
-			<Text>大陸ごとに4つ。</Text>
+			<Text>資源が25%増加し、均等に散らばり、大陸ごとに帝国資源4つが保証されます。</Text>
 		</Replace>
 
 		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="ja_JP">
 			<Text>地形設定</Text>
-		</Replace>
-		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="ja_JP">
-			<Text>資源設定</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="ja_JP">
 			<Text>ペースセット</Text>

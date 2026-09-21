@@ -282,7 +282,7 @@
 			<Text>25% de production en moins. Guerrier : 23 au lieu de 30. (À vitesse standard)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="fr_FR">
-			<Text>Les coûts d'unité du jeu, inchangés.</Text>
+			<Text>Les coûts d'unité du jeu.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_HIGH" Language="fr_FR">
 			<Text>50% de production en plus. Guerrier : 45 au lieu de 30. (À vitesse standard)</Text>
@@ -291,7 +291,7 @@
 			<Text>25% de production en plus. Guerrier : 38 au lieu de 30. (À vitesse standard)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DOUBLE" Language="fr_FR">
-			<Text>Deux fois plus de production. Guerrier : 60 au lieu de 30. (À vitesse standard)</Text>
+			<Text>100% de production en plus. Guerrier : 60 au lieu de 30. (À vitesse standard)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="fr_FR">
 			<Text>Active ou désactive toutes les crises.[n]Désactivé éteint chaque crise de la Sélection des crises.</Text>
@@ -332,7 +332,7 @@
 				[LI] Immense : 0 merveilles naturelles[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF" Language="fr_FR">
-			<Text>Environ deux fois moins de merveilles naturelles que la normale.[nn][BLIST]
+			<Text>50% de merveilles naturelles en moins.[nn][BLIST]
 				[LI] Minuscule : 1 merveille naturelle
 				[LI] Petite : 2 merveilles naturelles
 				[LI] Standard : 2 merveilles naturelles
@@ -348,7 +348,7 @@
 				[LI] Immense : 7 merveilles naturelles[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE" Language="fr_FR">
-			<Text>Nettement plus de merveilles naturelles que la normale.[nn][BLIST]
+			<Text>50% de merveilles naturelles en plus.[nn][BLIST]
 				[LI] Minuscule : 5 merveilles naturelles
 				[LI] Petite : 6 merveilles naturelles
 				[LI] Standard : 8 merveilles naturelles
@@ -356,7 +356,7 @@
 				[LI] Immense : 11 merveilles naturelles[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE" Language="fr_FR">
-			<Text>Deux fois plus de merveilles naturelles que la normale.[nn][BLIST]
+			<Text>100% de merveilles naturelles en plus.[nn][BLIST]
 				[LI] Minuscule : 6 merveilles naturelles
 				[LI] Petite : 8 merveilles naturelles
 				[LI] Standard : 10 merveilles naturelles
@@ -424,7 +424,7 @@
 			<Text>Progression des âges</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION" Language="fr_FR">
-			<Text>La vitesse à laquelle la jauge d'âge se remplit. Chaque jalon de voie d'héritage et chaque technologie ou doctrine future y ajoute des points ; la durée des âges fixe le total qui met fin à l'âge.[n]Les chiffres des jalons sont le premier, le deuxième et le troisième de chaque âge.</Text>
+			<Text>Définit la vitesse à laquelle la jauge d'âge se remplit. Chaque jalon de voie d'héritage et chaque technologie ou doctrine future y ajoute des points ; la durée des âges fixe le total qui met fin à l'âge.[n]Les chiffres des jalons sont le premier, le deuxième et le troisième de chaque âge.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_NAME" Language="fr_FR">
 			<Text>Coût des technologies</Text>
@@ -457,19 +457,19 @@
 			<Text>Définit le coût en production des 12 projets de triomphe scientifique et militaire, de Cartographie du firmament au Vol spatial habité.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="fr_FR">
-			<Text>Chaque gain rapporte moitié moins, donc les âges durent plus longtemps.[nn][BLIST]
+			<Text>Chaque gain rapporte 50% en moins, donc les âges durent plus longtemps.[nn][BLIST]
 				[LI] Antiquité : 3, 3 et 5
 				[LI] Âge de l'exploration : 3, 5 et 10
 				[LI] Âge moderne : 3 et 5[/BLIST][nn]Technologies et doctrines futures : 5 points chacune.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD" Language="fr_FR">
-			<Text>Les gains du jeu, inchangés.[nn][BLIST]
+			<Text>Les gains du jeu.[nn][BLIST]
 				[LI] Antiquité : 5, 5 et 10
 				[LI] Âge de l'exploration : 5, 10 et 20
 				[LI] Âge moderne : 5 et 10[/BLIST][nn]Technologies et doctrines futures : 10 points chacune.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST" Language="fr_FR">
-			<Text>Chaque gain rapporte moitié plus, donc les âges s'achèvent plus tôt.[nn][BLIST]
+			<Text>Chaque gain rapporte 50% en plus, donc les âges s'achèvent plus tôt.[nn][BLIST]
 				[LI] Antiquité : 8, 8 et 15
 				[LI] Âge de l'exploration : 8, 15 et 30
 				[LI] Âge moderne : 8 et 15[/BLIST][nn]Technologies et doctrines futures : 15 points chacune.</Text>
@@ -496,10 +496,10 @@
 			<Text>25% de science en moins. Poterie : 53 au lieu de 70. (À vitesse standard)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COST_DESCRIPTION_STANDARD" Language="fr_FR">
-			<Text>Les coûts du jeu, inchangés.</Text>
+			<Text>Les coûts du jeu.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_STANDARD" Language="fr_FR">
-			<Text>Les coûts du jeu, inchangés.[n]Coût de chaque projet de victoire : [BLIST]
+			<Text>Les coûts du jeu.[n]Coût de chaque projet de victoire : [BLIST]
 				[LI] Cartographie du firmament : 450
 				[LI] Terre sphérique : 600
 				[LI] Modèle héliocentrique : 750
@@ -568,7 +568,7 @@
 				[LI] Vol spatial habité : 2250 / 2250 / 2250[/BLIST][nn](À vitesse standard)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="fr_FR">
-			<Text>Les coûts du jeu, inchangés.</Text>
+			<Text>Les coûts du jeu.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="fr_FR">
 			<Text>Doctrines standard au début, plus chères quand l'arbre s'ouvre.[nn][BLIST]
@@ -589,7 +589,7 @@
 				[LI] Âge moderne : Standard[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="fr_FR">
-			<Text>Les coûts du jeu, inchangés.</Text>
+			<Text>Les coûts du jeu.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="fr_FR">
 			<Text>Recherche plus chère au début, moins chère quand l'arbre s'ouvre.[nn][BLIST]
@@ -652,7 +652,7 @@
 			<Text>25% de science en plus. Poterie : 88 au lieu de 70. (À vitesse standard)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_DOUBLE" Language="fr_FR">
-			<Text>Deux fois plus de production.[n]Coût de chaque projet de victoire : [BLIST]
+			<Text>100% de production en plus.[n]Coût de chaque projet de victoire : [BLIST]
 				[LI] Cartographie du firmament : 900
 				[LI] Terre sphérique : 1200
 				[LI] Modèle héliocentrique : 1500
@@ -667,10 +667,10 @@
 				[LI] Vol spatial habité : 6000[/BLIST][nn](À vitesse standard)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_DOUBLE" Language="fr_FR">
-			<Text>Deux fois plus de culture. Chefferie : 180 au lieu de 90. (À vitesse standard)</Text>
+			<Text>100% de culture en plus. Chefferie : 180 au lieu de 90. (À vitesse standard)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_DOUBLE" Language="fr_FR">
-			<Text>Deux fois plus de science. Poterie : 140 au lieu de 70. (À vitesse standard)</Text>
+			<Text>100% de science en plus. Poterie : 140 au lieu de 70. (À vitesse standard)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW" Language="fr_FR">
 			<Text>25% de nourriture par citoyen en plus.</Text>
@@ -682,7 +682,7 @@
 				[LI] Âge moderne : 4 et 8[/BLIST][nn]Technologies et doctrines futures : 8 points, 7 à l'âge moderne.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="fr_FR">
-			<Text>Aucun changement.</Text>
+			<Text>Les seuils de nourriture du jeu.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="fr_FR">
 			<Text>Les villes grandissent plus vite au début, puis reviennent au standard.[nn][BLIST]
@@ -709,7 +709,7 @@
 			<Text>25% de nourriture par citoyen en moins.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD" Language="fr_FR">
-			<Text>Aucun changement.</Text>
+			<Text>Les coûts de mouvement du jeu.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_BALANCED" Language="fr_FR">
 			<Text>Routes standard jusqu'à l'ère moderne, puis moins chères.[nn][BLIST]
@@ -809,52 +809,52 @@
 			<Text>Oueds</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WADI" Language="fr_FR">
-			<Text>Peu de fleuves, dont bien moins sont navigables que d'ordinaire.</Text>
+			<Text>50% de fleuves en moins, dont bien moins sont navigables que d'ordinaire.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_ARID_NAME" Language="fr_FR">
 			<Text>Aride</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_ARID" Language="fr_FR">
-			<Text>Peu de fleuves, dont la proportion habituelle est navigable.</Text>
+			<Text>50% de fleuves en moins, dont la proportion habituelle est navigable.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_CHANNEL_NAME" Language="fr_FR">
 			<Text>Chenaux</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_CHANNEL" Language="fr_FR">
-			<Text>Peu de fleuves, dont bien plus sont navigables.</Text>
+			<Text>50% de fleuves en moins, dont bien plus sont navigables.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_SHALLOW_NAME" Language="fr_FR">
 			<Text>Hauts-fonds</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_SHALLOW" Language="fr_FR">
-			<Text>Un nombre normal de fleuves, dont bien moins sont navigables que d'ordinaire.</Text>
+			<Text>Le nombre habituel de fleuves, dont bien moins sont navigables que d'ordinaire.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="fr_FR">
-			<Text>Le nombre habituel de fleuves pour le type de carte choisi, dont la proportion habituelle est navigable.</Text>
+			<Text>Le nombre habituel de fleuves, dont la proportion habituelle est navigable.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_WATERWAY_NAME" Language="fr_FR">
 			<Text>Voies navigables</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WATERWAY" Language="fr_FR">
-			<Text>Un nombre normal de fleuves, dont bien plus sont navigables.</Text>
+			<Text>Le nombre habituel de fleuves, dont bien plus sont navigables.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_STREAM_NAME" Language="fr_FR">
 			<Text>Ruisseaux</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_STREAM" Language="fr_FR">
-			<Text>De nombreux fleuves, dont bien moins sont navigables que d'ordinaire.</Text>
+			<Text>50% de fleuves en plus, dont bien moins sont navigables que d'ordinaire.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_RIVERLAND_NAME" Language="fr_FR">
 			<Text>Terres fluviales</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_RIVERLAND" Language="fr_FR">
-			<Text>De nombreux fleuves, dont la proportion habituelle est navigable.</Text>
+			<Text>50% de fleuves en plus, dont la proportion habituelle est navigable.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DEEP_NAME" Language="fr_FR">
 			<Text>Grands fonds</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEEP" Language="fr_FR">
-			<Text>De nombreux fleuves, dont bien plus sont navigables.</Text>
+			<Text>50% de fleuves en plus, dont bien plus sont navigables.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LOW_NAME" Language="fr_FR">
 			<Text>Bas</Text>
@@ -875,7 +875,7 @@
 			<Text>25% de production en moins. Colon : 38 au lieu de 50. (À vitesse standard)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="fr_FR">
-			<Text>Les coûts d'unité du jeu, inchangés.</Text>
+			<Text>Les coûts d'unité du jeu.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_HIGH" Language="fr_FR">
 			<Text>50% de production en plus. Colon : 75 au lieu de 50. (À vitesse standard)</Text>
@@ -884,7 +884,7 @@
 			<Text>25% de production en plus. Colon : 63 au lieu de 50. (À vitesse standard)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE" Language="fr_FR">
-			<Text>Deux fois plus de production. Colon : 100 au lieu de 50. (À vitesse standard)</Text>
+			<Text>100% de production en plus. Colon : 100 au lieu de 50. (À vitesse standard)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="fr_FR">
 			<Text>Marathon 2.0</Text>
@@ -1130,58 +1130,40 @@
 			<Text>Génère plus de montagnes.</Text>
 		</Replace>
 
-		<Replace Tag="LOC_ZG_WORLD_AGE_NAME" Language="fr_FR">
-			<Text>Âge du monde</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_NAME" Language="fr_FR">
+			<Text>Âge de la carte</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION" Language="fr_FR">
-			<Text>Définit le relief du terrain.[n]Les montagnes se règlent à part ; ceci ne déplace que le sol entre plat et vallonné.</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION" Language="fr_FR">
+			<Text>Définit le relief du terrain.[n]Les montagnes se règlent à part ; ceci ne déplace le sol qu'entre plat et accidenté.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_NEW" Language="fr_FR">
-			<Text>Terres fraîchement plissées, avec plus de collines et moins de plat.</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_NEW" Language="fr_FR">
+			<Text>Terres fraîchement plissées, avec plus de terrain accidenté et moins de plat.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_STANDARD" Language="fr_FR">
-			<Text>Le relief que la carte élèverait d'elle-même.</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_STANDARD" Language="fr_FR">
+			<Text>Relief standard pour le type de carte choisi.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_OLD" Language="fr_FR">
-			<Text>Terres érodées, avec moins de collines et de plus vastes plaines.</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_OLD" Language="fr_FR">
+			<Text>Terres érodées, avec moins de terrain accidenté et de plus vastes plaines.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_ZG_RESOURCES_NAME" Language="fr_FR">
 			<Text>Ressources</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION" Language="fr_FR">
-			<Text>Définit combien de ressources sont placées sur la carte et si elles se regroupent en parcelles.[n]Aucune ressource n'est ajoutée et aucune ressource garantie n'est perdue.</Text>
+			<Text>Définit combien de ressources la carte place, si elles se regroupent en parcelles et combien de ressources d'empire sont garanties sur chaque masse continentale.[n]Aucune ressource n'est ajoutée.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_SPARSE" Language="fr_FR">
-			<Text>Moitié moins de ressources que d'habitude, regroupées en parcelles allant jusqu'à trois cases.</Text>
+			<Text>25% de ressources en moins, regroupées en parcelles allant jusqu'à trois cases, avec deux ressources d'empire par masse continentale.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_STANDARD" Language="fr_FR">
-			<Text>Les ressources que la carte placerait d'elle-même, réparties uniformément.</Text>
+			<Text>La quantité habituelle de ressources, répartie uniformément, avec trois ressources d'empire par masse continentale.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT" Language="fr_FR">
-			<Text>Moitié plus de ressources que d'habitude, réparties uniformément.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="fr_FR">
-			<Text>Ressources garanties</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION" Language="fr_FR">
-			<Text>Définit combien de ressources d'empire sont garanties sur chaque masse continentale.[n]S'applique aux dix ressources déjà garanties et n'en impose à aucune autre.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_SPARSE" Language="fr_FR">
-			<Text>Deux par masse continentale.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD" Language="fr_FR">
-			<Text>Trois par masse continentale.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT" Language="fr_FR">
-			<Text>Quatre par masse continentale.</Text>
+			<Text>25% de ressources en plus, réparties uniformément, avec quatre ressources d'empire par masse continentale.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="fr_FR">
 			<Text>Paramètres du terrain</Text>
-		</Replace>
-		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="fr_FR">
-			<Text>Paramètres des ressources</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="fr_FR">
 			<Text>Ensemble de rythme</Text>

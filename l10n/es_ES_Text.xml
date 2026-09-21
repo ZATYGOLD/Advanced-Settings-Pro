@@ -282,7 +282,7 @@
 			<Text>25% menos producción. Guerrero: 23 en vez de 30. (A velocidad estándar)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="es_ES">
-			<Text>Los costes de unidad propios del juego, sin cambios.</Text>
+			<Text>Los costes de unidad propios del juego.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_HIGH" Language="es_ES">
 			<Text>50% más producción. Guerrero: 45 en vez de 30. (A velocidad estándar)</Text>
@@ -291,7 +291,7 @@
 			<Text>25% más producción. Guerrero: 38 en vez de 30. (A velocidad estándar)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DOUBLE" Language="es_ES">
-			<Text>El doble de producción. Guerrero: 60 en vez de 30. (A velocidad estándar)</Text>
+			<Text>100% más producción. Guerrero: 60 en vez de 30. (A velocidad estándar)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="es_ES">
 			<Text>Activa o desactiva todas las crisis.[n]Desactivado apaga todas las crisis de Selección de crisis.</Text>
@@ -332,7 +332,7 @@
 				[LI] Enorme: 0 maravillas naturales[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF" Language="es_ES">
-			<Text>Aproximadamente la mitad de maravillas naturales de lo normal.[nn][BLIST]
+			<Text>50% menos maravillas naturales.[nn][BLIST]
 				[LI] Diminuto: 1 maravilla natural
 				[LI] Pequeño: 2 maravillas naturales
 				[LI] Estándar: 2 maravillas naturales
@@ -348,7 +348,7 @@
 				[LI] Enorme: 7 maravillas naturales[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE" Language="es_ES">
-			<Text>Bastantes más maravillas naturales de lo normal.[nn][BLIST]
+			<Text>50% más maravillas naturales.[nn][BLIST]
 				[LI] Diminuto: 5 maravillas naturales
 				[LI] Pequeño: 6 maravillas naturales
 				[LI] Estándar: 8 maravillas naturales
@@ -356,7 +356,7 @@
 				[LI] Enorme: 11 maravillas naturales[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE" Language="es_ES">
-			<Text>El doble de maravillas naturales de lo normal.[nn][BLIST]
+			<Text>100% más maravillas naturales.[nn][BLIST]
 				[LI] Diminuto: 6 maravillas naturales
 				[LI] Pequeño: 8 maravillas naturales
 				[LI] Estándar: 10 maravillas naturales
@@ -424,7 +424,7 @@
 			<Text>Progreso de la era</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION" Language="es_ES">
-			<Text>La rapidez con la que se llena el medidor de era. Cada hito de senda heredada y cada tecnología o cívica futura le añade puntos; la duración de la era fija el total que la termina.[n]Las cifras de hitos son el primero, el segundo y el tercero de cada era.</Text>
+			<Text>Establece la rapidez con la que se llena el medidor de era. Cada hito de senda heredada y cada tecnología o cívica futura le añade puntos; la duración de la era fija el total que la termina.[n]Las cifras de hitos son el primero, el segundo y el tercero de cada era.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_NAME" Language="es_ES">
 			<Text>Coste de tecnologías</Text>
@@ -457,19 +457,19 @@
 			<Text>Determina el coste de producción de los 12 proyectos de triunfo científico y militar, de Observar las estrellas a Vuelo espacial tripulado.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="es_ES">
-			<Text>Cada concesión aporta la mitad, así que las eras duran más.[nn][BLIST]
+			<Text>Cada concesión aporta un 50% menos, así que las eras duran más.[nn][BLIST]
 				[LI] Antigüedad: 3, 3 y 5
 				[LI] Descubrimientos: 3, 5 y 10
 				[LI] Modernidad: 3 y 5[/BLIST][nn]Tecnologías y cívicas futuras: 5 puntos cada una.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD" Language="es_ES">
-			<Text>Las concesiones propias del juego, sin cambios.[nn][BLIST]
+			<Text>Las concesiones propias del juego.[nn][BLIST]
 				[LI] Antigüedad: 5, 5 y 10
 				[LI] Descubrimientos: 5, 10 y 20
 				[LI] Modernidad: 5 y 10[/BLIST][nn]Tecnologías y cívicas futuras: 10 puntos cada una.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST" Language="es_ES">
-			<Text>Cada concesión aporta la mitad más, así que las eras terminan antes.[nn][BLIST]
+			<Text>Cada concesión aporta un 50% más, así que las eras terminan antes.[nn][BLIST]
 				[LI] Antigüedad: 8, 8 y 15
 				[LI] Descubrimientos: 8, 15 y 30
 				[LI] Modernidad: 8 y 15[/BLIST][nn]Tecnologías y cívicas futuras: 15 puntos cada una.</Text>
@@ -496,10 +496,10 @@
 			<Text>25% menos ciencia. Alfarería: 53 en vez de 70. (A velocidad estándar)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COST_DESCRIPTION_STANDARD" Language="es_ES">
-			<Text>Los costes propios del juego, sin cambios.</Text>
+			<Text>Los costes propios del juego.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_STANDARD" Language="es_ES">
-			<Text>Los costes propios del juego, sin cambios.[n]Coste de cada proyecto de victoria: [BLIST]
+			<Text>Los costes propios del juego.[n]Coste de cada proyecto de victoria: [BLIST]
 				[LI] Observar las estrellas: 450
 				[LI] Tierra esférica: 600
 				[LI] Modelo heliocéntrico: 750
@@ -568,7 +568,7 @@
 				[LI] Vuelo espacial tripulado: 2250 / 2250 / 2250[/BLIST][nn](A velocidad estándar)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="es_ES">
-			<Text>Los costes propios del juego, sin cambios.</Text>
+			<Text>Los costes propios del juego.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="es_ES">
 			<Text>Cívicas estándar al principio y más caras cuando el árbol se abre.[nn][BLIST]
@@ -589,7 +589,7 @@
 				[LI] Modernidad: Estándar[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="es_ES">
-			<Text>Los costes propios del juego, sin cambios.</Text>
+			<Text>Los costes propios del juego.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="es_ES">
 			<Text>Investigación más cara al principio y más barata cuando el árbol se abre.[nn][BLIST]
@@ -652,7 +652,7 @@
 			<Text>25% más ciencia. Alfarería: 88 en vez de 70. (A velocidad estándar)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_DOUBLE" Language="es_ES">
-			<Text>El doble de producción.[n]Coste de cada proyecto de victoria: [BLIST]
+			<Text>100% más producción.[n]Coste de cada proyecto de victoria: [BLIST]
 				[LI] Observar las estrellas: 900
 				[LI] Tierra esférica: 1200
 				[LI] Modelo heliocéntrico: 1500
@@ -667,10 +667,10 @@
 				[LI] Vuelo espacial tripulado: 6000[/BLIST][nn](A velocidad estándar)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_DOUBLE" Language="es_ES">
-			<Text>El doble de cultura. Caciquismo: 180 en vez de 90. (A velocidad estándar)</Text>
+			<Text>100% más cultura. Caciquismo: 180 en vez de 90. (A velocidad estándar)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_DOUBLE" Language="es_ES">
-			<Text>El doble de ciencia. Alfarería: 140 en vez de 70. (A velocidad estándar)</Text>
+			<Text>100% más ciencia. Alfarería: 140 en vez de 70. (A velocidad estándar)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW" Language="es_ES">
 			<Text>25% más comida por ciudadano.</Text>
@@ -682,7 +682,7 @@
 				[LI] Modernidad: 4 y 8[/BLIST][nn]Tecnologías y cívicas futuras: 8 puntos, 7 en la Modernidad.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="es_ES">
-			<Text>Sin cambios.</Text>
+			<Text>Los umbrales de comida propios del juego.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="es_ES">
 			<Text>Las ciudades crecen más rápido al principio y luego vuelven al estándar.[nn][BLIST]
@@ -709,7 +709,7 @@
 			<Text>25% menos comida por ciudadano.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD" Language="es_ES">
-			<Text>Sin cambios.</Text>
+			<Text>Los costes de movimiento propios del juego.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_BALANCED" Language="es_ES">
 			<Text>Caminos estándar hasta la Era Moderna y más baratos después.[nn][BLIST]
@@ -809,52 +809,52 @@
 			<Text>Ramblas</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WADI" Language="es_ES">
-			<Text>Pocos ríos, con muchos menos de ellos navegables de lo habitual.</Text>
+			<Text>50% menos ríos, con muchos menos de ellos navegables de lo habitual.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_ARID_NAME" Language="es_ES">
 			<Text>Árido</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_ARID" Language="es_ES">
-			<Text>Pocos ríos, con la proporción habitual de ellos navegables.</Text>
+			<Text>50% menos ríos, con la proporción habitual de ellos navegables.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_CHANNEL_NAME" Language="es_ES">
 			<Text>Cauces</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_CHANNEL" Language="es_ES">
-			<Text>Pocos ríos, con muchos más de ellos navegables.</Text>
+			<Text>50% menos ríos, con muchos más de ellos navegables.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_SHALLOW_NAME" Language="es_ES">
 			<Text>Somero</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_SHALLOW" Language="es_ES">
-			<Text>Una cantidad normal de ríos, con muchos menos de ellos navegables de lo habitual.</Text>
+			<Text>La cantidad habitual de ríos, con muchos menos de ellos navegables de lo habitual.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="es_ES">
-			<Text>La cantidad habitual de ríos para el tipo de mapa elegido, con la proporción habitual de ellos navegables.</Text>
+			<Text>La cantidad habitual de ríos, con la proporción habitual de ellos navegables.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_WATERWAY_NAME" Language="es_ES">
 			<Text>Vías fluviales</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WATERWAY" Language="es_ES">
-			<Text>Una cantidad normal de ríos, con muchos más de ellos navegables.</Text>
+			<Text>La cantidad habitual de ríos, con muchos más de ellos navegables.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_STREAM_NAME" Language="es_ES">
 			<Text>Arroyos</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_STREAM" Language="es_ES">
-			<Text>Muchos ríos, con muchos menos de ellos navegables de lo habitual.</Text>
+			<Text>50% más ríos, con muchos menos de ellos navegables de lo habitual.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_RIVERLAND_NAME" Language="es_ES">
 			<Text>Tierras fluviales</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_RIVERLAND" Language="es_ES">
-			<Text>Muchos ríos, con la proporción habitual de ellos navegables.</Text>
+			<Text>50% más ríos, con la proporción habitual de ellos navegables.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DEEP_NAME" Language="es_ES">
 			<Text>Profundo</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEEP" Language="es_ES">
-			<Text>Muchos ríos, con muchos más de ellos navegables.</Text>
+			<Text>50% más ríos, con muchos más de ellos navegables.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LOW_NAME" Language="es_ES">
 			<Text>Bajo</Text>
@@ -875,7 +875,7 @@
 			<Text>25% menos producción. Colono: 38 en vez de 50. (A velocidad estándar)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="es_ES">
-			<Text>Los costes de unidad propios del juego, sin cambios.</Text>
+			<Text>Los costes de unidad propios del juego.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_HIGH" Language="es_ES">
 			<Text>50% más producción. Colono: 75 en vez de 50. (A velocidad estándar)</Text>
@@ -884,7 +884,7 @@
 			<Text>25% más producción. Colono: 63 en vez de 50. (A velocidad estándar)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE" Language="es_ES">
-			<Text>El doble de producción. Colono: 100 en vez de 50. (A velocidad estándar)</Text>
+			<Text>100% más producción. Colono: 100 en vez de 50. (A velocidad estándar)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="es_ES">
 			<Text>Maratón 2.0</Text>
@@ -1130,58 +1130,40 @@
 			<Text>Genera más montañas.</Text>
 		</Replace>
 
-		<Replace Tag="LOC_ZG_WORLD_AGE_NAME" Language="es_ES">
-			<Text>Edad del mundo</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_NAME" Language="es_ES">
+			<Text>Edad del mapa</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION" Language="es_ES">
-			<Text>Define lo escarpado que es el terreno.[n]Las montañas se ajustan aparte, así que esto solo mueve el suelo entre llano y montuoso.</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION" Language="es_ES">
+			<Text>Define lo escarpado que es el terreno.[n]Las montañas se ajustan aparte, así que esto solo mueve el suelo entre llano y escarpado.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_NEW" Language="es_ES">
-			<Text>Tierra recién plegada, con más colinas y menos llanura.</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_NEW" Language="es_ES">
+			<Text>Tierra recién plegada, con más terreno escarpado y menos llano.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_STANDARD" Language="es_ES">
-			<Text>El terreno que el mapa levantaría por su cuenta.</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_STANDARD" Language="es_ES">
+			<Text>Terreno estándar para el tipo de mapa elegido.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_OLD" Language="es_ES">
-			<Text>Tierra desgastada, con menos colinas y llanuras más amplias.</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_OLD" Language="es_ES">
+			<Text>Tierra desgastada, con menos terreno escarpado y llanuras más amplias.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_ZG_RESOURCES_NAME" Language="es_ES">
 			<Text>Recursos</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION" Language="es_ES">
-			<Text>Define cuántos recursos se colocan en el mapa y si se agrupan en parcelas.[n]No se añaden recursos nuevos ni se pierde ninguno de los garantizados.</Text>
+			<Text>Define cuántos recursos coloca el mapa, si se agrupan en parcelas y cuántos recursos de imperio tiene garantizados cada masa continental.[n]No se añaden recursos nuevos.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_SPARSE" Language="es_ES">
-			<Text>La mitad de los recursos habituales, agrupados en parcelas de hasta tres casillas.</Text>
+			<Text>25% menos recursos, agrupados en parcelas de hasta tres casillas, con dos recursos de imperio por masa continental.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_STANDARD" Language="es_ES">
-			<Text>Los recursos que el mapa colocaría por su cuenta, repartidos de forma uniforme.</Text>
+			<Text>La cantidad habitual de recursos, repartida de forma uniforme, con tres recursos de imperio por masa continental.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT" Language="es_ES">
-			<Text>Una mitad más de recursos de lo habitual, repartidos de forma uniforme.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="es_ES">
-			<Text>Recursos garantizados</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION" Language="es_ES">
-			<Text>Define cuántos recursos de imperio tiene garantizados cada masa continental.[n]Se aplica a los diez recursos ya garantizados y no añade mínimo a ningún otro.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_SPARSE" Language="es_ES">
-			<Text>Dos por masa continental.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD" Language="es_ES">
-			<Text>Tres por masa continental.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT" Language="es_ES">
-			<Text>Cuatro por masa continental.</Text>
+			<Text>25% más recursos, repartidos de forma uniforme, con cuatro recursos de imperio por masa continental.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="es_ES">
 			<Text>Ajustes del terreno</Text>
-		</Replace>
-		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="es_ES">
-			<Text>Ajustes de recursos</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="es_ES">
 			<Text>Conjunto de ritmo</Text>

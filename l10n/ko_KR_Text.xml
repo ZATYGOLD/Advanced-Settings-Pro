@@ -282,7 +282,7 @@
 			<Text>생산력 25% 감소. 전사: 30 대신 23. (일반 속도 기준)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="ko_KR">
-			<Text>게임 기본 유닛 비용 그대로입니다.</Text>
+			<Text>게임 기본 유닛 비용.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_HIGH" Language="ko_KR">
 			<Text>생산력 50% 증가. 전사: 30 대신 45. (일반 속도 기준)</Text>
@@ -291,7 +291,7 @@
 			<Text>생산력 25% 증가. 전사: 30 대신 38. (일반 속도 기준)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DOUBLE" Language="ko_KR">
-			<Text>생산력 2배. 전사: 30 대신 60. (일반 속도 기준)</Text>
+			<Text>생산력 100% 증가. 전사: 30 대신 60. (일반 속도 기준)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="ko_KR">
 			<Text>모든 위기를 활성화 또는 비활성화합니다.[n]비활성화하면 위기 선택의 모든 위기가 꺼집니다.</Text>
@@ -332,7 +332,7 @@
 				[LI] 아주 큼: 자연경관 0[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF" Language="ko_KR">
-			<Text>일반적인 수의 약 절반에 해당하는 자연경관.[nn][BLIST]
+			<Text>자연경관 50% 감소.[nn][BLIST]
 				[LI] 아주 작음: 자연경관 1
 				[LI] 작음: 자연경관 2
 				[LI] 표준: 자연경관 2
@@ -348,7 +348,7 @@
 				[LI] 아주 큼: 자연경관 7[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE" Language="ko_KR">
-			<Text>일반적인 수보다 훨씬 많은 자연경관.[nn][BLIST]
+			<Text>자연경관 50% 증가.[nn][BLIST]
 				[LI] 아주 작음: 자연경관 5
 				[LI] 작음: 자연경관 6
 				[LI] 표준: 자연경관 8
@@ -356,7 +356,7 @@
 				[LI] 아주 큼: 자연경관 11[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE" Language="ko_KR">
-			<Text>일반적인 수의 2배에 해당하는 자연경관.[nn][BLIST]
+			<Text>자연경관 100% 증가.[nn][BLIST]
 				[LI] 아주 작음: 자연경관 6
 				[LI] 작음: 자연경관 8
 				[LI] 표준: 자연경관 10
@@ -424,7 +424,7 @@
 			<Text>시대 진행 속도</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION" Language="ko_KR">
-			<Text>시대 게이지가 차는 속도입니다. 레거시 경로의 각 이정표와 미래 기술·사회 제도가 점수를 더하며, 시대를 끝내는 총합은 시대 길이가 정합니다.[n]이정표 수치는 각 시대의 첫 번째, 두 번째, 세 번째입니다.</Text>
+			<Text>시대 게이지가 차는 속도를 설정합니다. 레거시 경로의 각 이정표와 미래 기술·사회 제도가 점수를 더하며, 시대를 끝내는 총합은 시대 길이가 정합니다.[n]이정표 수치는 각 시대의 첫 번째, 두 번째, 세 번째입니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_NAME" Language="ko_KR">
 			<Text>기술 비용</Text>
@@ -457,19 +457,19 @@
 			<Text>과학 및 군사 승리 프로젝트 12종의 생산력 비용을 설정합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="ko_KR">
-			<Text>각 획득량이 절반이 되어 시대가 더 오래 이어집니다.[nn][BLIST]
+			<Text>각 획득량이 50% 감소하여 시대가 더 오래 이어집니다.[nn][BLIST]
 				[LI] 고대: 3, 3, 5
 				[LI] 대항해: 3, 5, 10
 				[LI] 근대: 3, 5[/BLIST][nn]미래 기술과 사회 제도: 각 5점.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD" Language="ko_KR">
-			<Text>게임 기본 획득량 그대로입니다.[nn][BLIST]
+			<Text>게임 기본 획득량.[nn][BLIST]
 				[LI] 고대: 5, 5, 10
 				[LI] 대항해: 5, 10, 20
 				[LI] 근대: 5, 10[/BLIST][nn]미래 기술과 사회 제도: 각 10점.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST" Language="ko_KR">
-			<Text>각 획득량이 1.5배가 되어 시대가 더 빨리 끝납니다.[nn][BLIST]
+			<Text>각 획득량이 50% 증가하여 시대가 더 빨리 끝납니다.[nn][BLIST]
 				[LI] 고대: 8, 8, 15
 				[LI] 대항해: 8, 15, 30
 				[LI] 근대: 8, 15[/BLIST][nn]미래 기술과 사회 제도: 각 15점.</Text>
@@ -496,10 +496,10 @@
 			<Text>과학 25% 감소. 도예: 70 대신 53. (일반 속도 기준)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COST_DESCRIPTION_STANDARD" Language="ko_KR">
-			<Text>게임 기본 비용 그대로입니다.</Text>
+			<Text>게임 기본 비용.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_STANDARD" Language="ko_KR">
-			<Text>게임 기본 비용 그대로입니다.[n]각 승리 프로젝트 비용: [BLIST]
+			<Text>게임 기본 비용.[n]각 승리 프로젝트 비용: [BLIST]
 				[LI] 별자리 지도 작성: 450
 				[LI] 구형 지구: 600
 				[LI] 지동설: 750
@@ -568,7 +568,7 @@
 				[LI] 유인 우주 비행: 2250 / 2250 / 2250[/BLIST][nn](일반 속도 기준)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="ko_KR">
-			<Text>게임 기본 비용 그대로입니다.</Text>
+			<Text>게임 기본 비용.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="ko_KR">
 			<Text>초반 사회 제도는 일반 수준이고, 트리가 넓어질수록 비싸집니다.[nn][BLIST]
@@ -589,7 +589,7 @@
 				[LI] 근대: 일반[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="ko_KR">
-			<Text>게임 기본 비용 그대로입니다.</Text>
+			<Text>게임 기본 비용.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="ko_KR">
 			<Text>초반 연구 비용이 비싸고, 트리가 넓어질수록 저렴해집니다.[nn][BLIST]
@@ -652,7 +652,7 @@
 			<Text>과학 25% 증가. 도예: 70 대신 88. (일반 속도 기준)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_DOUBLE" Language="ko_KR">
-			<Text>생산력 2배.[n]각 승리 프로젝트 비용: [BLIST]
+			<Text>생산력 100% 증가.[n]각 승리 프로젝트 비용: [BLIST]
 				[LI] 별자리 지도 작성: 900
 				[LI] 구형 지구: 1200
 				[LI] 지동설: 1500
@@ -667,10 +667,10 @@
 				[LI] 유인 우주 비행: 6000[/BLIST][nn](일반 속도 기준)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_DOUBLE" Language="ko_KR">
-			<Text>문화 2배. 족장제: 90 대신 180. (일반 속도 기준)</Text>
+			<Text>문화 100% 증가. 족장제: 90 대신 180. (일반 속도 기준)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_DOUBLE" Language="ko_KR">
-			<Text>과학 2배. 도예: 70 대신 140. (일반 속도 기준)</Text>
+			<Text>과학 100% 증가. 도예: 70 대신 140. (일반 속도 기준)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW" Language="ko_KR">
 			<Text>시민당 식량 25% 증가.</Text>
@@ -682,7 +682,7 @@
 				[LI] 근대: 4, 8[/BLIST][nn]미래 기술과 사회 제도: 8점, 근대에는 7점.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="ko_KR">
-			<Text>변경 없음.</Text>
+			<Text>게임 기본 식량 요구량.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="ko_KR">
 			<Text>초반에는 도시가 빠르게 성장하다가 이후 일반 수준으로 돌아옵니다.[nn][BLIST]
@@ -709,7 +709,7 @@
 			<Text>시민당 식량 25% 감소.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD" Language="ko_KR">
-			<Text>변경 없음.</Text>
+			<Text>게임 기본 이동력 소모량.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_BALANCED" Language="ko_KR">
 			<Text>근대까지는 일반 도로이고, 이후에는 저렴해집니다.[nn][BLIST]
@@ -809,52 +809,52 @@
 			<Text>마른 하천</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WADI" Language="ko_KR">
-			<Text>강이 적으며, 깊은 강의 비율도 평소보다 훨씬 낮습니다.</Text>
+			<Text>강이 50% 감소하고, 깊은 강의 비율도 평소보다 훨씬 낮습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_ARID_NAME" Language="ko_KR">
 			<Text>건조</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_ARID" Language="ko_KR">
-			<Text>강이 적으며, 깊은 강의 비율은 평소와 같습니다.</Text>
+			<Text>강이 50% 감소하고, 깊은 강의 비율은 평소와 같습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_CHANNEL_NAME" Language="ko_KR">
 			<Text>물길</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_CHANNEL" Language="ko_KR">
-			<Text>강은 적지만 깊은 강의 비율이 훨씬 높습니다.</Text>
+			<Text>강이 50% 감소하지만 깊은 강의 비율이 훨씬 높습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_SHALLOW_NAME" Language="ko_KR">
 			<Text>얕은 하천</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_SHALLOW" Language="ko_KR">
-			<Text>강의 수는 표준이지만 깊은 강의 비율은 평소보다 훨씬 낮습니다.</Text>
+			<Text>강 수는 일반적이지만 깊은 강의 비율은 평소보다 훨씬 낮습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="ko_KR">
-			<Text>선택한 지도 유형의 일반적인 강 수이며, 깊은 강의 비율도 평소와 같습니다.</Text>
+			<Text>강 수는 일반적이며, 깊은 강의 비율도 평소와 같습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_WATERWAY_NAME" Language="ko_KR">
 			<Text>수로</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WATERWAY" Language="ko_KR">
-			<Text>강의 수는 표준이지만 깊은 강의 비율이 훨씬 높습니다.</Text>
+			<Text>강 수는 일반적이지만 깊은 강의 비율이 훨씬 높습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_STREAM_NAME" Language="ko_KR">
 			<Text>개울</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_STREAM" Language="ko_KR">
-			<Text>강이 많지만 깊은 강의 비율은 평소보다 훨씬 낮습니다.</Text>
+			<Text>강이 50% 증가하지만 깊은 강의 비율은 평소보다 훨씬 낮습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_RIVERLAND_NAME" Language="ko_KR">
 			<Text>하천 지대</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_RIVERLAND" Language="ko_KR">
-			<Text>강이 많으며, 깊은 강의 비율은 평소와 같습니다.</Text>
+			<Text>강이 50% 증가하고, 깊은 강의 비율은 평소와 같습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DEEP_NAME" Language="ko_KR">
 			<Text>깊은 강</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEEP" Language="ko_KR">
-			<Text>강이 많고 깊은 강의 비율도 훨씬 높습니다.</Text>
+			<Text>강이 50% 증가하고, 깊은 강의 비율도 훨씬 높습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LOW_NAME" Language="ko_KR">
 			<Text>낮음</Text>
@@ -875,7 +875,7 @@
 			<Text>생산력 25% 감소. 개척자: 50 대신 38. (일반 속도 기준)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="ko_KR">
-			<Text>게임 기본 유닛 비용 그대로입니다.</Text>
+			<Text>게임 기본 유닛 비용.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_HIGH" Language="ko_KR">
 			<Text>생산력 50% 증가. 개척자: 50 대신 75. (일반 속도 기준)</Text>
@@ -884,7 +884,7 @@
 			<Text>생산력 25% 증가. 개척자: 50 대신 63. (일반 속도 기준)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE" Language="ko_KR">
-			<Text>생산력 2배. 개척자: 50 대신 100. (일반 속도 기준)</Text>
+			<Text>생산력 100% 증가. 개척자: 50 대신 100. (일반 속도 기준)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="ko_KR">
 			<Text>마라톤 2.0</Text>
@@ -1130,58 +1130,40 @@
 			<Text>산이 더 많이 생성됩니다.</Text>
 		</Replace>
 
-		<Replace Tag="LOC_ZG_WORLD_AGE_NAME" Language="ko_KR">
-			<Text>세계의 연대</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_NAME" Language="ko_KR">
+			<Text>지도 연대</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION" Language="ko_KR">
-			<Text>지형이 얼마나 험준한지를 설정합니다.[n]산은 따로 설정하므로 여기서는 평지와 구릉의 비율만 바뀝니다.</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION" Language="ko_KR">
+			<Text>지형이 얼마나 험준한지를 설정합니다.[n]산은 따로 설정하므로 여기서는 평지와 험지의 비율만 바뀝니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_NEW" Language="ko_KR">
-			<Text>막 융기한 땅으로, 구릉이 많고 평지가 적습니다.</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_NEW" Language="ko_KR">
+			<Text>막 융기한 땅으로, 험지가 많고 평지가 적습니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_STANDARD" Language="ko_KR">
-			<Text>지도가 자체적으로 형성하는 지형.</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_STANDARD" Language="ko_KR">
+			<Text>선택한 맵 유형의 표준 지형입니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_OLD" Language="ko_KR">
-			<Text>깎여 나간 땅으로, 구릉이 적고 평원이 넓습니다.</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_OLD" Language="ko_KR">
+			<Text>깎여 나간 땅으로, 험지가 적고 평원이 넓습니다.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_ZG_RESOURCES_NAME" Language="ko_KR">
 			<Text>자원</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION" Language="ko_KR">
-			<Text>지도에 배치되는 자원의 양과 자원이 뭉치는지를 설정합니다.[n]새로운 자원이 추가되지 않으며 보장된 자원도 사라지지 않습니다.</Text>
+			<Text>지도가 배치하는 자원의 양, 자원이 뭉치는지, 각 대륙에 보장되는 제국 자원의 수를 설정합니다.[n]새로운 자원은 추가되지 않습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_SPARSE" Language="ko_KR">
-			<Text>평소의 절반에 해당하는 자원이 최대 3타일 규모로 뭉칩니다.</Text>
+			<Text>자원이 25% 감소하고, 최대 3타일 규모로 뭉치며, 대륙당 제국 자원 2개가 보장됩니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_STANDARD" Language="ko_KR">
-			<Text>지도가 자체적으로 배치하는 만큼의 자원이 고르게 흩어집니다.</Text>
+			<Text>평소와 같은 자원량이 고르게 흩어지며, 대륙당 제국 자원 3개가 보장됩니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT" Language="ko_KR">
-			<Text>평소보다 절반 더 많은 자원이 고르게 흩어집니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="ko_KR">
-			<Text>보장 자원</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION" Language="ko_KR">
-			<Text>각 대륙에 보장되는 제국 자원의 수를 설정합니다.[n]이미 보장된 10종의 자원에 적용되며 다른 자원에는 하한을 두지 않습니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_SPARSE" Language="ko_KR">
-			<Text>대륙당 2개.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD" Language="ko_KR">
-			<Text>대륙당 3개.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT" Language="ko_KR">
-			<Text>대륙당 4개.</Text>
+			<Text>자원이 25% 증가하고, 고르게 흩어지며, 대륙당 제국 자원 4개가 보장됩니다.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="ko_KR">
 			<Text>지형 설정</Text>
-		</Replace>
-		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="ko_KR">
-			<Text>자원 설정</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="ko_KR">
 			<Text>페이스 세트</Text>

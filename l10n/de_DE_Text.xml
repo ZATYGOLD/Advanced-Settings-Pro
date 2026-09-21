@@ -282,7 +282,7 @@
 			<Text>25% weniger Produktion. Krieger: 23 statt 30. (Bei Standardgeschwindigkeit)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="de_DE">
-			<Text>Die Einheitenkosten des Spiels, unverändert.</Text>
+			<Text>Die Einheitenkosten des Spiels.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_HIGH" Language="de_DE">
 			<Text>50% mehr Produktion. Krieger: 45 statt 30. (Bei Standardgeschwindigkeit)</Text>
@@ -291,7 +291,7 @@
 			<Text>25% mehr Produktion. Krieger: 38 statt 30. (Bei Standardgeschwindigkeit)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DOUBLE" Language="de_DE">
-			<Text>Doppelte Produktion. Krieger: 60 statt 30. (Bei Standardgeschwindigkeit)</Text>
+			<Text>100% mehr Produktion. Krieger: 60 statt 30. (Bei Standardgeschwindigkeit)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="de_DE">
 			<Text>Aktiviert oder deaktiviert alle Krisen.[n]Deaktiviert schaltet jede Krise in der Krisenauswahl aus.</Text>
@@ -332,7 +332,7 @@
 				[LI] Riesig: 0 Naturwunder[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF" Language="de_DE">
-			<Text>Etwa halb so viele Naturwunder wie üblich.[nn][BLIST]
+			<Text>50% weniger Naturwunder.[nn][BLIST]
 				[LI] Winzig: 1 Naturwunder
 				[LI] Klein: 2 Naturwunder
 				[LI] Standard: 2 Naturwunder
@@ -348,7 +348,7 @@
 				[LI] Riesig: 7 Naturwunder[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE" Language="de_DE">
-			<Text>Deutlich mehr Naturwunder als üblich.[nn][BLIST]
+			<Text>50% mehr Naturwunder.[nn][BLIST]
 				[LI] Winzig: 5 Naturwunder
 				[LI] Klein: 6 Naturwunder
 				[LI] Standard: 8 Naturwunder
@@ -356,7 +356,7 @@
 				[LI] Riesig: 11 Naturwunder[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE" Language="de_DE">
-			<Text>Doppelt so viele Naturwunder wie üblich.[nn][BLIST]
+			<Text>100% mehr Naturwunder.[nn][BLIST]
 				[LI] Winzig: 6 Naturwunder
 				[LI] Klein: 8 Naturwunder
 				[LI] Standard: 10 Naturwunder
@@ -424,7 +424,7 @@
 			<Text>Zeitalterfortschritt</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION" Language="de_DE">
-			<Text>Wie schnell sich die Zeitalterleiste füllt. Jeder Meilenstein eines Vermächtnispfads und jede Zukunftstechnologie oder -ausrichtung fügt Punkte hinzu; die Zeitalterlänge legt die Summe fest, die das Zeitalter beendet.[n]Die Meilensteinwerte sind der erste, zweite und dritte des jeweiligen Zeitalters.</Text>
+			<Text>Legt fest, wie schnell sich die Zeitalterleiste füllt. Jeder Meilenstein eines Vermächtnispfads und jede Zukunftstechnologie oder -ausrichtung fügt Punkte hinzu; die Zeitalterlänge legt die Summe fest, die das Zeitalter beendet.[n]Die Meilensteinwerte sind der erste, zweite und dritte des jeweiligen Zeitalters.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_NAME" Language="de_DE">
 			<Text>Technologiekosten</Text>
@@ -457,19 +457,19 @@
 			<Text>Legt die Produktionskosten der 12 Wissenschafts- und Militärtriumphprojekte fest, von Sternenkarte bis Bemannte Raumfahrt.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="de_DE">
-			<Text>Jede Zuteilung gibt nur halb so viel, sodass Zeitalter länger laufen.[nn][BLIST]
+			<Text>Jede Zuteilung gibt 50% weniger, sodass Zeitalter länger laufen.[nn][BLIST]
 				[LI] Antike: 3, 3 und 5
 				[LI] Erkundung: 3, 5 und 10
 				[LI] Moderne: 3 und 5[/BLIST][nn]Zukunftstechnologien und -ausrichtungen: je 5 Punkte.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD" Language="de_DE">
-			<Text>Die Zuteilungen des Spiels, unverändert.[nn][BLIST]
+			<Text>Die Zuteilungen des Spiels.[nn][BLIST]
 				[LI] Antike: 5, 5 und 10
 				[LI] Erkundung: 5, 10 und 20
 				[LI] Moderne: 5 und 10[/BLIST][nn]Zukunftstechnologien und -ausrichtungen: je 10 Punkte.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST" Language="de_DE">
-			<Text>Jede Zuteilung gibt die Hälfte mehr, sodass Zeitalter früher enden.[nn][BLIST]
+			<Text>Jede Zuteilung gibt 50% mehr, sodass Zeitalter früher enden.[nn][BLIST]
 				[LI] Antike: 8, 8 und 15
 				[LI] Erkundung: 8, 15 und 30
 				[LI] Moderne: 8 und 15[/BLIST][nn]Zukunftstechnologien und -ausrichtungen: je 15 Punkte.</Text>
@@ -496,10 +496,10 @@
 			<Text>25% weniger Wissenschaft. Keramik: 53 statt 70. (Bei Standardgeschwindigkeit)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COST_DESCRIPTION_STANDARD" Language="de_DE">
-			<Text>Die Kosten des Spiels, unverändert.</Text>
+			<Text>Die Kosten des Spiels.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_STANDARD" Language="de_DE">
-			<Text>Die Kosten des Spiels, unverändert.[n]Kosten der einzelnen Siegprojekte: [BLIST]
+			<Text>Die Kosten des Spiels.[n]Kosten der einzelnen Siegprojekte: [BLIST]
 				[LI] Sternenkarte: 450
 				[LI] Sphärische Erde: 600
 				[LI] Heliozentrisches Modell: 750
@@ -568,7 +568,7 @@
 				[LI] Bemannte Raumfahrt: 2250 / 2250 / 2250[/BLIST][nn](Bei Standardgeschwindigkeit)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="de_DE">
-			<Text>Die Kosten des Spiels, unverändert.</Text>
+			<Text>Die Kosten des Spiels.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="de_DE">
 			<Text>Standard-Ausrichtungen früh, teurer sobald sich der Baum öffnet.[nn][BLIST]
@@ -589,7 +589,7 @@
 				[LI] Moderne: Standard[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="de_DE">
-			<Text>Die Kosten des Spiels, unverändert.</Text>
+			<Text>Die Kosten des Spiels.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="de_DE">
 			<Text>Teurere Forschung früh, günstiger sobald sich der Baum öffnet.[nn][BLIST]
@@ -652,7 +652,7 @@
 			<Text>25% mehr Wissenschaft. Keramik: 88 statt 70. (Bei Standardgeschwindigkeit)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_DOUBLE" Language="de_DE">
-			<Text>Doppelte Produktion.[n]Kosten der einzelnen Siegprojekte: [BLIST]
+			<Text>100% mehr Produktion.[n]Kosten der einzelnen Siegprojekte: [BLIST]
 				[LI] Sternenkarte: 900
 				[LI] Sphärische Erde: 1200
 				[LI] Heliozentrisches Modell: 1500
@@ -667,10 +667,10 @@
 				[LI] Bemannte Raumfahrt: 6000[/BLIST][nn](Bei Standardgeschwindigkeit)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_DOUBLE" Language="de_DE">
-			<Text>Doppelte Kultur. Stammesfürstentum: 180 statt 90. (Bei Standardgeschwindigkeit)</Text>
+			<Text>100% mehr Kultur. Stammesfürstentum: 180 statt 90. (Bei Standardgeschwindigkeit)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_DOUBLE" Language="de_DE">
-			<Text>Doppelte Wissenschaft. Keramik: 140 statt 70. (Bei Standardgeschwindigkeit)</Text>
+			<Text>100% mehr Wissenschaft. Keramik: 140 statt 70. (Bei Standardgeschwindigkeit)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW" Language="de_DE">
 			<Text>25% mehr Nahrung je Bürger.</Text>
@@ -682,7 +682,7 @@
 				[LI] Moderne: 4 und 8[/BLIST][nn]Zukunftstechnologien und -ausrichtungen: 8 Punkte, in der Moderne 7.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="de_DE">
-			<Text>Keine Änderung.</Text>
+			<Text>Die Nahrungsschwellen des Spiels.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="de_DE">
 			<Text>Städte wachsen früh schneller und pendeln sich dann auf Standard ein.[nn][BLIST]
@@ -709,7 +709,7 @@
 			<Text>25% weniger Nahrung je Bürger.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD" Language="de_DE">
-			<Text>Keine Änderung.</Text>
+			<Text>Die Bewegungskosten des Spiels.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_BALANCED" Language="de_DE">
 			<Text>Standard-Straßen bis zur Moderne, danach günstiger.[nn][BLIST]
@@ -809,52 +809,52 @@
 			<Text>Wadis</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WADI" Language="de_DE">
-			<Text>Wenige Flüsse, davon weit weniger schiffbar als üblich.</Text>
+			<Text>50% weniger Flüsse, davon weit weniger schiffbar als üblich.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_ARID_NAME" Language="de_DE">
 			<Text>Trocken</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_ARID" Language="de_DE">
-			<Text>Wenige Flüsse, davon der übliche Anteil schiffbar.</Text>
+			<Text>50% weniger Flüsse, davon der übliche Anteil schiffbar.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_CHANNEL_NAME" Language="de_DE">
 			<Text>Fahrrinnen</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_CHANNEL" Language="de_DE">
-			<Text>Wenige Flüsse, davon weit mehr schiffbar.</Text>
+			<Text>50% weniger Flüsse, davon weit mehr schiffbar.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_SHALLOW_NAME" Language="de_DE">
 			<Text>Seicht</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_SHALLOW" Language="de_DE">
-			<Text>Eine normale Anzahl Flüsse, davon weit weniger schiffbar als üblich.</Text>
+			<Text>Die übliche Anzahl Flüsse, davon weit weniger schiffbar als üblich.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="de_DE">
-			<Text>Die übliche Anzahl Flüsse für den gewählten Kartentyp, davon der übliche Anteil schiffbar.</Text>
+			<Text>Die übliche Anzahl Flüsse, davon der übliche Anteil schiffbar.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_WATERWAY_NAME" Language="de_DE">
 			<Text>Wasserstraßen</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WATERWAY" Language="de_DE">
-			<Text>Eine normale Anzahl Flüsse, davon weit mehr schiffbar.</Text>
+			<Text>Die übliche Anzahl Flüsse, davon weit mehr schiffbar.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_STREAM_NAME" Language="de_DE">
 			<Text>Bäche</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_STREAM" Language="de_DE">
-			<Text>Viele Flüsse, davon weit weniger schiffbar als üblich.</Text>
+			<Text>50% mehr Flüsse, davon weit weniger schiffbar als üblich.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_RIVERLAND_NAME" Language="de_DE">
 			<Text>Flussland</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_RIVERLAND" Language="de_DE">
-			<Text>Viele Flüsse, davon der übliche Anteil schiffbar.</Text>
+			<Text>50% mehr Flüsse, davon der übliche Anteil schiffbar.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DEEP_NAME" Language="de_DE">
 			<Text>Tief</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEEP" Language="de_DE">
-			<Text>Viele Flüsse, davon weit mehr schiffbar.</Text>
+			<Text>50% mehr Flüsse, davon weit mehr schiffbar.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LOW_NAME" Language="de_DE">
 			<Text>Niedrig</Text>
@@ -875,7 +875,7 @@
 			<Text>25% weniger Produktion. Siedler: 38 statt 50. (Bei Standardgeschwindigkeit)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="de_DE">
-			<Text>Die Einheitenkosten des Spiels, unverändert.</Text>
+			<Text>Die Einheitenkosten des Spiels.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_HIGH" Language="de_DE">
 			<Text>50% mehr Produktion. Siedler: 75 statt 50. (Bei Standardgeschwindigkeit)</Text>
@@ -884,7 +884,7 @@
 			<Text>25% mehr Produktion. Siedler: 63 statt 50. (Bei Standardgeschwindigkeit)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE" Language="de_DE">
-			<Text>Doppelte Produktion. Siedler: 100 statt 50. (Bei Standardgeschwindigkeit)</Text>
+			<Text>100% mehr Produktion. Siedler: 100 statt 50. (Bei Standardgeschwindigkeit)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="de_DE">
 			<Text>Marathon 2.0</Text>
@@ -1130,58 +1130,40 @@
 			<Text>Generiert mehr Berge.</Text>
 		</Replace>
 
-		<Replace Tag="LOC_ZG_WORLD_AGE_NAME" Language="de_DE">
-			<Text>Weltalter</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_NAME" Language="de_DE">
+			<Text>Kartenalter</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION" Language="de_DE">
-			<Text>Legt fest, wie zerklüftet das Land ist.[n]Berge werden getrennt eingestellt, dies verschiebt nur den Boden zwischen flach und hügelig.</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION" Language="de_DE">
+			<Text>Legt fest, wie zerklüftet das Land ist.[n]Berge werden getrennt eingestellt, dies verschiebt den Boden nur zwischen flach und zerklüftet.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_NEW" Language="de_DE">
-			<Text>Frisch aufgefaltetes Land mit mehr Hügeln und weniger Flachland.</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_NEW" Language="de_DE">
+			<Text>Frisch aufgefaltetes Land mit mehr zerklüftetem und weniger flachem Boden.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_STANDARD" Language="de_DE">
-			<Text>Das Gelände, das die Karte von sich aus erheben würde.</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_STANDARD" Language="de_DE">
+			<Text>Standardgelände für den gewählten Kartentyp.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_OLD" Language="de_DE">
-			<Text>Abgetragenes Land mit weniger Hügeln und weiteren Ebenen.</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_OLD" Language="de_DE">
+			<Text>Abgetragenes Land mit weniger zerklüftetem Boden und weiteren Ebenen.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_ZG_RESOURCES_NAME" Language="de_DE">
 			<Text>Ressourcen</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION" Language="de_DE">
-			<Text>Legt fest, wie viele Ressourcen auf der Karte platziert werden und ob sie sich zu Feldern zusammenfinden.[n]Es kommen keine neuen hinzu, und keine der garantierten geht verloren.</Text>
+			<Text>Legt fest, wie viele Ressourcen die Karte platziert, ob sie sich zu Feldern zusammenfinden und wie viele Reichsressourcen jeder Landmasse zugesichert sind.[n]Es kommen keine neuen hinzu.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_SPARSE" Language="de_DE">
-			<Text>Halb so viele Ressourcen wie üblich, zu Feldern von bis zu drei Kacheln zusammengefasst.</Text>
+			<Text>25% weniger Ressourcen, zu Feldern von bis zu drei Kacheln zusammengefasst, mit zwei Reichsressourcen je Landmasse.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_STANDARD" Language="de_DE">
-			<Text>Die Ressourcen, die die Karte von sich aus platzieren würde, gleichmäßig verteilt.</Text>
+			<Text>Die übliche Menge an Ressourcen, gleichmäßig verteilt, mit drei Reichsressourcen je Landmasse.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT" Language="de_DE">
-			<Text>Die Hälfte mehr Ressourcen als üblich, gleichmäßig verteilt.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="de_DE">
-			<Text>Garantierte Ressourcen</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION" Language="de_DE">
-			<Text>Legt fest, wie viele Reichsressourcen jeder Landmasse garantiert sind.[n]Gilt für die zehn bereits garantierten Ressourcen und fügt keiner anderen eine Untergrenze hinzu.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_SPARSE" Language="de_DE">
-			<Text>Zwei pro Landmasse.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD" Language="de_DE">
-			<Text>Drei pro Landmasse.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT" Language="de_DE">
-			<Text>Vier pro Landmasse.</Text>
+			<Text>25% mehr Ressourcen, gleichmäßig verteilt, mit vier Reichsressourcen je Landmasse.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="de_DE">
 			<Text>Geländeeinstellungen</Text>
-		</Replace>
-		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="de_DE">
-			<Text>Ressourceneinstellungen</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="de_DE">
 			<Text>Tempo-Set</Text>

@@ -16,8 +16,8 @@ import { GenerationContext, GenerationPhases } from 'fs://game/base-standard/scr
 import { profileScope, profileFunction } from 'fs://game/base-standard/scripts/profiling.js';
 import { zgModelRivers } from './zg-map-rivers.js';
 import { zgDesignateBiomes } from './zg-map-biomes.js';
-import { zgAdjustHexMountains } from './zg-map-mountains.js';
-import { zgAddRough, zgAdjustHexRough } from './zg-map-rough.js';
+import { zgAdjustMountains } from './zg-map-mountains.js';
+import { zgAddRough } from './zg-map-rough.js';
 
 export async function zgGenerateMapFeatures(hexMap, context = new GenerationContext()) {
   const generateMapFeaturesScope = new profileScope("Generate Features");
@@ -31,12 +31,6 @@ export async function zgGenerateMapFeatures(hexMap, context = new GenerationCont
     profileFunction("generateLakes", () => hexMap.GenerateLakes());
   }
   if (context.phases & GenerationPhases.WriteToTerrainBuilder) {
-    // ZG-ASP: apply the World Age and Mountains settings to the simulated tiles
-    // before they are written out, since these maps never call addHills or
-    // addMountains. World Age runs first so the mountain pass draws its peaks
-    // from the rough ground the world age has already settled.
-    profileFunction("zgAdjustHexRough", () => zgAdjustHexRough(hexMap));
-    profileFunction("zgAdjustHexMountains", () => zgAdjustHexMountains(hexMap));
     hexMap.writeToTerrainBuilder();
   }
   profileFunction("TerrainBuilder.validateAndFixTerrain", () => TerrainBuilder.validateAndFixTerrain());
@@ -49,7 +43,13 @@ export async function zgGenerateMapFeatures(hexMap, context = new GenerationCont
     profileFunction("TerrainBuilder.buildElevation", () => TerrainBuilder.buildElevation());
   }
   if (context.phases & GenerationPhases.Hills) {
+    // ZG-ASP: Map Age in place of addHills. This is the only pass that raises
+    // rough ground on these maps, so the Mountains pass has to follow it rather
+    // than run on the simulated tiles: before this point the map holds flat and
+    // mountainous ground only, and More Mountains grows its ranges outward into
+    // rough tiles that would not exist yet.
     profileFunction("addHills", () => zgAddRough(iWidth, iHeight));
+    profileFunction("zgAdjustMountains", () => zgAdjustMountains(iWidth, iHeight));
   }
   if (context.phases & GenerationPhases.Rainfall) {
     profileFunction("buildRainfallMap", () => buildRainfallMap(iWidth, iHeight));

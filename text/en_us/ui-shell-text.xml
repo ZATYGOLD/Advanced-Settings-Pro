@@ -203,7 +203,7 @@
 		<Row Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM"><Text>Each age uses its own row in the age groups below.</Text></Row>
 		<Row Tag="LOC_ZG_PACING_AGE_DESCRIPTION"><Text>Sets this age's value.[n]Applies only when the matching Pace Settings row is set to Custom. Pace Set presets fill these rows; changing one switches Pace Set to Custom.</Text></Row>
 		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME"><Text>Age Progress Rate</Text></Row>
-		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION"><Text>How quickly the age meter fills. Each Legacy Path milestone, and each future tech or civic, adds points to it; Age Length sets the total that ends the age.[n]Milestone figures are the first, second, and third of each age.</Text></Row>
+		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION"><Text>Sets how quickly the age meter fills. Each Legacy Path milestone, and each future tech or civic, adds points to it; Age Length fixes the total that ends the age.[n]Milestone figures are the first, second, and third of each age.</Text></Row>
 		<Row Tag="LOC_ZG_TECHNOLOGY_COST_NAME"><Text>Technology Cost</Text></Row>
 		<Row Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION"><Text>Sets how much Science each technology costs. Higher costs stretch an age out; lower costs let you race down the tree.</Text></Row>
 		<Row Tag="LOC_ZG_CIVIC_COST_NAME"><Text>Civic Cost</Text></Row>
@@ -214,15 +214,15 @@
 		<Row Tag="LOC_ZG_ROADS_DESCRIPTION"><Text>Sets how much Movement it costs to travel along roads and railroads. Cheaper roads let armies cross your territory in far fewer turns.</Text></Row>
 		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_NAME"><Text>Victory Project Cost</Text></Row>
 		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION"><Text>Sets the Production cost of the 12 science and military Victory Projects, from Chart The Stars to Crewed Space Flight.</Text></Row>
-		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW"><Text>Every award adds half as much, so ages run longer before they end.[nn][BLIST]
+		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW"><Text>Every award adds 50% less, so ages run longer before they end.[nn][BLIST]
 				[LI] Antiquity: 3, 3, and 5
 				[LI] Exploration: 3, 5, and 10
 				[LI] Modern: 3 and 5[/BLIST][nn]Future techs and civics: 5 points each.</Text></Row>
-		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD"><Text>The game's own awards, left unchanged.[nn][BLIST]
+		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD"><Text>The game's own awards.[nn][BLIST]
 				[LI] Antiquity: 5, 5, and 10
 				[LI] Exploration: 5, 10, and 20
 				[LI] Modern: 5 and 10[/BLIST][nn]Future techs and civics: 10 points each.</Text></Row>
-		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST"><Text>Every award adds half as much again, so ages end sooner.[nn][BLIST]
+		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST"><Text>Every award adds 50% more, so ages end sooner.[nn][BLIST]
 				[LI] Antiquity: 8, 8, and 15
 				[LI] Exploration: 8, 15, and 30
 				[LI] Modern: 8 and 15[/BLIST][nn]Future techs and civics: 15 points each.</Text></Row>
@@ -241,8 +241,8 @@
 				[LI] Crewed Space Flight: 2250[/BLIST][nn](On Standard Speed)</Text></Row>
 		<Row Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_LOW"><Text>25% less Culture. Chiefdom: 68 instead of 90. (On Standard Speed)</Text></Row>
 		<Row Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_LOW"><Text>25% less Science. Pottery: 53 instead of 70. (On Standard Speed)</Text></Row>
-		<Row Tag="LOC_ZG_COST_DESCRIPTION_STANDARD"><Text>The game's own costs, left unchanged.</Text></Row>
-		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_STANDARD"><Text>The game's own costs, left unchanged.[n]Cost of each Victory Project: [BLIST]
+		<Row Tag="LOC_ZG_COST_DESCRIPTION_STANDARD"><Text>The game's own costs.</Text></Row>
+		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_STANDARD"><Text>The game's own costs.[n]Cost of each Victory Project: [BLIST]
 				[LI] Chart The Stars: 450
 				[LI] Spherical Earth: 600
 				[LI] Heliocentric Model: 750
@@ -303,7 +303,7 @@
 				[LI] Crewed Space Flight Preparation: 1500 / 1500 / 1500
 				[LI] Operation Ivy: 1800 / 1800 / 1800
 				[LI] Crewed Space Flight: 2250 / 2250 / 2250[/BLIST][nn](On Standard Speed)</Text></Row>
-		<Row Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD"><Text>The game's own costs, left unchanged.</Text></Row>
+		<Row Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD"><Text>The game's own costs.</Text></Row>
 		<Row Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED"><Text>Standard civics early, dearer once the tree opens up.[nn][BLIST]
 				[LI] Antiquity: Standard
 				[LI] Exploration: +25%
@@ -316,7 +316,7 @@
 				[LI] Antiquity: -25%
 				[LI] Exploration: -25%
 				[LI] Modern: Standard[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD"><Text>The game's own costs, left unchanged.</Text></Row>
+		<Row Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD"><Text>The game's own costs.</Text></Row>
 		<Row Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED"><Text>Dearer research early, cheaper once the tree opens up.[nn][BLIST]
 				[LI] Antiquity: +25%
 				[LI] Exploration: Standard
@@ -359,7 +359,7 @@
 				[LI] Crewed Space Flight: 3750[/BLIST][nn](On Standard Speed)</Text></Row>
 		<Row Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_MEDIUM"><Text>25% more Culture. Chiefdom: 113 instead of 90. (On Standard Speed)</Text></Row>
 		<Row Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_MEDIUM"><Text>25% more Science. Pottery: 88 instead of 70. (On Standard Speed)</Text></Row>
-		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_DOUBLE"><Text>Twice the Production.[n]Cost of each Victory Project: [BLIST]
+		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_DOUBLE"><Text>100% more Production.[n]Cost of each Victory Project: [BLIST]
 				[LI] Chart The Stars: 900
 				[LI] Spherical Earth: 1200
 				[LI] Heliocentric Model: 1500
@@ -372,8 +372,8 @@
 				[LI] Crewed Space Flight Preparation: 4000
 				[LI] Operation Ivy: 4800
 				[LI] Crewed Space Flight: 6000[/BLIST][nn](On Standard Speed)</Text></Row>
-		<Row Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_DOUBLE"><Text>Twice the Culture. Chiefdom: 180 instead of 90. (On Standard Speed)</Text></Row>
-		<Row Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_DOUBLE"><Text>Twice the Science. Pottery: 140 instead of 70. (On Standard Speed)</Text></Row>
+		<Row Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_DOUBLE"><Text>100% more Culture. Chiefdom: 180 instead of 90. (On Standard Speed)</Text></Row>
+		<Row Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_DOUBLE"><Text>100% more Science. Pottery: 140 instead of 70. (On Standard Speed)</Text></Row>
 		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW"><Text>25% more Food per citizen.</Text></Row>
 		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED">
 			<Text>
@@ -391,7 +391,7 @@
 		<Row Tag="LOC_ZG_PCT_PLUS_25"><Text>+25%</Text></Row>
 		<Row Tag="LOC_ZG_PCT_PLUS_50"><Text>+50%</Text></Row>
 		<Row Tag="LOC_ZG_PCT_PLUS_100"><Text>+100%</Text></Row>
-		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD"><Text>No change.</Text></Row>
+		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD"><Text>The game's own Food thresholds.</Text></Row>
 		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED"><Text>Cities grow faster early, then settle to standard.[nn][BLIST]
 				[LI] Antiquity: -25%
 				[LI] Exploration: -25%
@@ -406,7 +406,7 @@
 				[LI] Modern: -25%[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST"><Text>50% less Food per citizen.</Text></Row>
 		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_QUICK"><Text>25% less Food per citizen.</Text></Row>
-		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD"><Text>No change.</Text></Row>
+		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD"><Text>The game's own Movement costs.</Text></Row>
 		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_BALANCED"><Text>Standard roads until the Modern Age, then cheaper.[nn][BLIST]
 				[LI] Antiquity: Standard
 				[LI] Exploration: Standard
@@ -502,7 +502,7 @@
 			<Text>25% less Production. Warrior: 23 instead of 30. (On Standard Speed)</Text>
 		</Row>
 		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD">
-			<Text>The game's own unit costs, left unchanged.</Text>
+			<Text>The game's own unit costs.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_HIGH">
 			<Text>50% more Production. Warrior: 45 instead of 30. (On Standard Speed)</Text>
@@ -511,7 +511,7 @@
 			<Text>25% more Production. Warrior: 38 instead of 30. (On Standard Speed)</Text>
 		</Row>
 		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DOUBLE">
-			<Text>Twice the Production. Warrior: 60 instead of 30. (On Standard Speed)</Text>
+			<Text>100% more Production. Warrior: 60 instead of 30. (On Standard Speed)</Text>
 		</Row>
 		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION">
 			<Text>Sets the Production cost of civilian units such as Settlers and Merchants.</Text>
@@ -520,7 +520,7 @@
 			<Text>25% less Production. Settler: 38 instead of 50. (On Standard Speed)</Text>
 		</Row>
 		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD">
-			<Text>The game's own unit costs, left unchanged.</Text>
+			<Text>The game's own unit costs.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_HIGH">
 			<Text>50% more Production. Settler: 75 instead of 50. (On Standard Speed)</Text>
@@ -529,7 +529,7 @@
 			<Text>25% more Production. Settler: 63 instead of 50. (On Standard Speed)</Text>
 		</Row>
 		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE">
-			<Text>Twice the Production. Settler: 100 instead of 50. (On Standard Speed)</Text>
+			<Text>100% more Production. Settler: 100 instead of 50. (On Standard Speed)</Text>
 		</Row>
 
 	<!-- Crisis Descriptions -->
@@ -574,7 +574,7 @@
 				[LI] Huge: 0 Natural Wonders[/BLIST]</Text>
 		</Row>
 		<Row Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF">
-			<Text>About half the standard number of Natural Wonders.[nn][BLIST]
+			<Text>50% fewer Natural Wonders.[nn][BLIST]
 				[LI] Tiny: 1 Natural Wonder
 				[LI] Small: 2 Natural Wonders
 				[LI] Standard: 2 Natural Wonders
@@ -590,7 +590,7 @@
 				[LI] Huge: 7 Natural Wonders[/BLIST]</Text>
 		</Row>
 		<Row Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE">
-			<Text>Noticeably more Natural Wonders than standard.[nn][BLIST]
+			<Text>50% more Natural Wonders.[nn][BLIST]
 				[LI] Tiny: 5 Natural Wonders
 				[LI] Small: 6 Natural Wonders
 				[LI] Standard: 8 Natural Wonders
@@ -598,7 +598,7 @@
 				[LI] Huge: 11 Natural Wonders[/BLIST]</Text>
 		</Row>
 		<Row Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE">
-			<Text>Twice the standard number of Natural Wonders.[nn][BLIST]
+			<Text>100% more Natural Wonders.[nn][BLIST]
 				[LI] Tiny: 6 Natural Wonders
 				[LI] Small: 8 Natural Wonders
 				[LI] Standard: 10 Natural Wonders
@@ -699,22 +699,22 @@
 		<Row Tag="LOC_ZG_RIVERS_NAME"><Text>Rivers</Text></Row>
 		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION"><Text>Sets how many rivers are generated and what share of them are Navigable Rivers rather than Minor Rivers.</Text></Row>
 		<Row Tag="LOC_ZG_RIVERS_WADI_NAME"><Text>Wadis</Text></Row>
-		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_WADI"><Text>Few rivers, with far fewer of them navigable.</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_WADI"><Text>50% fewer rivers, with far fewer of them navigable.</Text></Row>
 		<Row Tag="LOC_ZG_RIVERS_ARID_NAME"><Text>Arid</Text></Row>
-		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_ARID"><Text>Few rivers, with the usual share of them navigable.</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_ARID"><Text>50% fewer rivers, with the usual share of them navigable.</Text></Row>
 		<Row Tag="LOC_ZG_RIVERS_CHANNEL_NAME"><Text>Channels</Text></Row>
-		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_CHANNEL"><Text>Few rivers, with far more of them navigable.</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_CHANNEL"><Text>50% fewer rivers, with far more of them navigable.</Text></Row>
 		<Row Tag="LOC_ZG_RIVERS_SHALLOW_NAME"><Text>Shallow</Text></Row>
-		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_SHALLOW"><Text>A standard number of rivers, with far fewer of them navigable.</Text></Row>
-		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT"><Text>The usual number of rivers for the chosen map type, with the usual share of them navigable.</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_SHALLOW"><Text>The usual number of rivers, with far fewer of them navigable.</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT"><Text>The usual number of rivers, with the usual share of them navigable.</Text></Row>
 		<Row Tag="LOC_ZG_RIVERS_WATERWAY_NAME"><Text>Waterways</Text></Row>
-		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_WATERWAY"><Text>A standard number of rivers, with far more of them navigable.</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_WATERWAY"><Text>The usual number of rivers, with far more of them navigable.</Text></Row>
 		<Row Tag="LOC_ZG_RIVERS_STREAM_NAME"><Text>Streams</Text></Row>
-		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_STREAM"><Text>Many rivers, with far fewer of them navigable.</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_STREAM"><Text>50% more rivers, with far fewer of them navigable.</Text></Row>
 		<Row Tag="LOC_ZG_RIVERS_RIVERLAND_NAME"><Text>Riverlands</Text></Row>
-		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_RIVERLAND"><Text>Many rivers, with the usual share of them navigable.</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_RIVERLAND"><Text>50% more rivers, with the usual share of them navigable.</Text></Row>
 		<Row Tag="LOC_ZG_RIVERS_DEEP_NAME"><Text>Deep</Text></Row>
-		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_DEEP"><Text>Many rivers, with far more of them navigable.</Text></Row>
+		<Row Tag="LOC_ZG_RIVERS_DESCRIPTION_DEEP"><Text>50% more rivers, with far more of them navigable.</Text></Row>
 
 	<!-- Game Speeds -->
 		<Row Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME"><Text>Marathon 2.0</Text></Row>
@@ -895,49 +895,35 @@
 		<Row Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT"><Text>Standard mountain generation for the chosen map type.</Text></Row>
 		<Row Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE"><Text>Generates more mountains.</Text></Row>
 
-		<Row Tag="LOC_ZG_WORLD_AGE_NAME"><Text>World Age</Text></Row>
-		<Row Tag="LOC_ZG_WORLD_AGE_DESCRIPTION">
-			<Text>Sets how rugged the land is.[n]Mountains are set separately, so this only moves the ground between flat and hilly.</Text>
+		<Row Tag="LOC_ZG_MAP_AGE_NAME"><Text>Map Age</Text></Row>
+		<Row Tag="LOC_ZG_MAP_AGE_DESCRIPTION">
+			<Text>Sets how broken the land is.[n]Mountains are set separately, so this moves ground only between flat and rough.</Text>
 		</Row>
-		<Row Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_NEW">
-			<Text>Freshly buckled land, with more hills and less flat ground.</Text>
+		<Row Tag="LOC_ZG_MAP_AGE_DESCRIPTION_NEW">
+			<Text>Freshly buckled land, with more rough ground and less flat.</Text>
 		</Row>
-		<Row Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_STANDARD">
-			<Text>The terrain the map would raise on its own.</Text>
+		<Row Tag="LOC_ZG_MAP_AGE_DESCRIPTION_STANDARD">
+			<Text>Standard terrain for the chosen map type.</Text>
 		</Row>
-		<Row Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_OLD">
-			<Text>Worn-down land, with fewer hills and broader plains.</Text>
+		<Row Tag="LOC_ZG_MAP_AGE_DESCRIPTION_OLD">
+			<Text>Worn-down land, with less rough ground and broader plains.</Text>
 		</Row>
 
 		<Row Tag="LOC_ZG_RESOURCES_NAME"><Text>Resources</Text></Row>
 		<Row Tag="LOC_ZG_RESOURCES_DESCRIPTION">
-			<Text>Sets how many resources are placed on the map and whether they gather into patches.[n]No new resources are added, and none of the guaranteed ones are lost.</Text>
+			<Text>Sets how many resources the map places, whether they gather into patches, and how many of each empire resource every landmass is promised.[n]No new resources are added.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_RESOURCES_DESCRIPTION_SPARSE">
-			<Text>Half the usual resources, gathered into patches of up to three tiles.</Text>
+			<Text>25% fewer resources, gathered into patches of up to three tiles, with two of each empire resource per landmass.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_RESOURCES_DESCRIPTION_STANDARD">
-			<Text>The resources the map would place on its own, spread evenly.</Text>
+			<Text>The usual resources, spread evenly, with three of each empire resource per landmass.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT">
-			<Text>Half again as many resources as usual, spread evenly.</Text>
-		</Row>
-		<Row Tag="LOC_ZG_RESOURCE_MINIMUM_NAME"><Text>Guaranteed Resources</Text></Row>
-		<Row Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION">
-			<Text>Sets how many of each empire resource every landmass is guaranteed.[n]Applies to the ten resources the map already guarantees, and adds no floor to any other.</Text>
-		</Row>
-		<Row Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_SPARSE">
-			<Text>Two per landmass.</Text>
-		</Row>
-		<Row Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD">
-			<Text>Three per landmass.</Text>
-		</Row>
-		<Row Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT">
-			<Text>Four per landmass.</Text>
+			<Text>25% more resources, spread evenly, with four of each empire resource per landmass.</Text>
 		</Row>
 
 		<Row Tag="LOC_GROUPID_ZG_TERRAINOPTIONS"><Text>Terrain Settings</Text></Row>
-		<Row Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS"><Text>Resource Settings</Text></Row>
 
 	<!-- Pace Set -->
 		<Row Tag="LOC_ZG_PACE_PRESET_NAME"><Text>Pace Set</Text></Row>

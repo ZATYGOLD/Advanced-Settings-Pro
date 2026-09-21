@@ -282,7 +282,7 @@
 			<Text>生產力減少25%。戰士：23，而非30（標準速度下）。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
-			<Text>遊戲原本的單位費用，保持不變。</Text>
+			<Text>遊戲原本的單位費用。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_HIGH" Language="zh_Hant_HK">
 			<Text>生產力增加50%。戰士：45，而非30（標準速度下）。</Text>
@@ -291,7 +291,7 @@
 			<Text>生產力增加25%。戰士：38，而非30（標準速度下）。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DOUBLE" Language="zh_Hant_HK">
-			<Text>生產力翻倍。戰士：60，而非30（標準速度下）。</Text>
+			<Text>生產力增加100%。戰士：60，而非30（標準速度下）。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>啟用或停用所有危機。[n]停用將關閉危機選擇中的所有危機。</Text>
@@ -332,7 +332,7 @@
 				[LI] 巨大：0個自然奇觀[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF" Language="zh_Hant_HK">
-			<Text>約為標準數量一半的自然奇觀。[nn][BLIST]
+			<Text>自然奇觀減少50%。[nn][BLIST]
 				[LI] 極小：1個自然奇觀
 				[LI] 小：2個自然奇觀
 				[LI] 標準：2個自然奇觀
@@ -348,7 +348,7 @@
 				[LI] 巨大：7個自然奇觀[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE" Language="zh_Hant_HK">
-			<Text>明顯多於標準數量的自然奇觀。[nn][BLIST]
+			<Text>自然奇觀增加50%。[nn][BLIST]
 				[LI] 極小：5個自然奇觀
 				[LI] 小：6個自然奇觀
 				[LI] 標準：8個自然奇觀
@@ -356,7 +356,7 @@
 				[LI] 巨大：11個自然奇觀[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE" Language="zh_Hant_HK">
-			<Text>標準數量兩倍的自然奇觀。[nn][BLIST]
+			<Text>自然奇觀增加100%。[nn][BLIST]
 				[LI] 極小：6個自然奇觀
 				[LI] 小：8個自然奇觀
 				[LI] 標準：10個自然奇觀
@@ -424,7 +424,7 @@
 			<Text>時代進度速度</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>時代進度條填滿的速度。傳承路線的每個里程碑，以及每項未來科技或市政，都會為其增加點數；結束時代所需的總量由時代長度決定。[n]里程碑數字依次為該時代的第一、第二、第三個。</Text>
+			<Text>設定時代進度條填滿的速度。傳承路線的每個里程碑，以及每項未來科技或市政，都會為其增加點數；結束時代所需的總量由時代長度決定。[n]里程碑數字依次為該時代的第一、第二、第三個。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_NAME" Language="zh_Hant_HK">
 			<Text>科技花費</Text>
@@ -457,19 +457,19 @@
 			<Text>設定12項科技與軍事凱旋項目的生產力費用。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="zh_Hant_HK">
-			<Text>每次獲得的點數減半，時代持續更久。[nn][BLIST]
+			<Text>每次獲得的點數減少50%，時代持續更久。[nn][BLIST]
 				[LI] 遠古：3、3、5
 				[LI] 探索：3、5、10
 				[LI] 近代：3、5[/BLIST][nn]未來科技和市政：各5點。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
-			<Text>遊戲本身的點數，未作改動。[nn][BLIST]
+			<Text>遊戲本身的點數。[nn][BLIST]
 				[LI] 遠古：5、5、10
 				[LI] 探索：5、10、20
 				[LI] 近代：5、10[/BLIST][nn]未來科技和市政：各10點。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST" Language="zh_Hant_HK">
-			<Text>每次獲得的點數增加一半，時代更早結束。[nn][BLIST]
+			<Text>每次獲得的點數增加50%，時代更早結束。[nn][BLIST]
 				[LI] 遠古：8、8、15
 				[LI] 探索：8、15、30
 				[LI] 近代：8、15[/BLIST][nn]未來科技和市政：各15點。</Text>
@@ -496,10 +496,10 @@
 			<Text>科技值減少25%。製陶術：53，而非70（標準速度下）。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COST_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
-			<Text>遊戲原本的費用，保持不變。</Text>
+			<Text>遊戲原本的費用。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
-			<Text>遊戲原本的費用，保持不變。[n]各勝利專案的費用： [BLIST]
+			<Text>遊戲原本的費用。[n]各勝利專案的費用： [BLIST]
 				[LI] 繪製星圖：450
 				[LI] 地圓說：600
 				[LI] 日心模型：750
@@ -568,7 +568,7 @@
 				[LI] 載人太空飛行：2250 / 2250 / 2250[/BLIST][nn]（標準速度下）</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
-			<Text>遊戲原本的費用，保持不變。</Text>
+			<Text>遊戲原本的費用。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="zh_Hant_HK">
 			<Text>前期社會制度為標準，制度樹展開後變得更貴。[nn][BLIST]
@@ -589,7 +589,7 @@
 				[LI] 近代：標準[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
-			<Text>遊戲原本的費用，保持不變。</Text>
+			<Text>遊戲原本的費用。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="zh_Hant_HK">
 			<Text>前期研究更貴，科技樹展開後變得更便宜。[nn][BLIST]
@@ -652,7 +652,7 @@
 			<Text>科技值增加25%。製陶術：88，而非70（標準速度下）。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_DOUBLE" Language="zh_Hant_HK">
-			<Text>生產力翻倍。[n]各勝利專案的費用： [BLIST]
+			<Text>生產力增加100%。[n]各勝利專案的費用： [BLIST]
 				[LI] 繪製星圖：900
 				[LI] 地圓說：1200
 				[LI] 日心模型：1500
@@ -667,10 +667,10 @@
 				[LI] 載人太空飛行：6000[/BLIST][nn]（標準速度下）</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_DOUBLE" Language="zh_Hant_HK">
-			<Text>文化值翻倍。酋邦：180，而非90（標準速度下）。</Text>
+			<Text>文化值增加100%。酋邦：180，而非90（標準速度下）。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_DOUBLE" Language="zh_Hant_HK">
-			<Text>科技值翻倍。製陶術：140，而非70（標準速度下）。</Text>
+			<Text>科技值增加100%。製陶術：140，而非70（標準速度下）。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW" Language="zh_Hant_HK">
 			<Text>每名市民所需食物增加25%。</Text>
@@ -682,7 +682,7 @@
 				[LI] 近代：4、8[/BLIST][nn]未來科技和市政：8點（近代為7點）。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
-			<Text>無變化。</Text>
+			<Text>遊戲原本的食物需求量。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="zh_Hant_HK">
 			<Text>前期城市成長更快，之後回到標準。[nn][BLIST]
@@ -709,7 +709,7 @@
 			<Text>每名市民所需食物減少25%。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
-			<Text>無變化。</Text>
+			<Text>遊戲原本的移動力消耗。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_BALANCED" Language="zh_Hant_HK">
 			<Text>近代之前為標準道路，之後更便宜。[nn][BLIST]
@@ -809,52 +809,52 @@
 			<Text>旱谷</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WADI" Language="zh_Hant_HK">
-			<Text>河流稀少，可航行河流的比例也遠低於平常。</Text>
+			<Text>河流減少50%，可航行河流的比例也遠低於平常。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_ARID_NAME" Language="zh_Hant_HK">
 			<Text>乾旱</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_ARID" Language="zh_Hant_HK">
-			<Text>河流稀少，可航行河流的比例與平常相同。</Text>
+			<Text>河流減少50%，可航行河流的比例與平常相同。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_CHANNEL_NAME" Language="zh_Hant_HK">
 			<Text>河道</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_CHANNEL" Language="zh_Hant_HK">
-			<Text>河流稀少，但可航行河流的比例高得多。</Text>
+			<Text>河流減少50%，但可航行河流的比例高得多。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_SHALLOW_NAME" Language="zh_Hant_HK">
 			<Text>淺水</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_SHALLOW" Language="zh_Hant_HK">
-			<Text>河流數量標準，但可航行河流的比例遠低於平常。</Text>
+			<Text>河流數量與平常相同，但可航行河流的比例遠低於平常。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="zh_Hant_HK">
-			<Text>所選地圖類型的常規河流數量，可航行河流的比例也與平常相同。</Text>
+			<Text>河流數量與平常相同，可航行河流的比例也與平常相同。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_WATERWAY_NAME" Language="zh_Hant_HK">
 			<Text>水路</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WATERWAY" Language="zh_Hant_HK">
-			<Text>河流數量標準，但可航行河流的比例高得多。</Text>
+			<Text>河流數量與平常相同，但可航行河流的比例高得多。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_STREAM_NAME" Language="zh_Hant_HK">
 			<Text>溪流</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_STREAM" Language="zh_Hant_HK">
-			<Text>河流眾多，但可航行河流的比例遠低於平常。</Text>
+			<Text>河流增加50%，但可航行河流的比例遠低於平常。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_RIVERLAND_NAME" Language="zh_Hant_HK">
 			<Text>河流之地</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_RIVERLAND" Language="zh_Hant_HK">
-			<Text>河流眾多，可航行河流的比例與平常相同。</Text>
+			<Text>河流增加50%，可航行河流的比例與平常相同。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DEEP_NAME" Language="zh_Hant_HK">
 			<Text>深水</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEEP" Language="zh_Hant_HK">
-			<Text>河流眾多，可航行河流的比例也高得多。</Text>
+			<Text>河流增加50%，可航行河流的比例也高得多。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LOW_NAME" Language="zh_Hant_HK">
 			<Text>低</Text>
@@ -875,7 +875,7 @@
 			<Text>生產力減少25%。開拓者：38，而非50（標準速度下）。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
-			<Text>遊戲原本的單位費用，保持不變。</Text>
+			<Text>遊戲原本的單位費用。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_HIGH" Language="zh_Hant_HK">
 			<Text>生產力增加50%。開拓者：75，而非50（標準速度下）。</Text>
@@ -884,7 +884,7 @@
 			<Text>生產力增加25%。開拓者：63，而非50（標準速度下）。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE" Language="zh_Hant_HK">
-			<Text>生產力翻倍。開拓者：100，而非50（標準速度下）。</Text>
+			<Text>生產力增加100%。開拓者：100，而非50（標準速度下）。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="zh_Hant_HK">
 			<Text>馬拉松2.0</Text>
@@ -1130,58 +1130,40 @@
 			<Text>生成更多的山脈。</Text>
 		</Replace>
 
-		<Replace Tag="LOC_ZG_WORLD_AGE_NAME" Language="zh_Hant_HK">
-			<Text>世界年代</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_NAME" Language="zh_Hant_HK">
+			<Text>地圖年代</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>設定地形的崎嶇程度。[n]山脈另行設定，此項只調整平地與丘陵的比例。</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>設定地形的崎嶇程度。[n]山脈另行設定，此項只調整平地與崎嶇地的比例。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_NEW" Language="zh_Hant_HK">
-			<Text>剛剛隆起的大地，丘陵更多，平地更少。</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_NEW" Language="zh_Hant_HK">
+			<Text>剛剛隆起的大地，崎嶇地更多，平地更少。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
-			<Text>地圖自行形成的地形。</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
+			<Text>所選地圖類型的標準地形。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_OLD" Language="zh_Hant_HK">
-			<Text>久經侵蝕的大地，丘陵更少，平原更廣。</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_OLD" Language="zh_Hant_HK">
+			<Text>久經侵蝕的大地，崎嶇地更少，平原更廣。</Text>
 		</Replace>
 
 		<Replace Tag="LOC_ZG_RESOURCES_NAME" Language="zh_Hant_HK">
 			<Text>資源</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>設定地圖上放置的資源數量，以及資源是否聚成小片。[n]不會新增資源，也不會減少任何保證出現的資源。</Text>
+			<Text>設定地圖放置的資源數量、資源是否聚成小片，以及每塊大陸保證獲得的帝國資源數量。[n]不會新增資源。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_SPARSE" Language="zh_Hant_HK">
-			<Text>通常資源量的一半，聚成最多三格的小片。</Text>
+			<Text>資源減少25%，聚成最多三格的小片，每塊大陸保證兩個帝國資源。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
-			<Text>地圖自行放置的資源量，均勻分佈。</Text>
+			<Text>通常的資源量，均勻分佈，每塊大陸保證三個帝國資源。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT" Language="zh_Hant_HK">
-			<Text>比通常多一半的資源，均勻分佈。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="zh_Hant_HK">
-			<Text>保證資源</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>設定每塊大陸保證獲得的帝國資源數量。[n]適用於已獲保證的十種資源，不會為其他資源設定下限。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_SPARSE" Language="zh_Hant_HK">
-			<Text>每塊大陸兩個。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
-			<Text>每塊大陸三個。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT" Language="zh_Hant_HK">
-			<Text>每塊大陸四個。</Text>
+			<Text>資源增加25%，均勻分佈，每塊大陸保證四個帝國資源。</Text>
 		</Replace>
 
 		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="zh_Hant_HK">
 			<Text>地形設定</Text>
-		</Replace>
-		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="zh_Hant_HK">
-			<Text>資源設定</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="zh_Hant_HK">
 			<Text>節奏套組</Text>

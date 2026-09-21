@@ -282,7 +282,7 @@
 			<Text>На 25% меньше производства. Воин: 23 вместо 30. (При стандартной скорости)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>Стоимость юнитов из самой игры, без изменений.</Text>
+			<Text>Стоимость юнитов из самой игры.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_HIGH" Language="ru_RU">
 			<Text>На 50% больше производства. Воин: 45 вместо 30. (При стандартной скорости)</Text>
@@ -291,7 +291,7 @@
 			<Text>На 25% больше производства. Воин: 38 вместо 30. (При стандартной скорости)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DOUBLE" Language="ru_RU">
-			<Text>Вдвое больше производства. Воин: 60 вместо 30. (При стандартной скорости)</Text>
+			<Text>На 100% больше производства. Воин: 60 вместо 30. (При стандартной скорости)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="ru_RU">
 			<Text>Включает или отключает все кризисы.[n]Отключено выключает каждый кризис в разделе «Выбор кризисов».</Text>
@@ -332,7 +332,7 @@
 				[LI] Огромная: 0 чудес природы[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF" Language="ru_RU">
-			<Text>Примерно вдвое меньше чудес природы, чем обычно.[nn][BLIST]
+			<Text>На 50% меньше чудес природы.[nn][BLIST]
 				[LI] Крошечная: 1 чудо природы
 				[LI] Малая: 2 чуда природы
 				[LI] Стандартная: 2 чуда природы
@@ -348,7 +348,7 @@
 				[LI] Огромная: 7 чудес природы[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE" Language="ru_RU">
-			<Text>Заметно больше чудес природы, чем обычно.[nn][BLIST]
+			<Text>На 50% больше чудес природы.[nn][BLIST]
 				[LI] Крошечная: 5 чудес природы
 				[LI] Малая: 6 чудес природы
 				[LI] Стандартная: 8 чудес природы
@@ -356,7 +356,7 @@
 				[LI] Огромная: 11 чудес природы[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE" Language="ru_RU">
-			<Text>Вдвое больше чудес природы, чем обычно.[nn][BLIST]
+			<Text>На 100% больше чудес природы.[nn][BLIST]
 				[LI] Крошечная: 6 чудес природы
 				[LI] Малая: 8 чудес природы
 				[LI] Стандартная: 10 чудес природы
@@ -424,7 +424,7 @@
 			<Text>Прогресс эпохи</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION" Language="ru_RU">
-			<Text>Насколько быстро заполняется шкала эпохи. Каждая веха пути наследия и каждая будущая технология или институт добавляют очки; длительность эпохи задаёт сумму, которая её завершает.[n]Числа вех — это первая, вторая и третья веха эпохи.</Text>
+			<Text>Задаёт, насколько быстро заполняется шкала эпохи. Каждая веха пути наследия и каждая будущая технология или институт добавляют очки; длительность эпохи задаёт сумму, которая её завершает.[n]Числа вех — это первая, вторая и третья веха эпохи.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_NAME" Language="ru_RU">
 			<Text>Стоимость технологий</Text>
@@ -457,19 +457,19 @@
 			<Text>Определяет стоимость в производстве 12 научных и военных проектов триумфа.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="ru_RU">
-			<Text>Каждое начисление даёт вдвое меньше, поэтому эпохи длятся дольше.[nn][BLIST]
+			<Text>Каждое начисление даёт на 50% меньше, поэтому эпохи длятся дольше.[nn][BLIST]
 				[LI] Античность: 3, 3 и 5
 				[LI] Исследования: 3, 5 и 10
 				[LI] Современность: 3 и 5[/BLIST][nn]Будущие технологии и институты: по 5 очков.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>Собственные начисления игры, без изменений.[nn][BLIST]
+			<Text>Собственные начисления игры.[nn][BLIST]
 				[LI] Античность: 5, 5 и 10
 				[LI] Исследования: 5, 10 и 20
 				[LI] Современность: 5 и 10[/BLIST][nn]Будущие технологии и институты: по 10 очков.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST" Language="ru_RU">
-			<Text>Каждое начисление даёт в полтора раза больше, поэтому эпохи кончаются раньше.[nn][BLIST]
+			<Text>Каждое начисление даёт на 50% больше, поэтому эпохи кончаются раньше.[nn][BLIST]
 				[LI] Античность: 8, 8 и 15
 				[LI] Исследования: 8, 15 и 30
 				[LI] Современность: 8 и 15[/BLIST][nn]Будущие технологии и институты: по 15 очков.</Text>
@@ -496,10 +496,10 @@
 			<Text>На 25% меньше науки. Гончарное дело: 53 вместо 70. (При стандартной скорости)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COST_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>Стоимость из самой игры, без изменений.</Text>
+			<Text>Стоимость из самой игры.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>Стоимость из самой игры, без изменений.[n]Стоимость каждого проекта победы: [BLIST]
+			<Text>Стоимость из самой игры.[n]Стоимость каждого проекта победы: [BLIST]
 				[LI] Картирование звезд: 450
 				[LI] Сферическая Земля: 600
 				[LI] Гелиоцентрическая модель: 750
@@ -568,7 +568,7 @@
 				[LI] Космический полет с экипажем: 2250 / 2250 / 2250[/BLIST][nn](При стандартной скорости)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>Стоимость из самой игры, без изменений.</Text>
+			<Text>Стоимость из самой игры.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="ru_RU">
 			<Text>Стандартные институты в начале и дороже, когда дерево раскрывается.[nn][BLIST]
@@ -589,7 +589,7 @@
 				[LI] Современность: Стандарт[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>Стоимость из самой игры, без изменений.</Text>
+			<Text>Стоимость из самой игры.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="ru_RU">
 			<Text>Дорогие исследования в начале и дешёвые, когда дерево раскрывается.[nn][BLIST]
@@ -652,7 +652,7 @@
 			<Text>На 25% больше науки. Гончарное дело: 88 вместо 70. (При стандартной скорости)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_DOUBLE" Language="ru_RU">
-			<Text>Вдвое больше производства.[n]Стоимость каждого проекта победы: [BLIST]
+			<Text>На 100% больше производства.[n]Стоимость каждого проекта победы: [BLIST]
 				[LI] Картирование звезд: 900
 				[LI] Сферическая Земля: 1200
 				[LI] Гелиоцентрическая модель: 1500
@@ -667,10 +667,10 @@
 				[LI] Космический полет с экипажем: 6000[/BLIST][nn](При стандартной скорости)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_DOUBLE" Language="ru_RU">
-			<Text>Вдвое больше культуры. Вождество: 180 вместо 90. (При стандартной скорости)</Text>
+			<Text>На 100% больше культуры. Вождество: 180 вместо 90. (При стандартной скорости)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_DOUBLE" Language="ru_RU">
-			<Text>Вдвое больше науки. Гончарное дело: 140 вместо 70. (При стандартной скорости)</Text>
+			<Text>На 100% больше науки. Гончарное дело: 140 вместо 70. (При стандартной скорости)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW" Language="ru_RU">
 			<Text>На 25% больше еды на жителя.</Text>
@@ -682,7 +682,7 @@
 				[LI] Современность: 4 и 8[/BLIST][nn]Будущие технологии и институты: 8 очков, в Современности — 7.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>Без изменений.</Text>
+			<Text>Пороги еды из самой игры.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="ru_RU">
 			<Text>Города растут быстрее в начале, затем возвращаются к стандарту.[nn][BLIST]
@@ -709,7 +709,7 @@
 			<Text>На 25% меньше еды на жителя.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>Без изменений.</Text>
+			<Text>Затраты передвижения из самой игры.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_BALANCED" Language="ru_RU">
 			<Text>Стандартные дороги до Современности, затем дешевле.[nn][BLIST]
@@ -809,19 +809,19 @@
 			<Text>Вади</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WADI" Language="ru_RU">
-			<Text>Мало рек, и судоходных среди них гораздо меньше обычного.</Text>
+			<Text>На 50% меньше рек, и судоходных среди них гораздо меньше обычного.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_ARID_NAME" Language="ru_RU">
 			<Text>Засуха</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_ARID" Language="ru_RU">
-			<Text>Мало рек, судоходна обычная их доля.</Text>
+			<Text>На 50% меньше рек, судоходна обычная их доля.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_CHANNEL_NAME" Language="ru_RU">
 			<Text>Русла</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_CHANNEL" Language="ru_RU">
-			<Text>Мало рек, но судоходных среди них гораздо больше.</Text>
+			<Text>На 50% меньше рек, но судоходных среди них гораздо больше.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_SHALLOW_NAME" Language="ru_RU">
 			<Text>Мелководье</Text>
@@ -830,7 +830,7 @@
 			<Text>Обычное количество рек, но судоходных среди них гораздо меньше обычного.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="ru_RU">
-			<Text>Обычное количество рек для выбранного типа карты, судоходна обычная их доля.</Text>
+			<Text>Обычное количество рек, судоходна обычная их доля.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_WATERWAY_NAME" Language="ru_RU">
 			<Text>Водные пути</Text>
@@ -842,19 +842,19 @@
 			<Text>Ручьи</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_STREAM" Language="ru_RU">
-			<Text>Много рек, но судоходных среди них гораздо меньше обычного.</Text>
+			<Text>На 50% больше рек, но судоходных среди них гораздо меньше обычного.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_RIVERLAND_NAME" Language="ru_RU">
 			<Text>Речной край</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_RIVERLAND" Language="ru_RU">
-			<Text>Много рек, судоходна обычная их доля.</Text>
+			<Text>На 50% больше рек, судоходна обычная их доля.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DEEP_NAME" Language="ru_RU">
 			<Text>Глубоководье</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEEP" Language="ru_RU">
-			<Text>Много рек, и судоходных среди них гораздо больше.</Text>
+			<Text>На 50% больше рек, и судоходных среди них гораздо больше.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LOW_NAME" Language="ru_RU">
 			<Text>Низкая</Text>
@@ -875,7 +875,7 @@
 			<Text>На 25% меньше производства. Поселенцы: 38 вместо 50. (При стандартной скорости)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>Стоимость юнитов из самой игры, без изменений.</Text>
+			<Text>Стоимость юнитов из самой игры.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_HIGH" Language="ru_RU">
 			<Text>На 50% больше производства. Поселенцы: 75 вместо 50. (При стандартной скорости)</Text>
@@ -884,7 +884,7 @@
 			<Text>На 25% больше производства. Поселенцы: 63 вместо 50. (При стандартной скорости)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE" Language="ru_RU">
-			<Text>Вдвое больше производства. Поселенцы: 100 вместо 50. (При стандартной скорости)</Text>
+			<Text>На 100% больше производства. Поселенцы: 100 вместо 50. (При стандартной скорости)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="ru_RU">
 			<Text>Марафон 2.0</Text>
@@ -1130,58 +1130,40 @@
 			<Text>Создаёт больше гор.</Text>
 		</Replace>
 
-		<Replace Tag="LOC_ZG_WORLD_AGE_NAME" Language="ru_RU">
-			<Text>Возраст мира</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_NAME" Language="ru_RU">
+			<Text>Возраст карты</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION" Language="ru_RU">
-			<Text>Задает, насколько изрезана местность.[n]Горы настраиваются отдельно, так что здесь меняется лишь соотношение равнин и холмов.</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION" Language="ru_RU">
+			<Text>Задает, насколько изрезана местность.[n]Горы настраиваются отдельно, так что здесь меняется лишь соотношение равнин и пересеченной местности.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_NEW" Language="ru_RU">
-			<Text>Недавно смятая земля: больше холмов и меньше ровных мест.</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_NEW" Language="ru_RU">
+			<Text>Недавно смятая земля: больше пересеченной местности и меньше ровных мест.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>Рельеф, который карта создала бы сама.</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>Стандартный рельеф для выбранного типа карты.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_OLD" Language="ru_RU">
-			<Text>Сточенная земля: меньше холмов и шире равнины.</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_OLD" Language="ru_RU">
+			<Text>Сточенная земля: меньше пересеченной местности и шире равнины.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_ZG_RESOURCES_NAME" Language="ru_RU">
 			<Text>Ресурсы</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION" Language="ru_RU">
-			<Text>Задает, сколько ресурсов размещается на карте и собираются ли они в пятна.[n]Новые ресурсы не добавляются, и ни один из гарантированных не теряется.</Text>
+			<Text>Задает, сколько ресурсов размещает карта, собираются ли они в пятна и сколько имперских ресурсов гарантировано каждому материку.[n]Новые ресурсы не добавляются.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_SPARSE" Language="ru_RU">
-			<Text>Вдвое меньше ресурсов, чем обычно, собранных в пятна до трех клеток.</Text>
+			<Text>На 25% меньше ресурсов, чем обычно, собранных в пятна до трех клеток, и два имперских ресурса на материк.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>Столько ресурсов, сколько карта разместила бы сама, распределенных равномерно.</Text>
+			<Text>Обычное количество ресурсов, распределенное равномерно, и три имперских ресурса на материк.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT" Language="ru_RU">
-			<Text>В полтора раза больше ресурсов, чем обычно, распределенных равномерно.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="ru_RU">
-			<Text>Гарантированные ресурсы</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION" Language="ru_RU">
-			<Text>Задает, сколько имперских ресурсов гарантировано каждому материку.[n]Применяется к десяти уже гарантированным ресурсам и не задает минимум остальным.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_SPARSE" Language="ru_RU">
-			<Text>Два на материк.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>Три на материк.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT" Language="ru_RU">
-			<Text>Четыре на материк.</Text>
+			<Text>На 25% больше ресурсов, распределенных равномерно, и четыре имперских ресурса на материк.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="ru_RU">
 			<Text>Настройки местности</Text>
-		</Replace>
-		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="ru_RU">
-			<Text>Настройки ресурсов</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="ru_RU">
 			<Text>Набор темпа</Text>

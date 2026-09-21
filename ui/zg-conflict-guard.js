@@ -11,7 +11,10 @@
 //       modId: "renamable-mod",
 //       // Footprint: the setup parameters the mod must add to work. Detected in
 //       // the configuration database, so renaming the mod does not evade it.
-//       parameterPatterns: ["TheirPrefix%"],
+//       // Name them in full. A % wildcard catches whatever else happens to share
+//       // the prefix, and authors do share prefixes: a "BmdResource%" footprint
+//       // once matched an unrelated mod's BmdResourcePreset.
+//       parameterPatterns: ["TheirSettingOne", "TheirSettingTwo"],
 //       // Words identifying the mod by id or name, case-insensitive.
 //       nameHints: ["their mod"],
 //     },
@@ -247,6 +250,6 @@ export function registerModConflicts(conflicts, options = {}) {
 		guard.disable(mods);
 	}
 	for (const entry of unknown) {
-		console.warn(`ZG conflict guard: unidentified mod adds ${entry.parameters.join(", ")}`);
+		console.warn(`ZG conflict guard: ${entry.parameters.join(", ")} looks like '${entry.label}' but no installed mod accounts for it`);
 	}
 }

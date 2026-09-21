@@ -6,12 +6,18 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ### 0.8.8
 
-- Resource Density and Resource Clustering become one Resources setting: Sparse (half, gathered into patches of up to three tiles), Standard, or Abundant (half again, spread evenly)
-- Guaranteed Resources runs Sparse, Standard, or Abundant
-- New World Age setting in Terrain Settings: New, Standard, or Old, setting how broken the land is by trading rough ground against flat; mountains stay with the Mountains setting so the two never pull on the same tiles
-- Map Temperature's Cold and Hot now move the desert and tundra bands rather than the tropical one: Hot is drier and warmer, Cold colder and less arid, with tropical and plains unchanged in both
+- New Map Age setting: Old, Standard, or New, trading rough ground against flat; mountains stay with the Mountains setting so the two never move the same tiles
+- Resource Density, Resource Clustering, and Guaranteed Resources become one Resources setting: Sparse (25% fewer, in patches of up to three tiles, two of each empire resource per landmass), Standard, or Abundant (25% more, spread evenly, four per landmass)
+- Map Settings now runs Map, Map Size, Map Age, Map Temperature, Natural Wonders, Resources, and Map Seed; the Resource Settings group is retired
+- Map Temperature's Cold and Hot now move the desert and tundra bands rather than the tropical one, and the list reads Hot, Standard, Cold
+- Options with an exact multiplier now state it as a percentage, so each setting's tiers read on one scale; those driven by thresholds or degree shifts keep their plain-language descriptions
+- The Rivers options that promise far more navigable water now deliver more of it: the navigable share rises from 45% to 65%, a river needs only one feeder stream to qualify instead of two, and a promoted river must run three tiles rather than two, so the water that is navigable runs in longer stretches. Wadis, Shallow, and Streams tighten the same gate the other way
+- Fixed Mountains set to More doing nothing on the Voronoi maps: the pass ran before any rough ground existed, so it had no tiles to raise into peaks
+- Fixed the Resources guarantee applying to every resource rather than the ten the game singles out, which put at least two of everything on every landmass; resources the game does not guarantee are left alone
+- Fixed the map settings doing nothing at all on Archipelago, Shuffle, and Terra Incognita in their Voronoi form: a patch added those three maps and the mod never claimed them, so they ran the base script and no setting applied, with nothing in the log to say so. Coverage is now 14 maps, checked against the installed game rather than a fixed list
 - Removed the Online 2.0 game speed, and the Age Length point tables lose its column
-- Fixed the conflict guard locking players out of New Game and Continue over another mod's settings: the resource-density footprint matched on a `BmdResource` prefix, which caught Densmora's Composite Resources Pack, and an unattributed match now only writes to the log instead of holding the menu
+- Fixed Balanced Age Length never applying its per-age totals: rounding the preset to 150/170/200 left the criteria still asking for the old 153/166/196, so their data files never loaded
+- Fixed the conflict guard locking players out of New Game and Continue: the resource-density footprint matched on a `BmdResource` prefix, catching Densmora's Composite Resources Pack, and an unattributed match now only writes to the log
 
 ### 0.8.7
 
@@ -159,14 +165,13 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Military Unit Cost and Civilian Unit Cost: Low (25% cheaper), Standard, Medium (25% more), High (50% more), or Double (100% more)
 - Natural Wonders: Disabled, Half, Standard, More, or Double
 - Natural Wonder Selection: Enabled or Disabled for each of the 22 natural wonders, including DLC wonders
-- Map Temperature: Cold, Standard, or Hot (Hot widens the desert band 7 degrees and pushes tundra 7 degrees toward the poles; Cold narrows desert by the same 7 degrees and starts tundra 8 degrees closer to the equator; tropical and plains keep their standard edges in every tier)
+- Map Temperature: Hot, Standard, or Cold (Hot widens the desert band 7 degrees and pushes tundra 7 degrees toward the poles; Cold narrows desert by the same 7 degrees and starts tundra 8 degrees closer to the equator; tropical and plains keep their standard edges in every tier)
 - Lakes: Less, Standard, or More
-- Rivers: sets both how many rivers are generated and what share of them are Navigable Rivers rather than Minor Rivers, as every pairing of three river counts with three navigable shares. The list is grouped by river count, fewest first. Few rivers: Wadis, Arid, or Channels. A standard number: Shallow, Standard, or Waterways. Many rivers: Streams, Riverlands, or Deep. Within each group the first has far fewer of those rivers navigable, the second keeps the game's own share, and the third has far more; Standard leaves generation entirely untouched
+- Rivers: sets both how many rivers are generated and what share of them are Navigable Rivers rather than Minor Rivers, as every pairing of three river counts with three navigable shares. The list is grouped by river count, fewest first. 50% fewer rivers: Wadis, Arid, or Channels. The usual number: Shallow, Standard, or Waterways. 50% more rivers: Streams, Riverlands, or Deep. Within each group the first has far fewer of those rivers navigable, the second keeps the game's own share, and the third has far more; Standard leaves generation entirely untouched
 - Mountains: Less, Standard, or More
-- World Age: New, Standard, or Old; New raises more rough ground and leaves less flat, Old wears the rough down into broader plains. Mountains are the Mountains setting's business, so the two never move the same tiles
+- Map Age: Old, Standard, or New; Old wears the rough down into broader plains, New raises more rough ground and leaves less flat. Mountains are the Mountains setting's business, so the two never move the same tiles
 - Sea Level: the game's own setting, grouped with the terrain settings
-- Resources: Sparse, Standard, or Abundant; sets both how many resources are placed and whether they gather into patches of the same kind. Sparse is half the usual number gathered into patches of up to three tiles, Abundant is half again as many spread evenly, and the total is held steady against the clustering so the two halves stay independent
-- Guaranteed Resources: Sparse, Standard, or Abundant, setting how many of each empire resource every landmass is promised, from two to four; it applies to the ten resources the game already guarantees and adds no floor to any other
+- Resources: Sparse, Standard, or Abundant; sets how many resources are placed, whether they gather into patches of the same kind, and how many of each empire resource every landmass is promised. Sparse is 25% fewer gathered into patches of up to three tiles with two per landmass, Abundant is 25% more spread evenly with four, and the total is held steady against the clustering so density and patching stay independent. The guarantee applies to the ten resources the game already guarantees and adds no floor to any other
 - Crises: Enabled or Disabled, driving the game's per-crisis selection
 - Crisis Timing: Early, Standard, or Late (Disabled while Crises is Disabled)
 - Settlement Limit: Less, Standard, More, or Custom
@@ -183,7 +188,7 @@ The conflict guard recognizes conflicting mods by their id and by the setup sett
 
 All settings are chosen at game creation and apply for the full game.
 
-In single player, the Advanced Settings screen gains a Pace tab (Pace Settings plus a group per age) and a Map tab between General and Player. The Map tab runs Map Settings, then Terrain Settings (Lakes, Rivers, Mountains, Sea Level), Resource Settings, Natural Wonder Selection, and Disaster Settings. On General, the crisis settings move into their own Crisis Settings group and Initial Independent Hostility joins the Independent Power settings. The Player tab is rendered by the mod so it can carry the Team and Memento columns, and stands aside for any mod that provides its own. Multiplayer keeps the game's standard layout.
+In single player, the Advanced Settings screen gains a Pace tab (Pace Settings plus a group per age) and a Map tab between General and Player. The Map tab runs Map Settings (Map, Map Size, Map Age, Map Temperature, Natural Wonders, Resources, Map Seed), then Terrain Settings (Lakes, Rivers, Mountains, Sea Level), Natural Wonder Selection, and Disaster Settings. On General, the crisis settings move into their own Crisis Settings group and Initial Independent Hostility joins the Independent Power settings. The Player tab is rendered by the mod so it can carry the Team and Memento columns, and stands aside for any mod that provides its own. Multiplayer keeps the game's standard layout.
 
 ## Project Structure
 

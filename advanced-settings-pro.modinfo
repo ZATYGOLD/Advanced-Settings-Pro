@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="AdvancedSettingsPro" version="00807" xmlns="ModInfo">
+<Mod id="AdvancedSettingsPro" version="00808" xmlns="ModInfo">
 	<Properties>
 		<Name>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME</Name>
 		<Description>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION</Description>
@@ -2628,7 +2628,7 @@
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
 				<ConfigurationId>AgeLengthAntiquityKey</ConfigurationId>
-				<Value>ZG_AL_153</Value>
+				<Value>ZG_AL_150</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="age-length-antiquity-extended">
@@ -2888,7 +2888,7 @@
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
 				<ConfigurationId>AgeLengthExplorationKey</ConfigurationId>
-				<Value>ZG_AL_166</Value>
+				<Value>ZG_AL_170</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="age-length-exploration-extended">
@@ -3148,7 +3148,7 @@
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
 				<ConfigurationId>AgeLengthModernKey</ConfigurationId>
-				<Value>ZG_AL_196</Value>
+				<Value>ZG_AL_200</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="age-length-modern-extended">
@@ -4655,9 +4655,12 @@
 					<Item>maps/zg-continents-plus.js</Item>
 					<Item>maps/zg-continents.js</Item>
 					<Item>maps/zg-archipelago.js</Item>
+					<Item>maps/zg-archipelago-voronoi.js</Item>
 					<Item>maps/zg-fractal.js</Item>
 					<Item>maps/zg-shuffle.js</Item>
+					<Item>maps/zg-shuffle-voronoi.js</Item>
 					<Item>maps/zg-terra-incognita.js</Item>
+					<Item>maps/zg-terra-incognita-voronoi.js</Item>
 					<Item>maps/zg-pangaea-plus.js</Item>
 				</ImportFiles>
 			</Actions>
@@ -4697,9 +4700,12 @@
 					<Item>maps/zg-continents-plus.js</Item>
 					<Item>maps/zg-continents.js</Item>
 					<Item>maps/zg-archipelago.js</Item>
+					<Item>maps/zg-archipelago-voronoi.js</Item>
 					<Item>maps/zg-fractal.js</Item>
 					<Item>maps/zg-shuffle.js</Item>
+					<Item>maps/zg-shuffle-voronoi.js</Item>
 					<Item>maps/zg-terra-incognita.js</Item>
+					<Item>maps/zg-terra-incognita-voronoi.js</Item>
 					<Item>maps/zg-pangaea-plus.js</Item>
 				</ImportFiles>
 				<UpdateDatabase>

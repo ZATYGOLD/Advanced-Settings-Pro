@@ -272,7 +272,6 @@ const MementoIcon = (props) => {
 	return el;
 };
 
-
 // Sorted, with each value listed once (the memento domain repeats its "none" entry).
 function sortPossibleValues(possibleValues) {
 	if (!possibleValues) return;
@@ -447,7 +446,7 @@ function query(sql) {
 	try {
 		return Database.query("config", sql) ?? [];
 	} catch (error) {
-		console.error(`ZG mementos: query failed: ${error}`);
+		console.error(`ZG-ASP mementos: query failed: ${error}`);
 		return [];
 	}
 }
@@ -687,7 +686,7 @@ const tabItem = ComponentRegistry.get("Tab.Item");
 // overrides the registration; reading it later would return our own factory.
 const createPreviousTabItem = tabItem?.factory?.();
 if (claimingMod) {
-	console.warn(`ZG player tab: leaving the Player tab to '${claimingMod.id}'`);
+	console.warn(`ZG-ASP player tab: leaving the Player tab to '${claimingMod.id}'`);
 } else if (createPreviousTabItem) {
 	ComponentRegistry.register({
 		name: "Tab.Item",

@@ -282,7 +282,7 @@
 			<Text>25% mniej produkcji. Wojownicy: 23 zamiast 30. (Przy standardowym tempie)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="pl_PL">
-			<Text>Koszty jednostek z gry, bez zmian.</Text>
+			<Text>Koszty jednostek z gry.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_HIGH" Language="pl_PL">
 			<Text>50% więcej produkcji. Wojownicy: 45 zamiast 30. (Przy standardowym tempie)</Text>
@@ -291,7 +291,7 @@
 			<Text>25% więcej produkcji. Wojownicy: 38 zamiast 30. (Przy standardowym tempie)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DOUBLE" Language="pl_PL">
-			<Text>Dwa razy więcej produkcji. Wojownicy: 60 zamiast 30. (Przy standardowym tempie)</Text>
+			<Text>100% więcej produkcji. Wojownicy: 60 zamiast 30. (Przy standardowym tempie)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="pl_PL">
 			<Text>Włącza lub wyłącza wszystkie kryzysy.[n]Wyłączone wyłącza każdy kryzys w Wyborze kryzysów.</Text>
@@ -332,7 +332,7 @@
 				[LI] Ogromna: 0 cudów natury[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF" Language="pl_PL">
-			<Text>Około połowy standardowej liczby cudów natury.[nn][BLIST]
+			<Text>50% mniej cudów natury.[nn][BLIST]
 				[LI] Malutka: 1 cud natury
 				[LI] Mała: 2 cuda natury
 				[LI] Standardowa: 2 cuda natury
@@ -348,7 +348,7 @@
 				[LI] Ogromna: 7 cudów natury[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE" Language="pl_PL">
-			<Text>Znacznie więcej cudów natury niż standardowo.[nn][BLIST]
+			<Text>50% więcej cudów natury.[nn][BLIST]
 				[LI] Malutka: 5 cudów natury
 				[LI] Mała: 6 cudów natury
 				[LI] Standardowa: 8 cudów natury
@@ -356,7 +356,7 @@
 				[LI] Ogromna: 11 cudów natury[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE" Language="pl_PL">
-			<Text>Dwukrotność standardowej liczby cudów natury.[nn][BLIST]
+			<Text>100% więcej cudów natury.[nn][BLIST]
 				[LI] Malutka: 6 cudów natury
 				[LI] Mała: 8 cudów natury
 				[LI] Standardowa: 10 cudów natury
@@ -424,7 +424,7 @@
 			<Text>Postęp epoki</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION" Language="pl_PL">
-			<Text>Jak szybko zapełnia się wskaźnik epoki. Każdy kamień milowy ścieżki dziedzictwa oraz każda przyszła technologia lub ustrój dodaje do niego punkty; długość epoki ustala sumę, która ją kończy.[n]Liczby kamieni milowych to pierwszy, drugi i trzeci w danej epoce.</Text>
+			<Text>Określa, jak szybko zapełnia się wskaźnik epoki. Każdy kamień milowy ścieżki dziedzictwa oraz każda przyszła technologia lub ustrój dodaje do niego punkty; długość epoki ustala sumę, która ją kończy.[n]Liczby kamieni milowych to pierwszy, drugi i trzeci w danej epoce.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_NAME" Language="pl_PL">
 			<Text>Koszt technologii</Text>
@@ -457,19 +457,19 @@
 			<Text>Określa koszt produkcji 12 naukowych i wojskowych projektów triumfu.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="pl_PL">
-			<Text>Każda nagroda daje o połowę mniej, więc epoki trwają dłużej.[nn][BLIST]
+			<Text>Każda nagroda daje 50% mniej, więc epoki trwają dłużej.[nn][BLIST]
 				[LI] Starożytność: 3, 3 i 5
 				[LI] Epoka odkryć: 3, 5 i 10
 				[LI] Epoka nowożytna: 3 i 5[/BLIST][nn]Przyszłe technologie i ustroje: po 5 punktów.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD" Language="pl_PL">
-			<Text>Własne nagrody gry, bez zmian.[nn][BLIST]
+			<Text>Własne nagrody gry.[nn][BLIST]
 				[LI] Starożytność: 5, 5 i 10
 				[LI] Epoka odkryć: 5, 10 i 20
 				[LI] Epoka nowożytna: 5 i 10[/BLIST][nn]Przyszłe technologie i ustroje: po 10 punktów.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST" Language="pl_PL">
-			<Text>Każda nagroda daje o połowę więcej, więc epoki kończą się szybciej.[nn][BLIST]
+			<Text>Każda nagroda daje 50% więcej, więc epoki kończą się szybciej.[nn][BLIST]
 				[LI] Starożytność: 8, 8 i 15
 				[LI] Epoka odkryć: 8, 15 i 30
 				[LI] Epoka nowożytna: 8 i 15[/BLIST][nn]Przyszłe technologie i ustroje: po 15 punktów.</Text>
@@ -496,10 +496,10 @@
 			<Text>25% mniej nauki. Garncarstwo: 53 zamiast 70. (Przy standardowym tempie)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COST_DESCRIPTION_STANDARD" Language="pl_PL">
-			<Text>Koszty z gry, bez zmian.</Text>
+			<Text>Koszty z gry.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_STANDARD" Language="pl_PL">
-			<Text>Koszty z gry, bez zmian.[n]Koszt każdego projektu zwycięstwa: [BLIST]
+			<Text>Koszty z gry.[n]Koszt każdego projektu zwycięstwa: [BLIST]
 				[LI] Mapa gwiazd: 450
 				[LI] Kulista Ziemia: 600
 				[LI] Model heliocentryczny: 750
@@ -568,7 +568,7 @@
 				[LI] Załogowy lot kosmiczny: 2250 / 2250 / 2250[/BLIST][nn](Przy standardowym tempie)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="pl_PL">
-			<Text>Koszty z gry, bez zmian.</Text>
+			<Text>Koszty z gry.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="pl_PL">
 			<Text>Standardowe ustroje na początku, droższe gdy drzewko się otwiera.[nn][BLIST]
@@ -589,7 +589,7 @@
 				[LI] Epoka nowożytna: Standardowe[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="pl_PL">
-			<Text>Koszty z gry, bez zmian.</Text>
+			<Text>Koszty z gry.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="pl_PL">
 			<Text>Droższe badania na początku, tańsze gdy drzewko się otwiera.[nn][BLIST]
@@ -652,7 +652,7 @@
 			<Text>25% więcej nauki. Garncarstwo: 88 zamiast 70. (Przy standardowym tempie)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_DOUBLE" Language="pl_PL">
-			<Text>Dwa razy więcej produkcji.[n]Koszt każdego projektu zwycięstwa: [BLIST]
+			<Text>100% więcej produkcji.[n]Koszt każdego projektu zwycięstwa: [BLIST]
 				[LI] Mapa gwiazd: 900
 				[LI] Kulista Ziemia: 1200
 				[LI] Model heliocentryczny: 1500
@@ -667,10 +667,10 @@
 				[LI] Załogowy lot kosmiczny: 6000[/BLIST][nn](Przy standardowym tempie)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_DOUBLE" Language="pl_PL">
-			<Text>Dwa razy więcej kultury. System wodzowski: 180 zamiast 90. (Przy standardowym tempie)</Text>
+			<Text>100% więcej kultury. System wodzowski: 180 zamiast 90. (Przy standardowym tempie)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_DOUBLE" Language="pl_PL">
-			<Text>Dwa razy więcej nauki. Garncarstwo: 140 zamiast 70. (Przy standardowym tempie)</Text>
+			<Text>100% więcej nauki. Garncarstwo: 140 zamiast 70. (Przy standardowym tempie)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW" Language="pl_PL">
 			<Text>25% więcej żywności na obywatela.</Text>
@@ -682,7 +682,7 @@
 				[LI] Epoka nowożytna: 4 i 8[/BLIST][nn]Przyszłe technologie i ustroje: 8 punktów, w epoce nowożytnej 7.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="pl_PL">
-			<Text>Bez zmian.</Text>
+			<Text>Progi żywności z gry.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="pl_PL">
 			<Text>Miasta rosną szybciej na początku, potem wracają do standardu.[nn][BLIST]
@@ -709,7 +709,7 @@
 			<Text>25% mniej żywności na obywatela.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD" Language="pl_PL">
-			<Text>Bez zmian.</Text>
+			<Text>Koszty ruchu z gry.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_BALANCED" Language="pl_PL">
 			<Text>Standardowe drogi do epoki nowożytnej, potem tańsze.[nn][BLIST]
@@ -809,52 +809,52 @@
 			<Text>Wadi</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WADI" Language="pl_PL">
-			<Text>Niewiele rzek, a żeglownych jest znacznie mniej niż zwykle.</Text>
+			<Text>50% mniej rzek, a żeglownych jest znacznie mniej niż zwykle.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_ARID_NAME" Language="pl_PL">
 			<Text>Susza</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_ARID" Language="pl_PL">
-			<Text>Niewiele rzek, a żeglowna jest zwykła ich część.</Text>
+			<Text>50% mniej rzek, a żeglowna jest zwykła ich część.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_CHANNEL_NAME" Language="pl_PL">
 			<Text>Koryta</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_CHANNEL" Language="pl_PL">
-			<Text>Niewiele rzek, ale znacznie więcej z nich jest żeglownych.</Text>
+			<Text>50% mniej rzek, ale znacznie więcej z nich jest żeglownych.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_SHALLOW_NAME" Language="pl_PL">
 			<Text>Płycizny</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_SHALLOW" Language="pl_PL">
-			<Text>Standardowa liczba rzek, ale żeglownych jest znacznie mniej niż zwykle.</Text>
+			<Text>Zwykła liczba rzek, ale żeglownych jest znacznie mniej niż zwykle.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="pl_PL">
-			<Text>Zwykła liczba rzek dla wybranego typu mapy, a żeglowna jest zwykła ich część.</Text>
+			<Text>Zwykła liczba rzek, a żeglowna jest zwykła ich część.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_WATERWAY_NAME" Language="pl_PL">
 			<Text>Drogi wodne</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WATERWAY" Language="pl_PL">
-			<Text>Standardowa liczba rzek, ale znacznie więcej z nich jest żeglownych.</Text>
+			<Text>Zwykła liczba rzek, ale znacznie więcej z nich jest żeglownych.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_STREAM_NAME" Language="pl_PL">
 			<Text>Strumienie</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_STREAM" Language="pl_PL">
-			<Text>Wiele rzek, ale żeglownych jest znacznie mniej niż zwykle.</Text>
+			<Text>50% więcej rzek, ale żeglownych jest znacznie mniej niż zwykle.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_RIVERLAND_NAME" Language="pl_PL">
 			<Text>Kraina rzek</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_RIVERLAND" Language="pl_PL">
-			<Text>Wiele rzek, a żeglowna jest zwykła ich część.</Text>
+			<Text>50% więcej rzek, a żeglowna jest zwykła ich część.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DEEP_NAME" Language="pl_PL">
 			<Text>Głębiny</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEEP" Language="pl_PL">
-			<Text>Wiele rzek, a znacznie więcej z nich jest żeglownych.</Text>
+			<Text>50% więcej rzek, a znacznie więcej z nich jest żeglownych.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LOW_NAME" Language="pl_PL">
 			<Text>Niskie</Text>
@@ -875,7 +875,7 @@
 			<Text>25% mniej produkcji. Osadnicy: 38 zamiast 50. (Przy standardowym tempie)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="pl_PL">
-			<Text>Koszty jednostek z gry, bez zmian.</Text>
+			<Text>Koszty jednostek z gry.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_HIGH" Language="pl_PL">
 			<Text>50% więcej produkcji. Osadnicy: 75 zamiast 50. (Przy standardowym tempie)</Text>
@@ -884,7 +884,7 @@
 			<Text>25% więcej produkcji. Osadnicy: 63 zamiast 50. (Przy standardowym tempie)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE" Language="pl_PL">
-			<Text>Dwa razy więcej produkcji. Osadnicy: 100 zamiast 50. (Przy standardowym tempie)</Text>
+			<Text>100% więcej produkcji. Osadnicy: 100 zamiast 50. (Przy standardowym tempie)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="pl_PL">
 			<Text>Maraton 2.0</Text>
@@ -1130,58 +1130,40 @@
 			<Text>Generuje więcej gór.</Text>
 		</Replace>
 
-		<Replace Tag="LOC_ZG_WORLD_AGE_NAME" Language="pl_PL">
-			<Text>Wiek świata</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_NAME" Language="pl_PL">
+			<Text>Wiek mapy</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION" Language="pl_PL">
-			<Text>Ustala, jak pofałdowany jest teren.[n]Góry ustawia się osobno, więc to przesuwa jedynie grunt między równiną a wzgórzami.</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION" Language="pl_PL">
+			<Text>Ustala, jak pofałdowany jest teren.[n]Góry ustawia się osobno, więc to przesuwa grunt jedynie między równiną a terenem pofałdowanym.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_NEW" Language="pl_PL">
-			<Text>Świeżo sfałdowana ziemia, z większą liczbą wzgórz i mniejszą powierzchnią równin.</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_NEW" Language="pl_PL">
+			<Text>Świeżo sfałdowana ziemia, z większą ilością terenu pofałdowanego i mniejszą równin.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_STANDARD" Language="pl_PL">
-			<Text>Teren, który mapa ukształtowałaby sama.</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_STANDARD" Language="pl_PL">
+			<Text>Standardowy teren dla wybranego typu mapy.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_OLD" Language="pl_PL">
-			<Text>Zerodowana ziemia, z mniejszą liczbą wzgórz i szerszymi równinami.</Text>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_OLD" Language="pl_PL">
+			<Text>Zerodowana ziemia, z mniejszą ilością terenu pofałdowanego i szerszymi równinami.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_ZG_RESOURCES_NAME" Language="pl_PL">
 			<Text>Surowce</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION" Language="pl_PL">
-			<Text>Ustala, ile surowców pojawia się na mapie i czy skupiają się w płaty.[n]Nie dodaje nowych surowców ani nie odbiera żadnego z gwarantowanych.</Text>
+			<Text>Ustala, ile surowców rozmieszcza mapa, czy skupiają się w płaty i ile surowców imperialnych ma gwarantowany każdy ląd.[n]Nie dodaje nowych surowców.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_SPARSE" Language="pl_PL">
-			<Text>Połowa zwykłej liczby surowców, skupiona w płaty do trzech pól.</Text>
+			<Text>25% mniej surowców, skupiona w płaty do trzech pól, z dwoma surowcami imperialnymi na ląd.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_STANDARD" Language="pl_PL">
-			<Text>Tyle surowców, ile mapa rozmieściłaby sama, rozłożonych równomiernie.</Text>
+			<Text>Zwykła liczba surowców, rozłożona równomiernie, z trzema surowcami imperialnymi na ląd.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT" Language="pl_PL">
-			<Text>O połowę więcej surowców niż zwykle, rozłożonych równomiernie.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="pl_PL">
-			<Text>Gwarantowane surowce</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION" Language="pl_PL">
-			<Text>Ustala, ile surowców imperialnych ma gwarantowany każdy ląd.[n]Dotyczy dziesięciu już gwarantowanych surowców i nie nadaje minimum żadnemu innemu.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_SPARSE" Language="pl_PL">
-			<Text>Dwa na ląd.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD" Language="pl_PL">
-			<Text>Trzy na ląd.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT" Language="pl_PL">
-			<Text>Cztery na ląd.</Text>
+			<Text>25% więcej surowców, rozłożonych równomiernie, z czterema surowcami imperialnymi na ląd.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="pl_PL">
 			<Text>Ustawienia terenu</Text>
-		</Replace>
-		<Replace Tag="LOC_GROUPID_ZG_RESOURCEOPTIONS" Language="pl_PL">
-			<Text>Ustawienia surowców</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="pl_PL">
 			<Text>Zestaw tempa</Text>
