@@ -6,7 +6,7 @@
 // helper. The Voronoi map copies call zgGenerateMapFeatures instead of the base
 // generateMapFeatures so the Rivers and Biome settings still apply, while the
 // phase order, profiling and GenerationContext behavior match the base exactly.
-import { addHills, buildRainfallMap } from 'fs://game/base-standard/maps/elevation-terrain-generator.js';
+import { buildRainfallMap } from 'fs://game/base-standard/maps/elevation-terrain-generator.js';
 import { addFeatures } from 'fs://game/base-standard/maps/feature-biome-generator.js';
 import { dumpContinents, dumpTerrain, dumpElevation, dumpRainfall, dumpBiomes, dumpFeatures, dumpResources } from 'fs://game/base-standard/maps/map-debug-helpers.js';
 import { addNaturalWonders } from 'fs://game/base-standard/maps/natural-wonder-generator.js';
@@ -17,6 +17,7 @@ import { profileScope, profileFunction } from 'fs://game/base-standard/scripts/p
 import { zgModelRivers } from './zg-map-rivers.js';
 import { zgDesignateBiomes } from './zg-map-biomes.js';
 import { zgAdjustHexMountains } from './zg-map-mountains.js';
+import { zgAddRough, zgAdjustHexRough } from './zg-map-rough.js';
 
 export async function zgGenerateMapFeatures(hexMap, context = new GenerationContext()) {
   const generateMapFeaturesScope = new profileScope("Generate Features");
@@ -30,8 +31,11 @@ export async function zgGenerateMapFeatures(hexMap, context = new GenerationCont
     profileFunction("generateLakes", () => hexMap.GenerateLakes());
   }
   if (context.phases & GenerationPhases.WriteToTerrainBuilder) {
-    // ZG-ASP: apply the Mountains setting to the simulated tiles before they
-    // are written out, since these maps never call addMountains.
+    // ZG-ASP: apply the World Age and Mountains settings to the simulated tiles
+    // before they are written out, since these maps never call addHills or
+    // addMountains. World Age runs first so the mountain pass draws its peaks
+    // from the rough ground the world age has already settled.
+    profileFunction("zgAdjustHexRough", () => zgAdjustHexRough(hexMap));
     profileFunction("zgAdjustHexMountains", () => zgAdjustHexMountains(hexMap));
     hexMap.writeToTerrainBuilder();
   }
@@ -45,7 +49,7 @@ export async function zgGenerateMapFeatures(hexMap, context = new GenerationCont
     profileFunction("TerrainBuilder.buildElevation", () => TerrainBuilder.buildElevation());
   }
   if (context.phases & GenerationPhases.Hills) {
-    profileFunction("addHills", () => addHills(iWidth, iHeight));
+    profileFunction("addHills", () => zgAddRough(iWidth, iHeight));
   }
   if (context.phases & GenerationPhases.Rainfall) {
     profileFunction("buildRainfallMap", () => buildRainfallMap(iWidth, iHeight));

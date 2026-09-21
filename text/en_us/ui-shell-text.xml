@@ -628,7 +628,6 @@
 		<Row Tag="LOC_ZG_MOD_CONFLICT_BODY_HEADER"><Text>The following mods are causing conflicts: [n]</Text></Row>
 		<Row Tag="LOC_ZG_MOD_CONFLICT_BODY_FOOTER"><Text>[n]Please unsubscribe from the mods now. [n]</Text></Row>
 		<Row Tag="LOC_ZG_MOD_CONFLICT_DISABLE"><Text>Ok</Text></Row>
-		<Row Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD"><Text>Unidentified mod adding the settings:</Text></Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM">
 			<Text>Set the settlement limit for each age individually.</Text>
 		</Row>
@@ -896,6 +895,20 @@
 		<Row Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT"><Text>Standard mountain generation for the chosen map type.</Text></Row>
 		<Row Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE"><Text>Generates more mountains.</Text></Row>
 
+		<Row Tag="LOC_ZG_WORLD_AGE_NAME"><Text>World Age</Text></Row>
+		<Row Tag="LOC_ZG_WORLD_AGE_DESCRIPTION">
+			<Text>Sets how rugged the land is.[n]Mountains are set separately, so this only moves the ground between flat and hilly.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_NEW">
+			<Text>Freshly buckled land, with more hills and less flat ground.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_STANDARD">
+			<Text>The terrain the map would raise on its own.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_OLD">
+			<Text>Worn-down land, with fewer hills and broader plains.</Text>
+		</Row>
+
 		<Row Tag="LOC_ZG_RESOURCES_NAME"><Text>Resources</Text></Row>
 		<Row Tag="LOC_ZG_RESOURCES_DESCRIPTION">
 			<Text>Sets how many resources are placed on the map and whether they gather into patches.[n]No new resources are added, and none of the guaranteed ones are lost.</Text>
@@ -909,9 +922,6 @@
 		<Row Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT">
 			<Text>Half again as many resources as usual, spread evenly.</Text>
 		</Row>
-		<Row Tag="LOC_ZG_RESOURCES_DESCRIPTION_RANDOM">
-			<Text>Drawn from the other settings when the map is generated.</Text>
-		</Row>
 		<Row Tag="LOC_ZG_RESOURCE_MINIMUM_NAME"><Text>Guaranteed Resources</Text></Row>
 		<Row Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION">
 			<Text>Sets how many of each empire resource every landmass is guaranteed.[n]Applies to the ten resources the map already guarantees, and adds no floor to any other.</Text>
@@ -924,12 +934,6 @@
 		</Row>
 		<Row Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT">
 			<Text>Four per landmass.</Text>
-		</Row>
-		<Row Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_RANDOM">
-			<Text>Drawn from the other settings when the map is generated.</Text>
-		</Row>
-		<Row Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM">
-			<Text>Drawn from the other settings when the map is generated.</Text>
 		</Row>
 
 		<Row Tag="LOC_GROUPID_ZG_TERRAINOPTIONS"><Text>Terrain Settings</Text></Row>

@@ -25,8 +25,10 @@
 //   - A footprint found in the configuration database is attributed to the
 //     installed mod whose id or name matches its hints: enabled means a conflict, disabled means
 //     the database is stale from this session's own disable and is ignored. A
-//     footprint no installed mod accounts for is reported as an unidentified mod
-//     and blocks the action until the player removes it.
+//     footprint no installed mod accounts for is written to the log and otherwise
+//     ignored: it is a name match, not proof of a conflict, and another author's
+//     mod may simply use a similar parameter name. Only an identified, enabled
+//     mod ever holds the menu.
 //
 // Several mods can each register their own conflicts. A single guard kept on
 // globalThis merges every registration, so there is only ever one event
@@ -35,8 +37,7 @@
 // Localization: the dialog uses the tags below by default. Define them in the
 // mod's text, or override any of them via the options.text argument:
 //   LOC_ZG_MOD_CONFLICT_TITLE, LOC_ZG_MOD_CONFLICT_BODY_HEADER,
-//   LOC_ZG_MOD_CONFLICT_BODY_FOOTER, LOC_ZG_MOD_CONFLICT_DISABLE,
-//   LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD
+//   LOC_ZG_MOD_CONFLICT_BODY_FOOTER, LOC_ZG_MOD_CONFLICT_DISABLE
 
 import { DialogBoxManager } from 'fs://game/core/ui/dialog-box/manager-dialog-box.js';
 
@@ -57,7 +58,6 @@ const DEFAULT_TEXT = {
 	header: "LOC_ZG_MOD_CONFLICT_BODY_HEADER",
 	footer: "LOC_ZG_MOD_CONFLICT_BODY_FOOTER",
 	disable: "LOC_ZG_MOD_CONFLICT_DISABLE",
-	unknown: "LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD",
 };
 
 function modText(mod) {
@@ -128,11 +128,8 @@ function createGuard() {
 		Modding.disableMods(mods.map((mod) => mod.handle));
 	};
 
-	guard.showDialog = ({ mods, unknown }) => {
-		const items = [
-			...mods.map((mod) => `[LI]${Locale.compose(mod.name)}`),
-			...unknown.map((entry) => `[LI]${Locale.compose(guard.text.unknown)} ${entry.parameters.join(", ")}`),
-		].join("");
+	guard.showDialog = (mods) => {
+		const items = mods.map((mod) => `[LI]${Locale.compose(mod.name)}`).join("");
 		const body =
 			Locale.compose(guard.text.header) +
 			`[N][BLIST]  ${items}[/BLIST][N]` +
@@ -172,12 +169,20 @@ function createGuard() {
 			return;
 		}
 		const conflicts = guard.findConflicts();
-		if (conflicts.mods.length === 0 && conflicts.unknown.length === 0) {
+		// An unaccounted footprint is a suspicion, not a finding. The parameters
+		// matched, but no installed mod owns them, and another author's mod can
+		// legitimately use a similar name. Say so in the log and let the player
+		// through: holding the menu shut on a guess locks people out of their game
+		// over someone else's naming.
+		for (const entry of conflicts.unknown) {
+			console.warn(`ZG conflict guard: ${entry.parameters.join(", ")} looks like '${entry.label}' but no installed mod accounts for it; not blocking`);
+		}
+		if (conflicts.mods.length === 0) {
 			return;
 		}
 		event.preventDefault();
 		event.stopImmediatePropagation();
-		guard.showDialog(conflicts);
+		guard.showDialog(conflicts.mods);
 	};
 
 	return guard;

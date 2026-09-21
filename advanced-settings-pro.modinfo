@@ -4644,6 +4644,7 @@
 					<Item>maps/zg-map-settings.js</Item>
 					<Item>maps/zg-map-rivers.js</Item>
 					<Item>maps/zg-map-mountains.js</Item>
+					<Item>maps/zg-map-rough.js</Item>
 					<Item>maps/zg-map-biomes.js</Item>
 					<Item>maps/zg-map-resources.js</Item>
 					<Item>maps/zg-map-generation.js</Item>
@@ -4685,6 +4686,7 @@
 					<Item>maps/zg-map-settings.js</Item>
 					<Item>maps/zg-map-rivers.js</Item>
 					<Item>maps/zg-map-mountains.js</Item>
+					<Item>maps/zg-map-rough.js</Item>
 					<Item>maps/zg-map-biomes.js</Item>
 					<Item>maps/zg-map-resources.js</Item>
 					<Item>maps/zg-map-generation.js</Item>

@@ -19,9 +19,7 @@ import { profileScope } from 'fs://game/base-standard/scripts/profiling.js';
 import { zgSettingTier } from './zg-map-settings.js';
 
 const RESOURCES_SETTING_KEY = "ResourcesKey";
-const RESOURCES_RANDOM = "ZG_RESOURCES_RANDOM";
 const MINIMUM_SETTING_KEY = "ResourceMinimumKey";
-const MINIMUM_RANDOM = "ZG_RESOURCE_MINIMUM_RANDOM";
 
 // One setting covers both how many resources are placed and how they sit on the
 // map. percent scales the base game's own density target, the share of eligible
@@ -172,8 +170,8 @@ export function zgGenerateResources(iWidth, iHeight, minMarineResourceTypesOverr
 	const calculateDensityScope = new profileScope("generateResources Density Calculation");
 
 	// --- ZG: the two settings, read once and applied to the base plan ---
-	const resources = zgSettingTier(RESOURCES_TIER, RESOURCES_SETTING_KEY, "ZG_RESOURCES_STANDARD", RESOURCES_RANDOM);
-	const minimum = zgSettingTier(MINIMUM_TIER, MINIMUM_SETTING_KEY, "ZG_RESOURCE_MINIMUM_STANDARD", MINIMUM_RANDOM);
+	const resources = zgSettingTier(RESOURCES_TIER, RESOURCES_SETTING_KEY, "ZG_RESOURCES_STANDARD");
+	const minimum = zgSettingTier(MINIMUM_TIER, MINIMUM_SETTING_KEY, "ZG_RESOURCE_MINIMUM_STANDARD");
 	const compensation = clusterCompensation(resources.chance, resources.max);
 	const densityTarget = DENSITY_TARGET * (resources.percent / 100) / compensation;
 	console.log(`ZG-ASP resources: density ${resources.percent}%, clustering ${resources.chance}% chance up to ${resources.max} tiles`);

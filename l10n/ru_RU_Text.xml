@@ -411,9 +411,6 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="ru_RU">
 			<Text>Отключить конфликтующие моды</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="ru_RU">
-			<Text>Неопознанный мод, добавляющий настройки:</Text>
-		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="ru_RU">
 			<Text>Настройки темпа</Text>
 		</Replace>
@@ -1133,6 +1130,22 @@
 			<Text>Создаёт больше гор.</Text>
 		</Replace>
 
+		<Replace Tag="LOC_ZG_WORLD_AGE_NAME" Language="ru_RU">
+			<Text>Возраст мира</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION" Language="ru_RU">
+			<Text>Задает, насколько изрезана местность.[n]Горы настраиваются отдельно, так что здесь меняется лишь соотношение равнин и холмов.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_NEW" Language="ru_RU">
+			<Text>Недавно смятая земля: больше холмов и меньше ровных мест.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>Рельеф, который карта создала бы сама.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_OLD" Language="ru_RU">
+			<Text>Сточенная земля: меньше холмов и шире равнины.</Text>
+		</Replace>
+
 		<Replace Tag="LOC_ZG_RESOURCES_NAME" Language="ru_RU">
 			<Text>Ресурсы</Text>
 		</Replace>
@@ -1148,9 +1161,6 @@
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT" Language="ru_RU">
 			<Text>В полтора раза больше ресурсов, чем обычно, распределенных равномерно.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_RANDOM" Language="ru_RU">
-			<Text>Выбирается среди остальных вариантов при создании карты.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="ru_RU">
 			<Text>Гарантированные ресурсы</Text>
 		</Replace>
@@ -1165,12 +1175,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT" Language="ru_RU">
 			<Text>Четыре на материк.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_RANDOM" Language="ru_RU">
-			<Text>Выбирается среди остальных вариантов при создании карты.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="ru_RU">
-			<Text>Выбирается среди остальных вариантов при создании карты.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="ru_RU">

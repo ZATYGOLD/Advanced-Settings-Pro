@@ -524,6 +524,7 @@ INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, Defaul
         ('ZG_MapTemperature', 'LOC_ZG_MAP_TEMPERATURE_NAME', 'LOC_ZG_MAP_TEMPERATURE_DESCRIPTION', 'ZG_MapTemperatureDomain', 'ZG_STANDARD_TEMPERATURE', 0, 'Game', 'MapTemperatureKey', 'MapOptions', 'MPAdvancedMapOptions', 0, 1031),
         ('ZG_Rivers', 'LOC_ZG_RIVERS_NAME', 'LOC_ZG_RIVERS_DESCRIPTION','ZG_RiversDomain', 'ZG_DEFAULT_RIVERS', 0, 'Game', 'RiversKey', 'TerrainOptions', 'MPAdvancedTerrainOptions', 0, 151),
         ('ZG_Mountains', 'LOC_ZG_MOUNTAINS_NAME', 'LOC_ZG_MOUNTAINS_DESCRIPTION','ZG_MountainsDomain', 'ZG_DEFAULT_MOUNTAINS', 0, 'Game', 'MountainsKey', 'TerrainOptions', 'MPAdvancedTerrainOptions', 0, 152),
+        ('ZG_WorldAge', 'LOC_ZG_WORLD_AGE_NAME', 'LOC_ZG_WORLD_AGE_DESCRIPTION', 'ZG_WorldAgeDomain', 'ZG_WORLD_AGE_STANDARD', 0, 'Game', 'WorldAgeKey', 'TerrainOptions', 'MPAdvancedTerrainOptions', 0, 149),
         ('ZG_Resources', 'LOC_ZG_RESOURCES_NAME', 'LOC_ZG_RESOURCES_DESCRIPTION', 'ZG_ResourcesDomain', 'ZG_RESOURCES_STANDARD', 0, 'Game', 'ResourcesKey', 'ResourceOptions', 'MPAdvancedResourceOptions', 0, 160),
         ('ZG_ResourceMinimum', 'LOC_ZG_RESOURCE_MINIMUM_NAME', 'LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION', 'ZG_ResourceMinimumDomain', 'ZG_RESOURCE_MINIMUM_STANDARD', 0, 'Game', 'ResourceMinimumKey', 'ResourceOptions', 'MPAdvancedResourceOptions', 0, 161);
 
@@ -532,7 +533,6 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_MapTemperatureDomain', 'ZG_COLD_TEMPERATURE', 'LOC_ZG_COLD_NAME', 'LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD', 10),
         ('ZG_MapTemperatureDomain', 'ZG_STANDARD_TEMPERATURE', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD', 20),
         ('ZG_MapTemperatureDomain', 'ZG_HOT_TEMPERATURE', 'LOC_ZG_HOT_NAME', 'LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT', 30),
-        ('ZG_MapTemperatureDomain', 'ZG_RANDOM_TEMPERATURE', 'LOC_ADVANCED_OPTIONS_RANDOM', 'LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM', 40),
         ('ZG_RiversDomain', 'ZG_WADI_RIVERS', 'LOC_ZG_RIVERS_WADI_NAME', 'LOC_ZG_RIVERS_DESCRIPTION_WADI', 10),
         ('ZG_RiversDomain', 'ZG_LESS_RIVERS', 'LOC_ZG_RIVERS_ARID_NAME', 'LOC_ZG_RIVERS_DESCRIPTION_ARID', 20),
         ('ZG_RiversDomain', 'ZG_CHANNEL_RIVERS', 'LOC_ZG_RIVERS_CHANNEL_NAME', 'LOC_ZG_RIVERS_DESCRIPTION_CHANNEL', 30),
@@ -548,14 +548,15 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_MountainsDomain', 'ZG_LESS_MOUNTAINS', 'LOC_ZG_LESS_NAME', 'LOC_ZG_MOUNTAINS_DESCRIPTION_LESS', 20),
         ('ZG_MountainsDomain', 'ZG_DEFAULT_MOUNTAINS', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_MOUNTAINS_DESCRIPTION_DEFAULT', 30),
         ('ZG_MountainsDomain', 'ZG_MORE_MOUNTAINS', 'LOC_ZG_MORE_NAME', 'LOC_ZG_MOUNTAINS_DESCRIPTION_MORE', 40),
+        ('ZG_WorldAgeDomain', 'ZG_WORLD_AGE_NEW', 'LOC_ADVANCED_OPTIONS_NEW', 'LOC_ZG_WORLD_AGE_DESCRIPTION_NEW', 10),
+        ('ZG_WorldAgeDomain', 'ZG_WORLD_AGE_STANDARD', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_WORLD_AGE_DESCRIPTION_STANDARD', 20),
+        ('ZG_WorldAgeDomain', 'ZG_WORLD_AGE_OLD', 'LOC_ADVANCED_OPTIONS_OLD', 'LOC_ZG_WORLD_AGE_DESCRIPTION_OLD', 30),
         ('ZG_ResourcesDomain', 'ZG_RESOURCES_SPARSE', 'LOC_ADVANCED_OPTIONS_SPARSE', 'LOC_ZG_RESOURCES_DESCRIPTION_SPARSE', 10),
         ('ZG_ResourcesDomain', 'ZG_RESOURCES_STANDARD', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_RESOURCES_DESCRIPTION_STANDARD', 20),
         ('ZG_ResourcesDomain', 'ZG_RESOURCES_ABUNDANT', 'LOC_ADVANCED_OPTIONS_ABUNDANT', 'LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT', 30),
-        ('ZG_ResourcesDomain', 'ZG_RESOURCES_RANDOM', 'LOC_ADVANCED_OPTIONS_RANDOM', 'LOC_ZG_RESOURCES_DESCRIPTION_RANDOM', 40),
         ('ZG_ResourceMinimumDomain', 'ZG_RESOURCE_MINIMUM_SPARSE', 'LOC_ADVANCED_OPTIONS_SPARSE', 'LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_SPARSE', 10),
         ('ZG_ResourceMinimumDomain', 'ZG_RESOURCE_MINIMUM_STANDARD', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_STANDARD', 20),
-        ('ZG_ResourceMinimumDomain', 'ZG_RESOURCE_MINIMUM_ABUNDANT', 'LOC_ADVANCED_OPTIONS_ABUNDANT', 'LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT', 30),
-        ('ZG_ResourceMinimumDomain', 'ZG_RESOURCE_MINIMUM_RANDOM', 'LOC_ADVANCED_OPTIONS_RANDOM', 'LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_RANDOM', 40);
+        ('ZG_ResourceMinimumDomain', 'ZG_RESOURCE_MINIMUM_ABUNDANT', 'LOC_ADVANCED_OPTIONS_ABUNDANT', 'LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT', 30), 40);
 -- Sea Level joins the mod's Terrain Settings group. The base game defines it once
 -- per map through Key1/Key2 scoping, so every one of those rows moves together.
 UPDATE Parameters SET GroupId = 'TerrainOptions', GroupIDMultiplayerOverride = 'MPAdvancedTerrainOptions', SortIndex = 153 WHERE ParameterID = 'MapSeaLevel';

@@ -411,9 +411,6 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="zh_Hant_HK">
 			<Text>停用衝突模組</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="zh_Hant_HK">
-			<Text>新增以下設定的未識別模組：</Text>
-		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="zh_Hant_HK">
 			<Text>節奏設定</Text>
 		</Replace>
@@ -1133,6 +1130,22 @@
 			<Text>生成更多的山脈。</Text>
 		</Replace>
 
+		<Replace Tag="LOC_ZG_WORLD_AGE_NAME" Language="zh_Hant_HK">
+			<Text>世界年代</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>設定地形的崎嶇程度。[n]山脈另行設定，此項只調整平地與丘陵的比例。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_NEW" Language="zh_Hant_HK">
+			<Text>剛剛隆起的大地，丘陵更多，平地更少。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
+			<Text>地圖自行形成的地形。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_OLD" Language="zh_Hant_HK">
+			<Text>久經侵蝕的大地，丘陵更少，平原更廣。</Text>
+		</Replace>
+
 		<Replace Tag="LOC_ZG_RESOURCES_NAME" Language="zh_Hant_HK">
 			<Text>資源</Text>
 		</Replace>
@@ -1148,9 +1161,6 @@
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT" Language="zh_Hant_HK">
 			<Text>比通常多一半的資源，均勻分佈。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_RANDOM" Language="zh_Hant_HK">
-			<Text>生成地圖時從其他選項中抽取。</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="zh_Hant_HK">
 			<Text>保證資源</Text>
 		</Replace>
@@ -1165,12 +1175,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT" Language="zh_Hant_HK">
 			<Text>每塊大陸四個。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_RANDOM" Language="zh_Hant_HK">
-			<Text>生成地圖時從其他選項中抽取。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="zh_Hant_HK">
-			<Text>生成地圖時從其他選項中抽取。</Text>
 		</Replace>
 
 		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="zh_Hant_HK">

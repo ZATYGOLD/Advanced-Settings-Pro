@@ -6,11 +6,12 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ### 0.8.8
 
-- Resource Density and Resource Clustering become one Resources setting: Sparse (half, gathered into patches of up to three tiles), Standard, Abundant (half again, spread evenly), or Random
-- Guaranteed Resources runs Sparse, Standard, Abundant, or Random
-- Map Temperature gains Random, and Cold and Hot now move the desert and tundra bands rather than the tropical one: Hot is drier and warmer, Cold colder and less arid, with tropical and plains unchanged in both
-- A setting left on Random is drawn when the map is generated rather than in the setup screen, so the result follows the map seed and stays unknown until the map exists
+- Resource Density and Resource Clustering become one Resources setting: Sparse (half, gathered into patches of up to three tiles), Standard, or Abundant (half again, spread evenly)
+- Guaranteed Resources runs Sparse, Standard, or Abundant
+- New World Age setting in Terrain Settings: New, Standard, or Old, setting how broken the land is by trading rough ground against flat; mountains stay with the Mountains setting so the two never pull on the same tiles
+- Map Temperature's Cold and Hot now move the desert and tundra bands rather than the tropical one: Hot is drier and warmer, Cold colder and less arid, with tropical and plains unchanged in both
 - Removed the Online 2.0 game speed, and the Age Length point tables lose its column
+- Fixed the conflict guard locking players out of New Game and Continue over another mod's settings: the resource-density footprint matched on a `BmdResource` prefix, which caught Densmora's Composite Resources Pack, and an unattributed match now only writes to the log instead of holding the menu
 
 ### 0.8.7
 
@@ -158,14 +159,14 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Military Unit Cost and Civilian Unit Cost: Low (25% cheaper), Standard, Medium (25% more), High (50% more), or Double (100% more)
 - Natural Wonders: Disabled, Half, Standard, More, or Double
 - Natural Wonder Selection: Enabled or Disabled for each of the 22 natural wonders, including DLC wonders
-- Map Temperature: Cold, Standard, Hot, or Random (Hot widens the desert band 7 degrees and pushes tundra 7 degrees toward the poles; Cold narrows desert by the same 7 degrees and starts tundra 8 degrees closer to the equator; tropical and plains keep their standard edges in every tier)
+- Map Temperature: Cold, Standard, or Hot (Hot widens the desert band 7 degrees and pushes tundra 7 degrees toward the poles; Cold narrows desert by the same 7 degrees and starts tundra 8 degrees closer to the equator; tropical and plains keep their standard edges in every tier)
 - Lakes: Less, Standard, or More
 - Rivers: sets both how many rivers are generated and what share of them are Navigable Rivers rather than Minor Rivers, as every pairing of three river counts with three navigable shares. The list is grouped by river count, fewest first. Few rivers: Wadis, Arid, or Channels. A standard number: Shallow, Standard, or Waterways. Many rivers: Streams, Riverlands, or Deep. Within each group the first has far fewer of those rivers navigable, the second keeps the game's own share, and the third has far more; Standard leaves generation entirely untouched
 - Mountains: Less, Standard, or More
+- World Age: New, Standard, or Old; New raises more rough ground and leaves less flat, Old wears the rough down into broader plains. Mountains are the Mountains setting's business, so the two never move the same tiles
 - Sea Level: the game's own setting, grouped with the terrain settings
-- Resources: Sparse, Standard, Abundant, or Random; sets both how many resources are placed and whether they gather into patches of the same kind. Sparse is half the usual number gathered into patches of up to three tiles, Abundant is half again as many spread evenly, and the total is held steady against the clustering so the two halves stay independent
-- Guaranteed Resources: Sparse, Standard, Abundant, or Random, setting how many of each empire resource every landmass is promised, from two to four; it applies to the ten resources the game already guarantees and adds no floor to any other
-- A setting offering Random draws one of its real values when the map is generated, not in the setup screen, so the result follows the map seed and stays unknown until the map exists
+- Resources: Sparse, Standard, or Abundant; sets both how many resources are placed and whether they gather into patches of the same kind. Sparse is half the usual number gathered into patches of up to three tiles, Abundant is half again as many spread evenly, and the total is held steady against the clustering so the two halves stay independent
+- Guaranteed Resources: Sparse, Standard, or Abundant, setting how many of each empire resource every landmass is promised, from two to four; it applies to the ten resources the game already guarantees and adds no floor to any other
 - Crises: Enabled or Disabled, driving the game's per-crisis selection
 - Crisis Timing: Early, Standard, or Late (Disabled while Crises is Disabled)
 - Settlement Limit: Less, Standard, More, or Custom

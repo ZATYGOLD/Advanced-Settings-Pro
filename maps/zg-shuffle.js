@@ -6,7 +6,8 @@ import { zgAddMountains } from './zg-map-mountains.js';
 import { assignAdvancedStartRegions } from 'fs://game/base-standard/maps/assign-advanced-start-region.js';
 import { chooseStartSectors, assignStartPositions } from 'fs://game/base-standard/maps/assign-starting-plots.js';
 import { generateDiscoveries } from 'fs://game/base-standard/maps/discovery-generator.js';
-import { expandCoastsPlus, generateLakes, addHills, buildRainfallMap } from 'fs://game/base-standard/maps/elevation-terrain-generator.js';
+import { expandCoastsPlus, generateLakes, buildRainfallMap } from 'fs://game/base-standard/maps/elevation-terrain-generator.js';
+import { zgAddRough } from './zg-map-rough.js';
 import { addFeatures } from 'fs://game/base-standard/maps/feature-biome-generator.js';
 import { dumpStartSectors, dumpContinents, dumpTerrain, dumpElevation, dumpRainfall, dumpBiomes, dumpFeatures, dumpResources, dumpNoisePredicate } from 'fs://game/base-standard/maps/map-debug-helpers.js';
 import { g_OceanWaterColumns, g_PolarWaterRows, g_AvoidSeamOffset, g_IslandWidth, g_OceanTerrain, g_CoastTerrain, g_LandmassFractal, g_FlatTerrain, g_WaterPercent, g_StartSectorWeight, g_FractalWeight, g_CenterWeight, g_Cutoff } from 'fs://game/base-standard/maps/map-globals.js';
@@ -171,7 +172,7 @@ function generateMap() {
   generateLakes(iWidth, iHeight, iTilesPerLake);
   AreaBuilder.recalculateAreas();
   TerrainBuilder.buildElevation();
-  addHills(iWidth, iHeight);
+  zgAddRough(iWidth, iHeight);
   buildRainfallMap(iWidth, iHeight);
   const iRandomRiver = TerrainBuilder.getRandomNumber(10, "Intensity of Rivers");
   if (iRandomRiver == 0) {

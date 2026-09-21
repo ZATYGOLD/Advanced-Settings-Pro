@@ -11,10 +11,8 @@ import { g_PlainsLatitude, g_MarineBiome, g_DesertBiome, g_MountainTerrain, g_Tr
 import { zgSettingTier } from './zg-map-settings.js';
 
 const TEMPERATURE_SETTING_KEY = "MapTemperatureKey";
-const TEMPERATURE_RANDOM = "ZG_RANDOM_TEMPERATURE";
 // Upper bounds of the Tropical, Plains, Desert, and Grassland bands; Tundra lies
-// beyond the last. Standard carries the base game's own bands, so Random has a
-// real third tier to draw rather than only the two extremes.
+// beyond the last. Standard carries the base game's own bands.
 //
 // Only the third and fourth bounds move. Desert runs from the Plains edge to the
 // third, so Hot widens it by 7 degrees and Cold narrows it by the same; Tundra
@@ -27,7 +25,7 @@ const TEMPERATURE_BANDS = {
 };
 
 function temperatureBands() {
-	const bands = zgSettingTier(TEMPERATURE_BANDS, TEMPERATURE_SETTING_KEY, "ZG_STANDARD_TEMPERATURE", TEMPERATURE_RANDOM);
+	const bands = zgSettingTier(TEMPERATURE_BANDS, TEMPERATURE_SETTING_KEY, "ZG_STANDARD_TEMPERATURE");
 	console.log(`ZG-ASP temperature: biome bands ${bands.join("/")}`);
 	return bands;
 }

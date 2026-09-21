@@ -411,9 +411,6 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="pt_BR">
 			<Text>Desativar mods conflitantes</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="pt_BR">
-			<Text>Mod não identificado que adiciona as configurações:</Text>
-		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="pt_BR">
 			<Text>Configurações de ritmo</Text>
 		</Replace>
@@ -1133,6 +1130,22 @@
 			<Text>Gera mais montanhas.</Text>
 		</Replace>
 
+		<Replace Tag="LOC_ZG_WORLD_AGE_NAME" Language="pt_BR">
+			<Text>Idade do mundo</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION" Language="pt_BR">
+			<Text>Define o quanto o terreno é acidentado.[n]As montanhas são definidas à parte, então isto só move o solo entre plano e montanhoso.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_NEW" Language="pt_BR">
+			<Text>Terra recém-dobrada, com mais colinas e menos planície.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_STANDARD" Language="pt_BR">
+			<Text>O terreno que o mapa ergueria por conta própria.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_OLD" Language="pt_BR">
+			<Text>Terra desgastada, com menos colinas e planícies mais amplas.</Text>
+		</Replace>
+
 		<Replace Tag="LOC_ZG_RESOURCES_NAME" Language="pt_BR">
 			<Text>Recursos</Text>
 		</Replace>
@@ -1148,9 +1161,6 @@
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT" Language="pt_BR">
 			<Text>Metade a mais de recursos que o habitual, espalhados de forma uniforme.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_RANDOM" Language="pt_BR">
-			<Text>Sorteado entre as outras opções ao gerar o mapa.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="pt_BR">
 			<Text>Recursos garantidos</Text>
 		</Replace>
@@ -1165,12 +1175,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT" Language="pt_BR">
 			<Text>Quatro por massa de terra.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_RANDOM" Language="pt_BR">
-			<Text>Sorteado entre as outras opções ao gerar o mapa.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="pt_BR">
-			<Text>Sorteado entre as outras opções ao gerar o mapa.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="pt_BR">

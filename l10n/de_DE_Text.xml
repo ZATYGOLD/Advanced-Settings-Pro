@@ -411,9 +411,6 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="de_DE">
 			<Text>Konfliktmods deaktivieren</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="de_DE">
-			<Text>Nicht identifizierte Mod, die diese Einstellungen hinzufügt:</Text>
-		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="de_DE">
 			<Text>Tempo-Einstellungen</Text>
 		</Replace>
@@ -1133,6 +1130,22 @@
 			<Text>Generiert mehr Berge.</Text>
 		</Replace>
 
+		<Replace Tag="LOC_ZG_WORLD_AGE_NAME" Language="de_DE">
+			<Text>Weltalter</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION" Language="de_DE">
+			<Text>Legt fest, wie zerklüftet das Land ist.[n]Berge werden getrennt eingestellt, dies verschiebt nur den Boden zwischen flach und hügelig.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_NEW" Language="de_DE">
+			<Text>Frisch aufgefaltetes Land mit mehr Hügeln und weniger Flachland.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_STANDARD" Language="de_DE">
+			<Text>Das Gelände, das die Karte von sich aus erheben würde.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_OLD" Language="de_DE">
+			<Text>Abgetragenes Land mit weniger Hügeln und weiteren Ebenen.</Text>
+		</Replace>
+
 		<Replace Tag="LOC_ZG_RESOURCES_NAME" Language="de_DE">
 			<Text>Ressourcen</Text>
 		</Replace>
@@ -1148,9 +1161,6 @@
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT" Language="de_DE">
 			<Text>Die Hälfte mehr Ressourcen als üblich, gleichmäßig verteilt.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_RANDOM" Language="de_DE">
-			<Text>Wird bei der Kartenerstellung aus den anderen Einstellungen gezogen.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="de_DE">
 			<Text>Garantierte Ressourcen</Text>
 		</Replace>
@@ -1165,12 +1175,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT" Language="de_DE">
 			<Text>Vier pro Landmasse.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_RANDOM" Language="de_DE">
-			<Text>Wird bei der Kartenerstellung aus den anderen Einstellungen gezogen.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="de_DE">
-			<Text>Wird bei der Kartenerstellung aus den anderen Einstellungen gezogen.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="de_DE">

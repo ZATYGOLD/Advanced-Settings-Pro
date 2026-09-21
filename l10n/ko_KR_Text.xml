@@ -411,9 +411,6 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="ko_KR">
 			<Text>충돌 모드 비활성화</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="ko_KR">
-			<Text>다음 설정을 추가하는 확인되지 않은 모드:</Text>
-		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="ko_KR">
 			<Text>페이스 설정</Text>
 		</Replace>
@@ -1133,6 +1130,22 @@
 			<Text>산이 더 많이 생성됩니다.</Text>
 		</Replace>
 
+		<Replace Tag="LOC_ZG_WORLD_AGE_NAME" Language="ko_KR">
+			<Text>세계의 연대</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION" Language="ko_KR">
+			<Text>지형이 얼마나 험준한지를 설정합니다.[n]산은 따로 설정하므로 여기서는 평지와 구릉의 비율만 바뀝니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_NEW" Language="ko_KR">
+			<Text>막 융기한 땅으로, 구릉이 많고 평지가 적습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_STANDARD" Language="ko_KR">
+			<Text>지도가 자체적으로 형성하는 지형.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_OLD" Language="ko_KR">
+			<Text>깎여 나간 땅으로, 구릉이 적고 평원이 넓습니다.</Text>
+		</Replace>
+
 		<Replace Tag="LOC_ZG_RESOURCES_NAME" Language="ko_KR">
 			<Text>자원</Text>
 		</Replace>
@@ -1148,9 +1161,6 @@
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT" Language="ko_KR">
 			<Text>평소보다 절반 더 많은 자원이 고르게 흩어집니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_RANDOM" Language="ko_KR">
-			<Text>지도를 생성할 때 다른 설정 중에서 뽑습니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="ko_KR">
 			<Text>보장 자원</Text>
 		</Replace>
@@ -1165,12 +1175,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT" Language="ko_KR">
 			<Text>대륙당 4개.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_RANDOM" Language="ko_KR">
-			<Text>지도를 생성할 때 다른 설정 중에서 뽑습니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="ko_KR">
-			<Text>지도를 생성할 때 다른 설정 중에서 뽑습니다.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="ko_KR">

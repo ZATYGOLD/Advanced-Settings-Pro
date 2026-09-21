@@ -411,9 +411,6 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="pl_PL">
 			<Text>Wyłącz konfliktujące mody</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="pl_PL">
-			<Text>Niezidentyfikowany mod dodający ustawienia:</Text>
-		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="pl_PL">
 			<Text>Ustawienia tempa</Text>
 		</Replace>
@@ -1133,6 +1130,22 @@
 			<Text>Generuje więcej gór.</Text>
 		</Replace>
 
+		<Replace Tag="LOC_ZG_WORLD_AGE_NAME" Language="pl_PL">
+			<Text>Wiek świata</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION" Language="pl_PL">
+			<Text>Ustala, jak pofałdowany jest teren.[n]Góry ustawia się osobno, więc to przesuwa jedynie grunt między równiną a wzgórzami.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_NEW" Language="pl_PL">
+			<Text>Świeżo sfałdowana ziemia, z większą liczbą wzgórz i mniejszą powierzchnią równin.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_STANDARD" Language="pl_PL">
+			<Text>Teren, który mapa ukształtowałaby sama.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_OLD" Language="pl_PL">
+			<Text>Zerodowana ziemia, z mniejszą liczbą wzgórz i szerszymi równinami.</Text>
+		</Replace>
+
 		<Replace Tag="LOC_ZG_RESOURCES_NAME" Language="pl_PL">
 			<Text>Surowce</Text>
 		</Replace>
@@ -1148,9 +1161,6 @@
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT" Language="pl_PL">
 			<Text>O połowę więcej surowców niż zwykle, rozłożonych równomiernie.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_RANDOM" Language="pl_PL">
-			<Text>Losowane spośród pozostałych ustawień przy tworzeniu mapy.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="pl_PL">
 			<Text>Gwarantowane surowce</Text>
 		</Replace>
@@ -1165,12 +1175,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT" Language="pl_PL">
 			<Text>Cztery na ląd.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_RANDOM" Language="pl_PL">
-			<Text>Losowane spośród pozostałych ustawień przy tworzeniu mapy.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="pl_PL">
-			<Text>Losowane spośród pozostałych ustawień przy tworzeniu mapy.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="pl_PL">

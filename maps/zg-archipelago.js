@@ -6,7 +6,8 @@ import { zgDesignateBiomes } from './zg-map-biomes.js';
 import { assignAdvancedStartRegions } from 'fs://game/base-standard/maps/assign-advanced-start-region.js';
 import { chooseStartSectors, assignStartPositions } from 'fs://game/base-standard/maps/assign-starting-plots.js';
 import { generateDiscoveries } from 'fs://game/base-standard/maps/discovery-generator.js';
-import { expandCoasts, addHills, buildRainfallMap } from 'fs://game/base-standard/maps/elevation-terrain-generator.js';
+import { expandCoasts, buildRainfallMap } from 'fs://game/base-standard/maps/elevation-terrain-generator.js';
+import { zgAddRough } from './zg-map-rough.js';
 import { addFeatures } from 'fs://game/base-standard/maps/feature-biome-generator.js';
 import { dumpStartSectors, dumpContinents, dumpTerrain, dumpElevation, dumpRainfall, dumpBiomes, dumpFeatures, dumpResources, dumpNoisePredicate } from 'fs://game/base-standard/maps/map-debug-helpers.js';
 import { g_OceanWaterColumns, g_PolarWaterRows, g_OceanTerrain, g_CoastTerrain, g_LandmassFractal, g_FlatTerrain } from 'fs://game/base-standard/maps/map-globals.js';
@@ -127,7 +128,7 @@ function generateMap() {
   addVolcanoes(iWidth, iHeight);
   AreaBuilder.recalculateAreas();
   TerrainBuilder.buildElevation();
-  addHills(iWidth, iHeight);
+  zgAddRough(iWidth, iHeight);
   buildRainfallMap(iWidth, iHeight);
   zgModelRivers(5, 70);
   TerrainBuilder.validateAndFixTerrain();

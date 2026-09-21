@@ -30,6 +30,13 @@ registerModConflicts([
 	{ workshopId: "3736762795", modId: "game-setup-plus" },
 	// Replaces the base resource generator, which this mod's map copies no longer
 	// call, so its density and clustering settings would show in setup and do
-	// nothing. Also matched by the parameters it adds, in case it is renamed.
-	{ workshopId: "3773880144", modId: "naxts-bmd-resource-density", parameterPatterns: ["BmdResource%"], nameHints: ["resource density"] },
+	// nothing. The two parameters are named in full rather than matched by a
+	// prefix: Bmd is a prefix several authors share, and a wildcard on it caught
+	// an unrelated mod's BmdResourcePreset.
+	{
+		workshopId: "3773880144",
+		modId: "naxts-bmd-resource-density",
+		parameterPatterns: ["BmdResourceDensity", "BmdResourceClustering"],
+		nameHints: ["resource density"],
+	},
 ]);

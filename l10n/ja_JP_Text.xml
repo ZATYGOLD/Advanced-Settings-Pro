@@ -411,9 +411,6 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="ja_JP">
 			<Text>競合Modを無効化</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="ja_JP">
-			<Text>次の設定を追加する未特定のMod：</Text>
-		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="ja_JP">
 			<Text>ペース設定</Text>
 		</Replace>
@@ -1133,6 +1130,22 @@
 			<Text>生成される山が多くなります。</Text>
 		</Replace>
 
+		<Replace Tag="LOC_ZG_WORLD_AGE_NAME" Language="ja_JP">
+			<Text>世界の年代</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION" Language="ja_JP">
+			<Text>大地の起伏の激しさを設定します。[n]山は別に設定するため、ここでは平地と丘陵の割合だけが変わります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_NEW" Language="ja_JP">
+			<Text>隆起したばかりの大地。丘陵が多く、平地が少なくなります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_STANDARD" Language="ja_JP">
+			<Text>マップが本来形作る地形。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WORLD_AGE_DESCRIPTION_OLD" Language="ja_JP">
+			<Text>侵食された大地。丘陵が少なく、平野が広がります。</Text>
+		</Replace>
+
 		<Replace Tag="LOC_ZG_RESOURCES_NAME" Language="ja_JP">
 			<Text>資源</Text>
 		</Replace>
@@ -1148,9 +1161,6 @@
 		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT" Language="ja_JP">
 			<Text>通常より5割多い資源が、均等に散らばります。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_RANDOM" Language="ja_JP">
-			<Text>マップ生成時に他の設定から抽選されます。</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_NAME" Language="ja_JP">
 			<Text>保証された資源</Text>
 		</Replace>
@@ -1165,12 +1175,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_ABUNDANT" Language="ja_JP">
 			<Text>大陸ごとに4つ。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_RESOURCE_MINIMUM_DESCRIPTION_RANDOM" Language="ja_JP">
-			<Text>マップ生成時に他の設定から抽選されます。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="ja_JP">
-			<Text>マップ生成時に他の設定から抽選されます。</Text>
 		</Replace>
 
 		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="ja_JP">
