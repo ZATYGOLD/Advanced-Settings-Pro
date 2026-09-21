@@ -889,8 +889,14 @@
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="de_DE">
 			<Text>Marathon 2.0</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="de_DE">
+			<Text>Online 2.0</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="de_DE">
 			<Text>Ein extrem langsames Tempo. 400% langsamer als Standard.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="de_DE">
+			<Text>Ein extrem schnelles Tempo. 150% schneller als Standard.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="de_DE">
 			<Text>Jedes Zeitalter nutzt die Zeile „Zeitalterlänge“ in seiner eigenen Gruppe darunter. Ausgewogen setzt 150, 170 und 200 Punkte; Mehrspieler setzt 140, 160 und 180.</Text>

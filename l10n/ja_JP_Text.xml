@@ -889,8 +889,14 @@
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="ja_JP">
 			<Text>マラソン2.0</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="ja_JP">
+			<Text>オンライン2.0</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="ja_JP">
 			<Text>非常に遅いペース。標準より400%遅い。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="ja_JP">
+			<Text>非常に速いペース。標準より150%速い。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="ja_JP">
 			<Text>各時代は下のそれぞれのグループにある「時代の長さ」の行を使います。バランスは150、170、200ポイント、マルチプレイヤーは140、160、180ポイントに設定します。</Text>

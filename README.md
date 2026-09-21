@@ -15,7 +15,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Fixed Mountains set to More doing nothing on the Voronoi maps: the pass ran before any rough ground existed, so it had no tiles to raise into peaks
 - Fixed the Resources guarantee applying to every resource rather than the ten the game singles out, which put at least two of everything on every landmass; resources the game does not guarantee are left alone
 - Fixed the map settings doing nothing at all on Archipelago, Shuffle, and Terra Incognita in their Voronoi form: a patch added those three maps and the mod never claimed them, so they ran the base script and no setting applied, with nothing in the log to say so. Coverage is now 14 maps, checked against the installed game rather than a fixed list
-- Removed the Online 2.0 game speed, and the Age Length point tables lose its column
+- Retired the Online 2.0 game speed: it no longer appears in the Game Speed list, but stays defined so a game already running on it keeps working. The config row names its own domain, which the Game Speed parameter does not read, rather than being deleted outright. The Age Length point tables lose its column
 - Fixed Balanced Age Length never applying its per-age totals: rounding the preset to 150/170/200 left the criteria still asking for the old 153/166/196, so their data files never loaded
 - Fixed the conflict guard locking players out of New Game and Continue: the resource-density footprint matched on a `BmdResource` prefix, catching Densmora's Composite Resources Pack, and an unattributed match now only writes to the log
 

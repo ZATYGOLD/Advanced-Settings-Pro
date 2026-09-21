@@ -889,8 +889,14 @@
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="pl_PL">
 			<Text>Maraton 2.0</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="pl_PL">
+			<Text>Online 2.0</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="pl_PL">
 			<Text>Ekstremalnie wolne tempo. 400% wolniej niż standardowe.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="pl_PL">
+			<Text>Ekstremalnie szybkie tempo. 150% szybciej niż standardowe.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="pl_PL">
 			<Text>Własne: każda epoka używa wiersza Długość epoki w swojej grupie poniżej. Zrównoważone ustawia 150, 170 i 200 punktów; Tryb wieloosobowy ustawia 140, 160 i 180.</Text>

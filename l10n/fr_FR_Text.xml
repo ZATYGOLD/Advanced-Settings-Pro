@@ -889,8 +889,14 @@
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="fr_FR">
 			<Text>Marathon 2.0</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="fr_FR">
+			<Text>En ligne 2.0</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="fr_FR">
 			<Text>Un rythme extrêmement lent. 400% plus lent que Standard.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="fr_FR">
+			<Text>Un rythme extrêmement rapide. 150% plus rapide que Standard.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="fr_FR">
 			<Text>Chaque âge utilise la ligne Durée des âges de son propre groupe ci-dessous. Équilibré fixe 150, 170 et 200 points ; Multijoueur fixe 140, 160 et 180.</Text>

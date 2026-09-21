@@ -889,8 +889,14 @@
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="pt_BR">
 			<Text>Maratona 2.0</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="pt_BR">
+			<Text>Online 2.0</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="pt_BR">
 			<Text>Um ritmo extremamente lento. 400% mais lento que o Padrão.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="pt_BR">
+			<Text>Um ritmo extremamente rápido. 150% mais rápido que o Padrão.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="pt_BR">
 			<Text>Cada era usa a linha Duração da era do seu próprio grupo abaixo. Equilibrado define 150, 170 e 200 pontos; Multijogador define 140, 160 e 180.</Text>

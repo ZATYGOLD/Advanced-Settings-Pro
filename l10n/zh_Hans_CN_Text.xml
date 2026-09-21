@@ -889,8 +889,14 @@
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="zh_Hans_CN">
 			<Text>马拉松2.0</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="zh_Hans_CN">
+			<Text>线上2.0</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>极慢的节奏。比标准慢400%。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>极快的节奏。比标准快150%。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="zh_Hans_CN">
 			<Text>每个时代使用下方各自分组中的时代长度行。平衡设为150、170、200点；多人游戏设为140、160、180点。</Text>

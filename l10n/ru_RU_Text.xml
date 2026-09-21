@@ -889,8 +889,14 @@
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="ru_RU">
 			<Text>Марафон 2.0</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="ru_RU">
+			<Text>Онлайн 2.0</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="ru_RU">
 			<Text>Чрезвычайно медленный темп. На 400% медленнее стандартного.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="ru_RU">
+			<Text>Чрезвычайно быстрый темп. На 150% быстрее стандартного.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="ru_RU">
 			<Text>Каждая эпоха использует строку «Длительность эпохи» в своей группе ниже. Сбалансированный ставит 150, 170 и 200 очков; Многопользовательский — 140, 160 и 180.</Text>

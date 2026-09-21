@@ -718,7 +718,9 @@
 
 	<!-- Game Speeds -->
 		<Row Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME"><Text>Marathon 2.0</Text></Row>
+		<Row Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME"><Text>Online 2.0</Text></Row>
 		<Row Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION"><Text>An extremely slow pace. 400% slower than Standard speed.</Text></Row>
+		<Row Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION"><Text>An extremely fast pace. 150% faster than Standard speed.</Text></Row>
 
 	<!-- Age Length -->
 		<Row Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC"><Text>Each age uses the Age Length row in its own group below. Balanced sets 150, 170, and 200 points; Multiplayer sets 140, 160, and 180.</Text></Row>
