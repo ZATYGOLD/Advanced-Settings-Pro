@@ -6,6 +6,7 @@
 		<Authors>Zatygold</Authors>
 		<Version>0.8.8</Version>
 		<Package>Mod</Package>
+		<LastUpdated>2026-09-21</LastUpdated>
 		<ShowInBrowser>1</ShowInBrowser>
 		<EnabledByDefault>1</EnabledByDefault>
 	</Properties>
