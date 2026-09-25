@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="AdvancedSettingsPro" version="00808" xmlns="ModInfo">
+<Mod id="AdvancedSettingsPro" version="00809" xmlns="ModInfo">
 	<Properties>
 		<Name>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME</Name>
 		<Description>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION</Description>
 		<Authors>Zatygold</Authors>
-		<Version>0.8.8</Version>
+		<Version>0.8.9</Version>
 		<Package>Mod</Package>
 		<LastUpdated>2026-09-21</LastUpdated>
 		<ShowInBrowser>1</ShowInBrowser>
@@ -4620,7 +4620,10 @@
 					<Item>ui/zg-setup-rules.js</Item>
 					<Item>ui/zg-map-tab.js</Item>
 					<Item>ui/zg-seed-randomizer.js</Item>
+					<Item>ui/zg-memento-select-model.js</Item>
+					<Item>ui/zg-memento-roller.js</Item>
 					<Item>ui/zg-player-tab.js</Item>
+					<Item>ui/zg-age-transition-mementos.js</Item>
 				</UIScripts>
 				<UpdateText>
 					<Item>text/en_us/ui-shell-text.xml</Item>

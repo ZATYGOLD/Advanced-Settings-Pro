@@ -7,13 +7,19 @@
 // has no room for, and swaps it in through the same Tab.Item hook the Map tab
 // uses.
 //
-// It also owns the two settings the tab's Memento columns stand for: the
+// It also applies the two settings the tab's Memento columns stand for: the
 // per-player Random flag behind a slot's Random entry, and Game Settings' AI
-// Mementos, which fills every AI player's slots at once.
+// Mementos, which fills every AI player's slots at once. The draws themselves
+// live in zg-memento-roller.js, shared with the age transition.
 import { template, insert } from 'fs://game/core/vendor/solid-js/web/dist/web.js';
-import { createMemo, createComponent, createRenderEffect, mergeProps, For, Show } from 'fs://game/core/vendor/solid-js/dist/solid.js';
+import { createMemo, createComponent, createRenderEffect, createRoot, createEffect, on, useContext, mergeProps, For, Show } from 'fs://game/core/vendor/solid-js/dist/solid.js';
 import { ComponentRegistry } from 'fs://game/core/ui-next/services/component-registry.js';
 import { multiplayerTeamColors } from 'fs://game/core/ui/utilities/utilities-network-constants.js';
+import { useScreenFlowContext } from 'fs://game/core/ui-next/components/screen-flow.js';
+import { usePopupContext } from 'fs://game/core/ui-next/components/popup.js';
+import { TriggerType } from 'fs://game/core/ui-next/components/trigger.js';
+import { retargetMementoSelect } from './zg-memento-select-model.js';
+import { MEMENTO_PARAM_IDS, MEMENTO_NONE_VALUE, RANDOM_FLAG_PARAM_ID, RANDOM_FLAGS, AI_MEMENTOS_PARAM_ID, AI_MEMENTOS_DEFAULT, aiMementoMode, aiPlayerIds, matchSource, randomFlags, setRandomFlag, rollMemento, sortPossibleValues, isAgeTransition } from './zg-memento-roller.js';
 import { Activatable } from 'fs://game/core/ui-next/components/activatable.js';
 import { Button } from 'fs://game/core/ui-next/components/button.js';
 import { Dropdown, DropdownItem } from 'fs://game/core/ui-next/components/dropdown.js';
@@ -28,7 +34,7 @@ import { CivSelectModel } from 'fs://game/core/ui-next/screens/create-game/civ-s
 import { LeaderSelectModel } from 'fs://game/core/ui-next/screens/create-game/leader-select-model.js';
 import { PlayerSetupParametersModel } from 'fs://game/core/ui-next/screens/create-game/game-parameters-model.js';
 import { TicketBox } from 'fs://game/core/ui-next/screens/create-game/ticket-box.js';
-import 'fs://game/core/ui-next/components/tab.js';
+import { TabContext } from 'fs://game/core/ui-next/components/tab.js';
 import './zg-map-tab.js';
 
 const OVERRIDE_PRIORITY = 110;
@@ -42,19 +48,13 @@ const PLAYER_TAB_NAME = "advanced-options-player";
 // delete this list and the `claimingMod` branch at the tab hook below; nothing
 // else refers to either.
 const PLAYER_TAB_MODS = ["Enable_Custom_Map_Start_Locations"];
-const MEMENTO_PARAM_IDS = ["PlayerMementoMajorSlot", "PlayerMementoMinorSlot1"];
 const MEMENTO_DEFAULT_ICON = "mem_min_leader.png";
-const MEMENTO_NONE_VALUE = "NONE";
 // An empty slot gets a crossed-out circle rather than a memento's own art. The
 // game's only such image is its "cannot place" cursor, which ships on every
 // platform. It is red, so it is tinted to sit beside the Random icon; set the
 // tint to "" to leave it in the game's own red.
 const MEMENTO_NONE_ICON = "fs://game/core/ui/cursors/macos/cantplace.png";
 const MEMENTO_NONE_TINT = "#8c7e62";
-// Random is not a memento the game knows: the mod keeps a per-player flag and
-// rolls a real memento into the slot, once per game session.
-const RANDOM_FLAG_PARAM_ID = "ZG_PlayerRandomMementos";
-const RANDOM_FLAGS = { ZG_RANDOM_MEMENTOS_NONE: [false, false], ZG_RANDOM_MEMENTOS_MAJOR: [true, false], ZG_RANDOM_MEMENTOS_MINOR: [false, true], ZG_RANDOM_MEMENTOS_BOTH: [true, true] };
 const RANDOM_OPTION = { value: "ZG_RANDOM", name: "LOC_ADVANCED_OPTIONS_RANDOM", description: "LOC_ADVANCED_OPTIONS_RANDOM", icon: null, sortIndex: -Infinity };
 // A team is a plain int on the player configuration, carrying no list of
 // choices, so the options are built here the way the lobby builds its own.
@@ -65,8 +65,14 @@ const POLL_MS = 250;
 // Column proportions shared by the header and the rows. Team and the Mementos
 // each show one icon, so they need room for that and the dropdown arrow and no
 // more; the two name columns take what is left.
-const COLUMN_FLEX = [2, 0.68, 2, 0.62, 0.62];
-const flexOf = (grow) => `${grow} 1 0`;
+// A memento slot is a fixed box, so its columns do not grow: each is the box
+// plus the same 1rem of margin the dropdowns carry, and the shared heading is
+// sized to the pair so it centers over them.
+const SLOT_BOX_REM = 3.5;
+const SLOT_COLUMN_REM = SLOT_BOX_REM + 1;
+const COLUMN_FLEX = [2, 0.68, 2, 0, 0];
+const flexOf = (grow) => (grow > 0 ? `${grow} 1 0` : "0 0 auto");
+const fixedRemOf = (columns) => columns.filter((index) => COLUMN_FLEX[index] == 0).length * SLOT_COLUMN_REM;
 // One header can sit over more than one column: the two memento slots share a
 // single "Mementos" heading.
 const COLUMN_HEADERS = [
@@ -272,16 +278,92 @@ const MementoIcon = (props) => {
 	return el;
 };
 
-// Sorted, with each value listed once (the memento domain repeats its "none" entry).
-function sortPossibleValues(possibleValues) {
-	if (!possibleValues) return;
-	const seen = new Set();
-	return [...possibleValues]
-		.filter((entry) => !seen.has(entry.value) && seen.add(entry.value))
-		.sort((a, b) => {
-			if (a.sortIndex != b.sortIndex) return a.sortIndex - b.sortIndex;
-			return Locale.compare(Locale.compose(resolve(a.name)), Locale.compose(resolve(b.name)));
-		});
+// ------------------------------------------------------- memento slots --
+
+// A memento slot drawn the way the Overview hub draws its own: the panel box,
+// the filigree and rollover, and either the memento's icon or, for an empty
+// slot, the slot base image. Clicking one opens the memento-select screen, the
+// picker with the search bar and attribute filter, for the player this row
+// stands for. That screen's model is bound to the human in the base game;
+// ui/zg-memento-select-model.js makes it retargetable.
+//
+// Advanced Options is a Popup.Item layered over the create-game flow, while
+// memento-select is a screen of that flow. Activating the screen with the popup
+// still up changes the page behind it and leaves the popup covering the picker,
+// so opening a slot closes the popup first and, when the picker is left, opens
+// it again on the same anchor the hub used. The reset watcher lives in its own
+// root: the Player tab is unmounted while the picker is up, so an effect owned
+// by it would be disposed before it could fire.
+const SLOT_PLUS_REM = 1.6;
+const SLOT_PLUS_IMAGE = "url('blp:shell_memento-maj-plus.png')";
+const SLOT_BASE_IMAGE = "url('blp:memento_slot-base.png')";
+const SLOT_ICON_CLASSES = "w-full h-full absolute inset-1";
+const MEMENTO_SELECT_SCREEN = "memento-select";
+const ADVANCED_OPTIONS_POPUP = "advanced-options";
+
+// Advanced Options reopens on its General tab; this asks the Player tab item
+// to take over once it has registered itself, on the reopen after a picker.
+let reopenOnPlayerTab = false;
+
+const tplSlotBox = template(`<div class="flex items-center justify-center p-1 img-unit-panelbox relative"><div class="absolute inset-0 bg-center bg-no-repeat"></div><div class="img-rollover-highlight absolute inset-0 opacity-0 group-focus\\:opacity-100 group-hover\\:opacity-100 group-pressed\\:opacity-100 pointer-events-none"></div></div>`);
+
+function openMementoSelect(screenFlow, popup, playerId, slotIndex) {
+	const anchor = popup.target();
+	popup.close(ADVANCED_OPTIONS_POPUP);
+	retargetMementoSelect(playerId, slotIndex);
+	createRoot((dispose) => {
+		createEffect(on(() => screenFlow.active(), (active) => {
+			if (active?.name === MEMENTO_SELECT_SCREEN) {
+				return;
+			}
+			retargetMementoSelect();
+			if (anchor instanceof HTMLElement) {
+				reopenOnPlayerTab = true;
+				popup.onTrigger(ADVANCED_OPTIONS_POPUP, TriggerType.Activate, anchor);
+			}
+			dispose();
+		}, { defer: true }));
+	});
+	screenFlow.activate(MEMENTO_SELECT_SCREEN);
+}
+
+function MementoSlotCell(props) {
+	const screenFlow = useScreenFlowContext();
+	const popup = usePopupContext();
+	const current = () => props.param()?.value;
+	const isEmpty = () => (current()?.value ?? MEMENTO_NONE_VALUE) == MEMENTO_NONE_VALUE;
+	return createComponent(Tooltip.Text, {
+		get text() { return isEmpty() ? "LOC_MEMENTO_NONE_NAME" : resolve(current()?.name); },
+		get children() {
+			return createComponent(Activatable, {
+				class: "flex flex-row group relative mx-2 my-1",
+				onActivate: () => openMementoSelect(screenFlow, popup, props.playerId, props.slotIndex),
+				get children() {
+					const box = tplSlotBox();
+					box.style.width = `${SLOT_BOX_REM}rem`;
+					box.style.height = `${SLOT_BOX_REM}rem`;
+					const plus = box.firstChild;
+					plus.style.backgroundImage = SLOT_PLUS_IMAGE;
+					plus.style.backgroundSize = `${SLOT_PLUS_REM}rem ${SLOT_PLUS_REM}rem`;
+					const highlight = box.lastChild;
+					insert(box, createComponent(Show, {
+						get when() { return isEmpty(); },
+						get fallback() {
+							return createComponent(Icon, {
+								get name() { return `url('blp:${resolve(current()?.icon)}')`; },
+								isUrl: true,
+								class: SLOT_ICON_CLASSES,
+							});
+						},
+						get children() {
+							return createComponent(Icon, { name: SLOT_BASE_IMAGE, isUrl: true, class: `${SLOT_ICON_CLASSES} opacity-60` });
+						},
+					}), highlight);
+					return box;
+				},
+			});
+		},
+	});
 }
 
 // ---------------------------------------------------------------- teams --
@@ -352,6 +434,9 @@ const TeamTooltip = () => createComponent(Tooltip.Frame, {
 function column(index, child) {
 	const el = tplColumn();
 	el.style.flex = flexOf(COLUMN_FLEX[index]);
+	if (COLUMN_FLEX[index] == 0) {
+		el.style.width = `${fixedRemOf([index])}rem`;
+	}
 	insert(el, child);
 	return el;
 }
@@ -396,114 +481,7 @@ function parameterDropdown(param, option, tooltip, side, classes, random, listOp
 	});
 }
 
-// ------------------------------------------------------ random mementos --
-
-function randomFlags(playerId) {
-	const value = GameSetup.findPlayerParameter(playerId, RANDOM_FLAG_PARAM_ID)?.value?.value;
-	return RANDOM_FLAGS[value] ?? RANDOM_FLAGS.ZG_RANDOM_MEMENTOS_NONE;
-}
-
-function setRandomFlag(playerId, slotIndex, isRandom) {
-	const flags = [...randomFlags(playerId)];
-	flags[slotIndex] = isRandom;
-	const value = Object.keys(RANDOM_FLAGS).find((key) => RANDOM_FLAGS[key].every((flag, i) => flag == flags[i]));
-	GameSetup.setPlayerParameterValue(playerId, RANDOM_FLAG_PARAM_ID, value);
-}
-
-// Draws a memento at random into one slot, from the slot's own choices so that
-// only mementos the player has actually unlocked are picked. An attribute, when
-// given, narrows the draw to the mementos carrying it; a slot with none of them
-// falls back to the unrestricted draw rather than staying empty.
-function rollMemento(playerId, slotIndex, attribute) {
-	const param = GameSetup.findPlayerParameter(playerId, MEMENTO_PARAM_IDS[slotIndex]);
-	const choices = (sortPossibleValues(param?.domain?.possibleValues) ?? []).filter((entry) => entry.value != MEMENTO_NONE_VALUE);
-	const matching = attribute ? choices.filter((entry) => mementoAttributes().get(entry.value) == attribute) : [];
-	const pool = matching.length > 0 ? matching : choices;
-	if (pool.length > 0) {
-		GameSetup.setPlayerParameterValue(playerId, MEMENTO_PARAM_IDS[slotIndex], pool[Math.floor(Math.random() * pool.length)].value);
-	}
-}
-
 // --------------------------------------------------------- AI mementos --
-
-// Game Settings' AI Mementos, which fills every AI player's slots at once.
-const AI_MEMENTOS_PARAM_ID = "ZG_AIMementos";
-const AI_MEMENTOS_DEFAULT = "ZG_AI_MEMENTOS_NONE";
-const TRAIT_PREFIX = "TAG_TRAIT_";
-const ATTRIBUTE_PREFIX = "LOC_ATTRIBUTE_";
-// Leaders and civilizations call the diplomatic attribute "political"; mementos
-// call it "diplomatic". Every other attribute is named the same on both sides.
-const ATTRIBUTE_ALIASES = { POLITICAL: "DIPLOMATIC" };
-
-// The configuration database does not change while the shell is open, so each
-// lookup below is built on first use and kept.
-function cached(build) {
-	let value;
-	return () => (value ??= build());
-}
-
-function query(sql) {
-	try {
-		return Database.query("config", sql) ?? [];
-	} catch (error) {
-		console.error(`ZG-ASP mementos: query failed: ${error}`);
-		return [];
-	}
-}
-
-function attributeOf(tagType) {
-	const name = tagType.slice(TRAIT_PREFIX.length);
-	return ATTRIBUTE_PREFIX + (ATTRIBUTE_ALIASES[name] ?? name);
-}
-
-// Leader or civilization type to its attributes, in the order the game lists
-// them; every leader and civilization carries exactly two.
-function groupAttributes(rows, column) {
-	const out = new Map();
-	for (const row of rows) {
-		if (!row.TagType?.startsWith(TRAIT_PREFIX)) {
-			continue;
-		}
-		const attributes = out.get(row[column]) ?? [];
-		const attribute = attributeOf(row.TagType);
-		if (!attributes.includes(attribute)) {
-			attributes.push(attribute);
-		}
-		out.set(row[column], attributes);
-	}
-	return out;
-}
-
-// Memento type to the attribute it carries.
-const mementoAttributes = cached(() => new Map(query("SELECT Type, Tag FROM Mementos").map((row) => [row.Type, row.Tag])));
-const leaderAttributes = cached(() => groupAttributes(query("SELECT LeaderType, TagType FROM LeaderTags"), "LeaderType"));
-const civilizationAttributes = cached(() => groupAttributes(query("SELECT CivilizationType, TagType FROM CivilizationTags"), "CivilizationType"));
-
-// `random` leaves the slots on the Random flag so they roll again each session.
-// A match mode names the player parameter it reads and the attributes for that
-// parameter's value; each slot draws from the attribute in its own position.
-const AI_MEMENTO_MODES = {
-	ZG_AI_MEMENTOS_NONE: {},
-	ZG_AI_MEMENTOS_RANDOM: { random: true },
-	ZG_AI_MEMENTOS_LEADER: { sourceId: "PlayerLeader", attributes: leaderAttributes },
-	ZG_AI_MEMENTOS_CIVILIZATION: { sourceId: "PlayerCivilization", attributes: civilizationAttributes },
-};
-
-const aiMementosValue = () => GameSetup.findGameParameter(AI_MEMENTOS_PARAM_ID)?.value?.value ?? AI_MEMENTOS_DEFAULT;
-
-// The AI players the Player tab lists: every participating slot in use but the
-// local one.
-function aiPlayerIds() {
-	return (Configuration.getGame()?.participatingPlayerIDs ?? []).filter((playerId) => {
-		if (playerId == GameContext.localPlayerID) {
-			return false;
-		}
-		const status = Configuration.getPlayer(playerId)?.slotStatus;
-		return status != SlotStatus.SS_CLOSED && status != SlotStatus.SS_OPEN;
-	});
-}
-
-const matchSource = (mode, playerId) => (mode.sourceId ? GameSetup.findPlayerParameter(playerId, mode.sourceId)?.value?.value : null);
 
 // AI slots hold RANDOM for the whole setup screen: the engine only resolves them
 // at game creation, after this screen has handed off, and nothing here can see
@@ -533,8 +511,10 @@ const appliedSources = new Map();
 let lastRevision = -1;
 let appliedValue = null;
 setInterval(() => {
+	// An age transition runs through this same shell. The AI's mementos there
+	// are Age Transition AI Mementos' to settle, in zg-age-transition-mementos.js.
 	const revision = GameSetup.currentRevision;
-	if (revision == lastRevision) {
+	if (revision == lastRevision || isAgeTransition()) {
 		return;
 	}
 	// A fresh setup screen restarts the revision counter. Forget what was rolled
@@ -547,8 +527,8 @@ setInterval(() => {
 	}
 	lastRevision = revision;
 
-	const value = aiMementosValue();
-	const mode = AI_MEMENTO_MODES[value] ?? AI_MEMENTO_MODES[AI_MEMENTOS_DEFAULT];
+	const value = GameSetup.findGameParameter(AI_MEMENTOS_PARAM_ID)?.value?.value ?? AI_MEMENTOS_DEFAULT;
+	const mode = aiMementoMode();
 	const changed = appliedValue != null && value != appliedValue;
 	if (changed) {
 		appliedSources.clear();
@@ -608,7 +588,12 @@ const PlayerSetup = () => {
 		const cells = el.firstChild.nextSibling;
 		COLUMN_HEADERS.forEach(({ text, columns }) => {
 			const cell = tplHeaderCell();
-			cell.style.flex = flexOf(columns.reduce((total, index) => total + COLUMN_FLEX[index], 0));
+			const grow = columns.reduce((total, index) => total + COLUMN_FLEX[index], 0);
+			cell.style.flex = flexOf(grow);
+			if (grow == 0) {
+				// Less the cell's own m-2 margins.
+				cell.style.width = `${fixedRemOf(columns) - 1}rem`;
+			}
 			insert(cell, createComponent(L10n.Compose, { text }));
 			cells.appendChild(cell);
 		});
@@ -624,8 +609,8 @@ const PlayerSetup = () => {
 		controls.appendChild(column(2, parameterDropdown(() => playerParam(slot, "PlayerCivilization"), PlayerOption, CivTooltip, TooltipHorizontalPosition.LEFT, "my-2 mx-2 flex-auto")));
 		MEMENTO_PARAM_IDS.forEach((id, slotIndex) => {
 			controls.appendChild(column(3 + slotIndex, createComponent(Show, {
-				get when() { return !slot.isLocalPlayer && playerParam(slot, id)?.domain?.possibleValues?.length > 0; },
-				get children() { return parameterDropdown(() => playerParam(slot, id), MementoIcon, MementoTooltip, TooltipHorizontalPosition.LEFT, "my-2 ml-2 flex-auto", randomFor(slot, slotIndex)); },
+				get when() { return playerParam(slot, id)?.domain?.possibleValues?.length > 0; },
+				get children() { return createComponent(MementoSlotCell, { get playerId() { return slot.playerId; }, param: () => playerParam(slot, id), slotIndex }); },
 			})));
 		});
 		insert(close, createComponent(Show, {
@@ -680,6 +665,26 @@ const PlayerSetup = () => {
 // registered by zg-map-tab.js as well.
 const claimingMod = Modding.getInstalledMods().find((mod) => mod.enabled && PLAYER_TAB_MODS.includes(mod.id));
 
+// Advanced Options names General as its default tab and applies it from an
+// effect whose order against the tab items' own registration is not ours to
+// set, so a one-shot activation can be overwritten. After a reopen from the
+// picker, this holds the Player tab through the screen's mount and lets go on
+// the next tick, when every mount effect has run.
+function restorePlayerTab(tabContext) {
+	if (!tabContext) {
+		return;
+	}
+	createEffect(() => {
+		if (reopenOnPlayerTab && tabContext.active()?.name != PLAYER_TAB_NAME) {
+			tabContext.activate(PLAYER_TAB_NAME);
+		}
+	});
+	setTimeout(() => {
+		reopenOnPlayerTab = false;
+		console.warn(`ZG-ASP player tab: reopened on '${tabContext.active()?.name}'`);
+	}, 0);
+}
+
 const tabItem = ComponentRegistry.get("Tab.Item");
 // `factory` is a signal accessor returning the currently registered factory.
 // Read it once here to capture the previous implementation before this module
@@ -695,7 +700,11 @@ if (claimingMod) {
 			if (props?.name != PLAYER_TAB_NAME) {
 				return createPreviousTabItem(props);
 			}
-			return createPreviousTabItem(mergeProps(props, { body: () => createComponent(PlayerSetup, {}) }));
+			const item = createPreviousTabItem(mergeProps(props, { body: () => createComponent(PlayerSetup, {}) }));
+			if (reopenOnPlayerTab) {
+				restorePlayerTab(useContext(TabContext));
+			}
+			return item;
 		},
 	});
 }
