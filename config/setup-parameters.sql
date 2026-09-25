@@ -193,6 +193,17 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_AgeTransitionMementosDomain', 'ZG_AGE_TRANSITION_MEMENTOS_MAINTAIN', 'LOC_ZG_AGE_TRANSITION_MEMENTOS_MAINTAIN_NAME', 'LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_MAINTAIN', 20),
         ('ZG_AgeTransitionMementosDomain', 'ZG_AGE_TRANSITION_MEMENTOS_ADAPT', 'LOC_ZG_AGE_TRANSITION_MEMENTOS_ADAPT_NAME', 'LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_ADAPT', 30);
 
+-- A fifth value for the game's own AI Civ Selection, Age Transition setting.
+-- The engine decides the AI's civilizations for the four values it knows; this
+-- one it does not know, so ui/zg-age-transition-civs.js writes every AI's
+-- civilization itself just before the next age starts, from the leader's
+-- associations in LeaderCivilizationBias: Historical by Bias, else Geographic,
+-- never Strategic; taken ones passed over, duplicates last; ties to the age's
+-- own civilization. The AI persists when its pick is the civilization it holds.
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES
+        ('AgeTransitionCivSelectionMode', 'AGE_TRANSITION_CIV_SELECTION_MODE_ZG_HISTORICAL', 'LOC_ZG_AGE_TRANSITION_CIVS_HISTORICAL_NAME', 'LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL', 5);
+
 --*******************************************************
 --************* PACE SET *******************************
 --*******************************************************

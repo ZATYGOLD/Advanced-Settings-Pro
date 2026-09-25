@@ -8,6 +8,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 - The Player tab's memento dropdowns are replaced by memento slots drawn like the Overview screen's, for the human and every AI player. Clicking a slot opens the game's own memento picker, with its search bar and attribute filter, for that player; confirming or backing out returns to the Player tab
 - New Memento Settings group holding Mementos, AI Mementos (None, Random, Leader Match, Civilization Match), and Age Transition AI Mementos: Maintain keeps each AI's mementos through an age change; Adapt draws them again by the AI Mementos rule, against the leader and civilization the AI holds in the new age
+- The game's AI Civ Selection, Age Transition setting gains a fifth option, Historical: each AI follows its leader's associations from the civilization picker, a Historical civilization the new age offers by Bias, else a Geographic one, never a Strategic one; taken civilizations are passed over and duplicated only as a last resort, ties go to the age's own civilization, and an AI whose pick is the civilization it already holds persists
 - Conflict guard: eleven more mods recognized, entries grouped by the setting they collide with, and the header states the three rules for adding one; validation now checks every footprint against them
 
 ### 0.8.8

@@ -4623,7 +4623,9 @@
 					<Item>ui/zg-memento-select-model.js</Item>
 					<Item>ui/zg-memento-roller.js</Item>
 					<Item>ui/zg-player-tab.js</Item>
+					<Item>ui/zg-age-transition-civs.js</Item>
 					<Item>ui/zg-age-transition-mementos.js</Item>
+					<Item>ui/zg-age-transition.js</Item>
 				</UIScripts>
 				<UpdateText>
 					<Item>text/en_us/ui-shell-text.xml</Item>

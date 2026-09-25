@@ -456,6 +456,10 @@
 		<Row Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_ADAPT">
 			<Text>Every AI draws fresh Mementos through the AI Mementos setting, against the leader and civilization it holds in the new age.[n]Leader Match and Civilization Match reach every AI here, since both are known once the game is running.</Text>
 		</Row>
+		<Row Tag="LOC_ZG_AGE_TRANSITION_CIVS_HISTORICAL_NAME"><Text>Historical</Text></Row>
+		<Row Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL">
+			<Text>Every AI follows its leader's associations from the civilization picker: a Historical civilization the new age offers, highest Bias first, else a Geographic one, never a Strategic one.[n]A civilization already taken is passed over for the next; a duplicate is seated only when every one is taken. A tie goes to the civilization native to the new age. When the pick is the civilization the AI already holds, it persists.</Text>
+		</Row>
 
 	<!-- Triumph Set Descriptions -->
 		<Row Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM">
