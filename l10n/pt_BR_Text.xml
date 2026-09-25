@@ -787,8 +787,14 @@
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_ADAPT" Language="pt_BR">
 			<Text>Cada IA tira Lembranças novas pela configuração Lembranças da IA, conforme o líder e a civilização que tem na nova era.[n]Correspondência de líder e Correspondência de civilização alcançam toda IA aqui, pois ambos são conhecidos com o jogo em andamento.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_HISTORICAL_NAME" Language="pt_BR">
+		<Replace Tag="LOC_ZG_CIV_CHOICE_HISTORICAL" Language="pt_BR">
 			<Text>Histórica</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIV_CHOICE_GEOGRAPHIC" Language="pt_BR">
+			<Text>Geográfica</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LOBBY_SUGGESTED_CIVS" Language="pt_BR">
+			<Text>Civilizações sugeridas</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="pt_BR">
 			<Text>Cada IA segue as associações de seu líder no seletor de civilizações: uma civilização histórica oferecida pela nova era, maior peso primeiro; senão, uma geográfica; nunca uma estratégica.[n]Uma civilização já tomada é pulada em favor da próxima; só há duplicata quando todas estão tomadas. Um empate vai para a civilização própria da nova era. Se a escolha for a civilização que a IA já tem, ela a mantém.</Text>

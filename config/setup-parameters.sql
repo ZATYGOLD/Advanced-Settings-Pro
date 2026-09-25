@@ -200,7 +200,7 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 -- own civilization. The AI persists when its pick is the civilization it holds.
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
-        ('AgeTransitionCivSelectionMode', 'AGE_TRANSITION_CIV_SELECTION_MODE_ZG_HISTORICAL', 'LOC_ZG_AGE_TRANSITION_CIVS_HISTORICAL_NAME', 'LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL', 5);
+        ('AgeTransitionCivSelectionMode', 'AGE_TRANSITION_CIV_SELECTION_MODE_ZG_HISTORICAL', 'LOC_ZG_CIV_CHOICE_HISTORICAL', 'LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL', 5);
 
 --*******************************************************
 --************* PACE SET *******************************

@@ -787,8 +787,14 @@
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_ADAPT" Language="ja_JP">
 			<Text>各AIは「AIのメメント」設定に従い、新しい時代の指導者と文明に合わせてメメントを引き直します。[n]ゲーム進行中は指導者と文明が判明しているため、指導者一致と文明一致がすべてのAIに適用されます。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_HISTORICAL_NAME" Language="ja_JP">
+		<Replace Tag="LOC_ZG_CIV_CHOICE_HISTORICAL" Language="ja_JP">
 			<Text>歴史</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIV_CHOICE_GEOGRAPHIC" Language="ja_JP">
+			<Text>地理</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LOBBY_SUGGESTED_CIVS" Language="ja_JP">
+			<Text>おすすめの文明</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="ja_JP">
 			<Text>各AIは文明選択画面の指導者との関連付けに従います。新しい時代で選べる歴史的文明を重みの高い順に、なければ地理的文明を選び、戦略的文明は使いません。[n]すでに選ばれた文明は飛ばして次を選び、すべて選ばれている場合にのみ重複を許します。同点なら新しい時代固有の文明を優先します。選ばれたのがAIの現在の文明なら、そのまま維持します。</Text>

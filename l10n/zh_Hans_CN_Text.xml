@@ -787,8 +787,14 @@
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_ADAPT" Language="zh_Hans_CN">
 			<Text>每个AI按AI纪念物设置重新抽取纪念物，契合其在新时代的领袖与文明。[n]游戏运行时领袖与文明均已确定，因此领袖匹配和文明匹配对所有AI均生效。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_HISTORICAL_NAME" Language="zh_Hans_CN">
+		<Replace Tag="LOC_ZG_CIV_CHOICE_HISTORICAL" Language="zh_Hans_CN">
 			<Text>历史</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIV_CHOICE_GEOGRAPHIC" Language="zh_Hans_CN">
+			<Text>地理</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LOBBY_SUGGESTED_CIVS" Language="zh_Hans_CN">
+			<Text>推荐文明</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="zh_Hans_CN">
 			<Text>每个AI遵循文明选择界面中其领袖的关联：新时代提供的历史文明，权重高者优先，否则选择地理文明，绝不选择战略文明。[n]已被占用的文明将跳过而取下一个；仅当全部被占用时才允许重复。平局时优先选择新时代本身的文明。若所选正是AI当前的文明，则保留不变。</Text>

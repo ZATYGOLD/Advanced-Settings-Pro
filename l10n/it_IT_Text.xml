@@ -787,8 +787,14 @@
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_ADAPT" Language="it_IT">
 			<Text>Ogni IA pesca Cimeli nuovi tramite l'impostazione Cimeli dell'IA, in base al leader e alla civiltà che ha nella nuova era.[n]Corrispondenza leader e Corrispondenza civiltà raggiungono qui ogni IA, dato che entrambi sono noti a partita avviata.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_HISTORICAL_NAME" Language="it_IT">
+		<Replace Tag="LOC_ZG_CIV_CHOICE_HISTORICAL" Language="it_IT">
 			<Text>Storica</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIV_CHOICE_GEOGRAPHIC" Language="it_IT">
+			<Text>Geografica</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LOBBY_SUGGESTED_CIVS" Language="it_IT">
+			<Text>Civiltà suggerite</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="it_IT">
 			<Text>Ogni IA segue le associazioni del suo leader nel selettore di civiltà: una civiltà storica offerta dalla nuova epoca, peso maggiore per prima, altrimenti una geografica, mai una strategica.[n]Una civiltà già presa viene saltata a favore della successiva; un doppione viene assegnato solo quando sono tutte prese. In caso di parità vince la civiltà propria della nuova epoca. Se la scelta è la civiltà che l'IA ha già, la mantiene.</Text>

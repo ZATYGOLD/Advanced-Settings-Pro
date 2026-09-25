@@ -38,9 +38,11 @@ const LEADER_PARAM_ID = "PlayerLeader";
 const RANDOM_VALUE = "RANDOM";
 // In the order they are tried. Strategic rows are not associations and are left
 // out. Matched on the prefix: one shipped row spells its type without "_CHOICE".
-const CHOICE_TIERS = [
-	{ name: "historical", choicePrefix: "LOC_CREATE_GAME_HISTORICAL" },
-	{ name: "geographic", choicePrefix: "LOC_CREATE_GAME_GEOGRAPHIC" },
+// Shared with the lobby tooltips (zg-mp-lobby-tooltips.js), which show the same
+// associations under the same labels.
+export const CHOICE_TIERS = [
+	{ name: "historical", choicePrefix: "LOC_CREATE_GAME_HISTORICAL", label: "LOC_ZG_CIV_CHOICE_HISTORICAL" },
+	{ name: "geographic", choicePrefix: "LOC_CREATE_GAME_GEOGRAPHIC", label: "LOC_ZG_CIV_CHOICE_GEOGRAPHIC" },
 ];
 const LOG_PREFIX = "ZG-ASP age transition civs:";
 
@@ -60,7 +62,7 @@ function query(sql) {
 
 // Leader type to its Historical and Geographic rows across every age, highest
 // Bias first. The row's domain says which age the civilization is native to.
-function leaderAssociations() {
+export function leaderAssociations() {
 	const out = new Map();
 	for (const row of query("SELECT LeaderType, CivilizationType, CivilizationDomain, Bias, ChoiceType FROM LeaderCivilizationBias ORDER BY Bias DESC")) {
 		const tier = CHOICE_TIERS.find((candidate) => row.ChoiceType?.startsWith(candidate.choicePrefix));

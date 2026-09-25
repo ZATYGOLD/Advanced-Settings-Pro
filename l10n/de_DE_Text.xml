@@ -787,8 +787,14 @@
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_ADAPT" Language="de_DE">
 			<Text>Jede KI zieht über die Einstellung KI-Mementos neue Mementos, passend zu Anführer und Zivilisation im neuen Zeitalter.[n]Anführer-Treffer und Zivilisations-Treffer erreichen hier jede KI, da beide im laufenden Spiel bekannt sind.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_HISTORICAL_NAME" Language="de_DE">
+		<Replace Tag="LOC_ZG_CIV_CHOICE_HISTORICAL" Language="de_DE">
 			<Text>Historisch</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIV_CHOICE_GEOGRAPHIC" Language="de_DE">
+			<Text>Geografisch</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LOBBY_SUGGESTED_CIVS" Language="de_DE">
+			<Text>Empfohlene Zivilisationen</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="de_DE">
 			<Text>Jede KI folgt den Zuordnungen ihres Anführers aus der Zivilisationsauswahl: eine historische Zivilisation, die das neue Zeitalter bietet, höchste Gewichtung zuerst, sonst eine geografische, nie eine strategische.[n]Eine bereits vergebene Zivilisation wird zugunsten der nächsten übergangen; ein Duplikat gibt es nur, wenn alle vergeben sind. Bei Gleichstand gewinnt die dem neuen Zeitalter eigene Zivilisation. Ist die Wahl die Zivilisation, die die KI bereits hat, behält sie sie.</Text>

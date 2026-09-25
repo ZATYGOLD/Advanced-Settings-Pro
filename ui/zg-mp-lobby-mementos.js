@@ -4,7 +4,7 @@
 // inside the leader dropdown, and the only way to change them is the Choose
 // Mementos button. This turns those diamonds into memento slots, drawn like the
 // single-player Player tab's: the slot base and a "+" when empty, the memento's
-// own art when filled, its name on hover. On your own row a slot opens the
+// own art when filled, its name and effect on hover. On your own row a slot opens the
 // single-player memento picker on that slot (ui/zg-memento-select.js).
 // Nothing else in the row moves: the slots take the diamonds' place.
 //
@@ -17,7 +17,7 @@
 
 import { Audio } from 'fs://game/core/ui/audio-base/audio-support.js';
 import { openMementoSelect } from './zg-memento-select.js';
-import { MEMENTO_PARAM_IDS as PARAM_IDS, MEMENTO_NONE_VALUE as NONE_VALUE, MEMENTO_SLOT_BASE_IMAGE as BASE_IMAGE, MEMENTO_SLOT_PLUS_IMAGE as PLUS_IMAGE } from './zg-memento-roller.js';
+import { MEMENTO_PARAM_IDS as PARAM_IDS, MEMENTO_NONE_VALUE as NONE_VALUE, MEMENTO_SLOT_BASE_IMAGE as BASE_IMAGE, MEMENTO_SLOT_PLUS_IMAGE as PLUS_IMAGE, mementoTooltip } from './zg-memento-roller.js';
 
 const DROPDOWN_NAME = "leader-dropdown";
 const LOBBY_NAME = "screen-mp-lobby";
@@ -58,8 +58,7 @@ function paintSlot(slot, value) {
 		art.style.backgroundSize = `${PLUS_REM}rem ${PLUS_REM}rem, contain`;
 		art.style.opacity = "0.6";
 	}
-	const name = isEmpty ? "LOC_MEMENTO_NONE_NAME" : GameSetup.resolveString(value.name);
-	slot.setAttribute("data-tooltip-content", name ?? "");
+	slot.setAttribute("data-tooltip-content", mementoTooltip(value));
 }
 
 class LobbyMementoSlots {

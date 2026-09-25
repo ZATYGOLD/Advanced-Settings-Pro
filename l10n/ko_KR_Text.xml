@@ -787,8 +787,14 @@
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_ADAPT" Language="ko_KR">
 			<Text>각 AI가 AI 메멘토 설정에 따라 새 시대의 지도자와 문명에 맞는 메멘토를 다시 뽑습니다.[n]게임이 진행 중이면 지도자와 문명이 확정되므로 지도자 일치와 문명 일치가 모든 AI에 적용됩니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_HISTORICAL_NAME" Language="ko_KR">
+		<Replace Tag="LOC_ZG_CIV_CHOICE_HISTORICAL" Language="ko_KR">
 			<Text>역사적</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIV_CHOICE_GEOGRAPHIC" Language="ko_KR">
+			<Text>지리적</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LOBBY_SUGGESTED_CIVS" Language="ko_KR">
+			<Text>추천 문명</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="ko_KR">
 			<Text>각 AI는 문명 선택 화면의 지도자 연관성을 따릅니다. 새 시대에서 고를 수 있는 역사적 문명을 가중치가 높은 순으로, 없으면 지리적 문명을 고르며 전략적 문명은 쓰지 않습니다.[n]이미 차지된 문명은 건너뛰고 다음을 고르며, 모두 차지된 경우에만 중복을 허용합니다. 동점이면 새 시대 고유의 문명이 우선합니다. 고른 문명이 AI가 이미 가진 문명이면 그대로 유지합니다.</Text>

@@ -787,8 +787,14 @@
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_ADAPT" Language="pl_PL">
 			<Text>Każda SI losuje nowe pamiątki zgodnie z ustawieniem Pamiątki SI, pasujące do przywódcy i cywilizacji w nowej epoce.[n]Dopasowanie przywódcy i Dopasowanie cywilizacji obejmują tu każdą SI, bo oba są znane w trakcie gry.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_HISTORICAL_NAME" Language="pl_PL">
+		<Replace Tag="LOC_ZG_CIV_CHOICE_HISTORICAL" Language="pl_PL">
 			<Text>Historyczna</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIV_CHOICE_GEOGRAPHIC" Language="pl_PL">
+			<Text>Geograficzna</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LOBBY_SUGGESTED_CIVS" Language="pl_PL">
+			<Text>Sugerowane cywilizacje</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="pl_PL">
 			<Text>Każda SI podąża za powiązaniami swojego przywódcy z wyboru cywilizacji: cywilizacja historyczna oferowana w nowej epoce, najpierw najwyższa waga, w przeciwnym razie geograficzna, nigdy strategiczna.[n]Zajęta cywilizacja jest pomijana na rzecz następnej; duplikat pojawia się tylko wtedy, gdy wszystkie są zajęte. Remis wygrywa cywilizacja własna nowej epoki. Jeśli wybór to cywilizacja, którą SI już ma, zachowuje ją.</Text>
