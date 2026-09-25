@@ -952,8 +952,7 @@
 				[LI] Quick:60點
 				[LI] Standard:90點
 				[LI] Epic:135點
-				[LI] Marathon:270點
-				[LI] Marathon 2.0:450點[/BLIST]</Text>
+				[LI] Marathon:270點[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100" Language="zh_Hant_HK">
 			<Text>[BLIST]
@@ -961,8 +960,7 @@
 				[LI] Quick:67點
 				[LI] Standard:100點
 				[LI] Epic:150點
-				[LI] Marathon:300點
-				[LI] Marathon 2.0:500點[/BLIST]</Text>
+				[LI] Marathon:300點[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110" Language="zh_Hant_HK">
 			<Text>[BLIST]
@@ -970,8 +968,7 @@
 				[LI] Quick:73點
 				[LI] Standard:110點
 				[LI] Epic:165點
-				[LI] Marathon:330點
-				[LI] Marathon 2.0:550點[/BLIST]</Text>
+				[LI] Marathon:330點[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120" Language="zh_Hant_HK">
 			<Text>[BLIST]
@@ -979,8 +976,7 @@
 				[LI] Quick:80點
 				[LI] Standard:120點
 				[LI] Epic:180點
-				[LI] Marathon:360點
-				[LI] Marathon 2.0:600點[/BLIST]</Text>
+				[LI] Marathon:360點[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130" Language="zh_Hant_HK">
 			<Text>[BLIST]
@@ -988,8 +984,7 @@
 				[LI] Quick:87點
 				[LI] Standard:130點
 				[LI] Epic:195點
-				[LI] Marathon:390點
-				[LI] Marathon 2.0:650點[/BLIST]</Text>
+				[LI] Marathon:390點[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140" Language="zh_Hant_HK">
 			<Text>[BLIST]
@@ -997,8 +992,7 @@
 				[LI] Quick:93點
 				[LI] Standard:140點
 				[LI] Epic:210點
-				[LI] Marathon:420點
-				[LI] Marathon 2.0:700點[/BLIST]</Text>
+				[LI] Marathon:420點[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150" Language="zh_Hant_HK">
 			<Text>[BLIST]
@@ -1006,8 +1000,7 @@
 				[LI] Quick:100點
 				[LI] Standard:150點
 				[LI] Epic:225點
-				[LI] Marathon:450點
-				[LI] Marathon 2.0:750點[/BLIST]</Text>
+				[LI] Marathon:450點[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="zh_Hant_HK">
 			<Text>[BLIST]
@@ -1015,8 +1008,7 @@
 				[LI] Quick:107點
 				[LI] Standard:160點
 				[LI] Epic:240點
-				[LI] Marathon:480點
-				[LI] Marathon 2.0:800點[/BLIST]</Text>
+				[LI] Marathon:480點[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="zh_Hant_HK">
 			<Text>[BLIST]
@@ -1024,8 +1016,7 @@
 				[LI] Quick:113點
 				[LI] Standard:170點
 				[LI] Epic:255點
-				[LI] Marathon:510點
-				[LI] Marathon 2.0:850點[/BLIST]</Text>
+				[LI] Marathon:510點[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180" Language="zh_Hant_HK">
 			<Text>[BLIST]
@@ -1033,8 +1024,7 @@
 				[LI] Quick:120點
 				[LI] Standard:180點
 				[LI] Epic:270點
-				[LI] Marathon:540點
-				[LI] Marathon 2.0:900點[/BLIST]</Text>
+				[LI] Marathon:540點[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190" Language="zh_Hant_HK">
 			<Text>[BLIST]
@@ -1042,8 +1032,7 @@
 				[LI] Quick:127點
 				[LI] Standard:190點
 				[LI] Epic:285點
-				[LI] Marathon:570點
-				[LI] Marathon 2.0:950點[/BLIST]</Text>
+				[LI] Marathon:570點[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="zh_Hant_HK">
 			<Text>[BLIST]
@@ -1051,8 +1040,7 @@
 				[LI] Quick:133點
 				[LI] Standard:200點
 				[LI] Epic:300點
-				[LI] Marathon:600點
-				[LI] Marathon 2.0:1000點[/BLIST]</Text>
+				[LI] Marathon:600點[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220" Language="zh_Hant_HK">
 			<Text>[BLIST]
@@ -1060,8 +1048,7 @@
 				[LI] Quick:147點
 				[LI] Standard:220點
 				[LI] Epic:330點
-				[LI] Marathon:660點
-				[LI] Marathon 2.0:1100點[/BLIST]</Text>
+				[LI] Marathon:660點[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240" Language="zh_Hant_HK">
 			<Text>[BLIST]
@@ -1069,8 +1056,7 @@
 				[LI] Quick:160點
 				[LI] Standard:240點
 				[LI] Epic:360點
-				[LI] Marathon:720點
-				[LI] Marathon 2.0:1200點[/BLIST]</Text>
+				[LI] Marathon:720點[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260" Language="zh_Hant_HK">
 			<Text>[BLIST]
@@ -1078,8 +1064,7 @@
 				[LI] Quick:173點
 				[LI] Standard:260點
 				[LI] Epic:390點
-				[LI] Marathon:780點
-				[LI] Marathon 2.0:1300點[/BLIST]</Text>
+				[LI] Marathon:780點[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280" Language="zh_Hant_HK">
 			<Text>[BLIST]
@@ -1087,8 +1072,7 @@
 				[LI] Quick:187點
 				[LI] Standard:280點
 				[LI] Epic:420點
-				[LI] Marathon:840點
-				[LI] Marathon 2.0:1400點[/BLIST]</Text>
+				[LI] Marathon:840點[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300" Language="zh_Hant_HK">
 			<Text>[BLIST]
@@ -1096,8 +1080,7 @@
 				[LI] Quick:200點
 				[LI] Standard:300點
 				[LI] Epic:450點
-				[LI] Marathon:900點
-				[LI] Marathon 2.0:1500點[/BLIST]</Text>
+				[LI] Marathon:900點[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="zh_Hant_HK">
 			<Text>時代將會結束得稍快。[nn][BLIST]
@@ -1105,8 +1088,7 @@
 				[LI] Quick：80點
 				[LI] Standard：120點
 				[LI] Epic：180點
-				[LI] Marathon：360點
-				[LI] Marathon 2.0：600點[/BLIST]</Text>
+				[LI] Marathon：360點[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="zh_Hant_HK">
 			<Text>標準的時代長度。[nn][BLIST]
@@ -1114,8 +1096,7 @@
 				[LI] Quick：93點
 				[LI] Standard：140點
 				[LI] Epic：210點
-				[LI] Marathon：420點
-				[LI] Marathon 2.0：700點[/BLIST]</Text>
+				[LI] Marathon：420點[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="zh_Hant_HK">
 			<Text>時代將會持續得更久。[nn][BLIST]
@@ -1123,8 +1104,7 @@
 				[LI] Quick：107點
 				[LI] Standard：160點
 				[LI] Epic：240點
-				[LI] Marathon：480點
-				[LI] Marathon 2.0：800點[/BLIST]</Text>
+				[LI] Marathon：480點[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="zh_Hant_HK">
 			<Text>獨立勢力侵略性</Text>

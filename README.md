@@ -10,6 +10,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - New Memento Settings group: Mementos, AI Mementos (None, Random, Leader Match, Civilization Match), and Age Transition AI Mementos (Maintain keeps each AI's mementos through an age change; Adapt re-draws them by the AI Mementos rule against the AI's new leader and civilization)
 - AI Civ Selection, Age Transition gains a Historical option: each AI follows its leader's civilization-picker associations, Historical by Bias then Geographic, never Strategic; taken civilizations are passed over, ties go to the age's own civilization, and an AI whose pick is the civilization it holds persists
 - Conflict guard: eleven more mods recognized, entries grouped by setting, and validation checks every footprint
+- Retired the Marathon 2.0 game speed the way Online 2.0 was in 0.8.8: gone from the Game Speed list, still defined so a save running on it keeps working; the Age Length point lists lose its column
 
 ### 0.8.8
 
@@ -158,7 +159,6 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 - Single Player No Age Transitions: Enabled or Disabled
 - Game Random Seed and Map Random Seed: a Random button beside each field rolls a new seed (single player)
-- Game Speed: adds Marathon 2.0 (400% slower than Standard)
 - Pace Set (Game Settings, mirrored on the Pace tab): Swift Pace, Standard Pace, Balanced Pace, Extended Pace, Multiplayer Pace, or Custom Pace (written into the Pace Settings on the Pace tab)
 - Age Length: the game's own setting, moved to Pace Settings on the Pace tab and extended with Swift, Balanced, Extended, and Custom, giving Swift, Abbreviated, Standard, Balanced, Long, Extended, or Custom; it drives the per-age rows, and a per-age change shows Custom; switching it off Custom returns every other Pace Settings setting to Standard
 - Age Progress Rate: Slow, Standard, Balanced, Fast, or Custom (milestone and future tech/civic points x0.5 / x1 / the Balanced curve / x1.5)

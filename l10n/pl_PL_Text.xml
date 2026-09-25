@@ -952,8 +952,7 @@
 				[LI] Quick: 60 punktów
 				[LI] Standard: 90 punktów
 				[LI] Epic: 135 punktów
-				[LI] Marathon: 270 punktów
-				[LI] Marathon 2.0: 450 punktów[/BLIST]</Text>
+				[LI] Marathon: 270 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100" Language="pl_PL">
 			<Text>[BLIST]
@@ -961,8 +960,7 @@
 				[LI] Quick: 67 punktów
 				[LI] Standard: 100 punktów
 				[LI] Epic: 150 punktów
-				[LI] Marathon: 300 punktów
-				[LI] Marathon 2.0: 500 punktów[/BLIST]</Text>
+				[LI] Marathon: 300 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110" Language="pl_PL">
 			<Text>[BLIST]
@@ -970,8 +968,7 @@
 				[LI] Quick: 73 punkty
 				[LI] Standard: 110 punktów
 				[LI] Epic: 165 punktów
-				[LI] Marathon: 330 punktów
-				[LI] Marathon 2.0: 550 punktów[/BLIST]</Text>
+				[LI] Marathon: 330 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120" Language="pl_PL">
 			<Text>[BLIST]
@@ -979,8 +976,7 @@
 				[LI] Quick: 80 punktów
 				[LI] Standard: 120 punktów
 				[LI] Epic: 180 punktów
-				[LI] Marathon: 360 punktów
-				[LI] Marathon 2.0: 600 punktów[/BLIST]</Text>
+				[LI] Marathon: 360 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130" Language="pl_PL">
 			<Text>[BLIST]
@@ -988,8 +984,7 @@
 				[LI] Quick: 87 punktów
 				[LI] Standard: 130 punktów
 				[LI] Epic: 195 punktów
-				[LI] Marathon: 390 punktów
-				[LI] Marathon 2.0: 650 punktów[/BLIST]</Text>
+				[LI] Marathon: 390 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140" Language="pl_PL">
 			<Text>[BLIST]
@@ -997,8 +992,7 @@
 				[LI] Quick: 93 punkty
 				[LI] Standard: 140 punktów
 				[LI] Epic: 210 punktów
-				[LI] Marathon: 420 punktów
-				[LI] Marathon 2.0: 700 punktów[/BLIST]</Text>
+				[LI] Marathon: 420 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150" Language="pl_PL">
 			<Text>[BLIST]
@@ -1006,8 +1000,7 @@
 				[LI] Quick: 100 punktów
 				[LI] Standard: 150 punktów
 				[LI] Epic: 225 punktów
-				[LI] Marathon: 450 punktów
-				[LI] Marathon 2.0: 750 punktów[/BLIST]</Text>
+				[LI] Marathon: 450 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="pl_PL">
 			<Text>[BLIST]
@@ -1015,8 +1008,7 @@
 				[LI] Quick: 107 punktów
 				[LI] Standard: 160 punktów
 				[LI] Epic: 240 punktów
-				[LI] Marathon: 480 punktów
-				[LI] Marathon 2.0: 800 punktów[/BLIST]</Text>
+				[LI] Marathon: 480 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="pl_PL">
 			<Text>[BLIST]
@@ -1024,8 +1016,7 @@
 				[LI] Quick: 113 punktów
 				[LI] Standard: 170 punktów
 				[LI] Epic: 255 punktów
-				[LI] Marathon: 510 punktów
-				[LI] Marathon 2.0: 850 punktów[/BLIST]</Text>
+				[LI] Marathon: 510 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180" Language="pl_PL">
 			<Text>[BLIST]
@@ -1033,8 +1024,7 @@
 				[LI] Quick: 120 punktów
 				[LI] Standard: 180 punktów
 				[LI] Epic: 270 punktów
-				[LI] Marathon: 540 punktów
-				[LI] Marathon 2.0: 900 punktów[/BLIST]</Text>
+				[LI] Marathon: 540 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190" Language="pl_PL">
 			<Text>[BLIST]
@@ -1042,8 +1032,7 @@
 				[LI] Quick: 127 punktów
 				[LI] Standard: 190 punktów
 				[LI] Epic: 285 punktów
-				[LI] Marathon: 570 punktów
-				[LI] Marathon 2.0: 950 punktów[/BLIST]</Text>
+				[LI] Marathon: 570 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="pl_PL">
 			<Text>[BLIST]
@@ -1051,8 +1040,7 @@
 				[LI] Quick: 133 punkty
 				[LI] Standard: 200 punktów
 				[LI] Epic: 300 punktów
-				[LI] Marathon: 600 punktów
-				[LI] Marathon 2.0: 1000 punktów[/BLIST]</Text>
+				[LI] Marathon: 600 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220" Language="pl_PL">
 			<Text>[BLIST]
@@ -1060,8 +1048,7 @@
 				[LI] Quick: 147 punktów
 				[LI] Standard: 220 punktów
 				[LI] Epic: 330 punktów
-				[LI] Marathon: 660 punktów
-				[LI] Marathon 2.0: 1100 punktów[/BLIST]</Text>
+				[LI] Marathon: 660 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240" Language="pl_PL">
 			<Text>[BLIST]
@@ -1069,8 +1056,7 @@
 				[LI] Quick: 160 punktów
 				[LI] Standard: 240 punktów
 				[LI] Epic: 360 punktów
-				[LI] Marathon: 720 punktów
-				[LI] Marathon 2.0: 1200 punktów[/BLIST]</Text>
+				[LI] Marathon: 720 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260" Language="pl_PL">
 			<Text>[BLIST]
@@ -1078,8 +1064,7 @@
 				[LI] Quick: 173 punkty
 				[LI] Standard: 260 punktów
 				[LI] Epic: 390 punktów
-				[LI] Marathon: 780 punktów
-				[LI] Marathon 2.0: 1300 punktów[/BLIST]</Text>
+				[LI] Marathon: 780 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280" Language="pl_PL">
 			<Text>[BLIST]
@@ -1087,8 +1072,7 @@
 				[LI] Quick: 187 punktów
 				[LI] Standard: 280 punktów
 				[LI] Epic: 420 punktów
-				[LI] Marathon: 840 punktów
-				[LI] Marathon 2.0: 1400 punktów[/BLIST]</Text>
+				[LI] Marathon: 840 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300" Language="pl_PL">
 			<Text>[BLIST]
@@ -1096,8 +1080,7 @@
 				[LI] Quick: 200 punktów
 				[LI] Standard: 300 punktów
 				[LI] Epic: 450 punktów
-				[LI] Marathon: 900 punktów
-				[LI] Marathon 2.0: 1500 punktów[/BLIST]</Text>
+				[LI] Marathon: 900 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="pl_PL">
 			<Text>Nieco krótsze epoki.[nn][BLIST]
@@ -1105,8 +1088,7 @@
 				[LI] Quick: 80 punktów
 				[LI] Standard: 120 punktów
 				[LI] Epic: 180 punktów
-				[LI] Marathon: 360 punktów
-				[LI] Marathon 2.0: 600 punktów[/BLIST]</Text>
+				[LI] Marathon: 360 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="pl_PL">
 			<Text>Standardowa długość epoki.[nn][BLIST]
@@ -1114,8 +1096,7 @@
 				[LI] Quick: 93 punkty
 				[LI] Standard: 140 punktów
 				[LI] Epic: 210 punktów
-				[LI] Marathon: 420 punktów
-				[LI] Marathon 2.0: 700 punktów[/BLIST]</Text>
+				[LI] Marathon: 420 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="pl_PL">
 			<Text>Nieco dłuższe epoki.[nn][BLIST]
@@ -1123,8 +1104,7 @@
 				[LI] Quick: 107 punktów
 				[LI] Standard: 160 punktów
 				[LI] Epic: 240 punktów
-				[LI] Marathon: 480 punktów
-				[LI] Marathon 2.0: 800 punktów[/BLIST]</Text>
+				[LI] Marathon: 480 punktów[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="pl_PL">
 			<Text>Agresja niezależnych sił</Text>

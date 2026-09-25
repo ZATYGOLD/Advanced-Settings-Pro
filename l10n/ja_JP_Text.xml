@@ -952,8 +952,7 @@
 				[LI] Quick:60ポイント
 				[LI] Standard:90ポイント
 				[LI] Epic:135ポイント
-				[LI] Marathon:270ポイント
-				[LI] Marathon 2.0:450ポイント[/BLIST]</Text>
+				[LI] Marathon:270ポイント[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100" Language="ja_JP">
 			<Text>[BLIST]
@@ -961,8 +960,7 @@
 				[LI] Quick:67ポイント
 				[LI] Standard:100ポイント
 				[LI] Epic:150ポイント
-				[LI] Marathon:300ポイント
-				[LI] Marathon 2.0:500ポイント[/BLIST]</Text>
+				[LI] Marathon:300ポイント[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110" Language="ja_JP">
 			<Text>[BLIST]
@@ -970,8 +968,7 @@
 				[LI] Quick:73ポイント
 				[LI] Standard:110ポイント
 				[LI] Epic:165ポイント
-				[LI] Marathon:330ポイント
-				[LI] Marathon 2.0:550ポイント[/BLIST]</Text>
+				[LI] Marathon:330ポイント[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120" Language="ja_JP">
 			<Text>[BLIST]
@@ -979,8 +976,7 @@
 				[LI] Quick:80ポイント
 				[LI] Standard:120ポイント
 				[LI] Epic:180ポイント
-				[LI] Marathon:360ポイント
-				[LI] Marathon 2.0:600ポイント[/BLIST]</Text>
+				[LI] Marathon:360ポイント[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130" Language="ja_JP">
 			<Text>[BLIST]
@@ -988,8 +984,7 @@
 				[LI] Quick:87ポイント
 				[LI] Standard:130ポイント
 				[LI] Epic:195ポイント
-				[LI] Marathon:390ポイント
-				[LI] Marathon 2.0:650ポイント[/BLIST]</Text>
+				[LI] Marathon:390ポイント[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140" Language="ja_JP">
 			<Text>[BLIST]
@@ -997,8 +992,7 @@
 				[LI] Quick:93ポイント
 				[LI] Standard:140ポイント
 				[LI] Epic:210ポイント
-				[LI] Marathon:420ポイント
-				[LI] Marathon 2.0:700ポイント[/BLIST]</Text>
+				[LI] Marathon:420ポイント[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150" Language="ja_JP">
 			<Text>[BLIST]
@@ -1006,8 +1000,7 @@
 				[LI] Quick:100ポイント
 				[LI] Standard:150ポイント
 				[LI] Epic:225ポイント
-				[LI] Marathon:450ポイント
-				[LI] Marathon 2.0:750ポイント[/BLIST]</Text>
+				[LI] Marathon:450ポイント[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="ja_JP">
 			<Text>[BLIST]
@@ -1015,8 +1008,7 @@
 				[LI] Quick:107ポイント
 				[LI] Standard:160ポイント
 				[LI] Epic:240ポイント
-				[LI] Marathon:480ポイント
-				[LI] Marathon 2.0:800ポイント[/BLIST]</Text>
+				[LI] Marathon:480ポイント[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="ja_JP">
 			<Text>[BLIST]
@@ -1024,8 +1016,7 @@
 				[LI] Quick:113ポイント
 				[LI] Standard:170ポイント
 				[LI] Epic:255ポイント
-				[LI] Marathon:510ポイント
-				[LI] Marathon 2.0:850ポイント[/BLIST]</Text>
+				[LI] Marathon:510ポイント[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180" Language="ja_JP">
 			<Text>[BLIST]
@@ -1033,8 +1024,7 @@
 				[LI] Quick:120ポイント
 				[LI] Standard:180ポイント
 				[LI] Epic:270ポイント
-				[LI] Marathon:540ポイント
-				[LI] Marathon 2.0:900ポイント[/BLIST]</Text>
+				[LI] Marathon:540ポイント[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190" Language="ja_JP">
 			<Text>[BLIST]
@@ -1042,8 +1032,7 @@
 				[LI] Quick:127ポイント
 				[LI] Standard:190ポイント
 				[LI] Epic:285ポイント
-				[LI] Marathon:570ポイント
-				[LI] Marathon 2.0:950ポイント[/BLIST]</Text>
+				[LI] Marathon:570ポイント[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="ja_JP">
 			<Text>[BLIST]
@@ -1051,8 +1040,7 @@
 				[LI] Quick:133ポイント
 				[LI] Standard:200ポイント
 				[LI] Epic:300ポイント
-				[LI] Marathon:600ポイント
-				[LI] Marathon 2.0:1000ポイント[/BLIST]</Text>
+				[LI] Marathon:600ポイント[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220" Language="ja_JP">
 			<Text>[BLIST]
@@ -1060,8 +1048,7 @@
 				[LI] Quick:147ポイント
 				[LI] Standard:220ポイント
 				[LI] Epic:330ポイント
-				[LI] Marathon:660ポイント
-				[LI] Marathon 2.0:1100ポイント[/BLIST]</Text>
+				[LI] Marathon:660ポイント[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240" Language="ja_JP">
 			<Text>[BLIST]
@@ -1069,8 +1056,7 @@
 				[LI] Quick:160ポイント
 				[LI] Standard:240ポイント
 				[LI] Epic:360ポイント
-				[LI] Marathon:720ポイント
-				[LI] Marathon 2.0:1200ポイント[/BLIST]</Text>
+				[LI] Marathon:720ポイント[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260" Language="ja_JP">
 			<Text>[BLIST]
@@ -1078,8 +1064,7 @@
 				[LI] Quick:173ポイント
 				[LI] Standard:260ポイント
 				[LI] Epic:390ポイント
-				[LI] Marathon:780ポイント
-				[LI] Marathon 2.0:1300ポイント[/BLIST]</Text>
+				[LI] Marathon:780ポイント[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280" Language="ja_JP">
 			<Text>[BLIST]
@@ -1087,8 +1072,7 @@
 				[LI] Quick:187ポイント
 				[LI] Standard:280ポイント
 				[LI] Epic:420ポイント
-				[LI] Marathon:840ポイント
-				[LI] Marathon 2.0:1400ポイント[/BLIST]</Text>
+				[LI] Marathon:840ポイント[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300" Language="ja_JP">
 			<Text>[BLIST]
@@ -1096,8 +1080,7 @@
 				[LI] Quick:200ポイント
 				[LI] Standard:300ポイント
 				[LI] Epic:450ポイント
-				[LI] Marathon:900ポイント
-				[LI] Marathon 2.0:1500ポイント[/BLIST]</Text>
+				[LI] Marathon:900ポイント[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="ja_JP">
 			<Text>時代の終了がやや早まる。[nn][BLIST]
@@ -1105,8 +1088,7 @@
 				[LI] Quick：80ポイント
 				[LI] Standard：120ポイント
 				[LI] Epic：180ポイント
-				[LI] Marathon：360ポイント
-				[LI] Marathon 2.0：600ポイント[/BLIST]</Text>
+				[LI] Marathon：360ポイント[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="ja_JP">
 			<Text>標準的な時代の長さ。[nn][BLIST]
@@ -1114,8 +1096,7 @@
 				[LI] Quick：93ポイント
 				[LI] Standard：140ポイント
 				[LI] Epic：210ポイント
-				[LI] Marathon：420ポイント
-				[LI] Marathon 2.0：700ポイント[/BLIST]</Text>
+				[LI] Marathon：420ポイント[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="ja_JP">
 			<Text>時代がやや長く継続する。[nn][BLIST]
@@ -1123,8 +1104,7 @@
 				[LI] Quick：107ポイント
 				[LI] Standard：160ポイント
 				[LI] Epic：240ポイント
-				[LI] Marathon：480ポイント
-				[LI] Marathon 2.0：800ポイント[/BLIST]</Text>
+				[LI] Marathon：480ポイント[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="ja_JP">
 			<Text>独立勢力の攻撃性</Text>

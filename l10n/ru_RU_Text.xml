@@ -952,8 +952,7 @@
 				[LI] Quick: 60 очков
 				[LI] Standard: 90 очков
 				[LI] Epic: 135 очков
-				[LI] Marathon: 270 очков
-				[LI] Marathon 2.0: 450 очков[/BLIST]</Text>
+				[LI] Marathon: 270 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100" Language="ru_RU">
 			<Text>[BLIST]
@@ -961,8 +960,7 @@
 				[LI] Quick: 67 очков
 				[LI] Standard: 100 очков
 				[LI] Epic: 150 очков
-				[LI] Marathon: 300 очков
-				[LI] Marathon 2.0: 500 очков[/BLIST]</Text>
+				[LI] Marathon: 300 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110" Language="ru_RU">
 			<Text>[BLIST]
@@ -970,8 +968,7 @@
 				[LI] Quick: 73 очка
 				[LI] Standard: 110 очков
 				[LI] Epic: 165 очков
-				[LI] Marathon: 330 очков
-				[LI] Marathon 2.0: 550 очков[/BLIST]</Text>
+				[LI] Marathon: 330 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120" Language="ru_RU">
 			<Text>[BLIST]
@@ -979,8 +976,7 @@
 				[LI] Quick: 80 очков
 				[LI] Standard: 120 очков
 				[LI] Epic: 180 очков
-				[LI] Marathon: 360 очков
-				[LI] Marathon 2.0: 600 очков[/BLIST]</Text>
+				[LI] Marathon: 360 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130" Language="ru_RU">
 			<Text>[BLIST]
@@ -988,8 +984,7 @@
 				[LI] Quick: 87 очков
 				[LI] Standard: 130 очков
 				[LI] Epic: 195 очков
-				[LI] Marathon: 390 очков
-				[LI] Marathon 2.0: 650 очков[/BLIST]</Text>
+				[LI] Marathon: 390 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140" Language="ru_RU">
 			<Text>[BLIST]
@@ -997,8 +992,7 @@
 				[LI] Quick: 93 очка
 				[LI] Standard: 140 очков
 				[LI] Epic: 210 очков
-				[LI] Marathon: 420 очков
-				[LI] Marathon 2.0: 700 очков[/BLIST]</Text>
+				[LI] Marathon: 420 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150" Language="ru_RU">
 			<Text>[BLIST]
@@ -1006,8 +1000,7 @@
 				[LI] Quick: 100 очков
 				[LI] Standard: 150 очков
 				[LI] Epic: 225 очков
-				[LI] Marathon: 450 очков
-				[LI] Marathon 2.0: 750 очков[/BLIST]</Text>
+				[LI] Marathon: 450 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="ru_RU">
 			<Text>[BLIST]
@@ -1015,8 +1008,7 @@
 				[LI] Quick: 107 очков
 				[LI] Standard: 160 очков
 				[LI] Epic: 240 очков
-				[LI] Marathon: 480 очков
-				[LI] Marathon 2.0: 800 очков[/BLIST]</Text>
+				[LI] Marathon: 480 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="ru_RU">
 			<Text>[BLIST]
@@ -1024,8 +1016,7 @@
 				[LI] Quick: 113 очков
 				[LI] Standard: 170 очков
 				[LI] Epic: 255 очков
-				[LI] Marathon: 510 очков
-				[LI] Marathon 2.0: 850 очков[/BLIST]</Text>
+				[LI] Marathon: 510 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180" Language="ru_RU">
 			<Text>[BLIST]
@@ -1033,8 +1024,7 @@
 				[LI] Quick: 120 очков
 				[LI] Standard: 180 очков
 				[LI] Epic: 270 очков
-				[LI] Marathon: 540 очков
-				[LI] Marathon 2.0: 900 очков[/BLIST]</Text>
+				[LI] Marathon: 540 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190" Language="ru_RU">
 			<Text>[BLIST]
@@ -1042,8 +1032,7 @@
 				[LI] Quick: 127 очков
 				[LI] Standard: 190 очков
 				[LI] Epic: 285 очков
-				[LI] Marathon: 570 очков
-				[LI] Marathon 2.0: 950 очков[/BLIST]</Text>
+				[LI] Marathon: 570 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="ru_RU">
 			<Text>[BLIST]
@@ -1051,8 +1040,7 @@
 				[LI] Quick: 133 очка
 				[LI] Standard: 200 очков
 				[LI] Epic: 300 очков
-				[LI] Marathon: 600 очков
-				[LI] Marathon 2.0: 1000 очков[/BLIST]</Text>
+				[LI] Marathon: 600 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220" Language="ru_RU">
 			<Text>[BLIST]
@@ -1060,8 +1048,7 @@
 				[LI] Quick: 147 очков
 				[LI] Standard: 220 очков
 				[LI] Epic: 330 очков
-				[LI] Marathon: 660 очков
-				[LI] Marathon 2.0: 1100 очков[/BLIST]</Text>
+				[LI] Marathon: 660 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240" Language="ru_RU">
 			<Text>[BLIST]
@@ -1069,8 +1056,7 @@
 				[LI] Quick: 160 очков
 				[LI] Standard: 240 очков
 				[LI] Epic: 360 очков
-				[LI] Marathon: 720 очков
-				[LI] Marathon 2.0: 1200 очков[/BLIST]</Text>
+				[LI] Marathon: 720 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260" Language="ru_RU">
 			<Text>[BLIST]
@@ -1078,8 +1064,7 @@
 				[LI] Quick: 173 очка
 				[LI] Standard: 260 очков
 				[LI] Epic: 390 очков
-				[LI] Marathon: 780 очков
-				[LI] Marathon 2.0: 1300 очков[/BLIST]</Text>
+				[LI] Marathon: 780 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280" Language="ru_RU">
 			<Text>[BLIST]
@@ -1087,8 +1072,7 @@
 				[LI] Quick: 187 очков
 				[LI] Standard: 280 очков
 				[LI] Epic: 420 очков
-				[LI] Marathon: 840 очков
-				[LI] Marathon 2.0: 1400 очков[/BLIST]</Text>
+				[LI] Marathon: 840 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300" Language="ru_RU">
 			<Text>[BLIST]
@@ -1096,8 +1080,7 @@
 				[LI] Quick: 200 очков
 				[LI] Standard: 300 очков
 				[LI] Epic: 450 очков
-				[LI] Marathon: 900 очков
-				[LI] Marathon 2.0: 1500 очков[/BLIST]</Text>
+				[LI] Marathon: 900 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="ru_RU">
 			<Text>Эпохи будут проходить немного быстрее.[nn][BLIST]
@@ -1105,8 +1088,7 @@
 				[LI] Quick: 80 очков
 				[LI] Standard: 120 очков
 				[LI] Epic: 180 очков
-				[LI] Marathon: 360 очков
-				[LI] Marathon 2.0: 600 очков[/BLIST]</Text>
+				[LI] Marathon: 360 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="ru_RU">
 			<Text>Стандартная длительность эпохи.[nn][BLIST]
@@ -1114,8 +1096,7 @@
 				[LI] Quick: 93 очка
 				[LI] Standard: 140 очков
 				[LI] Epic: 210 очков
-				[LI] Marathon: 420 очков
-				[LI] Marathon 2.0: 700 очков[/BLIST]</Text>
+				[LI] Marathon: 420 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="ru_RU">
 			<Text>Эпохи будут длиться немного дольше.[nn][BLIST]
@@ -1123,8 +1104,7 @@
 				[LI] Quick: 107 очков
 				[LI] Standard: 160 очков
 				[LI] Epic: 240 очков
-				[LI] Marathon: 480 очков
-				[LI] Marathon 2.0: 800 очков[/BLIST]</Text>
+				[LI] Marathon: 480 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="ru_RU">
 			<Text>Агрессивность независимых держав</Text>

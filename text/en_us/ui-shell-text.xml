@@ -757,128 +757,110 @@
 				[LI] Quick: 60 points
 				[LI] Standard: 90 points
 				[LI] Epic: 135 points
-				[LI] Marathon: 270 points
-				[LI] Marathon 2.0: 450 points[/BLIST]</Text></Row>
+				[LI] Marathon: 270 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100"><Text>[BLIST]
 				[LI] Online: 50 points
 				[LI] Quick: 67 points
 				[LI] Standard: 100 points
 				[LI] Epic: 150 points
-				[LI] Marathon: 300 points
-				[LI] Marathon 2.0: 500 points[/BLIST]</Text></Row>
+				[LI] Marathon: 300 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110"><Text>[BLIST]
 				[LI] Online: 55 points
 				[LI] Quick: 73 points
 				[LI] Standard: 110 points
 				[LI] Epic: 165 points
-				[LI] Marathon: 330 points
-				[LI] Marathon 2.0: 550 points[/BLIST]</Text></Row>
+				[LI] Marathon: 330 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120"><Text>[BLIST]
 				[LI] Online: 60 points
 				[LI] Quick: 80 points
 				[LI] Standard: 120 points
 				[LI] Epic: 180 points
-				[LI] Marathon: 360 points
-				[LI] Marathon 2.0: 600 points[/BLIST]</Text></Row>
+				[LI] Marathon: 360 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130"><Text>[BLIST]
 				[LI] Online: 65 points
 				[LI] Quick: 87 points
 				[LI] Standard: 130 points
 				[LI] Epic: 195 points
-				[LI] Marathon: 390 points
-				[LI] Marathon 2.0: 650 points[/BLIST]</Text></Row>
+				[LI] Marathon: 390 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140"><Text>[BLIST]
 				[LI] Online: 70 points
 				[LI] Quick: 93 points
 				[LI] Standard: 140 points
 				[LI] Epic: 210 points
-				[LI] Marathon: 420 points
-				[LI] Marathon 2.0: 700 points[/BLIST]</Text></Row>
+				[LI] Marathon: 420 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150"><Text>[BLIST]
 				[LI] Online: 75 points
 				[LI] Quick: 100 points
 				[LI] Standard: 150 points
 				[LI] Epic: 225 points
-				[LI] Marathon: 450 points
-				[LI] Marathon 2.0: 750 points[/BLIST]</Text></Row>
+				[LI] Marathon: 450 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160"><Text>[BLIST]
 				[LI] Online: 80 points
 				[LI] Quick: 107 points
 				[LI] Standard: 160 points
 				[LI] Epic: 240 points
-				[LI] Marathon: 480 points
-				[LI] Marathon 2.0: 800 points[/BLIST]</Text></Row>
+				[LI] Marathon: 480 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170"><Text>[BLIST]
 				[LI] Online: 85 points
 				[LI] Quick: 113 points
 				[LI] Standard: 170 points
 				[LI] Epic: 255 points
-				[LI] Marathon: 510 points
-				[LI] Marathon 2.0: 850 points[/BLIST]</Text></Row>
+				[LI] Marathon: 510 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180"><Text>[BLIST]
 				[LI] Online: 90 points
 				[LI] Quick: 120 points
 				[LI] Standard: 180 points
 				[LI] Epic: 270 points
-				[LI] Marathon: 540 points
-				[LI] Marathon 2.0: 900 points[/BLIST]</Text></Row>
+				[LI] Marathon: 540 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190"><Text>[BLIST]
 				[LI] Online: 95 points
 				[LI] Quick: 127 points
 				[LI] Standard: 190 points
 				[LI] Epic: 285 points
-				[LI] Marathon: 570 points
-				[LI] Marathon 2.0: 950 points[/BLIST]</Text></Row>
+				[LI] Marathon: 570 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200"><Text>[BLIST]
 				[LI] Online: 100 points
 				[LI] Quick: 133 points
 				[LI] Standard: 200 points
 				[LI] Epic: 300 points
-				[LI] Marathon: 600 points
-				[LI] Marathon 2.0: 1000 points[/BLIST]</Text></Row>
+				[LI] Marathon: 600 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220"><Text>[BLIST]
 				[LI] Online: 110 points
 				[LI] Quick: 147 points
 				[LI] Standard: 220 points
 				[LI] Epic: 330 points
-				[LI] Marathon: 660 points
-				[LI] Marathon 2.0: 1100 points[/BLIST]</Text></Row>
+				[LI] Marathon: 660 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240"><Text>[BLIST]
 				[LI] Online: 120 points
 				[LI] Quick: 160 points
 				[LI] Standard: 240 points
 				[LI] Epic: 360 points
-				[LI] Marathon: 720 points
-				[LI] Marathon 2.0: 1200 points[/BLIST]</Text></Row>
+				[LI] Marathon: 720 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260"><Text>[BLIST]
 				[LI] Online: 130 points
 				[LI] Quick: 173 points
 				[LI] Standard: 260 points
 				[LI] Epic: 390 points
-				[LI] Marathon: 780 points
-				[LI] Marathon 2.0: 1300 points[/BLIST]</Text></Row>
+				[LI] Marathon: 780 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280"><Text>[BLIST]
 				[LI] Online: 140 points
 				[LI] Quick: 187 points
 				[LI] Standard: 280 points
 				[LI] Epic: 420 points
-				[LI] Marathon: 840 points
-				[LI] Marathon 2.0: 1400 points[/BLIST]</Text></Row>
+				[LI] Marathon: 840 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300"><Text>[BLIST]
 				[LI] Online: 150 points
 				[LI] Quick: 200 points
 				[LI] Standard: 300 points
 				[LI] Epic: 450 points
-				[LI] Marathon: 900 points
-				[LI] Marathon 2.0: 1500 points[/BLIST]</Text></Row>
+				[LI] Marathon: 900 points[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC">
 			<Text>Ages will end slightly faster.[nn][BLIST]
 				[LI] Online: 60 points
 				[LI] Quick: 80 points
 				[LI] Standard: 120 points
 				[LI] Epic: 180 points
-				[LI] Marathon: 360 points
-				[LI] Marathon 2.0: 600 points[/BLIST]</Text>
+				[LI] Marathon: 360 points[/BLIST]</Text>
 		</Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC">
 			<Text>The standard age length.[nn][BLIST]
@@ -886,8 +868,7 @@
 				[LI] Quick: 93 points
 				[LI] Standard: 140 points
 				[LI] Epic: 210 points
-				[LI] Marathon: 420 points
-				[LI] Marathon 2.0: 700 points[/BLIST]</Text>
+				[LI] Marathon: 420 points[/BLIST]</Text>
 		</Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_LONG_DESC">
 			<Text>Ages will last slightly longer.[nn][BLIST]
@@ -895,8 +876,7 @@
 				[LI] Quick: 107 points
 				[LI] Standard: 160 points
 				[LI] Epic: 240 points
-				[LI] Marathon: 480 points
-				[LI] Marathon 2.0: 800 points[/BLIST]</Text>
+				[LI] Marathon: 480 points[/BLIST]</Text>
 		</Row>
 	<!-- Independent Aggression -->
 		<Row Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME"><Text>Independent Aggression</Text></Row>

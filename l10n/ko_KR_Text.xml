@@ -952,8 +952,7 @@
 				[LI] Quick: 60 포인트
 				[LI] Standard: 90 포인트
 				[LI] Epic: 135 포인트
-				[LI] Marathon: 270 포인트
-				[LI] Marathon 2.0: 450 포인트[/BLIST]</Text>
+				[LI] Marathon: 270 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100" Language="ko_KR">
 			<Text>[BLIST]
@@ -961,8 +960,7 @@
 				[LI] Quick: 67 포인트
 				[LI] Standard: 100 포인트
 				[LI] Epic: 150 포인트
-				[LI] Marathon: 300 포인트
-				[LI] Marathon 2.0: 500 포인트[/BLIST]</Text>
+				[LI] Marathon: 300 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110" Language="ko_KR">
 			<Text>[BLIST]
@@ -970,8 +968,7 @@
 				[LI] Quick: 73 포인트
 				[LI] Standard: 110 포인트
 				[LI] Epic: 165 포인트
-				[LI] Marathon: 330 포인트
-				[LI] Marathon 2.0: 550 포인트[/BLIST]</Text>
+				[LI] Marathon: 330 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120" Language="ko_KR">
 			<Text>[BLIST]
@@ -979,8 +976,7 @@
 				[LI] Quick: 80 포인트
 				[LI] Standard: 120 포인트
 				[LI] Epic: 180 포인트
-				[LI] Marathon: 360 포인트
-				[LI] Marathon 2.0: 600 포인트[/BLIST]</Text>
+				[LI] Marathon: 360 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130" Language="ko_KR">
 			<Text>[BLIST]
@@ -988,8 +984,7 @@
 				[LI] Quick: 87 포인트
 				[LI] Standard: 130 포인트
 				[LI] Epic: 195 포인트
-				[LI] Marathon: 390 포인트
-				[LI] Marathon 2.0: 650 포인트[/BLIST]</Text>
+				[LI] Marathon: 390 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140" Language="ko_KR">
 			<Text>[BLIST]
@@ -997,8 +992,7 @@
 				[LI] Quick: 93 포인트
 				[LI] Standard: 140 포인트
 				[LI] Epic: 210 포인트
-				[LI] Marathon: 420 포인트
-				[LI] Marathon 2.0: 700 포인트[/BLIST]</Text>
+				[LI] Marathon: 420 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150" Language="ko_KR">
 			<Text>[BLIST]
@@ -1006,8 +1000,7 @@
 				[LI] Quick: 100 포인트
 				[LI] Standard: 150 포인트
 				[LI] Epic: 225 포인트
-				[LI] Marathon: 450 포인트
-				[LI] Marathon 2.0: 750 포인트[/BLIST]</Text>
+				[LI] Marathon: 450 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="ko_KR">
 			<Text>[BLIST]
@@ -1015,8 +1008,7 @@
 				[LI] Quick: 107 포인트
 				[LI] Standard: 160 포인트
 				[LI] Epic: 240 포인트
-				[LI] Marathon: 480 포인트
-				[LI] Marathon 2.0: 800 포인트[/BLIST]</Text>
+				[LI] Marathon: 480 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="ko_KR">
 			<Text>[BLIST]
@@ -1024,8 +1016,7 @@
 				[LI] Quick: 113 포인트
 				[LI] Standard: 170 포인트
 				[LI] Epic: 255 포인트
-				[LI] Marathon: 510 포인트
-				[LI] Marathon 2.0: 850 포인트[/BLIST]</Text>
+				[LI] Marathon: 510 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180" Language="ko_KR">
 			<Text>[BLIST]
@@ -1033,8 +1024,7 @@
 				[LI] Quick: 120 포인트
 				[LI] Standard: 180 포인트
 				[LI] Epic: 270 포인트
-				[LI] Marathon: 540 포인트
-				[LI] Marathon 2.0: 900 포인트[/BLIST]</Text>
+				[LI] Marathon: 540 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190" Language="ko_KR">
 			<Text>[BLIST]
@@ -1042,8 +1032,7 @@
 				[LI] Quick: 127 포인트
 				[LI] Standard: 190 포인트
 				[LI] Epic: 285 포인트
-				[LI] Marathon: 570 포인트
-				[LI] Marathon 2.0: 950 포인트[/BLIST]</Text>
+				[LI] Marathon: 570 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="ko_KR">
 			<Text>[BLIST]
@@ -1051,8 +1040,7 @@
 				[LI] Quick: 133 포인트
 				[LI] Standard: 200 포인트
 				[LI] Epic: 300 포인트
-				[LI] Marathon: 600 포인트
-				[LI] Marathon 2.0: 1000 포인트[/BLIST]</Text>
+				[LI] Marathon: 600 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220" Language="ko_KR">
 			<Text>[BLIST]
@@ -1060,8 +1048,7 @@
 				[LI] Quick: 147 포인트
 				[LI] Standard: 220 포인트
 				[LI] Epic: 330 포인트
-				[LI] Marathon: 660 포인트
-				[LI] Marathon 2.0: 1100 포인트[/BLIST]</Text>
+				[LI] Marathon: 660 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240" Language="ko_KR">
 			<Text>[BLIST]
@@ -1069,8 +1056,7 @@
 				[LI] Quick: 160 포인트
 				[LI] Standard: 240 포인트
 				[LI] Epic: 360 포인트
-				[LI] Marathon: 720 포인트
-				[LI] Marathon 2.0: 1200 포인트[/BLIST]</Text>
+				[LI] Marathon: 720 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260" Language="ko_KR">
 			<Text>[BLIST]
@@ -1078,8 +1064,7 @@
 				[LI] Quick: 173 포인트
 				[LI] Standard: 260 포인트
 				[LI] Epic: 390 포인트
-				[LI] Marathon: 780 포인트
-				[LI] Marathon 2.0: 1300 포인트[/BLIST]</Text>
+				[LI] Marathon: 780 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280" Language="ko_KR">
 			<Text>[BLIST]
@@ -1087,8 +1072,7 @@
 				[LI] Quick: 187 포인트
 				[LI] Standard: 280 포인트
 				[LI] Epic: 420 포인트
-				[LI] Marathon: 840 포인트
-				[LI] Marathon 2.0: 1400 포인트[/BLIST]</Text>
+				[LI] Marathon: 840 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300" Language="ko_KR">
 			<Text>[BLIST]
@@ -1096,8 +1080,7 @@
 				[LI] Quick: 200 포인트
 				[LI] Standard: 300 포인트
 				[LI] Epic: 450 포인트
-				[LI] Marathon: 900 포인트
-				[LI] Marathon 2.0: 1500 포인트[/BLIST]</Text>
+				[LI] Marathon: 900 포인트[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="ko_KR">
 			<Text>시대가 조금 더 빨리 종료됩니다.[nn][BLIST]
@@ -1105,8 +1088,7 @@
 				[LI] Quick: 80점
 				[LI] Standard: 120점
 				[LI] Epic: 180점
-				[LI] Marathon: 360점
-				[LI] Marathon 2.0: 600점[/BLIST]</Text>
+				[LI] Marathon: 360점[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="ko_KR">
 			<Text>표준 시대 길이입니다.[nn][BLIST]
@@ -1114,8 +1096,7 @@
 				[LI] Quick: 93점
 				[LI] Standard: 140점
 				[LI] Epic: 210점
-				[LI] Marathon: 420점
-				[LI] Marathon 2.0: 700점[/BLIST]</Text>
+				[LI] Marathon: 420점[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="ko_KR">
 			<Text>시대가 조금 더 오래 지속됩니다.[nn][BLIST]
@@ -1123,8 +1104,7 @@
 				[LI] Quick: 107점
 				[LI] Standard: 160점
 				[LI] Epic: 240점
-				[LI] Marathon: 480점
-				[LI] Marathon 2.0: 800점[/BLIST]</Text>
+				[LI] Marathon: 480점[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="ko_KR">
 			<Text>독립 세력 공격성</Text>

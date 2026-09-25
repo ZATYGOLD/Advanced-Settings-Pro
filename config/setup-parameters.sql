@@ -37,25 +37,19 @@ UPDATE Parameters SET SupportsSinglePlayer = 1 WHERE ParameterID = 'SingleAgeGam
 --*******************************************************
 --***************** GAME SPEEDS *************************
 --*******************************************************
--- Puts Marathon 2.0 in the Game Speed dropdown. This is the
--- configuration database's own GameSpeeds table, which only carries what the
--- setup screen shows; the speeds themselves, with their cost multipliers and
--- turn pacing, are defined against the gameplay table of the same name in
--- data/game-speeds/new-game-speeds.sql.
-
-INSERT OR IGNORE INTO GameSpeeds (GameSpeedType, Name, Description, SortIndex)
-    VALUES
-        ('GAMESPEED_ZG_MARATHON_2', 'LOC_ZG_GAMESPEED_MARATHON_2_NAME', 'LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION', 60);
-
--- Online 2.0 is retired but still has to resolve for a save that runs on it.
+-- The mod's two game speeds, Online 2.0 and Marathon 2.0, are retired but still
+-- have to resolve for a save that runs on them. This is the configuration
+-- database's own GameSpeeds table, which only carries what the setup screen
+-- shows; the speeds themselves live in data/game-speeds/new-game-speeds.sql.
 -- The Game Speed parameter reads the StandardGameSpeeds domain:
 --     Domain="StandardGameSpeeds" ... SQL="SELECT Domain, ... FROM GameSpeeds"
 -- Domain defaults to that and forms half the primary key, so naming another one
--- keeps the row in the table, and its name and description resolvable, while
+-- keeps a row in the table, and its name and description resolvable, while
 -- leaving it out of every list the setup screen builds. Nothing reads
 -- ZG_RetiredGameSpeeds; it exists to hold rows out of the dropdown.
 INSERT OR IGNORE INTO GameSpeeds (Domain, GameSpeedType, Name, Description, SortIndex)
     VALUES
+        ('ZG_RetiredGameSpeeds', 'GAMESPEED_ZG_MARATHON_2', 'LOC_ZG_GAMESPEED_MARATHON_2_NAME', 'LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION', 60),
         ('ZG_RetiredGameSpeeds', 'GAMESPEED_ZG_ONLINE_2', 'LOC_ZG_GAMESPEED_ONLINE_2_NAME', 'LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION', 5);
 
 --*******************************************************
