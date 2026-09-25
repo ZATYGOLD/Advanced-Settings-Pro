@@ -4625,6 +4625,7 @@
 					<Item>ui/zg-memento-select.js</Item>
 					<Item>ui/zg-mp-lobby-mementos.js</Item>
 					<Item>ui/zg-mp-lobby-tooltips.js</Item>
+					<Item>ui/zg-mp-lobby-rules.js</Item>
 					<Item>ui/zg-memento-select-model.js</Item>
 					<Item>ui/zg-memento-roller.js</Item>
 					<Item>ui/zg-player-tab.js</Item>

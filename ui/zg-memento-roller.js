@@ -139,10 +139,14 @@ const AI_MEMENTO_MODES = {
 // The rule AI Mementos currently names.
 export const aiMementoMode = () => AI_MEMENTO_MODES[GameSetup.findGameParameter(AI_MEMENTOS_PARAM_ID)?.value?.value] ?? AI_MEMENTO_MODES[AI_MEMENTOS_DEFAULT];
 
-// The AI players: every participating slot held by the computer. Humans are
-// left alone, the local player and, in multiplayer, everyone who has joined.
+// The AI players: every participating slot the computer holds. A human is
+// never one, whatever else the configuration reports: not the local player,
+// not anyone who has joined a multiplayer slot, not a hotseat seat.
 export function aiPlayerIds() {
-	return (Configuration.getGame()?.participatingPlayerIDs ?? []).filter((playerId) => Configuration.getPlayer(playerId)?.isAI === true);
+	return (Configuration.getGame()?.participatingPlayerIDs ?? []).filter((playerId) => {
+		const player = Configuration.getPlayer(playerId);
+		return playerId != GameContext.localPlayerID && player?.slotStatus == SlotStatus.SS_COMPUTER && !player.isHuman;
+	});
 }
 
 export const matchSource = (mode, playerId) => (mode.sourceId ? GameSetup.findPlayerParameter(playerId, mode.sourceId)?.value?.value : null);

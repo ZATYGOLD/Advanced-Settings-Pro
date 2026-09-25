@@ -505,7 +505,9 @@ setInterval(() => {
 		appliedSources.set(playerId, source);
 	}
 
-	for (const playerId of Configuration.getGame()?.participatingPlayerIDs ?? []) {
+	// AI slots only: a human's mementos are theirs to pick, and a Random flag left
+	// on a human seat by an older version is not honoured.
+	for (const playerId of aiPlayerIds()) {
 		randomFlags(playerId).forEach((isRandom, slotIndex) => {
 			const key = `${playerId}:${slotIndex}`;
 			if (isRandom && !rolledThisSession.has(key)) {

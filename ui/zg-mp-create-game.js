@@ -37,6 +37,10 @@ const MP_ADVANCED_PREFIX = "MPAdvanced";
 // The screen's tab buttons carry a 16.7rem minimum width, sized for its three
 // tabs; four fit at less.
 const NAV_BUTTON_MIN_WIDTH = "11rem";
+// The button's frame is a nine-slice image whose ends are 5.33rem each, drawn
+// for the 16.7rem button; at 11rem the ends meet and leave a seam down the
+// middle, so they are scaled with the width.
+const NAV_BUTTON_BORDER_WIDTH = "0.8889rem 3.5rem 2rem 3.5rem";
 // A row-height Random button beside the seed field, rather than the full-size
 // fxs-button (min-h-11.5, text-base, px-4).
 const SEED_BUTTON_STYLE = { width: "7rem", minWidth: "0", minHeight: "2rem", padding: "0", fontSize: "0.75rem", flex: "0 0 auto" };
@@ -129,6 +133,7 @@ class MpCreateGameLayout {
 			const nav = createTopNav();
 			for (const button of component.navControlTabs) {
 				button.style.minWidth = NAV_BUTTON_MIN_WIDTH;
+				button.style.borderImageWidth = NAV_BUTTON_BORDER_WIDTH;
 			}
 			return nav;
 		};

@@ -4,8 +4,10 @@
 // inside the leader dropdown, and the only way to change them is the Choose
 // Mementos button. This turns those diamonds into memento slots, drawn like the
 // single-player Player tab's: the slot base and a "+" when empty, the memento's
-// own art when filled, its name and effect on hover. On your own row a slot opens the
-// single-player memento picker on that slot (ui/zg-memento-select.js).
+// own art when filled, its name and effect on hover. They show on human rows
+// and, whenever mementos are on, on AI rows too. On your own row, and on AI
+// rows for the host, a slot opens the single-player memento picker on that
+// slot (ui/zg-memento-select.js).
 // Nothing else in the row moves: the slots take the diamonds' place.
 //
 // The slots sit inside the leader dropdown, which opens on a left click or tap
@@ -17,7 +19,8 @@
 
 import { Audio } from 'fs://game/core/ui/audio-base/audio-support.js';
 import { openMementoSelect } from './zg-memento-select.js';
-import { MEMENTO_PARAM_IDS as PARAM_IDS, MEMENTO_NONE_VALUE as NONE_VALUE, MEMENTO_SLOT_BASE_IMAGE as BASE_IMAGE, MEMENTO_SLOT_PLUS_IMAGE as PLUS_IMAGE, mementoTooltip } from './zg-memento-roller.js';
+import { MEMENTO_PARAM_IDS as PARAM_IDS, MEMENTO_NONE_VALUE as NONE_VALUE, MEMENTO_SLOT_BASE_IMAGE as BASE_IMAGE, MEMENTO_SLOT_PLUS_IMAGE as PLUS_IMAGE, mementoTooltip, aiPlayerIds } from './zg-memento-roller.js';
+import { canEditSetup } from './zg-shell-context.js';
 
 const DROPDOWN_NAME = "leader-dropdown";
 const LOBBY_NAME = "screen-mp-lobby";
@@ -28,6 +31,19 @@ const SLOT_REM = 2.75;
 const PLUS_REM = 1.3;
 const SLOT_FRAME = { border: "0.0833rem solid #8c7e62", backgroundColor: "rgba(13, 15, 20, 0.6)" };
 const CLICK_INPUTS = new Set(["mousebutton-left", "touch-tap"]);
+const REFRESH_MS = 500;
+
+// Every row's slots, refreshed together when the setup changes: an AI row's
+// mementos change without the lobby telling its dropdown anything.
+const liveSlots = new Set();
+let lastRevision = -1;
+setInterval(() => {
+	if (liveSlots.size == 0 || GameSetup.currentRevision == lastRevision) {
+		return;
+	}
+	lastRevision = GameSetup.currentRevision;
+	liveSlots.forEach((slots) => slots.refresh());
+}, REFRESH_MS);
 
 function mementoValue(playerId, slotIndex) {
 	return GameSetup.findPlayerParameter(playerId, PARAM_IDS[slotIndex])?.value;
@@ -68,8 +84,8 @@ class LobbyMementoSlots {
 		const onAttributeChanged = component.onAttributeChanged.bind(component);
 		component.onAttributeChanged = (name, oldValue, newValue) => {
 			onAttributeChanged(name, oldValue, newValue);
-			if (name == "mementos") {
-				this.refresh(newValue);
+			if (name == "mementos" || name == "data-player-id") {
+				this.refresh();
 			}
 		};
 	}
@@ -80,6 +96,24 @@ class LobbyMementoSlots {
 
 	isLocal() {
 		return this.playerId() == GameContext.localPlayerID;
+	}
+
+	isAI() {
+		return aiPlayerIds().includes(this.playerId());
+	}
+
+	// Your own slots, and the AI's for the host, who sets up the AI.
+	isEditable() {
+		return this.isLocal() || (this.isAI() && canEditSetup());
+	}
+
+	// The lobby lists mementos for humans only; the AI's are read here, so AI
+	// Mementos shows on the AI rows too, whenever mementos are on.
+	isShown() {
+		if (!Configuration.getGame()?.isMementosEnabled) {
+			return false;
+		}
+		return this.isAI() || (this.component.Root.getAttribute("mementos") ?? "") != "";
 	}
 
 	// The dropdown builds its memento row in render(); the slots replace its
@@ -101,7 +135,7 @@ class LobbyMementoSlots {
 	}
 
 	onSlotInput(event, slotIndex) {
-		if (!this.isLocal() || !CLICK_INPUTS.has(event.detail.name)) {
+		if (!this.isEditable() || !CLICK_INPUTS.has(event.detail.name)) {
 			return;
 		}
 		event.stopPropagation();
@@ -112,23 +146,34 @@ class LobbyMementoSlots {
 		}
 	}
 
-	refresh(value = this.component.Root.getAttribute("mementos") ?? "") {
-		if (value == "" || !this.ensureSlots()) {
+	refresh() {
+		const shown = this.isShown();
+		if (!shown) {
+			if (this.slots.length > 0) {
+				this.component.mementoContainer?.classList.add("hidden");
+			}
 			return;
 		}
+		if (!this.ensureSlots()) {
+			return;
+		}
+		this.component.mementoContainer.classList.remove("hidden");
 		const playerId = this.playerId();
-		const local = this.isLocal();
+		const editable = this.isEditable();
 		this.slots.forEach((slot, slotIndex) => {
 			paintSlot(slot, mementoValue(playerId, slotIndex));
-			slot.classList.toggle("cursor-pointer", local);
+			slot.classList.toggle("cursor-pointer", editable);
 		});
 	}
 
 	beforeAttach() {}
 	afterAttach() {
+		liveSlots.add(this);
 		this.refresh();
 	}
-	beforeDetach() {}
+	beforeDetach() {
+		liveSlots.delete(this);
+	}
 	afterDetach() {}
 	onAttributeChanged() {}
 }
