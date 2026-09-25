@@ -7,10 +7,10 @@
 // back to the human. The Player tab wants that same screen for each AI row.
 //
 // This is a copy of the base createMementoModel with one substitution: the
-// player it reads and writes is a target this module controls, which starts as
-// the human and is moved by retargetMementoSelect(playerId) just before the
-// screen is activated. The model refreshes its slots through the same reconcile
-// the base runs after an equip, so the screen shows the target's mementos.
+// player it reads and writes is a target, which starts as the human and is
+// moved by the model's retarget(playerId) as ui/zg-memento-select.js opens the
+// picker. The model refreshes its slots through the same reconcile the base
+// runs after an equip, so the screen shows the target's mementos.
 //
 // Registered over the base model at the priority the Player tab already uses
 // for its own overrides; ComponentRegistry and ModelRegistry both resolve the
@@ -21,10 +21,10 @@ import { createSignal } from 'fs://game/core/vendor/solid-js/dist/solid.js';
 import { createMutable, modifyMutable, reconcile } from 'fs://game/core/vendor/solid-js/store/dist/store.js';
 import { ModelRegistry, ModelLifecycle } from 'fs://game/core/ui-next/services/model-registry.js';
 import { FullTextSearch } from 'fs://game/core/ui-next/utilities/search-utils.js';
+import { MEMENTO_NONE_VALUE as NONE_VALUE } from './zg-memento-roller.js';
 
 const OVERRIDE_PRIORITY = 110;
 const MODEL_NAME = "MementoSelectModel";
-const NONE_VALUE = "NONE";
 
 const funcDescName = GameSetup.findString("FunctionalDescription");
 
@@ -167,9 +167,7 @@ function createMementoModel() {
 
 ModelRegistry.register(MODEL_NAME, ModelLifecycle.PerInstance, createMementoModel, OVERRIDE_PRIORITY);
 
-// Points the picker at a player. Called by the Player tab just before it
-// activates the memento-select screen, and again with no argument when the tab
-// mounts, so the hub's own memento display shows the human once more.
-export function retargetMementoSelect(playerId = null, slotIndex = 0) {
-	activeModel?.retarget(playerId, slotIndex);
-}
+// The model the create-game screen built, when one exists this session. The
+// picker reuses it rather than building a second, so the Overview's own memento
+// display follows every change made through the picker.
+export const currentMementoModel = () => activeModel;

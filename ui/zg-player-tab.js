@@ -12,14 +12,11 @@
 // Mementos, which fills every AI player's slots at once. The draws themselves
 // live in zg-memento-roller.js, shared with the age transition.
 import { template, insert } from 'fs://game/core/vendor/solid-js/web/dist/web.js';
-import { createMemo, createComponent, createRenderEffect, createRoot, createEffect, on, useContext, mergeProps, For, Show } from 'fs://game/core/vendor/solid-js/dist/solid.js';
+import { createMemo, createComponent, createRenderEffect, mergeProps, For, Show } from 'fs://game/core/vendor/solid-js/dist/solid.js';
 import { ComponentRegistry } from 'fs://game/core/ui-next/services/component-registry.js';
 import { multiplayerTeamColors } from 'fs://game/core/ui/utilities/utilities-network-constants.js';
-import { useScreenFlowContext } from 'fs://game/core/ui-next/components/screen-flow.js';
-import { usePopupContext } from 'fs://game/core/ui-next/components/popup.js';
-import { TriggerType } from 'fs://game/core/ui-next/components/trigger.js';
-import { retargetMementoSelect } from './zg-memento-select-model.js';
-import { MEMENTO_PARAM_IDS, MEMENTO_NONE_VALUE, RANDOM_FLAG_PARAM_ID, RANDOM_FLAGS, AI_MEMENTOS_PARAM_ID, AI_MEMENTOS_DEFAULT, aiMementoMode, aiPlayerIds, matchSource, randomFlags, setRandomFlag, rollMemento, sortPossibleValues } from './zg-memento-roller.js';
+import { openMementoSelect } from './zg-memento-select.js';
+import { MEMENTO_PARAM_IDS, MEMENTO_NONE_VALUE, MEMENTO_SLOT_BASE_IMAGE, MEMENTO_SLOT_PLUS_IMAGE, RANDOM_FLAG_PARAM_ID, RANDOM_FLAGS, AI_MEMENTOS_PARAM_ID, AI_MEMENTOS_DEFAULT, aiMementoMode, aiPlayerIds, matchSource, randomFlags, setRandomFlag, rollMemento, sortPossibleValues } from './zg-memento-roller.js';
 import { canEditSetup, isAgeTransition } from './zg-shell-context.js';
 import { Activatable } from 'fs://game/core/ui-next/components/activatable.js';
 import { Button } from 'fs://game/core/ui-next/components/button.js';
@@ -35,7 +32,7 @@ import { CivSelectModel } from 'fs://game/core/ui-next/screens/create-game/civ-s
 import { LeaderSelectModel } from 'fs://game/core/ui-next/screens/create-game/leader-select-model.js';
 import { PlayerSetupParametersModel } from 'fs://game/core/ui-next/screens/create-game/game-parameters-model.js';
 import { TicketBox } from 'fs://game/core/ui-next/screens/create-game/ticket-box.js';
-import { TabContext } from 'fs://game/core/ui-next/components/tab.js';
+import 'fs://game/core/ui-next/components/tab.js';
 import './zg-map-tab.js';
 
 const OVERRIDE_PRIORITY = 110;
@@ -283,54 +280,14 @@ const MementoIcon = (props) => {
 
 // A memento slot drawn the way the Overview hub draws its own: the panel box,
 // the filigree and rollover, and either the memento's icon or, for an empty
-// slot, the slot base image. Clicking one opens the memento-select screen, the
-// picker with the search bar and attribute filter, for the player this row
-// stands for. That screen's model is bound to the human in the base game;
-// ui/zg-memento-select-model.js makes it retargetable.
-//
-// Advanced Options is a Popup.Item layered over the create-game flow, while
-// memento-select is a screen of that flow. Activating the screen with the popup
-// still up changes the page behind it and leaves the popup covering the picker,
-// so opening a slot closes the popup first and, when the picker is left, opens
-// it again on the same anchor the hub used. The reset watcher lives in its own
-// root: the Player tab is unmounted while the picker is up, so an effect owned
-// by it would be disposed before it could fire.
+// slot, the slot base image. Clicking one opens the game's memento picker, the
+// one with the search bar and attribute filter, for the player this row stands
+// for, over Advanced Options (ui/zg-memento-select.js, shared with the lobby).
 const SLOT_PLUS_REM = 1.6;
-const SLOT_PLUS_IMAGE = "url('blp:shell_memento-maj-plus.png')";
-const SLOT_BASE_IMAGE = "url('blp:memento_slot-base.png')";
 const SLOT_ICON_CLASSES = "w-full h-full absolute inset-1";
-const MEMENTO_SELECT_SCREEN = "memento-select";
-const ADVANCED_OPTIONS_POPUP = "advanced-options";
-
-// Advanced Options reopens on its General tab; this asks the Player tab item
-// to take over once it has registered itself, on the reopen after a picker.
-let reopenOnPlayerTab = false;
-
 const tplSlotBox = template(`<div class="flex items-center justify-center p-1 img-unit-panelbox relative"><div class="absolute inset-0 bg-center bg-no-repeat"></div><div class="img-rollover-highlight absolute inset-0 opacity-0 group-focus\\:opacity-100 group-hover\\:opacity-100 group-pressed\\:opacity-100 pointer-events-none"></div></div>`);
 
-function openMementoSelect(screenFlow, popup, playerId, slotIndex) {
-	const anchor = popup.target();
-	popup.close(ADVANCED_OPTIONS_POPUP);
-	retargetMementoSelect(playerId, slotIndex);
-	createRoot((dispose) => {
-		createEffect(on(() => screenFlow.active(), (active) => {
-			if (active?.name === MEMENTO_SELECT_SCREEN) {
-				return;
-			}
-			retargetMementoSelect();
-			if (anchor instanceof HTMLElement) {
-				reopenOnPlayerTab = true;
-				popup.onTrigger(ADVANCED_OPTIONS_POPUP, TriggerType.Activate, anchor);
-			}
-			dispose();
-		}, { defer: true }));
-	});
-	screenFlow.activate(MEMENTO_SELECT_SCREEN);
-}
-
 function MementoSlotCell(props) {
-	const screenFlow = useScreenFlowContext();
-	const popup = usePopupContext();
 	const current = () => props.param()?.value;
 	const isEmpty = () => (current()?.value ?? MEMENTO_NONE_VALUE) == MEMENTO_NONE_VALUE;
 	return createComponent(Tooltip.Text, {
@@ -338,13 +295,13 @@ function MementoSlotCell(props) {
 		get children() {
 			return createComponent(Activatable, {
 				class: "flex flex-row group relative mx-2 my-1",
-				onActivate: () => openMementoSelect(screenFlow, popup, props.playerId, props.slotIndex),
+				onActivate: () => openMementoSelect(props.playerId, props.slotIndex),
 				get children() {
 					const box = tplSlotBox();
 					box.style.width = `${SLOT_BOX_REM}rem`;
 					box.style.height = `${SLOT_BOX_REM}rem`;
 					const plus = box.firstChild;
-					plus.style.backgroundImage = SLOT_PLUS_IMAGE;
+					plus.style.backgroundImage = MEMENTO_SLOT_PLUS_IMAGE;
 					plus.style.backgroundSize = `${SLOT_PLUS_REM}rem ${SLOT_PLUS_REM}rem`;
 					const highlight = box.lastChild;
 					insert(box, createComponent(Show, {
@@ -357,7 +314,7 @@ function MementoSlotCell(props) {
 							});
 						},
 						get children() {
-							return createComponent(Icon, { name: SLOT_BASE_IMAGE, isUrl: true, class: `${SLOT_ICON_CLASSES} opacity-60` });
+							return createComponent(Icon, { name: MEMENTO_SLOT_BASE_IMAGE, isUrl: true, class: `${SLOT_ICON_CLASSES} opacity-60` });
 						},
 					}), highlight);
 					return box;
@@ -667,26 +624,6 @@ const PlayerSetup = () => {
 // registered by zg-map-tab.js as well.
 const claimingMod = Modding.getInstalledMods().find((mod) => mod.enabled && PLAYER_TAB_MODS.includes(mod.id));
 
-// Advanced Options names General as its default tab and applies it from an
-// effect whose order against the tab items' own registration is not ours to
-// set, so a one-shot activation can be overwritten. After a reopen from the
-// picker, this holds the Player tab through the screen's mount and lets go on
-// the next tick, when every mount effect has run.
-function restorePlayerTab(tabContext) {
-	if (!tabContext) {
-		return;
-	}
-	createEffect(() => {
-		if (reopenOnPlayerTab && tabContext.active()?.name != PLAYER_TAB_NAME) {
-			tabContext.activate(PLAYER_TAB_NAME);
-		}
-	});
-	setTimeout(() => {
-		reopenOnPlayerTab = false;
-		console.warn(`ZG-ASP player tab: reopened on '${tabContext.active()?.name}'`);
-	}, 0);
-}
-
 const tabItem = ComponentRegistry.get("Tab.Item");
 // `factory` is a signal accessor returning the currently registered factory.
 // Read it once here to capture the previous implementation before this module
@@ -702,11 +639,7 @@ if (claimingMod) {
 			if (props?.name != PLAYER_TAB_NAME) {
 				return createPreviousTabItem(props);
 			}
-			const item = createPreviousTabItem(mergeProps(props, { body: () => createComponent(PlayerSetup, {}) }));
-			if (reopenOnPlayerTab) {
-				restorePlayerTab(useContext(TabContext));
-			}
-			return item;
+			return createPreviousTabItem(mergeProps(props, { body: () => createComponent(PlayerSetup, {}) }));
 		},
 	});
 }

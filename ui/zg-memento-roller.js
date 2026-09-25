@@ -10,6 +10,9 @@
 
 export const MEMENTO_PARAM_IDS = ["PlayerMementoMajorSlot", "PlayerMementoMinorSlot1"];
 export const MEMENTO_NONE_VALUE = "NONE";
+// A memento slot's empty look, shared by every screen that draws one.
+export const MEMENTO_SLOT_BASE_IMAGE = "url('blp:memento_slot-base.png')";
+export const MEMENTO_SLOT_PLUS_IMAGE = "url('blp:shell_memento-maj-plus.png')";
 // Random is not a memento the game knows: the mod keeps a per-player flag and
 // rolls a real memento into the slot, once per game session.
 export const RANDOM_FLAG_PARAM_ID = "ZG_PlayerRandomMementos";

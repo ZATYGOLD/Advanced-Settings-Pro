@@ -4622,6 +4622,8 @@
 					<Item>ui/zg-map-tab.js</Item>
 					<Item>ui/zg-seed-randomizer.js</Item>
 					<Item>ui/zg-mp-create-game.js</Item>
+					<Item>ui/zg-memento-select.js</Item>
+					<Item>ui/zg-mp-lobby-mementos.js</Item>
 					<Item>ui/zg-memento-select-model.js</Item>
 					<Item>ui/zg-memento-roller.js</Item>
 					<Item>ui/zg-player-tab.js</Item>
