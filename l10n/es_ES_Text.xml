@@ -766,6 +766,27 @@
 		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_CIVILIZATION" Language="es_ES">
 			<Text>Cada ranura toma un Recuerdo que coincide con uno de los dos atributos de la civilización.[n]Solo se aplica a las civilizaciones elegidas; las dejadas en Aleatorio toman un Recuerdo cualquiera.</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_MEMENTOOPTIONS" Language="es_ES">
+			<Text>Ajustes de Recuerdos</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_NAME" Language="es_ES">
+			<Text>Recuerdos de la IA al cambiar de era</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION" Language="es_ES">
+			<Text>Determina qué ocurre con los Recuerdos de cada jugador de la IA al cambiar de era.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_MAINTAIN_NAME" Language="es_ES">
+			<Text>Mantener</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_MAINTAIN" Language="es_ES">
+			<Text>Cada IA conserva los Recuerdos que ya tiene.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_ADAPT_NAME" Language="es_ES">
+			<Text>Adaptar</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_ADAPT" Language="es_ES">
+			<Text>Cada IA extrae Recuerdos nuevos según el ajuste Recuerdos de la IA, acordes al líder y la civilización que tiene en la nueva era.[n]Coincidencia de líder y Coincidencia de civilización alcanzan aquí a todas las IA, ya que ambos se conocen con la partida en marcha.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="es_ES">
 			<Text>Personalizado: establece el conjunto de triunfos de cada era individualmente.</Text>
 		</Replace>

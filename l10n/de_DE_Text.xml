@@ -766,6 +766,27 @@
 		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_CIVILIZATION" Language="de_DE">
 			<Text>Jeder Platz zieht ein Memento, das zu einem der beiden Attribute der Zivilisation passt.[n]Gilt nur für gewählte Zivilisationen; auf Zufällig belassene ziehen ein beliebiges Memento.</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_MEMENTOOPTIONS" Language="de_DE">
+			<Text>Memento-Einstellungen</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_NAME" Language="de_DE">
+			<Text>KI-Mementos beim Zeitalterwechsel</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION" Language="de_DE">
+			<Text>Legt fest, was beim Zeitalterwechsel mit den Mementos aller KI-Spieler geschieht.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_MAINTAIN_NAME" Language="de_DE">
+			<Text>Beibehalten</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_MAINTAIN" Language="de_DE">
+			<Text>Jede KI behält die Mementos, die sie bereits hat.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_ADAPT_NAME" Language="de_DE">
+			<Text>Anpassen</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_ADAPT" Language="de_DE">
+			<Text>Jede KI zieht über die Einstellung KI-Mementos neue Mementos, passend zu Anführer und Zivilisation im neuen Zeitalter.[n]Anführer-Treffer und Zivilisations-Treffer erreichen hier jede KI, da beide im laufenden Spiel bekannt sind.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="de_DE">
 			<Text>Benutzerdefiniert: Lege das Triumph-Set für jedes Zeitalter einzeln fest.</Text>
 		</Replace>

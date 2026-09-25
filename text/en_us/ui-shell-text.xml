@@ -444,6 +444,18 @@
 		<Row Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_CIVILIZATION">
 			<Text>Each slot draws a Memento matching one of the civilization's two attributes.[n]Applies only where a civilization has been chosen; those left on Random draw any Memento.</Text>
 		</Row>
+		<Row Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_NAME"><Text>Age Transition AI Mementos</Text></Row>
+		<Row Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION">
+			<Text>Sets what becomes of every AI player's Mementos when an age turns over.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_MAINTAIN_NAME"><Text>Maintain</Text></Row>
+		<Row Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_MAINTAIN">
+			<Text>Every AI keeps the Mementos it already holds.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_ADAPT_NAME"><Text>Adapt</Text></Row>
+		<Row Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_ADAPT">
+			<Text>Every AI draws fresh Mementos through the AI Mementos setting, against the leader and civilization it holds in the new age.[n]Leader Match and Civilization Match reach every AI here, since both are known once the game is running.</Text>
+		</Row>
 
 	<!-- Triumph Set Descriptions -->
 		<Row Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM">
@@ -926,6 +938,7 @@
 		</Row>
 
 		<Row Tag="LOC_GROUPID_ZG_TERRAINOPTIONS"><Text>Terrain Settings</Text></Row>
+		<Row Tag="LOC_GROUPID_ZG_MEMENTOOPTIONS"><Text>Memento Settings</Text></Row>
 
 	<!-- Pace Set -->
 		<Row Tag="LOC_ZG_PACE_PRESET_NAME"><Text>Pace Set</Text></Row>

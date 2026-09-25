@@ -766,6 +766,27 @@
 		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_CIVILIZATION" Language="ru_RU">
 			<Text>Каждая ячейка получает реликвию, соответствующую одному из двух атрибутов цивилизации.[n]Действует только для выбранных цивилизаций; оставленные случайными получают любые реликвии.</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_MEMENTOOPTIONS" Language="ru_RU">
+			<Text>Настройки реликвий</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_NAME" Language="ru_RU">
+			<Text>Реликвии ИИ при смене эпохи</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION" Language="ru_RU">
+			<Text>Определяет, что происходит с реликвиями каждого игрока под управлением ИИ при смене эпохи.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_MAINTAIN_NAME" Language="ru_RU">
+			<Text>Сохранить</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_MAINTAIN" Language="ru_RU">
+			<Text>Каждый ИИ оставляет реликвии, которые у него уже есть.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_ADAPT_NAME" Language="ru_RU">
+			<Text>Приспособить</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_ADAPT" Language="ru_RU">
+			<Text>Каждый ИИ берет новые реликвии по настройке «Реликвии ИИ», под лидера и цивилизацию новой эпохи.[n]Здесь «Подбор по лидеру» и «Подбор по цивилизации» действуют для каждого ИИ, поскольку в идущей игре и то и другое известно.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="ru_RU">
 			<Text>Особый: задайте набор триумфов для каждой эпохи отдельно.</Text>
 		</Replace>

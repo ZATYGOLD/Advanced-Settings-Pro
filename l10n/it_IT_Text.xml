@@ -766,6 +766,27 @@
 		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_CIVILIZATION" Language="it_IT">
 			<Text>Ogni slot pesca un Cimelio corrispondente a uno dei due attributi della civiltà.[n]Si applica solo alle civiltà scelte; quelle lasciate su Casuale pescano un Cimelio qualsiasi.</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_MEMENTOOPTIONS" Language="it_IT">
+			<Text>Impostazioni dei Cimeli</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_NAME" Language="it_IT">
+			<Text>Cimeli dell'IA al cambio di era</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION" Language="it_IT">
+			<Text>Determina che fine fanno i Cimeli di ogni giocatore IA al cambio di era.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_MAINTAIN_NAME" Language="it_IT">
+			<Text>Mantieni</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_MAINTAIN" Language="it_IT">
+			<Text>Ogni IA conserva i Cimeli che ha già.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_ADAPT_NAME" Language="it_IT">
+			<Text>Adatta</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_ADAPT" Language="it_IT">
+			<Text>Ogni IA pesca Cimeli nuovi tramite l'impostazione Cimeli dell'IA, in base al leader e alla civiltà che ha nella nuova era.[n]Corrispondenza leader e Corrispondenza civiltà raggiungono qui ogni IA, dato che entrambi sono noti a partita avviata.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="it_IT">
 			<Text>Personalizzato: imposta il set di trionfi per ogni epoca singolarmente.</Text>
 		</Replace>

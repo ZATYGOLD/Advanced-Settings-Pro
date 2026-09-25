@@ -766,6 +766,27 @@
 		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_CIVILIZATION" Language="pl_PL">
 			<Text>Każdy slot losuje pamiątkę pasującą do jednej z dwóch cech cywilizacji.[n]Dotyczy tylko wybranych cywilizacji; pozostawione na Losowo losują dowolną pamiątkę.</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_MEMENTOOPTIONS" Language="pl_PL">
+			<Text>Ustawienia pamiątek</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_NAME" Language="pl_PL">
+			<Text>Pamiątki SI przy zmianie epoki</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION" Language="pl_PL">
+			<Text>Określa, co dzieje się z pamiątkami każdego gracza SI przy zmianie epoki.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_MAINTAIN_NAME" Language="pl_PL">
+			<Text>Zachowaj</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_MAINTAIN" Language="pl_PL">
+			<Text>Każda SI zatrzymuje pamiątki, które już posiada.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_ADAPT_NAME" Language="pl_PL">
+			<Text>Dostosuj</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_ADAPT" Language="pl_PL">
+			<Text>Każda SI losuje nowe pamiątki zgodnie z ustawieniem Pamiątki SI, pasujące do przywódcy i cywilizacji w nowej epoce.[n]Dopasowanie przywódcy i Dopasowanie cywilizacji obejmują tu każdą SI, bo oba są znane w trakcie gry.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="pl_PL">
 			<Text>Niestandardowe: ustaw zestaw triumfów dla każdej epoki osobno.</Text>
 		</Replace>

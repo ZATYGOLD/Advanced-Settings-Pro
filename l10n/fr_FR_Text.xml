@@ -766,6 +766,27 @@
 		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_CIVILIZATION" Language="fr_FR">
 			<Text>Chaque emplacement tire un Souvenir correspondant à l'un des deux attributs de la civilisation.[n]Ne s'applique qu'aux civilisations choisies ; celles laissées sur Aléatoire tirent un Souvenir quelconque.</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_MEMENTOOPTIONS" Language="fr_FR">
+			<Text>Paramètres des Souvenirs</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_NAME" Language="fr_FR">
+			<Text>Souvenirs de l'IA au changement d'âge</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION" Language="fr_FR">
+			<Text>Détermine ce que deviennent les Souvenirs de chaque joueur IA au changement d'âge.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_MAINTAIN_NAME" Language="fr_FR">
+			<Text>Conserver</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_MAINTAIN" Language="fr_FR">
+			<Text>Chaque IA garde les Souvenirs qu'elle possède déjà.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_ADAPT_NAME" Language="fr_FR">
+			<Text>Adapter</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_ADAPT" Language="fr_FR">
+			<Text>Chaque IA tire de nouveaux Souvenirs via le paramètre Souvenirs de l'IA, selon le dirigeant et la civilisation qu'elle a dans le nouvel âge.[n]Correspondance de dirigeant et Correspondance de civilisation touchent ici toutes les IA, les deux étant connus en cours de partie.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="fr_FR">
 			<Text>Personnalisé : définissez l'ensemble de triomphes de chaque âge individuellement.</Text>
 		</Replace>

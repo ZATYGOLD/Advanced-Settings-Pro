@@ -766,6 +766,27 @@
 		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_CIVILIZATION" Language="ja_JP">
 			<Text>各枠が文明の2つの特性のいずれかに一致するメメントを引きます。[n]文明を選んだプレイヤーにのみ適用され、ランダムのままなら任意のメメントを引きます。</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_MEMENTOOPTIONS" Language="ja_JP">
+			<Text>メメント設定</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_NAME" Language="ja_JP">
+			<Text>時代移行時のAIメメント</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION" Language="ja_JP">
+			<Text>時代が移るとき、すべてのAIプレイヤーのメメントをどう扱うかを設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_MAINTAIN_NAME" Language="ja_JP">
+			<Text>維持</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_MAINTAIN" Language="ja_JP">
+			<Text>各AIは現在持っているメメントをそのまま保持します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_ADAPT_NAME" Language="ja_JP">
+			<Text>適応</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_ADAPT" Language="ja_JP">
+			<Text>各AIは「AIのメメント」設定に従い、新しい時代の指導者と文明に合わせてメメントを引き直します。[n]ゲーム進行中は指導者と文明が判明しているため、指導者一致と文明一致がすべてのAIに適用されます。</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="ja_JP">
 			<Text>カスタム：時代ごとにトライアンフセットを個別に設定します。</Text>
 		</Replace>

@@ -766,6 +766,27 @@
 		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_CIVILIZATION" Language="pt_BR">
 			<Text>Cada espaço tira uma Lembrança que corresponde a um dos dois atributos da civilização.[n]Só se aplica às civilizações escolhidas; as deixadas em Aleatório tiram uma Lembrança qualquer.</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_MEMENTOOPTIONS" Language="pt_BR">
+			<Text>Configurações de Lembranças</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_NAME" Language="pt_BR">
+			<Text>Lembranças da IA na transição de era</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION" Language="pt_BR">
+			<Text>Define o que acontece com as Lembranças de cada jogador da IA quando uma era muda.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_MAINTAIN_NAME" Language="pt_BR">
+			<Text>Manter</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_MAINTAIN" Language="pt_BR">
+			<Text>Cada IA mantém as Lembranças que já possui.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_ADAPT_NAME" Language="pt_BR">
+			<Text>Adaptar</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_ADAPT" Language="pt_BR">
+			<Text>Cada IA tira Lembranças novas pela configuração Lembranças da IA, conforme o líder e a civilização que tem na nova era.[n]Correspondência de líder e Correspondência de civilização alcançam toda IA aqui, pois ambos são conhecidos com o jogo em andamento.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="pt_BR">
 			<Text>Personalizado: defina o conjunto de triunfos de cada era individualmente.</Text>
 		</Replace>

@@ -766,6 +766,27 @@
 		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_CIVILIZATION" Language="zh_Hant_HK">
 			<Text>每個欄位抽取與文明兩項屬性之一相符的紀念物。[n]僅對已指定文明的玩家生效，仍設為隨機的文明抽取任意紀念物。</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_MEMENTOOPTIONS" Language="zh_Hant_HK">
+			<Text>紀念物設定</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_NAME" Language="zh_Hant_HK">
+			<Text>時代轉換時的AI紀念物</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>設定時代更替時所有AI玩家紀念物的處理方式。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_MAINTAIN_NAME" Language="zh_Hant_HK">
+			<Text>保持</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_MAINTAIN" Language="zh_Hant_HK">
+			<Text>每個AI保留其已持有的紀念物。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_ADAPT_NAME" Language="zh_Hant_HK">
+			<Text>適應</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_ADAPT" Language="zh_Hant_HK">
+			<Text>每個AI按AI紀念物設定重新抽取紀念物，契合其在新時代的領袖與文明。[n]遊戲運行時領袖與文明均已確定，因此領袖匹配和文明匹配對所有AI均生效。</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="zh_Hant_HK">
 			<Text>自訂：為每個時代單獨設定凱旋集。</Text>
 		</Replace>

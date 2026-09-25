@@ -21,7 +21,9 @@ INSERT OR IGNORE INTO ParameterGroups (GroupId, Name)
         ('PacingModernOptions', 'LOC_AGE_MODERN_NAME'),
         ('MPAdvancedPacingModernOptions', 'LOC_AGE_MODERN_NAME'),
         ('TerrainOptions', 'LOC_GROUPID_ZG_TERRAINOPTIONS'),
-        ('MPAdvancedTerrainOptions', 'LOC_GROUPID_ZG_TERRAINOPTIONS');
+        ('MPAdvancedTerrainOptions', 'LOC_GROUPID_ZG_TERRAINOPTIONS'),
+        ('MementoOptions', 'LOC_GROUPID_ZG_MEMENTOOPTIONS'),
+        ('MPAdvancedMementoOptions', 'LOC_GROUPID_ZG_MEMENTOOPTIONS');
 
 -- The single-player disaster group no longer holds the crisis settings, so it is
 -- renamed to Disaster Settings. Multiplayer keeps the base name.
@@ -153,9 +155,17 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 -- Bypass Civilization Unlocks (SortIndex 155). Applied by ui/zg-player-tab.js
 -- whenever the setting changes; the Player tab can still override a single slot
 -- afterwards.
+-- Memento Settings gathers every memento control into one group, so the base
+-- game's own Mementos toggle no longer sits in Game Settings while the mod's
+-- memento settings sit elsewhere. A group's position on the tab follows its
+-- lowest SortIndex, which puts this one directly after Game Settings.
+UPDATE Parameters
+SET GroupId = 'MementoOptions', GroupIDMultiplayerOverride = 'MPAdvancedMementoOptions', SortIndex = 155
+WHERE ParameterID = 'MementosEnabled';
+
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
-        ('ZG_AIMementos', 'LOC_ZG_AI_MEMENTOS_NAME', 'LOC_ZG_AI_MEMENTOS_DESCRIPTION', 'ZG_AIMementosDomain', 'ZG_AI_MEMENTOS_NONE', 1, 'Game', 'AIMementosKey', 'GameOptions', 'MPAdvancedGameOptions', 0, 156);
+        ('ZG_AIMementos', 'LOC_ZG_AI_MEMENTOS_NAME', 'LOC_ZG_AI_MEMENTOS_DESCRIPTION', 'ZG_AIMementosDomain', 'ZG_AI_MEMENTOS_NONE', 1, 'Game', 'AIMementosKey', 'MementoOptions', 'MPAdvancedMementoOptions', 0, 156);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
@@ -163,6 +173,25 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_AIMementosDomain', 'ZG_AI_MEMENTOS_RANDOM', 'LOC_ADVANCED_OPTIONS_RANDOM', 'LOC_ZG_AI_MEMENTOS_DESCRIPTION_RANDOM', 20),
         ('ZG_AIMementosDomain', 'ZG_AI_MEMENTOS_LEADER', 'LOC_ZG_AI_MEMENTOS_LEADER_NAME', 'LOC_ZG_AI_MEMENTOS_DESCRIPTION_LEADER', 30),
         ('ZG_AIMementosDomain', 'ZG_AI_MEMENTOS_CIVILIZATION', 'LOC_ZG_AI_MEMENTOS_CIVILIZATION_NAME', 'LOC_ZG_AI_MEMENTOS_DESCRIPTION_CIVILIZATION', 40);
+
+-- What becomes of those slots when an age turns over. Maintain is the base
+-- game's behavior and so the default. Adapt re-draws each AI's slots through the
+-- AI Mementos setting above, which is the first point where that setting's
+-- Leader Match and Civilization Match can reach an AI at all: both stay RANDOM
+-- for the whole setup screen and are only resolved once the game runs.
+--
+-- Neither option needs guarding against AI Mementos being None. Maintain keeps
+-- whatever an AI holds, which is nothing; Adapt re-applies that same setting,
+-- which draws nothing. Both stay truthful on their own, so there is no sentinel
+-- value and no rule tying the two settings together.
+INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
+    VALUES
+        ('ZG_AgeTransitionMementos', 'LOC_ZG_AGE_TRANSITION_MEMENTOS_NAME', 'LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION', 'ZG_AgeTransitionMementosDomain', 'ZG_AGE_TRANSITION_MEMENTOS_MAINTAIN', 1, 'Game', 'AgeTransitionMementosKey', 'MementoOptions', 'MPAdvancedMementoOptions', 0, 157);
+
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES
+        ('ZG_AgeTransitionMementosDomain', 'ZG_AGE_TRANSITION_MEMENTOS_MAINTAIN', 'LOC_ZG_AGE_TRANSITION_MEMENTOS_MAINTAIN_NAME', 'LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_MAINTAIN', 20),
+        ('ZG_AgeTransitionMementosDomain', 'ZG_AGE_TRANSITION_MEMENTOS_ADAPT', 'LOC_ZG_AGE_TRANSITION_MEMENTOS_ADAPT_NAME', 'LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_ADAPT', 30);
 
 --*******************************************************
 --************* PACE SET *******************************
