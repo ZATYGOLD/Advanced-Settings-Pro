@@ -357,7 +357,9 @@ function teamParameter(playerId) {
 // tinted with the team's color inside it, and the team number over the top.
 const TEAM_IMAGE = "url('fs://game/mp_lobby_teamcolor.png')";
 const TEAM_RING_TINT = "#8c7e62";
-const tplTeamBadge = template(`<div class="relative size-12 flex items-center justify-center"><div class="absolute inset-0 bg-cover"></div><div class="absolute bg-cover" style="left:0.25rem;top:0.25rem;right:0.25rem;bottom:0.25rem"></div><div class="relative font-title text-base"></div></div>`);
+// The ring fills its box edge to edge, where leader portraits and civilization
+// symbols carry their own margin inside the image, so the badge adds the inset.
+const tplTeamBadge = template(`<div class="relative size-12 ml-2 flex items-center justify-center"><div class="absolute inset-0 bg-cover"></div><div class="absolute bg-cover" style="left:0.25rem;top:0.25rem;right:0.25rem;bottom:0.25rem"></div><div class="relative font-title text-base"></div></div>`);
 const tplTeamNumber = template(`<div class="flex flex-row items-center font-title text-base"></div>`);
 
 // Colour index 0 is the empty badge, so a team maps one past it.
