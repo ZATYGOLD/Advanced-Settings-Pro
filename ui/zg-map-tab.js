@@ -43,6 +43,21 @@ function groupBelongsToTab(groupId, tab) {
 	return tab.groups.has(groupId);
 }
 
+// The game's model is one store for the whole shell session and only ever adds
+// to it: a setting that exists in one game mode and not the next (the lobby's
+// Game Name after a multiplayer setup, say) stays in its group, still marked
+// visible, once single-player setup opens. Only settings GameSetup still knows
+// are passed through.
+function presentOnly(group) {
+	const present = {};
+	for (const key of Object.keys(group)) {
+		if (key == "name" || GameSetup.findGameParameter(key)) {
+			present[key] = group[key];
+		}
+	}
+	return present;
+}
+
 // 1. Model facade: same groupNames, groups narrowed to the active tab.
 //    The game's model is created only when first read, exactly as the game does
 //    it: creating it at script load (before a game mode exists) would pull
@@ -61,7 +76,7 @@ if (createBaseGroupsModel) {
 				const filtered = {};
 				for (const groupId of Object.keys(groups)) {
 					if (groupBelongsToTab(groupId, tab)) {
-						filtered[groupId] = groups[groupId];
+						filtered[groupId] = presentOnly(groups[groupId]);
 					}
 				}
 				return filtered;

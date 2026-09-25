@@ -25,9 +25,6 @@ const ATTRIBUTE_ALIASES = { POLITICAL: "DIPLOMATIC" };
 
 const resolve = (handle) => GameSetup.resolveString(handle) ?? "";
 
-// The shell that runs an age transition is the same one that runs game setup.
-export const isAgeTransition = () => Modding.getTransitionInProgress() == TransitionType.Age;
-
 // Sorted, with each value listed once (the memento domain repeats its "none" entry).
 export function sortPossibleValues(possibleValues) {
 	if (!possibleValues) return;
@@ -127,16 +124,10 @@ const AI_MEMENTO_MODES = {
 // The rule AI Mementos currently names.
 export const aiMementoMode = () => AI_MEMENTO_MODES[GameSetup.findGameParameter(AI_MEMENTOS_PARAM_ID)?.value?.value] ?? AI_MEMENTO_MODES[AI_MEMENTOS_DEFAULT];
 
-// The AI players the Player tab lists: every participating slot in use but the
-// local one.
+// The AI players: every participating slot held by the computer. Humans are
+// left alone, the local player and, in multiplayer, everyone who has joined.
 export function aiPlayerIds() {
-	return (Configuration.getGame()?.participatingPlayerIDs ?? []).filter((playerId) => {
-		if (playerId == GameContext.localPlayerID) {
-			return false;
-		}
-		const status = Configuration.getPlayer(playerId)?.slotStatus;
-		return status != SlotStatus.SS_CLOSED && status != SlotStatus.SS_OPEN;
-	});
+	return (Configuration.getGame()?.participatingPlayerIDs ?? []).filter((playerId) => Configuration.getPlayer(playerId)?.isAI === true);
 }
 
 export const matchSource = (mode, playerId) => (mode.sourceId ? GameSetup.findPlayerParameter(playerId, mode.sourceId)?.value?.value : null);

@@ -19,7 +19,8 @@ import { useScreenFlowContext } from 'fs://game/core/ui-next/components/screen-f
 import { usePopupContext } from 'fs://game/core/ui-next/components/popup.js';
 import { TriggerType } from 'fs://game/core/ui-next/components/trigger.js';
 import { retargetMementoSelect } from './zg-memento-select-model.js';
-import { MEMENTO_PARAM_IDS, MEMENTO_NONE_VALUE, RANDOM_FLAG_PARAM_ID, RANDOM_FLAGS, AI_MEMENTOS_PARAM_ID, AI_MEMENTOS_DEFAULT, aiMementoMode, aiPlayerIds, matchSource, randomFlags, setRandomFlag, rollMemento, sortPossibleValues, isAgeTransition } from './zg-memento-roller.js';
+import { MEMENTO_PARAM_IDS, MEMENTO_NONE_VALUE, RANDOM_FLAG_PARAM_ID, RANDOM_FLAGS, AI_MEMENTOS_PARAM_ID, AI_MEMENTOS_DEFAULT, aiMementoMode, aiPlayerIds, matchSource, randomFlags, setRandomFlag, rollMemento, sortPossibleValues } from './zg-memento-roller.js';
+import { canEditSetup, isAgeTransition } from './zg-shell-context.js';
 import { Activatable } from 'fs://game/core/ui-next/components/activatable.js';
 import { Button } from 'fs://game/core/ui-next/components/button.js';
 import { Dropdown, DropdownItem } from 'fs://game/core/ui-next/components/dropdown.js';
@@ -511,10 +512,11 @@ const appliedSources = new Map();
 let lastRevision = -1;
 let appliedValue = null;
 setInterval(() => {
-	// An age transition runs through this same shell. The AI's mementos there
+	// An age transition runs through this same shell; the AI's mementos there
 	// are Age Transition AI Mementos' to settle, in zg-age-transition-mementos.js.
+	// In multiplayer only the host holds the setup.
 	const revision = GameSetup.currentRevision;
-	if (revision == lastRevision || isAgeTransition()) {
+	if (revision == lastRevision || isAgeTransition() || !canEditSetup()) {
 		return;
 	}
 	// A fresh setup screen restarts the revision counter. Forget what was rolled

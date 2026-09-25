@@ -12,6 +12,7 @@ INSERT OR IGNORE INTO ParameterGroups (GroupId, Name)
         ('NaturalWonderSelectionOptions', 'LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS'),
         ('MPAdvancedNaturalWonderSelectionOptions', 'LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS'),
         ('CrisisOptions', 'LOC_GROUPID_ZG_CRISISOPTIONS'),
+        ('MPAdvancedCrisisOptions', 'LOC_GROUPID_ZG_CRISISOPTIONS'),
         ('GamePacingOptions', 'LOC_GROUPID_ZG_GAMEPACINGOPTIONS'),
         ('MPAdvancedGamePacingOptions', 'LOC_GROUPID_ZG_GAMEPACINGOPTIONS'),
         ('PacingAntiquityOptions', 'LOC_AGE_ANTIQUITY_NAME'),
@@ -151,10 +152,13 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 -- afterwards.
 -- Memento Settings gathers every memento control into one group, so the base
 -- game's own Mementos toggle no longer sits in Game Settings while the mod's
--- memento settings sit elsewhere. A group's position on the tab follows its
--- lowest SortIndex, which puts this one directly after Game Settings.
+-- memento settings sit elsewhere. The toggle is multiplayer-only in the base
+-- game and shows read-only in single player; opening it there lets a
+-- single-player game turn mementos off, as No Age Transitions was opened above.
+-- Groups appear in the order their first setting does, so this group's 155
+-- puts it right after Game Settings once Triumph Settings moves past it below.
 UPDATE Parameters
-SET GroupId = 'MementoOptions', GroupIDMultiplayerOverride = 'MPAdvancedMementoOptions', SortIndex = 155
+SET GroupId = 'MementoOptions', GroupIDMultiplayerOverride = 'MPAdvancedMementoOptions', SortIndex = 155, SupportsSinglePlayer = 1
 WHERE ParameterID = 'MementosEnabled';
 
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
@@ -207,7 +211,7 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 -- them afterwards switches the preset to Custom.
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
-        ('ZG_PacePreset', 'LOC_ZG_PACE_PRESET_NAME', 'LOC_ZG_PACE_PRESET_DESCRIPTION', 'ZG_PacePresetDomain', 'ZG_PACE_PRESET_STANDARD', 1, 'Game', 'PacePresetKey', 'GameOptions', 'MPAdvancedGameOptions', 0, 15),
+        ('ZG_PacePreset', 'LOC_ZG_PACE_PRESET_NAME', 'LOC_ZG_PACE_PRESET_DESCRIPTION', 'ZG_PacePresetDomain', 'ZG_PACE_PRESET_STANDARD', 1, 'Game', 'PacePresetKey', 'GameOptions', NULL, 0, 15),
         ('ZG_PaceSetMirror', 'LOC_ZG_PACE_PRESET_NAME', 'LOC_ZG_PACE_PRESET_DESCRIPTION', 'ZG_PacePresetDomain', 'ZG_PACE_PRESET_STANDARD', 1, 'Game', 'PaceSetMirrorKey', 'GamePacingOptions', 'MPAdvancedGamePacingOptions', 0, 28);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
@@ -369,11 +373,15 @@ INSERT OR IGNORE INTO LegacySets (LegacySetType, Name, Description, SortIndex)
     VALUES
         ('ZG_LEGACY_SET_CUSTOM', 'LOC_ZG_CUSTOM_NAME', 'LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM', 5);
 
+-- Triumph Settings follows Memento Settings (155), so the base Triumph Set
+-- moves from 10 to 180 and the per-age rows sit right behind it.
+UPDATE Parameters SET SortIndex = 180 WHERE ParameterID = 'LegacySets';
+
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
-        ('ZG_TriumphSetAntiquity', 'LOC_AGE_ANTIQUITY_NAME', 'LOC_ZG_TRIUMPH_SET_AGE_DESCRIPTION', 'ZG_TriumphSetAgeDomain', 'ZG_TRIUMPHS_DEFAULT', 1, 'Game', 'TriumphSetAntiquityKey', 'TriumphSettings', NULL, 0, 11),
-        ('ZG_TriumphSetExploration', 'LOC_AGE_EXPLORATION_NAME', 'LOC_ZG_TRIUMPH_SET_AGE_DESCRIPTION', 'ZG_TriumphSetAgeDomain', 'ZG_TRIUMPHS_DEFAULT', 1, 'Game', 'TriumphSetExplorationKey', 'TriumphSettings', NULL, 0, 12),
-        ('ZG_TriumphSetModern', 'LOC_AGE_MODERN_NAME', 'LOC_ZG_TRIUMPH_SET_AGE_DESCRIPTION', 'ZG_TriumphSetAgeDomain', 'ZG_TRIUMPHS_DEFAULT', 1, 'Game', 'TriumphSetModernKey', 'TriumphSettings', NULL, 0, 13);
+        ('ZG_TriumphSetAntiquity', 'LOC_AGE_ANTIQUITY_NAME', 'LOC_ZG_TRIUMPH_SET_AGE_DESCRIPTION', 'ZG_TriumphSetAgeDomain', 'ZG_TRIUMPHS_DEFAULT', 1, 'Game', 'TriumphSetAntiquityKey', 'TriumphSettings', NULL, 0, 181),
+        ('ZG_TriumphSetExploration', 'LOC_AGE_EXPLORATION_NAME', 'LOC_ZG_TRIUMPH_SET_AGE_DESCRIPTION', 'ZG_TriumphSetAgeDomain', 'ZG_TRIUMPHS_DEFAULT', 1, 'Game', 'TriumphSetExplorationKey', 'TriumphSettings', NULL, 0, 182),
+        ('ZG_TriumphSetModern', 'LOC_AGE_MODERN_NAME', 'LOC_ZG_TRIUMPH_SET_AGE_DESCRIPTION', 'ZG_TriumphSetAgeDomain', 'ZG_TRIUMPHS_DEFAULT', 1, 'Game', 'TriumphSetModernKey', 'TriumphSettings', NULL, 0, 183);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
@@ -485,13 +493,13 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 -- difficulty settings, keeping them on the General tab while the disaster
 -- settings show on the Map tab. The base Crises multiselect renders as a titled
 -- list, so it must stay last in its group. Multiplayer grouping is unchanged.
-UPDATE Parameters SET GroupId = 'CrisisOptions', SortIndex = 510, Name = 'LOC_ZG_CRISIS_SELECTION_NAME' WHERE ParameterID = 'Crises';
+UPDATE Parameters SET GroupId = 'CrisisOptions', GroupIDMultiplayerOverride = 'MPAdvancedCrisisOptions', SortIndex = 510, Name = 'LOC_ZG_CRISIS_SELECTION_NAME' WHERE ParameterID = 'Crises';
 
 -- Master switch for crises. It drives the base per-crisis selection through
 -- ui/zg-setup-rules.js, so the game applies it through its own ExcludeCrises key.
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
-        ('ZG_Crises', 'LOC_ZG_CRISES_NAME', 'LOC_ZG_CRISES_DESCRIPTION', 'ZG_CrisesDomain', 'ZG_ENABLED', 1, 'Game', 'CrisesKey', 'CrisisOptions', 'MPAdvancedDisasterOptions', 0, 490);
+        ('ZG_Crises', 'LOC_ZG_CRISES_NAME', 'LOC_ZG_CRISES_DESCRIPTION', 'ZG_CrisesDomain', 'ZG_ENABLED', 1, 'Game', 'CrisesKey', 'CrisisOptions', 'MPAdvancedCrisisOptions', 0, 490);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
@@ -500,7 +508,7 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
-        ('ZG_CrisisTiming', 'LOC_ZG_CRISIS_TIMING_NAME', 'LOC_ZG_CRISIS_TIMING_DESCRIPTION', 'ZG_CrisisTimingDomain', 'ZG_DEFAULT_CRISIS_TIMING', 0, 'Game', 'CrisisTimingKey', 'CrisisOptions', 'MPAdvancedDisasterOptions', 0, 500);
+        ('ZG_CrisisTiming', 'LOC_ZG_CRISIS_TIMING_NAME', 'LOC_ZG_CRISIS_TIMING_DESCRIPTION', 'ZG_CrisisTimingDomain', 'ZG_DEFAULT_CRISIS_TIMING', 0, 'Game', 'CrisisTimingKey', 'CrisisOptions', 'MPAdvancedCrisisOptions', 0, 500);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
@@ -599,3 +607,8 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 -- Sea Level joins the mod's Terrain Settings group. The base game defines it once
 -- per map through Key1/Key2 scoping, so every one of those rows moves together.
 UPDATE Parameters SET GroupId = 'TerrainOptions', GroupIDMultiplayerOverride = 'MPAdvancedTerrainOptions', SortIndex = 153 WHERE ParameterID = 'MapSeaLevel';
+
+-- Multiplayer keeps Map, Map Size and Start Position on its Game Settings tab
+-- under a second "Map Settings" heading; on the mod's Map tab they join the
+-- group of the same name.
+UPDATE Parameters SET GroupIDMultiplayerOverride = 'MPAdvancedMapOptions' WHERE ParameterID IN ('Map', 'MapSize', 'StartPosition');

@@ -4,6 +4,16 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ## Version History
 
+### 0.9.0
+
+- Multiplayer Create Game screen (internet, LAN, hotseat) takes the single-player layout: General, Pace, Map, Add-Ons, each tab holding the same groups as single player; the game's Advanced tab folds into General, and Map, Map Size and Start Position join the Map tab
+- Game Random Seed and Map Random Seed get their Random button in multiplayer
+- Fixed the AI Mementos and Random-slot rolls treating joined human players as AI, and the setup sync rules running on a joined client rather than only the host
+- Crisis Settings is its own group in multiplayer too, no longer folded into Disaster Settings
+- Mementos can be switched off in single player; the toggle was read-only there
+- Memento Settings now sits between Game Settings and Triumph Settings
+- Fixed multiplayer-only settings (Game Name, Hidden Game, Kick Vote) lingering on the single-player General tab after a multiplayer setup in the same session
+
 ### 0.8.9
 
 - Player tab: memento dropdowns replaced by memento slots for every player, human and AI; clicking one opens the game's memento picker (search bar, attribute filter) for that player and returns to the Player tab

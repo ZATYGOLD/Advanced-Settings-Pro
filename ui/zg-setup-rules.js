@@ -34,6 +34,8 @@
 //  17. Crisis Timing set to Disabled -> Crises becomes Disabled; the timing leaves
 //      Disabled                     -> Crises becomes Enabled.
 
+import { canEditSetup } from './zg-shell-context.js';
+
 const NW_COUNT_PARAM_ID = "ZG_NaturalWondersCount";
 const MAP_SIZE_PARAM_ID = "MapSize";
 const WONDER_PARAM_IDS = [
@@ -532,8 +534,10 @@ function syncCrises() {
 // ------------------------------------------------------------------ poller --
 
 setInterval(() => {
+	// In multiplayer only the host holds the setup; a client sees the host's
+	// writes arrive and must not answer them with its own.
 	const revision = GameSetup.currentRevision;
-	if (revision == lastRevision || applying) {
+	if (revision == lastRevision || applying || !canEditSetup()) {
 		return;
 	}
 	lastRevision = revision;
