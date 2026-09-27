@@ -4,6 +4,11 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ## Version History
 
+### 0.9.01
+
+- New Building Cost on the Pace tab: the same steps as Technology Cost, covering every building (unique buildings included, wonders excluded); Swift -25%, Balanced +25% / Standard / Standard, Extended +25% / +50% / +50%, and part of every Pace Set
+- City Growth is renamed Settlement Growth, and Age Progress Rate is renamed Age Progression
+
 ### 0.9.0
 
 - Multiplayer Create Game uses the single-player layout: General, Pace, Map, and Add-Ons tabs, with Random seed buttons
@@ -170,11 +175,11 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Game Random Seed and Map Random Seed: a Random button beside each field rolls a new seed (single player)
 - Pace Set (Game Settings, mirrored on the Pace tab): Swift Pace, Standard Pace, Balanced Pace, Extended Pace, Multiplayer Pace, or Custom Pace (written into the Pace Settings on the Pace tab)
 - Age Length: the game's own setting, moved to Pace Settings on the Pace tab and extended with Swift, Balanced, Extended, and Custom, giving Swift, Abbreviated, Standard, Balanced, Long, Extended, or Custom; it drives the per-age rows, and a per-age change shows Custom; switching it off Custom returns every other Pace Settings setting to Standard
-- Age Progress Rate: Slow, Standard, Balanced, Fast, or Custom (milestone and future tech/civic points x0.5 / x1 / the Balanced curve / x1.5)
-- Technology Cost, Civic Cost, and Victory Project Cost: Low (25% cheaper), Standard, Medium (25% more), High (50% more), Double (100% more), Swift, Balanced, Extended, or Custom; Victory Project Cost covers every age's science and military triumph projects, from Chart the Stars to Launch Rocket and Operation Ivy
-- City Growth: Slow (25% more Food per citizen), Standard, Quick (25% less), Fast (half), Swift, Balanced, Extended, or Custom
+- Age Progression: Slow, Standard, Balanced, Fast, or Custom (milestone and future tech/civic points x0.5 / x1 / the Balanced curve / x1.5)
+- Technology Cost, Civic Cost, Building Cost, and Victory Project Cost: Low (25% cheaper), Standard, Medium (25% more), High (50% more), Double (100% more), Swift, Balanced, Extended, or Custom; Victory Project Cost covers every age's science and military triumph projects, from Chart the Stars to Launch Rocket and Operation Ivy; Building Cost covers every building, unique buildings included, and leaves wonders at their own cost
+- Settlement Growth: Slow (25% more Food per citizen), Standard, Quick (25% less), Fast (half), Swift, Balanced, Extended, or Custom
 - Roads: Slow (25% more movement cost), Standard, Quick (25% less), Fast (50% less), Swift, Balanced, Extended, or Custom
-- Antiquity, Exploration, and Modern rows for each pacing setting above, used when it is Custom: Age Length picks a total from 90 to 300, the cost rows pick -25%, Standard, +25%, +50%, or +100%, and City Growth and Roads pick +25%, Standard, -25%, or -50%
+- Antiquity, Exploration, and Modern rows for each pacing setting above, used when it is Custom: Age Length picks a total from 90 to 300, the cost rows pick -25%, Standard, +25%, +50%, or +100%, and Settlement Growth and Roads pick +25%, Standard, -25%, or -50%
 - Disaster Frequency: Disabled, Light, Moderate, Catastrophic, or Custom
 - Antiquity, Exploration, and Modern disaster frequency: Disabled, Light, Moderate, or Catastrophic each, applied when Disaster Frequency is set to Custom
 - Settler Movement and Treasure Convoy Movement: Slow, Standard, Quick, or Fast

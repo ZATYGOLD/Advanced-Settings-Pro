@@ -438,11 +438,59 @@
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION" Language="it_IT">
 			<Text>Determina quanta cultura costa ogni civica. Costi più alti allungano l'era; costi più bassi ti fanno correre lungo l'albero.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_NAME" Language="it_IT">
+			<Text>Costo degli edifici</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION" Language="it_IT">
+			<Text>Determina quanta produzione costa ogni edificio, compresi quelli unici. Costi più alti rallentano lo sviluppo dei distretti di ogni insediamento; costi più bassi li fanno crescere in fretta. Le meraviglie mantengono il proprio costo.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_SWIFT" Language="it_IT">
+			<Text>Edifici più economici in ogni era.[nn][BLIST]
+				[LI] Antichità: -25%
+				[LI] Epoca delle esplorazioni: -25%
+				[LI] Epoca moderna: -25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_BALANCED" Language="it_IT">
+			<Text>Edifici più cari all'inizio, a costo standard dall'epoca delle esplorazioni.[nn][BLIST]
+				[LI] Antichità: +25%
+				[LI] Epoca delle esplorazioni: Standard
+				[LI] Epoca moderna: Standard[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_EXTENDED" Language="it_IT">
+			<Text>Gli edifici costano di più in ogni era, molto di più dopo l'Antichità.[nn][BLIST]
+				[LI] Antichità: +25%
+				[LI] Epoca delle esplorazioni: +50%
+				[LI] Epoca moderna: +50%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_LOW" Language="it_IT">
+			<Text>25% di produzione in meno. Granaio: 41 invece di 55. (A velocità standard)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_MEDIUM" Language="it_IT">
+			<Text>25% di produzione in più. Granaio: 69 invece di 55. (A velocità standard)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_HIGH" Language="it_IT">
+			<Text>50% di produzione in più. Granaio: 83 invece di 55. (A velocità standard)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_DOUBLE" Language="it_IT">
+			<Text>100% di produzione in più. Granaio: 110 invece di 55. (A velocità standard)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_MINUS_25" Language="it_IT">
+			<Text>25% Produzione in meno per gli edifici in quest'era.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_25" Language="it_IT">
+			<Text>25% Produzione in più per gli edifici in quest'era.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_50" Language="it_IT">
+			<Text>50% Produzione in più per gli edifici in quest'era.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_100" Language="it_IT">
+			<Text>100% Produzione in più per gli edifici in quest'era.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_NAME" Language="it_IT">
-			<Text>Crescita delle città</Text>
+			<Text>Crescita degli insediamenti</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION" Language="it_IT">
-			<Text>Determina quanto cibo serve a una città per ogni nuovo cittadino. Soglie più basse fanno superare la dimensione 10 molto prima.</Text>
+			<Text>Determina quanto cibo serve a un insediamento per ogni nuovo cittadino. Soglie più basse permettono agli insediamenti di superare la dimensione 10 molto prima.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_NAME" Language="it_IT">
 			<Text>Strade</Text>
@@ -1226,7 +1274,8 @@
 				[LI] Progresso dell'epoca: Standard
 				[LI] Costo delle tecnologie: +25% / +50% / +50%
 				[LI] Costo dei principi civici: +25% / +50% / +50%
-				[LI] Crescita delle città: +25%
+				[LI] Costo degli edifici: +25% / +50% / +50%
+				[LI] Crescita degli insediamenti: +25%
 				[LI] Strade: Standard / Standard / -25%
 				[LI] Costo dei progetti di vittoria: +25%[/BLIST]</Text>
 		</Replace>
@@ -1236,7 +1285,8 @@
 				[LI] Progresso dell'epoca: Standard
 				[LI] Costo delle tecnologie: -25% / -25% / Standard
 				[LI] Costo dei principi civici: -25% / -25% / Standard
-				[LI] Crescita delle città: -25%
+				[LI] Costo degli edifici: -25%
+				[LI] Crescita degli insediamenti: -25%
 				[LI] Strade: -25% / -50% / -50%
 				[LI] Costo dei progetti di vittoria: -25%[/BLIST]</Text>
 		</Replace>
@@ -1246,7 +1296,8 @@
 				[LI] Progresso dell'epoca: Bilanciato
 				[LI] Costo delle tecnologie: +25% / Standard / -25%
 				[LI] Costo dei principi civici: Standard / +25% / +25%
-				[LI] Crescita delle città: -25% / -25% / Standard
+				[LI] Costo degli edifici: +25% / Standard / Standard
+				[LI] Crescita degli insediamenti: -25% / -25% / Standard
 				[LI] Strade: Standard / Standard / -25%
 				[LI] Costo dei progetti di vittoria: Standard / -25% / -25%[/BLIST]</Text>
 		</Replace>
@@ -1256,7 +1307,8 @@
 				[LI] Progresso dell'epoca: Bilanciato
 				[LI] Costo delle tecnologie: +25% / +50% / +100%
 				[LI] Costo dei principi civici: +50% / +50% / +100%
-				[LI] Crescita delle città: +25%
+				[LI] Costo degli edifici: Standard
+				[LI] Crescita degli insediamenti: +25%
 				[LI] Strade: -25% / -25% / -50%
 				[LI] Costo dei progetti di vittoria: Standard / Standard / +25%[/BLIST]</Text>
 		</Replace>

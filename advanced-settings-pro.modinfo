@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="AdvancedSettingsPro" version="00900" xmlns="ModInfo">
+<Mod id="AdvancedSettingsPro" version="00901" xmlns="ModInfo">
 	<Properties>
 		<Name>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME</Name>
 		<Description>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION</Description>
 		<Authors>Zatygold</Authors>
-		<Version>0.9.0</Version>
+		<Version>0.9.01</Version>
 		<Package>Mod</Package>
 		<LastUpdated>2026-09-21</LastUpdated>
 		<ShowInBrowser>1</ShowInBrowser>
@@ -3868,6 +3868,281 @@
 				<Group>Game</Group>
 				<ConfigurationId>CivicCostModernKey</ConfigurationId>
 				<Value>ZG_CIVIC_COST_PLUS_100</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-building-cost-low">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_LOW</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-building-cost-medium">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_MEDIUM</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-building-cost-high">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_HIGH</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-building-cost-double">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_DOUBLE</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-building-cost-antiquity-swift">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_SWIFT</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostAntiquityKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_MINUS_25</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-building-cost-antiquity-minus-25">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostAntiquityKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_MINUS_25</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-building-cost-antiquity-balanced">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_BALANCED</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostAntiquityKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_PLUS_25</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-building-cost-antiquity-extended">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_EXTENDED</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostAntiquityKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_PLUS_25</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-building-cost-antiquity-plus-25">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostAntiquityKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_PLUS_25</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-building-cost-antiquity-plus-50">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostAntiquityKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_PLUS_50</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-building-cost-antiquity-plus-100">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostAntiquityKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_PLUS_100</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-building-cost-exploration-swift">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_SWIFT</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostExplorationKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_MINUS_25</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-building-cost-exploration-minus-25">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostExplorationKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_MINUS_25</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-building-cost-exploration-plus-25">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostExplorationKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_PLUS_25</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-building-cost-exploration-extended">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_EXTENDED</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostExplorationKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_PLUS_50</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-building-cost-exploration-plus-50">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostExplorationKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_PLUS_50</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-building-cost-exploration-plus-100">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostExplorationKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_PLUS_100</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-building-cost-modern-swift">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_SWIFT</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostModernKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_MINUS_25</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-building-cost-modern-minus-25">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostModernKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_MINUS_25</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-building-cost-modern-plus-25">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostModernKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_PLUS_25</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-building-cost-modern-extended">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_EXTENDED</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostModernKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_PLUS_50</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-building-cost-modern-plus-50">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostModernKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_PLUS_50</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="pacing-building-cost-modern-plus-100">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_CUSTOM</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>BuildingCostModernKey</ConfigurationId>
+				<Value>ZG_BUILDING_COST_PLUS_100</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="pacing-growth-slow">
@@ -8116,6 +8391,236 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/pacing/civic-cost-plus-100.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-building-cost-low" scope="game" criteria="pacing-building-cost-low">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/building-cost-minus-25.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-building-cost-medium" scope="game" criteria="pacing-building-cost-medium">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/building-cost-plus-25.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-building-cost-high" scope="game" criteria="pacing-building-cost-high">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/building-cost-plus-50.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-building-cost-double" scope="game" criteria="pacing-building-cost-double">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/building-cost-plus-100.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-building-cost-antiquity-swift" scope="game" criteria="pacing-building-cost-antiquity-swift">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/building-cost-minus-25.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-building-cost-antiquity-minus-25" scope="game" criteria="pacing-building-cost-antiquity-minus-25">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/building-cost-minus-25.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-building-cost-antiquity-balanced" scope="game" criteria="pacing-building-cost-antiquity-balanced">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/building-cost-plus-25.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-building-cost-antiquity-extended" scope="game" criteria="pacing-building-cost-antiquity-extended">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/building-cost-plus-25.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-building-cost-antiquity-plus-25" scope="game" criteria="pacing-building-cost-antiquity-plus-25">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/building-cost-plus-25.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-building-cost-antiquity-plus-50" scope="game" criteria="pacing-building-cost-antiquity-plus-50">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/building-cost-plus-50.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-building-cost-antiquity-plus-100" scope="game" criteria="pacing-building-cost-antiquity-plus-100">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/building-cost-plus-100.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-building-cost-exploration-swift" scope="game" criteria="pacing-building-cost-exploration-swift">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/building-cost-minus-25.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-building-cost-exploration-minus-25" scope="game" criteria="pacing-building-cost-exploration-minus-25">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/building-cost-minus-25.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-building-cost-exploration-plus-25" scope="game" criteria="pacing-building-cost-exploration-plus-25">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/building-cost-plus-25.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-building-cost-exploration-extended" scope="game" criteria="pacing-building-cost-exploration-extended">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/building-cost-plus-50.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-building-cost-exploration-plus-50" scope="game" criteria="pacing-building-cost-exploration-plus-50">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/building-cost-plus-50.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-building-cost-exploration-plus-100" scope="game" criteria="pacing-building-cost-exploration-plus-100">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/building-cost-plus-100.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-building-cost-modern-swift" scope="game" criteria="pacing-building-cost-modern-swift">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/building-cost-minus-25.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-building-cost-modern-minus-25" scope="game" criteria="pacing-building-cost-modern-minus-25">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/building-cost-minus-25.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-building-cost-modern-plus-25" scope="game" criteria="pacing-building-cost-modern-plus-25">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/building-cost-plus-25.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-building-cost-modern-extended" scope="game" criteria="pacing-building-cost-modern-extended">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/building-cost-plus-50.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-building-cost-modern-plus-50" scope="game" criteria="pacing-building-cost-modern-plus-50">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/building-cost-plus-50.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-pacing-building-cost-modern-plus-100" scope="game" criteria="pacing-building-cost-modern-plus-100">
+			<Properties>
+				<LoadOrder>999999999</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/pacing/building-cost-plus-100.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

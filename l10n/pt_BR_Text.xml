@@ -438,11 +438,59 @@
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION" Language="pt_BR">
 			<Text>Define quanta cultura cada civismo custa. Custos altos esticam a era; custos baixos deixam você correr pela árvore.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_NAME" Language="pt_BR">
+			<Text>Custo de edifícios</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION" Language="pt_BR">
+			<Text>Define quanta produção cada edifício custa, incluindo os únicos. Custos altos atrasam o desenvolvimento dos distritos de cada assentamento; custos baixos deixam que cresçam depressa. As maravilhas mantêm o próprio custo.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_SWIFT" Language="pt_BR">
+			<Text>Edifícios mais baratos em todas as eras.[nn][BLIST]
+				[LI] Antiguidade: -25%
+				[LI] Exploração: -25%
+				[LI] Moderna: -25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_BALANCED" Language="pt_BR">
+			<Text>Edifícios mais caros no início, a custo padrão a partir da Exploração.[nn][BLIST]
+				[LI] Antiguidade: +25%
+				[LI] Exploração: Padrão
+				[LI] Moderna: Padrão[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_EXTENDED" Language="pt_BR">
+			<Text>Os edifícios custam mais em todas as eras, muito mais após a Antiguidade.[nn][BLIST]
+				[LI] Antiguidade: +25%
+				[LI] Exploração: +50%
+				[LI] Moderna: +50%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_LOW" Language="pt_BR">
+			<Text>25% menos produção. Celeiro: 41 em vez de 55. (Em velocidade padrão)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_MEDIUM" Language="pt_BR">
+			<Text>25% mais produção. Celeiro: 69 em vez de 55. (Em velocidade padrão)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_HIGH" Language="pt_BR">
+			<Text>50% mais produção. Celeiro: 83 em vez de 55. (Em velocidade padrão)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_DOUBLE" Language="pt_BR">
+			<Text>100% mais produção. Celeiro: 110 em vez de 55. (Em velocidade padrão)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_MINUS_25" Language="pt_BR">
+			<Text>25% menos Produção para edifícios nesta era.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_25" Language="pt_BR">
+			<Text>25% mais Produção para edifícios nesta era.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_50" Language="pt_BR">
+			<Text>50% mais Produção para edifícios nesta era.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_100" Language="pt_BR">
+			<Text>100% mais Produção para edifícios nesta era.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_NAME" Language="pt_BR">
-			<Text>Crescimento das cidades</Text>
+			<Text>Crescimento dos assentamentos</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION" Language="pt_BR">
-			<Text>Define quanta comida uma cidade precisa por novo cidadão. Limites menores deixam as cidades passarem do tamanho 10 muito antes.</Text>
+			<Text>Define quanta comida um assentamento precisa para cada novo cidadão. Limites mais baixos deixam os assentamentos passarem do tamanho 10 muito antes.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_NAME" Language="pt_BR">
 			<Text>Estradas</Text>
@@ -1226,7 +1274,8 @@
 				[LI] Progresso da era: Padrão
 				[LI] Custo de tecnologias: +25% / +50% / +50%
 				[LI] Custo de cívicos: +25% / +50% / +50%
-				[LI] Crescimento das cidades: +25%
+				[LI] Custo de edifícios: +25% / +50% / +50%
+				[LI] Crescimento dos assentamentos: +25%
 				[LI] Estradas: Padrão / Padrão / -25%
 				[LI] Custo de projetos de vitória: +25%[/BLIST]</Text>
 		</Replace>
@@ -1236,7 +1285,8 @@
 				[LI] Progresso da era: Padrão
 				[LI] Custo de tecnologias: -25% / -25% / Padrão
 				[LI] Custo de cívicos: -25% / -25% / Padrão
-				[LI] Crescimento das cidades: -25%
+				[LI] Custo de edifícios: -25%
+				[LI] Crescimento dos assentamentos: -25%
 				[LI] Estradas: -25% / -50% / -50%
 				[LI] Custo de projetos de vitória: -25%[/BLIST]</Text>
 		</Replace>
@@ -1246,7 +1296,8 @@
 				[LI] Progresso da era: Equilibrado
 				[LI] Custo de tecnologias: +25% / Padrão / -25%
 				[LI] Custo de cívicos: Padrão / +25% / +25%
-				[LI] Crescimento das cidades: -25% / -25% / Padrão
+				[LI] Custo de edifícios: +25% / Padrão / Padrão
+				[LI] Crescimento dos assentamentos: -25% / -25% / Padrão
 				[LI] Estradas: Padrão / Padrão / -25%
 				[LI] Custo de projetos de vitória: Padrão / -25% / -25%[/BLIST]</Text>
 		</Replace>
@@ -1256,7 +1307,8 @@
 				[LI] Progresso da era: Equilibrado
 				[LI] Custo de tecnologias: +25% / +50% / +100%
 				[LI] Custo de cívicos: +50% / +50% / +100%
-				[LI] Crescimento das cidades: +25%
+				[LI] Custo de edifícios: Padrão
+				[LI] Crescimento dos assentamentos: +25%
 				[LI] Estradas: -25% / -25% / -50%
 				[LI] Custo de projetos de vitória: Padrão / Padrão / +25%[/BLIST]</Text>
 		</Replace>

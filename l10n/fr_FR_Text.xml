@@ -438,11 +438,59 @@
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION" Language="fr_FR">
 			<Text>Définit le coût en culture de chaque doctrine. Un coût élevé étire l'ère ; un coût faible vous laisse dévaler l'arbre.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_NAME" Language="fr_FR">
+			<Text>Coût des bâtiments</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION" Language="fr_FR">
+			<Text>Définit le coût en production de chaque bâtiment, bâtiments uniques compris. Un coût élevé ralentit le développement des quartiers de chaque colonie ; un coût faible les laisse se bâtir vite. Les merveilles gardent leur propre coût.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_SWIFT" Language="fr_FR">
+			<Text>Bâtiments moins chers à chaque âge.[nn][BLIST]
+				[LI] Antiquité : -25%
+				[LI] Âge de l'exploration : -25%
+				[LI] Âge moderne : -25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_BALANCED" Language="fr_FR">
+			<Text>Bâtiments plus chers au début, au coût standard dès l'âge de l'exploration.[nn][BLIST]
+				[LI] Antiquité : +25%
+				[LI] Âge de l'exploration : Standard
+				[LI] Âge moderne : Standard[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_EXTENDED" Language="fr_FR">
+			<Text>Les bâtiments coûtent plus cher à chaque âge, nettement après l'Antiquité.[nn][BLIST]
+				[LI] Antiquité : +25%
+				[LI] Âge de l'exploration : +50%
+				[LI] Âge moderne : +50%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_LOW" Language="fr_FR">
+			<Text>25% de production en moins. Grenier : 41 au lieu de 55. (À vitesse standard)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_MEDIUM" Language="fr_FR">
+			<Text>25% de production en plus. Grenier : 69 au lieu de 55. (À vitesse standard)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_HIGH" Language="fr_FR">
+			<Text>50% de production en plus. Grenier : 83 au lieu de 55. (À vitesse standard)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_DOUBLE" Language="fr_FR">
+			<Text>100% de production en plus. Grenier : 110 au lieu de 55. (À vitesse standard)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_MINUS_25" Language="fr_FR">
+			<Text>25% de Production en moins pour les bâtiments de cet âge.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_25" Language="fr_FR">
+			<Text>25% de Production en plus pour les bâtiments de cet âge.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_50" Language="fr_FR">
+			<Text>50% de Production en plus pour les bâtiments de cet âge.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_100" Language="fr_FR">
+			<Text>100% de Production en plus pour les bâtiments de cet âge.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_NAME" Language="fr_FR">
-			<Text>Croissance des villes</Text>
+			<Text>Croissance des colonies</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION" Language="fr_FR">
-			<Text>Définit la nourriture qu'une ville exige par nouveau citoyen. Des seuils plus bas permettent de dépasser la taille 10 bien plus tôt.</Text>
+			<Text>Définit la quantité de nourriture dont une colonie a besoin pour chaque nouveau citoyen. Des seuils plus bas permettent aux colonies de dépasser la taille 10 bien plus tôt.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_NAME" Language="fr_FR">
 			<Text>Routes</Text>
@@ -1226,7 +1274,8 @@
 				[LI] Progression des âges : Standard
 				[LI] Coût des technologies : +25% / +50% / +50%
 				[LI] Coût des dogmes : +25% / +50% / +50%
-				[LI] Croissance des villes : +25%
+				[LI] Coût des bâtiments : +25% / +50% / +50%
+				[LI] Croissance des colonies : +25%
 				[LI] Routes : Standard / Standard / -25%
 				[LI] Coût des projets de victoire : +25%[/BLIST]</Text>
 		</Replace>
@@ -1236,7 +1285,8 @@
 				[LI] Progression des âges : Standard
 				[LI] Coût des technologies : -25% / -25% / Standard
 				[LI] Coût des dogmes : -25% / -25% / Standard
-				[LI] Croissance des villes : -25%
+				[LI] Coût des bâtiments : -25%
+				[LI] Croissance des colonies : -25%
 				[LI] Routes : -25% / -50% / -50%
 				[LI] Coût des projets de victoire : -25%[/BLIST]</Text>
 		</Replace>
@@ -1246,7 +1296,8 @@
 				[LI] Progression des âges : Équilibré
 				[LI] Coût des technologies : +25% / Standard / -25%
 				[LI] Coût des dogmes : Standard / +25% / +25%
-				[LI] Croissance des villes : -25% / -25% / Standard
+				[LI] Coût des bâtiments : +25% / Standard / Standard
+				[LI] Croissance des colonies : -25% / -25% / Standard
 				[LI] Routes : Standard / Standard / -25%
 				[LI] Coût des projets de victoire : Standard / -25% / -25%[/BLIST]</Text>
 		</Replace>
@@ -1256,7 +1307,8 @@
 				[LI] Progression des âges : Équilibré
 				[LI] Coût des technologies : +25% / +50% / +100%
 				[LI] Coût des dogmes : +50% / +50% / +100%
-				[LI] Croissance des villes : +25%
+				[LI] Coût des bâtiments : Standard
+				[LI] Croissance des colonies : +25%
 				[LI] Routes : -25% / -25% / -50%
 				[LI] Coût des projets de victoire : Standard / Standard / +25%[/BLIST]</Text>
 		</Replace>

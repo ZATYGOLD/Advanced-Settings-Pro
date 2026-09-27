@@ -202,14 +202,36 @@
 		<Row Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS"><Text>Pace Settings</Text></Row>
 		<Row Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM"><Text>Each age uses its own row in the age groups below.</Text></Row>
 		<Row Tag="LOC_ZG_PACING_AGE_DESCRIPTION"><Text>Sets this age's value.[n]Applies only when the matching Pace Settings row is set to Custom. Pace Set presets fill these rows; changing one switches Pace Set to Custom.</Text></Row>
-		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME"><Text>Age Progress Rate</Text></Row>
+		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME"><Text>Age Progression</Text></Row>
 		<Row Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION"><Text>Sets how quickly the age meter fills. Each Legacy Path milestone, and each future tech or civic, adds points to it; Age Length fixes the total that ends the age.[n]Milestone figures are the first, second, and third of each age.</Text></Row>
 		<Row Tag="LOC_ZG_TECHNOLOGY_COST_NAME"><Text>Technology Cost</Text></Row>
 		<Row Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION"><Text>Sets how much Science each technology costs. Higher costs stretch an age out; lower costs let you race down the tree.</Text></Row>
 		<Row Tag="LOC_ZG_CIVIC_COST_NAME"><Text>Civic Cost</Text></Row>
 		<Row Tag="LOC_ZG_CIVIC_COST_DESCRIPTION"><Text>Sets how much Culture each civic costs. Higher costs stretch an age out; lower costs let you race down the tree.</Text></Row>
-		<Row Tag="LOC_ZG_CITY_GROWTH_NAME"><Text>City Growth</Text></Row>
-		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION"><Text>Sets how much Food a city needs for each new citizen. Lower thresholds let cities climb past size 10 far sooner.</Text></Row>
+		<Row Tag="LOC_ZG_BUILDING_COST_NAME"><Text>Building Cost</Text></Row>
+		<Row Tag="LOC_ZG_BUILDING_COST_DESCRIPTION"><Text>Sets how much Production each building costs, unique buildings included. Higher costs slow how quickly settlements fill out their districts; lower costs let them build up fast. Wonders keep their own costs.</Text></Row>
+		<Row Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_SWIFT"><Text>Cheaper buildings in every age.[nn][BLIST]
+				[LI] Antiquity: -25%
+				[LI] Exploration: -25%
+				[LI] Modern: -25%[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_BALANCED"><Text>Dearer buildings early, standard once the Exploration Age arrives.[nn][BLIST]
+				[LI] Antiquity: +25%
+				[LI] Exploration: Standard
+				[LI] Modern: Standard[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_EXTENDED"><Text>Buildings cost more in every age, steeply so after Antiquity.[nn][BLIST]
+				[LI] Antiquity: +25%
+				[LI] Exploration: +50%
+				[LI] Modern: +50%[/BLIST]</Text></Row>
+		<Row Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_LOW"><Text>25% less Production. Granary: 41 instead of 55. (On Standard Speed)</Text></Row>
+		<Row Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_MEDIUM"><Text>25% more Production. Granary: 69 instead of 55. (On Standard Speed)</Text></Row>
+		<Row Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_HIGH"><Text>50% more Production. Granary: 83 instead of 55. (On Standard Speed)</Text></Row>
+		<Row Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_DOUBLE"><Text>100% more Production. Granary: 110 instead of 55. (On Standard Speed)</Text></Row>
+		<Row Tag="LOC_ZG_BUILDING_COST_AGE_DESC_MINUS_25"><Text>25% less Production for buildings in this age.</Text></Row>
+		<Row Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_25"><Text>25% more Production for buildings in this age.</Text></Row>
+		<Row Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_50"><Text>50% more Production for buildings in this age.</Text></Row>
+		<Row Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_100"><Text>100% more Production for buildings in this age.</Text></Row>
+		<Row Tag="LOC_ZG_CITY_GROWTH_NAME"><Text>Settlement Growth</Text></Row>
+		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION"><Text>Sets how much Food a settlement needs for each new citizen. Lower thresholds let settlements climb past size 10 far sooner.</Text></Row>
 		<Row Tag="LOC_ZG_ROADS_NAME"><Text>Roads</Text></Row>
 		<Row Tag="LOC_ZG_ROADS_DESCRIPTION"><Text>Sets how much Movement it costs to travel along roads and railroads. Cheaper roads let armies cross your territory in far fewer turns.</Text></Row>
 		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_NAME"><Text>Victory Project Cost</Text></Row>
@@ -941,34 +963,38 @@
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD"><Text>Every pacing setting left at its standard value.</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_EXTENDED"><Text>Very long ages, with costs raised to fill them.[nn][BLIST]
 				[LI] Age Length: 240 / 260 / 280
-				[LI] Age Progress Rate: Standard
+				[LI] Age Progression: Standard
 				[LI] Technology Cost: +25% / +50% / +50%
 				[LI] Civic Cost: +25% / +50% / +50%
-				[LI] City Growth: +25%
+				[LI] Building Cost: +25% / +50% / +50%
+				[LI] Settlement Growth: +25%
 				[LI] Roads: Standard / Standard / -25%
 				[LI] Victory Project Cost: +25%[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT"><Text>Short ages, with costs scaled down to match.[nn][BLIST]
 				[LI] Age Length: 90 / 100 / 110
-				[LI] Age Progress Rate: Standard
+				[LI] Age Progression: Standard
 				[LI] Technology Cost: -25% / -25% / Standard
 				[LI] Civic Cost: -25% / -25% / Standard
-				[LI] City Growth: -25%
+				[LI] Building Cost: -25%
+				[LI] Settlement Growth: -25%
 				[LI] Roads: -25% / -50% / -50%
 				[LI] Victory Project Cost: -25%[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED"><Text>Longer ages, with research and growth tuned to fill them.[nn][BLIST]
 				[LI] Age Length: 150 / 170 / 200
-				[LI] Age Progress Rate: Balanced
+				[LI] Age Progression: Balanced
 				[LI] Technology Cost: +25% / Standard / -25%
 				[LI] Civic Cost: Standard / +25% / +25%
-				[LI] City Growth: -25% / -25% / Standard
+				[LI] Building Cost: +25% / Standard / Standard
+				[LI] Settlement Growth: -25% / -25% / Standard
 				[LI] Roads: Standard / Standard / -25%
 				[LI] Victory Project Cost: Standard / -25% / -25%[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER"><Text>Tuned for a session played in one sitting.[nn][BLIST]
 				[LI] Age Length: 140 / 160 / 180
-				[LI] Age Progress Rate: Balanced
+				[LI] Age Progression: Balanced
 				[LI] Technology Cost: +25% / +50% / +100%
 				[LI] Civic Cost: +50% / +50% / +100%
-				[LI] City Growth: +25%
+				[LI] Building Cost: Standard
+				[LI] Settlement Growth: +25%
 				[LI] Roads: -25% / -25% / -50%
 				[LI] Victory Project Cost: Standard / Standard / +25%[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM"><Text>The Pace Settings on the Pace tab no longer match a preset.</Text></Row>

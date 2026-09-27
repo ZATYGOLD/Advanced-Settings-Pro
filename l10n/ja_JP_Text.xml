@@ -421,7 +421,7 @@
 			<Text>この時代の値を設定します。[n]「ペース設定」の対応する行が「カスタム」のときのみ適用されます。ペースセットのプリセットがこれらの行を埋め、いずれかを変更するとペースセットは「カスタム」になります。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="ja_JP">
-			<Text>時代の進行速度</Text>
+			<Text>時代の進行</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION" Language="ja_JP">
 			<Text>時代ゲージが満ちる速さを設定します。レガシーパスの各マイルストーンと、未来の技術・社会制度がポイントを加える。時代を終わらせる合計値は「時代の長さ」で決まる。[n]マイルストーンの数値は各時代の1番目、2番目、3番目。</Text>
@@ -438,11 +438,59 @@
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION" Language="ja_JP">
 			<Text>各社会制度に必要な文化力を設定します。コストが高いほど時代が長くなり、低いほどツリーを一気に進められます。</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_NAME" Language="ja_JP">
+			<Text>建造物のコスト</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION" Language="ja_JP">
+			<Text>各建造物（固有の建造物を含む）に必要な生産力を設定します。コストが高いほど入植地の地区の発展が遅くなり、低いほど素早く整います。遺産は本来のコストのままです。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_SWIFT" Language="ja_JP">
+			<Text>どの時代も建造物が安くなる。[nn][BLIST]
+				[LI] 古代：-25%
+				[LI] 探検の時代：-25%
+				[LI] 近代：-25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_BALANCED" Language="ja_JP">
+			<Text>序盤は建造物が高く、探検の時代からは標準に戻る。[nn][BLIST]
+				[LI] 古代：+25%
+				[LI] 探検の時代：標準
+				[LI] 近代：標準[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_EXTENDED" Language="ja_JP">
+			<Text>どの時代も建造物のコストが増え、古代以降は大幅に増える。[nn][BLIST]
+				[LI] 古代：+25%
+				[LI] 探検の時代：+50%
+				[LI] 近代：+50%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_LOW" Language="ja_JP">
+			<Text>生産力が25%減少。穀物庫：55ではなく41（標準速度の場合）。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_MEDIUM" Language="ja_JP">
+			<Text>生産力が25%増加。穀物庫：55ではなく69（標準速度の場合）。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_HIGH" Language="ja_JP">
+			<Text>生産力が50%増加。穀物庫：55ではなく83（標準速度の場合）。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_DOUBLE" Language="ja_JP">
+			<Text>生産力が100%増加。穀物庫：55ではなく110（標準速度の場合）。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_MINUS_25" Language="ja_JP">
+			<Text>この時代の建造物の生産力が25%減少。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_25" Language="ja_JP">
+			<Text>この時代の建造物の生産力が25%増加。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_50" Language="ja_JP">
+			<Text>この時代の建造物の生産力が50%増加。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_100" Language="ja_JP">
+			<Text>この時代の建造物の生産力が100%増加。</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_NAME" Language="ja_JP">
-			<Text>都市の成長</Text>
+			<Text>入植地の成長</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION" Language="ja_JP">
-			<Text>都市が市民1人増えるのに必要な食料を設定します。しきい値が低いほど、人口10をはるかに早く超えられます。</Text>
+			<Text>入植地が新しい市民を得るのに必要な食料を設定します。しきい値が低いほど、入植地はずっと早く規模10を超えます。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_NAME" Language="ja_JP">
 			<Text>道路</Text>
@@ -1223,40 +1271,44 @@
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_EXTENDED" Language="ja_JP">
 			<Text>非常に長い時代。費用を上げて時代を埋める。[nn][BLIST]
 				[LI] 時代の長さ：240 / 260 / 280
-				[LI] 時代の進行速度：標準
+				[LI] 時代の進行：標準
 				[LI] 技術コスト：+25% / +50% / +50%
 				[LI] 社会制度コスト：+25% / +50% / +50%
-				[LI] 都市の成長：+25%
+				[LI] 建造物のコスト：+25% / +50% / +50%
+				[LI] 入植地の成長：+25%
 				[LI] 道路：標準 / 標準 / -25%
 				[LI] 勝利プロジェクトのコスト：+25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT" Language="ja_JP">
 			<Text>短い時代。費用もそれに合わせて下がる。[nn][BLIST]
 				[LI] 時代の長さ：90 / 100 / 110
-				[LI] 時代の進行速度：標準
+				[LI] 時代の進行：標準
 				[LI] 技術コスト：-25% / -25% / 標準
 				[LI] 社会制度コスト：-25% / -25% / 標準
-				[LI] 都市の成長：-25%
+				[LI] 建造物のコスト：-25%
+				[LI] 入植地の成長：-25%
 				[LI] 道路：-25% / -50% / -50%
 				[LI] 勝利プロジェクトのコスト：-25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="ja_JP">
 			<Text>長めの時代。研究と成長をそれに合わせて調整。[nn][BLIST]
 				[LI] 時代の長さ：150 / 170 / 200
-				[LI] 時代の進行速度：バランス
+				[LI] 時代の進行：バランス
 				[LI] 技術コスト：+25% / 標準 / -25%
 				[LI] 社会制度コスト：標準 / +25% / +25%
-				[LI] 都市の成長：-25% / -25% / 標準
+				[LI] 建造物のコスト：+25% / 標準 / 標準
+				[LI] 入植地の成長：-25% / -25% / 標準
 				[LI] 道路：標準 / 標準 / -25%
 				[LI] 勝利プロジェクトのコスト：標準 / -25% / -25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="ja_JP">
 			<Text>1回の対戦で遊びきる想定の調整。[nn][BLIST]
 				[LI] 時代の長さ：140 / 160 / 180
-				[LI] 時代の進行速度：バランス
+				[LI] 時代の進行：バランス
 				[LI] 技術コスト：+25% / +50% / +100%
 				[LI] 社会制度コスト：+50% / +50% / +100%
-				[LI] 都市の成長：+25%
+				[LI] 建造物のコスト：標準
+				[LI] 入植地の成長：+25%
 				[LI] 道路：-25% / -25% / -50%
 				[LI] 勝利プロジェクトのコスト：標準 / 標準 / +25%[/BLIST]</Text>
 		</Replace>

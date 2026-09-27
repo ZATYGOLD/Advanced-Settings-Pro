@@ -438,11 +438,59 @@
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION" Language="ru_RU">
 			<Text>Определяет, сколько культуры стоит каждый принцип. Высокая стоимость растягивает эпоху, низкая позволяет мчаться по древу.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_NAME" Language="ru_RU">
+			<Text>Стоимость зданий</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION" Language="ru_RU">
+			<Text>Определяет, сколько производства стоит каждое здание, включая уникальные. Высокая стоимость замедляет застройку районов поселений, низкая позволяет быстро их заполнить. Чудеса сохраняют собственную стоимость.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_SWIFT" Language="ru_RU">
+			<Text>Здания дешевле в каждой эпохе.[nn][BLIST]
+				[LI] Античность: -25%
+				[LI] Исследования: -25%
+				[LI] Современность: -25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_BALANCED" Language="ru_RU">
+			<Text>Здания дороже в начале, с эпохи Исследований — по стандартной цене.[nn][BLIST]
+				[LI] Античность: +25%
+				[LI] Исследования: Стандарт
+				[LI] Современность: Стандарт[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_EXTENDED" Language="ru_RU">
+			<Text>Здания дороже в каждой эпохе, особенно после Античности.[nn][BLIST]
+				[LI] Античность: +25%
+				[LI] Исследования: +50%
+				[LI] Современность: +50%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_LOW" Language="ru_RU">
+			<Text>На 25% меньше производства. Амбар: 41 вместо 55. (При стандартной скорости)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_MEDIUM" Language="ru_RU">
+			<Text>На 25% больше производства. Амбар: 69 вместо 55. (При стандартной скорости)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_HIGH" Language="ru_RU">
+			<Text>На 50% больше производства. Амбар: 83 вместо 55. (При стандартной скорости)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_DOUBLE" Language="ru_RU">
+			<Text>На 100% больше производства. Амбар: 110 вместо 55. (При стандартной скорости)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_MINUS_25" Language="ru_RU">
+			<Text>На 25% меньше производства для зданий в эту эпоху.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_25" Language="ru_RU">
+			<Text>На 25% больше производства для зданий в эту эпоху.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_50" Language="ru_RU">
+			<Text>На 50% больше производства для зданий в эту эпоху.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_100" Language="ru_RU">
+			<Text>На 100% больше производства для зданий в эту эпоху.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_NAME" Language="ru_RU">
-			<Text>Рост городов</Text>
+			<Text>Рост поселений</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION" Language="ru_RU">
-			<Text>Определяет, сколько еды нужно городу на каждого нового жителя. Низкие пороги позволяют перешагнуть размер 10 намного раньше.</Text>
+			<Text>Определяет, сколько пищи нужно поселению для каждого нового жителя. Более низкие пороги позволяют поселениям гораздо раньше превысить размер 10.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_NAME" Language="ru_RU">
 			<Text>Дороги</Text>
@@ -1226,7 +1274,8 @@
 				[LI] Прогресс эпохи: Стандарт
 				[LI] Стоимость технологий: +25% / +50% / +50%
 				[LI] Стоимость общественных институтов: +25% / +50% / +50%
-				[LI] Рост городов: +25%
+				[LI] Стоимость зданий: +25% / +50% / +50%
+				[LI] Рост поселений: +25%
 				[LI] Дороги: Стандарт / Стандарт / -25%
 				[LI] Стоимость победных проектов: +25%[/BLIST]</Text>
 		</Replace>
@@ -1236,7 +1285,8 @@
 				[LI] Прогресс эпохи: Стандарт
 				[LI] Стоимость технологий: -25% / -25% / Стандарт
 				[LI] Стоимость общественных институтов: -25% / -25% / Стандарт
-				[LI] Рост городов: -25%
+				[LI] Стоимость зданий: -25%
+				[LI] Рост поселений: -25%
 				[LI] Дороги: -25% / -50% / -50%
 				[LI] Стоимость победных проектов: -25%[/BLIST]</Text>
 		</Replace>
@@ -1246,7 +1296,8 @@
 				[LI] Прогресс эпохи: Сбалансированный
 				[LI] Стоимость технологий: +25% / Стандарт / -25%
 				[LI] Стоимость общественных институтов: Стандарт / +25% / +25%
-				[LI] Рост городов: -25% / -25% / Стандарт
+				[LI] Стоимость зданий: +25% / Стандарт / Стандарт
+				[LI] Рост поселений: -25% / -25% / Стандарт
 				[LI] Дороги: Стандарт / Стандарт / -25%
 				[LI] Стоимость победных проектов: Стандарт / -25% / -25%[/BLIST]</Text>
 		</Replace>
@@ -1256,7 +1307,8 @@
 				[LI] Прогресс эпохи: Сбалансированный
 				[LI] Стоимость технологий: +25% / +50% / +100%
 				[LI] Стоимость общественных институтов: +50% / +50% / +100%
-				[LI] Рост городов: +25%
+				[LI] Стоимость зданий: Стандарт
+				[LI] Рост поселений: +25%
 				[LI] Дороги: -25% / -25% / -50%
 				[LI] Стоимость победных проектов: Стандарт / Стандарт / +25%[/BLIST]</Text>
 		</Replace>

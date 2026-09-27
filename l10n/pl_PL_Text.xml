@@ -438,11 +438,59 @@
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION" Language="pl_PL">
 			<Text>Określa, ile kultury kosztuje każda ustrojowa. Wyższy koszt wydłuża erę, niższy pozwala pędzić przez drzewko.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_NAME" Language="pl_PL">
+			<Text>Koszt budynków</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION" Language="pl_PL">
+			<Text>Określa, ile produkcji kosztuje każdy budynek, w tym unikalne. Wyższy koszt spowalnia rozbudowę dzielnic każdej osady, niższy pozwala szybko je zapełnić. Cuda zachowują własny koszt.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_SWIFT" Language="pl_PL">
+			<Text>Tańsze budynki w każdej epoce.[nn][BLIST]
+				[LI] Starożytność: -25%
+				[LI] Epoka odkryć: -25%
+				[LI] Epoka nowożytna: -25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_BALANCED" Language="pl_PL">
+			<Text>Droższe budynki na początku, od epoki odkryć standardowe.[nn][BLIST]
+				[LI] Starożytność: +25%
+				[LI] Epoka odkryć: Standardowe
+				[LI] Epoka nowożytna: Standardowe[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_EXTENDED" Language="pl_PL">
+			<Text>Budynki kosztują więcej w każdej epoce, znacznie po Starożytności.[nn][BLIST]
+				[LI] Starożytność: +25%
+				[LI] Epoka odkryć: +50%
+				[LI] Epoka nowożytna: +50%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_LOW" Language="pl_PL">
+			<Text>25% mniej produkcji. Spichlerz: 41 zamiast 55. (Przy standardowym tempie)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_MEDIUM" Language="pl_PL">
+			<Text>25% więcej produkcji. Spichlerz: 69 zamiast 55. (Przy standardowym tempie)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_HIGH" Language="pl_PL">
+			<Text>50% więcej produkcji. Spichlerz: 83 zamiast 55. (Przy standardowym tempie)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_DOUBLE" Language="pl_PL">
+			<Text>100% więcej produkcji. Spichlerz: 110 zamiast 55. (Przy standardowym tempie)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_MINUS_25" Language="pl_PL">
+			<Text>25% mniej produkcji na budynki w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_25" Language="pl_PL">
+			<Text>25% więcej produkcji na budynki w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_50" Language="pl_PL">
+			<Text>50% więcej produkcji na budynki w tej epoce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_100" Language="pl_PL">
+			<Text>100% więcej produkcji na budynki w tej epoce.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_NAME" Language="pl_PL">
-			<Text>Wzrost miast</Text>
+			<Text>Wzrost osad</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION" Language="pl_PL">
-			<Text>Określa, ile żywności miasto potrzebuje na każdego nowego obywatela. Niższe progi pozwalają przekroczyć rozmiar 10 znacznie wcześniej.</Text>
+			<Text>Określa, ile żywności potrzebuje osada na każdego nowego mieszkańca. Niższe progi pozwalają osadom znacznie wcześniej przekroczyć rozmiar 10.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_NAME" Language="pl_PL">
 			<Text>Drogi</Text>
@@ -1226,7 +1274,8 @@
 				[LI] Postęp epoki: Standardowe
 				[LI] Koszt technologii: +25% / +50% / +50%
 				[LI] Koszt idei: +25% / +50% / +50%
-				[LI] Wzrost miast: +25%
+				[LI] Koszt budynków: +25% / +50% / +50%
+				[LI] Wzrost osad: +25%
 				[LI] Drogi: Standardowe / Standardowe / -25%
 				[LI] Koszt projektów zwycięstwa: +25%[/BLIST]</Text>
 		</Replace>
@@ -1236,7 +1285,8 @@
 				[LI] Postęp epoki: Standardowe
 				[LI] Koszt technologii: -25% / -25% / Standardowe
 				[LI] Koszt idei: -25% / -25% / Standardowe
-				[LI] Wzrost miast: -25%
+				[LI] Koszt budynków: -25%
+				[LI] Wzrost osad: -25%
 				[LI] Drogi: -25% / -50% / -50%
 				[LI] Koszt projektów zwycięstwa: -25%[/BLIST]</Text>
 		</Replace>
@@ -1246,7 +1296,8 @@
 				[LI] Postęp epoki: Zrównoważone
 				[LI] Koszt technologii: +25% / Standardowe / -25%
 				[LI] Koszt idei: Standardowe / +25% / +25%
-				[LI] Wzrost miast: -25% / -25% / Standardowe
+				[LI] Koszt budynków: +25% / Standardowe / Standardowe
+				[LI] Wzrost osad: -25% / -25% / Standardowe
 				[LI] Drogi: Standardowe / Standardowe / -25%
 				[LI] Koszt projektów zwycięstwa: Standardowe / -25% / -25%[/BLIST]</Text>
 		</Replace>
@@ -1256,7 +1307,8 @@
 				[LI] Postęp epoki: Zrównoważone
 				[LI] Koszt technologii: +25% / +50% / +100%
 				[LI] Koszt idei: +50% / +50% / +100%
-				[LI] Wzrost miast: +25%
+				[LI] Koszt budynków: Standardowe
+				[LI] Wzrost osad: +25%
 				[LI] Drogi: -25% / -25% / -50%
 				[LI] Koszt projektów zwycięstwa: Standardowe / Standardowe / +25%[/BLIST]</Text>
 		</Replace>

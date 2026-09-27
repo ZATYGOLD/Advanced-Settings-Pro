@@ -92,6 +92,13 @@ const CIVIC_AGE_NAMES = {
 	"LOC_ZG_SWIFT_NAME": ["LOC_ZG_PCT_MINUS_25", "LOC_ZG_PCT_MINUS_25", "LOC_ADVANCED_OPTIONS_STANDARD"],
 	"LOC_ZG_EXTENDED_NAME": ["LOC_ZG_PCT_PLUS_25", "LOC_ZG_PCT_PLUS_50", "LOC_ZG_PCT_PLUS_50"],
 };
+const BUILDING_AGE_NAMES = {
+	...COST_AGE_NAMES,
+	// Dearer while settlements lay down their first districts, standard after.
+	"LOC_ZG_BALANCED_NAME": ["LOC_ZG_PCT_PLUS_25", "LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ADVANCED_OPTIONS_STANDARD"],
+	"LOC_ZG_SWIFT_NAME": ["LOC_ZG_PCT_MINUS_25", "LOC_ZG_PCT_MINUS_25", "LOC_ZG_PCT_MINUS_25"],
+	"LOC_ZG_EXTENDED_NAME": ["LOC_ZG_PCT_PLUS_25", "LOC_ZG_PCT_PLUS_50", "LOC_ZG_PCT_PLUS_50"],
+};
 const VICTORY_AGE_NAMES = {
 	...COST_AGE_NAMES,
 	"LOC_ZG_BALANCED_NAME": ["LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ZG_PCT_MINUS_25", "LOC_ZG_PCT_MINUS_25"],
@@ -130,6 +137,7 @@ const TIER_AGE_SYNCS = [
 	{ tierId: "ZG_AgeProgressRate", ageIds: ["ZG_AgeProgressRateAntiquity", "ZG_AgeProgressRateExploration", "ZG_AgeProgressRateModern"], lastTier: null },
 	{ tierId: "ZG_TechnologyCost", ageIds: ["ZG_TechnologyCostAntiquity", "ZG_TechnologyCostExploration", "ZG_TechnologyCostModern"], ageNames: TECHNOLOGY_AGE_NAMES, lastTier: null },
 	{ tierId: "ZG_CivicCost", ageIds: ["ZG_CivicCostAntiquity", "ZG_CivicCostExploration", "ZG_CivicCostModern"], ageNames: CIVIC_AGE_NAMES, lastTier: null },
+	{ tierId: "ZG_BuildingCost", ageIds: ["ZG_BuildingCostAntiquity", "ZG_BuildingCostExploration", "ZG_BuildingCostModern"], ageNames: BUILDING_AGE_NAMES, lastTier: null },
 	{ tierId: "ZG_CityGrowth", ageIds: ["ZG_CityGrowthAntiquity", "ZG_CityGrowthExploration", "ZG_CityGrowthModern"], ageNames: CITY_GROWTH_AGE_NAMES, lastTier: null },
 	{ tierId: "ZG_Roads", ageIds: ["ZG_RoadsAntiquity", "ZG_RoadsExploration", "ZG_RoadsModern"], ageNames: ROADS_AGE_NAMES, lastTier: null },
 	{ tierId: "ZG_VictoryProjectCost", ageIds: ["ZG_VictoryProjectCostAntiquity", "ZG_VictoryProjectCostExploration", "ZG_VictoryProjectCostModern"], ageNames: VICTORY_AGE_NAMES, lastTier: null },
@@ -145,6 +153,7 @@ const PACE_STANDARD = {
 	ZG_AgeProgressRate: "LOC_ADVANCED_OPTIONS_STANDARD",
 	ZG_TechnologyCost: "LOC_ADVANCED_OPTIONS_STANDARD",
 	ZG_CivicCost: "LOC_ADVANCED_OPTIONS_STANDARD",
+	ZG_BuildingCost: "LOC_ADVANCED_OPTIONS_STANDARD",
 	ZG_CityGrowth: "LOC_ADVANCED_OPTIONS_STANDARD",
 	ZG_Roads: "LOC_ADVANCED_OPTIONS_STANDARD",
 	ZG_VictoryProjectCost: "LOC_ADVANCED_OPTIONS_STANDARD",
@@ -157,6 +166,7 @@ const PACE_PRESETS = {
 		[AGE_LENGTH_PARAM_ID]: "LOC_ZG_SWIFT_NAME",
 		ZG_TechnologyCost: "LOC_ZG_SWIFT_NAME",
 		ZG_CivicCost: "LOC_ZG_SWIFT_NAME",
+		ZG_BuildingCost: "LOC_ZG_SWIFT_NAME",
 		ZG_CityGrowth: "LOC_ZG_SWIFT_NAME",
 		ZG_Roads: "LOC_ZG_SWIFT_NAME",
 		ZG_VictoryProjectCost: "LOC_ZG_SWIFT_NAME",
@@ -172,6 +182,7 @@ const PACE_PRESETS = {
 		ZG_AgeProgressRate: "LOC_ZG_BALANCED_NAME",
 		ZG_TechnologyCost: "LOC_ZG_BALANCED_NAME",
 		ZG_CivicCost: "LOC_ZG_BALANCED_NAME",
+		ZG_BuildingCost: "LOC_ZG_BALANCED_NAME",
 		ZG_CityGrowth: "LOC_ZG_BALANCED_NAME",
 		ZG_Roads: "LOC_ZG_BALANCED_NAME",
 		ZG_VictoryProjectCost: "LOC_ZG_BALANCED_NAME",
@@ -183,6 +194,7 @@ const PACE_PRESETS = {
 		[AGE_LENGTH_PARAM_ID]: "LOC_ZG_EXTENDED_NAME",
 		ZG_TechnologyCost: "LOC_ZG_EXTENDED_NAME",
 		ZG_CivicCost: "LOC_ZG_EXTENDED_NAME",
+		ZG_BuildingCost: "LOC_ZG_EXTENDED_NAME",
 		ZG_CityGrowth: "LOC_ZG_EXTENDED_NAME",
 		ZG_Roads: "LOC_ZG_EXTENDED_NAME",
 		ZG_VictoryProjectCost: "LOC_ZG_EXTENDED_NAME",

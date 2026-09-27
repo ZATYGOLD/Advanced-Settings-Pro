@@ -421,7 +421,7 @@
 			<Text>設定此時代的值。[n]僅當「節奏設定」中對應的行為自訂時生效。節奏套組預設會填寫這些行；修改任一行會將節奏套組切換為自訂。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_NAME" Language="zh_Hant_HK">
-			<Text>時代進度速度</Text>
+			<Text>時代進度</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>設定時代進度條填滿的速度。傳承路線的每個里程碑，以及每項未來科技或市政，都會為其增加點數；結束時代所需的總量由時代長度決定。[n]里程碑數字依次為該時代的第一、第二、第三個。</Text>
@@ -438,11 +438,59 @@
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>設定每項社會制度所需的文化值。費用越高，時代越漫長；費用越低，越能一路衝下市政樹。</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_NAME" Language="zh_Hant_HK">
+			<Text>建築花費</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>設定每座建築（包括特色建築）所需的生產力。費用越高，聚居地的區域發展越慢；費用越低，越能迅速建成。奇觀保持其原有花費。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_SWIFT" Language="zh_Hant_HK">
+			<Text>各時代建築都更便宜。[nn][BLIST]
+				[LI] 遠古：-25%
+				[LI] 探索：-25%
+				[LI] 近代：-25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_BALANCED" Language="zh_Hant_HK">
+			<Text>前期建築更貴，進入探索時代後恢復標準。[nn][BLIST]
+				[LI] 遠古：+25%
+				[LI] 探索：標準
+				[LI] 近代：標準[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_EXTENDED" Language="zh_Hant_HK">
+			<Text>各時代建築花費都更高，遠古之後漲幅更大。[nn][BLIST]
+				[LI] 遠古：+25%
+				[LI] 探索：+50%
+				[LI] 近代：+50%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_LOW" Language="zh_Hant_HK">
+			<Text>生產力減少25%。糧倉：41，而非55（標準速度下）。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_MEDIUM" Language="zh_Hant_HK">
+			<Text>生產力增加25%。糧倉：69，而非55（標準速度下）。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_HIGH" Language="zh_Hant_HK">
+			<Text>生產力增加50%。糧倉：83，而非55（標準速度下）。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_DOUBLE" Language="zh_Hant_HK">
+			<Text>生產力增加100%。糧倉：110，而非55（標準速度下）。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_MINUS_25" Language="zh_Hant_HK">
+			<Text>本時代建築生產力減少25%。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_25" Language="zh_Hant_HK">
+			<Text>本時代建築生產力增加25%。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_50" Language="zh_Hant_HK">
+			<Text>本時代建築生產力增加50%。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_100" Language="zh_Hant_HK">
+			<Text>本時代建築生產力增加100%。</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_NAME" Language="zh_Hant_HK">
-			<Text>城市成長</Text>
+			<Text>聚居地成長</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>設定城市每增加一名市民所需的食物。門檻越低，城市越早突破10人口。</Text>
+			<Text>設定聚居地每增加一名公民所需的食物。門檻越低，聚居地越早突破10人口。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_NAME" Language="zh_Hant_HK">
 			<Text>道路</Text>
@@ -1223,40 +1271,44 @@
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_EXTENDED" Language="zh_Hant_HK">
 			<Text>非常長的時代，透過提高費用來填滿。[nn][BLIST]
 				[LI] 時代長度：240 / 260 / 280
-				[LI] 時代進度速度：標準
+				[LI] 時代進度：標準
 				[LI] 科技花費：+25% / +50% / +50%
 				[LI] 市政花費：+25% / +50% / +50%
-				[LI] 城市成長：+25%
+				[LI] 建築花費：+25% / +50% / +50%
+				[LI] 聚居地成長：+25%
 				[LI] 道路：標準 / 標準 / -25%
 				[LI] 勝利專案花費：+25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT" Language="zh_Hant_HK">
 			<Text>較短的時代，費用也相應降低。[nn][BLIST]
 				[LI] 時代長度：90 / 100 / 110
-				[LI] 時代進度速度：標準
+				[LI] 時代進度：標準
 				[LI] 科技花費：-25% / -25% / 標準
 				[LI] 市政花費：-25% / -25% / 標準
-				[LI] 城市成長：-25%
+				[LI] 建築花費：-25%
+				[LI] 聚居地成長：-25%
 				[LI] 道路：-25% / -50% / -50%
 				[LI] 勝利專案花費：-25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="zh_Hant_HK">
 			<Text>更長的時代，研究與成長經過調整以填滿時代。[nn][BLIST]
 				[LI] 時代長度：150 / 170 / 200
-				[LI] 時代進度速度：平衡
+				[LI] 時代進度：平衡
 				[LI] 科技花費：+25% / 標準 / -25%
 				[LI] 市政花費：標準 / +25% / +25%
-				[LI] 城市成長：-25% / -25% / 標準
+				[LI] 建築花費：+25% / 標準 / 標準
+				[LI] 聚居地成長：-25% / -25% / 標準
 				[LI] 道路：標準 / 標準 / -25%
 				[LI] 勝利專案花費：標準 / -25% / -25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="zh_Hant_HK">
 			<Text>針對一次坐下即可打完的對局調整。[nn][BLIST]
 				[LI] 時代長度：140 / 160 / 180
-				[LI] 時代進度速度：平衡
+				[LI] 時代進度：平衡
 				[LI] 科技花費：+25% / +50% / +100%
 				[LI] 市政花費：+50% / +50% / +100%
-				[LI] 城市成長：+25%
+				[LI] 建築花費：標準
+				[LI] 聚居地成長：+25%
 				[LI] 道路：-25% / -25% / -50%
 				[LI] 勝利專案花費：標準 / 標準 / +25%[/BLIST]</Text>
 		</Replace>

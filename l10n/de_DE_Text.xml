@@ -438,11 +438,59 @@
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION" Language="de_DE">
 			<Text>Legt fest, wie viel Kultur jede Doktrin kostet. Höhere Kosten dehnen ein Zeitalter, niedrigere lassen Sie durch den Baum eilen.</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_NAME" Language="de_DE">
+			<Text>Gebäudekosten</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION" Language="de_DE">
+			<Text>Legt fest, wie viel Produktion jedes Gebäude kostet, einzigartige Gebäude eingeschlossen. Höhere Kosten verlangsamen den Ausbau der Bezirke einer Siedlung, niedrigere lassen sie schnell wachsen. Weltwunder behalten ihre eigenen Kosten.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_SWIFT" Language="de_DE">
+			<Text>Günstigere Gebäude in jedem Zeitalter.[nn][BLIST]
+				[LI] Antike: -25%
+				[LI] Erkundung: -25%
+				[LI] Moderne: -25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_BALANCED" Language="de_DE">
+			<Text>Teurere Gebäude früh, ab der Erkundung Standard.[nn][BLIST]
+				[LI] Antike: +25%
+				[LI] Erkundung: Standard
+				[LI] Moderne: Standard[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_EXTENDED" Language="de_DE">
+			<Text>Gebäude kosten in jedem Zeitalter mehr, nach der Antike deutlich.[nn][BLIST]
+				[LI] Antike: +25%
+				[LI] Erkundung: +50%
+				[LI] Moderne: +50%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_LOW" Language="de_DE">
+			<Text>25% weniger Produktion. Kornspeicher: 41 statt 55. (Bei Standardgeschwindigkeit)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_MEDIUM" Language="de_DE">
+			<Text>25% mehr Produktion. Kornspeicher: 69 statt 55. (Bei Standardgeschwindigkeit)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_HIGH" Language="de_DE">
+			<Text>50% mehr Produktion. Kornspeicher: 83 statt 55. (Bei Standardgeschwindigkeit)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_DOUBLE" Language="de_DE">
+			<Text>100% mehr Produktion. Kornspeicher: 110 statt 55. (Bei Standardgeschwindigkeit)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_MINUS_25" Language="de_DE">
+			<Text>25% weniger Produktion für Gebäude in diesem Zeitalter.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_25" Language="de_DE">
+			<Text>25% mehr Produktion für Gebäude in diesem Zeitalter.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_50" Language="de_DE">
+			<Text>50% mehr Produktion für Gebäude in diesem Zeitalter.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_100" Language="de_DE">
+			<Text>100% mehr Produktion für Gebäude in diesem Zeitalter.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_NAME" Language="de_DE">
-			<Text>Stadtwachstum</Text>
+			<Text>Siedlungswachstum</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION" Language="de_DE">
-			<Text>Legt fest, wie viel Nahrung eine Stadt je neuem Bürger braucht. Niedrigere Schwellen lassen Städte weit früher über Größe 10 steigen.</Text>
+			<Text>Legt fest, wie viel Nahrung eine Siedlung für jeden neuen Bürger braucht. Niedrigere Schwellen lassen Siedlungen weit früher über Größe 10 wachsen.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_NAME" Language="de_DE">
 			<Text>Straßen</Text>
@@ -1226,7 +1274,8 @@
 				[LI] Zeitalterfortschritt: Standard
 				[LI] Technologiekosten: +25% / +50% / +50%
 				[LI] Kosten für Bürgerrechte: +25% / +50% / +50%
-				[LI] Stadtwachstum: +25%
+				[LI] Gebäudekosten: +25% / +50% / +50%
+				[LI] Siedlungswachstum: +25%
 				[LI] Straßen: Standard / Standard / -25%
 				[LI] Kosten für Siegprojekte: +25%[/BLIST]</Text>
 		</Replace>
@@ -1236,7 +1285,8 @@
 				[LI] Zeitalterfortschritt: Standard
 				[LI] Technologiekosten: -25% / -25% / Standard
 				[LI] Kosten für Bürgerrechte: -25% / -25% / Standard
-				[LI] Stadtwachstum: -25%
+				[LI] Gebäudekosten: -25%
+				[LI] Siedlungswachstum: -25%
 				[LI] Straßen: -25% / -50% / -50%
 				[LI] Kosten für Siegprojekte: -25%[/BLIST]</Text>
 		</Replace>
@@ -1246,7 +1296,8 @@
 				[LI] Zeitalterfortschritt: Ausgewogen
 				[LI] Technologiekosten: +25% / Standard / -25%
 				[LI] Kosten für Bürgerrechte: Standard / +25% / +25%
-				[LI] Stadtwachstum: -25% / -25% / Standard
+				[LI] Gebäudekosten: +25% / Standard / Standard
+				[LI] Siedlungswachstum: -25% / -25% / Standard
 				[LI] Straßen: Standard / Standard / -25%
 				[LI] Kosten für Siegprojekte: Standard / -25% / -25%[/BLIST]</Text>
 		</Replace>
@@ -1256,7 +1307,8 @@
 				[LI] Zeitalterfortschritt: Ausgewogen
 				[LI] Technologiekosten: +25% / +50% / +100%
 				[LI] Kosten für Bürgerrechte: +50% / +50% / +100%
-				[LI] Stadtwachstum: +25%
+				[LI] Gebäudekosten: Standard
+				[LI] Siedlungswachstum: +25%
 				[LI] Straßen: -25% / -25% / -50%
 				[LI] Kosten für Siegprojekte: Standard / Standard / +25%[/BLIST]</Text>
 		</Replace>
