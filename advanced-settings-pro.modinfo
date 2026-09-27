@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="AdvancedSettingsPro" version="00901" xmlns="ModInfo">
+<Mod id="AdvancedSettingsPro" version="00902" xmlns="ModInfo">
 	<Properties>
 		<Name>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME</Name>
 		<Description>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION</Description>
 		<Authors>Zatygold</Authors>
-		<Version>0.9.01</Version>
+		<Version>0.9.02</Version>
 		<Package>Mod</Package>
-		<LastUpdated>2026-09-21</LastUpdated>
+		<LastUpdated>2026-09-28</LastUpdated>
 		<ShowInBrowser>1</ShowInBrowser>
 		<EnabledByDefault>1</EnabledByDefault>
 	</Properties>
