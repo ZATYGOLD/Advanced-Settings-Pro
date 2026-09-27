@@ -144,7 +144,7 @@ registerModConflicts([
 	},
 	// Raises Huge maps to 32 players and randomizes the roster. It adds map
 	// sizes rather than setup parameters, so there is no footprint to match on.
-	{ workshopId: "3805458999", modId: "huge-earth-player-expansion-bmd" },
+	//{ workshopId: "3805458999", modId: "huge-earth-player-expansion-bmd" },
 
 	// --- Multiplayer lobby ---------------------------------------------------
 	// Replaces the base lobby model file (model-mp-staging-new.js) wholesale, from
