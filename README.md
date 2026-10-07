@@ -6,10 +6,10 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ### 0.9.03
 
-- Single player remembers this mod's settings (Pace, Map, Crises, and the rest) between games; Reset to Defaults clears them
-- New Raze Time setting under Settlements: Instant, Shorter (twice as many districts razed per turn), or Standard
-- Advanced Settings refresh when a setting adds or removes others (such as a map script's own settings), including with Scrum Lord's Advanced Options Menu Tweaks
-- Multiplayer: settings a map script adds now appear on the Map tab
+- Single player remembers this mod's settings between games; Reset to Defaults clears them
+- New Raze Time setting: Instant, Shorter, or Standard
+- Fixed Advanced Settings not refreshing when a setting adds others (such as map script settings), including with Scrum Lord's Advanced Options Menu Tweaks
+- Multiplayer: map script settings now appear on the Map tab
 
 ### 0.9.01
 
