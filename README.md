@@ -4,6 +4,13 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ## Version History
 
+### 0.9.03
+
+- Single player remembers this mod's settings (Pace, Map, Crises, and the rest) between games; Reset to Defaults clears them
+- New Raze Time setting under Settlements: Instant, Shorter (twice as many districts razed per turn), or Standard
+- Advanced Settings refresh when a setting adds or removes others (such as a map script's own settings), including with Scrum Lord's Advanced Options Menu Tweaks
+- Multiplayer: settings a map script adds now appear on the Map tab
+
 ### 0.9.01
 
 - New Building Cost on the Pace tab: the same steps as Technology Cost, covering every building (unique buildings included, wonders excluded); Swift -25%, Balanced +25% / Standard / Standard, Extended +25% / +50% / +50%, and part of every Pace Set

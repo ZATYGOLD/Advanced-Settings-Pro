@@ -458,6 +458,18 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_SettlementDistanceDomain', 'ZG_DEFAULT_SETTLEMENT_DISTANCE_COUNT', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_DEFAULT', 20),
         ('ZG_SettlementDistanceDomain', 'ZG_MORE_SETTLEMENT_DISTANCE_COUNT', 'LOC_ZG_MORE_NAME', 'LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE', 30);
 
+-- How long a captured settlement takes to raze: districts razed per turn
+-- (CITY_RAZE_DISTRICTS_PER_TURN), scaled for the current age.
+INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
+    VALUES
+        ('ZG_RazeTime', 'LOC_ZG_RAZE_TIME_NAME', 'LOC_ZG_RAZE_TIME_DESCRIPTION', 'ZG_RazeTimeDomain', 'ZG_STANDARD_RAZE_TIME', 1, 'Game', 'RazeTimeKey', 'SettlementOptions', 'MPAdvancedSettlementOptions', 0, 605);
+
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES
+        ('ZG_RazeTimeDomain', 'ZG_INSTANT_RAZE_TIME', 'LOC_ZG_INSTANT_NAME', 'LOC_ZG_RAZE_TIME_DESCRIPTION_INSTANT', 10),
+        ('ZG_RazeTimeDomain', 'ZG_SHORTER_RAZE_TIME', 'LOC_ZG_SHORTER_NAME', 'LOC_ZG_RAZE_TIME_DESCRIPTION_SHORTER', 20),
+        ('ZG_RazeTimeDomain', 'ZG_STANDARD_RAZE_TIME', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_RAZE_TIME_DESCRIPTION_STANDARD', 30);
+
 
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES

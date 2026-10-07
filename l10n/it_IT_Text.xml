@@ -140,6 +140,15 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME" Language="it_IT">
 			<Text>Distanza tra insediamenti</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_NAME" Language="it_IT">
+			<Text>Tempo di distruzione</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INSTANT_NAME" Language="it_IT">
+			<Text>Istantaneo</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SHORTER_NAME" Language="it_IT">
+			<Text>Più breve</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="it_IT">
 			<Text>Costo delle unità militari</Text>
 		</Replace>
@@ -274,6 +283,24 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="it_IT">
 			<Text>4 caselle.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION" Language="it_IT">
+			<Text>Determina quanto tempo serve per radere al suolo un insediamento conquistato. Ogni turno vengono distrutti dei distretti, quindi gli insediamenti più grandi richiedono più tempo.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_INSTANT" Language="it_IT">
+			<Text>L'insediamento viene raso al suolo in un solo turno.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_SHORTER" Language="it_IT">
+			<Text>Il doppio dei distretti distrutti per turno, quindi la distruzione richiede la metà del tempo.[nn][BLIST]
+				[LI] Antichità: 2 distretti per turno
+				[LI] Epoca delle esplorazioni: 4 distretti per turno
+				[LI] Epoca moderna: 6 distretti per turno[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_STANDARD" Language="it_IT">
+			<Text>Il ritmo del gioco.[nn][BLIST]
+				[LI] Antichità: 1 distretto per turno
+				[LI] Epoca delle esplorazioni: 2 distretti per turno
+				[LI] Epoca moderna: 3 distretti per turno[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="it_IT">
 			<Text>Determina il costo in produzione delle unità da combattimento. Costi più alti rendono un esercito permanente un vero investimento.</Text>

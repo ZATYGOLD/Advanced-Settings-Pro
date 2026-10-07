@@ -140,6 +140,15 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME" Language="de_DE">
 			<Text>Siedlungsabstand</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_NAME" Language="de_DE">
+			<Text>Zerstörungsdauer</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INSTANT_NAME" Language="de_DE">
+			<Text>Sofort</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SHORTER_NAME" Language="de_DE">
+			<Text>Kürzer</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="de_DE">
 			<Text>Kosten von Militäreinheiten</Text>
 		</Replace>
@@ -274,6 +283,24 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="de_DE">
 			<Text>4 Felder.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION" Language="de_DE">
+			<Text>Legt fest, wie lange die Zerstörung einer eroberten Siedlung dauert. Jede Runde werden Bezirke zerstört, daher dauert es bei größeren Siedlungen länger.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_INSTANT" Language="de_DE">
+			<Text>Die Siedlung wird in einer einzigen Runde zerstört.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_SHORTER" Language="de_DE">
+			<Text>Doppelt so viele Bezirke pro Runde, die Zerstörung dauert also halb so lange.[nn][BLIST]
+				[LI] Antike: 2 Bezirke pro Runde
+				[LI] Erkundung: 4 Bezirke pro Runde
+				[LI] Moderne: 6 Bezirke pro Runde[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_STANDARD" Language="de_DE">
+			<Text>Das Tempo des Spiels.[nn][BLIST]
+				[LI] Antike: 1 Bezirk pro Runde
+				[LI] Erkundung: 2 Bezirke pro Runde
+				[LI] Moderne: 3 Bezirke pro Runde[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="de_DE">
 			<Text>Legt die Produktionskosten von Kampfeinheiten fest. Höhere Kosten machen ein stehendes Heer zu einer echten Investition.</Text>

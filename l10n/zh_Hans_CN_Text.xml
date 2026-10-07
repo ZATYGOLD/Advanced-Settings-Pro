@@ -140,6 +140,15 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME" Language="zh_Hans_CN">
 			<Text>定居点间距</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_NAME" Language="zh_Hans_CN">
+			<Text>夷平时间</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INSTANT_NAME" Language="zh_Hans_CN">
+			<Text>立即</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SHORTER_NAME" Language="zh_Hans_CN">
+			<Text>较短</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="zh_Hans_CN">
 			<Text>军事单位花费</Text>
 		</Replace>
@@ -274,6 +283,24 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="zh_Hans_CN">
 			<Text>4格。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>设置夷平一个被占领的定居点需要多长时间。每回合会夷平若干区域，因此定居点越大，耗时越长。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_INSTANT" Language="zh_Hans_CN">
+			<Text>定居点在一回合内被夷平。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_SHORTER" Language="zh_Hans_CN">
+			<Text>每回合夷平的区域数量翻倍，因此夷平时间减半。[nn][BLIST]
+				[LI] 远古：每回合2个区域
+				[LI] 探索：每回合4个区域
+				[LI] 近世：每回合6个区域[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
+			<Text>游戏本身的节奏。[nn][BLIST]
+				[LI] 远古：每回合1个区域
+				[LI] 探索：每回合2个区域
+				[LI] 近世：每回合3个区域[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>设置战斗单位的生产力费用。费用越高，常备军越是一笔真正的投入。</Text>
