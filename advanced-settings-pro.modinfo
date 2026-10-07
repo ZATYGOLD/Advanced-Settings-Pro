@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="AdvancedSettingsPro" version="00902" xmlns="ModInfo">
+<Mod id="AdvancedSettingsPro" version="00903" xmlns="ModInfo">
 	<Properties>
 		<Name>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME</Name>
 		<Description>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION</Description>
 		<Authors>Zatygold</Authors>
-		<Version>0.9.02</Version>
+		<Version>0.9.03</Version>
 		<Package>Mod</Package>
 		<LastUpdated>2026-09-28</LastUpdated>
 		<ShowInBrowser>1</ShowInBrowser>
@@ -1862,6 +1862,23 @@
 				<Group>Game</Group>
 				<ConfigurationId>SettlementDistanceKey</ConfigurationId>
 				<Value>ZG_LESS_SETTLEMENT_DISTANCE_COUNT</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+
+<!--*********************** CRITERIA: RAZE TIME ***********************-->
+
+		<Criteria id="instant-raze-time">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>RazeTimeKey</ConfigurationId>
+				<Value>ZG_INSTANT_RAZE_TIME</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="shorter-raze-time">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>RazeTimeKey</ConfigurationId>
+				<Value>ZG_SHORTER_RAZE_TIME</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 
@@ -4893,6 +4910,7 @@
 					<Item>ui/zg-conflict-guard.js</Item>
 					<Item>ui/zg-asp-guard.js</Item>
 					<Item>ui/zg-shell-context.js</Item>
+					<Item>ui/zg-setup-memory.js</Item>
 					<Item>ui/zg-setup-rules.js</Item>
 					<Item>ui/zg-map-tab.js</Item>
 					<Item>ui/zg-seed-randomizer.js</Item>
@@ -6595,6 +6613,29 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/settlements/settlement-distance-less.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
+<!--*********************** SETTINGS: RAZE TIME ***********************-->
+
+		<ActionGroup id="zg-instant-raze-time" scope="game" criteria="instant-raze-time">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/raze-time-instant.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-shorter-raze-time" scope="game" criteria="shorter-raze-time">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/raze-time-shorter.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

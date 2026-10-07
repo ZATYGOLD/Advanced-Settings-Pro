@@ -48,14 +48,25 @@ function groupBelongsToTab(groupId, tab) {
 // Game Name after a multiplayer setup, say) stays in its group, still marked
 // visible, once single-player setup opens. Only settings GameSetup still knows
 // are passed through.
+//
+// The view is live, not a copy: a screen may keep a group it read once and
+// expect it to update as settings come and go (a map script's own settings
+// appearing when that map is picked, say), and a copy would freeze it. Reading
+// keys through the view reads the game's store, so it tracks as the store does.
+const presentViews = new WeakMap();
+const isPresent = (key) => key == "name" || typeof key != "string" || !!GameSetup.findGameParameter(key);
+
 function presentOnly(group) {
-	const present = {};
-	for (const key of Object.keys(group)) {
-		if (key == "name" || GameSetup.findGameParameter(key)) {
-			present[key] = group[key];
-		}
+	let view = presentViews.get(group);
+	if (!view) {
+		view = new Proxy(group, {
+			ownKeys: (target) => Reflect.ownKeys(target).filter(isPresent),
+			getOwnPropertyDescriptor: (target, key) => (isPresent(key) ? Reflect.getOwnPropertyDescriptor(target, key) : undefined),
+			has: (target, key) => isPresent(key) && Reflect.has(target, key),
+		});
+		presentViews.set(group, view);
 	}
-	return present;
+	return view;
 }
 
 // 1. Model facade: same groupNames, groups narrowed to the active tab.

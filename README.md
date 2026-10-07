@@ -4,6 +4,17 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ## Version History
 
+### 0.9.03
+
+- Single player remembers this mod's settings between games; Reset to Defaults clears them
+- New Raze Time setting: Instant, Shorter, or Standard
+- Fixed Advanced Settings not refreshing when a setting adds others (such as map script settings), including with Scrum Lord's Advanced Options Menu Tweaks
+- Multiplayer: map script settings now appear on the Map tab
+
+### 0.9.02
+
+- Compatible with WorldStage: the conflict guard no longer blocks Huge Earth Player Expansion
+
 ### 0.9.01
 
 - New Building Cost on the Pace tab: the same steps as Technology Cost, covering every building (unique buildings included, wonders excluded); Swift -25%, Balanced +25% / Standard / Standard, Extended +25% / +50% / +50%, and part of every Pace Set

@@ -140,6 +140,15 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME" Language="ko_KR">
 			<Text>정착지 간 거리</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_NAME" Language="ko_KR">
+			<Text>파괴 시간</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INSTANT_NAME" Language="ko_KR">
+			<Text>즉시</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SHORTER_NAME" Language="ko_KR">
+			<Text>짧게</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="ko_KR">
 			<Text>군사 유닛 비용</Text>
 		</Replace>
@@ -274,6 +283,24 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="ko_KR">
 			<Text>4타일.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION" Language="ko_KR">
+			<Text>점령한 정착지를 파괴하는 데 걸리는 시간을 설정합니다. 매 턴 지구가 파괴되므로 큰 정착지일수록 오래 걸립니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_INSTANT" Language="ko_KR">
+			<Text>정착지가 한 턴 만에 파괴됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_SHORTER" Language="ko_KR">
+			<Text>턴마다 파괴되는 지구가 두 배가 되어 파괴 시간이 절반으로 줄어듭니다.[nn][BLIST]
+				[LI] 고대: 턴당 지구 2개
+				[LI] 대항해: 턴당 지구 4개
+				[LI] 근대: 턴당 지구 6개[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_STANDARD" Language="ko_KR">
+			<Text>게임 기본 속도입니다.[nn][BLIST]
+				[LI] 고대: 턴당 지구 1개
+				[LI] 대항해: 턴당 지구 2개
+				[LI] 근대: 턴당 지구 3개[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="ko_KR">
 			<Text>전투 유닛의 생산력 비용을 설정합니다. 비용이 높을수록 상비군은 큰 투자가 됩니다.</Text>

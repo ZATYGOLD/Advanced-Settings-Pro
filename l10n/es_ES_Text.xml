@@ -140,6 +140,15 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME" Language="es_ES">
 			<Text>Distancia entre asentamientos</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_NAME" Language="es_ES">
+			<Text>Tiempo de arrasamiento</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INSTANT_NAME" Language="es_ES">
+			<Text>Instantáneo</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SHORTER_NAME" Language="es_ES">
+			<Text>Más corto</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="es_ES">
 			<Text>Coste de unidades militares</Text>
 		</Replace>
@@ -274,6 +283,24 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="es_ES">
 			<Text>4 casillas.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION" Language="es_ES">
+			<Text>Determina cuánto tarda en arrasarse un asentamiento conquistado. Cada turno se arrasan distritos, así que los asentamientos más grandes tardan más.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_INSTANT" Language="es_ES">
+			<Text>El asentamiento se arrasa en un solo turno.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_SHORTER" Language="es_ES">
+			<Text>El doble de distritos arrasados por turno, así que arrasar lleva la mitad de tiempo.[nn][BLIST]
+				[LI] Antigüedad: 2 distritos por turno
+				[LI] Descubrimientos: 4 distritos por turno
+				[LI] Modernidad: 6 distritos por turno[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_STANDARD" Language="es_ES">
+			<Text>El ritmo propio del juego.[nn][BLIST]
+				[LI] Antigüedad: 1 distrito por turno
+				[LI] Descubrimientos: 2 distritos por turno
+				[LI] Modernidad: 3 distritos por turno[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="es_ES">
 			<Text>Determina el coste de producción de las unidades de combate. Un coste mayor convierte un ejército permanente en una inversión real.</Text>

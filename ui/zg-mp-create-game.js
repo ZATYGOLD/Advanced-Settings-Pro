@@ -50,18 +50,27 @@ const SEED_BUTTON_STYLE = { width: "7rem", minWidth: "0", minHeight: "2rem", pad
 // single-player tabs hold. Map, Map Size and Start Position are moved onto
 // MPAdvancedMapOptions, and the crisis settings onto their own
 // MPAdvancedCrisisOptions, in config/setup-parameters.sql.
+// A setting with no override keeps its single-player group, as the settings a
+// map script adds usually do (GroupId MapOptions), so each tab claims the
+// single-player ids too.
 const TABS = [
 	{
 		id: "zg-advanced-setup-mp__pace",
 		title: "LOC_ZG_ADVANCED_OPTIONS_AGES",
 		containerClass: "zg-advanced-setup__mp-pace-container",
-		groups: new Set(["MPAdvancedGamePacingOptions", "MPAdvancedPacingAntiquityOptions", "MPAdvancedPacingExplorationOptions", "MPAdvancedPacingModernOptions"]),
+		groups: new Set([
+			"MPAdvancedGamePacingOptions", "MPAdvancedPacingAntiquityOptions", "MPAdvancedPacingExplorationOptions", "MPAdvancedPacingModernOptions",
+			"GamePacingOptions", "PacingAntiquityOptions", "PacingExplorationOptions", "PacingModernOptions",
+		]),
 	},
 	{
 		id: "zg-advanced-setup-mp__map",
 		title: "LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS",
 		containerClass: "zg-advanced-setup__mp-map-container",
-		groups: new Set(["MPAdvancedMapOptions", "MPAdvancedTerrainOptions", "MPAdvancedDisasterOptions", "MPAdvancedNaturalWonderSelectionOptions"]),
+		groups: new Set([
+			"MPAdvancedMapOptions", "MPAdvancedTerrainOptions", "MPAdvancedDisasterOptions", "MPAdvancedNaturalWonderSelectionOptions",
+			"MapOptions", "TerrainOptions", "DisasterOptions", "NaturalWonderSelectionOptions",
+		]),
 	},
 ];
 

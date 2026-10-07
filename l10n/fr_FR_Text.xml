@@ -140,6 +140,15 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME" Language="fr_FR">
 			<Text>Distance entre colonies</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_NAME" Language="fr_FR">
+			<Text>Durée de destruction</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INSTANT_NAME" Language="fr_FR">
+			<Text>Instantanée</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SHORTER_NAME" Language="fr_FR">
+			<Text>Plus courte</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="fr_FR">
 			<Text>Coût des unités militaires</Text>
 		</Replace>
@@ -274,6 +283,24 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="fr_FR">
 			<Text>4 cases.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION" Language="fr_FR">
+			<Text>Détermine le temps nécessaire pour raser une colonie conquise. Des quartiers sont rasés à chaque tour, les grandes colonies prennent donc plus de temps.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_INSTANT" Language="fr_FR">
+			<Text>La colonie est rasée en un seul tour.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_SHORTER" Language="fr_FR">
+			<Text>Deux fois plus de quartiers rasés par tour, la destruction prend donc deux fois moins de temps.[nn][BLIST]
+				[LI] Antiquité : 2 quartiers par tour
+				[LI] Âge de l'exploration : 4 quartiers par tour
+				[LI] Âge moderne : 6 quartiers par tour[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_STANDARD" Language="fr_FR">
+			<Text>Le rythme du jeu.[nn][BLIST]
+				[LI] Antiquité : 1 quartier par tour
+				[LI] Âge de l'exploration : 2 quartiers par tour
+				[LI] Âge moderne : 3 quartiers par tour[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="fr_FR">
 			<Text>Définit le coût en production des unités de combat. Un coût élevé fait d'une armée permanente un véritable investissement.</Text>

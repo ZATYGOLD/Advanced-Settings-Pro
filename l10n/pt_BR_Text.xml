@@ -140,6 +140,15 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME" Language="pt_BR">
 			<Text>Distância entre assentamentos</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_NAME" Language="pt_BR">
+			<Text>Tempo de devastação</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INSTANT_NAME" Language="pt_BR">
+			<Text>Instantâneo</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SHORTER_NAME" Language="pt_BR">
+			<Text>Mais curto</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="pt_BR">
 			<Text>Custo de unidades militares</Text>
 		</Replace>
@@ -274,6 +283,24 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="pt_BR">
 			<Text>4 células.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION" Language="pt_BR">
+			<Text>Define quanto tempo leva para devastar um assentamento conquistado. Distritos são destruídos a cada turno, então assentamentos maiores levam mais tempo.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_INSTANT" Language="pt_BR">
+			<Text>O assentamento é devastado em um único turno.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_SHORTER" Language="pt_BR">
+			<Text>O dobro de distritos destruídos por turno, então a devastação leva metade do tempo.[nn][BLIST]
+				[LI] Antiguidade: 2 distritos por turno
+				[LI] Exploração: 4 distritos por turno
+				[LI] Moderna: 6 distritos por turno[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_STANDARD" Language="pt_BR">
+			<Text>O ritmo do próprio jogo.[nn][BLIST]
+				[LI] Antiguidade: 1 distrito por turno
+				[LI] Exploração: 2 distritos por turno
+				[LI] Moderna: 3 distritos por turno[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="pt_BR">
 			<Text>Define o custo de produção das unidades de combate. Custos altos tornam um exército permanente um investimento real.</Text>

@@ -140,6 +140,15 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME" Language="ru_RU">
 			<Text>Расстояние между поселениями</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_NAME" Language="ru_RU">
+			<Text>Время уничтожения</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INSTANT_NAME" Language="ru_RU">
+			<Text>Мгновенно</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SHORTER_NAME" Language="ru_RU">
+			<Text>Быстрее</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="ru_RU">
 			<Text>Стоимость военных юнитов</Text>
 		</Replace>
@@ -274,6 +283,24 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="ru_RU">
 			<Text>4 клеток.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION" Language="ru_RU">
+			<Text>Определяет, сколько времени занимает уничтожение захваченного поселения. Каждый ход уничтожаются районы, поэтому крупные поселения разрушаются дольше.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_INSTANT" Language="ru_RU">
+			<Text>Поселение уничтожается за один ход.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_SHORTER" Language="ru_RU">
+			<Text>Вдвое больше районов уничтожается за ход, поэтому уничтожение занимает вдвое меньше времени.[nn][BLIST]
+				[LI] Античность: 2 района за ход
+				[LI] Исследования: 4 района за ход
+				[LI] Современность: 6 районов за ход[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>Собственный темп игры.[nn][BLIST]
+				[LI] Античность: 1 район за ход
+				[LI] Исследования: 2 района за ход
+				[LI] Современность: 3 района за ход[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="ru_RU">
 			<Text>Определяет стоимость боевых юнитов в производстве. Высокая стоимость превращает постоянную армию в серьёзное вложение.</Text>

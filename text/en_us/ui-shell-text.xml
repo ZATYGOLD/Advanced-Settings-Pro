@@ -108,6 +108,9 @@
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME"><Text>Exploration</Text></Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME"><Text>Modern</Text></Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME"><Text>Settlement Distance</Text></Row>
+		<Row Tag="LOC_ZG_RAZE_TIME_NAME"><Text>Raze Time</Text></Row>
+		<Row Tag="LOC_ZG_INSTANT_NAME"><Text>Instant</Text></Row>
+		<Row Tag="LOC_ZG_SHORTER_NAME"><Text>Shorter</Text></Row>
 		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_NAME"><Text>Military Unit Cost</Text></Row>
 		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME"><Text>Civilian Unit Cost</Text></Row>
 		<Row Tag="LOC_ZG_CRISES_NAME"><Text>Crises</Text></Row>
@@ -532,6 +535,26 @@
 		</Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE">
 			<Text>4 tiles.</Text>
+		</Row>
+
+	<!-- Raze Time Descriptions -->
+		<Row Tag="LOC_ZG_RAZE_TIME_DESCRIPTION">
+			<Text>Sets how long a captured settlement takes to raze. Razing removes districts each turn, so larger settlements take longer.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_INSTANT">
+			<Text>The settlement is razed in a single turn.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_SHORTER">
+			<Text>Twice as many districts razed each turn, so razing takes half as long.[nn][BLIST]
+				[LI] Antiquity: 2 districts per turn
+				[LI] Exploration: 4 districts per turn
+				[LI] Modern: 6 districts per turn[/BLIST]</Text>
+		</Row>
+		<Row Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_STANDARD">
+			<Text>The game's own pace.[nn][BLIST]
+				[LI] Antiquity: 1 district per turn
+				[LI] Exploration: 2 districts per turn
+				[LI] Modern: 3 districts per turn[/BLIST]</Text>
 		</Row>
 
 	<!-- Unit Cost Descriptions -->

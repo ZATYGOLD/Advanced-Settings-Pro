@@ -140,6 +140,15 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME" Language="ja_JP">
 			<Text>入植地間の距離</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_NAME" Language="ja_JP">
+			<Text>破壊にかかる時間</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INSTANT_NAME" Language="ja_JP">
+			<Text>即時</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SHORTER_NAME" Language="ja_JP">
+			<Text>短縮</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="ja_JP">
 			<Text>軍事ユニットのコスト</Text>
 		</Replace>
@@ -274,6 +283,24 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="ja_JP">
 			<Text>4タイル。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION" Language="ja_JP">
+			<Text>占領した入植地の破壊にかかる時間を設定します。毎ターン区域が破壊されるため、大きな入植地ほど時間がかかります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_INSTANT" Language="ja_JP">
+			<Text>入植地は1ターンで破壊されます。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_SHORTER" Language="ja_JP">
+			<Text>1ターンに破壊される区域が2倍になり、破壊にかかる時間は半分になります。[nn][BLIST]
+				[LI] 古代：1ターンに2区域
+				[LI] 探検の時代：1ターンに4区域
+				[LI] 近代：1ターンに6区域[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_STANDARD" Language="ja_JP">
+			<Text>ゲーム本来のペース。[nn][BLIST]
+				[LI] 古代：1ターンに1区域
+				[LI] 探検の時代：1ターンに2区域
+				[LI] 近代：1ターンに3区域[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="ja_JP">
 			<Text>戦闘ユニットの生産力コストを設定します。コストが高いほど常備軍は大きな投資になります。</Text>

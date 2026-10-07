@@ -140,6 +140,15 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME" Language="pl_PL">
 			<Text>Odległość między osadami</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_NAME" Language="pl_PL">
+			<Text>Czas burzenia</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INSTANT_NAME" Language="pl_PL">
+			<Text>Natychmiastowy</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SHORTER_NAME" Language="pl_PL">
+			<Text>Krótszy</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="pl_PL">
 			<Text>Koszt jednostek wojskowych</Text>
 		</Replace>
@@ -274,6 +283,24 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="pl_PL">
 			<Text>4 pól.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION" Language="pl_PL">
+			<Text>Określa, jak długo trwa burzenie zdobytej osady. Co turę burzone są dzielnice, więc większe osady trwają dłużej.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_INSTANT" Language="pl_PL">
+			<Text>Osada zostaje zburzona w jedną turę.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_SHORTER" Language="pl_PL">
+			<Text>Dwa razy więcej dzielnic burzonych na turę, więc burzenie trwa o połowę krócej.[nn][BLIST]
+				[LI] Starożytność: 2 dzielnice na turę
+				[LI] Epoka odkryć: 4 dzielnice na turę
+				[LI] Epoka nowożytna: 6 dzielnic na turę[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_STANDARD" Language="pl_PL">
+			<Text>Własne tempo gry.[nn][BLIST]
+				[LI] Starożytność: 1 dzielnica na turę
+				[LI] Epoka odkryć: 2 dzielnice na turę
+				[LI] Epoka nowożytna: 3 dzielnice na turę[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="pl_PL">
 			<Text>Określa koszt produkcji jednostek bojowych. Wyższy koszt sprawia, że stała armia to poważna inwestycja.</Text>

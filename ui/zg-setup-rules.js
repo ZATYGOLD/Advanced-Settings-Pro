@@ -33,8 +33,15 @@
 //      while the timing says Disabled -> the timing returns to Default.
 //  17. Crisis Timing set to Disabled -> Crises becomes Disabled; the timing leaves
 //      Disabled                     -> Crises becomes Enabled.
+//  18. On the first pass of a setup -> Crises wins: the selection and timing
+//      follow it, so a remembered Crises value is kept.
+//
+// Each rule compares against the last pass. When remembered settings are put
+// back (zg-setup-memory.js) the comparisons start over, so the restored
+// values are the baseline rather than a change to answer.
 
 import { canEditSetup } from './zg-shell-context.js';
+import { restoreSetup, rememberSetup } from './zg-setup-memory.js';
 
 const NW_COUNT_PARAM_ID = "ZG_NaturalWondersCount";
 const MAP_SIZE_PARAM_ID = "MapSize";
@@ -511,7 +518,20 @@ function syncCrises() {
 		crisisTimingLast = null;
 		return;
 	}
+	const firstPass = crisesLastToggle == null;
 	crisesLastToggle = toggle;
+	// 18: the first pass of a setup keeps Crises and brings the rest in line.
+	if (firstPass) {
+		if (toggle == TOGGLE_DISABLED && !allExcluded) {
+			GameSetup.setGameParameterValue(CRISES_SELECTION_PARAM_ID, possible);
+		} else if (toggle != TOGGLE_DISABLED && allExcluded) {
+			GameSetup.setGameParameterValue(CRISES_SELECTION_PARAM_ID, []);
+		}
+		if (timing != null && (timing == TIER_DISABLED) != (toggle == TOGGLE_DISABLED)) {
+			setParamByName(CRISIS_TIMING_PARAM_ID, toggle == TOGGLE_DISABLED ? TIER_DISABLED : TIER_STANDARD);
+		}
+		return;
+	}
 	// 17: the player changed the timing to or from Disabled; the toggle follows.
 	if (timing != null && crisisTimingLast != null && timing != crisisTimingLast) {
 		if (timing == TIER_DISABLED && toggle != TOGGLE_DISABLED) {
@@ -545,6 +565,18 @@ function syncCrises() {
 
 // ------------------------------------------------------------------ poller --
 
+// Every rule's memory of the last pass, cleared so the next pass is a baseline.
+function resetBaselines() {
+	nwLastTier = null;
+	slLastTier = null;
+	lastPace = null;
+	lastPaceMirror = null;
+	lastAgeLength = null;
+	crisesLastToggle = null;
+	crisisTimingLast = null;
+	TIER_AGE_SYNCS.forEach((sync) => { sync.lastTier = null; });
+}
+
 setInterval(() => {
 	// In multiplayer only the host holds the setup; a client sees the host's
 	// writes arrive and must not answer them with its own.
@@ -555,6 +587,14 @@ setInterval(() => {
 	lastRevision = revision;
 	applying = true;
 	try {
+		try {
+			if (restoreSetup()) {
+				resetBaselines();
+				return;
+			}
+		} catch (e) {
+			console.warn(`ZG-ASP setup restore error: ${e}`);
+		}
 		try {
 			syncNaturalWonderSetup();
 		} catch (e) {
@@ -582,6 +622,11 @@ setInterval(() => {
 			syncCrises();
 		} catch (e) {
 			console.warn(`ZG-ASP crises sync error: ${e}`);
+		}
+		try {
+			rememberSetup();
+		} catch (e) {
+			console.warn(`ZG-ASP setup memory error: ${e}`);
 		}
 	} finally {
 		// Never leave the guard latched: a throw here would freeze every rule.

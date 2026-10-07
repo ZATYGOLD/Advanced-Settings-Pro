@@ -140,6 +140,15 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME" Language="zh_Hant_HK">
 			<Text>聚居地間距</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_NAME" Language="zh_Hant_HK">
+			<Text>夷平時間</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_INSTANT_NAME" Language="zh_Hant_HK">
+			<Text>立即</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SHORTER_NAME" Language="zh_Hant_HK">
+			<Text>較短</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="zh_Hant_HK">
 			<Text>軍事單位花費</Text>
 		</Replace>
@@ -274,6 +283,24 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="zh_Hant_HK">
 			<Text>4格。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>設定夷平一個被佔領的聚居地需要多長時間。每回合會夷平若干區域，因此聚居地越大，耗時越長。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_INSTANT" Language="zh_Hant_HK">
+			<Text>聚居地在一回合內被夷平。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_SHORTER" Language="zh_Hant_HK">
+			<Text>每回合夷平的區域數量加倍，因此夷平時間減半。[nn][BLIST]
+				[LI] 遠古：每回合2個區域
+				[LI] 探索：每回合4個區域
+				[LI] 近代：每回合6個區域[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
+			<Text>遊戲本身的節奏。[nn][BLIST]
+				[LI] 遠古：每回合1個區域
+				[LI] 探索：每回合2個區域
+				[LI] 近代：每回合3個區域[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>設定戰鬥單位的生產力費用。費用越高，常備軍越是一筆真正的投入。</Text>
