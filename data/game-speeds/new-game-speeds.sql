@@ -1,7 +1,11 @@
--- Online 2.0: 150% faster than Standard (cost multiplier 40 vs 100).
--- Marathon 2.0: 400% slower than Standard (cost multiplier 500 vs 100).
--- Calendar pacing is copied from the closest base speed, so patch changes
--- to those tables carry over automatically.
+-- Online 2.0 (150% faster than Standard) and Marathon 2.0 (400% slower) are
+-- retired: they are defined here so a game already running on one keeps its
+-- own rules, but the setup screen never offers them. What hides them is the
+-- config-side rows in config/setup-parameters.sql, which sit in a domain the
+-- Game Speed parameter does not read. Deleting these rows instead would leave
+-- an existing save pointing at a speed the database no longer holds.
+-- Calendar pacing is copied from the closest base speed, so patch changes to
+-- those tables carry over automatically.
 
 INSERT OR IGNORE INTO Types (Type, Kind)
     VALUES

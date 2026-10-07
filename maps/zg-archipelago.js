@@ -6,13 +6,14 @@ import { zgDesignateBiomes } from './zg-map-biomes.js';
 import { assignAdvancedStartRegions } from 'fs://game/base-standard/maps/assign-advanced-start-region.js';
 import { chooseStartSectors, assignStartPositions } from 'fs://game/base-standard/maps/assign-starting-plots.js';
 import { generateDiscoveries } from 'fs://game/base-standard/maps/discovery-generator.js';
-import { expandCoasts, addMountains, addHills, buildRainfallMap } from 'fs://game/base-standard/maps/elevation-terrain-generator.js';
+import { expandCoasts, buildRainfallMap } from 'fs://game/base-standard/maps/elevation-terrain-generator.js';
+import { zgAddRough } from './zg-map-rough.js';
 import { addFeatures } from 'fs://game/base-standard/maps/feature-biome-generator.js';
 import { dumpStartSectors, dumpContinents, dumpTerrain, dumpElevation, dumpRainfall, dumpBiomes, dumpFeatures, dumpResources, dumpNoisePredicate } from 'fs://game/base-standard/maps/map-debug-helpers.js';
-import { g_OceanWaterColumns, g_PolarWaterRows, g_NavigableRiverTerrain, g_OceanTerrain, g_CoastTerrain, g_LandmassFractal, g_FlatTerrain } from 'fs://game/base-standard/maps/map-globals.js';
+import { g_OceanWaterColumns, g_PolarWaterRows, g_OceanTerrain, g_CoastTerrain, g_LandmassFractal, g_FlatTerrain } from 'fs://game/base-standard/maps/map-globals.js';
 import { needHumanNearEquator, markLandmassRegionId, isAdjacentToLand, getSector, getHeightAdjustingForStartSector } from 'fs://game/base-standard/maps/map-utilities.js';
 import { addNaturalWonders } from 'fs://game/base-standard/maps/natural-wonder-generator.js';
-import { generateResources } from 'fs://game/base-standard/maps/resource-generator.js';
+import { zgGenerateResources } from './zg-map-resources.js';
 import { generateSnow, dumpPermanentSnow } from 'fs://game/base-standard/maps/snow-generator.js';
 import { addVolcanoes, addTundraVolcanoes } from 'fs://game/base-standard/maps/volcano-generator.js';
 
@@ -127,7 +128,7 @@ function generateMap() {
   addVolcanoes(iWidth, iHeight);
   AreaBuilder.recalculateAreas();
   TerrainBuilder.buildElevation();
-  addHills(iWidth, iHeight);
+  zgAddRough(iWidth, iHeight);
   buildRainfallMap(iWidth, iHeight);
   zgModelRivers(5, 70);
   TerrainBuilder.validateAndFixTerrain();
@@ -148,7 +149,7 @@ function generateMap() {
   dumpBiomes(iWidth, iHeight);
   dumpFeatures(iWidth, iHeight);
   dumpPermanentSnow(iWidth, iHeight);
-  generateResources(iWidth, iHeight);
+  zgGenerateResources(iWidth, iHeight);
   startPositions = assignStartPositions(
     iNumPlayers1,
     iNumPlayers2,

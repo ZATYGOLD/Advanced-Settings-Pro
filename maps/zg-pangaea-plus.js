@@ -6,13 +6,14 @@ import { zgAddMountains } from './zg-map-mountains.js';
 import { assignAdvancedStartRegions } from 'fs://game/base-standard/maps/assign-advanced-start-region.js';
 import { chooseStartSectors, assignSingleContinentStartPositions } from 'fs://game/base-standard/maps/assign-starting-plots.js';
 import { generateDiscoveries } from 'fs://game/base-standard/maps/discovery-generator.js';
-import { expandCoastsPlus, addMountains, generateLakes, addHills, buildRainfallMap } from 'fs://game/base-standard/maps/elevation-terrain-generator.js';
+import { expandCoastsPlus, generateLakes, buildRainfallMap } from 'fs://game/base-standard/maps/elevation-terrain-generator.js';
+import { zgAddRough } from './zg-map-rough.js';
 import { addFeatures } from 'fs://game/base-standard/maps/feature-biome-generator.js';
 import { dumpStartSectors, dumpContinents, dumpTerrain, dumpElevation, dumpRainfall, dumpBiomes, dumpFeatures, dumpResources, dumpNoisePredicate } from 'fs://game/base-standard/maps/map-debug-helpers.js';
-import { g_OceanWaterColumns, g_PolarWaterRows, g_AvoidSeamOffset, g_WaterPercent, g_Cutoff, g_NavigableRiverTerrain, g_LandmassFractal, g_FlatTerrain, g_OceanTerrain, g_FractalWeight, g_CenterWeight, g_StartSectorWeight } from 'fs://game/base-standard/maps/map-globals.js';
+import { g_OceanWaterColumns, g_PolarWaterRows, g_AvoidSeamOffset, g_WaterPercent, g_Cutoff, g_LandmassFractal, g_FlatTerrain, g_OceanTerrain, g_FractalWeight, g_CenterWeight, g_StartSectorWeight } from 'fs://game/base-standard/maps/map-globals.js';
 import { needHumanNearEquator, createIslands, applyCoastalErosionAdjustingForStartSectors, createOrganicLandmasses, applyCoastalErosion, markLandmassRegionId, replaceIslandResources, getHeightAdjustingForStartSector, clearContinent } from 'fs://game/base-standard/maps/map-utilities.js';
 import { addNaturalWonders } from 'fs://game/base-standard/maps/natural-wonder-generator.js';
-import { generateResources } from 'fs://game/base-standard/maps/resource-generator.js';
+import { zgGenerateResources } from './zg-map-resources.js';
 import { generateSnow, dumpPermanentSnow } from 'fs://game/base-standard/maps/snow-generator.js';
 import { addVolcanoes, addTundraVolcanoes } from 'fs://game/base-standard/maps/volcano-generator.js';
 
@@ -263,7 +264,7 @@ function generateMap() {
   generateLakes(iWidth, iHeight, iTilesPerLake);
   AreaBuilder.recalculateAreas();
   TerrainBuilder.buildElevation();
-  addHills(iWidth, iHeight);
+  zgAddRough(iWidth, iHeight);
   buildRainfallMap(iWidth, iHeight);
   zgModelRivers(5, 15);
   TerrainBuilder.validateAndFixTerrain();
@@ -286,7 +287,7 @@ function generateMap() {
   dumpFeatures(iWidth, iHeight);
   dumpPermanentSnow(iWidth, iHeight);
   if (bWestDominant) {
-    generateResources(iWidth, iHeight);
+    zgGenerateResources(iWidth, iHeight);
     startPositions = assignSingleContinentStartPositions(
       iNumPlayers1 + iNumPlayers2,
       westContinent,
@@ -296,7 +297,7 @@ function generateMap() {
     );
     replaceIslandResources(iWidth, iHeight, "RESOURCECLASS_TREASURE");
   } else {
-    generateResources(iWidth, iHeight);
+    zgGenerateResources(iWidth, iHeight);
     startPositions = assignSingleContinentStartPositions(
       iNumPlayers1 + iNumPlayers2,
       eastContinent,

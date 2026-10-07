@@ -11,7 +11,10 @@
 //       modId: "renamable-mod",
 //       // Footprint: the setup parameters the mod must add to work. Detected in
 //       // the configuration database, so renaming the mod does not evade it.
-//       parameterPatterns: ["TheirPrefix%"],
+//       // Name them in full. A % wildcard catches whatever else happens to share
+//       // the prefix, and authors do share prefixes: a "BmdResource%" footprint
+//       // once matched an unrelated mod's BmdResourcePreset.
+//       parameterPatterns: ["TheirSettingOne", "TheirSettingTwo"],
 //       // Words identifying the mod by id or name, case-insensitive.
 //       nameHints: ["their mod"],
 //     },
@@ -25,8 +28,10 @@
 //   - A footprint found in the configuration database is attributed to the
 //     installed mod whose id or name matches its hints: enabled means a conflict, disabled means
 //     the database is stale from this session's own disable and is ignored. A
-//     footprint no installed mod accounts for is reported as an unidentified mod
-//     and blocks the action until the player removes it.
+//     footprint no installed mod accounts for is written to the log and otherwise
+//     ignored: it is a name match, not proof of a conflict, and another author's
+//     mod may simply use a similar parameter name. Only an identified, enabled
+//     mod ever holds the menu.
 //
 // Several mods can each register their own conflicts. A single guard kept on
 // globalThis merges every registration, so there is only ever one event
@@ -35,8 +40,7 @@
 // Localization: the dialog uses the tags below by default. Define them in the
 // mod's text, or override any of them via the options.text argument:
 //   LOC_ZG_MOD_CONFLICT_TITLE, LOC_ZG_MOD_CONFLICT_BODY_HEADER,
-//   LOC_ZG_MOD_CONFLICT_BODY_FOOTER, LOC_ZG_MOD_CONFLICT_DISABLE,
-//   LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD
+//   LOC_ZG_MOD_CONFLICT_BODY_FOOTER, LOC_ZG_MOD_CONFLICT_DISABLE
 
 import { DialogBoxManager } from 'fs://game/core/ui/dialog-box/manager-dialog-box.js';
 
@@ -57,20 +61,30 @@ const DEFAULT_TEXT = {
 	header: "LOC_ZG_MOD_CONFLICT_BODY_HEADER",
 	footer: "LOC_ZG_MOD_CONFLICT_BODY_FOOTER",
 	disable: "LOC_ZG_MOD_CONFLICT_DISABLE",
-	unknown: "LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD",
 };
 
 function modText(mod) {
 	return [mod.id, Locale.compose(mod.name), Modding.getModProperty(mod.handle, "Name") ?? ""].join("\n").toLowerCase();
 }
 
+// Translates a SQL LIKE pattern (% and _ wildcards) into an equivalent regular
+// expression, case-insensitive to match LIKE's behavior on ASCII.
+function likeToRegExp(pattern) {
+	const escaped = pattern.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+	return new RegExp(`^${escaped.replace(/%/g, ".*").replace(/_/g, ".")}$`, "i");
+}
+
+// The game only ever issues static queries, so the patterns are matched here
+// rather than interpolated into the SQL.
 function parametersMatching(patterns) {
-	const found = [];
-	for (const pattern of patterns) {
-		const rows = Database.query("config", `SELECT ParameterID FROM Parameters WHERE ParameterID LIKE '${pattern}'`) ?? [];
-		found.push(...rows.map((row) => row.ParameterID));
+	if (patterns.length === 0) {
+		return [];
 	}
-	return found;
+	const rows = Database.query("config", "SELECT ParameterID FROM Parameters") ?? [];
+	const matchers = patterns.map(likeToRegExp);
+	return rows
+		.map((row) => row.ParameterID)
+		.filter((id) => matchers.some((matcher) => matcher.test(id)));
 }
 
 function createGuard() {
@@ -117,11 +131,8 @@ function createGuard() {
 		Modding.disableMods(mods.map((mod) => mod.handle));
 	};
 
-	guard.showDialog = ({ mods, unknown }) => {
-		const items = [
-			...mods.map((mod) => `[LI]${Locale.compose(mod.name)}`),
-			...unknown.map((entry) => `[LI]${Locale.compose(guard.text.unknown)} ${entry.parameters.join(", ")}`),
-		].join("");
+	guard.showDialog = (mods) => {
+		const items = mods.map((mod) => `[LI]${Locale.compose(mod.name)}`).join("");
 		const body =
 			Locale.compose(guard.text.header) +
 			`[N][BLIST]  ${items}[/BLIST][N]` +
@@ -161,12 +172,20 @@ function createGuard() {
 			return;
 		}
 		const conflicts = guard.findConflicts();
-		if (conflicts.mods.length === 0 && conflicts.unknown.length === 0) {
+		// An unaccounted footprint is a suspicion, not a finding. The parameters
+		// matched, but no installed mod owns them, and another author's mod can
+		// legitimately use a similar name. Say so in the log and let the player
+		// through: holding the menu shut on a guess locks people out of their game
+		// over someone else's naming.
+		for (const entry of conflicts.unknown) {
+			console.warn(`ZG conflict guard: ${entry.parameters.join(", ")} looks like '${entry.label}' but no installed mod accounts for it; not blocking`);
+		}
+		if (conflicts.mods.length === 0) {
 			return;
 		}
 		event.preventDefault();
 		event.stopImmediatePropagation();
-		guard.showDialog(conflicts);
+		guard.showDialog(conflicts.mods);
 	};
 
 	return guard;
@@ -231,6 +250,6 @@ export function registerModConflicts(conflicts, options = {}) {
 		guard.disable(mods);
 	}
 	for (const entry of unknown) {
-		console.warn(`ZG conflict guard: unidentified mod adds ${entry.parameters.join(", ")}`);
+		console.warn(`ZG conflict guard: ${entry.parameters.join(", ")} looks like '${entry.label}' but no installed mod accounts for it`);
 	}
 }

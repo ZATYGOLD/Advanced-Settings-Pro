@@ -6,13 +6,14 @@ import { zgDesignateBiomes } from './zg-map-biomes.js';
 import { assignAdvancedStartRegions } from 'fs://game/base-standard/maps/assign-advanced-start-region.js';
 import { chooseStartSectors, assignStartPositions } from 'fs://game/base-standard/maps/assign-starting-plots.js';
 import { generateDiscoveries } from 'fs://game/base-standard/maps/discovery-generator.js';
-import { expandCoastsPlus, addMountains, generateLakes, addHills, buildRainfallMap } from 'fs://game/base-standard/maps/elevation-terrain-generator.js';
+import { expandCoastsPlus, generateLakes, buildRainfallMap } from 'fs://game/base-standard/maps/elevation-terrain-generator.js';
+import { zgAddRough } from './zg-map-rough.js';
 import { addFeatures } from 'fs://game/base-standard/maps/feature-biome-generator.js';
 import { dumpStartSectors, dumpTerrain, dumpContinents, dumpElevation, dumpRainfall, dumpBiomes, dumpFeatures, dumpResources, dumpNoisePredicate } from 'fs://game/base-standard/maps/map-debug-helpers.js';
-import { g_PolarWaterRows, g_AvoidSeamOffset, g_IslandWidth, g_WaterPercent, g_Cutoff, g_OceanWaterColumns, g_NavigableRiverTerrain, g_LandmassFractal, g_FlatTerrain, g_OceanTerrain, g_FractalWeight, g_CenterWeight, g_StartSectorWeight } from 'fs://game/base-standard/maps/map-globals.js';
+import { g_PolarWaterRows, g_AvoidSeamOffset, g_IslandWidth, g_WaterPercent, g_Cutoff, g_OceanWaterColumns, g_LandmassFractal, g_FlatTerrain, g_OceanTerrain, g_FractalWeight, g_CenterWeight, g_StartSectorWeight } from 'fs://game/base-standard/maps/map-globals.js';
 import { needHumanNearEquator, createIslands, applyCoastalErosionAdjustingForStartSectors, applyCoastalErosion, createOrganicLandmasses, markLandmassRegionId, getHeightAdjustingForStartSector } from 'fs://game/base-standard/maps/map-utilities.js';
 import { addNaturalWonders } from 'fs://game/base-standard/maps/natural-wonder-generator.js';
-import { generateResources } from 'fs://game/base-standard/maps/resource-generator.js';
+import { zgGenerateResources } from './zg-map-resources.js';
 import { generateSnow, dumpPermanentSnow } from 'fs://game/base-standard/maps/snow-generator.js';
 import { addVolcanoes, addTundraVolcanoes } from 'fs://game/base-standard/maps/volcano-generator.js';
 
@@ -221,7 +222,7 @@ function generateMap() {
   generateLakes(iWidth, iHeight, iTilesPerLake);
   AreaBuilder.recalculateAreas();
   TerrainBuilder.buildElevation();
-  addHills(iWidth, iHeight);
+  zgAddRough(iWidth, iHeight);
   buildRainfallMap(iWidth, iHeight);
   zgModelRivers(5, 15);
   TerrainBuilder.validateAndFixTerrain();
@@ -242,7 +243,7 @@ function generateMap() {
   dumpBiomes(iWidth, iHeight);
   dumpFeatures(iWidth, iHeight);
   dumpPermanentSnow(iWidth, iHeight);
-  generateResources(iWidth, iHeight);
+  zgGenerateResources(iWidth, iHeight);
   startPositions = assignStartPositions(
     iNumPlayers1,
     iNumPlayers2,

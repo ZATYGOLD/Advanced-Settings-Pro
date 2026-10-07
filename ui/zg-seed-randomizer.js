@@ -2,7 +2,7 @@
 // of the single-player Advanced Settings screen.
 //
 // The screen renders every integer setting through the registered TextInput
-// component without naming the parameter, so the seed fields are recognised
+// component without naming the parameter, so the seed fields are recognized
 // by their current value matching one of the seed parameters when the field
 // is created. The button feeds a new seed through the field's own setValue.
 import { createComponent, mergeProps } from 'fs://game/core/vendor/solid-js/dist/solid.js';
@@ -25,7 +25,7 @@ function seedValues() {
 }
 
 function isSeedField(props) {
-	return typeof props.value == "function" && typeof props.setValue == "function"
+	return props != null && typeof props.value == "function" && typeof props.setValue == "function"
 		&& props.enableVirtualKeyboard === true && seedValues().includes(String(props.value()));
 }
 
@@ -34,7 +34,10 @@ function randomSeed() {
 }
 
 const textInput = ComponentRegistry.get("TextInput");
-const createBaseTextInput = textInput?.factory;
+// `factory` is a signal accessor returning the currently registered factory.
+// Read it once here to capture the base implementation before this module
+// overrides the registration; reading it later would return our own factory.
+const createBaseTextInput = textInput?.factory?.();
 if (createBaseTextInput) {
 	ComponentRegistry.register({
 		name: "TextInput",

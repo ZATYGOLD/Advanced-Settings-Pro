@@ -13,8 +13,78 @@
 		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="ru_RU">
 			<Text>Включено</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MEMENTOS_NAME" Language="ru_RU"><Text>Реликвии</Text></Replace>
+		<Replace Tag="LOC_ZG_TEAM_DESCRIPTION" Language="ru_RU">
+			<Text>Игроки одной команды побеждают вместе: победа засчитывается команде, а не отдельному игроку.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TEAM_NAME" Language="ru_RU">
+			<Text>Команда</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_FAST" Language="ru_RU">
+			<Text>Каждое начисление в эту эпоху даёт в полтора раза больше.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_BALANCED" Language="ru_RU">
+			<Text>Меньшие ранние и большие поздние вехи в эту эпоху.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_STANDARD" Language="ru_RU">
+			<Text>Собственные начисления игры для этой эпохи.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_SLOW" Language="ru_RU">
+			<Text>Каждое начисление в эту эпоху даёт вдвое меньше.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WONDER_TOGGLE_DESCRIPTION_ENABLED" Language="ru_RU">
+			<Text>Это чудо природы может появиться на карте.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_WONDER_TOGGLE_DESCRIPTION_DISABLED" Language="ru_RU">
+			<Text>Это чудо природы не появится на карте.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_50" Language="ru_RU">
+			<Text>На 50% больше производства для проектов победы в эту эпоху.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_25" Language="ru_RU">
+			<Text>На 25% больше производства для проектов победы в эту эпоху.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_PLUS_100" Language="ru_RU">
+			<Text>На 100% больше производства для проектов победы в эту эпоху.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_AGE_DESC_MINUS_25" Language="ru_RU">
+			<Text>На 25% меньше производства для проектов победы в эту эпоху.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_50" Language="ru_RU">
+			<Text>На 50% больше науки в эту эпоху.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_25" Language="ru_RU">
+			<Text>На 25% больше науки в эту эпоху.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_100" Language="ru_RU">
+			<Text>На 100% больше науки в эту эпоху.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_AGE_DESC_MINUS_25" Language="ru_RU">
+			<Text>На 25% меньше науки в эту эпоху.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_VALUE_DESCRIPTION" Language="ru_RU">
+			<Text>Наибольшее число поселений, которое можно держать в эту эпоху.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_50" Language="ru_RU">
+			<Text>На 50% больше культуры в эту эпоху.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_25" Language="ru_RU">
+			<Text>На 25% больше культуры в эту эпоху.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_PLUS_100" Language="ru_RU">
+			<Text>На 100% больше культуры в эту эпоху.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_AGE_DESC_MINUS_25" Language="ru_RU">
+			<Text>На 25% меньше культуры в эту эпоху.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION_ENABLED" Language="ru_RU">
+			<Text>Может произойти любой кризис из списка ниже.</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_DISABLED_NAME" Language="ru_RU">
 			<Text>Отключено</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION_DISABLED" Language="ru_RU">
+			<Text>Кризисы не происходят.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_EARLY_NAME" Language="ru_RU">
 			<Text>Рано</Text>
@@ -36,6 +106,9 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_FAST_NAME" Language="ru_RU">
 			<Text>Быстро</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_QUICK_NAME" Language="ru_RU">
+			<Text>Резво</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SLOW_NAME" Language="ru_RU">
 			<Text>Медленно</Text>
@@ -95,61 +168,76 @@
 			<Text>Современность</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт базовое передвижение поселенца и его скорость на воде.</Text>
+			<Text>Определяет, как далеко поселенцы идут по суше и по морю. Быстрые поселенцы занимают дальние места раньше соперника.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_SLOW" Language="ru_RU">
-			<Text>[BLIST][LI] Медленно: 2[icon:Action_Move]базового и 1[icon:Action_Move]на воде.[/BLIST]</Text>
+			<Text>2[icon:Action_Move]базового и 1[icon:Action_Move]на воде.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="ru_RU">
-			<Text>[BLIST][LI] Стандарт: 3[icon:Action_Move]базового и 2[icon:Action_Move]на воде.[/BLIST]</Text>
+			<Text>3[icon:Action_Move]базового и 2[icon:Action_Move]на воде.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="ru_RU">
-			<Text>[BLIST][LI] Быстро: 4[icon:Action_Move]базового и 3[icon:Action_Move]на воде.[/BLIST]</Text>
+			<Text>5[icon:Action_Move]базового и 4[icon:Action_Move]на воде.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION_QUICK" Language="ru_RU">
+			<Text>4[icon:Action_Move]базового и 3[icon:Action_Move]на воде.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт базовое передвижение серебряного каравана и его скорость на воде.</Text>
+			<Text>Определяет, как далеко идут обозы с сокровищами по суше и по морю. Быстрые обозы меньше времени открыты для налётчиков.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_SLOW" Language="ru_RU">
-			<Text>[BLIST][LI] Медленно: 1[icon:Action_Move]передвижения на суше и на воде.[/BLIST]</Text>
+			<Text>1[icon:Action_Move]передвижения на суше и на воде.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_DEFAULT" Language="ru_RU">
-			<Text>[BLIST][LI] Стандарт: 2[icon:Action_Move]передвижения на суше и на воде.[/BLIST]</Text>
+			<Text>2[icon:Action_Move]передвижения на суше и на воде.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_FAST" Language="ru_RU">
-			<Text>[BLIST][LI] Быстро: 3[icon:Action_Move]передвижения на суше и на воде.[/BLIST]</Text>
+			<Text>4[icon:Action_Move]передвижения на суше и на воде.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION_QUICK" Language="ru_RU">
+			<Text>3[icon:Action_Move]передвижения на суше и на воде.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт начальное число [icon:INDEPENDENT_POWER]независимых держав. Результат может отличаться.[n]Игра постарается создать заданное количество, однако точное число может отличаться.[n]Результат будет максимально близок к ожидаемому.</Text>
+			<Text>Задаёт начальное число [icon:INDEPENDENT_POWER]независимых держав.[n]Карта подходит к нему как можно ближе, но может разместить не ровно столько.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_NONE" Language="ru_RU">
-			<Text>[BLIST][LI] Нет: 0 независимых держав.[/BLIST]</Text>
+			<Text>0 независимых держав.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_LESS" Language="ru_RU">
-			<Text>[BLIST][LI] Меньше: 2 независимых держав на цивилизацию.[/BLIST]</Text>
+			<Text>2 независимых держав на цивилизацию.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_DEFAULT" Language="ru_RU">
-			<Text>[BLIST][LI] Стандарт: 3 независимых держав на цивилизацию.[/BLIST]</Text>
+			<Text>3 независимых держав на цивилизацию.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION_MORE" Language="ru_RU">
-			<Text>[BLIST][LI] Больше: 4 независимых держав на цивилизацию.[/BLIST]</Text>
+			<Text>4 независимых держав на цивилизацию.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт минимальное расстояние между независимыми державами.[n] Это может повлиять на их общее число.</Text>
+			<Text>Задаёт минимальное расстояние между независимыми державами.[n]Это может повлиять на их общее число.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_LESS" Language="ru_RU">
-			<Text>[BLIST][LI] Античность: 4 клеток.[LI] Исследования: 3 клеток.[LI] Современность: 2 клеток.[/BLIST]</Text>
+			<Text>Меньше места между независимыми державами, поэтому их больше.[nn][BLIST]
+				[LI] Античность: 4 клеток
+				[LI] Исследования: 3 клеток
+				[LI] Современность: 2 клеток[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_DEFAULT" Language="ru_RU">
-			<Text>[BLIST][LI] Античность: 6 клеток.[LI] Исследования: 6 клеток.[LI] Современность: 4 клеток.[/BLIST]</Text>
+			<Text>Собственный интервал игры между независимыми державами.[nn][BLIST]
+				[LI] Античность: 6 клеток
+				[LI] Исследования: 6 клеток
+				[LI] Современность: 4 клеток[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION_MORE" Language="ru_RU">
-			<Text>[BLIST][LI] Античность: 7 клеток.[LI] Исследования: 7 клеток.[LI] Современность: 5 клеток.[/BLIST]</Text>
+			<Text>Больше места между независимыми державами, поэтому их меньше.[nn][BLIST]
+				[LI] Античность: 7 клеток
+				[LI] Исследования: 7 клеток
+				[LI] Современность: 5 клеток[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_SETTINGS_DESCRIPTION" Language="ru_RU">
 			<Text>Отключает все стихийные бедствия.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_FREQUENCY_DESCRIPTION_CUSTOM" Language="ru_RU">
-			<Text>Особый: задайте частоту катастроф для каждой эпохи отдельно.</Text>
+			<Text>Задайте частоту катастроф для каждой эпохи отдельно.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_DISASTER_AGE_DESCRIPTION" Language="ru_RU">
 			<Text>Задаёт частоту катастроф этой эпохи.[n]Действует только если «Катастрофы» установлены на Особый.</Text>
@@ -158,40 +246,52 @@
 			<Text>Задаёт начальный [icon:SETTLEMENT_LIMIT]лимит поселений для каждой эпохи.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_DEFAULT" Language="ru_RU">
-			<Text>[BLIST][LI] Античность: лимит поселений 3.[LI] Исследования: лимит поселений 8.[LI] Современность: лимит поселений 16.[/BLIST]</Text>
+			<Text>Собственный предел поселений игры.[nn][BLIST]
+				[LI] Античность: Лимит поселений 3
+				[LI] Исследования: Лимит поселений 8
+				[LI] Современность: Лимит поселений 16[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_MORE" Language="ru_RU">
-			<Text>[BLIST][LI] Античность: лимит поселений 5.[LI] Исследования: лимит поселений 12.[LI] Современность: лимит поселений 20.[/BLIST]</Text>
+			<Text>Более свободный предел числа поселений.[nn][BLIST]
+				[LI] Античность: Лимит поселений 5
+				[LI] Исследования: Лимит поселений 12
+				[LI] Современность: Лимит поселений 20[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_LESS" Language="ru_RU">
-			<Text>[BLIST][LI] Античность: лимит поселений 1.[LI] Исследования: лимит поселений 4.[LI] Современность: лимит поселений 10.[/BLIST]</Text>
+			<Text>Более строгий предел числа поселений.[nn][BLIST]
+				[LI] Античность: Лимит поселений 1
+				[LI] Исследования: Лимит поселений 4
+				[LI] Современность: Лимит поселений 10[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION" Language="ru_RU">
 			<Text>Задаёт минимальное расстояние между поселениями.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_LESS" Language="ru_RU">
-			<Text>[BLIST][LI] Меньше: 2 клеток.[/BLIST]</Text>
+			<Text>2 клеток.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_DEFAULT" Language="ru_RU">
-			<Text>[BLIST][LI] Стандарт: 3 клеток.[/BLIST]</Text>
+			<Text>3 клеток.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="ru_RU">
-			<Text>[BLIST][LI] Больше: 4 клеток.[/BLIST]</Text>
+			<Text>4 клеток.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт стоимость производства боевых юнитов.</Text>
+			<Text>Определяет стоимость боевых юнитов в производстве. Высокая стоимость превращает постоянную армию в серьёзное вложение.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_LOW" Language="ru_RU">
-			<Text>[BLIST][LI] Низкая: на 25% дешевле.[/BLIST]</Text>
+			<Text>На 25% меньше производства. Воин: 23 вместо 30. (При стандартной скорости)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>[BLIST][LI] Стандарт: без скидки.[/BLIST]</Text>
+			<Text>Стоимость юнитов из самой игры.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_HIGH" Language="ru_RU">
-			<Text>[BLIST][LI] Высокая: на 50% дороже.[/BLIST]</Text>
+			<Text>На 50% больше производства. Воин: 45 вместо 30. (При стандартной скорости)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_MEDIUM" Language="ru_RU">
+			<Text>На 25% больше производства. Воин: 38 вместо 30. (При стандартной скорости)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION_DOUBLE" Language="ru_RU">
-			<Text>[BLIST][LI] Вдвое больше: на 100% дороже.[/BLIST]</Text>
+			<Text>На 100% больше производства. Воин: 60 вместо 30. (При стандартной скорости)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISES_DESCRIPTION" Language="ru_RU">
 			<Text>Включает или отключает все кризисы.[n]Отключено выключает каждый кризис в разделе «Выбор кризисов».</Text>
@@ -203,34 +303,68 @@
 			<Text>Кризисы не происходят.[n]Включите «Кризисы», чтобы выбрать время.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_EARLY" Language="ru_RU">
-			<Text>[BLIST][LI] Этап 1: начинается при 50%.[LI] Этап 2: начинается при 65%.[LI] Этап 3: начинается при 85%.[/BLIST]</Text>
+			<Text>Каждый этап кризиса начинается раньше в эпохе.[nn][BLIST]
+				[LI] Этап 1: Начинается при 50%
+				[LI] Этап 2: Начинается при 65%
+				[LI] Этап 3: Начинается при 85%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_DEFAULT" Language="ru_RU">
-			<Text>[BLIST][LI] Этап 1: начинается при 70%.[LI] Этап 2: начинается при 80%.[LI] Этап 3: начинается при 90%.[/BLIST]</Text>
+			<Text>Собственные сроки кризисов игры.[nn][BLIST]
+				[LI] Этап 1: Начинается при 70%
+				[LI] Этап 2: Начинается при 80%
+				[LI] Этап 3: Начинается при 90%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CRISIS_TIMING_DESCRIPTION_LATE" Language="ru_RU">
-			<Text>[BLIST][LI] Этап 1: начинается при 85%.[LI] Этап 2: начинается при 90%.[LI] Этап 3: начинается при 95%.[/BLIST]</Text>
+			<Text>Каждый этап кризиса начинается позже в эпохе.[nn][BLIST]
+				[LI] Этап 1: Начинается при 85%
+				[LI] Этап 2: Начинается при 90%
+				[LI] Этап 3: Начинается при 95%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION" Language="ru_RU">
 			<Text>Задаёт число [icon:NOTIFICATION_DISCOVER_NATURAL_WONDER] чудес природы на карте.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_NONE" Language="ru_RU">
-			<Text>Размер карты[n] [BLIST][LI] Крошечная: 0 чудес природы.[LI] Малая: 0 чудес природы.[LI] Стандартная: 0 чудес природы.[LI] Большая: 0 чудес природы.[LI] Огромная: 0 чудес природы.[/BLIST]</Text>
+			<Text>Чудеса природы не размещаются.[nn][BLIST]
+				[LI] Крошечная: 0 чудес природы
+				[LI] Малая: 0 чудес природы
+				[LI] Стандартная: 0 чудес природы
+				[LI] Большая: 0 чудес природы
+				[LI] Огромная: 0 чудес природы[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_HALF" Language="ru_RU">
-			<Text>Размер карты[n] [BLIST][LI] Крошечная: 1 чудес природы.[LI] Малая: 2 чудес природы.[LI] Стандартная: 2 чудес природы.[LI] Большая: 3 чудес природы.[LI] Огромная: 3 чудес природы.[/BLIST]</Text>
+			<Text>На 50% меньше чудес природы.[nn][BLIST]
+				[LI] Крошечная: 1 чудо природы
+				[LI] Малая: 2 чуда природы
+				[LI] Стандартная: 2 чуда природы
+				[LI] Большая: 3 чуда природы
+				[LI] Огромная: 3 чуда природы[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DEFAULT" Language="ru_RU">
-			<Text>Размер карты[n] [BLIST][LI] Крошечная: 3 чудес природы.[LI] Малая: 4 чудес природы.[LI] Стандартная: 5 чудес природы.[LI] Большая: 6 чудес природы.[LI] Огромная: 7 чудес природы.[/BLIST]</Text>
+			<Text>Обычное количество чудес природы.[nn][BLIST]
+				[LI] Крошечная: 3 чуда природы
+				[LI] Малая: 4 чуда природы
+				[LI] Стандартная: 5 чудес природы
+				[LI] Большая: 6 чудес природы
+				[LI] Огромная: 7 чудес природы[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_MORE" Language="ru_RU">
-			<Text>Размер карты[n] [BLIST][LI] Крошечная: 5 чудес природы.[LI] Малая: 6 чудес природы.[LI] Стандартная: 8 чудес природы.[LI] Большая: 9 чудес природы.[LI] Огромная: 11 чудес природы.[/BLIST]</Text>
+			<Text>На 50% больше чудес природы.[nn][BLIST]
+				[LI] Крошечная: 5 чудес природы
+				[LI] Малая: 6 чудес природы
+				[LI] Стандартная: 8 чудес природы
+				[LI] Большая: 9 чудес природы
+				[LI] Огромная: 11 чудес природы[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_DESCRIPTION_DOUBLE" Language="ru_RU">
-			<Text>Размер карты[n] [BLIST][LI] Крошечная: 6 чудес природы.[LI] Малая: 8 чудес природы.[LI] Стандартная: 10 чудес природы.[LI] Большая: 12 чудес природы.[LI] Огромная: 14 чудес природы.[/BLIST]</Text>
+			<Text>На 100% больше чудес природы.[nn][BLIST]
+				[LI] Крошечная: 6 чудес природы
+				[LI] Малая: 8 чудес природы
+				[LI] Стандартная: 10 чудес природы
+				[LI] Большая: 12 чудес природы
+				[LI] Огромная: 14 чудес природы[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт частоту озёр на карте. Результат может отличаться.[n] Игра постарается изменить число озёр.[n] Однако генерация карты может вернуть значение по умолчанию.</Text>
+			<Text>Задаёт, сколько озёр создаёт карта.[n]Генерация карты может это переопределить, поэтому результат может отличаться.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_LESS" Language="ru_RU">
 			<Text>Создаёт меньше озёр.</Text>
@@ -277,17 +411,11 @@
 		<Replace Tag="LOC_ZG_MOD_CONFLICT_DISABLE" Language="ru_RU">
 			<Text>Отключить конфликтующие моды</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_MOD_CONFLICT_UNKNOWN_MOD" Language="ru_RU">
-			<Text>Неопознанный мод, добавляющий настройки:</Text>
-		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_GAMEPACINGOPTIONS" Language="ru_RU">
 			<Text>Настройки темпа</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_FASTER_NAME" Language="ru_RU">
-			<Text>Ещё быстрее</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_PACING_DESCRIPTION_CUSTOM" Language="ru_RU">
-			<Text>Особый: каждая эпоха использует свою строку в группах эпох ниже.</Text>
+			<Text>Каждая эпоха использует свою строку в группах эпох ниже.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACING_AGE_DESCRIPTION" Language="ru_RU">
 			<Text>Задаёт значение для этой эпохи.[n]Действует, только если соответствующая строка в «Настройках темпа» стоит на «Особый». Готовые наборы темпа заполняют эти строки; изменение одной из них переводит Набор темпа на «Особый».</Text>
@@ -296,100 +424,428 @@
 			<Text>Прогресс эпохи</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт, как быстро вехи, а также технологии и институты будущего заполняют шкалу эпохи.</Text>
+			<Text>Задаёт, насколько быстро заполняется шкала эпохи. Каждая веха пути наследия и каждая будущая технология или институт добавляют очки; длительность эпохи задаёт сумму, которая её завершает.[n]Числа вех — это первая, вторая и третья веха эпохи.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_NAME" Language="ru_RU">
 			<Text>Стоимость технологий</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт стоимость исследования технологий.</Text>
+			<Text>Определяет, сколько науки стоит каждая технология. Высокая стоимость растягивает эпоху, низкая позволяет мчаться по древу.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_NAME" Language="ru_RU">
 			<Text>Стоимость общественных институтов</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт стоимость общественных институтов в культуре.</Text>
+			<Text>Определяет, сколько культуры стоит каждый принцип. Высокая стоимость растягивает эпоху, низкая позволяет мчаться по древу.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_NAME" Language="ru_RU">
+			<Text>Стоимость зданий</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION" Language="ru_RU">
+			<Text>Определяет, сколько производства стоит каждое здание, включая уникальные. Высокая стоимость замедляет застройку районов поселений, низкая позволяет быстро их заполнить. Чудеса сохраняют собственную стоимость.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_SWIFT" Language="ru_RU">
+			<Text>Здания дешевле в каждой эпохе.[nn][BLIST]
+				[LI] Античность: -25%
+				[LI] Исследования: -25%
+				[LI] Современность: -25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_BALANCED" Language="ru_RU">
+			<Text>Здания дороже в начале, с эпохи Исследований — по стандартной цене.[nn][BLIST]
+				[LI] Античность: +25%
+				[LI] Исследования: Стандарт
+				[LI] Современность: Стандарт[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_EXTENDED" Language="ru_RU">
+			<Text>Здания дороже в каждой эпохе, особенно после Античности.[nn][BLIST]
+				[LI] Античность: +25%
+				[LI] Исследования: +50%
+				[LI] Современность: +50%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_LOW" Language="ru_RU">
+			<Text>На 25% меньше производства. Амбар: 41 вместо 55. (При стандартной скорости)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_MEDIUM" Language="ru_RU">
+			<Text>На 25% больше производства. Амбар: 69 вместо 55. (При стандартной скорости)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_HIGH" Language="ru_RU">
+			<Text>На 50% больше производства. Амбар: 83 вместо 55. (При стандартной скорости)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_DESCRIPTION_DOUBLE" Language="ru_RU">
+			<Text>На 100% больше производства. Амбар: 110 вместо 55. (При стандартной скорости)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_MINUS_25" Language="ru_RU">
+			<Text>На 25% меньше производства для зданий в эту эпоху.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_25" Language="ru_RU">
+			<Text>На 25% больше производства для зданий в эту эпоху.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_50" Language="ru_RU">
+			<Text>На 50% больше производства для зданий в эту эпоху.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_100" Language="ru_RU">
+			<Text>На 100% больше производства для зданий в эту эпоху.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_NAME" Language="ru_RU">
-			<Text>Рост городов</Text>
+			<Text>Рост поселений</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт, сколько еды нужно городам для роста.</Text>
+			<Text>Определяет, сколько пищи нужно поселению для каждого нового жителя. Более низкие пороги позволяют поселениям гораздо раньше превысить размер 10.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_NAME" Language="ru_RU">
 			<Text>Дороги</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт стоимость передвижения по дорогам и железным дорогам.</Text>
+			<Text>Определяет, во сколько обходится передвижение по дорогам и железным дорогам. Дешёвые дороги позволяют армиям пересекать владения за куда меньшее число ходов.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_NAME" Language="ru_RU">
 			<Text>Стоимость победных проектов</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт стоимость производства научных и военных проектов триумфа в каждую эпоху.</Text>
+			<Text>Определяет стоимость в производстве 12 научных и военных проектов триумфа.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_SLOW" Language="ru_RU">
-			<Text>[BLIST][LI] Медленно: на 50% меньше очков.[/BLIST]</Text>
+			<Text>Каждое начисление даёт на 50% меньше, поэтому эпохи длятся дольше.[nn][BLIST]
+				[LI] Античность: 3, 3 и 5
+				[LI] Исследования: 3, 5 и 10
+				[LI] Современность: 3 и 5[/BLIST][nn]Будущие технологии и институты: по 5 очков.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>[BLIST][LI] Стандарт: без изменений.[/BLIST]</Text>
+			<Text>Собственные начисления игры.[nn][BLIST]
+				[LI] Античность: 5, 5 и 10
+				[LI] Исследования: 5, 10 и 20
+				[LI] Современность: 5 и 10[/BLIST][nn]Будущие технологии и институты: по 10 очков.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_FAST" Language="ru_RU">
-			<Text>[BLIST][LI] Быстро: на 50% больше очков.[/BLIST]</Text>
+			<Text>Каждое начисление даёт на 50% больше, поэтому эпохи кончаются раньше.[nn][BLIST]
+				[LI] Античность: 8, 8 и 15
+				[LI] Исследования: 8, 15 и 30
+				[LI] Современность: 8 и 15[/BLIST][nn]Будущие технологии и институты: по 15 очков.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_LOW" Language="ru_RU">
-			<Text>[BLIST][LI] Низкая: на 25% дешевле.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_LOW" Language="ru_RU">
+			<Text>На 25% меньше производства.[n]Стоимость каждого проекта победы: [BLIST]
+				[LI] Картирование звезд: 338
+				[LI] Сферическая Земля: 450
+				[LI] Гелиоцентрическая модель: 563
+				[LI] Изобретение математического анализа: 675
+				[LI] Преодоление звукового барьера: 750
+				[LI] Запуск спутника: 750
+				[LI] Производство ядерного оружия: 750
+				[LI] Трансокеанский перелет: 750
+				[LI] Радиотелескоп: 900
+				[LI] Подготовка к первому космическому полету с экипажем: 1500
+				[LI] Операция «Иви»: 1800
+				[LI] Космический полет с экипажем: 2250[/BLIST][nn](При стандартной скорости)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_LOW" Language="ru_RU">
+			<Text>На 25% меньше культуры. Вождество: 68 вместо 90. (При стандартной скорости)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_LOW" Language="ru_RU">
+			<Text>На 25% меньше науки. Гончарное дело: 53 вместо 70. (При стандартной скорости)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COST_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>[BLIST][LI] Стандарт: без изменений.[/BLIST]</Text>
+			<Text>Стоимость из самой игры.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_HIGH" Language="ru_RU">
-			<Text>[BLIST][LI] Высокая: на 50% дороже.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>Стоимость из самой игры.[n]Стоимость каждого проекта победы: [BLIST]
+				[LI] Картирование звезд: 450
+				[LI] Сферическая Земля: 600
+				[LI] Гелиоцентрическая модель: 750
+				[LI] Изобретение математического анализа: 900
+				[LI] Преодоление звукового барьера: 1000
+				[LI] Запуск спутника: 1000
+				[LI] Производство ядерного оружия: 1000
+				[LI] Трансокеанский перелет: 1000
+				[LI] Радиотелескоп: 1200
+				[LI] Подготовка к первому космическому полету с экипажем: 2000
+				[LI] Операция «Иви»: 2400
+				[LI] Космический полет с экипажем: 3000[/BLIST][nn](При стандартной скорости)</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_COST_DESCRIPTION_DOUBLE" Language="ru_RU">
-			<Text>[BLIST][LI] Вдвое больше: на 100% дороже.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_BALANCED" Language="ru_RU">
+			<Text>Стандарт в Античности, затем проекты победы дешевле.[nn][BLIST]
+				[LI] Античность: Стандарт
+				[LI] Исследования: -25%
+				[LI] Современность: -25%[/BLIST][nn]Стоимость по эпохам (Античность / Исследования / Современность):[BLIST]
+				[LI] Картирование звезд: 450 / 338 / 338
+				[LI] Сферическая Земля: 600 / 450 / 450
+				[LI] Гелиоцентрическая модель: 750 / 563 / 563
+				[LI] Изобретение математического анализа: 900 / 675 / 675
+				[LI] Преодоление звукового барьера: 1000 / 750 / 750
+				[LI] Запуск спутника: 1000 / 750 / 750
+				[LI] Производство ядерного оружия: 1000 / 750 / 750
+				[LI] Трансокеанский перелет: 1000 / 750 / 750
+				[LI] Радиотелескоп: 1200 / 900 / 900
+				[LI] Подготовка к первому космическому полету с экипажем: 2000 / 1500 / 1500
+				[LI] Операция «Иви»: 2400 / 1800 / 1800
+				[LI] Космический полет с экипажем: 3000 / 2250 / 2250[/BLIST][nn](При стандартной скорости)</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOWER" Language="ru_RU">
-			<Text>[BLIST][LI] Медленнее: города растут медленнее.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_EXTENDED" Language="ru_RU">
+			<Text>Все проекты победы дороже во все эпохи.[nn][BLIST]
+				[LI] Античность: +25%
+				[LI] Исследования: +25%
+				[LI] Современность: +25%[/BLIST][nn]Стоимость по эпохам (Античность / Исследования / Современность):[BLIST]
+				[LI] Картирование звезд: 563 / 563 / 563
+				[LI] Сферическая Земля: 750 / 750 / 750
+				[LI] Гелиоцентрическая модель: 938 / 938 / 938
+				[LI] Изобретение математического анализа: 1125 / 1125 / 1125
+				[LI] Преодоление звукового барьера: 1250 / 1250 / 1250
+				[LI] Запуск спутника: 1250 / 1250 / 1250
+				[LI] Производство ядерного оружия: 1250 / 1250 / 1250
+				[LI] Трансокеанский перелет: 1250 / 1250 / 1250
+				[LI] Радиотелескоп: 1500 / 1500 / 1500
+				[LI] Подготовка к первому космическому полету с экипажем: 2500 / 2500 / 2500
+				[LI] Операция «Иви»: 3000 / 3000 / 3000
+				[LI] Космический полет с экипажем: 3750 / 3750 / 3750[/BLIST][nn](При стандартной скорости)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_SWIFT" Language="ru_RU">
+			<Text>Все проекты победы дешевле во все эпохи.[nn][BLIST]
+				[LI] Античность: -25%
+				[LI] Исследования: -25%
+				[LI] Современность: -25%[/BLIST][nn]Стоимость по эпохам (Античность / Исследования / Современность):[BLIST]
+				[LI] Картирование звезд: 338 / 338 / 338
+				[LI] Сферическая Земля: 450 / 450 / 450
+				[LI] Гелиоцентрическая модель: 563 / 563 / 563
+				[LI] Изобретение математического анализа: 675 / 675 / 675
+				[LI] Преодоление звукового барьера: 750 / 750 / 750
+				[LI] Запуск спутника: 750 / 750 / 750
+				[LI] Производство ядерного оружия: 750 / 750 / 750
+				[LI] Трансокеанский перелет: 750 / 750 / 750
+				[LI] Радиотелескоп: 900 / 900 / 900
+				[LI] Подготовка к первому космическому полету с экипажем: 1500 / 1500 / 1500
+				[LI] Операция «Иви»: 1800 / 1800 / 1800
+				[LI] Космический полет с экипажем: 2250 / 2250 / 2250[/BLIST][nn](При стандартной скорости)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>Стоимость из самой игры.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="ru_RU">
+			<Text>Стандартные институты в начале и дороже, когда дерево раскрывается.[nn][BLIST]
+				[LI] Античность: Стандарт
+				[LI] Исследования: +25%
+				[LI] Современность: +25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_EXTENDED" Language="ru_RU">
+			<Text>Институты дороже в каждой эпохе, особенно после Античности.[nn][BLIST]
+				[LI] Античность: +25%
+				[LI] Исследования: +50%
+				[LI] Современность: +50%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_SWIFT" Language="ru_RU">
+			<Text>Дешёвые социальные институты в начале, стандартные с Современности.[nn][BLIST]
+				[LI] Античность: -25%
+				[LI] Исследования: -25%
+				[LI] Современность: Стандарт[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>Стоимость из самой игры.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="ru_RU">
+			<Text>Дорогие исследования в начале и дешёвые, когда дерево раскрывается.[nn][BLIST]
+				[LI] Античность: +25%
+				[LI] Исследования: Стандарт
+				[LI] Современность: -25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_EXTENDED" Language="ru_RU">
+			<Text>Исследования дороже в каждой эпохе, особенно после Античности.[nn][BLIST]
+				[LI] Античность: +25%
+				[LI] Исследования: +50%
+				[LI] Современность: +50%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_SWIFT" Language="ru_RU">
+			<Text>Дешёвые исследования в начале, стандартные с Современности.[nn][BLIST]
+				[LI] Античность: -25%
+				[LI] Исследования: -25%
+				[LI] Современность: Стандарт[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_HIGH" Language="ru_RU">
+			<Text>На 50% больше производства.[n]Стоимость каждого проекта победы: [BLIST]
+				[LI] Картирование звезд: 675
+				[LI] Сферическая Земля: 900
+				[LI] Гелиоцентрическая модель: 1125
+				[LI] Изобретение математического анализа: 1350
+				[LI] Преодоление звукового барьера: 1500
+				[LI] Запуск спутника: 1500
+				[LI] Производство ядерного оружия: 1500
+				[LI] Трансокеанский перелет: 1500
+				[LI] Радиотелескоп: 1800
+				[LI] Подготовка к первому космическому полету с экипажем: 3000
+				[LI] Операция «Иви»: 3600
+				[LI] Космический полет с экипажем: 4500[/BLIST][nn](При стандартной скорости)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_HIGH" Language="ru_RU">
+			<Text>На 50% больше культуры. Вождество: 135 вместо 90. (При стандартной скорости)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_HIGH" Language="ru_RU">
+			<Text>На 50% больше науки. Гончарное дело: 105 вместо 70. (При стандартной скорости)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_MEDIUM" Language="ru_RU">
+			<Text>На 25% больше производства.[n]Стоимость каждого проекта победы: [BLIST]
+				[LI] Картирование звезд: 563
+				[LI] Сферическая Земля: 750
+				[LI] Гелиоцентрическая модель: 938
+				[LI] Изобретение математического анализа: 1125
+				[LI] Преодоление звукового барьера: 1250
+				[LI] Запуск спутника: 1250
+				[LI] Производство ядерного оружия: 1250
+				[LI] Трансокеанский перелет: 1250
+				[LI] Радиотелескоп: 1500
+				[LI] Подготовка к первому космическому полету с экипажем: 2500
+				[LI] Операция «Иви»: 3000
+				[LI] Космический полет с экипажем: 3750[/BLIST][nn](При стандартной скорости)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_MEDIUM" Language="ru_RU">
+			<Text>На 25% больше культуры. Вождество: 113 вместо 90. (При стандартной скорости)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_MEDIUM" Language="ru_RU">
+			<Text>На 25% больше науки. Гончарное дело: 88 вместо 70. (При стандартной скорости)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION_DOUBLE" Language="ru_RU">
+			<Text>На 100% больше производства.[n]Стоимость каждого проекта победы: [BLIST]
+				[LI] Картирование звезд: 900
+				[LI] Сферическая Земля: 1200
+				[LI] Гелиоцентрическая модель: 1500
+				[LI] Изобретение математического анализа: 1800
+				[LI] Преодоление звукового барьера: 2000
+				[LI] Запуск спутника: 2000
+				[LI] Производство ядерного оружия: 2000
+				[LI] Трансокеанский перелет: 2000
+				[LI] Радиотелескоп: 2400
+				[LI] Подготовка к первому космическому полету с экипажем: 4000
+				[LI] Операция «Иви»: 4800
+				[LI] Космический полет с экипажем: 6000[/BLIST][nn](При стандартной скорости)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_DOUBLE" Language="ru_RU">
+			<Text>На 100% больше культуры. Вождество: 180 вместо 90. (При стандартной скорости)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_DOUBLE" Language="ru_RU">
+			<Text>На 100% больше науки. Гончарное дело: 140 вместо 70. (При стандартной скорости)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SLOW" Language="ru_RU">
-			<Text>[BLIST][LI] Медленно: города растут чуть медленнее.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SLOWER_NAME" Language="ru_RU">
-			<Text>Медленнее</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_ROADS_EXPRESS_NAME" Language="ru_RU">
-			<Text>Экспресс</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXPRESS" Language="ru_RU">
-			<Text>[BLIST][LI] Экспресс: на 25% меньше очков передвижения на дорогах, на 50% — на железных дорогах.[/BLIST]</Text>
+			<Text>На 25% больше еды на жителя.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_PROGRESS_RATE_DESCRIPTION_BALANCED" Language="ru_RU">
-			<Text>[BLIST][LI] Сбалансированный: вехи дают 4, 7 и 11 очков в Античности, 4, 8 и 12 в эпоху Открытий и 4 и 8 в Новейшее время; будущие технологии и институты дают 8, в Новейшее время — 7.[/BLIST]</Text>
+			<Text>Меньшие ранние вехи и большие поздние, чтобы эпоха не заканчивалась на раннем рывке.[nn][BLIST]
+				[LI] Античность: 4, 7 и 11
+				[LI] Исследования: 4, 8 и 12
+				[LI] Современность: 4 и 8[/BLIST][nn]Будущие технологии и институты: 8 очков, в Современности — 7.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>[BLIST][LI] Стандарт: без изменений.[/BLIST]</Text>
+			<Text>Пороги еды из самой игры.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="ru_RU">
+			<Text>Города растут быстрее в начале, затем возвращаются к стандарту.[nn][BLIST]
+				[LI] Античность: -25%
+				[LI] Исследования: -25%
+				[LI] Современность: Стандарт[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_EXTENDED" Language="ru_RU">
+			<Text>Города растут медленнее во все эпохи.[nn][BLIST]
+				[LI] Античность: +25%
+				[LI] Исследования: +25%
+				[LI] Современность: +25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SWIFT" Language="ru_RU">
+			<Text>Города растут быстрее во все эпохи.[nn][BLIST]
+				[LI] Античность: -25%
+				[LI] Исследования: -25%
+				[LI] Современность: -25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="ru_RU">
-			<Text>[BLIST][LI] Быстро: города растут быстрее.[/BLIST]</Text>
+			<Text>На 50% меньше еды на жителя.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_QUICK" Language="ru_RU">
+			<Text>На 25% меньше еды на жителя.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>[BLIST][LI] Стандарт: без изменений.[/BLIST]</Text>
+			<Text>Затраты передвижения из самой игры.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_BALANCED" Language="ru_RU">
+			<Text>Стандартные дороги до Современности, затем дешевле.[nn][BLIST]
+				[LI] Античность: Стандарт
+				[LI] Исследования: Стандарт
+				[LI] Современность: -25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXTENDED" Language="ru_RU">
+			<Text>Стандартные дороги до Современности, затем дешевле.[nn][BLIST]
+				[LI] Античность: Стандарт
+				[LI] Исследования: Стандарт
+				[LI] Современность: -25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SWIFT" Language="ru_RU">
+			<Text>Дороги дешевеют в передвижении по мере раскрытия карты.[nn][BLIST]
+				[LI] Античность: -25%
+				[LI] Исследования: -50%
+				[LI] Современность: -50%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SLOW" Language="ru_RU">
+			<Text>На 25% больше передвижения за клетку.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_FAST" Language="ru_RU">
-			<Text>[BLIST][LI] Быстро: стоимость передвижения на 25% ниже.[/BLIST]</Text>
+			<Text>На 50% меньше передвижения за клетку.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_FASTER" Language="ru_RU">
-			<Text>[BLIST][LI] Ещё быстрее: стоимость передвижения на 50% ниже.[/BLIST]</Text>
+		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_QUICK" Language="ru_RU">
+			<Text>На 25% меньше передвижения за клетку.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RANDOM_MEMENTOS_NAME" Language="ru_RU">
-			<Text>Случайные памятные вещи</Text>
+			<Text>Случайные реликвии</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_MEMENTO_1_NAME" Language="ru_RU">
-			<Text>Памятная вещь 1</Text>
+
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_NAME" Language="ru_RU">
+			<Text>Реликвии ИИ</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_MEMENTO_2_NAME" Language="ru_RU">
-			<Text>Памятная вещь 2</Text>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION" Language="ru_RU">
+			<Text>Заполняет ячейки реликвий всех игроков под управлением ИИ разом.[n]Отдельные ячейки по-прежнему можно изменить на вкладке «Игроки».</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_NONE" Language="ru_RU">
+			<Text>Игроки под управлением ИИ начинают без реликвий.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_RANDOM" Language="ru_RU">
+			<Text>Каждая ячейка получает любую реликвию, выбираемую заново для каждой новой игры.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_LEADER_NAME" Language="ru_RU">
+			<Text>По лидеру</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_LEADER" Language="ru_RU">
+			<Text>Каждая ячейка получает реликвию, соответствующую одному из двух атрибутов лидера.[n]Действует только для выбранных лидеров; оставленные случайными получают любые реликвии.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_CIVILIZATION_NAME" Language="ru_RU">
+			<Text>По цивилизации</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AI_MEMENTOS_DESCRIPTION_CIVILIZATION" Language="ru_RU">
+			<Text>Каждая ячейка получает реликвию, соответствующую одному из двух атрибутов цивилизации.[n]Действует только для выбранных цивилизаций; оставленные случайными получают любые реликвии.</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_MEMENTOOPTIONS" Language="ru_RU">
+			<Text>Настройки реликвий</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_NAME" Language="ru_RU">
+			<Text>Реликвии ИИ при смене эпохи</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION" Language="ru_RU">
+			<Text>Определяет, что происходит с реликвиями каждого игрока под управлением ИИ при смене эпохи.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_MAINTAIN_NAME" Language="ru_RU">
+			<Text>Сохранить</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_MAINTAIN" Language="ru_RU">
+			<Text>Каждый ИИ оставляет реликвии, которые у него уже есть.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_ADAPT_NAME" Language="ru_RU">
+			<Text>Приспособить</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION_ADAPT" Language="ru_RU">
+			<Text>Каждый ИИ берет новые реликвии по настройке «Реликвии ИИ», под лидера и цивилизацию новой эпохи.[n]Здесь «Подбор по лидеру» и «Подбор по цивилизации» действуют для каждого ИИ, поскольку в идущей игре и то и другое известно.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIV_CHOICE_HISTORICAL" Language="ru_RU">
+			<Text>Историческая</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIV_CHOICE_GEOGRAPHIC" Language="ru_RU">
+			<Text>Географическая</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_LOBBY_SUGGESTED_CIVS" Language="ru_RU">
+			<Text>Рекомендуемые цивилизации</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="ru_RU">
+			<Text>Каждый ИИ следует связям своего лидера из выбора цивилизации: историческая цивилизация, доступная в новой эпохе, сначала с наибольшим весом, иначе географическая, стратегическая никогда.[n]Уже занятая цивилизация пропускается в пользу следующей; дубликат назначается лишь когда заняты все. При равенстве побеждает цивилизация, родная для новой эпохи. Если выбор совпадает с текущей цивилизацией ИИ, он её сохраняет.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="ru_RU">
 			<Text>Особый: задайте набор триумфов для каждой эпохи отдельно.</Text>
@@ -398,7 +854,7 @@
 			<Text>Задаёт набор триумфов этой эпохи.[n]Действует только если набор триумфов установлен на Особый.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION_CUSTOM" Language="ru_RU">
-			<Text>Особый: задайте лимит поселений для каждой эпохи отдельно.</Text>
+			<Text>Задайте лимит поселений для каждой эпохи отдельно.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION" Language="ru_RU">
 			<Text>Задаёт лимит поселений этой эпохи.[n]Действует только если лимит поселений установлен на Особый.</Text>
@@ -416,28 +872,70 @@
 			<Text>Жаркая</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="ru_RU">
-			<Text>Холодная: тундра начинается ближе к экватору за счёт лугов.</Text>
+			<Text>Тундра начинается ближе к экватору, а пустыня уступает место лугам.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="ru_RU">
 			<Text>Стандартный климат для выбранного типа карты.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="ru_RU">
-			<Text>Жаркая: тропики и пустыни простираются дальше от экватора за счёт равнин и лугов.</Text>
+			<Text>Пустыня простирается дальше от экватора, а тундра отступает к полюсам.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="ru_RU">
 			<Text>Реки</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION" Language="ru_RU">
-			<Text>Определяет, сколько рек создаётся при генерации карты.</Text>
+			<Text>Определяет, сколько рек создаётся и какая их доля будет судоходными реками, а не малыми.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_WADI_NAME" Language="ru_RU">
+			<Text>Вади</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WADI" Language="ru_RU">
+			<Text>На 50% меньше рек, и судоходных среди них гораздо меньше обычного.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_ARID_NAME" Language="ru_RU">
+			<Text>Засуха</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_ARID" Language="ru_RU">
+			<Text>На 50% меньше рек, судоходна обычная их доля.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_CHANNEL_NAME" Language="ru_RU">
+			<Text>Русла</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_CHANNEL" Language="ru_RU">
+			<Text>На 50% меньше рек, но судоходных среди них гораздо больше.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_SHALLOW_NAME" Language="ru_RU">
+			<Text>Мелководье</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_SHALLOW" Language="ru_RU">
+			<Text>Обычное количество рек, но судоходных среди них гораздо меньше обычного.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEFAULT" Language="ru_RU">
-			<Text>Стандартная генерация рек для выбранного типа карты.</Text>
+			<Text>Обычное количество рек, судоходна обычная их доля.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_LESS" Language="ru_RU">
-			<Text>Создаёт меньше рек.</Text>
+		<Replace Tag="LOC_ZG_RIVERS_WATERWAY_NAME" Language="ru_RU">
+			<Text>Водные пути</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_MORE" Language="ru_RU">
-			<Text>Создаёт больше рек, и больше из них судоходны.</Text>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_WATERWAY" Language="ru_RU">
+			<Text>Обычное количество рек, но судоходных среди них гораздо больше.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_STREAM_NAME" Language="ru_RU">
+			<Text>Ручьи</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_STREAM" Language="ru_RU">
+			<Text>На 50% больше рек, но судоходных среди них гораздо меньше обычного.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_RIVERLAND_NAME" Language="ru_RU">
+			<Text>Речной край</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_RIVERLAND" Language="ru_RU">
+			<Text>На 50% больше рек, судоходна обычная их доля.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DEEP_NAME" Language="ru_RU">
+			<Text>Глубоководье</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RIVERS_DESCRIPTION_DEEP" Language="ru_RU">
+			<Text>На 50% больше рек, и судоходных среди них гораздо больше.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_LOW_NAME" Language="ru_RU">
 			<Text>Низкая</Text>
@@ -445,167 +943,222 @@
 		<Replace Tag="LOC_ZG_HIGH_NAME" Language="ru_RU">
 			<Text>Высокая</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_MEDIUM_NAME" Language="ru_RU">
+			<Text>Средняя</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME" Language="ru_RU">
 			<Text>Стоимость гражданских юнитов</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION" Language="ru_RU">
-			<Text>Задаёт стоимость производства гражданских юнитов.</Text>
+			<Text>Определяет стоимость гражданских юнитов, таких как поселенцы и торговцы, в производстве.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_LOW" Language="ru_RU">
-			<Text>[BLIST][LI] Низкая: на 25% дешевле.[/BLIST]</Text>
+			<Text>На 25% меньше производства. Поселенцы: 38 вместо 50. (При стандартной скорости)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>[BLIST][LI] Стандарт: без скидки.[/BLIST]</Text>
+			<Text>Стоимость юнитов из самой игры.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_HIGH" Language="ru_RU">
-			<Text>[BLIST][LI] Высокая: на 50% дороже.[/BLIST]</Text>
+			<Text>На 50% больше производства. Поселенцы: 75 вместо 50. (При стандартной скорости)</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_MEDIUM" Language="ru_RU">
+			<Text>На 25% больше производства. Поселенцы: 63 вместо 50. (При стандартной скорости)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION_DOUBLE" Language="ru_RU">
-			<Text>[BLIST][LI] Вдвое больше: на 100% дороже.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="ru_RU">
-			<Text>Онлайн 2.0</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="ru_RU">
-			<Text>Чрезвычайно быстрый темп. На 150% быстрее стандартного.</Text>
+			<Text>На 100% больше производства. Поселенцы: 100 вместо 50. (При стандартной скорости)</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_NAME" Language="ru_RU">
 			<Text>Марафон 2.0</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_NAME" Language="ru_RU">
+			<Text>Онлайн 2.0</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION" Language="ru_RU">
 			<Text>Чрезвычайно медленный темп. На 400% медленнее стандартного.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_NAME" Language="ru_RU">
-			<Text>Краткая</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_NAME" Language="ru_RU">
-			<Text>Удвоено</Text>
+		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="ru_RU">
+			<Text>Чрезвычайно быстрый темп. На 150% быстрее стандартного.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="ru_RU">
-			<Text>Особый: каждая эпоха использует строку «Длительность эпохи» в своей группе ниже. Сбалансированный ставит 153, 166 и 196 очков; Многопользовательский — 140, 155 и 190.</Text>
+			<Text>Каждая эпоха использует строку «Длительность эпохи» в своей группе ниже. Сбалансированный ставит 150, 170 и 200 очков; Многопользовательский — 140, 160 и 180.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="ru_RU">
+			<Text>Длинные эпохи, каждая длиннее предыдущей.[nn][BLIST]
+				[LI] Античность: 150 очков
+				[LI] Исследования: 170 очков
+				[LI] Современность: 200 очков[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_EXTENDED_DESC" Language="ru_RU">
+			<Text>Очень длинные эпохи для затяжной партии.[nn][BLIST]
+				[LI] Античность: 240 очков
+				[LI] Исследования: 260 очков
+				[LI] Современность: 280 очков[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_AGE_LENGTH_SWIFT_DESC" Language="ru_RU">
+			<Text>Короткие эпохи, постепенно удлиняющиеся по ходу партии.[nn][BLIST]
+				[LI] Античность: 90 очков
+				[LI] Исследования: 100 очков
+				[LI] Современность: 110 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_90" Language="ru_RU">
-			<Text>[BLIST][LI] Online 2.0: 36 очков.[LI] Online: 45 очков.[LI] Quick: 60 очков.[LI] Standard: 90 очков.[LI] Epic: 135 очков.[LI] Marathon: 270 очков.[LI] Marathon 2.0: 450 очков.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online: 45 очков
+				[LI] Quick: 60 очков
+				[LI] Standard: 90 очков
+				[LI] Epic: 135 очков
+				[LI] Marathon: 270 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_100" Language="ru_RU">
-			<Text>[BLIST][LI] Online 2.0: 40 очков.[LI] Online: 50 очков.[LI] Quick: 67 очков.[LI] Standard: 100 очков.[LI] Epic: 150 очков.[LI] Marathon: 300 очков.[LI] Marathon 2.0: 500 очков.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online: 50 очков
+				[LI] Quick: 67 очков
+				[LI] Standard: 100 очков
+				[LI] Epic: 150 очков
+				[LI] Marathon: 300 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_110" Language="ru_RU">
-			<Text>[BLIST][LI] Online 2.0: 44 очков.[LI] Online: 55 очков.[LI] Quick: 73 очков.[LI] Standard: 110 очков.[LI] Epic: 165 очков.[LI] Marathon: 330 очков.[LI] Marathon 2.0: 550 очков.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online: 55 очков
+				[LI] Quick: 73 очка
+				[LI] Standard: 110 очков
+				[LI] Epic: 165 очков
+				[LI] Marathon: 330 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_120" Language="ru_RU">
-			<Text>[BLIST][LI] Online 2.0: 48 очков.[LI] Online: 60 очков.[LI] Quick: 80 очков.[LI] Standard: 120 очков.[LI] Epic: 180 очков.[LI] Marathon: 360 очков.[LI] Marathon 2.0: 600 очков.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online: 60 очков
+				[LI] Quick: 80 очков
+				[LI] Standard: 120 очков
+				[LI] Epic: 180 очков
+				[LI] Marathon: 360 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_130" Language="ru_RU">
-			<Text>[BLIST][LI] Online 2.0: 52 очков.[LI] Online: 65 очков.[LI] Quick: 87 очков.[LI] Standard: 130 очков.[LI] Epic: 195 очков.[LI] Marathon: 390 очков.[LI] Marathon 2.0: 650 очков.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online: 65 очков
+				[LI] Quick: 87 очков
+				[LI] Standard: 130 очков
+				[LI] Epic: 195 очков
+				[LI] Marathon: 390 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_140" Language="ru_RU">
-			<Text>[BLIST][LI] Online 2.0: 56 очков.[LI] Online: 70 очков.[LI] Quick: 93 очков.[LI] Standard: 140 очков.[LI] Epic: 210 очков.[LI] Marathon: 420 очков.[LI] Marathon 2.0: 700 очков.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online: 70 очков
+				[LI] Quick: 93 очка
+				[LI] Standard: 140 очков
+				[LI] Epic: 210 очков
+				[LI] Marathon: 420 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_150" Language="ru_RU">
-			<Text>[BLIST][LI] Online 2.0: 60 очков.[LI] Online: 75 очков.[LI] Quick: 100 очков.[LI] Standard: 150 очков.[LI] Epic: 225 очков.[LI] Marathon: 450 очков.[LI] Marathon 2.0: 750 очков.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_153" Language="ru_RU">
-			<Text>[BLIST][LI] Online 2.0: 61 очков.[LI] Online: 76 очков.[LI] Quick: 102 очков.[LI] Standard: 153 очков.[LI] Epic: 230 очков.[LI] Marathon: 459 очков.[LI] Marathon 2.0: 765 очков.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_155" Language="ru_RU">
-			<Text>[BLIST][LI] Online 2.0: 62 очков.[LI] Online: 78 очков.[LI] Quick: 103 очков.[LI] Standard: 155 очков.[LI] Epic: 232 очков.[LI] Marathon: 465 очков.[LI] Marathon 2.0: 775 очков.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online: 75 очков
+				[LI] Quick: 100 очков
+				[LI] Standard: 150 очков
+				[LI] Epic: 225 очков
+				[LI] Marathon: 450 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_160" Language="ru_RU">
-			<Text>[BLIST][LI] Online 2.0: 64 очков.[LI] Online: 80 очков.[LI] Quick: 107 очков.[LI] Standard: 160 очков.[LI] Epic: 240 очков.[LI] Marathon: 480 очков.[LI] Marathon 2.0: 800 очков.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_166" Language="ru_RU">
-			<Text>[BLIST][LI] Online 2.0: 66 очков.[LI] Online: 83 очков.[LI] Quick: 111 очков.[LI] Standard: 166 очков.[LI] Epic: 249 очков.[LI] Marathon: 498 очков.[LI] Marathon 2.0: 830 очков.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online: 80 очков
+				[LI] Quick: 107 очков
+				[LI] Standard: 160 очков
+				[LI] Epic: 240 очков
+				[LI] Marathon: 480 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_170" Language="ru_RU">
-			<Text>[BLIST][LI] Online 2.0: 68 очков.[LI] Online: 85 очков.[LI] Quick: 113 очков.[LI] Standard: 170 очков.[LI] Epic: 255 очков.[LI] Marathon: 510 очков.[LI] Marathon 2.0: 850 очков.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online: 85 очков
+				[LI] Quick: 113 очков
+				[LI] Standard: 170 очков
+				[LI] Epic: 255 очков
+				[LI] Marathon: 510 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_180" Language="ru_RU">
-			<Text>[BLIST][LI] Online 2.0: 72 очков.[LI] Online: 90 очков.[LI] Quick: 120 очков.[LI] Standard: 180 очков.[LI] Epic: 270 очков.[LI] Marathon: 540 очков.[LI] Marathon 2.0: 900 очков.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online: 90 очков
+				[LI] Quick: 120 очков
+				[LI] Standard: 180 очков
+				[LI] Epic: 270 очков
+				[LI] Marathon: 540 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_190" Language="ru_RU">
-			<Text>[BLIST][LI] Online 2.0: 76 очков.[LI] Online: 95 очков.[LI] Quick: 127 очков.[LI] Standard: 190 очков.[LI] Epic: 285 очков.[LI] Marathon: 570 очков.[LI] Marathon 2.0: 950 очков.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_196" Language="ru_RU">
-			<Text>[BLIST][LI] Online 2.0: 78 очков.[LI] Online: 98 очков.[LI] Quick: 131 очков.[LI] Standard: 196 очков.[LI] Epic: 294 очков.[LI] Marathon: 588 очков.[LI] Marathon 2.0: 980 очков.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online: 95 очков
+				[LI] Quick: 127 очков
+				[LI] Standard: 190 очков
+				[LI] Epic: 285 очков
+				[LI] Marathon: 570 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_200" Language="ru_RU">
-			<Text>[BLIST][LI] Online 2.0: 80 очков.[LI] Online: 100 очков.[LI] Quick: 133 очков.[LI] Standard: 200 очков.[LI] Epic: 300 очков.[LI] Marathon: 600 очков.[LI] Marathon 2.0: 1000 очков.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online: 100 очков
+				[LI] Quick: 133 очка
+				[LI] Standard: 200 очков
+				[LI] Epic: 300 очков
+				[LI] Marathon: 600 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_220" Language="ru_RU">
-			<Text>[BLIST][LI] Online 2.0: 88 очков.[LI] Online: 110 очков.[LI] Quick: 147 очков.[LI] Standard: 220 очков.[LI] Epic: 330 очков.[LI] Marathon: 660 очков.[LI] Marathon 2.0: 1100 очков.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online: 110 очков
+				[LI] Quick: 147 очков
+				[LI] Standard: 220 очков
+				[LI] Epic: 330 очков
+				[LI] Marathon: 660 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_240" Language="ru_RU">
-			<Text>[BLIST][LI] Online 2.0: 96 очков.[LI] Online: 120 очков.[LI] Quick: 160 очков.[LI] Standard: 240 очков.[LI] Epic: 360 очков.[LI] Marathon: 720 очков.[LI] Marathon 2.0: 1200 очков.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online: 120 очков
+				[LI] Quick: 160 очков
+				[LI] Standard: 240 очков
+				[LI] Epic: 360 очков
+				[LI] Marathon: 720 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_260" Language="ru_RU">
-			<Text>[BLIST][LI] Online 2.0: 104 очков.[LI] Online: 130 очков.[LI] Quick: 173 очков.[LI] Standard: 260 очков.[LI] Epic: 390 очков.[LI] Marathon: 780 очков.[LI] Marathon 2.0: 1300 очков.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online: 130 очков
+				[LI] Quick: 173 очка
+				[LI] Standard: 260 очков
+				[LI] Epic: 390 очков
+				[LI] Marathon: 780 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_280" Language="ru_RU">
-			<Text>[BLIST][LI] Online 2.0: 112 очков.[LI] Online: 140 очков.[LI] Quick: 187 очков.[LI] Standard: 280 очков.[LI] Epic: 420 очков.[LI] Marathon: 840 очков.[LI] Marathon 2.0: 1400 очков.[/BLIST]</Text>
+			<Text>[BLIST]
+				[LI] Online: 140 очков
+				[LI] Quick: 187 очков
+				[LI] Standard: 280 очков
+				[LI] Epic: 420 очков
+				[LI] Marathon: 840 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_POINTS_DESC_300" Language="ru_RU">
-			<Text>[BLIST][LI] Online 2.0: 120 очков.[LI] Online: 150 очков.[LI] Quick: 200 очков.[LI] Standard: 300 очков.[LI] Epic: 450 очков.[LI] Marathon: 900 очков.[LI] Marathon 2.0: 1500 очков.[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_BRIEF_DESC" Language="ru_RU">
-			<Text> Эпохи будут проходить быстрее.
-				[n] [BLIST]
-				[LI] Online 2.0: 36 очков.
-				[LI] Online: 45 очков.
-				[LI] Quick: 60 очков.
-				[LI] Standard: 90 очков.
-				[LI] Epic: 135 очков.
-				[LI] Marathon: 270 очков.
-				[LI] Marathon 2.0: 450 очков.[/BLIST]
-			</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_DOUBLED_DESC" Language="ru_RU">
-			<Text> Эпохи будут длиться дольше.
-				[n] [BLIST]
-				[LI] Online 2.0: 112 очков.
-				[LI] Online: 140 очков.
-				[LI] Quick: 187 очков.
-				[LI] Standard: 280 очков.
-				[LI] Epic: 420 очков.
-				[LI] Marathon: 840 очков.
-				[LI] Marathon 2.0: 1400 очков.[/BLIST]
-			</Text>
+			<Text>[BLIST]
+				[LI] Online: 150 очков
+				[LI] Quick: 200 очков
+				[LI] Standard: 300 очков
+				[LI] Epic: 450 очков
+				[LI] Marathon: 900 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_ABBREVIATED_DESC" Language="ru_RU">
-			<Text> Эпохи будут проходить немного быстрее.
-				[n] [BLIST]
-				[LI] Online 2.0: 48 очков.
-				[LI] Online: 60 очков.
-				[LI] Quick: 80 очков.
-				[LI] Standard: 120 очков.
-				[LI] Epic: 180 очков.
-				[LI] Marathon: 360 очков.
-				[LI] Marathon 2.0: 600 очков.[/BLIST]
-			</Text>
+			<Text>Эпохи будут проходить немного быстрее.[nn][BLIST]
+				[LI] Online: 60 очков
+				[LI] Quick: 80 очков
+				[LI] Standard: 120 очков
+				[LI] Epic: 180 очков
+				[LI] Marathon: 360 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_STANDARD_DESC" Language="ru_RU">
-			<Text> Стандартная длительность эпохи.
-				[n] [BLIST]
-				[LI] Online 2.0: 56 очков.
-				[LI] Online: 70 очков.
-				[LI] Quick: 93 очков.
-				[LI] Standard: 140 очков.
-				[LI] Epic: 210 очков.
-				[LI] Marathon: 420 очков.
-				[LI] Marathon 2.0: 700 очков.[/BLIST]
-			</Text>
+			<Text>Стандартная длительность эпохи.[nn][BLIST]
+				[LI] Online: 70 очков
+				[LI] Quick: 93 очка
+				[LI] Standard: 140 очков
+				[LI] Epic: 210 очков
+				[LI] Marathon: 420 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_LONG_DESC" Language="ru_RU">
-			<Text> Эпохи будут длиться немного дольше.
-				[n] [BLIST]
-				[LI] Online 2.0: 64 очков.
-				[LI] Online: 80 очков.
-				[LI] Quick: 107 очков.
-				[LI] Standard: 160 очков.
-				[LI] Epic: 240 очков.
-				[LI] Marathon: 480 очков.
-				[LI] Marathon 2.0: 800 очков.[/BLIST]
-			</Text>
+			<Text>Эпохи будут длиться немного дольше.[nn][BLIST]
+				[LI] Online: 80 очков
+				[LI] Quick: 107 очков
+				[LI] Standard: 160 очков
+				[LI] Epic: 240 очков
+				[LI] Marathon: 480 очков[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INDEPENDENT_AGGRESSION_NAME" Language="ru_RU">
 			<Text>Агрессивность независимых держав</Text>
@@ -643,6 +1196,42 @@
 		<Replace Tag="LOC_ZG_MOUNTAINS_DESCRIPTION_MORE" Language="ru_RU">
 			<Text>Создаёт больше гор.</Text>
 		</Replace>
+
+		<Replace Tag="LOC_ZG_MAP_AGE_NAME" Language="ru_RU">
+			<Text>Возраст карты</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION" Language="ru_RU">
+			<Text>Задает, насколько изрезана местность.[n]Горы настраиваются отдельно, так что здесь меняется лишь соотношение равнин и пересеченной местности.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_NEW" Language="ru_RU">
+			<Text>Недавно смятая земля: больше пересеченной местности и меньше ровных мест.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>Стандартный рельеф для выбранного типа карты.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_AGE_DESCRIPTION_OLD" Language="ru_RU">
+			<Text>Сточенная земля: меньше пересеченной местности и шире равнины.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_ZG_RESOURCES_NAME" Language="ru_RU">
+			<Text>Ресурсы</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION" Language="ru_RU">
+			<Text>Задает, сколько ресурсов размещает карта, собираются ли они в пятна и сколько имперских ресурсов гарантировано каждому материку.[n]Новые ресурсы не добавляются.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_SPARSE" Language="ru_RU">
+			<Text>На 25% меньше ресурсов, чем обычно, собранных в пятна до трех клеток, и два имперских ресурса на материк.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>Обычное количество ресурсов, распределенное равномерно, и три имперских ресурса на материк.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RESOURCES_DESCRIPTION_ABUNDANT" Language="ru_RU">
+			<Text>На 25% больше ресурсов, распределенных равномерно, и четыре имперских ресурса на материк.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="ru_RU">
+			<Text>Настройки местности</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="ru_RU">
 			<Text>Набор темпа</Text>
 		</Replace>
@@ -651,6 +1240,12 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_BALANCED_NAME" Language="ru_RU">
 			<Text>Сбалансированный</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_EXTENDED_NAME" Language="ru_RU">
+			<Text>Растянуто</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SWIFT_NAME" Language="ru_RU">
+			<Text>Стремительно</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_BALANCED_NAME" Language="ru_RU">
 			<Text>Сбалансированный темп</Text>
@@ -664,17 +1259,61 @@
 		<Replace Tag="LOC_ZG_PACE_PRESET_STANDARD_NAME" Language="ru_RU">
 			<Text>Стандартный темп</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_EXTENDED_NAME" Language="ru_RU">
+			<Text>Растянутый темп</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_SWIFT_NAME" Language="ru_RU">
+			<Text>Стремительный темп</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>Стандартный темп: собственный темп игры. Переводит все настройки раздела «Настройки темпа» на стандартные.</Text>
+			<Text>Все настройки темпа остаются стандартными.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_EXTENDED" Language="ru_RU">
+			<Text>Очень длинные эпохи с повышенной стоимостью, чтобы их заполнить.[nn][BLIST]
+				[LI] Длительность эпохи: 240 / 260 / 280
+				[LI] Прогресс эпохи: Стандарт
+				[LI] Стоимость технологий: +25% / +50% / +50%
+				[LI] Стоимость общественных институтов: +25% / +50% / +50%
+				[LI] Стоимость зданий: +25% / +50% / +50%
+				[LI] Рост поселений: +25%
+				[LI] Дороги: Стандарт / Стандарт / -25%
+				[LI] Стоимость победных проектов: +25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT" Language="ru_RU">
+			<Text>Короткие эпохи с соответственно сниженной стоимостью.[nn][BLIST]
+				[LI] Длительность эпохи: 90 / 100 / 110
+				[LI] Прогресс эпохи: Стандарт
+				[LI] Стоимость технологий: -25% / -25% / Стандарт
+				[LI] Стоимость общественных институтов: -25% / -25% / Стандарт
+				[LI] Стоимость зданий: -25%
+				[LI] Рост поселений: -25%
+				[LI] Дороги: -25% / -50% / -50%
+				[LI] Стоимость победных проектов: -25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="ru_RU">
-			<Text>Сбалансированный темп: более долгие эпохи с исследованиями в эпическом стиле. Ставит длительность эпохи 153, 166 и 196 очков по эпохам, темп прогресса эпохи — «Сбалансированный», стоимость технологий и институтов — «Высокая».</Text>
+			<Text>Длинные эпохи с исследованиями и ростом, подогнанными под них.[nn][BLIST]
+				[LI] Длительность эпохи: 150 / 170 / 200
+				[LI] Прогресс эпохи: Сбалансированный
+				[LI] Стоимость технологий: +25% / Стандарт / -25%
+				[LI] Стоимость общественных институтов: Стандарт / +25% / +25%
+				[LI] Стоимость зданий: +25% / Стандарт / Стандарт
+				[LI] Рост поселений: -25% / -25% / Стандарт
+				[LI] Дороги: Стандарт / Стандарт / -25%
+				[LI] Стоимость победных проектов: Стандарт / -25% / -25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="ru_RU">
-			<Text>Многопользовательский темп: более мягкое удлинение для сессий. Ставит длительность эпохи 140, 155 и 190 очков по эпохам, темп прогресса эпохи — «Сбалансированный», стоимость технологий +35%, +50% и +75% по эпохам, стоимость институтов +45%, +60% и +85%, рост городов — «Медленный», дороги — «Быстрые» (в Новейшее время — «Экспресс»), стоимость проектов победы в Новейшее время +20%.</Text>
+			<Text>Настроено на партию за один присест.[nn][BLIST]
+				[LI] Длительность эпохи: 140 / 160 / 180
+				[LI] Прогресс эпохи: Сбалансированный
+				[LI] Стоимость технологий: +25% / +50% / +100%
+				[LI] Стоимость общественных институтов: +50% / +50% / +100%
+				[LI] Стоимость зданий: Стандарт
+				[LI] Рост поселений: +25%
+				[LI] Дороги: -25% / -25% / -50%
+				[LI] Стоимость победных проектов: Стандарт / Стандарт / +25%[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="ru_RU">
-			<Text>Особый темп: настройки раздела «Настройки темпа» на вкладке «Темп» больше не соответствуют ни одному готовому темпу.</Text>
+			<Text>Настройки раздела «Настройки темпа» на вкладке «Темп» больше не соответствуют ни одному готовому темпу.</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

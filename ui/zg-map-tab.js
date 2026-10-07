@@ -30,7 +30,7 @@ const EXTRA_TABS = [
 	{
 		name: "zg-advanced-options-map",
 		title: "LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS",
-		groups: new Set(["MapOptions", "DisasterOptions", "NaturalWonderSelectionOptions"]),
+		groups: new Set(["MapOptions", "TerrainOptions", "DisasterOptions", "NaturalWonderSelectionOptions"]),
 	},
 ];
 
@@ -41,6 +41,21 @@ function groupBelongsToTab(groupId, tab) {
 	if (tab == null) return true;
 	if (tab == GENERAL_TAB_NAME) return !EXTRA_TABS.some((extra) => extra.groups.has(groupId));
 	return tab.groups.has(groupId);
+}
+
+// The game's model is one store for the whole shell session and only ever adds
+// to it: a setting that exists in one game mode and not the next (the lobby's
+// Game Name after a multiplayer setup, say) stays in its group, still marked
+// visible, once single-player setup opens. Only settings GameSetup still knows
+// are passed through.
+function presentOnly(group) {
+	const present = {};
+	for (const key of Object.keys(group)) {
+		if (key == "name" || GameSetup.findGameParameter(key)) {
+			present[key] = group[key];
+		}
+	}
+	return present;
 }
 
 // 1. Model facade: same groupNames, groups narrowed to the active tab.
@@ -61,7 +76,7 @@ if (createBaseGroupsModel) {
 				const filtered = {};
 				for (const groupId of Object.keys(groups)) {
 					if (groupBelongsToTab(groupId, tab)) {
-						filtered[groupId] = groups[groupId];
+						filtered[groupId] = presentOnly(groups[groupId]);
 					}
 				}
 				return filtered;
@@ -80,13 +95,16 @@ function tabBody(tab, body) {
 }
 
 const tabItem = ComponentRegistry.get("Tab.Item");
-const createBaseTabItem = tabItem?.factory;
+// `factory` is a signal accessor returning the currently registered factory.
+// Read it once here to capture the base implementation before this module
+// overrides the registration; reading it later would return our own factory.
+const createBaseTabItem = tabItem?.factory?.();
 if (createBaseTabItem) {
 	ComponentRegistry.register({
 		name: "Tab.Item",
 		overridePriority: OVERRIDE_PRIORITY,
 		createInstance: (props) => {
-			if (props.name != GENERAL_TAB_NAME || typeof props.body != "function") {
+			if (props?.name != GENERAL_TAB_NAME || typeof props?.body != "function") {
 				return createBaseTabItem(props);
 			}
 			const body = props.body;
