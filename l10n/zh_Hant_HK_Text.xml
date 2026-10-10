@@ -977,7 +977,7 @@
 			<Text>推薦文明</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="zh_Hant_HK">
-			<Text>每個AI遵循文明選擇畫面中其領袖的關聯：新時代提供的歷史文明，權重高者優先，否則選擇地理文明，絕不選擇戰略文明。[n]已被佔用的文明將跳過而取下一個；僅當全部被佔用時才允許重複。平手時優先選擇新時代本身的文明。若所選正是AI目前的文明，則保留不變。</Text>
+			<Text>每個AI遵循其領袖的歷史。新時代提供其領袖的歷史文明時就轉換過去，目前文明本身就是歷史文明時則保持不變。[n]否則按遊戲的常規路線進入新時代，優先地理文明。已被選擇的文明會被略過，只有全部被選時才會重複。[n]實驗性功能：自1.5版修補檔起，遊戲可能會覆蓋這些選擇。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="zh_Hant_HK">
 			<Text>自訂：為每個時代單獨設定凱旋集。</Text>

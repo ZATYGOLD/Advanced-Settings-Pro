@@ -421,7 +421,7 @@ function applyAiMementos(mode, playerId) {
 		setRandomFlag(playerId, slotIndex, mode.random === true);
 		if (mode.random) {
 			rolledThisSession.delete(`${playerId}:${slotIndex}`);
-		} else if (mode.sourceId) {
+		} else if (mode.source) {
 			rollMemento(playerId, slotIndex, attributes[slotIndex]);
 		} else {
 			GameSetup.setPlayerParameterValue(playerId, id, MEMENTO_NONE_VALUE);

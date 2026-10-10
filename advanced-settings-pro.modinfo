@@ -5210,9 +5210,9 @@
 					<Item>ui-next/screens/create-game/zg-memento-select-model.js</Item>
 					<Item>ui/shell/shared/zg-memento-roller.js</Item>
 					<Item>ui-next/screens/create-game/zg-player-tab.js</Item>
-					<Item>ui/shell/age-transition/zg-age-transition-civs.js</Item>
-					<Item>ui/shell/age-transition/zg-age-transition-mementos.js</Item>
-					<Item>ui/shell/age-transition/zg-age-transition.js</Item>
+					<Item>ui/age-transition/zg-age-transition-civs.js</Item>
+					<Item>ui/age-transition/zg-age-transition-mementos.js</Item>
+					<Item>ui/age-transition/zg-age-transition-shell.js</Item>
 				</UIScripts>
 				<UpdateText>
 					<Item>text/en_us/ui-shell-text.xml</Item>
@@ -5263,6 +5263,9 @@
 				<LoadOrder>500</LoadOrder>
 			</Properties>
 			<Actions>
+				<UIScripts>
+					<Item>ui/age-transition/zg-age-transition-game.js</Item>
+				</UIScripts>
 				<UpdateText>
 					<Item>text/en_us/ui-shell-text.xml</Item>
 					<Item>text/en_us/natural-wonder-names.xml</Item>
@@ -5300,6 +5303,10 @@
 					<Item>maps/zg-terra-incognita.js</Item>
 					<Item>maps/zg-terra-incognita-voronoi.js</Item>
 					<Item>maps/zg-pangaea-plus.js</Item>
+					<Item>ui/shell/shared/zg-shell-context.js</Item>
+					<Item>ui/shell/shared/zg-memento-roller.js</Item>
+					<Item>ui/age-transition/zg-age-transition-civs.js</Item>
+					<Item>ui/age-transition/zg-age-transition-mementos.js</Item>
 				</ImportFiles>
 				<UpdateDatabase>
 					<Item>data/game-speeds/new-game-speeds.sql</Item>

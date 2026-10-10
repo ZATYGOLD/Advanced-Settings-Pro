@@ -977,7 +977,7 @@
 			<Text>Empfohlene Zivilisationen</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="de_DE">
-			<Text>Jede KI folgt den Zuordnungen ihres Anführers aus der Zivilisationsauswahl: eine historische Zivilisation, die das neue Zeitalter bietet, höchste Gewichtung zuerst, sonst eine geografische, nie eine strategische.[n]Eine bereits vergebene Zivilisation wird zugunsten der nächsten übergangen; ein Duplikat gibt es nur, wenn alle vergeben sind. Bei Gleichstand gewinnt die dem neuen Zeitalter eigene Zivilisation. Ist die Wahl die Zivilisation, die die KI bereits hat, behält sie sie.</Text>
+			<Text>Jede KI bleibt der Geschichte ihres Anführers treu. Sie wechselt, wenn das neue Zeitalter eine historische Zivilisation ihres Anführers bietet, und behält ihre Zivilisation, wenn diese die historische ist.[n]Sonst folgt sie dem üblichen Weg des Spiels ins neue Zeitalter, eine geografische Zivilisation zuerst. Eine bereits vergebene Zivilisation wird übergangen; ein Duplikat gibt es nur, wenn alle vergeben sind.[n]Experimentell: Seit Patch 1.5 kann das Spiel diese Auswahl überschreiben.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="de_DE">
 			<Text>Benutzerdefiniert: Lege das Triumph-Set für jedes Zeitalter einzeln fest.</Text>

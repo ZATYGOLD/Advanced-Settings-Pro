@@ -977,7 +977,7 @@
 			<Text>Sugerowane cywilizacje</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="pl_PL">
-			<Text>Każda SI podąża za powiązaniami swojego przywódcy z wyboru cywilizacji: cywilizacja historyczna oferowana w nowej epoce, najpierw najwyższa waga, w przeciwnym razie geograficzna, nigdy strategiczna.[n]Zajęta cywilizacja jest pomijana na rzecz następnej; duplikat pojawia się tylko wtedy, gdy wszystkie są zajęte. Remis wygrywa cywilizacja własna nowej epoki. Jeśli wybór to cywilizacja, którą SI już ma, zachowuje ją.</Text>
+			<Text>Każda SI trzyma się historii swojego przywódcy. Zmienia cywilizację, gdy nowa epoka oferuje historyczną cywilizację jej przywódcy, i zachowuje swoją, gdy to ona jest historyczna.[n]W przeciwnym razie podąża zwykłą ścieżką gry do nowej epoki, najpierw cywilizacja geograficzna. Cywilizacja już zajęta jest pomijana; duplikat pojawia się tylko, gdy wszystkie są zajęte.[n]Eksperymentalne: od łatki 1.5 gra może nadpisać te wybory.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="pl_PL">
 			<Text>Niestandardowe: ustaw zestaw triumfów dla każdej epoki osobno.</Text>

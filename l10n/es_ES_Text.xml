@@ -977,7 +977,7 @@
 			<Text>Civilizaciones sugeridas</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="es_ES">
-			<Text>Cada IA sigue las asociaciones de su líder del selector de civilizaciones: una civilización histórica que ofrezca la nueva era, de mayor a menor peso; si no, una geográfica; nunca una estratégica.[n]Una civilización ya ocupada se salta en favor de la siguiente; solo hay duplicado cuando todas están ocupadas. Un empate lo gana la civilización propia de la nueva era. Si la elegida es la que la IA ya tiene, la conserva.</Text>
+			<Text>Cada IA se mantiene fiel a la historia de su líder. Cambia cuando la nueva era ofrece una civilización histórica de su líder y conserva su civilización cuando esa es la histórica.[n]Si no, sigue el camino habitual del juego hacia la nueva era, primero una civilización geográfica. Una civilización ya elegida se omite; solo se repite cuando todas están elegidas.[n]Experimental: desde el parche 1.5, el juego puede anular estas elecciones.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="es_ES">
 			<Text>Personalizado: establece el conjunto de triunfos de cada era individualmente.</Text>

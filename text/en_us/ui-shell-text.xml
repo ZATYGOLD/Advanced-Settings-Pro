@@ -485,7 +485,7 @@
 		<Row Tag="LOC_ZG_CIV_CHOICE_GEOGRAPHIC"><Text>Geographic</Text></Row>
 		<Row Tag="LOC_ZG_LOBBY_SUGGESTED_CIVS"><Text>Suggested Civilizations</Text></Row>
 		<Row Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL">
-			<Text>Every AI follows its leader's associations from the civilization picker: a Historical civilization the new age offers, highest Bias first, else a Geographic one, never a Strategic one.[n]A civilization already taken is passed over for the next; a duplicate is seated only when every one is taken. A tie goes to the civilization native to the new age. When the pick is the civilization the AI already holds, it persists.</Text>
+			<Text>Every AI keeps to its leader's history. It moves on when the new age offers a Historical civilization for its leader, and keeps its civilization when that is the Historical one.[n]Otherwise it follows the game's usual path to the new age, a Geographic civilization first. A civilization already taken is passed over; a duplicate is seated only when every one is taken.[n]Experimental: since patch 1.5 the game may override these choices.</Text>
 		</Row>
 
 	<!-- Triumph Set Descriptions -->

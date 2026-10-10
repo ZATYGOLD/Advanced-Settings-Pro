@@ -977,7 +977,7 @@
 			<Text>Civilisations suggérées</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="fr_FR">
-			<Text>Chaque IA suit les associations de son dirigeant dans le sélecteur de civilisation : une civilisation historique offerte par le nouvel âge, poids le plus fort d'abord, sinon une géographique, jamais une stratégique.[n]Une civilisation déjà prise est passée au profit de la suivante ; un doublon n'est attribué que lorsque toutes sont prises. Une égalité revient à la civilisation propre au nouvel âge. Si le choix est la civilisation que l'IA a déjà, elle la conserve.</Text>
+			<Text>Chaque IA reste fidèle à l'histoire de son dirigeant. Elle change quand le nouvel âge offre une civilisation historique de son dirigeant, et garde sa civilisation quand c'est celle-ci l'historique.[n]Sinon, elle suit le chemin habituel du jeu vers le nouvel âge, une civilisation géographique d'abord. Une civilisation déjà prise est ignorée ; un doublon n'est attribué que lorsque toutes sont prises.[n]Expérimental : depuis le correctif 1.5, le jeu peut remplacer ces choix.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="fr_FR">
 			<Text>Personnalisé : définissez l'ensemble de triomphes de chaque âge individuellement.</Text>

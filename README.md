@@ -12,6 +12,8 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Pace Sets now set Trade Speed and Raze Speed: Swift makes both Instant, Extended slows Trade Speed, the rest keep Standard
 - Pace Settings list the cost settings first, then the speed settings
 - Fixed remembered settings being lost after closing the game, playing multiplayer, loading a save, or backing out of setup
+- Fixed AI Civ Selection, Age Transition: Historical, and Age Transition AI Mementos, having no effect: since patch 1.5 the age transition choice is made in game, and the AI is now settled there, when you confirm your choices. Historical is experimental: the game may still override the AI's civilization
+- AI Civ Selection, Age Transition: Historical now keeps each AI to its leader's history: it moves to a Historical civilization when the new age offers one, keeps its civilization when that is the Historical one, and otherwise follows the game's usual path (Confucius: Han, Ming, Qing)
 - Player tab: with Zatygold's Spectator, the Spectator's Team shows locked as Spectator and its memento slots are hidden
 - Fixed Civic Cost missing the Modern ideology civics, Victory Project Cost scaling nuclear weapons, and leftover pre-1.5 calls in the classic map scripts
 - Project reorganized to mirror the base game's layout (ui/shell, ui-next/screens); translations load per locale
@@ -206,7 +208,7 @@ All settings are chosen at game creation and apply for the full game. Single pla
 - Independent Power Settings: the game's Initial Independent Hostility, Independent Amount (None, Less, Standard, or More), Independent Spacing (Less, Standard, or More), and Independent Aggression (Calm, Standard, or Raging)
 - Unit Settings: Settler Movement and Treasure Convoy Movement (Slow, Standard, Quick, or Fast), and Military and Civilian Unit Cost (Low, Standard, Medium, High, or Double)
 - Trade Settings: Trade Range (-50% to +100% on land and sea trade range, for all ages or per age)
-- Civilization Selection: adds Historical to AI Civ Selection, Age Transition
+- Civilization Selection: adds Historical to AI Civ Selection, Age Transition. Each AI moves to its leader's Historical civilization when the new age offers one, keeps its civilization when that is the Historical one, and otherwise follows the game's usual path, a Geographic civilization first (experimental: since patch 1.5 the game may override it)
 
 ### Pace tab
 
@@ -245,8 +247,9 @@ data/                           Gameplay adjustments (game scope), grouped by sy
 l10n/                           Text for the 11 non-English languages
 maps/                           Map script copies and the zg-map-* generation modules
 text/en_us/                     English text
+ui/age-transition/              Age transition: AI civilizations and mementos, in game and shell
 ui/shell/                       Shell scripts: shared helpers, setup rules and memory,
-                                multiplayer create game and lobby, age transition
+                                multiplayer create game and lobby
 ui-next/screens/create-game/    Advanced Settings tabs, Player tab, memento picker
 ```
 
