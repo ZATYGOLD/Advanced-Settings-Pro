@@ -12,7 +12,7 @@
 // Mementos, which fills every AI player's slots at once. The draws themselves
 // live in zg-memento-roller.js, shared with the age transition.
 import { template, insert } from 'fs://game/core/vendor/solid-js/web/dist/web.js';
-import { createMemo, createComponent, createRenderEffect, mergeProps, For, Show } from 'fs://game/core/vendor/solid-js/dist/solid.js';
+import { createMemo, createComponent, createRenderEffect, createSignal, mergeProps, For, Show } from 'fs://game/core/vendor/solid-js/dist/solid.js';
 import { ComponentRegistry } from 'fs://game/core/ui-next/services/component-registry.js';
 import { multiplayerTeamColors } from 'fs://game/core/ui/utilities/utilities-network-constants.js';
 import { openMementoSelect } from './zg-memento-select.js';
@@ -390,6 +390,45 @@ const TeamTooltip = () => createComponent(Tooltip.Frame, {
 	get children() { return createComponent(L10n.Compose, { text: "LOC_ZG_TEAM_DESCRIPTION" }); },
 });
 
+// Zatygold's Spectator: its Spectator plays on no team. While that mod is on,
+// a Spectator row shows the mod's eye badge in the Team column, locked, as the
+// mod's own multiplayer lobby does. Its leader type and art come from the mod
+// itself, read once it has loaded.
+const SPECTATOR_MOD_ID = "zatygolds-observer-mode";
+const SPECTATOR_TEAM = { value: "ZG_SPECTATOR", sortIndex: 0 };
+const [spectator, setSpectator] = createSignal(null);
+if (Modding.getInstalledMods().some((mod) => mod.enabled && mod.id == SPECTATOR_MOD_ID)) {
+	Promise.all([
+		import(`fs://game/${SPECTATOR_MOD_ID}/ui/shared/zom-util.js`),
+		import(`fs://game/${SPECTATOR_MOD_ID}/ui/shared/zom-assets.js`),
+	]).then(([util, assets]) => setSpectator({ leader: util.OBSERVER_LEADER, icon: assets.ART?.observerIcon }))
+		.catch((error) => console.warn(`ZG-ASP player tab: Spectator mod not readable: ${error}`));
+}
+
+const spectatorTeamParameter = () => ({ domain: { possibleValues: [SPECTATOR_TEAM] }, value: SPECTATOR_TEAM, setValue: () => {} });
+
+const tplSpectatorBadge = template(`<div class="relative size-12 ml-2 bg-contain bg-center bg-no-repeat"></div>`);
+const SpectatorBadge = () => {
+	const el = tplSpectatorBadge();
+	createRenderEffect(() => { el.style.backgroundImage = spectator()?.icon ? `url('${spectator().icon}')` : ""; });
+	return el;
+};
+
+const SpectatorTooltip = () => createComponent(Tooltip.Frame, {
+	class: "flex flex-col relative max-w-128",
+	get children() {
+		return [
+			createComponent(L10n.Compose, { text: "LOC_ZOM_TEAM_OBSERVER" }),
+			createComponent(L10n.Compose, { text: "LOC_ZOM_TEAM_OBSERVER_DESC" }),
+		];
+	},
+});
+
+// A memento slot shows on the same terms as the game's own memento screens: a
+// slot another rule hides or invalidates for this player (the Spectator's, say)
+// is left out.
+const mementoSlotShown = (param) => !!param && !param.hidden && !param.destroyed && param.invalidReason == GameSetupParameterInvalidReason.Valid && param.domain?.possibleValues?.length > 0;
+
 // A row cell sized by the shared column proportions.
 function column(index, child) {
 	const el = tplColumn();
@@ -405,7 +444,7 @@ function column(index, child) {
 // `random` (optional) adds a Random item: { isRandom, setRandom }.
 // `listOption` (optional) draws the items in the open list when they should look
 // different from the selected one, as the team badge does.
-function parameterDropdown(param, option, tooltip, side, classes, random, listOption) {
+function parameterDropdown(param, option, tooltip, side, classes, random, listOption, disabled) {
 	const withTooltip = (value, trigger) => createComponent(Tooltip, {
 		initialHPosition: side,
 		get children() {
@@ -421,6 +460,7 @@ function parameterDropdown(param, option, tooltip, side, classes, random, listOp
 	};
 	return createComponent(Dropdown, {
 		class: classes,
+		disabled,
 		get defaultValue() { return random?.isRandom() ? RANDOM_OPTION : param().value; },
 		selectedItemTemplate: (value) => withTooltip(value, () => createComponent(option, { param: value })),
 		onItemSelected: (value) => {
@@ -536,6 +576,7 @@ const PlayerSetup = () => {
 		}
 	};
 	const playerParam = (slot, id) => playerOptions[slot.playerId]?.[id];
+	const isSpectator = (slot) => !!spectator() && playerParam(slot, "PlayerLeader")?.value?.value == spectator().leader;
 	const randomFor = (slot, slotIndex) => ({
 		isRandom: () => (RANDOM_FLAGS[playerParam(slot, RANDOM_FLAG_PARAM_ID)?.value?.value] ?? RANDOM_FLAGS.ZG_RANDOM_MEMENTOS_NONE)[slotIndex],
 		setRandom: (isRandom) => {
@@ -568,11 +609,15 @@ const PlayerSetup = () => {
 		const number = el.firstChild, controls = number.nextSibling, close = controls.nextSibling;
 		insert(number, () => slotNum() + 1);
 		controls.appendChild(column(0, parameterDropdown(() => playerParam(slot, "PlayerLeader"), PlayerOption, LeaderTooltip, TooltipHorizontalPosition.RIGHT, "my-2 mr-2 flex-auto")));
-		controls.appendChild(column(1, parameterDropdown(() => teamParameter(slot.playerId), TeamBadge, TeamTooltip, TooltipHorizontalPosition.LEFT, "my-2 mx-2 flex-auto", null, TeamNumber)));
+		controls.appendChild(column(1, createComponent(Show, {
+			get when() { return isSpectator(slot); },
+			get fallback() { return parameterDropdown(() => teamParameter(slot.playerId), TeamBadge, TeamTooltip, TooltipHorizontalPosition.LEFT, "my-2 mx-2 flex-auto", null, TeamNumber); },
+			get children() { return parameterDropdown(spectatorTeamParameter, SpectatorBadge, SpectatorTooltip, TooltipHorizontalPosition.LEFT, "my-2 mx-2 flex-auto", null, null, true); },
+		})));
 		controls.appendChild(column(2, parameterDropdown(() => playerParam(slot, "PlayerCivilization"), PlayerOption, CivTooltip, TooltipHorizontalPosition.LEFT, "my-2 mx-2 flex-auto")));
 		MEMENTO_PARAM_IDS.forEach((id, slotIndex) => {
 			controls.appendChild(column(3 + slotIndex, createComponent(Show, {
-				get when() { return playerParam(slot, id)?.domain?.possibleValues?.length > 0; },
+				get when() { return mementoSlotShown(playerParam(slot, id)); },
 				get children() { return createComponent(MementoSlotCell, { get playerId() { return slot.playerId; }, param: () => playerParam(slot, id), slotIndex }); },
 			})));
 		});

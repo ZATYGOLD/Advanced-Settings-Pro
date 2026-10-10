@@ -12,6 +12,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Pace Sets now set Trade Speed and Raze Speed: Swift makes both Instant, Extended slows Trade Speed, the rest keep Standard
 - Pace Settings list the cost settings first, then the speed settings
 - Fixed remembered settings being lost after closing the game, playing multiplayer, loading a save, or backing out of setup
+- Player tab: with Zatygold's Spectator, the Spectator's Team shows locked as Spectator and its memento slots are hidden
 
 ### 0.9.03
 
