@@ -6,6 +6,11 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ### 0.9.04
 
+- New Trade Range (General tab, Trade Settings): -50% to +100% on land and sea trade range, for all ages or per age
+- New Trade Speed (Pace tab): Merchants travel Slow, Standard, Quick, or Fast, or trade routes start Instantly, for all ages or per age; Modern can now be made to travel
+- Raze Time is renamed Raze Speed and moves to the Pace tab with a row per age (Shorter is now Fast); Roads is renamed Road Speed
+- Pace Sets now set Trade Speed and Raze Speed: Swift makes both Instant, Extended slows Trade Speed, the rest keep Standard
+- Pace Settings list the cost settings first, then the speed settings
 - Fixed remembered settings being lost after closing the game, playing multiplayer, loading a save, or backing out of setup
 
 ### 0.9.03

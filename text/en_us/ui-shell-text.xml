@@ -3,6 +3,7 @@
 	<EnglishText>
 	<!-- Unique Group Ids -->
 		<Row Tag="LOC_GROUPID_ZG_UNITOPTIONS"><Text>Unit Settings</Text></Row>
+		<Row Tag="LOC_GROUPID_ZG_TRADEOPTIONS"><Text>Trade Settings</Text></Row>
 		<Row Tag="LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS"><Text>Independent Power Settings</Text></Row>
 		<Row Tag="LOC_GROUPID_ZG_SETTLEMENTOPTIONS"><Text>Settlement Settings</Text></Row>
 		<Row Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS"><Text>Natural Wonder Selection</Text></Row>
@@ -108,9 +109,10 @@
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME"><Text>Exploration</Text></Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME"><Text>Modern</Text></Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME"><Text>Settlement Distance</Text></Row>
-		<Row Tag="LOC_ZG_RAZE_TIME_NAME"><Text>Raze Time</Text></Row>
+		<Row Tag="LOC_ZG_TRADE_RANGE_NAME"><Text>Trade Range</Text></Row>
+		<Row Tag="LOC_ZG_TRADE_SPEED_NAME"><Text>Trade Speed</Text></Row>
+		<Row Tag="LOC_ZG_RAZE_TIME_NAME"><Text>Raze Speed</Text></Row>
 		<Row Tag="LOC_ZG_INSTANT_NAME"><Text>Instant</Text></Row>
-		<Row Tag="LOC_ZG_SHORTER_NAME"><Text>Shorter</Text></Row>
 		<Row Tag="LOC_ZG_COMBAT_UNIT_COST_NAME"><Text>Military Unit Cost</Text></Row>
 		<Row Tag="LOC_ZG_CIVILIAN_UNIT_COST_NAME"><Text>Civilian Unit Cost</Text></Row>
 		<Row Tag="LOC_ZG_CRISES_NAME"><Text>Crises</Text></Row>
@@ -235,7 +237,7 @@
 		<Row Tag="LOC_ZG_BUILDING_COST_AGE_DESC_PLUS_100"><Text>100% more Production for buildings in this age.</Text></Row>
 		<Row Tag="LOC_ZG_CITY_GROWTH_NAME"><Text>Settlement Growth</Text></Row>
 		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION"><Text>Sets how much Food a settlement needs for each new citizen. Lower thresholds let settlements climb past size 10 far sooner.</Text></Row>
-		<Row Tag="LOC_ZG_ROADS_NAME"><Text>Roads</Text></Row>
+		<Row Tag="LOC_ZG_ROADS_NAME"><Text>Road Speed</Text></Row>
 		<Row Tag="LOC_ZG_ROADS_DESCRIPTION"><Text>Sets how much Movement it costs to travel along roads and railroads. Cheaper roads let armies cross your territory in far fewer turns.</Text></Row>
 		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_NAME"><Text>Victory Project Cost</Text></Row>
 		<Row Tag="LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION"><Text>Sets the Production cost of the 12 science and military Victory Projects, from Chart The Stars to Crewed Space Flight.</Text></Row>
@@ -537,7 +539,114 @@
 			<Text>4 tiles.</Text>
 		</Row>
 
-	<!-- Raze Time Descriptions -->
+	<!-- Trade Descriptions -->
+		<Row Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION">
+			<Text>Sets how far trade routes can reach from your settlements, on land and at sea.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_MINUS_50">
+			<Text>Half the range.[nn][BLIST]
+				[LI] Antiquity: 5 land, 15 sea
+				[LI] Exploration: 8 land, 23 sea
+				[LI] Modern: 10 land, 30 sea[/BLIST]</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_MINUS_25">
+			<Text>25% less range.[nn][BLIST]
+				[LI] Antiquity: 8 land, 23 sea
+				[LI] Exploration: 11 land, 34 sea
+				[LI] Modern: 15 land, 45 sea[/BLIST]</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_STANDARD">
+			<Text>The game's own range.[nn][BLIST]
+				[LI] Antiquity: 10 land, 30 sea
+				[LI] Exploration: 15 land, 45 sea
+				[LI] Modern: 20 land, 60 sea[/BLIST]</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_25">
+			<Text>25% more range.[nn][BLIST]
+				[LI] Antiquity: 13 land, 38 sea
+				[LI] Exploration: 19 land, 56 sea
+				[LI] Modern: 25 land, 75 sea[/BLIST]</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_50">
+			<Text>50% more range.[nn][BLIST]
+				[LI] Antiquity: 15 land, 45 sea
+				[LI] Exploration: 23 land, 68 sea
+				[LI] Modern: 30 land, 90 sea[/BLIST]</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_100">
+			<Text>Double the range.[nn][BLIST]
+				[LI] Antiquity: 20 land, 60 sea
+				[LI] Exploration: 30 land, 90 sea
+				[LI] Modern: 40 land, 120 sea[/BLIST]</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_CUSTOM">
+			<Text>Set the Trade Range for each age individually.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TRADE_RANGE_AGE_DESCRIPTION">
+			<Text>Sets this age's Trade Range.[n]Applies only when Trade Range is set to Custom.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION">
+			<Text>Sets how quickly Merchants start trade routes: by travelling to the settlement they trade with, or from a distance. A travel speed applies in every age, the Modern Age included.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_SLOW">
+			<Text>Merchants travel with 3[icon:Action_Move]Movement.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_STANDARD">
+			<Text>Merchants travel with 4[icon:Action_Move]Movement.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_QUICK">
+			<Text>Merchants travel with 5[icon:Action_Move]Movement.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_FAST">
+			<Text>Merchants travel with 6[icon:Action_Move]Movement.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_SWIFT">
+			<Text>Trade routes start from a distance in every age.[nn][BLIST]
+				[LI] Antiquity: Instant
+				[LI] Exploration: Instant
+				[LI] Modern: Instant[/BLIST]</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_BALANCED">
+			<Text>The game's own pace.[nn][BLIST]
+				[LI] Antiquity: Standard
+				[LI] Exploration: Standard
+				[LI] Modern: Instant[/BLIST]</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_EXTENDED">
+			<Text>Merchants travel slowly in every age.[nn][BLIST]
+				[LI] Antiquity: -25%
+				[LI] Exploration: -25%
+				[LI] Modern: -25%[/BLIST]</Text>
+		</Row>
+		<Row Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_SWIFT">
+			<Text>Settlements are razed in a single turn in every age.[nn][BLIST]
+				[LI] Antiquity: Instant
+				[LI] Exploration: Instant
+				[LI] Modern: Instant[/BLIST]</Text>
+		</Row>
+		<Row Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_BALANCED">
+			<Text>The game's own pace.[nn][BLIST]
+				[LI] Antiquity: Standard
+				[LI] Exploration: Standard
+				[LI] Modern: Standard[/BLIST]</Text>
+		</Row>
+		<Row Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_EXTENDED">
+			<Text>The game's own pace.[nn][BLIST]
+				[LI] Antiquity: Standard
+				[LI] Exploration: Standard
+				[LI] Modern: Standard[/BLIST]</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_INSTANT">
+			<Text>Trade routes start from a distance, so Merchants do not need to travel.</Text>
+		</Row>
+		<Row Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_DEFAULT">
+			<Text>The game's own pace.[nn][BLIST]
+				[LI] Antiquity: travel with 4[icon:Action_Move]Movement
+				[LI] Exploration: travel with 4[icon:Action_Move]Movement
+				[LI] Modern: from a distance[/BLIST]</Text>
+		</Row>
+
+	<!-- Raze Speed Descriptions -->
 		<Row Tag="LOC_ZG_RAZE_TIME_DESCRIPTION">
 			<Text>Sets how long a captured settlement takes to raze. Razing removes districts each turn, so larger settlements take longer.</Text>
 		</Row>
@@ -990,36 +1099,44 @@
 				[LI] Technology Cost: +25% / +50% / +50%
 				[LI] Civic Cost: +25% / +50% / +50%
 				[LI] Building Cost: +25% / +50% / +50%
+				[LI] Victory Project Cost: +25%
 				[LI] Settlement Growth: +25%
-				[LI] Roads: Standard / Standard / -25%
-				[LI] Victory Project Cost: +25%[/BLIST]</Text></Row>
+				[LI] Road Speed: Standard / Standard / -25%
+				[LI] Trade Speed: -25%
+				[LI] Raze Speed: Standard[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT"><Text>Short ages, with costs scaled down to match.[nn][BLIST]
 				[LI] Age Length: 90 / 100 / 110
 				[LI] Age Progression: Standard
 				[LI] Technology Cost: -25% / -25% / Standard
 				[LI] Civic Cost: -25% / -25% / Standard
 				[LI] Building Cost: -25%
+				[LI] Victory Project Cost: -25%
 				[LI] Settlement Growth: -25%
-				[LI] Roads: -25% / -50% / -50%
-				[LI] Victory Project Cost: -25%[/BLIST]</Text></Row>
+				[LI] Road Speed: -25% / -50% / -50%
+				[LI] Trade Speed: Instant
+				[LI] Raze Speed: Instant[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED"><Text>Longer ages, with research and growth tuned to fill them.[nn][BLIST]
 				[LI] Age Length: 150 / 170 / 200
 				[LI] Age Progression: Balanced
 				[LI] Technology Cost: +25% / Standard / -25%
 				[LI] Civic Cost: Standard / +25% / +25%
 				[LI] Building Cost: +25% / Standard / Standard
+				[LI] Victory Project Cost: Standard / -25% / -25%
 				[LI] Settlement Growth: -25% / -25% / Standard
-				[LI] Roads: Standard / Standard / -25%
-				[LI] Victory Project Cost: Standard / -25% / -25%[/BLIST]</Text></Row>
+				[LI] Road Speed: Standard / Standard / -25%
+				[LI] Trade Speed: Standard
+				[LI] Raze Speed: Standard[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER"><Text>Tuned for a session played in one sitting.[nn][BLIST]
 				[LI] Age Length: 140 / 160 / 180
 				[LI] Age Progression: Balanced
 				[LI] Technology Cost: +25% / +50% / +100%
 				[LI] Civic Cost: +50% / +50% / +100%
 				[LI] Building Cost: Standard
+				[LI] Victory Project Cost: Standard / Standard / +25%
 				[LI] Settlement Growth: +25%
-				[LI] Roads: -25% / -25% / -50%
-				[LI] Victory Project Cost: Standard / Standard / +25%[/BLIST]</Text></Row>
+				[LI] Road Speed: -25% / -25% / -50%
+				[LI] Trade Speed: Standard
+				[LI] Raze Speed: Standard[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM"><Text>The Pace Settings on the Pace tab no longer match a preset.</Text></Row>
 	</EnglishText>
 </Database>

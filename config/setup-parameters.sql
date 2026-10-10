@@ -24,7 +24,9 @@ INSERT OR IGNORE INTO ParameterGroups (GroupId, Name)
         ('TerrainOptions', 'LOC_GROUPID_ZG_TERRAINOPTIONS'),
         ('MPAdvancedTerrainOptions', 'LOC_GROUPID_ZG_TERRAINOPTIONS'),
         ('MementoOptions', 'LOC_GROUPID_ZG_MEMENTOOPTIONS'),
-        ('MPAdvancedMementoOptions', 'LOC_GROUPID_ZG_MEMENTOOPTIONS');
+        ('MPAdvancedMementoOptions', 'LOC_GROUPID_ZG_MEMENTOOPTIONS'),
+        ('TradeOptions', 'LOC_GROUPID_ZG_TRADEOPTIONS'),
+        ('MPAdvancedTradeOptions', 'LOC_GROUPID_ZG_TRADEOPTIONS');
 
 -- The single-player disaster group no longer holds the crisis settings, so it is
 -- renamed to Disaster Settings. Multiplayer keeps the base name.
@@ -79,10 +81,10 @@ UPDATE DomainValues SET Description = 'LOC_ZG_AGE_LENGTH_LONG_DESC' WHERE Domain
 --*******************************************************
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
-        ('ZG_SettlerMovementSpeed', 'LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME', 'LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION', 'ZG_SettlerMovementDomain','ZG_SETTLER_MOVES_DEFAULT', 1, 'Game', 'SettlerMovementKey', 'UnitOptions', 'MPAdvancedUnitOptions', 0, 1050),
-        ('ZG_TreasureMovementSpeed', 'LOC_ZG_TREASURE_MOVEMENT_SPEED_NAME', 'LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION', 'ZG_TreasureMovementDomain', 'ZG_TREASURE_MOVES_DEFAULT', 1, 'Game','TreasureMovementKey', 'UnitOptions', 'MPAdvancedUnitOptions', 0, 1051),
-        ('ZG_CombatUnitCost', 'LOC_ZG_COMBAT_UNIT_COST_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION', 'ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_STANDARD', 1, 'Game','CombatUnitCostKey', 'UnitOptions', 'MPAdvancedUnitOptions', 0, 1052),
-        ('ZG_CivilianUnitCost', 'LOC_ZG_CIVILIAN_UNIT_COST_NAME', 'LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION', 'ZG_CivilianUnitCostDomain', 'ZG_CIVILIAN_UNIT_COST_STANDARD', 1, 'Game','CivilianUnitCostKey', 'UnitOptions', 'MPAdvancedUnitOptions', 0, 1053);
+        ('ZG_SettlerMovementSpeed', 'LOC_ZG_SETTLER_MOVEMENT_SPEED_NAME', 'LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION', 'ZG_SettlerMovementDomain','ZG_SETTLER_MOVES_DEFAULT', 1, 'Game', 'SettlerMovementKey', 'UnitOptions', 'MPAdvancedUnitOptions', 0, 4800),
+        ('ZG_TreasureMovementSpeed', 'LOC_ZG_TREASURE_MOVEMENT_SPEED_NAME', 'LOC_ZG_TREASURE_MOVEMENT_SPEED_DESCRIPTION', 'ZG_TreasureMovementDomain', 'ZG_TREASURE_MOVES_DEFAULT', 1, 'Game','TreasureMovementKey', 'UnitOptions', 'MPAdvancedUnitOptions', 0, 4801),
+        ('ZG_CombatUnitCost', 'LOC_ZG_COMBAT_UNIT_COST_NAME', 'LOC_ZG_COMBAT_UNIT_COST_DESCRIPTION', 'ZG_CombatUnitCostDomain', 'ZG_COMBAT_UNIT_COST_STANDARD', 1, 'Game','CombatUnitCostKey', 'UnitOptions', 'MPAdvancedUnitOptions', 0, 4802),
+        ('ZG_CivilianUnitCost', 'LOC_ZG_CIVILIAN_UNIT_COST_NAME', 'LOC_ZG_CIVILIAN_UNIT_COST_DESCRIPTION', 'ZG_CivilianUnitCostDomain', 'ZG_CIVILIAN_UNIT_COST_STANDARD', 1, 'Game','CivilianUnitCostKey', 'UnitOptions', 'MPAdvancedUnitOptions', 0, 4803);
 
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
@@ -112,9 +114,9 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 --*******************************************************
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
-        ('ZG_IndependentCount', 'LOC_ZG_INDEPENDENT_COUNT_NAME', 'LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION','ZG_IndependentCountDomain', 'ZG_DEFAULT_INDEPENDENTS', 1, 'Game', 'IndependentCountKey', 'IndependentPowerOptions', 'MPAdvancedIndependentPowerOptions', 0, 700),
-        ('ZG_IndependentSpace', 'LOC_ZG_INDEPENDENT_SPACE_NAME', 'LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION','ZG_IndependentSpaceDomain', 'ZG_DEFAULT_INDEPENDENTS_SPACING', 1, 'Game', 'IndependentSpaceKey', 'IndependentPowerOptions', 'MPAdvancedIndependentPowerOptions', 0, 7010),
-        ('ZG_IndependentAggression', 'LOC_ZG_INDEPENDENT_AGGRESSION_NAME', 'LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION','ZG_IndependentAggressionDomain', 'ZG_DEFAULT_AGGRESSION', 1, 'Game', 'IndependentAggressionKey', 'IndependentPowerOptions', 'MPAdvancedIndependentPowerOptions', 0, 7030);
+        ('ZG_IndependentCount', 'LOC_ZG_INDEPENDENT_COUNT_NAME', 'LOC_ZG_INDEPENDENT_COUNT_DESCRIPTION','ZG_IndependentCountDomain', 'ZG_DEFAULT_INDEPENDENTS', 1, 'Game', 'IndependentCountKey', 'IndependentPowerOptions', 'MPAdvancedIndependentPowerOptions', 0, 4701),
+        ('ZG_IndependentSpace', 'LOC_ZG_INDEPENDENT_SPACE_NAME', 'LOC_ZG_INDEPENDENT_SPACE_DESCRIPTION','ZG_IndependentSpaceDomain', 'ZG_DEFAULT_INDEPENDENTS_SPACING', 1, 'Game', 'IndependentSpaceKey', 'IndependentPowerOptions', 'MPAdvancedIndependentPowerOptions', 0, 4702),
+        ('ZG_IndependentAggression', 'LOC_ZG_INDEPENDENT_AGGRESSION_NAME', 'LOC_ZG_INDEPENDENT_AGGRESSION_DESCRIPTION','ZG_IndependentAggressionDomain', 'ZG_DEFAULT_AGGRESSION', 1, 'Game', 'IndependentAggressionKey', 'IndependentPowerOptions', 'MPAdvancedIndependentPowerOptions', 0, 4703);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
@@ -155,15 +157,19 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 -- memento settings sit elsewhere. The toggle is multiplayer-only in the base
 -- game and shows read-only in single player; opening it there lets a
 -- single-player game turn mementos off, as No Age Transitions was opened above.
--- Groups appear in the order their first setting does, so this group's 155
--- puts it right after Game Settings once Triumph Settings moves past it below.
+--
+-- Groups appear in the order their first setting does. On the General tab the
+-- base game's groups come first (Game Settings, Difficulty, Triumph Settings
+-- at 180, Crisis Settings at 490, Victory Settings at 4000), then this mod's
+-- from 4500 (Memento, Settlement, Independent Power, Unit, Trade Settings),
+-- and Civilization Selection stays last at 5020, where the base game has it.
 UPDATE Parameters
-SET GroupId = 'MementoOptions', GroupIDMultiplayerOverride = 'MPAdvancedMementoOptions', SortIndex = 155, SupportsSinglePlayer = 1
+SET GroupId = 'MementoOptions', GroupIDMultiplayerOverride = 'MPAdvancedMementoOptions', SortIndex = 4500, SupportsSinglePlayer = 1
 WHERE ParameterID = 'MementosEnabled';
 
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
-        ('ZG_AIMementos', 'LOC_ZG_AI_MEMENTOS_NAME', 'LOC_ZG_AI_MEMENTOS_DESCRIPTION', 'ZG_AIMementosDomain', 'ZG_AI_MEMENTOS_NONE', 1, 'Game', 'AIMementosKey', 'MementoOptions', 'MPAdvancedMementoOptions', 0, 156);
+        ('ZG_AIMementos', 'LOC_ZG_AI_MEMENTOS_NAME', 'LOC_ZG_AI_MEMENTOS_DESCRIPTION', 'ZG_AIMementosDomain', 'ZG_AI_MEMENTOS_NONE', 1, 'Game', 'AIMementosKey', 'MementoOptions', 'MPAdvancedMementoOptions', 0, 4501);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
@@ -184,7 +190,7 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 -- value and no rule tying the two settings together.
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
-        ('ZG_AgeTransitionMementos', 'LOC_ZG_AGE_TRANSITION_MEMENTOS_NAME', 'LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION', 'ZG_AgeTransitionMementosDomain', 'ZG_AGE_TRANSITION_MEMENTOS_MAINTAIN', 1, 'Game', 'AgeTransitionMementosKey', 'MementoOptions', 'MPAdvancedMementoOptions', 0, 157);
+        ('ZG_AgeTransitionMementos', 'LOC_ZG_AGE_TRANSITION_MEMENTOS_NAME', 'LOC_ZG_AGE_TRANSITION_MEMENTOS_DESCRIPTION', 'ZG_AgeTransitionMementosDomain', 'ZG_AGE_TRANSITION_MEMENTOS_MAINTAIN', 1, 'Game', 'AgeTransitionMementosKey', 'MementoOptions', 'MPAdvancedMementoOptions', 0, 4502);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
@@ -252,18 +258,18 @@ INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, Defaul
         ('ZG_BuildingCostAntiquity', 'LOC_ZG_BUILDING_COST_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_BuildingCostAgeDomain', 'ZG_BUILDING_COST_STANDARD', 1, 'Game', 'BuildingCostAntiquityKey', 'PacingAntiquityOptions', 'MPAdvancedPacingAntiquityOptions', 0, 104),
         ('ZG_BuildingCostExploration', 'LOC_ZG_BUILDING_COST_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_BuildingCostAgeDomain', 'ZG_BUILDING_COST_STANDARD', 1, 'Game', 'BuildingCostExplorationKey', 'PacingExplorationOptions', 'MPAdvancedPacingExplorationOptions', 0, 114),
         ('ZG_BuildingCostModern', 'LOC_ZG_BUILDING_COST_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_BuildingCostAgeDomain', 'ZG_BUILDING_COST_STANDARD', 1, 'Game', 'BuildingCostModernKey', 'PacingModernOptions', 'MPAdvancedPacingModernOptions', 0, 124),
-        ('ZG_CityGrowth', 'LOC_ZG_CITY_GROWTH_NAME', 'LOC_ZG_CITY_GROWTH_DESCRIPTION', 'ZG_CityGrowthDomain', 'ZG_CITY_GROWTH_STANDARD', 1, 'Game', 'CityGrowthKey', 'GamePacingOptions', 'MPAdvancedGamePacingOptions', 0, 44),
-        ('ZG_CityGrowthAntiquity', 'LOC_ZG_CITY_GROWTH_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_CityGrowthAgeDomain', 'ZG_CITY_GROWTH_STANDARD', 1, 'Game', 'CityGrowthAntiquityKey', 'PacingAntiquityOptions', 'MPAdvancedPacingAntiquityOptions', 0, 105),
-        ('ZG_CityGrowthExploration', 'LOC_ZG_CITY_GROWTH_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_CityGrowthAgeDomain', 'ZG_CITY_GROWTH_STANDARD', 1, 'Game', 'CityGrowthExplorationKey', 'PacingExplorationOptions', 'MPAdvancedPacingExplorationOptions', 0, 115),
-        ('ZG_CityGrowthModern', 'LOC_ZG_CITY_GROWTH_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_CityGrowthAgeDomain', 'ZG_CITY_GROWTH_STANDARD', 1, 'Game', 'CityGrowthModernKey', 'PacingModernOptions', 'MPAdvancedPacingModernOptions', 0, 125),
+        ('ZG_CityGrowth', 'LOC_ZG_CITY_GROWTH_NAME', 'LOC_ZG_CITY_GROWTH_DESCRIPTION', 'ZG_CityGrowthDomain', 'ZG_CITY_GROWTH_STANDARD', 1, 'Game', 'CityGrowthKey', 'GamePacingOptions', 'MPAdvancedGamePacingOptions', 0, 46),
+        ('ZG_CityGrowthAntiquity', 'LOC_ZG_CITY_GROWTH_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_CityGrowthAgeDomain', 'ZG_CITY_GROWTH_STANDARD', 1, 'Game', 'CityGrowthAntiquityKey', 'PacingAntiquityOptions', 'MPAdvancedPacingAntiquityOptions', 0, 106),
+        ('ZG_CityGrowthExploration', 'LOC_ZG_CITY_GROWTH_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_CityGrowthAgeDomain', 'ZG_CITY_GROWTH_STANDARD', 1, 'Game', 'CityGrowthExplorationKey', 'PacingExplorationOptions', 'MPAdvancedPacingExplorationOptions', 0, 116),
+        ('ZG_CityGrowthModern', 'LOC_ZG_CITY_GROWTH_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_CityGrowthAgeDomain', 'ZG_CITY_GROWTH_STANDARD', 1, 'Game', 'CityGrowthModernKey', 'PacingModernOptions', 'MPAdvancedPacingModernOptions', 0, 126),
         ('ZG_Roads', 'LOC_ZG_ROADS_NAME', 'LOC_ZG_ROADS_DESCRIPTION', 'ZG_RoadsDomain', 'ZG_ROADS_STANDARD', 1, 'Game', 'RoadsKey', 'GamePacingOptions', 'MPAdvancedGamePacingOptions', 0, 48),
-        ('ZG_RoadsAntiquity', 'LOC_ZG_ROADS_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_RoadsAgeDomain', 'ZG_ROADS_STANDARD', 1, 'Game', 'RoadsAntiquityKey', 'PacingAntiquityOptions', 'MPAdvancedPacingAntiquityOptions', 0, 106),
-        ('ZG_RoadsExploration', 'LOC_ZG_ROADS_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_RoadsAgeDomain', 'ZG_ROADS_STANDARD', 1, 'Game', 'RoadsExplorationKey', 'PacingExplorationOptions', 'MPAdvancedPacingExplorationOptions', 0, 116),
-        ('ZG_RoadsModern', 'LOC_ZG_ROADS_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_RoadsAgeDomain', 'ZG_ROADS_STANDARD', 1, 'Game', 'RoadsModernKey', 'PacingModernOptions', 'MPAdvancedPacingModernOptions', 0, 126),
-        ('ZG_VictoryProjectCost', 'LOC_ZG_VICTORY_PROJECT_COST_NAME', 'LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION', 'ZG_VictoryProjectCostDomain', 'ZG_VICTORY_PROJECT_COST_STANDARD', 1, 'Game', 'VictoryProjectCostKey', 'GamePacingOptions', 'MPAdvancedGamePacingOptions', 0, 52),
-        ('ZG_VictoryProjectCostAntiquity', 'LOC_ZG_VICTORY_PROJECT_COST_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_VictoryProjectCostAgeDomain', 'ZG_VICTORY_PROJECT_COST_STANDARD', 1, 'Game', 'VictoryProjectCostAntiquityKey', 'PacingAntiquityOptions', 'MPAdvancedPacingAntiquityOptions', 0, 107),
-        ('ZG_VictoryProjectCostExploration', 'LOC_ZG_VICTORY_PROJECT_COST_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_VictoryProjectCostAgeDomain', 'ZG_VICTORY_PROJECT_COST_STANDARD', 1, 'Game', 'VictoryProjectCostExplorationKey', 'PacingExplorationOptions', 'MPAdvancedPacingExplorationOptions', 0, 117),
-        ('ZG_VictoryProjectCostModern', 'LOC_ZG_VICTORY_PROJECT_COST_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_VictoryProjectCostAgeDomain', 'ZG_VICTORY_PROJECT_COST_STANDARD', 1, 'Game', 'VictoryProjectCostModernKey', 'PacingModernOptions', 'MPAdvancedPacingModernOptions', 0, 127);
+        ('ZG_RoadsAntiquity', 'LOC_ZG_ROADS_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_RoadsAgeDomain', 'ZG_ROADS_STANDARD', 1, 'Game', 'RoadsAntiquityKey', 'PacingAntiquityOptions', 'MPAdvancedPacingAntiquityOptions', 0, 107),
+        ('ZG_RoadsExploration', 'LOC_ZG_ROADS_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_RoadsAgeDomain', 'ZG_ROADS_STANDARD', 1, 'Game', 'RoadsExplorationKey', 'PacingExplorationOptions', 'MPAdvancedPacingExplorationOptions', 0, 117),
+        ('ZG_RoadsModern', 'LOC_ZG_ROADS_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_RoadsAgeDomain', 'ZG_ROADS_STANDARD', 1, 'Game', 'RoadsModernKey', 'PacingModernOptions', 'MPAdvancedPacingModernOptions', 0, 127),
+        ('ZG_VictoryProjectCost', 'LOC_ZG_VICTORY_PROJECT_COST_NAME', 'LOC_ZG_VICTORY_PROJECT_COST_DESCRIPTION', 'ZG_VictoryProjectCostDomain', 'ZG_VICTORY_PROJECT_COST_STANDARD', 1, 'Game', 'VictoryProjectCostKey', 'GamePacingOptions', 'MPAdvancedGamePacingOptions', 0, 44),
+        ('ZG_VictoryProjectCostAntiquity', 'LOC_ZG_VICTORY_PROJECT_COST_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_VictoryProjectCostAgeDomain', 'ZG_VICTORY_PROJECT_COST_STANDARD', 1, 'Game', 'VictoryProjectCostAntiquityKey', 'PacingAntiquityOptions', 'MPAdvancedPacingAntiquityOptions', 0, 105),
+        ('ZG_VictoryProjectCostExploration', 'LOC_ZG_VICTORY_PROJECT_COST_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_VictoryProjectCostAgeDomain', 'ZG_VICTORY_PROJECT_COST_STANDARD', 1, 'Game', 'VictoryProjectCostExplorationKey', 'PacingExplorationOptions', 'MPAdvancedPacingExplorationOptions', 0, 115),
+        ('ZG_VictoryProjectCostModern', 'LOC_ZG_VICTORY_PROJECT_COST_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_VictoryProjectCostAgeDomain', 'ZG_VICTORY_PROJECT_COST_STANDARD', 1, 'Game', 'VictoryProjectCostModernKey', 'PacingModernOptions', 'MPAdvancedPacingModernOptions', 0, 125);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
@@ -379,7 +385,7 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 --*******************************************************
 -- The base Initial Independent Hostility setting belongs with the other
 -- Independent Power settings.
-UPDATE Parameters SET GroupId = 'IndependentPowerOptions', GroupIDMultiplayerOverride = 'MPAdvancedIndependentPowerOptions', SortIndex = 690 WHERE ParameterID = 'IndependentHostility';
+UPDATE Parameters SET GroupId = 'IndependentPowerOptions', GroupIDMultiplayerOverride = 'MPAdvancedIndependentPowerOptions', SortIndex = 4700 WHERE ParameterID = 'IndependentHostility';
 
 --*******************************************************
 --************* TRIUMPH SETS ****************************
@@ -444,8 +450,8 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
 
-        ('ZG_SettlementLimit', 'LOC_ZG_SETTLEMENT_LIMIT_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION','ZG_SettlementLimitDomain', 'ZG_DEFAULT_SETTLEMENT_LIMIT_COUNT', 1, 'Game', 'SettlementLimitKey', 'SettlementOptions', 'MPAdvancedSettlementOptions', 0, 610),
-        ('ZG_SettlementDistance', 'LOC_ZG_SETTLEMENT_DISTANCE_NAME', 'LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION','ZG_SettlementDistanceDomain', 'ZG_DEFAULT_SETTLEMENT_DISTANCE_COUNT', 1, 'Game', 'SettlementDistanceKey', 'SettlementOptions', 'MPAdvancedSettlementOptions', 0, 600);
+        ('ZG_SettlementLimit', 'LOC_ZG_SETTLEMENT_LIMIT_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_DESCRIPTION','ZG_SettlementLimitDomain', 'ZG_DEFAULT_SETTLEMENT_LIMIT_COUNT', 1, 'Game', 'SettlementLimitKey', 'SettlementOptions', 'MPAdvancedSettlementOptions', 0, 4610),
+        ('ZG_SettlementDistance', 'LOC_ZG_SETTLEMENT_DISTANCE_NAME', 'LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION','ZG_SettlementDistanceDomain', 'ZG_DEFAULT_SETTLEMENT_DISTANCE_COUNT', 1, 'Game', 'SettlementDistanceKey', 'SettlementOptions', 'MPAdvancedSettlementOptions', 0, 4600);
 
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
@@ -458,24 +464,86 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_SettlementDistanceDomain', 'ZG_DEFAULT_SETTLEMENT_DISTANCE_COUNT', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_DEFAULT', 20),
         ('ZG_SettlementDistanceDomain', 'ZG_MORE_SETTLEMENT_DISTANCE_COUNT', 'LOC_ZG_MORE_NAME', 'LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE', 30);
 
--- How long a captured settlement takes to raze: districts razed per turn
--- (CITY_RAZE_DISTRICTS_PER_TURN), scaled for the current age.
+-- Trade Range scales each age's land and sea trade range (TradeSystemParameterSets),
+-- one value for all three ages or, on Custom, a row per age.
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
-        ('ZG_RazeTime', 'LOC_ZG_RAZE_TIME_NAME', 'LOC_ZG_RAZE_TIME_DESCRIPTION', 'ZG_RazeTimeDomain', 'ZG_STANDARD_RAZE_TIME', 1, 'Game', 'RazeTimeKey', 'SettlementOptions', 'MPAdvancedSettlementOptions', 0, 605);
+        ('ZG_TradeRange', 'LOC_ZG_TRADE_RANGE_NAME', 'LOC_ZG_TRADE_RANGE_DESCRIPTION', 'ZG_TradeRangeDomain', 'ZG_TRADE_RANGE_STANDARD', 1, 'Game', 'TradeRangeKey', 'TradeOptions', 'MPAdvancedTradeOptions', 0, 4900),
+        ('ZG_TradeRangeAntiquity', 'LOC_AGE_ANTIQUITY_NAME', 'LOC_ZG_TRADE_RANGE_AGE_DESCRIPTION', 'ZG_TradeRangeAgeDomain', 'ZG_TRADE_RANGE_STANDARD', 1, 'Game', 'TradeRangeAntiquityKey', 'TradeOptions', 'MPAdvancedTradeOptions', 0, 4901),
+        ('ZG_TradeRangeExploration', 'LOC_AGE_EXPLORATION_NAME', 'LOC_ZG_TRADE_RANGE_AGE_DESCRIPTION', 'ZG_TradeRangeAgeDomain', 'ZG_TRADE_RANGE_STANDARD', 1, 'Game', 'TradeRangeExplorationKey', 'TradeOptions', 'MPAdvancedTradeOptions', 0, 4902),
+        ('ZG_TradeRangeModern', 'LOC_AGE_MODERN_NAME', 'LOC_ZG_TRADE_RANGE_AGE_DESCRIPTION', 'ZG_TradeRangeAgeDomain', 'ZG_TRADE_RANGE_STANDARD', 1, 'Game', 'TradeRangeModernKey', 'TradeOptions', 'MPAdvancedTradeOptions', 0, 4903);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
-        ('ZG_RazeTimeDomain', 'ZG_INSTANT_RAZE_TIME', 'LOC_ZG_INSTANT_NAME', 'LOC_ZG_RAZE_TIME_DESCRIPTION_INSTANT', 10),
-        ('ZG_RazeTimeDomain', 'ZG_SHORTER_RAZE_TIME', 'LOC_ZG_SHORTER_NAME', 'LOC_ZG_RAZE_TIME_DESCRIPTION_SHORTER', 20),
-        ('ZG_RazeTimeDomain', 'ZG_STANDARD_RAZE_TIME', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_RAZE_TIME_DESCRIPTION_STANDARD', 30);
+        ('ZG_TradeRangeDomain', 'ZG_TRADE_RANGE_MINUS_50', 'LOC_ZG_PCT_MINUS_50', 'LOC_ZG_TRADE_RANGE_DESCRIPTION_MINUS_50', 10),
+        ('ZG_TradeRangeDomain', 'ZG_TRADE_RANGE_MINUS_25', 'LOC_ZG_PCT_MINUS_25', 'LOC_ZG_TRADE_RANGE_DESCRIPTION_MINUS_25', 20),
+        ('ZG_TradeRangeDomain', 'ZG_TRADE_RANGE_STANDARD', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_TRADE_RANGE_DESCRIPTION_STANDARD', 30),
+        ('ZG_TradeRangeDomain', 'ZG_TRADE_RANGE_PLUS_25', 'LOC_ZG_PCT_PLUS_25', 'LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_25', 40),
+        ('ZG_TradeRangeDomain', 'ZG_TRADE_RANGE_PLUS_50', 'LOC_ZG_PCT_PLUS_50', 'LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_50', 50),
+        ('ZG_TradeRangeDomain', 'ZG_TRADE_RANGE_PLUS_100', 'LOC_ZG_PCT_PLUS_100', 'LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_100', 60),
+        ('ZG_TradeRangeDomain', 'ZG_TRADE_RANGE_CUSTOM', 'LOC_ZG_CUSTOM_NAME', 'LOC_ZG_TRADE_RANGE_DESCRIPTION_CUSTOM', 70),
+        ('ZG_TradeRangeAgeDomain', 'ZG_TRADE_RANGE_MINUS_50', 'LOC_ZG_PCT_MINUS_50', 'LOC_ZG_TRADE_RANGE_DESCRIPTION_MINUS_50', 10),
+        ('ZG_TradeRangeAgeDomain', 'ZG_TRADE_RANGE_MINUS_25', 'LOC_ZG_PCT_MINUS_25', 'LOC_ZG_TRADE_RANGE_DESCRIPTION_MINUS_25', 20),
+        ('ZG_TradeRangeAgeDomain', 'ZG_TRADE_RANGE_STANDARD', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_TRADE_RANGE_DESCRIPTION_STANDARD', 30),
+        ('ZG_TradeRangeAgeDomain', 'ZG_TRADE_RANGE_PLUS_25', 'LOC_ZG_PCT_PLUS_25', 'LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_25', 40),
+        ('ZG_TradeRangeAgeDomain', 'ZG_TRADE_RANGE_PLUS_50', 'LOC_ZG_PCT_PLUS_50', 'LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_50', 50),
+        ('ZG_TradeRangeAgeDomain', 'ZG_TRADE_RANGE_PLUS_100', 'LOC_ZG_PCT_PLUS_100', 'LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_100', 60);
+
+-- Trade Speed: how Merchants start trade routes, by travelling at a set
+-- movement or from a distance (Instant), as the Modern Age does by default.
+-- One value for every age or, on Custom, a row per age (Pace tab).
+INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
+    VALUES
+        ('ZG_TradeSpeed', 'LOC_ZG_TRADE_SPEED_NAME', 'LOC_ZG_TRADE_SPEED_DESCRIPTION', 'ZG_TradeSpeedDomain', 'ZG_TRADE_SPEED_STANDARD', 1, 'Game', 'TradeSpeedKey', 'GamePacingOptions', 'MPAdvancedGamePacingOptions', 0, 50),
+        ('ZG_TradeSpeedAntiquity', 'LOC_ZG_TRADE_SPEED_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_TradeSpeedAgeDomain', 'ZG_TRADE_SPEED_STANDARD', 1, 'Game', 'TradeSpeedAntiquityKey', 'PacingAntiquityOptions', 'MPAdvancedPacingAntiquityOptions', 0, 108),
+        ('ZG_TradeSpeedExploration', 'LOC_ZG_TRADE_SPEED_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_TradeSpeedAgeDomain', 'ZG_TRADE_SPEED_STANDARD', 1, 'Game', 'TradeSpeedExplorationKey', 'PacingExplorationOptions', 'MPAdvancedPacingExplorationOptions', 0, 118),
+        ('ZG_TradeSpeedModern', 'LOC_ZG_TRADE_SPEED_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_TradeSpeedAgeDomain', 'ZG_TRADE_SPEED_INSTANT', 1, 'Game', 'TradeSpeedModernKey', 'PacingModernOptions', 'MPAdvancedPacingModernOptions', 0, 128);
+
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES
+        ('ZG_TradeSpeedDomain', 'ZG_TRADE_SPEED_SLOW', 'LOC_ZG_SLOW_NAME', 'LOC_ZG_TRADE_SPEED_DESCRIPTION_SLOW', 10),
+        ('ZG_TradeSpeedDomain', 'ZG_TRADE_SPEED_STANDARD', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_TRADE_SPEED_DESCRIPTION_DEFAULT', 20),
+        ('ZG_TradeSpeedDomain', 'ZG_TRADE_SPEED_QUICK', 'LOC_ZG_QUICK_NAME', 'LOC_ZG_TRADE_SPEED_DESCRIPTION_QUICK', 30),
+        ('ZG_TradeSpeedDomain', 'ZG_TRADE_SPEED_FAST', 'LOC_ZG_FAST_NAME', 'LOC_ZG_TRADE_SPEED_DESCRIPTION_FAST', 40),
+        ('ZG_TradeSpeedDomain', 'ZG_TRADE_SPEED_INSTANT', 'LOC_ZG_INSTANT_NAME', 'LOC_ZG_TRADE_SPEED_DESCRIPTION_INSTANT', 50),
+        ('ZG_TradeSpeedDomain', 'ZG_TRADE_SPEED_SWIFT', 'LOC_ZG_SWIFT_NAME', 'LOC_ZG_TRADE_SPEED_DESCRIPTION_SWIFT', 53),
+        ('ZG_TradeSpeedDomain', 'ZG_TRADE_SPEED_BALANCED', 'LOC_ZG_BALANCED_NAME', 'LOC_ZG_TRADE_SPEED_DESCRIPTION_BALANCED', 55),
+        ('ZG_TradeSpeedDomain', 'ZG_TRADE_SPEED_EXTENDED', 'LOC_ZG_EXTENDED_NAME', 'LOC_ZG_TRADE_SPEED_DESCRIPTION_EXTENDED', 57),
+        ('ZG_TradeSpeedDomain', 'ZG_TRADE_SPEED_CUSTOM', 'LOC_ZG_CUSTOM_NAME', 'LOC_ZG_PACING_DESCRIPTION_CUSTOM', 60),
+        ('ZG_TradeSpeedAgeDomain', 'ZG_TRADE_SPEED_SLOW', 'LOC_ZG_PCT_MINUS_25', 'LOC_ZG_TRADE_SPEED_DESCRIPTION_SLOW', 10),
+        ('ZG_TradeSpeedAgeDomain', 'ZG_TRADE_SPEED_STANDARD', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_TRADE_SPEED_DESCRIPTION_STANDARD', 20),
+        ('ZG_TradeSpeedAgeDomain', 'ZG_TRADE_SPEED_QUICK', 'LOC_ZG_PCT_PLUS_25', 'LOC_ZG_TRADE_SPEED_DESCRIPTION_QUICK', 30),
+        ('ZG_TradeSpeedAgeDomain', 'ZG_TRADE_SPEED_FAST', 'LOC_ZG_PCT_PLUS_50', 'LOC_ZG_TRADE_SPEED_DESCRIPTION_FAST', 40),
+        ('ZG_TradeSpeedAgeDomain', 'ZG_TRADE_SPEED_INSTANT', 'LOC_ZG_INSTANT_NAME', 'LOC_ZG_TRADE_SPEED_DESCRIPTION_INSTANT', 50);
+
+-- Raze Speed: how long a captured settlement takes to raze, as districts razed per turn
+-- (CITY_RAZE_DISTRICTS_PER_TURN), scaled for the current age.
+INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
+    VALUES
+        ('ZG_RazeTime', 'LOC_ZG_RAZE_TIME_NAME', 'LOC_ZG_RAZE_TIME_DESCRIPTION', 'ZG_RazeTimeDomain', 'ZG_STANDARD_RAZE_TIME', 1, 'Game', 'RazeTimeKey', 'GamePacingOptions', 'MPAdvancedGamePacingOptions', 0, 52),
+        ('ZG_RazeTimeAntiquity', 'LOC_ZG_RAZE_TIME_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_RazeTimeAgeDomain', 'ZG_STANDARD_RAZE_TIME', 1, 'Game', 'RazeTimeAntiquityKey', 'PacingAntiquityOptions', 'MPAdvancedPacingAntiquityOptions', 0, 109),
+        ('ZG_RazeTimeExploration', 'LOC_ZG_RAZE_TIME_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_RazeTimeAgeDomain', 'ZG_STANDARD_RAZE_TIME', 1, 'Game', 'RazeTimeExplorationKey', 'PacingExplorationOptions', 'MPAdvancedPacingExplorationOptions', 0, 119),
+        ('ZG_RazeTimeModern', 'LOC_ZG_RAZE_TIME_NAME', 'LOC_ZG_PACING_AGE_DESCRIPTION', 'ZG_RazeTimeAgeDomain', 'ZG_STANDARD_RAZE_TIME', 1, 'Game', 'RazeTimeModernKey', 'PacingModernOptions', 'MPAdvancedPacingModernOptions', 0, 129);
+
+INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
+    VALUES
+        ('ZG_RazeTimeDomain', 'ZG_INSTANT_RAZE_TIME', 'LOC_ZG_INSTANT_NAME', 'LOC_ZG_RAZE_TIME_DESCRIPTION_INSTANT', 30),
+        ('ZG_RazeTimeDomain', 'ZG_SHORTER_RAZE_TIME', 'LOC_ZG_FAST_NAME', 'LOC_ZG_RAZE_TIME_DESCRIPTION_SHORTER', 20),
+        ('ZG_RazeTimeDomain', 'ZG_STANDARD_RAZE_TIME', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_RAZE_TIME_DESCRIPTION_STANDARD', 10),
+        ('ZG_RazeTimeDomain', 'ZG_SWIFT_RAZE_TIME', 'LOC_ZG_SWIFT_NAME', 'LOC_ZG_RAZE_TIME_DESCRIPTION_SWIFT', 33),
+        ('ZG_RazeTimeDomain', 'ZG_BALANCED_RAZE_TIME', 'LOC_ZG_BALANCED_NAME', 'LOC_ZG_RAZE_TIME_DESCRIPTION_BALANCED', 35),
+        ('ZG_RazeTimeDomain', 'ZG_EXTENDED_RAZE_TIME', 'LOC_ZG_EXTENDED_NAME', 'LOC_ZG_RAZE_TIME_DESCRIPTION_EXTENDED', 37),
+        ('ZG_RazeTimeDomain', 'ZG_CUSTOM_RAZE_TIME', 'LOC_ZG_CUSTOM_NAME', 'LOC_ZG_PACING_DESCRIPTION_CUSTOM', 40),
+        ('ZG_RazeTimeAgeDomain', 'ZG_INSTANT_RAZE_TIME', 'LOC_ZG_INSTANT_NAME', 'LOC_ZG_RAZE_TIME_DESCRIPTION_INSTANT', 30),
+        ('ZG_RazeTimeAgeDomain', 'ZG_SHORTER_RAZE_TIME', 'LOC_ZG_PCT_PLUS_100', 'LOC_ZG_RAZE_TIME_DESCRIPTION_SHORTER', 20),
+        ('ZG_RazeTimeAgeDomain', 'ZG_STANDARD_RAZE_TIME', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_RAZE_TIME_DESCRIPTION_STANDARD', 10);
 
 
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
-        ('ZG_SettlementLimitAntiquity', 'LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 'ZG_SettlementLimitValueDomain', 'ZG_SL_3', 1, 'Game', 'SettlementLimitAntiquityKey', 'SettlementOptions', 'MPAdvancedSettlementOptions', 0, 611),
-        ('ZG_SettlementLimitExploration', 'LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 'ZG_SettlementLimitValueDomain', 'ZG_SL_8', 1, 'Game', 'SettlementLimitExplorationKey', 'SettlementOptions', 'MPAdvancedSettlementOptions', 0, 612),
-        ('ZG_SettlementLimitModern', 'LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 'ZG_SettlementLimitValueDomain', 'ZG_SL_16', 1, 'Game', 'SettlementLimitModernKey', 'SettlementOptions', 'MPAdvancedSettlementOptions', 0, 613);
+        ('ZG_SettlementLimitAntiquity', 'LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 'ZG_SettlementLimitValueDomain', 'ZG_SL_3', 1, 'Game', 'SettlementLimitAntiquityKey', 'SettlementOptions', 'MPAdvancedSettlementOptions', 0, 4611),
+        ('ZG_SettlementLimitExploration', 'LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 'ZG_SettlementLimitValueDomain', 'ZG_SL_8', 1, 'Game', 'SettlementLimitExplorationKey', 'SettlementOptions', 'MPAdvancedSettlementOptions', 0, 4612),
+        ('ZG_SettlementLimitModern', 'LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME', 'LOC_ZG_SETTLEMENT_LIMIT_AGE_DESCRIPTION', 'ZG_SettlementLimitValueDomain', 'ZG_SL_16', 1, 'Game', 'SettlementLimitModernKey', 'SettlementOptions', 'MPAdvancedSettlementOptions', 0, 4613);
 
 -- 1-25 step by 1, then 30-75 step by 5.
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)

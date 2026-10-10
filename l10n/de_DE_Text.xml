@@ -4,6 +4,9 @@
 		<Replace Tag="LOC_GROUPID_ZG_UNITOPTIONS" Language="de_DE">
 			<Text>Einheiten-Einstellungen</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_TRADEOPTIONS" Language="de_DE">
+			<Text>Handelseinstellungen</Text>
+		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS" Language="de_DE">
 			<Text>Einstellungen für unabhängige Mächte</Text>
 		</Replace>
@@ -140,14 +143,17 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME" Language="de_DE">
 			<Text>Siedlungsabstand</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_NAME" Language="de_DE">
+			<Text>Handelsreichweite</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_NAME" Language="de_DE">
+			<Text>Handelsgeschwindigkeit</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RAZE_TIME_NAME" Language="de_DE">
-			<Text>Zerstörungsdauer</Text>
+			<Text>Zerstörungsgeschwindigkeit</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INSTANT_NAME" Language="de_DE">
 			<Text>Sofort</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SHORTER_NAME" Language="de_DE">
-			<Text>Kürzer</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="de_DE">
 			<Text>Kosten von Militäreinheiten</Text>
@@ -283,6 +289,111 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="de_DE">
 			<Text>4 Felder.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION" Language="de_DE">
+			<Text>Legt fest, wie weit Handelswege von deinen Siedlungen reichen, zu Land und zu Wasser.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_MINUS_50" Language="de_DE">
+			<Text>Halbe Reichweite.[nn][BLIST]
+				[LI] Antike: 5 Land, 15 See
+				[LI] Erkundung: 8 Land, 23 See
+				[LI] Moderne: 10 Land, 30 See[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_MINUS_25" Language="de_DE">
+			<Text>25 % weniger Reichweite.[nn][BLIST]
+				[LI] Antike: 8 Land, 23 See
+				[LI] Erkundung: 11 Land, 34 See
+				[LI] Moderne: 15 Land, 45 See[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_STANDARD" Language="de_DE">
+			<Text>Die Reichweite des Spiels.[nn][BLIST]
+				[LI] Antike: 10 Land, 30 See
+				[LI] Erkundung: 15 Land, 45 See
+				[LI] Moderne: 20 Land, 60 See[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_25" Language="de_DE">
+			<Text>25 % mehr Reichweite.[nn][BLIST]
+				[LI] Antike: 13 Land, 38 See
+				[LI] Erkundung: 19 Land, 56 See
+				[LI] Moderne: 25 Land, 75 See[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_50" Language="de_DE">
+			<Text>50 % mehr Reichweite.[nn][BLIST]
+				[LI] Antike: 15 Land, 45 See
+				[LI] Erkundung: 23 Land, 68 See
+				[LI] Moderne: 30 Land, 90 See[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_100" Language="de_DE">
+			<Text>Doppelte Reichweite.[nn][BLIST]
+				[LI] Antike: 20 Land, 60 See
+				[LI] Erkundung: 30 Land, 90 See
+				[LI] Moderne: 40 Land, 120 See[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_CUSTOM" Language="de_DE">
+			<Text>Lege die Handelsreichweite für jedes Zeitalter einzeln fest.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_AGE_DESCRIPTION" Language="de_DE">
+			<Text>Legt die Handelsreichweite dieses Zeitalters fest.[n]Gilt nur, wenn Handelsreichweite auf Benutzerdefiniert steht.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION" Language="de_DE">
+			<Text>Legt fest, wie schnell Händler Handelswege beginnen: indem sie zur Siedlung reisen, mit der sie handeln, oder aus der Entfernung. Eine Reisegeschwindigkeit gilt in jedem Zeitalter, auch in der Moderne.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_SLOW" Language="de_DE">
+			<Text>Händler reisen mit 3[icon:Action_Move]Bewegung.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_STANDARD" Language="de_DE">
+			<Text>Händler reisen mit 4[icon:Action_Move]Bewegung.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_QUICK" Language="de_DE">
+			<Text>Händler reisen mit 5[icon:Action_Move]Bewegung.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_FAST" Language="de_DE">
+			<Text>Händler reisen mit 6[icon:Action_Move]Bewegung.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_SWIFT" Language="de_DE">
+			<Text>Handelswege beginnen in jedem Zeitalter aus der Entfernung.[nn][BLIST]
+				[LI] Antike: Sofort
+				[LI] Erkundung: Sofort
+				[LI] Moderne: Sofort[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_BALANCED" Language="de_DE">
+			<Text>Das Tempo des Spiels.[nn][BLIST]
+				[LI] Antike: Standard
+				[LI] Erkundung: Standard
+				[LI] Moderne: Sofort[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_EXTENDED" Language="de_DE">
+			<Text>Händler reisen in jedem Zeitalter langsam.[nn][BLIST]
+				[LI] Antike: -25%
+				[LI] Erkundung: -25%
+				[LI] Moderne: -25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_SWIFT" Language="de_DE">
+			<Text>Siedlungen werden in jedem Zeitalter in einer einzigen Runde zerstört.[nn][BLIST]
+				[LI] Antike: Sofort
+				[LI] Erkundung: Sofort
+				[LI] Moderne: Sofort[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_BALANCED" Language="de_DE">
+			<Text>Das Tempo des Spiels.[nn][BLIST]
+				[LI] Antike: Standard
+				[LI] Erkundung: Standard
+				[LI] Moderne: Standard[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_EXTENDED" Language="de_DE">
+			<Text>Das Tempo des Spiels.[nn][BLIST]
+				[LI] Antike: Standard
+				[LI] Erkundung: Standard
+				[LI] Moderne: Standard[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_INSTANT" Language="de_DE">
+			<Text>Handelswege beginnen aus der Entfernung; Händler müssen nicht reisen.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_DEFAULT" Language="de_DE">
+			<Text>Das Tempo des Spiels.[nn][BLIST]
+				[LI] Antike: Reise mit 4[icon:Action_Move]Bewegung
+				[LI] Erkundung: Reise mit 4[icon:Action_Move]Bewegung
+				[LI] Moderne: aus der Entfernung[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION" Language="de_DE">
 			<Text>Legt fest, wie lange die Zerstörung einer eroberten Siedlung dauert. Jede Runde werden Bezirke zerstört, daher dauert es bei größeren Siedlungen länger.</Text>
@@ -520,7 +631,7 @@
 			<Text>Legt fest, wie viel Nahrung eine Siedlung für jeden neuen Bürger braucht. Niedrigere Schwellen lassen Siedlungen weit früher über Größe 10 wachsen.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_NAME" Language="de_DE">
-			<Text>Straßen</Text>
+			<Text>Straßengeschwindigkeit</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION" Language="de_DE">
 			<Text>Legt fest, wie viel Bewegung das Reisen auf Straßen und Eisenbahnen kostet. Günstigere Straßen lassen Armeen Ihr Gebiet in weit weniger Runden durchqueren.</Text>
@@ -1302,9 +1413,11 @@
 				[LI] Technologiekosten: +25% / +50% / +50%
 				[LI] Kosten für Bürgerrechte: +25% / +50% / +50%
 				[LI] Gebäudekosten: +25% / +50% / +50%
+				[LI] Kosten für Siegprojekte: +25%
 				[LI] Siedlungswachstum: +25%
-				[LI] Straßen: Standard / Standard / -25%
-				[LI] Kosten für Siegprojekte: +25%[/BLIST]</Text>
+				[LI] Straßengeschwindigkeit: Standard / Standard / -25%
+				[LI] Handelsgeschwindigkeit: -25%
+				[LI] Zerstörungsgeschwindigkeit: Standard[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT" Language="de_DE">
 			<Text>Kurze Zeitalter mit entsprechend gesenkten Kosten.[nn][BLIST]
@@ -1313,9 +1426,11 @@
 				[LI] Technologiekosten: -25% / -25% / Standard
 				[LI] Kosten für Bürgerrechte: -25% / -25% / Standard
 				[LI] Gebäudekosten: -25%
+				[LI] Kosten für Siegprojekte: -25%
 				[LI] Siedlungswachstum: -25%
-				[LI] Straßen: -25% / -50% / -50%
-				[LI] Kosten für Siegprojekte: -25%[/BLIST]</Text>
+				[LI] Straßengeschwindigkeit: -25% / -50% / -50%
+				[LI] Handelsgeschwindigkeit: Sofort
+				[LI] Zerstörungsgeschwindigkeit: Sofort[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="de_DE">
 			<Text>Längere Zeitalter, mit passend abgestimmter Forschung und Entwicklung.[nn][BLIST]
@@ -1324,9 +1439,11 @@
 				[LI] Technologiekosten: +25% / Standard / -25%
 				[LI] Kosten für Bürgerrechte: Standard / +25% / +25%
 				[LI] Gebäudekosten: +25% / Standard / Standard
+				[LI] Kosten für Siegprojekte: Standard / -25% / -25%
 				[LI] Siedlungswachstum: -25% / -25% / Standard
-				[LI] Straßen: Standard / Standard / -25%
-				[LI] Kosten für Siegprojekte: Standard / -25% / -25%[/BLIST]</Text>
+				[LI] Straßengeschwindigkeit: Standard / Standard / -25%
+				[LI] Handelsgeschwindigkeit: Standard
+				[LI] Zerstörungsgeschwindigkeit: Standard[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="de_DE">
 			<Text>Abgestimmt auf eine Partie in einer Sitzung.[nn][BLIST]
@@ -1335,9 +1452,11 @@
 				[LI] Technologiekosten: +25% / +50% / +100%
 				[LI] Kosten für Bürgerrechte: +50% / +50% / +100%
 				[LI] Gebäudekosten: Standard
+				[LI] Kosten für Siegprojekte: Standard / Standard / +25%
 				[LI] Siedlungswachstum: +25%
-				[LI] Straßen: -25% / -25% / -50%
-				[LI] Kosten für Siegprojekte: Standard / Standard / +25%[/BLIST]</Text>
+				[LI] Straßengeschwindigkeit: -25% / -25% / -50%
+				[LI] Handelsgeschwindigkeit: Standard
+				[LI] Zerstörungsgeschwindigkeit: Standard[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="de_DE">
 			<Text>Die Tempo-Einstellungen im Tempo-Reiter entsprechen keiner Vorlage mehr.</Text>

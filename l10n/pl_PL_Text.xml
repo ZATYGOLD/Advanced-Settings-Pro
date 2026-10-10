@@ -4,6 +4,9 @@
 		<Replace Tag="LOC_GROUPID_ZG_UNITOPTIONS" Language="pl_PL">
 			<Text>Ustawienia jednostek</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_TRADEOPTIONS" Language="pl_PL">
+			<Text>Ustawienia handlu</Text>
+		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS" Language="pl_PL">
 			<Text>Ustawienia niezależnych mocarstw</Text>
 		</Replace>
@@ -140,14 +143,17 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME" Language="pl_PL">
 			<Text>Odległość między osadami</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_NAME" Language="pl_PL">
+			<Text>Zasięg handlu</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_NAME" Language="pl_PL">
+			<Text>Szybkość handlu</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RAZE_TIME_NAME" Language="pl_PL">
-			<Text>Czas burzenia</Text>
+			<Text>Szybkość burzenia</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INSTANT_NAME" Language="pl_PL">
 			<Text>Natychmiastowy</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SHORTER_NAME" Language="pl_PL">
-			<Text>Krótszy</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="pl_PL">
 			<Text>Koszt jednostek wojskowych</Text>
@@ -283,6 +289,111 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="pl_PL">
 			<Text>4 pól.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION" Language="pl_PL">
+			<Text>Określa, jak daleko od twoich osad mogą sięgać szlaki handlowe, na lądzie i na morzu.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_MINUS_50" Language="pl_PL">
+			<Text>Połowa zasięgu.[nn][BLIST]
+				[LI] Starożytność: 5 lądowy, 15 morski
+				[LI] Epoka odkryć: 8 lądowy, 23 morski
+				[LI] Epoka nowożytna: 10 lądowy, 30 morski[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_MINUS_25" Language="pl_PL">
+			<Text>Zasięg mniejszy o 25%.[nn][BLIST]
+				[LI] Starożytność: 8 lądowy, 23 morski
+				[LI] Epoka odkryć: 11 lądowy, 34 morski
+				[LI] Epoka nowożytna: 15 lądowy, 45 morski[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_STANDARD" Language="pl_PL">
+			<Text>Własny zasięg gry.[nn][BLIST]
+				[LI] Starożytność: 10 lądowy, 30 morski
+				[LI] Epoka odkryć: 15 lądowy, 45 morski
+				[LI] Epoka nowożytna: 20 lądowy, 60 morski[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_25" Language="pl_PL">
+			<Text>Zasięg większy o 25%.[nn][BLIST]
+				[LI] Starożytność: 13 lądowy, 38 morski
+				[LI] Epoka odkryć: 19 lądowy, 56 morski
+				[LI] Epoka nowożytna: 25 lądowy, 75 morski[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_50" Language="pl_PL">
+			<Text>Zasięg większy o 50%.[nn][BLIST]
+				[LI] Starożytność: 15 lądowy, 45 morski
+				[LI] Epoka odkryć: 23 lądowy, 68 morski
+				[LI] Epoka nowożytna: 30 lądowy, 90 morski[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_100" Language="pl_PL">
+			<Text>Podwójny zasięg.[nn][BLIST]
+				[LI] Starożytność: 20 lądowy, 60 morski
+				[LI] Epoka odkryć: 30 lądowy, 90 morski
+				[LI] Epoka nowożytna: 40 lądowy, 120 morski[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_CUSTOM" Language="pl_PL">
+			<Text>Ustaw zasięg handlu osobno dla każdej epoki.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_AGE_DESCRIPTION" Language="pl_PL">
+			<Text>Ustawia zasięg handlu w tej epoce.[n]Działa tylko, gdy Zasięg handlu ma wartość Niestandardowe.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION" Language="pl_PL">
+			<Text>Określa, jak szybko kupcy zakładają szlaki handlowe: podróżując do osady, z którą handlują, lub na odległość. Szybkość podróży obowiązuje w każdej epoce, także w Epoce nowożytnej.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_SLOW" Language="pl_PL">
+			<Text>Kupcy podróżują z 3[icon:Action_Move]ruchu.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_STANDARD" Language="pl_PL">
+			<Text>Kupcy podróżują z 4[icon:Action_Move]ruchu.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_QUICK" Language="pl_PL">
+			<Text>Kupcy podróżują z 5[icon:Action_Move]ruchu.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_FAST" Language="pl_PL">
+			<Text>Kupcy podróżują z 6[icon:Action_Move]ruchu.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_SWIFT" Language="pl_PL">
+			<Text>Szlaki handlowe zaczynają się na odległość w każdej epoce.[nn][BLIST]
+				[LI] Starożytność: Natychmiastowy
+				[LI] Epoka odkryć: Natychmiastowy
+				[LI] Epoka nowożytna: Natychmiastowy[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_BALANCED" Language="pl_PL">
+			<Text>Własne tempo gry.[nn][BLIST]
+				[LI] Starożytność: Standardowe
+				[LI] Epoka odkryć: Standardowe
+				[LI] Epoka nowożytna: Natychmiastowy[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_EXTENDED" Language="pl_PL">
+			<Text>Kupcy podróżują powoli w każdej epoce.[nn][BLIST]
+				[LI] Starożytność: -25%
+				[LI] Epoka odkryć: -25%
+				[LI] Epoka nowożytna: -25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_SWIFT" Language="pl_PL">
+			<Text>Osady są burzone w jedną turę w każdej epoce.[nn][BLIST]
+				[LI] Starożytność: Natychmiastowy
+				[LI] Epoka odkryć: Natychmiastowy
+				[LI] Epoka nowożytna: Natychmiastowy[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_BALANCED" Language="pl_PL">
+			<Text>Własne tempo gry.[nn][BLIST]
+				[LI] Starożytność: Standardowe
+				[LI] Epoka odkryć: Standardowe
+				[LI] Epoka nowożytna: Standardowe[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_EXTENDED" Language="pl_PL">
+			<Text>Własne tempo gry.[nn][BLIST]
+				[LI] Starożytność: Standardowe
+				[LI] Epoka odkryć: Standardowe
+				[LI] Epoka nowożytna: Standardowe[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_INSTANT" Language="pl_PL">
+			<Text>Szlaki handlowe zaczynają się na odległość; kupcy nie muszą podróżować.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_DEFAULT" Language="pl_PL">
+			<Text>Własne tempo gry.[nn][BLIST]
+				[LI] Starożytność: podróż z 4[icon:Action_Move]ruchu
+				[LI] Epoka odkryć: podróż z 4[icon:Action_Move]ruchu
+				[LI] Epoka nowożytna: na odległość[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION" Language="pl_PL">
 			<Text>Określa, jak długo trwa burzenie zdobytej osady. Co turę burzone są dzielnice, więc większe osady trwają dłużej.</Text>
@@ -520,7 +631,7 @@
 			<Text>Określa, ile żywności potrzebuje osada na każdego nowego mieszkańca. Niższe progi pozwalają osadom znacznie wcześniej przekroczyć rozmiar 10.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_NAME" Language="pl_PL">
-			<Text>Drogi</Text>
+			<Text>Szybkość dróg</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION" Language="pl_PL">
 			<Text>Określa, ile ruchu kosztuje podróż drogami i kolejami. Tańsze drogi pozwalają armiom przemierzyć terytorium w znacznie mniej tur.</Text>
@@ -1302,9 +1413,11 @@
 				[LI] Koszt technologii: +25% / +50% / +50%
 				[LI] Koszt idei: +25% / +50% / +50%
 				[LI] Koszt budynków: +25% / +50% / +50%
+				[LI] Koszt projektów zwycięstwa: +25%
 				[LI] Wzrost osad: +25%
-				[LI] Drogi: Standardowe / Standardowe / -25%
-				[LI] Koszt projektów zwycięstwa: +25%[/BLIST]</Text>
+				[LI] Szybkość dróg: Standardowe / Standardowe / -25%
+				[LI] Szybkość handlu: -25%
+				[LI] Szybkość burzenia: Standardowe[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT" Language="pl_PL">
 			<Text>Krótkie epoki z odpowiednio obniżonymi kosztami.[nn][BLIST]
@@ -1313,9 +1426,11 @@
 				[LI] Koszt technologii: -25% / -25% / Standardowe
 				[LI] Koszt idei: -25% / -25% / Standardowe
 				[LI] Koszt budynków: -25%
+				[LI] Koszt projektów zwycięstwa: -25%
 				[LI] Wzrost osad: -25%
-				[LI] Drogi: -25% / -50% / -50%
-				[LI] Koszt projektów zwycięstwa: -25%[/BLIST]</Text>
+				[LI] Szybkość dróg: -25% / -50% / -50%
+				[LI] Szybkość handlu: Natychmiastowy
+				[LI] Szybkość burzenia: Natychmiastowy[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="pl_PL">
 			<Text>Dłuższe epoki z badaniami i rozwojem dostrojonymi do ich wypełnienia.[nn][BLIST]
@@ -1324,9 +1439,11 @@
 				[LI] Koszt technologii: +25% / Standardowe / -25%
 				[LI] Koszt idei: Standardowe / +25% / +25%
 				[LI] Koszt budynków: +25% / Standardowe / Standardowe
+				[LI] Koszt projektów zwycięstwa: Standardowe / -25% / -25%
 				[LI] Wzrost osad: -25% / -25% / Standardowe
-				[LI] Drogi: Standardowe / Standardowe / -25%
-				[LI] Koszt projektów zwycięstwa: Standardowe / -25% / -25%[/BLIST]</Text>
+				[LI] Szybkość dróg: Standardowe / Standardowe / -25%
+				[LI] Szybkość handlu: Standardowe
+				[LI] Szybkość burzenia: Standardowe[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="pl_PL">
 			<Text>Dostrojone do rozgrywki za jednym posiedzeniem.[nn][BLIST]
@@ -1335,9 +1452,11 @@
 				[LI] Koszt technologii: +25% / +50% / +100%
 				[LI] Koszt idei: +50% / +50% / +100%
 				[LI] Koszt budynków: Standardowe
+				[LI] Koszt projektów zwycięstwa: Standardowe / Standardowe / +25%
 				[LI] Wzrost osad: +25%
-				[LI] Drogi: -25% / -25% / -50%
-				[LI] Koszt projektów zwycięstwa: Standardowe / Standardowe / +25%[/BLIST]</Text>
+				[LI] Szybkość dróg: -25% / -25% / -50%
+				[LI] Szybkość handlu: Standardowe
+				[LI] Szybkość burzenia: Standardowe[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="pl_PL">
 			<Text>Sekcja Ustawienia tempa na karcie Tempo nie odpowiada już żadnemu zestawowi.</Text>

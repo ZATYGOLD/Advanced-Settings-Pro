@@ -12,7 +12,7 @@
 //   6. A per-age limit is changed away from the curated tier's values
 //      -> the Settlement Limit setting switches to Custom.
 //
-// Disasters and Triumph Sets (shared tier/age sync):
+// Disasters, Triumph Sets, Trade Range and Trade Speed (shared tier/age sync):
 //   7. A tier is selected           -> every age shows that tier.
 //   8. An age is changed away from the selected tier
 //      -> the primary setting switches to Custom.
@@ -135,11 +135,34 @@ const ROADS_AGE_NAMES = {
 	"LOC_ZG_EXTENDED_NAME": ["LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ZG_PCT_MINUS_25"],
 };
 
+// Speed age rows are named by the change to the game value: Merchant movement
+// for Trade Speed, districts razed per turn for Raze Speed. Trade Speed's
+// Standard is the game's own: Merchants travel in Antiquity and Exploration,
+// and Modern trade routes start from a distance.
+const TRADE_SPEED_AGE_NAMES = {
+	"LOC_ZG_SLOW_NAME": "LOC_ZG_PCT_MINUS_25",
+	"LOC_ADVANCED_OPTIONS_STANDARD": ["LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ZG_INSTANT_NAME"],
+	"LOC_ZG_QUICK_NAME": "LOC_ZG_PCT_PLUS_25",
+	"LOC_ZG_FAST_NAME": "LOC_ZG_PCT_PLUS_50",
+	"LOC_ZG_SWIFT_NAME": "LOC_ZG_INSTANT_NAME",
+	"LOC_ZG_BALANCED_NAME": ["LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ZG_INSTANT_NAME"],
+	"LOC_ZG_EXTENDED_NAME": "LOC_ZG_PCT_MINUS_25",
+};
+const RAZE_SPEED_AGE_NAMES = {
+	"LOC_ZG_FAST_NAME": "LOC_ZG_PCT_PLUS_100",
+	"LOC_ZG_SWIFT_NAME": "LOC_ZG_INSTANT_NAME",
+	"LOC_ZG_BALANCED_NAME": "LOC_ADVANCED_OPTIONS_STANDARD",
+	"LOC_ZG_EXTENDED_NAME": "LOC_ADVANCED_OPTIONS_STANDARD",
+};
+
 // Primary settings whose per-age values are kept in step (rules 7 & 8).
 // ageNames maps a primary value name to its per-age value name (identity when absent).
 const TIER_AGE_SYNCS = [
 	{ tierId: "ZG_DisasterFrequency", ageIds: ["ZG_DisastersAntiquity", "ZG_DisastersExploration", "ZG_DisastersModern"], lastTier: null },
 	{ tierId: "LegacySets", ageIds: ["ZG_TriumphSetAntiquity", "ZG_TriumphSetExploration", "ZG_TriumphSetModern"], lastTier: null },
+	{ tierId: "ZG_TradeRange", ageIds: ["ZG_TradeRangeAntiquity", "ZG_TradeRangeExploration", "ZG_TradeRangeModern"], lastTier: null },
+	{ tierId: "ZG_TradeSpeed", ageIds: ["ZG_TradeSpeedAntiquity", "ZG_TradeSpeedExploration", "ZG_TradeSpeedModern"], ageNames: TRADE_SPEED_AGE_NAMES, lastTier: null },
+	{ tierId: "ZG_RazeTime", ageIds: ["ZG_RazeTimeAntiquity", "ZG_RazeTimeExploration", "ZG_RazeTimeModern"], ageNames: RAZE_SPEED_AGE_NAMES, lastTier: null },
 	{ tierId: AGE_LENGTH_PARAM_ID, ageIds: ["ZG_AgeLengthAntiquity", "ZG_AgeLengthExploration", "ZG_AgeLengthModern"], ageNames: AGE_LENGTH_AGE_NAMES, lastTier: null },
 	{ tierId: "ZG_AgeProgressRate", ageIds: ["ZG_AgeProgressRateAntiquity", "ZG_AgeProgressRateExploration", "ZG_AgeProgressRateModern"], lastTier: null },
 	{ tierId: "ZG_TechnologyCost", ageIds: ["ZG_TechnologyCostAntiquity", "ZG_TechnologyCostExploration", "ZG_TechnologyCostModern"], ageNames: TECHNOLOGY_AGE_NAMES, lastTier: null },
@@ -161,9 +184,11 @@ const PACE_STANDARD = {
 	ZG_TechnologyCost: "LOC_ADVANCED_OPTIONS_STANDARD",
 	ZG_CivicCost: "LOC_ADVANCED_OPTIONS_STANDARD",
 	ZG_BuildingCost: "LOC_ADVANCED_OPTIONS_STANDARD",
+	ZG_VictoryProjectCost: "LOC_ADVANCED_OPTIONS_STANDARD",
 	ZG_CityGrowth: "LOC_ADVANCED_OPTIONS_STANDARD",
 	ZG_Roads: "LOC_ADVANCED_OPTIONS_STANDARD",
-	ZG_VictoryProjectCost: "LOC_ADVANCED_OPTIONS_STANDARD",
+	ZG_TradeSpeed: "LOC_ADVANCED_OPTIONS_STANDARD",
+	ZG_RazeTime: "LOC_ADVANCED_OPTIONS_STANDARD",
 };
 const PACE_PRESETS = {
 	// A 90 point age with full price research would cut the tree short, so Swift
@@ -177,6 +202,9 @@ const PACE_PRESETS = {
 		ZG_CityGrowth: "LOC_ZG_SWIFT_NAME",
 		ZG_Roads: "LOC_ZG_SWIFT_NAME",
 		ZG_VictoryProjectCost: "LOC_ZG_SWIFT_NAME",
+		// Short ages leave no time for walking Merchants or slow razing.
+		ZG_TradeSpeed: "LOC_ZG_SWIFT_NAME",
+		ZG_RazeTime: "LOC_ZG_SWIFT_NAME",
 	},
 	"LOC_ZG_PACE_PRESET_STANDARD_NAME": PACE_STANDARD,
 	// Eras+ Balanced Extended+: age caps 150/170/200, its milestone curve, 1.25x techs
@@ -193,6 +221,8 @@ const PACE_PRESETS = {
 		ZG_CityGrowth: "LOC_ZG_BALANCED_NAME",
 		ZG_Roads: "LOC_ZG_BALANCED_NAME",
 		ZG_VictoryProjectCost: "LOC_ZG_BALANCED_NAME",
+		ZG_TradeSpeed: "LOC_ZG_BALANCED_NAME",
+		ZG_RazeTime: "LOC_ZG_BALANCED_NAME",
 	},
 	// A 280 point age runs out of tree long before it ends, so Extended raises the
 	// research and triumph costs to fill it.
@@ -205,6 +235,9 @@ const PACE_PRESETS = {
 		ZG_CityGrowth: "LOC_ZG_EXTENDED_NAME",
 		ZG_Roads: "LOC_ZG_EXTENDED_NAME",
 		ZG_VictoryProjectCost: "LOC_ZG_EXTENDED_NAME",
+		// Merchants travel slowly in every age, Modern included.
+		ZG_TradeSpeed: "LOC_ZG_EXTENDED_NAME",
+		ZG_RazeTime: "LOC_ZG_EXTENDED_NAME",
 	},
 	// Eras+ MP Pace: age caps 140/160/180, its milestone curve, dearer research and
 	// civics that climb with the age, slightly slower growth, faster roads and Modern
