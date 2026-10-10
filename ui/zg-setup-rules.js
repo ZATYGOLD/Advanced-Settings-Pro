@@ -36,12 +36,12 @@
 //  18. On the first pass of a setup -> Crises wins: the selection and timing
 //      follow it, so a remembered Crises value is kept.
 //
-// Each rule compares against the last pass. When remembered settings are put
-// back (zg-setup-memory.js) the comparisons start over, so the restored
-// values are the baseline rather than a change to answer.
+// Each rule compares against the last pass. While remembered settings are put
+// back (zg-setup-memory.js) the rules wait, and the comparisons then start
+// over, so the restored values are the baseline rather than a change to answer.
 
 import { canEditSetup } from './zg-shell-context.js';
-import { restoreSetup, rememberSetup } from './zg-setup-memory.js';
+import { tickSetupMemory, isRestoringSetup, rememberSetup } from './zg-setup-memory.js';
 
 const NW_COUNT_PARAM_ID = "ZG_NaturalWondersCount";
 const MAP_SIZE_PARAM_ID = "MapSize";
@@ -580,21 +580,25 @@ function resetBaselines() {
 setInterval(() => {
 	// In multiplayer only the host holds the setup; a client sees the host's
 	// writes arrive and must not answer them with its own.
+	if (applying || !canEditSetup()) {
+		return;
+	}
+	// Remembered settings go back first, and the rules wait until they have:
+	// answering the defaults the screen opens with would cascade over them.
+	try {
+		if (tickSetupMemory()) {
+			resetBaselines();
+		}
+	} catch (e) {
+		console.warn(`ZG-ASP setup memory error: ${e}`);
+	}
 	const revision = GameSetup.currentRevision;
-	if (revision == lastRevision || applying || !canEditSetup()) {
+	if (isRestoringSetup() || revision == lastRevision) {
 		return;
 	}
 	lastRevision = revision;
 	applying = true;
 	try {
-		try {
-			if (restoreSetup()) {
-				resetBaselines();
-				return;
-			}
-		} catch (e) {
-			console.warn(`ZG-ASP setup restore error: ${e}`);
-		}
 		try {
 			syncNaturalWonderSetup();
 		} catch (e) {

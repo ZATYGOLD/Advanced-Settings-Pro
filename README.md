@@ -4,6 +4,10 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ## Version History
 
+### 0.9.04
+
+- Fixed remembered settings being lost after closing the game, playing multiplayer, loading a save, or backing out of setup
+
 ### 0.9.03
 
 - Single player remembers this mod's settings between games; Reset to Defaults clears them
