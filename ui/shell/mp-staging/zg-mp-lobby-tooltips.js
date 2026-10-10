@@ -16,8 +16,8 @@
 import { MPLobbyDataModel } from 'fs://game/core/ui/shell/mp-staging/model-mp-staging-new.js';
 import { GetCivilizationData } from 'fs://game/core/ui/shell/create-panels/age-civ-select-model.js';
 import { getLeaderData } from 'fs://game/core/ui/shell/create-panels/leader-select-model.js';
-import { CHOICE_TIERS, leaderAssociations } from './zg-age-transition-civs.js';
-import { queryConfig } from './zg-shell-context.js';
+import { CHOICE_TIERS, leaderAssociations } from '../age-transition/zg-age-transition-civs.js';
+import { queryConfig } from '../shared/zg-shell-context.js';
 
 const SUGGESTED_TITLE = "LOC_ZG_LOBBY_SUGGESTED_CIVS";
 const MAX_CIVS_PER_AGE = 3;

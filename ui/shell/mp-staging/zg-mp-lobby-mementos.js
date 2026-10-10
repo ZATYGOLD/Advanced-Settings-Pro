@@ -7,7 +7,7 @@
 // own art when filled, its name and effect on hover. They show on human rows
 // and, whenever mementos are on, on AI rows too. On your own row, and on AI
 // rows for the host, a slot opens the single-player memento picker on that
-// slot (ui/zg-memento-select.js).
+// slot (ui-next/screens/create-game/zg-memento-select.js).
 // Nothing else in the row moves: the slots take the diamonds' place.
 //
 // The slots sit inside the leader dropdown, which opens on a left click or tap
@@ -18,9 +18,9 @@
 // which opens the same picker.
 
 import { Audio } from 'fs://game/core/ui/audio-base/audio-support.js';
-import { openMementoSelect } from './zg-memento-select.js';
-import { MEMENTO_PARAM_IDS as PARAM_IDS, MEMENTO_NONE_VALUE as NONE_VALUE, MEMENTO_SLOT_BASE_IMAGE as BASE_IMAGE, MEMENTO_SLOT_PLUS_IMAGE as PLUS_IMAGE, mementoTooltip, aiPlayerIds } from './zg-memento-roller.js';
-import { canEditSetup, Decorator } from './zg-shell-context.js';
+import { openMementoSelect } from '../../../ui-next/screens/create-game/zg-memento-select.js';
+import { MEMENTO_PARAM_IDS as PARAM_IDS, MEMENTO_NONE_VALUE as NONE_VALUE, MEMENTO_SLOT_BASE_IMAGE as BASE_IMAGE, MEMENTO_SLOT_PLUS_IMAGE as PLUS_IMAGE, mementoTooltip, aiPlayerIds } from '../shared/zg-memento-roller.js';
+import { canEditSetup, Decorator } from '../shared/zg-shell-context.js';
 
 const DROPDOWN_NAME = "leader-dropdown";
 const LOBBY_NAME = "screen-mp-lobby";

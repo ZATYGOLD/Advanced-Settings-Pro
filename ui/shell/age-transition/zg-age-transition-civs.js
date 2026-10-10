@@ -30,7 +30,7 @@
 // PlayerCivilization parameter, whose choices the engine has already narrowed
 // to that age; the age's own civilizations come from Ages.PlayerCivilizationDomain.
 
-import { cached, queryConfig } from './zg-shell-context.js';
+import { cached, queryConfig } from '../shared/zg-shell-context.js';
 
 const PARAM_ID = "AgeTransitionCivSelectionMode";
 const HISTORICAL_VALUE = "AGE_TRANSITION_CIV_SELECTION_MODE_ZG_HISTORICAL";

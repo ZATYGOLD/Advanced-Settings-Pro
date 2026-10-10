@@ -15,8 +15,8 @@ import { createMemo, createComponent, createRenderEffect, createSignal, mergePro
 import { ComponentRegistry } from 'fs://game/core/ui-next/services/component-registry.js';
 import { multiplayerTeamColors } from 'fs://game/core/ui/utilities/utilities-network-constants.js';
 import { openMementoSelect } from './zg-memento-select.js';
-import { MEMENTO_PARAM_IDS, MEMENTO_NONE_VALUE, MEMENTO_SLOT_BASE_IMAGE, MEMENTO_SLOT_PLUS_IMAGE, AI_MEMENTOS_PARAM_ID, AI_MEMENTOS_DEFAULT, aiMementoMode, aiPlayerIds, matchSource, randomFlags, setRandomFlag, rollMemento, sortPossibleValues } from './zg-memento-roller.js';
-import { canEditSetup, isAgeTransition } from './zg-shell-context.js';
+import { MEMENTO_PARAM_IDS, MEMENTO_NONE_VALUE, MEMENTO_SLOT_BASE_IMAGE, MEMENTO_SLOT_PLUS_IMAGE, AI_MEMENTOS_PARAM_ID, AI_MEMENTOS_DEFAULT, aiMementoMode, aiPlayerIds, matchSource, randomFlags, setRandomFlag, rollMemento, sortPossibleValues } from '../../../ui/shell/shared/zg-memento-roller.js';
+import { canEditSetup, isAgeTransition } from '../../../ui/shell/shared/zg-shell-context.js';
 import { Activatable } from 'fs://game/core/ui-next/components/activatable.js';
 import { Button } from 'fs://game/core/ui-next/components/button.js';
 import { Dropdown, DropdownItem } from 'fs://game/core/ui-next/components/dropdown.js';
@@ -220,7 +220,7 @@ const PlayerOption = (props) => {
 // the filigree and rollover, and either the memento's icon or, for an empty
 // slot, the slot base image. Clicking one opens the game's memento picker, the
 // one with the search bar and attribute filter, for the player this row stands
-// for, over Advanced Options (ui/zg-memento-select.js, shared with the lobby).
+// for, over Advanced Options (ui-next/screens/create-game/zg-memento-select.js, shared with the lobby).
 const SLOT_PLUS_REM = 1.6;
 const SLOT_ICON_CLASSES = "w-full h-full absolute inset-1";
 const tplSlotBox = template(`<div class="flex items-center justify-center p-1 img-unit-panelbox relative"><div class="absolute inset-0 bg-center bg-no-repeat"></div><div class="img-rollover-highlight absolute inset-0 opacity-0 group-focus\\:opacity-100 group-hover\\:opacity-100 group-pressed\\:opacity-100 pointer-events-none"></div></div>`);

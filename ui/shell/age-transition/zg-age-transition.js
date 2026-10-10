@@ -14,10 +14,10 @@
 // touched. The panel only exists during a transition, so the decorator is
 // inert in an ordinary shell session.
 
-import { aiPlayerIds } from './zg-memento-roller.js';
+import { aiPlayerIds } from '../shared/zg-memento-roller.js';
 import { isHistoricalProgression, settleAiCivilizations } from './zg-age-transition-civs.js';
 import { settleAiMementos } from './zg-age-transition-mementos.js';
-import { Decorator } from './zg-shell-context.js';
+import { Decorator } from '../shared/zg-shell-context.js';
 
 const PANEL_NAME = "age-transition-civ-select";
 

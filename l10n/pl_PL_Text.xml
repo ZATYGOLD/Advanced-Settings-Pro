@@ -1455,5 +1455,72 @@
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="pl_PL">
 			<Text>Sekcja Ustawienia tempa na karcie Tempo nie odpowiada już żadnemu zestawowi.</Text>
 		</Replace>
+	<!-- Natural wonder names (shell) -->
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_NAME" Language="pl_PL">
+			<Text>Wielka Rafa Koralowa|Wielkiej Rafy Koralowej|Wielkiej Rafie Koralowej|Wielką Rafę Koralową|Wielką Rafą Koralową|Wielkiej Rafie Koralowej|Wielka Rafa Koralowa|Wielkiej Rafy Koralowej|Wielkiej Rafie Koralowej|Wielką Rafę Koralową|Wielką Rafą Koralową|Wielkiej Rafie Koralowej</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_NAME" Language="pl_PL">
+			<Text>Trójkąt Bermudzki|Trójkąta Bermudzkiego|Trójkątowi Bermudzkiemu|Trójkąt Bermudzki|Trójkątem Bermudzkim|Trójkącie Bermudzkim|Trójkąt Bermudzki|Trójkąta Bermudzkiego|Trójkątowi Bermudzkiemu|Trójkąt Bermudzki|Trójkątem Bermudzkim|Trójkącie Bermudzkim</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_CANYON_NAME" Language="pl_PL">
+			<Text>Wielki Kanion|Wielkiego Kanionu|Wielkiemu Kanionowi|Wielki Kanion|Wielkim Kanionem|Wielkim Kanionie|Wielki Kanion|Wielkiego Kanionu|Wielkiemu Kanionowi|Wielki Kanion|Wielkim Kanionem|Wielkim Kanionie</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GREAT_BLUE_HOLE_NAME" Language="pl_PL">
+			<Text>Great Blue Hole</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GULLFOSS_NAME" Language="pl_PL">
+			<Text>Gullfoss</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_HOERIKWAGGO_NAME" Language="pl_PL">
+			<Text>Hoerikwaggo</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_IGUAZU_FALLS_NAME" Language="pl_PL">
+			<Text>Wodospad Iguazú|Wodospadu Iguazú|Wodospadowi Iguazú|Wodospad Iguazú|Wodospadem Iguazú|Wodospadzie Iguazú|wodospad Iguazú|wodospadu Iguazú|wodospadowi Iguazú|wodospad Iguazú|wodospadem Iguazú|wodospadzie Iguazú</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KILIMANJARO_NAME" Language="pl_PL">
+			<Text>Kilimandżaro</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MACHAPUCHARE_NAME" Language="pl_PL">
+			<Text>Machapuchare</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME" Language="pl_PL">
+			<Text>Mapu a Vaea</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_EVEREST_NAME" Language="pl_PL">
+			<Text>Mount Everest|Mount Everestu|Mount Everestowi|Mount Everest|Mount Everestem|Mount Evereście|Mount Everest|Mount Everestu|Mount Everestowi|Mount Everest|Mount Everestem|Mount Evereście</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="pl_PL">
+			<Text>Fudżi</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NACHI_FALLS_NAME" Language="pl_PL">
+			<Text>Wodospad Nachi|Wodospadu Nachi|Wodospadowi Nachi|Wodospad Nachi|Wodospadem Nachi|Wodospadzie Nachi|wodospad Nachi|wodospadu Nachi|wodospadowi Nachi|wodospad Nachi|wodospadem Nachi|wodospadzie Nachi</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="pl_PL">
+			<Text>Las sekwojowy|Lasu sekwojowego|Lasowi sekwojowemu|Las sekwojowy|Lasem sekwojowym|Lesie sekwojowym|las sekwojowy|lasu sekwojowego|lasowi sekwojowemu|las sekwojowy|lasem sekwojowym|lesie sekwojowym</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME" Language="pl_PL">
+			<Text>Seongsan Ilchulbong|Seongsan Ilchulbongu|Seongsan Ilchulbongowi|Seongsan Ilchulbong|Seongsan Ilchulbongiem|Seongsan Ilchulbongu|Seongsan Ilchulbong|Seongsan Ilchulbongu|Seongsan Ilchulbongowi|Seongsan Ilchulbong|Seongsan Ilchulbongiem|Seongsan Ilchulbongu</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="pl_PL">
+			<Text>Thera|Thery|Therze|Therę|Therą|Therze|Thera|Thery|Therze|Therę|Therą|Therze</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_NAME" Language="pl_PL">
+			<Text>Torres del Paine</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ULURU_NAME" Language="pl_PL">
+			<Text>Uluru</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VALLEY_OF_FLOWERS_NAME" Language="pl_PL">
+			<Text>Dolina Kwiatów|Doliny Kwiatów|Dolinie Kwiatów|Dolinę Kwiatów|Doliną Kwiatów|Dolinie Kwiatów|Dolina Kwiatów|Doliny Kwiatów|Dolinie Kwiatów|Dolinę Kwiatów|Doliną Kwiatów|Dolinie Kwiatów</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VIHREN_NAME" Language="pl_PL">
+			<Text>Wichren|Wichrenu|Wichrenowi|Wichren|Wichrenem|Wichrenie|Wichren|Wichrenu|Wichrenowi|Wichren|Wichrenem|Wichrenie</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VINICUNCA_NAME" Language="pl_PL">
+			<Text>Vinicunca|Vinicunki|Vinicunce|Vinicuncę|Vinicuncą|Vinicunce|Vinicunca|Vinicunki|Vinicunce|Vinicuncę|Vinicuncą|Vinicunce</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ZHANGJIAJIE_NAME" Language="pl_PL">
+			<Text>Zhangjiajie</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

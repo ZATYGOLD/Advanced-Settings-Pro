@@ -7,7 +7,7 @@
 // `slotIDs`, so both are reshaped here. Groups are routed to tabs through
 // getTabContainerForParam; the seed buttons hang off createParamEleLabel.
 
-import { Decorator } from './zg-shell-context.js';
+import { Decorator } from '../shared/zg-shell-context.js';
 
 const PANEL_NAME = "screen-mp-create-game";
 const SEED_PARAM_IDS = new Set(["GameRandomSeed", "MapRandomSeed"]);

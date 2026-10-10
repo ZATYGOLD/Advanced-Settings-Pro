@@ -1455,5 +1455,72 @@
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="zh_Hant_HK">
 			<Text>「節奏」分頁中「節奏設定」的設定已不再與任何預設一致。</Text>
 		</Replace>
+	<!-- Natural wonder names (shell) -->
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_NAME" Language="zh_Hant_HK">
+			<Text>大堡礁</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_NAME" Language="zh_Hant_HK">
+			<Text>百慕達三角</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_CANYON_NAME" Language="zh_Hant_HK">
+			<Text>大峽谷</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GREAT_BLUE_HOLE_NAME" Language="zh_Hant_HK">
+			<Text>大藍洞</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GULLFOSS_NAME" Language="zh_Hant_HK">
+			<Text>古佛斯瀑布</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_HOERIKWAGGO_NAME" Language="zh_Hant_HK">
+			<Text>海中之山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_IGUAZU_FALLS_NAME" Language="zh_Hant_HK">
+			<Text>伊瓜蘇瀑布</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KILIMANJARO_NAME" Language="zh_Hant_HK">
+			<Text>吉力馬札羅山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MACHAPUCHARE_NAME" Language="zh_Hant_HK">
+			<Text>魚尾峰</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME" Language="zh_Hant_HK">
+			<Text>貴族口哨吹蝕穴</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_EVEREST_NAME" Language="zh_Hant_HK">
+			<Text>聖母峰</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="zh_Hant_HK">
+			<Text>富士山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NACHI_FALLS_NAME" Language="zh_Hant_HK">
+			<Text>那智瀑布</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="zh_Hant_HK">
+			<Text>紅木森林</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME" Language="zh_Hant_HK">
+			<Text>城山日出峰</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="zh_Hant_HK">
+			<Text>錫拉島火山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_NAME" Language="zh_Hant_HK">
+			<Text>百內國家公園</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ULURU_NAME" Language="zh_Hant_HK">
+			<Text>烏盧魯</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VALLEY_OF_FLOWERS_NAME" Language="zh_Hant_HK">
+			<Text>花谷</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VIHREN_NAME" Language="zh_Hant_HK">
+			<Text>維赫倫峰</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VINICUNCA_NAME" Language="zh_Hant_HK">
+			<Text>彩虹山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ZHANGJIAJIE_NAME" Language="zh_Hant_HK">
+			<Text>張家界</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

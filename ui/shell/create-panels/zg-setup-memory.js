@@ -18,7 +18,7 @@
 
 import { ContextManager } from 'fs://game/core/ui/context-manager/context-manager.js';
 import { StartCampaignEventName } from 'fs://game/core/ui/events/shell-events.js';
-import { isAgeTransition } from './zg-shell-context.js';
+import { isAgeTransition } from '../shared/zg-shell-context.js';
 
 const STORAGE_KEY = "modSettings";
 const MOD_KEY = "ZG_AdvancedSettingsProSetup";

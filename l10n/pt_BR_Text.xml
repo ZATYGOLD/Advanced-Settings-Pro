@@ -1455,5 +1455,72 @@
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="pt_BR">
 			<Text>As Configurações de ritmo na aba Ritmo não correspondem mais a uma predefinição.</Text>
 		</Replace>
+	<!-- Natural wonder names (shell) -->
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_NAME" Language="pt_BR">
+			<Text>Grande Barreira de Coral</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_NAME" Language="pt_BR">
+			<Text>Triângulo das Bermudas</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_CANYON_NAME" Language="pt_BR">
+			<Text>Grand Canyon</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GREAT_BLUE_HOLE_NAME" Language="pt_BR">
+			<Text>Grande Buraco Azul|Grandes Buracos Azuis</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GULLFOSS_NAME" Language="pt_BR">
+			<Text>Gullfoss</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_HOERIKWAGGO_NAME" Language="pt_BR">
+			<Text>Hoerikwaggo</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_IGUAZU_FALLS_NAME" Language="pt_BR">
+			<Text>Cataratas do Iguaçu</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KILIMANJARO_NAME" Language="pt_BR">
+			<Text>Monte Kilimanjaro</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MACHAPUCHARE_NAME" Language="pt_BR">
+			<Text>Machapuchare</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME" Language="pt_BR">
+			<Text>Mapu 'a Vaea|Mapu 'a Vaea</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_EVEREST_NAME" Language="pt_BR">
+			<Text>Monte Everest</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="pt_BR">
+			<Text>Monte Fuji</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NACHI_FALLS_NAME" Language="pt_BR">
+			<Text>Cachoeira de Nachi</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="pt_BR">
+			<Text>Floresta de Redwood</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME" Language="pt_BR">
+			<Text>Seongsan Ilchulbong</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="pt_BR">
+			<Text>Vulcão Tera</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_NAME" Language="pt_BR">
+			<Text>Torres del Paine</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ULURU_NAME" Language="pt_BR">
+			<Text>Uluru</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VALLEY_OF_FLOWERS_NAME" Language="pt_BR">
+			<Text>Vale das Flores</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VIHREN_NAME" Language="pt_BR">
+			<Text>Vihren</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VINICUNCA_NAME" Language="pt_BR">
+			<Text>Vinicunca</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ZHANGJIAJIE_NAME" Language="pt_BR">
+			<Text>Zhangjiajie</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

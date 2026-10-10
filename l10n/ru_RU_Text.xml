@@ -1455,5 +1455,72 @@
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="ru_RU">
 			<Text>Настройки раздела «Настройки темпа» на вкладке «Темп» больше не соответствуют ни одному готовому темпу.</Text>
 		</Replace>
+	<!-- Natural wonder names (shell) -->
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_NAME" Language="ru_RU">
+			<Text>Большой Барьерный риф|Большого Барьерного рифа|Большому Барьерному рифу|Большой Барьерный риф|Большим Барьерным рифом|Большом Барьерном рифе</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_NAME" Language="ru_RU">
+			<Text>Бермудский треугольник|Бермудского треугольника|Бермудскому треугольнику|Бермудский треугольник|Бермудским треугольником|Бермудском треугольнике</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_CANYON_NAME" Language="ru_RU">
+			<Text>Большой каньон|Большого каньона|Большому каньону|Большой каньон|Большым каньоном|Большом каньоне</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GREAT_BLUE_HOLE_NAME" Language="ru_RU">
+			<Text>Большая голубая дыра|Большой голубой дыры|Большой голубой дыре|Большую голубую дыру|Большой голубой дырой|Большой голубой дыре</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GULLFOSS_NAME" Language="ru_RU">
+			<Text>Гулльфосс|Гулльфосса|Гулльфоссу|Гулльфосс|Гулльфоссом|Гулльфоссе</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_HOERIKWAGGO_NAME" Language="ru_RU">
+			<Text>Хоериквагго</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_IGUAZU_FALLS_NAME" Language="ru_RU">
+			<Text>Игуасу|Игуасу|Игуасу|Игуасу|Игуасу|Игуасу</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KILIMANJARO_NAME" Language="ru_RU">
+			<Text>Гора Килиманджаро|горы Килиманджаро|горе Килиманджаро|гору Килиманджаро|горой Килиманджаро|горе Килиманджаро</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MACHAPUCHARE_NAME" Language="ru_RU">
+			<Text>Мачапучаре|Мачапучаре|Мачапучаре|Мачапучаре|Мачапучаре|Мачапучаре</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME" Language="ru_RU">
+			<Text>Гейзер Мапу а Ваэа|гейзера Мапу а Ваэа|гейзеру Мапу а Ваэа|гейзер Мапу а Ваэа|гейзером Мапу а Ваэа|гейзере Мапу а Ваэа</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_EVEREST_NAME" Language="ru_RU">
+			<Text>Гора Эверест|горы Эверест|горе Эверест|гору Эверест|горой Эверест|горе Эверест</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="ru_RU">
+			<Text>Фудзи|Фудзи|Фудзи|Фудзи|Фудзи|Фудзи</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NACHI_FALLS_NAME" Language="ru_RU">
+			<Text>Нати|Нати|Нати|Нати|Нати|Нати</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="ru_RU">
+			<Text>Леса секвойи|лесов секвойи|лесам секвойи|леса секвойи|лесами секвойи|лесах секвойи</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME" Language="ru_RU">
+			<Text>Пик Сонсан Ильчульбон|пика Сонсан Ильчульбон|пику Сонсан Ильчульбон|пик Сонсан Ильчульбон|пиком Сонсан Ильчульбон|пике Сонсан Ильчульбон</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="ru_RU">
+			<Text>Санторини|Санторини|Санторини|Санторини|Санторини|Санторини</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_NAME" Language="ru_RU">
+			<Text>Торрес-дель-Пайне|Торрес-дель-Пайне|Торрес-дель-Пайне|Торрес-дель-Пайне|Торрес-дель-Пайне|Торрес-дель-Пайне</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ULURU_NAME" Language="ru_RU">
+			<Text>Улуру|Улуру|Улуру|Улуру|Улуру|Улуру</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VALLEY_OF_FLOWERS_NAME" Language="ru_RU">
+			<Text>Долина цветов|долины цветов|долине цветов|долину цветов|долиной цветов|долине цветов</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VIHREN_NAME" Language="ru_RU">
+			<Text>Вихрен|Вихрена|Вихрену|Вихрен|Вихреном|Вихрене</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VINICUNCA_NAME" Language="ru_RU">
+			<Text>Виникунка|Виникунки|Виникунке|Виникунку|Виникункой|Виникунке</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ZHANGJIAJIE_NAME" Language="ru_RU">
+			<Text>Чжанцзяцзе</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

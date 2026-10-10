@@ -13,7 +13,7 @@
 // Both read the live setup, so a change by the host shows the next time the
 // rules open, or within half a second in the Game Options box.
 
-import { Decorator, queryConfig } from './zg-shell-context.js';
+import { Decorator, queryConfig } from '../shared/zg-shell-context.js';
 
 const RULES_SCREEN = "screen-mp-game-rules";
 const LOBBY_SCREEN = "screen-mp-lobby";

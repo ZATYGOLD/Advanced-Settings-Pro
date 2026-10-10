@@ -8,7 +8,7 @@
 //
 // This is a copy of the base createMementoModel with one substitution: the
 // player it reads and writes is a target, which starts as the human and is
-// moved by the model's retarget(playerId) as ui/zg-memento-select.js opens the
+// moved by the model's retarget(playerId) as ui-next/screens/create-game/zg-memento-select.js opens the
 // picker. The model refreshes its slots through the same reconcile the base
 // runs after an equip, so the screen shows the target's mementos.
 //
@@ -22,7 +22,7 @@ import { createMutable, modifyMutable, reconcile } from 'fs://game/core/vendor/s
 import { ModelRegistry, ModelLifecycle } from 'fs://game/core/ui-next/services/model-registry.js';
 import { FullTextSearch } from 'fs://game/core/ui-next/utilities/search-utils.js';
 import { ContextManager } from 'fs://game/core/ui/context-manager/context-manager.js';
-import { MEMENTO_NONE_VALUE as NONE_VALUE } from './zg-memento-roller.js';
+import { MEMENTO_NONE_VALUE as NONE_VALUE } from '../../../ui/shell/shared/zg-memento-roller.js';
 
 const OVERRIDE_PRIORITY = 110;
 const MODEL_NAME = "MementoSelectModel";

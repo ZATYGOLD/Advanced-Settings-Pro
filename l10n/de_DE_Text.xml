@@ -1455,5 +1455,72 @@
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="de_DE">
 			<Text>Die Tempo-Einstellungen im Tempo-Reiter entsprechen keiner Vorlage mehr.</Text>
 		</Replace>
+	<!-- Natural wonder names (shell) -->
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_NAME" Language="de_DE">
+			<Text>Great Barrier Reef|Great Barrier Reef|Great Barrier Reef|Great Barrier Reefs|Great Barrier Reef</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_NAME" Language="de_DE">
+			<Text>Bermudadreieck|Bermudadreieck|Bermudadreieck|Bermudadreiecks|Bermudadreieck</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_CANYON_NAME" Language="de_DE">
+			<Text>Grand Canyon|Grand Canyon|Grand Canyon|Grand Canyons|Grand Canyon</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GREAT_BLUE_HOLE_NAME" Language="de_DE">
+			<Text>Great Blue Hole|Great Blue Hole|Great Blue Hole|Great Blue Hole|Great Blue Hole</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GULLFOSS_NAME" Language="de_DE">
+			<Text>Gullfoss|Gullfoss|Gullfoss|Gullfoss|Gullfoss</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_HOERIKWAGGO_NAME" Language="de_DE">
+			<Text>Hoerikwaggo|Hoerikwaggo|Hoerikwaggo|Hoerikwaggos|Hoerikwaggo</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_IGUAZU_FALLS_NAME" Language="de_DE">
+			<Text>Wasserfälle von Iguaçu|Wasserfälle von Iguaçu|Wasserfällen von Iguaçu|Wasserfälle von Iguaçu|Wasserfälle von Iguaçu</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KILIMANJARO_NAME" Language="de_DE">
+			<Text>Kilimandscharo|Kilimandscharo|Kilimandscharo|Kilimandscharos|Kilimandscharo</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MACHAPUCHARE_NAME" Language="de_DE">
+			<Text>Machapucharé|Machapucharé|Machapucharé|Machapucharé|Machapucharé</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME" Language="de_DE">
+			<Text>Mapu'a 'a Vaea Blowholes|Mapu'a 'a Vaea Blowholes|Mapu'a 'a Vaea Blowholes|Mapu'a 'a Vaea Blowholes|Mapu'a 'a Vaea Blowholes</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_EVEREST_NAME" Language="de_DE">
+			<Text>Mount Everest|Mount Everest|Mount Everest|Mount Everest|Mount Everest</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="de_DE">
+			<Text>Fuji|Fuji|Fuji|Fuji|Fuji</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NACHI_FALLS_NAME" Language="de_DE">
+			<Text>Nachi-Wasserfall|Nachi-Wasserfall|Nachi-Wasserfall|Nachi-Wasserfalls|Nachi-Wasserfall</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="de_DE">
+			<Text>Rotholzwald (bewachsen)|Rotholzwald (bewachsen)|Rotholzwald (bewachsen)|Rotholzwalds (bewachsen)|Rotholzwald (bewachsen)</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME" Language="de_DE">
+			<Text>Seongsan Ilchulbong|Seongsan Ilchulbong|Seongsan Ilchulbong|Seongsan Ilchulbong|Seongsan Ilchulbong</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="de_DE">
+			<Text>Thera|Thera|Thera|Theras|Thera</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_NAME" Language="de_DE">
+			<Text>Torres del Paine|Torres del Paine|Torres del Paine|Torres del Paine|Torres del Paine</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ULURU_NAME" Language="de_DE">
+			<Text>Uluru|Uluru|Uluru|Ulurus|Uluru</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VALLEY_OF_FLOWERS_NAME" Language="de_DE">
+			<Text>Valley of Flowers|Valley of Flowers|Valley of Flowers|Valley of Flowers|Valley of Flowers</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VIHREN_NAME" Language="de_DE">
+			<Text>Wichren|Wichren|Wichren|Wichren|Wichren</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VINICUNCA_NAME" Language="de_DE">
+			<Text>Vinicunca|Vinicunca|Vinicunca|Vinicunca|Vinicunca</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ZHANGJIAJIE_NAME" Language="de_DE">
+			<Text>Zhangjiajie|Zhangjiajie|Zhangjiajie|Zhangjiajie|Zhangjiajie</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

@@ -40,7 +40,7 @@
 // back (zg-setup-memory.js) the rules wait, and the comparisons then start
 // over, so the restored values are the baseline rather than a change to answer.
 
-import { canEditSetup, isAgeTransition } from './zg-shell-context.js';
+import { canEditSetup, isAgeTransition } from '../shared/zg-shell-context.js';
 import { tickSetupMemory, isRestoringSetup, rememberSetup } from './zg-setup-memory.js';
 
 const NW_COUNT_PARAM_ID = "ZG_NaturalWondersCount";

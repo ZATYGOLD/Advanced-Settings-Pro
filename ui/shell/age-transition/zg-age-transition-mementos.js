@@ -10,7 +10,7 @@
 // next age starts, after the civilizations are settled, so Civilization Match
 // sees the new civilization.
 
-import { MEMENTO_PARAM_IDS, aiMementoMode, drawMementos } from './zg-memento-roller.js';
+import { MEMENTO_PARAM_IDS, aiMementoMode, drawMementos } from '../shared/zg-memento-roller.js';
 
 const PARAM_ID = "ZG_AgeTransitionMementos";
 const ADAPT_VALUE = "ZG_AGE_TRANSITION_MEMENTOS_ADAPT";

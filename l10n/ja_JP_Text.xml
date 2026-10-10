@@ -1455,5 +1455,72 @@
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="ja_JP">
 			<Text>「ペース」タブの「ペース設定」がどのプリセットとも一致していません。</Text>
 		</Replace>
+	<!-- Natural wonder names (shell) -->
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_NAME" Language="ja_JP">
+			<Text>グレートバリアリーフ</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_NAME" Language="ja_JP">
+			<Text>バミューダトライアングル</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_CANYON_NAME" Language="ja_JP">
+			<Text>グランドキャニオン</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GREAT_BLUE_HOLE_NAME" Language="ja_JP">
+			<Text>グレート・ブルーホール</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GULLFOSS_NAME" Language="ja_JP">
+			<Text>グトルフォス</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_HOERIKWAGGO_NAME" Language="ja_JP">
+			<Text>ホエリクワッゴ</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_IGUAZU_FALLS_NAME" Language="ja_JP">
+			<Text>イグアスの滝</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KILIMANJARO_NAME" Language="ja_JP">
+			<Text>キリマンジャロ山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MACHAPUCHARE_NAME" Language="ja_JP">
+			<Text>マチャプチャレ</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME" Language="ja_JP">
+			<Text>マプア・バイア・ブロウホール</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_EVEREST_NAME" Language="ja_JP">
+			<Text>エベレスト山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="ja_JP">
+			<Text>富士山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NACHI_FALLS_NAME" Language="ja_JP">
+			<Text>那智の滝</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="ja_JP">
+			<Text>レッドウッドの森</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME" Language="ja_JP">
+			<Text>城山日出峰</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="ja_JP">
+			<Text>テーラ</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_NAME" Language="ja_JP">
+			<Text>トーレス・デル・パイネ</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ULURU_NAME" Language="ja_JP">
+			<Text>ウルル</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VALLEY_OF_FLOWERS_NAME" Language="ja_JP">
+			<Text>花の谷</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VIHREN_NAME" Language="ja_JP">
+			<Text>ヴィフレン</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VINICUNCA_NAME" Language="ja_JP">
+			<Text>ヴィニクンカ</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ZHANGJIAJIE_NAME" Language="ja_JP">
+			<Text>張家界</Text>
+		</Replace>
 	</LocalizedText>
 </Database>

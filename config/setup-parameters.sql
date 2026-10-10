@@ -54,7 +54,7 @@ INSERT OR IGNORE INTO GameSpeeds (Domain, GameSpeedType, Name, Description, Sort
 --*******************************************************
 -- The base Age Length setting moves to the Pace tab, gains Swift, Balanced,
 -- Extended and Custom, and drives the per-age Age Length rows
--- (ui/zg-setup-rules.js). Each option applies a data/ages file that sets the
+-- (ui/shell/create-panels/zg-setup-rules.js). Each option applies a data/ages file that sets the
 -- same point total for every base length, so the engine's own choice never
 -- changes the result; Custom applies the per-age rows' files instead.
 UPDATE Parameters SET GroupId = 'GamePacingOptions', GroupIDMultiplayerOverride = 'MPAdvancedGamePacingOptions', SortIndex = 30 WHERE ParameterID = 'AgeLength';
@@ -130,7 +130,7 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 --************* RANDOM MEMENTOS *************************
 --*******************************************************
 -- Remembers which of an AI player's memento slots are set to Random; the slots
--- themselves hold a real memento rolled by ui/zg-player-tab.js.
+-- themselves hold a real memento rolled by ui-next/screens/create-game/zg-player-tab.js.
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
         ('ZG_PlayerRandomMementos', 'LOC_ZG_RANDOM_MEMENTOS_NAME', '', 'ZG_RandomMementosDomain', 'ZG_RANDOM_MEMENTOS_NONE', 0, 'Player', 'ZGRandomMementos', 'PlayerOptions', NULL, 0, 3040);
@@ -145,7 +145,7 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 -- Memento Settings gathers every memento control, the base Mementos toggle
 -- included. The toggle is multiplayer-only in the base game; opening it to
 -- single player lets a single-player game turn mementos off, as SingleAgeGame
--- is opened above. AI Mementos (applied by ui/zg-player-tab.js) follows it.
+-- is opened above. AI Mementos (applied by ui-next/screens/create-game/zg-player-tab.js) follows it.
 --
 -- Groups appear in the order their first setting does. On the General tab the
 -- base game's groups come first (Game Settings, Difficulty, Triumph Settings
@@ -188,7 +188,7 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 
 -- A fifth value for the game's own AI Civ Selection, Age Transition setting.
 -- The engine decides the AI's civilizations for the four values it knows; this
--- one it does not know, so ui/zg-age-transition-civs.js writes every AI's
+-- one it does not know, so ui/shell/age-transition/zg-age-transition-civs.js writes every AI's
 -- civilization itself just before the next age starts, from the leader's
 -- associations in LeaderCivilizationBias: Historical by Bias, else Geographic,
 -- never Strategic; taken ones passed over, duplicates last; ties to the age's
@@ -202,7 +202,7 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 --*******************************************************
 -- Preset selector in Game Settings, after Rule Set, mirrored by ZG_PaceSetMirror
 -- at the top of Pace Settings on the Pace tab. Each preset sets the Pace
--- Settings to the values it stands for (ui/zg-setup-rules.js); changing one of
+-- Settings to the values it stands for (ui/shell/create-panels/zg-setup-rules.js); changing one of
 -- them afterwards switches the preset to Custom.
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
@@ -221,10 +221,10 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 --*******************************************************
 --************* PACE SETTINGS ***************************
 --*******************************************************
--- Shown on the Pace tab (ui/zg-map-tab.js): All Ages holds the primaries
+-- Shown on the Pace tab (ui-next/screens/create-game/zg-map-tab.js): All Ages holds the primaries
 -- (Age Length above and the settings below); the Antiquity,
 -- Exploration, and Modern groups hold each setting's per-age row, used when the
--- primary is Custom and synced by ui/zg-setup-rules.js.
+-- primary is Custom and synced by ui/shell/create-panels/zg-setup-rules.js.
 
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
@@ -583,7 +583,7 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 UPDATE Parameters SET GroupId = 'CrisisOptions', GroupIDMultiplayerOverride = 'MPAdvancedCrisisOptions', SortIndex = 510, Name = 'LOC_ZG_CRISIS_SELECTION_NAME' WHERE ParameterID = 'Crises';
 
 -- Master switch for crises. It drives the base per-crisis selection through
--- ui/zg-setup-rules.js, so the game applies it through its own ExcludeCrises key.
+-- ui/shell/create-panels/zg-setup-rules.js, so the game applies it through its own ExcludeCrises key.
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
         ('ZG_Crises', 'LOC_ZG_CRISES_NAME', 'LOC_ZG_CRISES_DESCRIPTION', 'ZG_CrisesDomain', 'ZG_ENABLED', 1, 'Game', 'CrisesKey', 'CrisisOptions', 'MPAdvancedCrisisOptions', 0, 490);

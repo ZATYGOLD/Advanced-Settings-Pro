@@ -1455,5 +1455,72 @@
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="ko_KR">
 			<Text>페이스 탭의 페이스 설정이 더 이상 어떤 프리셋과도 일치하지 않습니다.</Text>
 		</Replace>
+	<!-- Natural wonder names (shell) -->
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_NAME" Language="ko_KR">
+			<Text>대보초</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_NAME" Language="ko_KR">
+			<Text>버뮤다 삼각지대</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_CANYON_NAME" Language="ko_KR">
+			<Text>그랜드 캐니언</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GREAT_BLUE_HOLE_NAME" Language="ko_KR">
+			<Text>그레이트 블루홀</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GULLFOSS_NAME" Language="ko_KR">
+			<Text>굴포스</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_HOERIKWAGGO_NAME" Language="ko_KR">
+			<Text>호에리콰고</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_IGUAZU_FALLS_NAME" Language="ko_KR">
+			<Text>이구아수 폭포</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KILIMANJARO_NAME" Language="ko_KR">
+			<Text>킬리만자로산</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MACHAPUCHARE_NAME" Language="ko_KR">
+			<Text>마차푸차레</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME" Language="ko_KR">
+			<Text>마푸 아 바에아 블로우홀</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_EVEREST_NAME" Language="ko_KR">
+			<Text>에베레스트산</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="ko_KR">
+			<Text>후지산</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NACHI_FALLS_NAME" Language="ko_KR">
+			<Text>나치 폭포</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="ko_KR">
+			<Text>레드우드 숲</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME" Language="ko_KR">
+			<Text>성산일출봉</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="ko_KR">
+			<Text>테라</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_NAME" Language="ko_KR">
+			<Text>토레스델파이네</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ULURU_NAME" Language="ko_KR">
+			<Text>울루루</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VALLEY_OF_FLOWERS_NAME" Language="ko_KR">
+			<Text>꽃의 계곡</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VIHREN_NAME" Language="ko_KR">
+			<Text>비흐렌</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VINICUNCA_NAME" Language="ko_KR">
+			<Text>비니쿤카</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ZHANGJIAJIE_NAME" Language="ko_KR">
+			<Text>장자제</Text>
+		</Replace>
 	</LocalizedText>
 </Database>
