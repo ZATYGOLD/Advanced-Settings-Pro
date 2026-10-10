@@ -4,6 +4,9 @@
 		<Replace Tag="LOC_GROUPID_ZG_UNITOPTIONS" Language="es_ES">
 			<Text>Ajustes de unidades</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_TRADEOPTIONS" Language="es_ES">
+			<Text>Ajustes de comercio</Text>
+		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS" Language="es_ES">
 			<Text>Ajustes de potencias independientes</Text>
 		</Replace>
@@ -140,14 +143,17 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME" Language="es_ES">
 			<Text>Distancia entre asentamientos</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_NAME" Language="es_ES">
+			<Text>Alcance comercial</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_NAME" Language="es_ES">
+			<Text>Velocidad comercial</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RAZE_TIME_NAME" Language="es_ES">
-			<Text>Tiempo de arrasamiento</Text>
+			<Text>Velocidad de arrasamiento</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INSTANT_NAME" Language="es_ES">
 			<Text>Instantáneo</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SHORTER_NAME" Language="es_ES">
-			<Text>Más corto</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="es_ES">
 			<Text>Coste de unidades militares</Text>
@@ -283,6 +289,111 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="es_ES">
 			<Text>4 casillas.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION" Language="es_ES">
+			<Text>Determina hasta dónde llegan las rutas comerciales desde tus asentamientos, por tierra y por mar.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_MINUS_50" Language="es_ES">
+			<Text>La mitad de alcance.[nn][BLIST]
+				[LI] Antigüedad: 5 por tierra, 15 por mar
+				[LI] Descubrimientos: 8 por tierra, 23 por mar
+				[LI] Modernidad: 10 por tierra, 30 por mar[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_MINUS_25" Language="es_ES">
+			<Text>Un 25 % menos de alcance.[nn][BLIST]
+				[LI] Antigüedad: 8 por tierra, 23 por mar
+				[LI] Descubrimientos: 11 por tierra, 34 por mar
+				[LI] Modernidad: 15 por tierra, 45 por mar[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_STANDARD" Language="es_ES">
+			<Text>El alcance propio del juego.[nn][BLIST]
+				[LI] Antigüedad: 10 por tierra, 30 por mar
+				[LI] Descubrimientos: 15 por tierra, 45 por mar
+				[LI] Modernidad: 20 por tierra, 60 por mar[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_25" Language="es_ES">
+			<Text>Un 25 % más de alcance.[nn][BLIST]
+				[LI] Antigüedad: 13 por tierra, 38 por mar
+				[LI] Descubrimientos: 19 por tierra, 56 por mar
+				[LI] Modernidad: 25 por tierra, 75 por mar[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_50" Language="es_ES">
+			<Text>Un 50 % más de alcance.[nn][BLIST]
+				[LI] Antigüedad: 15 por tierra, 45 por mar
+				[LI] Descubrimientos: 23 por tierra, 68 por mar
+				[LI] Modernidad: 30 por tierra, 90 por mar[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_100" Language="es_ES">
+			<Text>El doble de alcance.[nn][BLIST]
+				[LI] Antigüedad: 20 por tierra, 60 por mar
+				[LI] Descubrimientos: 30 por tierra, 90 por mar
+				[LI] Modernidad: 40 por tierra, 120 por mar[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_CUSTOM" Language="es_ES">
+			<Text>Establece el alcance comercial para cada era por separado.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_AGE_DESCRIPTION" Language="es_ES">
+			<Text>Establece el alcance comercial de esta era.[n]Solo se aplica si Alcance comercial está en Personalizado.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION" Language="es_ES">
+			<Text>Determina la rapidez con la que los mercaderes inician rutas comerciales: viajando al asentamiento con el que comercian o a distancia. Una velocidad de viaje se aplica en todas las eras, incluida la Modernidad.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_SLOW" Language="es_ES">
+			<Text>Los mercaderes viajan con 3[icon:Action_Move]de movimiento.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_STANDARD" Language="es_ES">
+			<Text>Los mercaderes viajan con 4[icon:Action_Move]de movimiento.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_QUICK" Language="es_ES">
+			<Text>Los mercaderes viajan con 5[icon:Action_Move]de movimiento.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_FAST" Language="es_ES">
+			<Text>Los mercaderes viajan con 6[icon:Action_Move]de movimiento.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_SWIFT" Language="es_ES">
+			<Text>Las rutas comerciales empiezan a distancia en todas las eras.[nn][BLIST]
+				[LI] Antigüedad: Instantáneo
+				[LI] Descubrimientos: Instantáneo
+				[LI] Modernidad: Instantáneo[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_BALANCED" Language="es_ES">
+			<Text>El ritmo propio del juego.[nn][BLIST]
+				[LI] Antigüedad: Estándar
+				[LI] Descubrimientos: Estándar
+				[LI] Modernidad: Instantáneo[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_EXTENDED" Language="es_ES">
+			<Text>Los mercaderes viajan despacio en todas las eras.[nn][BLIST]
+				[LI] Antigüedad: -25%
+				[LI] Descubrimientos: -25%
+				[LI] Modernidad: -25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_SWIFT" Language="es_ES">
+			<Text>Los asentamientos se arrasan en un solo turno en todas las eras.[nn][BLIST]
+				[LI] Antigüedad: Instantáneo
+				[LI] Descubrimientos: Instantáneo
+				[LI] Modernidad: Instantáneo[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_BALANCED" Language="es_ES">
+			<Text>El ritmo propio del juego.[nn][BLIST]
+				[LI] Antigüedad: Estándar
+				[LI] Descubrimientos: Estándar
+				[LI] Modernidad: Estándar[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_EXTENDED" Language="es_ES">
+			<Text>El ritmo propio del juego.[nn][BLIST]
+				[LI] Antigüedad: Estándar
+				[LI] Descubrimientos: Estándar
+				[LI] Modernidad: Estándar[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_INSTANT" Language="es_ES">
+			<Text>Las rutas comerciales empiezan a distancia; los mercaderes no necesitan viajar.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_DEFAULT" Language="es_ES">
+			<Text>El ritmo propio del juego.[nn][BLIST]
+				[LI] Antigüedad: viajan con 4[icon:Action_Move]de movimiento
+				[LI] Descubrimientos: viajan con 4[icon:Action_Move]de movimiento
+				[LI] Modernidad: a distancia[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION" Language="es_ES">
 			<Text>Determina cuánto tarda en arrasarse un asentamiento conquistado. Cada turno se arrasan distritos, así que los asentamientos más grandes tardan más.</Text>
@@ -520,7 +631,7 @@
 			<Text>Determina cuánta comida necesita un asentamiento por cada nuevo ciudadano. Umbrales más bajos permiten que los asentamientos superen el tamaño 10 mucho antes.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_NAME" Language="es_ES">
-			<Text>Caminos</Text>
+			<Text>Velocidad de los caminos</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION" Language="es_ES">
 			<Text>Determina cuánto movimiento cuesta viajar por caminos y ferrocarriles. Caminos más baratos permiten cruzar tu territorio en muchos menos turnos.</Text>
@@ -642,9 +753,6 @@
 				[LI] Operación Hiedra: 1800 / 1800 / 1800
 				[LI] Vuelo espacial tripulado: 2250 / 2250 / 2250[/BLIST][nn](A velocidad estándar)</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="es_ES">
-			<Text>Los costes propios del juego.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="es_ES">
 			<Text>Cívicas estándar al principio y más caras cuando el árbol se abre.[nn][BLIST]
 				[LI] Antigüedad: Estándar
@@ -662,9 +770,6 @@
 				[LI] Antigüedad: -25%
 				[LI] Descubrimientos: -25%
 				[LI] Modernidad: Estándar[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="es_ES">
-			<Text>Los costes propios del juego.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="es_ES">
 			<Text>Investigación más cara al principio y más barata cuando el árbol se abre.[nn][BLIST]
@@ -872,7 +977,7 @@
 			<Text>Civilizaciones sugeridas</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="es_ES">
-			<Text>Cada IA sigue las asociaciones de su líder del selector de civilizaciones: una civilización histórica que ofrezca la nueva era, de mayor a menor peso; si no, una geográfica; nunca una estratégica.[n]Una civilización ya ocupada se salta en favor de la siguiente; solo hay duplicado cuando todas están ocupadas. Un empate lo gana la civilización propia de la nueva era. Si la elegida es la que la IA ya tiene, la conserva.</Text>
+			<Text>Cada IA se mantiene fiel a la historia de su líder. Cambia cuando la nueva era ofrece una civilización histórica de su líder y conserva su civilización cuando esa es la histórica.[n]Si no, sigue el camino habitual del juego hacia la nueva era, primero una civilización geográfica. Una civilización ya elegida se omite; solo se repite cuando todas están elegidas.[n]Experimental: desde el parche 1.5, el juego puede anular estas elecciones.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="es_ES">
 			<Text>Personalizado: establece el conjunto de triunfos de cada era individualmente.</Text>
@@ -1302,9 +1407,11 @@
 				[LI] Coste de tecnologías: +25% / +50% / +50%
 				[LI] Coste de principios: +25% / +50% / +50%
 				[LI] Coste de edificios: +25% / +50% / +50%
+				[LI] Coste de proyectos de victoria: +25%
 				[LI] Crecimiento de asentamientos: +25%
-				[LI] Caminos: Estándar / Estándar / -25%
-				[LI] Coste de proyectos de victoria: +25%[/BLIST]</Text>
+				[LI] Velocidad de los caminos: Estándar / Estándar / -25%
+				[LI] Velocidad comercial: -25%
+				[LI] Velocidad de arrasamiento: Estándar[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT" Language="es_ES">
 			<Text>Eras cortas, con costes reducidos a juego.[nn][BLIST]
@@ -1313,9 +1420,11 @@
 				[LI] Coste de tecnologías: -25% / -25% / Estándar
 				[LI] Coste de principios: -25% / -25% / Estándar
 				[LI] Coste de edificios: -25%
+				[LI] Coste de proyectos de victoria: -25%
 				[LI] Crecimiento de asentamientos: -25%
-				[LI] Caminos: -25% / -50% / -50%
-				[LI] Coste de proyectos de victoria: -25%[/BLIST]</Text>
+				[LI] Velocidad de los caminos: -25% / -50% / -50%
+				[LI] Velocidad comercial: Instantáneo
+				[LI] Velocidad de arrasamiento: Instantáneo[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="es_ES">
 			<Text>Eras más largas, con investigación y crecimiento ajustados para llenarlas.[nn][BLIST]
@@ -1324,9 +1433,11 @@
 				[LI] Coste de tecnologías: +25% / Estándar / -25%
 				[LI] Coste de principios: Estándar / +25% / +25%
 				[LI] Coste de edificios: +25% / Estándar / Estándar
+				[LI] Coste de proyectos de victoria: Estándar / -25% / -25%
 				[LI] Crecimiento de asentamientos: -25% / -25% / Estándar
-				[LI] Caminos: Estándar / Estándar / -25%
-				[LI] Coste de proyectos de victoria: Estándar / -25% / -25%[/BLIST]</Text>
+				[LI] Velocidad de los caminos: Estándar / Estándar / -25%
+				[LI] Velocidad comercial: Estándar
+				[LI] Velocidad de arrasamiento: Estándar[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="es_ES">
 			<Text>Ajustado para una partida de una sola sentada.[nn][BLIST]
@@ -1335,12 +1446,81 @@
 				[LI] Coste de tecnologías: +25% / +50% / +100%
 				[LI] Coste de principios: +50% / +50% / +100%
 				[LI] Coste de edificios: Estándar
+				[LI] Coste de proyectos de victoria: Estándar / Estándar / +25%
 				[LI] Crecimiento de asentamientos: +25%
-				[LI] Caminos: -25% / -25% / -50%
-				[LI] Coste de proyectos de victoria: Estándar / Estándar / +25%[/BLIST]</Text>
+				[LI] Velocidad de los caminos: -25% / -25% / -50%
+				[LI] Velocidad comercial: Estándar
+				[LI] Velocidad de arrasamiento: Estándar[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="es_ES">
 			<Text>La Configuración de ritmo de la pestaña Ritmo ya no coincide con ningún ajuste predefinido.</Text>
+		</Replace>
+	<!-- Natural wonder names (shell) -->
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_NAME" Language="es_ES">
+			<Text>Gran Barrera de Coral|Grandes Barreras de Coral</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_NAME" Language="es_ES">
+			<Text>Triángulo de las Bermudas</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_CANYON_NAME" Language="es_ES">
+			<Text>Gran Cañón</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GREAT_BLUE_HOLE_NAME" Language="es_ES">
+			<Text>Gran Agujero Azul|Grandes Agujeros Azules</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GULLFOSS_NAME" Language="es_ES">
+			<Text>Gullfoss</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_HOERIKWAGGO_NAME" Language="es_ES">
+			<Text>Hoerikwaggo</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_IGUAZU_FALLS_NAME" Language="es_ES">
+			<Text>Cataratas de Iguazú</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KILIMANJARO_NAME" Language="es_ES">
+			<Text>Monte Kilimanjaro</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MACHAPUCHARE_NAME" Language="es_ES">
+			<Text>Machapuchare</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME" Language="es_ES">
+			<Text>Bufadera Mapu 'a Vaea|Bufaderas Mapu 'a Vaea</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_EVEREST_NAME" Language="es_ES">
+			<Text>Monte Everest|Montes Everest</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="es_ES">
+			<Text>Monte Fuji</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NACHI_FALLS_NAME" Language="es_ES">
+			<Text>Cascada Nachi</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="es_ES">
+			<Text>Bosque de Redwood</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME" Language="es_ES">
+			<Text>Seongsan Ilchulbong</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="es_ES">
+			<Text>Tera</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_NAME" Language="es_ES">
+			<Text>Torres del Paine</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ULURU_NAME" Language="es_ES">
+			<Text>Uluru</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VALLEY_OF_FLOWERS_NAME" Language="es_ES">
+			<Text>Valle de las Flores</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VIHREN_NAME" Language="es_ES">
+			<Text>Vihren</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VINICUNCA_NAME" Language="es_ES">
+			<Text>Vinicunca</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ZHANGJIAJIE_NAME" Language="es_ES">
+			<Text>Zhangjiajie</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

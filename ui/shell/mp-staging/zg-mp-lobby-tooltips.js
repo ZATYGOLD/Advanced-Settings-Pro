@@ -16,23 +16,14 @@
 import { MPLobbyDataModel } from 'fs://game/core/ui/shell/mp-staging/model-mp-staging-new.js';
 import { GetCivilizationData } from 'fs://game/core/ui/shell/create-panels/age-civ-select-model.js';
 import { getLeaderData } from 'fs://game/core/ui/shell/create-panels/leader-select-model.js';
-import { CHOICE_TIERS, leaderAssociations } from './zg-age-transition-civs.js';
+import { CHOICE_TIERS, leaderAssociations } from '../../age-transition/zg-age-transition-civs.js';
+import { queryConfig } from '../shared/zg-shell-context.js';
 
 const SUGGESTED_TITLE = "LOC_ZG_LOBBY_SUGGESTED_CIVS";
 const MAX_CIVS_PER_AGE = 3;
-const LOG_PREFIX = "ZG-ASP lobby tooltips:";
 
 const tierLabel = (tierName) => Locale.compose(CHOICE_TIERS.find((tier) => tier.name == tierName)?.label ?? "");
 const composed = (text) => (text ? Locale.compose(text) : "");
-
-function query(sql) {
-	try {
-		return Database.query("config", sql) ?? [];
-	} catch (error) {
-		console.error(`${LOG_PREFIX} query failed: ${error}`);
-		return [];
-	}
-}
 
 // Built once per shell session; the config database does not change under it.
 let lookups = null;
@@ -40,8 +31,8 @@ function getLookups() {
 	if (lookups) {
 		return lookups;
 	}
-	const ages = query("SELECT Name, PlayerCivilizationDomain, ChronologyIndex FROM Ages ORDER BY ChronologyIndex");
-	const civNames = new Map(query("SELECT CivilizationType, CivilizationName FROM Civilizations").map((row) => [row.CivilizationType, row.CivilizationName]));
+	const ages = queryConfig("SELECT Name, PlayerCivilizationDomain, ChronologyIndex FROM Ages ORDER BY ChronologyIndex");
+	const civNames = new Map(queryConfig("SELECT CivilizationType, CivilizationName FROM Civilizations").map((row) => [row.CivilizationType, row.CivilizationName]));
 	lookups = { ages, civNames, associations: leaderAssociations(), leaders: new Map(), civs: new Map() };
 	return lookups;
 }

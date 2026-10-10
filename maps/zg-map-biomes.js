@@ -7,7 +7,7 @@
 // reaching closer to the equator. Tropical and Plains hold their standard edges
 // in every tier, and the rainfall extremes that force Desert and Tropical
 // outright are untouched, so only the latitude bands move.
-import { g_PlainsLatitude, g_MarineBiome, g_DesertBiome, g_MountainTerrain, g_TropicalBiome, g_PlainsBiome, g_GrasslandBiome, g_TundraBiome } from 'fs://game/base-standard/maps/map-globals.js';
+import { g_MarineBiome, g_DesertBiome, g_MountainTerrain, g_TropicalBiome, g_PlainsBiome, g_GrasslandBiome, g_TundraBiome } from 'fs://game/base-standard/maps/map-globals.js';
 import { zgSettingTier } from './zg-map-settings.js';
 
 const TEMPERATURE_SETTING_KEY = "MapTemperatureKey";
@@ -33,22 +33,6 @@ function temperatureBands() {
 export function zgDesignateBiomes(iWidth, iHeight) {
 	console.log("Biomes");
 	const [tropicalMax, plainsMax, desertMax, grasslandMax] = temperatureBands();
-	let iTotalLandPlots = 0;
-	let iTotalLandPlotsAbove = 0;
-	for (let iY = 0; iY < iHeight; iY++) {
-		for (let iX = 0; iX < iWidth; iX++) {
-			const latitude = GameplayMap.getPlotLatitude(iX, iY);
-			if (!GameplayMap.isWater(iX, iY)) {
-				iTotalLandPlots++;
-				if (g_PlainsLatitude < latitude) {
-					iTotalLandPlotsAbove++;
-				}
-			}
-		}
-	}
-	if (Math.round(iTotalLandPlots / 5 * 2 * 0.75) > iTotalLandPlotsAbove) {
-		console.log(`Less  iTotalLandPlots: ${iTotalLandPlots} iTotalLandPlotsAbove: ${iTotalLandPlotsAbove}`);
-	}
 	for (let iY = 0; iY < iHeight; iY++) {
 		for (let iX = 0; iX < iWidth; iX++) {
 			if (GameplayMap.isWater(iX, iY)) {

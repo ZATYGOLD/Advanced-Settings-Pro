@@ -1,6 +1,5 @@
-// Copy of {base-standard}maps/shattered-seas-voronoi.js; map feature generation is
-// routed through the mod's copy so the Rivers and Biome settings apply.
-// Imports are repointed at the base modules so everything else stays stock.
+// Copy of {base-standard}maps/shattered-seas-voronoi.js with map features generated through
+// zg-map-generation.js; imports are repointed at the base modules.
 import { assignAdvancedStartRegions } from 'fs://game/base-standard/maps/assign-advanced-start-region.js';
 import { assignStartPositionsFromHexMap } from 'fs://game/base-standard/maps/assign-starting-plots.js';
 import { generateDiscoveries } from 'fs://game/base-standard/maps/discovery-generator.js';

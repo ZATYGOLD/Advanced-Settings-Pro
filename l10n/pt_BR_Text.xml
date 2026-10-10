@@ -4,6 +4,9 @@
 		<Replace Tag="LOC_GROUPID_ZG_UNITOPTIONS" Language="pt_BR">
 			<Text>Configurações de unidades</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_TRADEOPTIONS" Language="pt_BR">
+			<Text>Configurações de comércio</Text>
+		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS" Language="pt_BR">
 			<Text>Configurações de potências independentes</Text>
 		</Replace>
@@ -140,14 +143,17 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME" Language="pt_BR">
 			<Text>Distância entre assentamentos</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_NAME" Language="pt_BR">
+			<Text>Alcance comercial</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_NAME" Language="pt_BR">
+			<Text>Velocidade comercial</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RAZE_TIME_NAME" Language="pt_BR">
-			<Text>Tempo de devastação</Text>
+			<Text>Velocidade de devastação</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INSTANT_NAME" Language="pt_BR">
 			<Text>Instantâneo</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SHORTER_NAME" Language="pt_BR">
-			<Text>Mais curto</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="pt_BR">
 			<Text>Custo de unidades militares</Text>
@@ -283,6 +289,111 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="pt_BR">
 			<Text>4 células.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION" Language="pt_BR">
+			<Text>Define até onde as rotas comerciais alcançam a partir dos seus assentamentos, por terra e por mar.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_MINUS_50" Language="pt_BR">
+			<Text>Metade do alcance.[nn][BLIST]
+				[LI] Antiguidade: 5 terrestre, 15 marítimo
+				[LI] Exploração: 8 terrestre, 23 marítimo
+				[LI] Moderna: 10 terrestre, 30 marítimo[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_MINUS_25" Language="pt_BR">
+			<Text>25% a menos de alcance.[nn][BLIST]
+				[LI] Antiguidade: 8 terrestre, 23 marítimo
+				[LI] Exploração: 11 terrestre, 34 marítimo
+				[LI] Moderna: 15 terrestre, 45 marítimo[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_STANDARD" Language="pt_BR">
+			<Text>O alcance do próprio jogo.[nn][BLIST]
+				[LI] Antiguidade: 10 terrestre, 30 marítimo
+				[LI] Exploração: 15 terrestre, 45 marítimo
+				[LI] Moderna: 20 terrestre, 60 marítimo[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_25" Language="pt_BR">
+			<Text>25% a mais de alcance.[nn][BLIST]
+				[LI] Antiguidade: 13 terrestre, 38 marítimo
+				[LI] Exploração: 19 terrestre, 56 marítimo
+				[LI] Moderna: 25 terrestre, 75 marítimo[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_50" Language="pt_BR">
+			<Text>50% a mais de alcance.[nn][BLIST]
+				[LI] Antiguidade: 15 terrestre, 45 marítimo
+				[LI] Exploração: 23 terrestre, 68 marítimo
+				[LI] Moderna: 30 terrestre, 90 marítimo[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_100" Language="pt_BR">
+			<Text>O dobro do alcance.[nn][BLIST]
+				[LI] Antiguidade: 20 terrestre, 60 marítimo
+				[LI] Exploração: 30 terrestre, 90 marítimo
+				[LI] Moderna: 40 terrestre, 120 marítimo[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_CUSTOM" Language="pt_BR">
+			<Text>Defina o alcance comercial para cada era separadamente.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_AGE_DESCRIPTION" Language="pt_BR">
+			<Text>Define o alcance comercial desta era.[n]Só se aplica quando Alcance comercial está em Personalizado.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION" Language="pt_BR">
+			<Text>Define a rapidez com que os mercadores iniciam rotas comerciais: viajando até o assentamento com o qual negociam ou à distância. Uma velocidade de viagem se aplica em todas as eras, incluindo a Era Moderna.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_SLOW" Language="pt_BR">
+			<Text>Os mercadores viajam com 3[icon:Action_Move]de movimento.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_STANDARD" Language="pt_BR">
+			<Text>Os mercadores viajam com 4[icon:Action_Move]de movimento.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_QUICK" Language="pt_BR">
+			<Text>Os mercadores viajam com 5[icon:Action_Move]de movimento.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_FAST" Language="pt_BR">
+			<Text>Os mercadores viajam com 6[icon:Action_Move]de movimento.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_SWIFT" Language="pt_BR">
+			<Text>As rotas comerciais começam à distância em todas as eras.[nn][BLIST]
+				[LI] Antiguidade: Instantâneo
+				[LI] Exploração: Instantâneo
+				[LI] Moderna: Instantâneo[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_BALANCED" Language="pt_BR">
+			<Text>O ritmo do próprio jogo.[nn][BLIST]
+				[LI] Antiguidade: Padrão
+				[LI] Exploração: Padrão
+				[LI] Moderna: Instantâneo[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_EXTENDED" Language="pt_BR">
+			<Text>Os mercadores viajam devagar em todas as eras.[nn][BLIST]
+				[LI] Antiguidade: -25%
+				[LI] Exploração: -25%
+				[LI] Moderna: -25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_SWIFT" Language="pt_BR">
+			<Text>Os assentamentos são devastados em um único turno em todas as eras.[nn][BLIST]
+				[LI] Antiguidade: Instantâneo
+				[LI] Exploração: Instantâneo
+				[LI] Moderna: Instantâneo[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_BALANCED" Language="pt_BR">
+			<Text>O ritmo do próprio jogo.[nn][BLIST]
+				[LI] Antiguidade: Padrão
+				[LI] Exploração: Padrão
+				[LI] Moderna: Padrão[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_EXTENDED" Language="pt_BR">
+			<Text>O ritmo do próprio jogo.[nn][BLIST]
+				[LI] Antiguidade: Padrão
+				[LI] Exploração: Padrão
+				[LI] Moderna: Padrão[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_INSTANT" Language="pt_BR">
+			<Text>As rotas comerciais começam à distância; os mercadores não precisam viajar.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_DEFAULT" Language="pt_BR">
+			<Text>O ritmo do próprio jogo.[nn][BLIST]
+				[LI] Antiguidade: viajam com 4[icon:Action_Move]de movimento
+				[LI] Exploração: viajam com 4[icon:Action_Move]de movimento
+				[LI] Moderna: à distância[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION" Language="pt_BR">
 			<Text>Define quanto tempo leva para devastar um assentamento conquistado. Distritos são destruídos a cada turno, então assentamentos maiores levam mais tempo.</Text>
@@ -520,7 +631,7 @@
 			<Text>Define quanta comida um assentamento precisa para cada novo cidadão. Limites mais baixos deixam os assentamentos passarem do tamanho 10 muito antes.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_NAME" Language="pt_BR">
-			<Text>Estradas</Text>
+			<Text>Velocidade das estradas</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION" Language="pt_BR">
 			<Text>Define quanto movimento custa viajar por estradas e ferrovias. Estradas mais baratas deixam exércitos cruzarem seu território em bem menos turnos.</Text>
@@ -642,9 +753,6 @@
 				[LI] Operação Ivy: 1800 / 1800 / 1800
 				[LI] Voo Espacial Tripulado: 2250 / 2250 / 2250[/BLIST][nn](Em velocidade padrão)</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="pt_BR">
-			<Text>Os custos do próprio jogo.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="pt_BR">
 			<Text>Cívicos padrão no início e mais caros quando a árvore se abre.[nn][BLIST]
 				[LI] Antiguidade: Padrão
@@ -662,9 +770,6 @@
 				[LI] Antiguidade: -25%
 				[LI] Exploração: -25%
 				[LI] Moderna: Padrão[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="pt_BR">
-			<Text>Os custos do próprio jogo.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="pt_BR">
 			<Text>Pesquisa mais cara no início e mais barata quando a árvore se abre.[nn][BLIST]
@@ -872,7 +977,7 @@
 			<Text>Civilizações sugeridas</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="pt_BR">
-			<Text>Cada IA segue as associações de seu líder no seletor de civilizações: uma civilização histórica oferecida pela nova era, maior peso primeiro; senão, uma geográfica; nunca uma estratégica.[n]Uma civilização já tomada é pulada em favor da próxima; só há duplicata quando todas estão tomadas. Um empate vai para a civilização própria da nova era. Se a escolha for a civilização que a IA já tem, ela a mantém.</Text>
+			<Text>Cada IA se mantém fiel à história de seu líder. Muda quando a nova era oferece uma civilização histórica de seu líder e mantém sua civilização quando essa é a histórica.[n]Caso contrário, segue o caminho habitual do jogo para a nova era, primeiro uma civilização geográfica. Uma civilização já escolhida é ignorada; uma duplicata só ocorre quando todas estão escolhidas.[n]Experimental: desde o patch 1.5, o jogo pode substituir essas escolhas.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="pt_BR">
 			<Text>Personalizado: defina o conjunto de triunfos de cada era individualmente.</Text>
@@ -1302,9 +1407,11 @@
 				[LI] Custo de tecnologias: +25% / +50% / +50%
 				[LI] Custo de cívicos: +25% / +50% / +50%
 				[LI] Custo de edifícios: +25% / +50% / +50%
+				[LI] Custo de projetos de vitória: +25%
 				[LI] Crescimento dos assentamentos: +25%
-				[LI] Estradas: Padrão / Padrão / -25%
-				[LI] Custo de projetos de vitória: +25%[/BLIST]</Text>
+				[LI] Velocidade das estradas: Padrão / Padrão / -25%
+				[LI] Velocidade comercial: -25%
+				[LI] Velocidade de devastação: Padrão[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT" Language="pt_BR">
 			<Text>Eras curtas, com custos reduzidos à altura.[nn][BLIST]
@@ -1313,9 +1420,11 @@
 				[LI] Custo de tecnologias: -25% / -25% / Padrão
 				[LI] Custo de cívicos: -25% / -25% / Padrão
 				[LI] Custo de edifícios: -25%
+				[LI] Custo de projetos de vitória: -25%
 				[LI] Crescimento dos assentamentos: -25%
-				[LI] Estradas: -25% / -50% / -50%
-				[LI] Custo de projetos de vitória: -25%[/BLIST]</Text>
+				[LI] Velocidade das estradas: -25% / -50% / -50%
+				[LI] Velocidade comercial: Instantâneo
+				[LI] Velocidade de devastação: Instantâneo[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="pt_BR">
 			<Text>Eras mais longas, com pesquisa e crescimento ajustados para preenchê-las.[nn][BLIST]
@@ -1324,9 +1433,11 @@
 				[LI] Custo de tecnologias: +25% / Padrão / -25%
 				[LI] Custo de cívicos: Padrão / +25% / +25%
 				[LI] Custo de edifícios: +25% / Padrão / Padrão
+				[LI] Custo de projetos de vitória: Padrão / -25% / -25%
 				[LI] Crescimento dos assentamentos: -25% / -25% / Padrão
-				[LI] Estradas: Padrão / Padrão / -25%
-				[LI] Custo de projetos de vitória: Padrão / -25% / -25%[/BLIST]</Text>
+				[LI] Velocidade das estradas: Padrão / Padrão / -25%
+				[LI] Velocidade comercial: Padrão
+				[LI] Velocidade de devastação: Padrão[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="pt_BR">
 			<Text>Ajustado para uma partida em uma só sessão.[nn][BLIST]
@@ -1335,12 +1446,81 @@
 				[LI] Custo de tecnologias: +25% / +50% / +100%
 				[LI] Custo de cívicos: +50% / +50% / +100%
 				[LI] Custo de edifícios: Padrão
+				[LI] Custo de projetos de vitória: Padrão / Padrão / +25%
 				[LI] Crescimento dos assentamentos: +25%
-				[LI] Estradas: -25% / -25% / -50%
-				[LI] Custo de projetos de vitória: Padrão / Padrão / +25%[/BLIST]</Text>
+				[LI] Velocidade das estradas: -25% / -25% / -50%
+				[LI] Velocidade comercial: Padrão
+				[LI] Velocidade de devastação: Padrão[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="pt_BR">
 			<Text>As Configurações de ritmo na aba Ritmo não correspondem mais a uma predefinição.</Text>
+		</Replace>
+	<!-- Natural wonder names (shell) -->
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_NAME" Language="pt_BR">
+			<Text>Grande Barreira de Coral</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_NAME" Language="pt_BR">
+			<Text>Triângulo das Bermudas</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_CANYON_NAME" Language="pt_BR">
+			<Text>Grand Canyon</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GREAT_BLUE_HOLE_NAME" Language="pt_BR">
+			<Text>Grande Buraco Azul|Grandes Buracos Azuis</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GULLFOSS_NAME" Language="pt_BR">
+			<Text>Gullfoss</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_HOERIKWAGGO_NAME" Language="pt_BR">
+			<Text>Hoerikwaggo</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_IGUAZU_FALLS_NAME" Language="pt_BR">
+			<Text>Cataratas do Iguaçu</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KILIMANJARO_NAME" Language="pt_BR">
+			<Text>Monte Kilimanjaro</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MACHAPUCHARE_NAME" Language="pt_BR">
+			<Text>Machapuchare</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME" Language="pt_BR">
+			<Text>Mapu 'a Vaea|Mapu 'a Vaea</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_EVEREST_NAME" Language="pt_BR">
+			<Text>Monte Everest</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="pt_BR">
+			<Text>Monte Fuji</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NACHI_FALLS_NAME" Language="pt_BR">
+			<Text>Cachoeira de Nachi</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="pt_BR">
+			<Text>Floresta de Redwood</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME" Language="pt_BR">
+			<Text>Seongsan Ilchulbong</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="pt_BR">
+			<Text>Vulcão Tera</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_NAME" Language="pt_BR">
+			<Text>Torres del Paine</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ULURU_NAME" Language="pt_BR">
+			<Text>Uluru</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VALLEY_OF_FLOWERS_NAME" Language="pt_BR">
+			<Text>Vale das Flores</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VIHREN_NAME" Language="pt_BR">
+			<Text>Vihren</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VINICUNCA_NAME" Language="pt_BR">
+			<Text>Vinicunca</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ZHANGJIAJIE_NAME" Language="pt_BR">
+			<Text>Zhangjiajie</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

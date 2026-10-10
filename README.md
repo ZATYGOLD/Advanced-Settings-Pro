@@ -4,6 +4,20 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ## Version History
 
+### 0.9.04
+
+- New Trade Range (General tab, Trade Settings): -50% to +100% on land and sea trade range, for all ages or per age
+- New Trade Speed (Pace tab): Merchants travel Slow, Standard, Quick, or Fast, or trade routes start Instantly, for all ages or per age; Modern can now be made to travel
+- Raze Time is renamed Raze Speed and moves to the Pace tab with a row per age (Shorter is now Fast); Roads is renamed Road Speed
+- Pace Sets now set Trade Speed and Raze Speed: Swift makes both Instant, Extended slows Trade Speed, the rest keep Standard
+- Pace Settings list the cost settings first, then the speed settings
+- Fixed remembered settings being lost after closing the game, playing multiplayer, loading a save, or backing out of setup
+- Fixed AI Civ Selection, Age Transition: Historical, and Age Transition AI Mementos, having no effect: since patch 1.5 the age transition choice is made in game, and the AI is now settled there, when you confirm your choices. Historical is experimental: the game may still override the AI's civilization
+- AI Civ Selection, Age Transition: Historical now keeps each AI to its leader's history: it moves to a Historical civilization when the new age offers one, keeps its civilization when that is the Historical one, and otherwise follows the game's usual path (Confucius: Han, Ming, Qing)
+- Player tab: with Zatygold's Spectator, the Spectator's Team shows locked as Spectator and its memento slots are hidden
+- Fixed Civic Cost missing the Modern ideology civics, Victory Project Cost scaling nuclear weapons, and leftover pre-1.5 calls in the classic map scripts
+- Project reorganized to mirror the base game's layout (ui/shell, ui-next/screens); translations load per locale
+
 ### 0.9.03
 
 - Single player remembers this mod's settings between games; Reset to Defaults clears them
@@ -182,56 +196,61 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ## Settings
 
-- Single Player No Age Transitions: Enabled or Disabled
-- Game Random Seed and Map Random Seed: a Random button beside each field rolls a new seed (single player)
-- Pace Set (Game Settings, mirrored on the Pace tab): Swift Pace, Standard Pace, Balanced Pace, Extended Pace, Multiplayer Pace, or Custom Pace (written into the Pace Settings on the Pace tab)
-- Age Length: the game's own setting, moved to Pace Settings on the Pace tab and extended with Swift, Balanced, Extended, and Custom, giving Swift, Abbreviated, Standard, Balanced, Long, Extended, or Custom; it drives the per-age rows, and a per-age change shows Custom; switching it off Custom returns every other Pace Settings setting to Standard
-- Age Progression: Slow, Standard, Balanced, Fast, or Custom (milestone and future tech/civic points x0.5 / x1 / the Balanced curve / x1.5)
-- Technology Cost, Civic Cost, Building Cost, and Victory Project Cost: Low (25% cheaper), Standard, Medium (25% more), High (50% more), Double (100% more), Swift, Balanced, Extended, or Custom; Victory Project Cost covers every age's science and military triumph projects, from Chart the Stars to Launch Rocket and Operation Ivy; Building Cost covers every building, unique buildings included, and leaves wonders at their own cost
-- Settlement Growth: Slow (25% more Food per citizen), Standard, Quick (25% less), Fast (half), Swift, Balanced, Extended, or Custom
-- Roads: Slow (25% more movement cost), Standard, Quick (25% less), Fast (50% less), Swift, Balanced, Extended, or Custom
-- Antiquity, Exploration, and Modern rows for each pacing setting above, used when it is Custom: Age Length picks a total from 90 to 300, the cost rows pick -25%, Standard, +25%, +50%, or +100%, and Settlement Growth and Roads pick +25%, Standard, -25%, or -50%
-- Disaster Frequency: Disabled, Light, Moderate, Catastrophic, or Custom
-- Antiquity, Exploration, and Modern disaster frequency: Disabled, Light, Moderate, or Catastrophic each, applied when Disaster Frequency is set to Custom
-- Settler Movement and Treasure Convoy Movement: Slow, Standard, Quick, or Fast
-- Military Unit Cost and Civilian Unit Cost: Low (25% cheaper), Standard, Medium (25% more), High (50% more), or Double (100% more)
-- Natural Wonders: Disabled, Half, Standard, More, or Double
-- Natural Wonder Selection: Enabled or Disabled for each of the 22 natural wonders, including DLC wonders
-- Map Temperature: Hot, Standard, or Cold (Hot widens the desert band 7 degrees and pushes tundra 7 degrees toward the poles; Cold narrows desert by the same 7 degrees and starts tundra 8 degrees closer to the equator; tropical and plains keep their standard edges in every tier)
-- Lakes: Less, Standard, or More
-- Rivers: sets both how many rivers are generated and what share of them are Navigable Rivers rather than Minor Rivers, as every pairing of three river counts with three navigable shares. The list is grouped by river count, fewest first. 50% fewer rivers: Wadis, Arid, or Channels. The usual number: Shallow, Standard, or Waterways. 50% more rivers: Streams, Riverlands, or Deep. Within each group the first has far fewer of those rivers navigable, the second keeps the game's own share, and the third has far more; Standard leaves generation entirely untouched
-- Mountains: Less, Standard, or More
-- Map Age: Old, Standard, or New; Old wears the rough down into broader plains, New raises more rough ground and leaves less flat. Mountains are the Mountains setting's business, so the two never move the same tiles
-- Sea Level: the game's own setting, grouped with the terrain settings
-- Resources: Sparse, Standard, or Abundant; sets how many resources are placed, whether they gather into patches of the same kind, and how many of each empire resource every landmass is promised. Sparse is 25% fewer gathered into patches of up to three tiles with two per landmass, Abundant is 25% more spread evenly with four, and the total is held steady against the clustering so density and patching stay independent. The guarantee applies to the ten resources the game already guarantees and adds no floor to any other
-- Crises: Enabled or Disabled, driving the game's per-crisis selection
-- Crisis Timing: Early, Standard, or Late (Disabled while Crises is Disabled)
-- Settlement Limit: Less, Standard, More, or Custom
-- Antiquity, Exploration, and Modern settlement limits: 1 to 25, then 30 to 75 in steps of 5, applied when Settlement Limit is set to Custom
-- Settlement Distance: Less, Standard, or More
-- Independent Amount: None, Less, Standard, or More
-- Independent Spacing: Less, Standard, or More
-- Independent Aggression: Calm, Standard, or Raging (raid boldness plus starting independent units)
-- AI Mementos (Game Settings, single player): None, Random, Leader Match, or Civilization Match, filling every AI player's memento slots at once; a Match draws each slot from one of that leader's or civilization's two attributes, and applies only to players whose leader or civilization has been chosen
-- Player tab (single player): Leader, Team, Civilization, and two Memento slots on every player's row. Team is no team or any of eight, shown as the multiplayer lobby's own badge, and players on a team win together. Each AI memento slot offers None and Random, with Random rolled afresh every game
-- Triumph Set: adds Custom to the game's setting, with an Antiquity, Exploration, and Modern Triumph Set each choosable from the game's sets
+All settings are chosen at game creation and apply for the full game. Single player and multiplayer share the General, Pace, and Map tabs; the Player tab is single player.
 
-The conflict guard recognizes conflicting mods by their id and by the setup settings they add to the game, so renaming a mod does not bypass it.
+### General tab
 
-All settings are chosen at game creation and apply for the full game.
+- Game Settings: Pace Set (mirrors the Pace tab), Single Player No Age Transitions, and a Random button beside Game Random Seed
+- Triumph Settings: the game's Triumph Set plus Custom, with an Antiquity, Exploration, and Modern row
+- Crisis Settings: Crises (Enabled or Disabled), Crisis Timing (Early, Standard, or Late), and the game's per-crisis selection, kept in step
+- Memento Settings: the game's Mementos toggle, AI Mementos (None, Random, Leader Match, or Civilization Match), and Age Transition AI Mementos (Maintain or Adapt)
+- Settlement Settings: Settlement Distance (Less, Standard, or More), and Settlement Limit (Less, Standard, More, or Custom, with per-age limits of 1 to 25, then 30 to 75)
+- Independent Power Settings: the game's Initial Independent Hostility, Independent Amount (None, Less, Standard, or More), Independent Spacing (Less, Standard, or More), and Independent Aggression (Calm, Standard, or Raging)
+- Unit Settings: Settler Movement and Treasure Convoy Movement (Slow, Standard, Quick, or Fast), and Military and Civilian Unit Cost (Low, Standard, Medium, High, or Double)
+- Trade Settings: Trade Range (-50% to +100% on land and sea trade range, for all ages or per age)
+- Civilization Selection: adds Historical to AI Civ Selection, Age Transition. Each AI moves to its leader's Historical civilization when the new age offers one, keeps its civilization when that is the Historical one, and otherwise follows the game's usual path, a Geographic civilization first (experimental: since patch 1.5 the game may override it)
 
-In single player, the Advanced Settings screen gains a Pace tab (Pace Settings plus a group per age) and a Map tab between General and Player. The Map tab runs Map Settings (Map, Map Size, Map Age, Map Temperature, Natural Wonders, Resources, Map Seed), then Terrain Settings (Lakes, Rivers, Mountains, Sea Level), Natural Wonder Selection, and Disaster Settings. On General, the crisis settings move into their own Crisis Settings group and Initial Independent Hostility joins the Independent Power settings. The Player tab is rendered by the mod so it can carry the Team and Memento columns, and stands aside for any mod that provides its own. Multiplayer keeps the game's standard layout.
+### Pace tab
+
+Each Pace setting has Antiquity, Exploration, and Modern rows, used when it is Custom. Pace Set presets fill every one of them.
+
+- Age Length: Swift, Abbreviated, Standard, Balanced, Long, Extended, or Custom (per-age totals of 90 to 300)
+- Age Progression: Slow, Standard, Balanced, Fast, or Custom
+- Technology, Civic, Building, and Victory Project Cost: Low, Standard, Medium, High, Double, Swift, Balanced, Extended, or Custom
+- Settlement Growth and Road Speed: Slow, Standard, Quick, Fast, Swift, Balanced, Extended, or Custom
+- Trade Speed: Merchants travel Slow, Standard, Quick, or Fast, or trade routes start Instantly; Standard keeps the Modern Age instant
+- Raze Speed: Standard, Fast (twice the districts per turn), or Instant
+
+### Map tab
+
+- Map Settings: the game's Map, Map Size, and Map Seed (with a Random button), plus Map Age (Old, Standard, or New), Map Temperature (Hot, Standard, or Cold), Natural Wonders (Disabled to Double), and Resources (Sparse, Standard, or Abundant)
+- Terrain Settings: Lakes, Rivers (nine pairings of river count and navigable share), Mountains, and the game's Sea Level
+- Natural Wonder Selection: each of the 22 natural wonders, DLC included
+- Disaster Settings: Disaster Frequency (Disabled, Light, Moderate, Catastrophic, or Custom per age)
+
+### Player tab (single player)
+
+Leader, Team, Civilization, and two Memento slots on every row; a slot opens the game's memento picker for that player. With Zatygold's Spectator, the Spectator's team shows locked and its memento slots are hidden.
+
+### Multiplayer lobby
+
+Memento slots on every row, fuller leader, civilization, and memento tooltips, and this mod's settings in View All Rules and Game Options.
+
+The conflict guard recognizes conflicting mods by their id and by the setup settings they add, so renaming a mod does not bypass it.
 
 ## Project Structure
 
 ```
 advanced-settings-pro.modinfo   Mod manifest: setup criteria and action groups
-config/                         Setup screen parameters (shell scope)
+config/                         Setup parameters and map script redirects (shell scope)
 data/                           Gameplay adjustments (game scope), grouped by system
-l10n/                           Localized text for the 11 non-English languages
-maps/                           Map script copies that apply the map generation settings
-text/                           English source strings and shared localization data
-ui/                             Shell scripts: mod conflict guard and setup rule sync
+l10n/                           Text for the 11 non-English languages
+maps/                           Map script copies and the zg-map-* generation modules
+text/en_us/                     English text
+ui/age-transition/              Age transition: AI civilizations and mementos, in game and shell
+ui/shell/                       Shell scripts: shared helpers, setup rules and memory,
+                                multiplayer create game and lobby
+ui-next/screens/create-game/    Advanced Settings tabs, Player tab, memento picker
 ```
 
 ## Requirements
@@ -242,7 +261,7 @@ Base game with the Antiquity, Exploration, and Modern age modules.
 
 English, German, Spanish, French, Italian, Japanese, Korean, Polish, Brazilian Portuguese, Russian, Simplified Chinese, and Traditional Chinese.
 
-English source strings live in the text directory; all other languages are provided as localization files under the l10n directory, matching the game's own convention.
+English text lives in text/en_us; the other languages are under l10n, loaded per locale as the game's own modules do.
 
 ## License
 

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="AdvancedSettingsPro" version="00903" xmlns="ModInfo">
+<Mod id="AdvancedSettingsPro" version="00904" xmlns="ModInfo">
 	<Properties>
 		<Name>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME</Name>
 		<Description>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION</Description>
 		<Authors>Zatygold</Authors>
-		<Version>0.9.03</Version>
+		<Version>0.9.04</Version>
 		<Package>Mod</Package>
 		<LastUpdated>2026-09-28</LastUpdated>
 		<ShowInBrowser>1</ShowInBrowser>
@@ -1865,20 +1865,308 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--*********************** CRITERIA: RAZE TIME ***********************-->
+<!--*********************** CRITERIA: RAZE SPEED ***********************-->
 
-		<Criteria id="instant-raze-time">
+		<Criteria id="raze-time-antiquity-instant">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>RazeTimeAntiquityKey</ConfigurationId>
+				<Value>ZG_INSTANT_RAZE_TIME</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="raze-time-antiquity-fast">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>RazeTimeAntiquityKey</ConfigurationId>
+				<Value>ZG_SHORTER_RAZE_TIME</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="raze-time-exploration-instant">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>RazeTimeExplorationKey</ConfigurationId>
+				<Value>ZG_INSTANT_RAZE_TIME</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="raze-time-exploration-fast">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>RazeTimeExplorationKey</ConfigurationId>
+				<Value>ZG_SHORTER_RAZE_TIME</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="raze-time-modern-instant">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>RazeTimeModernKey</ConfigurationId>
+				<Value>ZG_INSTANT_RAZE_TIME</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="raze-time-modern-fast">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>RazeTimeModernKey</ConfigurationId>
+				<Value>ZG_SHORTER_RAZE_TIME</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<!-- Games saved before Raze Speed had age rows carry only the main setting. -->
+		<Criteria id="raze-time-instant">
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
 				<ConfigurationId>RazeTimeKey</ConfigurationId>
 				<Value>ZG_INSTANT_RAZE_TIME</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="shorter-raze-time">
+		<Criteria id="raze-time-antiquity-fast-main">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
 				<ConfigurationId>RazeTimeKey</ConfigurationId>
 				<Value>ZG_SHORTER_RAZE_TIME</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="raze-time-exploration-fast-main">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>RazeTimeKey</ConfigurationId>
+				<Value>ZG_SHORTER_RAZE_TIME</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="raze-time-modern-fast-main">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>RazeTimeKey</ConfigurationId>
+				<Value>ZG_SHORTER_RAZE_TIME</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+
+<!--*********************** CRITERIA: TRADE RANGE ***********************-->
+
+		<Criteria id="trade-range-antiquity-minus-50">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeRangeAntiquityKey</ConfigurationId>
+				<Value>ZG_TRADE_RANGE_MINUS_50</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-range-antiquity-minus-25">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeRangeAntiquityKey</ConfigurationId>
+				<Value>ZG_TRADE_RANGE_MINUS_25</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-range-antiquity-plus-25">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeRangeAntiquityKey</ConfigurationId>
+				<Value>ZG_TRADE_RANGE_PLUS_25</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-range-antiquity-plus-50">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeRangeAntiquityKey</ConfigurationId>
+				<Value>ZG_TRADE_RANGE_PLUS_50</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-range-antiquity-plus-100">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeRangeAntiquityKey</ConfigurationId>
+				<Value>ZG_TRADE_RANGE_PLUS_100</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-range-exploration-minus-50">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeRangeExplorationKey</ConfigurationId>
+				<Value>ZG_TRADE_RANGE_MINUS_50</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-range-exploration-minus-25">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeRangeExplorationKey</ConfigurationId>
+				<Value>ZG_TRADE_RANGE_MINUS_25</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-range-exploration-plus-25">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeRangeExplorationKey</ConfigurationId>
+				<Value>ZG_TRADE_RANGE_PLUS_25</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-range-exploration-plus-50">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeRangeExplorationKey</ConfigurationId>
+				<Value>ZG_TRADE_RANGE_PLUS_50</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-range-exploration-plus-100">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeRangeExplorationKey</ConfigurationId>
+				<Value>ZG_TRADE_RANGE_PLUS_100</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-range-modern-minus-50">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeRangeModernKey</ConfigurationId>
+				<Value>ZG_TRADE_RANGE_MINUS_50</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-range-modern-minus-25">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeRangeModernKey</ConfigurationId>
+				<Value>ZG_TRADE_RANGE_MINUS_25</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-range-modern-plus-25">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeRangeModernKey</ConfigurationId>
+				<Value>ZG_TRADE_RANGE_PLUS_25</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-range-modern-plus-50">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeRangeModernKey</ConfigurationId>
+				<Value>ZG_TRADE_RANGE_PLUS_50</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-range-modern-plus-100">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeRangeModernKey</ConfigurationId>
+				<Value>ZG_TRADE_RANGE_PLUS_100</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+
+<!--*********************** CRITERIA: TRADE SPEED ***********************-->
+
+		<Criteria id="trade-speed-antiquity-slow">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeSpeedAntiquityKey</ConfigurationId>
+				<Value>ZG_TRADE_SPEED_SLOW</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-speed-antiquity-quick">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeSpeedAntiquityKey</ConfigurationId>
+				<Value>ZG_TRADE_SPEED_QUICK</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-speed-antiquity-fast">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeSpeedAntiquityKey</ConfigurationId>
+				<Value>ZG_TRADE_SPEED_FAST</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-speed-antiquity-instant">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeSpeedAntiquityKey</ConfigurationId>
+				<Value>ZG_TRADE_SPEED_INSTANT</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-speed-exploration-slow">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeSpeedExplorationKey</ConfigurationId>
+				<Value>ZG_TRADE_SPEED_SLOW</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-speed-exploration-quick">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeSpeedExplorationKey</ConfigurationId>
+				<Value>ZG_TRADE_SPEED_QUICK</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-speed-exploration-fast">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeSpeedExplorationKey</ConfigurationId>
+				<Value>ZG_TRADE_SPEED_FAST</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-speed-exploration-instant">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeSpeedExplorationKey</ConfigurationId>
+				<Value>ZG_TRADE_SPEED_INSTANT</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-speed-modern-slow">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeSpeedModernKey</ConfigurationId>
+				<Value>ZG_TRADE_SPEED_SLOW</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-speed-modern-standard">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeSpeedModernKey</ConfigurationId>
+				<Value>ZG_TRADE_SPEED_STANDARD</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-speed-modern-quick">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeSpeedModernKey</ConfigurationId>
+				<Value>ZG_TRADE_SPEED_QUICK</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="trade-speed-modern-fast">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TradeSpeedModernKey</ConfigurationId>
+				<Value>ZG_TRADE_SPEED_FAST</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 
@@ -4907,39 +5195,39 @@
 			</Properties>
 			<Actions>
 				<UIScripts>
-					<Item>ui/zg-conflict-guard.js</Item>
-					<Item>ui/zg-asp-guard.js</Item>
-					<Item>ui/zg-shell-context.js</Item>
-					<Item>ui/zg-setup-memory.js</Item>
-					<Item>ui/zg-setup-rules.js</Item>
-					<Item>ui/zg-map-tab.js</Item>
-					<Item>ui/zg-seed-randomizer.js</Item>
-					<Item>ui/zg-mp-create-game.js</Item>
-					<Item>ui/zg-memento-select.js</Item>
-					<Item>ui/zg-mp-lobby-mementos.js</Item>
-					<Item>ui/zg-mp-lobby-tooltips.js</Item>
-					<Item>ui/zg-mp-lobby-rules.js</Item>
-					<Item>ui/zg-memento-select-model.js</Item>
-					<Item>ui/zg-memento-roller.js</Item>
-					<Item>ui/zg-player-tab.js</Item>
-					<Item>ui/zg-age-transition-civs.js</Item>
-					<Item>ui/zg-age-transition-mementos.js</Item>
-					<Item>ui/zg-age-transition.js</Item>
+					<Item>ui/shell/shared/zg-conflict-guard.js</Item>
+					<Item>ui/shell/shared/zg-asp-guard.js</Item>
+					<Item>ui/shell/shared/zg-shell-context.js</Item>
+					<Item>ui/shell/create-panels/zg-setup-memory.js</Item>
+					<Item>ui/shell/create-panels/zg-setup-rules.js</Item>
+					<Item>ui-next/screens/create-game/zg-map-tab.js</Item>
+					<Item>ui-next/screens/create-game/zg-seed-randomizer.js</Item>
+					<Item>ui/shell/mp-create-game/zg-mp-create-game.js</Item>
+					<Item>ui-next/screens/create-game/zg-memento-select.js</Item>
+					<Item>ui/shell/mp-staging/zg-mp-lobby-mementos.js</Item>
+					<Item>ui/shell/mp-staging/zg-mp-lobby-tooltips.js</Item>
+					<Item>ui/shell/mp-staging/zg-mp-lobby-rules.js</Item>
+					<Item>ui-next/screens/create-game/zg-memento-select-model.js</Item>
+					<Item>ui/shell/shared/zg-memento-roller.js</Item>
+					<Item>ui-next/screens/create-game/zg-player-tab.js</Item>
+					<Item>ui/age-transition/zg-age-transition-civs.js</Item>
+					<Item>ui/age-transition/zg-age-transition-mementos.js</Item>
+					<Item>ui/age-transition/zg-age-transition-shell.js</Item>
 				</UIScripts>
 				<UpdateText>
 					<Item>text/en_us/ui-shell-text.xml</Item>
-					<Item>text/natural-wonder-names.xml</Item>
-					<Item>l10n/de_DE_Text.xml</Item>
-					<Item>l10n/es_ES_Text.xml</Item>
-					<Item>l10n/fr_FR_Text.xml</Item>
-					<Item>l10n/it_IT_Text.xml</Item>
-					<Item>l10n/ja_JP_Text.xml</Item>
-					<Item>l10n/ko_KR_Text.xml</Item>
-					<Item>l10n/pl_PL_Text.xml</Item>
-					<Item>l10n/pt_BR_Text.xml</Item>
-					<Item>l10n/ru_RU_Text.xml</Item>
-					<Item>l10n/zh_Hans_CN_Text.xml</Item>
-					<Item>l10n/zh_Hant_HK_Text.xml</Item>
+					<Item>text/en_us/natural-wonder-names.xml</Item>
+					<Item locale="de_DE">l10n/de_DE_Text.xml</Item>
+					<Item locale="es_ES">l10n/es_ES_Text.xml</Item>
+					<Item locale="fr_FR">l10n/fr_FR_Text.xml</Item>
+					<Item locale="it_IT">l10n/it_IT_Text.xml</Item>
+					<Item locale="ja_JP">l10n/ja_JP_Text.xml</Item>
+					<Item locale="ko_KR">l10n/ko_KR_Text.xml</Item>
+					<Item locale="pl_PL">l10n/pl_PL_Text.xml</Item>
+					<Item locale="pt_BR">l10n/pt_BR_Text.xml</Item>
+					<Item locale="ru_RU">l10n/ru_RU_Text.xml</Item>
+					<Item locale="zh_Hans_CN">l10n/zh_Hans_CN_Text.xml</Item>
+					<Item locale="zh_Hant_HK">l10n/zh_Hant_HK_Text.xml</Item>
 				</UpdateText>
 				<UpdateDatabase>
 					<Item>config/setup-parameters.sql</Item>
@@ -4975,20 +5263,23 @@
 				<LoadOrder>500</LoadOrder>
 			</Properties>
 			<Actions>
+				<UIScripts>
+					<Item>ui/age-transition/zg-age-transition-game.js</Item>
+				</UIScripts>
 				<UpdateText>
 					<Item>text/en_us/ui-shell-text.xml</Item>
-					<Item>text/natural-wonder-names.xml</Item>
-					<Item>l10n/de_DE_Text.xml</Item>
-					<Item>l10n/es_ES_Text.xml</Item>
-					<Item>l10n/fr_FR_Text.xml</Item>
-					<Item>l10n/it_IT_Text.xml</Item>
-					<Item>l10n/ja_JP_Text.xml</Item>
-					<Item>l10n/ko_KR_Text.xml</Item>
-					<Item>l10n/pl_PL_Text.xml</Item>
-					<Item>l10n/pt_BR_Text.xml</Item>
-					<Item>l10n/ru_RU_Text.xml</Item>
-					<Item>l10n/zh_Hans_CN_Text.xml</Item>
-					<Item>l10n/zh_Hant_HK_Text.xml</Item>
+					<Item>text/en_us/natural-wonder-names.xml</Item>
+					<Item locale="de_DE">l10n/de_DE_Text.xml</Item>
+					<Item locale="es_ES">l10n/es_ES_Text.xml</Item>
+					<Item locale="fr_FR">l10n/fr_FR_Text.xml</Item>
+					<Item locale="it_IT">l10n/it_IT_Text.xml</Item>
+					<Item locale="ja_JP">l10n/ja_JP_Text.xml</Item>
+					<Item locale="ko_KR">l10n/ko_KR_Text.xml</Item>
+					<Item locale="pl_PL">l10n/pl_PL_Text.xml</Item>
+					<Item locale="pt_BR">l10n/pt_BR_Text.xml</Item>
+					<Item locale="ru_RU">l10n/ru_RU_Text.xml</Item>
+					<Item locale="zh_Hans_CN">l10n/zh_Hans_CN_Text.xml</Item>
+					<Item locale="zh_Hant_HK">l10n/zh_Hant_HK_Text.xml</Item>
 				</UpdateText>
 				<ImportFiles>
 					<Item>maps/zg-map-settings.js</Item>
@@ -5012,13 +5303,15 @@
 					<Item>maps/zg-terra-incognita.js</Item>
 					<Item>maps/zg-terra-incognita-voronoi.js</Item>
 					<Item>maps/zg-pangaea-plus.js</Item>
+					<Item>ui/shell/shared/zg-shell-context.js</Item>
+					<Item>ui/shell/shared/zg-memento-roller.js</Item>
+					<Item>ui/age-transition/zg-age-transition-civs.js</Item>
+					<Item>ui/age-transition/zg-age-transition-mementos.js</Item>
 				</ImportFiles>
 				<UpdateDatabase>
 					<Item>data/game-speeds/new-game-speeds.sql</Item>
 					<Item>data/natural-wonders/natural-wonder-spawn-fixes.sql</Item>
 				</UpdateDatabase>
-				<UIScripts>
-				</UIScripts>
 			</Actions>
 		</ActionGroup>
 
@@ -6617,9 +6910,9 @@
 			</Actions>
 		</ActionGroup>
 
-<!--*********************** SETTINGS: RAZE TIME ***********************-->
+<!--*********************** SETTINGS: RAZE SPEED ***********************-->
 
-		<ActionGroup id="zg-instant-raze-time" scope="game" criteria="instant-raze-time">
+		<ActionGroup id="zg-raze-time-antiquity-instant" scope="game" criteria="raze-time-antiquity-instant">
 			<Properties>
 				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
@@ -6629,13 +6922,372 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-shorter-raze-time" scope="game" criteria="shorter-raze-time">
+		<ActionGroup id="zg-raze-time-antiquity-fast" scope="game" criteria="raze-time-antiquity-fast">
 			<Properties>
 				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/settlements/raze-time-shorter.sql</Item>
+					<Item>data/settlements/raze-time-fast-antiquity.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-raze-time-exploration-instant" scope="game" criteria="raze-time-exploration-instant">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/raze-time-instant.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-raze-time-exploration-fast" scope="game" criteria="raze-time-exploration-fast">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/raze-time-fast-exploration.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-raze-time-modern-instant" scope="game" criteria="raze-time-modern-instant">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/raze-time-instant.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-raze-time-modern-fast" scope="game" criteria="raze-time-modern-fast">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/raze-time-fast-modern.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-raze-time-instant" scope="game" criteria="raze-time-instant">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/raze-time-instant.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-raze-time-antiquity-fast-main" scope="game" criteria="raze-time-antiquity-fast-main">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/raze-time-fast-antiquity.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-raze-time-exploration-fast-main" scope="game" criteria="raze-time-exploration-fast-main">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/raze-time-fast-exploration.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-raze-time-modern-fast-main" scope="game" criteria="raze-time-modern-fast-main">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/settlements/raze-time-fast-modern.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
+<!--*********************** SETTINGS: TRADE RANGE ***********************-->
+
+		<ActionGroup id="zg-trade-range-antiquity-minus-50" scope="game" criteria="trade-range-antiquity-minus-50">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-range-minus-50.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-range-antiquity-minus-25" scope="game" criteria="trade-range-antiquity-minus-25">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-range-minus-25.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-range-antiquity-plus-25" scope="game" criteria="trade-range-antiquity-plus-25">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-range-plus-25.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-range-antiquity-plus-50" scope="game" criteria="trade-range-antiquity-plus-50">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-range-plus-50.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-range-antiquity-plus-100" scope="game" criteria="trade-range-antiquity-plus-100">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-range-plus-100.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-range-exploration-minus-50" scope="game" criteria="trade-range-exploration-minus-50">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-range-minus-50.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-range-exploration-minus-25" scope="game" criteria="trade-range-exploration-minus-25">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-range-minus-25.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-range-exploration-plus-25" scope="game" criteria="trade-range-exploration-plus-25">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-range-plus-25.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-range-exploration-plus-50" scope="game" criteria="trade-range-exploration-plus-50">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-range-plus-50.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-range-exploration-plus-100" scope="game" criteria="trade-range-exploration-plus-100">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-range-plus-100.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-range-modern-minus-50" scope="game" criteria="trade-range-modern-minus-50">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-range-minus-50.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-range-modern-minus-25" scope="game" criteria="trade-range-modern-minus-25">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-range-minus-25.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-range-modern-plus-25" scope="game" criteria="trade-range-modern-plus-25">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-range-plus-25.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-range-modern-plus-50" scope="game" criteria="trade-range-modern-plus-50">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-range-plus-50.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-range-modern-plus-100" scope="game" criteria="trade-range-modern-plus-100">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-range-plus-100.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+
+<!--*********************** SETTINGS: TRADE SPEED ***********************-->
+
+		<ActionGroup id="zg-trade-speed-antiquity-slow" scope="game" criteria="trade-speed-antiquity-slow">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-speed-slow.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-speed-antiquity-quick" scope="game" criteria="trade-speed-antiquity-quick">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-speed-quick.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-speed-antiquity-fast" scope="game" criteria="trade-speed-antiquity-fast">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-speed-fast.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-speed-antiquity-instant" scope="game" criteria="trade-speed-antiquity-instant">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-speed-instant.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-speed-exploration-slow" scope="game" criteria="trade-speed-exploration-slow">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-speed-slow.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-speed-exploration-quick" scope="game" criteria="trade-speed-exploration-quick">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-speed-quick.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-speed-exploration-fast" scope="game" criteria="trade-speed-exploration-fast">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-speed-fast.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-speed-exploration-instant" scope="game" criteria="trade-speed-exploration-instant">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-speed-instant.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-speed-modern-slow" scope="game" criteria="trade-speed-modern-slow">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-speed-travel.sql</Item>
+					<Item>data/trade/trade-speed-slow.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-speed-modern-standard" scope="game" criteria="trade-speed-modern-standard">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-speed-travel.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-speed-modern-quick" scope="game" criteria="trade-speed-modern-quick">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-speed-travel.sql</Item>
+					<Item>data/trade/trade-speed-quick.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-trade-speed-modern-fast" scope="game" criteria="trade-speed-modern-fast">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/trade/trade-speed-travel.sql</Item>
+					<Item>data/trade/trade-speed-fast.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

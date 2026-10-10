@@ -13,6 +13,8 @@
 // Both read the live setup, so a change by the host shows the next time the
 // rules open, or within half a second in the Game Options box.
 
+import { Decorator, queryConfig } from '../shared/zg-shell-context.js';
+
 const RULES_SCREEN = "screen-mp-game-rules";
 const LOBBY_SCREEN = "screen-mp-lobby";
 // The section is titled with this mod's name as the game lists enabled mods.
@@ -31,16 +33,6 @@ const AGE_SUFFIX = /(Antiquity|Exploration|Modern)$/;
 const AGE_PARENTS = { ZG_Disasters: "ZG_DisasterFrequency", ZG_TriumphSet: "LegacySets", ZG_AgeLength: "AgeLength" };
 const CUSTOM_MARKER = "CUSTOM";
 const REFRESH_MS = 500;
-const LOG_PREFIX = "ZG-ASP lobby rules:";
-
-function query(sql) {
-	try {
-		return Database.query("config", sql) ?? [];
-	} catch (error) {
-		console.error(`${LOG_PREFIX} query failed: ${error}`);
-		return [];
-	}
-}
 
 // Defaults and sort order, once per shell session.
 let lookups = null;
@@ -50,7 +42,7 @@ function getLookups() {
 	}
 	const defaults = new Map();
 	const sortIndex = new Map();
-	for (const row of query("SELECT ParameterID, DefaultValue, SortIndex FROM Parameters")) {
+	for (const row of queryConfig("SELECT ParameterID, DefaultValue, SortIndex FROM Parameters")) {
 		if (!defaults.has(row.ParameterID)) {
 			defaults.set(row.ParameterID, row.DefaultValue);
 			sortIndex.set(row.ParameterID, row.SortIndex ?? 0);
@@ -215,8 +207,9 @@ function createSection(component) {
 	return section;
 }
 
-class RulesSection {
+class RulesSection extends Decorator {
 	constructor(component) {
+		super();
 		this.component = component;
 	}
 
@@ -250,11 +243,6 @@ class RulesSection {
 			mods.style.marginRight = LIST_GAP;
 		}
 	}
-
-	beforeAttach() {}
-	beforeDetach() {}
-	afterDetach() {}
-	onAttributeChanged() {}
 }
 
 Controls.decorate(RULES_SCREEN, (component) => new RulesSection(component));
@@ -272,8 +260,9 @@ function summaryRow(template) {
 	return { row, label, value };
 }
 
-class LobbySummary {
+class LobbySummary extends Decorator {
 	constructor(component) {
+		super();
 		this.component = component;
 		this.rows = [];
 		this.timer = null;
@@ -319,10 +308,6 @@ class LobbySummary {
 		this.rows = [];
 		this.lastRevision = -1;
 	}
-
-	beforeAttach() {}
-	afterDetach() {}
-	onAttributeChanged() {}
 }
 
 Controls.decorate(LOBBY_SCREEN, (component) => new LobbySummary(component));

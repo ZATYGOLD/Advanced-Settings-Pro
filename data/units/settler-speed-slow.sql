@@ -1,4 +1,4 @@
--- Currently only works for land based movement.
+-- Base movement; embarked movement is set by the settler-embark files.
 UPDATE Units
 SET BaseMoves = 2
 WHERE UnitType = 'UNIT_SETTLER'

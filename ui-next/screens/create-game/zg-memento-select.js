@@ -11,7 +11,7 @@
 //                   and its header reads the step count; here every one of
 //                   those closes the picker, and the count is empty;
 //   its model       MementoSelectModel, as overridden by
-//                   ui/zg-memento-select-model.js to read and write any player:
+//                   ui-next/screens/create-game/zg-memento-select-model.js to read and write any player:
 //                   the create-game screen's own instance when there is one,
 //                   pointed at the player for as long as the picker is up and
 //                   back at the human when it closes.

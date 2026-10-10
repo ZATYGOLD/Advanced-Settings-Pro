@@ -12,7 +12,7 @@
 //   6. A per-age limit is changed away from the curated tier's values
 //      -> the Settlement Limit setting switches to Custom.
 //
-// Disasters and Triumph Sets (shared tier/age sync):
+// Disasters, Triumph Sets, Trade Range and Trade Speed (shared tier/age sync):
 //   7. A tier is selected           -> every age shows that tier.
 //   8. An age is changed away from the selected tier
 //      -> the primary setting switches to Custom.
@@ -36,12 +36,12 @@
 //  18. On the first pass of a setup -> Crises wins: the selection and timing
 //      follow it, so a remembered Crises value is kept.
 //
-// Each rule compares against the last pass. When remembered settings are put
-// back (zg-setup-memory.js) the comparisons start over, so the restored
-// values are the baseline rather than a change to answer.
+// Each rule compares against the last pass. While remembered settings are put
+// back (zg-setup-memory.js) the rules wait, and the comparisons then start
+// over, so the restored values are the baseline rather than a change to answer.
 
-import { canEditSetup } from './zg-shell-context.js';
-import { restoreSetup, rememberSetup } from './zg-setup-memory.js';
+import { canEditSetup, isAgeTransition } from '../shared/zg-shell-context.js';
+import { tickSetupMemory, isRestoringSetup, rememberSetup } from './zg-setup-memory.js';
 
 const NW_COUNT_PARAM_ID = "ZG_NaturalWondersCount";
 const MAP_SIZE_PARAM_ID = "MapSize";
@@ -135,11 +135,34 @@ const ROADS_AGE_NAMES = {
 	"LOC_ZG_EXTENDED_NAME": ["LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ZG_PCT_MINUS_25"],
 };
 
+// Speed age rows are named by the change to the game value: Merchant movement
+// for Trade Speed, districts razed per turn for Raze Speed. Trade Speed's
+// Standard is the game's own: Merchants travel in Antiquity and Exploration,
+// and Modern trade routes start from a distance.
+const TRADE_SPEED_AGE_NAMES = {
+	"LOC_ZG_SLOW_NAME": "LOC_ZG_PCT_MINUS_25",
+	"LOC_ADVANCED_OPTIONS_STANDARD": ["LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ZG_INSTANT_NAME"],
+	"LOC_ZG_QUICK_NAME": "LOC_ZG_PCT_PLUS_25",
+	"LOC_ZG_FAST_NAME": "LOC_ZG_PCT_PLUS_50",
+	"LOC_ZG_SWIFT_NAME": "LOC_ZG_INSTANT_NAME",
+	"LOC_ZG_BALANCED_NAME": ["LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ADVANCED_OPTIONS_STANDARD", "LOC_ZG_INSTANT_NAME"],
+	"LOC_ZG_EXTENDED_NAME": "LOC_ZG_PCT_MINUS_25",
+};
+const RAZE_SPEED_AGE_NAMES = {
+	"LOC_ZG_FAST_NAME": "LOC_ZG_PCT_PLUS_100",
+	"LOC_ZG_SWIFT_NAME": "LOC_ZG_INSTANT_NAME",
+	"LOC_ZG_BALANCED_NAME": "LOC_ADVANCED_OPTIONS_STANDARD",
+	"LOC_ZG_EXTENDED_NAME": "LOC_ADVANCED_OPTIONS_STANDARD",
+};
+
 // Primary settings whose per-age values are kept in step (rules 7 & 8).
 // ageNames maps a primary value name to its per-age value name (identity when absent).
 const TIER_AGE_SYNCS = [
 	{ tierId: "ZG_DisasterFrequency", ageIds: ["ZG_DisastersAntiquity", "ZG_DisastersExploration", "ZG_DisastersModern"], lastTier: null },
 	{ tierId: "LegacySets", ageIds: ["ZG_TriumphSetAntiquity", "ZG_TriumphSetExploration", "ZG_TriumphSetModern"], lastTier: null },
+	{ tierId: "ZG_TradeRange", ageIds: ["ZG_TradeRangeAntiquity", "ZG_TradeRangeExploration", "ZG_TradeRangeModern"], lastTier: null },
+	{ tierId: "ZG_TradeSpeed", ageIds: ["ZG_TradeSpeedAntiquity", "ZG_TradeSpeedExploration", "ZG_TradeSpeedModern"], ageNames: TRADE_SPEED_AGE_NAMES, lastTier: null },
+	{ tierId: "ZG_RazeTime", ageIds: ["ZG_RazeTimeAntiquity", "ZG_RazeTimeExploration", "ZG_RazeTimeModern"], ageNames: RAZE_SPEED_AGE_NAMES, lastTier: null },
 	{ tierId: AGE_LENGTH_PARAM_ID, ageIds: ["ZG_AgeLengthAntiquity", "ZG_AgeLengthExploration", "ZG_AgeLengthModern"], ageNames: AGE_LENGTH_AGE_NAMES, lastTier: null },
 	{ tierId: "ZG_AgeProgressRate", ageIds: ["ZG_AgeProgressRateAntiquity", "ZG_AgeProgressRateExploration", "ZG_AgeProgressRateModern"], lastTier: null },
 	{ tierId: "ZG_TechnologyCost", ageIds: ["ZG_TechnologyCostAntiquity", "ZG_TechnologyCostExploration", "ZG_TechnologyCostModern"], ageNames: TECHNOLOGY_AGE_NAMES, lastTier: null },
@@ -161,9 +184,11 @@ const PACE_STANDARD = {
 	ZG_TechnologyCost: "LOC_ADVANCED_OPTIONS_STANDARD",
 	ZG_CivicCost: "LOC_ADVANCED_OPTIONS_STANDARD",
 	ZG_BuildingCost: "LOC_ADVANCED_OPTIONS_STANDARD",
+	ZG_VictoryProjectCost: "LOC_ADVANCED_OPTIONS_STANDARD",
 	ZG_CityGrowth: "LOC_ADVANCED_OPTIONS_STANDARD",
 	ZG_Roads: "LOC_ADVANCED_OPTIONS_STANDARD",
-	ZG_VictoryProjectCost: "LOC_ADVANCED_OPTIONS_STANDARD",
+	ZG_TradeSpeed: "LOC_ADVANCED_OPTIONS_STANDARD",
+	ZG_RazeTime: "LOC_ADVANCED_OPTIONS_STANDARD",
 };
 const PACE_PRESETS = {
 	// A 90 point age with full price research would cut the tree short, so Swift
@@ -177,6 +202,9 @@ const PACE_PRESETS = {
 		ZG_CityGrowth: "LOC_ZG_SWIFT_NAME",
 		ZG_Roads: "LOC_ZG_SWIFT_NAME",
 		ZG_VictoryProjectCost: "LOC_ZG_SWIFT_NAME",
+		// Short ages leave no time for walking Merchants or slow razing.
+		ZG_TradeSpeed: "LOC_ZG_SWIFT_NAME",
+		ZG_RazeTime: "LOC_ZG_SWIFT_NAME",
 	},
 	"LOC_ZG_PACE_PRESET_STANDARD_NAME": PACE_STANDARD,
 	// Eras+ Balanced Extended+: age caps 150/170/200, its milestone curve, 1.25x techs
@@ -193,6 +221,8 @@ const PACE_PRESETS = {
 		ZG_CityGrowth: "LOC_ZG_BALANCED_NAME",
 		ZG_Roads: "LOC_ZG_BALANCED_NAME",
 		ZG_VictoryProjectCost: "LOC_ZG_BALANCED_NAME",
+		ZG_TradeSpeed: "LOC_ZG_BALANCED_NAME",
+		ZG_RazeTime: "LOC_ZG_BALANCED_NAME",
 	},
 	// A 280 point age runs out of tree long before it ends, so Extended raises the
 	// research and triumph costs to fill it.
@@ -205,15 +235,13 @@ const PACE_PRESETS = {
 		ZG_CityGrowth: "LOC_ZG_EXTENDED_NAME",
 		ZG_Roads: "LOC_ZG_EXTENDED_NAME",
 		ZG_VictoryProjectCost: "LOC_ZG_EXTENDED_NAME",
+		// Merchants travel slowly in every age, Modern included.
+		ZG_TradeSpeed: "LOC_ZG_EXTENDED_NAME",
+		ZG_RazeTime: "LOC_ZG_EXTENDED_NAME",
 	},
 	// Eras+ MP Pace: age caps 140/160/180, its milestone curve, dearer research and
 	// civics that climb with the age, slightly slower growth, faster roads and Modern
-	// railroads, and pricier Modern victory projects.
-	//
-	// The costs are quoted on the same scale every other option uses. They were once
-	// set to their own steps (techs 1.35/1.5/1.75x, civics 1.45/1.6/1.85x, projects
-	// 1.2x), which meant carrying six percentages, their SQL, and their action groups
-	// for this one preset. The nearest shared steps play the same way.
+	// railroads, and pricier Modern victory projects, on the shared cost steps.
 	"LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME": {
 		...PACE_STANDARD,
 		[AGE_LENGTH_PARAM_ID]: ["LOC_ZG_NUM_140", "LOC_ZG_NUM_160", "LOC_ZG_NUM_180"],
@@ -242,7 +270,7 @@ const TIER_MORE = "LOC_ZG_MORE_NAME";
 const TIER_DOUBLE = "LOC_ZG_DOUBLE_NAME";
 const TIER_CUSTOM = "LOC_ZG_CUSTOM_NAME";
 const TOGGLE_ENABLED = "LOC_ZG_ENABLED_NAME";
-const TOGGLE_DISABLED = "LOC_ZG_DISABLED_NAME";
+const TOGGLE_DISABLED = TIER_DISABLED;
 
 // Base wonder counts per map size (Maps.NumNaturalWonders).
 const BASE_WONDERS = { TINY: 3, SMALL: 4, STANDARD: 5, LARGE: 6, HUGE: 7 };
@@ -253,7 +281,6 @@ let nwLastTier = null;
 let slLastTier = null;
 let crisesLastToggle = null;
 let crisisTimingLast = null;
-let applying = false;
 
 function resolveName(handle) {
 	return GameSetup.resolveString(handle) ?? "";
@@ -577,59 +604,46 @@ function resetBaselines() {
 	TIER_AGE_SYNCS.forEach((sync) => { sync.lastTier = null; });
 }
 
+// Runs one rule, logging rather than letting a throw stop the others.
+function run(label, rule) {
+	try {
+		rule();
+	} catch (e) {
+		console.warn(`ZG-ASP setup rules: ${label} failed: ${e}`);
+	}
+}
+
 setInterval(() => {
 	// In multiplayer only the host holds the setup; a client sees the host's
 	// writes arrive and must not answer them with its own.
-	const revision = GameSetup.currentRevision;
-	if (revision == lastRevision || applying || !canEditSetup()) {
+	if (!canEditSetup() || isAgeTransition()) {
 		return;
 	}
-	lastRevision = revision;
-	applying = true;
-	try {
-		try {
-			if (restoreSetup()) {
-				resetBaselines();
-				return;
-			}
-		} catch (e) {
-			console.warn(`ZG-ASP setup restore error: ${e}`);
+	// Remembered settings go back first, and the rules wait until they have:
+	// answering the defaults the screen opens with would cascade over them.
+	run("setup memory", () => {
+		if (tickSetupMemory()) {
+			resetBaselines();
 		}
-		try {
-			syncNaturalWonderSetup();
-		} catch (e) {
-			console.warn(`ZG-ASP wonder sync error: ${e}`);
-		}
-		try {
-			syncSettlementLimits();
-		} catch (e) {
-			console.warn(`ZG-ASP settlement sync error: ${e}`);
-		}
-		try {
-			syncPaceMirror();
-			syncPacePreset();
-		} catch (e) {
-			console.warn(`ZG-ASP pace set sync error: ${e}`);
-		}
-		for (const sync of TIER_AGE_SYNCS) {
-			try {
-				syncTierWithAges(sync);
-			} catch (e) {
-				console.warn(`ZG-ASP ${sync.tierId} sync error: ${e}`);
-			}
-		}
-		try {
-			syncCrises();
-		} catch (e) {
-			console.warn(`ZG-ASP crises sync error: ${e}`);
-		}
-		try {
-			rememberSetup();
-		} catch (e) {
-			console.warn(`ZG-ASP setup memory error: ${e}`);
-		}
-	} finally {
-		// Never leave the guard latched: a throw here would freeze every rule.
-		applying = false;
+	});
+	const revision = GameSetup.currentRevision;
+	if (isRestoringSetup() || revision == lastRevision) {
+		return;
 	}
+	// A new setup starts its revisions over; the last one's values are no baseline.
+	if (revision < lastRevision) {
+		resetBaselines();
+	}
+	lastRevision = revision;
+	run("natural wonders", syncNaturalWonderSetup);
+	run("settlement limits", syncSettlementLimits);
+	run("pace set", () => {
+		syncPaceMirror();
+		syncPacePreset();
+	});
+	for (const sync of TIER_AGE_SYNCS) {
+		run(sync.tierId, () => syncTierWithAges(sync));
+	}
+	run("crises", syncCrises);
+	run("setup memory", rememberSetup);
 }, POLL_MS);

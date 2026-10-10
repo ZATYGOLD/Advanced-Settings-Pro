@@ -4,6 +4,9 @@
 		<Replace Tag="LOC_GROUPID_ZG_UNITOPTIONS" Language="zh_Hant_HK">
 			<Text>單位設定</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_TRADEOPTIONS" Language="zh_Hant_HK">
+			<Text>貿易設定</Text>
+		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS" Language="zh_Hant_HK">
 			<Text>獨立勢力設定</Text>
 		</Replace>
@@ -140,14 +143,17 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME" Language="zh_Hant_HK">
 			<Text>聚居地間距</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_NAME" Language="zh_Hant_HK">
+			<Text>貿易範圍</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_NAME" Language="zh_Hant_HK">
+			<Text>貿易速度</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RAZE_TIME_NAME" Language="zh_Hant_HK">
-			<Text>夷平時間</Text>
+			<Text>夷平速度</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INSTANT_NAME" Language="zh_Hant_HK">
 			<Text>立即</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SHORTER_NAME" Language="zh_Hant_HK">
-			<Text>較短</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="zh_Hant_HK">
 			<Text>軍事單位花費</Text>
@@ -283,6 +289,111 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="zh_Hant_HK">
 			<Text>4格。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>設定貿易路線從你的聚居地出發，在陸地和海上能延伸多遠。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_MINUS_50" Language="zh_Hant_HK">
+			<Text>範圍減半。[nn][BLIST]
+				[LI] 遠古：陸地5，海洋15
+				[LI] 探索：陸地8，海洋23
+				[LI] 近代：陸地10，海洋30[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_MINUS_25" Language="zh_Hant_HK">
+			<Text>範圍減少25%。[nn][BLIST]
+				[LI] 遠古：陸地8，海洋23
+				[LI] 探索：陸地11，海洋34
+				[LI] 近代：陸地15，海洋45[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
+			<Text>遊戲本身的範圍。[nn][BLIST]
+				[LI] 遠古：陸地10，海洋30
+				[LI] 探索：陸地15，海洋45
+				[LI] 近代：陸地20，海洋60[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_25" Language="zh_Hant_HK">
+			<Text>範圍增加25%。[nn][BLIST]
+				[LI] 遠古：陸地13，海洋38
+				[LI] 探索：陸地19，海洋56
+				[LI] 近代：陸地25，海洋75[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_50" Language="zh_Hant_HK">
+			<Text>範圍增加50%。[nn][BLIST]
+				[LI] 遠古：陸地15，海洋45
+				[LI] 探索：陸地23，海洋68
+				[LI] 近代：陸地30，海洋90[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_100" Language="zh_Hant_HK">
+			<Text>範圍加倍。[nn][BLIST]
+				[LI] 遠古：陸地20，海洋60
+				[LI] 探索：陸地30，海洋90
+				[LI] 近代：陸地40，海洋120[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_CUSTOM" Language="zh_Hant_HK">
+			<Text>為每個時代分別設定貿易範圍。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_AGE_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>設定本時代的貿易範圍。[n]僅在貿易範圍設為自訂時生效。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>設定商人建立貿易路線的速度：前往其貿易的聚居地，或從遠處建立。移動速度適用於所有時代，包括近代。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_SLOW" Language="zh_Hant_HK">
+			<Text>商人以移動力3[icon:Action_Move]前往。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
+			<Text>商人以移動力4[icon:Action_Move]前往。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_QUICK" Language="zh_Hant_HK">
+			<Text>商人以移動力5[icon:Action_Move]前往。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_FAST" Language="zh_Hant_HK">
+			<Text>商人以移動力6[icon:Action_Move]前往。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_SWIFT" Language="zh_Hant_HK">
+			<Text>所有時代的貿易路線都從遠處建立。[nn][BLIST]
+				[LI] 遠古：立即
+				[LI] 探索：立即
+				[LI] 近代：立即[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_BALANCED" Language="zh_Hant_HK">
+			<Text>遊戲本身的節奏。[nn][BLIST]
+				[LI] 遠古：標準
+				[LI] 探索：標準
+				[LI] 近代：立即[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_EXTENDED" Language="zh_Hant_HK">
+			<Text>所有時代的商人都緩慢前往。[nn][BLIST]
+				[LI] 遠古：-25%
+				[LI] 探索：-25%
+				[LI] 近代：-25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_SWIFT" Language="zh_Hant_HK">
+			<Text>所有時代的聚居地都在一回合內被夷平。[nn][BLIST]
+				[LI] 遠古：立即
+				[LI] 探索：立即
+				[LI] 近代：立即[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_BALANCED" Language="zh_Hant_HK">
+			<Text>遊戲本身的節奏。[nn][BLIST]
+				[LI] 遠古：標準
+				[LI] 探索：標準
+				[LI] 近代：標準[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_EXTENDED" Language="zh_Hant_HK">
+			<Text>遊戲本身的節奏。[nn][BLIST]
+				[LI] 遠古：標準
+				[LI] 探索：標準
+				[LI] 近代：標準[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_INSTANT" Language="zh_Hant_HK">
+			<Text>貿易路線從遠處建立，商人無需長途跋涉。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_DEFAULT" Language="zh_Hant_HK">
+			<Text>遊戲本身的節奏。[nn][BLIST]
+				[LI] 遠古：以移動力4[icon:Action_Move]前往
+				[LI] 探索：以移動力4[icon:Action_Move]前往
+				[LI] 近代：從遠處建立[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>設定夷平一個被佔領的聚居地需要多長時間。每回合會夷平若干區域，因此聚居地越大，耗時越長。</Text>
@@ -520,7 +631,7 @@
 			<Text>設定聚居地每增加一名公民所需的食物。門檻越低，聚居地越早突破10人口。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_NAME" Language="zh_Hant_HK">
-			<Text>道路</Text>
+			<Text>道路速度</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>設定沿道路與鐵路行進的移動力消耗。道路越省力，軍隊橫穿領土所需回合越少。</Text>
@@ -642,9 +753,6 @@
 				[LI] 長春藤行動：1800 / 1800 / 1800
 				[LI] 載人太空飛行：2250 / 2250 / 2250[/BLIST][nn]（標準速度下）</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
-			<Text>遊戲原本的費用。</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="zh_Hant_HK">
 			<Text>前期社會制度為標準，制度樹展開後變得更貴。[nn][BLIST]
 				[LI] 遠古：標準
@@ -662,9 +770,6 @@
 				[LI] 遠古：-25%
 				[LI] 探索：-25%
 				[LI] 近代：標準[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
-			<Text>遊戲原本的費用。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="zh_Hant_HK">
 			<Text>前期研究更貴，科技樹展開後變得更便宜。[nn][BLIST]
@@ -872,7 +977,7 @@
 			<Text>推薦文明</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="zh_Hant_HK">
-			<Text>每個AI遵循文明選擇畫面中其領袖的關聯：新時代提供的歷史文明，權重高者優先，否則選擇地理文明，絕不選擇戰略文明。[n]已被佔用的文明將跳過而取下一個；僅當全部被佔用時才允許重複。平手時優先選擇新時代本身的文明。若所選正是AI目前的文明，則保留不變。</Text>
+			<Text>每個AI遵循其領袖的歷史。新時代提供其領袖的歷史文明時就轉換過去，目前文明本身就是歷史文明時則保持不變。[n]否則按遊戲的常規路線進入新時代，優先地理文明。已被選擇的文明會被略過，只有全部被選時才會重複。[n]實驗性功能：自1.5版修補檔起，遊戲可能會覆蓋這些選擇。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="zh_Hant_HK">
 			<Text>自訂：為每個時代單獨設定凱旋集。</Text>
@@ -1302,9 +1407,11 @@
 				[LI] 科技花費：+25% / +50% / +50%
 				[LI] 市政花費：+25% / +50% / +50%
 				[LI] 建築花費：+25% / +50% / +50%
+				[LI] 勝利專案花費：+25%
 				[LI] 聚居地成長：+25%
-				[LI] 道路：標準 / 標準 / -25%
-				[LI] 勝利專案花費：+25%[/BLIST]</Text>
+				[LI] 道路速度：標準 / 標準 / -25%
+				[LI] 貿易速度：-25%
+				[LI] 夷平速度：標準[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT" Language="zh_Hant_HK">
 			<Text>較短的時代，費用也相應降低。[nn][BLIST]
@@ -1313,9 +1420,11 @@
 				[LI] 科技花費：-25% / -25% / 標準
 				[LI] 市政花費：-25% / -25% / 標準
 				[LI] 建築花費：-25%
+				[LI] 勝利專案花費：-25%
 				[LI] 聚居地成長：-25%
-				[LI] 道路：-25% / -50% / -50%
-				[LI] 勝利專案花費：-25%[/BLIST]</Text>
+				[LI] 道路速度：-25% / -50% / -50%
+				[LI] 貿易速度：立即
+				[LI] 夷平速度：立即[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="zh_Hant_HK">
 			<Text>更長的時代，研究與成長經過調整以填滿時代。[nn][BLIST]
@@ -1324,9 +1433,11 @@
 				[LI] 科技花費：+25% / 標準 / -25%
 				[LI] 市政花費：標準 / +25% / +25%
 				[LI] 建築花費：+25% / 標準 / 標準
+				[LI] 勝利專案花費：標準 / -25% / -25%
 				[LI] 聚居地成長：-25% / -25% / 標準
-				[LI] 道路：標準 / 標準 / -25%
-				[LI] 勝利專案花費：標準 / -25% / -25%[/BLIST]</Text>
+				[LI] 道路速度：標準 / 標準 / -25%
+				[LI] 貿易速度：標準
+				[LI] 夷平速度：標準[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="zh_Hant_HK">
 			<Text>針對一次坐下即可打完的對局調整。[nn][BLIST]
@@ -1335,12 +1446,81 @@
 				[LI] 科技花費：+25% / +50% / +100%
 				[LI] 市政花費：+50% / +50% / +100%
 				[LI] 建築花費：標準
+				[LI] 勝利專案花費：標準 / 標準 / +25%
 				[LI] 聚居地成長：+25%
-				[LI] 道路：-25% / -25% / -50%
-				[LI] 勝利專案花費：標準 / 標準 / +25%[/BLIST]</Text>
+				[LI] 道路速度：-25% / -25% / -50%
+				[LI] 貿易速度：標準
+				[LI] 夷平速度：標準[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="zh_Hant_HK">
 			<Text>「節奏」分頁中「節奏設定」的設定已不再與任何預設一致。</Text>
+		</Replace>
+	<!-- Natural wonder names (shell) -->
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_NAME" Language="zh_Hant_HK">
+			<Text>大堡礁</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_NAME" Language="zh_Hant_HK">
+			<Text>百慕達三角</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_CANYON_NAME" Language="zh_Hant_HK">
+			<Text>大峽谷</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GREAT_BLUE_HOLE_NAME" Language="zh_Hant_HK">
+			<Text>大藍洞</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GULLFOSS_NAME" Language="zh_Hant_HK">
+			<Text>古佛斯瀑布</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_HOERIKWAGGO_NAME" Language="zh_Hant_HK">
+			<Text>海中之山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_IGUAZU_FALLS_NAME" Language="zh_Hant_HK">
+			<Text>伊瓜蘇瀑布</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KILIMANJARO_NAME" Language="zh_Hant_HK">
+			<Text>吉力馬札羅山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MACHAPUCHARE_NAME" Language="zh_Hant_HK">
+			<Text>魚尾峰</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME" Language="zh_Hant_HK">
+			<Text>貴族口哨吹蝕穴</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_EVEREST_NAME" Language="zh_Hant_HK">
+			<Text>聖母峰</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="zh_Hant_HK">
+			<Text>富士山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NACHI_FALLS_NAME" Language="zh_Hant_HK">
+			<Text>那智瀑布</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="zh_Hant_HK">
+			<Text>紅木森林</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME" Language="zh_Hant_HK">
+			<Text>城山日出峰</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="zh_Hant_HK">
+			<Text>錫拉島火山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_NAME" Language="zh_Hant_HK">
+			<Text>百內國家公園</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ULURU_NAME" Language="zh_Hant_HK">
+			<Text>烏盧魯</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VALLEY_OF_FLOWERS_NAME" Language="zh_Hant_HK">
+			<Text>花谷</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VIHREN_NAME" Language="zh_Hant_HK">
+			<Text>維赫倫峰</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VINICUNCA_NAME" Language="zh_Hant_HK">
+			<Text>彩虹山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ZHANGJIAJIE_NAME" Language="zh_Hant_HK">
+			<Text>張家界</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

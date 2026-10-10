@@ -1,5 +1,6 @@
-// Copy of {base-standard}maps/pangaea-plus.js with a tier-aware river model;
-// imports are repointed at the base module so everything else stays stock.
+// Copy of {base-standard}maps/pangaea-plus.js with terrain, rivers, biomes and
+// resources generated through the zg-map-* modules; imports are repointed at
+// the base modules.
 import { zgModelRivers } from './zg-map-rivers.js';
 import { zgDesignateBiomes } from './zg-map-biomes.js';
 import { zgAddMountains } from './zg-map-mountains.js';
@@ -11,7 +12,7 @@ import { zgAddRough } from './zg-map-rough.js';
 import { addFeatures } from 'fs://game/base-standard/maps/feature-biome-generator.js';
 import { dumpStartSectors, dumpContinents, dumpTerrain, dumpElevation, dumpRainfall, dumpBiomes, dumpFeatures, dumpResources, dumpNoisePredicate } from 'fs://game/base-standard/maps/map-debug-helpers.js';
 import { g_OceanWaterColumns, g_PolarWaterRows, g_AvoidSeamOffset, g_WaterPercent, g_Cutoff, g_LandmassFractal, g_FlatTerrain, g_OceanTerrain, g_FractalWeight, g_CenterWeight, g_StartSectorWeight } from 'fs://game/base-standard/maps/map-globals.js';
-import { needHumanNearEquator, createIslands, applyCoastalErosionAdjustingForStartSectors, createOrganicLandmasses, applyCoastalErosion, markLandmassRegionId, replaceIslandResources, getHeightAdjustingForStartSector, clearContinent } from 'fs://game/base-standard/maps/map-utilities.js';
+import { needHumanNearEquator, createIslands, applyCoastalErosionAdjustingForStartSectors, createOrganicLandmasses, applyCoastalErosion, markLandmassRegionId, getHeightAdjustingForStartSector, clearContinent } from 'fs://game/base-standard/maps/map-utilities.js';
 import { addNaturalWonders } from 'fs://game/base-standard/maps/natural-wonder-generator.js';
 import { zgGenerateResources } from './zg-map-resources.js';
 import { generateSnow, dumpPermanentSnow } from 'fs://game/base-standard/maps/snow-generator.js';
@@ -268,7 +269,6 @@ function generateMap() {
   buildRainfallMap(iWidth, iHeight);
   zgModelRivers(5, 15);
   TerrainBuilder.validateAndFixTerrain();
-  TerrainBuilder.defineNamedRivers();
   zgDesignateBiomes(iWidth, iHeight);
   addTundraVolcanoes(iWidth, iHeight);
   addNaturalWonders(iWidth, iHeight, iNumNaturalWonders);
@@ -295,7 +295,6 @@ function generateMap() {
       iStartSectorCols,
       startSectors
     );
-    replaceIslandResources(iWidth, iHeight, "RESOURCECLASS_TREASURE");
   } else {
     zgGenerateResources(iWidth, iHeight);
     startPositions = assignSingleContinentStartPositions(
@@ -305,7 +304,6 @@ function generateMap() {
       iStartSectorCols,
       startSectors
     );
-    replaceIslandResources(iWidth, iHeight, "RESOURCECLASS_TREASURE");
   }
   generateDiscoveries(iWidth, iHeight, startPositions, g_PolarWaterRows);
   dumpResources(iWidth, iHeight);

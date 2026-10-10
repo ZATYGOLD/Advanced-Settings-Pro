@@ -1,30 +1,11 @@
-// Advanced Settings Pro entry point for the shared mod conflict guard.
-// All conflict-handling logic lives in zg-conflict-guard.js; this file only
-// supplies the list of mods that conflict with Advanced Settings Pro.
+// The mods that conflict with Advanced Settings Pro, for the shared conflict
+// guard (zg-conflict-guard.js). Grouped by the setting each collides with.
 //
-// Grouped by the setting each mod collides with rather than by when it was
-// found. Conflicts cluster into a handful of settings while the mods that cause
-// them do not, so the grouping is what stays reviewable as the list grows.
-//
-// Conflicting mods are keyed by their immutable Steam Workshop id for reference,
-// but the game only exposes a mod's .modinfo <Mod id> at runtime, so modId is
-// what the guard matches against. To find a new mod's id, pass
-// { logInstalledMods: true } as the second argument, launch to the main menu,
-// and read the ids from the console / UI.log.
-//
-// parameterPatterns is a second way to recognise a mod, by the setup parameters
-// it adds, so a renamed mod is still caught. Three rules, each learned from a
-// real failure:
-//
-//   1. Name parameters in full. A "BmdResource%" footprint matched an unrelated
-//      mod's BmdResourcePreset and locked those players out of New Game.
-//   2. Never name a parameter the base game ships. Aventura Era Turn Target
-//      edits the base AgeLength, which is present on every install, so a
-//      footprint on it would report a conflict for everyone.
-//   3. Check the name is really there. A typo matches nothing and says nothing.
-//
-// outputs/guard_entry.py generates an entry from an installed Workshop folder
-// with all three already applied.
+// modId is the .modinfo <Mod id>, the only id the game exposes at runtime
+// (pass { logInstalledMods: true } to list them); workshopId is for reference.
+// parameterPatterns catch a renamed mod by the setup parameters it adds: name
+// them in full (a "BmdResource%" wildcard once caught an unrelated mod) and
+// never name a parameter the base game ships.
 import { registerModConflicts } from './zg-conflict-guard.js';
 
 registerModConflicts([

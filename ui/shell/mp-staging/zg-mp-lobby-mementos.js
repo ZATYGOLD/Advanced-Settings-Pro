@@ -7,7 +7,7 @@
 // own art when filled, its name and effect on hover. They show on human rows
 // and, whenever mementos are on, on AI rows too. On your own row, and on AI
 // rows for the host, a slot opens the single-player memento picker on that
-// slot (ui/zg-memento-select.js).
+// slot (ui-next/screens/create-game/zg-memento-select.js).
 // Nothing else in the row moves: the slots take the diamonds' place.
 //
 // The slots sit inside the leader dropdown, which opens on a left click or tap
@@ -18,9 +18,9 @@
 // which opens the same picker.
 
 import { Audio } from 'fs://game/core/ui/audio-base/audio-support.js';
-import { openMementoSelect } from './zg-memento-select.js';
-import { MEMENTO_PARAM_IDS as PARAM_IDS, MEMENTO_NONE_VALUE as NONE_VALUE, MEMENTO_SLOT_BASE_IMAGE as BASE_IMAGE, MEMENTO_SLOT_PLUS_IMAGE as PLUS_IMAGE, mementoTooltip, aiPlayerIds } from './zg-memento-roller.js';
-import { canEditSetup } from './zg-shell-context.js';
+import { openMementoSelect } from '../../../ui-next/screens/create-game/zg-memento-select.js';
+import { MEMENTO_PARAM_IDS as PARAM_IDS, MEMENTO_NONE_VALUE as NONE_VALUE, MEMENTO_SLOT_BASE_IMAGE as BASE_IMAGE, MEMENTO_SLOT_PLUS_IMAGE as PLUS_IMAGE, mementoTooltip, aiPlayerIds } from '../shared/zg-memento-roller.js';
+import { canEditSetup, Decorator } from '../shared/zg-shell-context.js';
 
 const DROPDOWN_NAME = "leader-dropdown";
 const LOBBY_NAME = "screen-mp-lobby";
@@ -77,8 +77,9 @@ function paintSlot(slot, value) {
 	slot.setAttribute("data-tooltip-content", mementoTooltip(value));
 }
 
-class LobbyMementoSlots {
+class LobbyMementoSlots extends Decorator {
 	constructor(component) {
+		super();
 		this.component = component;
 		this.slots = [];
 		const onAttributeChanged = component.onAttributeChanged.bind(component);
@@ -166,7 +167,6 @@ class LobbyMementoSlots {
 		});
 	}
 
-	beforeAttach() {}
 	afterAttach() {
 		liveSlots.add(this);
 		this.refresh();
@@ -174,8 +174,6 @@ class LobbyMementoSlots {
 	beforeDetach() {
 		liveSlots.delete(this);
 	}
-	afterDetach() {}
-	onAttributeChanged() {}
 }
 
 Controls.decorate(DROPDOWN_NAME, (component) => new LobbyMementoSlots(component));
@@ -183,16 +181,11 @@ Controls.decorate(DROPDOWN_NAME, (component) => new LobbyMementoSlots(component)
 // The lobby's Choose Mementos button, and its controller hotkey, open the same
 // picker as the slots, on the local player's first slot, instead of the older
 // memento editor.
-class LobbyChooseMementos {
+class LobbyChooseMementos extends Decorator {
 	constructor(component) {
+		super();
 		component.openMementos = () => openMementoSelect(GameContext.localPlayerID, 0);
 	}
-
-	beforeAttach() {}
-	afterAttach() {}
-	beforeDetach() {}
-	afterDetach() {}
-	onAttributeChanged() {}
 }
 
 Controls.decorate(LOBBY_NAME, (component) => new LobbyChooseMementos(component));

@@ -4,6 +4,9 @@
 		<Replace Tag="LOC_GROUPID_ZG_UNITOPTIONS" Language="fr_FR">
 			<Text>Paramètres des unités</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_TRADEOPTIONS" Language="fr_FR">
+			<Text>Paramètres commerciaux</Text>
+		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS" Language="fr_FR">
 			<Text>Paramètres des puissances indépendantes</Text>
 		</Replace>
@@ -140,14 +143,17 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME" Language="fr_FR">
 			<Text>Distance entre colonies</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_NAME" Language="fr_FR">
+			<Text>Portée commerciale</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_NAME" Language="fr_FR">
+			<Text>Vitesse commerciale</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RAZE_TIME_NAME" Language="fr_FR">
-			<Text>Durée de destruction</Text>
+			<Text>Vitesse de destruction</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INSTANT_NAME" Language="fr_FR">
 			<Text>Instantanée</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SHORTER_NAME" Language="fr_FR">
-			<Text>Plus courte</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="fr_FR">
 			<Text>Coût des unités militaires</Text>
@@ -283,6 +289,111 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="fr_FR">
 			<Text>4 cases.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION" Language="fr_FR">
+			<Text>Détermine jusqu'où les routes commerciales peuvent aller depuis vos colonies, sur terre et sur mer.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_MINUS_50" Language="fr_FR">
+			<Text>Moitié moins de portée.[nn][BLIST]
+				[LI] Antiquité : 5 sur terre, 15 sur mer
+				[LI] Âge de l'exploration : 8 sur terre, 23 sur mer
+				[LI] Âge moderne : 10 sur terre, 30 sur mer[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_MINUS_25" Language="fr_FR">
+			<Text>25 % de portée en moins.[nn][BLIST]
+				[LI] Antiquité : 8 sur terre, 23 sur mer
+				[LI] Âge de l'exploration : 11 sur terre, 34 sur mer
+				[LI] Âge moderne : 15 sur terre, 45 sur mer[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_STANDARD" Language="fr_FR">
+			<Text>La portée du jeu.[nn][BLIST]
+				[LI] Antiquité : 10 sur terre, 30 sur mer
+				[LI] Âge de l'exploration : 15 sur terre, 45 sur mer
+				[LI] Âge moderne : 20 sur terre, 60 sur mer[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_25" Language="fr_FR">
+			<Text>25 % de portée en plus.[nn][BLIST]
+				[LI] Antiquité : 13 sur terre, 38 sur mer
+				[LI] Âge de l'exploration : 19 sur terre, 56 sur mer
+				[LI] Âge moderne : 25 sur terre, 75 sur mer[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_50" Language="fr_FR">
+			<Text>50 % de portée en plus.[nn][BLIST]
+				[LI] Antiquité : 15 sur terre, 45 sur mer
+				[LI] Âge de l'exploration : 23 sur terre, 68 sur mer
+				[LI] Âge moderne : 30 sur terre, 90 sur mer[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_100" Language="fr_FR">
+			<Text>Le double de portée.[nn][BLIST]
+				[LI] Antiquité : 20 sur terre, 60 sur mer
+				[LI] Âge de l'exploration : 30 sur terre, 90 sur mer
+				[LI] Âge moderne : 40 sur terre, 120 sur mer[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_CUSTOM" Language="fr_FR">
+			<Text>Définissez la portée commerciale pour chaque âge séparément.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_AGE_DESCRIPTION" Language="fr_FR">
+			<Text>Définit la portée commerciale de cet âge.[n]S'applique uniquement si Portée commerciale est sur Personnalisé.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION" Language="fr_FR">
+			<Text>Détermine la rapidité avec laquelle les marchands lancent des routes commerciales : en se rendant dans la colonie avec laquelle ils commercent, ou à distance. Une vitesse de déplacement s'applique à chaque âge, Âge moderne compris.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_SLOW" Language="fr_FR">
+			<Text>Les marchands voyagent avec 3[icon:Action_Move]de déplacement.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_STANDARD" Language="fr_FR">
+			<Text>Les marchands voyagent avec 4[icon:Action_Move]de déplacement.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_QUICK" Language="fr_FR">
+			<Text>Les marchands voyagent avec 5[icon:Action_Move]de déplacement.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_FAST" Language="fr_FR">
+			<Text>Les marchands voyagent avec 6[icon:Action_Move]de déplacement.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_SWIFT" Language="fr_FR">
+			<Text>Les routes commerciales commencent à distance à chaque âge.[nn][BLIST]
+				[LI] Antiquité : Instantanée
+				[LI] Âge de l'exploration : Instantanée
+				[LI] Âge moderne : Instantanée[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_BALANCED" Language="fr_FR">
+			<Text>Le rythme du jeu.[nn][BLIST]
+				[LI] Antiquité : Standard
+				[LI] Âge de l'exploration : Standard
+				[LI] Âge moderne : Instantanée[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_EXTENDED" Language="fr_FR">
+			<Text>Les marchands voyagent lentement à chaque âge.[nn][BLIST]
+				[LI] Antiquité : -25%
+				[LI] Âge de l'exploration : -25%
+				[LI] Âge moderne : -25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_SWIFT" Language="fr_FR">
+			<Text>Les colonies sont rasées en un seul tour à chaque âge.[nn][BLIST]
+				[LI] Antiquité : Instantanée
+				[LI] Âge de l'exploration : Instantanée
+				[LI] Âge moderne : Instantanée[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_BALANCED" Language="fr_FR">
+			<Text>Le rythme du jeu.[nn][BLIST]
+				[LI] Antiquité : Standard
+				[LI] Âge de l'exploration : Standard
+				[LI] Âge moderne : Standard[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_EXTENDED" Language="fr_FR">
+			<Text>Le rythme du jeu.[nn][BLIST]
+				[LI] Antiquité : Standard
+				[LI] Âge de l'exploration : Standard
+				[LI] Âge moderne : Standard[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_INSTANT" Language="fr_FR">
+			<Text>Les routes commerciales commencent à distance ; les marchands n'ont pas besoin de voyager.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_DEFAULT" Language="fr_FR">
+			<Text>Le rythme du jeu.[nn][BLIST]
+				[LI] Antiquité : voyage avec 4[icon:Action_Move]de déplacement
+				[LI] Âge de l'exploration : voyage avec 4[icon:Action_Move]de déplacement
+				[LI] Âge moderne : à distance[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION" Language="fr_FR">
 			<Text>Détermine le temps nécessaire pour raser une colonie conquise. Des quartiers sont rasés à chaque tour, les grandes colonies prennent donc plus de temps.</Text>
@@ -520,7 +631,7 @@
 			<Text>Définit la quantité de nourriture dont une colonie a besoin pour chaque nouveau citoyen. Des seuils plus bas permettent aux colonies de dépasser la taille 10 bien plus tôt.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_NAME" Language="fr_FR">
-			<Text>Routes</Text>
+			<Text>Vitesse des routes</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION" Language="fr_FR">
 			<Text>Définit le coût en mouvement des routes et des chemins de fer. Des routes moins coûteuses permettent de traverser votre territoire en bien moins de tours.</Text>
@@ -642,9 +753,6 @@
 				[LI] Opération Ivy : 1800 / 1800 / 1800
 				[LI] Vol spatial habité : 2250 / 2250 / 2250[/BLIST][nn](À vitesse standard)</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="fr_FR">
-			<Text>Les coûts du jeu.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="fr_FR">
 			<Text>Doctrines standard au début, plus chères quand l'arbre s'ouvre.[nn][BLIST]
 				[LI] Antiquité : Standard
@@ -662,9 +770,6 @@
 				[LI] Antiquité : -25%
 				[LI] Âge de l'exploration : -25%
 				[LI] Âge moderne : Standard[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="fr_FR">
-			<Text>Les coûts du jeu.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="fr_FR">
 			<Text>Recherche plus chère au début, moins chère quand l'arbre s'ouvre.[nn][BLIST]
@@ -872,7 +977,7 @@
 			<Text>Civilisations suggérées</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="fr_FR">
-			<Text>Chaque IA suit les associations de son dirigeant dans le sélecteur de civilisation : une civilisation historique offerte par le nouvel âge, poids le plus fort d'abord, sinon une géographique, jamais une stratégique.[n]Une civilisation déjà prise est passée au profit de la suivante ; un doublon n'est attribué que lorsque toutes sont prises. Une égalité revient à la civilisation propre au nouvel âge. Si le choix est la civilisation que l'IA a déjà, elle la conserve.</Text>
+			<Text>Chaque IA reste fidèle à l'histoire de son dirigeant. Elle change quand le nouvel âge offre une civilisation historique de son dirigeant, et garde sa civilisation quand c'est celle-ci l'historique.[n]Sinon, elle suit le chemin habituel du jeu vers le nouvel âge, une civilisation géographique d'abord. Une civilisation déjà prise est ignorée ; un doublon n'est attribué que lorsque toutes sont prises.[n]Expérimental : depuis le correctif 1.5, le jeu peut remplacer ces choix.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="fr_FR">
 			<Text>Personnalisé : définissez l'ensemble de triomphes de chaque âge individuellement.</Text>
@@ -1302,9 +1407,11 @@
 				[LI] Coût des technologies : +25% / +50% / +50%
 				[LI] Coût des dogmes : +25% / +50% / +50%
 				[LI] Coût des bâtiments : +25% / +50% / +50%
+				[LI] Coût des projets de victoire : +25%
 				[LI] Croissance des colonies : +25%
-				[LI] Routes : Standard / Standard / -25%
-				[LI] Coût des projets de victoire : +25%[/BLIST]</Text>
+				[LI] Vitesse des routes : Standard / Standard / -25%
+				[LI] Vitesse commerciale : -25%
+				[LI] Vitesse de destruction : Standard[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT" Language="fr_FR">
 			<Text>Âges courts, avec des coûts réduits en conséquence.[nn][BLIST]
@@ -1313,9 +1420,11 @@
 				[LI] Coût des technologies : -25% / -25% / Standard
 				[LI] Coût des dogmes : -25% / -25% / Standard
 				[LI] Coût des bâtiments : -25%
+				[LI] Coût des projets de victoire : -25%
 				[LI] Croissance des colonies : -25%
-				[LI] Routes : -25% / -50% / -50%
-				[LI] Coût des projets de victoire : -25%[/BLIST]</Text>
+				[LI] Vitesse des routes : -25% / -50% / -50%
+				[LI] Vitesse commerciale : Instantanée
+				[LI] Vitesse de destruction : Instantanée[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="fr_FR">
 			<Text>Âges plus longs, avec recherche et croissance ajustées pour les remplir.[nn][BLIST]
@@ -1324,9 +1433,11 @@
 				[LI] Coût des technologies : +25% / Standard / -25%
 				[LI] Coût des dogmes : Standard / +25% / +25%
 				[LI] Coût des bâtiments : +25% / Standard / Standard
+				[LI] Coût des projets de victoire : Standard / -25% / -25%
 				[LI] Croissance des colonies : -25% / -25% / Standard
-				[LI] Routes : Standard / Standard / -25%
-				[LI] Coût des projets de victoire : Standard / -25% / -25%[/BLIST]</Text>
+				[LI] Vitesse des routes : Standard / Standard / -25%
+				[LI] Vitesse commerciale : Standard
+				[LI] Vitesse de destruction : Standard[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="fr_FR">
 			<Text>Ajusté pour une partie menée d'une traite.[nn][BLIST]
@@ -1335,12 +1446,81 @@
 				[LI] Coût des technologies : +25% / +50% / +100%
 				[LI] Coût des dogmes : +50% / +50% / +100%
 				[LI] Coût des bâtiments : Standard
+				[LI] Coût des projets de victoire : Standard / Standard / +25%
 				[LI] Croissance des colonies : +25%
-				[LI] Routes : -25% / -25% / -50%
-				[LI] Coût des projets de victoire : Standard / Standard / +25%[/BLIST]</Text>
+				[LI] Vitesse des routes : -25% / -25% / -50%
+				[LI] Vitesse commerciale : Standard
+				[LI] Vitesse de destruction : Standard[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="fr_FR">
 			<Text>Les Paramètres de rythme de l'onglet Rythme ne correspondent plus à un préréglage.</Text>
+		</Replace>
+	<!-- Natural wonder names (shell) -->
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_NAME" Language="fr_FR">
+			<Text>Grande barrière de corail</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_NAME" Language="fr_FR">
+			<Text>Triangle des Bermudes</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_CANYON_NAME" Language="fr_FR">
+			<Text>Grand Canyon</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GREAT_BLUE_HOLE_NAME" Language="fr_FR">
+			<Text>Grand Trou Bleu</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GULLFOSS_NAME" Language="fr_FR">
+			<Text>Gullfoss</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_HOERIKWAGGO_NAME" Language="fr_FR">
+			<Text>Hoerikwaggo</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_IGUAZU_FALLS_NAME" Language="fr_FR">
+			<Text>Chutes d'Iguazú</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KILIMANJARO_NAME" Language="fr_FR">
+			<Text>Kilimandjaro</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MACHAPUCHARE_NAME" Language="fr_FR">
+			<Text>Machapuchare</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME" Language="fr_FR">
+			<Text>Geyser maritime de Mapu a Vaea</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_EVEREST_NAME" Language="fr_FR">
+			<Text>Mont Everest</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="fr_FR">
+			<Text>Mont Fuji</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NACHI_FALLS_NAME" Language="fr_FR">
+			<Text>Chute d'eau de Nachi</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="fr_FR">
+			<Text>Forêt de séquoia|Forêts de séquoia</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME" Language="fr_FR">
+			<Text>Seongsan Ilchulbong</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="fr_FR">
+			<Text>Théra</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_NAME" Language="fr_FR">
+			<Text>Torres del Paine</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ULURU_NAME" Language="fr_FR">
+			<Text>Uluru</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VALLEY_OF_FLOWERS_NAME" Language="fr_FR">
+			<Text>Vallée fleurie|Vallées fleuries</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VIHREN_NAME" Language="fr_FR">
+			<Text>Vikhren</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VINICUNCA_NAME" Language="fr_FR">
+			<Text>Vinicunca</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ZHANGJIAJIE_NAME" Language="fr_FR">
+			<Text>Zhangjiajie</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

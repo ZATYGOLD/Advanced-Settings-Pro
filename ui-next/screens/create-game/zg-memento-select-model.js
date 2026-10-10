@@ -8,7 +8,7 @@
 //
 // This is a copy of the base createMementoModel with one substitution: the
 // player it reads and writes is a target, which starts as the human and is
-// moved by the model's retarget(playerId) as ui/zg-memento-select.js opens the
+// moved by the model's retarget(playerId) as ui-next/screens/create-game/zg-memento-select.js opens the
 // picker. The model refreshes its slots through the same reconcile the base
 // runs after an equip, so the screen shows the target's mementos.
 //
@@ -21,10 +21,12 @@ import { createSignal } from 'fs://game/core/vendor/solid-js/dist/solid.js';
 import { createMutable, modifyMutable, reconcile } from 'fs://game/core/vendor/solid-js/store/dist/store.js';
 import { ModelRegistry, ModelLifecycle } from 'fs://game/core/ui-next/services/model-registry.js';
 import { FullTextSearch } from 'fs://game/core/ui-next/utilities/search-utils.js';
-import { MEMENTO_NONE_VALUE as NONE_VALUE } from './zg-memento-roller.js';
+import { ContextManager } from 'fs://game/core/ui/context-manager/context-manager.js';
+import { MEMENTO_NONE_VALUE as NONE_VALUE } from '../../../ui/shell/shared/zg-memento-roller.js';
 
 const OVERRIDE_PRIORITY = 110;
 const MODEL_NAME = "MementoSelectModel";
+const CREATE_GAME_SCREEN = "create-game-sp";
 
 const funcDescName = GameSetup.findString("FunctionalDescription");
 
@@ -132,7 +134,6 @@ function createMementoModel() {
 		targetPlayer = playerId ?? GameContext.localPlayerID;
 		refreshSlots();
 		setSelectedSlot(Math.max(0, Math.min(slotIndex, mutableMementos.length - 1)));
-		console.warn(`ZG-ASP mementos: picker targeting player ${targetPlayer}`);
 	};
 
 	const yieldIconPattern = /\[icon:(YIELD_(?:FOOD|PRODUCTION|GOLD|SCIENCE|CULTURE|HAPPINESS|DIPLOMACY))\]/g;
@@ -160,14 +161,13 @@ function createMementoModel() {
 		clearAllNew,
 		fulltextSearch,
 		retarget,
-		get targetPlayer() { return targetPlayer; },
 	};
 	return activeModel;
 }
 
 ModelRegistry.register(MODEL_NAME, ModelLifecycle.PerInstance, createMementoModel, OVERRIDE_PRIORITY);
 
-// The model the create-game screen built, when one exists this session. The
-// picker reuses it rather than building a second, so the Overview's own memento
-// display follows every change made through the picker.
-export const currentMementoModel = () => activeModel;
+// The model the open create-game screen built. The picker reuses it rather than
+// building a second, so the Overview's own memento display follows every change
+// made through the picker. Elsewhere (the lobby) the picker builds its own.
+export const currentMementoModel = () => (ContextManager.hasInstanceOf(CREATE_GAME_SCREEN) ? activeModel : null);

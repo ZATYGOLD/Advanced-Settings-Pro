@@ -5,5 +5,5 @@ SET Cost = ROUND(Cost * 1.25),
         WHEN RepeatableCostProgressionParam1 > 0 THEN ROUND(RepeatableCostProgressionParam1 * 1.25)
         ELSE RepeatableCostProgressionParam1
     END
-WHERE ProgressionTree LIKE 'TREE_CIVICS%'
+WHERE ProgressionTree LIKE 'TREE_CIVIC%'
 AND Cost > 1;

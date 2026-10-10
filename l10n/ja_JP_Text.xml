@@ -4,6 +4,9 @@
 		<Replace Tag="LOC_GROUPID_ZG_UNITOPTIONS" Language="ja_JP">
 			<Text>ユニット設定</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_TRADEOPTIONS" Language="ja_JP">
+			<Text>交易の設定</Text>
+		</Replace>
 		<Replace Tag="LOC_GROUPID_ZG_INDEPENDENTPOWEROPTIONS" Language="ja_JP">
 			<Text>独立勢力設定</Text>
 		</Replace>
@@ -140,14 +143,17 @@
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME" Language="ja_JP">
 			<Text>入植地間の距離</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_NAME" Language="ja_JP">
+			<Text>交易範囲</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_NAME" Language="ja_JP">
+			<Text>交易の速度</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_RAZE_TIME_NAME" Language="ja_JP">
-			<Text>破壊にかかる時間</Text>
+			<Text>破壊の速度</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_INSTANT_NAME" Language="ja_JP">
 			<Text>即時</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SHORTER_NAME" Language="ja_JP">
-			<Text>短縮</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COMBAT_UNIT_COST_NAME" Language="ja_JP">
 			<Text>軍事ユニットのコスト</Text>
@@ -283,6 +289,111 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLEMENT_DISTANCE_DESCRIPTION_MORE" Language="ja_JP">
 			<Text>4タイル。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION" Language="ja_JP">
+			<Text>交易路が入植地から陸と海でどこまで伸ばせるかを設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_MINUS_50" Language="ja_JP">
+			<Text>範囲が半分。[nn][BLIST]
+				[LI] 古代：陸5、海15
+				[LI] 探検の時代：陸8、海23
+				[LI] 近代：陸10、海30[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_MINUS_25" Language="ja_JP">
+			<Text>範囲が25%減少。[nn][BLIST]
+				[LI] 古代：陸8、海23
+				[LI] 探検の時代：陸11、海34
+				[LI] 近代：陸15、海45[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_STANDARD" Language="ja_JP">
+			<Text>ゲーム本来の範囲。[nn][BLIST]
+				[LI] 古代：陸10、海30
+				[LI] 探検の時代：陸15、海45
+				[LI] 近代：陸20、海60[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_25" Language="ja_JP">
+			<Text>範囲が25%増加。[nn][BLIST]
+				[LI] 古代：陸13、海38
+				[LI] 探検の時代：陸19、海56
+				[LI] 近代：陸25、海75[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_50" Language="ja_JP">
+			<Text>範囲が50%増加。[nn][BLIST]
+				[LI] 古代：陸15、海45
+				[LI] 探検の時代：陸23、海68
+				[LI] 近代：陸30、海90[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_PLUS_100" Language="ja_JP">
+			<Text>範囲が2倍。[nn][BLIST]
+				[LI] 古代：陸20、海60
+				[LI] 探検の時代：陸30、海90
+				[LI] 近代：陸40、海120[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_DESCRIPTION_CUSTOM" Language="ja_JP">
+			<Text>時代ごとに交易範囲を個別に設定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_RANGE_AGE_DESCRIPTION" Language="ja_JP">
+			<Text>この時代の交易範囲を設定します。[n]交易範囲がカスタムの場合のみ適用されます。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION" Language="ja_JP">
+			<Text>商人が交易路を開始する速さを設定します。交易相手の入植地まで移動するか、離れた場所から開始します。移動速度は近代を含むすべての時代に適用されます。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_SLOW" Language="ja_JP">
+			<Text>商人は移動力3[icon:Action_Move]で移動します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_STANDARD" Language="ja_JP">
+			<Text>商人は移動力4[icon:Action_Move]で移動します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_QUICK" Language="ja_JP">
+			<Text>商人は移動力5[icon:Action_Move]で移動します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_FAST" Language="ja_JP">
+			<Text>商人は移動力6[icon:Action_Move]で移動します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_SWIFT" Language="ja_JP">
+			<Text>すべての時代で交易路が離れた場所から開始されます。[nn][BLIST]
+				[LI] 古代：即時
+				[LI] 探検の時代：即時
+				[LI] 近代：即時[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_BALANCED" Language="ja_JP">
+			<Text>ゲーム本来のペース。[nn][BLIST]
+				[LI] 古代：標準
+				[LI] 探検の時代：標準
+				[LI] 近代：即時[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_EXTENDED" Language="ja_JP">
+			<Text>すべての時代で商人がゆっくり移動します。[nn][BLIST]
+				[LI] 古代：-25%
+				[LI] 探検の時代：-25%
+				[LI] 近代：-25%[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_SWIFT" Language="ja_JP">
+			<Text>すべての時代で入植地が1ターンで破壊されます。[nn][BLIST]
+				[LI] 古代：即時
+				[LI] 探検の時代：即時
+				[LI] 近代：即時[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_BALANCED" Language="ja_JP">
+			<Text>ゲーム本来のペース。[nn][BLIST]
+				[LI] 古代：標準
+				[LI] 探検の時代：標準
+				[LI] 近代：標準[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION_EXTENDED" Language="ja_JP">
+			<Text>ゲーム本来のペース。[nn][BLIST]
+				[LI] 古代：標準
+				[LI] 探検の時代：標準
+				[LI] 近代：標準[/BLIST]</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_INSTANT" Language="ja_JP">
+			<Text>交易路は離れた場所から開始されるため、商人は移動する必要がありません。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_DEFAULT" Language="ja_JP">
+			<Text>ゲーム本来のペース。[nn][BLIST]
+				[LI] 古代：移動力4[icon:Action_Move]で移動
+				[LI] 探検の時代：移動力4[icon:Action_Move]で移動
+				[LI] 近代：離れた場所から開始[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RAZE_TIME_DESCRIPTION" Language="ja_JP">
 			<Text>占領した入植地の破壊にかかる時間を設定します。毎ターン区域が破壊されるため、大きな入植地ほど時間がかかります。</Text>
@@ -520,7 +631,7 @@
 			<Text>入植地が新しい市民を得るのに必要な食料を設定します。しきい値が低いほど、入植地はずっと早く規模10を超えます。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_NAME" Language="ja_JP">
-			<Text>道路</Text>
+			<Text>道路の速度</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION" Language="ja_JP">
 			<Text>道路と鉄道を通る際の移動コストを設定します。道路が安いほど、軍は領土をはるかに少ないターンで横断できます。</Text>
@@ -642,9 +753,6 @@
 				[LI] アイビー作戦：1800 / 1800 / 1800
 				[LI] 有人宇宙飛行：2250 / 2250 / 2250[/BLIST][nn]（標準速度の場合）</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="ja_JP">
-			<Text>ゲーム本来のコスト。</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="ja_JP">
 			<Text>序盤の社会制度は標準、ツリーが広がると高くなる。[nn][BLIST]
 				[LI] 古代：標準
@@ -662,9 +770,6 @@
 				[LI] 古代：-25%
 				[LI] 探検の時代：-25%
 				[LI] 近代：標準[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="ja_JP">
-			<Text>ゲーム本来のコスト。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="ja_JP">
 			<Text>序盤の研究は高く、ツリーが広がると安くなる。[nn][BLIST]
@@ -872,7 +977,7 @@
 			<Text>おすすめの文明</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="ja_JP">
-			<Text>各AIは文明選択画面の指導者との関連付けに従います。新しい時代で選べる歴史的文明を重みの高い順に、なければ地理的文明を選び、戦略的文明は使いません。[n]すでに選ばれた文明は飛ばして次を選び、すべて選ばれている場合にのみ重複を許します。同点なら新しい時代固有の文明を優先します。選ばれたのがAIの現在の文明なら、そのまま維持します。</Text>
+			<Text>各AIは指導者の歴史に従います。新しい時代に指導者の歴史的文明があればそれに移り、現在の文明が歴史的文明ならそのまま維持します。[n]それ以外は通常の時代移行の道筋に従い、地理的文明を優先します。既に選ばれた文明は避け、すべて選ばれている場合のみ重複します。[n]試験的機能：パッチ1.5以降、ゲームがこの選択を上書きする場合があります。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM" Language="ja_JP">
 			<Text>カスタム：時代ごとにトライアンフセットを個別に設定します。</Text>
@@ -1302,9 +1407,11 @@
 				[LI] 技術コスト：+25% / +50% / +50%
 				[LI] 社会制度コスト：+25% / +50% / +50%
 				[LI] 建造物のコスト：+25% / +50% / +50%
+				[LI] 勝利プロジェクトのコスト：+25%
 				[LI] 入植地の成長：+25%
-				[LI] 道路：標準 / 標準 / -25%
-				[LI] 勝利プロジェクトのコスト：+25%[/BLIST]</Text>
+				[LI] 道路の速度：標準 / 標準 / -25%
+				[LI] 交易の速度：-25%
+				[LI] 破壊の速度：標準[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT" Language="ja_JP">
 			<Text>短い時代。費用もそれに合わせて下がる。[nn][BLIST]
@@ -1313,9 +1420,11 @@
 				[LI] 技術コスト：-25% / -25% / 標準
 				[LI] 社会制度コスト：-25% / -25% / 標準
 				[LI] 建造物のコスト：-25%
+				[LI] 勝利プロジェクトのコスト：-25%
 				[LI] 入植地の成長：-25%
-				[LI] 道路：-25% / -50% / -50%
-				[LI] 勝利プロジェクトのコスト：-25%[/BLIST]</Text>
+				[LI] 道路の速度：-25% / -50% / -50%
+				[LI] 交易の速度：即時
+				[LI] 破壊の速度：即時[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED" Language="ja_JP">
 			<Text>長めの時代。研究と成長をそれに合わせて調整。[nn][BLIST]
@@ -1324,9 +1433,11 @@
 				[LI] 技術コスト：+25% / 標準 / -25%
 				[LI] 社会制度コスト：標準 / +25% / +25%
 				[LI] 建造物のコスト：+25% / 標準 / 標準
+				[LI] 勝利プロジェクトのコスト：標準 / -25% / -25%
 				[LI] 入植地の成長：-25% / -25% / 標準
-				[LI] 道路：標準 / 標準 / -25%
-				[LI] 勝利プロジェクトのコスト：標準 / -25% / -25%[/BLIST]</Text>
+				[LI] 道路の速度：標準 / 標準 / -25%
+				[LI] 交易の速度：標準
+				[LI] 破壊の速度：標準[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER" Language="ja_JP">
 			<Text>1回の対戦で遊びきる想定の調整。[nn][BLIST]
@@ -1335,12 +1446,81 @@
 				[LI] 技術コスト：+25% / +50% / +100%
 				[LI] 社会制度コスト：+50% / +50% / +100%
 				[LI] 建造物のコスト：標準
+				[LI] 勝利プロジェクトのコスト：標準 / 標準 / +25%
 				[LI] 入植地の成長：+25%
-				[LI] 道路：-25% / -25% / -50%
-				[LI] 勝利プロジェクトのコスト：標準 / 標準 / +25%[/BLIST]</Text>
+				[LI] 道路の速度：-25% / -25% / -50%
+				[LI] 交易の速度：標準
+				[LI] 破壊の速度：標準[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM" Language="ja_JP">
 			<Text>「ペース」タブの「ペース設定」がどのプリセットとも一致していません。</Text>
+		</Replace>
+	<!-- Natural wonder names (shell) -->
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_NAME" Language="ja_JP">
+			<Text>グレートバリアリーフ</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_NAME" Language="ja_JP">
+			<Text>バミューダトライアングル</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_CANYON_NAME" Language="ja_JP">
+			<Text>グランドキャニオン</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GREAT_BLUE_HOLE_NAME" Language="ja_JP">
+			<Text>グレート・ブルーホール</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GULLFOSS_NAME" Language="ja_JP">
+			<Text>グトルフォス</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_HOERIKWAGGO_NAME" Language="ja_JP">
+			<Text>ホエリクワッゴ</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_IGUAZU_FALLS_NAME" Language="ja_JP">
+			<Text>イグアスの滝</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KILIMANJARO_NAME" Language="ja_JP">
+			<Text>キリマンジャロ山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MACHAPUCHARE_NAME" Language="ja_JP">
+			<Text>マチャプチャレ</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME" Language="ja_JP">
+			<Text>マプア・バイア・ブロウホール</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_EVEREST_NAME" Language="ja_JP">
+			<Text>エベレスト山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOUNT_FUJI_NAME" Language="ja_JP">
+			<Text>富士山</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NACHI_FALLS_NAME" Language="ja_JP">
+			<Text>那智の滝</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_REDWOOD_FOREST_NAME" Language="ja_JP">
+			<Text>レッドウッドの森</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME" Language="ja_JP">
+			<Text>城山日出峰</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_THERA_NAME" Language="ja_JP">
+			<Text>テーラ</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_NAME" Language="ja_JP">
+			<Text>トーレス・デル・パイネ</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ULURU_NAME" Language="ja_JP">
+			<Text>ウルル</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VALLEY_OF_FLOWERS_NAME" Language="ja_JP">
+			<Text>花の谷</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VIHREN_NAME" Language="ja_JP">
+			<Text>ヴィフレン</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VINICUNCA_NAME" Language="ja_JP">
+			<Text>ヴィニクンカ</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_ZHANGJIAJIE_NAME" Language="ja_JP">
+			<Text>張家界</Text>
 		</Replace>
 	</LocalizedText>
 </Database>

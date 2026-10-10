@@ -1,5 +1,6 @@
-// Copy of {base-standard}maps/continents-plus.js with a tier-aware river model;
-// imports are repointed at the base module so everything else stays stock.
+// Copy of {base-standard}maps/continents-plus.js with terrain, rivers, biomes and
+// resources generated through the zg-map-* modules; imports are repointed at
+// the base modules.
 import { zgModelRivers } from './zg-map-rivers.js';
 import { zgAddMountains } from './zg-map-mountains.js';
 import { zgDesignateBiomes } from './zg-map-biomes.js';
@@ -226,7 +227,6 @@ function generateMap() {
   buildRainfallMap(iWidth, iHeight);
   zgModelRivers(5, 15);
   TerrainBuilder.validateAndFixTerrain();
-  TerrainBuilder.defineNamedRivers();
   zgDesignateBiomes(iWidth, iHeight);
   addTundraVolcanoes(iWidth, iHeight);
   addNaturalWonders(iWidth, iHeight, iNumNaturalWonders, naturalWonderEvent, requestedNaturalWonders);
