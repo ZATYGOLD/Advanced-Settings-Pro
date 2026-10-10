@@ -753,9 +753,6 @@
 				[LI] Operazione Ivy: 1800 / 1800 / 1800
 				[LI] Volo spaziale con equipaggio: 2250 / 2250 / 2250[/BLIST][nn](A velocità standard)</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="it_IT">
-			<Text>I costi propri del gioco.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="it_IT">
 			<Text>Civiche standard all'inizio, più care quando l'albero si apre.[nn][BLIST]
 				[LI] Antichità: Standard
@@ -773,9 +770,6 @@
 				[LI] Antichità: -25%
 				[LI] Epoca delle esplorazioni: -25%
 				[LI] Epoca moderna: Standard[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="it_IT">
-			<Text>I costi propri del gioco.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="it_IT">
 			<Text>Ricerca più cara all'inizio, più economica quando l'albero si apre.[nn][BLIST]

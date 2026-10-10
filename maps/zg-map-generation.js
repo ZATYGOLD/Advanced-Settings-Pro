@@ -1,11 +1,6 @@
-// Copy of {base-standard}scripts/common-generation.js generateMapFeatures with the
-// mod's tier-aware river model and biome pass substituted in; every other phase
-// stays stock and is imported from the base module.
-//
-// The base game consolidated the Voronoi maps' terrain generation into this one
-// helper. The Voronoi map copies call zgGenerateMapFeatures instead of the base
-// generateMapFeatures so the Rivers and Biome settings still apply, while the
-// phase order, profiling and GenerationContext behavior match the base exactly.
+// Copy of {base-standard}scripts/common-generation.js generateMapFeatures, the
+// terrain pass every Voronoi map shares, with the mod's rough, mountain, river,
+// biome and resource passes substituted in; the phase order matches the base.
 import { buildRainfallMap } from 'fs://game/base-standard/maps/elevation-terrain-generator.js';
 import { addFeatures } from 'fs://game/base-standard/maps/feature-biome-generator.js';
 import { dumpContinents, dumpTerrain, dumpElevation, dumpRainfall, dumpBiomes, dumpFeatures, dumpResources } from 'fs://game/base-standard/maps/map-debug-helpers.js';

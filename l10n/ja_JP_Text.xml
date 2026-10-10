@@ -753,9 +753,6 @@
 				[LI] アイビー作戦：1800 / 1800 / 1800
 				[LI] 有人宇宙飛行：2250 / 2250 / 2250[/BLIST][nn]（標準速度の場合）</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="ja_JP">
-			<Text>ゲーム本来のコスト。</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="ja_JP">
 			<Text>序盤の社会制度は標準、ツリーが広がると高くなる。[nn][BLIST]
 				[LI] 古代：標準
@@ -773,9 +770,6 @@
 				[LI] 古代：-25%
 				[LI] 探検の時代：-25%
 				[LI] 近代：標準[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="ja_JP">
-			<Text>ゲーム本来のコスト。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="ja_JP">
 			<Text>序盤の研究は高く、ツリーが広がると安くなる。[nn][BLIST]

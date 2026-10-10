@@ -330,7 +330,6 @@
 				[LI] Crewed Space Flight Preparation: 1500 / 1500 / 1500
 				[LI] Operation Ivy: 1800 / 1800 / 1800
 				[LI] Crewed Space Flight: 2250 / 2250 / 2250[/BLIST][nn](On Standard Speed)</Text></Row>
-		<Row Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD"><Text>The game's own costs.</Text></Row>
 		<Row Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED"><Text>Standard civics early, dearer once the tree opens up.[nn][BLIST]
 				[LI] Antiquity: Standard
 				[LI] Exploration: +25%
@@ -343,7 +342,6 @@
 				[LI] Antiquity: -25%
 				[LI] Exploration: -25%
 				[LI] Modern: Standard[/BLIST]</Text></Row>
-		<Row Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD"><Text>The game's own costs.</Text></Row>
 		<Row Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED"><Text>Dearer research early, cheaper once the tree opens up.[nn][BLIST]
 				[LI] Antiquity: +25%
 				[LI] Exploration: Standard

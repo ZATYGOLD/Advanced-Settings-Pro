@@ -1,12 +1,11 @@
 // Memento draws shared by the Player tab and the age transition.
 //
-// Two settings hand out mementos: the per-player Random flag behind a slot's
-// Random entry, and Game Settings' AI Mementos, which fills every AI player's
-// slots by one rule (at random, or matched to the attributes of the player's
-// leader or civilization). The Player tab applies both while a game is set up;
-// zg-age-transition-mementos.js applies AI Mementos again when an age turns
-// over and Age Transition AI Mementos says to. This module holds the pieces
-// both need and nothing about either screen.
+// AI Mementos fills every AI player's slots by one rule: at random (a per-player
+// Random flag rolled once per session) or matched to the attributes of the
+// player's leader or civilization. The Player tab applies it during setup and
+// zg-age-transition-mementos.js again when an age turns over.
+
+import { cached, queryConfig } from './zg-shell-context.js';
 
 export const MEMENTO_PARAM_IDS = ["PlayerMementoMajorSlot", "PlayerMementoMinorSlot1"];
 export const MEMENTO_NONE_VALUE = "NONE";
@@ -27,8 +26,8 @@ export function mementoTooltip(value) {
 }
 // Random is not a memento the game knows: the mod keeps a per-player flag and
 // rolls a real memento into the slot, once per game session.
-export const RANDOM_FLAG_PARAM_ID = "ZG_PlayerRandomMementos";
-export const RANDOM_FLAGS = { ZG_RANDOM_MEMENTOS_NONE: [false, false], ZG_RANDOM_MEMENTOS_MAJOR: [true, false], ZG_RANDOM_MEMENTOS_MINOR: [false, true], ZG_RANDOM_MEMENTOS_BOTH: [true, true] };
+const RANDOM_FLAG_PARAM_ID = "ZG_PlayerRandomMementos";
+const RANDOM_FLAGS = { ZG_RANDOM_MEMENTOS_NONE: [false, false], ZG_RANDOM_MEMENTOS_MAJOR: [true, false], ZG_RANDOM_MEMENTOS_MINOR: [false, true], ZG_RANDOM_MEMENTOS_BOTH: [true, true] };
 // Game Settings' AI Mementos, which fills every AI player's slots at once.
 export const AI_MEMENTOS_PARAM_ID = "ZG_AIMementos";
 export const AI_MEMENTOS_DEFAULT = "ZG_AI_MEMENTOS_NONE";
@@ -82,22 +81,6 @@ export function rollMemento(playerId, slotIndex, attribute) {
 
 // --------------------------------------------------------- AI mementos --
 
-// The configuration database does not change while the shell is open, so each
-// lookup below is built on first use and kept.
-function cached(build) {
-	let value;
-	return () => (value ??= build());
-}
-
-function query(sql) {
-	try {
-		return Database.query("config", sql) ?? [];
-	} catch (error) {
-		console.error(`ZG-ASP mementos: query failed: ${error}`);
-		return [];
-	}
-}
-
 function attributeOf(tagType) {
 	const name = tagType.slice(TRAIT_PREFIX.length);
 	return ATTRIBUTE_PREFIX + (ATTRIBUTE_ALIASES[name] ?? name);
@@ -122,9 +105,9 @@ function groupAttributes(rows, column) {
 }
 
 // Memento type to the attribute it carries.
-const mementoAttributes = cached(() => new Map(query("SELECT Type, Tag FROM Mementos").map((row) => [row.Type, row.Tag])));
-const leaderAttributes = cached(() => groupAttributes(query("SELECT LeaderType, TagType FROM LeaderTags"), "LeaderType"));
-const civilizationAttributes = cached(() => groupAttributes(query("SELECT CivilizationType, TagType FROM CivilizationTags"), "CivilizationType"));
+const mementoAttributes = cached(() => new Map(queryConfig("SELECT Type, Tag FROM Mementos").map((row) => [row.Type, row.Tag])));
+const leaderAttributes = cached(() => groupAttributes(queryConfig("SELECT LeaderType, TagType FROM LeaderTags"), "LeaderType"));
+const civilizationAttributes = cached(() => groupAttributes(queryConfig("SELECT CivilizationType, TagType FROM CivilizationTags"), "CivilizationType"));
 
 // `random` leaves the slots on the Random flag so they roll again each session.
 // A match mode names the player parameter it reads and the attributes for that

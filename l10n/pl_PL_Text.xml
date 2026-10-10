@@ -753,9 +753,6 @@
 				[LI] Operacja Bluszcz: 1800 / 1800 / 1800
 				[LI] Załogowy lot kosmiczny: 2250 / 2250 / 2250[/BLIST][nn](Przy standardowym tempie)</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="pl_PL">
-			<Text>Koszty z gry.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="pl_PL">
 			<Text>Standardowe ustroje na początku, droższe gdy drzewko się otwiera.[nn][BLIST]
 				[LI] Starożytność: Standardowe
@@ -773,9 +770,6 @@
 				[LI] Starożytność: -25%
 				[LI] Epoka odkryć: -25%
 				[LI] Epoka nowożytna: Standardowe[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="pl_PL">
-			<Text>Koszty z gry.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="pl_PL">
 			<Text>Droższe badania na początku, tańsze gdy drzewko się otwiera.[nn][BLIST]

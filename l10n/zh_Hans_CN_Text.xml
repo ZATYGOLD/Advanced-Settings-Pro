@@ -753,9 +753,6 @@
 				[LI] 常春藤行动：1800 / 1800 / 1800
 				[LI] 载人航天飞行：2250 / 2250 / 2250[/BLIST][nn]（标准速度下）</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
-			<Text>游戏原本的费用。</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="zh_Hans_CN">
 			<Text>前期社会制度为标准，制度树展开后变得更贵。[nn][BLIST]
 				[LI] 远古：标准
@@ -773,9 +770,6 @@
 				[LI] 远古：-25%
 				[LI] 探索：-25%
 				[LI] 近世：标准[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
-			<Text>游戏原本的费用。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="zh_Hans_CN">
 			<Text>前期研究更贵，科技树展开后变得更便宜。[nn][BLIST]

@@ -753,9 +753,6 @@
 				[LI] 아이비 작전: 1800 / 1800 / 1800
 				[LI] 유인 우주 비행: 2250 / 2250 / 2250[/BLIST][nn](일반 속도 기준)</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="ko_KR">
-			<Text>게임 기본 비용.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="ko_KR">
 			<Text>초반 사회 제도는 일반 수준이고, 트리가 넓어질수록 비싸집니다.[nn][BLIST]
 				[LI] 고대: 일반
@@ -773,9 +770,6 @@
 				[LI] 고대: -25%
 				[LI] 대항해: -25%
 				[LI] 근대: 일반[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="ko_KR">
-			<Text>게임 기본 비용.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="ko_KR">
 			<Text>초반 연구 비용이 비싸고, 트리가 넓어질수록 저렴해집니다.[nn][BLIST]

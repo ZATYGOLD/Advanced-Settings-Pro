@@ -40,7 +40,7 @@
 // back (zg-setup-memory.js) the rules wait, and the comparisons then start
 // over, so the restored values are the baseline rather than a change to answer.
 
-import { canEditSetup } from './zg-shell-context.js';
+import { canEditSetup, isAgeTransition } from './zg-shell-context.js';
 import { tickSetupMemory, isRestoringSetup, rememberSetup } from './zg-setup-memory.js';
 
 const NW_COUNT_PARAM_ID = "ZG_NaturalWondersCount";
@@ -241,12 +241,7 @@ const PACE_PRESETS = {
 	},
 	// Eras+ MP Pace: age caps 140/160/180, its milestone curve, dearer research and
 	// civics that climb with the age, slightly slower growth, faster roads and Modern
-	// railroads, and pricier Modern victory projects.
-	//
-	// The costs are quoted on the same scale every other option uses. They were once
-	// set to their own steps (techs 1.35/1.5/1.75x, civics 1.45/1.6/1.85x, projects
-	// 1.2x), which meant carrying six percentages, their SQL, and their action groups
-	// for this one preset. The nearest shared steps play the same way.
+	// railroads, and pricier Modern victory projects, on the shared cost steps.
 	"LOC_ZG_PACE_PRESET_MULTIPLAYER_NAME": {
 		...PACE_STANDARD,
 		[AGE_LENGTH_PARAM_ID]: ["LOC_ZG_NUM_140", "LOC_ZG_NUM_160", "LOC_ZG_NUM_180"],
@@ -275,7 +270,7 @@ const TIER_MORE = "LOC_ZG_MORE_NAME";
 const TIER_DOUBLE = "LOC_ZG_DOUBLE_NAME";
 const TIER_CUSTOM = "LOC_ZG_CUSTOM_NAME";
 const TOGGLE_ENABLED = "LOC_ZG_ENABLED_NAME";
-const TOGGLE_DISABLED = "LOC_ZG_DISABLED_NAME";
+const TOGGLE_DISABLED = TIER_DISABLED;
 
 // Base wonder counts per map size (Maps.NumNaturalWonders).
 const BASE_WONDERS = { TINY: 3, SMALL: 4, STANDARD: 5, LARGE: 6, HUGE: 7 };
@@ -286,7 +281,6 @@ let nwLastTier = null;
 let slLastTier = null;
 let crisesLastToggle = null;
 let crisisTimingLast = null;
-let applying = false;
 
 function resolveName(handle) {
 	return GameSetup.resolveString(handle) ?? "";
@@ -610,63 +604,46 @@ function resetBaselines() {
 	TIER_AGE_SYNCS.forEach((sync) => { sync.lastTier = null; });
 }
 
+// Runs one rule, logging rather than letting a throw stop the others.
+function run(label, rule) {
+	try {
+		rule();
+	} catch (e) {
+		console.warn(`ZG-ASP setup rules: ${label} failed: ${e}`);
+	}
+}
+
 setInterval(() => {
 	// In multiplayer only the host holds the setup; a client sees the host's
 	// writes arrive and must not answer them with its own.
-	if (applying || !canEditSetup()) {
+	if (!canEditSetup() || isAgeTransition()) {
 		return;
 	}
 	// Remembered settings go back first, and the rules wait until they have:
 	// answering the defaults the screen opens with would cascade over them.
-	try {
+	run("setup memory", () => {
 		if (tickSetupMemory()) {
 			resetBaselines();
 		}
-	} catch (e) {
-		console.warn(`ZG-ASP setup memory error: ${e}`);
-	}
+	});
 	const revision = GameSetup.currentRevision;
 	if (isRestoringSetup() || revision == lastRevision) {
 		return;
 	}
-	lastRevision = revision;
-	applying = true;
-	try {
-		try {
-			syncNaturalWonderSetup();
-		} catch (e) {
-			console.warn(`ZG-ASP wonder sync error: ${e}`);
-		}
-		try {
-			syncSettlementLimits();
-		} catch (e) {
-			console.warn(`ZG-ASP settlement sync error: ${e}`);
-		}
-		try {
-			syncPaceMirror();
-			syncPacePreset();
-		} catch (e) {
-			console.warn(`ZG-ASP pace set sync error: ${e}`);
-		}
-		for (const sync of TIER_AGE_SYNCS) {
-			try {
-				syncTierWithAges(sync);
-			} catch (e) {
-				console.warn(`ZG-ASP ${sync.tierId} sync error: ${e}`);
-			}
-		}
-		try {
-			syncCrises();
-		} catch (e) {
-			console.warn(`ZG-ASP crises sync error: ${e}`);
-		}
-		try {
-			rememberSetup();
-		} catch (e) {
-			console.warn(`ZG-ASP setup memory error: ${e}`);
-		}
-	} finally {
-		// Never leave the guard latched: a throw here would freeze every rule.
-		applying = false;
+	// A new setup starts its revisions over; the last one's values are no baseline.
+	if (revision < lastRevision) {
+		resetBaselines();
 	}
+	lastRevision = revision;
+	run("natural wonders", syncNaturalWonderSetup);
+	run("settlement limits", syncSettlementLimits);
+	run("pace set", () => {
+		syncPaceMirror();
+		syncPacePreset();
+	});
+	for (const sync of TIER_AGE_SYNCS) {
+		run(sync.tierId, () => syncTierWithAges(sync));
+	}
+	run("crises", syncCrises);
+	run("setup memory", rememberSetup);
 }, POLL_MS);

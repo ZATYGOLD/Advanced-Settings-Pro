@@ -40,16 +40,10 @@ UPDATE Parameters SET SupportsSinglePlayer = 1 WHERE ParameterID = 'SingleAgeGam
 --*******************************************************
 --***************** GAME SPEEDS *************************
 --*******************************************************
--- The mod's two game speeds, Online 2.0 and Marathon 2.0, are retired but still
--- have to resolve for a save that runs on them. This is the configuration
--- database's own GameSpeeds table, which only carries what the setup screen
--- shows; the speeds themselves live in data/game-speeds/new-game-speeds.sql.
--- The Game Speed parameter reads the StandardGameSpeeds domain:
---     Domain="StandardGameSpeeds" ... SQL="SELECT Domain, ... FROM GameSpeeds"
--- Domain defaults to that and forms half the primary key, so naming another one
--- keeps a row in the table, and its name and description resolvable, while
--- leaving it out of every list the setup screen builds. Nothing reads
--- ZG_RetiredGameSpeeds; it exists to hold rows out of the dropdown.
+-- Online 2.0 and Marathon 2.0 are retired but must still resolve for saves that
+-- use them. ZG_RetiredGameSpeeds is a domain nothing reads, so the rows stay
+-- resolvable but out of the Game Speed dropdown (which reads StandardGameSpeeds).
+-- The speeds themselves are in data/game-speeds/new-game-speeds.sql.
 INSERT OR IGNORE INTO GameSpeeds (Domain, GameSpeedType, Name, Description, SortIndex)
     VALUES
         ('ZG_RetiredGameSpeeds', 'GAMESPEED_ZG_MARATHON_2', 'LOC_ZG_GAMESPEED_MARATHON_2_NAME', 'LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION', 60),
@@ -58,8 +52,8 @@ INSERT OR IGNORE INTO GameSpeeds (Domain, GameSpeedType, Name, Description, Sort
 --*******************************************************
 --***************** AGE LENGTH *************************
 --*******************************************************
--- The base Age Length setting moves to All Ages on the Pace tab, gains Brief
--- (90), Doubled (280), and Custom, and drives the per-age Age Length rows
+-- The base Age Length setting moves to the Pace tab, gains Swift, Balanced,
+-- Extended and Custom, and drives the per-age Age Length rows
 -- (ui/zg-setup-rules.js). Each option applies a data/ages file that sets the
 -- same point total for every base length, so the engine's own choice never
 -- changes the result; Custom applies the per-age rows' files instead.
@@ -148,15 +142,10 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_RandomMementosDomain', 'ZG_RANDOM_MEMENTOS_MINOR', 'LOC_ZG_RANDOM_MEMENTOS_NAME', '', 30),
         ('ZG_RandomMementosDomain', 'ZG_RANDOM_MEMENTOS_BOTH', 'LOC_ZG_RANDOM_MEMENTOS_NAME', '', 40);
 
--- Fills every AI player's memento slots at once, in Game Settings directly after
--- Bypass Civilization Unlocks (SortIndex 155). Applied by ui/zg-player-tab.js
--- whenever the setting changes; the Player tab can still override a single slot
--- afterwards.
--- Memento Settings gathers every memento control into one group, so the base
--- game's own Mementos toggle no longer sits in Game Settings while the mod's
--- memento settings sit elsewhere. The toggle is multiplayer-only in the base
--- game and shows read-only in single player; opening it there lets a
--- single-player game turn mementos off, as No Age Transitions was opened above.
+-- Memento Settings gathers every memento control, the base Mementos toggle
+-- included. The toggle is multiplayer-only in the base game; opening it to
+-- single player lets a single-player game turn mementos off, as SingleAgeGame
+-- is opened above. AI Mementos (applied by ui/zg-player-tab.js) follows it.
 --
 -- Groups appear in the order their first setting does. On the General tab the
 -- base game's groups come first (Game Settings, Difficulty, Triumph Settings
@@ -300,7 +289,7 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_AgeProgressRateAgeDomain', 'ZG_AGE_PROGRESS_BALANCED', 'LOC_ZG_BALANCED_NAME', 'LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_BALANCED', 30),
         ('ZG_AgeProgressRateAgeDomain', 'ZG_AGE_PROGRESS_FAST', 'LOC_ZG_FAST_NAME', 'LOC_ZG_AGE_PROGRESS_RATE_AGE_DESC_FAST', 40),
         ('ZG_TechnologyCostDomain', 'ZG_TECHNOLOGY_COST_LOW', 'LOC_ZG_LOW_NAME', 'LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_LOW', 10),
-        ('ZG_TechnologyCostDomain', 'ZG_TECHNOLOGY_COST_STANDARD', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD', 20),
+        ('ZG_TechnologyCostDomain', 'ZG_TECHNOLOGY_COST_STANDARD', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_COST_DESCRIPTION_STANDARD', 20),
         ('ZG_TechnologyCostDomain', 'ZG_TECHNOLOGY_COST_MEDIUM', 'LOC_ZG_MEDIUM_NAME', 'LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_MEDIUM', 25),
         ('ZG_TechnologyCostDomain', 'ZG_TECHNOLOGY_COST_HIGH', 'LOC_ZG_HIGH_NAME', 'LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_HIGH', 30),
         ('ZG_TechnologyCostDomain', 'ZG_TECHNOLOGY_COST_DOUBLE', 'LOC_ZG_DOUBLE_NAME', 'LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_DOUBLE', 40),
@@ -314,7 +303,7 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
         ('ZG_TechnologyCostAgeDomain', 'ZG_TECHNOLOGY_COST_PLUS_50', 'LOC_ZG_PCT_PLUS_50', 'LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_50', 60),
         ('ZG_TechnologyCostAgeDomain', 'ZG_TECHNOLOGY_COST_PLUS_100', 'LOC_ZG_PCT_PLUS_100', 'LOC_ZG_TECHNOLOGY_COST_AGE_DESC_PLUS_100', 100),
         ('ZG_CivicCostDomain', 'ZG_CIVIC_COST_LOW', 'LOC_ZG_LOW_NAME', 'LOC_ZG_CIVIC_COST_DESCRIPTION_LOW', 10),
-        ('ZG_CivicCostDomain', 'ZG_CIVIC_COST_STANDARD', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD', 20),
+        ('ZG_CivicCostDomain', 'ZG_CIVIC_COST_STANDARD', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_COST_DESCRIPTION_STANDARD', 20),
         ('ZG_CivicCostDomain', 'ZG_CIVIC_COST_MEDIUM', 'LOC_ZG_MEDIUM_NAME', 'LOC_ZG_CIVIC_COST_DESCRIPTION_MEDIUM', 25),
         ('ZG_CivicCostDomain', 'ZG_CIVIC_COST_HIGH', 'LOC_ZG_HIGH_NAME', 'LOC_ZG_CIVIC_COST_DESCRIPTION_HIGH', 30),
         ('ZG_CivicCostDomain', 'ZG_CIVIC_COST_DOUBLE', 'LOC_ZG_DOUBLE_NAME', 'LOC_ZG_CIVIC_COST_DESCRIPTION_DOUBLE', 40),
@@ -397,8 +386,8 @@ INSERT OR IGNORE INTO LegacySets (LegacySetType, Name, Description, SortIndex)
     VALUES
         ('ZG_LEGACY_SET_CUSTOM', 'LOC_ZG_CUSTOM_NAME', 'LOC_ZG_TRIUMPH_SET_DESCRIPTION_CUSTOM', 5);
 
--- Triumph Settings follows Memento Settings (155), so the base Triumph Set
--- moves from 10 to 180 and the per-age rows sit right behind it.
+-- The base Triumph Set moves from 10 to 180, after Game Settings and
+-- Difficulty, with the per-age rows right behind it.
 UPDATE Parameters SET SortIndex = 180 WHERE ParameterID = 'LegacySets';
 
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)

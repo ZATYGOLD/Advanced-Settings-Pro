@@ -76,16 +76,15 @@ function likeToRegExp(pattern) {
 
 // The game only ever issues static queries, so the patterns are matched here
 // rather than interpolated into the SQL.
-function parametersMatching(patterns) {
+function parametersMatching(patterns, parameterIds) {
 	if (patterns.length === 0) {
 		return [];
 	}
-	const rows = Database.query("config", "SELECT ParameterID FROM Parameters") ?? [];
 	const matchers = patterns.map(likeToRegExp);
-	return rows
-		.map((row) => row.ParameterID)
-		.filter((id) => matchers.some((matcher) => matcher.test(id)));
+	return parameterIds.filter((id) => matchers.some((matcher) => matcher.test(id)));
 }
+
+const allParameterIds = () => (Database.query("config", "SELECT ParameterID FROM Parameters") ?? []).map((row) => row.ParameterID);
 
 function createGuard() {
 	const guard = {
@@ -103,8 +102,9 @@ function createGuard() {
 		const installed = Modding.getInstalledMods();
 		const mods = new Set(installed.filter((mod) => mod.enabled && guard.conflictIds.has(mod.id)));
 		const unknown = [];
+		const parameterIds = guard.footprints.length > 0 ? allParameterIds() : [];
 		for (const footprint of guard.footprints) {
-			const parameters = parametersMatching(footprint.parameterPatterns);
+			const parameters = parametersMatching(footprint.parameterPatterns, parameterIds);
 			if (parameters.length === 0) {
 				continue;
 			}

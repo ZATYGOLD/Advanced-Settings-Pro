@@ -17,6 +17,7 @@
 import { aiPlayerIds } from './zg-memento-roller.js';
 import { isHistoricalProgression, settleAiCivilizations } from './zg-age-transition-civs.js';
 import { settleAiMementos } from './zg-age-transition-mementos.js';
+import { Decorator } from './zg-shell-context.js';
 
 const PANEL_NAME = "age-transition-civ-select";
 
@@ -28,8 +29,9 @@ function settleAiPlayers(humanCiv) {
 	settleAiMementos(players);
 }
 
-class AgeTransitionHook {
+class AgeTransitionHook extends Decorator {
 	constructor(component) {
+		super();
 		this.component = component;
 	}
 
@@ -46,11 +48,6 @@ class AgeTransitionHook {
 			return startGame.apply(this.component, args);
 		};
 	}
-
-	afterAttach() {}
-	beforeDetach() {}
-	afterDetach() {}
-	onAttributeChanged() {}
 }
 
 Controls.decorate(PANEL_NAME, (component) => new AgeTransitionHook(component));

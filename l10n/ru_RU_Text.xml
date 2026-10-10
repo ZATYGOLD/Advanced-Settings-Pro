@@ -753,9 +753,6 @@
 				[LI] Операция «Иви»: 1800 / 1800 / 1800
 				[LI] Космический полет с экипажем: 2250 / 2250 / 2250[/BLIST][nn](При стандартной скорости)</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>Стоимость из самой игры.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="ru_RU">
 			<Text>Стандартные институты в начале и дороже, когда дерево раскрывается.[nn][BLIST]
 				[LI] Античность: Стандарт
@@ -773,9 +770,6 @@
 				[LI] Античность: -25%
 				[LI] Исследования: -25%
 				[LI] Современность: Стандарт[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="ru_RU">
-			<Text>Стоимость из самой игры.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="ru_RU">
 			<Text>Дорогие исследования в начале и дешёвые, когда дерево раскрывается.[nn][BLIST]

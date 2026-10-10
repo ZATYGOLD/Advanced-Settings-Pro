@@ -753,9 +753,6 @@
 				[LI] Operación Hiedra: 1800 / 1800 / 1800
 				[LI] Vuelo espacial tripulado: 2250 / 2250 / 2250[/BLIST][nn](A velocidad estándar)</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="es_ES">
-			<Text>Los costes propios del juego.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="es_ES">
 			<Text>Cívicas estándar al principio y más caras cuando el árbol se abre.[nn][BLIST]
 				[LI] Antigüedad: Estándar
@@ -773,9 +770,6 @@
 				[LI] Antigüedad: -25%
 				[LI] Descubrimientos: -25%
 				[LI] Modernidad: Estándar[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="es_ES">
-			<Text>Los costes propios del juego.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="es_ES">
 			<Text>Investigación más cara al principio y más barata cuando el árbol se abre.[nn][BLIST]

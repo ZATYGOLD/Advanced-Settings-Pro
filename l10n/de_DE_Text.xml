@@ -753,9 +753,6 @@
 				[LI] Operation Ivy: 1800 / 1800 / 1800
 				[LI] Bemannte Raumfahrt: 2250 / 2250 / 2250[/BLIST][nn](Bei Standardgeschwindigkeit)</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="de_DE">
-			<Text>Die Kosten des Spiels.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="de_DE">
 			<Text>Standard-Ausrichtungen früh, teurer sobald sich der Baum öffnet.[nn][BLIST]
 				[LI] Antike: Standard
@@ -773,9 +770,6 @@
 				[LI] Antike: -25%
 				[LI] Erkundung: -25%
 				[LI] Moderne: Standard[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="de_DE">
-			<Text>Die Kosten des Spiels.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="de_DE">
 			<Text>Teurere Forschung früh, günstiger sobald sich der Baum öffnet.[nn][BLIST]

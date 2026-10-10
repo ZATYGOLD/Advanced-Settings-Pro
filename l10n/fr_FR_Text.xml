@@ -753,9 +753,6 @@
 				[LI] Opération Ivy : 1800 / 1800 / 1800
 				[LI] Vol spatial habité : 2250 / 2250 / 2250[/BLIST][nn](À vitesse standard)</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="fr_FR">
-			<Text>Les coûts du jeu.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="fr_FR">
 			<Text>Doctrines standard au début, plus chères quand l'arbre s'ouvre.[nn][BLIST]
 				[LI] Antiquité : Standard
@@ -773,9 +770,6 @@
 				[LI] Antiquité : -25%
 				[LI] Âge de l'exploration : -25%
 				[LI] Âge moderne : Standard[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="fr_FR">
-			<Text>Les coûts du jeu.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="fr_FR">
 			<Text>Recherche plus chère au début, moins chère quand l'arbre s'ouvre.[nn][BLIST]

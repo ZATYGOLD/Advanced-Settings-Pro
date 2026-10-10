@@ -7,16 +7,15 @@
 // has no room for, and swaps it in through the same Tab.Item hook the Map tab
 // uses.
 //
-// It also applies the two settings the tab's Memento columns stand for: the
-// per-player Random flag behind a slot's Random entry, and Game Settings' AI
-// Mementos, which fills every AI player's slots at once. The draws themselves
-// live in zg-memento-roller.js, shared with the age transition.
+// It also applies Game Settings' AI Mementos, which fills every AI player's
+// slots at once; the draws live in zg-memento-roller.js, shared with the age
+// transition.
 import { template, insert } from 'fs://game/core/vendor/solid-js/web/dist/web.js';
 import { createMemo, createComponent, createRenderEffect, createSignal, mergeProps, For, Show } from 'fs://game/core/vendor/solid-js/dist/solid.js';
 import { ComponentRegistry } from 'fs://game/core/ui-next/services/component-registry.js';
 import { multiplayerTeamColors } from 'fs://game/core/ui/utilities/utilities-network-constants.js';
 import { openMementoSelect } from './zg-memento-select.js';
-import { MEMENTO_PARAM_IDS, MEMENTO_NONE_VALUE, MEMENTO_SLOT_BASE_IMAGE, MEMENTO_SLOT_PLUS_IMAGE, RANDOM_FLAG_PARAM_ID, RANDOM_FLAGS, AI_MEMENTOS_PARAM_ID, AI_MEMENTOS_DEFAULT, aiMementoMode, aiPlayerIds, matchSource, randomFlags, setRandomFlag, rollMemento, sortPossibleValues } from './zg-memento-roller.js';
+import { MEMENTO_PARAM_IDS, MEMENTO_NONE_VALUE, MEMENTO_SLOT_BASE_IMAGE, MEMENTO_SLOT_PLUS_IMAGE, AI_MEMENTOS_PARAM_ID, AI_MEMENTOS_DEFAULT, aiMementoMode, aiPlayerIds, matchSource, randomFlags, setRandomFlag, rollMemento, sortPossibleValues } from './zg-memento-roller.js';
 import { canEditSetup, isAgeTransition } from './zg-shell-context.js';
 import { Activatable } from 'fs://game/core/ui-next/components/activatable.js';
 import { Button } from 'fs://game/core/ui-next/components/button.js';
@@ -46,14 +45,6 @@ const PLAYER_TAB_NAME = "advanced-options-player";
 // delete this list and the `claimingMod` branch at the tab hook below; nothing
 // else refers to either.
 const PLAYER_TAB_MODS = ["Enable_Custom_Map_Start_Locations"];
-const MEMENTO_DEFAULT_ICON = "mem_min_leader.png";
-// An empty slot gets a crossed-out circle rather than a memento's own art. The
-// game's only such image is its "cannot place" cursor, which ships on every
-// platform. It is red, so it is tinted to sit beside the Random icon; set the
-// tint to "" to leave it in the game's own red.
-const MEMENTO_NONE_ICON = "fs://game/core/ui/cursors/macos/cantplace.png";
-const MEMENTO_NONE_TINT = "#8c7e62";
-const RANDOM_OPTION = { value: "ZG_RANDOM", name: "LOC_ADVANCED_OPTIONS_RANDOM", description: "LOC_ADVANCED_OPTIONS_RANDOM", icon: null, sortIndex: -Infinity };
 // A team is a plain int on the player configuration, carrying no list of
 // choices, so the options are built here the way the lobby builds its own.
 const TEAM_NONE_VALUE = -1;
@@ -81,7 +72,6 @@ const COLUMN_HEADERS = [
 ];
 
 const resolve = (handle) => GameSetup.resolveString(handle) ?? "";
-const functionalDescriptionName = GameSetup.findString("FunctionalDescription");
 
 // Templates, as in the game's advanced-options.js.
 const tplTitle = template(`<div class="uppercase text-secondary-1 font-title mb-2 self-center"></div>`);
@@ -103,8 +93,6 @@ const tplCloseBg = template(`<div class="close-button__bg absolute inset-0"></di
 const tplCloseHover = template(`<div class="close-button__bg-hover absolute inset-0 opacity-0 group-hover\\:opacity-100 group-focus\\:opacity-100 transition-opacity"></div>`);
 const tplClosePressed = template(`<div class="close-button__bg-pressed absolute inset-0 opacity-0 group-active\\:opacity-100 group-pressed\\:opacity-100"></div>`);
 const tplRow = template(`<div class="flex flex-row"><div class="w-10 flex items-center justify-start text-base font-title"></div><div class="flex flex-row flex-auto pl-1 pr-6"></div><div class=w-14 style="position:relative;left:0.525rem"></div></div>`);
-const tplMementoIcon = template(`<div class="size-8 mr-3 ml-2 bg-contain bg-center bg-no-repeat"></div>`);
-const tplMementoText = template(`<div class="mt-2"></div>`);
 
 // ------------------------------------------------------------ tooltips --
 
@@ -208,26 +196,6 @@ const CivTooltip = (props) => {
 	});
 };
 
-const MementoTooltip = (props) => {
-	const functional = () => props.data.additionalProperties?.find((entry) => entry.name === functionalDescriptionName)?.value;
-	if (props.data === RANDOM_OPTION) {
-		return createComponent(Tooltip.Frame, { class: "flex flex-col relative max-w-128", get children() { return randomBox(RANDOM_OPTION.name); } });
-	}
-	return createComponent(Tooltip.Frame, {
-		class: "flex flex-col relative max-w-128",
-		get children() {
-			return [
-				titleLine(() => resolve(props.data.name)),
-				createComponent(L10n.Stylize, { class: "create-game-markup", get text() { return resolve(props.data.description); } }),
-				createComponent(Show, {
-					get when() { return functional(); },
-					get children() { const el = tplMementoText(); insert(el, createComponent(L10n.Stylize, { class: "create-game-markup tight", get text() { return functional(); } })); return el; },
-				}),
-			];
-		},
-	});
-};
-
 // ------------------------------------------------------------- options --
 
 function optionText(child) {
@@ -243,36 +211,6 @@ const PlayerOption = (props) => {
 		get name() { return props.param.value == "RANDOM" ? "LEADER_RANDOM" : props.param.value; },
 	}), null);
 	insert(el, optionText(createComponent(L10n.Stylize, { get text() { return resolve(props.param.name); } })), null);
-	return el;
-};
-
-function addMementoIcon(el, props) {
-	if (props.param === RANDOM_OPTION) {
-		insert(el, createComponent(Icon, { class: "size-8 mr-3 ml-2", name: "LEADER_RANDOM" }), null);
-		return;
-	}
-	const icon = tplMementoIcon();
-	createRenderEffect(() => {
-		if (props.param.value == MEMENTO_NONE_VALUE) {
-			icon.style.backgroundImage = `url("${MEMENTO_NONE_ICON}")`;
-			if (MEMENTO_NONE_TINT) {
-				icon.style.setProperty("fxs-background-image-tint", MEMENTO_NONE_TINT);
-			} else {
-				icon.style.removeProperty("fxs-background-image-tint");
-			}
-			return;
-		}
-		icon.style.backgroundImage = `url("fs://game/${resolve(props.param.icon) || MEMENTO_DEFAULT_ICON}")`;
-		icon.style.removeProperty("fxs-background-image-tint");
-	});
-	el.appendChild(icon);
-}
-
-// A memento is shown by its icon alone, in the closed dropdown and in the open
-// list. Hovering either still gives the full memento tooltip.
-const MementoIcon = (props) => {
-	const el = tplOption();
-	addMementoIcon(el, props);
 	return el;
 };
 
@@ -441,10 +379,9 @@ function column(index, child) {
 }
 
 // A dropdown over a setup parameter, with the given option and tooltip components.
-// `random` (optional) adds a Random item: { isRandom, setRandom }.
 // `listOption` (optional) draws the items in the open list when they should look
 // different from the selected one, as the team badge does.
-function parameterDropdown(param, option, tooltip, side, classes, random, listOption, disabled) {
+function parameterDropdown(param, option, tooltip, side, classes, listOption, disabled) {
 	const withTooltip = (value, trigger) => createComponent(Tooltip, {
 		initialHPosition: side,
 		get children() {
@@ -454,23 +391,13 @@ function parameterDropdown(param, option, tooltip, side, classes, random, listOp
 			];
 		},
 	});
-	const items = () => {
-		const values = sortPossibleValues(param().domain.possibleValues) ?? [];
-		return random ? [RANDOM_OPTION, ...values] : values;
-	};
+	const items = () => sortPossibleValues(param().domain.possibleValues) ?? [];
 	return createComponent(Dropdown, {
 		class: classes,
 		disabled,
-		get defaultValue() { return random?.isRandom() ? RANDOM_OPTION : param().value; },
+		get defaultValue() { return param().value; },
 		selectedItemTemplate: (value) => withTooltip(value, () => createComponent(option, { param: value })),
-		onItemSelected: (value) => {
-			if (value === RANDOM_OPTION) {
-				random.setRandom(true);
-			} else {
-				random?.setRandom(false);
-				param().setValue(value.value);
-			}
-		},
+		onItemSelected: (value) => param().setValue(value.value),
 		get children() {
 			const item = listOption ?? option;
 			return createComponent(For, {
@@ -535,7 +462,8 @@ setInterval(() => {
 		appliedSources.clear();
 	}
 	appliedValue = value;
-	for (const playerId of aiPlayerIds()) {
+	const aiIds = aiPlayerIds();
+	for (const playerId of aiIds) {
 		// In a match mode the slots follow the leader or civilization they matched,
 		// so a later change to it draws again.
 		const source = matchSource(mode, playerId);
@@ -545,9 +473,8 @@ setInterval(() => {
 		appliedSources.set(playerId, source);
 	}
 
-	// AI slots only: a human's mementos are theirs to pick, and a Random flag left
-	// on a human seat by an older version is not honoured.
-	for (const playerId of aiPlayerIds()) {
+	// AI slots only: a human's mementos are theirs to pick.
+	for (const playerId of aiIds) {
 		randomFlags(playerId).forEach((isRandom, slotIndex) => {
 			const key = `${playerId}:${slotIndex}`;
 			if (isRandom && !rolledThisSession.has(key)) {
@@ -577,15 +504,6 @@ const PlayerSetup = () => {
 	};
 	const playerParam = (slot, id) => playerOptions[slot.playerId]?.[id];
 	const isSpectator = (slot) => !!spectator() && playerParam(slot, "PlayerLeader")?.value?.value == spectator().leader;
-	const randomFor = (slot, slotIndex) => ({
-		isRandom: () => (RANDOM_FLAGS[playerParam(slot, RANDOM_FLAG_PARAM_ID)?.value?.value] ?? RANDOM_FLAGS.ZG_RANDOM_MEMENTOS_NONE)[slotIndex],
-		setRandom: (isRandom) => {
-			setRandomFlag(slot.playerId, slotIndex, isRandom);
-			if (isRandom) {
-				rollMemento(slot.playerId, slotIndex);
-			}
-		},
-	});
 
 	const header = () => {
 		const el = tplHeader();
@@ -611,8 +529,8 @@ const PlayerSetup = () => {
 		controls.appendChild(column(0, parameterDropdown(() => playerParam(slot, "PlayerLeader"), PlayerOption, LeaderTooltip, TooltipHorizontalPosition.RIGHT, "my-2 mr-2 flex-auto")));
 		controls.appendChild(column(1, createComponent(Show, {
 			get when() { return isSpectator(slot); },
-			get fallback() { return parameterDropdown(() => teamParameter(slot.playerId), TeamBadge, TeamTooltip, TooltipHorizontalPosition.LEFT, "my-2 mx-2 flex-auto", null, TeamNumber); },
-			get children() { return parameterDropdown(spectatorTeamParameter, SpectatorBadge, SpectatorTooltip, TooltipHorizontalPosition.LEFT, "my-2 mx-2 flex-auto", null, null, true); },
+			get fallback() { return parameterDropdown(() => teamParameter(slot.playerId), TeamBadge, TeamTooltip, TooltipHorizontalPosition.LEFT, "my-2 mx-2 flex-auto", TeamNumber); },
+			get children() { return parameterDropdown(spectatorTeamParameter, SpectatorBadge, SpectatorTooltip, TooltipHorizontalPosition.LEFT, "my-2 mx-2 flex-auto", null, true); },
 		})));
 		controls.appendChild(column(2, parameterDropdown(() => playerParam(slot, "PlayerCivilization"), PlayerOption, CivTooltip, TooltipHorizontalPosition.LEFT, "my-2 mx-2 flex-auto")));
 		MEMENTO_PARAM_IDS.forEach((id, slotIndex) => {

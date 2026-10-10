@@ -1,28 +1,13 @@
 // The single-player tab layout, and the seed Random buttons, on the multiplayer
-// Create Game screen.
+// Create Game screen (screen-mp-create-game): General, Pace, Map and Add-Ons,
+// with the game's Advanced tab folded into General.
 //
-// Multiplayer (internet, LAN and hotseat) sets a game up on screen-mp-create-game,
-// an older-style panel with a Game Settings tab, an Advanced tab holding every
-// group whose id starts with "MPAdvanced", and Add-Ons. Single player has one
-// General tab holding every group, and the mod's Pace and Map tabs
-// (zg-map-tab.js). This gives multiplayer the same shape: General, Pace, Map,
-// Add-Ons, with the same groups on each, and no Advanced tab: what the game put
-// there folds into General, in the order single player shows it.
-//
-// The screen is decorated rather than replaced. A decorator is built after the
-// panel's constructor and before its onInitialize, which is where the tab bar
-// and panels are made from `navControlButtonInfo` and `slotIDs`, so both lists
-// can be reshaped in time. The two lists are index-aligned (goToNewPanel
-// highlights navControlTabs[slotIDs.indexOf(panel.id)]); the panel's own
-// createAdvancedPanel and createAddOnsPanel read their ids from fixed indexes
-// of slotIDs, so the ids they set are put right after they run. The Advanced
-// panel is still built, unlisted and empty, so nothing the screen expects is
-// missing.
-//
-// Which tab a group lands on comes from getTabContainerForParam, wrapped to
-// answer for Pace and Map and to send everything else to General. The seed
-// buttons hang off createParamEleLabel, which builds every setting's row and
-// is the one place the parameter id is known.
+// A decorator is built after the panel's constructor and before onInitialize,
+// which builds the tabs from the index-aligned `navControlButtonInfo` and
+// `slotIDs`, so both are reshaped here. Groups are routed to tabs through
+// getTabContainerForParam; the seed buttons hang off createParamEleLabel.
+
+import { Decorator } from './zg-shell-context.js';
 
 const PANEL_NAME = "screen-mp-create-game";
 const SEED_PARAM_IDS = new Set(["GameRandomSeed", "MapRandomSeed"]);
@@ -100,8 +85,9 @@ function seedButton(parameterId) {
 	return button;
 }
 
-class MpCreateGameLayout {
+class MpCreateGameLayout extends Decorator {
 	constructor(component) {
+		super();
 		this.component = component;
 		this.panels = TABS.map(createPanel);
 		this.reshapeTabs();
@@ -176,12 +162,6 @@ class MpCreateGameLayout {
 			return row;
 		};
 	}
-
-	beforeAttach() {}
-	afterAttach() {}
-	beforeDetach() {}
-	afterDetach() {}
-	onAttributeChanged() {}
 }
 
 Controls.decorate(PANEL_NAME, (component) => new MpCreateGameLayout(component));

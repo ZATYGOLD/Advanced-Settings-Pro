@@ -753,9 +753,6 @@
 				[LI] Operação Ivy: 1800 / 1800 / 1800
 				[LI] Voo Espacial Tripulado: 2250 / 2250 / 2250[/BLIST][nn](Em velocidade padrão)</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="pt_BR">
-			<Text>Os custos do próprio jogo.</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="pt_BR">
 			<Text>Cívicos padrão no início e mais caros quando a árvore se abre.[nn][BLIST]
 				[LI] Antiguidade: Padrão
@@ -773,9 +770,6 @@
 				[LI] Antiguidade: -25%
 				[LI] Exploração: -25%
 				[LI] Moderna: Padrão[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="pt_BR">
-			<Text>Os custos do próprio jogo.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="pt_BR">
 			<Text>Pesquisa mais cara no início e mais barata quando a árvore se abre.[nn][BLIST]

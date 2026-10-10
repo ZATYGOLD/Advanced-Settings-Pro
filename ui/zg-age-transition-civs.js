@@ -30,6 +30,8 @@
 // PlayerCivilization parameter, whose choices the engine has already narrowed
 // to that age; the age's own civilizations come from Ages.PlayerCivilizationDomain.
 
+import { cached, queryConfig } from './zg-shell-context.js';
+
 const PARAM_ID = "AgeTransitionCivSelectionMode";
 const HISTORICAL_VALUE = "AGE_TRANSITION_CIV_SELECTION_MODE_ZG_HISTORICAL";
 const AGE_PARAM_ID = "Age";
@@ -51,20 +53,11 @@ export const isHistoricalProgression = () => settingValue() == HISTORICAL_VALUE;
 
 const draw = (list) => list[Math.floor(Math.random() * list.length)];
 
-function query(sql) {
-	try {
-		return Database.query("config", sql) ?? [];
-	} catch (error) {
-		console.error(`${LOG_PREFIX} query failed: ${error}`);
-		return [];
-	}
-}
-
 // Leader type to its Historical and Geographic rows across every age, highest
 // Bias first. The row's domain says which age the civilization is native to.
-export function leaderAssociations() {
+function buildLeaderAssociations() {
 	const out = new Map();
-	for (const row of query("SELECT LeaderType, CivilizationType, CivilizationDomain, Bias, ChoiceType FROM LeaderCivilizationBias ORDER BY Bias DESC")) {
+	for (const row of queryConfig("SELECT LeaderType, CivilizationType, CivilizationDomain, Bias, ChoiceType FROM LeaderCivilizationBias ORDER BY Bias DESC")) {
 		const tier = CHOICE_TIERS.find((candidate) => row.ChoiceType?.startsWith(candidate.choicePrefix));
 		if (!tier) {
 			continue;
@@ -77,11 +70,12 @@ export function leaderAssociations() {
 	}
 	return out;
 }
+export const leaderAssociations = cached(buildLeaderAssociations);
 
 // The civilization domain native to the age being started.
 function apexDomain() {
 	const age = GameSetup.findGameParameter(AGE_PARAM_ID)?.value?.value;
-	return query(`SELECT PlayerCivilizationDomain FROM Ages WHERE AgeType = '${age}'`)[0]?.PlayerCivilizationDomain;
+	return queryConfig(`SELECT PlayerCivilizationDomain FROM Ages WHERE AgeType = '${age}'`)[0]?.PlayerCivilizationDomain;
 }
 
 // The association to seat a leader on, from the rows the new age offers, or

@@ -28,3 +28,29 @@ export function canEditSetup() {
 	}
 	return canEdit;
 }
+
+// A config database query that logs and yields no rows rather than throwing.
+export function queryConfig(sql) {
+	try {
+		return Database.query("config", sql) ?? [];
+	} catch (error) {
+		console.error(`ZG-ASP: config query failed: ${error}`);
+		return [];
+	}
+}
+
+// A value built on first use and kept; the config database does not change
+// while the shell is open.
+export function cached(build) {
+	let value;
+	return () => (value ??= build());
+}
+
+// Base for Controls.decorate decorators: the panel calls all four hooks, so a
+// decorator overrides only the ones it uses.
+export class Decorator {
+	beforeAttach() {}
+	afterAttach() {}
+	beforeDetach() {}
+	afterDetach() {}
+}

@@ -753,9 +753,6 @@
 				[LI] 長春藤行動：1800 / 1800 / 1800
 				[LI] 載人太空飛行：2250 / 2250 / 2250[/BLIST][nn]（標準速度下）</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
-			<Text>遊戲原本的費用。</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_CIVIC_COST_DESCRIPTION_BALANCED" Language="zh_Hant_HK">
 			<Text>前期社會制度為標準，制度樹展開後變得更貴。[nn][BLIST]
 				[LI] 遠古：標準
@@ -773,9 +770,6 @@
 				[LI] 遠古：-25%
 				[LI] 探索：-25%
 				[LI] 近代：標準[/BLIST]</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_STANDARD" Language="zh_Hant_HK">
-			<Text>遊戲原本的費用。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_TECHNOLOGY_COST_DESCRIPTION_BALANCED" Language="zh_Hant_HK">
 			<Text>前期研究更貴，科技樹展開後變得更便宜。[nn][BLIST]
