@@ -995,7 +995,7 @@
 			<Text>Temperatura della mappa</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="it_IT">
-			<Text>Sposta le fasce climatiche che determinano il bioma di ogni casella di terra.</Text>
+			<Text>Stabilisce quanto è caldo il mondo: quali biomi coprono le terre, fin dove arrivano ghiaccio marino, barriere coralline e neve, e quanto altipiani, piogge e fiumi cambiano il clima locale.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COLD_NAME" Language="it_IT">
 			<Text>Freddo</Text>
@@ -1004,13 +1004,76 @@
 			<Text>Caldo</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="it_IT">
-			<Text>La tundra inizia più vicino all'equatore e il deserto lascia spazio alla prateria.</Text>
+			<Text>La tundra inizia più vicino all'equatore e il deserto lascia il posto alla prateria. Ghiaccio marino e neve arrivano più lontano dai poli e gli altipiani diventano tundra prima.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="it_IT">
 			<Text>Clima standard per il tipo di mappa scelto.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="it_IT">
-			<Text>Il deserto si spinge più lontano dall'equatore e la tundra si ritira verso i poli.</Text>
+			<Text>Il deserto si spinge più lontano dall'equatore e la tundra si ritira verso i poli. Ghiaccio marino e neve si riducono, e le terre piovose e le valli fluviali diventano più verdi.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FRIGID_NAME" Language="it_IT">
+			<Text>Gelido</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SCORCHING_NAME" Language="it_IT">
+			<Text>Torrido</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_FRIGID" Language="it_IT">
+			<Text>Un mondo in era glaciale: circa il 70% delle terre è tundra, ghiaccio marino e neve raggiungono le medie latitudini e le valli fluviali ospitano gran parte delle terre temperate.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_SCORCHING" Language="it_IT">
+			<Text>Un mondo a effetto serra: deserto e giungla coprono gran parte delle terre, ghiaccio marino e neve scompaiono e i fiumi diventano strisce fertili nel deserto.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="it_IT">
+			<Text>Una delle cinque temperature, estratta dal seme della mappa.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_NAME" Language="it_IT">
+			<Text>Fonte di calore</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION" Language="it_IT">
+			<Text>Da dove proviene il calore del mondo, e quindi dove si trovano le sue regioni calde e fredde.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_STANDARD" Language="it_IT">
+			<Text>Una fascia calda attraversa il centro della mappa e si raffredda verso l'alto e il basso, come nel gioco base.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_TILTED_AXIS_NAME" Language="it_IT">
+			<Text>Asse inclinato</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_TILTED_AXIS" Language="it_IT">
+			<Text>Caldo lungo il bordo nord o sud della mappa, scelto dal seme della mappa, con un raffreddamento graduale fino al bordo opposto gelato.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DUAL_SUN_NAME" Language="it_IT">
+			<Text>Doppio sole</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_DUAL_SUN" Language="it_IT">
+			<Text>Due soli scaldano la parte superiore e inferiore della mappa, lasciando una fascia fredda al centro.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_HOT_CENTER_NAME" Language="it_IT">
+			<Text>Centro caldo</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_HOT_CENTER" Language="it_IT">
+			<Text>Il calore si diffonde dal centro della mappa in ogni direzione, così i bordi e gli angoli sono i più freddi.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_COLD_CENTER_NAME" Language="it_IT">
+			<Text>Centro freddo</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_COLD_CENTER" Language="it_IT">
+			<Text>Il freddo si diffonde dal centro della mappa in ogni direzione, così i bordi e gli angoli sono i più caldi.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_WARM_RING_NAME" Language="it_IT">
+			<Text>Anello caldo</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_WARM_RING" Language="it_IT">
+			<Text>Una fascia di calore circonda il centro della mappa, con il freddo al suo interno e lungo i bordi.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_PATCHWORK_NAME" Language="it_IT">
+			<Text>Mosaico</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_PATCHWORK" Language="it_IT">
+			<Text>Le regioni calde e fredde formano macchie irregolari invece di fasce.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_RANDOM" Language="it_IT">
+			<Text>Una delle sette fonti di calore, estratta dal seme della mappa.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="it_IT">
 			<Text>Fiumi</Text>

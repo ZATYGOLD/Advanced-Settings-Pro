@@ -9,13 +9,14 @@ import { chooseStartSectors, assignSingleContinentStartPositions } from 'fs://ga
 import { generateDiscoveries } from 'fs://game/base-standard/maps/discovery-generator.js';
 import { expandCoastsPlus, generateLakes, buildRainfallMap } from 'fs://game/base-standard/maps/elevation-terrain-generator.js';
 import { zgAddRough } from './zg-map-rough.js';
-import { addFeatures } from 'fs://game/base-standard/maps/feature-biome-generator.js';
+import { zgAddFeatures } from './zg-map-features.js';
 import { dumpStartSectors, dumpContinents, dumpTerrain, dumpElevation, dumpRainfall, dumpBiomes, dumpFeatures, dumpResources, dumpNoisePredicate } from 'fs://game/base-standard/maps/map-debug-helpers.js';
 import { g_OceanWaterColumns, g_PolarWaterRows, g_AvoidSeamOffset, g_WaterPercent, g_Cutoff, g_LandmassFractal, g_FlatTerrain, g_OceanTerrain, g_FractalWeight, g_CenterWeight, g_StartSectorWeight } from 'fs://game/base-standard/maps/map-globals.js';
 import { needHumanNearEquator, createIslands, applyCoastalErosionAdjustingForStartSectors, createOrganicLandmasses, applyCoastalErosion, markLandmassRegionId, getHeightAdjustingForStartSector, clearContinent } from 'fs://game/base-standard/maps/map-utilities.js';
 import { addNaturalWonders } from 'fs://game/base-standard/maps/natural-wonder-generator.js';
 import { zgGenerateResources } from './zg-map-resources.js';
-import { generateSnow, dumpPermanentSnow } from 'fs://game/base-standard/maps/snow-generator.js';
+import { dumpPermanentSnow } from 'fs://game/base-standard/maps/snow-generator.js';
+import { zgGenerateSnow } from './zg-map-snow.js';
 import { addVolcanoes, addTundraVolcanoes } from 'fs://game/base-standard/maps/volcano-generator.js';
 
 console.log("Generating using script pangaea-plus.ts");
@@ -273,11 +274,11 @@ function generateMap() {
   addTundraVolcanoes(iWidth, iHeight);
   addNaturalWonders(iWidth, iHeight, iNumNaturalWonders);
   TerrainBuilder.addFloodplains(4, 10);
-  addFeatures(iWidth, iHeight);
+  zgAddFeatures(iWidth, iHeight);
   TerrainBuilder.validateAndFixTerrain();
   AreaBuilder.recalculateAreas();
   TerrainBuilder.storeWaterData();
-  generateSnow(iWidth, iHeight);
+  zgGenerateSnow(iWidth, iHeight);
   dumpStartSectors(startSectors);
   dumpContinents(iWidth, iHeight);
   dumpTerrain(iWidth, iHeight);

@@ -68,6 +68,16 @@ registerModConflicts([
 		nameHints: ["resource density"],
 	},
 
+	// --- Map Temperature and Heat Source ------------------------------------
+	// Replaces the base feature and snow passes, which this mod's map copies no
+	// longer call, so its climate settings would show in setup and only half apply.
+	{
+		workshopId: "3833339265",
+		modId: "scrumlord-climate",
+		parameterPatterns: ["ScrumLordClimateBaseTemperature", "ScrumLordClimateSunlight"],
+		nameHints: ["climate controls"],
+	},
+
 	// --- Independent Powers -------------------------------------------------
 	{ workshopId: "3736806530", modId: "independent-powers-plus" },
 

@@ -995,7 +995,7 @@
 			<Text>地图气温</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>移动决定每块陆地地块生物群系的气候带。</Text>
+			<Text>设定世界的温暖程度：陆地被哪些生物群落覆盖，海冰、礁石与积雪延伸多远，以及高地、降雨和河流对局部气候的影响有多强。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COLD_NAME" Language="zh_Hans_CN">
 			<Text>寒冷</Text>
@@ -1004,13 +1004,76 @@
 			<Text>炎热</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="zh_Hans_CN">
-			<Text>苔原向赤道推进，沙漠让位于草原。</Text>
+			<Text>苔原从更靠近赤道处开始，沙漠让位于草原。海冰和积雪延伸至离两极更远处，高地更早变为苔原。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
 			<Text>所选地图类型的标准气候。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="zh_Hans_CN">
-			<Text>沙漠向远离赤道的方向扩展，苔原退向两极。</Text>
+			<Text>沙漠向远离赤道的方向扩展，苔原退向两极。海冰和积雪减少，多雨之地与河谷变得更加葱绿。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FRIGID_NAME" Language="zh_Hans_CN">
+			<Text>严寒</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SCORCHING_NAME" Language="zh_Hans_CN">
+			<Text>酷热</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_FRIGID" Language="zh_Hans_CN">
+			<Text>冰河时代的世界：约70%的陆地为苔原，海冰和积雪延伸至中纬度，温暖的土地大多位于河谷。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_SCORCHING" Language="zh_Hans_CN">
+			<Text>温室世界：沙漠与雨林覆盖大部分陆地，海冰和积雪消失，河流成为穿越沙漠的肥沃地带。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="zh_Hans_CN">
+			<Text>由地图种子从五种温度中随机选择一种。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_NAME" Language="zh_Hans_CN">
+			<Text>热源</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>世界的温暖来自何处，从而决定其炎热与寒冷地区的位置。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
+			<Text>与基础游戏相同，一条炎热带横贯地图中部，向上下两侧逐渐变冷。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_TILTED_AXIS_NAME" Language="zh_Hans_CN">
+			<Text>倾斜地轴</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_TILTED_AXIS" Language="zh_Hans_CN">
+			<Text>地图北缘或南缘炎热（由地图种子决定），向冰封的对侧边缘逐渐变冷。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DUAL_SUN_NAME" Language="zh_Hans_CN">
+			<Text>双日</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_DUAL_SUN" Language="zh_Hans_CN">
+			<Text>两颗太阳加热地图的上下两侧，中部留下一条寒冷带。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_HOT_CENTER_NAME" Language="zh_Hans_CN">
+			<Text>炎热中心</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_HOT_CENTER" Language="zh_Hans_CN">
+			<Text>热量从地图中部向各个方向扩散，因此边缘和角落最为寒冷。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_COLD_CENTER_NAME" Language="zh_Hans_CN">
+			<Text>寒冷中心</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_COLD_CENTER" Language="zh_Hans_CN">
+			<Text>寒冷从地图中部向各个方向扩散，因此边缘和角落最为温暖。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_WARM_RING_NAME" Language="zh_Hans_CN">
+			<Text>温暖环带</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_WARM_RING" Language="zh_Hans_CN">
+			<Text>一条温暖带环绕地图中部，其内部和边缘一带则寒冷。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_PATCHWORK_NAME" Language="zh_Hans_CN">
+			<Text>拼布</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_PATCHWORK" Language="zh_Hans_CN">
+			<Text>炎热与寒冷地区呈不规则斑块分布，而非带状。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_RANDOM" Language="zh_Hans_CN">
+			<Text>由地图种子从七种热源中随机选择一种。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="zh_Hans_CN">
 			<Text>河流</Text>

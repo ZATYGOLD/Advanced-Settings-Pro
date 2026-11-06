@@ -995,7 +995,7 @@
 			<Text>Température de la carte</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="fr_FR">
-			<Text>Décale les zones climatiques qui déterminent le biome de chaque case terrestre.</Text>
+			<Text>Définit la chaleur du monde : quels biomes couvrent les terres, jusqu'où s'étendent la banquise, les récifs et la neige, et à quel point les hauteurs, les pluies et les fleuves modifient le climat local.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COLD_NAME" Language="fr_FR">
 			<Text>Froid</Text>
@@ -1004,13 +1004,76 @@
 			<Text>Chaud</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="fr_FR">
-			<Text>La toundra commence plus près de l'équateur et le désert cède la place à la prairie.</Text>
+			<Text>La toundra commence plus près de l'équateur et le désert laisse place à la prairie. La banquise et la neige s'étendent plus loin des pôles, et les hauteurs deviennent toundra plus tôt.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="fr_FR">
 			<Text>Climat standard pour le type de carte choisi.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="fr_FR">
-			<Text>Le désert s'étend plus loin de l'équateur et la toundra se retire vers les pôles.</Text>
+			<Text>Le désert s'étend plus loin de l'équateur et la toundra se retire vers les pôles. La banquise et la neige reculent, et les terres pluvieuses et les vallées fluviales verdissent.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FRIGID_NAME" Language="fr_FR">
+			<Text>Glacial</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SCORCHING_NAME" Language="fr_FR">
+			<Text>Brûlant</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_FRIGID" Language="fr_FR">
+			<Text>Un monde en ère glaciaire : environ 70 % des terres sont de la toundra, la banquise et la neige atteignent les latitudes moyennes, et les vallées fluviales regroupent l'essentiel des terres tempérées.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_SCORCHING" Language="fr_FR">
+			<Text>Un monde en effet de serre : le désert et la jungle couvrent l'essentiel des terres, la banquise et la neige disparaissent, et les fleuves deviennent des bandes fertiles à travers le désert.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="fr_FR">
+			<Text>L'une des cinq températures, tirée de la graine de la carte.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_NAME" Language="fr_FR">
+			<Text>Source de chaleur</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION" Language="fr_FR">
+			<Text>D'où vient la chaleur du monde, et donc où se trouvent ses régions chaudes et froides.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_STANDARD" Language="fr_FR">
+			<Text>Une bande chaude traverse le milieu de la carte et se refroidit vers le haut et le bas, comme dans le jeu de base.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_TILTED_AXIS_NAME" Language="fr_FR">
+			<Text>Axe incliné</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_TILTED_AXIS" Language="fr_FR">
+			<Text>Chaud le long du bord nord ou sud de la carte, choisi par la graine de la carte, et se refroidit progressivement jusqu'au bord opposé gelé.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DUAL_SUN_NAME" Language="fr_FR">
+			<Text>Double soleil</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_DUAL_SUN" Language="fr_FR">
+			<Text>Deux soleils chauffent le haut et le bas de la carte, laissant une bande froide au milieu.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_HOT_CENTER_NAME" Language="fr_FR">
+			<Text>Centre chaud</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_HOT_CENTER" Language="fr_FR">
+			<Text>La chaleur s'étend depuis le milieu de la carte dans toutes les directions, si bien que les bords et les coins sont les plus froids.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_COLD_CENTER_NAME" Language="fr_FR">
+			<Text>Centre froid</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_COLD_CENTER" Language="fr_FR">
+			<Text>Le froid s'étend depuis le milieu de la carte dans toutes les directions, si bien que les bords et les coins sont les plus chauds.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_WARM_RING_NAME" Language="fr_FR">
+			<Text>Anneau chaud</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_WARM_RING" Language="fr_FR">
+			<Text>Une bande de chaleur entoure le milieu de la carte, avec du froid en son centre et le long des bords.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_PATCHWORK_NAME" Language="fr_FR">
+			<Text>Mosaïque</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_PATCHWORK" Language="fr_FR">
+			<Text>Les régions chaudes et froides forment des taches irrégulières au lieu de bandes.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_RANDOM" Language="fr_FR">
+			<Text>L'une des sept sources de chaleur, tirée de la graine de la carte.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="fr_FR">
 			<Text>Rivières</Text>

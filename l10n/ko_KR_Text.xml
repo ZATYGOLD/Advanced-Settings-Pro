@@ -995,7 +995,7 @@
 			<Text>맵 기온</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="ko_KR">
-			<Text>각 육지 타일의 생물군계를 정하는 기후대를 이동합니다.</Text>
+			<Text>세계가 얼마나 따뜻한지 정합니다. 육지를 덮는 생물군계, 해빙·산호초·눈이 퍼지는 범위, 고지대·강수량·강이 지역 기후에 미치는 영향의 세기가 달라집니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COLD_NAME" Language="ko_KR">
 			<Text>한랭</Text>
@@ -1004,13 +1004,76 @@
 			<Text>고온</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="ko_KR">
-			<Text>툰드라가 적도에 더 가까워지고 사막이 초원으로 바뀝니다.</Text>
+			<Text>툰드라가 적도에 더 가까이서 시작되고 사막은 초원으로 바뀝니다. 해빙과 눈이 극지방에서 더 멀리 퍼지고, 고지대가 더 일찍 툰드라가 됩니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="ko_KR">
 			<Text>선택한 맵 유형의 표준 기후입니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="ko_KR">
-			<Text>사막이 적도에서 더 멀리 뻗어 나가고 툰드라가 극지방으로 물러납니다.</Text>
+			<Text>사막이 적도에서 더 멀리 뻗어 나가고 툰드라가 극지방으로 물러납니다. 해빙과 눈이 줄어들고, 비가 많은 땅과 강 계곡이 더 푸르러집니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FRIGID_NAME" Language="ko_KR">
+			<Text>혹한</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SCORCHING_NAME" Language="ko_KR">
+			<Text>작열</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_FRIGID" Language="ko_KR">
+			<Text>빙하기 세계입니다. 육지의 약 70%가 툰드라이고, 해빙과 눈이 중위도까지 퍼지며, 따뜻한 땅은 대부분 강 계곡에 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_SCORCHING" Language="ko_KR">
+			<Text>온실 세계입니다. 사막과 정글이 육지 대부분을 덮고, 해빙과 눈이 사라지며, 강은 사막을 가로지르는 비옥한 띠가 됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="ko_KR">
+			<Text>다섯 가지 기온 중 하나를 맵 시드로 정합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_NAME" Language="ko_KR">
+			<Text>열원</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION" Language="ko_KR">
+			<Text>세계의 온기가 어디에서 오는지, 즉 더운 지역과 추운 지역이 어디에 놓이는지 정합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_STANDARD" Language="ko_KR">
+			<Text>기본 게임처럼 맵 중앙을 가로지르는 더운 띠가 있고, 위아래로 갈수록 추워집니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_TILTED_AXIS_NAME" Language="ko_KR">
+			<Text>기울어진 자전축</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_TILTED_AXIS" Language="ko_KR">
+			<Text>맵 시드로 정해진 맵의 북쪽 또는 남쪽 끝이 덥고, 반대편의 얼어붙은 끝으로 갈수록 점차 추워집니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DUAL_SUN_NAME" Language="ko_KR">
+			<Text>쌍태양</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_DUAL_SUN" Language="ko_KR">
+			<Text>두 개의 태양이 맵 위아래를 데우고, 중앙을 가로지르는 추운 띠가 남습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_HOT_CENTER_NAME" Language="ko_KR">
+			<Text>뜨거운 중심</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_HOT_CENTER" Language="ko_KR">
+			<Text>열이 맵 중앙에서 모든 방향으로 퍼져 나가 가장자리와 모서리가 가장 춥습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_COLD_CENTER_NAME" Language="ko_KR">
+			<Text>차가운 중심</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_COLD_CENTER" Language="ko_KR">
+			<Text>추위가 맵 중앙에서 모든 방향으로 퍼져 나가 가장자리와 모서리가 가장 따뜻합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_WARM_RING_NAME" Language="ko_KR">
+			<Text>따뜻한 고리</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_WARM_RING" Language="ko_KR">
+			<Text>따뜻한 띠가 맵 중앙을 두르고, 그 안쪽과 가장자리 주변은 춥습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_PATCHWORK_NAME" Language="ko_KR">
+			<Text>조각보</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_PATCHWORK" Language="ko_KR">
+			<Text>더운 지역과 추운 지역이 띠 대신 불규칙한 조각으로 흩어집니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_RANDOM" Language="ko_KR">
+			<Text>일곱 가지 열원 중 하나를 맵 시드로 정합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="ko_KR">
 			<Text>강</Text>

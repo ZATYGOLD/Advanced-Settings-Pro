@@ -1,12 +1,14 @@
 // Copy of {base-standard}scripts/common-generation.js generateMapFeatures, the
 // terrain pass every Voronoi map shares, with the mod's rough, mountain, river,
-// biome and resource passes substituted in; the phase order matches the base.
+// biome, feature, snow and resource passes substituted in; the phase order
+// matches the base.
 import { buildRainfallMap } from 'fs://game/base-standard/maps/elevation-terrain-generator.js';
-import { addFeatures } from 'fs://game/base-standard/maps/feature-biome-generator.js';
+import { zgAddFeatures } from './zg-map-features.js';
 import { dumpContinents, dumpTerrain, dumpElevation, dumpRainfall, dumpBiomes, dumpFeatures, dumpResources } from 'fs://game/base-standard/maps/map-debug-helpers.js';
 import { addNaturalWonders } from 'fs://game/base-standard/maps/natural-wonder-generator.js';
 import { zgGenerateResources } from './zg-map-resources.js';
-import { generateSnow, dumpPermanentSnow } from 'fs://game/base-standard/maps/snow-generator.js';
+import { dumpPermanentSnow } from 'fs://game/base-standard/maps/snow-generator.js';
+import { zgGenerateSnow } from './zg-map-snow.js';
 import { GenerationContext, GenerationPhases } from 'fs://game/base-standard/scripts/common-generation.js';
 import { profileScope, profileFunction } from 'fs://game/base-standard/scripts/profiling.js';
 import { zgModelRivers } from './zg-map-rivers.js';
@@ -74,13 +76,13 @@ export async function zgGenerateMapFeatures(hexMap, context = new GenerationCont
     profileFunction("TerrainBuilder.addFloodplains", () => TerrainBuilder.addFloodplains(4, 10));
   }
   if (context.phases & GenerationPhases.Features) {
-    profileFunction("addFeatures", () => addFeatures(iWidth, iHeight));
+    profileFunction("zgAddFeatures", () => zgAddFeatures(iWidth, iHeight));
   }
   profileFunction("TerrainBuilder.validateAndFixTerrain", () => TerrainBuilder.validateAndFixTerrain());
   profileFunction("AreaBuilder.recalculateAreas", () => AreaBuilder.recalculateAreas());
   profileFunction("TerrainBuilder.storeWaterData", () => TerrainBuilder.storeWaterData());
   if (context.phases & GenerationPhases.Snow) {
-    profileFunction("generateSnow", () => generateSnow(iWidth, iHeight));
+    profileFunction("zgGenerateSnow", () => zgGenerateSnow(iWidth, iHeight));
   }
   if (context.phases & GenerationPhases.Resources) {
     profileFunction("generateResources", () => zgGenerateResources(iWidth, iHeight));

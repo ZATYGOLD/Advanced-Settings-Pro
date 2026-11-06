@@ -628,7 +628,7 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 --*******************************************************
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
-        ('ZG_NaturalWondersCount', 'LOC_ZG_NATURAL_WONDER_COUNT_NAME', 'LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION','ZG_NaturalWonderCountDomain', 'ZG_DEFAULT_NATURAL_WONDER_COUNT', 1, 'Game', 'NaturalWonderCountKey', 'MapOptions', 'MPAdvancedMapOptions', 0, 1033),
+        ('ZG_NaturalWondersCount', 'LOC_ZG_NATURAL_WONDER_COUNT_NAME', 'LOC_ZG_NATURAL_WONDER_COUNT_DESCRIPTION','ZG_NaturalWonderCountDomain', 'ZG_DEFAULT_NATURAL_WONDER_COUNT', 1, 'Game', 'NaturalWonderCountKey', 'MapOptions', 'MPAdvancedMapOptions', 0, 1034),
         ('ZG_NW_BarrierReef', 'LOC_FEATURE_BARRIER_REEF_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWBarrierReefKey', 'NaturalWonderSelectionOptions', 'MPAdvancedNaturalWonderSelectionOptions', 0, 200),
         ('ZG_NW_BermudaTriangle', 'LOC_FEATURE_BERMUDA_TRIANGLE_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWBermudaTriangleKey', 'NaturalWonderSelectionOptions', 'MPAdvancedNaturalWonderSelectionOptions', 0, 210),
         ('ZG_NW_GrandCanyon', 'LOC_FEATURE_GRAND_CANYON_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWGrandCanyonKey', 'NaturalWonderSelectionOptions', 'MPAdvancedNaturalWonderSelectionOptions', 0, 220),
@@ -660,16 +660,28 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, GroupIDMultiplayerOverride, ChangeableAfterGameStart, SortIndex)
     VALUES
         ('ZG_MapTemperature', 'LOC_ZG_MAP_TEMPERATURE_NAME', 'LOC_ZG_MAP_TEMPERATURE_DESCRIPTION', 'ZG_MapTemperatureDomain', 'ZG_STANDARD_TEMPERATURE', 0, 'Game', 'MapTemperatureKey', 'MapOptions', 'MPAdvancedMapOptions', 0, 1032),
+        ('ZG_HeatSource', 'LOC_ZG_HEAT_SOURCE_NAME', 'LOC_ZG_HEAT_SOURCE_DESCRIPTION', 'ZG_HeatSourceDomain', 'ZG_HEAT_SOURCE_STANDARD', 0, 'Game', 'HeatSourceKey', 'MapOptions', 'MPAdvancedMapOptions', 0, 1033),
         ('ZG_Rivers', 'LOC_ZG_RIVERS_NAME', 'LOC_ZG_RIVERS_DESCRIPTION','ZG_RiversDomain', 'ZG_DEFAULT_RIVERS', 0, 'Game', 'RiversKey', 'TerrainOptions', 'MPAdvancedTerrainOptions', 0, 151),
         ('ZG_Mountains', 'LOC_ZG_MOUNTAINS_NAME', 'LOC_ZG_MOUNTAINS_DESCRIPTION','ZG_MountainsDomain', 'ZG_DEFAULT_MOUNTAINS', 0, 'Game', 'MountainsKey', 'TerrainOptions', 'MPAdvancedTerrainOptions', 0, 152),
         ('ZG_MapAge', 'LOC_ZG_MAP_AGE_NAME', 'LOC_ZG_MAP_AGE_DESCRIPTION', 'ZG_MapAgeDomain', 'ZG_MAP_AGE_STANDARD', 0, 'Game', 'MapAgeKey', 'MapOptions', 'MPAdvancedMapOptions', 0, 1031),
-        ('ZG_Resources', 'LOC_ZG_RESOURCES_NAME', 'LOC_ZG_RESOURCES_DESCRIPTION', 'ZG_ResourcesDomain', 'ZG_RESOURCES_STANDARD', 0, 'Game', 'ResourcesKey', 'MapOptions', 'MPAdvancedMapOptions', 0, 1034);
+        ('ZG_Resources', 'LOC_ZG_RESOURCES_NAME', 'LOC_ZG_RESOURCES_DESCRIPTION', 'ZG_ResourcesDomain', 'ZG_RESOURCES_STANDARD', 0, 'Game', 'ResourcesKey', 'MapOptions', 'MPAdvancedMapOptions', 0, 1035);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
-        ('ZG_MapTemperatureDomain', 'ZG_HOT_TEMPERATURE', 'LOC_ZG_HOT_NAME', 'LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT', 10),
-        ('ZG_MapTemperatureDomain', 'ZG_STANDARD_TEMPERATURE', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD', 20),
-        ('ZG_MapTemperatureDomain', 'ZG_COLD_TEMPERATURE', 'LOC_ZG_COLD_NAME', 'LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD', 30),
+        ('ZG_MapTemperatureDomain', 'ZG_FRIGID_TEMPERATURE', 'LOC_ZG_FRIGID_NAME', 'LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_FRIGID', 10),
+        ('ZG_MapTemperatureDomain', 'ZG_COLD_TEMPERATURE', 'LOC_ZG_COLD_NAME', 'LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD', 20),
+        ('ZG_MapTemperatureDomain', 'ZG_STANDARD_TEMPERATURE', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD', 30),
+        ('ZG_MapTemperatureDomain', 'ZG_HOT_TEMPERATURE', 'LOC_ZG_HOT_NAME', 'LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT', 40),
+        ('ZG_MapTemperatureDomain', 'ZG_SCORCHING_TEMPERATURE', 'LOC_ZG_SCORCHING_NAME', 'LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_SCORCHING', 50),
+        ('ZG_MapTemperatureDomain', 'ZG_RANDOM_TEMPERATURE', 'LOC_ADVANCED_OPTIONS_RANDOM', 'LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM', 60),
+        ('ZG_HeatSourceDomain', 'ZG_HEAT_SOURCE_STANDARD', 'LOC_ADVANCED_OPTIONS_STANDARD', 'LOC_ZG_HEAT_SOURCE_DESCRIPTION_STANDARD', 10),
+        ('ZG_HeatSourceDomain', 'ZG_HEAT_SOURCE_DUAL_SUN', 'LOC_ZG_HEAT_SOURCE_DUAL_SUN_NAME', 'LOC_ZG_HEAT_SOURCE_DESCRIPTION_DUAL_SUN', 20),
+        ('ZG_HeatSourceDomain', 'ZG_HEAT_SOURCE_TILTED_AXIS', 'LOC_ZG_HEAT_SOURCE_TILTED_AXIS_NAME', 'LOC_ZG_HEAT_SOURCE_DESCRIPTION_TILTED_AXIS', 30),
+        ('ZG_HeatSourceDomain', 'ZG_HEAT_SOURCE_HOT_CENTER', 'LOC_ZG_HEAT_SOURCE_HOT_CENTER_NAME', 'LOC_ZG_HEAT_SOURCE_DESCRIPTION_HOT_CENTER', 40),
+        ('ZG_HeatSourceDomain', 'ZG_HEAT_SOURCE_COLD_CENTER', 'LOC_ZG_HEAT_SOURCE_COLD_CENTER_NAME', 'LOC_ZG_HEAT_SOURCE_DESCRIPTION_COLD_CENTER', 50),
+        ('ZG_HeatSourceDomain', 'ZG_HEAT_SOURCE_WARM_RING', 'LOC_ZG_HEAT_SOURCE_WARM_RING_NAME', 'LOC_ZG_HEAT_SOURCE_DESCRIPTION_WARM_RING', 60),
+        ('ZG_HeatSourceDomain', 'ZG_HEAT_SOURCE_PATCHWORK', 'LOC_ZG_HEAT_SOURCE_PATCHWORK_NAME', 'LOC_ZG_HEAT_SOURCE_DESCRIPTION_PATCHWORK', 70),
+        ('ZG_HeatSourceDomain', 'ZG_HEAT_SOURCE_RANDOM', 'LOC_ADVANCED_OPTIONS_RANDOM', 'LOC_ZG_HEAT_SOURCE_DESCRIPTION_RANDOM', 80),
         ('ZG_RiversDomain', 'ZG_WADI_RIVERS', 'LOC_ZG_RIVERS_WADI_NAME', 'LOC_ZG_RIVERS_DESCRIPTION_WADI', 10),
         ('ZG_RiversDomain', 'ZG_LESS_RIVERS', 'LOC_ZG_RIVERS_ARID_NAME', 'LOC_ZG_RIVERS_DESCRIPTION_ARID', 20),
         ('ZG_RiversDomain', 'ZG_CHANNEL_RIVERS', 'LOC_ZG_RIVERS_CHANNEL_NAME', 'LOC_ZG_RIVERS_DESCRIPTION_CHANNEL', 30),

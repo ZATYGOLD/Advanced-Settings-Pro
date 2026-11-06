@@ -9,13 +9,14 @@ import { chooseStartSectors, assignStartPositions } from 'fs://game/base-standar
 import { generateDiscoveries } from 'fs://game/base-standard/maps/discovery-generator.js';
 import { expandCoastsPlus, generateLakes, buildRainfallMap } from 'fs://game/base-standard/maps/elevation-terrain-generator.js';
 import { zgAddRough } from './zg-map-rough.js';
-import { addFeatures } from 'fs://game/base-standard/maps/feature-biome-generator.js';
+import { zgAddFeatures } from './zg-map-features.js';
 import { dumpStartSectors, dumpContinents, dumpTerrain, dumpElevation, dumpRainfall, dumpBiomes, dumpFeatures, dumpResources, dumpNoisePredicate } from 'fs://game/base-standard/maps/map-debug-helpers.js';
 import { g_PolarWaterRows, g_AvoidSeamOffset, g_IslandWidth, g_WaterPercent, g_Cutoff, g_OceanWaterColumns, g_LandmassFractal, g_FlatTerrain, g_OceanTerrain, g_FractalWeight, g_StartSectorWeight } from 'fs://game/base-standard/maps/map-globals.js';
 import { needHumanNearEquator, createIslands, createOrganicLandmasses, markLandmassRegionId, getHeightAdjustingForStartSector } from 'fs://game/base-standard/maps/map-utilities.js';
 import { addNaturalWonders } from 'fs://game/base-standard/maps/natural-wonder-generator.js';
 import { zgGenerateResources } from './zg-map-resources.js';
-import { generateSnow, dumpPermanentSnow } from 'fs://game/base-standard/maps/snow-generator.js';
+import { dumpPermanentSnow } from 'fs://game/base-standard/maps/snow-generator.js';
+import { zgGenerateSnow } from './zg-map-snow.js';
 import { addVolcanoes, addTundraVolcanoes } from 'fs://game/base-standard/maps/volcano-generator.js';
 
 console.log("Generating using script fractal.ts");
@@ -171,11 +172,11 @@ function generateMap() {
   addTundraVolcanoes(iWidth, iHeight);
   addNaturalWonders(iWidth, iHeight, iNumNaturalWonders);
   TerrainBuilder.addFloodplains(4, 10);
-  addFeatures(iWidth, iHeight);
+  zgAddFeatures(iWidth, iHeight);
   TerrainBuilder.validateAndFixTerrain();
   AreaBuilder.recalculateAreas();
   TerrainBuilder.storeWaterData();
-  generateSnow(iWidth, iHeight);
+  zgGenerateSnow(iWidth, iHeight);
   dumpContinents(iWidth, iHeight);
   dumpTerrain(iWidth, iHeight);
   dumpElevation(iWidth, iHeight);

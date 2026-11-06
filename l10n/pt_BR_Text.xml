@@ -995,7 +995,7 @@
 			<Text>Temperatura do mapa</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="pt_BR">
-			<Text>Desloca as faixas climáticas que definem o bioma de cada célula de terra.</Text>
+			<Text>Define o quão quente é o mundo: quais biomas cobrem a terra, até onde chegam o gelo marinho, os recifes e a neve, e o quanto planaltos, chuvas e rios alteram o clima local.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COLD_NAME" Language="pt_BR">
 			<Text>Frio</Text>
@@ -1004,13 +1004,76 @@
 			<Text>Quente</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="pt_BR">
-			<Text>A tundra começa mais perto do equador e o deserto dá lugar à pradaria.</Text>
+			<Text>A tundra começa mais perto do equador e o deserto dá lugar ao campo. O gelo marinho e a neve chegam mais longe dos polos e os planaltos viram tundra mais cedo.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="pt_BR">
 			<Text>Clima padrão para o tipo de mapa escolhido.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="pt_BR">
-			<Text>O deserto alcança mais longe do equador e a tundra recua para os polos.</Text>
+			<Text>O deserto alcança mais longe do equador e a tundra recua para os polos. O gelo marinho e a neve diminuem, e terras chuvosas e vales fluviais ficam mais verdes.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FRIGID_NAME" Language="pt_BR">
+			<Text>Gélido</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SCORCHING_NAME" Language="pt_BR">
+			<Text>Escaldante</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_FRIGID" Language="pt_BR">
+			<Text>Um mundo em era glacial: cerca de 70% da terra é tundra, o gelo marinho e a neve chegam às latitudes médias e os vales fluviais concentram a maior parte da terra amena.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_SCORCHING" Language="pt_BR">
+			<Text>Um mundo de efeito estufa: deserto e selva cobrem a maior parte da terra, o gelo marinho e a neve desaparecem e os rios se tornam faixas férteis através do deserto.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="pt_BR">
+			<Text>Uma das cinco temperaturas, sorteada pela semente do mapa.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_NAME" Language="pt_BR">
+			<Text>Fonte de calor</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION" Language="pt_BR">
+			<Text>De onde vem o calor do mundo e, portanto, onde ficam suas regiões quentes e frias.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_STANDARD" Language="pt_BR">
+			<Text>Uma faixa quente atravessa o meio do mapa e esfria em direção ao topo e à base, como no jogo base.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_TILTED_AXIS_NAME" Language="pt_BR">
+			<Text>Eixo inclinado</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_TILTED_AXIS" Language="pt_BR">
+			<Text>Quente ao longo da borda norte ou sul do mapa, escolhida pela semente do mapa, esfriando gradualmente até uma borda oposta congelada.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DUAL_SUN_NAME" Language="pt_BR">
+			<Text>Sol duplo</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_DUAL_SUN" Language="pt_BR">
+			<Text>Dois sóis aquecem o topo e a base do mapa, deixando uma faixa fria no meio.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_HOT_CENTER_NAME" Language="pt_BR">
+			<Text>Centro quente</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_HOT_CENTER" Language="pt_BR">
+			<Text>O calor se espalha a partir do meio do mapa em todas as direções, deixando as bordas e os cantos mais frios.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_COLD_CENTER_NAME" Language="pt_BR">
+			<Text>Centro frio</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_COLD_CENTER" Language="pt_BR">
+			<Text>O frio se espalha a partir do meio do mapa em todas as direções, deixando as bordas e os cantos mais quentes.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_WARM_RING_NAME" Language="pt_BR">
+			<Text>Anel quente</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_WARM_RING" Language="pt_BR">
+			<Text>Uma faixa de calor circunda o meio do mapa, com frio no seu interior e ao longo das bordas.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_PATCHWORK_NAME" Language="pt_BR">
+			<Text>Mosaico</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_PATCHWORK" Language="pt_BR">
+			<Text>Regiões quentes e frias ficam em manchas irregulares em vez de faixas.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_RANDOM" Language="pt_BR">
+			<Text>Uma das sete fontes de calor, sorteada pela semente do mapa.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="pt_BR">
 			<Text>Rios</Text>

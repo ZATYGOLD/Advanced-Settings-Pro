@@ -995,7 +995,7 @@
 			<Text>Temperatura mapy</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="pl_PL">
-			<Text>Przesuwa strefy klimatyczne decydujące o biomie każdego pola lądowego.</Text>
+			<Text>Określa, jak ciepły jest świat: jakie biomy pokrywają ląd, jak daleko sięgają lód morski, rafy i śnieg oraz jak silnie wyżyny, opady i rzeki zmieniają lokalny klimat.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COLD_NAME" Language="pl_PL">
 			<Text>Zimna</Text>
@@ -1004,13 +1004,76 @@
 			<Text>Gorąca</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="pl_PL">
-			<Text>Tundra zaczyna się bliżej równika, a pustynia ustępuje łąkom.</Text>
+			<Text>Tundra zaczyna się bliżej równika, a pustynia ustępuje łąkom. Lód morski i śnieg sięgają dalej od biegunów, a wyżyny szybciej stają się tundrą.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="pl_PL">
 			<Text>Standardowy klimat dla wybranego typu mapy.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="pl_PL">
-			<Text>Pustynia sięga dalej od równika, a tundra cofa się ku biegunom.</Text>
+			<Text>Pustynia sięga dalej od równika, a tundra cofa się ku biegunom. Lód morski i śnieg kurczą się, a deszczowe ziemie i doliny rzek zielenieją.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FRIGID_NAME" Language="pl_PL">
+			<Text>Lodowata</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SCORCHING_NAME" Language="pl_PL">
+			<Text>Upalna</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_FRIGID" Language="pl_PL">
+			<Text>Świat epoki lodowcowej: około 70% lądu to tundra, lód morski i śnieg sięgają średnich szerokości, a większość ciepłych ziem leży w dolinach rzek.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_SCORCHING" Language="pl_PL">
+			<Text>Świat cieplarniany: pustynia i dżungla pokrywają większość lądu, lód morski i śnieg znikają, a rzeki stają się żyznymi pasami przez pustynię.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="pl_PL">
+			<Text>Jedna z pięciu temperatur, wylosowana z ziarna mapy.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_NAME" Language="pl_PL">
+			<Text>Źródło ciepła</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION" Language="pl_PL">
+			<Text>Skąd pochodzi ciepło świata, a więc gdzie leżą jego gorące i zimne regiony.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_STANDARD" Language="pl_PL">
+			<Text>Gorący pas biegnie przez środek mapy i ochładza się ku górze i dołowi, jak w grze podstawowej.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_TILTED_AXIS_NAME" Language="pl_PL">
+			<Text>Przechylona oś</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_TILTED_AXIS" Language="pl_PL">
+			<Text>Gorąco wzdłuż północnej lub południowej krawędzi mapy, wybranej przez ziarno mapy, z równomiernym ochłodzeniem ku zamarzniętej przeciwnej krawędzi.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DUAL_SUN_NAME" Language="pl_PL">
+			<Text>Podwójne słońce</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_DUAL_SUN" Language="pl_PL">
+			<Text>Dwa słońca ogrzewają górę i dół mapy, pozostawiając zimny pas przez środek.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_HOT_CENTER_NAME" Language="pl_PL">
+			<Text>Gorące centrum</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_HOT_CENTER" Language="pl_PL">
+			<Text>Ciepło rozchodzi się ze środka mapy we wszystkich kierunkach, więc krawędzie i narożniki są najzimniejsze.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_COLD_CENTER_NAME" Language="pl_PL">
+			<Text>Zimne centrum</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_COLD_CENTER" Language="pl_PL">
+			<Text>Zimno rozchodzi się ze środka mapy we wszystkich kierunkach, więc krawędzie i narożniki są najcieplejsze.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_WARM_RING_NAME" Language="pl_PL">
+			<Text>Ciepły pierścień</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_WARM_RING" Language="pl_PL">
+			<Text>Pas ciepła otacza środek mapy, a jego wnętrze i okolice krawędzi są zimne.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_PATCHWORK_NAME" Language="pl_PL">
+			<Text>Patchwork</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_PATCHWORK" Language="pl_PL">
+			<Text>Gorące i zimne regiony leżą w nieregularnych plamach zamiast pasów.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_RANDOM" Language="pl_PL">
+			<Text>Jedno z siedmiu źródeł ciepła, wylosowane z ziarna mapy.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="pl_PL">
 			<Text>Rzeki</Text>

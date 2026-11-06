@@ -995,7 +995,7 @@
 			<Text>マップの気温</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="ja_JP">
-			<Text>各陸地タイルのバイオームを決める気候帯をずらします。</Text>
+			<Text>世界の暖かさを設定します。陸地を覆うバイオーム、海氷・サンゴ礁・雪の広がり、高地・降水量・河川が局地的な気候に与える影響の強さが変わります。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COLD_NAME" Language="ja_JP">
 			<Text>寒冷</Text>
@@ -1004,13 +1004,76 @@
 			<Text>高温</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="ja_JP">
-			<Text>ツンドラが赤道に近づき、砂漠が草原に置き換わります。</Text>
+			<Text>ツンドラが赤道近くから始まり、砂漠は草原に変わります。海氷と雪が極から遠くまで広がり、高地が早くツンドラになります。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="ja_JP">
 			<Text>選択したマップタイプの標準的な気候。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="ja_JP">
-			<Text>砂漠が赤道から遠くまで広がり、ツンドラが極方向へ後退します。</Text>
+			<Text>砂漠が赤道から遠くまで広がり、ツンドラが極方向へ後退します。海氷と雪が減り、雨の多い土地と河川の谷が緑豊かになります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FRIGID_NAME" Language="ja_JP">
+			<Text>極寒</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SCORCHING_NAME" Language="ja_JP">
+			<Text>灼熱</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_FRIGID" Language="ja_JP">
+			<Text>氷河期の世界です。陸地の約70%がツンドラになり、海氷と雪が中緯度まで広がり、暖かい土地の大半は河川の谷にあります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_SCORCHING" Language="ja_JP">
+			<Text>温室効果の世界です。陸地の大半を砂漠とジャングルが覆い、海氷と雪は消え、河川が砂漠を貫く肥沃な帯になります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="ja_JP">
+			<Text>5つの気温のいずれかを、マップシードから決定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_NAME" Language="ja_JP">
+			<Text>熱源</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION" Language="ja_JP">
+			<Text>世界の暖かさがどこから来るのか、つまり暑い地域と寒い地域がどこにあるかを決めます。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_STANDARD" Language="ja_JP">
+			<Text>ベースゲームと同じく、マップ中央を横切る暑い帯があり、上下に向かって寒くなります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_TILTED_AXIS_NAME" Language="ja_JP">
+			<Text>傾いた地軸</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_TILTED_AXIS" Language="ja_JP">
+			<Text>マップの北端または南端（マップシードで決定）が暑く、反対側の凍てついた端に向かって徐々に寒くなります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DUAL_SUN_NAME" Language="ja_JP">
+			<Text>二重太陽</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_DUAL_SUN" Language="ja_JP">
+			<Text>2つの太陽がマップの上下を温め、中央を横切る寒い帯が残ります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_HOT_CENTER_NAME" Language="ja_JP">
+			<Text>熱い中心</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_HOT_CENTER" Language="ja_JP">
+			<Text>熱がマップ中央からあらゆる方向に広がり、端と角が最も寒くなります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_COLD_CENTER_NAME" Language="ja_JP">
+			<Text>寒い中心</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_COLD_CENTER" Language="ja_JP">
+			<Text>寒さがマップ中央からあらゆる方向に広がり、端と角が最も暖かくなります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_WARM_RING_NAME" Language="ja_JP">
+			<Text>暖かい環</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_WARM_RING" Language="ja_JP">
+			<Text>暖かい帯がマップ中央を囲み、その内側と端の周りは寒くなります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_PATCHWORK_NAME" Language="ja_JP">
+			<Text>パッチワーク</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_PATCHWORK" Language="ja_JP">
+			<Text>暑い地域と寒い地域が帯状ではなく不規則なまだら模様に分布します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_RANDOM" Language="ja_JP">
+			<Text>7つの熱源のいずれかを、マップシードから決定します。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="ja_JP">
 			<Text>川</Text>

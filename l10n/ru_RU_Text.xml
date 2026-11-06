@@ -995,7 +995,7 @@
 			<Text>Температура карты</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="ru_RU">
-			<Text>Сдвигает климатические пояса, определяющие биом каждой клетки суши.</Text>
+			<Text>Определяет, насколько тёплый мир: какие биомы покрывают сушу, как далеко простираются морской лёд, рифы и снег и насколько сильно возвышенности, осадки и реки меняют местный климат.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COLD_NAME" Language="ru_RU">
 			<Text>Холодная</Text>
@@ -1004,13 +1004,76 @@
 			<Text>Жаркая</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="ru_RU">
-			<Text>Тундра начинается ближе к экватору, а пустыня уступает место лугам.</Text>
+			<Text>Тундра начинается ближе к экватору, а пустыня уступает место лугам. Морской лёд и снег простираются дальше от полюсов, а возвышенности раньше становятся тундрой.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="ru_RU">
 			<Text>Стандартный климат для выбранного типа карты.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="ru_RU">
-			<Text>Пустыня простирается дальше от экватора, а тундра отступает к полюсам.</Text>
+			<Text>Пустыня простирается дальше от экватора, а тундра отступает к полюсам. Морского льда и снега становится меньше, а дождливые земли и речные долины зеленеют.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FRIGID_NAME" Language="ru_RU">
+			<Text>Ледяная</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SCORCHING_NAME" Language="ru_RU">
+			<Text>Палящая</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_FRIGID" Language="ru_RU">
+			<Text>Мир ледникового периода: около 70% суши — тундра, морской лёд и снег доходят до средних широт, а большая часть тёплых земель лежит в речных долинах.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_SCORCHING" Language="ru_RU">
+			<Text>Мир парникового эффекта: пустыня и джунгли покрывают большую часть суши, морской лёд и снег исчезают, а реки становятся плодородными полосами среди пустыни.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="ru_RU">
+			<Text>Одна из пяти температур, выбранная по зерну карты.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_NAME" Language="ru_RU">
+			<Text>Источник тепла</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION" Language="ru_RU">
+			<Text>Откуда исходит тепло мира и, следовательно, где лежат его жаркие и холодные области.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>Жаркая полоса проходит через середину карты и остывает к верху и низу, как в базовой игре.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_TILTED_AXIS_NAME" Language="ru_RU">
+			<Text>Наклонённая ось</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_TILTED_AXIS" Language="ru_RU">
+			<Text>Жарко у северного или южного края карты (его выбирает зерно карты), с постепенным похолоданием к скованному льдом противоположному краю.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DUAL_SUN_NAME" Language="ru_RU">
+			<Text>Двойное солнце</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_DUAL_SUN" Language="ru_RU">
+			<Text>Два солнца нагревают верх и низ карты, оставляя холодную полосу посередине.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_HOT_CENTER_NAME" Language="ru_RU">
+			<Text>Жаркий центр</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_HOT_CENTER" Language="ru_RU">
+			<Text>Тепло расходится от середины карты во все стороны, поэтому края и углы самые холодные.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_COLD_CENTER_NAME" Language="ru_RU">
+			<Text>Холодный центр</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_COLD_CENTER" Language="ru_RU">
+			<Text>Холод расходится от середины карты во все стороны, поэтому края и углы самые тёплые.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_WARM_RING_NAME" Language="ru_RU">
+			<Text>Тёплое кольцо</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_WARM_RING" Language="ru_RU">
+			<Text>Полоса тепла опоясывает середину карты, а внутри неё и вдоль краёв холодно.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_PATCHWORK_NAME" Language="ru_RU">
+			<Text>Лоскутное одеяло</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_PATCHWORK" Language="ru_RU">
+			<Text>Жаркие и холодные области лежат неровными пятнами, а не поясами.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_RANDOM" Language="ru_RU">
+			<Text>Один из семи источников тепла, выбранный по зерну карты.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="ru_RU">
 			<Text>Реки</Text>

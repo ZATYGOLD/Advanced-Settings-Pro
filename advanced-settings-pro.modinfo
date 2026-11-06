@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="AdvancedSettingsPro" version="00904" xmlns="ModInfo">
+<Mod id="AdvancedSettingsPro" version="00905" xmlns="ModInfo">
 	<Properties>
 		<Name>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME</Name>
 		<Description>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION</Description>
 		<Authors>Zatygold</Authors>
-		<Version>0.9.04</Version>
+		<Version>0.9.05</Version>
 		<Package>Mod</Package>
 		<LastUpdated>2026-09-28</LastUpdated>
 		<ShowInBrowser>1</ShowInBrowser>
@@ -5238,7 +5238,10 @@
 					<Item>maps/zg-map-rivers.js</Item>
 					<Item>maps/zg-map-mountains.js</Item>
 					<Item>maps/zg-map-rough.js</Item>
+					<Item>maps/zg-map-climate.js</Item>
 					<Item>maps/zg-map-biomes.js</Item>
+					<Item>maps/zg-map-features.js</Item>
+					<Item>maps/zg-map-snow.js</Item>
 					<Item>maps/zg-map-resources.js</Item>
 					<Item>maps/zg-map-generation.js</Item>
 					<Item>maps/zg-continents-voronoi.js</Item>
@@ -5286,7 +5289,10 @@
 					<Item>maps/zg-map-rivers.js</Item>
 					<Item>maps/zg-map-mountains.js</Item>
 					<Item>maps/zg-map-rough.js</Item>
+					<Item>maps/zg-map-climate.js</Item>
 					<Item>maps/zg-map-biomes.js</Item>
+					<Item>maps/zg-map-features.js</Item>
+					<Item>maps/zg-map-snow.js</Item>
 					<Item>maps/zg-map-resources.js</Item>
 					<Item>maps/zg-map-generation.js</Item>
 					<Item>maps/zg-continents-voronoi.js</Item>

@@ -4,6 +4,15 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ## Version History
 
+### 0.9.05
+
+- Map Temperature gains Frigid and Scorching, plus Random, and now reads Frigid, Cold, Standard, Hot, Scorching. Every step also moves sea ice, reefs, open-water features, and snow, and sets how strongly highlands, rainfall, and rivers change the local climate; Standard matches the base game
+- New Heat Source (Map Settings, below Map Temperature): Standard, Dual Sun, Tilted Axis, Hot Center, Cold Center, Warm Ring, Patchwork, or Random
+- Tilted Axis heats the north or south edge, chosen by the map seed
+- Biomes, features, and snow on all 14 map scripts now follow both settings
+- Conflict guard recognizes Scrum Lord's Climate Controls, whose climate settings these replace
+- Climate logic adapted, with permission, from Scrum Lord's Climate Controls
+
 ### 0.9.04
 
 - New Trade Range (General tab, Trade Settings): -50% to +100% on land and sea trade range, for all ages or per age
@@ -223,7 +232,7 @@ Each Pace setting has Antiquity, Exploration, and Modern rows, used when it is C
 
 ### Map tab
 
-- Map Settings: the game's Map, Map Size, and Map Seed (with a Random button), plus Map Age (Old, Standard, or New), Map Temperature (Hot, Standard, or Cold), Natural Wonders (Disabled to Double), and Resources (Sparse, Standard, or Abundant)
+- Map Settings: the game's Map, Map Size, and Map Seed (with a Random button), plus Map Age (Old, Standard, or New), Map Temperature (Frigid, Cold, Standard, Hot, Scorching, or Random), Heat Source (Standard, Dual Sun, Tilted Axis, Hot Center, Cold Center, Warm Ring, Patchwork, or Random), Natural Wonders (Disabled to Double), and Resources (Sparse, Standard, or Abundant)
 - Terrain Settings: Lakes, Rivers (nine pairings of river count and navigable share), Mountains, and the game's Sea Level
 - Natural Wonder Selection: each of the 22 natural wonders, DLC included
 - Disaster Settings: Disaster Frequency (Disabled, Light, Moderate, Catastrophic, or Custom per age)
@@ -262,6 +271,10 @@ Base game with the Antiquity, Exploration, and Modern age modules.
 English, German, Spanish, French, Italian, Japanese, Korean, Polish, Brazilian Portuguese, Russian, Simplified Chinese, and Traditional Chinese.
 
 English text lives in text/en_us; the other languages are under l10n, loaded per locale as the game's own modules do.
+
+## Credits
+
+Map Temperature's climate steps and Heat Source are adapted, with permission, from Scrum Lord's Climate Controls.
 
 ## License
 

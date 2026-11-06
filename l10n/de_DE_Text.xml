@@ -995,7 +995,7 @@
 			<Text>Kartentemperatur</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="de_DE">
-			<Text>Verschiebt die Klimazonen, die das Biom jedes Landfeldes bestimmen.</Text>
+			<Text>Legt fest, wie warm die Welt ist: welche Biome das Land bedecken, wie weit Meereis, Riffe und Schnee reichen und wie stark Hochland, Niederschlag und Flüsse das örtliche Klima verändern.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COLD_NAME" Language="de_DE">
 			<Text>Kalt</Text>
@@ -1004,13 +1004,76 @@
 			<Text>Heiß</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="de_DE">
-			<Text>Tundra beginnt näher am Äquator, und Wüste weicht Grasland.</Text>
+			<Text>Tundra beginnt näher am Äquator, und Wüste weicht Grasland. Meereis und Schnee reichen weiter von den Polen fort, und Hochland wird früher zu Tundra.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="de_DE">
 			<Text>Standardklima für den gewählten Kartentyp.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="de_DE">
-			<Text>Wüste reicht weiter vom Äquator fort, und Tundra zieht sich zu den Polen zurück.</Text>
+			<Text>Wüste reicht weiter vom Äquator fort, und Tundra zieht sich zu den Polen zurück. Meereis und Schnee schrumpfen, und regenreiches Land und Flusstäler werden grüner.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FRIGID_NAME" Language="de_DE">
+			<Text>Eisig</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SCORCHING_NAME" Language="de_DE">
+			<Text>Glühend</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_FRIGID" Language="de_DE">
+			<Text>Eine Eiszeitwelt: Etwa 70 % des Landes sind Tundra, Meereis und Schnee reichen bis in die mittleren Breiten, und Flusstäler bieten das meiste warme Land.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_SCORCHING" Language="de_DE">
+			<Text>Eine Treibhauswelt: Wüste und Dschungel bedecken den Großteil des Landes, Meereis und Schnee verschwinden, und Flüsse werden zu fruchtbaren Streifen durch die Wüste.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="de_DE">
+			<Text>Eine der fünf Temperaturen, ausgewürfelt aus dem Karten-Seed.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_NAME" Language="de_DE">
+			<Text>Wärmequelle</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION" Language="de_DE">
+			<Text>Woher die Wärme der Welt kommt und damit, wo ihre heißen und kalten Regionen liegen.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_STANDARD" Language="de_DE">
+			<Text>Ein heißes Band quer durch die Kartenmitte, das nach oben und unten abkühlt, wie im Grundspiel.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_TILTED_AXIS_NAME" Language="de_DE">
+			<Text>Gekippte Achse</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_TILTED_AXIS" Language="de_DE">
+			<Text>Heiß am Nord- oder Südrand der Karte, vom Karten-Seed bestimmt, mit stetiger Abkühlung bis zum gefrorenen gegenüberliegenden Rand.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DUAL_SUN_NAME" Language="de_DE">
+			<Text>Doppelsonne</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_DUAL_SUN" Language="de_DE">
+			<Text>Zwei Sonnen heizen den oberen und unteren Kartenrand, quer durch die Mitte bleibt ein kaltes Band.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_HOT_CENTER_NAME" Language="de_DE">
+			<Text>Heißes Zentrum</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_HOT_CENTER" Language="de_DE">
+			<Text>Die Hitze breitet sich von der Kartenmitte in alle Richtungen aus, sodass Ränder und Ecken am kältesten sind.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_COLD_CENTER_NAME" Language="de_DE">
+			<Text>Kaltes Zentrum</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_COLD_CENTER" Language="de_DE">
+			<Text>Die Kälte breitet sich von der Kartenmitte in alle Richtungen aus, sodass Ränder und Ecken am wärmsten sind.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_WARM_RING_NAME" Language="de_DE">
+			<Text>Warmer Ring</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_WARM_RING" Language="de_DE">
+			<Text>Ein Band aus Wärme umkreist die Kartenmitte, mit Kälte in ihrem Zentrum und entlang der Ränder.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_PATCHWORK_NAME" Language="de_DE">
+			<Text>Flickenteppich</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_PATCHWORK" Language="de_DE">
+			<Text>Heiße und kalte Regionen liegen in unregelmäßigen Flecken statt in Bändern.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_RANDOM" Language="de_DE">
+			<Text>Eine der sieben Wärmequellen, ausgewürfelt aus dem Karten-Seed.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="de_DE">
 			<Text>Flüsse</Text>
