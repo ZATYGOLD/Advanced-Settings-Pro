@@ -7,7 +7,7 @@
 // own art when filled, its name and effect on hover. They show on human rows
 // and, whenever mementos are on, on AI rows too. On your own row, and on AI
 // rows for the host, a slot opens the single-player memento picker on that
-// slot (ui-next/screens/create-game/zg-memento-select.js).
+// slot (zg-memento-select.js).
 // Nothing else in the row moves: the slots take the diamonds' place.
 //
 // The slots sit inside the leader dropdown, which opens on a left click or tap
@@ -19,8 +19,9 @@
 
 import { Audio } from 'fs://game/core/ui/audio-base/audio-support.js';
 import { openMementoSelect } from '../../../ui-next/screens/create-game/zg-memento-select.js';
-import { MEMENTO_PARAM_IDS as PARAM_IDS, MEMENTO_NONE_VALUE as NONE_VALUE, MEMENTO_SLOT_BASE_IMAGE as BASE_IMAGE, MEMENTO_SLOT_PLUS_IMAGE as PLUS_IMAGE, mementoTooltip, aiPlayerIds } from '../shared/zg-memento-roller.js';
-import { canEditSetup, Decorator } from '../shared/zg-shell-context.js';
+import { MEMENTO_PARAM_IDS, MEMENTO_NONE_VALUE, MEMENTO_SLOT_BASE_IMAGE, MEMENTO_SLOT_PLUS_IMAGE, mementoTooltip, aiPlayerIds } from '../../shared/zg-memento-roller.js';
+import { resolveName } from '../../shared/zg-config.js';
+import { canEditSetup, Decorator, onSetupRevision } from '../shared/zg-shell-context.js';
 
 const DROPDOWN_NAME = "leader-dropdown";
 const LOBBY_NAME = "screen-mp-lobby";
@@ -31,22 +32,14 @@ const SLOT_REM = 2.75;
 const PLUS_REM = 1.3;
 const SLOT_FRAME = { border: "0.0833rem solid #8c7e62", backgroundColor: "rgba(13, 15, 20, 0.6)" };
 const CLICK_INPUTS = new Set(["mousebutton-left", "touch-tap"]);
-const REFRESH_MS = 500;
 
 // Every row's slots, refreshed together when the setup changes: an AI row's
 // mementos change without the lobby telling its dropdown anything.
 const liveSlots = new Set();
-let lastRevision = -1;
-setInterval(() => {
-	if (liveSlots.size == 0 || GameSetup.currentRevision == lastRevision) {
-		return;
-	}
-	lastRevision = GameSetup.currentRevision;
-	liveSlots.forEach((slots) => slots.refresh());
-}, REFRESH_MS);
+onSetupRevision(() => liveSlots.forEach((slots) => slots.refresh()), () => liveSlots.size > 0);
 
 function mementoValue(playerId, slotIndex) {
-	return GameSetup.findPlayerParameter(playerId, PARAM_IDS[slotIndex])?.value;
+	return GameSetup.findPlayerParameter(playerId, MEMENTO_PARAM_IDS[slotIndex])?.value;
 }
 
 function createSlot() {
@@ -63,14 +56,14 @@ function createSlot() {
 
 function paintSlot(slot, value) {
 	const art = slot.firstChild;
-	const isEmpty = !value || value.value == NONE_VALUE;
-	const icon = isEmpty ? "" : GameSetup.resolveString(value.icon);
+	const isEmpty = !value || value.value == MEMENTO_NONE_VALUE;
+	const icon = isEmpty ? "" : resolveName(value.icon);
 	if (icon) {
 		art.style.backgroundImage = `url('blp:${icon}')`;
 		art.style.backgroundSize = "";
 		art.style.opacity = "1";
 	} else {
-		art.style.backgroundImage = `${PLUS_IMAGE}, ${BASE_IMAGE}`;
+		art.style.backgroundImage = `${MEMENTO_SLOT_PLUS_IMAGE}, ${MEMENTO_SLOT_BASE_IMAGE}`;
 		art.style.backgroundSize = `${PLUS_REM}rem ${PLUS_REM}rem, contain`;
 		art.style.opacity = "0.6";
 	}
@@ -126,7 +119,7 @@ class LobbyMementoSlots extends Decorator {
 		}
 		container.innerHTML = "";
 		container.classList.add("items-center");
-		for (let slotIndex = 0; slotIndex < PARAM_IDS.length; slotIndex++) {
+		for (let slotIndex = 0; slotIndex < MEMENTO_PARAM_IDS.length; slotIndex++) {
 			const slot = createSlot();
 			slot.addEventListener("engine-input", (event) => this.onSlotInput(event, slotIndex));
 			container.appendChild(slot);

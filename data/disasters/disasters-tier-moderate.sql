@@ -1,5 +1,6 @@
--- Apply the Moderate disaster frequencies to every intensity tier so they hold
--- whatever the hidden base setting is. Plagues are excluded because they are crisis-driven.
+-- Disasters: Moderate. Apply the Moderate disaster frequencies to every intensity
+-- tier so they hold whatever the hidden base setting is. Plagues are excluded
+-- because they are crisis-driven.
 UPDATE RandomEventFrequencies
 SET OccurrencesPerAge = (
     SELECT src.OccurrencesPerAge

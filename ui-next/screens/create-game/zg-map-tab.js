@@ -11,28 +11,17 @@
 // Every option row, the Player tab, and the multiplayer screen remain the
 // game's own code.
 import { createSignal, createComponent, mergeProps, onCleanup } from 'fs://game/core/vendor/solid-js/dist/solid.js';
-import { ComponentRegistry } from 'fs://game/core/ui-next/services/component-registry.js';
 import { ModelRegistry, ModelLifecycle } from 'fs://game/core/ui-next/services/model-registry.js';
 import { L10n } from 'fs://game/core/ui-next/components/l10n.js';
 import 'fs://game/core/ui-next/components/tab.js';
 import 'fs://game/core/ui-next/screens/create-game/game-parameters-model.js';
+import { SETUP_TABS } from '../../../ui/shell/shared/zg-setup-tabs.js';
+import { zgWrapComponent } from './zg-component-override.js';
 
 const OVERRIDE_PRIORITY = 100;
 const GENERAL_TAB_NAME = "advanced-options-general";
 
-// Extra tabs, in display order, each claiming the parameter groups it shows.
-const EXTRA_TABS = [
-	{
-		name: "zg-advanced-options-pace",
-		title: "LOC_ZG_ADVANCED_OPTIONS_AGES",
-		groups: new Set(["GamePacingOptions", "PacingAntiquityOptions", "PacingExplorationOptions", "PacingModernOptions"]),
-	},
-	{
-		name: "zg-advanced-options-map",
-		title: "LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS",
-		groups: new Set(["MapOptions", "TerrainOptions", "DisasterOptions", "NaturalWonderSelectionOptions"]),
-	},
-];
+const EXTRA_TABS = SETUP_TABS.map((tab) => ({ ...tab, name: `zg-advanced-options-${tab.key}` }));
 
 // The tab whose body is rendering: an EXTRA_TABS entry, GENERAL_TAB_NAME, or null.
 const [activeTab, setActiveTab] = createSignal(null);
@@ -105,28 +94,17 @@ function tabBody(tab, body) {
 	};
 }
 
-const tabItem = ComponentRegistry.get("Tab.Item");
-// `factory` is a signal accessor returning the currently registered factory.
-// Read it once here to capture the base implementation before this module
-// overrides the registration; reading it later would return our own factory.
-const createBaseTabItem = tabItem?.factory?.();
-if (createBaseTabItem) {
-	ComponentRegistry.register({
-		name: "Tab.Item",
-		overridePriority: OVERRIDE_PRIORITY,
-		createInstance: (props) => {
-			if (props?.name != GENERAL_TAB_NAME || typeof props?.body != "function") {
-				return createBaseTabItem(props);
-			}
-			const body = props.body;
-			return [
-				createBaseTabItem(mergeProps(props, { body: tabBody(GENERAL_TAB_NAME, body) })),
-				...EXTRA_TABS.map((tab) => createBaseTabItem({
-					name: tab.name,
-					title: () => createComponent(L10n.Compose, { text: tab.title }),
-					body: tabBody(tab, body),
-				})),
-			];
-		},
-	});
-}
+zgWrapComponent("Tab.Item", OVERRIDE_PRIORITY, (createBaseTabItem) => (props) => {
+	if (props?.name != GENERAL_TAB_NAME || typeof props?.body != "function") {
+		return createBaseTabItem(props);
+	}
+	const body = props.body;
+	return [
+		createBaseTabItem(mergeProps(props, { body: tabBody(GENERAL_TAB_NAME, body) })),
+		...EXTRA_TABS.map((tab) => createBaseTabItem({
+			name: tab.name,
+			title: () => createComponent(L10n.Compose, { text: tab.title }),
+			body: tabBody(tab, body),
+		})),
+	];
+});

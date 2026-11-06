@@ -13,14 +13,13 @@
 //            features, and snow read; positive is colder.
 //   weights  how strongly elevation (colder), rainfall (wet warmer, dry colder),
 //            and rivers (warmer) move a land tile's latitude for its biome.
-// Cold, Standard, and Hot keep their biome bands from before; Standard matches
-// the base game in every value.
-import { zgSettingTier } from './zg-map-settings.js';
+// Standard matches the base game in every value.
+import { zgInterpolate, zgSettingTier } from './zg-map-utils.js';
 
 const TEMPERATURE_SETTING_KEY = "MapTemperatureKey";
 const HEAT_SOURCE_SETTING_KEY = "HeatSourceKey";
 const MAX_LATITUDE = 90;
-// The engine builds the landmass, mountain, and hill fractals in ids 0 to 2.
+// map-globals.js gives the landmass, mountain, and hill fractals ids 0 to 2.
 const PATCHWORK_FRACTAL = 3;
 const PATCHWORK_GRAIN = 2;
 
@@ -37,11 +36,6 @@ const TEMPERATURE_TIERS = {
 // --------------------------------------------------------- band shapes --
 // Each returns a function from a tile to a signed latitude in [-1, 1]: 0 is the
 // equator, -1 the south pole, 1 the north pole.
-
-function interpolate(value, from, to, atFrom, atTo) {
-	const t = Math.min(1, Math.max(0, (value - from) / (to - from)));
-	return atFrom + (atTo - atFrom) * t;
-}
 
 // Straight-line distance on the hex grid, odd rows offset by half a tile.
 function distance(x1, y1, x2, y2) {
@@ -65,7 +59,7 @@ function ringBands(hotCenter) {
 		const fromCenter = distance(x, y, centerX, centerY) - centerRadius;
 		const fromPole = Math.min(fromCenter, poleSpan - fromCenter);
 		const sign = (fromCenter <= equator) != hotCenter ? 1 : -1;
-		return sign * interpolate(fromPole, 0, equator, 1, 0);
+		return sign * zgInterpolate(fromPole, 0, equator, 1, 0);
 	};
 }
 

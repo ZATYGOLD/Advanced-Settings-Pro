@@ -7,18 +7,16 @@
 // `slotIDs`, so both are reshaped here. Groups are routed to tabs through
 // getTabContainerForParam; the seed buttons hang off createParamEleLabel.
 
+import { resolveName } from '../../shared/zg-config.js';
 import { Decorator } from '../shared/zg-shell-context.js';
+import { MP_GROUP_PREFIX, SEED_BUTTON_TEXT, SEED_PARAM_IDS, SETUP_TABS, randomSeed } from '../shared/zg-setup-tabs.js';
 
 const PANEL_NAME = "screen-mp-create-game";
-const SEED_PARAM_IDS = new Set(["GameRandomSeed", "MapRandomSeed"]);
-const MAX_SEED = 2 ** 31 - 1;
-const RANDOM_TEXT = "LOC_ADVANCED_OPTIONS_RANDOM";
 // The screen's tabs: Game Settings first, Advanced second, Add-Ons last.
 const ADVANCED_INDEX = 1;
 const ADVANCED_PANEL_ID = "advanced-setup-mp__advanced";
 const ADDONS_PANEL_ID = "advanced-setup-mp__add-ons";
 const GENERAL_CONTAINER = ".advanced-setup__game-options-container";
-const MP_ADVANCED_PREFIX = "MPAdvanced";
 // The screen's tab buttons carry a 16.7rem minimum width, sized for its three
 // tabs; four fit at less.
 const NAV_BUTTON_MIN_WIDTH = "11rem";
@@ -30,36 +28,11 @@ const NAV_BUTTON_BORDER_WIDTH = "0.8889rem 3.5rem 2rem 3.5rem";
 // fxs-button (min-h-11.5, text-base, px-4).
 const SEED_BUTTON_STYLE = { width: "7rem", minWidth: "0", minHeight: "2rem", padding: "0", fontSize: "0.75rem", flex: "0 0 auto" };
 
-// Multiplayer resolves a parameter's group to its GroupIDMultiplayerOverride
-// when it has one, so these are the "MPAdvanced" ids of the groups the
-// single-player tabs hold. Map, Map Size and Start Position are moved onto
-// MPAdvancedMapOptions, and the crisis settings onto their own
-// MPAdvancedCrisisOptions, in config/setup-parameters.sql.
-// A setting with no override keeps its single-player group, as the settings a
-// map script adds usually do (GroupId MapOptions), so each tab claims the
-// single-player ids too.
-const TABS = [
-	{
-		id: "zg-advanced-setup-mp__pace",
-		title: "LOC_ZG_ADVANCED_OPTIONS_AGES",
-		containerClass: "zg-advanced-setup__mp-pace-container",
-		groups: new Set([
-			"MPAdvancedGamePacingOptions", "MPAdvancedPacingAntiquityOptions", "MPAdvancedPacingExplorationOptions", "MPAdvancedPacingModernOptions",
-			"GamePacingOptions", "PacingAntiquityOptions", "PacingExplorationOptions", "PacingModernOptions",
-		]),
-	},
-	{
-		id: "zg-advanced-setup-mp__map",
-		title: "LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS",
-		containerClass: "zg-advanced-setup__mp-map-container",
-		groups: new Set([
-			"MPAdvancedMapOptions", "MPAdvancedTerrainOptions", "MPAdvancedDisasterOptions", "MPAdvancedNaturalWonderSelectionOptions",
-			"MapOptions", "TerrainOptions", "DisasterOptions", "NaturalWonderSelectionOptions",
-		]),
-	},
-];
-
-const randomSeed = () => 1 + Math.floor(Math.random() * (MAX_SEED - 1));
+const TABS = SETUP_TABS.map((tab) => ({
+	...tab,
+	id: `zg-advanced-setup-mp__${tab.key}`,
+	containerClass: `zg-advanced-setup__mp-${tab.key}-container`,
+}));
 
 // The same shape as the screen's own createGameSetupPanel.
 function createPanel(tab) {
@@ -80,7 +53,7 @@ function seedButton(parameterId) {
 	const button = document.createElement("fxs-button");
 	button.classList.add("mr-4");
 	Object.assign(button.style, SEED_BUTTON_STYLE);
-	button.setAttribute("caption", RANDOM_TEXT);
+	button.setAttribute("caption", SEED_BUTTON_TEXT);
 	button.addEventListener("action-activate", () => GameSetup.setGameParameterValue(parameterId, randomSeed()));
 	return button;
 }
@@ -141,12 +114,12 @@ class MpCreateGameLayout extends Decorator {
 		const component = this.component;
 		const getTabContainerForParam = component.getTabContainerForParam.bind(component);
 		component.getTabContainerForParam = (param) => {
-			const groupId = GameSetup.resolveString(component.resolveParamGroup(param)) ?? "";
+			const groupId = resolveName(component.resolveParamGroup(param));
 			const index = TABS.findIndex((tab) => tab.groups.has(groupId));
 			if (index >= 0) {
 				return this.panels[index].querySelector(`.${TABS[index].containerClass}`);
 			}
-			return groupId.startsWith(MP_ADVANCED_PREFIX) ? component.Root.querySelector(GENERAL_CONTAINER) : getTabContainerForParam(param);
+			return groupId.startsWith(MP_GROUP_PREFIX) ? component.Root.querySelector(GENERAL_CONTAINER) : getTabContainerForParam(param);
 		};
 	}
 
@@ -155,8 +128,8 @@ class MpCreateGameLayout extends Decorator {
 		const createParamEleLabel = component.createParamEleLabel.bind(component);
 		component.createParamEleLabel = (setupParam, paramEle) => {
 			const row = createParamEleLabel(setupParam, paramEle);
-			const parameterId = GameSetup.resolveString(setupParam.ID);
-			if (SEED_PARAM_IDS.has(parameterId) && !setupParam.readOnly) {
+			const parameterId = resolveName(setupParam.ID);
+			if (SEED_PARAM_IDS.includes(parameterId) && !setupParam.readOnly) {
 				row.appendChild(seedButton(parameterId));
 			}
 			return row;

@@ -5,7 +5,8 @@
 // (mirror the human, persist, switch to an apex civilization, or a coin flip
 // between the two). It does not know this one, so when it is set every AI's
 // civilization is written here before the next age starts, into the slots the
-// caller names (zg-memento-roller.js), and the engine has nothing left to decide.
+// caller names (zg-memento-roller.js). Experimental: since patch 1.5 the engine
+// may still choose the AI's civilization itself.
 //
 // Each AI keeps to its leader's history: it moves on when the new age offers
 // the leader a Historical civilization, holds its own when that is the
@@ -33,45 +34,18 @@
 // the new age's civilizations and the AI's own are assumed. The age's own
 // civilizations come from Ages.PlayerCivilizationDomain.
 
-import { cached, queryConfig } from '../shell/shared/zg-shell-context.js';
-import { SETUP_SLOTS } from '../shell/shared/zg-memento-roller.js';
+import { cached, gameValue, playerValue, queryConfig } from '../shared/zg-config.js';
+import { leaderAssociations } from '../shared/zg-civ-associations.js';
+import { SETUP_SLOTS } from '../shared/zg-memento-roller.js';
 
 const PARAM_ID = "AgeTransitionCivSelectionMode";
 const HISTORICAL_VALUE = "AGE_TRANSITION_CIV_SELECTION_MODE_ZG_HISTORICAL";
 const RANDOM_VALUE = "RANDOM";
-// Strategic rows are not associations and are left out. Matched on the prefix:
-// one shipped row spells its type without "_CHOICE". Shared with the lobby
-// tooltips (zg-mp-lobby-tooltips.js), which show the same associations under
-// the same labels.
-export const CHOICE_TIERS = [
-	{ name: "historical", choicePrefix: "LOC_CREATE_GAME_HISTORICAL", label: "LOC_ZG_CIV_CHOICE_HISTORICAL" },
-	{ name: "geographic", choicePrefix: "LOC_CREATE_GAME_GEOGRAPHIC", label: "LOC_ZG_CIV_CHOICE_GEOGRAPHIC" },
-];
 const LOG_PREFIX = "ZG-ASP age transition civs:";
 
-const settingValue = () => GameSetup.findGameParameter(PARAM_ID)?.value?.value;
-export const isHistoricalProgression = () => settingValue() == HISTORICAL_VALUE;
+export const isHistoricalProgression = () => gameValue(PARAM_ID) == HISTORICAL_VALUE;
 
 const draw = (list) => list[Math.floor(Math.random() * list.length)];
-
-// Leader type to its Historical and Geographic rows across every age, highest
-// Bias first. The row's domain says which age the civilization is native to.
-function buildLeaderAssociations() {
-	const out = new Map();
-	for (const row of queryConfig("SELECT LeaderType, CivilizationType, CivilizationDomain, Bias, ChoiceType FROM LeaderCivilizationBias ORDER BY Bias DESC")) {
-		const tier = CHOICE_TIERS.find((candidate) => row.ChoiceType?.startsWith(candidate.choicePrefix));
-		if (!tier) {
-			continue;
-		}
-		const rows = out.get(row.LeaderType) ?? [];
-		if (!rows.some((known) => known.civ == row.CivilizationType)) {
-			rows.push({ civ: row.CivilizationType, domain: row.CivilizationDomain, bias: row.Bias, tier: tier.name });
-		}
-		out.set(row.LeaderType, rows);
-	}
-	return out;
-}
-export const leaderAssociations = cached(buildLeaderAssociations);
 
 // The game's path between ages (CivilizationUnlocks): each civilization's
 // successors, and how many civilizations lead to each one.
@@ -89,10 +63,15 @@ function buildCivilizationLineage() {
 const civilizationLineage = cached(buildCivilizationLineage);
 
 // The civilizations native to an age.
-function ageCivilizations(ageType) {
-	const domain = queryConfig(`SELECT PlayerCivilizationDomain FROM Ages WHERE AgeType = '${ageType}'`)[0]?.PlayerCivilizationDomain;
-	return new Set(queryConfig(`SELECT CivilizationType FROM Civilizations WHERE Domain = '${domain}'`).map((row) => row.CivilizationType));
-}
+const civilizationsByAge = cached(() => {
+	const byDomain = new Map();
+	for (const row of queryConfig("SELECT CivilizationType, Domain FROM Civilizations")) {
+		byDomain.set(row.Domain, (byDomain.get(row.Domain) ?? new Set()).add(row.CivilizationType));
+	}
+	return new Map(queryConfig("SELECT AgeType, PlayerCivilizationDomain FROM Ages")
+		.map((age) => [age.AgeType, byDomain.get(age.PlayerCivilizationDomain) ?? new Set()]));
+});
+const ageCivilizations = (ageType) => civilizationsByAge().get(ageType) ?? new Set();
 
 // The steps of the rule above, each a list of { civ, bias } candidates.
 function candidateSteps(rows, current, offered, native, unlocked) {
@@ -155,8 +134,8 @@ export function settleAiCivilizations(aiPlayerIds, takenCivs, ageType, slots = S
 	const { successors, predecessors } = civilizationLineage();
 	const ageCivs = ageCivilizations(ageType);
 	for (const playerId of aiPlayerIds) {
-		const leader = GameSetup.findPlayerParameter(playerId, slots.leader)?.value?.value;
-		const current = GameSetup.findPlayerParameter(playerId, SETUP_SLOTS.civilization)?.value?.value;
+		const leader = playerValue(playerId, slots.leader);
+		const current = playerValue(playerId, SETUP_SLOTS.civilization);
 		const { offered, source } = offeredCivilizations(GameSetup.findPlayerParameter(playerId, slots.civilization), ageCivs, current);
 		const native = new Set([...offered].filter((civ) => ageCivs.has(civ)));
 		const rows = associations.get(leader) ?? [];
@@ -166,6 +145,6 @@ export function settleAiCivilizations(aiPlayerIds, takenCivs, ageType, slots = S
 			GameSetup.setPlayerParameterValue(playerId, slots.civilization, pick.civ);
 		}
 		const known = rows.map((row) => `${row.civ}:${row.bias}${row.tier[0]}`).join(" ") || "none";
-		console.warn(`${LOG_PREFIX} player ${playerId} (${leader}, was ${current}; rows ${known}; ${offered.size} ${source}, ${native.size} new-age) ${pick ? `${pick.how} -> ${pick.civ}${pick.civ == current ? " (persists)" : ""}` : "nothing offered; left to the game"}`);
+		console.log(`${LOG_PREFIX} player ${playerId} (${leader}, was ${current}; rows ${known}; ${offered.size} ${source}, ${native.size} new-age) ${pick ? `${pick.how} -> ${pick.civ}${pick.civ == current ? " (persists)" : ""}` : "nothing offered; left to the game"}`);
 	}
 }

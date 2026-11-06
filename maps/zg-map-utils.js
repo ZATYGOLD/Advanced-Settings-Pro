@@ -1,3 +1,5 @@
+// Helpers shared by the mod's map passes.
+
 // Reads a map setup setting and returns the tier it names.
 //
 // The setup screen stores these settings as plain strings (Hash 0), so the
@@ -14,4 +16,19 @@ export function zgSettingTier(table, key, standard, random) {
 		return table[name];
 	}
 	return table[value] ?? table[standard];
+}
+
+// Visits every tile, row by row from the south, as the base passes do.
+export function zgForEachTile(iWidth, iHeight, visit) {
+	for (let iY = 0; iY < iHeight; iY++) {
+		for (let iX = 0; iX < iWidth; iX++) {
+			visit(iX, iY);
+		}
+	}
+}
+
+// Linear interpolation from [from, to] onto [atFrom, atTo], clamped at both ends.
+export function zgInterpolate(value, from, to, atFrom, atTo) {
+	const t = Math.min(1, Math.max(0, (value - from) / (to - from)));
+	return atFrom + (atTo - atFrom) * t;
 }

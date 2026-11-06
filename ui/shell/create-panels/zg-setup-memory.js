@@ -26,7 +26,7 @@ const STORAGE_VERSION = 2;
 const SETUP_SCREEN = "create-game-sp";
 const PARAM_PREFIX = "ZG_";
 // Game settings this mod places on its own tabs and remembers with its own.
-const BASE_PARAM_IDS = new Set(["AgeLength", "Crises", "DisasterIntensity", "IndependentHostility", "LegacySets", "MapSeaLevel"]);
+const REMEMBERED_BASE_PARAM_IDS = new Set(["AgeLength", "Crises", "DisasterIntensity", "IndependentHostility", "LegacySets", "MapSeaLevel"]);
 // The game's own saved settings land over several revisions after the screen
 // opens. The restore waits for this many quiet polls, then guards its values
 // for this long against anything that lands late.
@@ -36,7 +36,9 @@ const LOG_PREFIX = "ZG-ASP setup memory:";
 
 const Phase = { CLOSED: "closed", SETTLING: "settling", GUARDING: "guarding", OPEN: "open" };
 let phase = Phase.CLOSED;
-let settleRevision = -1;
+// The revision last looked at; a scan of the parameters runs only when it moves.
+let seenRevision = -1;
+let hasParameters = false;
 let quietPolls = 0;
 let targets = null;
 let guardUntil = 0;
@@ -72,7 +74,7 @@ function writeSaved(values) {
 
 // ------------------------------------------------------------- parameters --
 
-const isRemembered = (id) => id.startsWith(PARAM_PREFIX) || BASE_PARAM_IDS.has(id);
+const isRemembered = (id) => id.startsWith(PARAM_PREFIX) || REMEMBERED_BASE_PARAM_IDS.has(id);
 const isSetupOpen = () => ContextManager.hasInstanceOf(SETUP_SCREEN) && !Configuration.getGame()?.isAnyMultiplayer && !isAgeTransition();
 
 function rememberedParameters() {
@@ -154,26 +156,31 @@ export function tickSetupMemory() {
 	switch (phase) {
 		case Phase.CLOSED:
 			phase = Phase.SETTLING;
-			settleRevision = GameSetup.currentRevision;
-			quietPolls = 0;
+			seenRevision = -1;
 			return false;
 		case Phase.SETTLING: {
 			const revision = GameSetup.currentRevision;
-			if (revision != settleRevision || rememberedParameters().size == 0) {
-				settleRevision = revision;
+			if (revision != seenRevision) {
+				seenRevision = revision;
+				hasParameters = rememberedParameters().size > 0;
 				quietPolls = 0;
 				return false;
 			}
-			if (++quietPolls < SETTLE_POLLS) return false;
+			if (!hasParameters || ++quietPolls < SETTLE_POLLS) return false;
 			targets = buildTargets();
-			console.warn(`${LOG_PREFIX} restoring ${targets.size} remembered settings`);
+			console.log(`${LOG_PREFIX} restoring ${targets.size} remembered settings`);
 			phase = Phase.GUARDING;
 			guardUntil = Date.now() + GUARD_MS;
 			applyTargets();
+			seenRevision = GameSetup.currentRevision;
 			return true;
 		}
 		case Phase.GUARDING:
 			if (Date.now() < guardUntil) {
+				// Only a change to the setup can undo a restored value.
+				const revision = GameSetup.currentRevision;
+				if (revision == seenRevision) return false;
+				seenRevision = revision;
 				return applyTargets();
 			}
 			phase = Phase.OPEN;

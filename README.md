@@ -12,6 +12,10 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 - Biomes, features, and snow on all 14 map scripts now follow both settings
 - Conflict guard recognizes Scrum Lord's Climate Controls, whose climate settings these replace
 - Climate logic adapted, with permission, from Scrum Lord's Climate Controls
+- Fixed: an AI added after AI Mementos was set got no mementos; the Player tab's Team list now marks the current team
+- Fixed: the age transition no longer settles independent powers, settles each AI only once, and an error there can no longer stop the next age from starting
+- Faster map generation and setup screens: features look up only their own placement class, and every setup screen script shares one poll of the setup
+- Code reorganized: shared helpers in ui/shared, one tab and seed definition for both setup screens, consistent naming, headers, and logging; unit cost ids now match their tiers
 
 ### 0.9.04
 
@@ -257,7 +261,9 @@ l10n/                           Text for the 11 non-English languages
 maps/                           Map script copies and the zg-map-* generation modules
 text/en_us/                     English text
 ui/age-transition/              Age transition: AI civilizations and mementos, in game and shell
-ui/shell/                       Shell scripts: shared helpers, setup rules and memory,
+ui/shared/                      Helpers both the shell and the game load: config reads,
+                                memento draws, leader civilization associations
+ui/shell/                       Shell scripts: setup context and tabs, setup rules and memory,
                                 multiplayer create game and lobby
 ui-next/screens/create-game/    Advanced Settings tabs, Player tab, memento picker
 ```

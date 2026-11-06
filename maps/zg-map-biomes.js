@@ -7,6 +7,7 @@
 // Tropical outright are untouched. At Standard every value matches the base.
 import { g_MarineBiome, g_DesertBiome, g_MountainTerrain, g_TropicalBiome, g_PlainsBiome, g_GrasslandBiome, g_TundraBiome } from 'fs://game/base-standard/maps/map-globals.js';
 import { zgClimate } from './zg-map-climate.js';
+import { zgForEachTile } from './zg-map-utils.js';
 
 const BAND_BIOMES = [g_TropicalBiome, g_PlainsBiome, g_DesertBiome, g_GrasslandBiome];
 
@@ -30,24 +31,22 @@ function bandBiome(bands, latitude) {
 export function zgDesignateBiomes(iWidth, iHeight) {
 	console.log("Biomes");
 	const { bands, weights, latitude: climateLatitude } = zgClimate();
-	for (let iY = 0; iY < iHeight; iY++) {
-		for (let iX = 0; iX < iWidth; iX++) {
-			if (GameplayMap.isWater(iX, iY)) {
-				TerrainBuilder.setBiomeType(iX, iY, g_MarineBiome);
-				continue;
-			}
-			const rainfall = GameplayMap.getRainfall(iX, iY);
-			if (rainfall < 25) {
-				TerrainBuilder.setBiomeType(iX, iY, g_DesertBiome);
-			} else if (rainfall > 250 && GameplayMap.getTerrainType(iX, iY) != g_MountainTerrain) {
-				TerrainBuilder.setBiomeType(iX, iY, g_TropicalBiome);
-			} else {
-				const latitude = Math.abs(climateLatitude(iX, iY))
-					+ weights.elevation * Math.round(GameplayMap.getElevation(iX, iY) / 120)
-					+ weights.rainfall * moistureOffset(rainfall)
-					+ weights.river * riverOffset(iX, iY);
-				TerrainBuilder.setBiomeType(iX, iY, bandBiome(bands, latitude));
-			}
+	zgForEachTile(iWidth, iHeight, (iX, iY) => {
+		if (GameplayMap.isWater(iX, iY)) {
+			TerrainBuilder.setBiomeType(iX, iY, g_MarineBiome);
+			return;
 		}
-	}
+		const rainfall = GameplayMap.getRainfall(iX, iY);
+		if (rainfall < 25) {
+			TerrainBuilder.setBiomeType(iX, iY, g_DesertBiome);
+		} else if (rainfall > 250 && GameplayMap.getTerrainType(iX, iY) != g_MountainTerrain) {
+			TerrainBuilder.setBiomeType(iX, iY, g_TropicalBiome);
+		} else {
+			const latitude = Math.abs(climateLatitude(iX, iY))
+				+ weights.elevation * Math.round(GameplayMap.getElevation(iX, iY) / 120)
+				+ weights.rainfall * moistureOffset(rainfall)
+				+ weights.river * riverOffset(iX, iY);
+			TerrainBuilder.setBiomeType(iX, iY, bandBiome(bands, latitude));
+		}
+	});
 }

@@ -2172,60 +2172,60 @@
 
 <!--**************************** CRITERIA: UNIT COST ****************************-->
 
-		<Criteria id="double-military-units">
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CombatUnitCostKey</ConfigurationId>
-				<Value>ZG_COMBAT_UNIT_COST_HIGH</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="low-military-units">
+		<Criteria id="military-unit-cost-low">
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
 				<ConfigurationId>CombatUnitCostKey</ConfigurationId>
 				<Value>ZG_COMBAT_UNIT_COST_LOW</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="premium-military-units">
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CombatUnitCostKey</ConfigurationId>
-				<Value>ZG_COMBAT_UNIT_COST_DOUBLE</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="double-civilian-units">
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivilianUnitCostKey</ConfigurationId>
-				<Value>ZG_CIVILIAN_UNIT_COST_HIGH</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="low-civilian-units">
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivilianUnitCostKey</ConfigurationId>
-				<Value>ZG_CIVILIAN_UNIT_COST_LOW</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="premium-civilian-units">
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>CivilianUnitCostKey</ConfigurationId>
-				<Value>ZG_CIVILIAN_UNIT_COST_DOUBLE</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="medium-military-units">
+		<Criteria id="military-unit-cost-medium">
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
 				<ConfigurationId>CombatUnitCostKey</ConfigurationId>
 				<Value>ZG_COMBAT_UNIT_COST_MEDIUM</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="medium-civilian-units">
+		<Criteria id="military-unit-cost-high">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>CombatUnitCostKey</ConfigurationId>
+				<Value>ZG_COMBAT_UNIT_COST_HIGH</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="military-unit-cost-double">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>CombatUnitCostKey</ConfigurationId>
+				<Value>ZG_COMBAT_UNIT_COST_DOUBLE</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="civilian-unit-cost-low">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>CivilianUnitCostKey</ConfigurationId>
+				<Value>ZG_CIVILIAN_UNIT_COST_LOW</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="civilian-unit-cost-medium">
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
 				<ConfigurationId>CivilianUnitCostKey</ConfigurationId>
 				<Value>ZG_CIVILIAN_UNIT_COST_MEDIUM</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="civilian-unit-cost-high">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>CivilianUnitCostKey</ConfigurationId>
+				<Value>ZG_CIVILIAN_UNIT_COST_HIGH</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="civilian-unit-cost-double">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>CivilianUnitCostKey</ConfigurationId>
+				<Value>ZG_CIVILIAN_UNIT_COST_DOUBLE</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 
@@ -5195,11 +5195,16 @@
 			</Properties>
 			<Actions>
 				<UIScripts>
+					<Item>ui/shared/zg-config.js</Item>
+					<Item>ui/shared/zg-civ-associations.js</Item>
+					<Item>ui/shared/zg-memento-roller.js</Item>
 					<Item>ui/shell/shared/zg-conflict-guard.js</Item>
 					<Item>ui/shell/shared/zg-asp-guard.js</Item>
 					<Item>ui/shell/shared/zg-shell-context.js</Item>
+					<Item>ui/shell/shared/zg-setup-tabs.js</Item>
 					<Item>ui/shell/create-panels/zg-setup-memory.js</Item>
 					<Item>ui/shell/create-panels/zg-setup-rules.js</Item>
+					<Item>ui-next/screens/create-game/zg-component-override.js</Item>
 					<Item>ui-next/screens/create-game/zg-map-tab.js</Item>
 					<Item>ui-next/screens/create-game/zg-seed-randomizer.js</Item>
 					<Item>ui/shell/mp-create-game/zg-mp-create-game.js</Item>
@@ -5208,10 +5213,10 @@
 					<Item>ui/shell/mp-staging/zg-mp-lobby-tooltips.js</Item>
 					<Item>ui/shell/mp-staging/zg-mp-lobby-rules.js</Item>
 					<Item>ui-next/screens/create-game/zg-memento-select-model.js</Item>
-					<Item>ui/shell/shared/zg-memento-roller.js</Item>
 					<Item>ui-next/screens/create-game/zg-player-tab.js</Item>
 					<Item>ui/age-transition/zg-age-transition-civs.js</Item>
 					<Item>ui/age-transition/zg-age-transition-mementos.js</Item>
+					<Item>ui/age-transition/zg-age-transition-settle.js</Item>
 					<Item>ui/age-transition/zg-age-transition-shell.js</Item>
 				</UIScripts>
 				<UpdateText>
@@ -5234,7 +5239,7 @@
 					<Item>config/map-scripts.sql</Item>
 				</UpdateDatabase>
 				<ImportFiles>
-					<Item>maps/zg-map-settings.js</Item>
+					<Item>maps/zg-map-utils.js</Item>
 					<Item>maps/zg-map-rivers.js</Item>
 					<Item>maps/zg-map-mountains.js</Item>
 					<Item>maps/zg-map-rough.js</Item>
@@ -5285,7 +5290,7 @@
 					<Item locale="zh_Hant_HK">l10n/zh_Hant_HK_Text.xml</Item>
 				</UpdateText>
 				<ImportFiles>
-					<Item>maps/zg-map-settings.js</Item>
+					<Item>maps/zg-map-utils.js</Item>
 					<Item>maps/zg-map-rivers.js</Item>
 					<Item>maps/zg-map-mountains.js</Item>
 					<Item>maps/zg-map-rough.js</Item>
@@ -5309,10 +5314,12 @@
 					<Item>maps/zg-terra-incognita.js</Item>
 					<Item>maps/zg-terra-incognita-voronoi.js</Item>
 					<Item>maps/zg-pangaea-plus.js</Item>
-					<Item>ui/shell/shared/zg-shell-context.js</Item>
-					<Item>ui/shell/shared/zg-memento-roller.js</Item>
+					<Item>ui/shared/zg-config.js</Item>
+					<Item>ui/shared/zg-civ-associations.js</Item>
+					<Item>ui/shared/zg-memento-roller.js</Item>
 					<Item>ui/age-transition/zg-age-transition-civs.js</Item>
 					<Item>ui/age-transition/zg-age-transition-mementos.js</Item>
+					<Item>ui/age-transition/zg-age-transition-settle.js</Item>
 				</ImportFiles>
 				<UpdateDatabase>
 					<Item>data/game-speeds/new-game-speeds.sql</Item>
@@ -7300,17 +7307,7 @@
 
 <!--**************************** SETTINGS: UNIT COST ****************************-->
 
-		<ActionGroup id="zg-double-military-units" scope="game" criteria="double-military-units">
-			<Properties>
-				<LoadOrder>1100000000</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/units/military-unit-cost-high.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-low-military-units" scope="game" criteria="low-military-units">
+		<ActionGroup id="zg-military-unit-cost-low" scope="game" criteria="military-unit-cost-low">
 			<Properties>
 				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
@@ -7320,47 +7317,7 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-premium-military-units" scope="game" criteria="premium-military-units">
-			<Properties>
-				<LoadOrder>1100000000</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/units/military-unit-cost-double.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-double-civilian-units" scope="game" criteria="double-civilian-units">
-			<Properties>
-				<LoadOrder>1100000000</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/units/civilian-unit-cost-high.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-low-civilian-units" scope="game" criteria="low-civilian-units">
-			<Properties>
-				<LoadOrder>1100000000</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/units/civilian-unit-cost-low.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-premium-civilian-units" scope="game" criteria="premium-civilian-units">
-			<Properties>
-				<LoadOrder>1100000000</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/units/civilian-unit-cost-double.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-medium-military-units" scope="game" criteria="medium-military-units">
+		<ActionGroup id="zg-military-unit-cost-medium" scope="game" criteria="military-unit-cost-medium">
 			<Properties>
 				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
@@ -7370,13 +7327,63 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-medium-civilian-units" scope="game" criteria="medium-civilian-units">
+		<ActionGroup id="zg-military-unit-cost-high" scope="game" criteria="military-unit-cost-high">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/units/military-unit-cost-high.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-military-unit-cost-double" scope="game" criteria="military-unit-cost-double">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/units/military-unit-cost-double.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-civilian-unit-cost-low" scope="game" criteria="civilian-unit-cost-low">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/units/civilian-unit-cost-low.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-civilian-unit-cost-medium" scope="game" criteria="civilian-unit-cost-medium">
 			<Properties>
 				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/units/civilian-unit-cost-medium.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-civilian-unit-cost-high" scope="game" criteria="civilian-unit-cost-high">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/units/civilian-unit-cost-high.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-civilian-unit-cost-double" scope="game" criteria="civilian-unit-cost-double">
+			<Properties>
+				<LoadOrder>1100000000</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/units/civilian-unit-cost-double.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

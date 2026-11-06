@@ -24,26 +24,49 @@ export function canEditSetup() {
 	const canEdit = !game?.isNetworkMultiplayer || !(host >= 0) || host == GameContext.localPlayerID;
 	if (canEdit !== lastCanEdit) {
 		lastCanEdit = canEdit;
-		console.warn(`ZG-ASP setup: ${canEdit ? "editing" : "read-only"} (network ${!!game?.isNetworkMultiplayer}, host ${host}, local ${GameContext.localPlayerID})`);
+		console.log(`ZG-ASP setup: ${canEdit ? "editing" : "read-only"} (network ${!!game?.isNetworkMultiplayer}, host ${host}, local ${GameContext.localPlayerID})`);
 	}
 	return canEdit;
 }
 
-// A config database query that logs and yields no rows rather than throwing.
-export function queryConfig(sql) {
-	try {
-		return Database.query("config", sql) ?? [];
-	} catch (error) {
-		console.error(`ZG-ASP: config query failed: ${error}`);
-		return [];
-	}
+// One poll of the setup shared by every script that follows it, running only
+// while something listens. onSetupPoll calls back on every poll; onSetupRevision
+// only when the setup's revision has moved, with whether it went backwards (a
+// fresh setup screen restarts the count). A revision passed while `ready` says
+// no is held over until it says yes. Each returns its unsubscribe.
+const SETUP_POLL_MS = 250;
+const pollListeners = new Set();
+let pollTimer = null;
+
+export function onSetupPoll(listener) {
+	pollListeners.add(listener);
+	pollTimer ??= setInterval(() => pollListeners.forEach((poll) => {
+		try {
+			poll();
+		} catch (error) {
+			console.error(`ZG-ASP setup poll: ${error}`);
+		}
+	}), SETUP_POLL_MS);
+	return () => {
+		pollListeners.delete(listener);
+		if (pollListeners.size == 0) {
+			clearInterval(pollTimer);
+			pollTimer = null;
+		}
+	};
 }
 
-// A value built on first use and kept; the config database does not change
-// while the shell is open.
-export function cached(build) {
-	let value;
-	return () => (value ??= build());
+export function onSetupRevision(listener, ready = () => true) {
+	let lastRevision = -1;
+	return onSetupPoll(() => {
+		const revision = GameSetup.currentRevision;
+		if (revision == lastRevision || !ready()) {
+			return;
+		}
+		const restarted = revision < lastRevision;
+		lastRevision = revision;
+		listener(restarted);
+	});
 }
 
 // Base for Controls.decorate decorators: the panel calls all four hooks, so a

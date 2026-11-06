@@ -7,42 +7,40 @@
 //   4. Too few wonders enabled to support the tier on the current map size
 //      -> every wonder toggle is reset to Enabled.
 //
-// Settlement limits:
-//   5. A curated tier is selected   -> the per-age limits show that tier's values.
-//   6. A per-age limit is changed away from the curated tier's values
-//      -> the Settlement Limit setting switches to Custom.
-//
-// Disasters, Triumph Sets, Trade Range and Trade Speed (shared tier/age sync):
-//   7. A tier is selected           -> every age shows that tier.
-//   8. An age is changed away from the selected tier
+// Settlement Limit, Disasters, Triumph Sets, Trade, Raze Speed, and the Pace
+// tab's settings (shared tier/age sync):
+//   5. A tier is selected           -> every age shows that tier's values.
+//   6. An age is changed away from the selected tier
 //      -> the primary setting switches to Custom.
 //
 // Pace Set:
-//   9. A preset is selected         -> every All Ages setting takes the preset's value.
-//  10. An All Ages setting no longer matches the selected preset
+//   7. A preset is selected         -> every All Ages setting takes the preset's value.
+//   8. An All Ages setting no longer matches the selected preset
 //      -> Pace Set switches to Custom.
-//  11. Age Length leaves Custom      -> every other All Ages setting returns to Standard.
-//  12. Pace Set (General) and Pace Set (Pace tab) mirror each other.
+//   9. Age Length leaves Custom      -> every other All Ages setting returns to Standard.
+//  10. Pace Set (General) and Pace Set (Pace tab) mirror each other.
 //
 // Crises:
-//  13. Crises set to Disabled       -> every crisis in the selection is excluded.
-//  14. Crises leaves Disabled       -> every crisis in the selection is included.
-//  15. Every crisis excluded        -> Crises becomes Disabled; any crisis included
+//  11. Crises set to Disabled       -> every crisis in the selection is excluded.
+//  12. Crises leaves Disabled       -> every crisis in the selection is included.
+//  13. Every crisis excluded        -> Crises becomes Disabled; any crisis included
 //      while it says Disabled       -> Crises becomes Enabled.
-//  16. Crises Disabled              -> Crisis Timing shows Disabled; Crises Enabled
+//  14. Crises Disabled              -> Crisis Timing shows Disabled; Crises Enabled
 //      while the timing says Disabled -> the timing returns to Default.
-//  17. Crisis Timing set to Disabled -> Crises becomes Disabled; the timing leaves
+//  15. Crisis Timing set to Disabled -> Crises becomes Disabled; the timing leaves
 //      Disabled                     -> Crises becomes Enabled.
-//  18. On the first pass of a setup -> Crises wins: the selection and timing
+//  16. On the first pass of a setup -> Crises wins: the selection and timing
 //      follow it, so a remembered Crises value is kept.
 //
 // Each rule compares against the last pass. While remembered settings are put
 // back (zg-setup-memory.js) the rules wait, and the comparisons then start
 // over, so the restored values are the baseline rather than a change to answer.
 
-import { canEditSetup, isAgeTransition } from '../shared/zg-shell-context.js';
+import { resolveName } from '../../shared/zg-config.js';
+import { canEditSetup, isAgeTransition, onSetupPoll } from '../shared/zg-shell-context.js';
 import { tickSetupMemory, isRestoringSetup, rememberSetup } from './zg-setup-memory.js';
 
+const LOG_PREFIX = "ZG-ASP setup rules:";
 const NW_COUNT_PARAM_ID = "ZG_NaturalWondersCount";
 const MAP_SIZE_PARAM_ID = "MapSize";
 const WONDER_PARAM_IDS = [
@@ -54,14 +52,12 @@ const WONDER_PARAM_IDS = [
 	"ZG_NW_Vinicunca", "ZG_NW_Zhangjiajie",
 ];
 
-const SL_PARAM_ID = "ZG_SettlementLimit";
-const SL_AGE_PARAM_IDS = ["ZG_SettlementLimitAntiquity", "ZG_SettlementLimitExploration", "ZG_SettlementLimitModern"];
-// Values applied by the curated tiers' SQL, in age order (Antiquity, Exploration, Modern).
-const SL_TIER_VALUES = {
-	"LOC_ZG_LESS_NAME": [1, 4, 10],
-	"LOC_ADVANCED_OPTIONS_STANDARD": [3, 8, 16],
-	"LOC_ZG_MORE_NAME": [5, 12, 20],
-};
+// Settlement Limit's curated tiers as the limits their SQL applies, in age order.
+const SETTLEMENT_LIMIT_AGE_NAMES = Object.fromEntries(Object.entries({
+	LOC_ZG_LESS_NAME: [1, 4, 10],
+	LOC_ADVANCED_OPTIONS_STANDARD: [3, 8, 16],
+	LOC_ZG_MORE_NAME: [5, 12, 20],
+}).map(([tier, limits]) => [tier, limits.map((limit) => `LOC_ZG_NUM_${limit}`)]));
 
 const AGE_LENGTH_PARAM_ID = "AgeLength";
 
@@ -155,9 +151,10 @@ const RAZE_SPEED_AGE_NAMES = {
 	"LOC_ZG_EXTENDED_NAME": "LOC_ADVANCED_OPTIONS_STANDARD",
 };
 
-// Primary settings whose per-age values are kept in step (rules 7 & 8).
+// Primary settings whose per-age values are kept in step (rules 5 & 6).
 // ageNames maps a primary value name to its per-age value name (identity when absent).
 const TIER_AGE_SYNCS = [
+	{ tierId: "ZG_SettlementLimit", ageIds: ["ZG_SettlementLimitAntiquity", "ZG_SettlementLimitExploration", "ZG_SettlementLimitModern"], ageNames: SETTLEMENT_LIMIT_AGE_NAMES, lastTier: null },
 	{ tierId: "ZG_DisasterFrequency", ageIds: ["ZG_DisastersAntiquity", "ZG_DisastersExploration", "ZG_DisastersModern"], lastTier: null },
 	{ tierId: "LegacySets", ageIds: ["ZG_TriumphSetAntiquity", "ZG_TriumphSetExploration", "ZG_TriumphSetModern"], lastTier: null },
 	{ tierId: "ZG_TradeRange", ageIds: ["ZG_TradeRangeAntiquity", "ZG_TradeRangeExploration", "ZG_TradeRangeModern"], lastTier: null },
@@ -173,7 +170,7 @@ const TIER_AGE_SYNCS = [
 	{ tierId: "ZG_VictoryProjectCost", ageIds: ["ZG_VictoryProjectCostAntiquity", "ZG_VictoryProjectCostExploration", "ZG_VictoryProjectCostModern"], ageNames: VICTORY_AGE_NAMES, lastTier: null },
 ];
 
-// Pace Set presets (rules 9 & 10): each All Ages setting's value by name,
+// Pace Set presets (rules 7 & 8): each All Ages setting's value by name,
 // or a per-age list (Antiquity, Exploration, Modern) that puts it on Custom.
 const PACE_PARAM_ID = "ZG_PacePreset";
 const PACE_MIRROR_PARAM_ID = "ZG_PaceSetMirror";
@@ -275,16 +272,10 @@ const TOGGLE_DISABLED = TIER_DISABLED;
 // Base wonder counts per map size (Maps.NumNaturalWonders).
 const BASE_WONDERS = { TINY: 3, SMALL: 4, STANDARD: 5, LARGE: 6, HUGE: 7 };
 
-const POLL_MS = 250;
 let lastRevision = -1;
 let nwLastTier = null;
-let slLastTier = null;
 let crisesLastToggle = null;
 let crisisTimingLast = null;
-
-function resolveName(handle) {
-	return GameSetup.resolveString(handle) ?? "";
-}
 
 function currentValueName(param) {
 	const current = param?.value?.value;
@@ -305,11 +296,6 @@ function setParamByName(paramId, nameTag) {
 	if (param && value != null && param.value?.value != value) {
 		GameSetup.setGameParameterValue(paramId, value);
 	}
-}
-
-function numberFromName(nameTag) {
-	const match = /^LOC_ZG_NUM_(\d+)$/.exec(nameTag);
-	return match ? parseInt(match[1], 10) : null;
 }
 
 // ---------------------------------------------------------------- wonders --
@@ -372,39 +358,6 @@ function syncNaturalWonderSetup() {
 	}
 }
 
-// ------------------------------------------------------- settlement limits --
-
-function syncSettlementLimits() {
-	const tierParam = GameSetup.findGameParameter(SL_PARAM_ID);
-	if (!tierParam) {
-		return;
-	}
-	const ageParams = SL_AGE_PARAM_IDS.map((id) => GameSetup.findGameParameter(id));
-	if (ageParams.some((param) => !param)) {
-		return;
-	}
-	const tier = currentValueName(tierParam);
-	const prescribed = SL_TIER_VALUES[tier];
-
-	// 5: the player changed the tier; show that tier's values on the age rows.
-	if (slLastTier != null && tier != slLastTier) {
-		if (prescribed) {
-			ageParams.forEach((param, i) => setParamByName(SL_AGE_PARAM_IDS[i], `LOC_ZG_NUM_${prescribed[i]}`));
-		}
-		slLastTier = tier;
-		return;
-	}
-	slLastTier = tier;
-	// 6: an age row no longer matches the curated tier; switch to Custom.
-	if (prescribed) {
-		const values = ageParams.map((param) => numberFromName(currentValueName(param)));
-		if (values.some((value, i) => value != prescribed[i])) {
-			setParamByName(SL_PARAM_ID, TIER_CUSTOM);
-			slLastTier = TIER_CUSTOM;
-		}
-	}
-}
-
 // ------------------------------------------------------- tier / age sync --
 
 function syncTierWithAges(sync) {
@@ -422,7 +375,7 @@ function syncTierWithAges(sync) {
 	// A curated option is either one name shared by all three ages, or one per age.
 	const ageNameAt = (index) => Array.isArray(mapped) ? mapped[index] : mapped;
 
-	// 7: the player changed the tier; every age follows it.
+	// 5: the player changed the tier; every age follows it.
 	if (sync.lastTier != null && tier != sync.lastTier) {
 		if (isCurated) {
 			sync.ageIds.forEach((id, index) => setParamByName(id, ageNameAt(index)));
@@ -431,7 +384,7 @@ function syncTierWithAges(sync) {
 		return;
 	}
 	sync.lastTier = tier;
-	// 8: an age no longer matches the tier; switch to Custom.
+	// 6: an age no longer matches the tier; switch to Custom.
 	if (isCurated && ageParams.some((param, index) => currentValueName(param) != ageNameAt(index))) {
 		setParamByName(sync.tierId, TIER_CUSTOM);
 		sync.lastTier = TIER_CUSTOM;
@@ -466,7 +419,7 @@ function matchesPacePreset(preset) {
 	});
 }
 
-// 12: the two Pace Set dropdowns share one value; whichever changed wins.
+// 10: the two Pace Set dropdowns share one value; whichever changed wins.
 function syncPaceMirror() {
 	const pace = currentValueName(GameSetup.findGameParameter(PACE_PARAM_ID));
 	const mirror = currentValueName(GameSetup.findGameParameter(PACE_MIRROR_PARAM_ID));
@@ -491,7 +444,7 @@ function syncPacePreset() {
 	const leftCustomAgeLength = lastAgeLength == TIER_CUSTOM && ageLength != TIER_CUSTOM;
 	lastAgeLength = ageLength;
 
-	// 9: the player chose a preset; every pacing setting takes its value.
+	// 7: the player chose a preset; every pacing setting takes its value.
 	if (lastPace != null && pace != lastPace) {
 		if (preset) {
 			applyPacePreset(preset);
@@ -501,11 +454,11 @@ function syncPacePreset() {
 		return;
 	}
 	lastPace = pace;
-	// 11: Age Length left Custom; the other pacing settings return to Standard.
+	// 9: Age Length left Custom; the other pacing settings return to Standard.
 	if (leftCustomAgeLength) {
 		applyPacePreset(Object.fromEntries(Object.entries(PACE_STANDARD).filter(([id]) => id != AGE_LENGTH_PARAM_ID)));
 	}
-	// 10: a pacing setting no longer matches the preset; it becomes Custom.
+	// 8: a pacing setting no longer matches the preset; it becomes Custom.
 	if (preset && !matchesPacePreset(preset)) {
 		setParamByName(PACE_PARAM_ID, PACE_CUSTOM);
 		lastPace = PACE_CUSTOM;
@@ -547,7 +500,7 @@ function syncCrises() {
 	}
 	const firstPass = crisesLastToggle == null;
 	crisesLastToggle = toggle;
-	// 18: the first pass of a setup keeps Crises and brings the rest in line.
+	// 16: the first pass of a setup keeps Crises and brings the rest in line.
 	if (firstPass) {
 		if (toggle == TOGGLE_DISABLED && !allExcluded) {
 			GameSetup.setGameParameterValue(CRISES_SELECTION_PARAM_ID, possible);
@@ -559,7 +512,7 @@ function syncCrises() {
 		}
 		return;
 	}
-	// 17: the player changed the timing to or from Disabled; the toggle follows.
+	// 15: the player changed the timing to or from Disabled; the toggle follows.
 	if (timing != null && crisisTimingLast != null && timing != crisisTimingLast) {
 		if (timing == TIER_DISABLED && toggle != TOGGLE_DISABLED) {
 			setParamByName(CRISES_PARAM_ID, TOGGLE_DISABLED);
@@ -595,7 +548,6 @@ function syncCrises() {
 // Every rule's memory of the last pass, cleared so the next pass is a baseline.
 function resetBaselines() {
 	nwLastTier = null;
-	slLastTier = null;
 	lastPace = null;
 	lastPaceMirror = null;
 	lastAgeLength = null;
@@ -609,11 +561,11 @@ function run(label, rule) {
 	try {
 		rule();
 	} catch (e) {
-		console.warn(`ZG-ASP setup rules: ${label} failed: ${e}`);
+		console.warn(`${LOG_PREFIX} ${label} failed: ${e}`);
 	}
 }
 
-setInterval(() => {
+onSetupPoll(() => {
 	// In multiplayer only the host holds the setup; a client sees the host's
 	// writes arrive and must not answer them with its own.
 	if (!canEditSetup() || isAgeTransition()) {
@@ -621,7 +573,7 @@ setInterval(() => {
 	}
 	// Remembered settings go back first, and the rules wait until they have:
 	// answering the defaults the screen opens with would cascade over them.
-	run("setup memory", () => {
+	run("setup memory restore", () => {
 		if (tickSetupMemory()) {
 			resetBaselines();
 		}
@@ -636,7 +588,6 @@ setInterval(() => {
 	}
 	lastRevision = revision;
 	run("natural wonders", syncNaturalWonderSetup);
-	run("settlement limits", syncSettlementLimits);
 	run("pace set", () => {
 		syncPaceMirror();
 		syncPacePreset();
@@ -645,5 +596,5 @@ setInterval(() => {
 		run(sync.tierId, () => syncTierWithAges(sync));
 	}
 	run("crises", syncCrises);
-	run("setup memory", rememberSetup);
-}, POLL_MS);
+	run("setup memory save", rememberSetup);
+});

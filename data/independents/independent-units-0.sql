@@ -1,5 +1,5 @@
+-- Independent Aggression: independent powers get no defender units.
 UPDATE TribeTagSets
-SET
-    InitialUnitAmount = 0,
+SET InitialUnitAmount = 0,
     MaxUnitAmount = 0
 WHERE TribeTagName = 'DEFAULT_DEFENDER_TAGS';

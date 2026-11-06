@@ -17,12 +17,12 @@ INSERT OR IGNORE INTO GameSpeeds (GameSpeedType, Name, Description, CostMultipli
         ('GAMESPEED_ZG_ONLINE_2', 'LOC_ZG_GAMESPEED_ONLINE_2_NAME', 'LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION', 40),
         ('GAMESPEED_ZG_MARATHON_2', 'LOC_ZG_GAMESPEED_MARATHON_2_NAME', 'LOC_ZG_GAMESPEED_MARATHON_2_DESCRIPTION', 500);
 
-INSERT INTO GameSpeed_Turns (GameSpeedType, MonthIncrement, TurnsPerIncrement, Age)
+INSERT OR IGNORE INTO GameSpeed_Turns (GameSpeedType, MonthIncrement, TurnsPerIncrement, Age)
 SELECT 'GAMESPEED_ZG_ONLINE_2', MonthIncrement, TurnsPerIncrement, Age
 FROM GameSpeed_Turns
 WHERE GameSpeedType = 'GAMESPEED_ONLINE';
 
-INSERT INTO GameSpeed_Turns (GameSpeedType, MonthIncrement, TurnsPerIncrement, Age)
+INSERT OR IGNORE INTO GameSpeed_Turns (GameSpeedType, MonthIncrement, TurnsPerIncrement, Age)
 SELECT 'GAMESPEED_ZG_MARATHON_2', MonthIncrement, TurnsPerIncrement, Age
 FROM GameSpeed_Turns
 WHERE GameSpeedType = 'GAMESPEED_MARATHON';

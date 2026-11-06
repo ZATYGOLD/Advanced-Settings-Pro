@@ -9,7 +9,7 @@
 // own, or at an in-game age transition the AgeTransitionPlayer ones the engine
 // carries into the next age.
 
-import { cached, queryConfig } from './zg-shell-context.js';
+import { cached, gameValue, playerValue, queryConfig, resolveName } from './zg-config.js';
 
 export const MEMENTO_PARAM_IDS = ["PlayerMementoMajorSlot", "PlayerMementoMinorSlot1"];
 export const SETUP_SLOTS = { leader: "PlayerLeader", civilization: "PlayerCivilization", mementos: MEMENTO_PARAM_IDS };
@@ -30,7 +30,7 @@ export function mementoTooltip(value) {
 	if (!value || value.value == MEMENTO_NONE_VALUE) {
 		return Locale.compose("LOC_MEMENTO_NONE_NAME");
 	}
-	const name = Locale.compose(GameSetup.resolveString(value.name) ?? "");
+	const name = Locale.compose(resolveName(value.name));
 	const effect = value.additionalProperties?.find((property) => property.name === functionalDescriptionName)?.value;
 	return effect ? `[B]${name}[/B][N]${Locale.compose(effect)}` : name;
 }
@@ -47,24 +47,21 @@ const ATTRIBUTE_PREFIX = "LOC_ATTRIBUTE_";
 // call it "diplomatic". Every other attribute is named the same on both sides.
 const ATTRIBUTE_ALIASES = { POLITICAL: "DIPLOMATIC" };
 
-const resolve = (handle) => GameSetup.resolveString(handle) ?? "";
-
 // Sorted, with each value listed once (the memento domain repeats its "none" entry).
 export function sortPossibleValues(possibleValues) {
 	if (!possibleValues) return;
 	const seen = new Set();
+	const labels = new Map();
+	const label = (entry) => labels.get(entry) ?? labels.set(entry, Locale.compose(resolveName(entry.name))).get(entry);
 	return [...possibleValues]
 		.filter((entry) => !seen.has(entry.value) && seen.add(entry.value))
-		.sort((a, b) => {
-			if (a.sortIndex != b.sortIndex) return a.sortIndex - b.sortIndex;
-			return Locale.compare(Locale.compose(resolve(a.name)), Locale.compose(resolve(b.name)));
-		});
+		.sort((a, b) => a.sortIndex - b.sortIndex || Locale.compare(label(a), label(b)));
 }
 
 // ------------------------------------------------------ random mementos --
 
 export function randomFlags(playerId) {
-	const value = GameSetup.findPlayerParameter(playerId, RANDOM_FLAG_PARAM_ID)?.value?.value;
+	const value = playerValue(playerId, RANDOM_FLAG_PARAM_ID);
 	return RANDOM_FLAGS[value] ?? RANDOM_FLAGS.ZG_RANDOM_MEMENTOS_NONE;
 }
 
@@ -130,7 +127,7 @@ const AI_MEMENTO_MODES = {
 };
 
 // The rule AI Mementos currently names.
-export const aiMementoMode = () => AI_MEMENTO_MODES[GameSetup.findGameParameter(AI_MEMENTOS_PARAM_ID)?.value?.value] ?? AI_MEMENTO_MODES[AI_MEMENTOS_DEFAULT];
+export const aiMementoMode = () => AI_MEMENTO_MODES[gameValue(AI_MEMENTOS_PARAM_ID)] ?? AI_MEMENTO_MODES[AI_MEMENTOS_DEFAULT];
 
 // The AI players: every participating slot the computer holds. A human is
 // never one, whatever else the configuration reports: not the local player,
@@ -142,7 +139,7 @@ export function aiPlayerIds() {
 	});
 }
 
-export const matchSource = (mode, playerId, slots = SETUP_SLOTS) => (mode.source ? GameSetup.findPlayerParameter(playerId, slots[mode.source])?.value?.value : null);
+export const matchSource = (mode, playerId, slots = SETUP_SLOTS) => (mode.source ? playerValue(playerId, slots[mode.source]) : null);
 
 // Draws both of a player's slots by a rule. Random draws freely; a match mode
 // draws each slot from the attribute in its position. None draws nothing and

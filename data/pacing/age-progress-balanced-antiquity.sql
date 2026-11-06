@@ -1,4 +1,4 @@
--- Balanced: milestone and future tech/civic points for Antiquity.
+-- Age Progression Balanced: milestone and future tech/civic points for Antiquity.
 UPDATE AgeProgressionEvents
 SET Points = CASE AgeProgressionEventType
         WHEN 'AGE_PROGRESSION_PLAYER_MILESTONE_1' THEN 4

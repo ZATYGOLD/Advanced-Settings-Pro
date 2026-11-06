@@ -13,7 +13,8 @@
 // Both read the live setup, so a change by the host shows the next time the
 // rules open, or within half a second in the Game Options box.
 
-import { Decorator, queryConfig } from '../shared/zg-shell-context.js';
+import { cached, queryConfig, resolveName } from '../../shared/zg-config.js';
+import { Decorator, onSetupRevision } from '../shared/zg-shell-context.js';
 
 const RULES_SCREEN = "screen-mp-game-rules";
 const LOBBY_SCREEN = "screen-mp-lobby";
@@ -23,7 +24,7 @@ const SUMMARY_PARAM_IDS = ["ZG_PacePreset", "ZG_MapAge"];
 const SUMMARY_ANCHOR = "LOC_UI_MP_LOBBY_GAME_SPEED";
 const MOD_PREFIX = "ZG_";
 // Base settings this mod moves onto its own tabs, which the base rules omit.
-const BASE_PARAM_IDS = new Set(["AgeLength", "LegacySets", "MapSeaLevel", "IndependentHostility", "MementosEnabled", "AgeTransitionCivSelectionMode"]);
+const LISTED_BASE_PARAM_IDS = new Set(["AgeLength", "LegacySets", "MapSeaLevel", "IndependentHostility", "MementosEnabled", "AgeTransitionCivSelectionMode"]);
 // Shown through another row: the Pace tab's copy of Pace Set, and per-player flags.
 const SKIPPED_PARAM_IDS = new Set(["ZG_PaceSetMirror", "ZG_PlayerRandomMementos"]);
 const WONDER_PREFIX = "ZG_NW_";
@@ -32,14 +33,9 @@ const AGE_SUFFIX = /(Antiquity|Exploration|Modern)$/;
 // A per-age row's setting, where it is not the row's own id less the age.
 const AGE_PARENTS = { ZG_Disasters: "ZG_DisasterFrequency", ZG_TriumphSet: "LegacySets", ZG_AgeLength: "AgeLength" };
 const CUSTOM_MARKER = "CUSTOM";
-const REFRESH_MS = 500;
 
 // Defaults and sort order, once per shell session.
-let lookups = null;
-function getLookups() {
-	if (lookups) {
-		return lookups;
-	}
+const getLookups = cached(() => {
 	const defaults = new Map();
 	const sortIndex = new Map();
 	for (const row of queryConfig("SELECT ParameterID, DefaultValue, SortIndex FROM Parameters")) {
@@ -48,11 +44,10 @@ function getLookups() {
 			sortIndex.set(row.ParameterID, row.SortIndex ?? 0);
 		}
 	}
-	lookups = { defaults, sortIndex };
-	return lookups;
-}
+	return { defaults, sortIndex };
+});
 
-const paramId = (param) => GameSetup.resolveString(param.ID) ?? "";
+const paramId = (param) => resolveName(param.ID);
 const rawValue = (param) => param?.value?.value;
 const sameValue = (a, b) => String(a).toLowerCase() == String(b).toLowerCase() || (a === true && b == 1) || (a === false && b == 0);
 
@@ -74,7 +69,7 @@ function isListed(param) {
 	if (param.hidden || param.invalidReason != GameSetupParameterInvalidReason.Valid) {
 		return false;
 	}
-	if (!(id.startsWith(MOD_PREFIX) || BASE_PARAM_IDS.has(id)) || SKIPPED_PARAM_IDS.has(id) || id.startsWith(WONDER_PREFIX)) {
+	if (!(id.startsWith(MOD_PREFIX) || LISTED_BASE_PARAM_IDS.has(id)) || SKIPPED_PARAM_IDS.has(id) || id.startsWith(WONDER_PREFIX)) {
 		return false;
 	}
 	if (param.array || ![GameSetupDomainType.Select, GameSetupDomainType.Boolean].includes(param.domain?.type)) {
@@ -96,7 +91,7 @@ function wonderSummary(parameters) {
 		return null;
 	}
 	const label = GameSetup.findGameParameter(WONDER_COUNT_PARAM_ID)?.name;
-	return { label: `${Locale.compose(GameSetup.resolveString(label) ?? "")}:`, value: `${enabled} / ${wonders.length}` };
+	return { label: `${Locale.compose(resolveName(label))}:`, value: `${enabled} / ${wonders.length}` };
 }
 
 // Per-age rows read "Setting (Age)", whether the row is named for the setting
@@ -265,8 +260,7 @@ class LobbySummary extends Decorator {
 		super();
 		this.component = component;
 		this.rows = [];
-		this.timer = null;
-		this.lastRevision = -1;
+		this.unsubscribe = null;
 	}
 
 	afterAttach() {
@@ -283,30 +277,25 @@ class LobbySummary extends Decorator {
 			this.rows.push(entry);
 		}
 		this.refresh();
-		this.timer = setInterval(() => this.refresh(), REFRESH_MS);
+		this.unsubscribe = onSetupRevision(() => this.refresh());
 	}
 
 	refresh() {
-		if (GameSetup.currentRevision == this.lastRevision) {
-			return;
-		}
-		this.lastRevision = GameSetup.currentRevision;
 		for (const entry of this.rows) {
 			const param = GameSetup.findGameParameter(entry.id);
 			entry.row.classList.toggle("hidden", !param);
 			if (param) {
-				entry.label.textContent = `${Locale.compose(GameSetup.resolveString(param.name) ?? "")}:`;
+				entry.label.textContent = `${Locale.compose(resolveName(param.name))}:`;
 				entry.value.textContent = settingValueText(param);
 			}
 		}
 	}
 
 	beforeDetach() {
-		clearInterval(this.timer);
-		this.timer = null;
+		this.unsubscribe?.();
+		this.unsubscribe = null;
 		this.rows.forEach((entry) => entry.row.remove());
 		this.rows = [];
-		this.lastRevision = -1;
 	}
 }
 

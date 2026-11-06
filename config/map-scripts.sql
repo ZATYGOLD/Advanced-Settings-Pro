@@ -1,205 +1,83 @@
 --*******************************************************
 --************* MAP SCRIPT REDIRECTS ********************
 --*******************************************************
--- Points every standard map entry at this mod's copy of the script,
--- which applies the Rivers setting. Names, descriptions, start position
--- support and the Sea Level dependencies follow the new file path.
+-- Points every standard map at this mod's copy of its script (zg-<name>.js),
+-- which applies the mod's map settings. Start positions, the Sea Level
+-- dependencies, and the per-map Sea Level rows (Key1 'Map', Key2 the file;
+-- only the Voronoi maps carry them) follow the new path.
 
 UPDATE Maps
-SET File = '{AdvancedSettingsPro}maps/zg-continents-voronoi.js'
-WHERE File = '{base-standard}maps/continents-voronoi.js';
+SET File = REPLACE(File, '{base-standard}maps/', '{AdvancedSettingsPro}maps/zg-')
+WHERE File IN (
+	'{base-standard}maps/archipelago.js',
+	'{base-standard}maps/archipelago-voronoi.js',
+	'{base-standard}maps/continents.js',
+	'{base-standard}maps/continents-plus.js',
+	'{base-standard}maps/continents-voronoi.js',
+	'{base-standard}maps/fractal.js',
+	'{base-standard}maps/fractal-voronoi.js',
+	'{base-standard}maps/pangaea-plus.js',
+	'{base-standard}maps/pangaea-voronoi.js',
+	'{base-standard}maps/shattered-seas-voronoi.js',
+	'{base-standard}maps/shuffle.js',
+	'{base-standard}maps/shuffle-voronoi.js',
+	'{base-standard}maps/terra-incognita.js',
+	'{base-standard}maps/terra-incognita-voronoi.js'
+);
 
 UPDATE SupportedValuesByMap
-SET Map = '{AdvancedSettingsPro}maps/zg-continents-voronoi.js'
-WHERE Map = '{base-standard}maps/continents-voronoi.js';
+SET Map = REPLACE(Map, '{base-standard}maps/', '{AdvancedSettingsPro}maps/zg-')
+WHERE Map IN (
+	'{base-standard}maps/archipelago.js',
+	'{base-standard}maps/archipelago-voronoi.js',
+	'{base-standard}maps/continents.js',
+	'{base-standard}maps/continents-plus.js',
+	'{base-standard}maps/continents-voronoi.js',
+	'{base-standard}maps/fractal.js',
+	'{base-standard}maps/fractal-voronoi.js',
+	'{base-standard}maps/pangaea-plus.js',
+	'{base-standard}maps/pangaea-voronoi.js',
+	'{base-standard}maps/shattered-seas-voronoi.js',
+	'{base-standard}maps/shuffle.js',
+	'{base-standard}maps/shuffle-voronoi.js',
+	'{base-standard}maps/terra-incognita.js',
+	'{base-standard}maps/terra-incognita-voronoi.js'
+);
 
 UPDATE ParameterDependencies
-SET ConfigurationValue = '{AdvancedSettingsPro}maps/zg-continents-voronoi.js'
-WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/continents-voronoi.js';
-
-UPDATE Maps
-SET File = '{AdvancedSettingsPro}maps/zg-pangaea-voronoi.js'
-WHERE File = '{base-standard}maps/pangaea-voronoi.js';
-
-UPDATE SupportedValuesByMap
-SET Map = '{AdvancedSettingsPro}maps/zg-pangaea-voronoi.js'
-WHERE Map = '{base-standard}maps/pangaea-voronoi.js';
-
-UPDATE ParameterDependencies
-SET ConfigurationValue = '{AdvancedSettingsPro}maps/zg-pangaea-voronoi.js'
-WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/pangaea-voronoi.js';
-
-UPDATE Maps
-SET File = '{AdvancedSettingsPro}maps/zg-fractal-voronoi.js'
-WHERE File = '{base-standard}maps/fractal-voronoi.js';
-
-UPDATE SupportedValuesByMap
-SET Map = '{AdvancedSettingsPro}maps/zg-fractal-voronoi.js'
-WHERE Map = '{base-standard}maps/fractal-voronoi.js';
-
-UPDATE ParameterDependencies
-SET ConfigurationValue = '{AdvancedSettingsPro}maps/zg-fractal-voronoi.js'
-WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/fractal-voronoi.js';
-
-UPDATE Maps
-SET File = '{AdvancedSettingsPro}maps/zg-shattered-seas-voronoi.js'
-WHERE File = '{base-standard}maps/shattered-seas-voronoi.js';
-
-UPDATE SupportedValuesByMap
-SET Map = '{AdvancedSettingsPro}maps/zg-shattered-seas-voronoi.js'
-WHERE Map = '{base-standard}maps/shattered-seas-voronoi.js';
-
-UPDATE ParameterDependencies
-SET ConfigurationValue = '{AdvancedSettingsPro}maps/zg-shattered-seas-voronoi.js'
-WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/shattered-seas-voronoi.js';
-
-UPDATE Maps
-SET File = '{AdvancedSettingsPro}maps/zg-continents-plus.js'
-WHERE File = '{base-standard}maps/continents-plus.js';
-
-UPDATE SupportedValuesByMap
-SET Map = '{AdvancedSettingsPro}maps/zg-continents-plus.js'
-WHERE Map = '{base-standard}maps/continents-plus.js';
-
-UPDATE ParameterDependencies
-SET ConfigurationValue = '{AdvancedSettingsPro}maps/zg-continents-plus.js'
-WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/continents-plus.js';
-
-UPDATE Maps
-SET File = '{AdvancedSettingsPro}maps/zg-continents.js'
-WHERE File = '{base-standard}maps/continents.js';
-
-UPDATE SupportedValuesByMap
-SET Map = '{AdvancedSettingsPro}maps/zg-continents.js'
-WHERE Map = '{base-standard}maps/continents.js';
-
-UPDATE ParameterDependencies
-SET ConfigurationValue = '{AdvancedSettingsPro}maps/zg-continents.js'
-WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/continents.js';
-
-UPDATE Maps
-SET File = '{AdvancedSettingsPro}maps/zg-archipelago.js'
-WHERE File = '{base-standard}maps/archipelago.js';
-
-UPDATE SupportedValuesByMap
-SET Map = '{AdvancedSettingsPro}maps/zg-archipelago.js'
-WHERE Map = '{base-standard}maps/archipelago.js';
-
-UPDATE ParameterDependencies
-SET ConfigurationValue = '{AdvancedSettingsPro}maps/zg-archipelago.js'
-WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/archipelago.js';
-
-UPDATE Maps
-SET File = '{AdvancedSettingsPro}maps/zg-fractal.js'
-WHERE File = '{base-standard}maps/fractal.js';
-
-UPDATE SupportedValuesByMap
-SET Map = '{AdvancedSettingsPro}maps/zg-fractal.js'
-WHERE Map = '{base-standard}maps/fractal.js';
-
-UPDATE ParameterDependencies
-SET ConfigurationValue = '{AdvancedSettingsPro}maps/zg-fractal.js'
-WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/fractal.js';
-
-UPDATE Maps
-SET File = '{AdvancedSettingsPro}maps/zg-shuffle.js'
-WHERE File = '{base-standard}maps/shuffle.js';
-
-UPDATE SupportedValuesByMap
-SET Map = '{AdvancedSettingsPro}maps/zg-shuffle.js'
-WHERE Map = '{base-standard}maps/shuffle.js';
-
-UPDATE ParameterDependencies
-SET ConfigurationValue = '{AdvancedSettingsPro}maps/zg-shuffle.js'
-WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/shuffle.js';
-
-UPDATE Maps
-SET File = '{AdvancedSettingsPro}maps/zg-terra-incognita.js'
-WHERE File = '{base-standard}maps/terra-incognita.js';
-
-UPDATE SupportedValuesByMap
-SET Map = '{AdvancedSettingsPro}maps/zg-terra-incognita.js'
-WHERE Map = '{base-standard}maps/terra-incognita.js';
-
-UPDATE ParameterDependencies
-SET ConfigurationValue = '{AdvancedSettingsPro}maps/zg-terra-incognita.js'
-WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/terra-incognita.js';
-
-UPDATE Maps
-SET File = '{AdvancedSettingsPro}maps/zg-pangaea-plus.js'
-WHERE File = '{base-standard}maps/pangaea-plus.js';
-
-UPDATE SupportedValuesByMap
-SET Map = '{AdvancedSettingsPro}maps/zg-pangaea-plus.js'
-WHERE Map = '{base-standard}maps/pangaea-plus.js';
-
-UPDATE ParameterDependencies
-SET ConfigurationValue = '{AdvancedSettingsPro}maps/zg-pangaea-plus.js'
-WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/pangaea-plus.js';
-
--- The Sea Level parameter is defined per map through Key1/Key2 scoping, so the
--- map-keyed parameter rows must follow the redirected file paths as well.
+SET ConfigurationValue = REPLACE(ConfigurationValue, '{base-standard}maps/', '{AdvancedSettingsPro}maps/zg-')
+WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue IN (
+	'{base-standard}maps/archipelago.js',
+	'{base-standard}maps/archipelago-voronoi.js',
+	'{base-standard}maps/continents.js',
+	'{base-standard}maps/continents-plus.js',
+	'{base-standard}maps/continents-voronoi.js',
+	'{base-standard}maps/fractal.js',
+	'{base-standard}maps/fractal-voronoi.js',
+	'{base-standard}maps/pangaea-plus.js',
+	'{base-standard}maps/pangaea-voronoi.js',
+	'{base-standard}maps/shattered-seas-voronoi.js',
+	'{base-standard}maps/shuffle.js',
+	'{base-standard}maps/shuffle-voronoi.js',
+	'{base-standard}maps/terra-incognita.js',
+	'{base-standard}maps/terra-incognita-voronoi.js'
+);
 
 UPDATE Parameters
-SET Key2 = '{AdvancedSettingsPro}maps/zg-continents-voronoi.js'
-WHERE Key1 = 'Map' AND Key2 = '{base-standard}maps/continents-voronoi.js';
-
-UPDATE Parameters
-SET Key2 = '{AdvancedSettingsPro}maps/zg-pangaea-voronoi.js'
-WHERE Key1 = 'Map' AND Key2 = '{base-standard}maps/pangaea-voronoi.js';
-
-UPDATE Parameters
-SET Key2 = '{AdvancedSettingsPro}maps/zg-fractal-voronoi.js'
-WHERE Key1 = 'Map' AND Key2 = '{base-standard}maps/fractal-voronoi.js';
-
-UPDATE Parameters
-SET Key2 = '{AdvancedSettingsPro}maps/zg-shattered-seas-voronoi.js'
-WHERE Key1 = 'Map' AND Key2 = '{base-standard}maps/shattered-seas-voronoi.js';
-
-UPDATE Maps
-SET File = '{AdvancedSettingsPro}maps/zg-archipelago-voronoi.js'
-WHERE File = '{base-standard}maps/archipelago-voronoi.js';
-
-UPDATE SupportedValuesByMap
-SET Map = '{AdvancedSettingsPro}maps/zg-archipelago-voronoi.js'
-WHERE Map = '{base-standard}maps/archipelago-voronoi.js';
-
-UPDATE ParameterDependencies
-SET ConfigurationValue = '{AdvancedSettingsPro}maps/zg-archipelago-voronoi.js'
-WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/archipelago-voronoi.js';
-
-UPDATE Parameters
-SET Key2 = '{AdvancedSettingsPro}maps/zg-archipelago-voronoi.js'
-WHERE Key1 = 'Map' AND Key2 = '{base-standard}maps/archipelago-voronoi.js';
-
-UPDATE Maps
-SET File = '{AdvancedSettingsPro}maps/zg-shuffle-voronoi.js'
-WHERE File = '{base-standard}maps/shuffle-voronoi.js';
-
-UPDATE SupportedValuesByMap
-SET Map = '{AdvancedSettingsPro}maps/zg-shuffle-voronoi.js'
-WHERE Map = '{base-standard}maps/shuffle-voronoi.js';
-
-UPDATE ParameterDependencies
-SET ConfigurationValue = '{AdvancedSettingsPro}maps/zg-shuffle-voronoi.js'
-WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/shuffle-voronoi.js';
-
-UPDATE Parameters
-SET Key2 = '{AdvancedSettingsPro}maps/zg-shuffle-voronoi.js'
-WHERE Key1 = 'Map' AND Key2 = '{base-standard}maps/shuffle-voronoi.js';
-
-UPDATE Maps
-SET File = '{AdvancedSettingsPro}maps/zg-terra-incognita-voronoi.js'
-WHERE File = '{base-standard}maps/terra-incognita-voronoi.js';
-
-UPDATE SupportedValuesByMap
-SET Map = '{AdvancedSettingsPro}maps/zg-terra-incognita-voronoi.js'
-WHERE Map = '{base-standard}maps/terra-incognita-voronoi.js';
-
-UPDATE ParameterDependencies
-SET ConfigurationValue = '{AdvancedSettingsPro}maps/zg-terra-incognita-voronoi.js'
-WHERE ConfigurationKey = 'MapScript' AND ConfigurationValue = '{base-standard}maps/terra-incognita-voronoi.js';
-
-UPDATE Parameters
-SET Key2 = '{AdvancedSettingsPro}maps/zg-terra-incognita-voronoi.js'
-WHERE Key1 = 'Map' AND Key2 = '{base-standard}maps/terra-incognita-voronoi.js';
+SET Key2 = REPLACE(Key2, '{base-standard}maps/', '{AdvancedSettingsPro}maps/zg-')
+WHERE Key1 = 'Map' AND Key2 IN (
+	'{base-standard}maps/archipelago.js',
+	'{base-standard}maps/archipelago-voronoi.js',
+	'{base-standard}maps/continents.js',
+	'{base-standard}maps/continents-plus.js',
+	'{base-standard}maps/continents-voronoi.js',
+	'{base-standard}maps/fractal.js',
+	'{base-standard}maps/fractal-voronoi.js',
+	'{base-standard}maps/pangaea-plus.js',
+	'{base-standard}maps/pangaea-voronoi.js',
+	'{base-standard}maps/shattered-seas-voronoi.js',
+	'{base-standard}maps/shuffle.js',
+	'{base-standard}maps/shuffle-voronoi.js',
+	'{base-standard}maps/terra-incognita.js',
+	'{base-standard}maps/terra-incognita-voronoi.js'
+);

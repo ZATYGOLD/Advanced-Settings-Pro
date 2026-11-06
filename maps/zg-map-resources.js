@@ -1,8 +1,8 @@
 // Applies the Resources setting when a map script places its resources.
 //
 // Copy of {base-standard}maps/resource-generator.js generateResources with three
-// substitutions; every other step stays stock and is imported from the base
-// module, so the phase order, profiling and logging match the base exactly:
+// substitutions; every other step is imported from the base module, so the
+// phase order and profiling match the base:
 //
 //   1. the density target handed to buildBlueNoiseWindows is scaled,
 //   2. effectiveMinimums overrides each resource's own MinimumPerLandmass,
@@ -11,11 +11,11 @@
 //
 // The base game offers no hook around its density calculation, so the function
 // has to be copied rather than wrapped. Re-sync it from the shipped file after a
-// patch that touches resource generation; everything outside a ZG block is stock.
+// patch that touches resource generation, keeping the ZG blocks.
 import { replaceIslandResources } from 'fs://game/base-standard/maps/map-utilities.js';
 import { prepareResourceSet, buildPlacementContext, VERBOSE_LOGGING, tileClassFromId, tileClassLabel, buildBlueNoiseWindows, MAX_DENSITY, DENSITY_TARGET, placeResourcesWithBlueNoise, isResourceAllowedOnLandmass, NUM_LANDMASS_GROUPS } from 'fs://game/base-standard/maps/resource-placement-common.js';
 import { profileScope } from 'fs://game/base-standard/scripts/profiling.js';
-import { zgSettingTier } from './zg-map-settings.js';
+import { zgSettingTier } from './zg-map-utils.js';
 
 const RESOURCES_SETTING_KEY = "ResourcesKey";
 
@@ -37,7 +37,7 @@ const RESOURCES_SETTING_KEY = "ResourcesKey";
 // number of deposits seeded. clusterCompensation divides the target back down
 // first, so a tier's clustering changes the shape of the map without also
 // making it richer.
-const RESOURCES_TIER = {
+const RESOURCES_TIERS = {
 	ZG_RESOURCES_SPARSE: { percent: 75, chance: 75, max: 3, guaranteed: -1 },
 	ZG_RESOURCES_STANDARD: { percent: 100, chance: 0, max: 1, guaranteed: 0 },
 	ZG_RESOURCES_ABUNDANT: { percent: 125, chance: 0, max: 1, guaranteed: 1 },
@@ -68,21 +68,20 @@ function clusterCompensation(chance, max) {
 // resource's own MinimumPerLandmass instead.
 //
 // Every resource carries a MinimumPerLandmass of at least DEFAULT_GUARANTEE, so
-// a resource is only meaningfully guaranteed when it declares more than that.
-// Testing this against 0 instead moved the floor on all 55 resources rather than
-// the ten the game singles out, which showed up in a log as "+1 on 55 resources"
-// and put two of every resource on every landmass.
+// only the ten that declare more are moved.
 function effectiveMinimums(modifier) {
 	if (modifier === 0) {
 		return undefined;
 	}
 	const minimums = new Array(GameInfo.Resources.length).fill(0);
 	let adjusted = 0;
-	// Indexed rather than iterated: the base game's own resource passes read
-	// GameInfo.Resources by index, so nothing here relies on it being iterable.
+	// Indexed, as the base resource passes read it.
 	for (let i = 0; i < GameInfo.Resources.length; i++) {
 		const def = GameInfo.Resources[i];
-		const base = def?.MinimumPerLandmass ?? 0;
+		if (!def) {
+			continue;
+		}
+		const base = def.MinimumPerLandmass ?? 0;
 		if (base <= DEFAULT_GUARANTEE) {
 			minimums[def.$index] = base;
 			continue;
@@ -174,7 +173,7 @@ export function zgGenerateResources(iWidth, iHeight, minMarineResourceTypesOverr
 	const calculateDensityScope = new profileScope("generateResources Density Calculation");
 
 	// --- ZG: the setting, read once and applied to the base plan ---
-	const resources = zgSettingTier(RESOURCES_TIER, RESOURCES_SETTING_KEY, "ZG_RESOURCES_STANDARD");
+	const resources = zgSettingTier(RESOURCES_TIERS, RESOURCES_SETTING_KEY, "ZG_RESOURCES_STANDARD");
 	const compensation = clusterCompensation(resources.chance, resources.max);
 	const densityTarget = DENSITY_TARGET * (resources.percent / 100) / compensation;
 	const clustering = resources.chance > 0 ? `${resources.chance}% chance of a patch up to ${resources.max} tiles` : "no clustering";

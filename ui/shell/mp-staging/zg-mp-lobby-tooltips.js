@@ -16,8 +16,8 @@
 import { MPLobbyDataModel } from 'fs://game/core/ui/shell/mp-staging/model-mp-staging-new.js';
 import { GetCivilizationData } from 'fs://game/core/ui/shell/create-panels/age-civ-select-model.js';
 import { getLeaderData } from 'fs://game/core/ui/shell/create-panels/leader-select-model.js';
-import { CHOICE_TIERS, leaderAssociations } from '../../age-transition/zg-age-transition-civs.js';
-import { queryConfig } from '../shared/zg-shell-context.js';
+import { CHOICE_TIERS, leaderAssociations } from '../../shared/zg-civ-associations.js';
+import { cached, queryConfig } from '../../shared/zg-config.js';
 
 const SUGGESTED_TITLE = "LOC_ZG_LOBBY_SUGGESTED_CIVS";
 const MAX_CIVS_PER_AGE = 3;
@@ -25,17 +25,12 @@ const MAX_CIVS_PER_AGE = 3;
 const tierLabel = (tierName) => Locale.compose(CHOICE_TIERS.find((tier) => tier.name == tierName)?.label ?? "");
 const composed = (text) => (text ? Locale.compose(text) : "");
 
-// Built once per shell session; the config database does not change under it.
-let lookups = null;
-function getLookups() {
-	if (lookups) {
-		return lookups;
-	}
+// Built once per shell session; the leader and civ maps fill as tooltips are asked for.
+const getLookups = cached(() => {
 	const ages = queryConfig("SELECT Name, PlayerCivilizationDomain, ChronologyIndex FROM Ages ORDER BY ChronologyIndex");
 	const civNames = new Map(queryConfig("SELECT CivilizationType, CivilizationName FROM Civilizations").map((row) => [row.CivilizationType, row.CivilizationName]));
-	lookups = { ages, civNames, associations: leaderAssociations(), leaders: new Map(), civs: new Map() };
-	return lookups;
-}
+	return { ages, civNames, associations: leaderAssociations(), leaders: new Map(), civs: new Map() };
+});
 
 // Puts a bold ability name ahead of the ability text the base tooltip already holds.
 function withAbilityTitle(tooltip, title, text) {

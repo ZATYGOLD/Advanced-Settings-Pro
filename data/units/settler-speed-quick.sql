@@ -1,4 +1,5 @@
--- Base movement; embarked movement is set by the settler-embark files.
+-- Settler Speed: Quick. Settlers and their unique replacements get 4 base
+-- movement; embarked movement is set by the settler-embark files.
 UPDATE Units
 SET BaseMoves = 4
 WHERE UnitType = 'UNIT_SETTLER'

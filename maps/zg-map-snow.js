@@ -10,6 +10,7 @@
 import { g_PolarWaterRows } from 'fs://game/base-standard/maps/map-globals.js';
 import { generateSnow } from 'fs://game/base-standard/maps/snow-generator.js';
 import { zgClimate } from './zg-map-climate.js';
+import { zgForEachTile, zgInterpolate } from './zg-map-utils.js';
 
 const SNOW_LATITUDE_MIN = 60;
 const ANY_SNOW_CHANCE = 90;
@@ -17,6 +18,7 @@ const CHANCE_SPAN = 60;
 // Light, medium, and heavy at the coldest edge; across the span light and
 // medium each gain what heavy loses.
 const WEIGHT_CHANCES = [10, 30, 60];
+const HEAVY = 2;
 
 const snowEffect = (weight) => MapPlotEffects.getPlotEffectTypesContainingTags(["SNOW", weight, "PERMANENT"])?.[0] ?? -1;
 
@@ -32,33 +34,31 @@ export function zgGenerateSnow(iWidth, iHeight) {
 		generateSnow(iWidth, iHeight);
 		return;
 	}
-	console.log("Generating permanent snow by climate latitude");
+	console.log("ZG-ASP snow: laid by climate latitude");
 	const effects = ["LIGHT", "MEDIUM", "HEAVY"].map(snowEffect);
 	const coldest = coldestSnowLatitude(iHeight);
-	for (let iY = 0; iY < iHeight; iY++) {
-		for (let iX = 0; iX < iWidth; iX++) {
-			if (GameplayMap.isWater(iX, iY)) {
-				continue;
-			}
-			const latitude = Math.abs(climate.latitude(iX, iY)) + climate.shift;
-			if (latitude < SNOW_LATITUDE_MIN) {
-				continue;
-			}
-			// 0 at the coldest edge, 1 at latitude 60.
-			const progress = Math.min(1, Math.max(0, (coldest - latitude) / (coldest - SNOW_LATITUDE_MIN)));
-			if (TerrainBuilder.getRandomNumber(100, "Any Snow") > ANY_SNOW_CHANCE - CHANCE_SPAN * progress) {
-				continue;
-			}
-			const heavy = WEIGHT_CHANCES[2] - CHANCE_SPAN * progress;
-			const chances = [WEIGHT_CHANCES[0] + CHANCE_SPAN * progress, WEIGHT_CHANCES[1] + CHANCE_SPAN * progress, heavy];
-			let roll = TerrainBuilder.getRandomNumber(100, "Snow Weight");
-			for (let weight = chances.length - 1; weight >= 0; --weight) {
-				if (roll < chances[weight]) {
-					MapPlotEffects.addPlotEffect(GameplayMap.getIndexFromXY(iX, iY), effects[weight]);
-					break;
-				}
-				roll -= chances[weight];
-			}
+	zgForEachTile(iWidth, iHeight, (iX, iY) => {
+		if (GameplayMap.isWater(iX, iY)) {
+			return;
 		}
-	}
+		const latitude = Math.abs(climate.latitude(iX, iY)) + climate.shift;
+		if (latitude < SNOW_LATITUDE_MIN) {
+			return;
+		}
+		// 0 at the coldest edge, 1 at latitude 60.
+		const gain = CHANCE_SPAN * zgInterpolate(latitude, coldest, SNOW_LATITUDE_MIN, 0, 1);
+		if (TerrainBuilder.getRandomNumber(100, "Any Snow") > ANY_SNOW_CHANCE - gain) {
+			return;
+		}
+		// Heavy first, as in the base.
+		let roll = TerrainBuilder.getRandomNumber(100, "Snow Weight");
+		for (let weight = WEIGHT_CHANCES.length - 1; weight >= 0; --weight) {
+			const chance = WEIGHT_CHANCES[weight] + (weight == HEAVY ? -gain : gain);
+			if (roll < chance) {
+				MapPlotEffects.addPlotEffect(GameplayMap.getIndexFromXY(iX, iY), effects[weight]);
+				return;
+			}
+			roll -= chance;
+		}
+	});
 }

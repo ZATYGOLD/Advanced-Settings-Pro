@@ -8,27 +8,37 @@
 // Standard map matches the base exactly.
 import { isAdjacentToNaturalWonder } from 'fs://game/base-standard/maps/map-utilities.js';
 import { zgClimate } from './zg-map-climate.js';
+import { zgForEachTile } from './zg-map-utils.js';
 
 const ICE_LATITUDE_MIN = 78;
 const ATOLL_GROWTH_LATITUDE = 15;
+
+// Set once per map by zgAddFeatures: the climate, and each placement class's
+// features in ascending index order, so a tile tests only its own class.
+let climate = null;
+let featuresByClass = null;
+
+function indexFeaturesByClass() {
+	const byClass = new Map();
+	for (let featIdx = 0; featIdx < GameInfo.Features.length; featIdx++) {
+		const placementClass = GameInfo.Features[featIdx].PlacementClass;
+		byClass.set(placementClass, [...(byClass.get(placementClass) ?? []), featIdx]);
+	}
+	return byClass;
+}
 
 // Feature latitude: distance from the equator plus the temperature shift, never
 // below the equator itself. Ice keeps the base game's southern hemisphere
 // offset of 5 degrees.
 function featureLatitude(iX, iY, southOffset = 0) {
-	const { latitude, shift } = zgClimate();
-	const signed = latitude(iX, iY);
-	return Math.max(0, (signed < 0 ? -signed - southOffset : signed) + shift);
-}
-
-function canPlace(iX, iY, featIdx, placementClass) {
-	return GameInfo.Features[featIdx].PlacementClass == placementClass && TerrainBuilder.canHaveFeature(iX, iY, featIdx);
+	const signed = climate.latitude(iX, iY);
+	return Math.max(0, (signed < 0 ? -signed - southOffset : signed) + climate.shift);
 }
 
 // The first feature of a class the tile can take, or -1.
 function firstPlaceable(iX, iY, placementClass, accept = () => true) {
-	for (let featIdx = 0; featIdx < GameInfo.Features.length; featIdx++) {
-		if (canPlace(iX, iY, featIdx, placementClass) && accept(featIdx)) {
+	for (const featIdx of featuresByClass.get(placementClass) ?? []) {
+		if (TerrainBuilder.canHaveFeature(iX, iY, featIdx) && accept(featIdx)) {
 			return featIdx;
 		}
 	}
@@ -53,16 +63,8 @@ const isOpenLand = (iX, iY) => !GameplayMap.isWater(iX, iY) && GameplayMap.getFe
 const isOpenWater = (iX, iY) => GameplayMap.isWater(iX, iY) && GameplayMap.getFeatureType(iX, iY) == FeatureTypes.NO_FEATURE;
 const inLatitude = (featIdx, latitude) => GameInfo.Features[featIdx].MinLatitude <= latitude && GameInfo.Features[featIdx].MaxLatitude > latitude;
 
-function forEachTile(iWidth, iHeight, visit) {
-	for (let iY = 0; iY < iHeight; iY++) {
-		for (let iX = 0; iX < iWidth; iX++) {
-			visit(iX, iY);
-		}
-	}
-}
-
 function addPositionalFeatures(iWidth, iHeight) {
-	forEachTile(iWidth, iHeight, (iX, iY) => {
+	zgForEachTile(iWidth, iHeight, (iX, iY) => {
 		if (!isOpenLand(iX, iY)) {
 			return;
 		}
@@ -83,7 +85,7 @@ function addPositionalFeatures(iWidth, iHeight) {
 }
 
 function scatterFeatures(iWidth, iHeight) {
-	forEachTile(iWidth, iHeight, (iX, iY) => {
+	zgForEachTile(iWidth, iHeight, (iX, iY) => {
 		const featIdx = isOpenLand(iX, iY) ? firstPlaceable(iX, iY, "SCATTER") : -1;
 		if (featIdx >= 0) {
 			addFeature(iX, iY, featIdx, 100, "Feature Scatter");
@@ -92,7 +94,7 @@ function scatterFeatures(iWidth, iHeight) {
 }
 
 function addIce(iWidth, iHeight) {
-	forEachTile(iWidth, iHeight, (iX, iY) => {
+	zgForEachTile(iWidth, iHeight, (iX, iY) => {
 		if (!isOpenWater(iX, iY)) {
 			return;
 		}
@@ -115,7 +117,7 @@ function addIce(iWidth, iHeight) {
 }
 
 function addReefs(iWidth, iHeight) {
-	forEachTile(iWidth, iHeight, (iX, iY) => {
+	zgForEachTile(iWidth, iHeight, (iX, iY) => {
 		if (!isOpenWater(iX, iY)) {
 			return;
 		}
@@ -128,20 +130,11 @@ function addReefs(iWidth, iHeight) {
 }
 
 function addOpenWaterFeatures(iWidth, iHeight) {
-	const skipPlotIndices = [];
-	let skipPlot = false;
-	forEachTile(iWidth, iHeight, (iX, iY) => {
-		// Kept as the base has it: a grown atoll skips any later tile in its column
-		// past the first row, so the rolls stay in the base order.
-		for (const skipPlotIndex of skipPlotIndices) {
-			const plot = GameplayMap.getLocationFromIndex(skipPlotIndex);
-			if (plot.x == iX && plot.y && iY) {
-				skipPlot = true;
-				break;
-			}
-		}
-		if (skipPlot) {
-			skipPlot = false;
+	// Kept as the base has it: a grown atoll off the first row skips every later
+	// tile in its column past the first row, so the rolls stay in the base order.
+	const skipColumns = new Set();
+	zgForEachTile(iWidth, iHeight, (iX, iY) => {
+		if (iY && skipColumns.has(iX)) {
 			return;
 		}
 		if (!isOpenWater(iX, iY)) {
@@ -158,18 +151,20 @@ function addOpenWaterFeatures(iWidth, iHeight) {
 		const growthChancePercent = latitude <= ATOLL_GROWTH_LATITUDE ? 15 : 5;
 		for (let plotIndex = 0; plotIndex < clusterSize; ++plotIndex) {
 			const location = GameplayMap.getLocationFromIndex(neighbors[plotIndex]);
-			if (canPlace(location.x, location.y, featIdx, "OPEN_WATERS")
+			if (TerrainBuilder.canHaveFeature(location.x, location.y, featIdx)
 				&& shallowWaterAdjacencyCheck(location.x, location.y, "Feature Atoll Spawn Chance")
 				&& TerrainBuilder.getRandomNumber(100, "Feature Atoll") < growthChancePercent) {
 				addFeature(location.x, location.y, featIdx, 30, "Feature Atoll");
-				skipPlotIndices.push(neighbors[plotIndex]);
+				if (location.y) {
+					skipColumns.add(location.x);
+				}
 			}
 		}
 	});
 }
 
 function addLakeFeatures(iWidth, iHeight) {
-	forEachTile(iWidth, iHeight, (iX, iY) => {
+	zgForEachTile(iWidth, iHeight, (iX, iY) => {
 		const featIdx = isOpenWater(iX, iY) ? firstPlaceable(iX, iY, "IN_LAKE") : -1;
 		if (featIdx >= 0) {
 			addFeature(iX, iY, featIdx, 100, "Feature Lotus");
@@ -179,6 +174,8 @@ function addLakeFeatures(iWidth, iHeight) {
 
 export function zgAddFeatures(iWidth, iHeight) {
 	console.log("Features");
+	climate = zgClimate();
+	featuresByClass = indexFeaturesByClass();
 	addPositionalFeatures(iWidth, iHeight);
 	scatterFeatures(iWidth, iHeight);
 	addIce(iWidth, iHeight);

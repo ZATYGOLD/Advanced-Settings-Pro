@@ -1,6 +1,6 @@
-// Copy of {base-standard}maps/terra-incognita.js with terrain, rivers, biomes and
-// resources generated through the zg-map-* modules; imports are repointed at
-// the base modules.
+// Copy of {base-standard}maps/terra-incognita.js
+// with its terrain, river, biome, feature, snow and resource passes replaced by
+// the zg-map-* modules; imports are repointed at the base modules.
 import { zgModelRivers } from './zg-map-rivers.js';
 import { zgDesignateBiomes } from './zg-map-biomes.js';
 import { zgAddMountains } from './zg-map-mountains.js';
