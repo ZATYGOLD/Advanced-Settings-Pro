@@ -517,7 +517,7 @@
 			<Text>Advanced Settings Pro</Text>
 		</Replace>
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="pl_PL">
-			<Text>Advanced Settings Pro autorstwa Zatygolda[n] [n]Ten mod rozszerza konfigurację rozgrywki dla jednego gracza i trybu wieloosobowego o dodatkowe opcje w menu ustawień zaawansowanych. Pozwala precyzyjnie dostroić systemy, których normalnie nie można zmieniać.</Text>
+			<Text>Advanced Settings Pro autorstwa Zatygolda[n] [n]Ten mod rozszerza konfigurację rozgrywki dla jednego gracza o dodatkowe opcje w menu ustawień zaawansowanych. Pozwala precyzyjnie dostroić systemy, których normalnie nie można zmieniać. Nie wpływa na tryb wieloosobowy; ustawienia trybu wieloosobowego zapewnia Better Balanced Multiplayer.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="pl_PL">
 			<Text>Określa, czy ten cud natury może pojawić się na mapie.</Text>
@@ -969,12 +969,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_CIV_CHOICE_HISTORICAL" Language="pl_PL">
 			<Text>Historyczna</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIV_CHOICE_GEOGRAPHIC" Language="pl_PL">
-			<Text>Geograficzna</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_LOBBY_SUGGESTED_CIVS" Language="pl_PL">
-			<Text>Sugerowane cywilizacje</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="pl_PL">
 			<Text>Każda SI trzyma się historii swojego przywódcy. Zmienia cywilizację, gdy nowa epoka oferuje historyczną cywilizację jej przywódcy, i zachowuje swoją, gdy to ona jest historyczna.[n]W przeciwnym razie podąża zwykłą ścieżką gry do nowej epoki, najpierw cywilizacja geograficzna. Cywilizacja już zajęta jest pomijana; duplikat pojawia się tylko, gdy wszystkie są zajęte.[n]Eksperymentalne: od łatki 1.5 gra może nadpisać te wybory.</Text>

@@ -26,3 +26,7 @@ export const isModEnabled = (modId) => Modding.getInstalledMods().some((mod) => 
 
 // A setup string handle as text, or "" when it does not resolve.
 export const resolveName = (handle) => GameSetup.resolveString(handle) ?? "";
+
+// Whether the setup or game is multiplayer, hotseat included. The mod applies
+// to single player only; multiplayer settings come from Better Balanced Multiplayer.
+export const isMultiplayer = () => !!Configuration.getGame()?.isAnyMultiplayer;

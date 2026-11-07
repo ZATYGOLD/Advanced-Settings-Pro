@@ -517,7 +517,7 @@
 			<Text>Advanced Settings Pro</Text>
 		</Replace>
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="de_DE">
-			<Text>Zatygolds Advanced Settings Pro[n] [n]Diese Mod erweitert die Spielerstellung für Einzel- und Mehrspieler um zusätzliche Optionen im Menü für erweiterte Einstellungen. Sie ermöglicht die Feinabstimmung von Systemen, die normalerweise nicht anpassbar sind.</Text>
+			<Text>Zatygolds Advanced Settings Pro[n] [n]Diese Mod erweitert die Einzelspieler-Spielerstellung um zusätzliche Optionen im Menü für erweiterte Einstellungen. Sie ermöglicht die Feinabstimmung von Systemen, die normalerweise nicht anpassbar sind. Im Mehrspielermodus hält sie sich heraus; die Mehrspieler-Einstellungen stammen aus dem Better Balanced Multiplayer.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="de_DE">
 			<Text>Legt fest, ob dieses Naturwunder auf der Karte erscheinen kann.</Text>
@@ -969,12 +969,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_CIV_CHOICE_HISTORICAL" Language="de_DE">
 			<Text>Historisch</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIV_CHOICE_GEOGRAPHIC" Language="de_DE">
-			<Text>Geografisch</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_LOBBY_SUGGESTED_CIVS" Language="de_DE">
-			<Text>Empfohlene Zivilisationen</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="de_DE">
 			<Text>Jede KI bleibt der Geschichte ihres Anführers treu. Sie wechselt, wenn das neue Zeitalter eine historische Zivilisation ihres Anführers bietet, und behält ihre Zivilisation, wenn diese die historische ist.[n]Sonst folgt sie dem üblichen Weg des Spiels ins neue Zeitalter, eine geografische Zivilisation zuerst. Eine bereits vergebene Zivilisation wird übergangen; ein Duplikat gibt es nur, wenn alle vergeben sind.[n]Experimentell: Seit Patch 1.5 kann das Spiel diese Auswahl überschreiben.</Text>

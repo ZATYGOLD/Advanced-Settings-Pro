@@ -1,13 +1,4 @@
-// The Advanced Settings layout both setup screens share: the single-player one
-// (zg-map-tab.js, zg-seed-randomizer.js) and the multiplayer Create Game screen
-// (zg-mp-create-game.js).
-
-// Multiplayer resolves a parameter's group to its GroupIDMultiplayerOverride
-// when it has one: these "MPAdvanced" ids, set in config/setup-parameters.sql.
-// A setting with no override keeps its single-player group, as the settings a
-// map script adds usually do, so each tab claims both.
-export const MP_GROUP_PREFIX = "MPAdvanced";
-const withMultiplayerGroups = (groups) => new Set(groups.flatMap((group) => [group, MP_GROUP_PREFIX + group]));
+// The single-player Advanced Settings layout (zg-map-tab.js, zg-seed-randomizer.js).
 
 // The extra tabs, in display order, each claiming the parameter groups it shows;
 // General keeps every group no extra tab claims.
@@ -15,12 +6,12 @@ export const SETUP_TABS = [
 	{
 		key: "pace",
 		title: "LOC_ZG_ADVANCED_OPTIONS_AGES",
-		groups: withMultiplayerGroups(["GamePacingOptions", "PacingAntiquityOptions", "PacingExplorationOptions", "PacingModernOptions"]),
+		groups: new Set(["GamePacingOptions", "PacingAntiquityOptions", "PacingExplorationOptions", "PacingModernOptions"]),
 	},
 	{
 		key: "map",
 		title: "LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS",
-		groups: withMultiplayerGroups(["MapOptions", "TerrainOptions", "DisasterOptions", "NaturalWonderSelectionOptions"]),
+		groups: new Set(["MapOptions", "TerrainOptions", "DisasterOptions", "NaturalWonderSelectionOptions"]),
 	},
 ];
 

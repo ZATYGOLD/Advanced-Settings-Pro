@@ -15,9 +15,9 @@ import { createMemo, createComponent, createRenderEffect, createSignal, mergePro
 import { multiplayerTeamColors } from 'fs://game/core/ui/utilities/utilities-network-constants.js';
 import { openMementoSelect } from './zg-memento-select.js';
 import { MEMENTO_PARAM_IDS, MEMENTO_NONE_VALUE, MEMENTO_SLOT_BASE_IMAGE, MEMENTO_SLOT_PLUS_IMAGE, AI_MEMENTOS_PARAM_ID, AI_MEMENTOS_DEFAULT, aiMementoMode, aiPlayerIds, drawMementos, matchSource, randomFlags, setRandomFlag, rollMemento, sortPossibleValues } from '../../../ui/shared/zg-memento-roller.js';
-import { gameValue, isModEnabled, resolveName } from '../../../ui/shared/zg-config.js';
+import { gameValue, isModEnabled, isMultiplayer, resolveName } from '../../../ui/shared/zg-config.js';
 import { zgWrapComponent } from './zg-component-override.js';
-import { canEditSetup, isAgeTransition, onSetupRevision } from '../../../ui/shell/shared/zg-shell-context.js';
+import { isSinglePlayerSetup, onSetupRevision } from '../../../ui/shell/shared/zg-shell-context.js';
 import { Activatable } from 'fs://game/core/ui-next/components/activatable.js';
 import { Button } from 'fs://game/core/ui-next/components/button.js';
 import { Dropdown, DropdownItem } from 'fs://game/core/ui-next/components/dropdown.js';
@@ -220,7 +220,7 @@ const PlayerOption = (props) => {
 // the filigree and rollover, and either the memento's icon or, for an empty
 // slot, the slot base image. Clicking one opens the game's memento picker, the
 // one with the search bar and attribute filter, for the player this row stands
-// for, over Advanced Options (zg-memento-select.js, shared with the lobby).
+// for, over Advanced Options (zg-memento-select.js).
 const SLOT_PLUS_REM = 1.6;
 const SLOT_ICON_CLASSES = "w-full h-full absolute inset-1";
 const tplSlotBox = template(`<div class="flex items-center justify-center p-1 img-unit-panelbox relative"><div class="absolute inset-0 bg-center bg-no-repeat"></div><div class="img-rollover-highlight absolute inset-0 opacity-0 group-focus\\:opacity-100 group-hover\\:opacity-100 group-pressed\\:opacity-100 pointer-events-none"></div></div>`);
@@ -431,9 +431,8 @@ function applyAiMementos(mode, playerId) {
 		drawMementos(mode, playerId);
 	}
 }
-// An age transition runs through this same shell; the AI's mementos there are
-// Age Transition AI Mementos' to settle. In multiplayer only the host holds the
-// setup.
+// Single-player setup only: an age transition runs through this same shell, and
+// the AI's mementos there are Age Transition AI Mementos' to settle.
 onSetupRevision((restarted) => {
 	// A fresh setup screen restarts the revision counter. Forget what was rolled
 	// so the next game picks again, rather than keeping the last game's mementos
@@ -475,7 +474,7 @@ onSetupRevision((restarted) => {
 			}
 		});
 	}
-}, () => !isAgeTransition() && canEditSetup());
+}, isSinglePlayerSetup);
 
 // ---------------------------------------------------------- player list --
 
@@ -587,7 +586,7 @@ if (claimingMod) {
 	console.log(`${LOG_PREFIX} leaving the Player tab to '${claimingMod}'`);
 } else {
 	zgWrapComponent("Tab.Item", OVERRIDE_PRIORITY, (createPreviousTabItem) => (props) => {
-		if (props?.name != PLAYER_TAB_NAME) {
+		if (props?.name != PLAYER_TAB_NAME || isMultiplayer()) {
 			return createPreviousTabItem(props);
 		}
 		return createPreviousTabItem(mergeProps(props, { body: () => createComponent(PlayerSetup, {}) }));

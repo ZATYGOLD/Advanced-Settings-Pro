@@ -1,15 +1,14 @@
 // A leader's civilization associations, the game's own reading of them in
 // LeaderCivilizationBias: the Historical and Geographic choices the civilization
-// picker marks for a human. Shared by the age transition's Historical mode and
-// the multiplayer lobby tooltips.
+// picker marks for a human, read by the age transition's Historical mode.
 
 import { cached, queryConfig } from './zg-config.js';
 
 // In the order they are tried. Strategic rows are not associations and are left
 // out. Matched on the prefix: one shipped row spells its type without "_CHOICE".
-export const CHOICE_TIERS = [
-	{ name: "historical", choicePrefix: "LOC_CREATE_GAME_HISTORICAL", label: "LOC_ZG_CIV_CHOICE_HISTORICAL" },
-	{ name: "geographic", choicePrefix: "LOC_CREATE_GAME_GEOGRAPHIC", label: "LOC_ZG_CIV_CHOICE_GEOGRAPHIC" },
+const CHOICE_TIERS = [
+	{ name: "historical", choicePrefix: "LOC_CREATE_GAME_HISTORICAL" },
+	{ name: "geographic", choicePrefix: "LOC_CREATE_GAME_GEOGRAPHIC" },
 ];
 
 // Leader type to its Historical and Geographic rows across every age, highest

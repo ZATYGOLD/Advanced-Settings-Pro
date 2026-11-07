@@ -8,13 +8,14 @@
 //      tab, each rendering the same game-setup body, which then sees only that
 //      tab's groups. General shows every group no extra tab claims.
 //
-// Every option row, the Player tab, and the multiplayer screen remain the
-// game's own code.
+// Every option row and the Player tab remain the game's own code, and a
+// multiplayer or hotseat setup gets the screen unchanged.
 import { createSignal, createComponent, mergeProps, onCleanup } from 'fs://game/core/vendor/solid-js/dist/solid.js';
 import { ModelRegistry, ModelLifecycle } from 'fs://game/core/ui-next/services/model-registry.js';
 import { L10n } from 'fs://game/core/ui-next/components/l10n.js';
 import 'fs://game/core/ui-next/components/tab.js';
 import 'fs://game/core/ui-next/screens/create-game/game-parameters-model.js';
+import { isMultiplayer } from '../../../ui/shared/zg-config.js';
 import { SETUP_TABS } from '../../../ui/shell/shared/zg-setup-tabs.js';
 import { zgWrapComponent } from './zg-component-override.js';
 
@@ -72,6 +73,7 @@ if (createBaseGroupsModel) {
 			get groupNames() { return resolve().groupNames; },
 			get groups() {
 				const groups = resolve().groups;
+				if (isMultiplayer()) return groups;
 				const tab = activeTab();
 				const filtered = {};
 				for (const groupId of Object.keys(groups)) {
@@ -95,7 +97,7 @@ function tabBody(tab, body) {
 }
 
 zgWrapComponent("Tab.Item", OVERRIDE_PRIORITY, (createBaseTabItem) => (props) => {
-	if (props?.name != GENERAL_TAB_NAME || typeof props?.body != "function") {
+	if (props?.name != GENERAL_TAB_NAME || typeof props?.body != "function" || isMultiplayer()) {
 		return createBaseTabItem(props);
 	}
 	const body = props.body;

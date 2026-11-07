@@ -11,9 +11,8 @@
 // any decorator exists, so the wrap goes on the prototype: the button and the
 // gamepad shortcut then both reach it.
 //
-// Multiplayer transitions run through the staging screen instead and are not
-// touched. The panel only exists during a transition, so the wrap is inert in
-// an ordinary shell session.
+// The panel only exists during a transition, so the wrap is inert in an
+// ordinary shell session.
 
 import AgeTransitionCivSelect from 'fs://game/core/ui/shell/age-transition/age-transition-civ-select.js';
 import { gameValue } from '../shared/zg-config.js';

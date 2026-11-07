@@ -18,7 +18,7 @@
 
 import { ContextManager } from 'fs://game/core/ui/context-manager/context-manager.js';
 import { StartCampaignEventName } from 'fs://game/core/ui/events/shell-events.js';
-import { isAgeTransition } from '../shared/zg-shell-context.js';
+import { isSinglePlayerSetup } from '../shared/zg-shell-context.js';
 
 const STORAGE_KEY = "modSettings";
 const MOD_KEY = "ZG_AdvancedSettingsProSetup";
@@ -75,7 +75,7 @@ function writeSaved(values) {
 // ------------------------------------------------------------- parameters --
 
 const isRemembered = (id) => id.startsWith(PARAM_PREFIX) || REMEMBERED_BASE_PARAM_IDS.has(id);
-const isSetupOpen = () => ContextManager.hasInstanceOf(SETUP_SCREEN) && !Configuration.getGame()?.isAnyMultiplayer && !isAgeTransition();
+const isSetupOpen = () => ContextManager.hasInstanceOf(SETUP_SCREEN) && isSinglePlayerSetup();
 
 function rememberedParameters() {
 	const out = new Map();

@@ -517,7 +517,7 @@
 			<Text>Advanced Settings Pro</Text>
 		</Replace>
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="fr_FR">
-			<Text>Advanced Settings Pro de Zatygold[n] [n]Ce mod enrichit la configuration de partie en solo et en multijoueur grâce à des options supplémentaires dans le menu des paramètres avancés. Il permet d'affiner des systèmes normalement non réglables.</Text>
+			<Text>Advanced Settings Pro de Zatygold[n] [n]Ce mod enrichit la configuration de partie en solo grâce à des options supplémentaires dans le menu des paramètres avancés. Il permet d'affiner des systèmes normalement non réglables. Il n'intervient pas en multijoueur ; les paramètres multijoueur proviennent de Better Balanced Multiplayer.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="fr_FR">
 			<Text>Détermine si cette merveille naturelle peut apparaître sur la carte.</Text>
@@ -969,12 +969,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_CIV_CHOICE_HISTORICAL" Language="fr_FR">
 			<Text>Historique</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIV_CHOICE_GEOGRAPHIC" Language="fr_FR">
-			<Text>Géographique</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_LOBBY_SUGGESTED_CIVS" Language="fr_FR">
-			<Text>Civilisations suggérées</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="fr_FR">
 			<Text>Chaque IA reste fidèle à l'histoire de son dirigeant. Elle change quand le nouvel âge offre une civilisation historique de son dirigeant, et garde sa civilisation quand c'est celle-ci l'historique.[n]Sinon, elle suit le chemin habituel du jeu vers le nouvel âge, une civilisation géographique d'abord. Une civilisation déjà prise est ignorée ; un doublon n'est attribué que lorsque toutes sont prises.[n]Expérimental : depuis le correctif 1.5, le jeu peut remplacer ces choix.</Text>

@@ -517,7 +517,7 @@
 			<Text>Advanced Settings Pro</Text>
 		</Replace>
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="ko_KR">
-			<Text>Zatygold의 Advanced Settings Pro[n] [n]이 모드는 고급 설정 메뉴에 추가 옵션을 더해 싱글플레이어와 멀티플레이어의 게임 설정을 확장합니다. 일반적으로 조정할 수 없는 시스템을 세밀하게 설정할 수 있습니다.</Text>
+			<Text>Zatygold의 Advanced Settings Pro[n] [n]이 모드는 고급 설정 메뉴에 추가 옵션을 더해 싱글플레이어의 게임 설정을 확장합니다. 일반적으로 조정할 수 없는 시스템을 세밀하게 설정할 수 있습니다. 멀티플레이어에는 영향을 주지 않으며, 멀티플레이어 설정은 Better Balanced Multiplayer이 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="ko_KR">
 			<Text>이 자연경관이 지도에 등장할 수 있는지 설정합니다.</Text>
@@ -969,12 +969,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_CIV_CHOICE_HISTORICAL" Language="ko_KR">
 			<Text>역사적</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIV_CHOICE_GEOGRAPHIC" Language="ko_KR">
-			<Text>지리적</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_LOBBY_SUGGESTED_CIVS" Language="ko_KR">
-			<Text>추천 문명</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="ko_KR">
 			<Text>각 AI는 지도자의 역사를 따릅니다. 새 시대에 지도자의 역사적 문명이 있으면 그 문명으로 옮기고, 현재 문명이 역사적 문명이면 그대로 유지합니다.[n]그 외에는 게임의 일반적인 시대 전환 경로를 따르며, 지리적 문명을 우선합니다. 이미 선택된 문명은 건너뛰며, 모두 선택된 경우에만 중복됩니다.[n]실험적 기능: 패치 1.5부터 게임이 이 선택을 덮어쓸 수 있습니다.</Text>

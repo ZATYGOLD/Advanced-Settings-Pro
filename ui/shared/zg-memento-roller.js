@@ -23,17 +23,6 @@ export const MEMENTO_NONE_VALUE = "NONE";
 export const MEMENTO_SLOT_BASE_IMAGE = "url('blp:memento_slot-base.png')";
 export const MEMENTO_SLOT_PLUS_IMAGE = "url('blp:shell_memento-maj-plus.png')";
 
-const functionalDescriptionName = GameSetup.findString("FunctionalDescription");
-
-// A memento slot's value as tooltip text: its name in bold, then what it does.
-export function mementoTooltip(value) {
-	if (!value || value.value == MEMENTO_NONE_VALUE) {
-		return Locale.compose("LOC_MEMENTO_NONE_NAME");
-	}
-	const name = Locale.compose(resolveName(value.name));
-	const effect = value.additionalProperties?.find((property) => property.name === functionalDescriptionName)?.value;
-	return effect ? `[B]${name}[/B][N]${Locale.compose(effect)}` : name;
-}
 // Random is not a memento the game knows: the mod keeps a per-player flag and
 // rolls a real memento into the slot, once per game session.
 const RANDOM_FLAG_PARAM_ID = "ZG_PlayerRandomMementos";

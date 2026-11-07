@@ -517,7 +517,7 @@
 			<Text>Advanced Settings Pro</Text>
 		</Replace>
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>Zatygold的Advanced Settings Pro[n] [n]本模组通过在高级设置菜单中添加更多选项，扩展单人和多人游戏的对局设置，让你能够微调通常无法调整的系统。</Text>
+			<Text>Zatygold的Advanced Settings Pro[n] [n]本模组通过在高级设置菜单中添加更多选项，扩展单人游戏的对局设置，让你能够微调通常无法调整的系统。本模组不影响多人游戏；多人游戏设置由Better Balanced Multiplayer提供。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>决定该自然奇观能否出现在地图上。</Text>
@@ -969,12 +969,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_CIV_CHOICE_HISTORICAL" Language="zh_Hans_CN">
 			<Text>历史</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIV_CHOICE_GEOGRAPHIC" Language="zh_Hans_CN">
-			<Text>地理</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_LOBBY_SUGGESTED_CIVS" Language="zh_Hans_CN">
-			<Text>推荐文明</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="zh_Hans_CN">
 			<Text>每个AI遵循其领袖的历史。新时代提供其领袖的历史文明时就转换过去，当前文明本身就是历史文明时则保持不变。[n]否则按游戏的常规路线进入新时代，优先地理文明。已被选择的文明会被跳过，只有全部被选时才会重复。[n]实验性功能：自1.5版补丁起，游戏可能会覆盖这些选择。</Text>

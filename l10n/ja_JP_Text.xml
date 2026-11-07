@@ -517,7 +517,7 @@
 			<Text>Advanced Settings Pro</Text>
 		</Replace>
 		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="ja_JP">
-			<Text>ZatygoldのAdvanced Settings Pro[n] [n]このModは、詳細設定メニューに追加オプションを加えることで、シングルプレイヤーとマルチプレイヤーのゲーム設定を拡張します。通常は調整できないシステムを細かく設定できます。</Text>
+			<Text>ZatygoldのAdvanced Settings Pro[n] [n]このModは、詳細設定メニューに追加オプションを加えることで、シングルプレイヤーのゲーム設定を拡張します。通常は調整できないシステムを細かく設定できます。マルチプレイヤーには影響せず、マルチプレイヤーの設定はBetter Balanced Multiplayerが提供します。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="ja_JP">
 			<Text>この自然遺産がマップに出現できるかどうかを設定します。</Text>
@@ -969,12 +969,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_CIV_CHOICE_HISTORICAL" Language="ja_JP">
 			<Text>歴史</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_CIV_CHOICE_GEOGRAPHIC" Language="ja_JP">
-			<Text>地理</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_LOBBY_SUGGESTED_CIVS" Language="ja_JP">
-			<Text>おすすめの文明</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="ja_JP">
 			<Text>各AIは指導者の歴史に従います。新しい時代に指導者の歴史的文明があればそれに移り、現在の文明が歴史的文明ならそのまま維持します。[n]それ以外は通常の時代移行の道筋に従い、地理的文明を優先します。既に選ばれた文明は避け、すべて選ばれている場合のみ重複します。[n]試験的機能：パッチ1.5以降、ゲームがこの選択を上書きする場合があります。</Text>

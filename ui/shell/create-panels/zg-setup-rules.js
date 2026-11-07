@@ -37,7 +37,7 @@
 // over, so the restored values are the baseline rather than a change to answer.
 
 import { resolveName } from '../../shared/zg-config.js';
-import { canEditSetup, isAgeTransition, onSetupPoll } from '../shared/zg-shell-context.js';
+import { isSinglePlayerSetup, onSetupPoll } from '../shared/zg-shell-context.js';
 import { tickSetupMemory, isRestoringSetup, rememberSetup } from './zg-setup-memory.js';
 
 const LOG_PREFIX = "ZG-ASP setup rules:";
@@ -566,9 +566,7 @@ function run(label, rule) {
 }
 
 onSetupPoll(() => {
-	// In multiplayer only the host holds the setup; a client sees the host's
-	// writes arrive and must not answer them with its own.
-	if (!canEditSetup() || isAgeTransition()) {
+	if (!isSinglePlayerSetup()) {
 		return;
 	}
 	// Remembered settings go back first, and the rules wait until they have:

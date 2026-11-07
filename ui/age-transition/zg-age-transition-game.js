@@ -6,7 +6,7 @@
 // straight into it, without the shell. This wraps that request and, on the
 // human's confirmation, settles the AI into the same parameters first
 // (zg-age-transition-settle.js). The request is the one both the game's own
-// screen and Zatygold's Spectator send. Multiplayer is not touched.
+// screen and Zatygold's Spectator send.
 
 import { playerValue } from '../shared/zg-config.js';
 import { AGE_TRANSITION_SLOTS } from '../shared/zg-memento-roller.js';
@@ -27,7 +27,7 @@ const isConfirmation = (playerId, type, args) =>
 
 const sendRequest = Game.PlayerOperations.sendRequest;
 Game.PlayerOperations.sendRequest = function (playerId, type, args, ...rest) {
-	const ageType = isConfirmation(playerId, type, args) && !Configuration.getGame()?.isAnyMultiplayer ? nextAgeType() : null;
+	const ageType = isConfirmation(playerId, type, args) ? nextAgeType() : null;
 	if (ageType && ageType != settledAge) {
 		settledAge = ageType;
 		settleAiPlayers(ageType, AGE_TRANSITION_SLOTS, playerValue(GameContext.localPlayerID, AGE_TRANSITION_SLOTS.civilization));

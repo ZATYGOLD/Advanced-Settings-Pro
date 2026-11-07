@@ -9,6 +9,7 @@
 		<Row Tag="LOC_GROUPID_ZG_NATURALWONDERSELECTIONOPTIONS"><Text>Natural Wonder Selection</Text></Row>
 		<Row Tag="LOC_GROUPID_ZG_CRISISOPTIONS"><Text>Crisis Settings</Text></Row>
 		<Row Tag="LOC_GROUPID_ZG_DISASTEROPTIONS"><Text>Disaster Settings</Text></Row>
+		<Row Tag="LOC_ZG_SINGLE_PLAYER_SETUP_NAME"><Text>Single Player Setup</Text></Row>
 
 	<!-- Advanced Settings Tabs -->
 		<Row Tag="LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS"><Text>Map</Text></Row>
@@ -482,8 +483,6 @@
 			<Text>Every AI draws fresh Mementos through the AI Mementos setting, against the leader and civilization it holds in the new age.[n]Leader Match and Civilization Match reach every AI here, since both are known once the game is running.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_CIV_CHOICE_HISTORICAL"><Text>Historical</Text></Row>
-		<Row Tag="LOC_ZG_CIV_CHOICE_GEOGRAPHIC"><Text>Geographic</Text></Row>
-		<Row Tag="LOC_ZG_LOBBY_SUGGESTED_CIVS"><Text>Suggested Civilizations</Text></Row>
 		<Row Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL">
 			<Text>Every AI keeps to its leader's history. It moves on when the new age offers a Historical civilization for its leader, and keeps its civilization when that is the Historical one.[n]Otherwise it follows the game's usual path to the new age, a Geographic civilization first. A civilization already taken is passed over; a duplicate is seated only when every one is taken.[n]Experimental: since patch 1.5 the game may override these choices.</Text>
 		</Row>

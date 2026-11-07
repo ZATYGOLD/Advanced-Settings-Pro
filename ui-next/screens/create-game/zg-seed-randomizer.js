@@ -10,7 +10,7 @@ import { insert } from 'fs://game/core/vendor/solid-js/web/dist/web.js';
 import { Button } from 'fs://game/core/ui-next/components/button.js';
 import { L10n } from 'fs://game/core/ui-next/components/l10n.js';
 import 'fs://game/core/ui-next/components/text-input.js';
-import { gameValue } from '../../../ui/shared/zg-config.js';
+import { gameValue, isMultiplayer } from '../../../ui/shared/zg-config.js';
 import { SEED_BUTTON_TEXT, SEED_PARAM_IDS, randomSeed } from '../../../ui/shell/shared/zg-setup-tabs.js';
 import { zgWrapComponent } from './zg-component-override.js';
 
@@ -24,7 +24,7 @@ function seedValues() {
 }
 
 function isSeedField(props) {
-	return props != null && typeof props.value == "function" && typeof props.setValue == "function"
+	return !isMultiplayer() && props != null && typeof props.value == "function" && typeof props.setValue == "function"
 		&& props.enableVirtualKeyboard === true && seedValues().includes(String(props.value()));
 }
 

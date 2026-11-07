@@ -21,9 +21,38 @@
 			<AlwaysMet/>
 		</Criteria>
 
+<!--****************** CRITERIA: SINGLE PLAYER, RETIRED SPEEDS *******************-->
+
+		<!-- ZGSinglePlayerSetup exists only in single player (config/setup-parameters.sql). -->
+		<Criteria id="single-player">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>ZGSinglePlayerSetup</ConfigurationId>
+				<Value>1</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<!-- A game already running on a retired speed, in any mode. -->
+		<Criteria id="retired-game-speeds" any="true">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SpeedTypeName</ConfigurationId>
+				<Value>GAMESPEED_ZG_ONLINE_2</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SpeedTypeName</ConfigurationId>
+				<Value>GAMESPEED_ZG_MARATHON_2</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+
 <!--*************************** CRITERIA: AGE LENGTH ****************************-->
 
 		<Criteria id="age-length-standard">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>ZGSinglePlayerSetup</ConfigurationId>
+				<Value>1</Value>
+			</ConfigurationValueMatches>
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
 				<ConfigurationId>AgeLength</ConfigurationId>
@@ -33,11 +62,21 @@
 		<Criteria id="age-length-abbreviated">
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
+				<ConfigurationId>ZGSinglePlayerSetup</ConfigurationId>
+				<Value>1</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
 				<ConfigurationId>AgeLength</ConfigurationId>
 				<Value>AGE_LENGTH_ABBREVIATED</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="age-length-long">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>ZGSinglePlayerSetup</ConfigurationId>
+				<Value>1</Value>
+			</ConfigurationValueMatches>
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
 				<ConfigurationId>AgeLength</ConfigurationId>
@@ -5207,11 +5246,7 @@
 					<Item>ui-next/screens/create-game/zg-component-override.js</Item>
 					<Item>ui-next/screens/create-game/zg-map-tab.js</Item>
 					<Item>ui-next/screens/create-game/zg-seed-randomizer.js</Item>
-					<Item>ui/shell/mp-create-game/zg-mp-create-game.js</Item>
 					<Item>ui-next/screens/create-game/zg-memento-select.js</Item>
-					<Item>ui/shell/mp-staging/zg-mp-lobby-mementos.js</Item>
-					<Item>ui/shell/mp-staging/zg-mp-lobby-tooltips.js</Item>
-					<Item>ui/shell/mp-staging/zg-mp-lobby-rules.js</Item>
 					<Item>ui-next/screens/create-game/zg-memento-select-model.js</Item>
 					<Item>ui-next/screens/create-game/zg-player-tab.js</Item>
 					<Item>ui/age-transition/zg-age-transition-civs.js</Item>
@@ -5266,7 +5301,7 @@
 				</ImportFiles>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-options-settings-game" scope="game" criteria="always">
+		<ActionGroup id="zg-options-settings-game" scope="game" criteria="single-player">
 			<Properties>
 				<LoadOrder>500</LoadOrder>
 			</Properties>
@@ -5322,8 +5357,17 @@
 					<Item>ui/age-transition/zg-age-transition-settle.js</Item>
 				</ImportFiles>
 				<UpdateDatabase>
-					<Item>data/game-speeds/new-game-speeds.sql</Item>
 					<Item>data/natural-wonders/natural-wonder-spawn-fixes.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="zg-retired-game-speeds" scope="game" criteria="retired-game-speeds">
+			<Properties>
+				<LoadOrder>500</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/game-speeds/new-game-speeds.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

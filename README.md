@@ -1,11 +1,15 @@
 # Zatygold's Advanced Settings
 
-A Sid Meier's Civilization VII mod that expands game setup for single player and multiplayer. It adds extra options to the Advanced Settings menu, letting you fine-tune systems that normally are not adjustable.
+A Sid Meier's Civilization VII mod that expands single-player game setup. It adds extra options to the Advanced Settings menu, letting you fine-tune systems that normally are not adjustable.
+
+The mod applies to single player only. Multiplayer and hotseat games are left to the base game: multiplayer settings come from Better Balanced Multiplayer.
 
 ## Version History
 
 ### 0.9.05
 
+- Single player only: every setting, map script, and setup screen change now applies to single player alone, and multiplayer and hotseat see the base game unchanged. Multiplayer settings come from Better Balanced Multiplayer
+- Removed the multiplayer Create Game layout and the multiplayer lobby's memento slots, tooltips, and rules lists, which Better Balanced Multiplayer provides
 - Map Temperature gains Frigid and Scorching, plus Random, and now reads Frigid, Cold, Standard, Hot, Scorching. Every step also moves sea ice, reefs, open-water features, and snow, and sets how strongly highlands, rainfall, and rivers change the local climate; Standard matches the base game
 - New Heat Source (Map Settings, below Map Temperature): Standard, Dual Sun, Tilted Axis, Hot Center, Cold Center, Warm Ring, Patchwork, or Random
 - Tilted Axis heats the north or south edge, chosen by the map seed
@@ -209,7 +213,7 @@ A Sid Meier's Civilization VII mod that expands game setup for single player and
 
 ## Settings
 
-All settings are chosen at game creation and apply for the full game. Single player and multiplayer share the General, Pace, and Map tabs; the Player tab is single player.
+All settings are chosen at game creation in single player and apply for the full game.
 
 ### General tab
 
@@ -241,13 +245,11 @@ Each Pace setting has Antiquity, Exploration, and Modern rows, used when it is C
 - Natural Wonder Selection: each of the 22 natural wonders, DLC included
 - Disaster Settings: Disaster Frequency (Disabled, Light, Moderate, Catastrophic, or Custom per age)
 
-### Player tab (single player)
+### Player tab
 
 Leader, Team, Civilization, and two Memento slots on every row; a slot opens the game's memento picker for that player. With Zatygold's Spectator, the Spectator's team shows locked and its memento slots are hidden.
 
-### Multiplayer lobby
-
-Memento slots on every row, fuller leader, civilization, and memento tooltips, and this mod's settings in View All Rules and Game Options.
+### Conflict guard
 
 The conflict guard recognizes conflicting mods by their id and by the setup settings they add, so renaming a mod does not bypass it.
 
@@ -255,7 +257,7 @@ The conflict guard recognizes conflicting mods by their id and by the setup sett
 
 ```
 advanced-settings-pro.modinfo   Mod manifest: setup criteria and action groups
-config/                         Setup parameters and map script redirects (shell scope)
+config/                         Setup parameters and single-player map script copies (shell scope)
 data/                           Gameplay adjustments (game scope), grouped by system
 l10n/                           Text for the 11 non-English languages
 maps/                           Map script copies and the zg-map-* generation modules
@@ -263,8 +265,7 @@ text/en_us/                     English text
 ui/age-transition/              Age transition: AI civilizations and mementos, in game and shell
 ui/shared/                      Helpers both the shell and the game load: config reads,
                                 memento draws, leader civilization associations
-ui/shell/                       Shell scripts: setup context and tabs, setup rules and memory,
-                                multiplayer create game and lobby
+ui/shell/                       Shell scripts: setup context and tabs, setup rules and memory
 ui-next/screens/create-game/    Advanced Settings tabs, Player tab, memento picker
 ```
 
