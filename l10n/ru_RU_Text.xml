@@ -13,6 +13,9 @@
 		<Replace Tag="LOC_GROUPID_ZG_SETTLEMENTOPTIONS" Language="ru_RU">
 			<Text>Настройки поселений</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_SINGLE_PLAYER_SETUP_NAME" Language="ru_RU">
+			<Text>Настройка одиночной игры</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="ru_RU">
 			<Text>Включено</Text>
 		</Replace>
@@ -172,15 +175,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_NAME" Language="ru_RU">
 			<Text>Озёра</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME" Language="ru_RU">
-			<Text>Античность</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME" Language="ru_RU">
-			<Text>Исследования</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME" Language="ru_RU">
-			<Text>Современность</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="ru_RU">
 			<Text>Определяет, как далеко поселенцы идут по суше и по морю. Быстрые поселенцы занимают дальние места раньше соперника.</Text>
@@ -512,12 +506,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_MORE" Language="ru_RU">
 			<Text>Создаёт больше озёр.</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="ru_RU">
-			<Text>Advanced Settings Pro</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="ru_RU">
-			<Text>Advanced Settings Pro от Zatygold[n] [n]Этот мод расширяет настройку игры для одиночного и сетевого режимов, добавляя дополнительные параметры в меню расширенных настроек. Он позволяет тонко настраивать системы, которые обычно недоступны для изменения.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="ru_RU">
 			<Text>Определяет, может ли это чудо природы появиться на карте.</Text>
@@ -866,21 +854,21 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="ru_RU">
 			<Text>Города растут быстрее в начале, затем возвращаются к стандарту.[nn][BLIST]
-				[LI] Античность: -25%
-				[LI] Исследования: -25%
+				[LI] Античность: Резво
+				[LI] Исследования: Резво
 				[LI] Современность: Стандарт[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_EXTENDED" Language="ru_RU">
 			<Text>Города растут медленнее во все эпохи.[nn][BLIST]
-				[LI] Античность: +25%
-				[LI] Исследования: +25%
-				[LI] Современность: +25%[/BLIST]</Text>
+				[LI] Античность: Медленно
+				[LI] Исследования: Медленно
+				[LI] Современность: Медленно[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SWIFT" Language="ru_RU">
 			<Text>Города растут быстрее во все эпохи.[nn][BLIST]
-				[LI] Античность: -25%
-				[LI] Исследования: -25%
-				[LI] Современность: -25%[/BLIST]</Text>
+				[LI] Античность: Резво
+				[LI] Исследования: Резво
+				[LI] Современность: Резво[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="ru_RU">
 			<Text>На 50% меньше еды на жителя.</Text>
@@ -895,19 +883,19 @@
 			<Text>Стандартные дороги до Современности, затем дешевле.[nn][BLIST]
 				[LI] Античность: Стандарт
 				[LI] Исследования: Стандарт
-				[LI] Современность: -25%[/BLIST]</Text>
+				[LI] Современность: Резво[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXTENDED" Language="ru_RU">
 			<Text>Стандартные дороги до Современности, затем дешевле.[nn][BLIST]
 				[LI] Античность: Стандарт
 				[LI] Исследования: Стандарт
-				[LI] Современность: -25%[/BLIST]</Text>
+				[LI] Современность: Резво[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SWIFT" Language="ru_RU">
 			<Text>Дороги дешевеют в передвижении по мере раскрытия карты.[nn][BLIST]
-				[LI] Античность: -25%
-				[LI] Исследования: -50%
-				[LI] Современность: -50%[/BLIST]</Text>
+				[LI] Античность: Резво
+				[LI] Исследования: Быстро
+				[LI] Современность: Быстро[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SLOW" Language="ru_RU">
 			<Text>На 25% больше передвижения за клетку.</Text>
@@ -970,12 +958,6 @@
 		<Replace Tag="LOC_ZG_CIV_CHOICE_HISTORICAL" Language="ru_RU">
 			<Text>Историческая</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIV_CHOICE_GEOGRAPHIC" Language="ru_RU">
-			<Text>Географическая</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_LOBBY_SUGGESTED_CIVS" Language="ru_RU">
-			<Text>Рекомендуемые цивилизации</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="ru_RU">
 			<Text>Каждый ИИ следует истории своего лидера. Он переходит, когда новая эпоха предлагает историческую цивилизацию его лидера, и сохраняет свою цивилизацию, если она и есть историческая.[n]Иначе он идёт обычным путём игры в новую эпоху: сначала географическая цивилизация. Уже занятая цивилизация пропускается; дубликат возможен, только когда заняты все.[n]Экспериментально: начиная с патча 1.5 игра может переопределять этот выбор.</Text>
 		</Replace>
@@ -995,7 +977,7 @@
 			<Text>Температура карты</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="ru_RU">
-			<Text>Сдвигает климатические пояса, определяющие биом каждой клетки суши.</Text>
+			<Text>Определяет, насколько тёплый мир: какие биомы покрывают сушу, как далеко простираются морской лёд, рифы и снег и насколько сильно возвышенности, осадки и реки меняют местный климат.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COLD_NAME" Language="ru_RU">
 			<Text>Холодная</Text>
@@ -1004,13 +986,76 @@
 			<Text>Жаркая</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="ru_RU">
-			<Text>Тундра начинается ближе к экватору, а пустыня уступает место лугам.</Text>
+			<Text>Тундра начинается ближе к экватору, а пустыня уступает место лугам. Морской лёд и снег простираются дальше от полюсов, а возвышенности раньше становятся тундрой.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="ru_RU">
 			<Text>Стандартный климат для выбранного типа карты.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="ru_RU">
-			<Text>Пустыня простирается дальше от экватора, а тундра отступает к полюсам.</Text>
+			<Text>Пустыня простирается дальше от экватора, а тундра отступает к полюсам. Морского льда и снега становится меньше, а дождливые земли и речные долины зеленеют.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FRIGID_NAME" Language="ru_RU">
+			<Text>Ледяная</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SCORCHING_NAME" Language="ru_RU">
+			<Text>Палящая</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_FRIGID" Language="ru_RU">
+			<Text>Мир ледникового периода: около 70% суши — тундра, морской лёд и снег доходят до средних широт, а большая часть тёплых земель лежит в речных долинах.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_SCORCHING" Language="ru_RU">
+			<Text>Мир парникового эффекта: пустыня и джунгли покрывают большую часть суши, морской лёд и снег исчезают, а реки становятся плодородными полосами среди пустыни.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="ru_RU">
+			<Text>Одна из пяти температур, выбранная по зерну карты.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_NAME" Language="ru_RU">
+			<Text>Зоны карты</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION" Language="ru_RU">
+			<Text>Где лежат жаркие и холодные области карты.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_STANDARD" Language="ru_RU">
+			<Text>Жаркая полоса проходит через середину карты и остывает к верху и низу, как в базовой игре.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_EDGE_NAME" Language="ru_RU">
+			<Text>Жаркий край</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_EDGE" Language="ru_RU">
+			<Text>Жарко у верхнего или нижнего края карты (его выбирает зерно карты), с постепенным похолоданием к скованному льдом противоположному краю.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_POLES_NAME" Language="ru_RU">
+			<Text>Жаркие полюса</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_POLES" Language="ru_RU">
+			<Text>Жарко вверху и внизу карты, с холодной полосой посередине.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_CENTER_NAME" Language="ru_RU">
+			<Text>Жаркий центр</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_CENTER" Language="ru_RU">
+			<Text>Жарче всего в середине карты, холоднее к краям во всех направлениях, поэтому края и углы самые холодные.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_COLD_CENTER_NAME" Language="ru_RU">
+			<Text>Холодный центр</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_COLD_CENTER" Language="ru_RU">
+			<Text>Холоднее всего в середине карты, теплее к краям во всех направлениях, поэтому края и углы самые жаркие.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_WARM_RING_NAME" Language="ru_RU">
+			<Text>Тёплое кольцо</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_WARM_RING" Language="ru_RU">
+			<Text>Полоса тепла опоясывает середину карты, а внутри неё и вдоль краёв холодно.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_PATCHWORK_NAME" Language="ru_RU">
+			<Text>Лоскутное одеяло</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_PATCHWORK" Language="ru_RU">
+			<Text>Жаркие и холодные области лежат неровными пятнами, а не поясами.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_RANDOM" Language="ru_RU">
+			<Text>Одна из семи раскладок, выбранная по зерну карты.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="ru_RU">
 			<Text>Реки</Text>
@@ -1110,9 +1155,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="ru_RU">
 			<Text>Чрезвычайно быстрый темп. На 150% быстрее стандартного.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="ru_RU">
-			<Text>Каждая эпоха использует строку «Длительность эпохи» в своей группе ниже. Сбалансированный ставит 150, 170 и 200 очков; Многопользовательский — 140, 160 и 180.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="ru_RU">
 			<Text>Длинные эпохи, каждая длиннее предыдущей.[nn][BLIST]
@@ -1408,8 +1450,8 @@
 				[LI] Стоимость общественных институтов: +25% / +50% / +50%
 				[LI] Стоимость зданий: +25% / +50% / +50%
 				[LI] Стоимость победных проектов: +25%
-				[LI] Рост поселений: +25%
-				[LI] Скорость дорог: Стандарт / Стандарт / -25%
+				[LI] Рост поселений: Медленно
+				[LI] Скорость дорог: Стандарт / Стандарт / Резво
 				[LI] Скорость торговли: -25%
 				[LI] Скорость уничтожения: Стандарт[/BLIST]</Text>
 		</Replace>
@@ -1421,8 +1463,8 @@
 				[LI] Стоимость общественных институтов: -25% / -25% / Стандарт
 				[LI] Стоимость зданий: -25%
 				[LI] Стоимость победных проектов: -25%
-				[LI] Рост поселений: -25%
-				[LI] Скорость дорог: -25% / -50% / -50%
+				[LI] Рост поселений: Резво
+				[LI] Скорость дорог: Резво / Быстро / Быстро
 				[LI] Скорость торговли: Мгновенно
 				[LI] Скорость уничтожения: Мгновенно[/BLIST]</Text>
 		</Replace>
@@ -1434,8 +1476,8 @@
 				[LI] Стоимость общественных институтов: Стандарт / +25% / +25%
 				[LI] Стоимость зданий: +25% / Стандарт / Стандарт
 				[LI] Стоимость победных проектов: Стандарт / -25% / -25%
-				[LI] Рост поселений: -25% / -25% / Стандарт
-				[LI] Скорость дорог: Стандарт / Стандарт / -25%
+				[LI] Рост поселений: Резво / Резво / Стандарт
+				[LI] Скорость дорог: Стандарт / Стандарт / Резво
 				[LI] Скорость торговли: Стандарт
 				[LI] Скорость уничтожения: Стандарт[/BLIST]</Text>
 		</Replace>
@@ -1447,8 +1489,8 @@
 				[LI] Стоимость общественных институтов: +50% / +50% / +100%
 				[LI] Стоимость зданий: Стандарт
 				[LI] Стоимость победных проектов: Стандарт / Стандарт / +25%
-				[LI] Рост поселений: +25%
-				[LI] Скорость дорог: -25% / -25% / -50%
+				[LI] Рост поселений: Медленно
+				[LI] Скорость дорог: Резво / Резво / Быстро
 				[LI] Скорость торговли: Стандарт
 				[LI] Скорость уничтожения: Стандарт[/BLIST]</Text>
 		</Replace>

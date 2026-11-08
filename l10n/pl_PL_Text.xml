@@ -13,6 +13,9 @@
 		<Replace Tag="LOC_GROUPID_ZG_SETTLEMENTOPTIONS" Language="pl_PL">
 			<Text>Ustawienia osad</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_SINGLE_PLAYER_SETUP_NAME" Language="pl_PL">
+			<Text>Konfiguracja gry jednoosobowej</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="pl_PL">
 			<Text>Włączone</Text>
 		</Replace>
@@ -172,15 +175,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_NAME" Language="pl_PL">
 			<Text>Jeziora</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME" Language="pl_PL">
-			<Text>Epoka antyku</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME" Language="pl_PL">
-			<Text>Epoka odkryć</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME" Language="pl_PL">
-			<Text>Epoka nowożytna</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="pl_PL">
 			<Text>Określa, jak daleko osadnicy poruszają się lądem i morzem. Szybsi osadnicy docierają do odległych miejsc przed rywalem.</Text>
@@ -512,12 +506,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_MORE" Language="pl_PL">
 			<Text>Generuje więcej jezior.</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="pl_PL">
-			<Text>Advanced Settings Pro</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="pl_PL">
-			<Text>Advanced Settings Pro autorstwa Zatygolda[n] [n]Ten mod rozszerza konfigurację rozgrywki dla jednego gracza i trybu wieloosobowego o dodatkowe opcje w menu ustawień zaawansowanych. Pozwala precyzyjnie dostroić systemy, których normalnie nie można zmieniać.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="pl_PL">
 			<Text>Określa, czy ten cud natury może pojawić się na mapie.</Text>
@@ -866,21 +854,21 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="pl_PL">
 			<Text>Miasta rosną szybciej na początku, potem wracają do standardu.[nn][BLIST]
-				[LI] Starożytność: -25%
-				[LI] Epoka odkryć: -25%
+				[LI] Starożytność: Sprawnie
+				[LI] Epoka odkryć: Sprawnie
 				[LI] Epoka nowożytna: Standardowe[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_EXTENDED" Language="pl_PL">
 			<Text>Miasta rosną wolniej w każdej epoce.[nn][BLIST]
-				[LI] Starożytność: +25%
-				[LI] Epoka odkryć: +25%
-				[LI] Epoka nowożytna: +25%[/BLIST]</Text>
+				[LI] Starożytność: Wolno
+				[LI] Epoka odkryć: Wolno
+				[LI] Epoka nowożytna: Wolno[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SWIFT" Language="pl_PL">
 			<Text>Miasta rosną szybciej w każdej epoce.[nn][BLIST]
-				[LI] Starożytność: -25%
-				[LI] Epoka odkryć: -25%
-				[LI] Epoka nowożytna: -25%[/BLIST]</Text>
+				[LI] Starożytność: Sprawnie
+				[LI] Epoka odkryć: Sprawnie
+				[LI] Epoka nowożytna: Sprawnie[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="pl_PL">
 			<Text>50% mniej żywności na obywatela.</Text>
@@ -895,19 +883,19 @@
 			<Text>Standardowe drogi do epoki nowożytnej, potem tańsze.[nn][BLIST]
 				[LI] Starożytność: Standardowe
 				[LI] Epoka odkryć: Standardowe
-				[LI] Epoka nowożytna: -25%[/BLIST]</Text>
+				[LI] Epoka nowożytna: Sprawnie[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXTENDED" Language="pl_PL">
 			<Text>Standardowe drogi do epoki nowożytnej, potem tańsze.[nn][BLIST]
 				[LI] Starożytność: Standardowe
 				[LI] Epoka odkryć: Standardowe
-				[LI] Epoka nowożytna: -25%[/BLIST]</Text>
+				[LI] Epoka nowożytna: Sprawnie[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SWIFT" Language="pl_PL">
 			<Text>Drogi stają się tańsze w przemierzaniu, gdy mapa się otwiera.[nn][BLIST]
-				[LI] Starożytność: -25%
-				[LI] Epoka odkryć: -50%
-				[LI] Epoka nowożytna: -50%[/BLIST]</Text>
+				[LI] Starożytność: Sprawnie
+				[LI] Epoka odkryć: Szybko
+				[LI] Epoka nowożytna: Szybko[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SLOW" Language="pl_PL">
 			<Text>25% więcej ruchu na pole.</Text>
@@ -970,12 +958,6 @@
 		<Replace Tag="LOC_ZG_CIV_CHOICE_HISTORICAL" Language="pl_PL">
 			<Text>Historyczna</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIV_CHOICE_GEOGRAPHIC" Language="pl_PL">
-			<Text>Geograficzna</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_LOBBY_SUGGESTED_CIVS" Language="pl_PL">
-			<Text>Sugerowane cywilizacje</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="pl_PL">
 			<Text>Każda SI trzyma się historii swojego przywódcy. Zmienia cywilizację, gdy nowa epoka oferuje historyczną cywilizację jej przywódcy, i zachowuje swoją, gdy to ona jest historyczna.[n]W przeciwnym razie podąża zwykłą ścieżką gry do nowej epoki, najpierw cywilizacja geograficzna. Cywilizacja już zajęta jest pomijana; duplikat pojawia się tylko, gdy wszystkie są zajęte.[n]Eksperymentalne: od łatki 1.5 gra może nadpisać te wybory.</Text>
 		</Replace>
@@ -995,7 +977,7 @@
 			<Text>Temperatura mapy</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="pl_PL">
-			<Text>Przesuwa strefy klimatyczne decydujące o biomie każdego pola lądowego.</Text>
+			<Text>Określa, jak ciepły jest świat: jakie biomy pokrywają ląd, jak daleko sięgają lód morski, rafy i śnieg oraz jak silnie wyżyny, opady i rzeki zmieniają lokalny klimat.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COLD_NAME" Language="pl_PL">
 			<Text>Zimna</Text>
@@ -1004,13 +986,76 @@
 			<Text>Gorąca</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="pl_PL">
-			<Text>Tundra zaczyna się bliżej równika, a pustynia ustępuje łąkom.</Text>
+			<Text>Tundra zaczyna się bliżej równika, a pustynia ustępuje łąkom. Lód morski i śnieg sięgają dalej od biegunów, a wyżyny szybciej stają się tundrą.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="pl_PL">
 			<Text>Standardowy klimat dla wybranego typu mapy.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="pl_PL">
-			<Text>Pustynia sięga dalej od równika, a tundra cofa się ku biegunom.</Text>
+			<Text>Pustynia sięga dalej od równika, a tundra cofa się ku biegunom. Lód morski i śnieg kurczą się, a deszczowe ziemie i doliny rzek zielenieją.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FRIGID_NAME" Language="pl_PL">
+			<Text>Lodowata</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SCORCHING_NAME" Language="pl_PL">
+			<Text>Upalna</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_FRIGID" Language="pl_PL">
+			<Text>Świat epoki lodowcowej: około 70% lądu to tundra, lód morski i śnieg sięgają średnich szerokości, a większość ciepłych ziem leży w dolinach rzek.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_SCORCHING" Language="pl_PL">
+			<Text>Świat cieplarniany: pustynia i dżungla pokrywają większość lądu, lód morski i śnieg znikają, a rzeki stają się żyznymi pasami przez pustynię.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="pl_PL">
+			<Text>Jedna z pięciu temperatur, wylosowana z ziarna mapy.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_NAME" Language="pl_PL">
+			<Text>Strefy mapy</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION" Language="pl_PL">
+			<Text>Gdzie leżą gorące i zimne regiony mapy.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_STANDARD" Language="pl_PL">
+			<Text>Gorący pas biegnie przez środek mapy i ochładza się ku górze i dołowi, jak w grze podstawowej.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_EDGE_NAME" Language="pl_PL">
+			<Text>Gorąca krawędź</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_EDGE" Language="pl_PL">
+			<Text>Gorąco wzdłuż górnej lub dolnej krawędzi mapy, wybranej przez ziarno mapy, z równomiernym ochłodzeniem ku zamarzniętej przeciwnej krawędzi.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_POLES_NAME" Language="pl_PL">
+			<Text>Gorące bieguny</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_POLES" Language="pl_PL">
+			<Text>Gorąco na górze i na dole mapy, z zimnym pasem przez środek.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_CENTER_NAME" Language="pl_PL">
+			<Text>Gorące centrum</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_CENTER" Language="pl_PL">
+			<Text>Najgoręcej w środku mapy, chłodniej na zewnątrz we wszystkich kierunkach, więc krawędzie i narożniki są najzimniejsze.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_COLD_CENTER_NAME" Language="pl_PL">
+			<Text>Zimne centrum</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_COLD_CENTER" Language="pl_PL">
+			<Text>Najzimniej w środku mapy, cieplej na zewnątrz we wszystkich kierunkach, więc krawędzie i narożniki są najgorętsze.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_WARM_RING_NAME" Language="pl_PL">
+			<Text>Ciepły pierścień</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_WARM_RING" Language="pl_PL">
+			<Text>Pas ciepła otacza środek mapy, a jego wnętrze i okolice krawędzi są zimne.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_PATCHWORK_NAME" Language="pl_PL">
+			<Text>Patchwork</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_PATCHWORK" Language="pl_PL">
+			<Text>Gorące i zimne regiony leżą w nieregularnych plamach zamiast pasów.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_RANDOM" Language="pl_PL">
+			<Text>Jeden z siedmiu układów, wylosowany z ziarna mapy.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="pl_PL">
 			<Text>Rzeki</Text>
@@ -1110,9 +1155,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="pl_PL">
 			<Text>Ekstremalnie szybkie tempo. 150% szybciej niż standardowe.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="pl_PL">
-			<Text>Własne: każda epoka używa wiersza Długość epoki w swojej grupie poniżej. Zrównoważone ustawia 150, 170 i 200 punktów; Tryb wieloosobowy ustawia 140, 160 i 180.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="pl_PL">
 			<Text>Dłuższe epoki, każda dłuższa od poprzedniej.[nn][BLIST]
@@ -1408,8 +1450,8 @@
 				[LI] Koszt idei: +25% / +50% / +50%
 				[LI] Koszt budynków: +25% / +50% / +50%
 				[LI] Koszt projektów zwycięstwa: +25%
-				[LI] Wzrost osad: +25%
-				[LI] Szybkość dróg: Standardowe / Standardowe / -25%
+				[LI] Wzrost osad: Wolno
+				[LI] Szybkość dróg: Standardowe / Standardowe / Sprawnie
 				[LI] Szybkość handlu: -25%
 				[LI] Szybkość burzenia: Standardowe[/BLIST]</Text>
 		</Replace>
@@ -1421,8 +1463,8 @@
 				[LI] Koszt idei: -25% / -25% / Standardowe
 				[LI] Koszt budynków: -25%
 				[LI] Koszt projektów zwycięstwa: -25%
-				[LI] Wzrost osad: -25%
-				[LI] Szybkość dróg: -25% / -50% / -50%
+				[LI] Wzrost osad: Sprawnie
+				[LI] Szybkość dróg: Sprawnie / Szybko / Szybko
 				[LI] Szybkość handlu: Natychmiastowy
 				[LI] Szybkość burzenia: Natychmiastowy[/BLIST]</Text>
 		</Replace>
@@ -1434,8 +1476,8 @@
 				[LI] Koszt idei: Standardowe / +25% / +25%
 				[LI] Koszt budynków: +25% / Standardowe / Standardowe
 				[LI] Koszt projektów zwycięstwa: Standardowe / -25% / -25%
-				[LI] Wzrost osad: -25% / -25% / Standardowe
-				[LI] Szybkość dróg: Standardowe / Standardowe / -25%
+				[LI] Wzrost osad: Sprawnie / Sprawnie / Standardowe
+				[LI] Szybkość dróg: Standardowe / Standardowe / Sprawnie
 				[LI] Szybkość handlu: Standardowe
 				[LI] Szybkość burzenia: Standardowe[/BLIST]</Text>
 		</Replace>
@@ -1447,8 +1489,8 @@
 				[LI] Koszt idei: +50% / +50% / +100%
 				[LI] Koszt budynków: Standardowe
 				[LI] Koszt projektów zwycięstwa: Standardowe / Standardowe / +25%
-				[LI] Wzrost osad: +25%
-				[LI] Szybkość dróg: -25% / -25% / -50%
+				[LI] Wzrost osad: Wolno
+				[LI] Szybkość dróg: Sprawnie / Sprawnie / Szybko
 				[LI] Szybkość handlu: Standardowe
 				[LI] Szybkość burzenia: Standardowe[/BLIST]</Text>
 		</Replace>

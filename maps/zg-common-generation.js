@@ -1,0 +1,95 @@
+// Copy of {base-standard}scripts/common-generation.js generateMapFeatures, the
+// terrain pass every Voronoi map shares, with the mod's rough, mountain, river,
+// biome, feature, snow and resource passes substituted in; the phase order
+// matches the base.
+import { buildRainfallMap } from 'fs://game/base-standard/maps/elevation-terrain-generator.js';
+import { zgAddFeatures } from './zg-map-features.js';
+import { dumpContinents, dumpTerrain, dumpElevation, dumpRainfall, dumpBiomes, dumpFeatures, dumpResources } from 'fs://game/base-standard/maps/map-debug-helpers.js';
+import { addNaturalWonders } from 'fs://game/base-standard/maps/natural-wonder-generator.js';
+import { zgGenerateResources } from './zg-map-resources.js';
+import { dumpPermanentSnow } from 'fs://game/base-standard/maps/snow-generator.js';
+import { zgGenerateSnow } from './zg-map-snow.js';
+import { GenerationContext, GenerationPhases } from 'fs://game/base-standard/scripts/common-generation.js';
+import { profileScope, profileFunction } from 'fs://game/base-standard/scripts/profiling.js';
+import { zgModelRivers } from './zg-map-rivers.js';
+import { zgDesignateBiomes } from './zg-map-biomes.js';
+import { zgAdjustMountains } from './zg-map-mountains.js';
+import { zgAddRough } from './zg-map-rough.js';
+
+export async function zgGenerateMapFeatures(hexMap, context = new GenerationContext()) {
+	const generateMapFeaturesScope = new profileScope("Generate Features");
+	const iWidth = GameplayMap.getGridWidth();
+	const iHeight = GameplayMap.getGridHeight();
+	const uiMapSize = GameplayMap.getMapSize();
+	const mapInfo = GameInfo.Maps.lookup(uiMapSize);
+	if (mapInfo == null) return;
+	const iNumNaturalWonders = mapInfo.NumNaturalWonders;
+	if (context.phases & GenerationPhases.Lakes) {
+		profileFunction("generateLakes", () => hexMap.GenerateLakes());
+	}
+	if (context.phases & GenerationPhases.WriteToTerrainBuilder) {
+		hexMap.writeToTerrainBuilder();
+	}
+	profileFunction("TerrainBuilder.validateAndFixTerrain", () => TerrainBuilder.validateAndFixTerrain());
+	profileFunction("AreaBuilder.recalculateAreas", () => AreaBuilder.recalculateAreas());
+	if (context.phases & GenerationPhases.Continents) {
+		profileFunction("TerrainBuilder.stampContinents", () => TerrainBuilder.stampContinents());
+	}
+	profileFunction("AreaBuilder.recalculateAreas", () => AreaBuilder.recalculateAreas());
+	if (context.phases & GenerationPhases.Elevation) {
+		profileFunction("TerrainBuilder.buildElevation", () => TerrainBuilder.buildElevation());
+	}
+	if (context.phases & GenerationPhases.Hills) {
+		// --- ZG: Map Age replaces addHills. Mountains must follow it, because More
+		// grows ranges into rough tiles that do not exist before this pass. ---
+		profileFunction("zgAddRough", () => zgAddRough(iWidth, iHeight));
+		profileFunction("zgAdjustMountains", () => zgAdjustMountains(iWidth, iHeight));
+		// --- end ZG ---
+	}
+	if (context.phases & GenerationPhases.Rainfall) {
+		profileFunction("buildRainfallMap", () => buildRainfallMap(iWidth, iHeight));
+	}
+	if (context.phases & GenerationPhases.Rivers) {
+		profileFunction("zgModelRivers", () => zgModelRivers(5, 15));
+	} else {
+		profileFunction(
+			"TerrainBuilder.finalizeRivers",
+			() => TerrainBuilder.finalizeRivers(
+				context.bRunAestheticRiverValidation,
+				context.largeRiverPercent,
+				context.minNavRiverLength,
+				context.minUpstreamMinorRivers
+			)
+		);
+	}
+	if (context.phases & GenerationPhases.Biomes) {
+		profileFunction("zgDesignateBiomes", () => zgDesignateBiomes(iWidth, iHeight));
+	}
+	if (context.phases & GenerationPhases.NaturalWonders) {
+		profileFunction("addNaturalWonders", () => addNaturalWonders(iWidth, iHeight, iNumNaturalWonders));
+	}
+	if (context.phases & GenerationPhases.FloodPlains) {
+		profileFunction("TerrainBuilder.addFloodplains", () => TerrainBuilder.addFloodplains(4, 10));
+	}
+	if (context.phases & GenerationPhases.Features) {
+		profileFunction("zgAddFeatures", () => zgAddFeatures(iWidth, iHeight));
+	}
+	profileFunction("TerrainBuilder.validateAndFixTerrain", () => TerrainBuilder.validateAndFixTerrain());
+	profileFunction("AreaBuilder.recalculateAreas", () => AreaBuilder.recalculateAreas());
+	profileFunction("TerrainBuilder.storeWaterData", () => TerrainBuilder.storeWaterData());
+	if (context.phases & GenerationPhases.Snow) {
+		profileFunction("zgGenerateSnow", () => zgGenerateSnow(iWidth, iHeight));
+	}
+	if (context.phases & GenerationPhases.Resources) {
+		profileFunction("zgGenerateResources", () => zgGenerateResources(iWidth, iHeight));
+	}
+	dumpContinents(iWidth, iHeight);
+	dumpTerrain(iWidth, iHeight);
+	dumpElevation(iWidth, iHeight);
+	dumpRainfall(iWidth, iHeight);
+	dumpBiomes(iWidth, iHeight);
+	dumpFeatures(iWidth, iHeight);
+	dumpPermanentSnow(iWidth, iHeight);
+	dumpResources(iWidth, iHeight);
+	generateMapFeaturesScope.end();
+}

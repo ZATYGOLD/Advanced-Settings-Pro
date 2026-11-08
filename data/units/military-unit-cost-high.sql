@@ -1,3 +1,4 @@
+-- Military Unit Cost: High. Every military unit costs 50% more production.
 UPDATE Unit_Costs
 SET Cost = CAST(ROUND(Cost * 1.5) AS INTEGER)
 WHERE YieldType = 'YIELD_PRODUCTION'

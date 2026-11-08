@@ -1,9 +1,9 @@
 // The game's memento picker, the one with the search bar and attribute filter,
 // opened on its own for any player, over whatever screen is up.
 //
-// In single-player setup the picker is the memento-select screen of the
-// create-game flow, which supplies everything around it. Anywhere else (the
-// multiplayer lobby) nothing does, so this supplies each thing it needs:
+// In the create-game flow the picker is the memento-select step, which supplies
+// everything around it. Opened from the Player tab over Advanced Options,
+// nothing does, so this supplies each thing it needs:
 //   a backdrop      the picker's own background is the create-game 3D stage,
 //                   which only exists in that flow;
 //   a panel         for focus, and for Escape or right-click to close it;
@@ -11,15 +11,11 @@
 //                   and its header reads the step count; here every one of
 //                   those closes the picker, and the count is empty;
 //   its model       MementoSelectModel, as overridden by
-//                   ui-next/screens/create-game/zg-memento-select-model.js to read and write any player:
+//                   zg-memento-select-model.js to read and write any player:
 //                   the create-game screen's own instance when there is one,
 //                   pointed at the player for as long as the picker is up and
 //                   back at the human when it closes.
 // The picker itself, its search and filters, are the game's own code.
-//
-// Hotseat skips mementos in the game's own flow: the picker closes itself the
-// moment it mounts there, so hotseat opens the game's older editor instead.
-
 import { createComponent } from 'fs://game/core/vendor/solid-js/dist/solid.js';
 import { ContextManager } from 'fs://game/core/ui/context-manager/context-manager.js';
 import { defineLegacyComponent } from 'fs://game/core/ui-next/components/fxs-solid-component.js';
@@ -30,7 +26,6 @@ import { MementoSelectModel, MementoSelectModelContext } from 'fs://game/core/ui
 import { currentMementoModel } from './zg-memento-select-model.js';
 
 const SCREEN_NAME = "zg-memento-select";
-const OLD_EDITOR_NAME = "memento-editor";
 const BACKDROP_COLOR = "rgba(10, 11, 15, 0.96)";
 
 let opening = { playerId: null, slotIndex: 0 };
@@ -92,10 +87,6 @@ defineLegacyComponent(SCREEN_NAME, { classNames: ["fullscreen"] }, () => {
 
 // Opens the picker for a player (the local one by default) on one slot.
 export function openMementoSelect(playerId = GameContext.localPlayerID, slotIndex = 0) {
-	if (Configuration.getGame()?.isHotseat) {
-		ContextManager.push(OLD_EDITOR_NAME, { singleton: true, createMouseGuard: true, attributes: { blackOut: true }, panelOptions: { slotIndex } });
-		return;
-	}
 	opening = { playerId, slotIndex };
 	ContextManager.push(SCREEN_NAME, { singleton: true, createMouseGuard: true });
 }

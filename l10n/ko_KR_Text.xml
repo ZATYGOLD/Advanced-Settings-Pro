@@ -13,6 +13,9 @@
 		<Replace Tag="LOC_GROUPID_ZG_SETTLEMENTOPTIONS" Language="ko_KR">
 			<Text>정착지 설정</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_SINGLE_PLAYER_SETUP_NAME" Language="ko_KR">
+			<Text>싱글 플레이어 설정</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="ko_KR">
 			<Text>활성화</Text>
 		</Replace>
@@ -172,15 +175,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_NAME" Language="ko_KR">
 			<Text>호수</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME" Language="ko_KR">
-			<Text>고대</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME" Language="ko_KR">
-			<Text>대항해</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME" Language="ko_KR">
-			<Text>근대</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="ko_KR">
 			<Text>개척자가 육지와 바다에서 이동하는 거리를 설정합니다. 빠른 개척자는 경쟁자보다 먼저 먼 부지를 차지합니다.</Text>
@@ -512,12 +506,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_MORE" Language="ko_KR">
 			<Text>호수가 더 많이 생성됩니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="ko_KR">
-			<Text>Advanced Settings Pro</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="ko_KR">
-			<Text>Zatygold의 Advanced Settings Pro[n] [n]이 모드는 고급 설정 메뉴에 추가 옵션을 더해 싱글플레이어와 멀티플레이어의 게임 설정을 확장합니다. 일반적으로 조정할 수 없는 시스템을 세밀하게 설정할 수 있습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="ko_KR">
 			<Text>이 자연경관이 지도에 등장할 수 있는지 설정합니다.</Text>
@@ -866,21 +854,21 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="ko_KR">
 			<Text>초반에는 도시가 빠르게 성장하다가 이후 일반 수준으로 돌아옵니다.[nn][BLIST]
-				[LI] 고대: -25%
-				[LI] 대항해: -25%
+				[LI] 고대: 약간 빠름
+				[LI] 대항해: 약간 빠름
 				[LI] 근대: 일반[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_EXTENDED" Language="ko_KR">
 			<Text>모든 시대에서 도시가 더 느리게 성장합니다.[nn][BLIST]
-				[LI] 고대: +25%
-				[LI] 대항해: +25%
-				[LI] 근대: +25%[/BLIST]</Text>
+				[LI] 고대: 느림
+				[LI] 대항해: 느림
+				[LI] 근대: 느림[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SWIFT" Language="ko_KR">
 			<Text>모든 시대에서 도시가 더 빠르게 성장합니다.[nn][BLIST]
-				[LI] 고대: -25%
-				[LI] 대항해: -25%
-				[LI] 근대: -25%[/BLIST]</Text>
+				[LI] 고대: 약간 빠름
+				[LI] 대항해: 약간 빠름
+				[LI] 근대: 약간 빠름[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="ko_KR">
 			<Text>시민당 식량 50% 감소.</Text>
@@ -895,19 +883,19 @@
 			<Text>근대까지는 일반 도로이고, 이후에는 저렴해집니다.[nn][BLIST]
 				[LI] 고대: 일반
 				[LI] 대항해: 일반
-				[LI] 근대: -25%[/BLIST]</Text>
+				[LI] 근대: 약간 빠름[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXTENDED" Language="ko_KR">
 			<Text>근대까지는 일반 도로이고, 이후에는 저렴해집니다.[nn][BLIST]
 				[LI] 고대: 일반
 				[LI] 대항해: 일반
-				[LI] 근대: -25%[/BLIST]</Text>
+				[LI] 근대: 약간 빠름[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SWIFT" Language="ko_KR">
 			<Text>지도가 넓어질수록 도로 이동 비용이 낮아집니다.[nn][BLIST]
-				[LI] 고대: -25%
-				[LI] 대항해: -50%
-				[LI] 근대: -50%[/BLIST]</Text>
+				[LI] 고대: 약간 빠름
+				[LI] 대항해: 빠름
+				[LI] 근대: 빠름[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SLOW" Language="ko_KR">
 			<Text>타일당 이동력 25% 증가.</Text>
@@ -970,12 +958,6 @@
 		<Replace Tag="LOC_ZG_CIV_CHOICE_HISTORICAL" Language="ko_KR">
 			<Text>역사적</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIV_CHOICE_GEOGRAPHIC" Language="ko_KR">
-			<Text>지리적</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_LOBBY_SUGGESTED_CIVS" Language="ko_KR">
-			<Text>추천 문명</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="ko_KR">
 			<Text>각 AI는 지도자의 역사를 따릅니다. 새 시대에 지도자의 역사적 문명이 있으면 그 문명으로 옮기고, 현재 문명이 역사적 문명이면 그대로 유지합니다.[n]그 외에는 게임의 일반적인 시대 전환 경로를 따르며, 지리적 문명을 우선합니다. 이미 선택된 문명은 건너뛰며, 모두 선택된 경우에만 중복됩니다.[n]실험적 기능: 패치 1.5부터 게임이 이 선택을 덮어쓸 수 있습니다.</Text>
 		</Replace>
@@ -995,7 +977,7 @@
 			<Text>맵 기온</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="ko_KR">
-			<Text>각 육지 타일의 생물군계를 정하는 기후대를 이동합니다.</Text>
+			<Text>세계가 얼마나 따뜻한지 정합니다. 육지를 덮는 생물군계, 해빙·산호초·눈이 퍼지는 범위, 고지대·강수량·강이 지역 기후에 미치는 영향의 세기가 달라집니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COLD_NAME" Language="ko_KR">
 			<Text>한랭</Text>
@@ -1004,13 +986,76 @@
 			<Text>고온</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="ko_KR">
-			<Text>툰드라가 적도에 더 가까워지고 사막이 초원으로 바뀝니다.</Text>
+			<Text>툰드라가 적도에 더 가까이서 시작되고 사막은 초원으로 바뀝니다. 해빙과 눈이 극지방에서 더 멀리 퍼지고, 고지대가 더 일찍 툰드라가 됩니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="ko_KR">
 			<Text>선택한 맵 유형의 표준 기후입니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="ko_KR">
-			<Text>사막이 적도에서 더 멀리 뻗어 나가고 툰드라가 극지방으로 물러납니다.</Text>
+			<Text>사막이 적도에서 더 멀리 뻗어 나가고 툰드라가 극지방으로 물러납니다. 해빙과 눈이 줄어들고, 비가 많은 땅과 강 계곡이 더 푸르러집니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FRIGID_NAME" Language="ko_KR">
+			<Text>혹한</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SCORCHING_NAME" Language="ko_KR">
+			<Text>작열</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_FRIGID" Language="ko_KR">
+			<Text>빙하기 세계입니다. 육지의 약 70%가 툰드라이고, 해빙과 눈이 중위도까지 퍼지며, 따뜻한 땅은 대부분 강 계곡에 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_SCORCHING" Language="ko_KR">
+			<Text>온실 세계입니다. 사막과 정글이 육지 대부분을 덮고, 해빙과 눈이 사라지며, 강은 사막을 가로지르는 비옥한 띠가 됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="ko_KR">
+			<Text>다섯 가지 기온 중 하나를 맵 시드로 정합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_NAME" Language="ko_KR">
+			<Text>맵 구역</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION" Language="ko_KR">
+			<Text>맵의 더운 지역과 추운 지역이 어디에 놓이는지 정합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_STANDARD" Language="ko_KR">
+			<Text>기본 게임처럼 맵 중앙을 가로지르는 더운 띠가 있고, 위아래로 갈수록 추워집니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_EDGE_NAME" Language="ko_KR">
+			<Text>뜨거운 가장자리</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_EDGE" Language="ko_KR">
+			<Text>맵 시드로 정해진 맵의 위쪽 또는 아래쪽 끝이 덥고, 반대편의 얼어붙은 끝으로 갈수록 점차 추워집니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_POLES_NAME" Language="ko_KR">
+			<Text>뜨거운 극지</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_POLES" Language="ko_KR">
+			<Text>맵 위아래가 덥고, 중앙을 가로지르는 추운 띠가 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_CENTER_NAME" Language="ko_KR">
+			<Text>뜨거운 중심</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_CENTER" Language="ko_KR">
+			<Text>맵 중앙이 가장 덥고 모든 방향으로 바깥쪽으로 갈수록 추워져 가장자리와 모서리가 가장 춥습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_COLD_CENTER_NAME" Language="ko_KR">
+			<Text>차가운 중심</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_COLD_CENTER" Language="ko_KR">
+			<Text>맵 중앙이 가장 춥고 모든 방향으로 바깥쪽으로 갈수록 따뜻해져 가장자리와 모서리가 가장 덥습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_WARM_RING_NAME" Language="ko_KR">
+			<Text>따뜻한 고리</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_WARM_RING" Language="ko_KR">
+			<Text>따뜻한 띠가 맵 중앙을 두르고, 그 안쪽과 가장자리 주변은 춥습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_PATCHWORK_NAME" Language="ko_KR">
+			<Text>조각보</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_PATCHWORK" Language="ko_KR">
+			<Text>더운 지역과 추운 지역이 띠 대신 불규칙한 조각으로 흩어집니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_RANDOM" Language="ko_KR">
+			<Text>일곱 가지 배치 중 하나를 맵 시드로 정합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="ko_KR">
 			<Text>강</Text>
@@ -1110,9 +1155,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="ko_KR">
 			<Text>매우 빠른 속도입니다. 표준보다 150% 빠릅니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="ko_KR">
-			<Text>각 시대는 아래 해당 그룹의 시대 길이 행을 사용합니다. 균형은 150, 170, 200점, 멀티플레이어는 140, 160, 180점으로 맞춥니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="ko_KR">
 			<Text>긴 시대이며, 뒤로 갈수록 더 길어집니다.[nn][BLIST]
@@ -1408,8 +1450,8 @@
 				[LI] 사회 제도 비용: +25% / +50% / +50%
 				[LI] 건물 비용: +25% / +50% / +50%
 				[LI] 승리 프로젝트 비용: +25%
-				[LI] 정착지 성장: +25%
-				[LI] 도로 속도: 일반 / 일반 / -25%
+				[LI] 정착지 성장: 느림
+				[LI] 도로 속도: 일반 / 일반 / 약간 빠름
 				[LI] 교역 속도: -25%
 				[LI] 파괴 속도: 일반[/BLIST]</Text>
 		</Replace>
@@ -1421,8 +1463,8 @@
 				[LI] 사회 제도 비용: -25% / -25% / 일반
 				[LI] 건물 비용: -25%
 				[LI] 승리 프로젝트 비용: -25%
-				[LI] 정착지 성장: -25%
-				[LI] 도로 속도: -25% / -50% / -50%
+				[LI] 정착지 성장: 약간 빠름
+				[LI] 도로 속도: 약간 빠름 / 빠름 / 빠름
 				[LI] 교역 속도: 즉시
 				[LI] 파괴 속도: 즉시[/BLIST]</Text>
 		</Replace>
@@ -1434,8 +1476,8 @@
 				[LI] 사회 제도 비용: 일반 / +25% / +25%
 				[LI] 건물 비용: +25% / 일반 / 일반
 				[LI] 승리 프로젝트 비용: 일반 / -25% / -25%
-				[LI] 정착지 성장: -25% / -25% / 일반
-				[LI] 도로 속도: 일반 / 일반 / -25%
+				[LI] 정착지 성장: 약간 빠름 / 약간 빠름 / 일반
+				[LI] 도로 속도: 일반 / 일반 / 약간 빠름
 				[LI] 교역 속도: 일반
 				[LI] 파괴 속도: 일반[/BLIST]</Text>
 		</Replace>
@@ -1447,8 +1489,8 @@
 				[LI] 사회 제도 비용: +50% / +50% / +100%
 				[LI] 건물 비용: 일반
 				[LI] 승리 프로젝트 비용: 일반 / 일반 / +25%
-				[LI] 정착지 성장: +25%
-				[LI] 도로 속도: -25% / -25% / -50%
+				[LI] 정착지 성장: 느림
+				[LI] 도로 속도: 약간 빠름 / 약간 빠름 / 빠름
 				[LI] 교역 속도: 일반
 				[LI] 파괴 속도: 일반[/BLIST]</Text>
 		</Replace>

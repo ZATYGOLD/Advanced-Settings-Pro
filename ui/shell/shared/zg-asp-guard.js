@@ -68,6 +68,16 @@ registerModConflicts([
 		nameHints: ["resource density"],
 	},
 
+	// --- Map Temperature and Map Zones ------------------------------------
+	// Replaces the base feature and snow passes, which this mod's map copies no
+	// longer call, so its climate settings would show in setup and only half apply.
+	{
+		workshopId: "3833339265",
+		modId: "scrumlord-climate",
+		parameterPatterns: ["ScrumLordClimateBaseTemperature", "ScrumLordClimateSunlight"],
+		nameHints: ["climate controls"],
+	},
+
 	// --- Independent Powers -------------------------------------------------
 	{ workshopId: "3736806530", modId: "independent-powers-plus" },
 
@@ -126,12 +136,4 @@ registerModConflicts([
 	// Raises Huge maps to 32 players and randomizes the roster. It adds map
 	// sizes rather than setup parameters, so there is no footprint to match on.
 	//{ workshopId: "3805458999", modId: "huge-earth-player-expansion-bmd" },
-
-	// --- Multiplayer lobby ---------------------------------------------------
-	// Replaces the base lobby model file (model-mp-staging-new.js) wholesale, from
-	// an older patch, to add ability names to the civilization and leader
-	// tooltips. The lobby tooltips here cover the same ground, and its copy rolls
-	// back later base fixes to hotseat slot handling. Workshop id not yet known;
-	// it adds no setup parameters, so the mod id is the only match.
-	{ modId: "multiplayer-ui-fix", nameHints: ["multiplayer ui fix"] },
 ]);

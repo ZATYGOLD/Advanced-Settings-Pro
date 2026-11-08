@@ -13,6 +13,9 @@
 		<Replace Tag="LOC_GROUPID_ZG_SETTLEMENTOPTIONS" Language="fr_FR">
 			<Text>Paramètres des colonies</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_SINGLE_PLAYER_SETUP_NAME" Language="fr_FR">
+			<Text>Configuration solo</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="fr_FR">
 			<Text>Activé</Text>
 		</Replace>
@@ -172,15 +175,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_NAME" Language="fr_FR">
 			<Text>Lacs</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME" Language="fr_FR">
-			<Text>Antiquité</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME" Language="fr_FR">
-			<Text>Âge de l'exploration</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME" Language="fr_FR">
-			<Text>Âge moderne</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="fr_FR">
 			<Text>Définit la distance parcourue par les colons sur terre et en mer. Des colons plus rapides atteignent les sites lointains avant un rival.</Text>
@@ -512,12 +506,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_MORE" Language="fr_FR">
 			<Text>Génère plus de lacs.</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="fr_FR">
-			<Text>Advanced Settings Pro</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="fr_FR">
-			<Text>Advanced Settings Pro de Zatygold[n] [n]Ce mod enrichit la configuration de partie en solo et en multijoueur grâce à des options supplémentaires dans le menu des paramètres avancés. Il permet d'affiner des systèmes normalement non réglables.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="fr_FR">
 			<Text>Détermine si cette merveille naturelle peut apparaître sur la carte.</Text>
@@ -866,21 +854,21 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="fr_FR">
 			<Text>Les villes grandissent plus vite au début, puis reviennent au standard.[nn][BLIST]
-				[LI] Antiquité : -25%
-				[LI] Âge de l'exploration : -25%
+				[LI] Antiquité : Vif
+				[LI] Âge de l'exploration : Vif
 				[LI] Âge moderne : Standard[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_EXTENDED" Language="fr_FR">
 			<Text>Les villes grandissent plus lentement à chaque âge.[nn][BLIST]
-				[LI] Antiquité : +25%
-				[LI] Âge de l'exploration : +25%
-				[LI] Âge moderne : +25%[/BLIST]</Text>
+				[LI] Antiquité : Lent
+				[LI] Âge de l'exploration : Lent
+				[LI] Âge moderne : Lent[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SWIFT" Language="fr_FR">
 			<Text>Les villes grandissent plus vite à chaque âge.[nn][BLIST]
-				[LI] Antiquité : -25%
-				[LI] Âge de l'exploration : -25%
-				[LI] Âge moderne : -25%[/BLIST]</Text>
+				[LI] Antiquité : Vif
+				[LI] Âge de l'exploration : Vif
+				[LI] Âge moderne : Vif[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="fr_FR">
 			<Text>50% de nourriture par citoyen en moins.</Text>
@@ -895,19 +883,19 @@
 			<Text>Routes standard jusqu'à l'ère moderne, puis moins chères.[nn][BLIST]
 				[LI] Antiquité : Standard
 				[LI] Âge de l'exploration : Standard
-				[LI] Âge moderne : -25%[/BLIST]</Text>
+				[LI] Âge moderne : Vif[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXTENDED" Language="fr_FR">
 			<Text>Routes standard jusqu'à l'ère moderne, puis moins chères.[nn][BLIST]
 				[LI] Antiquité : Standard
 				[LI] Âge de l'exploration : Standard
-				[LI] Âge moderne : -25%[/BLIST]</Text>
+				[LI] Âge moderne : Vif[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SWIFT" Language="fr_FR">
 			<Text>Les routes coûtent moins cher à parcourir à mesure que la carte s'ouvre.[nn][BLIST]
-				[LI] Antiquité : -25%
-				[LI] Âge de l'exploration : -50%
-				[LI] Âge moderne : -50%[/BLIST]</Text>
+				[LI] Antiquité : Vif
+				[LI] Âge de l'exploration : Rapide
+				[LI] Âge moderne : Rapide[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SLOW" Language="fr_FR">
 			<Text>25% de mouvement par case en plus.</Text>
@@ -970,12 +958,6 @@
 		<Replace Tag="LOC_ZG_CIV_CHOICE_HISTORICAL" Language="fr_FR">
 			<Text>Historique</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIV_CHOICE_GEOGRAPHIC" Language="fr_FR">
-			<Text>Géographique</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_LOBBY_SUGGESTED_CIVS" Language="fr_FR">
-			<Text>Civilisations suggérées</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="fr_FR">
 			<Text>Chaque IA reste fidèle à l'histoire de son dirigeant. Elle change quand le nouvel âge offre une civilisation historique de son dirigeant, et garde sa civilisation quand c'est celle-ci l'historique.[n]Sinon, elle suit le chemin habituel du jeu vers le nouvel âge, une civilisation géographique d'abord. Une civilisation déjà prise est ignorée ; un doublon n'est attribué que lorsque toutes sont prises.[n]Expérimental : depuis le correctif 1.5, le jeu peut remplacer ces choix.</Text>
 		</Replace>
@@ -995,7 +977,7 @@
 			<Text>Température de la carte</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="fr_FR">
-			<Text>Décale les zones climatiques qui déterminent le biome de chaque case terrestre.</Text>
+			<Text>Définit la chaleur du monde : quels biomes couvrent les terres, jusqu'où s'étendent la banquise, les récifs et la neige, et à quel point les hauteurs, les pluies et les fleuves modifient le climat local.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COLD_NAME" Language="fr_FR">
 			<Text>Froid</Text>
@@ -1004,13 +986,76 @@
 			<Text>Chaud</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="fr_FR">
-			<Text>La toundra commence plus près de l'équateur et le désert cède la place à la prairie.</Text>
+			<Text>La toundra commence plus près de l'équateur et le désert laisse place à la prairie. La banquise et la neige s'étendent plus loin des pôles, et les hauteurs deviennent toundra plus tôt.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="fr_FR">
 			<Text>Climat standard pour le type de carte choisi.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="fr_FR">
-			<Text>Le désert s'étend plus loin de l'équateur et la toundra se retire vers les pôles.</Text>
+			<Text>Le désert s'étend plus loin de l'équateur et la toundra se retire vers les pôles. La banquise et la neige reculent, et les terres pluvieuses et les vallées fluviales verdissent.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FRIGID_NAME" Language="fr_FR">
+			<Text>Glacial</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SCORCHING_NAME" Language="fr_FR">
+			<Text>Brûlant</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_FRIGID" Language="fr_FR">
+			<Text>Un monde en ère glaciaire : environ 70 % des terres sont de la toundra, la banquise et la neige atteignent les latitudes moyennes, et les vallées fluviales regroupent l'essentiel des terres tempérées.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_SCORCHING" Language="fr_FR">
+			<Text>Un monde en effet de serre : le désert et la jungle couvrent l'essentiel des terres, la banquise et la neige disparaissent, et les fleuves deviennent des bandes fertiles à travers le désert.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="fr_FR">
+			<Text>L'une des cinq températures, tirée de la graine de la carte.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_NAME" Language="fr_FR">
+			<Text>Zones de la carte</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION" Language="fr_FR">
+			<Text>Où se trouvent les régions chaudes et froides de la carte.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_STANDARD" Language="fr_FR">
+			<Text>Une bande chaude traverse le milieu de la carte et se refroidit vers le haut et le bas, comme dans le jeu de base.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_EDGE_NAME" Language="fr_FR">
+			<Text>Bord chaud</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_EDGE" Language="fr_FR">
+			<Text>Chaud le long du bord supérieur ou inférieur de la carte, choisi par la graine de la carte, et se refroidit progressivement jusqu'au bord opposé gelé.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_POLES_NAME" Language="fr_FR">
+			<Text>Pôles chauds</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_POLES" Language="fr_FR">
+			<Text>Chaud en haut et en bas de la carte, avec une bande froide au milieu.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_CENTER_NAME" Language="fr_FR">
+			<Text>Centre chaud</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_CENTER" Language="fr_FR">
+			<Text>Plus chaud au milieu de la carte et plus froid vers l'extérieur dans toutes les directions, si bien que les bords et les coins sont les plus froids.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_COLD_CENTER_NAME" Language="fr_FR">
+			<Text>Centre froid</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_COLD_CENTER" Language="fr_FR">
+			<Text>Plus froid au milieu de la carte et plus chaud vers l'extérieur dans toutes les directions, si bien que les bords et les coins sont les plus chauds.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_WARM_RING_NAME" Language="fr_FR">
+			<Text>Anneau tempéré</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_WARM_RING" Language="fr_FR">
+			<Text>Une bande de chaleur entoure le milieu de la carte, avec du froid en son centre et le long des bords.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_PATCHWORK_NAME" Language="fr_FR">
+			<Text>Mosaïque</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_PATCHWORK" Language="fr_FR">
+			<Text>Les régions chaudes et froides forment des taches irrégulières au lieu de bandes.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_RANDOM" Language="fr_FR">
+			<Text>L'une des sept dispositions, tirée de la graine de la carte.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="fr_FR">
 			<Text>Rivières</Text>
@@ -1110,9 +1155,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="fr_FR">
 			<Text>Un rythme extrêmement rapide. 150% plus rapide que Standard.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="fr_FR">
-			<Text>Chaque âge utilise la ligne Durée des âges de son propre groupe ci-dessous. Équilibré fixe 150, 170 et 200 points ; Multijoueur fixe 140, 160 et 180.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="fr_FR">
 			<Text>Âges plus longs, chacun plus long que le précédent.[nn][BLIST]
@@ -1408,8 +1450,8 @@
 				[LI] Coût des dogmes : +25% / +50% / +50%
 				[LI] Coût des bâtiments : +25% / +50% / +50%
 				[LI] Coût des projets de victoire : +25%
-				[LI] Croissance des colonies : +25%
-				[LI] Vitesse des routes : Standard / Standard / -25%
+				[LI] Croissance des colonies : Lent
+				[LI] Vitesse des routes : Standard / Standard / Vif
 				[LI] Vitesse commerciale : -25%
 				[LI] Vitesse de destruction : Standard[/BLIST]</Text>
 		</Replace>
@@ -1421,8 +1463,8 @@
 				[LI] Coût des dogmes : -25% / -25% / Standard
 				[LI] Coût des bâtiments : -25%
 				[LI] Coût des projets de victoire : -25%
-				[LI] Croissance des colonies : -25%
-				[LI] Vitesse des routes : -25% / -50% / -50%
+				[LI] Croissance des colonies : Vif
+				[LI] Vitesse des routes : Vif / Rapide / Rapide
 				[LI] Vitesse commerciale : Instantanée
 				[LI] Vitesse de destruction : Instantanée[/BLIST]</Text>
 		</Replace>
@@ -1434,8 +1476,8 @@
 				[LI] Coût des dogmes : Standard / +25% / +25%
 				[LI] Coût des bâtiments : +25% / Standard / Standard
 				[LI] Coût des projets de victoire : Standard / -25% / -25%
-				[LI] Croissance des colonies : -25% / -25% / Standard
-				[LI] Vitesse des routes : Standard / Standard / -25%
+				[LI] Croissance des colonies : Vif / Vif / Standard
+				[LI] Vitesse des routes : Standard / Standard / Vif
 				[LI] Vitesse commerciale : Standard
 				[LI] Vitesse de destruction : Standard[/BLIST]</Text>
 		</Replace>
@@ -1447,8 +1489,8 @@
 				[LI] Coût des dogmes : +50% / +50% / +100%
 				[LI] Coût des bâtiments : Standard
 				[LI] Coût des projets de victoire : Standard / Standard / +25%
-				[LI] Croissance des colonies : +25%
-				[LI] Vitesse des routes : -25% / -25% / -50%
+				[LI] Croissance des colonies : Lent
+				[LI] Vitesse des routes : Vif / Vif / Rapide
 				[LI] Vitesse commerciale : Standard
 				[LI] Vitesse de destruction : Standard[/BLIST]</Text>
 		</Replace>

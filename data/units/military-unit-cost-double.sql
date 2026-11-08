@@ -1,3 +1,4 @@
+-- Military Unit Cost: Double. Every military unit costs twice the production.
 UPDATE Unit_Costs
 SET Cost = CAST(ROUND(Cost * 2.0) AS INTEGER)
 WHERE YieldType = 'YIELD_PRODUCTION'

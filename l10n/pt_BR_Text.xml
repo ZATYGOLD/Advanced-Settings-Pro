@@ -13,6 +13,9 @@
 		<Replace Tag="LOC_GROUPID_ZG_SETTLEMENTOPTIONS" Language="pt_BR">
 			<Text>Configurações de assentamentos</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_SINGLE_PLAYER_SETUP_NAME" Language="pt_BR">
+			<Text>Configuração de um jogador</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="pt_BR">
 			<Text>Ativado</Text>
 		</Replace>
@@ -172,15 +175,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_NAME" Language="pt_BR">
 			<Text>Lagos</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME" Language="pt_BR">
-			<Text>Antiguidade</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME" Language="pt_BR">
-			<Text>Exploração</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME" Language="pt_BR">
-			<Text>Moderna</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="pt_BR">
 			<Text>Define o quanto os colonizadores se movem em terra e no mar. Colonizadores mais rápidos alcançam locais distantes antes de um rival.</Text>
@@ -512,12 +506,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_MORE" Language="pt_BR">
 			<Text>Gera mais lagos.</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="pt_BR">
-			<Text>Advanced Settings Pro</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="pt_BR">
-			<Text>Advanced Settings Pro do Zatygold[n] [n]Este mod expande a configuração de partidas para um jogador e multijogador com opções extras no menu de configurações avançadas. Ele permite ajustar sistemas que normalmente não são configuráveis.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="pt_BR">
 			<Text>Determina se esta maravilha natural pode aparecer no mapa.</Text>
@@ -866,21 +854,21 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="pt_BR">
 			<Text>As cidades crescem mais rápido no início e depois voltam ao padrão.[nn][BLIST]
-				[LI] Antiguidade: -25%
-				[LI] Exploração: -25%
+				[LI] Antiguidade: Ágil
+				[LI] Exploração: Ágil
 				[LI] Moderna: Padrão[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_EXTENDED" Language="pt_BR">
 			<Text>As cidades crescem mais devagar em todas as eras.[nn][BLIST]
-				[LI] Antiguidade: +25%
-				[LI] Exploração: +25%
-				[LI] Moderna: +25%[/BLIST]</Text>
+				[LI] Antiguidade: Lento
+				[LI] Exploração: Lento
+				[LI] Moderna: Lento[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SWIFT" Language="pt_BR">
 			<Text>As cidades crescem mais rápido em todas as eras.[nn][BLIST]
-				[LI] Antiguidade: -25%
-				[LI] Exploração: -25%
-				[LI] Moderna: -25%[/BLIST]</Text>
+				[LI] Antiguidade: Ágil
+				[LI] Exploração: Ágil
+				[LI] Moderna: Ágil[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="pt_BR">
 			<Text>50% menos comida por cidadão.</Text>
@@ -895,19 +883,19 @@
 			<Text>Estradas padrão até a Era Moderna e mais baratas depois.[nn][BLIST]
 				[LI] Antiguidade: Padrão
 				[LI] Exploração: Padrão
-				[LI] Moderna: -25%[/BLIST]</Text>
+				[LI] Moderna: Ágil[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXTENDED" Language="pt_BR">
 			<Text>Estradas padrão até a Era Moderna e mais baratas depois.[nn][BLIST]
 				[LI] Antiguidade: Padrão
 				[LI] Exploração: Padrão
-				[LI] Moderna: -25%[/BLIST]</Text>
+				[LI] Moderna: Ágil[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SWIFT" Language="pt_BR">
 			<Text>As estradas ficam mais baratas de percorrer conforme o mapa se abre.[nn][BLIST]
-				[LI] Antiguidade: -25%
-				[LI] Exploração: -50%
-				[LI] Moderna: -50%[/BLIST]</Text>
+				[LI] Antiguidade: Ágil
+				[LI] Exploração: Rápido
+				[LI] Moderna: Rápido[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SLOW" Language="pt_BR">
 			<Text>25% mais movimento por casa.</Text>
@@ -970,12 +958,6 @@
 		<Replace Tag="LOC_ZG_CIV_CHOICE_HISTORICAL" Language="pt_BR">
 			<Text>Histórica</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIV_CHOICE_GEOGRAPHIC" Language="pt_BR">
-			<Text>Geográfica</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_LOBBY_SUGGESTED_CIVS" Language="pt_BR">
-			<Text>Civilizações sugeridas</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="pt_BR">
 			<Text>Cada IA se mantém fiel à história de seu líder. Muda quando a nova era oferece uma civilização histórica de seu líder e mantém sua civilização quando essa é a histórica.[n]Caso contrário, segue o caminho habitual do jogo para a nova era, primeiro uma civilização geográfica. Uma civilização já escolhida é ignorada; uma duplicata só ocorre quando todas estão escolhidas.[n]Experimental: desde o patch 1.5, o jogo pode substituir essas escolhas.</Text>
 		</Replace>
@@ -995,7 +977,7 @@
 			<Text>Temperatura do mapa</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="pt_BR">
-			<Text>Desloca as faixas climáticas que definem o bioma de cada célula de terra.</Text>
+			<Text>Define o quão quente é o mundo: quais biomas cobrem a terra, até onde chegam o gelo marinho, os recifes e a neve, e o quanto planaltos, chuvas e rios alteram o clima local.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COLD_NAME" Language="pt_BR">
 			<Text>Frio</Text>
@@ -1004,13 +986,76 @@
 			<Text>Quente</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="pt_BR">
-			<Text>A tundra começa mais perto do equador e o deserto dá lugar à pradaria.</Text>
+			<Text>A tundra começa mais perto do equador e o deserto dá lugar ao campo. O gelo marinho e a neve chegam mais longe dos polos e os planaltos viram tundra mais cedo.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="pt_BR">
 			<Text>Clima padrão para o tipo de mapa escolhido.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="pt_BR">
-			<Text>O deserto alcança mais longe do equador e a tundra recua para os polos.</Text>
+			<Text>O deserto alcança mais longe do equador e a tundra recua para os polos. O gelo marinho e a neve diminuem, e terras chuvosas e vales fluviais ficam mais verdes.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FRIGID_NAME" Language="pt_BR">
+			<Text>Gélido</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SCORCHING_NAME" Language="pt_BR">
+			<Text>Escaldante</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_FRIGID" Language="pt_BR">
+			<Text>Um mundo em era glacial: cerca de 70% da terra é tundra, o gelo marinho e a neve chegam às latitudes médias e os vales fluviais concentram a maior parte da terra amena.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_SCORCHING" Language="pt_BR">
+			<Text>Um mundo de efeito estufa: deserto e selva cobrem a maior parte da terra, o gelo marinho e a neve desaparecem e os rios se tornam faixas férteis através do deserto.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="pt_BR">
+			<Text>Uma das cinco temperaturas, sorteada pela semente do mapa.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_NAME" Language="pt_BR">
+			<Text>Zonas do mapa</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION" Language="pt_BR">
+			<Text>Onde ficam as regiões quentes e frias do mapa.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_STANDARD" Language="pt_BR">
+			<Text>Uma faixa quente atravessa o meio do mapa e esfria em direção ao topo e à base, como no jogo base.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_EDGE_NAME" Language="pt_BR">
+			<Text>Borda quente</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_EDGE" Language="pt_BR">
+			<Text>Quente ao longo da borda superior ou inferior do mapa, escolhida pela semente do mapa, esfriando gradualmente até uma borda oposta congelada.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_POLES_NAME" Language="pt_BR">
+			<Text>Polos quentes</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_POLES" Language="pt_BR">
+			<Text>Quente no topo e na base do mapa, com uma faixa fria no meio.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_CENTER_NAME" Language="pt_BR">
+			<Text>Centro quente</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_CENTER" Language="pt_BR">
+			<Text>Mais quente no meio do mapa e mais frio para fora em todas as direções, deixando as bordas e os cantos mais frios.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_COLD_CENTER_NAME" Language="pt_BR">
+			<Text>Centro frio</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_COLD_CENTER" Language="pt_BR">
+			<Text>Mais frio no meio do mapa e mais quente para fora em todas as direções, deixando as bordas e os cantos mais quentes.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_WARM_RING_NAME" Language="pt_BR">
+			<Text>Anel morno</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_WARM_RING" Language="pt_BR">
+			<Text>Uma faixa de calor circunda o meio do mapa, com frio no seu interior e ao longo das bordas.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_PATCHWORK_NAME" Language="pt_BR">
+			<Text>Mosaico</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_PATCHWORK" Language="pt_BR">
+			<Text>Regiões quentes e frias ficam em manchas irregulares em vez de faixas.</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_RANDOM" Language="pt_BR">
+			<Text>Um dos sete arranjos, sorteado pela semente do mapa.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="pt_BR">
 			<Text>Rios</Text>
@@ -1110,9 +1155,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="pt_BR">
 			<Text>Um ritmo extremamente rápido. 150% mais rápido que o Padrão.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="pt_BR">
-			<Text>Cada era usa a linha Duração da era do seu próprio grupo abaixo. Equilibrado define 150, 170 e 200 pontos; Multijogador define 140, 160 e 180.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="pt_BR">
 			<Text>Eras mais longas, cada uma mais longa que a anterior.[nn][BLIST]
@@ -1408,8 +1450,8 @@
 				[LI] Custo de cívicos: +25% / +50% / +50%
 				[LI] Custo de edifícios: +25% / +50% / +50%
 				[LI] Custo de projetos de vitória: +25%
-				[LI] Crescimento dos assentamentos: +25%
-				[LI] Velocidade das estradas: Padrão / Padrão / -25%
+				[LI] Crescimento dos assentamentos: Lento
+				[LI] Velocidade das estradas: Padrão / Padrão / Ágil
 				[LI] Velocidade comercial: -25%
 				[LI] Velocidade de devastação: Padrão[/BLIST]</Text>
 		</Replace>
@@ -1421,8 +1463,8 @@
 				[LI] Custo de cívicos: -25% / -25% / Padrão
 				[LI] Custo de edifícios: -25%
 				[LI] Custo de projetos de vitória: -25%
-				[LI] Crescimento dos assentamentos: -25%
-				[LI] Velocidade das estradas: -25% / -50% / -50%
+				[LI] Crescimento dos assentamentos: Ágil
+				[LI] Velocidade das estradas: Ágil / Rápido / Rápido
 				[LI] Velocidade comercial: Instantâneo
 				[LI] Velocidade de devastação: Instantâneo[/BLIST]</Text>
 		</Replace>
@@ -1434,8 +1476,8 @@
 				[LI] Custo de cívicos: Padrão / +25% / +25%
 				[LI] Custo de edifícios: +25% / Padrão / Padrão
 				[LI] Custo de projetos de vitória: Padrão / -25% / -25%
-				[LI] Crescimento dos assentamentos: -25% / -25% / Padrão
-				[LI] Velocidade das estradas: Padrão / Padrão / -25%
+				[LI] Crescimento dos assentamentos: Ágil / Ágil / Padrão
+				[LI] Velocidade das estradas: Padrão / Padrão / Ágil
 				[LI] Velocidade comercial: Padrão
 				[LI] Velocidade de devastação: Padrão[/BLIST]</Text>
 		</Replace>
@@ -1447,8 +1489,8 @@
 				[LI] Custo de cívicos: +50% / +50% / +100%
 				[LI] Custo de edifícios: Padrão
 				[LI] Custo de projetos de vitória: Padrão / Padrão / +25%
-				[LI] Crescimento dos assentamentos: +25%
-				[LI] Velocidade das estradas: -25% / -25% / -50%
+				[LI] Crescimento dos assentamentos: Lento
+				[LI] Velocidade das estradas: Ágil / Ágil / Rápido
 				[LI] Velocidade comercial: Padrão
 				[LI] Velocidade de devastação: Padrão[/BLIST]</Text>
 		</Replace>

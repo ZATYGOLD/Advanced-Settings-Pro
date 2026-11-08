@@ -12,11 +12,13 @@
 // transition.
 import { template, insert } from 'fs://game/core/vendor/solid-js/web/dist/web.js';
 import { createMemo, createComponent, createRenderEffect, createSignal, mergeProps, For, Show } from 'fs://game/core/vendor/solid-js/dist/solid.js';
-import { ComponentRegistry } from 'fs://game/core/ui-next/services/component-registry.js';
 import { multiplayerTeamColors } from 'fs://game/core/ui/utilities/utilities-network-constants.js';
 import { openMementoSelect } from './zg-memento-select.js';
-import { MEMENTO_PARAM_IDS, MEMENTO_NONE_VALUE, MEMENTO_SLOT_BASE_IMAGE, MEMENTO_SLOT_PLUS_IMAGE, AI_MEMENTOS_PARAM_ID, AI_MEMENTOS_DEFAULT, aiMementoMode, aiPlayerIds, matchSource, randomFlags, setRandomFlag, rollMemento, sortPossibleValues } from '../../../ui/shell/shared/zg-memento-roller.js';
-import { canEditSetup, isAgeTransition } from '../../../ui/shell/shared/zg-shell-context.js';
+import { MEMENTO_PARAM_IDS, MEMENTO_NONE_VALUE, MEMENTO_SLOT_BASE_IMAGE, MEMENTO_SLOT_PLUS_IMAGE, AI_MEMENTOS_PARAM_ID, AI_MEMENTOS_DEFAULT, aiMementoMode, aiPlayerIds, drawMementos, matchSource, randomFlags, setRandomFlag, rollMemento, sortPossibleValues } from '../../../ui/shared/zg-memento-roller.js';
+import { gameValue, isModEnabled, resolveName } from '../../../ui/shared/zg-config.js';
+import { PLAYER_OVERRIDE_PRIORITY, zgWrapComponent } from './zg-component-override.js';
+import { isSinglePlayerSetupOpen, onSetupRevision } from '../../../ui/shell/shared/zg-shell-context.js';
+import { isRestoringSetup } from '../../../ui/shell/create-game/zg-setup-memory.js';
 import { Activatable } from 'fs://game/core/ui-next/components/activatable.js';
 import { Button } from 'fs://game/core/ui-next/components/button.js';
 import { Dropdown, DropdownItem } from 'fs://game/core/ui-next/components/dropdown.js';
@@ -34,7 +36,7 @@ import { TicketBox } from 'fs://game/core/ui-next/screens/create-game/ticket-box
 import 'fs://game/core/ui-next/components/tab.js';
 import './zg-map-tab.js';
 
-const OVERRIDE_PRIORITY = 110;
+const LOG_PREFIX = "ZG-ASP player tab:";
 const PLAYER_TAB_NAME = "advanced-options-player";
 // INTERIM: mods that render their own Player tab, by mod id as their modinfo
 // declares it. One of these being enabled is not a conflict to resolve but a tab
@@ -50,7 +52,6 @@ const PLAYER_TAB_MODS = ["Enable_Custom_Map_Start_Locations"];
 const TEAM_NONE_VALUE = -1;
 // The lobby offers eight teams, hard-coded, and so does this.
 const TEAM_COUNT = 8;
-const POLL_MS = 250;
 // Column proportions shared by the header and the rows. Team and the Mementos
 // each show one icon, so they need room for that and the dropdown arrow and no
 // more; the two name columns take what is left.
@@ -70,8 +71,6 @@ const COLUMN_HEADERS = [
 	{ text: "LOC_GENERIC_CIVILIZATION", columns: [2] },
 	{ text: "LOC_ZG_MEMENTOS_NAME", columns: [3, 4] },
 ];
-
-const resolve = (handle) => GameSetup.resolveString(handle) ?? "";
 
 // Templates, as in the game's advanced-options.js.
 const tplTitle = template(`<div class="uppercase text-secondary-1 font-title mb-2 self-center"></div>`);
@@ -210,7 +209,7 @@ const PlayerOption = (props) => {
 		get class() { return props.param.value == "RANDOM" ? "size-8 mr-3 ml-2" : "size-12 mr-1"; },
 		get name() { return props.param.value == "RANDOM" ? "LEADER_RANDOM" : props.param.value; },
 	}), null);
-	insert(el, optionText(createComponent(L10n.Stylize, { get text() { return resolve(props.param.name); } })), null);
+	insert(el, optionText(createComponent(L10n.Stylize, { get text() { return resolveName(props.param.name); } })), null);
 	return el;
 };
 
@@ -220,7 +219,7 @@ const PlayerOption = (props) => {
 // the filigree and rollover, and either the memento's icon or, for an empty
 // slot, the slot base image. Clicking one opens the game's memento picker, the
 // one with the search bar and attribute filter, for the player this row stands
-// for, over Advanced Options (ui-next/screens/create-game/zg-memento-select.js, shared with the lobby).
+// for, over Advanced Options (zg-memento-select.js).
 const SLOT_PLUS_REM = 1.6;
 const SLOT_ICON_CLASSES = "w-full h-full absolute inset-1";
 const tplSlotBox = template(`<div class="flex items-center justify-center p-1 img-unit-panelbox relative"><div class="absolute inset-0 bg-center bg-no-repeat"></div><div class="img-rollover-highlight absolute inset-0 opacity-0 group-focus\\:opacity-100 group-hover\\:opacity-100 group-pressed\\:opacity-100 pointer-events-none"></div></div>`);
@@ -229,7 +228,7 @@ function MementoSlotCell(props) {
 	const current = () => props.param()?.value;
 	const isEmpty = () => (current()?.value ?? MEMENTO_NONE_VALUE) == MEMENTO_NONE_VALUE;
 	return createComponent(Tooltip.Text, {
-		get text() { return isEmpty() ? "LOC_MEMENTO_NONE_NAME" : resolve(current()?.name); },
+		get text() { return isEmpty() ? "LOC_MEMENTO_NONE_NAME" : resolveName(current()?.name); },
 		get children() {
 			return createComponent(Activatable, {
 				class: "flex flex-row group relative mx-2 my-1",
@@ -246,7 +245,7 @@ function MementoSlotCell(props) {
 						get when() { return isEmpty(); },
 						get fallback() {
 							return createComponent(Icon, {
-								get name() { return `url('blp:${resolve(current()?.icon)}')`; },
+								get name() { return `url('blp:${resolveName(current()?.icon)}')`; },
 								isUrl: true,
 								class: SLOT_ICON_CLASSES,
 							});
@@ -264,16 +263,12 @@ function MementoSlotCell(props) {
 
 // ---------------------------------------------------------------- teams --
 
-// The choices for one player's team. An int parameter carries no list of its
+// The choices for every player's team. An int parameter carries no list of its
 // own, so this mirrors the multiplayer lobby's own dropdown: a blank entry for
-// no team, then a fixed eight teams regardless of the map's player count.
-function teamChoices() {
-	const choices = [{ value: TEAM_NONE_VALUE, sortIndex: -1 }];
-	for (let team = 0; team < TEAM_COUNT; team++) {
-		choices.push({ value: team, sortIndex: team });
-	}
-	return choices;
-}
+// no team, then a fixed eight teams regardless of the map's player count. Built
+// once: the dropdown matches its selected entry against the list by identity.
+const TEAM_CHOICES = [{ value: TEAM_NONE_VALUE, sortIndex: -1 }].concat(
+	Array.from({ length: TEAM_COUNT }, (_, team) => ({ value: team, sortIndex: team })));
 
 // A parameter-shaped view of a player's team, so it can drive the same dropdown
 // the Leader and Civilization columns use. The team is read and written through
@@ -281,11 +276,10 @@ function teamChoices() {
 // lobby is the only part of the game that sets a team, and that is the path it
 // uses, so it is the one known to reach the engine.
 function teamParameter(playerId) {
-	const choices = teamChoices();
 	const current = Configuration.getPlayer(playerId)?.team;
-	const selected = choices.find((choice) => choice.value == current) ?? choices[0];
+	const selected = TEAM_CHOICES.find((choice) => choice.value == current) ?? TEAM_CHOICES[0];
 	return {
-		domain: { possibleValues: choices },
+		domain: { possibleValues: TEAM_CHOICES },
 		value: selected,
 		setValue: (value) => Configuration.editPlayer(playerId)?.setTeam(value),
 	};
@@ -300,7 +294,7 @@ const TEAM_RING_TINT = "#8c7e62";
 const tplTeamBadge = template(`<div class="relative size-12 ml-2 flex items-center justify-center"><div class="absolute inset-0 bg-cover"></div><div class="absolute bg-cover" style="left:0.25rem;top:0.25rem;right:0.25rem;bottom:0.25rem"></div><div class="relative font-title text-base"></div></div>`);
 const tplTeamNumber = template(`<div class="flex flex-row items-center font-title text-base"></div>`);
 
-// Colour index 0 is the empty badge, so a team maps one past it.
+// Color index 0 is the empty badge, so a team maps one past it.
 const teamColor = (value) => multiplayerTeamColors[(value < 0 ? 0 : value + 1) % multiplayerTeamColors.length];
 const teamNumber = (value) => (value < 0 ? "" : `${value + 1}`);
 
@@ -335,12 +329,12 @@ const TeamTooltip = () => createComponent(Tooltip.Frame, {
 const SPECTATOR_MOD_ID = "zatygolds-observer-mode";
 const SPECTATOR_TEAM = { value: "ZG_SPECTATOR", sortIndex: 0 };
 const [spectator, setSpectator] = createSignal(null);
-if (Modding.getInstalledMods().some((mod) => mod.enabled && mod.id == SPECTATOR_MOD_ID)) {
+if (isModEnabled(SPECTATOR_MOD_ID)) {
 	Promise.all([
 		import(`fs://game/${SPECTATOR_MOD_ID}/ui/shared/zom-util.js`),
 		import(`fs://game/${SPECTATOR_MOD_ID}/ui/shared/zom-assets.js`),
 	]).then(([util, assets]) => setSpectator({ leader: util.OBSERVER_LEADER, icon: assets.ART?.observerIcon }))
-		.catch((error) => console.warn(`ZG-ASP player tab: Spectator mod not readable: ${error}`));
+		.catch((error) => console.warn(`${LOG_PREFIX} Spectator mod not readable: ${error}`));
 }
 
 const spectatorTeamParameter = () => ({ domain: { possibleValues: [SPECTATOR_TEAM] }, value: SPECTATOR_TEAM, setValue: () => {} });
@@ -391,7 +385,7 @@ function parameterDropdown(param, option, tooltip, side, classes, listOption, di
 			];
 		},
 	});
-	const items = () => sortPossibleValues(param().domain.possibleValues) ?? [];
+	const items = createMemo(() => sortPossibleValues(param().domain.possibleValues) ?? []);
 	return createComponent(Dropdown, {
 		class: classes,
 		disabled,
@@ -410,64 +404,58 @@ function parameterDropdown(param, option, tooltip, side, classes, listOption, di
 
 // --------------------------------------------------------- AI mementos --
 
+// Rolls every slot flagged Random once each time the setup screen opens, so
+// each new game starts from a fresh pick while the choice itself is kept, and
+// applies AI Mementos whenever it changes or an AI joins. The first pass, after
+// remembered settings are restored, adopts whatever the screen holds.
+const rolledThisSession = new Set();
+const appliedSources = new Map();
+let appliedValue = null;
+
 // AI slots hold RANDOM for the whole setup screen: the engine only resolves them
 // at game creation, after this screen has handed off, and nothing here can see
 // the result. A match mode therefore reaches only the players whose leader or
 // civilization was chosen by hand; the rest have no attributes to match and fall
 // back to an unrestricted draw.
 function applyAiMementos(mode, playerId) {
-	const attributes = mode.attributes?.().get(matchSource(mode, playerId)) ?? [];
 	MEMENTO_PARAM_IDS.forEach((id, slotIndex) => {
 		setRandomFlag(playerId, slotIndex, mode.random === true);
-		if (mode.random) {
-			rolledThisSession.delete(`${playerId}:${slotIndex}`);
-		} else if (mode.source) {
-			rollMemento(playerId, slotIndex, attributes[slotIndex]);
-		} else {
+		rolledThisSession.delete(`${playerId}:${slotIndex}`);
+		if (!mode.random && !mode.source) {
 			GameSetup.setPlayerParameterValue(playerId, id, MEMENTO_NONE_VALUE);
 		}
 	});
-}
-
-// Rolls every slot flagged Random once per game session, so each new game
-// starts from a fresh pick while the choice itself is kept, and applies AI
-// Mementos whenever it changes. Both adopt whatever the screen already holds on
-// the first pass, so a restored setup keeps the mementos it was saved with.
-const rolledThisSession = new Set();
-const appliedSources = new Map();
-let lastRevision = -1;
-let appliedValue = null;
-setInterval(() => {
-	// An age transition runs through this same shell; the AI's mementos there
-	// are Age Transition AI Mementos' to settle, in zg-age-transition-mementos.js.
-	// In multiplayer only the host holds the setup.
-	const revision = GameSetup.currentRevision;
-	if (revision == lastRevision || isAgeTransition() || !canEditSetup()) {
-		return;
+	if (mode.source) {
+		drawMementos(mode, playerId);
 	}
-	// A fresh setup screen restarts the revision counter. Forget what was rolled
-	// so the next game picks again, rather than keeping the last game's mementos
-	// for as long as the app stays open.
-	if (revision < lastRevision) {
+}
+// The single-player setup screen only: an age transition runs through this same
+// shell, and the AI's mementos there are Age Transition AI Mementos' to settle.
+onSetupRevision((restarted) => {
+	// The screen has just opened: forget what was rolled so the next game picks
+	// again, rather than keeping the last game's mementos while the app is open.
+	if (restarted) {
 		rolledThisSession.clear();
 		appliedSources.clear();
 		appliedValue = null;
 	}
-	lastRevision = revision;
 
-	const value = GameSetup.findGameParameter(AI_MEMENTOS_PARAM_ID)?.value?.value ?? AI_MEMENTOS_DEFAULT;
+	const value = gameValue(AI_MEMENTOS_PARAM_ID) ?? AI_MEMENTOS_DEFAULT;
 	const mode = aiMementoMode();
-	const changed = appliedValue != null && value != appliedValue;
+	const firstPass = appliedValue == null;
+	const changed = !firstPass && value != appliedValue;
 	if (changed) {
 		appliedSources.clear();
 	}
 	appliedValue = value;
 	const aiIds = aiPlayerIds();
 	for (const playerId of aiIds) {
-		// In a match mode the slots follow the leader or civilization they matched,
-		// so a later change to it draws again.
+		// An AI added after the first pass is drawn for, and in a match mode the
+		// slots follow the leader or civilization they matched, so a later change
+		// to it draws again.
 		const source = matchSource(mode, playerId);
-		if (changed || (appliedSources.has(playerId) && appliedSources.get(playerId) !== source)) {
+		const added = !firstPass && !appliedSources.has(playerId);
+		if (changed || added || (appliedSources.has(playerId) && appliedSources.get(playerId) !== source)) {
 			applyAiMementos(mode, playerId);
 		}
 		appliedSources.set(playerId, source);
@@ -483,7 +471,7 @@ setInterval(() => {
 			}
 		});
 	}
-}, POLL_MS);
+}, () => isSinglePlayerSetupOpen() && !isRestoringSetup());
 
 // ---------------------------------------------------------- player list --
 
@@ -589,24 +577,15 @@ const PlayerSetup = () => {
 // leave one tab to another mod, this file skips its own registration entirely
 // rather than lowering a priority, which would give away the Map and Pace tabs
 // registered by zg-map-tab.js as well.
-const claimingMod = Modding.getInstalledMods().find((mod) => mod.enabled && PLAYER_TAB_MODS.includes(mod.id));
+const claimingMod = PLAYER_TAB_MODS.find(isModEnabled);
 
-const tabItem = ComponentRegistry.get("Tab.Item");
-// `factory` is a signal accessor returning the currently registered factory.
-// Read it once here to capture the previous implementation before this module
-// overrides the registration; reading it later would return our own factory.
-const createPreviousTabItem = tabItem?.factory?.();
 if (claimingMod) {
-	console.warn(`ZG-ASP player tab: leaving the Player tab to '${claimingMod.id}'`);
-} else if (createPreviousTabItem) {
-	ComponentRegistry.register({
-		name: "Tab.Item",
-		overridePriority: OVERRIDE_PRIORITY,
-		createInstance: (props) => {
-			if (props?.name != PLAYER_TAB_NAME) {
-				return createPreviousTabItem(props);
-			}
-			return createPreviousTabItem(mergeProps(props, { body: () => createComponent(PlayerSetup, {}) }));
-		},
+	console.log(`${LOG_PREFIX} leaving the Player tab to '${claimingMod}'`);
+} else {
+	zgWrapComponent("Tab.Item", PLAYER_OVERRIDE_PRIORITY, (createPreviousTabItem) => (props) => {
+		if (props?.name != PLAYER_TAB_NAME) {
+			return createPreviousTabItem(props);
+		}
+		return createPreviousTabItem(mergeProps(props, { body: () => createComponent(PlayerSetup, {}) }));
 	});
 }

@@ -1,7 +1,8 @@
 // Reusable mod conflict guard for Sid Meier's Civilization VII.
 //
 // Drop this file unchanged into a mod's ui/ folder, list it in the modinfo
-// <UIScripts> (before the mod's own entry script), then from that entry call:
+// <ImportFiles> of a shell action group, then from the mod's entry script (one
+// of its <UIScripts>) call:
 //
 //   import { registerModConflicts } from './zg-conflict-guard.js';
 //   registerModConflicts([
@@ -21,10 +22,12 @@
 //   ]);
 //
 // Behavior:
-//   - On load, any enabled conflicting mod is disabled silently.
-//   - If a conflict is still enabled when Continue / New Game / Load Game /
-//     Multiplayer is activated, that action is blocked and a dialog lists the
-//     conflicts with a one-click disable.
+//   - On load, any enabled conflicting mod is written to the log; nothing is
+//     disabled behind the player's back.
+//   - If a conflict is enabled when Continue / New Game / Load Game is
+//     activated, that action is blocked and a dialog lists the conflicts with a
+//     one-click disable. Multiplayer is left alone by default; a mod that also
+//     applies there can add its button through guardedButtonRefs.
 //   - A footprint found in the configuration database is attributed to the
 //     installed mod whose id or name matches its hints: enabled means a conflict, disabled means
 //     the database is stale from this session's own disable and is ignored. A
@@ -41,7 +44,6 @@
 // mod's text, or override any of them via the options.text argument:
 //   LOC_ZG_MOD_CONFLICT_TITLE, LOC_ZG_MOD_CONFLICT_BODY_HEADER,
 //   LOC_ZG_MOD_CONFLICT_BODY_FOOTER, LOC_ZG_MOD_CONFLICT_DISABLE
-
 import { DialogBoxManager } from 'fs://game/core/ui/dialog-box/manager-dialog-box.js';
 
 const GLOBAL_KEY = "__zgModConflictGuard";
@@ -53,7 +55,6 @@ const DEFAULT_GUARDED_BUTTON_REFS = [
 	"data-audio-clicked-continue",     // Continue
 	"data-audio-clicked-create-game",  // New Game
 	"data-audio-clicked-load-game",    // Load Game
-	"data-audio-clicked-multiplayer",  // Multiplayer
 ];
 
 const DEFAULT_TEXT = {
@@ -120,8 +121,6 @@ function createGuard() {
 		}
 		return { mods: [...mods], unknown };
 	};
-
-	guard.getActiveConflicts = () => guard.findConflicts().mods;
 
 	guard.disable = (mods) => {
 		if (mods.length === 0) {
@@ -243,11 +242,9 @@ export function registerModConflicts(conflicts, options = {}) {
 		guard.listenerInstalled = true;
 	}
 
-	// On load: silently disable any registered conflict that is currently enabled.
 	const { mods, unknown } = guard.findConflicts();
 	if (mods.length > 0) {
-		console.warn(`ZG conflict guard detected on load: ${mods.map((mod) => mod.id).join(", ")}`);
-		guard.disable(mods);
+		console.warn(`ZG conflict guard: enabled conflicts found on load: ${mods.map((mod) => mod.id).join(", ")}`);
 	}
 	for (const entry of unknown) {
 		console.warn(`ZG conflict guard: ${entry.parameters.join(", ")} looks like '${entry.label}' but no installed mod accounts for it`);

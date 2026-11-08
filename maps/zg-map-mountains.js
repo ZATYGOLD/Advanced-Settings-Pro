@@ -1,73 +1,60 @@
-// Applies the Mountains setup setting when a map script places mountains.
-// Mirrors the base addMountains, which turns land above a fractal height
-// percentile into mountains (default cutoff 90 = the tallest ~10% of land).
-// A higher cutoff yields fewer mountains, a lower cutoff more; Standard keeps
-// the base behavior unchanged.
+// Applies the Mountains setup setting.
+// Port of {base-standard}maps/elevation-terrain-generator.js addMountains.
+//
+// Classic maps raise their peaks in zgAddMountains, which turns land above a
+// fractal height percentile into
+// mountains: a higher cutoff yields fewer, a lower one more. Standard keeps the
+// base cutoff of 90, the tallest ~10% of land.
+//
+// Voronoi maps take their mountains from the Voronoi simulation instead, so
+// zgAdjustMountains scales them afterwards, picking tiles by how many mountain
+// neighbors they have: Less erodes the most isolated peaks and More grows
+// existing ranges outward, which keeps ranges contiguous. The ordering is stable
+// and uses no random numbers, so a map seed still reproduces exactly.
 import { g_MountainFractal, g_HillFractal, g_MountainTerrain, g_HillTerrain, g_FlatTerrain } from 'fs://game/base-standard/maps/map-globals.js';
+import { zgAdjacent, zgForEachTile, zgSettingTier } from './zg-map-utils.js';
 
 const MOUNTAINS_SETTING_KEY = "MountainsKey";
-// Fractal height percentile cutoff per tier; higher = fewer mountains.
-const MOUNTAIN_TIER_CUTOFF = {
-	ZG_LESS_MOUNTAINS: 95,
-	ZG_MORE_MOUNTAINS: 80,
+// cutoff: fractal height percentile on classic maps; scale: the mountain count
+// multiplier on Voronoi maps.
+const MOUNTAINS_TIERS = {
+	ZG_LESS_MOUNTAINS: { cutoff: 95, scale: 0.5 },
+	ZG_DEFAULT_MOUNTAINS: { cutoff: 90, scale: 1 },
+	ZG_MORE_MOUNTAINS: { cutoff: 80, scale: 2 },
 };
-const BASE_CUTOFF = 93;
-const BASE_ADJUSTMENT = 3;
+// The Marvelous Mountains live event lowers the cutoff, as in the base.
+const LIVE_EVENT_EXTRA_MOUNTAINS = 40;
+
+const mountainsTier = () => zgSettingTier(MOUNTAINS_TIERS, MOUNTAINS_SETTING_KEY, "ZG_DEFAULT_MOUNTAINS");
 
 export function zgAddMountains(iWidth, iHeight) {
-	const setting = Configuration.getGameValue(MOUNTAINS_SETTING_KEY);
-	const iFlags = 0;
 	const grainAmount = 5;
-	let extraMountains = 0;
 	const liveEventDBRow = GameInfo.GlobalParameters.lookup("REGISTERED_MARVELOUS_MOUNTAINS_EVENT");
-	if (liveEventDBRow && liveEventDBRow.Value != "0") {
-		extraMountains = 40;
-	}
-	const cutoff = MOUNTAIN_TIER_CUTOFF[setting] ?? (BASE_CUTOFF - BASE_ADJUSTMENT);
-	const mountains = cutoff - extraMountains;
-	console.log(`ZG-ASP mountains setting '${setting}': height percentile ${mountains}`);
-	FractalBuilder.create(g_MountainFractal, iWidth, iHeight, grainAmount, iFlags);
-	FractalBuilder.create(g_HillFractal, iWidth, iHeight, grainAmount, iFlags);
+	const extraMountains = liveEventDBRow && liveEventDBRow.Value != "0" ? LIVE_EVENT_EXTRA_MOUNTAINS : 0;
+	const mountains = mountainsTier().cutoff - extraMountains;
+	console.log(`ZG-ASP mountains: height percentile ${mountains}`);
+	FractalBuilder.create(g_MountainFractal, iWidth, iHeight, grainAmount, 0);
+	FractalBuilder.create(g_HillFractal, iWidth, iHeight, grainAmount, 0);
 	const iMountainThreshold = FractalBuilder.getHeightFromPercent(g_MountainFractal, mountains);
-	for (let iY = 0; iY < iHeight; iY++) {
-		for (let iX = 0; iX < iWidth; iX++) {
-			let terrain = GameplayMap.getTerrainType(iX, iY);
-			if (GameplayMap.isWater(iX, iY) == false) {
-				const iMountainHeight = FractalBuilder.getHeight(g_MountainFractal, iX, iY);
-				if (iMountainHeight >= iMountainThreshold) {
-					terrain = g_MountainTerrain;
-				}
-				if (terrain != g_FlatTerrain) {
-					TerrainBuilder.setTerrainType(iX, iY, terrain);
-				}
-			}
+	zgForEachTile(iWidth, iHeight, (iX, iY) => {
+		if (GameplayMap.isWater(iX, iY)) {
+			return;
 		}
-	}
+		let terrain = GameplayMap.getTerrainType(iX, iY);
+		if (FractalBuilder.getHeight(g_MountainFractal, iX, iY) >= iMountainThreshold) {
+			terrain = g_MountainTerrain;
+		}
+		if (terrain != g_FlatTerrain) {
+			TerrainBuilder.setTerrainType(iX, iY, terrain);
+		}
+	});
 }
 
-// Voronoi maps take their mountains from the Voronoi simulation rather than
-// from zgAddMountains, so the tier is applied afterwards as a second pass over
-// the terrain the simulation produced. Tiles are picked by how many mountain
-// neighbours they have, eroding the most isolated peaks for Less and growing
-// existing ranges outward for More, which keeps ranges contiguous. The ordering
-// is stable and uses no random numbers, so a map seed still reproduces exactly.
-//
-// This runs after the Map Age pass rather than on the simulated hex tiles: rough
-// ground does not exist until then, and More has nothing to promote without it.
-const MOUNTAIN_TIER_SCALE = {
-	ZG_LESS_MOUNTAINS: 0.5,
-	ZG_MORE_MOUNTAINS: 2,
-};
-
-function countMountainNeighbours(x, y) {
-	const location = GameplayMap.getLocationFromIndex(GameplayMap.getIndexFromXY(x, y));
+function countMountainNeighbors(location) {
 	let count = 0;
 	for (let direction = 0; direction < DirectionTypes.NUM_DIRECTION_TYPES; direction++) {
-		const adjacent = GameplayMap.getAdjacentPlotLocation(location, direction);
-		if (adjacent.x < 0 || adjacent.y < 0) {
-			continue;
-		}
-		if (GameplayMap.isMountain(adjacent.x, adjacent.y)) {
+		const adjacent = zgAdjacent(location, direction);
+		if (adjacent && GameplayMap.isMountain(adjacent.x, adjacent.y)) {
 			count++;
 		}
 	}
@@ -75,33 +62,29 @@ function countMountainNeighbours(x, y) {
 }
 
 export function zgAdjustMountains(iWidth, iHeight) {
-	const setting = Configuration.getGameValue(MOUNTAINS_SETTING_KEY);
-	const scale = MOUNTAIN_TIER_SCALE[setting];
-	if (!scale) {
+	const { scale } = mountainsTier();
+	if (scale == 1) {
 		return;
 	}
 	const mountains = [];
 	const rough = [];
-	for (let iY = 0; iY < iHeight; iY++) {
-		for (let iX = 0; iX < iWidth; iX++) {
-			if (GameplayMap.isWater(iX, iY)) {
-				continue;
-			}
-			if (GameplayMap.isMountain(iX, iY)) {
-				mountains.push({ x: iX, y: iY });
-			} else if (GameplayMap.getTerrainType(iX, iY) == g_HillTerrain) {
-				rough.push({ x: iX, y: iY });
-			}
+	zgForEachTile(iWidth, iHeight, (x, y) => {
+		if (GameplayMap.isWater(x, y)) {
+			return;
 		}
-	}
+		if (GameplayMap.isMountain(x, y)) {
+			mountains.push({ x, y });
+		} else if (GameplayMap.getTerrainType(x, y) == g_HillTerrain) {
+			rough.push({ x, y });
+		}
+	});
 	// Counted once up front: the comparator runs many times, and using the
 	// pre-adjustment counts keeps the result independent of processing order.
-	const neighbourCount = new Map();
 	for (const tile of mountains.concat(rough)) {
-		neighbourCount.set(tile, countMountainNeighbours(tile.x, tile.y));
+		tile.neighbors = countMountainNeighbors(tile);
 	}
-	const byNeighbours = (ascending) => (a, b) => {
-		const diff = neighbourCount.get(a) - neighbourCount.get(b);
+	const byNeighbors = (ascending) => (a, b) => {
+		const diff = a.neighbors - b.neighbors;
 		if (diff !== 0) {
 			return ascending ? diff : -diff;
 		}
@@ -110,17 +93,17 @@ export function zgAdjustMountains(iWidth, iHeight) {
 	const target = Math.round(mountains.length * scale);
 	let changed = 0;
 	if (scale < 1) {
-		mountains.sort(byNeighbours(true));
+		mountains.sort(byNeighbors(true));
 		changed = Math.max(0, mountains.length - target);
 		for (let i = 0; i < changed; i++) {
 			TerrainBuilder.setTerrainType(mountains[i].x, mountains[i].y, g_HillTerrain);
 		}
 	} else {
-		rough.sort(byNeighbours(false));
+		rough.sort(byNeighbors(false));
 		changed = Math.max(0, Math.min(rough.length, target - mountains.length));
 		for (let i = 0; i < changed; i++) {
 			TerrainBuilder.setTerrainType(rough[i].x, rough[i].y, g_MountainTerrain);
 		}
 	}
-	console.log(`ZG-ASP mountains setting '${setting}': ${mountains.length} mountain tiles and ${rough.length} rough adjusted by ${scale < 1 ? "-" : "+"}${changed}`);
+	console.log(`ZG-ASP mountains: ${mountains.length} mountain and ${rough.length} rough tiles adjusted by ${scale < 1 ? "-" : "+"}${changed}`);
 }

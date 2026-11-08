@@ -1,74 +1,56 @@
-// Applies the Map Temperature setup setting when a map script assigns biomes.
-// Port of {base-standard}maps/feature-biome-generator.js designateBiomes with
-// per-setting biome bands on each plot's effective latitude.
+// Biome pass that applies the mod's climate (zg-map-climate.js).
+// Port of {base-standard}maps/feature-biome-generator.js designateBiomes.
 //
-// Hot is a drier, warmer world: the Desert band widens and Tundra is pushed
-// further toward the poles. Cold is the reverse, a narrower Desert and Tundra
-// reaching closer to the equator. Tropical and Plains hold their standard edges
-// in every tier, and the rainfall extremes that force Desert and Tropical
-// outright are untouched, so only the latitude bands move.
+// Each land tile starts from its Map Zones latitude, which elevation, rainfall,
+// and nearby rivers then move by the Map Temperature weights; the result falls
+// into that step's biome bands. The rainfall extremes that force Desert and
+// Tropical outright are untouched. At Standard every value matches the base.
 import { g_MarineBiome, g_DesertBiome, g_MountainTerrain, g_TropicalBiome, g_PlainsBiome, g_GrasslandBiome, g_TundraBiome } from 'fs://game/base-standard/maps/map-globals.js';
-import { zgSettingTier } from './zg-map-settings.js';
+import { zgClimate } from './zg-map-climate.js';
+import { zgForEachTile } from './zg-map-utils.js';
 
-const TEMPERATURE_SETTING_KEY = "MapTemperatureKey";
-// Upper bounds of the Tropical, Plains, Desert, and Grassland bands; Tundra lies
-// beyond the last. Standard carries the base game's own bands.
-//
-// Only the third and fourth bounds move. Desert runs from the Plains edge to the
-// third, so Hot widens it by 7 degrees and Cold narrows it by the same; Tundra
-// begins at the fourth, so Hot pushes it 7 degrees poleward and Cold brings it 8
-// degrees equatorward. Grassland keeps a width of 13 to 14 in every tier.
-const TEMPERATURE_BANDS = {
-	ZG_COLD_TEMPERATURE: [17, 33, 37, 50],
-	ZG_STANDARD_TEMPERATURE: [17, 33, 44, 58],
-	ZG_HOT_TEMPERATURE: [17, 33, 51, 65],
-};
+const BAND_BIOMES = [g_TropicalBiome, g_PlainsBiome, g_DesertBiome, g_GrasslandBiome];
 
-function temperatureBands() {
-	const bands = zgSettingTier(TEMPERATURE_BANDS, TEMPERATURE_SETTING_KEY, "ZG_STANDARD_TEMPERATURE");
-	console.log(`ZG-ASP temperature: biome bands ${bands.join("/")}`);
-	return bands;
+// Rainfall and river offsets in degrees; negative is warmer.
+function moistureOffset(rainfall) {
+	return rainfall < 100 ? (100 - rainfall) / 10 : -(rainfall - 100) / 10;
+}
+
+function riverOffset(iX, iY) {
+	if (GameplayMap.isRiver(iX, iY)) {
+		return -10;
+	}
+	return GameplayMap.isAdjacentToRivers(iX, iY, 1) ? -5 : 0;
+}
+
+function bandBiome(bands, latitude) {
+	for (let band = 0; band < bands.length; band++) {
+		if (latitude < bands[band]) {
+			return BAND_BIOMES[band];
+		}
+	}
+	return g_TundraBiome;
 }
 
 export function zgDesignateBiomes(iWidth, iHeight) {
 	console.log("Biomes");
-	const [tropicalMax, plainsMax, desertMax, grasslandMax] = temperatureBands();
-	for (let iY = 0; iY < iHeight; iY++) {
-		for (let iX = 0; iX < iWidth; iX++) {
-			if (GameplayMap.isWater(iX, iY)) {
-				TerrainBuilder.setBiomeType(iX, iY, g_MarineBiome);
-				continue;
-			}
-			let latitude = Math.abs(GameplayMap.getPlotLatitude(iX, iY));
-			latitude += Math.round(GameplayMap.getElevation(iX, iY) / 120);
-			const rainfall = GameplayMap.getRainfall(iX, iY);
-			if (rainfall < 25) {
-				TerrainBuilder.setBiomeType(iX, iY, g_DesertBiome);
-			} else if (rainfall > 250 && GameplayMap.getTerrainType(iX, iY) != g_MountainTerrain) {
-				TerrainBuilder.setBiomeType(iX, iY, g_TropicalBiome);
-			} else {
-				if (rainfall < 100) {
-					latitude += (100 - rainfall) / 10;
-				} else if (rainfall > 100) {
-					latitude -= (rainfall - 100) / 10;
-				}
-				if (GameplayMap.isRiver(iX, iY)) {
-					latitude -= 10;
-				} else if (GameplayMap.isAdjacentToRivers(iX, iY, 1)) {
-					latitude -= 5;
-				}
-				if (latitude < tropicalMax) {
-					TerrainBuilder.setBiomeType(iX, iY, g_TropicalBiome);
-				} else if (latitude < plainsMax) {
-					TerrainBuilder.setBiomeType(iX, iY, g_PlainsBiome);
-				} else if (latitude < desertMax) {
-					TerrainBuilder.setBiomeType(iX, iY, g_DesertBiome);
-				} else if (latitude < grasslandMax) {
-					TerrainBuilder.setBiomeType(iX, iY, g_GrasslandBiome);
-				} else {
-					TerrainBuilder.setBiomeType(iX, iY, g_TundraBiome);
-				}
-			}
+	const { bands, weights, latitude: climateLatitude } = zgClimate();
+	zgForEachTile(iWidth, iHeight, (iX, iY) => {
+		if (GameplayMap.isWater(iX, iY)) {
+			TerrainBuilder.setBiomeType(iX, iY, g_MarineBiome);
+			return;
 		}
-	}
+		const rainfall = GameplayMap.getRainfall(iX, iY);
+		if (rainfall < 25) {
+			TerrainBuilder.setBiomeType(iX, iY, g_DesertBiome);
+		} else if (rainfall > 250 && GameplayMap.getTerrainType(iX, iY) != g_MountainTerrain) {
+			TerrainBuilder.setBiomeType(iX, iY, g_TropicalBiome);
+		} else {
+			const latitude = Math.abs(climateLatitude(iX, iY))
+				+ weights.elevation * Math.round(GameplayMap.getElevation(iX, iY) / 120)
+				+ weights.rainfall * moistureOffset(rainfall)
+				+ weights.river * riverOffset(iX, iY);
+			TerrainBuilder.setBiomeType(iX, iY, bandBiome(bands, latitude));
+		}
+	});
 }

@@ -5,11 +5,7 @@
 			<Text>Zatygold's Advanced Settings</Text>
 		</Row>
 		<Row Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION">
-			<Text>
-				Zatygold's Advanced Settings
-				[n] [n]This mod expands the game setup for Single player and Multiplayer by adding a bunch of extra options to the Advanced Settings menu.
-			 	It lets you fine-tune things that normally aren’t adjustable by giving you more configuration choices.
-			 </Text>
+			<Text>Zatygold's Advanced Settings[n] [n]This mod expands the single-player game setup with extra options in the Advanced Settings menu, letting you fine-tune systems that normally aren't adjustable. It stands aside in multiplayer, where settings come from Better Balanced Multiplayer.</Text>
 		</Row>
 	</EnglishText>
 </Database>

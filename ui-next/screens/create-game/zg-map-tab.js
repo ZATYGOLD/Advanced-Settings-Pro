@@ -8,29 +8,29 @@
 //      tab, each rendering the same game-setup body, which then sees only that
 //      tab's groups. General shows every group no extra tab claims.
 //
-// Every option row, the Player tab, and the multiplayer screen remain the
-// game's own code.
+// Every option row and the Player tab remain the game's own code. Multiplayer
+// and hotseat set up through the older shell screens, which this never touches.
 import { createSignal, createComponent, mergeProps, onCleanup } from 'fs://game/core/vendor/solid-js/dist/solid.js';
-import { ComponentRegistry } from 'fs://game/core/ui-next/services/component-registry.js';
 import { ModelRegistry, ModelLifecycle } from 'fs://game/core/ui-next/services/model-registry.js';
 import { L10n } from 'fs://game/core/ui-next/components/l10n.js';
 import 'fs://game/core/ui-next/components/tab.js';
 import 'fs://game/core/ui-next/screens/create-game/game-parameters-model.js';
+import { SCREEN_OVERRIDE_PRIORITY, zgWrapComponent } from './zg-component-override.js';
 
-const OVERRIDE_PRIORITY = 100;
 const GENERAL_TAB_NAME = "advanced-options-general";
 
-// Extra tabs, in display order, each claiming the parameter groups it shows.
+// The extra tabs, in display order, each claiming the parameter groups it shows;
+// General keeps every group no extra tab claims.
 const EXTRA_TABS = [
 	{
 		name: "zg-advanced-options-pace",
 		title: "LOC_ZG_ADVANCED_OPTIONS_AGES",
-		groups: new Set(["GamePacingOptions", "PacingAntiquityOptions", "PacingExplorationOptions", "PacingModernOptions"]),
+		groups: new Set(["ZG_GamePacingOptions", "ZG_PacingAntiquityOptions", "ZG_PacingExplorationOptions", "ZG_PacingModernOptions"]),
 	},
 	{
 		name: "zg-advanced-options-map",
 		title: "LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS",
-		groups: new Set(["MapOptions", "TerrainOptions", "DisasterOptions", "NaturalWonderSelectionOptions"]),
+		groups: new Set(["MapOptions", "ZG_TerrainOptions", "DisasterOptions", "ZG_NaturalWonderSelectionOptions"]),
 	},
 ];
 
@@ -93,7 +93,7 @@ if (createBaseGroupsModel) {
 				return filtered;
 			},
 		};
-	}, OVERRIDE_PRIORITY);
+	}, SCREEN_OVERRIDE_PRIORITY);
 }
 
 // 2. Tab.Item wrapper: General renders filtered, plus one sibling item per extra tab.
@@ -105,28 +105,17 @@ function tabBody(tab, body) {
 	};
 }
 
-const tabItem = ComponentRegistry.get("Tab.Item");
-// `factory` is a signal accessor returning the currently registered factory.
-// Read it once here to capture the base implementation before this module
-// overrides the registration; reading it later would return our own factory.
-const createBaseTabItem = tabItem?.factory?.();
-if (createBaseTabItem) {
-	ComponentRegistry.register({
-		name: "Tab.Item",
-		overridePriority: OVERRIDE_PRIORITY,
-		createInstance: (props) => {
-			if (props?.name != GENERAL_TAB_NAME || typeof props?.body != "function") {
-				return createBaseTabItem(props);
-			}
-			const body = props.body;
-			return [
-				createBaseTabItem(mergeProps(props, { body: tabBody(GENERAL_TAB_NAME, body) })),
-				...EXTRA_TABS.map((tab) => createBaseTabItem({
-					name: tab.name,
-					title: () => createComponent(L10n.Compose, { text: tab.title }),
-					body: tabBody(tab, body),
-				})),
-			];
-		},
-	});
-}
+zgWrapComponent("Tab.Item", SCREEN_OVERRIDE_PRIORITY, (createBaseTabItem) => (props) => {
+	if (props?.name != GENERAL_TAB_NAME || typeof props?.body != "function") {
+		return createBaseTabItem(props);
+	}
+	const body = props.body;
+	return [
+		createBaseTabItem(mergeProps(props, { body: tabBody(GENERAL_TAB_NAME, body) })),
+		...EXTRA_TABS.map((tab) => createBaseTabItem({
+			name: tab.name,
+			title: () => createComponent(L10n.Compose, { text: tab.title }),
+			body: tabBody(tab, body),
+		})),
+	];
+});

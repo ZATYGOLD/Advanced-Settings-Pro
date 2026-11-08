@@ -13,6 +13,9 @@
 		<Replace Tag="LOC_GROUPID_ZG_SETTLEMENTOPTIONS" Language="ja_JP">
 			<Text>入植地設定</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_SINGLE_PLAYER_SETUP_NAME" Language="ja_JP">
+			<Text>シングルプレイヤー設定</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="ja_JP">
 			<Text>有効</Text>
 		</Replace>
@@ -172,15 +175,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_NAME" Language="ja_JP">
 			<Text>湖</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME" Language="ja_JP">
-			<Text>古代</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME" Language="ja_JP">
-			<Text>探検の時代</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME" Language="ja_JP">
-			<Text>近代</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="ja_JP">
 			<Text>開拓者の陸上と海上の移動距離を設定します。速い開拓者は遠方の土地をライバルより先に確保できます。</Text>
@@ -512,12 +506,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_MORE" Language="ja_JP">
 			<Text>生成される湖が多くなります。</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="ja_JP">
-			<Text>Advanced Settings Pro</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="ja_JP">
-			<Text>ZatygoldのAdvanced Settings Pro[n] [n]このModは、詳細設定メニューに追加オプションを加えることで、シングルプレイヤーとマルチプレイヤーのゲーム設定を拡張します。通常は調整できないシステムを細かく設定できます。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="ja_JP">
 			<Text>この自然遺産がマップに出現できるかどうかを設定します。</Text>
@@ -866,21 +854,21 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="ja_JP">
 			<Text>序盤は都市の成長が速く、その後は標準に落ち着く。[nn][BLIST]
-				[LI] 古代：-25%
-				[LI] 探検の時代：-25%
+				[LI] 古代：やや速い
+				[LI] 探検の時代：やや速い
 				[LI] 近代：標準[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_EXTENDED" Language="ja_JP">
 			<Text>どの時代も都市の成長が遅い。[nn][BLIST]
-				[LI] 古代：+25%
-				[LI] 探検の時代：+25%
-				[LI] 近代：+25%[/BLIST]</Text>
+				[LI] 古代：遅い
+				[LI] 探検の時代：遅い
+				[LI] 近代：遅い[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SWIFT" Language="ja_JP">
 			<Text>どの時代も都市の成長が速い。[nn][BLIST]
-				[LI] 古代：-25%
-				[LI] 探検の時代：-25%
-				[LI] 近代：-25%[/BLIST]</Text>
+				[LI] 古代：やや速い
+				[LI] 探検の時代：やや速い
+				[LI] 近代：やや速い[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="ja_JP">
 			<Text>市民1人あたりの食料が50%減少。</Text>
@@ -895,19 +883,19 @@
 			<Text>近代までは標準の道路、その後は安くなる。[nn][BLIST]
 				[LI] 古代：標準
 				[LI] 探検の時代：標準
-				[LI] 近代：-25%[/BLIST]</Text>
+				[LI] 近代：やや速い[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXTENDED" Language="ja_JP">
 			<Text>近代までは標準の道路、その後は安くなる。[nn][BLIST]
 				[LI] 古代：標準
 				[LI] 探検の時代：標準
-				[LI] 近代：-25%[/BLIST]</Text>
+				[LI] 近代：やや速い[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SWIFT" Language="ja_JP">
 			<Text>マップが広がるほど道路の移動コストが下がる。[nn][BLIST]
-				[LI] 古代：-25%
-				[LI] 探検の時代：-50%
-				[LI] 近代：-50%[/BLIST]</Text>
+				[LI] 古代：やや速い
+				[LI] 探検の時代：速い
+				[LI] 近代：速い[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SLOW" Language="ja_JP">
 			<Text>1タイルあたりの移動力が25%増加。</Text>
@@ -970,12 +958,6 @@
 		<Replace Tag="LOC_ZG_CIV_CHOICE_HISTORICAL" Language="ja_JP">
 			<Text>歴史</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_CIV_CHOICE_GEOGRAPHIC" Language="ja_JP">
-			<Text>地理</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_LOBBY_SUGGESTED_CIVS" Language="ja_JP">
-			<Text>おすすめの文明</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_AGE_TRANSITION_CIVS_DESCRIPTION_HISTORICAL" Language="ja_JP">
 			<Text>各AIは指導者の歴史に従います。新しい時代に指導者の歴史的文明があればそれに移り、現在の文明が歴史的文明ならそのまま維持します。[n]それ以外は通常の時代移行の道筋に従い、地理的文明を優先します。既に選ばれた文明は避け、すべて選ばれている場合のみ重複します。[n]試験的機能：パッチ1.5以降、ゲームがこの選択を上書きする場合があります。</Text>
 		</Replace>
@@ -995,7 +977,7 @@
 			<Text>マップの気温</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION" Language="ja_JP">
-			<Text>各陸地タイルのバイオームを決める気候帯をずらします。</Text>
+			<Text>世界の暖かさを設定します。陸地を覆うバイオーム、海氷・サンゴ礁・雪の広がり、高地・降水量・河川が局地的な気候に与える影響の強さが変わります。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_COLD_NAME" Language="ja_JP">
 			<Text>寒冷</Text>
@@ -1004,13 +986,76 @@
 			<Text>高温</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_COLD" Language="ja_JP">
-			<Text>ツンドラが赤道に近づき、砂漠が草原に置き換わります。</Text>
+			<Text>ツンドラが赤道近くから始まり、砂漠は草原に変わります。海氷と雪が極から遠くまで広がり、高地が早くツンドラになります。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_STANDARD" Language="ja_JP">
 			<Text>選択したマップタイプの標準的な気候。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_HOT" Language="ja_JP">
-			<Text>砂漠が赤道から遠くまで広がり、ツンドラが極方向へ後退します。</Text>
+			<Text>砂漠が赤道から遠くまで広がり、ツンドラが極方向へ後退します。海氷と雪が減り、雨の多い土地と河川の谷が緑豊かになります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_FRIGID_NAME" Language="ja_JP">
+			<Text>極寒</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_SCORCHING_NAME" Language="ja_JP">
+			<Text>灼熱</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_FRIGID" Language="ja_JP">
+			<Text>氷河期の世界です。陸地の約70%がツンドラになり、海氷と雪が中緯度まで広がり、暖かい土地の大半は河川の谷にあります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_SCORCHING" Language="ja_JP">
+			<Text>温室効果の世界です。陸地の大半を砂漠とジャングルが覆い、海氷と雪は消え、河川が砂漠を貫く肥沃な帯になります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="ja_JP">
+			<Text>5つの気温のいずれかを、マップシードから決定します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_NAME" Language="ja_JP">
+			<Text>マップゾーン</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION" Language="ja_JP">
+			<Text>マップの暑い地域と寒い地域がどこにあるかを決めます。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_STANDARD" Language="ja_JP">
+			<Text>ベースゲームと同じく、マップ中央を横切る暑い帯があり、上下に向かって寒くなります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_EDGE_NAME" Language="ja_JP">
+			<Text>暑い端</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_EDGE" Language="ja_JP">
+			<Text>マップの上端または下端（マップシードで決定）が暑く、反対側の凍てついた端に向かって徐々に寒くなります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_POLES_NAME" Language="ja_JP">
+			<Text>暑い極</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_POLES" Language="ja_JP">
+			<Text>マップの上下が暑く、中央を横切る寒い帯があります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_CENTER_NAME" Language="ja_JP">
+			<Text>暑い中心</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_CENTER" Language="ja_JP">
+			<Text>マップ中央が最も暑く、あらゆる方向へ外に向かって寒くなり、端と角が最も寒くなります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_COLD_CENTER_NAME" Language="ja_JP">
+			<Text>寒い中心</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_COLD_CENTER" Language="ja_JP">
+			<Text>マップ中央が最も寒く、あらゆる方向へ外に向かって暖かくなり、端と角が最も暑くなります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_WARM_RING_NAME" Language="ja_JP">
+			<Text>暖かい環</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_WARM_RING" Language="ja_JP">
+			<Text>暖かい帯がマップ中央を囲み、その内側と端の周りは寒くなります。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_PATCHWORK_NAME" Language="ja_JP">
+			<Text>パッチワーク</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_PATCHWORK" Language="ja_JP">
+			<Text>暑い地域と寒い地域が帯状ではなく不規則なまだら模様に分布します。</Text>
+		</Replace>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_RANDOM" Language="ja_JP">
+			<Text>7つの配置のいずれかを、マップシードから決定します。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="ja_JP">
 			<Text>川</Text>
@@ -1110,9 +1155,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="ja_JP">
 			<Text>非常に速いペース。標準より150%速い。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="ja_JP">
-			<Text>各時代は下のそれぞれのグループにある「時代の長さ」の行を使います。バランスは150、170、200ポイント、マルチプレイヤーは140、160、180ポイントに設定します。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="ja_JP">
 			<Text>長めの時代。後の時代ほど長くなる。[nn][BLIST]
@@ -1408,8 +1450,8 @@
 				[LI] 社会制度コスト：+25% / +50% / +50%
 				[LI] 建造物のコスト：+25% / +50% / +50%
 				[LI] 勝利プロジェクトのコスト：+25%
-				[LI] 入植地の成長：+25%
-				[LI] 道路の速度：標準 / 標準 / -25%
+				[LI] 入植地の成長：遅い
+				[LI] 道路の速度：標準 / 標準 / やや速い
 				[LI] 交易の速度：-25%
 				[LI] 破壊の速度：標準[/BLIST]</Text>
 		</Replace>
@@ -1421,8 +1463,8 @@
 				[LI] 社会制度コスト：-25% / -25% / 標準
 				[LI] 建造物のコスト：-25%
 				[LI] 勝利プロジェクトのコスト：-25%
-				[LI] 入植地の成長：-25%
-				[LI] 道路の速度：-25% / -50% / -50%
+				[LI] 入植地の成長：やや速い
+				[LI] 道路の速度：やや速い / 速い / 速い
 				[LI] 交易の速度：即時
 				[LI] 破壊の速度：即時[/BLIST]</Text>
 		</Replace>
@@ -1434,8 +1476,8 @@
 				[LI] 社会制度コスト：標準 / +25% / +25%
 				[LI] 建造物のコスト：+25% / 標準 / 標準
 				[LI] 勝利プロジェクトのコスト：標準 / -25% / -25%
-				[LI] 入植地の成長：-25% / -25% / 標準
-				[LI] 道路の速度：標準 / 標準 / -25%
+				[LI] 入植地の成長：やや速い / やや速い / 標準
+				[LI] 道路の速度：標準 / 標準 / やや速い
 				[LI] 交易の速度：標準
 				[LI] 破壊の速度：標準[/BLIST]</Text>
 		</Replace>
@@ -1447,8 +1489,8 @@
 				[LI] 社会制度コスト：+50% / +50% / +100%
 				[LI] 建造物のコスト：標準
 				[LI] 勝利プロジェクトのコスト：標準 / 標準 / +25%
-				[LI] 入植地の成長：+25%
-				[LI] 道路の速度：-25% / -25% / -50%
+				[LI] 入植地の成長：遅い
+				[LI] 道路の速度：やや速い / やや速い / 速い
 				[LI] 交易の速度：標準
 				[LI] 破壊の速度：標準[/BLIST]</Text>
 		</Replace>

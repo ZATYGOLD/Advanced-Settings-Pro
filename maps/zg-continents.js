@@ -1,6 +1,7 @@
-// Copy of {base-standard}maps/continents.js with terrain, rivers, biomes and
-// resources generated through the zg-map-* modules; imports are repointed at
-// the base modules.
+// Copy of {base-standard}maps/continents.js
+// with its terrain, river, biome, feature, snow and resource passes replaced by
+// the zg-map-* modules; imports are repointed at the base modules.
+// Indentation stays as in the base file, so a patch re-syncs as a plain diff.
 import { zgModelRivers } from './zg-map-rivers.js';
 import { zgDesignateBiomes } from './zg-map-biomes.js';
 import { zgAddMountains } from './zg-map-mountains.js';
@@ -9,13 +10,14 @@ import { chooseStartSectors, assignStartPositions } from 'fs://game/base-standar
 import { generateDiscoveries } from 'fs://game/base-standard/maps/discovery-generator.js';
 import { expandCoasts, generateLakes, buildRainfallMap } from 'fs://game/base-standard/maps/elevation-terrain-generator.js';
 import { zgAddRough } from './zg-map-rough.js';
-import { addFeatures } from 'fs://game/base-standard/maps/feature-biome-generator.js';
+import { zgAddFeatures } from './zg-map-features.js';
 import { dumpStartSectors, dumpContinents, dumpTerrain, dumpElevation, dumpRainfall, dumpBiomes, dumpFeatures, dumpResources, dumpNoisePredicate } from 'fs://game/base-standard/maps/map-debug-helpers.js';
 import { g_OceanWaterColumns, g_PolarWaterRows, g_WaterPercent, g_Cutoff, g_LandmassFractal, g_FlatTerrain, g_OceanTerrain, g_FractalWeight, g_CenterWeight, g_StartSectorWeight, g_CoastTerrain } from 'fs://game/base-standard/maps/map-globals.js';
 import { needHumanNearEquator, applyCoastalErosionAdjustingForStartSectors, createOrganicLandmasses, applyCoastalErosion, markLandmassRegionId, getHeightAdjustingForStartSector, getSector } from 'fs://game/base-standard/maps/map-utilities.js';
 import { addNaturalWonders } from 'fs://game/base-standard/maps/natural-wonder-generator.js';
 import { zgGenerateResources } from './zg-map-resources.js';
-import { generateSnow, dumpPermanentSnow } from 'fs://game/base-standard/maps/snow-generator.js';
+import { dumpPermanentSnow } from 'fs://game/base-standard/maps/snow-generator.js';
+import { zgGenerateSnow } from './zg-map-snow.js';
 import { addVolcanoes, addTundraVolcanoes } from 'fs://game/base-standard/maps/volcano-generator.js';
 
 console.log("Generating using script Continents.ts");
@@ -165,11 +167,11 @@ function generateMap() {
   addTundraVolcanoes(iWidth, iHeight);
   addNaturalWonders(iWidth, iHeight, iNumNaturalWonders);
   TerrainBuilder.addFloodplains(4, 10);
-  addFeatures(iWidth, iHeight);
+  zgAddFeatures(iWidth, iHeight);
   TerrainBuilder.validateAndFixTerrain();
   AreaBuilder.recalculateAreas();
   TerrainBuilder.storeWaterData();
-  generateSnow(iWidth, iHeight);
+  zgGenerateSnow(iWidth, iHeight);
   dumpContinents(iWidth, iHeight);
   dumpTerrain(iWidth, iHeight);
   dumpElevation(iWidth, iHeight);

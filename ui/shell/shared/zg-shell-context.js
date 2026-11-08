@@ -1,56 +1,65 @@
 // What the shell is doing right now, for scripts that run throughout it.
 //
 // The mod's setup scripts poll GameSetup for as long as the shell is up, which
-// covers single-player setup, the multiplayer Create Game screen, the lobby a
-// client has joined, and the shell that runs an age transition. Two questions
-// decide whether a script should act:
-//   canEditSetup   only the host writes setup parameters in multiplayer; a
-//                  joined client sees every change arrive and must not answer
-//                  it with writes of its own. Outside multiplayer, always.
-//   isAgeTransition the shell is between ages rather than setting up a game.
-//
-// "A joined client" is read narrowly: a network game with a host on record who
-// is someone else. The multiplayer Create Game screen already counts as a
-// network game while no session exists yet and no host is recorded, and the
-// one setting the game up there must be able to edit it.
+// covers single-player setup, every multiplayer and hotseat screen, and the
+// shell that runs an age transition. They act only on a single-player setup:
+// multiplayer settings come from Better Balanced Multiplayer, and an age transition
+// is settled by ui/age-transition/.
+import { ContextManager } from 'fs://game/core/ui/context-manager/context-manager.js';
+import { isMultiplayer } from '../../shared/zg-config.js';
 
-export const isAgeTransition = () => Modding.getTransitionInProgress() == TransitionType.Age;
+export const SETUP_SCREEN = "create-game-sp";
 
-let lastCanEdit = null;
+const isAgeTransition = () => Modding.getTransitionInProgress() == TransitionType.Age;
 
-export function canEditSetup() {
-	const game = Configuration.getGame();
-	const host = Network.getHostPlayerId();
-	const canEdit = !game?.isNetworkMultiplayer || !(host >= 0) || host == GameContext.localPlayerID;
-	if (canEdit !== lastCanEdit) {
-		lastCanEdit = canEdit;
-		console.warn(`ZG-ASP setup: ${canEdit ? "editing" : "read-only"} (network ${!!game?.isNetworkMultiplayer}, host ${host}, local ${GameContext.localPlayerID})`);
-	}
-	return canEdit;
+const isSinglePlayerSetup = () => !isMultiplayer() && !isAgeTransition();
+// The single-player setup screen is open, not just a single-player configuration
+// (the main menu's reset and Load Game write one too).
+export const isSinglePlayerSetupOpen = () => ContextManager.hasInstanceOf(SETUP_SCREEN) && isSinglePlayerSetup();
+
+// One poll of the setup shared by every script that follows it, running only
+// while something listens. onSetupPoll calls back on every poll; onSetupRevision
+// only when the setup's revision has moved, with whether this is a fresh start:
+// the revision went backwards (a new setup restarts the count) or `ready` has
+// just turned true. A revision passed while `ready` says no is held over until
+// it says yes. Each returns its unsubscribe.
+const SETUP_POLL_MS = 250;
+const pollListeners = new Set();
+let pollTimer = null;
+
+export function onSetupPoll(listener) {
+	pollListeners.add(listener);
+	pollTimer ??= setInterval(() => pollListeners.forEach((poll) => {
+		try {
+			poll();
+		} catch (error) {
+			console.error(`ZG-ASP setup poll: ${error}`);
+		}
+	}), SETUP_POLL_MS);
+	return () => {
+		pollListeners.delete(listener);
+		if (pollListeners.size == 0) {
+			clearInterval(pollTimer);
+			pollTimer = null;
+		}
+	};
 }
 
-// A config database query that logs and yields no rows rather than throwing.
-export function queryConfig(sql) {
-	try {
-		return Database.query("config", sql) ?? [];
-	} catch (error) {
-		console.error(`ZG-ASP: config query failed: ${error}`);
-		return [];
-	}
-}
-
-// A value built on first use and kept; the config database does not change
-// while the shell is open.
-export function cached(build) {
-	let value;
-	return () => (value ??= build());
-}
-
-// Base for Controls.decorate decorators: the panel calls all four hooks, so a
-// decorator overrides only the ones it uses.
-export class Decorator {
-	beforeAttach() {}
-	afterAttach() {}
-	beforeDetach() {}
-	afterDetach() {}
+export function onSetupRevision(listener, ready = () => true) {
+	let lastRevision = -1;
+	let wasReady = false;
+	return onSetupPoll(() => {
+		if (!ready()) {
+			wasReady = false;
+			return;
+		}
+		const revision = GameSetup.currentRevision;
+		const restarted = !wasReady || revision < lastRevision;
+		if (revision == lastRevision && !restarted) {
+			return;
+		}
+		wasReady = true;
+		lastRevision = revision;
+		listener(restarted);
+	});
 }
