@@ -13,6 +13,9 @@
 		<Replace Tag="LOC_GROUPID_ZG_SETTLEMENTOPTIONS" Language="ru_RU">
 			<Text>Настройки поселений</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_SINGLE_PLAYER_SETUP_NAME" Language="ru_RU">
+			<Text>Настройка одиночной игры</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="ru_RU">
 			<Text>Включено</Text>
 		</Replace>
@@ -1021,53 +1024,53 @@
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="ru_RU">
 			<Text>Одна из пяти температур, выбранная по зерну карты.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_NAME" Language="ru_RU">
-			<Text>Источник тепла</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_NAME" Language="ru_RU">
+			<Text>Зоны карты</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION" Language="ru_RU">
-			<Text>Откуда исходит тепло мира и, следовательно, где лежат его жаркие и холодные области.</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION" Language="ru_RU">
+			<Text>Где лежат жаркие и холодные области карты.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_STANDARD" Language="ru_RU">
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_STANDARD" Language="ru_RU">
 			<Text>Жаркая полоса проходит через середину карты и остывает к верху и низу, как в базовой игре.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_TILTED_AXIS_NAME" Language="ru_RU">
-			<Text>Наклонённая ось</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_EDGE_NAME" Language="ru_RU">
+			<Text>Жаркий край</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_TILTED_AXIS" Language="ru_RU">
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_EDGE" Language="ru_RU">
 			<Text>Жарко у северного или южного края карты (его выбирает зерно карты), с постепенным похолоданием к скованному льдом противоположному краю.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DUAL_SUN_NAME" Language="ru_RU">
-			<Text>Двойное солнце</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_POLES_NAME" Language="ru_RU">
+			<Text>Жаркие полюса</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_DUAL_SUN" Language="ru_RU">
-			<Text>Два солнца нагревают верх и низ карты, оставляя холодную полосу посередине.</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_POLES" Language="ru_RU">
+			<Text>Жарко вверху и внизу карты, с холодной полосой посередине.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_HOT_CENTER_NAME" Language="ru_RU">
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_CENTER_NAME" Language="ru_RU">
 			<Text>Жаркий центр</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_HOT_CENTER" Language="ru_RU">
-			<Text>Тепло расходится от середины карты во все стороны, поэтому края и углы самые холодные.</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_CENTER" Language="ru_RU">
+			<Text>Жарче всего в середине карты, холоднее к краям во всех направлениях, поэтому края и углы самые холодные.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_COLD_CENTER_NAME" Language="ru_RU">
+		<Replace Tag="LOC_ZG_MAP_ZONES_COLD_CENTER_NAME" Language="ru_RU">
 			<Text>Холодный центр</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_COLD_CENTER" Language="ru_RU">
-			<Text>Холод расходится от середины карты во все стороны, поэтому края и углы самые тёплые.</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_COLD_CENTER" Language="ru_RU">
+			<Text>Холоднее всего в середине карты, теплее к краям во всех направлениях, поэтому края и углы самые жаркие.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_WARM_RING_NAME" Language="ru_RU">
+		<Replace Tag="LOC_ZG_MAP_ZONES_WARM_RING_NAME" Language="ru_RU">
 			<Text>Тёплое кольцо</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_WARM_RING" Language="ru_RU">
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_WARM_RING" Language="ru_RU">
 			<Text>Полоса тепла опоясывает середину карты, а внутри неё и вдоль краёв холодно.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_PATCHWORK_NAME" Language="ru_RU">
+		<Replace Tag="LOC_ZG_MAP_ZONES_PATCHWORK_NAME" Language="ru_RU">
 			<Text>Лоскутное одеяло</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_PATCHWORK" Language="ru_RU">
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_PATCHWORK" Language="ru_RU">
 			<Text>Жаркие и холодные области лежат неровными пятнами, а не поясами.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_RANDOM" Language="ru_RU">
-			<Text>Один из семи источников тепла, выбранный по зерну карты.</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_RANDOM" Language="ru_RU">
+			<Text>Одна из семи раскладок, выбранная по зерну карты.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="ru_RU">
 			<Text>Реки</Text>

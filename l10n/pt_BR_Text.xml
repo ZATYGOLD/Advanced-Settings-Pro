@@ -13,6 +13,9 @@
 		<Replace Tag="LOC_GROUPID_ZG_SETTLEMENTOPTIONS" Language="pt_BR">
 			<Text>Configurações de assentamentos</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_SINGLE_PLAYER_SETUP_NAME" Language="pt_BR">
+			<Text>Configuração de um jogador</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="pt_BR">
 			<Text>Ativado</Text>
 		</Replace>
@@ -1021,53 +1024,53 @@
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="pt_BR">
 			<Text>Uma das cinco temperaturas, sorteada pela semente do mapa.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_NAME" Language="pt_BR">
-			<Text>Fonte de calor</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_NAME" Language="pt_BR">
+			<Text>Zonas do mapa</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION" Language="pt_BR">
-			<Text>De onde vem o calor do mundo e, portanto, onde ficam suas regiões quentes e frias.</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION" Language="pt_BR">
+			<Text>Onde ficam as regiões quentes e frias do mapa.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_STANDARD" Language="pt_BR">
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_STANDARD" Language="pt_BR">
 			<Text>Uma faixa quente atravessa o meio do mapa e esfria em direção ao topo e à base, como no jogo base.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_TILTED_AXIS_NAME" Language="pt_BR">
-			<Text>Eixo inclinado</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_EDGE_NAME" Language="pt_BR">
+			<Text>Borda quente</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_TILTED_AXIS" Language="pt_BR">
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_EDGE" Language="pt_BR">
 			<Text>Quente ao longo da borda norte ou sul do mapa, escolhida pela semente do mapa, esfriando gradualmente até uma borda oposta congelada.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DUAL_SUN_NAME" Language="pt_BR">
-			<Text>Sol duplo</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_POLES_NAME" Language="pt_BR">
+			<Text>Polos quentes</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_DUAL_SUN" Language="pt_BR">
-			<Text>Dois sóis aquecem o topo e a base do mapa, deixando uma faixa fria no meio.</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_POLES" Language="pt_BR">
+			<Text>Quente no topo e na base do mapa, com uma faixa fria no meio.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_HOT_CENTER_NAME" Language="pt_BR">
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_CENTER_NAME" Language="pt_BR">
 			<Text>Centro quente</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_HOT_CENTER" Language="pt_BR">
-			<Text>O calor se espalha a partir do meio do mapa em todas as direções, deixando as bordas e os cantos mais frios.</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_CENTER" Language="pt_BR">
+			<Text>Mais quente no meio do mapa e mais frio para fora em todas as direções, deixando as bordas e os cantos mais frios.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_COLD_CENTER_NAME" Language="pt_BR">
+		<Replace Tag="LOC_ZG_MAP_ZONES_COLD_CENTER_NAME" Language="pt_BR">
 			<Text>Centro frio</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_COLD_CENTER" Language="pt_BR">
-			<Text>O frio se espalha a partir do meio do mapa em todas as direções, deixando as bordas e os cantos mais quentes.</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_COLD_CENTER" Language="pt_BR">
+			<Text>Mais frio no meio do mapa e mais quente para fora em todas as direções, deixando as bordas e os cantos mais quentes.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_WARM_RING_NAME" Language="pt_BR">
+		<Replace Tag="LOC_ZG_MAP_ZONES_WARM_RING_NAME" Language="pt_BR">
 			<Text>Anel quente</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_WARM_RING" Language="pt_BR">
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_WARM_RING" Language="pt_BR">
 			<Text>Uma faixa de calor circunda o meio do mapa, com frio no seu interior e ao longo das bordas.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_PATCHWORK_NAME" Language="pt_BR">
+		<Replace Tag="LOC_ZG_MAP_ZONES_PATCHWORK_NAME" Language="pt_BR">
 			<Text>Mosaico</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_PATCHWORK" Language="pt_BR">
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_PATCHWORK" Language="pt_BR">
 			<Text>Regiões quentes e frias ficam em manchas irregulares em vez de faixas.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_RANDOM" Language="pt_BR">
-			<Text>Uma das sete fontes de calor, sorteada pela semente do mapa.</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_RANDOM" Language="pt_BR">
+			<Text>Um dos sete arranjos, sorteado pela semente do mapa.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="pt_BR">
 			<Text>Rios</Text>

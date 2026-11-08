@@ -1,9 +1,9 @@
-// The climate every map shares: the Map Temperature and Heat Source settings.
+// The climate every map shares: the Map Temperature and Map Zones settings.
 // Adapted, with permission, from Scrum Lord's Climate Controls.
 //
-// Heat Source decides each tile's latitude, from 0 at the hottest point to 90
+// Map Zones decides each tile's latitude, from 0 at the hottest point to 90
 // at the coldest. The biome, feature and snow passes all read it here instead
-// of from the engine, so every Heat Source reaches all three. Standard returns
+// of from the engine, so every layout reaches all three. Standard returns
 // the engine's own latitude untouched.
 //
 // Map Temperature then sets, per step:
@@ -17,7 +17,7 @@
 import { zgInterpolate, zgSettingTier } from './zg-map-utils.js';
 
 const TEMPERATURE_SETTING_KEY = "MapTemperatureKey";
-const HEAT_SOURCE_SETTING_KEY = "HeatSourceKey";
+const MAP_ZONES_SETTING_KEY = "MapZonesKey";
 const MAX_LATITUDE = 90;
 // map-globals.js gives the landmass, mountain, and hill fractals ids 0 to 2.
 const PATCHWORK_FRACTAL = 3;
@@ -82,31 +82,31 @@ function patchworkBands() {
 const standardSun = (latitude) => latitude;
 // The southern pole faces the sun: hottest there, cooling evenly to the coldest
 // at the northern pole. On ring bands the poles are the center and the edges.
-const tiltedSun = (latitude) => (latitude + 1) / 2;
+const hotEdgeSun = (latitude) => (latitude + 1) / 2;
 // Hot poles and a cold equator.
-const dualSun = (latitude) => (latitude < 0 ? -1 : 1) - latitude;
+const hotPolesSun = (latitude) => (latitude < 0 ? -1 : 1) - latitude;
 
 // rollHotEdge: the map seed picks which pole faces the sun, north or south.
-const HEAT_SOURCE_TIERS = {
-	ZG_HEAT_SOURCE_STANDARD: null,
-	ZG_HEAT_SOURCE_DUAL_SUN: { bands: stripeBands, sun: dualSun },
-	ZG_HEAT_SOURCE_TILTED_AXIS: { bands: stripeBands, sun: tiltedSun, rollHotEdge: true },
-	ZG_HEAT_SOURCE_HOT_CENTER: { bands: () => ringBands(true), sun: tiltedSun },
-	ZG_HEAT_SOURCE_COLD_CENTER: { bands: () => ringBands(false), sun: tiltedSun },
-	ZG_HEAT_SOURCE_WARM_RING: { bands: () => ringBands(false), sun: standardSun },
-	ZG_HEAT_SOURCE_PATCHWORK: { bands: patchworkBands, sun: standardSun },
+const MAP_ZONE_TIERS = {
+	ZG_MAP_ZONES_STANDARD: null,
+	ZG_MAP_ZONES_HOT_POLES: { bands: stripeBands, sun: hotPolesSun },
+	ZG_MAP_ZONES_HOT_EDGE: { bands: stripeBands, sun: hotEdgeSun, rollHotEdge: true },
+	ZG_MAP_ZONES_HOT_CENTER: { bands: () => ringBands(true), sun: hotEdgeSun },
+	ZG_MAP_ZONES_COLD_CENTER: { bands: () => ringBands(false), sun: hotEdgeSun },
+	ZG_MAP_ZONES_WARM_RING: { bands: () => ringBands(false), sun: standardSun },
+	ZG_MAP_ZONES_PATCHWORK: { bands: patchworkBands, sun: standardSun },
 };
 
-// Signed latitude in degrees for every tile, by Heat Source, and whether it is
+// Signed latitude in degrees for every tile, by Map Zones, and whether it is
 // the engine's own.
-function heatSourceLatitude() {
-	const source = zgSettingTier(HEAT_SOURCE_TIERS, HEAT_SOURCE_SETTING_KEY, "ZG_HEAT_SOURCE_STANDARD", "ZG_HEAT_SOURCE_RANDOM");
+function mapZoneLatitude() {
+	const source = zgSettingTier(MAP_ZONE_TIERS, MAP_ZONES_SETTING_KEY, "ZG_MAP_ZONES_STANDARD", "ZG_MAP_ZONES_RANDOM");
 	if (!source) {
 		return { latitude: (x, y) => GameplayMap.getPlotLatitude(x, y), engineLatitude: true };
 	}
 	let bands = source.bands();
 	if (source.rollHotEdge) {
-		const northHot = TerrainBuilder.getRandomNumber(2, "ZG Heat Source Hot Edge") == 1;
+		const northHot = TerrainBuilder.getRandomNumber(2, "ZG Map Zones Hot Edge") == 1;
 		console.log(`ZG-ASP climate: ${northHot ? "north" : "south"} edge hot`);
 		if (northHot) {
 			const southHot = bands;
@@ -117,12 +117,14 @@ function heatSourceLatitude() {
 }
 
 let climate = null;
+// A new map resolves both settings afresh.
+if (typeof engine !== "undefined") engine.on("RequestMapInitData", () => { climate = null; });
 
 // Both settings resolve once per map, so a Random roll holds for every pass.
 export function zgClimate() {
 	if (!climate) {
 		const temperature = zgSettingTier(TEMPERATURE_TIERS, TEMPERATURE_SETTING_KEY, "ZG_STANDARD_TEMPERATURE", "ZG_RANDOM_TEMPERATURE");
-		climate = { ...temperature, ...heatSourceLatitude() };
+		climate = { ...temperature, ...mapZoneLatitude() };
 		console.log(`ZG-ASP climate: bands ${temperature.bands.join("/")}, shift ${temperature.shift}, weights ${Object.values(temperature.weights).join("/")}`);
 	}
 	return climate;

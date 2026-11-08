@@ -13,6 +13,9 @@
 		<Replace Tag="LOC_GROUPID_ZG_SETTLEMENTOPTIONS" Language="ja_JP">
 			<Text>入植地設定</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_SINGLE_PLAYER_SETUP_NAME" Language="ja_JP">
+			<Text>シングルプレイヤー設定</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="ja_JP">
 			<Text>有効</Text>
 		</Replace>
@@ -1021,53 +1024,53 @@
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="ja_JP">
 			<Text>5つの気温のいずれかを、マップシードから決定します。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_NAME" Language="ja_JP">
-			<Text>熱源</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_NAME" Language="ja_JP">
+			<Text>マップゾーン</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION" Language="ja_JP">
-			<Text>世界の暖かさがどこから来るのか、つまり暑い地域と寒い地域がどこにあるかを決めます。</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION" Language="ja_JP">
+			<Text>マップの暑い地域と寒い地域がどこにあるかを決めます。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_STANDARD" Language="ja_JP">
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_STANDARD" Language="ja_JP">
 			<Text>ベースゲームと同じく、マップ中央を横切る暑い帯があり、上下に向かって寒くなります。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_TILTED_AXIS_NAME" Language="ja_JP">
-			<Text>傾いた地軸</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_EDGE_NAME" Language="ja_JP">
+			<Text>暑い端</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_TILTED_AXIS" Language="ja_JP">
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_EDGE" Language="ja_JP">
 			<Text>マップの北端または南端（マップシードで決定）が暑く、反対側の凍てついた端に向かって徐々に寒くなります。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DUAL_SUN_NAME" Language="ja_JP">
-			<Text>二重太陽</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_POLES_NAME" Language="ja_JP">
+			<Text>暑い極</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_DUAL_SUN" Language="ja_JP">
-			<Text>2つの太陽がマップの上下を温め、中央を横切る寒い帯が残ります。</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_POLES" Language="ja_JP">
+			<Text>マップの上下が暑く、中央を横切る寒い帯があります。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_HOT_CENTER_NAME" Language="ja_JP">
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_CENTER_NAME" Language="ja_JP">
 			<Text>熱い中心</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_HOT_CENTER" Language="ja_JP">
-			<Text>熱がマップ中央からあらゆる方向に広がり、端と角が最も寒くなります。</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_CENTER" Language="ja_JP">
+			<Text>マップ中央が最も暑く、あらゆる方向へ外に向かって寒くなり、端と角が最も寒くなります。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_COLD_CENTER_NAME" Language="ja_JP">
+		<Replace Tag="LOC_ZG_MAP_ZONES_COLD_CENTER_NAME" Language="ja_JP">
 			<Text>寒い中心</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_COLD_CENTER" Language="ja_JP">
-			<Text>寒さがマップ中央からあらゆる方向に広がり、端と角が最も暖かくなります。</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_COLD_CENTER" Language="ja_JP">
+			<Text>マップ中央が最も寒く、あらゆる方向へ外に向かって暖かくなり、端と角が最も暑くなります。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_WARM_RING_NAME" Language="ja_JP">
+		<Replace Tag="LOC_ZG_MAP_ZONES_WARM_RING_NAME" Language="ja_JP">
 			<Text>暖かい環</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_WARM_RING" Language="ja_JP">
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_WARM_RING" Language="ja_JP">
 			<Text>暖かい帯がマップ中央を囲み、その内側と端の周りは寒くなります。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_PATCHWORK_NAME" Language="ja_JP">
+		<Replace Tag="LOC_ZG_MAP_ZONES_PATCHWORK_NAME" Language="ja_JP">
 			<Text>パッチワーク</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_PATCHWORK" Language="ja_JP">
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_PATCHWORK" Language="ja_JP">
 			<Text>暑い地域と寒い地域が帯状ではなく不規則なまだら模様に分布します。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_RANDOM" Language="ja_JP">
-			<Text>7つの熱源のいずれかを、マップシードから決定します。</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_RANDOM" Language="ja_JP">
+			<Text>7つの配置のいずれかを、マップシードから決定します。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="ja_JP">
 			<Text>川</Text>

@@ -1,7 +1,7 @@
 // Feature pass that applies the mod's climate (zg-map-climate.js).
 // Port of {base-standard}maps/feature-biome-generator.js addFeatures.
 //
-// Sea ice, reefs, and open-water features read the Heat Source latitude plus
+// Sea ice, reefs, and open-water features read the Map Zones latitude plus
 // the Map Temperature shift, so a colder step pushes ice toward the equator and
 // a hotter one carries reefs toward the poles. Land features follow the biomes
 // and are placed as in the base. Every random roll keeps the base order, so a

@@ -1,7 +1,7 @@
 // Biome pass that applies the mod's climate (zg-map-climate.js).
 // Port of {base-standard}maps/feature-biome-generator.js designateBiomes.
 //
-// Each land tile starts from its Heat Source latitude, which elevation, rainfall,
+// Each land tile starts from its Map Zones latitude, which elevation, rainfall,
 // and nearby rivers then move by the Map Temperature weights; the result falls
 // into that step's biome bands. The rainfall extremes that force Desert and
 // Tropical outright are untouched. At Standard every value matches the base.

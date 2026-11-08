@@ -4,7 +4,7 @@
 // The base lays permanent snow in rows inward from each polar edge: from the
 // first land row past the polar water down to latitude 60, the chance of any
 // snow falls from 90% to 30% and heavy snow gives way to medium and light. Here
-// the same curve is laid by each land tile's Heat Source latitude plus the Map
+// the same curve is laid by each land tile's Map Zones latitude plus the Map
 // Temperature shift instead of its row, so snow follows the cold wherever it
 // lies. With Standard on both settings the base pass runs unchanged.
 import { g_PolarWaterRows } from 'fs://game/base-standard/maps/map-globals.js';

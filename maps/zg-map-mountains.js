@@ -53,7 +53,7 @@ function countMountainNeighbours(location) {
 	let count = 0;
 	for (let direction = 0; direction < DirectionTypes.NUM_DIRECTION_TYPES; direction++) {
 		const adjacent = GameplayMap.getAdjacentPlotLocation(location, direction);
-		if (adjacent.x >= 0 && adjacent.y >= 0 && GameplayMap.isMountain(adjacent.x, adjacent.y)) {
+		if (adjacent && adjacent.x >= 0 && adjacent.y >= 0 && GameplayMap.isMountain(adjacent.x, adjacent.y)) {
 			count++;
 		}
 	}

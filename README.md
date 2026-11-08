@@ -11,8 +11,8 @@ The mod applies to single player only. Multiplayer and hotseat games are left to
 - Single player only: every setting, map script, and setup screen change now applies to single player alone, and multiplayer and hotseat see the base game unchanged. Multiplayer settings come from Better Balanced Multiplayer
 - Removed the multiplayer Create Game layout and the multiplayer lobby's memento slots, tooltips, and rules lists, which Better Balanced Multiplayer provides
 - Map Temperature gains Frigid and Scorching, plus Random, and now reads Frigid, Cold, Standard, Hot, Scorching. Every step also moves sea ice, reefs, open-water features, and snow, and sets how strongly highlands, rainfall, and rivers change the local climate; Standard matches the base game
-- New Heat Source (Map Settings, below Map Temperature): Standard, Dual Sun, Tilted Axis, Hot Center, Cold Center, Warm Ring, Patchwork, or Random
-- Tilted Axis heats the north or south edge, chosen by the map seed
+- New Map Zones setting (Map Settings, below Map Temperature): Standard, Hot Poles, Hot Edge, Hot Center, Cold Center, Warm Ring, Patchwork, or Random
+- Hot Edge heats the north or south edge, chosen by the map seed
 - Biomes, features, and snow on all 14 map scripts now follow both settings
 - Conflict guard recognizes Scrum Lord's Climate Controls, whose climate settings these replace
 - Climate logic adapted, with permission, from Scrum Lord's Climate Controls
@@ -20,6 +20,7 @@ The mod applies to single player only. Multiplayer and hotseat games are left to
 - Fixed: the age transition no longer settles independent powers, settles each AI only once, and an error there can no longer stop the next age from starting
 - Faster map generation and setup screens: features look up only their own placement class, and every setup screen script shares one poll of the setup
 - Code reorganized: shared helpers in ui/shared, one tab and seed definition for both setup screens, consistent naming, headers, and logging; unit cost ids now match their tiers
+- Setup rules now compare and set options by value, as Better Balanced Multiplayer does, so settings that share option names can no longer be confused; the climate resets for each new map, and mountain counting skips tiles off the map edge
 
 ### 0.9.04
 
@@ -240,7 +241,7 @@ Each Pace setting has Antiquity, Exploration, and Modern rows, used when it is C
 
 ### Map tab
 
-- Map Settings: the game's Map, Map Size, and Map Seed (with a Random button), plus Map Age (Old, Standard, or New), Map Temperature (Frigid, Cold, Standard, Hot, Scorching, or Random), Heat Source (Standard, Dual Sun, Tilted Axis, Hot Center, Cold Center, Warm Ring, Patchwork, or Random), Natural Wonders (Disabled to Double), and Resources (Sparse, Standard, or Abundant)
+- Map Settings: the game's Map, Map Size, and Map Seed (with a Random button), plus Map Age (Old, Standard, or New), Map Temperature (Frigid, Cold, Standard, Hot, Scorching, or Random), Map Zones (Standard, Hot Poles, Hot Edge, Hot Center, Cold Center, Warm Ring, Patchwork, or Random), Natural Wonders (Disabled to Double), and Resources (Sparse, Standard, or Abundant)
 - Terrain Settings: Lakes, Rivers (nine pairings of river count and navigable share), Mountains, and the game's Sea Level
 - Natural Wonder Selection: each of the 22 natural wonders, DLC included
 - Disaster Settings: Disaster Frequency (Disabled, Light, Moderate, Catastrophic, or Custom per age)
@@ -281,7 +282,7 @@ English text lives in text/en_us; the other languages are under l10n, loaded per
 
 ## Credits
 
-Map Temperature's climate steps and Heat Source are adapted, with permission, from Scrum Lord's Climate Controls.
+Map Temperature's climate steps and Map Zones are adapted, with permission, from Scrum Lord's Climate Controls.
 
 ## License
 

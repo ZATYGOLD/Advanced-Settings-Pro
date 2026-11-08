@@ -13,6 +13,9 @@
 		<Replace Tag="LOC_GROUPID_ZG_SETTLEMENTOPTIONS" Language="zh_Hans_CN">
 			<Text>定居点设置</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_SINGLE_PLAYER_SETUP_NAME" Language="zh_Hans_CN">
+			<Text>单人游戏设置</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="zh_Hans_CN">
 			<Text>启用</Text>
 		</Replace>
@@ -1021,53 +1024,53 @@
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="zh_Hans_CN">
 			<Text>由地图种子从五种温度中随机选择一种。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_NAME" Language="zh_Hans_CN">
-			<Text>热源</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_NAME" Language="zh_Hans_CN">
+			<Text>地图气候带</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>世界的温暖来自何处，从而决定其炎热与寒冷地区的位置。</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>地图上炎热与寒冷地区的位置。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_STANDARD" Language="zh_Hans_CN">
 			<Text>与基础游戏相同，一条炎热带横贯地图中部，向上下两侧逐渐变冷。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_TILTED_AXIS_NAME" Language="zh_Hans_CN">
-			<Text>倾斜地轴</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_EDGE_NAME" Language="zh_Hans_CN">
+			<Text>炎热边缘</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_TILTED_AXIS" Language="zh_Hans_CN">
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_EDGE" Language="zh_Hans_CN">
 			<Text>地图北缘或南缘炎热（由地图种子决定），向冰封的对侧边缘逐渐变冷。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DUAL_SUN_NAME" Language="zh_Hans_CN">
-			<Text>双日</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_POLES_NAME" Language="zh_Hans_CN">
+			<Text>炎热两极</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_DUAL_SUN" Language="zh_Hans_CN">
-			<Text>两颗太阳加热地图的上下两侧，中部留下一条寒冷带。</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_POLES" Language="zh_Hans_CN">
+			<Text>地图上下两侧炎热，中部横贯一条寒冷带。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_HOT_CENTER_NAME" Language="zh_Hans_CN">
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_CENTER_NAME" Language="zh_Hans_CN">
 			<Text>炎热中心</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_HOT_CENTER" Language="zh_Hans_CN">
-			<Text>热量从地图中部向各个方向扩散，因此边缘和角落最为寒冷。</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_CENTER" Language="zh_Hans_CN">
+			<Text>地图中部最热，向各个方向逐渐变冷，因此边缘和角落最为寒冷。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_COLD_CENTER_NAME" Language="zh_Hans_CN">
+		<Replace Tag="LOC_ZG_MAP_ZONES_COLD_CENTER_NAME" Language="zh_Hans_CN">
 			<Text>寒冷中心</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_COLD_CENTER" Language="zh_Hans_CN">
-			<Text>寒冷从地图中部向各个方向扩散，因此边缘和角落最为温暖。</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_COLD_CENTER" Language="zh_Hans_CN">
+			<Text>地图中部最冷，向各个方向逐渐变暖，因此边缘和角落最为炎热。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_WARM_RING_NAME" Language="zh_Hans_CN">
+		<Replace Tag="LOC_ZG_MAP_ZONES_WARM_RING_NAME" Language="zh_Hans_CN">
 			<Text>温暖环带</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_WARM_RING" Language="zh_Hans_CN">
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_WARM_RING" Language="zh_Hans_CN">
 			<Text>一条温暖带环绕地图中部，其内部和边缘一带则寒冷。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_PATCHWORK_NAME" Language="zh_Hans_CN">
+		<Replace Tag="LOC_ZG_MAP_ZONES_PATCHWORK_NAME" Language="zh_Hans_CN">
 			<Text>拼布</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_PATCHWORK" Language="zh_Hans_CN">
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_PATCHWORK" Language="zh_Hans_CN">
 			<Text>炎热与寒冷地区呈不规则斑块分布，而非带状。</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_RANDOM" Language="zh_Hans_CN">
-			<Text>由地图种子从七种热源中随机选择一种。</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_RANDOM" Language="zh_Hans_CN">
+			<Text>由地图种子从七种布局中随机选择一种。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="zh_Hans_CN">
 			<Text>河流</Text>

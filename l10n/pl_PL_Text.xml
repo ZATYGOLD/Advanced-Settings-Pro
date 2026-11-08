@@ -13,6 +13,9 @@
 		<Replace Tag="LOC_GROUPID_ZG_SETTLEMENTOPTIONS" Language="pl_PL">
 			<Text>Ustawienia osad</Text>
 		</Replace>
+		<Replace Tag="LOC_ZG_SINGLE_PLAYER_SETUP_NAME" Language="pl_PL">
+			<Text>Konfiguracja gry jednoosobowej</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_ENABLED_NAME" Language="pl_PL">
 			<Text>Włączone</Text>
 		</Replace>
@@ -1021,53 +1024,53 @@
 		<Replace Tag="LOC_ZG_MAP_TEMPERATURE_DESCRIPTION_RANDOM" Language="pl_PL">
 			<Text>Jedna z pięciu temperatur, wylosowana z ziarna mapy.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_NAME" Language="pl_PL">
-			<Text>Źródło ciepła</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_NAME" Language="pl_PL">
+			<Text>Strefy mapy</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION" Language="pl_PL">
-			<Text>Skąd pochodzi ciepło świata, a więc gdzie leżą jego gorące i zimne regiony.</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION" Language="pl_PL">
+			<Text>Gdzie leżą gorące i zimne regiony mapy.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_STANDARD" Language="pl_PL">
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_STANDARD" Language="pl_PL">
 			<Text>Gorący pas biegnie przez środek mapy i ochładza się ku górze i dołowi, jak w grze podstawowej.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_TILTED_AXIS_NAME" Language="pl_PL">
-			<Text>Przechylona oś</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_EDGE_NAME" Language="pl_PL">
+			<Text>Gorąca krawędź</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_TILTED_AXIS" Language="pl_PL">
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_EDGE" Language="pl_PL">
 			<Text>Gorąco wzdłuż północnej lub południowej krawędzi mapy, wybranej przez ziarno mapy, z równomiernym ochłodzeniem ku zamarzniętej przeciwnej krawędzi.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DUAL_SUN_NAME" Language="pl_PL">
-			<Text>Podwójne słońce</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_POLES_NAME" Language="pl_PL">
+			<Text>Gorące bieguny</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_DUAL_SUN" Language="pl_PL">
-			<Text>Dwa słońca ogrzewają górę i dół mapy, pozostawiając zimny pas przez środek.</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_POLES" Language="pl_PL">
+			<Text>Gorąco na górze i na dole mapy, z zimnym pasem przez środek.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_HOT_CENTER_NAME" Language="pl_PL">
+		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_CENTER_NAME" Language="pl_PL">
 			<Text>Gorące centrum</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_HOT_CENTER" Language="pl_PL">
-			<Text>Ciepło rozchodzi się ze środka mapy we wszystkich kierunkach, więc krawędzie i narożniki są najzimniejsze.</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_CENTER" Language="pl_PL">
+			<Text>Najgoręcej w środku mapy, chłodniej na zewnątrz we wszystkich kierunkach, więc krawędzie i narożniki są najzimniejsze.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_COLD_CENTER_NAME" Language="pl_PL">
+		<Replace Tag="LOC_ZG_MAP_ZONES_COLD_CENTER_NAME" Language="pl_PL">
 			<Text>Zimne centrum</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_COLD_CENTER" Language="pl_PL">
-			<Text>Zimno rozchodzi się ze środka mapy we wszystkich kierunkach, więc krawędzie i narożniki są najcieplejsze.</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_COLD_CENTER" Language="pl_PL">
+			<Text>Najzimniej w środku mapy, cieplej na zewnątrz we wszystkich kierunkach, więc krawędzie i narożniki są najgorętsze.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_WARM_RING_NAME" Language="pl_PL">
+		<Replace Tag="LOC_ZG_MAP_ZONES_WARM_RING_NAME" Language="pl_PL">
 			<Text>Ciepły pierścień</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_WARM_RING" Language="pl_PL">
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_WARM_RING" Language="pl_PL">
 			<Text>Pas ciepła otacza środek mapy, a jego wnętrze i okolice krawędzi są zimne.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_PATCHWORK_NAME" Language="pl_PL">
+		<Replace Tag="LOC_ZG_MAP_ZONES_PATCHWORK_NAME" Language="pl_PL">
 			<Text>Patchwork</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_PATCHWORK" Language="pl_PL">
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_PATCHWORK" Language="pl_PL">
 			<Text>Gorące i zimne regiony leżą w nieregularnych plamach zamiast pasów.</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_HEAT_SOURCE_DESCRIPTION_RANDOM" Language="pl_PL">
-			<Text>Jedno z siedmiu źródeł ciepła, wylosowane z ziarna mapy.</Text>
+		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_RANDOM" Language="pl_PL">
+			<Text>Jeden z siedmiu układów, wylosowany z ziarna mapy.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_RIVERS_NAME" Language="pl_PL">
 			<Text>Rzeki</Text>

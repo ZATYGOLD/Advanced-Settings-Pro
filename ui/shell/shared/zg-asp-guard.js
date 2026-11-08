@@ -68,7 +68,7 @@ registerModConflicts([
 		nameHints: ["resource density"],
 	},
 
-	// --- Map Temperature and Heat Source ------------------------------------
+	// --- Map Temperature and Map Zones ------------------------------------
 	// Replaces the base feature and snow passes, which this mod's map copies no
 	// longer call, so its climate settings would show in setup and only half apply.
 	{

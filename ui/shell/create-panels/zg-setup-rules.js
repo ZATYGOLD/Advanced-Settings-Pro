@@ -36,7 +36,7 @@
 // back (zg-setup-memory.js) the rules wait, and the comparisons then start
 // over, so the restored values are the baseline rather than a change to answer.
 
-import { resolveName } from '../../shared/zg-config.js';
+import { gameValue, resolveName } from '../../shared/zg-config.js';
 import { isSinglePlayerSetup, onSetupPoll } from '../shared/zg-shell-context.js';
 import { tickSetupMemory, isRestoringSetup, rememberSetup } from './zg-setup-memory.js';
 
@@ -277,23 +277,36 @@ let nwLastTier = null;
 let crisesLastToggle = null;
 let crisisTimingLast = null;
 
-function currentValueName(param) {
-	const current = param?.value?.value;
-	const possible = param?.domain?.possibleValues ?? [];
-	const hit = possible.find((entry) => entry.value == current);
-	return hit ? resolveName(hit.name) : "";
+// The rules are written by option name, which per-age rows share across
+// settings, and compare and write option values. Each setting's names resolve
+// to values once per setup.
+const optionsCache = new Map();
+
+function options(paramId) {
+	let found = optionsCache.get(paramId);
+	if (!found) {
+		const possible = GameSetup.findGameParameter(paramId)?.domain?.possibleValues ?? [];
+		found = {
+			byName: new Map(possible.map((entry) => [resolveName(entry.name), entry.value])),
+			byValue: new Map(possible.map((entry) => [entry.value, resolveName(entry.name)])),
+		};
+		if (possible.length > 0) {
+			optionsCache.set(paramId, found);
+		}
+	}
+	return found;
 }
 
-function valueForName(param, nameTag) {
-	const possible = param?.domain?.possibleValues ?? [];
-	const hit = possible.find((entry) => resolveName(entry.name) == nameTag);
-	return hit ? hit.value : null;
-}
+// The value a setting's option name stands for, or null when it offers none.
+const valueOf = (paramId, nameTag) => options(paramId).byName.get(nameTag) ?? null;
+// The option name a setting holds, or "".
+const nameOf = (paramId) => options(paramId).byValue.get(gameValue(paramId)) ?? "";
+// Whether a setting holds the named option.
+const holds = (paramId, nameTag) => gameValue(paramId) === valueOf(paramId, nameTag);
 
-function setParamByName(paramId, nameTag) {
-	const param = GameSetup.findGameParameter(paramId);
-	const value = valueForName(param, nameTag);
-	if (param && value != null && param.value?.value != value) {
+function setOption(paramId, nameTag) {
+	const value = valueOf(paramId, nameTag);
+	if (value != null && gameValue(paramId) !== value) {
 		GameSetup.setGameParameterValue(paramId, value);
 	}
 }
@@ -301,7 +314,8 @@ function setParamByName(paramId, nameTag) {
 // ---------------------------------------------------------------- wonders --
 
 function getBaseWonders() {
-	const sizeName = currentValueName(GameSetup.findGameParameter(MAP_SIZE_PARAM_ID)).toUpperCase();
+	// Map Size is hashed, so it is read by its option name.
+	const sizeName = nameOf(MAP_SIZE_PARAM_ID).toUpperCase();
 	for (const key of Object.keys(BASE_WONDERS)) {
 		if (sizeName.includes(key)) {
 			return BASE_WONDERS[key];
@@ -332,29 +346,30 @@ function syncNaturalWonderSetup() {
 	if (toggles.length == 0) {
 		return;
 	}
-	const tier = currentValueName(countParam);
-	const enabled = toggles.filter((entry) => currentValueName(entry.param) == TOGGLE_ENABLED).length;
+	const tier = gameValue(NW_COUNT_PARAM_ID);
+	const disabled = valueOf(NW_COUNT_PARAM_ID, TIER_DISABLED);
+	const enabled = toggles.filter((entry) => holds(entry.id, TOGGLE_ENABLED)).length;
 
 	// 1 & 2: the player changed the count tier; cascade to the toggles.
 	if (nwLastTier != null && tier != nwLastTier) {
-		if (tier == TIER_DISABLED) {
-			toggles.forEach((entry) => setParamByName(entry.id, TOGGLE_DISABLED));
-		} else if (nwLastTier == TIER_DISABLED) {
-			toggles.forEach((entry) => setParamByName(entry.id, TOGGLE_ENABLED));
+		if (tier == disabled) {
+			toggles.forEach((entry) => setOption(entry.id, TOGGLE_DISABLED));
+		} else if (nwLastTier == disabled) {
+			toggles.forEach((entry) => setOption(entry.id, TOGGLE_ENABLED));
 		}
 		nwLastTier = tier;
 		return;
 	}
 	nwLastTier = tier;
 	// 3: every wonder disabled; the count must say so.
-	if (enabled == 0 && tier != TIER_DISABLED) {
-		setParamByName(NW_COUNT_PARAM_ID, TIER_DISABLED);
-		nwLastTier = TIER_DISABLED;
+	if (enabled == 0 && tier != disabled) {
+		setOption(NW_COUNT_PARAM_ID, TIER_DISABLED);
+		nwLastTier = disabled;
 		return;
 	}
 	// 4: too few wonders enabled to support the tier; reset the selection.
-	if (enabled > 0 && requiredWonders(tier, getBaseWonders()) > enabled) {
-		toggles.forEach((entry) => setParamByName(entry.id, TOGGLE_ENABLED));
+	if (enabled > 0 && requiredWonders(nameOf(NW_COUNT_PARAM_ID), getBaseWonders()) > enabled) {
+		toggles.forEach((entry) => setOption(entry.id, TOGGLE_ENABLED));
 	}
 }
 
@@ -365,29 +380,30 @@ function syncTierWithAges(sync) {
 	if (!tierParam) {
 		return;
 	}
-	const ageParams = sync.ageIds.map((id) => GameSetup.findGameParameter(id));
-	if (ageParams.some((param) => !param)) {
+	if (sync.ageIds.some((id) => !GameSetup.findGameParameter(id))) {
 		return;
 	}
-	const tier = currentValueName(tierParam);
-	const isCurated = tier != TIER_CUSTOM;
-	const mapped = sync.ageNames?.[tier] ?? tier;
+	const tier = gameValue(sync.tierId);
+	const custom = valueOf(sync.tierId, TIER_CUSTOM);
+	const isCurated = tier != custom;
+	const tierName = nameOf(sync.tierId);
+	const mapped = sync.ageNames?.[tierName] ?? tierName;
 	// A curated option is either one name shared by all three ages, or one per age.
 	const ageNameAt = (index) => Array.isArray(mapped) ? mapped[index] : mapped;
 
 	// 5: the player changed the tier; every age follows it.
 	if (sync.lastTier != null && tier != sync.lastTier) {
 		if (isCurated) {
-			sync.ageIds.forEach((id, index) => setParamByName(id, ageNameAt(index)));
+			sync.ageIds.forEach((id, index) => setOption(id, ageNameAt(index)));
 		}
 		sync.lastTier = tier;
 		return;
 	}
 	sync.lastTier = tier;
 	// 6: an age no longer matches the tier; switch to Custom.
-	if (isCurated && ageParams.some((param, index) => currentValueName(param) != ageNameAt(index))) {
-		setParamByName(sync.tierId, TIER_CUSTOM);
-		sync.lastTier = TIER_CUSTOM;
+	if (isCurated && sync.ageIds.some((id, index) => gameValue(id) !== valueOf(id, ageNameAt(index)))) {
+		setOption(sync.tierId, TIER_CUSTOM);
+		sync.lastTier = custom;
 	}
 }
 
@@ -400,37 +416,39 @@ function paceAgeIds(settingId) {
 function applyPacePreset(preset) {
 	for (const [settingId, expected] of Object.entries(preset)) {
 		if (Array.isArray(expected)) {
-			setParamByName(settingId, TIER_CUSTOM);
-			paceAgeIds(settingId).forEach((ageId, index) => setParamByName(ageId, expected[index]));
+			setOption(settingId, TIER_CUSTOM);
+			paceAgeIds(settingId).forEach((ageId, index) => setOption(ageId, expected[index]));
 		} else {
-			setParamByName(settingId, expected);
+			setOption(settingId, expected);
 		}
 	}
 }
 
 function matchesPacePreset(preset) {
 	return Object.entries(preset).every(([settingId, expected]) => {
-		const tier = currentValueName(GameSetup.findGameParameter(settingId));
 		if (!Array.isArray(expected)) {
-			return tier == expected;
+			return holds(settingId, expected);
 		}
-		return tier == TIER_CUSTOM
-			&& paceAgeIds(settingId).every((ageId, index) => currentValueName(GameSetup.findGameParameter(ageId)) == expected[index]);
+		return holds(settingId, TIER_CUSTOM)
+			&& paceAgeIds(settingId).every((ageId, index) => holds(ageId, expected[index]));
 	});
 }
 
-// 10: the two Pace Set dropdowns share one value; whichever changed wins.
+// 10: the two Pace Set dropdowns share one domain and value; whichever changed wins.
 function syncPaceMirror() {
-	const pace = currentValueName(GameSetup.findGameParameter(PACE_PARAM_ID));
-	const mirror = currentValueName(GameSetup.findGameParameter(PACE_MIRROR_PARAM_ID));
+	const pace = gameValue(PACE_PARAM_ID);
+	const mirror = gameValue(PACE_MIRROR_PARAM_ID);
+	if (pace == null || mirror == null) {
+		return;
+	}
 	const paceChanged = lastPace != null && pace != lastPace;
 	const mirrorChanged = lastPaceMirror != null && mirror != lastPaceMirror;
 	if (mirrorChanged && !paceChanged) {
-		setParamByName(PACE_PARAM_ID, mirror);
+		GameSetup.setGameParameterValue(PACE_PARAM_ID, mirror);
 	} else if (pace != mirror) {
-		setParamByName(PACE_MIRROR_PARAM_ID, pace);
+		GameSetup.setGameParameterValue(PACE_MIRROR_PARAM_ID, pace);
 	}
-	lastPaceMirror = currentValueName(GameSetup.findGameParameter(PACE_MIRROR_PARAM_ID));
+	lastPaceMirror = gameValue(PACE_MIRROR_PARAM_ID);
 }
 
 function syncPacePreset() {
@@ -438,10 +456,11 @@ function syncPacePreset() {
 	if (!paceParam) {
 		return;
 	}
-	const pace = currentValueName(paceParam);
-	const preset = PACE_PRESETS[pace];
-	const ageLength = currentValueName(GameSetup.findGameParameter(AGE_LENGTH_PARAM_ID));
-	const leftCustomAgeLength = lastAgeLength == TIER_CUSTOM && ageLength != TIER_CUSTOM;
+	const pace = gameValue(PACE_PARAM_ID);
+	const preset = PACE_PRESETS[nameOf(PACE_PARAM_ID)];
+	const ageLength = gameValue(AGE_LENGTH_PARAM_ID);
+	const customAgeLength = valueOf(AGE_LENGTH_PARAM_ID, TIER_CUSTOM);
+	const leftCustomAgeLength = lastAgeLength == customAgeLength && ageLength != customAgeLength;
 	lastAgeLength = ageLength;
 
 	// 7: the player chose a preset; every pacing setting takes its value.
@@ -460,8 +479,8 @@ function syncPacePreset() {
 	}
 	// 8: a pacing setting no longer matches the preset; it becomes Custom.
 	if (preset && !matchesPacePreset(preset)) {
-		setParamByName(PACE_PARAM_ID, PACE_CUSTOM);
-		lastPace = PACE_CUSTOM;
+		setOption(PACE_PARAM_ID, PACE_CUSTOM);
+		lastPace = valueOf(PACE_PARAM_ID, PACE_CUSTOM);
 	}
 }
 
@@ -477,21 +496,24 @@ function syncCrises() {
 	if (possible.length == 0) {
 		return;
 	}
-	const toggle = currentValueName(toggleParam);
+	const toggle = gameValue(CRISES_PARAM_ID);
+	const toggleOff = valueOf(CRISES_PARAM_ID, TOGGLE_DISABLED);
+	const toggleOn = valueOf(CRISES_PARAM_ID, TOGGLE_ENABLED);
 	const excluded = (selectionParam.values ?? []).map((entry) => entry.value);
 	const allExcluded = possible.every((value) => excluded.includes(value));
 	const timingParam = GameSetup.findGameParameter(CRISIS_TIMING_PARAM_ID);
-	const timing = timingParam ? currentValueName(timingParam) : null;
+	const timing = timingParam ? gameValue(CRISIS_TIMING_PARAM_ID) : null;
+	const timingOff = valueOf(CRISIS_TIMING_PARAM_ID, TIER_DISABLED);
 
 	// 13 & 14: the player changed the toggle; cascade to the selection and timing.
 	if (crisesLastToggle != null && toggle != crisesLastToggle) {
-		if (toggle == TOGGLE_DISABLED) {
+		if (toggle == toggleOff) {
 			GameSetup.setGameParameterValue(CRISES_SELECTION_PARAM_ID, possible);
-			setParamByName(CRISIS_TIMING_PARAM_ID, TIER_DISABLED);
-		} else if (crisesLastToggle == TOGGLE_DISABLED) {
+			setOption(CRISIS_TIMING_PARAM_ID, TIER_DISABLED);
+		} else if (crisesLastToggle == toggleOff) {
 			GameSetup.setGameParameterValue(CRISES_SELECTION_PARAM_ID, []);
-			if (timing == TIER_DISABLED) {
-				setParamByName(CRISIS_TIMING_PARAM_ID, TIER_STANDARD);
+			if (timing == timingOff) {
+				setOption(CRISIS_TIMING_PARAM_ID, TIER_STANDARD);
 			}
 		}
 		crisesLastToggle = toggle;
@@ -502,43 +524,43 @@ function syncCrises() {
 	crisesLastToggle = toggle;
 	// 16: the first pass of a setup keeps Crises and brings the rest in line.
 	if (firstPass) {
-		if (toggle == TOGGLE_DISABLED && !allExcluded) {
+		if (toggle == toggleOff && !allExcluded) {
 			GameSetup.setGameParameterValue(CRISES_SELECTION_PARAM_ID, possible);
-		} else if (toggle != TOGGLE_DISABLED && allExcluded) {
+		} else if (toggle != toggleOff && allExcluded) {
 			GameSetup.setGameParameterValue(CRISES_SELECTION_PARAM_ID, []);
 		}
-		if (timing != null && (timing == TIER_DISABLED) != (toggle == TOGGLE_DISABLED)) {
-			setParamByName(CRISIS_TIMING_PARAM_ID, toggle == TOGGLE_DISABLED ? TIER_DISABLED : TIER_STANDARD);
+		if (timing != null && (timing == timingOff) != (toggle == toggleOff)) {
+			setOption(CRISIS_TIMING_PARAM_ID, toggle == toggleOff ? TIER_DISABLED : TIER_STANDARD);
 		}
 		return;
 	}
 	// 15: the player changed the timing to or from Disabled; the toggle follows.
 	if (timing != null && crisisTimingLast != null && timing != crisisTimingLast) {
-		if (timing == TIER_DISABLED && toggle != TOGGLE_DISABLED) {
-			setParamByName(CRISES_PARAM_ID, TOGGLE_DISABLED);
-		} else if (crisisTimingLast == TIER_DISABLED && toggle == TOGGLE_DISABLED) {
-			setParamByName(CRISES_PARAM_ID, TOGGLE_ENABLED);
+		if (timing == timingOff && toggle != toggleOff) {
+			setOption(CRISES_PARAM_ID, TOGGLE_DISABLED);
+		} else if (crisisTimingLast == timingOff && toggle == toggleOff) {
+			setOption(CRISES_PARAM_ID, TOGGLE_ENABLED);
 		}
 		crisisTimingLast = timing;
 		return;
 	}
 	crisisTimingLast = timing;
 	// 15 & 16: keep the toggle truthful about the selection, and the timing about the toggle.
-	if (allExcluded && toggle != TOGGLE_DISABLED) {
-		setParamByName(CRISES_PARAM_ID, TOGGLE_DISABLED);
-		setParamByName(CRISIS_TIMING_PARAM_ID, TIER_DISABLED);
-		crisesLastToggle = TOGGLE_DISABLED;
+	if (allExcluded && toggle != toggleOff) {
+		setOption(CRISES_PARAM_ID, TOGGLE_DISABLED);
+		setOption(CRISIS_TIMING_PARAM_ID, TIER_DISABLED);
+		crisesLastToggle = toggleOff;
 		crisisTimingLast = null;
-	} else if (!allExcluded && toggle == TOGGLE_DISABLED) {
-		setParamByName(CRISES_PARAM_ID, TOGGLE_ENABLED);
-		if (timing == TIER_DISABLED) {
-			setParamByName(CRISIS_TIMING_PARAM_ID, TIER_STANDARD);
+	} else if (!allExcluded && toggle == toggleOff) {
+		setOption(CRISES_PARAM_ID, TOGGLE_ENABLED);
+		if (timing == timingOff) {
+			setOption(CRISIS_TIMING_PARAM_ID, TIER_STANDARD);
 		}
-		crisesLastToggle = TOGGLE_ENABLED;
+		crisesLastToggle = toggleOn;
 		crisisTimingLast = null;
-	} else if (timing != null && (timing == TIER_DISABLED) != (toggle == TOGGLE_DISABLED)) {
+	} else if (timing != null && (timing == timingOff) != (toggle == toggleOff)) {
 		// Loaded configurations can disagree; the toggle wins.
-		setParamByName(CRISIS_TIMING_PARAM_ID, toggle == TOGGLE_DISABLED ? TIER_DISABLED : TIER_STANDARD);
+		setOption(CRISIS_TIMING_PARAM_ID, toggle == toggleOff ? TIER_DISABLED : TIER_STANDARD);
 		crisisTimingLast = null;
 	}
 }
@@ -554,6 +576,7 @@ function resetBaselines() {
 	crisesLastToggle = null;
 	crisisTimingLast = null;
 	TIER_AGE_SYNCS.forEach((sync) => { sync.lastTier = null; });
+	optionsCache.clear();
 }
 
 // Runs one rule, logging rather than letting a throw stop the others.
