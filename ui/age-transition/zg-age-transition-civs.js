@@ -33,7 +33,6 @@
 // civilization slot, which the engine has already narrowed; with none listed,
 // the new age's civilizations and the AI's own are assumed. The age's own
 // civilizations come from Ages.PlayerCivilizationDomain.
-
 import { cached, gameValue, playerValue, queryConfig } from '../shared/zg-config.js';
 import { leaderAssociations } from '../shared/zg-civ-associations.js';
 import { SETUP_SLOTS } from '../shared/zg-memento-roller.js';

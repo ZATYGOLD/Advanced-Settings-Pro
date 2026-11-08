@@ -40,13 +40,11 @@ export async function zgGenerateMapFeatures(hexMap, context = new GenerationCont
 		profileFunction("TerrainBuilder.buildElevation", () => TerrainBuilder.buildElevation());
 	}
 	if (context.phases & GenerationPhases.Hills) {
-		// ZG-ASP: Map Age in place of addHills. This is the only pass that raises
-		// rough ground on these maps, so the Mountains pass has to follow it rather
-		// than run on the simulated tiles: before this point the map holds flat and
-		// mountainous ground only, and More Mountains grows its ranges outward into
-		// rough tiles that would not exist yet.
+		// --- ZG: Map Age replaces addHills. Mountains must follow it, because More
+		// grows ranges into rough tiles that do not exist before this pass. ---
 		profileFunction("zgAddRough", () => zgAddRough(iWidth, iHeight));
 		profileFunction("zgAdjustMountains", () => zgAdjustMountains(iWidth, iHeight));
+		// --- end ZG ---
 	}
 	if (context.phases & GenerationPhases.Rainfall) {
 		profileFunction("buildRainfallMap", () => buildRainfallMap(iWidth, iHeight));

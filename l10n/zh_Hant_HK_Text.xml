@@ -176,15 +176,6 @@
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_NAME" Language="zh_Hant_HK">
 			<Text>湖泊</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME" Language="zh_Hant_HK">
-			<Text>古典</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME" Language="zh_Hant_HK">
-			<Text>探索</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME" Language="zh_Hant_HK">
-			<Text>近代</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>設定開拓者在陸上與海上的移動距離。開拓者越快，越能搶在對手之前佔據遠方土地。</Text>
 		</Replace>
@@ -515,12 +506,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_MORE" Language="zh_Hant_HK">
 			<Text>生成更多的湖泊。</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="zh_Hant_HK">
-			<Text>Advanced Settings Pro</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>Zatygold的Advanced Settings Pro[n] [n]本模組透過在進階設定選單中加入更多選項，擴充單人遊戲的對局設定，讓你能夠微調通常無法調整的系統。本模組不影響多人遊戲；多人遊戲設定由Better Balanced Multiplayer提供。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>決定該自然奇觀能否出現在地圖上。</Text>
@@ -869,21 +854,21 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="zh_Hant_HK">
 			<Text>前期城市成長更快，之後回到標準。[nn][BLIST]
-				[LI] 遠古：-25%
-				[LI] 探索：-25%
+				[LI] 遠古：較快
+				[LI] 探索：較快
 				[LI] 近代：標準[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_EXTENDED" Language="zh_Hant_HK">
 			<Text>各時代城市成長都更慢。[nn][BLIST]
-				[LI] 遠古：+25%
-				[LI] 探索：+25%
-				[LI] 近代：+25%[/BLIST]</Text>
+				[LI] 遠古：慢
+				[LI] 探索：慢
+				[LI] 近代：慢[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SWIFT" Language="zh_Hant_HK">
 			<Text>各時代城市成長都更快。[nn][BLIST]
-				[LI] 遠古：-25%
-				[LI] 探索：-25%
-				[LI] 近代：-25%[/BLIST]</Text>
+				[LI] 遠古：較快
+				[LI] 探索：較快
+				[LI] 近代：較快[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="zh_Hant_HK">
 			<Text>每名市民所需食物減少50%。</Text>
@@ -898,19 +883,19 @@
 			<Text>近代之前為標準道路，之後更便宜。[nn][BLIST]
 				[LI] 遠古：標準
 				[LI] 探索：標準
-				[LI] 近代：-25%[/BLIST]</Text>
+				[LI] 近代：較快[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXTENDED" Language="zh_Hant_HK">
 			<Text>近代之前為標準道路，之後更便宜。[nn][BLIST]
 				[LI] 遠古：標準
 				[LI] 探索：標準
-				[LI] 近代：-25%[/BLIST]</Text>
+				[LI] 近代：較快[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SWIFT" Language="zh_Hant_HK">
 			<Text>隨著地圖展開，道路的通行消耗越來越低。[nn][BLIST]
-				[LI] 遠古：-25%
-				[LI] 探索：-50%
-				[LI] 近代：-50%[/BLIST]</Text>
+				[LI] 遠古：較快
+				[LI] 探索：快
+				[LI] 近代：快[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SLOW" Language="zh_Hant_HK">
 			<Text>每格移動力增加25%。</Text>
@@ -1037,7 +1022,7 @@
 			<Text>炎熱邊緣</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_EDGE" Language="zh_Hant_HK">
-			<Text>地圖北緣或南緣炎熱（由地圖種子決定），向冰封的對側邊緣逐漸變冷。</Text>
+			<Text>地圖上緣或下緣炎熱（由地圖種子決定），向冰封的對側邊緣逐漸變冷。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_POLES_NAME" Language="zh_Hant_HK">
 			<Text>炎熱兩極</Text>
@@ -1170,9 +1155,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>極快的節奏。比標準快150%。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="zh_Hant_HK">
-			<Text>每個時代使用下方各自分組中的時代長度行。平衡設為150、170、200點；多人遊戲設為140、160、180點。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="zh_Hant_HK">
 			<Text>更長的時代，一個比一個長。[nn][BLIST]
@@ -1468,8 +1450,8 @@
 				[LI] 市政花費：+25% / +50% / +50%
 				[LI] 建築花費：+25% / +50% / +50%
 				[LI] 勝利專案花費：+25%
-				[LI] 聚居地成長：+25%
-				[LI] 道路速度：標準 / 標準 / -25%
+				[LI] 聚居地成長：慢
+				[LI] 道路速度：標準 / 標準 / 較快
 				[LI] 貿易速度：-25%
 				[LI] 夷平速度：標準[/BLIST]</Text>
 		</Replace>
@@ -1481,8 +1463,8 @@
 				[LI] 市政花費：-25% / -25% / 標準
 				[LI] 建築花費：-25%
 				[LI] 勝利專案花費：-25%
-				[LI] 聚居地成長：-25%
-				[LI] 道路速度：-25% / -50% / -50%
+				[LI] 聚居地成長：較快
+				[LI] 道路速度：較快 / 快 / 快
 				[LI] 貿易速度：立即
 				[LI] 夷平速度：立即[/BLIST]</Text>
 		</Replace>
@@ -1494,8 +1476,8 @@
 				[LI] 市政花費：標準 / +25% / +25%
 				[LI] 建築花費：+25% / 標準 / 標準
 				[LI] 勝利專案花費：標準 / -25% / -25%
-				[LI] 聚居地成長：-25% / -25% / 標準
-				[LI] 道路速度：標準 / 標準 / -25%
+				[LI] 聚居地成長：較快 / 較快 / 標準
+				[LI] 道路速度：標準 / 標準 / 較快
 				[LI] 貿易速度：標準
 				[LI] 夷平速度：標準[/BLIST]</Text>
 		</Replace>
@@ -1507,8 +1489,8 @@
 				[LI] 市政花費：+50% / +50% / +100%
 				[LI] 建築花費：標準
 				[LI] 勝利專案花費：標準 / 標準 / +25%
-				[LI] 聚居地成長：+25%
-				[LI] 道路速度：-25% / -25% / -50%
+				[LI] 聚居地成長：慢
+				[LI] 道路速度：較快 / 較快 / 快
 				[LI] 貿易速度：標準
 				[LI] 夷平速度：標準[/BLIST]</Text>
 		</Replace>

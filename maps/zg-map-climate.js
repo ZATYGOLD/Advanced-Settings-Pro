@@ -14,7 +14,7 @@
 //   weights  how strongly elevation (colder), rainfall (wet warmer, dry colder),
 //            and rivers (warmer) move a land tile's latitude for its biome.
 // Standard matches the base game in every value.
-import { zgInterpolate, zgSettingTier } from './zg-map-utils.js';
+import { zgForEachTile, zgInterpolate, zgSettingTier } from './zg-map-utils.js';
 
 const TEMPERATURE_SETTING_KEY = "MapTemperatureKey";
 const MAP_ZONES_SETTING_KEY = "MapZonesKey";
@@ -98,9 +98,10 @@ const MAP_ZONE_TIERS = {
 };
 
 // Signed latitude in degrees for every tile, by Map Zones, and whether it is
-// the engine's own.
+// the engine's own. A layout is worked out once for the whole map, so every
+// pass reads the same zones.
 function mapZoneLatitude() {
-	const source = zgSettingTier(MAP_ZONE_TIERS, MAP_ZONES_SETTING_KEY, "ZG_MAP_ZONES_STANDARD", "ZG_MAP_ZONES_RANDOM");
+	const source = zgSettingTier(MAP_ZONE_TIERS, MAP_ZONES_SETTING_KEY, "ZG_MAP_ZONES_STANDARD", "ZG_MAP_ZONES_RANDOM", "map zones");
 	if (!source) {
 		return { latitude: (x, y) => GameplayMap.getPlotLatitude(x, y), engineLatitude: true };
 	}
@@ -113,18 +114,26 @@ function mapZoneLatitude() {
 			bands = (x, y) => -southHot(x, y);
 		}
 	}
-	return { latitude: (x, y) => Math.round(source.sun(bands(x, y)) * MAX_LATITUDE), engineLatitude: false };
+	const width = GameplayMap.getGridWidth();
+	const latitudes = new Int16Array(width * GameplayMap.getGridHeight());
+	zgForEachTile(width, GameplayMap.getGridHeight(), (x, y) => {
+		latitudes[y * width + x] = Math.round(source.sun(bands(x, y)) * MAX_LATITUDE);
+	});
+	return { latitude: (x, y) => latitudes[y * width + x], engineLatitude: false };
 }
 
+// The map the cached climate belongs to: its seed, size and both settings.
+const mapKey = () => [GameplayMap.getRandomSeed(), GameplayMap.getGridWidth(), GameplayMap.getGridHeight(),
+	Configuration.getGameValue(TEMPERATURE_SETTING_KEY), Configuration.getGameValue(MAP_ZONES_SETTING_KEY)].join(":");
+
 let climate = null;
-// A new map resolves both settings afresh.
-if (typeof engine !== "undefined") engine.on("RequestMapInitData", () => { climate = null; });
 
 // Both settings resolve once per map, so a Random roll holds for every pass.
 export function zgClimate() {
-	if (!climate) {
-		const temperature = zgSettingTier(TEMPERATURE_TIERS, TEMPERATURE_SETTING_KEY, "ZG_STANDARD_TEMPERATURE", "ZG_RANDOM_TEMPERATURE");
-		climate = { ...temperature, ...mapZoneLatitude() };
+	const key = mapKey();
+	if (climate?.key != key) {
+		const temperature = zgSettingTier(TEMPERATURE_TIERS, TEMPERATURE_SETTING_KEY, "ZG_STANDARD_TEMPERATURE", "ZG_RANDOM_TEMPERATURE", "map temperature");
+		climate = { key, ...temperature, ...mapZoneLatitude() };
 		console.log(`ZG-ASP climate: bands ${temperature.bands.join("/")}, shift ${temperature.shift}, weights ${Object.values(temperature.weights).join("/")}`);
 	}
 	return climate;

@@ -13,7 +13,6 @@
 //
 // The panel only exists during a transition, so the wrap is inert in an
 // ordinary shell session.
-
 import AgeTransitionCivSelect from 'fs://game/core/ui/shell/age-transition/age-transition-civ-select.js';
 import { gameValue } from '../shared/zg-config.js';
 import { SETUP_SLOTS } from '../shared/zg-memento-roller.js';

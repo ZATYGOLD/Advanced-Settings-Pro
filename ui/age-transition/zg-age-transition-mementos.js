@@ -10,7 +10,6 @@
 // are filled by the engine otherwise, so Maintain copies the current mementos in.
 // Called after the civilizations are settled, so Civilization Match sees the
 // new civilization.
-
 import { SETUP_SLOTS, aiMementoMode, drawMementos } from '../shared/zg-memento-roller.js';
 import { gameValue, playerValue } from '../shared/zg-config.js';
 

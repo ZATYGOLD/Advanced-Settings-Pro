@@ -1,6 +1,7 @@
 // Copy of {base-standard}maps/shuffle.js
 // with its terrain, river, biome, feature, snow and resource passes replaced by
 // the zg-map-* modules; imports are repointed at the base modules.
+// Indentation stays as in the base file, so a patch re-syncs as a plain diff.
 import { zgModelRivers } from './zg-map-rivers.js';
 import { zgDesignateBiomes } from './zg-map-biomes.js';
 import { zgAddMountains } from './zg-map-mountains.js';

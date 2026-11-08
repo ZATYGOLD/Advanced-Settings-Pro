@@ -176,15 +176,6 @@
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_NAME" Language="ja_JP">
 			<Text>湖</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME" Language="ja_JP">
-			<Text>古代</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME" Language="ja_JP">
-			<Text>探検の時代</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME" Language="ja_JP">
-			<Text>近代</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="ja_JP">
 			<Text>開拓者の陸上と海上の移動距離を設定します。速い開拓者は遠方の土地をライバルより先に確保できます。</Text>
 		</Replace>
@@ -515,12 +506,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_MORE" Language="ja_JP">
 			<Text>生成される湖が多くなります。</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="ja_JP">
-			<Text>Advanced Settings Pro</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="ja_JP">
-			<Text>ZatygoldのAdvanced Settings Pro[n] [n]このModは、詳細設定メニューに追加オプションを加えることで、シングルプレイヤーのゲーム設定を拡張します。通常は調整できないシステムを細かく設定できます。マルチプレイヤーには影響せず、マルチプレイヤーの設定はBetter Balanced Multiplayerが提供します。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="ja_JP">
 			<Text>この自然遺産がマップに出現できるかどうかを設定します。</Text>
@@ -869,21 +854,21 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="ja_JP">
 			<Text>序盤は都市の成長が速く、その後は標準に落ち着く。[nn][BLIST]
-				[LI] 古代：-25%
-				[LI] 探検の時代：-25%
+				[LI] 古代：やや速い
+				[LI] 探検の時代：やや速い
 				[LI] 近代：標準[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_EXTENDED" Language="ja_JP">
 			<Text>どの時代も都市の成長が遅い。[nn][BLIST]
-				[LI] 古代：+25%
-				[LI] 探検の時代：+25%
-				[LI] 近代：+25%[/BLIST]</Text>
+				[LI] 古代：遅い
+				[LI] 探検の時代：遅い
+				[LI] 近代：遅い[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SWIFT" Language="ja_JP">
 			<Text>どの時代も都市の成長が速い。[nn][BLIST]
-				[LI] 古代：-25%
-				[LI] 探検の時代：-25%
-				[LI] 近代：-25%[/BLIST]</Text>
+				[LI] 古代：やや速い
+				[LI] 探検の時代：やや速い
+				[LI] 近代：やや速い[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="ja_JP">
 			<Text>市民1人あたりの食料が50%減少。</Text>
@@ -898,19 +883,19 @@
 			<Text>近代までは標準の道路、その後は安くなる。[nn][BLIST]
 				[LI] 古代：標準
 				[LI] 探検の時代：標準
-				[LI] 近代：-25%[/BLIST]</Text>
+				[LI] 近代：やや速い[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXTENDED" Language="ja_JP">
 			<Text>近代までは標準の道路、その後は安くなる。[nn][BLIST]
 				[LI] 古代：標準
 				[LI] 探検の時代：標準
-				[LI] 近代：-25%[/BLIST]</Text>
+				[LI] 近代：やや速い[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SWIFT" Language="ja_JP">
 			<Text>マップが広がるほど道路の移動コストが下がる。[nn][BLIST]
-				[LI] 古代：-25%
-				[LI] 探検の時代：-50%
-				[LI] 近代：-50%[/BLIST]</Text>
+				[LI] 古代：やや速い
+				[LI] 探検の時代：速い
+				[LI] 近代：速い[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SLOW" Language="ja_JP">
 			<Text>1タイルあたりの移動力が25%増加。</Text>
@@ -1037,7 +1022,7 @@
 			<Text>暑い端</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_EDGE" Language="ja_JP">
-			<Text>マップの北端または南端（マップシードで決定）が暑く、反対側の凍てついた端に向かって徐々に寒くなります。</Text>
+			<Text>マップの上端または下端（マップシードで決定）が暑く、反対側の凍てついた端に向かって徐々に寒くなります。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_POLES_NAME" Language="ja_JP">
 			<Text>暑い極</Text>
@@ -1046,7 +1031,7 @@
 			<Text>マップの上下が暑く、中央を横切る寒い帯があります。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_CENTER_NAME" Language="ja_JP">
-			<Text>熱い中心</Text>
+			<Text>暑い中心</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_CENTER" Language="ja_JP">
 			<Text>マップ中央が最も暑く、あらゆる方向へ外に向かって寒くなり、端と角が最も寒くなります。</Text>
@@ -1170,9 +1155,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="ja_JP">
 			<Text>非常に速いペース。標準より150%速い。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="ja_JP">
-			<Text>各時代は下のそれぞれのグループにある「時代の長さ」の行を使います。バランスは150、170、200ポイント、マルチプレイヤーは140、160、180ポイントに設定します。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="ja_JP">
 			<Text>長めの時代。後の時代ほど長くなる。[nn][BLIST]
@@ -1468,8 +1450,8 @@
 				[LI] 社会制度コスト：+25% / +50% / +50%
 				[LI] 建造物のコスト：+25% / +50% / +50%
 				[LI] 勝利プロジェクトのコスト：+25%
-				[LI] 入植地の成長：+25%
-				[LI] 道路の速度：標準 / 標準 / -25%
+				[LI] 入植地の成長：遅い
+				[LI] 道路の速度：標準 / 標準 / やや速い
 				[LI] 交易の速度：-25%
 				[LI] 破壊の速度：標準[/BLIST]</Text>
 		</Replace>
@@ -1481,8 +1463,8 @@
 				[LI] 社会制度コスト：-25% / -25% / 標準
 				[LI] 建造物のコスト：-25%
 				[LI] 勝利プロジェクトのコスト：-25%
-				[LI] 入植地の成長：-25%
-				[LI] 道路の速度：-25% / -50% / -50%
+				[LI] 入植地の成長：やや速い
+				[LI] 道路の速度：やや速い / 速い / 速い
 				[LI] 交易の速度：即時
 				[LI] 破壊の速度：即時[/BLIST]</Text>
 		</Replace>
@@ -1494,8 +1476,8 @@
 				[LI] 社会制度コスト：標準 / +25% / +25%
 				[LI] 建造物のコスト：+25% / 標準 / 標準
 				[LI] 勝利プロジェクトのコスト：標準 / -25% / -25%
-				[LI] 入植地の成長：-25% / -25% / 標準
-				[LI] 道路の速度：標準 / 標準 / -25%
+				[LI] 入植地の成長：やや速い / やや速い / 標準
+				[LI] 道路の速度：標準 / 標準 / やや速い
 				[LI] 交易の速度：標準
 				[LI] 破壊の速度：標準[/BLIST]</Text>
 		</Replace>
@@ -1507,8 +1489,8 @@
 				[LI] 社会制度コスト：+50% / +50% / +100%
 				[LI] 建造物のコスト：標準
 				[LI] 勝利プロジェクトのコスト：標準 / 標準 / +25%
-				[LI] 入植地の成長：+25%
-				[LI] 道路の速度：-25% / -25% / -50%
+				[LI] 入植地の成長：遅い
+				[LI] 道路の速度：やや速い / やや速い / 速い
 				[LI] 交易の速度：標準
 				[LI] 破壊の速度：標準[/BLIST]</Text>
 		</Replace>

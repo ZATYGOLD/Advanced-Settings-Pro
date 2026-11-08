@@ -106,9 +106,6 @@
 		<Row Tag="LOC_ZG_INDEPENDENT_SPACE_NAME"><Text>Independent Spacing</Text></Row>
 		<Row Tag="LOC_ZG_DISASTER_SETTINGS_NAME"><Text>Disasters</Text></Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_NAME"><Text>Settlement Limit</Text></Row>
-		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME"><Text>Antiquity</Text></Row>
-		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME"><Text>Exploration</Text></Row>
-		<Row Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME"><Text>Modern</Text></Row>
 		<Row Tag="LOC_ZG_SETTLEMENT_DISTANCE_NAME"><Text>Settlement Distance</Text></Row>
 		<Row Tag="LOC_ZG_TRADE_RANGE_NAME"><Text>Trade Range</Text></Row>
 		<Row Tag="LOC_ZG_TRADE_SPEED_NAME"><Text>Trade Speed</Text></Row>
@@ -419,32 +416,32 @@
 		<Row Tag="LOC_ZG_PCT_PLUS_100"><Text>+100%</Text></Row>
 		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_STANDARD"><Text>The game's own Food thresholds.</Text></Row>
 		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED"><Text>Cities grow faster early, then settle to standard.[nn][BLIST]
-				[LI] Antiquity: -25%
-				[LI] Exploration: -25%
+				[LI] Antiquity: Quick
+				[LI] Exploration: Quick
 				[LI] Modern: Standard[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_EXTENDED"><Text>Cities grow more slowly in every age.[nn][BLIST]
-				[LI] Antiquity: +25%
-				[LI] Exploration: +25%
-				[LI] Modern: +25%[/BLIST]</Text></Row>
+				[LI] Antiquity: Slow
+				[LI] Exploration: Slow
+				[LI] Modern: Slow[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SWIFT"><Text>Cities grow faster in every age.[nn][BLIST]
-				[LI] Antiquity: -25%
-				[LI] Exploration: -25%
-				[LI] Modern: -25%[/BLIST]</Text></Row>
+				[LI] Antiquity: Quick
+				[LI] Exploration: Quick
+				[LI] Modern: Quick[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST"><Text>50% less Food per citizen.</Text></Row>
 		<Row Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_QUICK"><Text>25% less Food per citizen.</Text></Row>
 		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_STANDARD"><Text>The game's own Movement costs.</Text></Row>
 		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_BALANCED"><Text>Standard roads until the Modern Age, then cheaper.[nn][BLIST]
 				[LI] Antiquity: Standard
 				[LI] Exploration: Standard
-				[LI] Modern: -25%[/BLIST]</Text></Row>
+				[LI] Modern: Quick[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_EXTENDED"><Text>Standard roads until the Modern Age, then cheaper.[nn][BLIST]
 				[LI] Antiquity: Standard
 				[LI] Exploration: Standard
-				[LI] Modern: -25%[/BLIST]</Text></Row>
+				[LI] Modern: Quick[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_SWIFT"><Text>Roads get cheaper to cross as the map opens up.[nn][BLIST]
-				[LI] Antiquity: -25%
-				[LI] Exploration: -50%
-				[LI] Modern: -50%[/BLIST]</Text></Row>
+				[LI] Antiquity: Quick
+				[LI] Exploration: Fast
+				[LI] Modern: Fast[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_SLOW"><Text>25% more Movement per tile.</Text></Row>
 		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_FAST"><Text>50% less Movement per tile.</Text></Row>
 		<Row Tag="LOC_ZG_ROADS_DESCRIPTION_QUICK"><Text>25% less Movement per tile.</Text></Row>
@@ -583,7 +580,7 @@
 			<Text>Sets this age's Trade Range.[n]Applies only when Trade Range is set to Custom.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION">
-			<Text>Sets how quickly Merchants start trade routes: by travelling to the settlement they trade with, or from a distance. A travel speed applies in every age, the Modern Age included.</Text>
+			<Text>Sets how quickly Merchants start trade routes: by traveling to the settlement they trade with, or from a distance. A travel speed applies in every age, the Modern Age included.</Text>
 		</Row>
 		<Row Tag="LOC_ZG_TRADE_SPEED_DESCRIPTION_SLOW">
 			<Text>Merchants travel with 3[icon:Action_Move]Movement.</Text>
@@ -874,7 +871,7 @@
 		<Row Tag="LOC_ZG_MAP_ZONES_DESCRIPTION"><Text>Where the map's hot and cold regions lie.</Text></Row>
 		<Row Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_STANDARD"><Text>A hot band across the middle of the map, cooling toward the top and bottom, as in the base game.</Text></Row>
 		<Row Tag="LOC_ZG_MAP_ZONES_HOT_EDGE_NAME"><Text>Hot Edge</Text></Row>
-		<Row Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_EDGE"><Text>Hot along the north or south edge of the map, chosen by the map seed, cooling steadily to a frozen opposite edge.</Text></Row>
+		<Row Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_EDGE"><Text>Hot along the top or bottom edge of the map, chosen by the map seed, cooling steadily to a frozen opposite edge.</Text></Row>
 		<Row Tag="LOC_ZG_MAP_ZONES_HOT_POLES_NAME"><Text>Hot Poles</Text></Row>
 		<Row Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_POLES"><Text>Hot along the top and bottom of the map, with a cold band across the middle.</Text></Row>
 		<Row Tag="LOC_ZG_MAP_ZONES_HOT_CENTER_NAME"><Text>Hot Center</Text></Row>
@@ -913,7 +910,6 @@
 		<Row Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION"><Text>An extremely fast pace. 150% faster than Standard speed.</Text></Row>
 
 	<!-- Age Length -->
-		<Row Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC"><Text>Each age uses the Age Length row in its own group below. Balanced sets 150, 170, and 200 points; Multiplayer sets 140, 160, and 180.</Text></Row>
 		<Row Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC"><Text>Longer ages, each one longer than the last.[nn][BLIST]
 				[LI] Antiquity: 150 points
 				[LI] Exploration: 170 points
@@ -1118,8 +1114,8 @@
 				[LI] Civic Cost: +25% / +50% / +50%
 				[LI] Building Cost: +25% / +50% / +50%
 				[LI] Victory Project Cost: +25%
-				[LI] Settlement Growth: +25%
-				[LI] Road Speed: Standard / Standard / -25%
+				[LI] Settlement Growth: Slow
+				[LI] Road Speed: Standard / Standard / Quick
 				[LI] Trade Speed: -25%
 				[LI] Raze Speed: Standard[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_SWIFT"><Text>Short ages, with costs scaled down to match.[nn][BLIST]
@@ -1129,8 +1125,8 @@
 				[LI] Civic Cost: -25% / -25% / Standard
 				[LI] Building Cost: -25%
 				[LI] Victory Project Cost: -25%
-				[LI] Settlement Growth: -25%
-				[LI] Road Speed: -25% / -50% / -50%
+				[LI] Settlement Growth: Quick
+				[LI] Road Speed: Quick / Fast / Fast
 				[LI] Trade Speed: Instant
 				[LI] Raze Speed: Instant[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_BALANCED"><Text>Longer ages, with research and growth tuned to fill them.[nn][BLIST]
@@ -1140,8 +1136,8 @@
 				[LI] Civic Cost: Standard / +25% / +25%
 				[LI] Building Cost: +25% / Standard / Standard
 				[LI] Victory Project Cost: Standard / -25% / -25%
-				[LI] Settlement Growth: -25% / -25% / Standard
-				[LI] Road Speed: Standard / Standard / -25%
+				[LI] Settlement Growth: Quick / Quick / Standard
+				[LI] Road Speed: Standard / Standard / Quick
 				[LI] Trade Speed: Standard
 				[LI] Raze Speed: Standard[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_MULTIPLAYER"><Text>Tuned for a session played in one sitting.[nn][BLIST]
@@ -1151,8 +1147,8 @@
 				[LI] Civic Cost: +50% / +50% / +100%
 				[LI] Building Cost: Standard
 				[LI] Victory Project Cost: Standard / Standard / +25%
-				[LI] Settlement Growth: +25%
-				[LI] Road Speed: -25% / -25% / -50%
+				[LI] Settlement Growth: Slow
+				[LI] Road Speed: Quick / Quick / Fast
 				[LI] Trade Speed: Standard
 				[LI] Raze Speed: Standard[/BLIST]</Text></Row>
 		<Row Tag="LOC_ZG_PACE_PRESET_DESCRIPTION_CUSTOM"><Text>The Pace Settings on the Pace tab no longer match a preset.</Text></Row>

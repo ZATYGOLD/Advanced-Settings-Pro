@@ -176,15 +176,6 @@
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_NAME" Language="fr_FR">
 			<Text>Lacs</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME" Language="fr_FR">
-			<Text>Antiquité</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME" Language="fr_FR">
-			<Text>Âge de l'exploration</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME" Language="fr_FR">
-			<Text>Âge moderne</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="fr_FR">
 			<Text>Définit la distance parcourue par les colons sur terre et en mer. Des colons plus rapides atteignent les sites lointains avant un rival.</Text>
 		</Replace>
@@ -515,12 +506,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_MORE" Language="fr_FR">
 			<Text>Génère plus de lacs.</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="fr_FR">
-			<Text>Advanced Settings Pro</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="fr_FR">
-			<Text>Advanced Settings Pro de Zatygold[n] [n]Ce mod enrichit la configuration de partie en solo grâce à des options supplémentaires dans le menu des paramètres avancés. Il permet d'affiner des systèmes normalement non réglables. Il n'intervient pas en multijoueur ; les paramètres multijoueur proviennent de Better Balanced Multiplayer.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="fr_FR">
 			<Text>Détermine si cette merveille naturelle peut apparaître sur la carte.</Text>
@@ -869,21 +854,21 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="fr_FR">
 			<Text>Les villes grandissent plus vite au début, puis reviennent au standard.[nn][BLIST]
-				[LI] Antiquité : -25%
-				[LI] Âge de l'exploration : -25%
+				[LI] Antiquité : Vif
+				[LI] Âge de l'exploration : Vif
 				[LI] Âge moderne : Standard[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_EXTENDED" Language="fr_FR">
 			<Text>Les villes grandissent plus lentement à chaque âge.[nn][BLIST]
-				[LI] Antiquité : +25%
-				[LI] Âge de l'exploration : +25%
-				[LI] Âge moderne : +25%[/BLIST]</Text>
+				[LI] Antiquité : Lent
+				[LI] Âge de l'exploration : Lent
+				[LI] Âge moderne : Lent[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SWIFT" Language="fr_FR">
 			<Text>Les villes grandissent plus vite à chaque âge.[nn][BLIST]
-				[LI] Antiquité : -25%
-				[LI] Âge de l'exploration : -25%
-				[LI] Âge moderne : -25%[/BLIST]</Text>
+				[LI] Antiquité : Vif
+				[LI] Âge de l'exploration : Vif
+				[LI] Âge moderne : Vif[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="fr_FR">
 			<Text>50% de nourriture par citoyen en moins.</Text>
@@ -898,19 +883,19 @@
 			<Text>Routes standard jusqu'à l'ère moderne, puis moins chères.[nn][BLIST]
 				[LI] Antiquité : Standard
 				[LI] Âge de l'exploration : Standard
-				[LI] Âge moderne : -25%[/BLIST]</Text>
+				[LI] Âge moderne : Vif[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXTENDED" Language="fr_FR">
 			<Text>Routes standard jusqu'à l'ère moderne, puis moins chères.[nn][BLIST]
 				[LI] Antiquité : Standard
 				[LI] Âge de l'exploration : Standard
-				[LI] Âge moderne : -25%[/BLIST]</Text>
+				[LI] Âge moderne : Vif[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SWIFT" Language="fr_FR">
 			<Text>Les routes coûtent moins cher à parcourir à mesure que la carte s'ouvre.[nn][BLIST]
-				[LI] Antiquité : -25%
-				[LI] Âge de l'exploration : -50%
-				[LI] Âge moderne : -50%[/BLIST]</Text>
+				[LI] Antiquité : Vif
+				[LI] Âge de l'exploration : Rapide
+				[LI] Âge moderne : Rapide[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SLOW" Language="fr_FR">
 			<Text>25% de mouvement par case en plus.</Text>
@@ -1037,7 +1022,7 @@
 			<Text>Bord chaud</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_EDGE" Language="fr_FR">
-			<Text>Chaud le long du bord nord ou sud de la carte, choisi par la graine de la carte, et se refroidit progressivement jusqu'au bord opposé gelé.</Text>
+			<Text>Chaud le long du bord supérieur ou inférieur de la carte, choisi par la graine de la carte, et se refroidit progressivement jusqu'au bord opposé gelé.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_POLES_NAME" Language="fr_FR">
 			<Text>Pôles chauds</Text>
@@ -1058,7 +1043,7 @@
 			<Text>Plus froid au milieu de la carte et plus chaud vers l'extérieur dans toutes les directions, si bien que les bords et les coins sont les plus chauds.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_ZONES_WARM_RING_NAME" Language="fr_FR">
-			<Text>Anneau chaud</Text>
+			<Text>Anneau tempéré</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_WARM_RING" Language="fr_FR">
 			<Text>Une bande de chaleur entoure le milieu de la carte, avec du froid en son centre et le long des bords.</Text>
@@ -1170,9 +1155,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="fr_FR">
 			<Text>Un rythme extrêmement rapide. 150% plus rapide que Standard.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="fr_FR">
-			<Text>Chaque âge utilise la ligne Durée des âges de son propre groupe ci-dessous. Équilibré fixe 150, 170 et 200 points ; Multijoueur fixe 140, 160 et 180.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="fr_FR">
 			<Text>Âges plus longs, chacun plus long que le précédent.[nn][BLIST]
@@ -1468,8 +1450,8 @@
 				[LI] Coût des dogmes : +25% / +50% / +50%
 				[LI] Coût des bâtiments : +25% / +50% / +50%
 				[LI] Coût des projets de victoire : +25%
-				[LI] Croissance des colonies : +25%
-				[LI] Vitesse des routes : Standard / Standard / -25%
+				[LI] Croissance des colonies : Lent
+				[LI] Vitesse des routes : Standard / Standard / Vif
 				[LI] Vitesse commerciale : -25%
 				[LI] Vitesse de destruction : Standard[/BLIST]</Text>
 		</Replace>
@@ -1481,8 +1463,8 @@
 				[LI] Coût des dogmes : -25% / -25% / Standard
 				[LI] Coût des bâtiments : -25%
 				[LI] Coût des projets de victoire : -25%
-				[LI] Croissance des colonies : -25%
-				[LI] Vitesse des routes : -25% / -50% / -50%
+				[LI] Croissance des colonies : Vif
+				[LI] Vitesse des routes : Vif / Rapide / Rapide
 				[LI] Vitesse commerciale : Instantanée
 				[LI] Vitesse de destruction : Instantanée[/BLIST]</Text>
 		</Replace>
@@ -1494,8 +1476,8 @@
 				[LI] Coût des dogmes : Standard / +25% / +25%
 				[LI] Coût des bâtiments : +25% / Standard / Standard
 				[LI] Coût des projets de victoire : Standard / -25% / -25%
-				[LI] Croissance des colonies : -25% / -25% / Standard
-				[LI] Vitesse des routes : Standard / Standard / -25%
+				[LI] Croissance des colonies : Vif / Vif / Standard
+				[LI] Vitesse des routes : Standard / Standard / Vif
 				[LI] Vitesse commerciale : Standard
 				[LI] Vitesse de destruction : Standard[/BLIST]</Text>
 		</Replace>
@@ -1507,8 +1489,8 @@
 				[LI] Coût des dogmes : +50% / +50% / +100%
 				[LI] Coût des bâtiments : Standard
 				[LI] Coût des projets de victoire : Standard / Standard / +25%
-				[LI] Croissance des colonies : +25%
-				[LI] Vitesse des routes : -25% / -25% / -50%
+				[LI] Croissance des colonies : Lent
+				[LI] Vitesse des routes : Vif / Vif / Rapide
 				[LI] Vitesse commerciale : Standard
 				[LI] Vitesse de destruction : Standard[/BLIST]</Text>
 		</Replace>

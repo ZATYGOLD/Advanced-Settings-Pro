@@ -1,4 +1,4 @@
--- Movement modifier shared by the Treasure Convoy Speed options.
+-- Treasure Convoy Speed: Modifiers. Movement modifier shared by the Treasure Convoy Speed options.
 -- Attached through ABILITY_TREASURE_FLEET so every fleet receives it on spawn.
 INSERT OR IGNORE INTO Types (Type, Kind)
     VALUES ('ZG_TREASURE_FLEET_MOD_MOVEMENT_TYPE', 'KIND_MODIFIER');

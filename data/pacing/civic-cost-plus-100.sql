@@ -1,4 +1,4 @@
--- Civic Cost +100%: costs x2.
+-- Civic Cost: +100%. Costs x2.
 UPDATE ProgressionTreeNodes
 SET Cost = CAST(ROUND(Cost * 2) AS INTEGER),
     RepeatableCostProgressionParam1 = CASE

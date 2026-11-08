@@ -176,15 +176,6 @@
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_NAME" Language="pl_PL">
 			<Text>Jeziora</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME" Language="pl_PL">
-			<Text>Epoka antyku</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME" Language="pl_PL">
-			<Text>Epoka odkryć</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME" Language="pl_PL">
-			<Text>Epoka nowożytna</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="pl_PL">
 			<Text>Określa, jak daleko osadnicy poruszają się lądem i morzem. Szybsi osadnicy docierają do odległych miejsc przed rywalem.</Text>
 		</Replace>
@@ -515,12 +506,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_MORE" Language="pl_PL">
 			<Text>Generuje więcej jezior.</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="pl_PL">
-			<Text>Advanced Settings Pro</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="pl_PL">
-			<Text>Advanced Settings Pro autorstwa Zatygolda[n] [n]Ten mod rozszerza konfigurację rozgrywki dla jednego gracza o dodatkowe opcje w menu ustawień zaawansowanych. Pozwala precyzyjnie dostroić systemy, których normalnie nie można zmieniać. Nie wpływa na tryb wieloosobowy; ustawienia trybu wieloosobowego zapewnia Better Balanced Multiplayer.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="pl_PL">
 			<Text>Określa, czy ten cud natury może pojawić się na mapie.</Text>
@@ -869,21 +854,21 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="pl_PL">
 			<Text>Miasta rosną szybciej na początku, potem wracają do standardu.[nn][BLIST]
-				[LI] Starożytność: -25%
-				[LI] Epoka odkryć: -25%
+				[LI] Starożytność: Sprawnie
+				[LI] Epoka odkryć: Sprawnie
 				[LI] Epoka nowożytna: Standardowe[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_EXTENDED" Language="pl_PL">
 			<Text>Miasta rosną wolniej w każdej epoce.[nn][BLIST]
-				[LI] Starożytność: +25%
-				[LI] Epoka odkryć: +25%
-				[LI] Epoka nowożytna: +25%[/BLIST]</Text>
+				[LI] Starożytność: Wolno
+				[LI] Epoka odkryć: Wolno
+				[LI] Epoka nowożytna: Wolno[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SWIFT" Language="pl_PL">
 			<Text>Miasta rosną szybciej w każdej epoce.[nn][BLIST]
-				[LI] Starożytność: -25%
-				[LI] Epoka odkryć: -25%
-				[LI] Epoka nowożytna: -25%[/BLIST]</Text>
+				[LI] Starożytność: Sprawnie
+				[LI] Epoka odkryć: Sprawnie
+				[LI] Epoka nowożytna: Sprawnie[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="pl_PL">
 			<Text>50% mniej żywności na obywatela.</Text>
@@ -898,19 +883,19 @@
 			<Text>Standardowe drogi do epoki nowożytnej, potem tańsze.[nn][BLIST]
 				[LI] Starożytność: Standardowe
 				[LI] Epoka odkryć: Standardowe
-				[LI] Epoka nowożytna: -25%[/BLIST]</Text>
+				[LI] Epoka nowożytna: Sprawnie[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXTENDED" Language="pl_PL">
 			<Text>Standardowe drogi do epoki nowożytnej, potem tańsze.[nn][BLIST]
 				[LI] Starożytność: Standardowe
 				[LI] Epoka odkryć: Standardowe
-				[LI] Epoka nowożytna: -25%[/BLIST]</Text>
+				[LI] Epoka nowożytna: Sprawnie[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SWIFT" Language="pl_PL">
 			<Text>Drogi stają się tańsze w przemierzaniu, gdy mapa się otwiera.[nn][BLIST]
-				[LI] Starożytność: -25%
-				[LI] Epoka odkryć: -50%
-				[LI] Epoka nowożytna: -50%[/BLIST]</Text>
+				[LI] Starożytność: Sprawnie
+				[LI] Epoka odkryć: Szybko
+				[LI] Epoka nowożytna: Szybko[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SLOW" Language="pl_PL">
 			<Text>25% więcej ruchu na pole.</Text>
@@ -1037,7 +1022,7 @@
 			<Text>Gorąca krawędź</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_EDGE" Language="pl_PL">
-			<Text>Gorąco wzdłuż północnej lub południowej krawędzi mapy, wybranej przez ziarno mapy, z równomiernym ochłodzeniem ku zamarzniętej przeciwnej krawędzi.</Text>
+			<Text>Gorąco wzdłuż górnej lub dolnej krawędzi mapy, wybranej przez ziarno mapy, z równomiernym ochłodzeniem ku zamarzniętej przeciwnej krawędzi.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_POLES_NAME" Language="pl_PL">
 			<Text>Gorące bieguny</Text>
@@ -1170,9 +1155,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="pl_PL">
 			<Text>Ekstremalnie szybkie tempo. 150% szybciej niż standardowe.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="pl_PL">
-			<Text>Własne: każda epoka używa wiersza Długość epoki w swojej grupie poniżej. Zrównoważone ustawia 150, 170 i 200 punktów; Tryb wieloosobowy ustawia 140, 160 i 180.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="pl_PL">
 			<Text>Dłuższe epoki, każda dłuższa od poprzedniej.[nn][BLIST]
@@ -1468,8 +1450,8 @@
 				[LI] Koszt idei: +25% / +50% / +50%
 				[LI] Koszt budynków: +25% / +50% / +50%
 				[LI] Koszt projektów zwycięstwa: +25%
-				[LI] Wzrost osad: +25%
-				[LI] Szybkość dróg: Standardowe / Standardowe / -25%
+				[LI] Wzrost osad: Wolno
+				[LI] Szybkość dróg: Standardowe / Standardowe / Sprawnie
 				[LI] Szybkość handlu: -25%
 				[LI] Szybkość burzenia: Standardowe[/BLIST]</Text>
 		</Replace>
@@ -1481,8 +1463,8 @@
 				[LI] Koszt idei: -25% / -25% / Standardowe
 				[LI] Koszt budynków: -25%
 				[LI] Koszt projektów zwycięstwa: -25%
-				[LI] Wzrost osad: -25%
-				[LI] Szybkość dróg: -25% / -50% / -50%
+				[LI] Wzrost osad: Sprawnie
+				[LI] Szybkość dróg: Sprawnie / Szybko / Szybko
 				[LI] Szybkość handlu: Natychmiastowy
 				[LI] Szybkość burzenia: Natychmiastowy[/BLIST]</Text>
 		</Replace>
@@ -1494,8 +1476,8 @@
 				[LI] Koszt idei: Standardowe / +25% / +25%
 				[LI] Koszt budynków: +25% / Standardowe / Standardowe
 				[LI] Koszt projektów zwycięstwa: Standardowe / -25% / -25%
-				[LI] Wzrost osad: -25% / -25% / Standardowe
-				[LI] Szybkość dróg: Standardowe / Standardowe / -25%
+				[LI] Wzrost osad: Sprawnie / Sprawnie / Standardowe
+				[LI] Szybkość dróg: Standardowe / Standardowe / Sprawnie
 				[LI] Szybkość handlu: Standardowe
 				[LI] Szybkość burzenia: Standardowe[/BLIST]</Text>
 		</Replace>
@@ -1507,8 +1489,8 @@
 				[LI] Koszt idei: +50% / +50% / +100%
 				[LI] Koszt budynków: Standardowe
 				[LI] Koszt projektów zwycięstwa: Standardowe / Standardowe / +25%
-				[LI] Wzrost osad: +25%
-				[LI] Szybkość dróg: -25% / -25% / -50%
+				[LI] Wzrost osad: Wolno
+				[LI] Szybkość dróg: Sprawnie / Sprawnie / Szybko
 				[LI] Szybkość handlu: Standardowe
 				[LI] Szybkość burzenia: Standardowe[/BLIST]</Text>
 		</Replace>

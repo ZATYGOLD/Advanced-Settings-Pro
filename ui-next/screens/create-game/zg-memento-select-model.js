@@ -16,8 +16,9 @@
 // for its own overrides; ComponentRegistry and ModelRegistry both resolve the
 // higher priority, and the create-game screen picks the model up through the
 // registry. Everything not to do with the player is the base code, so re-sync
-// this copy after a patch that changes memento-select-model.js. Multiplayer and
-// hotseat get the base model.
+// this copy after a patch that changes memento-select-model.js. The age
+// transition screen builds this model too, so a multiplayer age transition gets
+// the base model.
 import { createSignal } from 'fs://game/core/vendor/solid-js/dist/solid.js';
 import { createMutable, modifyMutable, reconcile } from 'fs://game/core/vendor/solid-js/store/dist/store.js';
 import { ModelRegistry, ModelLifecycle } from 'fs://game/core/ui-next/services/model-registry.js';
@@ -26,10 +27,10 @@ import { ContextManager } from 'fs://game/core/ui/context-manager/context-manage
 import 'fs://game/core/ui-next/screens/create-game/memento-select-model.js';
 import { isMultiplayer } from '../../../ui/shared/zg-config.js';
 import { MEMENTO_NONE_VALUE } from '../../../ui/shared/zg-memento-roller.js';
+import { SETUP_SCREEN } from '../../../ui/shell/shared/zg-shell-context.js';
+import { PLAYER_OVERRIDE_PRIORITY } from './zg-component-override.js';
 
-const OVERRIDE_PRIORITY = 110;
 const MODEL_NAME = "MementoSelectModel";
-const CREATE_GAME_SCREEN = "create-game-sp";
 
 const funcDescName = GameSetup.findString("FunctionalDescription");
 
@@ -169,9 +170,9 @@ function createMementoModel() {
 }
 
 const createBaseMementoModel = ModelRegistry.get(MODEL_NAME)?.factory;
-ModelRegistry.register(MODEL_NAME, ModelLifecycle.PerInstance, () => (isMultiplayer() && createBaseMementoModel ? createBaseMementoModel() : createMementoModel()), OVERRIDE_PRIORITY);
+ModelRegistry.register(MODEL_NAME, ModelLifecycle.PerInstance, () => (isMultiplayer() && createBaseMementoModel ? createBaseMementoModel() : createMementoModel()), PLAYER_OVERRIDE_PRIORITY);
 
 // The model the open create-game screen built. The picker reuses it rather than
 // building a second, so the Overview's own memento display follows every change
 // made through the picker.
-export const currentMementoModel = () => (ContextManager.hasInstanceOf(CREATE_GAME_SCREEN) ? activeModel : null);
+export const currentMementoModel = () => (ContextManager.hasInstanceOf(SETUP_SCREEN) ? activeModel : null);

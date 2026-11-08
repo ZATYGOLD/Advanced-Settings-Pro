@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<LocalizedText>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="de_DE">
+			<Text>Zatygolds Advanced Settings</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="de_DE">
+			<Text>Zatygolds Advanced Settings[n] [n]Diese Mod erweitert die Einzelspieler-Spielerstellung um zusätzliche Optionen im Menü für erweiterte Einstellungen. Sie ermöglicht die Feinabstimmung von Systemen, die normalerweise nicht anpassbar sind. Im Mehrspielermodus hält sie sich heraus; die Mehrspieler-Einstellungen stammen aus dem Better Balanced Multiplayer.</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="es_ES">
+			<Text>Advanced Settings de Zatygold</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="es_ES">
+			<Text>Advanced Settings de Zatygold[n] [n]Este mod amplía la configuración de partida para un jugador añadiendo opciones adicionales al menú de ajustes avanzados. Permite ajustar con precisión sistemas que normalmente no son configurables. No interviene en el multijugador; los ajustes multijugador proceden de Better Balanced Multiplayer.</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="fr_FR">
+			<Text>Advanced Settings de Zatygold</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="fr_FR">
+			<Text>Advanced Settings de Zatygold[n] [n]Ce mod enrichit la configuration de partie en solo grâce à des options supplémentaires dans le menu des paramètres avancés. Il permet d'affiner des systèmes normalement non réglables. Il n'intervient pas en multijoueur ; les paramètres multijoueur proviennent de Better Balanced Multiplayer.</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="it_IT">
+			<Text>Advanced Settings di Zatygold</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="it_IT">
+			<Text>Advanced Settings di Zatygold[n] [n]Questa mod amplia la configurazione della partita per giocatore singolo con opzioni aggiuntive nel menu delle impostazioni avanzate. Consente di regolare con precisione sistemi normalmente non modificabili. Non interviene nel multiplayer; le impostazioni multiplayer provengono da Better Balanced Multiplayer.</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="ja_JP">
+			<Text>ZatygoldのAdvanced Settings</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="ja_JP">
+			<Text>ZatygoldのAdvanced Settings[n] [n]このModは、詳細設定メニューに追加オプションを加えることで、シングルプレイヤーのゲーム設定を拡張します。通常は調整できないシステムを細かく設定できます。マルチプレイヤーには影響せず、マルチプレイヤーの設定はBetter Balanced Multiplayerが提供します。</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="ko_KR">
+			<Text>Zatygold의 Advanced Settings</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="ko_KR">
+			<Text>Zatygold의 Advanced Settings[n] [n]이 모드는 고급 설정 메뉴에 추가 옵션을 더해 싱글플레이어의 게임 설정을 확장합니다. 일반적으로 조정할 수 없는 시스템을 세밀하게 설정할 수 있습니다. 멀티플레이어에는 영향을 주지 않으며, 멀티플레이어 설정은 Better Balanced Multiplayer이 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="pl_PL">
+			<Text>Advanced Settings autorstwa Zatygolda</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="pl_PL">
+			<Text>Advanced Settings autorstwa Zatygolda[n] [n]Ten mod rozszerza konfigurację rozgrywki dla jednego gracza o dodatkowe opcje w menu ustawień zaawansowanych. Pozwala precyzyjnie dostroić systemy, których normalnie nie można zmieniać. Nie wpływa na tryb wieloosobowy; ustawienia trybu wieloosobowego zapewnia Better Balanced Multiplayer.</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="pt_BR">
+			<Text>Advanced Settings do Zatygold</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="pt_BR">
+			<Text>Advanced Settings do Zatygold[n] [n]Este mod expande a configuração de partidas para um jogador com opções extras no menu de configurações avançadas. Ele permite ajustar sistemas que normalmente não são configuráveis. Não interfere no multijogador; as configurações multijogador vêm do Better Balanced Multiplayer.</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="ru_RU">
+			<Text>Advanced Settings от Zatygold</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="ru_RU">
+			<Text>Advanced Settings от Zatygold[n] [n]Этот мод расширяет настройку одиночной игры, добавляя дополнительные параметры в меню расширенных настроек. Он позволяет тонко настраивать системы, которые обычно не настраиваются. В сетевую игру мод не вмешивается; сетевые настройки предоставляет Better Balanced Multiplayer.</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="zh_Hans_CN">
+			<Text>Zatygold的Advanced Settings</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>Zatygold的Advanced Settings[n] [n]本模组通过在高级设置菜单中添加更多选项，扩展单人游戏的对局设置，让你能够微调通常无法调整的系统。本模组不影响多人游戏；多人游戏设置由Better Balanced Multiplayer提供。</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="zh_Hant_HK">
+			<Text>Zatygold的Advanced Settings</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>Zatygold的Advanced Settings[n] [n]本模組透過在進階設定選單中加入更多選項，擴充單人遊戲的對局設定，讓你能夠微調通常無法調整的系統。本模組不影響多人遊戲；多人遊戲設定由Better Balanced Multiplayer提供。</Text>
+		</Replace>
+	</LocalizedText>
+</Database>

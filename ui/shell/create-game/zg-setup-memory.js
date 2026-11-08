@@ -5,7 +5,8 @@
 // them, tied to the single-player setup screen (create-game-sp) and nothing else:
 //   restore   when the screen opens, wait for the game to finish loading its own
 //             saved settings, put the remembered values back, and keep putting
-//             back any the game overwrites in the moments after;
+//             back any the game overwrites in the moments after, until the
+//             player first touches the screen;
 //   remember  while the screen is open and the restore is done, save every change.
 // Only values seen on that screen are ever saved, so nothing else can overwrite
 // them: the reset the main menu runs when you leave, a save being loaded,
@@ -15,21 +16,18 @@
 // Storage follows the convention mods share in the shell: one "modSettings"
 // localStorage key holding an object with a key per mod. A second top-level
 // key makes those mods clear all of localStorage, every mod's settings included.
-
-import { ContextManager } from 'fs://game/core/ui/context-manager/context-manager.js';
 import { StartCampaignEventName } from 'fs://game/core/ui/events/shell-events.js';
-import { isSinglePlayerSetup } from '../shared/zg-shell-context.js';
+import { isSinglePlayerSetupOpen } from '../shared/zg-shell-context.js';
 
 const STORAGE_KEY = "modSettings";
 const MOD_KEY = "ZG_AdvancedSettingsProSetup";
 const STORAGE_VERSION = 2;
-const SETUP_SCREEN = "create-game-sp";
 const PARAM_PREFIX = "ZG_";
 // Game settings this mod places on its own tabs and remembers with its own.
 const REMEMBERED_BASE_PARAM_IDS = new Set(["AgeLength", "Crises", "DisasterIntensity", "IndependentHostility", "LegacySets", "MapSeaLevel"]);
 // The game's own saved settings land over several revisions after the screen
 // opens. The restore waits for this many quiet polls, then guards its values
-// for this long against anything that lands late.
+// for this long against anything that lands late, or until the player's first input.
 const SETTLE_POLLS = 3;
 const GUARD_MS = 2500;
 const LOG_PREFIX = "ZG-ASP setup memory:";
@@ -41,7 +39,8 @@ let seenRevision = -1;
 let hasParameters = false;
 let quietPolls = 0;
 let targets = null;
-let guardUntil = 0;
+let guardFrom = 0;
+let lastInputAt = 0;
 let lastSaved = null;
 
 // ---------------------------------------------------------------- storage --
@@ -75,7 +74,6 @@ function writeSaved(values) {
 // ------------------------------------------------------------- parameters --
 
 const isRemembered = (id) => id.startsWith(PARAM_PREFIX) || REMEMBERED_BASE_PARAM_IDS.has(id);
-const isSetupOpen = () => ContextManager.hasInstanceOf(SETUP_SCREEN) && isSinglePlayerSetup();
 
 function rememberedParameters() {
 	const out = new Map();
@@ -102,6 +100,10 @@ function snapshot() {
 // offers it; an array keeps the entries still offered.
 function restorable(param, saved) {
 	const offered = (param.domain?.possibleValues ?? []).map((entry) => entry.value);
+	// Options not loaded yet; filtering a list against them would empty it.
+	if (offered.length == 0 && param.array) {
+		return undefined;
+	}
 	if (param.array) {
 		return Array.isArray(saved) ? saved.filter((value) => offered.includes(value)) : undefined;
 	}
@@ -149,7 +151,7 @@ function buildTargets() {
 // Runs once per poll. Returns whether it changed the setup or finished a
 // restore, so the caller can treat the current values as its new baseline.
 export function tickSetupMemory() {
-	if (!isSetupOpen()) {
+	if (!isSinglePlayerSetupOpen()) {
 		phase = Phase.CLOSED;
 		return false;
 	}
@@ -170,13 +172,14 @@ export function tickSetupMemory() {
 			targets = buildTargets();
 			console.log(`${LOG_PREFIX} restoring ${targets.size} remembered settings`);
 			phase = Phase.GUARDING;
-			guardUntil = Date.now() + GUARD_MS;
+			guardFrom = Date.now();
 			applyTargets();
 			seenRevision = GameSetup.currentRevision;
 			return true;
 		}
 		case Phase.GUARDING:
-			if (Date.now() < guardUntil) {
+			// The player's own changes are theirs to keep.
+			if (Date.now() < guardFrom + GUARD_MS && lastInputAt < guardFrom) {
 				// Only a change to the setup can undo a restored value.
 				const revision = GameSetup.currentRevision;
 				if (revision == seenRevision) return false;
@@ -197,7 +200,7 @@ export const isRestoringSetup = () => phase == Phase.SETTLING || phase == Phase.
 
 // Saves the current values while the setup screen is open and restored.
 export function rememberSetup() {
-	if (phase != Phase.OPEN || !isSetupOpen()) {
+	if (phase != Phase.OPEN || !isSinglePlayerSetupOpen()) {
 		return;
 	}
 	const values = snapshot();
@@ -207,6 +210,9 @@ export function rememberSetup() {
 		writeSaved(values);
 	}
 }
+
+const noteInput = () => { lastInputAt = Date.now(); };
+["mousedown", "keydown", "engine-input"].forEach((type) => window.addEventListener(type, noteInput, true));
 
 // Starting the game is the last chance to see the final values.
 window.addEventListener(StartCampaignEventName, () => {

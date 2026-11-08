@@ -1,4 +1,4 @@
--- Settler Speed: Modifiers. Embarked-movement modifier shared by the Settler Speed options.
+-- Settler Speed: Modifiers. Embarked movement modifier shared by the Settler Speed options.
 INSERT OR IGNORE INTO Types (Type, Kind)
     VALUES
         ('ZG_ABILITY_SETTLER_EMBARK', 'KIND_ABILITY'),

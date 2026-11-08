@@ -21,7 +21,7 @@
 			<AlwaysMet/>
 		</Criteria>
 
-<!--****************** CRITERIA: SINGLE PLAYER, RETIRED SPEEDS *******************-->
+<!--***************** CRITERIA: SINGLE PLAYER, RETIRED SPEEDS ******************-->
 
 		<!-- ZGSinglePlayerSetup exists only in single player (config/setup-parameters.sql). -->
 		<Criteria id="single-player">
@@ -45,46 +45,7 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--*************************** CRITERIA: AGE LENGTH ****************************-->
-
-		<Criteria id="age-length-standard">
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>ZGSinglePlayerSetup</ConfigurationId>
-				<Value>1</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLength</ConfigurationId>
-				<Value>AGE_LENGTH_STANDARD</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="age-length-abbreviated">
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>ZGSinglePlayerSetup</ConfigurationId>
-				<Value>1</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLength</ConfigurationId>
-				<Value>AGE_LENGTH_ABBREVIATED</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="age-length-long">
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>ZGSinglePlayerSetup</ConfigurationId>
-				<Value>1</Value>
-			</ConfigurationValueMatches>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeLength</ConfigurationId>
-				<Value>AGE_LENGTH_LONG</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-
-<!--************************ CRITERIA: SETTLER MOVEMENT *************************-->
+<!--************************ CRITERIA: SETTLER MOVEMENT ************************-->
 
 		<Criteria id="slow-settlers">
 			<ConfigurationValueMatches>
@@ -108,7 +69,7 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--************************* CRITERIA: TREASURE CONVOY *************************-->
+<!--************************ CRITERIA: TREASURE CONVOY *************************-->
 
 		<Criteria id="slow-treasure">
 			<AgeInUse>AGE_EXPLORATION</AgeInUse>
@@ -135,7 +96,7 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--************************ CRITERIA: INDEPENDENT COUNT ************************-->
+<!--*********************** CRITERIA: INDEPENDENT COUNT ************************-->
 
 		<Criteria id="more-independents">
 			<ConfigurationValueMatches>
@@ -159,7 +120,7 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--*********************** CRITERIA: INDEPENDENT SPACING ***********************-->
+<!--********************** CRITERIA: INDEPENDENT SPACING ***********************-->
 
 		<Criteria id="more-independents-spacing-antiquity">
 			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
@@ -210,7 +171,7 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--********************* CRITERIA: INDEPENDENT UNITS COUNT *********************-->
+<!--******************** CRITERIA: INDEPENDENT UNITS COUNT *********************-->
 
 		<Criteria id="more-independents-units-antiquity">
 			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
@@ -261,7 +222,7 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--********************* CRITERIA: INDEPENDENT AGGRESSION **********************-->
+<!--********************* CRITERIA: INDEPENDENT AGGRESSION *********************-->
 
 		<Criteria id="calm-independents">
 			<ConfigurationValueMatches>
@@ -278,7 +239,7 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--*********************** CRITERIA: DISASTER FREQUENCY ************************-->
+<!--*********************** CRITERIA: DISASTER FREQUENCY ***********************-->
 
 		<Criteria id="disasters-disabled">
 			<ConfigurationValueMatches>
@@ -309,7 +270,7 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--******************* CRITERIA: DISASTER FREQUENCY PER AGE ********************-->
+<!--******************* CRITERIA: DISASTER FREQUENCY PER AGE *******************-->
 
 		<Criteria id="disasters-antiquity-disabled">
 			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
@@ -468,7 +429,7 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--************************ CRITERIA: SETTLEMENT LIMIT *************************-->
+<!--************************ CRITERIA: SETTLEMENT LIMIT ************************-->
 
 		<Criteria id="more-settlement-limit-antiquity">
 			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
@@ -519,7 +480,7 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--********************* CRITERIA: CUSTOM SETTLEMENT LIMIT *********************-->
+<!--******************** CRITERIA: CUSTOM SETTLEMENT LIMIT *********************-->
 
 		<Criteria id="custom-settlement-limit-antiquity-1">
 			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
@@ -1887,7 +1848,7 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--*********************** CRITERIA: SETTLEMENT DISTANCE ***********************-->
+<!--********************** CRITERIA: SETTLEMENT DISTANCE ***********************-->
 
 		<Criteria id="more-settlement-distance">
 			<ConfigurationValueMatches>
@@ -1904,7 +1865,7 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--*********************** CRITERIA: RAZE SPEED ***********************-->
+<!--*************************** CRITERIA: RAZE SPEED ***************************-->
 
 		<Criteria id="raze-time-antiquity-instant">
 			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
@@ -1987,7 +1948,7 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--*********************** CRITERIA: TRADE RANGE ***********************-->
+<!--************************** CRITERIA: TRADE RANGE ***************************-->
 
 		<Criteria id="trade-range-antiquity-minus-50">
 			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
@@ -2110,7 +2071,7 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--*********************** CRITERIA: TRADE SPEED ***********************-->
+<!--************************** CRITERIA: TRADE SPEED ***************************-->
 
 		<Criteria id="trade-speed-antiquity-slow">
 			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
@@ -2209,7 +2170,7 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--**************************** CRITERIA: UNIT COST ****************************-->
+<!--*************************** CRITERIA: UNIT COST ****************************-->
 
 		<Criteria id="military-unit-cost-low">
 			<ConfigurationValueMatches>
@@ -2268,7 +2229,7 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--************************** CRITERIA: CRISIS TIMING **************************-->
+<!--************************* CRITERIA: CRISIS TIMING **************************-->
 
 		<Criteria id="crisis-timing-early">
 			<ConfigurationValueMatches>
@@ -2285,7 +2246,7 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--********************** CRITERIA: NATURAL WONDER COUNT ***********************-->
+<!--********************** CRITERIA: NATURAL WONDER COUNT **********************-->
 
 		<Criteria id="natural-wonder-count-double">
 			<ConfigurationValueMatches>
@@ -2316,7 +2277,7 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--************************* CRITERIA: LAKE GENERATION *************************-->
+<!--************************ CRITERIA: LAKE GENERATION *************************-->
 
 		<Criteria id="lake-generation-more">
 			<ConfigurationValueMatches>
@@ -2333,7 +2294,7 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--********************* CRITERIA: NATURAL WONDER TOGGLES **********************-->
+<!--********************* CRITERIA: NATURAL WONDER TOGGLES *********************-->
 
 		<Criteria id="nw-barrier-reef-disabled">
 			<ConfigurationValueMatches>
@@ -2490,7 +2451,7 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--*********************** CRITERIA: TRIUMPH SET PER AGE ***********************-->
+<!--********************** CRITERIA: TRIUMPH SET PER AGE ***********************-->
 
 		<Criteria id="triumph-set-antiquity-default">
 			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
@@ -2727,7 +2688,7 @@
 			</ConfigurationValueMatches>
 		</Criteria>
 
-<!--************************** CRITERIA: PACE SETTINGS **************************-->
+<!--************************* CRITERIA: PACE SETTINGS **************************-->
 
 		<Criteria id="age-length-antiquity-90">
 			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
@@ -3536,8 +3497,7 @@
 				<Value>ZG_AGE_PROGRESS_SLOW</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="pacing-age-progress-balanced-antiquity">
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+		<Criteria id="pacing-age-progress-balanced">
 			<ConfigurationValueMatches>
 				<Group>Game</Group>
 				<ConfigurationId>AgeProgressRateKey</ConfigurationId>
@@ -3583,14 +3543,6 @@
 				<Value>ZG_AGE_PROGRESS_SLOW</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="pacing-age-progress-balanced-exploration">
-			<AgeInUse>AGE_EXPLORATION</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeProgressRateKey</ConfigurationId>
-				<Value>ZG_AGE_PROGRESS_BALANCED</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
 		<Criteria id="pacing-age-progress-exploration-balanced">
 			<AgeInUse>AGE_EXPLORATION</AgeInUse>
 			<ConfigurationValueMatches>
@@ -3628,14 +3580,6 @@
 				<Group>Game</Group>
 				<ConfigurationId>AgeProgressRateModernKey</ConfigurationId>
 				<Value>ZG_AGE_PROGRESS_SLOW</Value>
-			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="pacing-age-progress-balanced-modern">
-			<AgeInUse>AGE_MODERN</AgeInUse>
-			<ConfigurationValueMatches>
-				<Group>Game</Group>
-				<ConfigurationId>AgeProgressRateKey</ConfigurationId>
-				<Value>ZG_AGE_PROGRESS_BALANCED</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="pacing-age-progress-modern-balanced">
@@ -5225,7 +5169,7 @@
 	</ActionCriteria>
 	<ActionGroups>
 
-<!--******************** SETTINGS: TEXT AND SETUP PARAMETERS ********************-->
+<!--******************* SETTINGS: TEXT AND SETUP PARAMETERS ********************-->
 
 		<ActionGroup id="zg-options-settings-shell" scope="shell" criteria="always">
 			<Properties>
@@ -5234,24 +5178,12 @@
 			</Properties>
 			<Actions>
 				<UIScripts>
-					<Item>ui/shared/zg-config.js</Item>
-					<Item>ui/shared/zg-civ-associations.js</Item>
-					<Item>ui/shared/zg-memento-roller.js</Item>
-					<Item>ui/shell/shared/zg-conflict-guard.js</Item>
 					<Item>ui/shell/shared/zg-asp-guard.js</Item>
-					<Item>ui/shell/shared/zg-shell-context.js</Item>
-					<Item>ui/shell/shared/zg-setup-tabs.js</Item>
-					<Item>ui/shell/create-panels/zg-setup-memory.js</Item>
-					<Item>ui/shell/create-panels/zg-setup-rules.js</Item>
-					<Item>ui-next/screens/create-game/zg-component-override.js</Item>
+					<Item>ui/shell/create-game/zg-setup-rules.js</Item>
 					<Item>ui-next/screens/create-game/zg-map-tab.js</Item>
 					<Item>ui-next/screens/create-game/zg-seed-randomizer.js</Item>
-					<Item>ui-next/screens/create-game/zg-memento-select.js</Item>
 					<Item>ui-next/screens/create-game/zg-memento-select-model.js</Item>
 					<Item>ui-next/screens/create-game/zg-player-tab.js</Item>
-					<Item>ui/age-transition/zg-age-transition-civs.js</Item>
-					<Item>ui/age-transition/zg-age-transition-mementos.js</Item>
-					<Item>ui/age-transition/zg-age-transition-settle.js</Item>
 					<Item>ui/age-transition/zg-age-transition-shell.js</Item>
 				</UIScripts>
 				<UpdateText>
@@ -5274,6 +5206,17 @@
 					<Item>config/map-scripts.sql</Item>
 				</UpdateDatabase>
 				<ImportFiles>
+					<Item>ui/shared/zg-config.js</Item>
+					<Item>ui/shared/zg-civ-associations.js</Item>
+					<Item>ui/shared/zg-memento-roller.js</Item>
+					<Item>ui/shell/shared/zg-conflict-guard.js</Item>
+					<Item>ui/shell/shared/zg-shell-context.js</Item>
+					<Item>ui/shell/create-game/zg-setup-memory.js</Item>
+					<Item>ui-next/screens/create-game/zg-component-override.js</Item>
+					<Item>ui-next/screens/create-game/zg-memento-select.js</Item>
+					<Item>ui/age-transition/zg-age-transition-civs.js</Item>
+					<Item>ui/age-transition/zg-age-transition-mementos.js</Item>
+					<Item>ui/age-transition/zg-age-transition-settle.js</Item>
 					<Item>maps/zg-map-utils.js</Item>
 					<Item>maps/zg-map-rivers.js</Item>
 					<Item>maps/zg-map-mountains.js</Item>
@@ -5283,7 +5226,7 @@
 					<Item>maps/zg-map-features.js</Item>
 					<Item>maps/zg-map-snow.js</Item>
 					<Item>maps/zg-map-resources.js</Item>
-					<Item>maps/zg-map-generation.js</Item>
+					<Item>maps/zg-common-generation.js</Item>
 					<Item>maps/zg-continents-voronoi.js</Item>
 					<Item>maps/zg-pangaea-voronoi.js</Item>
 					<Item>maps/zg-fractal-voronoi.js</Item>
@@ -5334,7 +5277,7 @@
 					<Item>maps/zg-map-features.js</Item>
 					<Item>maps/zg-map-snow.js</Item>
 					<Item>maps/zg-map-resources.js</Item>
-					<Item>maps/zg-map-generation.js</Item>
+					<Item>maps/zg-common-generation.js</Item>
 					<Item>maps/zg-continents-voronoi.js</Item>
 					<Item>maps/zg-pangaea-voronoi.js</Item>
 					<Item>maps/zg-fractal-voronoi.js</Item>
@@ -5372,40 +5315,7 @@
 			</Actions>
 		</ActionGroup>
 
-<!--*************************** SETTINGS: AGE LENGTH ****************************-->
-
-		<ActionGroup id="zg-age-length-standard" scope="game" criteria="age-length-standard">
-			<Properties>
-				<LoadOrder>1100000000</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/ages/age-length-140.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-age-length-abbreviated" scope="game" criteria="age-length-abbreviated">
-			<Properties>
-				<LoadOrder>1100000000</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/ages/age-length-120.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="zg-age-length-long" scope="game" criteria="age-length-long">
-			<Properties>
-				<LoadOrder>1100000000</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/ages/age-length-160.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-
-<!--************************ SETTINGS: SETTLER MOVEMENT *************************-->
+<!--************************ SETTINGS: SETTLER MOVEMENT ************************-->
 
 		<ActionGroup id="zg-slow-settlers" scope="game" criteria="slow-settlers">
 			<Properties>
@@ -5413,9 +5323,8 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/units/settler-embark-modifiers.sql</Item>
+					<Item>data/units/settler-speed-modifiers.sql</Item>
 					<Item>data/units/settler-speed-slow.sql</Item>
-					<Item>data/units/settler-embark-slow.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -5425,9 +5334,8 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/units/settler-embark-modifiers.sql</Item>
+					<Item>data/units/settler-speed-modifiers.sql</Item>
 					<Item>data/units/settler-speed-quick.sql</Item>
-					<Item>data/units/settler-embark-quick.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -5437,14 +5345,13 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/units/settler-embark-modifiers.sql</Item>
+					<Item>data/units/settler-speed-modifiers.sql</Item>
 					<Item>data/units/settler-speed-fast.sql</Item>
-					<Item>data/units/settler-embark-fast.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
 
-<!--************************* SETTINGS: TREASURE CONVOY *************************-->
+<!--************************ SETTINGS: TREASURE CONVOY *************************-->
 
 		<ActionGroup id="zg-slow-treasure" scope="game" criteria="slow-treasure">
 			<Properties>
@@ -5480,7 +5387,7 @@
 			</Actions>
 		</ActionGroup>
 
-<!--************************ SETTINGS: INDEPENDENT COUNT ************************-->
+<!--*********************** SETTINGS: INDEPENDENT COUNT ************************-->
 
 		<ActionGroup id="zg-more-independents" scope="game" criteria="more-independents">
 			<Properties>
@@ -5513,7 +5420,7 @@
 			</Actions>
 		</ActionGroup>
 
-<!--*********************** SETTINGS: INDEPENDENT SPACING ***********************-->
+<!--********************** SETTINGS: INDEPENDENT SPACING ***********************-->
 
 		<ActionGroup id="zg-more-independents-spacing-antiquity" scope="game" criteria="more-independents-spacing-antiquity">
 			<Properties>
@@ -5576,7 +5483,7 @@
 			</Actions>
 		</ActionGroup>
 
-<!--********************* SETTINGS: INDEPENDENT UNITS COUNT *********************-->
+<!--******************** SETTINGS: INDEPENDENT UNITS COUNT *********************-->
 
 		<ActionGroup id="zg-more-independents-units-antiquity" scope="game" criteria="more-independents-units-antiquity">
 			<Properties>
@@ -5639,7 +5546,7 @@
 			</Actions>
 		</ActionGroup>
 
-<!--********************* SETTINGS: INDEPENDENT AGGRESSION **********************-->
+<!--********************* SETTINGS: INDEPENDENT AGGRESSION *********************-->
 
 		<ActionGroup id="zg-calm-independents" scope="game" criteria="calm-independents">
 			<Properties>
@@ -5662,7 +5569,7 @@
 			</Actions>
 		</ActionGroup>
 
-<!--*********************** SETTINGS: DISASTER FREQUENCY ************************-->
+<!--*********************** SETTINGS: DISASTER FREQUENCY ***********************-->
 
 		<ActionGroup id="zg-disasters-disabled" scope="game" criteria="disasters-disabled">
 			<Properties>
@@ -5705,7 +5612,7 @@
 			</Actions>
 		</ActionGroup>
 
-<!--******************* SETTINGS: DISASTER FREQUENCY PER AGE ********************-->
+<!--******************* SETTINGS: DISASTER FREQUENCY PER AGE *******************-->
 
 		<ActionGroup id="zg-disasters-antiquity-disabled" scope="game" criteria="disasters-antiquity-disabled">
 			<Properties>
@@ -5828,7 +5735,7 @@
 			</Actions>
 		</ActionGroup>
 
-<!--************************ SETTINGS: SETTLEMENT LIMIT *************************-->
+<!--************************ SETTINGS: SETTLEMENT LIMIT ************************-->
 
 		<ActionGroup id="zg-more-settlement-limit-antiquity" scope="game" criteria="more-settlement-limit-antiquity">
 			<Properties>
@@ -5891,7 +5798,7 @@
 			</Actions>
 		</ActionGroup>
 
-<!--********************* SETTINGS: CUSTOM SETTLEMENT LIMIT *********************-->
+<!--******************** SETTINGS: CUSTOM SETTLEMENT LIMIT *********************-->
 
 		<ActionGroup id="zg-custom-settlement-limit-antiquity-1" scope="game" criteria="custom-settlement-limit-antiquity-1">
 			<Properties>
@@ -6944,7 +6851,7 @@
 			</Actions>
 		</ActionGroup>
 
-<!--*********************** SETTINGS: SETTLEMENT DISTANCE ***********************-->
+<!--********************** SETTINGS: SETTLEMENT DISTANCE ***********************-->
 
 		<ActionGroup id="zg-more-settlement-distance" scope="game" criteria="more-settlement-distance">
 			<Properties>
@@ -6967,7 +6874,7 @@
 			</Actions>
 		</ActionGroup>
 
-<!--*********************** SETTINGS: RAZE SPEED ***********************-->
+<!--*************************** SETTINGS: RAZE SPEED ***************************-->
 
 		<ActionGroup id="zg-raze-time-antiquity-instant" scope="game" criteria="raze-time-antiquity-instant">
 			<Properties>
@@ -7070,7 +6977,7 @@
 			</Actions>
 		</ActionGroup>
 
-<!--*********************** SETTINGS: TRADE RANGE ***********************-->
+<!--************************** SETTINGS: TRADE RANGE ***************************-->
 
 		<ActionGroup id="zg-trade-range-antiquity-minus-50" scope="game" criteria="trade-range-antiquity-minus-50">
 			<Properties>
@@ -7223,7 +7130,7 @@
 			</Actions>
 		</ActionGroup>
 
-<!--*********************** SETTINGS: TRADE SPEED ***********************-->
+<!--************************** SETTINGS: TRADE SPEED ***************************-->
 
 		<ActionGroup id="zg-trade-speed-antiquity-slow" scope="game" criteria="trade-speed-antiquity-slow">
 			<Properties>
@@ -7349,7 +7256,7 @@
 			</Actions>
 		</ActionGroup>
 
-<!--**************************** SETTINGS: UNIT COST ****************************-->
+<!--*************************** SETTINGS: UNIT COST ****************************-->
 
 		<ActionGroup id="zg-military-unit-cost-low" scope="game" criteria="military-unit-cost-low">
 			<Properties>
@@ -7432,7 +7339,7 @@
 			</Actions>
 		</ActionGroup>
 
-<!--************************** SETTINGS: CRISIS TIMING **************************-->
+<!--************************* SETTINGS: CRISIS TIMING **************************-->
 
 		<ActionGroup id="zg-crisis-timing-early" scope="game" criteria="crisis-timing-early">
 			<Properties>
@@ -7455,7 +7362,7 @@
 			</Actions>
 		</ActionGroup>
 
-<!--********************** SETTINGS: NATURAL WONDER COUNT ***********************-->
+<!--********************** SETTINGS: NATURAL WONDER COUNT **********************-->
 
 		<ActionGroup id="zg-natural-wonder-count-double" scope="game" criteria="natural-wonder-count-double">
 			<Properties>
@@ -7498,7 +7405,7 @@
 			</Actions>
 		</ActionGroup>
 
-<!--************************* SETTINGS: LAKE GENERATION *************************-->
+<!--************************ SETTINGS: LAKE GENERATION *************************-->
 
 		<ActionGroup id="zg-lake-generation-more" scope="game" criteria="lake-generation-more">
 			<Properties>
@@ -7521,7 +7428,7 @@
 			</Actions>
 		</ActionGroup>
 
-<!--********************* SETTINGS: NATURAL WONDER TOGGLES **********************-->
+<!--********************* SETTINGS: NATURAL WONDER TOGGLES *********************-->
 
 		<ActionGroup id="zg-nw-barrier-reef-disabled" scope="game" criteria="nw-barrier-reef-disabled">
 			<Properties>
@@ -7744,7 +7651,7 @@
 			</Actions>
 		</ActionGroup>
 
-<!--*********************** SETTINGS: TRIUMPH SET PER AGE ***********************-->
+<!--********************** SETTINGS: TRIUMPH SET PER AGE ***********************-->
 
 		<ActionGroup id="zg-triumph-set-antiquity-default" scope="game" criteria="triumph-set-antiquity-default">
 			<Properties>
@@ -7942,11 +7849,11 @@
 			</Actions>
 		</ActionGroup>
 
-<!--************************** SETTINGS: PACE SETTINGS **************************-->
+<!--************************* SETTINGS: PACE SETTINGS **************************-->
 
 		<ActionGroup id="zg-age-length-antiquity-90" scope="game" criteria="age-length-antiquity-90">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -7956,7 +7863,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-antiquity-100" scope="game" criteria="age-length-antiquity-100">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -7966,7 +7873,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-antiquity-110" scope="game" criteria="age-length-antiquity-110">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -7976,7 +7883,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-antiquity-120" scope="game" criteria="age-length-antiquity-120">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -7986,7 +7893,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-antiquity-130" scope="game" criteria="age-length-antiquity-130">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -7996,7 +7903,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-antiquity-140" scope="game" criteria="age-length-antiquity-140">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8006,7 +7913,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-antiquity-150" scope="game" criteria="age-length-antiquity-150">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8016,7 +7923,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-antiquity-160" scope="game" criteria="age-length-antiquity-160">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8026,7 +7933,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-antiquity-170" scope="game" criteria="age-length-antiquity-170">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8036,7 +7943,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-antiquity-180" scope="game" criteria="age-length-antiquity-180">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8046,7 +7953,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-antiquity-190" scope="game" criteria="age-length-antiquity-190">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8056,7 +7963,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-antiquity-200" scope="game" criteria="age-length-antiquity-200">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8066,7 +7973,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-antiquity-220" scope="game" criteria="age-length-antiquity-220">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8076,7 +7983,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-antiquity-240" scope="game" criteria="age-length-antiquity-240">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8086,7 +7993,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-antiquity-260" scope="game" criteria="age-length-antiquity-260">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8096,7 +8003,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-antiquity-280" scope="game" criteria="age-length-antiquity-280">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8106,7 +8013,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-antiquity-300" scope="game" criteria="age-length-antiquity-300">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8116,7 +8023,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-antiquity-swift" scope="game" criteria="age-length-antiquity-swift">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8126,7 +8033,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-antiquity-balanced" scope="game" criteria="age-length-antiquity-balanced">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8136,7 +8043,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-antiquity-extended" scope="game" criteria="age-length-antiquity-extended">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8146,7 +8053,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-exploration-90" scope="game" criteria="age-length-exploration-90">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8156,7 +8063,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-exploration-100" scope="game" criteria="age-length-exploration-100">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8166,7 +8073,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-exploration-110" scope="game" criteria="age-length-exploration-110">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8176,7 +8083,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-exploration-120" scope="game" criteria="age-length-exploration-120">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8186,7 +8093,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-exploration-130" scope="game" criteria="age-length-exploration-130">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8196,7 +8103,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-exploration-140" scope="game" criteria="age-length-exploration-140">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8206,7 +8113,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-exploration-150" scope="game" criteria="age-length-exploration-150">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8216,7 +8123,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-exploration-160" scope="game" criteria="age-length-exploration-160">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8226,7 +8133,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-exploration-170" scope="game" criteria="age-length-exploration-170">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8236,7 +8143,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-exploration-180" scope="game" criteria="age-length-exploration-180">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8246,7 +8153,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-exploration-190" scope="game" criteria="age-length-exploration-190">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8256,7 +8163,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-exploration-200" scope="game" criteria="age-length-exploration-200">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8266,7 +8173,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-exploration-220" scope="game" criteria="age-length-exploration-220">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8276,7 +8183,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-exploration-240" scope="game" criteria="age-length-exploration-240">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8286,7 +8193,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-exploration-260" scope="game" criteria="age-length-exploration-260">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8296,7 +8203,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-exploration-280" scope="game" criteria="age-length-exploration-280">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8306,7 +8213,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-exploration-300" scope="game" criteria="age-length-exploration-300">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8316,7 +8223,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-exploration-swift" scope="game" criteria="age-length-exploration-swift">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8326,7 +8233,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-exploration-balanced" scope="game" criteria="age-length-exploration-balanced">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8336,7 +8243,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-exploration-extended" scope="game" criteria="age-length-exploration-extended">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8346,7 +8253,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-modern-90" scope="game" criteria="age-length-modern-90">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8356,7 +8263,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-modern-100" scope="game" criteria="age-length-modern-100">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8366,7 +8273,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-modern-110" scope="game" criteria="age-length-modern-110">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8376,7 +8283,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-modern-120" scope="game" criteria="age-length-modern-120">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8386,7 +8293,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-modern-130" scope="game" criteria="age-length-modern-130">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8396,7 +8303,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-modern-140" scope="game" criteria="age-length-modern-140">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8406,7 +8313,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-modern-150" scope="game" criteria="age-length-modern-150">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8416,7 +8323,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-modern-160" scope="game" criteria="age-length-modern-160">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8426,7 +8333,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-modern-170" scope="game" criteria="age-length-modern-170">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8436,7 +8343,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-modern-180" scope="game" criteria="age-length-modern-180">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8446,7 +8353,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-modern-190" scope="game" criteria="age-length-modern-190">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8456,7 +8363,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-modern-200" scope="game" criteria="age-length-modern-200">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8466,7 +8373,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-modern-220" scope="game" criteria="age-length-modern-220">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8476,7 +8383,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-modern-240" scope="game" criteria="age-length-modern-240">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8486,7 +8393,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-modern-260" scope="game" criteria="age-length-modern-260">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8496,7 +8403,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-modern-280" scope="game" criteria="age-length-modern-280">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8506,7 +8413,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-modern-300" scope="game" criteria="age-length-modern-300">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8516,7 +8423,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-modern-swift" scope="game" criteria="age-length-modern-swift">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8526,7 +8433,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-modern-balanced" scope="game" criteria="age-length-modern-balanced">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8536,7 +8443,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-age-length-modern-extended" scope="game" criteria="age-length-modern-extended">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8546,7 +8453,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-age-progress-slow" scope="game" criteria="pacing-age-progress-slow">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8556,7 +8463,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-age-progress-fast" scope="game" criteria="pacing-age-progress-fast">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8566,7 +8473,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-age-progress-antiquity-slow" scope="game" criteria="pacing-age-progress-antiquity-slow">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8574,29 +8481,29 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-pacing-age-progress-balanced-antiquity" scope="game" criteria="pacing-age-progress-balanced-antiquity">
+		<ActionGroup id="zg-pacing-age-progress-balanced" scope="game" criteria="pacing-age-progress-balanced">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/pacing/age-progress-balanced-antiquity.sql</Item>
+					<Item>data/pacing/age-progress-balanced.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-age-progress-antiquity-balanced" scope="game" criteria="pacing-age-progress-antiquity-balanced">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/pacing/age-progress-balanced-antiquity.sql</Item>
+					<Item>data/pacing/age-progress-balanced.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-age-progress-antiquity-fast" scope="game" criteria="pacing-age-progress-antiquity-fast">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8606,7 +8513,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-age-progress-exploration-slow" scope="game" criteria="pacing-age-progress-exploration-slow">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8614,29 +8521,19 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-pacing-age-progress-balanced-exploration" scope="game" criteria="pacing-age-progress-balanced-exploration">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/age-progress-balanced-exploration.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
 		<ActionGroup id="zg-pacing-age-progress-exploration-balanced" scope="game" criteria="pacing-age-progress-exploration-balanced">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/pacing/age-progress-balanced-exploration.sql</Item>
+					<Item>data/pacing/age-progress-balanced.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-age-progress-exploration-fast" scope="game" criteria="pacing-age-progress-exploration-fast">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8646,7 +8543,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-age-progress-modern-slow" scope="game" criteria="pacing-age-progress-modern-slow">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8654,29 +8551,19 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="zg-pacing-age-progress-balanced-modern" scope="game" criteria="pacing-age-progress-balanced-modern">
-			<Properties>
-				<LoadOrder>999999999</LoadOrder>
-			</Properties>
-			<Actions>
-				<UpdateDatabase>
-					<Item>data/pacing/age-progress-balanced-modern.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
 		<ActionGroup id="zg-pacing-age-progress-modern-balanced" scope="game" criteria="pacing-age-progress-modern-balanced">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/pacing/age-progress-balanced-modern.sql</Item>
+					<Item>data/pacing/age-progress-balanced.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-age-progress-modern-fast" scope="game" criteria="pacing-age-progress-modern-fast">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8686,7 +8573,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-low" scope="game" criteria="pacing-technology-cost-low">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8696,7 +8583,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-medium" scope="game" criteria="pacing-technology-cost-medium">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8706,7 +8593,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-high" scope="game" criteria="pacing-technology-cost-high">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8716,7 +8603,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-double" scope="game" criteria="pacing-technology-cost-double">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8726,7 +8613,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-antiquity-swift" scope="game" criteria="pacing-technology-cost-antiquity-swift">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8736,7 +8623,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-antiquity-minus-25" scope="game" criteria="pacing-technology-cost-antiquity-minus-25">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8746,7 +8633,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-antiquity-balanced" scope="game" criteria="pacing-technology-cost-antiquity-balanced">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8756,7 +8643,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-antiquity-plus-25" scope="game" criteria="pacing-technology-cost-antiquity-plus-25">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8766,7 +8653,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-antiquity-plus-50" scope="game" criteria="pacing-technology-cost-antiquity-plus-50">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8776,7 +8663,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-antiquity-extended" scope="game" criteria="pacing-technology-cost-antiquity-extended">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8786,7 +8673,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-antiquity-plus-100" scope="game" criteria="pacing-technology-cost-antiquity-plus-100">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8796,7 +8683,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-exploration-swift" scope="game" criteria="pacing-technology-cost-exploration-swift">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8806,7 +8693,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-exploration-minus-25" scope="game" criteria="pacing-technology-cost-exploration-minus-25">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8816,7 +8703,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-exploration-plus-25" scope="game" criteria="pacing-technology-cost-exploration-plus-25">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8826,7 +8713,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-exploration-plus-50" scope="game" criteria="pacing-technology-cost-exploration-plus-50">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8836,7 +8723,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-exploration-extended" scope="game" criteria="pacing-technology-cost-exploration-extended">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8846,7 +8733,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-exploration-plus-100" scope="game" criteria="pacing-technology-cost-exploration-plus-100">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8856,7 +8743,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-modern-minus-25" scope="game" criteria="pacing-technology-cost-modern-minus-25">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8866,7 +8753,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-modern-balanced" scope="game" criteria="pacing-technology-cost-modern-balanced">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8876,7 +8763,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-modern-plus-25" scope="game" criteria="pacing-technology-cost-modern-plus-25">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8886,7 +8773,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-modern-plus-50" scope="game" criteria="pacing-technology-cost-modern-plus-50">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8896,7 +8783,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-modern-extended" scope="game" criteria="pacing-technology-cost-modern-extended">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8906,7 +8793,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-technology-cost-modern-plus-100" scope="game" criteria="pacing-technology-cost-modern-plus-100">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8916,7 +8803,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-low" scope="game" criteria="pacing-civic-cost-low">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8926,7 +8813,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-medium" scope="game" criteria="pacing-civic-cost-medium">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8936,7 +8823,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-high" scope="game" criteria="pacing-civic-cost-high">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8946,7 +8833,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-double" scope="game" criteria="pacing-civic-cost-double">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8956,7 +8843,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-antiquity-swift" scope="game" criteria="pacing-civic-cost-antiquity-swift">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8966,7 +8853,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-antiquity-minus-25" scope="game" criteria="pacing-civic-cost-antiquity-minus-25">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8976,7 +8863,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-antiquity-plus-25" scope="game" criteria="pacing-civic-cost-antiquity-plus-25">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8986,7 +8873,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-antiquity-plus-50" scope="game" criteria="pacing-civic-cost-antiquity-plus-50">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -8996,7 +8883,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-antiquity-extended" scope="game" criteria="pacing-civic-cost-antiquity-extended">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9006,7 +8893,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-antiquity-plus-100" scope="game" criteria="pacing-civic-cost-antiquity-plus-100">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9016,7 +8903,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-exploration-swift" scope="game" criteria="pacing-civic-cost-exploration-swift">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9026,7 +8913,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-exploration-minus-25" scope="game" criteria="pacing-civic-cost-exploration-minus-25">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9036,7 +8923,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-exploration-balanced" scope="game" criteria="pacing-civic-cost-exploration-balanced">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9046,7 +8933,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-exploration-plus-25" scope="game" criteria="pacing-civic-cost-exploration-plus-25">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9056,7 +8943,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-exploration-plus-50" scope="game" criteria="pacing-civic-cost-exploration-plus-50">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9066,7 +8953,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-exploration-extended" scope="game" criteria="pacing-civic-cost-exploration-extended">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9076,7 +8963,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-exploration-plus-100" scope="game" criteria="pacing-civic-cost-exploration-plus-100">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9086,7 +8973,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-modern-minus-25" scope="game" criteria="pacing-civic-cost-modern-minus-25">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9096,7 +8983,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-modern-balanced" scope="game" criteria="pacing-civic-cost-modern-balanced">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9106,7 +8993,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-modern-plus-25" scope="game" criteria="pacing-civic-cost-modern-plus-25">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9116,7 +9003,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-modern-plus-50" scope="game" criteria="pacing-civic-cost-modern-plus-50">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9126,7 +9013,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-modern-extended" scope="game" criteria="pacing-civic-cost-modern-extended">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9136,7 +9023,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-civic-cost-modern-plus-100" scope="game" criteria="pacing-civic-cost-modern-plus-100">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9146,7 +9033,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-building-cost-low" scope="game" criteria="pacing-building-cost-low">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9156,7 +9043,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-building-cost-medium" scope="game" criteria="pacing-building-cost-medium">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9166,7 +9053,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-building-cost-high" scope="game" criteria="pacing-building-cost-high">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9176,7 +9063,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-building-cost-double" scope="game" criteria="pacing-building-cost-double">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9186,7 +9073,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-building-cost-antiquity-swift" scope="game" criteria="pacing-building-cost-antiquity-swift">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9196,7 +9083,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-building-cost-antiquity-minus-25" scope="game" criteria="pacing-building-cost-antiquity-minus-25">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9206,7 +9093,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-building-cost-antiquity-balanced" scope="game" criteria="pacing-building-cost-antiquity-balanced">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9216,7 +9103,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-building-cost-antiquity-extended" scope="game" criteria="pacing-building-cost-antiquity-extended">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9226,7 +9113,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-building-cost-antiquity-plus-25" scope="game" criteria="pacing-building-cost-antiquity-plus-25">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9236,7 +9123,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-building-cost-antiquity-plus-50" scope="game" criteria="pacing-building-cost-antiquity-plus-50">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9246,7 +9133,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-building-cost-antiquity-plus-100" scope="game" criteria="pacing-building-cost-antiquity-plus-100">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9256,7 +9143,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-building-cost-exploration-swift" scope="game" criteria="pacing-building-cost-exploration-swift">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9266,7 +9153,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-building-cost-exploration-minus-25" scope="game" criteria="pacing-building-cost-exploration-minus-25">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9276,7 +9163,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-building-cost-exploration-plus-25" scope="game" criteria="pacing-building-cost-exploration-plus-25">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9286,7 +9173,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-building-cost-exploration-extended" scope="game" criteria="pacing-building-cost-exploration-extended">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9296,7 +9183,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-building-cost-exploration-plus-50" scope="game" criteria="pacing-building-cost-exploration-plus-50">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9306,7 +9193,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-building-cost-exploration-plus-100" scope="game" criteria="pacing-building-cost-exploration-plus-100">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9316,7 +9203,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-building-cost-modern-swift" scope="game" criteria="pacing-building-cost-modern-swift">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9326,7 +9213,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-building-cost-modern-minus-25" scope="game" criteria="pacing-building-cost-modern-minus-25">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9336,7 +9223,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-building-cost-modern-plus-25" scope="game" criteria="pacing-building-cost-modern-plus-25">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9346,7 +9233,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-building-cost-modern-extended" scope="game" criteria="pacing-building-cost-modern-extended">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9356,7 +9243,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-building-cost-modern-plus-50" scope="game" criteria="pacing-building-cost-modern-plus-50">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9366,7 +9253,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-building-cost-modern-plus-100" scope="game" criteria="pacing-building-cost-modern-plus-100">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9376,7 +9263,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-growth-slow" scope="game" criteria="pacing-growth-slow">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9386,7 +9273,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-growth-quick" scope="game" criteria="pacing-growth-quick">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9396,7 +9283,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-growth-fast" scope="game" criteria="pacing-growth-fast">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9406,7 +9293,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-growth-antiquity-swift" scope="game" criteria="pacing-growth-antiquity-swift">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9416,7 +9303,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-growth-antiquity-slow" scope="game" criteria="pacing-growth-antiquity-slow">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9426,7 +9313,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-growth-antiquity-balanced" scope="game" criteria="pacing-growth-antiquity-balanced">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9436,7 +9323,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-growth-antiquity-quick" scope="game" criteria="pacing-growth-antiquity-quick">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9446,7 +9333,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-growth-antiquity-fast" scope="game" criteria="pacing-growth-antiquity-fast">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9456,7 +9343,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-growth-antiquity-extended" scope="game" criteria="pacing-growth-antiquity-extended">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9466,7 +9353,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-growth-exploration-swift" scope="game" criteria="pacing-growth-exploration-swift">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9476,7 +9363,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-growth-exploration-slow" scope="game" criteria="pacing-growth-exploration-slow">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9486,7 +9373,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-growth-exploration-balanced" scope="game" criteria="pacing-growth-exploration-balanced">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9496,7 +9383,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-growth-exploration-quick" scope="game" criteria="pacing-growth-exploration-quick">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9506,7 +9393,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-growth-exploration-fast" scope="game" criteria="pacing-growth-exploration-fast">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9516,7 +9403,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-growth-exploration-extended" scope="game" criteria="pacing-growth-exploration-extended">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9526,7 +9413,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-growth-modern-swift" scope="game" criteria="pacing-growth-modern-swift">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9536,7 +9423,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-growth-modern-slow" scope="game" criteria="pacing-growth-modern-slow">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9546,7 +9433,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-growth-modern-quick" scope="game" criteria="pacing-growth-modern-quick">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9556,7 +9443,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-growth-modern-fast" scope="game" criteria="pacing-growth-modern-fast">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9566,7 +9453,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-growth-modern-extended" scope="game" criteria="pacing-growth-modern-extended">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9576,7 +9463,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-roads-slow" scope="game" criteria="pacing-roads-slow">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9586,7 +9473,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-roads-quick" scope="game" criteria="pacing-roads-quick">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9596,7 +9483,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-roads-fast" scope="game" criteria="pacing-roads-fast">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9606,7 +9493,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-roads-antiquity-swift" scope="game" criteria="pacing-roads-antiquity-swift">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9616,7 +9503,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-roads-antiquity-slow" scope="game" criteria="pacing-roads-antiquity-slow">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9626,7 +9513,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-roads-antiquity-quick" scope="game" criteria="pacing-roads-antiquity-quick">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9636,7 +9523,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-roads-antiquity-fast" scope="game" criteria="pacing-roads-antiquity-fast">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9646,7 +9533,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-roads-exploration-swift" scope="game" criteria="pacing-roads-exploration-swift">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9656,7 +9543,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-roads-exploration-slow" scope="game" criteria="pacing-roads-exploration-slow">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9666,7 +9553,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-roads-exploration-quick" scope="game" criteria="pacing-roads-exploration-quick">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9676,7 +9563,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-roads-exploration-fast" scope="game" criteria="pacing-roads-exploration-fast">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9686,7 +9573,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-roads-modern-swift" scope="game" criteria="pacing-roads-modern-swift">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9696,7 +9583,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-roads-modern-slow" scope="game" criteria="pacing-roads-modern-slow">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9706,7 +9593,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-roads-modern-balanced" scope="game" criteria="pacing-roads-modern-balanced">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9716,7 +9603,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-roads-modern-quick" scope="game" criteria="pacing-roads-modern-quick">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9726,7 +9613,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-roads-modern-fast" scope="game" criteria="pacing-roads-modern-fast">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9736,7 +9623,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-roads-modern-extended" scope="game" criteria="pacing-roads-modern-extended">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9746,7 +9633,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-low" scope="game" criteria="pacing-victory-projects-low">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9756,7 +9643,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-medium" scope="game" criteria="pacing-victory-projects-medium">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9766,7 +9653,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-high" scope="game" criteria="pacing-victory-projects-high">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9776,7 +9663,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-double" scope="game" criteria="pacing-victory-projects-double">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9786,7 +9673,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-antiquity-swift" scope="game" criteria="pacing-victory-projects-antiquity-swift">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9796,7 +9683,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-antiquity-minus-25" scope="game" criteria="pacing-victory-projects-antiquity-minus-25">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9806,7 +9693,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-antiquity-plus-25" scope="game" criteria="pacing-victory-projects-antiquity-plus-25">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9816,7 +9703,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-antiquity-plus-50" scope="game" criteria="pacing-victory-projects-antiquity-plus-50">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9826,7 +9713,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-antiquity-extended" scope="game" criteria="pacing-victory-projects-antiquity-extended">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9836,7 +9723,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-antiquity-plus-100" scope="game" criteria="pacing-victory-projects-antiquity-plus-100">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9846,7 +9733,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-exploration-swift" scope="game" criteria="pacing-victory-projects-exploration-swift">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9856,7 +9743,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-exploration-minus-25" scope="game" criteria="pacing-victory-projects-exploration-minus-25">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9866,7 +9753,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-exploration-balanced" scope="game" criteria="pacing-victory-projects-exploration-balanced">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9876,7 +9763,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-exploration-plus-25" scope="game" criteria="pacing-victory-projects-exploration-plus-25">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9886,7 +9773,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-exploration-plus-50" scope="game" criteria="pacing-victory-projects-exploration-plus-50">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9896,7 +9783,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-exploration-extended" scope="game" criteria="pacing-victory-projects-exploration-extended">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9906,7 +9793,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-exploration-plus-100" scope="game" criteria="pacing-victory-projects-exploration-plus-100">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9916,7 +9803,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-modern-swift" scope="game" criteria="pacing-victory-projects-modern-swift">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9926,7 +9813,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-modern-minus-25" scope="game" criteria="pacing-victory-projects-modern-minus-25">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9936,7 +9823,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-modern-balanced" scope="game" criteria="pacing-victory-projects-modern-balanced">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9946,7 +9833,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-modern-plus-25" scope="game" criteria="pacing-victory-projects-modern-plus-25">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9956,7 +9843,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-modern-plus-50" scope="game" criteria="pacing-victory-projects-modern-plus-50">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9966,7 +9853,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-modern-extended" scope="game" criteria="pacing-victory-projects-modern-extended">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9976,7 +9863,7 @@
 		</ActionGroup>
 		<ActionGroup id="zg-pacing-victory-projects-modern-plus-100" scope="game" criteria="pacing-victory-projects-modern-plus-100">
 			<Properties>
-				<LoadOrder>999999999</LoadOrder>
+				<LoadOrder>1100000000</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
@@ -9987,16 +9874,6 @@
 	</ActionGroups>
 	<LocalizedText>
 		<File>text/en_us/mod-info-text.xml</File>
-		<File>l10n/de_DE_Text.xml</File>
-		<File>l10n/es_ES_Text.xml</File>
-		<File>l10n/fr_FR_Text.xml</File>
-		<File>l10n/it_IT_Text.xml</File>
-		<File>l10n/ja_JP_Text.xml</File>
-		<File>l10n/ko_KR_Text.xml</File>
-		<File>l10n/pl_PL_Text.xml</File>
-		<File>l10n/pt_BR_Text.xml</File>
-		<File>l10n/ru_RU_Text.xml</File>
-		<File>l10n/zh_Hans_CN_Text.xml</File>
-		<File>l10n/zh_Hant_HK_Text.xml</File>
+		<File>l10n/mod-info-text.xml</File>
 	</LocalizedText>
 </Mod>

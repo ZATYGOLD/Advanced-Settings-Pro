@@ -1,4 +1,4 @@
--- Victory Project Cost +100%: costs x2 (every costed project except
+-- Victory Project Cost: +100%. Costs x2 (every costed project except
 -- the repeatable city projects and nuclear weapons).
 UPDATE Projects
 SET Cost = CAST(ROUND(Cost * 2) AS INTEGER)

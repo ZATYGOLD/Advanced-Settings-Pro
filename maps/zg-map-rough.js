@@ -1,23 +1,17 @@
 // Applies the Map Age setup setting when a map script raises its rough ground.
+// Port of {base-standard}maps/elevation-terrain-generator.js addHills.
 //
-// A New world is freshly buckled and still broken: more rough ground, less flat.
-// An Old world has been worn down: less rough ground, broader plains. Standard
-// leaves the base game's own terrain alone.
-//
-// Rough is TERRAIN_HILL in the game's data, which is why the base symbols and
-// the hill score below keep that name; everything the player reads says rough.
-//
-// Map Age moves rough ground only. Mountains are the Mountains setting's
-// business, so the two never pull on the same tiles: pick a map age for how
-// broken the ground is, and Mountains for how many peaks rise out of it.
+// A New world is still broken: more rough ground, less flat. An Old world is worn
+// down: less rough ground, broader plains. Standard leaves the base terrain
+// alone. Map Age moves rough ground (TERRAIN_HILL in the data) only; peaks are
+// the Mountains setting's, so the two never pull on the same tiles.
 import { g_HillTerrain } from 'fs://game/base-standard/maps/map-globals.js';
 import { zgForEachTile, zgSettingTier } from './zg-map-utils.js';
 
 const MAP_AGE_SETTING_KEY = "MapAgeKey";
 
-// Port of {base-standard}maps/elevation-terrain-generator.js addHills, which
-// scores each land tile by how much its elevation differs from its neighbours
-// and roughens it wherever that score clears a threshold. A lower threshold
+// addHills scores each land tile by how much its elevation differs from its
+// neighbors and roughens it wherever that score clears a threshold. A lower threshold
 // catches gentler ground, so it yields more rough tiles; Standard is the base
 // game's own 950 - 3 * 20.
 const MAP_AGE_TIERS = {

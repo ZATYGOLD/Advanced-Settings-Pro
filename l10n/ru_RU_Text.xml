@@ -176,15 +176,6 @@
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_NAME" Language="ru_RU">
 			<Text>Озёра</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME" Language="ru_RU">
-			<Text>Античность</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME" Language="ru_RU">
-			<Text>Исследования</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME" Language="ru_RU">
-			<Text>Современность</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="ru_RU">
 			<Text>Определяет, как далеко поселенцы идут по суше и по морю. Быстрые поселенцы занимают дальние места раньше соперника.</Text>
 		</Replace>
@@ -515,12 +506,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_MORE" Language="ru_RU">
 			<Text>Создаёт больше озёр.</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="ru_RU">
-			<Text>Advanced Settings Pro</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="ru_RU">
-			<Text>Advanced Settings Pro от Zatygold[n] [n]Этот мод расширяет настройку одиночной игры, добавляя дополнительные параметры в меню расширенных настроек. Он позволяет тонко настраивать системы, которые обычно не настраиваются. В сетевую игру мод не вмешивается; сетевые настройки предоставляет Better Balanced Multiplayer.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="ru_RU">
 			<Text>Определяет, может ли это чудо природы появиться на карте.</Text>
@@ -869,21 +854,21 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="ru_RU">
 			<Text>Города растут быстрее в начале, затем возвращаются к стандарту.[nn][BLIST]
-				[LI] Античность: -25%
-				[LI] Исследования: -25%
+				[LI] Античность: Резво
+				[LI] Исследования: Резво
 				[LI] Современность: Стандарт[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_EXTENDED" Language="ru_RU">
 			<Text>Города растут медленнее во все эпохи.[nn][BLIST]
-				[LI] Античность: +25%
-				[LI] Исследования: +25%
-				[LI] Современность: +25%[/BLIST]</Text>
+				[LI] Античность: Медленно
+				[LI] Исследования: Медленно
+				[LI] Современность: Медленно[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SWIFT" Language="ru_RU">
 			<Text>Города растут быстрее во все эпохи.[nn][BLIST]
-				[LI] Античность: -25%
-				[LI] Исследования: -25%
-				[LI] Современность: -25%[/BLIST]</Text>
+				[LI] Античность: Резво
+				[LI] Исследования: Резво
+				[LI] Современность: Резво[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="ru_RU">
 			<Text>На 50% меньше еды на жителя.</Text>
@@ -898,19 +883,19 @@
 			<Text>Стандартные дороги до Современности, затем дешевле.[nn][BLIST]
 				[LI] Античность: Стандарт
 				[LI] Исследования: Стандарт
-				[LI] Современность: -25%[/BLIST]</Text>
+				[LI] Современность: Резво[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXTENDED" Language="ru_RU">
 			<Text>Стандартные дороги до Современности, затем дешевле.[nn][BLIST]
 				[LI] Античность: Стандарт
 				[LI] Исследования: Стандарт
-				[LI] Современность: -25%[/BLIST]</Text>
+				[LI] Современность: Резво[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SWIFT" Language="ru_RU">
 			<Text>Дороги дешевеют в передвижении по мере раскрытия карты.[nn][BLIST]
-				[LI] Античность: -25%
-				[LI] Исследования: -50%
-				[LI] Современность: -50%[/BLIST]</Text>
+				[LI] Античность: Резво
+				[LI] Исследования: Быстро
+				[LI] Современность: Быстро[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SLOW" Language="ru_RU">
 			<Text>На 25% больше передвижения за клетку.</Text>
@@ -1037,7 +1022,7 @@
 			<Text>Жаркий край</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_EDGE" Language="ru_RU">
-			<Text>Жарко у северного или южного края карты (его выбирает зерно карты), с постепенным похолоданием к скованному льдом противоположному краю.</Text>
+			<Text>Жарко у верхнего или нижнего края карты (его выбирает зерно карты), с постепенным похолоданием к скованному льдом противоположному краю.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_POLES_NAME" Language="ru_RU">
 			<Text>Жаркие полюса</Text>
@@ -1170,9 +1155,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="ru_RU">
 			<Text>Чрезвычайно быстрый темп. На 150% быстрее стандартного.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="ru_RU">
-			<Text>Каждая эпоха использует строку «Длительность эпохи» в своей группе ниже. Сбалансированный ставит 150, 170 и 200 очков; Многопользовательский — 140, 160 и 180.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="ru_RU">
 			<Text>Длинные эпохи, каждая длиннее предыдущей.[nn][BLIST]
@@ -1468,8 +1450,8 @@
 				[LI] Стоимость общественных институтов: +25% / +50% / +50%
 				[LI] Стоимость зданий: +25% / +50% / +50%
 				[LI] Стоимость победных проектов: +25%
-				[LI] Рост поселений: +25%
-				[LI] Скорость дорог: Стандарт / Стандарт / -25%
+				[LI] Рост поселений: Медленно
+				[LI] Скорость дорог: Стандарт / Стандарт / Резво
 				[LI] Скорость торговли: -25%
 				[LI] Скорость уничтожения: Стандарт[/BLIST]</Text>
 		</Replace>
@@ -1481,8 +1463,8 @@
 				[LI] Стоимость общественных институтов: -25% / -25% / Стандарт
 				[LI] Стоимость зданий: -25%
 				[LI] Стоимость победных проектов: -25%
-				[LI] Рост поселений: -25%
-				[LI] Скорость дорог: -25% / -50% / -50%
+				[LI] Рост поселений: Резво
+				[LI] Скорость дорог: Резво / Быстро / Быстро
 				[LI] Скорость торговли: Мгновенно
 				[LI] Скорость уничтожения: Мгновенно[/BLIST]</Text>
 		</Replace>
@@ -1494,8 +1476,8 @@
 				[LI] Стоимость общественных институтов: Стандарт / +25% / +25%
 				[LI] Стоимость зданий: +25% / Стандарт / Стандарт
 				[LI] Стоимость победных проектов: Стандарт / -25% / -25%
-				[LI] Рост поселений: -25% / -25% / Стандарт
-				[LI] Скорость дорог: Стандарт / Стандарт / -25%
+				[LI] Рост поселений: Резво / Резво / Стандарт
+				[LI] Скорость дорог: Стандарт / Стандарт / Резво
 				[LI] Скорость торговли: Стандарт
 				[LI] Скорость уничтожения: Стандарт[/BLIST]</Text>
 		</Replace>
@@ -1507,8 +1489,8 @@
 				[LI] Стоимость общественных институтов: +50% / +50% / +100%
 				[LI] Стоимость зданий: Стандарт
 				[LI] Стоимость победных проектов: Стандарт / Стандарт / +25%
-				[LI] Рост поселений: +25%
-				[LI] Скорость дорог: -25% / -25% / -50%
+				[LI] Рост поселений: Медленно
+				[LI] Скорость дорог: Резво / Резво / Быстро
 				[LI] Скорость торговли: Стандарт
 				[LI] Скорость уничтожения: Стандарт[/BLIST]</Text>
 		</Replace>

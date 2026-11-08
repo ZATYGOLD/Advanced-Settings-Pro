@@ -15,9 +15,10 @@ import { createMemo, createComponent, createRenderEffect, createSignal, mergePro
 import { multiplayerTeamColors } from 'fs://game/core/ui/utilities/utilities-network-constants.js';
 import { openMementoSelect } from './zg-memento-select.js';
 import { MEMENTO_PARAM_IDS, MEMENTO_NONE_VALUE, MEMENTO_SLOT_BASE_IMAGE, MEMENTO_SLOT_PLUS_IMAGE, AI_MEMENTOS_PARAM_ID, AI_MEMENTOS_DEFAULT, aiMementoMode, aiPlayerIds, drawMementos, matchSource, randomFlags, setRandomFlag, rollMemento, sortPossibleValues } from '../../../ui/shared/zg-memento-roller.js';
-import { gameValue, isModEnabled, isMultiplayer, resolveName } from '../../../ui/shared/zg-config.js';
-import { zgWrapComponent } from './zg-component-override.js';
-import { isSinglePlayerSetup, onSetupRevision } from '../../../ui/shell/shared/zg-shell-context.js';
+import { gameValue, isModEnabled, resolveName } from '../../../ui/shared/zg-config.js';
+import { PLAYER_OVERRIDE_PRIORITY, zgWrapComponent } from './zg-component-override.js';
+import { isSinglePlayerSetupOpen, onSetupRevision } from '../../../ui/shell/shared/zg-shell-context.js';
+import { isRestoringSetup } from '../../../ui/shell/create-game/zg-setup-memory.js';
 import { Activatable } from 'fs://game/core/ui-next/components/activatable.js';
 import { Button } from 'fs://game/core/ui-next/components/button.js';
 import { Dropdown, DropdownItem } from 'fs://game/core/ui-next/components/dropdown.js';
@@ -35,7 +36,6 @@ import { TicketBox } from 'fs://game/core/ui-next/screens/create-game/ticket-box
 import 'fs://game/core/ui-next/components/tab.js';
 import './zg-map-tab.js';
 
-const OVERRIDE_PRIORITY = 110;
 const LOG_PREFIX = "ZG-ASP player tab:";
 const PLAYER_TAB_NAME = "advanced-options-player";
 // INTERIM: mods that render their own Player tab, by mod id as their modinfo
@@ -71,7 +71,6 @@ const COLUMN_HEADERS = [
 	{ text: "LOC_GENERIC_CIVILIZATION", columns: [2] },
 	{ text: "LOC_ZG_MEMENTOS_NAME", columns: [3, 4] },
 ];
-
 
 // Templates, as in the game's advanced-options.js.
 const tplTitle = template(`<div class="uppercase text-secondary-1 font-title mb-2 self-center"></div>`);
@@ -295,7 +294,7 @@ const TEAM_RING_TINT = "#8c7e62";
 const tplTeamBadge = template(`<div class="relative size-12 ml-2 flex items-center justify-center"><div class="absolute inset-0 bg-cover"></div><div class="absolute bg-cover" style="left:0.25rem;top:0.25rem;right:0.25rem;bottom:0.25rem"></div><div class="relative font-title text-base"></div></div>`);
 const tplTeamNumber = template(`<div class="flex flex-row items-center font-title text-base"></div>`);
 
-// Colour index 0 is the empty badge, so a team maps one past it.
+// Color index 0 is the empty badge, so a team maps one past it.
 const teamColor = (value) => multiplayerTeamColors[(value < 0 ? 0 : value + 1) % multiplayerTeamColors.length];
 const teamNumber = (value) => (value < 0 ? "" : `${value + 1}`);
 
@@ -405,11 +404,10 @@ function parameterDropdown(param, option, tooltip, side, classes, listOption, di
 
 // --------------------------------------------------------- AI mementos --
 
-// Rolls every slot flagged Random once per game session, so each new game
-// starts from a fresh pick while the choice itself is kept, and applies AI
-// Mementos whenever it changes or an AI joins. Both adopt whatever the screen
-// already holds on the first pass, so a restored setup keeps the mementos it
-// was saved with.
+// Rolls every slot flagged Random once each time the setup screen opens, so
+// each new game starts from a fresh pick while the choice itself is kept, and
+// applies AI Mementos whenever it changes or an AI joins. The first pass, after
+// remembered settings are restored, adopts whatever the screen holds.
 const rolledThisSession = new Set();
 const appliedSources = new Map();
 let appliedValue = null;
@@ -431,12 +429,11 @@ function applyAiMementos(mode, playerId) {
 		drawMementos(mode, playerId);
 	}
 }
-// Single-player setup only: an age transition runs through this same shell, and
-// the AI's mementos there are Age Transition AI Mementos' to settle.
+// The single-player setup screen only: an age transition runs through this same
+// shell, and the AI's mementos there are Age Transition AI Mementos' to settle.
 onSetupRevision((restarted) => {
-	// A fresh setup screen restarts the revision counter. Forget what was rolled
-	// so the next game picks again, rather than keeping the last game's mementos
-	// for as long as the app stays open.
+	// The screen has just opened: forget what was rolled so the next game picks
+	// again, rather than keeping the last game's mementos while the app is open.
 	if (restarted) {
 		rolledThisSession.clear();
 		appliedSources.clear();
@@ -474,7 +471,7 @@ onSetupRevision((restarted) => {
 			}
 		});
 	}
-}, isSinglePlayerSetup);
+}, () => isSinglePlayerSetupOpen() && !isRestoringSetup());
 
 // ---------------------------------------------------------- player list --
 
@@ -585,8 +582,8 @@ const claimingMod = PLAYER_TAB_MODS.find(isModEnabled);
 if (claimingMod) {
 	console.log(`${LOG_PREFIX} leaving the Player tab to '${claimingMod}'`);
 } else {
-	zgWrapComponent("Tab.Item", OVERRIDE_PRIORITY, (createPreviousTabItem) => (props) => {
-		if (props?.name != PLAYER_TAB_NAME || isMultiplayer()) {
+	zgWrapComponent("Tab.Item", PLAYER_OVERRIDE_PRIORITY, (createPreviousTabItem) => (props) => {
+		if (props?.name != PLAYER_TAB_NAME) {
 			return createPreviousTabItem(props);
 		}
 		return createPreviousTabItem(mergeProps(props, { body: () => createComponent(PlayerSetup, {}) }));

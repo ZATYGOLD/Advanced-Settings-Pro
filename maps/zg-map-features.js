@@ -35,10 +35,15 @@ function featureLatitude(iX, iY, southOffset = 0) {
 	return Math.max(0, (signed < 0 ? -signed - southOffset : signed) + climate.shift);
 }
 
-// The first feature of a class the tile can take, or -1.
-function firstPlaceable(iX, iY, placementClass, accept = () => true) {
+const inLatitude = (featIdx, latitude) => GameInfo.Features[featIdx].MinLatitude <= latitude && GameInfo.Features[featIdx].MaxLatitude > latitude;
+
+// The first feature of a class the tile can take, or -1. Given a latitude, the
+// feature's band must hold it; an isolated feature keeps away from its own kind.
+function firstPlaceable(iX, iY, placementClass, latitude = null, isolated = false) {
 	for (const featIdx of featuresByClass.get(placementClass) ?? []) {
-		if (TerrainBuilder.canHaveFeature(iX, iY, featIdx) && accept(featIdx)) {
+		if (TerrainBuilder.canHaveFeature(iX, iY, featIdx)
+			&& (latitude == null || inLatitude(featIdx, latitude))
+			&& (!isolated || !GameplayMap.isAdjacentToFeature(iX, iY, featIdx))) {
 			return featIdx;
 		}
 	}
@@ -61,7 +66,6 @@ function shallowWaterAdjacencyCheck(iX, iY, log) {
 
 const isOpenLand = (iX, iY) => !GameplayMap.isWater(iX, iY) && GameplayMap.getFeatureType(iX, iY) == FeatureTypes.NO_FEATURE && !GameplayMap.isNavigableRiver(iX, iY);
 const isOpenWater = (iX, iY) => GameplayMap.isWater(iX, iY) && GameplayMap.getFeatureType(iX, iY) == FeatureTypes.NO_FEATURE;
-const inLatitude = (featIdx, latitude) => GameInfo.Features[featIdx].MinLatitude <= latitude && GameInfo.Features[featIdx].MaxLatitude > latitude;
 
 function addPositionalFeatures(iWidth, iHeight) {
 	zgForEachTile(iWidth, iHeight, (iX, iY) => {
@@ -76,7 +80,7 @@ function addPositionalFeatures(iWidth, iHeight) {
 		} else if (GameplayMap.isAdjacentToRivers(iX, iY, 1)) {
 			return;
 		} else {
-			featIdx = firstPlaceable(iX, iY, "ISOLATED", (candidate) => !GameplayMap.isAdjacentToFeature(iX, iY, candidate));
+			featIdx = firstPlaceable(iX, iY, "ISOLATED", null, true);
 		}
 		if (featIdx >= 0) {
 			addFeature(iX, iY, featIdx, 100, "Feature Scatter");
@@ -122,7 +126,7 @@ function addReefs(iWidth, iHeight) {
 			return;
 		}
 		const latitude = featureLatitude(iX, iY);
-		const featIdx = firstPlaceable(iX, iY, "REEF", (candidate) => inLatitude(candidate, latitude));
+		const featIdx = firstPlaceable(iX, iY, "REEF", latitude);
 		if (featIdx >= 0) {
 			addFeature(iX, iY, featIdx, (latitude + 50) * 2, "Feature Reef");
 		}
@@ -141,7 +145,7 @@ function addOpenWaterFeatures(iWidth, iHeight) {
 			return;
 		}
 		const latitude = featureLatitude(iX, iY);
-		const featIdx = firstPlaceable(iX, iY, "OPEN_WATERS", (candidate) => inLatitude(candidate, latitude));
+		const featIdx = firstPlaceable(iX, iY, "OPEN_WATERS", latitude);
 		if (featIdx < 0 || !shallowWaterAdjacencyCheck(iX, iY, "Feature Atoll Spawn Chance")) {
 			return;
 		}

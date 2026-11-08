@@ -1,4 +1,4 @@
--- Age Progression Slow: milestones and future techs/civics add half their age progress.
+-- Age Progression: Slow. Milestones and future techs/civics add half their age progress.
 --
 -- The floor keeps a small award from rounding away to nothing, but it must not
 -- apply to an award the base game has already set to zero: Modern's third

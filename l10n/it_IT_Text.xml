@@ -176,15 +176,6 @@
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_NAME" Language="it_IT">
 			<Text>Laghi</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME" Language="it_IT">
-			<Text>Epoca antica</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME" Language="it_IT">
-			<Text>Epoca delle esplorazioni</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME" Language="it_IT">
-			<Text>Epoca moderna</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="it_IT">
 			<Text>Determina quanto si muovono i coloni per terra e per mare. Coloni più veloci raggiungono siti lontani prima di un rivale.</Text>
 		</Replace>
@@ -515,12 +506,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_MORE" Language="it_IT">
 			<Text>Genera più laghi.</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="it_IT">
-			<Text>Advanced Settings Pro</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="it_IT">
-			<Text>Advanced Settings Pro di Zatygold[n] [n]Questa mod amplia la configurazione della partita per giocatore singolo con opzioni aggiuntive nel menu delle impostazioni avanzate. Consente di regolare con precisione sistemi normalmente non modificabili. Non interviene nel multiplayer; le impostazioni multiplayer provengono da Better Balanced Multiplayer.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="it_IT">
 			<Text>Determina se questa meraviglia naturale può comparire sulla mappa.</Text>
@@ -869,21 +854,21 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="it_IT">
 			<Text>Le città crescono più in fretta all'inizio, poi tornano allo standard.[nn][BLIST]
-				[LI] Antichità: -25%
-				[LI] Epoca delle esplorazioni: -25%
+				[LI] Antichità: Svelto
+				[LI] Epoca delle esplorazioni: Svelto
 				[LI] Epoca moderna: Standard[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_EXTENDED" Language="it_IT">
 			<Text>Le città crescono più lentamente in ogni era.[nn][BLIST]
-				[LI] Antichità: +25%
-				[LI] Epoca delle esplorazioni: +25%
-				[LI] Epoca moderna: +25%[/BLIST]</Text>
+				[LI] Antichità: Lento
+				[LI] Epoca delle esplorazioni: Lento
+				[LI] Epoca moderna: Lento[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SWIFT" Language="it_IT">
 			<Text>Le città crescono più in fretta in ogni era.[nn][BLIST]
-				[LI] Antichità: -25%
-				[LI] Epoca delle esplorazioni: -25%
-				[LI] Epoca moderna: -25%[/BLIST]</Text>
+				[LI] Antichità: Svelto
+				[LI] Epoca delle esplorazioni: Svelto
+				[LI] Epoca moderna: Svelto[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="it_IT">
 			<Text>50% di cibo per cittadino in meno.</Text>
@@ -898,19 +883,19 @@
 			<Text>Strade standard fino all'Era moderna, poi più economiche.[nn][BLIST]
 				[LI] Antichità: Standard
 				[LI] Epoca delle esplorazioni: Standard
-				[LI] Epoca moderna: -25%[/BLIST]</Text>
+				[LI] Epoca moderna: Svelto[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXTENDED" Language="it_IT">
 			<Text>Strade standard fino all'Era moderna, poi più economiche.[nn][BLIST]
 				[LI] Antichità: Standard
 				[LI] Epoca delle esplorazioni: Standard
-				[LI] Epoca moderna: -25%[/BLIST]</Text>
+				[LI] Epoca moderna: Svelto[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SWIFT" Language="it_IT">
 			<Text>Le strade costano meno da percorrere man mano che la mappa si apre.[nn][BLIST]
-				[LI] Antichità: -25%
-				[LI] Epoca delle esplorazioni: -50%
-				[LI] Epoca moderna: -50%[/BLIST]</Text>
+				[LI] Antichità: Svelto
+				[LI] Epoca delle esplorazioni: Veloce
+				[LI] Epoca moderna: Veloce[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SLOW" Language="it_IT">
 			<Text>25% di movimento per casella in più.</Text>
@@ -1037,7 +1022,7 @@
 			<Text>Bordo caldo</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_EDGE" Language="it_IT">
-			<Text>Caldo lungo il bordo nord o sud della mappa, scelto dal seme della mappa, con un raffreddamento graduale fino al bordo opposto gelato.</Text>
+			<Text>Caldo lungo il bordo superiore o inferiore della mappa, scelto dal seme della mappa, con un raffreddamento graduale fino al bordo opposto gelato.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_POLES_NAME" Language="it_IT">
 			<Text>Poli caldi</Text>
@@ -1058,7 +1043,7 @@
 			<Text>Più freddo al centro della mappa e più caldo verso l'esterno in ogni direzione, così i bordi e gli angoli sono i più caldi.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_ZONES_WARM_RING_NAME" Language="it_IT">
-			<Text>Anello caldo</Text>
+			<Text>Anello tiepido</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_WARM_RING" Language="it_IT">
 			<Text>Una fascia di calore circonda il centro della mappa, con il freddo al suo interno e lungo i bordi.</Text>
@@ -1170,9 +1155,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="it_IT">
 			<Text>Un ritmo estremamente veloce. 150% più veloce della velocità Standard.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="it_IT">
-			<Text>Ogni era usa la riga Durata delle ere del proprio gruppo qui sotto. Bilanciato imposta 150, 170 e 200 punti; Multigiocatore imposta 140, 160 e 180.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="it_IT">
 			<Text>Ere più lunghe, ognuna più lunga della precedente.[nn][BLIST]
@@ -1468,8 +1450,8 @@
 				[LI] Costo dei principi civici: +25% / +50% / +50%
 				[LI] Costo degli edifici: +25% / +50% / +50%
 				[LI] Costo dei progetti di vittoria: +25%
-				[LI] Crescita degli insediamenti: +25%
-				[LI] Velocità delle strade: Standard / Standard / -25%
+				[LI] Crescita degli insediamenti: Lento
+				[LI] Velocità delle strade: Standard / Standard / Svelto
 				[LI] Velocità commerciale: -25%
 				[LI] Velocità di distruzione: Standard[/BLIST]</Text>
 		</Replace>
@@ -1481,8 +1463,8 @@
 				[LI] Costo dei principi civici: -25% / -25% / Standard
 				[LI] Costo degli edifici: -25%
 				[LI] Costo dei progetti di vittoria: -25%
-				[LI] Crescita degli insediamenti: -25%
-				[LI] Velocità delle strade: -25% / -50% / -50%
+				[LI] Crescita degli insediamenti: Svelto
+				[LI] Velocità delle strade: Svelto / Veloce / Veloce
 				[LI] Velocità commerciale: Istantaneo
 				[LI] Velocità di distruzione: Istantaneo[/BLIST]</Text>
 		</Replace>
@@ -1494,8 +1476,8 @@
 				[LI] Costo dei principi civici: Standard / +25% / +25%
 				[LI] Costo degli edifici: +25% / Standard / Standard
 				[LI] Costo dei progetti di vittoria: Standard / -25% / -25%
-				[LI] Crescita degli insediamenti: -25% / -25% / Standard
-				[LI] Velocità delle strade: Standard / Standard / -25%
+				[LI] Crescita degli insediamenti: Svelto / Svelto / Standard
+				[LI] Velocità delle strade: Standard / Standard / Svelto
 				[LI] Velocità commerciale: Standard
 				[LI] Velocità di distruzione: Standard[/BLIST]</Text>
 		</Replace>
@@ -1507,8 +1489,8 @@
 				[LI] Costo dei principi civici: +50% / +50% / +100%
 				[LI] Costo degli edifici: Standard
 				[LI] Costo dei progetti di vittoria: Standard / Standard / +25%
-				[LI] Crescita degli insediamenti: +25%
-				[LI] Velocità delle strade: -25% / -25% / -50%
+				[LI] Crescita degli insediamenti: Lento
+				[LI] Velocità delle strade: Svelto / Svelto / Veloce
 				[LI] Velocità commerciale: Standard
 				[LI] Velocità di distruzione: Standard[/BLIST]</Text>
 		</Replace>

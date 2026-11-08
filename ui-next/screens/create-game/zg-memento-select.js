@@ -16,7 +16,6 @@
 //                   pointed at the player for as long as the picker is up and
 //                   back at the human when it closes.
 // The picker itself, its search and filters, are the game's own code.
-
 import { createComponent } from 'fs://game/core/vendor/solid-js/dist/solid.js';
 import { ContextManager } from 'fs://game/core/ui/context-manager/context-manager.js';
 import { defineLegacyComponent } from 'fs://game/core/ui-next/components/fxs-solid-component.js';

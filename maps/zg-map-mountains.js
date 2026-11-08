@@ -1,17 +1,18 @@
 // Applies the Mountains setup setting.
+// Port of {base-standard}maps/elevation-terrain-generator.js addMountains.
 //
-// Classic maps raise their peaks in zgAddMountains, a port of the base
-// addMountains, which turns land above a fractal height percentile into
+// Classic maps raise their peaks in zgAddMountains, which turns land above a
+// fractal height percentile into
 // mountains: a higher cutoff yields fewer, a lower one more. Standard keeps the
 // base cutoff of 90, the tallest ~10% of land.
 //
 // Voronoi maps take their mountains from the Voronoi simulation instead, so
 // zgAdjustMountains scales them afterwards, picking tiles by how many mountain
-// neighbours they have: Less erodes the most isolated peaks and More grows
+// neighbors they have: Less erodes the most isolated peaks and More grows
 // existing ranges outward, which keeps ranges contiguous. The ordering is stable
 // and uses no random numbers, so a map seed still reproduces exactly.
 import { g_MountainFractal, g_HillFractal, g_MountainTerrain, g_HillTerrain, g_FlatTerrain } from 'fs://game/base-standard/maps/map-globals.js';
-import { zgForEachTile, zgSettingTier } from './zg-map-utils.js';
+import { zgAdjacent, zgForEachTile, zgSettingTier } from './zg-map-utils.js';
 
 const MOUNTAINS_SETTING_KEY = "MountainsKey";
 // cutoff: fractal height percentile on classic maps; scale: the mountain count
@@ -49,11 +50,11 @@ export function zgAddMountains(iWidth, iHeight) {
 	});
 }
 
-function countMountainNeighbours(location) {
+function countMountainNeighbors(location) {
 	let count = 0;
 	for (let direction = 0; direction < DirectionTypes.NUM_DIRECTION_TYPES; direction++) {
-		const adjacent = GameplayMap.getAdjacentPlotLocation(location, direction);
-		if (adjacent && adjacent.x >= 0 && adjacent.y >= 0 && GameplayMap.isMountain(adjacent.x, adjacent.y)) {
+		const adjacent = zgAdjacent(location, direction);
+		if (adjacent && GameplayMap.isMountain(adjacent.x, adjacent.y)) {
 			count++;
 		}
 	}
@@ -79,12 +80,11 @@ export function zgAdjustMountains(iWidth, iHeight) {
 	});
 	// Counted once up front: the comparator runs many times, and using the
 	// pre-adjustment counts keeps the result independent of processing order.
-	const neighbourCount = new Map();
 	for (const tile of mountains.concat(rough)) {
-		neighbourCount.set(tile, countMountainNeighbours(tile));
+		tile.neighbors = countMountainNeighbors(tile);
 	}
-	const byNeighbours = (ascending) => (a, b) => {
-		const diff = neighbourCount.get(a) - neighbourCount.get(b);
+	const byNeighbors = (ascending) => (a, b) => {
+		const diff = a.neighbors - b.neighbors;
 		if (diff !== 0) {
 			return ascending ? diff : -diff;
 		}
@@ -93,13 +93,13 @@ export function zgAdjustMountains(iWidth, iHeight) {
 	const target = Math.round(mountains.length * scale);
 	let changed = 0;
 	if (scale < 1) {
-		mountains.sort(byNeighbours(true));
+		mountains.sort(byNeighbors(true));
 		changed = Math.max(0, mountains.length - target);
 		for (let i = 0; i < changed; i++) {
 			TerrainBuilder.setTerrainType(mountains[i].x, mountains[i].y, g_HillTerrain);
 		}
 	} else {
-		rough.sort(byNeighbours(false));
+		rough.sort(byNeighbors(false));
 		changed = Math.max(0, Math.min(rough.length, target - mountains.length));
 		for (let i = 0; i < changed; i++) {
 			TerrainBuilder.setTerrainType(rough[i].x, rough[i].y, g_MountainTerrain);

@@ -1,4 +1,4 @@
--- Independent Aggression: independent powers start with 2 defender units
+-- Independent Aggression: 2 units. Independent powers start with 2 defender units
 -- and keep at most 2.
 UPDATE TribeTagSets
 SET InitialUnitAmount = 2,

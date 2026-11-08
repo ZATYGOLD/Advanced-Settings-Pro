@@ -24,8 +24,12 @@ function riverOffset(iX, iY) {
 }
 
 function bandBiome(bands, latitude) {
-	const band = bands.findIndex((max) => latitude < max);
-	return band < 0 ? g_TundraBiome : BAND_BIOMES[band];
+	for (let band = 0; band < bands.length; band++) {
+		if (latitude < bands[band]) {
+			return BAND_BIOMES[band];
+		}
+	}
+	return g_TundraBiome;
 }
 
 export function zgDesignateBiomes(iWidth, iHeight) {

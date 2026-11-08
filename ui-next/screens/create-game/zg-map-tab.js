@@ -8,21 +8,31 @@
 //      tab, each rendering the same game-setup body, which then sees only that
 //      tab's groups. General shows every group no extra tab claims.
 //
-// Every option row and the Player tab remain the game's own code, and a
-// multiplayer or hotseat setup gets the screen unchanged.
+// Every option row and the Player tab remain the game's own code. Multiplayer
+// and hotseat set up through the older shell screens, which this never touches.
 import { createSignal, createComponent, mergeProps, onCleanup } from 'fs://game/core/vendor/solid-js/dist/solid.js';
 import { ModelRegistry, ModelLifecycle } from 'fs://game/core/ui-next/services/model-registry.js';
 import { L10n } from 'fs://game/core/ui-next/components/l10n.js';
 import 'fs://game/core/ui-next/components/tab.js';
 import 'fs://game/core/ui-next/screens/create-game/game-parameters-model.js';
-import { isMultiplayer } from '../../../ui/shared/zg-config.js';
-import { SETUP_TABS } from '../../../ui/shell/shared/zg-setup-tabs.js';
-import { zgWrapComponent } from './zg-component-override.js';
+import { SCREEN_OVERRIDE_PRIORITY, zgWrapComponent } from './zg-component-override.js';
 
-const OVERRIDE_PRIORITY = 100;
 const GENERAL_TAB_NAME = "advanced-options-general";
 
-const EXTRA_TABS = SETUP_TABS.map((tab) => ({ ...tab, name: `zg-advanced-options-${tab.key}` }));
+// The extra tabs, in display order, each claiming the parameter groups it shows;
+// General keeps every group no extra tab claims.
+const EXTRA_TABS = [
+	{
+		name: "zg-advanced-options-pace",
+		title: "LOC_ZG_ADVANCED_OPTIONS_AGES",
+		groups: new Set(["ZG_GamePacingOptions", "ZG_PacingAntiquityOptions", "ZG_PacingExplorationOptions", "ZG_PacingModernOptions"]),
+	},
+	{
+		name: "zg-advanced-options-map",
+		title: "LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS",
+		groups: new Set(["MapOptions", "ZG_TerrainOptions", "DisasterOptions", "ZG_NaturalWonderSelectionOptions"]),
+	},
+];
 
 // The tab whose body is rendering: an EXTRA_TABS entry, GENERAL_TAB_NAME, or null.
 const [activeTab, setActiveTab] = createSignal(null);
@@ -73,7 +83,6 @@ if (createBaseGroupsModel) {
 			get groupNames() { return resolve().groupNames; },
 			get groups() {
 				const groups = resolve().groups;
-				if (isMultiplayer()) return groups;
 				const tab = activeTab();
 				const filtered = {};
 				for (const groupId of Object.keys(groups)) {
@@ -84,7 +93,7 @@ if (createBaseGroupsModel) {
 				return filtered;
 			},
 		};
-	}, OVERRIDE_PRIORITY);
+	}, SCREEN_OVERRIDE_PRIORITY);
 }
 
 // 2. Tab.Item wrapper: General renders filtered, plus one sibling item per extra tab.
@@ -96,8 +105,8 @@ function tabBody(tab, body) {
 	};
 }
 
-zgWrapComponent("Tab.Item", OVERRIDE_PRIORITY, (createBaseTabItem) => (props) => {
-	if (props?.name != GENERAL_TAB_NAME || typeof props?.body != "function" || isMultiplayer()) {
+zgWrapComponent("Tab.Item", SCREEN_OVERRIDE_PRIORITY, (createBaseTabItem) => (props) => {
+	if (props?.name != GENERAL_TAB_NAME || typeof props?.body != "function") {
 		return createBaseTabItem(props);
 	}
 	const body = props.body;

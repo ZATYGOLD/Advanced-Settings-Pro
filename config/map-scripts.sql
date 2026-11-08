@@ -12,20 +12,20 @@ INSERT OR IGNORE INTO Maps (Domain, File, Name, Description, Image, StaticMap, W
 SELECT Domain, REPLACE(File, '{base-standard}maps/', '{AdvancedSettingsPro}maps/zg-'), Name, Description, Image, StaticMap, WorldBuilderOnly, SortIndex
 FROM Maps
 WHERE File IN (
-	'{base-standard}maps/archipelago.js',
-	'{base-standard}maps/archipelago-voronoi.js',
-	'{base-standard}maps/continents.js',
-	'{base-standard}maps/continents-plus.js',
-	'{base-standard}maps/continents-voronoi.js',
-	'{base-standard}maps/fractal.js',
-	'{base-standard}maps/fractal-voronoi.js',
-	'{base-standard}maps/pangaea-plus.js',
-	'{base-standard}maps/pangaea-voronoi.js',
-	'{base-standard}maps/shattered-seas-voronoi.js',
-	'{base-standard}maps/shuffle.js',
-	'{base-standard}maps/shuffle-voronoi.js',
-	'{base-standard}maps/terra-incognita.js',
-	'{base-standard}maps/terra-incognita-voronoi.js'
+    '{base-standard}maps/archipelago.js',
+    '{base-standard}maps/archipelago-voronoi.js',
+    '{base-standard}maps/continents.js',
+    '{base-standard}maps/continents-plus.js',
+    '{base-standard}maps/continents-voronoi.js',
+    '{base-standard}maps/fractal.js',
+    '{base-standard}maps/fractal-voronoi.js',
+    '{base-standard}maps/pangaea-plus.js',
+    '{base-standard}maps/pangaea-voronoi.js',
+    '{base-standard}maps/shattered-seas-voronoi.js',
+    '{base-standard}maps/shuffle.js',
+    '{base-standard}maps/shuffle-voronoi.js',
+    '{base-standard}maps/terra-incognita.js',
+    '{base-standard}maps/terra-incognita-voronoi.js'
 );
 
 INSERT INTO SupportedValuesByMap (Map, PlayerID, Domain, Value)
@@ -46,7 +46,7 @@ WHERE Key1 = 'Map'
 AND Key2 IN (SELECT REPLACE(File, '{AdvancedSettingsPro}maps/zg-', '{base-standard}maps/') FROM Maps WHERE File LIKE '{AdvancedSettingsPro}maps/zg-%');
 
 -- On the copies, Sea Level joins the mod's Terrain Settings group.
-UPDATE Parameters SET GroupId = 'TerrainOptions', SortIndex = 153 WHERE ParameterID = 'MapSeaLevel' AND Key2 LIKE '{AdvancedSettingsPro}maps/zg-%';
+UPDATE Parameters SET GroupId = 'ZG_TerrainOptions', SortIndex = 153 WHERE ParameterID = 'MapSeaLevel' AND Key2 LIKE '{AdvancedSettingsPro}maps/zg-%';
 
 INSERT OR IGNORE INTO Queries (QueryID, Type, SQL)
     VALUES

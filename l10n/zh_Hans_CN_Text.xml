@@ -176,15 +176,6 @@
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_NAME" Language="zh_Hans_CN">
 			<Text>湖泊</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME" Language="zh_Hans_CN">
-			<Text>古典</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME" Language="zh_Hans_CN">
-			<Text>探索</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME" Language="zh_Hans_CN">
-			<Text>近世</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>设置开拓者在陆上与海上的移动距离。开拓者越快，越能抢在对手之前占据远方土地。</Text>
 		</Replace>
@@ -515,12 +506,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_MORE" Language="zh_Hans_CN">
 			<Text>生成更多的湖泊。</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="zh_Hans_CN">
-			<Text>Advanced Settings Pro</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>Zatygold的Advanced Settings Pro[n] [n]本模组通过在高级设置菜单中添加更多选项，扩展单人游戏的对局设置，让你能够微调通常无法调整的系统。本模组不影响多人游戏；多人游戏设置由Better Balanced Multiplayer提供。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>决定该自然奇观能否出现在地图上。</Text>
@@ -869,21 +854,21 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="zh_Hans_CN">
 			<Text>前期城市成长更快，之后回到标准。[nn][BLIST]
-				[LI] 远古：-25%
-				[LI] 探索：-25%
+				[LI] 远古：较快
+				[LI] 探索：较快
 				[LI] 近世：标准[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_EXTENDED" Language="zh_Hans_CN">
 			<Text>各时代城市成长都更慢。[nn][BLIST]
-				[LI] 远古：+25%
-				[LI] 探索：+25%
-				[LI] 近世：+25%[/BLIST]</Text>
+				[LI] 远古：慢
+				[LI] 探索：慢
+				[LI] 近世：慢[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SWIFT" Language="zh_Hans_CN">
 			<Text>各时代城市成长都更快。[nn][BLIST]
-				[LI] 远古：-25%
-				[LI] 探索：-25%
-				[LI] 近世：-25%[/BLIST]</Text>
+				[LI] 远古：较快
+				[LI] 探索：较快
+				[LI] 近世：较快[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="zh_Hans_CN">
 			<Text>每名市民所需食物减少50%。</Text>
@@ -898,19 +883,19 @@
 			<Text>近世之前为标准道路，之后更便宜。[nn][BLIST]
 				[LI] 远古：标准
 				[LI] 探索：标准
-				[LI] 近世：-25%[/BLIST]</Text>
+				[LI] 近世：较快[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXTENDED" Language="zh_Hans_CN">
 			<Text>近世之前为标准道路，之后更便宜。[nn][BLIST]
 				[LI] 远古：标准
 				[LI] 探索：标准
-				[LI] 近世：-25%[/BLIST]</Text>
+				[LI] 近世：较快[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SWIFT" Language="zh_Hans_CN">
 			<Text>随着地图展开，道路的通行消耗越来越低。[nn][BLIST]
-				[LI] 远古：-25%
-				[LI] 探索：-50%
-				[LI] 近世：-50%[/BLIST]</Text>
+				[LI] 远古：较快
+				[LI] 探索：快
+				[LI] 近世：快[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SLOW" Language="zh_Hans_CN">
 			<Text>每格移动力增加25%。</Text>
@@ -1037,7 +1022,7 @@
 			<Text>炎热边缘</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_EDGE" Language="zh_Hans_CN">
-			<Text>地图北缘或南缘炎热（由地图种子决定），向冰封的对侧边缘逐渐变冷。</Text>
+			<Text>地图上缘或下缘炎热（由地图种子决定），向冰封的对侧边缘逐渐变冷。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_POLES_NAME" Language="zh_Hans_CN">
 			<Text>炎热两极</Text>
@@ -1170,9 +1155,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>极快的节奏。比标准快150%。</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="zh_Hans_CN">
-			<Text>每个时代使用下方各自分组中的时代长度行。平衡设为150、170、200点；多人游戏设为140、160、180点。</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="zh_Hans_CN">
 			<Text>更长的时代，一个比一个长。[nn][BLIST]
@@ -1468,8 +1450,8 @@
 				[LI] 市政花费：+25% / +50% / +50%
 				[LI] 建筑花费：+25% / +50% / +50%
 				[LI] 胜利项目花费：+25%
-				[LI] 定居点成长：+25%
-				[LI] 道路速度：标准 / 标准 / -25%
+				[LI] 定居点成长：慢
+				[LI] 道路速度：标准 / 标准 / 较快
 				[LI] 贸易速度：-25%
 				[LI] 夷平速度：标准[/BLIST]</Text>
 		</Replace>
@@ -1481,8 +1463,8 @@
 				[LI] 市政花费：-25% / -25% / 标准
 				[LI] 建筑花费：-25%
 				[LI] 胜利项目花费：-25%
-				[LI] 定居点成长：-25%
-				[LI] 道路速度：-25% / -50% / -50%
+				[LI] 定居点成长：较快
+				[LI] 道路速度：较快 / 快 / 快
 				[LI] 贸易速度：立即
 				[LI] 夷平速度：立即[/BLIST]</Text>
 		</Replace>
@@ -1494,8 +1476,8 @@
 				[LI] 市政花费：标准 / +25% / +25%
 				[LI] 建筑花费：+25% / 标准 / 标准
 				[LI] 胜利项目花费：标准 / -25% / -25%
-				[LI] 定居点成长：-25% / -25% / 标准
-				[LI] 道路速度：标准 / 标准 / -25%
+				[LI] 定居点成长：较快 / 较快 / 标准
+				[LI] 道路速度：标准 / 标准 / 较快
 				[LI] 贸易速度：标准
 				[LI] 夷平速度：标准[/BLIST]</Text>
 		</Replace>
@@ -1507,8 +1489,8 @@
 				[LI] 市政花费：+50% / +50% / +100%
 				[LI] 建筑花费：标准
 				[LI] 胜利项目花费：标准 / 标准 / +25%
-				[LI] 定居点成长：+25%
-				[LI] 道路速度：-25% / -25% / -50%
+				[LI] 定居点成长：慢
+				[LI] 道路速度：较快 / 较快 / 快
 				[LI] 贸易速度：标准
 				[LI] 夷平速度：标准[/BLIST]</Text>
 		</Replace>

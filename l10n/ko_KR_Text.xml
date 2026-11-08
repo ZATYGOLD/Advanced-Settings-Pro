@@ -176,15 +176,6 @@
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_NAME" Language="ko_KR">
 			<Text>호수</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME" Language="ko_KR">
-			<Text>고대</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME" Language="ko_KR">
-			<Text>대항해</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME" Language="ko_KR">
-			<Text>근대</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="ko_KR">
 			<Text>개척자가 육지와 바다에서 이동하는 거리를 설정합니다. 빠른 개척자는 경쟁자보다 먼저 먼 부지를 차지합니다.</Text>
 		</Replace>
@@ -515,12 +506,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_MORE" Language="ko_KR">
 			<Text>호수가 더 많이 생성됩니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="ko_KR">
-			<Text>Advanced Settings Pro</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="ko_KR">
-			<Text>Zatygold의 Advanced Settings Pro[n] [n]이 모드는 고급 설정 메뉴에 추가 옵션을 더해 싱글플레이어의 게임 설정을 확장합니다. 일반적으로 조정할 수 없는 시스템을 세밀하게 설정할 수 있습니다. 멀티플레이어에는 영향을 주지 않으며, 멀티플레이어 설정은 Better Balanced Multiplayer이 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="ko_KR">
 			<Text>이 자연경관이 지도에 등장할 수 있는지 설정합니다.</Text>
@@ -869,21 +854,21 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="ko_KR">
 			<Text>초반에는 도시가 빠르게 성장하다가 이후 일반 수준으로 돌아옵니다.[nn][BLIST]
-				[LI] 고대: -25%
-				[LI] 대항해: -25%
+				[LI] 고대: 약간 빠름
+				[LI] 대항해: 약간 빠름
 				[LI] 근대: 일반[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_EXTENDED" Language="ko_KR">
 			<Text>모든 시대에서 도시가 더 느리게 성장합니다.[nn][BLIST]
-				[LI] 고대: +25%
-				[LI] 대항해: +25%
-				[LI] 근대: +25%[/BLIST]</Text>
+				[LI] 고대: 느림
+				[LI] 대항해: 느림
+				[LI] 근대: 느림[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SWIFT" Language="ko_KR">
 			<Text>모든 시대에서 도시가 더 빠르게 성장합니다.[nn][BLIST]
-				[LI] 고대: -25%
-				[LI] 대항해: -25%
-				[LI] 근대: -25%[/BLIST]</Text>
+				[LI] 고대: 약간 빠름
+				[LI] 대항해: 약간 빠름
+				[LI] 근대: 약간 빠름[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="ko_KR">
 			<Text>시민당 식량 50% 감소.</Text>
@@ -898,19 +883,19 @@
 			<Text>근대까지는 일반 도로이고, 이후에는 저렴해집니다.[nn][BLIST]
 				[LI] 고대: 일반
 				[LI] 대항해: 일반
-				[LI] 근대: -25%[/BLIST]</Text>
+				[LI] 근대: 약간 빠름[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXTENDED" Language="ko_KR">
 			<Text>근대까지는 일반 도로이고, 이후에는 저렴해집니다.[nn][BLIST]
 				[LI] 고대: 일반
 				[LI] 대항해: 일반
-				[LI] 근대: -25%[/BLIST]</Text>
+				[LI] 근대: 약간 빠름[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SWIFT" Language="ko_KR">
 			<Text>지도가 넓어질수록 도로 이동 비용이 낮아집니다.[nn][BLIST]
-				[LI] 고대: -25%
-				[LI] 대항해: -50%
-				[LI] 근대: -50%[/BLIST]</Text>
+				[LI] 고대: 약간 빠름
+				[LI] 대항해: 빠름
+				[LI] 근대: 빠름[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SLOW" Language="ko_KR">
 			<Text>타일당 이동력 25% 증가.</Text>
@@ -1037,7 +1022,7 @@
 			<Text>뜨거운 가장자리</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_EDGE" Language="ko_KR">
-			<Text>맵 시드로 정해진 맵의 북쪽 또는 남쪽 끝이 덥고, 반대편의 얼어붙은 끝으로 갈수록 점차 추워집니다.</Text>
+			<Text>맵 시드로 정해진 맵의 위쪽 또는 아래쪽 끝이 덥고, 반대편의 얼어붙은 끝으로 갈수록 점차 추워집니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_POLES_NAME" Language="ko_KR">
 			<Text>뜨거운 극지</Text>
@@ -1170,9 +1155,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="ko_KR">
 			<Text>매우 빠른 속도입니다. 표준보다 150% 빠릅니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="ko_KR">
-			<Text>각 시대는 아래 해당 그룹의 시대 길이 행을 사용합니다. 균형은 150, 170, 200점, 멀티플레이어는 140, 160, 180점으로 맞춥니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="ko_KR">
 			<Text>긴 시대이며, 뒤로 갈수록 더 길어집니다.[nn][BLIST]
@@ -1468,8 +1450,8 @@
 				[LI] 사회 제도 비용: +25% / +50% / +50%
 				[LI] 건물 비용: +25% / +50% / +50%
 				[LI] 승리 프로젝트 비용: +25%
-				[LI] 정착지 성장: +25%
-				[LI] 도로 속도: 일반 / 일반 / -25%
+				[LI] 정착지 성장: 느림
+				[LI] 도로 속도: 일반 / 일반 / 약간 빠름
 				[LI] 교역 속도: -25%
 				[LI] 파괴 속도: 일반[/BLIST]</Text>
 		</Replace>
@@ -1481,8 +1463,8 @@
 				[LI] 사회 제도 비용: -25% / -25% / 일반
 				[LI] 건물 비용: -25%
 				[LI] 승리 프로젝트 비용: -25%
-				[LI] 정착지 성장: -25%
-				[LI] 도로 속도: -25% / -50% / -50%
+				[LI] 정착지 성장: 약간 빠름
+				[LI] 도로 속도: 약간 빠름 / 빠름 / 빠름
 				[LI] 교역 속도: 즉시
 				[LI] 파괴 속도: 즉시[/BLIST]</Text>
 		</Replace>
@@ -1494,8 +1476,8 @@
 				[LI] 사회 제도 비용: 일반 / +25% / +25%
 				[LI] 건물 비용: +25% / 일반 / 일반
 				[LI] 승리 프로젝트 비용: 일반 / -25% / -25%
-				[LI] 정착지 성장: -25% / -25% / 일반
-				[LI] 도로 속도: 일반 / 일반 / -25%
+				[LI] 정착지 성장: 약간 빠름 / 약간 빠름 / 일반
+				[LI] 도로 속도: 일반 / 일반 / 약간 빠름
 				[LI] 교역 속도: 일반
 				[LI] 파괴 속도: 일반[/BLIST]</Text>
 		</Replace>
@@ -1507,8 +1489,8 @@
 				[LI] 사회 제도 비용: +50% / +50% / +100%
 				[LI] 건물 비용: 일반
 				[LI] 승리 프로젝트 비용: 일반 / 일반 / +25%
-				[LI] 정착지 성장: +25%
-				[LI] 도로 속도: -25% / -25% / -50%
+				[LI] 정착지 성장: 느림
+				[LI] 도로 속도: 약간 빠름 / 약간 빠름 / 빠름
 				[LI] 교역 속도: 일반
 				[LI] 파괴 속도: 일반[/BLIST]</Text>
 		</Replace>

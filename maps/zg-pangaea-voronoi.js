@@ -1,13 +1,14 @@
 // Copy of {base-standard}maps/pangaea-voronoi.js
-// with its map features generated through zg-map-generation.js; imports are
+// with its map features generated through zg-common-generation.js; imports are
 // repointed at the base modules.
+// Indentation stays as in the base file, so a patch re-syncs as a plain diff.
 import { assignAdvancedStartRegions } from 'fs://game/base-standard/maps/assign-advanced-start-region.js';
 import { assignStartPositionsFromHexMap } from 'fs://game/base-standard/maps/assign-starting-plots.js';
 import { generateDiscoveries } from 'fs://game/base-standard/maps/discovery-generator.js';
 import { g_PolarWaterRows } from 'fs://game/base-standard/maps/map-globals.js';
 import { profileScope } from 'fs://game/base-standard/scripts/profiling.js';
 import { VoronoiPangaea } from 'fs://game/base-standard/scripts/voronoi_maps/pangaea.js';
-import { zgGenerateMapFeatures } from './zg-map-generation.js';
+import { zgGenerateMapFeatures } from './zg-common-generation.js';
 
 console.log("Generating using script pangaea-voronoi.ts");
 function requestMapData(initParams) {

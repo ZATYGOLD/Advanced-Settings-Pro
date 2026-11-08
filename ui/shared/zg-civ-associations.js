@@ -1,7 +1,6 @@
 // A leader's civilization associations, the game's own reading of them in
 // LeaderCivilizationBias: the Historical and Geographic choices the civilization
 // picker marks for a human, read by the age transition's Historical mode.
-
 import { cached, queryConfig } from './zg-config.js';
 
 // In the order they are tried. Strategic rows are not associations and are left

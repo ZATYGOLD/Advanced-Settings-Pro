@@ -7,7 +7,6 @@
 // human's confirmation, settles the AI into the same parameters first
 // (zg-age-transition-settle.js). The request is the one both the game's own
 // screen and Zatygold's Spectator send.
-
 import { playerValue } from '../shared/zg-config.js';
 import { AGE_TRANSITION_SLOTS } from '../shared/zg-memento-roller.js';
 import { settleAiPlayers } from './zg-age-transition-settle.js';

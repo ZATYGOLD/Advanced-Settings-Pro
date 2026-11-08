@@ -1,4 +1,4 @@
--- Technology Cost +50%: costs x1.5.
+-- Technology Cost: +50%. Costs x1.5.
 UPDATE ProgressionTreeNodes
 SET Cost = CAST(ROUND(Cost * 1.5) AS INTEGER),
     RepeatableCostProgressionParam1 = CASE

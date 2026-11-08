@@ -8,7 +8,6 @@
 // A draw reads and writes one set of player parameters, its slots: the setup's
 // own, or at an in-game age transition the AgeTransitionPlayer ones the engine
 // carries into the next age.
-
 import { cached, gameValue, playerValue, queryConfig, resolveName } from './zg-config.js';
 
 export const MEMENTO_PARAM_IDS = ["PlayerMementoMajorSlot", "PlayerMementoMinorSlot1"];
@@ -118,9 +117,8 @@ const AI_MEMENTO_MODES = {
 // The rule AI Mementos currently names.
 export const aiMementoMode = () => AI_MEMENTO_MODES[gameValue(AI_MEMENTOS_PARAM_ID)] ?? AI_MEMENTO_MODES[AI_MEMENTOS_DEFAULT];
 
-// The AI players: every participating slot the computer holds. A human is
-// never one, whatever else the configuration reports: not the local player,
-// not anyone who has joined a multiplayer slot, not a hotseat seat.
+// The AI players: every participating slot the computer holds, never the
+// local player.
 export function aiPlayerIds() {
 	return (Configuration.getGame()?.participatingPlayerIDs ?? []).filter((playerId) => {
 		const player = Configuration.getPlayer(playerId);

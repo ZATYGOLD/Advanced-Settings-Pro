@@ -12,7 +12,7 @@ The mod applies to single player only. Multiplayer and hotseat games are left to
 - Removed the multiplayer Create Game layout and the multiplayer lobby's memento slots, tooltips, and rules lists, which Better Balanced Multiplayer provides
 - Map Temperature gains Frigid and Scorching, plus Random, and now reads Frigid, Cold, Standard, Hot, Scorching. Every step also moves sea ice, reefs, open-water features, and snow, and sets how strongly highlands, rainfall, and rivers change the local climate; Standard matches the base game
 - New Map Zones setting (Map Settings, below Map Temperature): Standard, Hot Poles, Hot Edge, Hot Center, Cold Center, Warm Ring, Patchwork, or Random
-- Hot Edge heats the north or south edge, chosen by the map seed
+- Hot Edge heats the top or bottom edge, chosen by the map seed
 - Biomes, features, and snow on all 14 map scripts now follow both settings
 - Conflict guard recognizes Scrum Lord's Climate Controls, whose climate settings these replace
 - Climate logic adapted, with permission, from Scrum Lord's Climate Controls
@@ -21,6 +21,13 @@ The mod applies to single player only. Multiplayer and hotseat games are left to
 - Faster map generation and setup screens: features look up only their own placement class, and every setup screen script shares one poll of the setup
 - Code reorganized: shared helpers in ui/shared, one tab and seed definition for both setup screens, consistent naming, headers, and logging; unit cost ids now match their tiers
 - Setup rules now compare and set options by value, as Better Balanced Multiplayer does, so settings that share option names can no longer be confused; the climate resets for each new map, and mountain counting skips tiles off the map edge
+- Fixed: the setup rules could reset the Pace tab or clear the crisis list while the setup screen was still loading its options, and they and AI Mementos no longer react outside the setup screen (the main menu's reset, Load Game)
+- Fixed: remembered settings no longer overwrite a change you make in the moments after the screen opens, and a remembered crisis list is no longer emptied when the list loads late
+- Settlement Growth and Road Speed per-age rows now read Slow, Quick, or Fast, so +25% no longer means slower here and faster on Trade Speed
+- The conflict guard no longer blocks the Multiplayer button or disables conflicting mods at startup; it asks when you press Continue, New Game, or Load Game
+- The mod's name now reads Zatygold's Advanced Settings in every language; Map Zones' Hot Edge says top or bottom edge, and Warm Ring no longer reads as Hot Ring in Spanish, French, Italian, and Portuguese
+- Faster map generation: Map Zones works out its layout once per map, and the feature, biome, and mountain passes do less work per tile; the Standard map is unchanged
+- Cleanup: the base Age Lengths no longer load a redundant data file, the mod browser loads one small text file instead of eleven, setup groups carry the ZG_ prefix, and setup-parameters.sql follows the tab order
 
 ### 0.9.04
 
@@ -218,13 +225,13 @@ All settings are chosen at game creation in single player and apply for the full
 
 ### General tab
 
-- Game Settings: Pace Set (mirrors the Pace tab), Single Player No Age Transitions, and a Random button beside Game Random Seed
+- Game Settings: Pace Set (mirrors the Pace tab), No Age Transitions, and a Random button beside Game Random Seed
 - Triumph Settings: the game's Triumph Set plus Custom, with an Antiquity, Exploration, and Modern row
 - Crisis Settings: Crises (Enabled or Disabled), Crisis Timing (Early, Standard, or Late), and the game's per-crisis selection, kept in step
 - Memento Settings: the game's Mementos toggle, AI Mementos (None, Random, Leader Match, or Civilization Match), and Age Transition AI Mementos (Maintain or Adapt)
 - Settlement Settings: Settlement Distance (Less, Standard, or More), and Settlement Limit (Less, Standard, More, or Custom, with per-age limits of 1 to 25, then 30 to 75)
 - Independent Power Settings: the game's Initial Independent Hostility, Independent Amount (None, Less, Standard, or More), Independent Spacing (Less, Standard, or More), and Independent Aggression (Calm, Standard, or Raging)
-- Unit Settings: Settler Movement and Treasure Convoy Movement (Slow, Standard, Quick, or Fast), and Military and Civilian Unit Cost (Low, Standard, Medium, High, or Double)
+- Unit Settings: Settler Speed and Treasure Convoy Speed (Slow, Standard, Quick, or Fast), and Military and Civilian Unit Cost (Low, Standard, Medium, High, or Double)
 - Trade Settings: Trade Range (-50% to +100% on land and sea trade range, for all ages or per age)
 - Civilization Selection: adds Historical to AI Civ Selection, Age Transition. Each AI moves to its leader's Historical civilization when the new age offers one, keeps its civilization when that is the Historical one, and otherwise follows the game's usual path, a Geographic civilization first (experimental: since patch 1.5 the game may override it)
 
@@ -236,15 +243,15 @@ Each Pace setting has Antiquity, Exploration, and Modern rows, used when it is C
 - Age Progression: Slow, Standard, Balanced, Fast, or Custom
 - Technology, Civic, Building, and Victory Project Cost: Low, Standard, Medium, High, Double, Swift, Balanced, Extended, or Custom
 - Settlement Growth and Road Speed: Slow, Standard, Quick, Fast, Swift, Balanced, Extended, or Custom
-- Trade Speed: Merchants travel Slow, Standard, Quick, or Fast, or trade routes start Instantly; Standard keeps the Modern Age instant
-- Raze Speed: Standard, Fast (twice the districts per turn), or Instant
+- Trade Speed: Merchants travel Slow, Standard, Quick, or Fast, or trade routes start Instantly, plus Swift, Balanced, Extended, or Custom; Standard keeps the Modern Age instant
+- Raze Speed: Standard, Fast (twice the districts per turn), Instant, Swift, Balanced, Extended, or Custom
 
 ### Map tab
 
 - Map Settings: the game's Map, Map Size, and Map Seed (with a Random button), plus Map Age (Old, Standard, or New), Map Temperature (Frigid, Cold, Standard, Hot, Scorching, or Random), Map Zones (Standard, Hot Poles, Hot Edge, Hot Center, Cold Center, Warm Ring, Patchwork, or Random), Natural Wonders (Disabled to Double), and Resources (Sparse, Standard, or Abundant)
 - Terrain Settings: Lakes, Rivers (nine pairings of river count and navigable share), Mountains, and the game's Sea Level
 - Natural Wonder Selection: each of the 22 natural wonders, DLC included
-- Disaster Settings: Disaster Frequency (Disabled, Light, Moderate, Catastrophic, or Custom per age)
+- Disaster Settings: Disasters (Disabled, Light, Moderate, Catastrophic, or Custom per age)
 
 ### Player tab
 
@@ -252,7 +259,7 @@ Leader, Team, Civilization, and two Memento slots on every row; a slot opens the
 
 ### Conflict guard
 
-The conflict guard recognizes conflicting mods by their id and by the setup settings they add, so renaming a mod does not bypass it.
+The conflict guard recognizes conflicting mods by their id and by the setup settings they add, so renaming a mod does not bypass it. When one is enabled, Continue, New Game, and Load Game show a dialog that can disable it; multiplayer is left alone.
 
 ## Project Structure
 
@@ -260,13 +267,15 @@ The conflict guard recognizes conflicting mods by their id and by the setup sett
 advanced-settings-pro.modinfo   Mod manifest: setup criteria and action groups
 config/                         Setup parameters and single-player map script copies (shell scope)
 data/                           Gameplay adjustments (game scope), grouped by system
-l10n/                           Text for the 11 non-English languages
-maps/                           Map script copies and the zg-map-* generation modules
+l10n/                           Text for the 11 non-English languages, plus the mod browser's name and description
+maps/                           Map script copies, zg-common-generation.js (the shared Voronoi terrain pass)
+                                and the zg-map-* generation modules
 text/en_us/                     English text
 ui/age-transition/              Age transition: AI civilizations and mementos, in game and shell
 ui/shared/                      Helpers both the shell and the game load: config reads,
                                 memento draws, leader civilization associations
-ui/shell/                       Shell scripts: setup context and tabs, setup rules and memory
+ui/shell/shared/                Shell context, setup poll, conflict guard
+ui/shell/create-game/           Setup rules and remembered settings for the setup screen
 ui-next/screens/create-game/    Advanced Settings tabs, Player tab, memento picker
 ```
 

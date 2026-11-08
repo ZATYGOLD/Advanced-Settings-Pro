@@ -176,15 +176,6 @@
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_NAME" Language="de_DE">
 			<Text>Seen</Text>
 		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_ANTIQUITY_NAME" Language="de_DE">
-			<Text>Antike</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_EXPLORATION_NAME" Language="de_DE">
-			<Text>Erkundung</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_SETTLEMENT_LIMIT_MODERN_NAME" Language="de_DE">
-			<Text>Moderne</Text>
-		</Replace>
 		<Replace Tag="LOC_ZG_SETTLER_MOVEMENT_SPEED_DESCRIPTION" Language="de_DE">
 			<Text>Legt fest, wie weit Siedler zu Land und zu Wasser ziehen. Schnellere Siedler erreichen ferne Plätze, bevor ein Rivale sie beansprucht.</Text>
 		</Replace>
@@ -515,12 +506,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_LAKE_GENERATION_DESCRIPTION_MORE" Language="de_DE">
 			<Text>Generiert mehr Seen.</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME" Language="de_DE">
-			<Text>Advanced Settings Pro</Text>
-		</Replace>
-		<Replace Tag="LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION" Language="de_DE">
-			<Text>Zatygolds Advanced Settings Pro[n] [n]Diese Mod erweitert die Einzelspieler-Spielerstellung um zusätzliche Optionen im Menü für erweiterte Einstellungen. Sie ermöglicht die Feinabstimmung von Systemen, die normalerweise nicht anpassbar sind. Im Mehrspielermodus hält sie sich heraus; die Mehrspieler-Einstellungen stammen aus dem Better Balanced Multiplayer.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION" Language="de_DE">
 			<Text>Legt fest, ob dieses Naturwunder auf der Karte erscheinen kann.</Text>
@@ -869,21 +854,21 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_BALANCED" Language="de_DE">
 			<Text>Städte wachsen früh schneller und pendeln sich dann auf Standard ein.[nn][BLIST]
-				[LI] Antike: -25%
-				[LI] Erkundung: -25%
+				[LI] Antike: Zügig
+				[LI] Erkundung: Zügig
 				[LI] Moderne: Standard[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_EXTENDED" Language="de_DE">
 			<Text>Städte wachsen in jedem Zeitalter langsamer.[nn][BLIST]
-				[LI] Antike: +25%
-				[LI] Erkundung: +25%
-				[LI] Moderne: +25%[/BLIST]</Text>
+				[LI] Antike: Langsam
+				[LI] Erkundung: Langsam
+				[LI] Moderne: Langsam[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_SWIFT" Language="de_DE">
 			<Text>Städte wachsen in jedem Zeitalter schneller.[nn][BLIST]
-				[LI] Antike: -25%
-				[LI] Erkundung: -25%
-				[LI] Moderne: -25%[/BLIST]</Text>
+				[LI] Antike: Zügig
+				[LI] Erkundung: Zügig
+				[LI] Moderne: Zügig[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_CITY_GROWTH_DESCRIPTION_FAST" Language="de_DE">
 			<Text>50% weniger Nahrung je Bürger.</Text>
@@ -898,19 +883,19 @@
 			<Text>Standard-Straßen bis zur Moderne, danach günstiger.[nn][BLIST]
 				[LI] Antike: Standard
 				[LI] Erkundung: Standard
-				[LI] Moderne: -25%[/BLIST]</Text>
+				[LI] Moderne: Zügig[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_EXTENDED" Language="de_DE">
 			<Text>Standard-Straßen bis zur Moderne, danach günstiger.[nn][BLIST]
 				[LI] Antike: Standard
 				[LI] Erkundung: Standard
-				[LI] Moderne: -25%[/BLIST]</Text>
+				[LI] Moderne: Zügig[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SWIFT" Language="de_DE">
 			<Text>Straßen werden günstiger zu durchqueren, je weiter sich die Karte öffnet.[nn][BLIST]
-				[LI] Antike: -25%
-				[LI] Erkundung: -50%
-				[LI] Moderne: -50%[/BLIST]</Text>
+				[LI] Antike: Zügig
+				[LI] Erkundung: Schnell
+				[LI] Moderne: Schnell[/BLIST]</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_ROADS_DESCRIPTION_SLOW" Language="de_DE">
 			<Text>25% mehr Bewegung pro Feld.</Text>
@@ -1037,7 +1022,7 @@
 			<Text>Heißer Rand</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_ZONES_DESCRIPTION_HOT_EDGE" Language="de_DE">
-			<Text>Heiß am Nord- oder Südrand der Karte, vom Karten-Seed bestimmt, mit stetiger Abkühlung bis zum gefrorenen gegenüberliegenden Rand.</Text>
+			<Text>Heiß am oberen oder unteren Kartenrand, vom Karten-Seed bestimmt, mit stetiger Abkühlung bis zum gefrorenen gegenüberliegenden Rand.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_MAP_ZONES_HOT_POLES_NAME" Language="de_DE">
 			<Text>Heiße Pole</Text>
@@ -1170,9 +1155,6 @@
 		</Replace>
 		<Replace Tag="LOC_ZG_GAMESPEED_ONLINE_2_DESCRIPTION" Language="de_DE">
 			<Text>Ein extrem schnelles Tempo. 150% schneller als Standard.</Text>
-		</Replace>
-		<Replace Tag="LOC_ZG_AGE_LENGTH_CUSTOM_DESC" Language="de_DE">
-			<Text>Jedes Zeitalter nutzt die Zeile „Zeitalterlänge“ in seiner eigenen Gruppe darunter. Ausgewogen setzt 150, 170 und 200 Punkte; Mehrspieler setzt 140, 160 und 180.</Text>
 		</Replace>
 		<Replace Tag="LOC_ZG_AGE_LENGTH_BALANCED_DESC" Language="de_DE">
 			<Text>Längere Zeitalter, jedes länger als das vorige.[nn][BLIST]
@@ -1468,8 +1450,8 @@
 				[LI] Kosten für Bürgerrechte: +25% / +50% / +50%
 				[LI] Gebäudekosten: +25% / +50% / +50%
 				[LI] Kosten für Siegprojekte: +25%
-				[LI] Siedlungswachstum: +25%
-				[LI] Straßengeschwindigkeit: Standard / Standard / -25%
+				[LI] Siedlungswachstum: Langsam
+				[LI] Straßengeschwindigkeit: Standard / Standard / Zügig
 				[LI] Handelsgeschwindigkeit: -25%
 				[LI] Zerstörungsgeschwindigkeit: Standard[/BLIST]</Text>
 		</Replace>
@@ -1481,8 +1463,8 @@
 				[LI] Kosten für Bürgerrechte: -25% / -25% / Standard
 				[LI] Gebäudekosten: -25%
 				[LI] Kosten für Siegprojekte: -25%
-				[LI] Siedlungswachstum: -25%
-				[LI] Straßengeschwindigkeit: -25% / -50% / -50%
+				[LI] Siedlungswachstum: Zügig
+				[LI] Straßengeschwindigkeit: Zügig / Schnell / Schnell
 				[LI] Handelsgeschwindigkeit: Sofort
 				[LI] Zerstörungsgeschwindigkeit: Sofort[/BLIST]</Text>
 		</Replace>
@@ -1494,8 +1476,8 @@
 				[LI] Kosten für Bürgerrechte: Standard / +25% / +25%
 				[LI] Gebäudekosten: +25% / Standard / Standard
 				[LI] Kosten für Siegprojekte: Standard / -25% / -25%
-				[LI] Siedlungswachstum: -25% / -25% / Standard
-				[LI] Straßengeschwindigkeit: Standard / Standard / -25%
+				[LI] Siedlungswachstum: Zügig / Zügig / Standard
+				[LI] Straßengeschwindigkeit: Standard / Standard / Zügig
 				[LI] Handelsgeschwindigkeit: Standard
 				[LI] Zerstörungsgeschwindigkeit: Standard[/BLIST]</Text>
 		</Replace>
@@ -1507,8 +1489,8 @@
 				[LI] Kosten für Bürgerrechte: +50% / +50% / +100%
 				[LI] Gebäudekosten: Standard
 				[LI] Kosten für Siegprojekte: Standard / Standard / +25%
-				[LI] Siedlungswachstum: +25%
-				[LI] Straßengeschwindigkeit: -25% / -25% / -50%
+				[LI] Siedlungswachstum: Langsam
+				[LI] Straßengeschwindigkeit: Zügig / Zügig / Schnell
 				[LI] Handelsgeschwindigkeit: Standard
 				[LI] Zerstörungsgeschwindigkeit: Standard[/BLIST]</Text>
 		</Replace>

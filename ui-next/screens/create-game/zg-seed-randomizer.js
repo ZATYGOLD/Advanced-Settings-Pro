@@ -10,11 +10,13 @@ import { insert } from 'fs://game/core/vendor/solid-js/web/dist/web.js';
 import { Button } from 'fs://game/core/ui-next/components/button.js';
 import { L10n } from 'fs://game/core/ui-next/components/l10n.js';
 import 'fs://game/core/ui-next/components/text-input.js';
-import { gameValue, isMultiplayer } from '../../../ui/shared/zg-config.js';
-import { SEED_BUTTON_TEXT, SEED_PARAM_IDS, randomSeed } from '../../../ui/shell/shared/zg-setup-tabs.js';
-import { zgWrapComponent } from './zg-component-override.js';
+import { gameValue } from '../../../ui/shared/zg-config.js';
+import { SCREEN_OVERRIDE_PRIORITY, zgWrapComponent } from './zg-component-override.js';
 
-const OVERRIDE_PRIORITY = 100;
+const SEED_PARAM_IDS = ["GameRandomSeed", "MapRandomSeed"];
+const SEED_BUTTON_TEXT = "LOC_ADVANCED_OPTIONS_RANDOM";
+const MAX_SEED = 2 ** 31 - 1;
+const randomSeed = () => 1 + Math.floor(Math.random() * (MAX_SEED - 1));
 
 function seedValues() {
 	return SEED_PARAM_IDS
@@ -24,11 +26,11 @@ function seedValues() {
 }
 
 function isSeedField(props) {
-	return !isMultiplayer() && props != null && typeof props.value == "function" && typeof props.setValue == "function"
+	return props != null && typeof props.value == "function" && typeof props.setValue == "function"
 		&& props.enableVirtualKeyboard === true && seedValues().includes(String(props.value()));
 }
 
-zgWrapComponent("TextInput", OVERRIDE_PRIORITY, (createBaseTextInput) => (props) => {
+zgWrapComponent("TextInput", SCREEN_OVERRIDE_PRIORITY, (createBaseTextInput) => (props) => {
 	if (!isSeedField(props)) {
 		return createBaseTextInput(props);
 	}
