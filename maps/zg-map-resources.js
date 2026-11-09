@@ -64,15 +64,17 @@ function effectiveMinimums(modifier) {
 	if (modifier === 0) {
 		return undefined;
 	}
+	// GameInfo tables are indexed, not arrays: they offer no map().
+	const minimums = new Array(GameInfo.Resources.length);
 	let adjusted = 0;
-	const minimums = GameInfo.Resources.map((def) => {
-		const base = def.MinimumPerLandmass ?? 0;
-		if (base <= DEFAULT_GUARANTEE) {
-			return base;
+	for (let i = 0; i < GameInfo.Resources.length; i++) {
+		const base = GameInfo.Resources[i].MinimumPerLandmass ?? 0;
+		minimums[i] = base;
+		if (base > DEFAULT_GUARANTEE) {
+			minimums[i] = Math.max(MIN_GUARANTEED, Math.min(MAX_GUARANTEED, base + modifier));
+			adjusted++;
 		}
-		adjusted++;
-		return Math.max(MIN_GUARANTEED, Math.min(MAX_GUARANTEED, base + modifier));
-	});
+	}
 	console.log(`ZG-ASP resources: guaranteed per landmass ${modifier > 0 ? "+" : ""}${modifier} on ${adjusted} resources`);
 	return minimums;
 }

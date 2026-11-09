@@ -6,6 +6,10 @@ The mod applies to single player only. Multiplayer and hotseat games are left to
 
 ## Version History
 
+### 0.9.06
+
+- Fixed: Sparse and Abundant Resources placed no resources at all
+
 ### 0.9.05
 
 - Single player only: every setting, map script, and setup screen change now applies to single player alone, and multiplayer and hotseat see the base game unchanged. Multiplayer settings come from Better Balanced Multiplayer

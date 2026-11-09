@@ -29,7 +29,7 @@ export function zgForEachTile(iWidth, iHeight, visit) {
 
 // The tile next to a location in a direction, or null off the map.
 export function zgAdjacent(location, direction) {
-	const adjacent = GameplayMap.getAdjacentPlotLocation(location, direction);
+	const adjacent = GameplayMap.getAdjacentPlotLocation({ x: location.x, y: location.y }, direction);
 	return adjacent && adjacent.x >= 0 && adjacent.y >= 0 ? adjacent : null;
 }
 

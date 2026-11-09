@@ -212,7 +212,8 @@ export function rememberSetup() {
 }
 
 const noteInput = () => { lastInputAt = Date.now(); };
-["mousedown", "keydown", "engine-input"].forEach((type) => window.addEventListener(type, noteInput, true));
+// Mouse and keyboard only, so nothing the screen does by itself ends the guard early.
+["mousedown", "keydown"].forEach((type) => window.addEventListener(type, noteInput, true));
 
 // Starting the game is the last chance to see the final values.
 window.addEventListener(StartCampaignEventName, () => {
