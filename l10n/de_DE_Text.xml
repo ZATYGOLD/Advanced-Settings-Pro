@@ -1406,6 +1406,12 @@
 		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="de_DE">
 			<Text>Geländeeinstellungen</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_SPAWNOPTIONS" Language="de_DE">
+			<Text>Starteinstellungen</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_CLIMATECONTROLOPTIONS" Language="de_DE">
+			<Text>Climate Control</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="de_DE">
 			<Text>Tempo-Set</Text>
 		</Replace>

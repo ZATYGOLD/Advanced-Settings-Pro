@@ -1,0 +1,52 @@
+// Copy of {base-standard}maps/donut-voronoi.js
+// with its map features generated through zg-common-generation.js; imports are
+// repointed at the base modules.
+// Indentation stays as in the base file, so a patch re-syncs as a plain diff.
+import { assignAdvancedStartRegions } from 'fs://game/base-standard/maps/assign-advanced-start-region.js';
+import { assignStartPositionsFromHexMap } from 'fs://game/base-standard/maps/assign-starting-plots.js';
+import { generateDiscoveries } from 'fs://game/base-standard/maps/discovery-generator.js';
+import { g_PolarWaterRows } from 'fs://game/base-standard/maps/map-globals.js';
+import { commonRequestMapData } from 'fs://game/base-standard/maps/map-utilities.js';
+import { profileScope } from 'fs://game/base-standard/scripts/profiling.js';
+import { VoronoiDonut } from 'fs://game/base-standard/scripts/voronoi_maps/donut.js';
+import { zgGenerateMapFeatures } from './zg-common-generation.js';
+
+console.log("Generating using script donut-voronoi.ts");
+async function generateMap() {
+  console.log("Generating a map!");
+  console.log(`Age - ${GameInfo.Ages.lookup(Game.age).AgeType}`);
+  const voronoiScope = new profileScope("Donut Voronoi Generation");
+  const iWidth = GameplayMap.getGridWidth();
+  const iHeight = GameplayMap.getGridHeight();
+  const uiMapSize = GameplayMap.getMapSize();
+  const mapInfo = GameInfo.Maps.lookup(uiMapSize);
+  if (mapInfo == null) return;
+  const iTotalPlayers = Players.getAliveMajorIds().length;
+  const startTime = Date.now();
+  const voronoiMap = new VoronoiDonut();
+  const seaLevelType = Configuration.getMapValue("SeaLevel");
+  console.log(`Sea Level - ${seaLevelType}`);
+  switch (seaLevelType) {
+    case "SEA_LEVEL_LOW":
+      voronoiMap.setSelectedVariantKey("Sea Level", "Low");
+      break;
+    case "SEA_LEVEL_HIGH":
+      voronoiMap.setSelectedVariantKey("Sea Level", "High");
+      break;
+  }
+  voronoiMap.init({ x: iWidth, y: iHeight });
+  voronoiMap.setPrimaryMapSetting(["totalPlayers"], iTotalPlayers);
+  voronoiMap.simulate();
+  const endTime = Date.now();
+  console.log(`Initial Voronoi map generation took ${endTime - startTime} ms`);
+  zgGenerateMapFeatures(voronoiMap.getHexTiles());
+  const fertilityGetter = (tile) => StartPositioner.getPlotFertilityForCoord(tile.coord.x, tile.coord.y);
+  voronoiMap.createMajorPlayerAreas(fertilityGetter);
+  const startPositions = assignStartPositionsFromHexMap(voronoiMap.getHexTiles());
+  generateDiscoveries(iWidth, iHeight, startPositions, g_PolarWaterRows);
+  FertilityBuilder.recalculate();
+  assignAdvancedStartRegions();
+  voronoiScope.end();
+}
+engine.on("RequestMapInitData", commonRequestMapData(VoronoiDonut));
+engine.on("GenerateMap", generateMap);

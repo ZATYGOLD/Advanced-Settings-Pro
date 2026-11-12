@@ -30,7 +30,7 @@ const EXTRA_TABS = [
 	{
 		name: "zg-advanced-options-map",
 		title: "LOC_ZG_ADVANCED_OPTIONS_MAP_SETTINGS",
-		groups: new Set(["MapOptions", "ZG_TerrainOptions", "DisasterOptions", "ZG_NaturalWonderSelectionOptions"]),
+		groups: new Set(["ZG_SpawnOptions", "MapOptions", "ZG_ClimateControlOptions", "ZG_TerrainOptions", "DisasterOptions", "ZG_NaturalWonderSelectionOptions"]),
 	},
 ];
 

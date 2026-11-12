@@ -5,8 +5,10 @@
 // and nearby rivers then move by the Map Temperature weights; the result falls
 // into that step's biome bands. The rainfall extremes that force Desert and
 // Tropical outright are untouched. At Standard every value matches the base.
+// With Climate Controls enabled, its biome pass runs instead.
+import { designateBiomes } from 'fs://game/base-standard/maps/feature-biome-generator.js';
 import { g_MarineBiome, g_DesertBiome, g_MountainTerrain, g_TropicalBiome, g_PlainsBiome, g_GrasslandBiome, g_TundraBiome } from 'fs://game/base-standard/maps/map-globals.js';
-import { zgClimate } from './zg-map-climate.js';
+import { zgClimate, zgClimateControlActive } from './zg-map-climate.js';
 import { zgForEachTile } from './zg-map-utils.js';
 
 const BAND_BIOMES = [g_TropicalBiome, g_PlainsBiome, g_DesertBiome, g_GrasslandBiome];
@@ -33,6 +35,11 @@ function bandBiome(bands, latitude) {
 }
 
 export function zgDesignateBiomes(iWidth, iHeight) {
+	if (zgClimateControlActive()) {
+		console.log("ZG-ASP climate: biomes, features and snow by Climate Controls");
+		designateBiomes(iWidth, iHeight);
+		return;
+	}
 	console.log("Biomes");
 	const { bands, weights, latitude: climateLatitude } = zgClimate();
 	zgForEachTile(iWidth, iHeight, (iX, iY) => {

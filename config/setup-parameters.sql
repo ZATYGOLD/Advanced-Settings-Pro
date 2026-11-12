@@ -39,6 +39,7 @@ INSERT OR IGNORE INTO ParameterGroups (GroupId, Name)
         ('ZG_PacingAntiquityOptions', 'LOC_AGE_ANTIQUITY_NAME'),
         ('ZG_PacingExplorationOptions', 'LOC_AGE_EXPLORATION_NAME'),
         ('ZG_PacingModernOptions', 'LOC_AGE_MODERN_NAME'),
+        ('ZG_SpawnOptions', 'LOC_GROUPID_ZG_SPAWNOPTIONS'),
         ('ZG_TerrainOptions', 'LOC_GROUPID_ZG_TERRAINOPTIONS'),
         ('ZG_MementoOptions', 'LOC_GROUPID_ZG_MEMENTOOPTIONS'),
         ('ZG_TradeOptions', 'LOC_GROUPID_ZG_TRADEOPTIONS');
@@ -47,6 +48,19 @@ INSERT OR IGNORE INTO ParameterGroups (GroupId, Name)
 -- Disaster Settings. Only single player shows it: every base setting in it
 -- carries a multiplayer group (MPAdvancedDisasterOptions).
 UPDATE ParameterGroups SET Name = 'LOC_GROUPID_ZG_DISASTEROPTIONS' WHERE GroupID = 'DisasterOptions';
+
+-- Start Position is split like the base settings at the top of this file, here
+-- because its copy joins the Spawn Settings group declared above, at the head of
+-- the Map tab. Only its single-player row is copied: the multiplayer row carries
+-- a different default.
+INSERT INTO Parameters (Key1, Key2, ParameterID, Name, Description, Domain, Hash, Array, DefaultValue, ConfigurationGroup, ConfigurationKey, DomainConfigurationKey, PossibleValuesConfigurationKey, ValueConfigurationKey, ValueNameConfigurationKey, ValueHashConfigurationKey, ValueDomainConfigurationKey, NameArrayConfigurationKey, GroupID, GroupIDMultiplayerOverride, Hidden, ReadOnly, SupportsSinglePlayer, SupportsLANMultiplayer, SupportsInternetMultiplayer, SupportsHotseatMultiplayer, IsUGC, ChangeableAfterGameStart, ChangeableAfterAgeTransition, UxHint, SortIndex)
+SELECT Key1, Key2, ParameterID, Name, Description, Domain, Hash, Array, DefaultValue, ConfigurationGroup, ConfigurationKey, DomainConfigurationKey, PossibleValuesConfigurationKey, ValueConfigurationKey, ValueNameConfigurationKey, ValueHashConfigurationKey, ValueDomainConfigurationKey, NameArrayConfigurationKey, 'ZG_SpawnOptions', NULL, Hidden, ReadOnly, 1, 0, 0, 0, IsUGC, ChangeableAfterGameStart, ChangeableAfterAgeTransition, UxHint, 1005
+FROM Parameters
+WHERE ParameterID = 'StartPosition' AND Key1 IS NULL AND COALESCE(SupportsSinglePlayer, 1) = 1;
+
+UPDATE Parameters SET SupportsSinglePlayer = 0
+WHERE ParameterID = 'StartPosition' AND Key1 IS NULL
+AND (SupportsLANMultiplayer = 1 OR SupportsInternetMultiplayer = 1 OR SupportsHotseatMultiplayer = 1);
 
 
 --*******************************************************
@@ -668,9 +682,9 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 --*******************************************************
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, ChangeableAfterGameStart, SortIndex)
     VALUES
-        ('ZG_LakeGeneration', 'LOC_ZG_LAKE_GENERATION_NAME', 'LOC_ZG_LAKE_GENERATION_DESCRIPTION','ZG_LakeGenerationDomain', 'ZG_DEFAULT_LAKE_GENERATION', 0, 'Game', 'LakeGenerationKey', 'ZG_TerrainOptions', 0, 150),
-        ('ZG_Rivers', 'LOC_ZG_RIVERS_NAME', 'LOC_ZG_RIVERS_DESCRIPTION','ZG_RiversDomain', 'ZG_DEFAULT_RIVERS', 0, 'Game', 'RiversKey', 'ZG_TerrainOptions', 0, 151),
-        ('ZG_Mountains', 'LOC_ZG_MOUNTAINS_NAME', 'LOC_ZG_MOUNTAINS_DESCRIPTION','ZG_MountainsDomain', 'ZG_DEFAULT_MOUNTAINS', 0, 'Game', 'MountainsKey', 'ZG_TerrainOptions', 0, 152);
+        ('ZG_LakeGeneration', 'LOC_ZG_LAKE_GENERATION_NAME', 'LOC_ZG_LAKE_GENERATION_DESCRIPTION','ZG_LakeGenerationDomain', 'ZG_DEFAULT_LAKE_GENERATION', 0, 'Game', 'LakeGenerationKey', 'ZG_TerrainOptions', 0, 1060),
+        ('ZG_Rivers', 'LOC_ZG_RIVERS_NAME', 'LOC_ZG_RIVERS_DESCRIPTION','ZG_RiversDomain', 'ZG_DEFAULT_RIVERS', 0, 'Game', 'RiversKey', 'ZG_TerrainOptions', 0, 1061),
+        ('ZG_Mountains', 'LOC_ZG_MOUNTAINS_NAME', 'LOC_ZG_MOUNTAINS_DESCRIPTION','ZG_MountainsDomain', 'ZG_DEFAULT_MOUNTAINS', 0, 'Game', 'MountainsKey', 'ZG_TerrainOptions', 0, 1062);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES
@@ -727,28 +741,28 @@ INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
 --*******************************************************
 INSERT OR IGNORE INTO Parameters (ParameterID, Name, Description, Domain, DefaultValue, Hash, ConfigurationGroup, ConfigurationKey, GroupId, ChangeableAfterGameStart, SortIndex)
     VALUES
-        ('ZG_NW_BarrierReef', 'LOC_FEATURE_BARRIER_REEF_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWBarrierReefKey', 'ZG_NaturalWonderSelectionOptions', 0, 200),
-        ('ZG_NW_BermudaTriangle', 'LOC_FEATURE_BERMUDA_TRIANGLE_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWBermudaTriangleKey', 'ZG_NaturalWonderSelectionOptions', 0, 210),
-        ('ZG_NW_GrandCanyon', 'LOC_FEATURE_GRAND_CANYON_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWGrandCanyonKey', 'ZG_NaturalWonderSelectionOptions', 0, 220),
-        ('ZG_NW_GreatBlueHole', 'LOC_FEATURE_GREAT_BLUE_HOLE_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWGreatBlueHoleKey', 'ZG_NaturalWonderSelectionOptions', 0, 230),
-        ('ZG_NW_Gullfoss', 'LOC_FEATURE_GULLFOSS_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWGullfossKey', 'ZG_NaturalWonderSelectionOptions', 0, 240),
-        ('ZG_NW_Hoerikwaggo', 'LOC_FEATURE_HOERIKWAGGO_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWHoerikwaggoKey', 'ZG_NaturalWonderSelectionOptions', 0, 250),
-        ('ZG_NW_IguazuFalls', 'LOC_FEATURE_IGUAZU_FALLS_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWIguazuFallsKey', 'ZG_NaturalWonderSelectionOptions', 0, 260),
-        ('ZG_NW_Kilimanjaro', 'LOC_FEATURE_KILIMANJARO_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWKilimanjaroKey', 'ZG_NaturalWonderSelectionOptions', 0, 270),
-        ('ZG_NW_Machapuchare', 'LOC_FEATURE_MACHAPUCHARE_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWMachapuchareKey', 'ZG_NaturalWonderSelectionOptions', 0, 280),
-        ('ZG_NW_MapuAVaeaBlowholes', 'LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWMapuAVaeaBlowholesKey', 'ZG_NaturalWonderSelectionOptions', 0, 290),
-        ('ZG_NW_MountEverest', 'LOC_FEATURE_MOUNT_EVEREST_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWMountEverestKey', 'ZG_NaturalWonderSelectionOptions', 0, 300),
-        ('ZG_NW_MountFuji', 'LOC_FEATURE_MOUNT_FUJI_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWMountFujiKey', 'ZG_NaturalWonderSelectionOptions', 0, 310),
-        ('ZG_NW_NachiFalls', 'LOC_FEATURE_NACHI_FALLS_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWNachiFallsKey', 'ZG_NaturalWonderSelectionOptions', 0, 315),
-        ('ZG_NW_RedwoodForest', 'LOC_FEATURE_REDWOOD_FOREST_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWRedwoodForestKey', 'ZG_NaturalWonderSelectionOptions', 0, 320),
-        ('ZG_NW_SeongsanIlchulbong', 'LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWSeongsanIlchulbongKey', 'ZG_NaturalWonderSelectionOptions', 0, 325),
-        ('ZG_NW_Thera', 'LOC_FEATURE_THERA_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWTheraKey', 'ZG_NaturalWonderSelectionOptions', 0, 330),
-        ('ZG_NW_TorresDelPaine', 'LOC_FEATURE_TORRES_DEL_PAINE_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWTorresDelPaineKey', 'ZG_NaturalWonderSelectionOptions', 0, 340),
-        ('ZG_NW_Uluru', 'LOC_FEATURE_ULURU_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWUluruKey', 'ZG_NaturalWonderSelectionOptions', 0, 350),
-        ('ZG_NW_ValleyOfFlowers', 'LOC_FEATURE_VALLEY_OF_FLOWERS_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWValleyOfFlowersKey', 'ZG_NaturalWonderSelectionOptions', 0, 360),
-        ('ZG_NW_Vihren', 'LOC_FEATURE_VIHREN_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWVihrenKey', 'ZG_NaturalWonderSelectionOptions', 0, 370),
-        ('ZG_NW_Vinicunca', 'LOC_FEATURE_VINICUNCA_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWVinicuncaKey', 'ZG_NaturalWonderSelectionOptions', 0, 380),
-        ('ZG_NW_Zhangjiajie', 'LOC_FEATURE_ZHANGJIAJIE_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWZhangjiajieKey', 'ZG_NaturalWonderSelectionOptions', 0, 390);
+        ('ZG_NW_BarrierReef', 'LOC_FEATURE_BARRIER_REEF_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWBarrierReefKey', 'ZG_NaturalWonderSelectionOptions', 0, 1100),
+        ('ZG_NW_BermudaTriangle', 'LOC_FEATURE_BERMUDA_TRIANGLE_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWBermudaTriangleKey', 'ZG_NaturalWonderSelectionOptions', 0, 1110),
+        ('ZG_NW_GrandCanyon', 'LOC_FEATURE_GRAND_CANYON_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWGrandCanyonKey', 'ZG_NaturalWonderSelectionOptions', 0, 1120),
+        ('ZG_NW_GreatBlueHole', 'LOC_FEATURE_GREAT_BLUE_HOLE_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWGreatBlueHoleKey', 'ZG_NaturalWonderSelectionOptions', 0, 1130),
+        ('ZG_NW_Gullfoss', 'LOC_FEATURE_GULLFOSS_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWGullfossKey', 'ZG_NaturalWonderSelectionOptions', 0, 1140),
+        ('ZG_NW_Hoerikwaggo', 'LOC_FEATURE_HOERIKWAGGO_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWHoerikwaggoKey', 'ZG_NaturalWonderSelectionOptions', 0, 1150),
+        ('ZG_NW_IguazuFalls', 'LOC_FEATURE_IGUAZU_FALLS_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWIguazuFallsKey', 'ZG_NaturalWonderSelectionOptions', 0, 1160),
+        ('ZG_NW_Kilimanjaro', 'LOC_FEATURE_KILIMANJARO_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWKilimanjaroKey', 'ZG_NaturalWonderSelectionOptions', 0, 1170),
+        ('ZG_NW_Machapuchare', 'LOC_FEATURE_MACHAPUCHARE_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWMachapuchareKey', 'ZG_NaturalWonderSelectionOptions', 0, 1180),
+        ('ZG_NW_MapuAVaeaBlowholes', 'LOC_FEATURE_MAPU_A_VAEA_BLOWHOLES_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWMapuAVaeaBlowholesKey', 'ZG_NaturalWonderSelectionOptions', 0, 1190),
+        ('ZG_NW_MountEverest', 'LOC_FEATURE_MOUNT_EVEREST_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWMountEverestKey', 'ZG_NaturalWonderSelectionOptions', 0, 1200),
+        ('ZG_NW_MountFuji', 'LOC_FEATURE_MOUNT_FUJI_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWMountFujiKey', 'ZG_NaturalWonderSelectionOptions', 0, 1210),
+        ('ZG_NW_NachiFalls', 'LOC_FEATURE_NACHI_FALLS_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWNachiFallsKey', 'ZG_NaturalWonderSelectionOptions', 0, 1215),
+        ('ZG_NW_RedwoodForest', 'LOC_FEATURE_REDWOOD_FOREST_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWRedwoodForestKey', 'ZG_NaturalWonderSelectionOptions', 0, 1220),
+        ('ZG_NW_SeongsanIlchulbong', 'LOC_FEATURE_SEONGSAN_ILCHULBONG_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWSeongsanIlchulbongKey', 'ZG_NaturalWonderSelectionOptions', 0, 1225),
+        ('ZG_NW_Thera', 'LOC_FEATURE_THERA_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWTheraKey', 'ZG_NaturalWonderSelectionOptions', 0, 1230),
+        ('ZG_NW_TorresDelPaine', 'LOC_FEATURE_TORRES_DEL_PAINE_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWTorresDelPaineKey', 'ZG_NaturalWonderSelectionOptions', 0, 1240),
+        ('ZG_NW_Uluru', 'LOC_FEATURE_ULURU_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWUluruKey', 'ZG_NaturalWonderSelectionOptions', 0, 1250),
+        ('ZG_NW_ValleyOfFlowers', 'LOC_FEATURE_VALLEY_OF_FLOWERS_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWValleyOfFlowersKey', 'ZG_NaturalWonderSelectionOptions', 0, 1260),
+        ('ZG_NW_Vihren', 'LOC_FEATURE_VIHREN_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWVihrenKey', 'ZG_NaturalWonderSelectionOptions', 0, 1270),
+        ('ZG_NW_Vinicunca', 'LOC_FEATURE_VINICUNCA_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWVinicuncaKey', 'ZG_NaturalWonderSelectionOptions', 0, 1280),
+        ('ZG_NW_Zhangjiajie', 'LOC_FEATURE_ZHANGJIAJIE_NAME', 'LOC_ZG_NATURAL_WONDER_TOGGLE_DESCRIPTION', 'ZG_WonderToggleDomain', 'ZG_ENABLED', 1, 'Game', 'ZGNWZhangjiajieKey', 'ZG_NaturalWonderSelectionOptions', 0, 1290);
 
 INSERT OR IGNORE INTO DomainValues (Domain, Value, Name, Description, SortIndex)
     VALUES

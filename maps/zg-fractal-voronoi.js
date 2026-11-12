@@ -6,25 +6,16 @@ import { assignAdvancedStartRegions } from 'fs://game/base-standard/maps/assign-
 import { assignStartPositionsFromHexMap } from 'fs://game/base-standard/maps/assign-starting-plots.js';
 import { generateDiscoveries } from 'fs://game/base-standard/maps/discovery-generator.js';
 import { g_PolarWaterRows } from 'fs://game/base-standard/maps/map-globals.js';
+import { commonRequestMapData } from 'fs://game/base-standard/maps/map-utilities.js';
 import { profileScope } from 'fs://game/base-standard/scripts/profiling.js';
 import { VoronoiFractal } from 'fs://game/base-standard/scripts/voronoi_maps/fractal.js';
 import { zgGenerateMapFeatures } from './zg-common-generation.js';
 
 console.log("Generating using script fractal-voronoi.ts");
-function requestMapData(initParams) {
-  console.log(initParams.width);
-  console.log(initParams.height);
-  console.log(initParams.topLatitude);
-  console.log(initParams.bottomLatitude);
-  console.log(initParams.wrapX);
-  console.log(initParams.wrapY);
-  console.log(initParams.mapSize);
-  engine.call("SetMapInitData", initParams);
-}
 async function generateMap() {
   console.log("Generating a map!");
   console.log(`Age - ${GameInfo.Ages.lookup(Game.age).AgeType}`);
-  const voronoiScope = new profileScope("Fratal Voronoi Generation");
+  const voronoiScope = new profileScope("Fractal Voronoi Generation");
   const iWidth = GameplayMap.getGridWidth();
   const iHeight = GameplayMap.getGridHeight();
   const uiMapSize = GameplayMap.getMapSize();
@@ -57,5 +48,5 @@ async function generateMap() {
   assignAdvancedStartRegions();
   voronoiScope.end();
 }
-engine.on("RequestMapInitData", requestMapData);
+engine.on("RequestMapInitData", commonRequestMapData(VoronoiFractal));
 engine.on("GenerateMap", generateMap);

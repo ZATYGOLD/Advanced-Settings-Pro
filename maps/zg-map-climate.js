@@ -18,6 +18,7 @@ import { zgForEachTile, zgInterpolate, zgSettingTier } from './zg-map-utils.js';
 
 const TEMPERATURE_SETTING_KEY = "MapTemperatureKey";
 const MAP_ZONES_SETTING_KEY = "MapZonesKey";
+const CLIMATE_CONTROL_SETTING_KEY = "ScrumLordClimateBaseTemperature";
 const MAX_LATITUDE = 90;
 // map-globals.js gives the landmass, mountain, and hill fractals ids 0 to 2.
 const PATCHWORK_FRACTAL = 3;
@@ -129,6 +130,11 @@ const mapKey = () => [GameplayMap.getRandomSeed(), GameplayMap.getGridWidth(), G
 let climate = null;
 
 // Both settings resolve once per map, so a Random roll holds for every pass.
+// Scrum Lord's Climate Controls replaces the base biome, feature and snow passes.
+// While it is enabled its settings are in the map configuration, and the mod's
+// passes hand off to those replacements instead of applying this climate.
+export const zgClimateControlActive = () => Configuration.getMapValue(CLIMATE_CONTROL_SETTING_KEY) != null;
+
 export function zgClimate() {
 	const key = mapKey();
 	if (climate?.key != key) {
