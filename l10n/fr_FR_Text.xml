@@ -1406,6 +1406,12 @@
 		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="fr_FR">
 			<Text>Paramètres du terrain</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_SPAWNOPTIONS" Language="fr_FR">
+			<Text>Paramètres d'apparition</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_CLIMATECONTROLOPTIONS" Language="fr_FR">
+			<Text>Climate Control</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="fr_FR">
 			<Text>Ensemble de rythme</Text>
 		</Replace>

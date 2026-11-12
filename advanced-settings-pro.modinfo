@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="AdvancedSettingsPro" version="00906" xmlns="ModInfo">
+<Mod id="AdvancedSettingsPro" version="00907" xmlns="ModInfo">
 	<Properties>
 		<Name>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_NAME</Name>
 		<Description>LOC_MODULE_ZG_ADVANCED_SETTINGS_PRO_DESCRIPTION</Description>
 		<Authors>Zatygold</Authors>
-		<Version>0.9.06</Version>
+		<Version>0.9.07</Version>
 		<Package>Mod</Package>
 		<LastUpdated>2026-11-07</LastUpdated>
 		<ShowInBrowser>1</ShowInBrowser>
@@ -5204,6 +5204,7 @@
 				<UpdateDatabase>
 					<Item>config/setup-parameters.sql</Item>
 					<Item>config/map-scripts.sql</Item>
+					<Item>config/climate-control.sql</Item>
 				</UpdateDatabase>
 				<ImportFiles>
 					<Item>ui/shared/zg-config.js</Item>
@@ -5241,6 +5242,7 @@
 					<Item>maps/zg-terra-incognita.js</Item>
 					<Item>maps/zg-terra-incognita-voronoi.js</Item>
 					<Item>maps/zg-pangaea-plus.js</Item>
+					<Item>maps/zg-donut-voronoi.js</Item>
 				</ImportFiles>
 			</Actions>
 		</ActionGroup>
@@ -5292,6 +5294,7 @@
 					<Item>maps/zg-terra-incognita.js</Item>
 					<Item>maps/zg-terra-incognita-voronoi.js</Item>
 					<Item>maps/zg-pangaea-plus.js</Item>
+					<Item>maps/zg-donut-voronoi.js</Item>
 					<Item>ui/shared/zg-config.js</Item>
 					<Item>ui/shared/zg-civ-associations.js</Item>
 					<Item>ui/shared/zg-memento-roller.js</Item>

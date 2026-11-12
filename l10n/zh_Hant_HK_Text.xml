@@ -1406,6 +1406,12 @@
 		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="zh_Hant_HK">
 			<Text>地形設定</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_SPAWNOPTIONS" Language="zh_Hant_HK">
+			<Text>出生設定</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_CLIMATECONTROLOPTIONS" Language="zh_Hant_HK">
+			<Text>Climate Control</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="zh_Hant_HK">
 			<Text>節奏套組</Text>
 		</Replace>

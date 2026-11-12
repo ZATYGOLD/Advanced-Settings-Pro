@@ -1406,6 +1406,12 @@
 		<Replace Tag="LOC_GROUPID_ZG_TERRAINOPTIONS" Language="ko_KR">
 			<Text>지형 설정</Text>
 		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_SPAWNOPTIONS" Language="ko_KR">
+			<Text>스폰 설정</Text>
+		</Replace>
+		<Replace Tag="LOC_GROUPID_ZG_CLIMATECONTROLOPTIONS" Language="ko_KR">
+			<Text>Climate Control</Text>
+		</Replace>
 		<Replace Tag="LOC_ZG_PACE_PRESET_NAME" Language="ko_KR">
 			<Text>페이스 세트</Text>
 		</Replace>

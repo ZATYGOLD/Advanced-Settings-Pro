@@ -17,6 +17,7 @@ WHERE File IN (
     '{base-standard}maps/continents.js',
     '{base-standard}maps/continents-plus.js',
     '{base-standard}maps/continents-voronoi.js',
+    '{base-standard}maps/donut-voronoi.js',
     '{base-standard}maps/fractal.js',
     '{base-standard}maps/fractal-voronoi.js',
     '{base-standard}maps/pangaea-plus.js',
@@ -44,9 +45,6 @@ SELECT Key1, REPLACE(Key2, '{base-standard}maps/', '{AdvancedSettingsPro}maps/zg
 FROM Parameters
 WHERE Key1 = 'Map'
 AND Key2 IN (SELECT REPLACE(File, '{AdvancedSettingsPro}maps/zg-', '{base-standard}maps/') FROM Maps WHERE File LIKE '{AdvancedSettingsPro}maps/zg-%');
-
--- On the copies, Sea Level joins the mod's Terrain Settings group.
-UPDATE Parameters SET GroupId = 'ZG_TerrainOptions', SortIndex = 153 WHERE ParameterID = 'MapSeaLevel' AND Key2 LIKE '{AdvancedSettingsPro}maps/zg-%';
 
 INSERT OR IGNORE INTO Queries (QueryID, Type, SQL)
     VALUES

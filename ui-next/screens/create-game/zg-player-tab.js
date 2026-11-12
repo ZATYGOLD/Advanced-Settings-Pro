@@ -14,8 +14,8 @@ import { template, insert } from 'fs://game/core/vendor/solid-js/web/dist/web.js
 import { createMemo, createComponent, createRenderEffect, createSignal, mergeProps, For, Show } from 'fs://game/core/vendor/solid-js/dist/solid.js';
 import { multiplayerTeamColors } from 'fs://game/core/ui/utilities/utilities-network-constants.js';
 import { openMementoSelect } from './zg-memento-select.js';
-import { MEMENTO_PARAM_IDS, MEMENTO_NONE_VALUE, MEMENTO_SLOT_BASE_IMAGE, MEMENTO_SLOT_PLUS_IMAGE, AI_MEMENTOS_PARAM_ID, AI_MEMENTOS_DEFAULT, aiMementoMode, aiPlayerIds, drawMementos, matchSource, randomFlags, setRandomFlag, rollMemento, sortPossibleValues } from '../../../ui/shared/zg-memento-roller.js';
-import { gameValue, isModEnabled, resolveName } from '../../../ui/shared/zg-config.js';
+import { MEMENTO_PARAM_IDS, SETUP_SLOTS, MEMENTO_NONE_VALUE, MEMENTO_SLOT_BASE_IMAGE, MEMENTO_SLOT_PLUS_IMAGE, AI_MEMENTOS_PARAM_ID, AI_MEMENTOS_DEFAULT, aiMementoMode, aiPlayerIds, drawMementos, matchSource, randomFlags, setRandomFlag, rollMemento, sortPossibleValues } from '../../../ui/shared/zg-memento-roller.js';
+import { gameValue, isModEnabled, playerValue, resolveName } from '../../../ui/shared/zg-config.js';
 import { PLAYER_OVERRIDE_PRIORITY, zgWrapComponent } from './zg-component-override.js';
 import { isSinglePlayerSetupOpen, onSetupRevision } from '../../../ui/shell/shared/zg-shell-context.js';
 import { isRestoringSetup } from '../../../ui/shell/create-game/zg-setup-memory.js';
@@ -473,17 +473,70 @@ onSetupRevision((restarted) => {
 	}
 }, () => isSinglePlayerSetupOpen() && !isRestoringSetup());
 
+// -------------------------------------------------------- closing slots --
+
+// Closing a slot moves every player below it up a row and closes the last one,
+// as the game's own tab does since 1.5.1. Team, Mementos and their Random flags
+// move with the Leader and Civilization, and so does what the AI Mementos pass
+// recorded, so a player who only moved is not drawn for again.
+const EMPTY_PLAYER_STATE = {
+	leader: "RANDOM",
+	civilization: "RANDOM",
+	team: TEAM_NONE_VALUE,
+	mementos: MEMENTO_PARAM_IDS.map(() => MEMENTO_NONE_VALUE),
+	randomFlags: MEMENTO_PARAM_IDS.map(() => false),
+	rolled: MEMENTO_PARAM_IDS.map(() => false),
+	hasSource: false,
+};
+
+function readPlayerState(playerId) {
+	return {
+		leader: playerValue(playerId, SETUP_SLOTS.leader),
+		civilization: playerValue(playerId, SETUP_SLOTS.civilization),
+		team: Configuration.getPlayer(playerId)?.team ?? TEAM_NONE_VALUE,
+		mementos: MEMENTO_PARAM_IDS.map((id) => playerValue(playerId, id) ?? MEMENTO_NONE_VALUE),
+		randomFlags: [...randomFlags(playerId)],
+		rolled: MEMENTO_PARAM_IDS.map((_, slotIndex) => rolledThisSession.has(`${playerId}:${slotIndex}`)),
+		hasSource: appliedSources.has(playerId),
+		source: appliedSources.get(playerId),
+	};
+}
+
+function writePlayerState(playerId, state) {
+	GameSetup.setPlayerParameterValue(playerId, SETUP_SLOTS.leader, state.leader);
+	GameSetup.setPlayerParameterValue(playerId, SETUP_SLOTS.civilization, state.civilization);
+	Configuration.editPlayer(playerId)?.setTeam(state.team);
+	MEMENTO_PARAM_IDS.forEach((id, slotIndex) => {
+		GameSetup.setPlayerParameterValue(playerId, id, state.mementos[slotIndex]);
+		setRandomFlag(playerId, slotIndex, state.randomFlags[slotIndex]);
+		const key = `${playerId}:${slotIndex}`;
+		if (state.rolled[slotIndex]) rolledThisSession.add(key); else rolledThisSession.delete(key);
+	});
+	if (state.hasSource) appliedSources.set(playerId, state.source); else appliedSources.delete(playerId);
+}
+
+function closeAndShift(slots, slot) {
+	const activeSlots = slots.activeSlots();
+	if (activeSlots.length <= 2) return;
+	const removedIndex = activeSlots.findIndex((current) => current.playerId === slot.playerId);
+	if (removedIndex === -1) return;
+	const states = activeSlots.map((current) => readPlayerState(current.playerId));
+	for (let index = removedIndex; index < activeSlots.length - 1; index++) {
+		writePlayerState(activeSlots[index].playerId, states[index + 1]);
+	}
+	const lastSlot = activeSlots[activeSlots.length - 1];
+	writePlayerState(lastSlot.playerId, EMPTY_PLAYER_STATE);
+	lastSlot.setSlotStatus(SlotStatus.SS_CLOSED);
+	slots.reload();
+}
+
 // ---------------------------------------------------------- player list --
 
 const PlayerSetup = () => {
 	const playerOptions = PlayerSetupParametersModel.get().players;
 	const slots = PlayerSetupParametersModel.get().configuration;
 	const hasOpenSlots = createMemo(() => slots.openSlots().length > 0);
-	const closeSlot = (slot) => {
-		if (slots.activeSlots().length <= 2) return;
-		slot.setSlotStatus(SlotStatus.SS_CLOSED);
-		slots.reload();
-	};
+	const closeSlot = (slot) => closeAndShift(slots, slot);
 	const openSlot = () => {
 		if (hasOpenSlots()) {
 			slots.openSlots()[0].setSlotStatus(SlotStatus.SS_COMPUTER);

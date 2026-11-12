@@ -1,64 +1,49 @@
 // Snow pass that applies the mod's climate (zg-map-climate.js).
 // Port of {base-standard}maps/snow-generator.js generateSnow.
 //
-// The base lays permanent snow in rows inward from each polar edge: from the
-// first land row past the polar water down to latitude 60, the chance of any
-// snow falls from 90% to 30% and heavy snow gives way to medium and light. Here
-// the same curve is laid by each land tile's Map Zones latitude plus the Map
-// Temperature shift instead of its row, so snow follows the cold wherever it
-// lies. With Standard on both settings the base pass runs unchanged.
-import { g_PolarWaterRows } from 'fs://game/base-standard/maps/map-globals.js';
-import { generateSnow } from 'fs://game/base-standard/maps/snow-generator.js';
-import { zgClimate } from './zg-map-climate.js';
+// The base lays permanent snow in rows from latitude 53 to each polar edge: the
+// snow chance climbs from 0 to 100 across them, varied by a random amount, and
+// its thresholds pick no, light, medium or heavy snow. Here the same curve is
+// laid by each land tile's Map Zones latitude plus the Map Temperature shift
+// instead of its row, so snow follows the cold wherever it lies. The base's own
+// SnowGenConfig supplies the figures. With Standard on both settings, or with
+// Climate Controls enabled (whose pass replaces the base), the base pass runs.
+import { SnowGenConfig, generateSnow } from 'fs://game/base-standard/maps/snow-generator.js';
+import { zgClimate, zgClimateControlActive } from './zg-map-climate.js';
 import { zgForEachTile, zgInterpolate } from './zg-map-utils.js';
 
-const SNOW_LATITUDE_MIN = 60;
-const ANY_SNOW_CHANCE = 90;
-const CHANCE_SPAN = 60;
-// Light, medium, and heavy at the coldest edge; across the span light and
-// medium each gain what heavy loses.
-const WEIGHT_CHANCES = [10, 30, 60];
-const HEAVY = 2;
+const POLE_LATITUDE = 90;
 
 const snowEffect = (weight) => MapPlotEffects.getPlotEffectTypesContainingTags(["SNOW", weight, "PERMANENT"])?.[0] ?? -1;
 
-// The latitude where the base's first snow row lies, just past the polar water.
-function coldestSnowLatitude(iHeight) {
-	const halfHeight = iHeight / 2;
-	return Math.round(90 - (g_PolarWaterRows / halfHeight) * 90);
-}
-
 export function zgGenerateSnow(iWidth, iHeight) {
-	const climate = zgClimate();
-	if (climate.engineLatitude && climate.shift == 0) {
+	const climate = zgClimateControlActive() ? null : zgClimate();
+	if (!climate || (climate.engineLatitude && climate.shift == 0)) {
 		generateSnow(iWidth, iHeight);
 		return;
 	}
 	console.log("ZG-ASP snow: laid by climate latitude");
+	const config = new SnowGenConfig();
 	const effects = ["LIGHT", "MEDIUM", "HEAVY"].map(snowEffect);
-	const coldest = coldestSnowLatitude(iHeight);
+	const variation = config.snowDensityVariation;
 	zgForEachTile(iWidth, iHeight, (iX, iY) => {
 		if (GameplayMap.isWater(iX, iY)) {
 			return;
 		}
-		const latitude = Math.abs(climate.latitude(iX, iY)) + climate.shift;
-		if (latitude < SNOW_LATITUDE_MIN) {
+		const signedLatitude = climate.latitude(iX, iY);
+		const start = signedLatitude < 0 ? config.snowLatitudeSouth : config.snowLatitudeNorth;
+		const latitude = Math.abs(signedLatitude) + climate.shift;
+		if (latitude < start) {
 			return;
 		}
-		// 0 at the coldest edge, 1 at latitude 60.
-		const gain = CHANCE_SPAN * zgInterpolate(latitude, coldest, SNOW_LATITUDE_MIN, 0, 1);
-		if (TerrainBuilder.getRandomNumber(100, "Any Snow") > ANY_SNOW_CHANCE - gain) {
-			return;
+		const chance = zgInterpolate(latitude, start, POLE_LATITUDE, 0, 100)
+			+ TerrainBuilder.getRandomNumber(variation * 2, "Any Snow") - variation;
+		let weight = config.snowThresholds.length - 1;
+		while (weight >= 0 && chance < config.snowThresholds[weight]) {
+			--weight;
 		}
-		// Heavy first, as in the base.
-		let roll = TerrainBuilder.getRandomNumber(100, "Snow Weight");
-		for (let weight = WEIGHT_CHANCES.length - 1; weight >= 0; --weight) {
-			const chance = WEIGHT_CHANCES[weight] + (weight == HEAVY ? -gain : gain);
-			if (roll < chance) {
-				MapPlotEffects.addPlotEffect(GameplayMap.getIndexFromXY(iX, iY), effects[weight]);
-				return;
-			}
-			roll -= chance;
+		if (weight >= 0) {
+			MapPlotEffects.addPlotEffect(GameplayMap.getIndexFromXY(iX, iY), effects[weight]);
 		}
 	});
 }

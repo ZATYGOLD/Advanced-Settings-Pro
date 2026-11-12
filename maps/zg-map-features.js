@@ -5,9 +5,11 @@
 // the Map Temperature shift, so a colder step pushes ice toward the equator and
 // a hotter one carries reefs toward the poles. Land features follow the biomes
 // and are placed as in the base. Every random roll keeps the base order, so a
-// Standard map matches the base exactly.
+// Standard map matches the base exactly. With Climate Controls enabled, its
+// feature pass runs instead.
+import { addFeatures } from 'fs://game/base-standard/maps/feature-biome-generator.js';
 import { isAdjacentToNaturalWonder } from 'fs://game/base-standard/maps/map-utilities.js';
-import { zgClimate } from './zg-map-climate.js';
+import { zgClimate, zgClimateControlActive } from './zg-map-climate.js';
 import { zgForEachTile } from './zg-map-utils.js';
 
 const ICE_LATITUDE_MIN = 78;
@@ -177,6 +179,10 @@ function addLakeFeatures(iWidth, iHeight) {
 }
 
 export function zgAddFeatures(iWidth, iHeight) {
+	if (zgClimateControlActive()) {
+		addFeatures(iWidth, iHeight);
+		return;
+	}
 	console.log("Features");
 	climate = zgClimate();
 	featuresByClass = indexFeaturesByClass();

@@ -6,6 +6,18 @@ The mod applies to single player only. Multiplayer and hotseat games are left to
 
 ## Version History
 
+### 0.9.07
+
+- Updated for Civilization VII 1.5.1
+- New map: Donut (Voronoi) now uses the mod's map settings in single player
+- The Voronoi maps re-synced with 1.5.1, which sizes each map through its own generator
+- Snow on non-Standard Map Temperature and Map Zones follows the game's new 1.5.1 snow: it starts at latitude 53 and thickens toward the poles. Standard matches the base game
+- Removing a player on the Player tab moves the players below up a row, as the game does since 1.5.1; their Team and Mementos move with them
+- New Spawn Settings section at the top of the Map tab, holding Start Position
+- Map Settings is back above Terrain Settings, and Natural Wonder Selection follows Terrain Settings
+- Sea Level sits in Map Settings, where the game places it, on every Voronoi map
+- Compatible with Scrum Lord's Climate Controls: with both mods enabled, its climate settings appear on the Map tab in a Climate Control section and shape biomes, features and snow on this mod's maps, while Map Temperature and Map Zones are hidden. The conflict guard no longer flags it
+
 ### 0.9.06
 
 - Fixed: Sparse and Abundant Resources placed no resources at all

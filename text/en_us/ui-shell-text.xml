@@ -1092,6 +1092,8 @@
 		</Row>
 
 		<Row Tag="LOC_GROUPID_ZG_TERRAINOPTIONS"><Text>Terrain Settings</Text></Row>
+		<Row Tag="LOC_GROUPID_ZG_SPAWNOPTIONS"><Text>Spawn Settings</Text></Row>
+		<Row Tag="LOC_GROUPID_ZG_CLIMATECONTROLOPTIONS"><Text>Climate Control</Text></Row>
 		<Row Tag="LOC_GROUPID_ZG_MEMENTOOPTIONS"><Text>Memento Settings</Text></Row>
 
 	<!-- Pace Set -->

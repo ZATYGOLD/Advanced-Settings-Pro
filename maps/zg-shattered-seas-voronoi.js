@@ -6,21 +6,12 @@ import { assignAdvancedStartRegions } from 'fs://game/base-standard/maps/assign-
 import { assignStartPositionsFromHexMap } from 'fs://game/base-standard/maps/assign-starting-plots.js';
 import { generateDiscoveries } from 'fs://game/base-standard/maps/discovery-generator.js';
 import { g_PolarWaterRows } from 'fs://game/base-standard/maps/map-globals.js';
+import { commonRequestMapData } from 'fs://game/base-standard/maps/map-utilities.js';
 import { profileScope } from 'fs://game/base-standard/scripts/profiling.js';
 import { VoronoiShatteredSeas } from 'fs://game/base-standard/scripts/voronoi_maps/shattered-seas.js';
 import { zgGenerateMapFeatures } from './zg-common-generation.js';
 
 console.log("Generating using script shattered-seas-voronoi.ts");
-function requestMapData(initParams) {
-  console.log(initParams.width);
-  console.log(initParams.height);
-  console.log(initParams.topLatitude);
-  console.log(initParams.bottomLatitude);
-  console.log(initParams.wrapX);
-  console.log(initParams.wrapY);
-  console.log(initParams.mapSize);
-  engine.call("SetMapInitData", initParams);
-}
 async function generateMap() {
   console.log("Generating a map!");
   console.log(`Age - ${GameInfo.Ages.lookup(Game.age).AgeType}`);
@@ -64,5 +55,5 @@ async function generateMap() {
   }
   voronoiScope.end();
 }
-engine.on("RequestMapInitData", requestMapData);
+engine.on("RequestMapInitData", commonRequestMapData(VoronoiShatteredSeas));
 engine.on("GenerateMap", generateMap);
